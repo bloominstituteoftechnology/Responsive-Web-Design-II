@@ -1,3 +1,7 @@
+@phone: ~'(max-width: 400px)';
+@tablet: ~'(max-width: 768px )';
+@desktop: ~'(max-width: 1100px)';
+
 @import "reset";
 @import "mixins";
 @import "general-styles";
@@ -6,22 +10,23 @@
 @import "main-content";
 @import "contact";
 @import "footer";
-@phone: ~'(max-width: 400px)';
-@tablet: ~'(max-width: 768px )';
-@desktop: ~'(max-width: 1100px)';
+
 .container {
-    max-width:100%;
+    max-width: 100%;
 }
 
 header {
-    margin-top:30px;
+    margin-top: 30px;
+    align-items: center;
     @media @tablet {
         flex-direction: column-reverse;
     }
     .logo {
         margin: 0;
+        align-self: unset;
         @media @tablet {
-        align-self: center;
+            align-self: center;
+            margin-bottom:30px;
         }
     }
     nav {
@@ -31,13 +36,26 @@ header {
             justify-content: space-evenly;
             display: flex;
             flex-wrap: wrap;
+            margin-top:0;
+            @media @phone {
+                flex-direction: column;
+                text-align: center;
+            }
             li {
-                margin-right: 30px;
+                align-items: center;
+                @media @tablet {
+                    margin-bottom:20px;
+                }
             }
         }
     }
 }
 
-img {
+.cta {
+    img {
     max-width: 100%;
+    @media @phone {
+        margin: 0 auto;
+    }
+}
 }

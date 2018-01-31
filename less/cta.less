@@ -4,7 +4,10 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    @media @phone{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;

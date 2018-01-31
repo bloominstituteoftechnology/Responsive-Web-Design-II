@@ -190,6 +190,12 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 400px) {
+  .cta {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -251,18 +257,21 @@ footer {
 }
 header {
   margin-top: 30px;
+  align-items: center;
 }
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
   header {
     flex-direction: column-reverse;
   }
 }
 header .logo {
   margin: 0;
+  align-self: unset;
 }
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
   header .logo {
     align-self: center;
+    margin-bottom: 30px;
   }
 }
 header nav {
@@ -273,10 +282,27 @@ header nav ul {
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0;
+}
+@media (max-width: 400px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 header nav ul li {
-  margin-right: 30px;
+  align-items: center;
 }
-img {
+@media (max-width: 768px) {
+  header nav ul li {
+    margin-bottom: 20px;
+  }
+}
+.cta img {
   max-width: 100%;
+}
+@media (max-width: 400px) {
+  .cta img {
+    margin: 0 auto;
+  }
 }
