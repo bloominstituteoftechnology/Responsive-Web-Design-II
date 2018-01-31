@@ -300,8 +300,8 @@ header .logo {
 }
 @media (min-width: 400px)  {
   .main-content {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media (min-width: 1100px)  {
