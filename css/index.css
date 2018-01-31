@@ -206,7 +206,7 @@ header nav ul {
 @media (max-width: 768px) {
   header nav ul li {
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 }
 header nav ul li a {
@@ -229,7 +229,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   header .logo {
-    margin: 0;
+    margin-right: 5px;
   }
 }
 /* Call To Action (CTA) Styles */
@@ -369,7 +369,7 @@ header .logo {
   }
 }
 /* Contact Styles */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .contact {
     margin-left: 5px;
   }
