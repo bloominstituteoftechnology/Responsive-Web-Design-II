@@ -1,15 +1,35 @@
 // Header Styles
+@laptop: ~"(max-width: 1100px)";
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 415px)";
 
 header {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    @media @phone {
+        flex-direction: column;
+    }
 
     nav {
+        @media @phone {
+            align-items: center;
+        }
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
             display: flex;
+
+            @media @laptop {
+                margin-top: 40px;
+                justify-content: space-between;
+                width: 100%;
+            }
+            
+            @media @phone {
+                margin-top: 1px;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+            }
 
             li {
 
@@ -19,7 +39,7 @@ header {
 
                     &:hover {
                         text-decoration: underline;
-                        color: black;
+                        color: turquoise;
                     }
                 }
             }
@@ -27,7 +47,13 @@ header {
     }
 
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        @media @laptop {
+            margin: 28px 0 0 60px;
+            align-self: flex-end;
+        }
+        @media @phone {
+            order: -1;
+            margin: 0px 40%;
+        }
     }
 }// header

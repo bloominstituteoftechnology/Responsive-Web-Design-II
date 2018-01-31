@@ -4,6 +4,10 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    @media @phone {
+        flex-direction: column;
+        padding: 0 30%;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -14,6 +18,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @phone {
+            order: 1;
+            margin: 0 0 0 0;
+        }
     }
 
     .cta-text button {

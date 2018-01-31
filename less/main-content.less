@@ -12,16 +12,25 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    @media @phone {
+        flex-direction: column;
+    }
 }
 
 .main-content .middle-img {
-    display: block;
+    display: flex;
     margin: 30px auto;
+    @media @phone {
+        order: 2;
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @phone {
+        flex-direction: column;
+    }
 }
 
 .main-content .bottom-content p {
