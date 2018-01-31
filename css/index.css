@@ -172,6 +172,11 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    display: inline-block;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 610px;
@@ -186,13 +191,19 @@ header nav ul {
 }
 @media (max-width: 400px) {
   header nav ul {
-    width: 100px;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav ul li a {
+    color: black;
+  }
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -209,10 +220,10 @@ header .logo {
 }
 @media (max-width: 400px) {
   header .logo {
-    display: block;
-    height: 48px;
-    width: auto;
-    margin-top: 30px;
+    align-self: center;
+    margin: auto;
+    position: relative;
+    left: 25%;
   }
 }
 /* Call To Action (CTA) Styles */
@@ -220,6 +231,17 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 400px) {
+  .cta {
+    flex-flow: column;
+  }
+  .cta img {
+    opacity: 0.23;
+    position: absolute;
+    left: 5%;
+    width: 90%;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -234,9 +256,6 @@ header .logo {
 @media (max-width: 768px) {
   .cta .cta-text {
     margin: 0px;
-  }
-  .cta .cta-text img {
-    max-width: ;
   }
 }
 .cta .cta-text button {
@@ -274,6 +293,11 @@ header .logo {
     padding: 0px;
   }
 }
+@media (max-width: 400px) {
+  .main-content {
+    margin: 50px 0;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
@@ -284,6 +308,15 @@ header .logo {
   }
   .main-content .top-content p {
     padding-right: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .top-content p {
+    padding-bottom: 50px;
   }
 }
 .main-content .middle-img {
@@ -306,6 +339,15 @@ header .logo {
   }
   .main-content .bottom-content p {
     padding-right: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .bottom-content p {
+    padding-bottom: 50px;
   }
 }
 .main-content .bottom-content p {

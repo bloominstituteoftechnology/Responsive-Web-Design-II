@@ -3,8 +3,12 @@
 header {
     width: 100%;
     display: flex;
+    @media @phone {
+        display: inline-block;
+    }
 
     nav {
+
         ul {
             margin-top: 40px; 
             width: 610px;
@@ -17,8 +21,9 @@ header {
             }
     
             @media @phone {
-                width: 100px;
-                display: block;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
             }
 
             li {
@@ -26,6 +31,9 @@ header {
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    @media @phone {
+                        color: black;
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -42,12 +50,11 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-
         @media @phone {
-            display: block;
-            height: 48px;
-            width: auto;
-            margin-top: 30px;
-        }
+            align-self: center;
+            margin: auto;
+            position: relative;
+            left: 25%;
+		}
     }
 }// header

@@ -7,10 +7,13 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-   @media @tablet {
-    margin: 0px;
-    padding: 0px;
-}
+    @media @tablet {
+        margin: 0px;
+        padding: 0px;
+    }
+    @media @phone {
+        margin: 50px 0;
+    }
 }
 
 .main-content .top-content {
@@ -20,6 +23,13 @@
         margin:15px;
         p {
             padding-right:15px
+        }
+    }
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        p {
+            padding-bottom: 50px;
         }
     }
 }
@@ -40,6 +50,13 @@
         margin:15px;
         p {
             padding-right:15px;
+        }
+    }
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        p {
+            padding-bottom: 50px;
         }
     }
 }
