@@ -3,6 +3,13 @@
 header {
     width: 100%;
     display: flex;
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @phone {
+        width: 50%;
+    }
 
     nav {
         ul {
@@ -10,6 +17,18 @@ header {
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media @tablet {
+                width: 400px;
+                align-content: stretch;
+                margin-left: 10px;
+                font-size: 18px;
+            }
+            @media @phone {
+                width: 50px;
+                font-size: 20px;
+                padding: 10px;
+                flex-direction: column;
+            }
 
             li {
 
@@ -29,5 +48,12 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @tablet {
+			.scale(0.75);
+		}
+
+		@media @phone {
+            .scale(0.5);
+		}
     }
 }// header

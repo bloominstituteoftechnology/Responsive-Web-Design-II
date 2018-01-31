@@ -166,11 +166,37 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    width: 50%;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    width: 400px;
+    align-content: stretch;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    width: 50px;
+    font-size: 20px;
+    padding: 10px;
+    flex-direction: column;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -183,6 +209,22 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
