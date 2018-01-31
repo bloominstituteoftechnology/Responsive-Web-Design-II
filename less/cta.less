@@ -5,14 +5,33 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @laptop {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media @tablet {
+        justify-content: space-around;
+    }
+
     @media @phone {
         flex-direction: column-reverse;
         align-items: center;
     }
 
     img {
+        @media @laptop {
+            width: 400px;
+            height: 400px;
+        }
+        @media @tablet {
+            width: 250px;
+            height: 250px;
+        }
         @media @phone {
             position: absolute;
+            width: 400px;
+            height: 400px;
         }
     }
 
@@ -26,12 +45,19 @@
         align-items: center;
         margin: 0 82px 0 0;
 
+        @media @tablet {
+            font-size: 32px;
+            margin-right: 0px;
+        }
+
         @media @phone {
             position: relative;
             color: white;
             z-index: 1;
             margin-top: 70px;
             margin-left: 65px;
+            margin-right: 82px;;
+            font-size: 72px;
         }
     }
 
