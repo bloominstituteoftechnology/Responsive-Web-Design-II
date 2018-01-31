@@ -253,8 +253,17 @@ header .logo {
   justify-content: center;
 }
 @media (min-width: 400px)  {
+}
+@media (min-width: 768px)  {
+}
+@media (min-width: 1100px)  {
   .cta {
-    background: blue;
+    margin: 0;
+    flex-direction: initial;
+    justify-content: initial;
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
   }
 }
 .cta .cta-text {
@@ -265,6 +274,11 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
+}
+@media (min-width: 1100px)  {
+  .cta .cta-text {
+    margin: 0 82px 0 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -282,6 +296,12 @@ header .logo {
 .cta img {
   margin: 25px 0 0 0;
   object-fit: contain;
+}
+@media (min-width: 1100px)  {
+  .cta img {
+    margin: 0;
+    object-fit: none;
+  }
 }
 /* Main Content Styles */
 .main-content {
