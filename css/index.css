@@ -218,6 +218,11 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    margin-top: 36px;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -234,6 +239,14 @@ header .logo {
     margin-right: auto;
   }
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    -webkit-transform: translate(50%, 0);
+    -moz-transform: translate(50%, 0);
+    -ms-transform: translate(50%, 0);
+    -o-transform: translate(50%, 0);
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -246,6 +259,17 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 768px) {
+  .cta img {
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -webkit-opacity: 0.3;
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+  }
 }
 /* Main Content Styles */
 .main-content {

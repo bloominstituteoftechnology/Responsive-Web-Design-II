@@ -4,6 +4,9 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    @media @tablet {
+        margin-top: 36px;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -17,6 +20,9 @@
         @media @laptop {
             margin-left: auto;
             margin-right: auto;
+        }
+        @media @tablet {
+            .translate(50%);
         }
     }
 
@@ -32,6 +38,13 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        @media @tablet {
+            .translate(-50%);
+            .opacity(.3);
         }
     }
 }// cta
