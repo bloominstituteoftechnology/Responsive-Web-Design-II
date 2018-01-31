@@ -162,9 +162,40 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  header img {
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  header img {
+    width: 40%;
+  }
 }
 header nav ul {
   margin-top: 40px;
@@ -172,23 +203,73 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    border: 1px solid white;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    background: black;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 768px) {
+  header nav ul li a {
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li a {
+    box-sizing: border-box;
+  }
 }
 header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav ul li a:hover {
+    color: white;
+  }
+}
 header .logo {
-  align-self: flex-end;
+  align-self: flex-endcenter;
   margin: 28px 0 0 91px;
 }
-/* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 400px) {
+  .cta {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -200,6 +281,14 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 400px) {
+  .cta .cta-text {
+    color: white;
+    z-index: 1;
+    font-size: 60px;
+    margin: 70px 82px 0px 65px;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -209,9 +298,20 @@ header .logo {
   margin-top: 10px;
   cursor: pointer;
 }
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    margin-top: 55px;
+  }
+}
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 400px) {
+  .cta .cta-text button:hover {
+    background: lightgray;
+    color: black;
+  }
 }
 /* Main Content Styles */
 .main-content {
@@ -224,15 +324,31 @@ header .logo {
 }
 .main-content .top-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    width: 100%;
+    display: flex;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;

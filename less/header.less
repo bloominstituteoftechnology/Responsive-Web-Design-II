@@ -1,33 +1,76 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 
-    nav {
-        ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
-            display: flex;
+  @media @tablet {
+      flex-wrap: wrap-reverse;
+  }
+  @media @phone {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+  }
 
-            li {
+  img {
+      @media @tablet {
+    width: 40%;
+  }
+  @media @phone {
+          width: 40%;
+  }
+  }
 
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
+  nav {
+      ul {
+          margin-top: 40px; 
+          width: 610px;
+          justify-content: space-between;
+          display: flex;
 
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
+          @media @tablet {
+              flex-wrap: wrap;
+              flex-direction: column;
+              width: 100%;
+          }
+          @media @phone {
+              flex-wrap: wrap;
+              flex-direction: column;
+              width: 100%;
+          }
 
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
+          li {
+              @media @phone {
+                  border: 1px solid white;
+                  width: 100%;
+                  text-align: center;
+                  font-size: 30px;
+                  background: black;
+              }
+              a {
+                  text-decoration: none;
+                  color: #b0b0b0;
+                  @media @tablet {
+                      box-sizing: border-box;
+                  }
+                  @media @phone {
+                      box-sizing: border-box;
+                  }
+
+                  &:hover {
+                      text-decoration: underline;
+                      color: black;
+                      @media @phone {
+                          color: white;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  .logo {
+      align-self: flex-endcenter;
+      margin: 28px 0 0 91px;
+  }
 }// header
