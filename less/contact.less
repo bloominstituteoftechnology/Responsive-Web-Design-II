@@ -2,8 +2,22 @@
 
 .contact {
 
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h4 {
+        align-self: center;
+    }
+
     p {
         margin: 40px 0;
+        @media @phone {
+            align-self: center;
+            font-size: 20px;
+        }
     }
    
 }
