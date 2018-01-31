@@ -6,16 +6,22 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+html h1,
+body h1,
+html h2,
+body h2,
+html h3,
+body h3,
+html h4,
+body h4,
+html h5,
+body h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-.container {
+html .container,
+body .container {
   width: 880px;
   margin: auto;
 }

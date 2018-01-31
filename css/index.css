@@ -172,6 +172,11 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    width: 50%;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 610px;
