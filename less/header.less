@@ -16,6 +16,11 @@ header {
                 margin-left: 10px;
             }
 
+            @media @phone {
+                width: 131px;
+                flex-direction: column;
+            }
+
             li {
 
                 a {
@@ -27,6 +32,10 @@ header {
                         color: black;
                     }
                 }
+
+                @media @phone {
+                    margin-bottom: 5px;
+                }
             }
         }
     }
@@ -37,6 +46,10 @@ header {
 
         @media @tablet {
             margin: 28px 0 0 30px;
+        }
+
+        @media @phone {
+            align-self: flex-start;
         }
     }
 }// header

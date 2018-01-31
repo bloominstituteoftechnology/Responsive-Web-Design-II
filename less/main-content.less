@@ -12,8 +12,19 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
     @media @tablet {
       margin: 10px;
+    }
+
+    @media @phone {
+      flex-wrap: wrap;
+    }
+
+    .text-content {
+      @media @phone {
+        margin-bottom: 10px;
+      }
     }
 }
 
@@ -29,8 +40,19 @@
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+
     @media @tablet {
       margin: 10px;
+    }
+
+    @media @phone {
+      flex-wrap: wrap;
+    }
+
+    .text-content {
+      @media @phone {
+        margin-bottom: 10px;
+      }
     }
 }
 
