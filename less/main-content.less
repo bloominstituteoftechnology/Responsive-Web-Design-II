@@ -7,11 +7,21 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+
+   .middle-img {
+        @media @tablet {
+            width: 100%;
+        }
+   }
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
+    @media @phone {
+        flex-direction: column;
+    }
 }
 
 .main-content .middle-img {
@@ -22,8 +32,19 @@
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+
+    @media @phone {
+        flex-direction: column;
+    }
 }
 
 .main-content .bottom-content p {
     padding-right: 20px;
+}
+
+.main-content .text-content {
+    @media @phone {
+        margin-top: 10px;
+        margin-left: 5px;
+    }
 }
