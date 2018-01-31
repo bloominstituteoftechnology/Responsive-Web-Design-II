@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  min-width: 340px;
 }
 h1,
 h2,
@@ -157,9 +158,6 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
-}
-.container {
-  margin: auto;
 }
 header {
   padding-bottom: 10px;
@@ -194,9 +192,15 @@ header .logo {
 }
 /* Call To Action (CTA) Styles */
 .cta {
+  margin: 40px 15px 0 15px;
   display: flex;
-  margin-top: 72px;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 400px)  {
+  .cta {
+    background: green;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
@@ -206,7 +210,9 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+}
+.cta .cta-text h1 {
+  overflow-wrap: break-word;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -220,6 +226,9 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+.cta img {
+  object-fit: contain;
 }
 /* Main Content Styles */
 .main-content {
