@@ -149,6 +149,13 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
 h1,
 h2,
 h3,
@@ -166,14 +173,20 @@ h5 {
   .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    width: 90%;
+    width: 95%;
+    flex-shrink: 1;
     justify-content: center;
   }
 }
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 1100px) {
+  header {
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+  }
 }
 header nav ul {
   margin-top: 40px;
@@ -193,6 +206,12 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 1100px) {
+  header .logo {
+    margin-left: auto;
+    flex-shrink: 5;
+  }
+}
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
@@ -208,6 +227,12 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 1100px) {
+  .cta .cta-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -238,6 +263,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 90%;
 }
 .main-content .bottom-content {
   display: flex;

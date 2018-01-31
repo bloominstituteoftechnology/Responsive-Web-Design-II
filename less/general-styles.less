@@ -7,6 +7,10 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    @media @laptop {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -21,8 +25,8 @@ h1, h2, h3, h4, h5 {
     @media @laptop {
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
-        width: 90%;
+        width: 95%;
+        flex-shrink: 1;
         justify-content: center;
     }
 }

@@ -3,6 +3,10 @@
 header {
     width: 100%;
     display: flex;
+    @media @laptop {
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+    }
 
     nav {
         ul {
@@ -29,5 +33,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @laptop {
+            margin-left: auto;
+            flex-shrink: 5;
+        }
     }
 }// header
