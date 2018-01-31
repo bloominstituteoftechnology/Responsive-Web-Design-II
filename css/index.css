@@ -217,6 +217,11 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 1100px) {
+  .cta {
+    justify-content: center;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
