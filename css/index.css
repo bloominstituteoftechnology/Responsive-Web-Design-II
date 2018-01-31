@@ -297,7 +297,6 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta .cta-text {
-    width: 49%;
     margin: 10px 0 0 10px;
   }
 }
@@ -321,7 +320,6 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta .cta-img {
-    width: 50%;
     margin: 10px 0 0 10px;
   }
 }
