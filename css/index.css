@@ -170,7 +170,7 @@ h5 {
 }
 @media (max-width: 400px) {
   .container {
-    width: 50%;
+    width: 100%;
     margin: auto;
   }
 }
@@ -324,8 +324,23 @@ header .logo {
   }
 }
 /* Contact Styles */
+@media (max-width: 768px) {
+  .contact {
+    margin: 0 20px 0 20px;
+  }
+}
 .contact p {
   margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .contact p {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  .contact p {
+    margin: 20px 0;
+  }
 }
 /* Footer Styles */
 footer {
