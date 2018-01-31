@@ -261,15 +261,15 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 @media (max-width: 400px) {
   .cta img {
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
   }
 }
 .cta .cta-text {
@@ -293,10 +293,10 @@ header .logo {
     position: relative;
     color: white;
     z-index: 1;
-    margin-top: 70px;
-    margin-left: 65px;
+    margin-top: 55px;
+    margin-left: 75px;
     margin-right: 82px;
-    font-size: 72px;
+    font-size: 56px;
   }
 }
 .cta .cta-text button {
