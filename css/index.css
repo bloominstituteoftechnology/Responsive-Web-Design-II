@@ -162,7 +162,7 @@ h5 {
   width: 880px;
   margin: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   .container {
     width: 100%;
   }
@@ -171,7 +171,14 @@ header {
   width: 100%;
   display: flex;
 }
-@media (max-width: 400px) {
+@media (max-width: 1100px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
   header {
     flex-direction: column-reverse;
   }
@@ -182,25 +189,20 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
   header nav ul {
-    flex-direction: row;
     justify-content: space-between;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   header nav ul {
+    justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
   }
 }
 @media (max-width: 768px) {
   header nav ul li {
     margin-left: 5px;
-  }
-}
-@media (max-width: 400px) {
-  header nav ul li {
     margin-right: 5px;
   }
 }
@@ -216,7 +218,12 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
-@media (max-width: 400px) {
+@media (max-width: 1100px) {
+  header .logo {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
   header .logo {
     margin: 0;
   }
@@ -285,6 +292,9 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+.main-content .middle-img {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .main-content .middle-img {
     width: 100%;
@@ -315,7 +325,7 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 20px;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .main-content .text-content {
     margin-top: 10px;
     margin-left: 5px;

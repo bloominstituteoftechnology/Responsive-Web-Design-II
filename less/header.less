@@ -4,7 +4,13 @@ header {
     width: 100%;
     display: flex;
 
-    @media @phone {
+    @media @laptop {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    @media @tablet {
         flex-direction: column-reverse;
     }
 
@@ -16,22 +22,19 @@ header {
             justify-content: space-between;
             display: flex;
 
-            @media @tablet {
-                flex-direction: row;
+            @media @laptop {
                 justify-content: space-between;
             }
-            @media @phone {
-                width: 100%;
-                flex-wrap: wrap;
+
+            @media @tablet {
+                justify-content: space-between;
+                width: 100%
             }
 
             li {
 
                 @media @tablet {
                     margin-left: 5px;
-                }
-
-                @media @phone {
                     margin-right: 5px;
                 }
 
@@ -52,7 +55,11 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
 
-        @media @phone {
+        @media @laptop {
+            margin-left: 0px;
+        }
+
+        @media @tablet {
             margin: 0;
         }
     }
