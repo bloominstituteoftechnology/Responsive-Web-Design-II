@@ -159,18 +159,26 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
   margin: auto;
 }
 header {
-  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: solid 1px;
   display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+@media (min-width: 400px)  {
+  header {
+    background: green;
+  }
 }
 header nav ul {
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
-  display: flex;
+  display: inherit;
+  flex-direction: column;
+}
+header nav ul li {
+  margin: 10px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -181,8 +189,8 @@ header nav ul li a:hover {
   color: black;
 }
 header .logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
+  align-self: center;
+  margin: 28px 0 20px 0;
 }
 /* Call To Action (CTA) Styles */
 .cta {
