@@ -162,6 +162,18 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 50%;
+    margin: auto;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -190,6 +202,17 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
@@ -199,6 +222,16 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0 82px 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -212,6 +245,27 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 768px) {
+  .cta .cta-text button {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .cta img {
+    width: 60%;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
 }
 /* Main Content Styles */
 .main-content {
@@ -229,6 +283,16 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 95%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    width: 50%;
+  }
 }
 .main-content .bottom-content {
   display: flex;
