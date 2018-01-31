@@ -239,14 +239,6 @@ header .logo {
     margin-right: auto;
   }
 }
-@media (max-width: 768px) {
-  .cta .cta-text {
-    -webkit-transform: translate(50%, 0);
-    -moz-transform: translate(50%, 0);
-    -ms-transform: translate(50%, 0);
-    -o-transform: translate(50%, 0);
-  }
-}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -260,17 +252,6 @@ header .logo {
   background: black;
   color: white;
 }
-@media (max-width: 768px) {
-  .cta img {
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    -webkit-opacity: 0.3;
-    -moz-opacity: 0.3;
-    opacity: 0.3;
-  }
-}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
@@ -279,6 +260,11 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: 36px;
+  }
 }
 .main-content .top-content {
   display: flex;
