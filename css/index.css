@@ -162,6 +162,15 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 1100px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 90%;
+    justify-content: center;
+  }
+}
 header {
   width: 100%;
   display: flex;
