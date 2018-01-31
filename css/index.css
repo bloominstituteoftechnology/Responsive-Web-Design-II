@@ -281,6 +281,7 @@ header .logo {
 }
 .cta img {
   margin: 25px 0 0 0;
+  padding: 0 35px 0 35px;
   object-fit: contain;
 }
 @media (min-width: 1100px)  {
