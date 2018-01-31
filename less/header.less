@@ -11,6 +11,18 @@ header {
             justify-content: space-between;
             display: flex;
 
+            @media @laptop {
+
+            }
+        
+            @media @tablet {
+                width: 66%;
+            }
+        
+            @media @phone {
+                width: 100%;
+            }
+
             li {
 
                 a {
@@ -29,5 +41,17 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @laptop {
+
+        }
+    
+        @media @tablet {
+            width: 33%;
+        }
+    
+        @media @phone {
+            display: none;
+        }
     }
 }// header
