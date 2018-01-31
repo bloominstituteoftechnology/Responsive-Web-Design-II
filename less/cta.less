@@ -14,6 +14,12 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @tablet {
+            margin: 0px;
+            img {
+                max-width: ;
+            }
+		}
     }
 
     .cta-text button {
@@ -29,5 +35,10 @@
             background: black;
             color: white;
         }
+    }
+    @media @tablet {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 36px 0;
     }
 }// cta

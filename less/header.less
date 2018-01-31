@@ -11,6 +11,16 @@ header {
             justify-content: space-between;
             display: flex;
 
+            @media @tablet {
+                width: 460px;
+                justify-content: space-evenly;
+            }
+    
+            @media @phone {
+                width: 100px;
+                display: block;
+            }
+
             li {
 
                 a {
@@ -22,12 +32,22 @@ header {
                         color: black;
                     }
                 }
-            }
-        }
-    }
+                @media @phone {
+                    margin-bottom: 16px;
+                }
+            } // li
+        } // ul
+    } // nav
 
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @phone {
+            display: block;
+            height: 48px;
+            width: auto;
+            margin-top: 30px;
+        }
     }
 }// header

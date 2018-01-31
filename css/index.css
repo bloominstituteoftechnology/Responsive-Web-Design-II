@@ -162,6 +162,12 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0px;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -172,6 +178,18 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav ul {
+    width: 460px;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    width: 100px;
+    display: block;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
@@ -180,9 +198,22 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav ul li {
+    margin-bottom: 16px;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 400px) {
+  header .logo {
+    display: block;
+    height: 48px;
+    width: auto;
+    margin-top: 30px;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -200,6 +231,14 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0px;
+  }
+  .cta .cta-text img {
+    max-width: ;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
@@ -213,6 +252,13 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 768px) {
+  .cta {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 36px 0;
+  }
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
@@ -222,17 +268,45 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    margin: 0px;
+    padding: 0px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .top-content {
+    margin: 15px;
+  }
+  .main-content .top-content p {
+    padding-right: 15px;
+  }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    margin: 15px;
+  }
+  .main-content .bottom-content p {
+    padding-right: 15px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
@@ -240,6 +314,11 @@ header .logo {
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 15px;
+  }
 }
 /* Footer Styles */
 footer {

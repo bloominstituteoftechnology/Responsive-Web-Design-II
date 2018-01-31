@@ -7,21 +7,41 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @tablet {
+    margin: 0px;
+    padding: 0px;
+}
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+        margin:15px;
+        p {
+            padding-right:15px
+        }
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    @media @tablet {
+        width: 100%;
+        margin: 15px 0;
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+        margin:15px;
+        p {
+            padding-right:15px;
+        }
+    }
 }
 
 .main-content .bottom-content p {
