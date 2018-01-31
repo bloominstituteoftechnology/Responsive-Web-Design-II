@@ -1,4 +1,4 @@
-# responsive-web-design
+# Responsive-Web-Design
 
 For this challenge, no new code has been introduced but many new concepts are needed to accomplish the task.
 
