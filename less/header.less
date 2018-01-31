@@ -5,11 +5,21 @@ header {
     display: flex;
 
     nav {
+
+        @media @laptop {
+            width: 100%;
+        }
+        
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+
+            @media @laptop {
+                justify-content: space-around;
+                width: 550px;
+            }
 
             li {
 
@@ -24,10 +34,14 @@ header {
                 }
             }
         }
-    }
+    } // nav
 
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @laptop {
+            margin-left: 20px;
+        }
     }
-}// header
+} // header
