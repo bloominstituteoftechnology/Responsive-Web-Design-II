@@ -1,7 +1,7 @@
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -12,16 +12,26 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+      margin: 10px;
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+
+    @media @tablet {
+      width: 100%;
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+      margin: 10px;
+    }
 }
 
 .main-content .bottom-content p {
