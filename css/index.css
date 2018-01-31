@@ -264,6 +264,9 @@ header .logo {
   align-items: center;
 }
 /* Contact Styles */
+.contact {
+  text-align: center;
+}
 .contact p {
   margin: 40px 0;
 }
