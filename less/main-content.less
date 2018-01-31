@@ -7,6 +7,11 @@
   padding: 15px 0 40px 0;
   font-size: 16px;
   line-height: 18px;
+
+  @media @laptop {
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+  }
 }
 
 .main-content .top-content {
@@ -14,7 +19,18 @@
   flex-direction: column;
 
   @media @phone {
-    background: green;
+    // background: green
+
+    box-sizing: none;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media @laptop {
+    flex-direction: none;
+
+    justify-content: space-around;
   }
 }
 
@@ -23,17 +39,47 @@
 
   margin: 25px 0 0 0;
   padding: 0 10px 0 10px;
+
+  @media @laptop {
+    width: initial;
+    margin: 0;
+    padding: 0;
+
+    display: block;
+    margin: 30px auto;
+  }
 }
 
 .main-content .bottom-content {
   display: flex;
   flex-direction: column;
+
+  @media @laptop {
+    flex-direction: initial;
+
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.main-content .bottom-content p {
+  @media @laptop {
+    padding-right: 20px;
+  }
 }
 
 .text-content {
   margin: 25px 15px 0 15px;
 
   display: inherit;
-  flex-direction: inherit;
+  flex-direction: column;
   align-items: center;
+
+  @media @laptop {
+    margin: 0;
+
+    display: initial;
+    flex-direction: initial;
+    align-items: initial;
+  }
 }
