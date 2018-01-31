@@ -4,7 +4,35 @@ header {
     width: 100%;
     display: flex;
 
+    @media @laptop {
+
+    }
+
+    @media @tablet {
+        flex-direction: column;
+
+    }
+
+    @media @phone {
+      flex-direction: column;
+        
+    }
+
     nav {
+        @media @laptop {
+
+        }
+    
+        @media @tablet {
+            align-self: center;
+    
+        }
+    
+        @media @phone {
+            align-self: center;
+            
+        }
+
         ul {
             margin-top: 40px; 
             width: 610px;
@@ -16,11 +44,14 @@ header {
             }
         
             @media @tablet {
-                width: 66%;
+                width: 400px;
+                align-self: center;
+                
             }
         
             @media @phone {
-                width: 100%;
+                width: 320px;
+                align-self: center;
             }
 
             li {
@@ -47,11 +78,13 @@ header {
         }
     
         @media @tablet {
-            width: 33%;
+            width: 30%;
+            align-self: center;
         }
     
         @media @phone {
-            display: none;
+           width: 50%;
+           align-self: center;
         }
     }
 }// header

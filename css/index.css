@@ -176,6 +176,26 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    align-self: center;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 610px;
@@ -184,12 +204,14 @@ header nav ul {
 }
 @media (max-width: 768px) {
   header nav ul {
-    width: 66%;
+    width: 400px;
+    align-self: center;
   }
 }
 @media (max-width: 400px) {
   header nav ul {
-    width: 100%;
+    width: 320px;
+    align-self: center;
   }
 }
 header nav ul li a {
@@ -206,12 +228,14 @@ header .logo {
 }
 @media (max-width: 768px) {
   header .logo {
-    width: 33%;
+    width: 30%;
+    align-self: center;
   }
 }
 @media (max-width: 400px) {
   header .logo {
-    display: none;
+    width: 50%;
+    align-self: center;
   }
 }
 /* Call To Action (CTA) Styles */
