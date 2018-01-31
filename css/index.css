@@ -339,6 +339,11 @@ header .logo {
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
@@ -351,6 +356,7 @@ header .logo {
 @media (max-width: 400px) {
   .main-content .middle-img {
     width: 100%;
+    flex-direction: column;
   }
 }
 .main-content .bottom-content {
@@ -361,6 +367,11 @@ header .logo {
   .main-content .bottom-content {
     width: 100%;
     display: flex;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-direction: column;
   }
 }
 .main-content .bottom-content p {

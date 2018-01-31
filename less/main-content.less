@@ -12,6 +12,10 @@
 .main-content .top-content {
    display: flex;
    justify-content: flex-start;
+
+   @media @phone {
+     flex-direction: column;
+   }
 }
 
 .main-content .middle-img {
@@ -23,6 +27,7 @@
   }
   @media @phone {
       width: 100%;
+      flex-direction: column;
   }
 }
 
@@ -33,6 +38,9 @@
    @media @tablet {
     width: 100%;
     display: flex;
+  }
+  @media @phone {
+  flex-direction: column;
   }
 }
 
