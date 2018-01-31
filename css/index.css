@@ -193,6 +193,7 @@ header nav ul {
   header nav ul {
     justify-content: space-between;
     margin-right: 5px;
+    margin-left: 5px;
   }
 }
 @media (max-width: 768px) {
@@ -223,6 +224,7 @@ header .logo {
 @media (max-width: 1100px) {
   header .logo {
     margin-left: 0px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 768px) {
