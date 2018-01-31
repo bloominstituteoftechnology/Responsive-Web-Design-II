@@ -15,18 +15,29 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 800px;
+    display: flex;
+    flex-flow: column wrap;
     margin: auto;
     @media @laptop {
+        width: 80%;
         background: lemonchiffon;
     }
     @media @tablet {
+        width: 100%;
         margin: 0px;
         background: tan;
     }
     @media @phone {
         width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
         margin: 0px;
         background: palegreen;
     }

@@ -3,18 +3,25 @@
 header {
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
     @media @phone {
         flex-flow: column-reverse nowrap;
     }
 
     nav {
+        display: flex;
+        @media @laptop {
+            flex-flow: row nowrap;
+        }
+        @media @tablet {
+            flex-flow: column nowrap;
+        }
         @media @phone {
-            display: flex;
             flex-flow: column nowrap;
         }
         ul {
             margin-top: 40px; 
-            width: 610px;
+            width: 100%;
             justify-content: space-between;
             display: flex;
             flex-flow: row nowrap;
@@ -25,7 +32,10 @@ header {
             }
 
             li {
-
+                // margin: 0 0 0 20%;
+                @media @phone {
+                    margin: 0;
+                }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -41,7 +51,7 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 0 0 0 5%;
         @media @phone {
             align-self: center;
             margin: 0px;

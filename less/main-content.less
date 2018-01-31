@@ -1,16 +1,22 @@
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    display: flex;
+    flex-flow: column nowrap;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 16px;
+    line-height: 18px;
+    @media @phone {
+        line-height: 24px;
+    }
 }
 
 .main-content .top-content {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: space-around;
 }
 
@@ -21,9 +27,16 @@
 
 .main-content .bottom-content {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: space-around;
 }
 
 .main-content .bottom-content p {
     padding-right: 20px;
+}
+
+.text-content {
+    @media @phone {
+        width: 100%;
+    }
 }
