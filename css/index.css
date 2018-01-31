@@ -192,13 +192,14 @@ header nav ul {
 @media (max-width: 1100px) {
   header nav ul {
     justify-content: space-between;
-    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 768px) {
   header nav ul {
     justify-content: space-between;
     width: 100%;
+    margin-right: 5px;
   }
 }
 @media (max-width: 768px) {
@@ -366,6 +367,11 @@ header .logo {
   }
 }
 /* Contact Styles */
+@media (max-width: 768px) {
+  .contact {
+    margin-left: 5px;
+  }
+}
 .contact p {
   margin: 40px 0;
 }
