@@ -126,6 +126,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
 * {
   box-sizing: border-box;
 }
