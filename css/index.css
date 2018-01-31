@@ -162,6 +162,11 @@ h5 {
   width: 880px;
   margin: auto;
 }
+.img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
 header {
   width: 100%;
   display: flex;
@@ -245,4 +250,19 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+}
+@media (min-width:400px) {
+  .container {
+    background-color: aqua;
+  }
+}
+@media (min-width:768px) {
+  .container {
+    background-color: blueviolet;
+  }
+}
+@media (min-width:1100px) {
+  .container {
+    background-color: red;
+  }
 }

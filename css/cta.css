@@ -3,6 +3,7 @@
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  height: auto;
 }
 .cta .cta-text {
   font-size: 72px;
@@ -12,15 +13,17 @@
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 10px 82px 0 0;
+  height: auto;
 }
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
   width: 170px;
-  height: 32px;
+  height: auto;
   margin-top: 10px;
+  margin-left: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
