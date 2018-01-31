@@ -5,6 +5,21 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @laptop {
+
+    }
+
+    @media @tablet {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media @phone {
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,6 +29,19 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+
+        @media @laptop {
+
+        }
+    
+        @media @tablet {
+            width: 49%;
+            margin: 10px 0 0 10px;
+        }
+    
+        @media @phone {
+            width: 100%;
+        }
     }
 
     .cta-text button {
@@ -28,6 +56,21 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    .cta-img {
+        @media @laptop {
+
+        }
+    
+        @media @tablet {
+            width: 50%;
+            margin: 10px 0 0 10px;
+        }
+    
+        @media @phone {
+            display: none;
         }
     }
 }// cta
