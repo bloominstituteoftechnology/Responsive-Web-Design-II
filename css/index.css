@@ -167,10 +167,10 @@ header {
   display: flex;
 }
 header nav ul {
-  margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+  margin-top: 40px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -182,7 +182,28 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+}
+@media (max-width: 1100px) {
+  nav {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    width: 75%;
+  }
+}
+@media (max-width: 400px) {
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .logo {
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
