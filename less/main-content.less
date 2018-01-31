@@ -7,30 +7,53 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @tablet {
+        margin: 75px 20px 35px 20px;
+    }
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    // @media @tablet {
+
+    // }
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        .text-content {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
     @media @tablet {
-        width: 95%;
+        width: 100%;
     }
 
     @media @phone {
-        width: 50%;
+        display: none;
     }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        .text-content {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .main-content .bottom-content p {
     padding-right: 20px;
+    @media @phone {
+        padding: 0;
+    }
 }
