@@ -394,6 +394,11 @@ header .logo {
 .contact {
   text-align: center;
 }
+@media (min-width: 1100px)  {
+  .contact {
+    text-align: initial;
+  }
+}
 .contact p {
   margin: 40px 0;
 }
