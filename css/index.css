@@ -254,6 +254,9 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+.main-content .top-content .text-content p {
+  margin-right: 5px;
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
