@@ -16,6 +16,18 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 800px;
     margin: auto;
+    @media @laptop {
+        background: lemonchiffon;
+    }
+    @media @tablet {
+        margin: 0px;
+        background: tan;
+    }
+    @media @phone {
+        width: 100%;
+        margin: 0px;
+        background: palegreen;
+    }
 }

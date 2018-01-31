@@ -3,13 +3,26 @@
 header {
     width: 100%;
     display: flex;
+    @media @phone {
+        flex-flow: column-reverse nowrap;
+    }
 
     nav {
+        @media @phone {
+            display: flex;
+            flex-flow: column nowrap;
+        }
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+            flex-flow: row nowrap;
+            @media @phone {
+                margin-top: 0px;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
 
             li {
 
@@ -29,5 +42,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @phone {
+            align-self: center;
+            margin: 0px;
+        }
     }
 }// header

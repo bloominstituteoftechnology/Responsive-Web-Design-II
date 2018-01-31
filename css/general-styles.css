@@ -16,6 +16,7 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 800px;
   margin: auto;
+  background: orange;
 }

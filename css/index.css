@@ -159,18 +159,55 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 800px;
   margin: auto;
+}
+@media (max-width: 1100px) {
+  .container {
+    background: lemonchiffon;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0px;
+    background: tan;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    margin: 0px;
+    background: palegreen;
+  }
 }
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 400px) {
+  header {
+    flex-flow: column-reverse nowrap;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }
 header nav ul {
   margin-top: 40px;
   width: 610px;
   justify-content: space-between;
   display: flex;
+  flex-flow: row nowrap;
+}
+@media (max-width: 400px) {
+  header nav ul {
+    margin-top: 0px;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -184,11 +221,24 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 400px) {
+  header .logo {
+    align-self: center;
+    margin: 0px;
+  }
+}
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 400px) {
+  .cta {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;

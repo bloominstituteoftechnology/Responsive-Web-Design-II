@@ -4,7 +4,11 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-
+    @media @phone {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
     .cta-text {
         font-size: 72px;
         text-align: center;
