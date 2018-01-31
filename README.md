@@ -1,6 +1,17 @@
 # responsive-web-design
 
-For this challenge, you are free to choose the CSS-only project or you can jump into the LESS project.
+For this challenge, no new code has been introduced but many new concepts are needed to accomplish the task.
+
+*Concepts required to complete the task:*
+
+How to use media queries
+
+Min and max width
+
+Layout changes based on device width
+
+Percent vs fixed layouts
+
 
 ## Task: 
 
