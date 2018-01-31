@@ -10,19 +10,59 @@ header {
   align-items: center;
 
   @media @phone {
-    background: green;
+    background: blue;
+  }
+
+  @media @tablet {
+    background: red;
+  }
+
+  @media @laptop {
+    padding-bottom: 0;
+    border-bottom: none;
+    flex-direction: initial;
+    align-items: initial;
+
+    background: white;
+
+    width: 100%;
+    display: flex;
   }
 
   nav {
     ul {
-      // margin-top: 40px;
-      // width: 610px;
-
       display: inherit;
       flex-direction: column;
 
+      @media @phone {
+        box-sizing: none;
+
+        margin: 0 35px 0 35px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+
+      @media @laptop {
+        flex-direction: initial;
+        box-sizing: border-box;
+        margin: 0 0 0 0;
+        flex-flow: initial;
+        justify-content: initial;
+
+        margin-top: 40px;
+        width: 610px;
+        justify-content: space-between;
+        display: flex;
+      }
+
       li {
         margin: 10px;
+
+        @media @laptop {
+          margin: 0;
+        }
 
         a {
           text-decoration: none;
@@ -40,5 +80,10 @@ header {
   .logo {
     align-self: center;
     margin: 28px 0 20px 0;
+
+    @media @laptop {
+      align-self: flex-end;
+      margin: 28px 0 0 91px;
+    }
   }
 } // header

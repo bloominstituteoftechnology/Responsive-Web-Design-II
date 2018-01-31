@@ -159,6 +159,12 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+@media (min-width: 1100px)  {
+  .container {
+    width: 880px;
+    margin: auto;
+  }
+}
 header {
   padding-bottom: 10px;
   border-bottom: solid 1px;
@@ -168,15 +174,58 @@ header {
 }
 @media (min-width: 400px)  {
   header {
-    background: green;
+    background: blue;
+  }
+}
+@media (min-width: 768px)  {
+  header {
+    background: red;
+  }
+}
+@media (min-width: 1100px)  {
+  header {
+    padding-bottom: 0;
+    border-bottom: none;
+    flex-direction: initial;
+    align-items: initial;
+    background: white;
+    width: 100%;
+    display: flex;
   }
 }
 header nav ul {
   display: inherit;
   flex-direction: column;
 }
+@media (min-width: 400px)  {
+  header nav ul {
+    box-sizing: none;
+    margin: 0 35px 0 35px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 1100px)  {
+  header nav ul {
+    flex-direction: initial;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    flex-flow: initial;
+    justify-content: initial;
+    margin-top: 40px;
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+  }
+}
 header nav ul li {
   margin: 10px;
+}
+@media (min-width: 1100px)  {
+  header nav ul li {
+    margin: 0;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -190,6 +239,12 @@ header .logo {
   align-self: center;
   margin: 28px 0 20px 0;
 }
+@media (min-width: 1100px)  {
+  header .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 91px;
+  }
+}
 /* Call To Action (CTA) Styles */
 .cta {
   margin: 40px 15px 0 15px;
@@ -199,7 +254,7 @@ header .logo {
 }
 @media (min-width: 400px)  {
   .cta {
-    background: green;
+    background: blue;
   }
 }
 .cta .cta-text {
@@ -210,9 +265,6 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-}
-.cta .cta-text h1 {
-  overflow-wrap: break-word;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -228,6 +280,7 @@ header .logo {
   color: white;
 }
 .cta img {
+  margin: 25px 0 0 0;
   object-fit: contain;
 }
 /* Main Content Styles */
