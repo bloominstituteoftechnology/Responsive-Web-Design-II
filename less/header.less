@@ -5,11 +5,11 @@ header {
   display: flex;
 
   @media @tablet {
-      flex-wrap: wrap-reverse;
+      //
   }
   @media @phone {
-      flex-wrap: wrap-reverse;
-      justify-content: center;
+      flex-direction: column-reverse;
+      border: 1px solid white;
   }
 
   img {
@@ -22,6 +22,10 @@ header {
   }
 
   nav {
+      @media @phone {
+          box-sizing: border-box;
+          width: 100%;
+      }
       ul {
           margin-top: 40px; 
           width: 610px;
@@ -34,6 +38,7 @@ header {
               width: 100%;
           }
           @media @phone {
+              box-sizing: border-box;
               flex-wrap: wrap;
               flex-direction: column;
               width: 100%;
@@ -41,6 +46,7 @@ header {
 
           li {
               @media @phone {
+                  box-sizing: border-box;
                   border: 1px solid white;
                   width: 100%;
                   text-align: center;
@@ -70,7 +76,13 @@ header {
   }
 
   .logo {
-      align-self: flex-endcenter;
+      align-self: flex-end;
       margin: 28px 0 0 91px;
+      @media @phone {
+          align-self: center;
+          margin-right: 60px;
+          align-items: center;
+          justify-content: center;
+      }
   }
-}// header
+} 
