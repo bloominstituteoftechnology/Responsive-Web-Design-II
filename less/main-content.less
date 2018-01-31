@@ -12,6 +12,22 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
+      @media @phone {
+      display:block;
+      justify-content: stretch;
+      margin: auto;
+      padding:10px;
+      .text-content {
+      margin: 10px,0,10px,10px;
+      width:45%;
+        h4 {
+        text-align:center;
+        margin:15px;
+        }
+      }
+    }
+    
 }
 
 .main-content .middle-img {
@@ -22,6 +38,21 @@
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @phone {
+      display:block;
+      justify-content: stretch;
+      margin: auto;
+      padding:10px;
+      .text-content {
+      margin: 10px,0,10px,10px;
+      width:45%;
+        h4 {
+        text-align:center;
+        margin:15px;
+        }
+      }
+    }
+    
 }
 
 .main-content .bottom-content p {
