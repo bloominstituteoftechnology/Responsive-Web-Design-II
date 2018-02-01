@@ -7,6 +7,11 @@
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+
+  @media @phone {
+      margin: 30px 0 35px 0;
+      padding: padding: 35px 0 15px 0;
+    }
 }
 
 .main-content .top-content {
@@ -15,6 +20,12 @@
 
    @media @phone {
      flex-direction: column;
+   }
+   p {
+       @media @phone {
+           margin-bottom: 20px;
+           text-align: justify;
+       }
    }
 }
 
@@ -27,6 +38,7 @@
   }
   @media @phone {
       width: 100%;
+      margin: auto auto 20px auto;
       flex-direction: column;
   }
 }
@@ -34,16 +46,27 @@
 .main-content .bottom-content {
    display: flex;
    justify-content: space-around;
-
+  
    @media @tablet {
-    width: 100%;
-    display: flex;
-  }
-  @media @phone {
-  flex-direction: column;
-  }
+     width: 100%;
+   }
+
+   @media @phone {
+      flex-direction: column;
+    }
 }
 
 .main-content .bottom-content p {
    padding-right: 20px;
+
+   @media @tablet {
+     width: 100%;
+   }
+   
+   @media @phone {
+      margin-bottom: 20px;
+      text-align: justify;
+    
+    }
+  
 }
