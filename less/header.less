@@ -1,7 +1,6 @@
 // Header Styles
 
 header {
-    background: purple;
     width: 100%;
     display: flex;
 
@@ -21,7 +20,6 @@ header {
 
     nav {
         display: flex;
-        background: green;
         width: 69%;
         @media @laptop {
             padding-left: 10px;
@@ -46,10 +44,6 @@ header {
             max-width: 610px;
             justify-content: space-between;
             display: flex;
-            background: blue;
-
-            @media @laptop {
-            }
         
             @media @tablet {
                 align-self: center;
@@ -58,7 +52,6 @@ header {
         
             @media @phone {
                 flex-direction: column;
-                justify-content: center;
                 text-align: center;
             }
 
@@ -92,13 +85,13 @@ header {
         @media @tablet {
             width: 33%;
             align-self: center;
-            margin: 0;
+            margin: 15px 0 0 0;
         }
     
         @media @phone {
-           width: 100%;
+           width: 50%;
            align-self: center;
-           margin: 0;
+           margin: 15px 0 0 0;
         }
     }
 }// header
