@@ -162,33 +162,24 @@ h5 {
 .container {
   width: 100%;
   max-width: 880px;
+  background: yellow;
   margin: auto;
 }
 @media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .container {
-    width: 50%;
-  }
 }
 header {
-  width: 100%;
   display: flex;
+  height: 50px;
+}
+header nav {
+  width: 60%;
+  align-self: flex-end;
 }
 header nav ul {
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
   display: flex;
-}
-@media (max-width: 768px) {
-  header nav ul li {
-    margin-left: 20px;
-    width: 70%;
-  }
+  font-size: 1.8rem;
+  width: 100%;
+  justify-content: space-around;
 }
 header nav ul li a {
   text-decoration: none;
@@ -200,57 +191,44 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 9px 0 0 91px;
-}
-@media (max-width: 768px) {
-  header .logo {
-    justify-content: flex-start;
-    margin: 9px 0 0 10px;
-  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: center;
+  background: lightblue;
 }
 @media (max-width: 768px) {
   .cta {
-    flex-flow: column;
-    justify-content: space-around;
+    flex-flow: row;
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  width: 33.5%;
+  font-size: 5.5rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 11% 0 0;
+  background: lightpink;
 }
 @media (max-width: 768px) {
-  .cta .cta-text {
-    flex-direction: left;
-    width: 100%;
-    margin-left: 55px;
-  }
 }
-@media (max-width: 768px) {
-  .cta .top-img {
-    width: 70%;
-    height: 70%;
-    margin: 20px 0px 20px 170px;
-  }
+.cta .top-img {
+  background: lightgreen;
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.2rem;
   background: white;
-  width: 170px;
+  width: 39.3%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  background: lightseagreen;
 }
 .cta .cta-text button:hover {
   background: black;
@@ -258,8 +236,12 @@ header .logo {
 }
 /* Main Content Styles */
 .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  background: green;
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 1.6rem;
@@ -268,7 +250,7 @@ header .logo {
 @media (max-width: 768px) {
   .main-content {
     width: 100%;
-    margin: 0px 25px 0px 25px;
+    margin: 0px 0px 0px 0px;
   }
 }
 @media (max-width: 400px) {
@@ -278,6 +260,8 @@ header .logo {
 }
 .main-content .top-content {
   display: flex;
+  background: lightblue;
+  width: 98%;
 }
 @media (max-width: 768px) {
   .main-content .top-content {
@@ -291,8 +275,9 @@ header .logo {
   }
 }
 .main-content .middle-img {
-  display: block;
-  margin: 30px auto;
+  width: 98%;
+  background: peachpuff;
+  margin: 20px auto;
 }
 @media (max-width: 768px) {
   .main-content .middle-img {
@@ -309,6 +294,8 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  background: lightsalmon;
+  width: 98%;
 }
 @media (max-width: 768px) {
 }

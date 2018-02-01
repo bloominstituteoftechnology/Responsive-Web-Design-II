@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
     font-size: 62.5%; // 16px into a base of 10;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -19,14 +20,14 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 100%;
     max-width: 880px;
-    margin: auto;
+    background: yellow;
+    margin: auto; // Fits <container> in center of <body>
 
-    @media @tablet {
-        width: 100%;
+    @media @tablet { // Ipad dimensions are not exactly proportional to desktop, so there is a bit of extra on the sides...how to fix this?
        
     }
 
     @media @phone {
-        width: 50%;
+        
     }
 }

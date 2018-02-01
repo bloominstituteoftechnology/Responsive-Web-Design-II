@@ -1,22 +1,23 @@
 // Header Styles
 
 header {
-    width: 100%;
     display: flex;
-
+    height: 50px;
     nav {
+        width: 60%;
+        align-self: flex-end; // This works, but seems like the wrong way to apply self - pulling 
+        
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
             display: flex;
+            font-size: 1.8rem; 
+            width: 100%;
+            justify-content: space-around;
+            
+            @media @tablet {
+            }
 
             li {
-                @media @tablet {
-                    margin-left: 20px;
-                    width: 70%; // Provides space for GREAT IDEA logo margin on right
-                }
-
+                
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -31,11 +32,10 @@ header {
     }
 
     .logo {
-        align-self: flex-end; // This is on the cross-axis - don't mess
-        margin: 9px 0 0 91px;
-        @media @tablet {
-            justify-content: flex-start;
-            margin: 9px 0 0 10px;
-        }
+        align-self: flex-end; // This is on the cross-axis - Bottom
+        
+        
+       
+       
     }
 }// header
