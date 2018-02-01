@@ -305,27 +305,88 @@ header .logo {
 @media (max-width: 768px) {
   .main-content {
     margin-top: 36px;
+    padding-bottom: 0;
+    padding-top: 15px;
   }
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1100px) {
+  .main-content .top-content h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .top-content h4 {
+    font-size: 30px;
+  }
+  .main-content .top-content p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
   width: 90%;
 }
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    margin: 0;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 1100px) {
+  .main-content .bottom-content h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+  .main-content .bottom-content h4 {
+    font-size: 30px;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content p {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content p {
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 1100px) {
   .text-content {
     padding-right: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .text-content {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .text-content__edge-case {
+    padding-bottom: 10px;
   }
 }
 /* Contact Styles */
@@ -333,9 +394,19 @@ header .logo {
   margin: 40px 0;
 }
 @media (max-width: 1100px) {
+  .contact p {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1100px) {
   .contact {
     margin-right: auto;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
   }
 }
 /* Footer Styles */

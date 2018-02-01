@@ -4,9 +4,17 @@
 
     p {
         margin: 40px 0;
+        @media @laptop {
+            margin: 10px 0;
+        }
     }
    @media @laptop {
        margin-right:auto;
        width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: baseline;
+       align-content: center;
    }
 }

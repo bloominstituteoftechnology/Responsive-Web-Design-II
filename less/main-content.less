@@ -9,31 +9,82 @@
    line-height: 18px;
    @media @tablet {
        margin-top: 36px;
+       padding-bottom: 0;
+       padding-top: 15px;
    }
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-between;
+    @media @laptop {
+        h4 {
+            font-size: 20px;
+        }
+    }
+    @media @tablet {
+        h4 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+    @media @phone {
+        flex-direction: column;
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
     width: 90%;
+    @media @phone {
+        margin: 0;
+        padding-bottom: 30px;
+        width: 100%;
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @laptop {
+        h4 {
+            font-size: 20px;
+        }
+    }
+    @media @tablet {
+        flex-direction: column;
+        h4 {
+            font-size: 30px;
+        }
+    }
 }
 
 .main-content .bottom-content p {
     padding-right: 20px;
+    @media @tablet {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    @media @phone {
+        padding-bottom: 0;
+    }
 }
 
 .text-content {
     @media @laptop {
         padding-right: 10px;
+    }
+    @media @phone {
+        padding-bottom: 30px;
+    }
+}
+
+.text-content__edge-case {
+    @media @phone {
+        padding-bottom: 10px;
     }
 }
