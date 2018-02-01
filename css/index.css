@@ -176,6 +176,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap-reverse;
 }
 @media (max-width: 1100px) {
   header nav {
@@ -192,12 +193,12 @@ header nav ul {
 }
 @media (max-width: 1100px) {
   header nav ul {
-    width: 550px;
+    width: 90%;
   }
 }
 @media (max-width: 768px) {
   header nav ul {
-    width: 450px;
+    width: 80%;
   }
 }
 @media (max-width: 400px) {
@@ -209,6 +210,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+  padding: 0 2px;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -216,7 +218,7 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 300px;
+  margin: 28px 0 0 350px;
 }
 @media (max-width: 1100px) {
   header .logo {
@@ -225,8 +227,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   header .logo {
-    margin: 5px 0 0 30px;
-    padding-right: 30px;
+    margin: 5px 15px 0 10px;
   }
 }
 @media (max-width: 400px) {

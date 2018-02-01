@@ -4,6 +4,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap-reverse;
 
     nav {
         @media @laptop {
@@ -19,11 +20,11 @@ header {
             display: flex;
 
             @media @laptop {
-                width: 550px;
+                width: 90%;
             }
 
             @media @tablet {
-                width: 450px;
+                width: 80%;
             }
 
             @media @phone {
@@ -35,6 +36,7 @@ header {
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    padding: 0 2px;
 
                     &:hover {
                         text-decoration: underline;
@@ -47,15 +49,15 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 300px;
+        margin: 28px 0 0 350px;
 
         @media @laptop {
             margin: 0 40px;
         }
 
         @media @tablet {
-            margin: 5px 0 0 30px;
-            padding-right: 30px;
+            margin: 5px 15px 0 10px;
+            // padding-right: 30px;
         }
 
         @media @phone {
