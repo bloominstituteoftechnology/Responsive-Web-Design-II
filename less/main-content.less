@@ -12,16 +12,30 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+      flex-wrap: wrap;
+      p {
+        margin: 10px;
+      }
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 100%;
+    height: auto;
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+      flex-wrap: wrap;
+      p {
+        margin: 10px;
+      }
+    }
 }
 
 .main-content .bottom-content p {

@@ -250,13 +250,31 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+  }
+  .main-content .top-content p {
+    margin: 10px;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
+  height: auto;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+  }
+  .main-content .bottom-content p {
+    margin: 10px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
