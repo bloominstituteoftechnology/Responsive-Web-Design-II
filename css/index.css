@@ -411,17 +411,19 @@ header .logo {
   }
 }
 /* Contact Styles */
-.contact p {
-  margin: 40px 0;
-}
-@media (max-width: 768px) {
-  .contact {
-    width: 100%;
-  }
-}
 @media (max-width: 400px) {
   .contact {
     text-align: center;
+    font-size: 30px;
+  }
+}
+.contact p {
+  margin: 40px 0;
+}
+@media (max-width: 400px) {
+  .contact p {
+    font-size: 20px;
+    margin: 10px;
   }
 }
 /* Footer Styles */
