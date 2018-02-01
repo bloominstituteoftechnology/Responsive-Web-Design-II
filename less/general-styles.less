@@ -1,7 +1,7 @@
-// General Styles
+/* General Styles */
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -16,6 +16,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+	width: 100%;
+	max-width: 880px;
+	margin: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: ' ';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
 }

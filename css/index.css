@@ -141,6 +141,7 @@ table {
 	}
 
 */
+/* General Styles */
 * {
   box-sizing: border-box;
 }
@@ -159,18 +160,30 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
-header {
-  width: 100%;
-  display: flex;
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/* Header Styles */
+header .logo {
+  float: left;
+  margin: 28px 0 0 10px;
 }
 header nav ul {
+  float: right;
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
-  display: flex;
+}
+header nav ul li {
+  display: inline;
+  padding-right: 60px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -178,63 +191,68 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: #000;
 }
-header .logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
+header nav ul li:last-child {
+  padding-right: 0;
 }
-/* Call To Action (CTA) Styles */
+/* CTA Styles */
 .cta {
-  display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  display: block;
 }
 .cta .cta-text {
+  float: left;
   font-size: 72px;
-  text-align: center;
   letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
-  margin: 0 82px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  margin: 50px 82px 0 100px;
 }
 .cta .cta-text button {
-  border: 1px double black;
+  border: 1px double #000;
   font-size: 16px;
-  background: white;
+  background: #fff;
   width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
 }
 /* Main Content Styles */
 .main-content {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
 }
-.main-content .top-content {
-  display: flex;
-  justify-content: space-around;
+.main-content .top-content .text-content {
+  width: 50%;
+  margin-right: 0;
+  float: left;
+  padding: 50px 0;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
-.main-content .bottom-content {
-  display: flex;
-  justify-content: space-around;
+@media screen (max-width: 400px) {
+  .main-content .middle-img {
+    width: 100px;
+  }
 }
-.main-content .bottom-content p {
+.main-content .bottom-content .text-content {
+  width: 33.33%;
+  margin-right: 0;
+  float: left;
+  padding: 50px 0;
+}
+.main-content .bottom-content .text-content p {
   padding-right: 20px;
 }
 /* Contact Styles */
