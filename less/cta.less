@@ -17,12 +17,12 @@
         flex-flow: column;
         align-items: center;
         text-align: center;
-        font-size: 72px;
+        font-size: 7.2rem;
         letter-spacing: 5px;
-        margin: 0 82px 0 0;
+        margin: 0 10% 0 0;
         h1 {
-            @media @laptop {
-                font-size: 80%;
+            @media @phone {
+                font-size: 6rem;
             } 
         }
         button {
@@ -44,13 +44,19 @@
         } 
     }
     img {
-        @media @laptop {
-            width: 30%;
-            height: 30%;
-        }
+        // @media @laptop {
+        //     width: 30%;
+        //     height: 30%;
+        // }
         @media @tablet {
-            width: 70%;
-            height: 70%;
+            width: 60%;
+            height: 60%;
+            margin: 30px auto;
+            margin-bottom: 0;
+        }  
+        @media @phone {
+            width: 75%;
+            height: 75%;
             margin: 30px auto;
             margin-bottom: 0;
         }  
