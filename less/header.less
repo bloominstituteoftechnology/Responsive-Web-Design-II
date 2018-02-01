@@ -3,13 +3,13 @@
 header {
     width: 100%;
     display: flex;
-
+    justify-content: space-between;
     nav {
         ul {
-            width: 610px;
+            width: 60%;
             justify-content: space-between;
             display: flex;
-                margin-top: 40px; 
+                
                     li {
 
                         a {
@@ -27,31 +27,10 @@ header {
 
     .logo {
         align-self: flex-end;
-       // margin: 28px 0 0 91px;
+       margin: 28px 0 0 91px;
     }
 }// header
 
 
-nav {
-    @media @laptop {
-        width: 50%;
-    }
 
-    @media @tablet {
-        width: 75%;
-    }
-
-    @media @phone {
-        width: 100%;
-        flex-direction: column;
-    }
-}
-
-.logo {
-
-    @media @phone {
-        align-items: flex-start;
-        justify-content: center;
-    }
-}
 
