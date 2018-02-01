@@ -3,15 +3,44 @@
 header {
     width: 100%;
     display: flex;
+    padding-left: 20px;
 
     nav {
+
         ul {
             margin-top: 40px; 
-            width: 610px;
+            width: 600px;
             justify-content: space-between;
             display: flex;
+            background: black;
+            color: white;
+        
+            @media @tablet {
+                width: 480px;
+            }
+
+            @media @phone {
+                width: 180px;
+                flex-flow: wrap;
+                font-size: 20px;
+            }
 
             li {
+                border: 1px solid white;
+                padding: 5px;
+                text-align: center;
+
+                @media @laptop {
+                    width: 100px;
+                }
+
+                @media @tablet {
+                    width: 80px;
+                }
+
+                @media @phone {
+                    width: 90px;
+                }
 
                 a {
                     text-decoration: none;
@@ -29,5 +58,18 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @laptop {
+            margin: 28px 0px 0px 225px;
+        }
+
+        @media @tablet {
+            margin: 28px 0px 0px 70px;
+        }
+
+        @media @phone {
+            margin: 28px 10px 30px 0px;
+            .scale(.75);
+        }
     }
 }// header

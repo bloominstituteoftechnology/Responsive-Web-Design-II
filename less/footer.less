@@ -2,5 +2,17 @@
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 20px 0px;
+
+    @media @tablet {
+        padding: 10px 10px 20px 10px;
+        margin: 0px;
+    }
+
+    @media @phone {
+        padding: 10px 10px 5px 10px;
+        margin: 0px;
+        text-align: left;
+        font-size: 10px;
+    }
 }
