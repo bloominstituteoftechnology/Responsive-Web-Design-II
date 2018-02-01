@@ -1,33 +1,26 @@
-/* Call To Action (CTA) Styles */
-
+/* CTA Styles */
 .cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-
-    .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
-    }
-
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
-        }
-    }
-}// cta
+	margin-top: 72px;
+	display: block;
+	.cta-text {
+		float: left;
+		font-size: 72px;
+		letter-spacing: 5px;
+		text-align: center;
+		vertical-align: middle;
+		margin: 50px 82px 0 100px;
+	}
+	.cta-text button {
+		border: 1px double #000;
+		font-size: 16px;
+		background: #fff;
+		width: 170px;
+		height: 32px;
+		margin-top: 10px;
+		cursor: pointer;
+		&:hover {
+			background: #000;
+			color: #fff;
+		}
+	}
+}

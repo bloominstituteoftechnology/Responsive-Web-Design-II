@@ -1,24 +1,33 @@
 /* Main Content Styles */
 .main-content {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
 }
-.main-content .top-content {
-  display: flex;
-  justify-content: space-around;
+.main-content .top-content .text-content {
+  width: 50%;
+  margin-right: 0;
+  float: left;
+  padding: 50px 0;
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
-.main-content .bottom-content {
-  display: flex;
-  justify-content: space-around;
+@media screen (max-width: 400px) {
+  .main-content .middle-img {
+    width: 100px;
+  }
 }
-.main-content .bottom-content p {
+.main-content .bottom-content .text-content {
+  width: 33.33%;
+  margin-right: 0;
+  float: left;
+  padding: 50px 0;
+}
+.main-content .bottom-content .text-content p {
   padding-right: 20px;
 }

@@ -1,12 +1,15 @@
-header {
-  width: 100%;
-  display: flex;
+/* Header Styles */
+header .logo {
+  float: left;
+  margin: 28px 0 0 10px;
 }
 header nav ul {
+  float: right;
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
-  display: flex;
+}
+header nav ul li {
+  display: inline;
+  padding-right: 60px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -14,9 +17,8 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: #000;
 }
-header .logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
+header nav ul li:last-child {
+  padding-right: 0;
 }
