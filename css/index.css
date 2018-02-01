@@ -159,7 +159,8 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  max-width: 80%;
+  width: 100%;
   margin: auto;
 }
 header {
@@ -168,7 +169,7 @@ header {
   justify-content: space-between;
 }
 header nav ul {
-  width: 60%;
+  gitstawidth: 60%;
   display: flex;
 }
 header nav ul li {
