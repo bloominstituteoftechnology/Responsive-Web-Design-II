@@ -318,6 +318,9 @@ header .logo {
   }
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
   margin: 40px 0;
 }
@@ -329,5 +332,6 @@ header .logo {
 /* Footer Styles */
 footer {
   margin: 40px 0 20px;
+  font-size: 1.6em;
   text-align: center;
 }
