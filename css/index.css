@@ -205,6 +205,12 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav ul li {
+    width: calc(33.33333333%);
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   header nav ul {
     width: 100%;
