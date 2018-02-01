@@ -174,6 +174,9 @@ header {
     flex-direction: column;
   }
 }
+header nav {
+  width: 100%;
+}
 @media (max-width: 415px) {
   header nav {
     align-items: center;
@@ -181,13 +184,9 @@ header {
 }
 header nav ul {
   display: flex;
-}
-@media (max-width: 1100px) {
-  header nav ul {
-    margin-top: 40px;
-    justify-content: space-between;
-    width: 100%;
-  }
+  margin-top: 40px;
+  justify-content: space-around;
+  width: 100%;
 }
 @media (max-width: 415px) {
   header nav ul {
@@ -195,6 +194,12 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media (max-width: 415px) {
+  header nav ul li {
+    padding: 10px 0;
+    font-size: 1.2rem;
   }
 }
 header nav ul li a {
@@ -205,10 +210,8 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: turquoise;
 }
-@media (max-width: 1100px) {
-  header .logo {
-    align-self: flex-end;
-  }
+header .logo {
+  align-self: flex-end;
 }
 @media (max-width: 415px) {
   header .logo {
@@ -230,6 +233,7 @@ header nav ul li a:hover {
 @media (max-width: 415px) {
   .cta {
     flex-direction: column;
+    margin: 10px 0;
   }
 }
 .cta .cta-text {
@@ -240,7 +244,6 @@ header nav ul li a:hover {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
 }
 @media (max-width: 415px) {
   .cta .cta-text {

@@ -12,17 +12,17 @@ header {
     }
 
     nav {
+        width: 100%;
         @media @phone {
             align-items: center;
         }
         ul {
             display: flex;
-
-            @media @laptop {
-                margin-top: 40px;
-                justify-content: space-between;
-                width: 100%;
-            }
+            width: 100%;
+            margin-top: 40px;
+            justify-content: space-around;
+            width: 100%;
+            
             
             @media @phone {
                 margin-top: 1px;
@@ -32,7 +32,11 @@ header {
             }
 
             li {
-
+                
+                @media @phone {
+                    padding: 10px 0;
+                    font-size: 1.2rem;
+                }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -47,9 +51,9 @@ header {
     }
 
     .logo {
-        @media @laptop {
-            align-self: flex-end;
-        }
+        
+        align-self: flex-end;
+        
         @media @phone {
             align-self: center;
             order: -1;
