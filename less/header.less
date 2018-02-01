@@ -4,10 +4,16 @@ header {
     width: 100%;
     display: flex;
 
-    // added @media escaping
+    // added @tablet escaping from mixins.less
     @media @tablet {
         justify-content: space-around;
-        // border: 1px solid red;
+    }
+
+    // added @phone escaping from mixins.less
+    @media @phone {
+        flex-wrap: wrap;
+        font-size: 70%;
+        justify-content: flex-end;
     }
 
     nav {
@@ -17,9 +23,15 @@ header {
             justify-content: space-between;
             display: flex;
 
-            // added @media escaping
+            // added @tablet escaping from mixins.less
             @media @tablet {
                 width: 450px;
+            }
+
+            // added @phone escaping from mixins.less
+            @media @phone {
+                margin-top: 10px;
+                width: 390px;
             }
 
             li {
@@ -41,9 +53,14 @@ header {
         align-self: flex-end;
         margin: 28px 0 0 91px;
 
-        // added @media escaping
+        // added @tablet escaping from mixins.less
         @media @tablet {
-            margin: 0;
+            width: 120px;
+            margin: 10px 0 0;
         }
+
+        // added @phone escaping from mixins.less
+        // @media @phone {
+        // }
     }
 }// header

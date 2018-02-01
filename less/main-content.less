@@ -12,20 +12,38 @@
         display: flex;
         justify-content: space-around;
 
-        //added @media for tablet
+        // added @tablet escaping from mixins.less
         @media @tablet {
             margin: 0 10px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 0 10px;
+            flex-direction: column;
+        }
+
+        // added margin-bottom to .text-content, added @phone escaping from mixins.less
+        .text-content {
+            @media @phone {
+                margin-bottom: 15px;
+            }
         }
     }
 
     .middle-img {
         display: block;
         margin: 30px auto;
-
-        //added @media for tablet
+        
+        // added @tablet escaping from mixins.less
         @media @tablet {
             margin: 30px 5px;
             width: 758px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            display: none;
         }
     }
 
@@ -33,13 +51,36 @@
         display: flex;
         justify-content: space-around;
 
-        //added @media for tablet
+        p {
+            padding-right: 20px;
+        }
+
+        // added @tablet escaping from mixins.less
         @media @tablet {
             margin: 0 10px;
         }
 
-        p {
-            padding-right: 20px;
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 0 10px;
+            flex-direction: column;
+        }
+
+        // added margin-bottom to .text-content, added @phone escaping from mixins.less
+        .text-content {
+            @media @phone {
+                margin-bottom: 15px;
+            }
         }
     }
+
+    // added @phone escaping from mixins.less
+    @media @phone {
+        margin: 42px 0 42px;
+        padding: 10px 0 0;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
 }

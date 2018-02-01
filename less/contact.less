@@ -2,13 +2,21 @@
 
 .contact {
 
-    //added @media for tablet
-    @media @tablet {
-        margin: 0 10px;
-    }
-
     p {
         margin: 40px 0;
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 10px 0;
+        }
+
+    }
+
+    // added @phone escaping from mixins.less
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
    
 }

@@ -5,6 +5,14 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    // added @phone escaping from mixins.less
+    @media @phone {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 42px;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
@@ -14,11 +22,6 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-
-        //added @media for tablet
-        @media @tablet {
-            margin: 0 72px;
-        }
 
         button {
             border: 1px double black;
@@ -34,13 +37,30 @@
                 color: white;
             }
         }
+
+        // added @tablet escaping from mixins.less
+        @media @tablet {
+            margin: 0 72px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            font-size: 72px;
+            margin: 0 0 42px 0;
+        }
     }
 
-    //added @media
+    // added @tablet escaping from mixins.less
     img {
         @media @tablet {
             margin-right: 10px;
         }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 0;
+        }
+
     }
  
 }// cta
