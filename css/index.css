@@ -325,8 +325,23 @@ header .logo {
     margin: 0 5px 0 10px;
   }
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+  }
+}
 .main-content .top-content .text-content p {
   margin-right: 5px;
+}
+@media (max-width: 400px) {
+  .main-content .top-content .text-content p {
+    margin: 0 0 15px 0;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content .text-content h4 {
+    margin: 0;
+  }
 }
 .main-content .middle-img {
   display: block;

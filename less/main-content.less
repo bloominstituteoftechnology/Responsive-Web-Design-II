@@ -22,9 +22,23 @@
         margin: 0 5px 0 10px;
     }
 
+    @media @phone {
+        flex-direction: column;
+    }
+
     .text-content {
         p {
             margin-right: 5px;
+
+            @media @phone {
+                margin: 0 0 15px 0;
+            }
+        }
+
+        h4 {
+            @media @phone {
+                margin: 0;
+            }
         }
     }
 }
