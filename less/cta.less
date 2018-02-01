@@ -5,11 +5,14 @@
     margin-top: 72px;
     justify-content: flex-end;
     @media @tablet {
-        margin-top: 36px;
+        margin-top: 50px;
+        justify-content: center;
+        padding-top: 35px;
+        padding-bottom: 50px;
     }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 60px;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
@@ -37,5 +40,14 @@
             color: white;
         }
     }
-    
+
+    img {
+        @media @tablet {
+            position: absolute;
+            .opacity(.3);
+            z-index: -1;
+            top: 140px;
+            width: 355px;
+        }
+    }
 }// cta

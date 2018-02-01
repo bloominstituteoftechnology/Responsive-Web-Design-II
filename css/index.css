@@ -220,11 +220,14 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta {
-    margin-top: 36px;
+    margin-top: 50px;
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 50px;
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 60px;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -251,6 +254,17 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 768px) {
+  .cta img {
+    position: absolute;
+    -webkit-opacity: 0.3;
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+    z-index: -1;
+    top: 140px;
+    width: 355px;
+  }
 }
 /* Main Content Styles */
 .main-content {
