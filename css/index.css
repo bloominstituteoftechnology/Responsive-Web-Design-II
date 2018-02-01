@@ -333,6 +333,9 @@ header .logo {
   .main-content .top-content {
     flex-direction: column;
   }
+  .main-content .top-content h4 {
+    font-size: 3rem;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -396,6 +399,11 @@ header .logo {
 .contact {
   font-size: 1.7rem;
 }
+@media (max-width: 400px) {
+  .contact h4 {
+    font-size: 2.5rem;
+  }
+}
 .contact p {
   margin: 40px 0;
 }
@@ -419,6 +427,7 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.5rem;
 }
 @media (max-width: 1100px) {
   footer {
