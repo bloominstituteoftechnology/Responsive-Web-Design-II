@@ -12,7 +12,7 @@ header {
         ul {
             margin-top: 40px; 
             width: 610px;
-            justify-content: space-between;
+            justify-content: space-around;
             display: flex;
 
             li {
@@ -27,6 +27,18 @@ header {
                     }
                 }
             }
+            @media @tablet {
+                width: 100%;
+                flex-wrap: wrap;
+                align-content: space-between;
+            }
+        }
+        @media @laptop {
+            margin-right: auto;
+            width: 90%;
+        }
+        @media @tablet {
+            width: 100%;
         }
     }
 
