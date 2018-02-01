@@ -22,9 +22,11 @@
         flex-flow: column;
         align-items: center;
         margin: 0 10% 0 0;
-        @media @phone {
+        max-width: 80%;
+        max-height: 80%;
+        @media @tablet {
             font-size: 4.8rem;
-            margin: 0px;
+            margin: 0;
         }
     }
 
@@ -46,9 +48,13 @@
         }
     }
 
-    // .cta-img {
-    //     @media @phone {
-    //         display: none;
-    //     }
-    // }
+    .cta-img {
+        @media @tablet {
+            max-width: 40%;
+            max-height: 50%;
+        }
+        @media @phone {
+            max-width: 100%;
+        }
+    }
 }// cta

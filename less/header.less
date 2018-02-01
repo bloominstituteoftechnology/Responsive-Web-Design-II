@@ -5,48 +5,36 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    @media @phone {
+    @media @tablet {
         flex-flow: column-reverse nowrap;
     }
 
     nav {
         display: flex;
-        @media @laptop {
-            flex-flow: row nowrap;
-        }
-        @media @tablet {
-            flex-flow: column nowrap;
-        }
-        @media @phone {
-            flex-flow: column nowrap;
-        }
+        flex-flow: column nowrap;
+        width: 100%;
         ul {
             margin-top: 20px;
-            width: 100%;
             display: flex;
             justify-content: space-between;
-            flex-flow: row nowrap;
-            @media @laptop {
-                max-width: 500px;
-            }
             @media @tablet {
-                max-width: 200px;
-            }
-            @media @phone {
                 max-width: 100%;
                 margin-top: 0px;
-                flex-flow: column nowrap;
+                flex-flow: row wrap;
                 justify-content: center;
+            }
+            @media @phone {
+                flex-flow: column nowrap;
             }
 
             li {
-                margin: 0 3%;
+               // margin: 0 3%;
                 font-size: 1.6rem;
                 @media @tablet {
-                    margin: 0 2%;
+                    padding: 5px;
+                    font-size: 2.0rem;
                 }
                 @media @phone {
-                    margin: 0 2px;
                     text-align: center;
                     font-size: 2.4rem;
                     border: solid rgb(196, 196, 196) 1px;
@@ -67,7 +55,7 @@ header {
     .logo {
         align-self: flex-end;
         margin: 0 0 0 5%;
-        @media @phone {
+        @media @tablet {
             align-self: center;
             margin: 0px;
         }

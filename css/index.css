@@ -181,66 +181,45 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   header {
     flex-flow: column-reverse nowrap;
   }
 }
 header nav {
   display: flex;
-}
-@media (max-width: 1100px) {
-  header nav {
-    flex-flow: row nowrap;
-  }
-}
-@media (max-width: 768px) {
-  header nav {
-    flex-flow: column nowrap;
-  }
-}
-@media (max-width: 400px) {
-  header nav {
-    flex-flow: column nowrap;
-  }
+  flex-flow: column nowrap;
+  width: 100%;
 }
 header nav ul {
   margin-top: 20px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-flow: row nowrap;
-}
-@media (max-width: 1100px) {
-  header nav ul {
-    max-width: 500px;
-  }
 }
 @media (max-width: 768px) {
   header nav ul {
-    max-width: 200px;
+    max-width: 100%;
+    margin-top: 0px;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 }
 @media (max-width: 400px) {
   header nav ul {
-    max-width: 100%;
-    margin-top: 0px;
     flex-flow: column nowrap;
-    justify-content: center;
   }
 }
 header nav ul li {
-  margin: 0 3%;
   font-size: 1.6rem;
 }
 @media (max-width: 768px) {
   header nav ul li {
-    margin: 0 2%;
+    padding: 5px;
+    font-size: 2.0rem;
   }
 }
 @media (max-width: 400px) {
   header nav ul li {
-    margin: 0 2px;
     text-align: center;
     font-size: 2.4rem;
     border: solid #c4c4c4 1px;
@@ -258,7 +237,7 @@ header .logo {
   align-self: flex-end;
   margin: 0 0 0 5%;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   header .logo {
     align-self: center;
     margin: 0px;
@@ -292,11 +271,13 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 10% 0 0;
+  max-width: 80%;
+  max-height: 80%;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .cta .cta-text {
     font-size: 4.8rem;
-    margin: 0px;
+    margin: 0;
   }
 }
 .cta .cta-text button {
@@ -315,6 +296,17 @@ header .logo {
 @media (max-width: 400px) {
   .cta .cta-text button {
     margin-bottom: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .cta .cta-img {
+    max-width: 40%;
+    max-height: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-img {
+    max-width: 100%;
   }
 }
 /* Main Content Styles */
@@ -394,8 +386,19 @@ header .logo {
 .contact {
   font-size: 1.6rem;
 }
+@media (max-width: 1100px) {
+  .contact {
+    padding-left: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    padding-left: 3%;
+  }
+}
 @media (max-width: 400px) {
   .contact {
+    padding: 0;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

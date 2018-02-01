@@ -2,7 +2,14 @@
 
 .contact {
     font-size: 1.6rem;
+    @media @laptop {
+        padding-left: 1%;
+    }
+    @media @tablet {
+        padding-left: 3%;
+    }
     @media @phone {
+        padding: 0;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
