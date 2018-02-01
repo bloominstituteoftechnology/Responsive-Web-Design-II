@@ -3,16 +3,24 @@
 header {
     width: 100%;
     display: flex;
-
     nav {
         ul {
-            margin-top: 40px; 
+            margin-top: 40px;
             width: 610px;
             justify-content: space-between;
             display: flex;
-
+            @media @phone {
+                flex-wrap: nowrap;
+                flex-direction: column;
+                width: 100%;
+            }
             li {
-
+              @media @phone {
+                  box-sizing: border-box;
+                  width: 100%;
+                  text-align: center;
+                  font-size: 50px;
+              }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -29,5 +37,9 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @phone {
+          margin: 0;
+          align-self: center;
+        }
     }
 }// header

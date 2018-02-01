@@ -172,6 +172,21 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 400px) {
+  header nav ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
@@ -184,11 +199,33 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
+@media (max-width: 400px) {
+  header .logo {
+    margin: 0;
+    align-self: center;
+  }
+}
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .cta {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
