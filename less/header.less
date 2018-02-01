@@ -20,56 +20,37 @@ header {
   }
 
   nav {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-
-    @media @tablet {
-      width: 80%;
-      flex-direction: row;
-    }
-
-    @media @laptop {
-      display: initial;
-      justify-content: initial;
-      flex-direction: initial;
-    }
-
     ul {
       display: inherit;
       flex-direction: column;
-      text-align: center;
 
       @media @tablet {
-        width: 100%;
-        flex-direction: row;
+        box-sizing: none;
+
+        margin: 0 35px 0 35px;
+
+        display: flex;
+        flex-flow: row wrap;
         justify-content: center;
-        align-items: center;
       }
 
       @media @laptop {
         flex-direction: initial;
-        text-align: none;
-        // margin: 0 0 0 0;
+        box-sizing: border-box;
+        margin: 0 0 0 0;
         flex-flow: initial;
         justify-content: initial;
-        align-items: initial;
 
         margin-top: 40px;
-
         width: 610px;
-        // width: 100.67%;
-
         justify-content: space-between;
         display: flex;
       }
 
       li {
-        width: 100%;
-        margin: 10px 0 10px 0;
+        margin: 10px;
 
         @media @laptop {
-          width: initial;
           margin: 0;
         }
 
