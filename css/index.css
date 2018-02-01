@@ -158,6 +158,16 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+@media (max-width: 414px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
 .container {
   width: 880px;
   margin: auto;
@@ -167,7 +177,7 @@ h5 {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .container {
     width: 100%;
   }
@@ -177,13 +187,12 @@ header {
   display: flex;
 }
 @media (max-width: 768px) {
-  header {
-    flex-wrap: wrap-reverse;
-  }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   header {
-    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     border: 1px solid white;
   }
 }
@@ -192,9 +201,15 @@ header {
     width: 40%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   header img {
     width: 40%;
+  }
+}
+@media (max-width: 414px) {
+  header nav {
+    box-sizing: border-box;
+    width: 100%;
   }
 }
 header nav ul {
@@ -210,20 +225,19 @@ header nav ul {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   header nav ul {
     box-sizing: border-box;
-    border: 5px solid red;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   header nav ul li {
     box-sizing: border-box;
     border: 1px solid white;
-    width: 400px;
+    width: 100%;
     text-align: center;
     font-size: 30px;
     background: black;
@@ -238,7 +252,7 @@ header nav ul li a {
     box-sizing: border-box;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   header nav ul li a {
     box-sizing: border-box;
   }
@@ -247,27 +261,32 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   header nav ul li a:hover {
     color: white;
   }
 }
 header .logo {
-  align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 414px) {
+  header .logo {
+    align-self: center;
+    margin: 28px 0 0 0px;
+  }
 }
 .cta {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .cta {
     flex-direction: column-reverse;
     align-items: center;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .cta img {
     position: absolute;
     width: 300px;
@@ -284,7 +303,7 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .cta .cta-text {
     color: white;
     z-index: 1;
@@ -301,16 +320,16 @@ header .logo {
   margin-top: 10px;
   cursor: pointer;
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .cta .cta-text button {
-    margin-top: 55px;
+    margin-top: 75px;
   }
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .cta .cta-text button:hover {
     background: lightgray;
     color: black;
@@ -325,9 +344,27 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 414px) {
+  .main-content {
+    margin: 30px 0 35px 0;
+    padding: 35px 0 15px 0;
+  }
+}
 .main-content .top-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+@media (max-width: 414px) {
+  .main-content .top-content {
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 414px) {
+  .main-content .top-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -338,21 +375,48 @@ header .logo {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 414px) {
   .main-content .middle-img {
     width: 100%;
+    margin: 20px auto;
+    margin-top: 0px;
+    flex-direction: column;
   }
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 414px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+  }
+}
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media (max-width: 414px) {
+  .main-content .bottom-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+}
 /* Contact Styles */
+@media (max-width: 414px) {
+  .contact {
+    text-align: center;
+    font-size: 30px;
+  }
+}
 .contact p {
   margin: 40px 0;
+}
+@media (max-width: 414px) {
+  .contact p {
+    font-size: 25px;
+    margin: 10px;
+  }
 }
 /* Footer Styles */
 footer {

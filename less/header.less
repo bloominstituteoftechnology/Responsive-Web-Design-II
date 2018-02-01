@@ -5,10 +5,12 @@ header {
     display: flex;
 
     @media @tablet {
-        flex-wrap: wrap-reverse;
+        //
     }
     @media @phone {
-        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
         border: 1px solid white;
     }
 
@@ -22,6 +24,10 @@ header {
     }
 
     nav {
+        @media @phone {
+            box-sizing: border-box;
+            width: 100%;
+        }
         ul {
             margin-top: 40px; 
             width: 610px;
@@ -35,7 +41,6 @@ header {
             }
             @media @phone {
                 box-sizing: border-box;
-                border: 5px solid red;
                 flex-wrap: wrap;
                 flex-direction: column;
                 width: 100%;
@@ -45,7 +50,7 @@ header {
                 @media @phone {
                     box-sizing: border-box;
                     border: 1px solid white;
-                    width: 400px;
+                    width: 100%;
                     text-align: center;
                     font-size: 30px;
                     background: black;
@@ -73,7 +78,10 @@ header {
     }
 
     .logo {
-        align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @phone {
+            align-self: center;
+            margin: 28px 0 0 0px;
+        }
     }
 }// header
