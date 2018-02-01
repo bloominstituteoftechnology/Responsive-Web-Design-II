@@ -7,23 +7,101 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-}
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
+    @media @laptop {
+        margin: 75px 20px 35px 20px;
+    }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
+    @media @tablet {
+        margin-top: 0px;
+        padding: 10px 0px;
+        margin-bottom: 5px;
+    }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
+    @media @phone {
+        margin-top: 0px;
+        padding: 10px 0px;
+        border-top: 0px;
+        margin-bottom: 5px;
+    }
+        
+    .top-content {
+        display: flex;
+        justify-content: space-around;
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+        @media @tablet {
+            p {
+                padding: 0 10px 0 0px;
+            }
+        }
+
+        @media @phone {
+            flex-flow: wrap;
+            margin-top: 10px;
+            width: 100%;
+
+            p {
+                margin: 10px 0px 10px 0px;
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            h4 {
+                border: 2px solid black;
+                padding: 10px;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .middle-img {
+        display: block;
+        margin: 30px auto;
+
+        @media @laptop {
+            width: 1060px;
+        }
+
+        @media @tablet {
+            width: 700px;
+            height: 200px;
+        }
+
+        @media @phone {
+            display: none;
+        }
+    }
+
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+
+        @media @tablet {
+            p {
+                padding: 0 10px 0 0px;
+            }
+        }
+
+        @media @phone {
+            flex-flow: wrap;
+            margin-top: 10px;
+            width: 100%;
+
+            p {
+                margin: 10px 0px 10px 0px;
+                font-size: 20px;
+                line-height: 25px;
+            }
+
+            h4 {
+                border: 2px solid black;
+                padding: 10px;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 5px;
+            }
+        }
+    }
 }

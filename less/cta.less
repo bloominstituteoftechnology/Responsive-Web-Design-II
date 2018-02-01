@@ -5,29 +5,60 @@
     margin-top: 72px;
     justify-content: flex-end;
 
+    @media @laptop {
+        justify-content: center
+    }
+
+    @media @tablet {
+        margin-top: 10px;
+    }
+
+    @media @phone {
+        margin: 0px;
+    }
+
     .cta-text {
         font-size: 72px;
         text-align: center;
-        letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
-    }
+        padding: 10px;
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+        @media @tablet {
+            margin: 0px 20px 0px 20px;
+        }
 
-        &:hover {
-            background: black;
-            color: white;
+        @media @phone {
+            .scale(.85);
+            margin: 0px 20px 0px 20px;
+            border: 2px solid black;
+        }
+
+        button {
+            border: 1px double black;
+            font-size: 16px;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+    
+            &:hover {
+                background: black;
+                color: white;
+            }
         }
     }
-}// cta
+
+    img {
+        @media @tablet {
+            .scale(.75);
+        }
+        @media @phone {
+            display: none;
+        }
+    }
+}

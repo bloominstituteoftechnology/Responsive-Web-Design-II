@@ -2,8 +2,22 @@
 
 .contact {
 
-    p {
-        margin: 40px 0;
+    @media @laptop {
+        margin: 20px 0px 0px 20px;
     }
-   
+
+    @media @phone {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    p {
+        margin: 10px 0px 10px 0px;
+
+        @media @phone {
+            margin: 0 0 0 0;
+            line-height: 20px;
+        }
+    }
 }

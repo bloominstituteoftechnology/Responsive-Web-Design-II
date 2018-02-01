@@ -11,11 +11,25 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 .container {
     width: 880px;
     margin: auto;
+
+    @media @laptop {
+        width: 1100px;
+        background: lightgreen
+    }
+
+    @media @tablet {
+        width: 768px;
+        background: lightblue;
+    }
+
+    @media @phone {
+        width: 400px;
+        background: pink;
+    }
 }
