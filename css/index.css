@@ -258,7 +258,6 @@ header .logo {
 }
 /* Call To Action (CTA) Styles */
 .cta {
-  background: yellow;
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
@@ -295,7 +294,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .cta .cta-text {
-    font-size: 3.6rem;
+    font-size: 5rem;
     width: 100%;
   }
 }
@@ -395,7 +394,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .main-content .text-content {
-    font-size: 20px;
+    font-size: 2rem;
     padding: 5px 0 0 5px;
     text-align: center;
   }
