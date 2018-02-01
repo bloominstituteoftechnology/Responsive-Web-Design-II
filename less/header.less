@@ -26,13 +26,14 @@ header {
             display: flex;
             justify-content: space-between;
             flex-flow: row nowrap;
-            // @media @laptop {
-            //     width: 500px;
-            // }
-            // @media @tablet {
-            //     width: 400px;
-            // }
+            @media @laptop {
+                max-width: 500px;
+            }
+            @media @tablet {
+                max-width: 200px;
+            }
             @media @phone {
+                max-width: 100%;
                 margin-top: 0px;
                 flex-flow: column nowrap;
                 justify-content: center;
@@ -40,13 +41,14 @@ header {
 
             li {
                 margin: 0 3%;
+                font-size: 1.6rem;
                 @media @tablet {
                     margin: 0 2%;
                 }
                 @media @phone {
                     margin: 0 2px;
                     text-align: center;
-                    font-size: 24px;
+                    font-size: 2.4rem;
                     border: solid rgb(196, 196, 196) 1px;
                 }
                 a {
