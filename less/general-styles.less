@@ -16,16 +16,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
     padding: 0 10px 10px;
     @media @laptop {
-        width: 769px;
+        max-width: 769px;
     }
     @media @tablet {
-        width: 401px;
+        max-width: 401px;
     }
     @media @phone {
-        width: 320px
+        max-width: 320px
     }
 }

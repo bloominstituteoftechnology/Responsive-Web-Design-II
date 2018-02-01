@@ -144,23 +144,24 @@ h5 {
   letter-spacing: 1px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
   padding: 0 10px 10px;
 }
 @media (max-width: 1100px) {
   .container {
-    width: 769px;
+    max-width: 769px;
   }
 }
 @media (max-width: 768px) {
   .container {
-    width: 401px;
+    max-width: 401px;
   }
 }
 @media (max-width: 400px) {
   .container {
-    width: 320px;
+    max-width: 320px;
   }
 }
 header {
