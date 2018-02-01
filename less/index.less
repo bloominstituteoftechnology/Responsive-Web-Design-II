@@ -7,6 +7,35 @@
 @import "contact";
 @import "footer";
 
+@elm: #1C7C7D;
+@elf-green: #088370;
+@goblin: #3D7D52;
+@spec: 10px;
+
+@max400: ~"(max-width:400px)";
+.container{
+    @media @max400{
+        background-color: @elm;
+        margin-left: @spec;
+    }
+}
+
+@max768: ~"(max-width:768px)";
+.container{
+    @media @max768{
+        background-color: @elf-green;
+        margin-left: @spec;
+    }
+}
+
+@max1100: ~"(max-width:1100px)";
+.container{
+    @media @max1100{
+        background-color: @goblin;
+        margin-left: @spec;
+    }
+}
+
 
 
 
