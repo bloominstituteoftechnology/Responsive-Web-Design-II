@@ -1,22 +1,36 @@
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   @media @tablet {
+       flex-wrap: wrap;
+       flex-direction: column;
+       width: 100%;
+       align-self: center;
+   }
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    @media @tablet {
+      display: flex;
+        width: 100%;
+    }
 }
 
 .main-content .bottom-content {

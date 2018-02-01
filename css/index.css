@@ -162,6 +162,12 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -199,7 +205,7 @@ header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   header .logo {
     margin: 0;
     align-self: center;
@@ -216,15 +222,6 @@ header .logo {
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    align-self: center;
-  }
-}
-@media (max-width: 400px) {
-  .cta {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    align-self: center;
   }
 }
 .cta .cta-text {
@@ -259,13 +256,33 @@ header .logo {
   font-size: 16px;
   line-height: 18px;
 }
+@media (max-width: 768px) {
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    display: flex;
+    width: 100%;
+  }
 }
 .main-content .bottom-content {
   display: flex;
