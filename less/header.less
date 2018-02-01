@@ -3,28 +3,37 @@
 header {
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
+    margin-left: 5px;
+      
+      nav {
+          ul {
+              margin-top: 40px; 
+              width: 610px;
+              justify-content: space-around;
+              display: flex;
+              flex-flow: row wrap;
+              @media @tablet {
+                width: 122%;
+              }
 
-    nav {
-        ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
-            display: flex;
+              li {
 
-            li {
+                  a {
+                      text-decoration: none;
+                      color: #b0b0b0;
 
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
+                      &:hover {
+                          text-decoration: underline;
+                          color: black;
+                      }
+                  }
+              }
+          }
+      }
+    
 
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
+    
 
     .logo {
         align-self: flex-end;
