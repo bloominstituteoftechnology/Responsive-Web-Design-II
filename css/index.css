@@ -199,10 +199,16 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.8rem;
 }
 header nav ul li a:hover {
   text-decoration: underline;
   color: black;
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    marin-right: 1%;
+  }
 }
 @media (max-width: 768px) {
   header nav ul {
