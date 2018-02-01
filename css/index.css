@@ -225,10 +225,11 @@ header .logo {
   margin-top: 72px;
   justify-content: space-around;
   width: 100%;
+  max-width: 100%;
 }
 @media (max-width: 768px) {
   .cta {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 @media (max-width: 415px) {
@@ -247,10 +248,16 @@ header .logo {
   flex-flow: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .cta .cta-text {
+    width: 49%;
+  }
+}
 @media (max-width: 415px) {
   .cta .cta-text {
     order: 1;
     margin: 0 0 0 0;
+    width: 100%;
   }
 }
 .cta .cta-text button {
@@ -265,6 +272,16 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 768px) {
+  .cta img {
+    width: 49%;
+  }
+}
+@media (max-width: 415px) {
+  .cta img {
+    width: 100%;
+  }
 }
 /* Main Content Styles */
 .main-content {

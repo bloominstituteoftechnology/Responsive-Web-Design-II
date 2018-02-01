@@ -5,8 +5,9 @@
     margin-top: 72px;
     justify-content: space-around;
     width: 100%;
+    max-width: 100%;
     @media @tablet {
-        flex-direction: column;
+        flex-direction: row;
     }
     @media @phone {
         display: flex;
@@ -22,10 +23,13 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        //margin: 0 82px 0 0;
+        @media @tablet {
+            width: 49%;
+        }
         @media @phone {
             order: 1;
             margin: 0 0 0 0;
+            width: 100%;
         }
     }
 
@@ -41,6 +45,15 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        @media @tablet {
+            width: 49%;
+        }
+        @media @phone {
+            width: 100%;
         }
     }
 }// cta
