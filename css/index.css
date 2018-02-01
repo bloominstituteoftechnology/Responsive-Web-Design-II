@@ -279,7 +279,7 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 7.2rems;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -397,12 +397,16 @@ header .logo {
   }
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
   margin: 40px 0;
+  font-size: 1.6rem;
 }
 /* Footer Styles */
 footer {
   text-align: center;
   margin: 40px 0 20px;
-  font-size: 1.6rems;
+  font-size: 1.6rem;
 }
