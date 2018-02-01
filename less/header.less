@@ -3,20 +3,24 @@
 header {
     width: 100%;
     display: flex;
-
+    @media @laptop {
+        justify-content: center;   
+        flex-wrap: wrap;             
+    }
     nav {
         ul {
             margin-top: 40px; 
             width: 610px;
-            justify-content: space-between;
+            justify-content: space-around;
             display: flex;
-
             li {
-
+                @media @tablet {
+                    display: flex;
+                    flex-wrap: wrap;
+                } 
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
-
                     &:hover {
                         text-decoration: underline;
                         color: black;
@@ -25,9 +29,11 @@ header {
             }
         }
     }
-
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @laptop {
+            margin-right: 91px;
+        }
     }
 }// header
