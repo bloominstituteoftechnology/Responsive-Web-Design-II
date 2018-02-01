@@ -168,13 +168,20 @@ body .container {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  html .container,
+  body .container {
+    width: 768px;
+  }
+}
 header {
   width: 100%;
   display: flex;
 }
 @media (max-width: 768px) {
   header {
-    width: 50%;
+    justify-content: space-around;
+    border: 1px solid red;
   }
 }
 header nav ul {
@@ -182,6 +189,11 @@ header nav ul {
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    width: 450px;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -194,6 +206,11 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    margin: 0;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
