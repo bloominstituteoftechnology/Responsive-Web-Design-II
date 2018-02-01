@@ -2,22 +2,23 @@
 
 .cta {
     display: flex;
-    margin-top: 75px;
+    margin-top: 10%;
     justify-content: center;
 
     img {
-        width: 50%;
-        height: 50%;
+        max-width: 50%;
+        width: 30%;
+        height: 30%;
     }
 
     .cta-text {
-        font-size: 2rem;
+        font-size: 4rem;
         text-align: center;
         letter-spacing: 0.05%;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
+       display: flex;
+       // justify-content: center;
+     flex-flow: column;
+      align-items: center;
         margin: 0 10% 0 0;
     }
 
@@ -28,8 +29,8 @@
         border: 1px double black;
         font-size: 1rem;
         background: white;
-        width: 40%;
-        height: 20%;
+        width: 100%;
+        height: 10%;
         margin-top: 1%;
         cursor: pointer;
 
@@ -42,16 +43,34 @@
 
 .cta {
     @media @phone {
-        flex-direction: column;
-     
+     // width: 100%;
+     flex-direction: column;
+     justify-content: center;
+     background: red;
+    }
+}
+
+
+
+button {
+    @media @phone {
+        align-self: center;
+    }
+}
+
+img {
+    @media @phone {
+    width: 100%;
+    margin-bottom: 2%;
+    align-self: center;
+    order: -1;
     }
 }
 
 .cta-text {
-    width: 100%;
-}
-
-img {
-    width: 100%;
-    justify-content: center;
+    @media @phone {
+     text-align: center;
+     width: 100%;
+     margin: 0 auto;
+    }
 }

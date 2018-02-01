@@ -191,19 +191,19 @@ header .logo {
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
-  margin-top: 75px;
+  margin-top: 10%;
   justify-content: center;
 }
 .cta img {
-  width: 50%;
-  height: 50%;
+  max-width: 50%;
+  width: 30%;
+  height: 30%;
 }
 .cta .cta-text {
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   letter-spacing: 0.05%;
   display: flex;
-  justify-content: center;
   flex-flow: column;
   align-items: center;
   margin: 0 10% 0 0;
@@ -212,8 +212,8 @@ header .logo {
   border: 1px double black;
   font-size: 1rem;
   background: white;
-  width: 40%;
-  height: 20%;
+  width: 100%;
+  height: 10%;
   margin-top: 1%;
   cursor: pointer;
 }
@@ -224,14 +224,29 @@ header .logo {
 @media (max-width: 400px) {
   .cta {
     flex-direction: column;
+    justify-content: center;
+    background: red;
   }
 }
-.cta-text {
-  width: 100%;
+@media (max-width: 400px) {
+  button {
+    align-self: center;
+  }
 }
-img {
-  width: 100%;
-  justify-content: center;
+@media (max-width: 400px) {
+  img {
+    width: 100%;
+    margin-bottom: 2%;
+    align-self: center;
+    order: -1;
+  }
+}
+@media (max-width: 400px) {
+  .cta-text {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /* Main Content Styles */
 .main-content {
@@ -258,9 +273,38 @@ img {
 .main-content .bottom-content p {
   padding-right: 1%;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    margin-top: 5%;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .text-content {
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    margin-top: 5%;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 /* Contact Styles */
 .contact p {
-  margin: 40px 0;
+  margin: 5% 0;
+}
+@media (max-width: 400px) {
+  .contact h4 {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .contact p {
+    text-align: center;
+  }
 }
 /* Footer Styles */
 footer {
