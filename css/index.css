@@ -126,21 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-
-	Example usage:
-
-	.some-element {
-		@media @tablet {
-			width: 100%;
-		}
-
-		@media @phone {
-			width: 50%;
-		}
-	}
-
-*/
 * {
   box-sizing: border-box;
 }
@@ -154,9 +139,9 @@ h2,
 h3,
 h4,
 h5 {
+  margin-bottom: 10px;
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 .container {
   width: 880px;
@@ -189,10 +174,10 @@ header {
   }
 }
 header nav ul {
+  display: flex;
   margin-top: 40px;
   width: 610px;
   justify-content: space-around;
-  display: flex;
 }
 header nav ul li a {
   text-decoration: none;
@@ -202,9 +187,22 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav ul li {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   header nav ul {
     width: 399px;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    flex-direction: column;
+    margin: 0;
+    width: 319px;
   }
 }
 header .logo {
@@ -219,8 +217,8 @@ header .logo {
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
-  margin-top: 72px;
   justify-content: flex-end;
+  margin-top: 72px;
 }
 @media (max-width: 1100px) {
   .cta {
@@ -233,13 +231,13 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
-  text-align: center;
-  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
+  text-align: center;
+  font-size: 72px;
+  letter-spacing: 5px;
   margin: 0 82px 0 0;
 }
 @media (max-width: 1100px) {
@@ -248,12 +246,12 @@ header .logo {
   }
 }
 .cta .cta-text button {
-  border: 1px double black;
-  font-size: 16px;
-  background: white;
   width: 170px;
   height: 32px;
   margin-top: 10px;
+  background: white;
+  border: 1px double black;
+  font-size: 16px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
@@ -281,10 +279,10 @@ header .logo {
 }
 /* Main Content Styles */
 .main-content {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   font-size: 16px;
   line-height: 18px;
 }
@@ -340,6 +338,6 @@ header .logo {
 }
 /* Footer Styles */
 footer {
-  text-align: center;
   margin: 40px 0 20px;
+  text-align: center;
 }

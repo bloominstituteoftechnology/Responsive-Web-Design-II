@@ -9,10 +9,10 @@ header {
     }
     nav {
         ul {
+            display: flex;
             margin-top: 40px; 
             width: 610px;
             justify-content: space-around;
-            display: flex;
             li {
                 a {
                     text-decoration: none;
@@ -21,10 +21,19 @@ header {
                         text-decoration: underline;
                         color: black;
                     }
-                } 
+                }
+                @media @phone {
+                    margin-top: 15px;
+                    text-align: center;
+                }
             }
             @media @tablet {
                 width: 399px;
+            }
+            @media @phone {
+                flex-direction: column;                
+                margin: 0;
+                width: 319px;
             }    
         }
     }
