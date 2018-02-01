@@ -3,31 +3,64 @@
 header {
     width: 100%;
     display: flex;
+
+    @media @laptop {
+        padding-right: 10px;
+
+    }
+
     @media @tablet {
-        width: 100%;
+        flex-direction: column;
+
     }
 
     @media @phone {
-        width: 50%;
+      flex-direction: column;
+        
     }
 
     nav {
+        @media @laptop {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        @media @tablet {
+            align-self: center;
+            padding-left: 5px;
+            padding-right: 5px;
+    
+        }
+    
+        @media @phone {
+            align-self: center;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
         ul {
             margin-top: 40px; 
             width: 610px;
             justify-content: space-between;
             display: flex;
+            
+
+            @media @laptop {
+                width: 550px;
+            }
+        
             @media @tablet {
                 width: 400px;
-                align-content: stretch;
-                margin-left: 10px;
-                font-size: 18px;
+                align-self: center;
+                
             }
+        
             @media @phone {
-                width: 50px;
-                font-size: 20px;
-                padding: 10px;
-                flex-direction: column;
+                width: 100%;
+                align-self: center;
+                font-size: 2.5rem;
+                flex-wrap: wrap;
+                justify-content: space-around;
             }
 
             li {
@@ -35,6 +68,7 @@ header {
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    font-size: 1.6rem;
 
                     &:hover {
                         text-decoration: underline;
@@ -48,12 +82,19 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-        @media @tablet {
-			.scale(0.75);
-		}
 
-		@media @phone {
-            .scale(0.5);
-		}
+        @media @laptop {
+            width: 30%;
+        }
+    
+        @media @tablet {
+            width: 30%;
+            align-self: center;
+        }
+    
+        @media @phone {
+           width: 50%;
+           align-self: center;
+        }
     }
 }// header
