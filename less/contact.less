@@ -1,7 +1,18 @@
-/* Contact Styles */
+
 
 .contact {
-
+    width: 880px;
+    margin: auto;
+    button {
+        background-color: white;
+        font-size: 1em;
+        font-weight: bold;
+        .transition-properties(border-top .25s linear, color .5s linear;);
+        &:hover {
+            border-top: 6px solid @background-color--blue;
+        }
+    }
+    
     p {
         margin: 40px 0;
     }

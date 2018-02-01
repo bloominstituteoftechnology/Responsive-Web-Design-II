@@ -1,3 +1,4 @@
+@import "mixins";
 /* Main Content Styles */
 
 .main-content {
@@ -12,11 +13,21 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
+
+
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    .keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+		});
+
+    .animation(fade-in 8s linear infinite alternate);
+    
 }
 
 .main-content .bottom-content {
@@ -26,4 +37,19 @@
 
 .main-content .bottom-content p {
     padding-right: 20px;
+    text-align: center;
+}
+.main-content button {
+    display:block;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-top: 1px solid black;
+    .transition-properties(border-top .25s linear, color .5s linear;);
+        
+    &:hover {
+        border-top: 6px solid @background-color--blue;
+    }
 }
