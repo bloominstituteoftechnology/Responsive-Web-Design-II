@@ -254,10 +254,12 @@ body {
   font-size: 62.5%;
   display: flex;
   justify-content: center;
-  align-self: center;
 }
 nav {
   font-size: 1.5rem;
+}
+.cta-text {
+  width: 100%;
 }
 .contact {
   font-size: 1.5rem;

@@ -21,13 +21,33 @@
 
 html, body {
   height: 100%;
+  max-width: 1200px;
+  width: 100%;
   font-size: 62.5%;
   display: flex;
   justify-content: center;
+  align-self: center;
 }
 
-.cta-text {
-  padding-left: 80px;
+nav {
+  font-size: 1.5rem;
+}
+
+// .cta {
+//   width: 100%;
+// }
+
+
+
+.contact {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0%;
+  text-align: center;
+}
+
+footer {
+  font-size: 1.5rem;
 }
 
 @media @laptop {
@@ -63,18 +83,17 @@ html, body {
 }
 
 @media @tablet {
-  .container {
-    margin: 0px;
-  }
   .top-content {
     flex-direction: column;
     text-align: center;
-    margin: 50px;
-    margin-top: 0px;
+    width: 64%;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .text-content {
-    font-size: 20px;
-    padding: 25px;
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 2.5%;
   }
   .bottom-content {
   display: flex;
@@ -84,15 +103,3 @@ html, body {
   margin-top: 0px;
   }
 }
-
-.contact {
-  text-align: center;
-}
-
-
-
-
-
-
-
-
