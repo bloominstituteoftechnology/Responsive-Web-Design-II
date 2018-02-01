@@ -159,7 +159,7 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 80%;
   margin: auto;
 }
 @media (max-width: 1100px) {
