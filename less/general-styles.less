@@ -26,13 +26,15 @@ h5 {
 @tablet: ~'(min-width: 768px) ';
 @phone: ~'(min-width: 400px) ';
 
+@max-width: 880px;
+
 .container {
-	max-width: 880px;
+	max-width: @max-width;
 	width: 100%;
 	margin: auto;
 
 	@media @laptop {
-		width: 880px;
+		width: 100%;
 		margin: auto;
 	}
 }

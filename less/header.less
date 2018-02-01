@@ -15,25 +15,37 @@ header {
     flex-direction: initial;
     align-items: initial;
 
-    background: white;
-
     width: 100%;
     display: flex;
   }
 
   nav {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+    @media @tablet {
+      width: 80%;
+      flex-direction: row;
+    }
+
+    @media @laptop {
+      width: initial;
+      display: initial;
+      align-items: initial;
+      justify-content: initial;
+    }
+
     ul {
       display: inherit;
       flex-direction: column;
+      text-align: center;
 
       @media @tablet {
-        box-sizing: none;
-
-        margin: 0 35px 0 35px;
-
-        display: flex;
-        flex-flow: row wrap;
+        width: 100%;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
       }
 
       @media @laptop {
@@ -50,15 +62,22 @@ header {
       }
 
       li {
-        margin: 10px;
+        .convertToPercent(@pixels) {
+          // @percent:
+        }
+
+        width: 100%;
+        margin: 10px 0 10px 0;
 
         @media @laptop {
+          width: initial;
           margin: 0;
         }
 
         a {
           text-decoration: none;
           color: #b0b0b0;
+          font-size: 1.6rem;
 
           &:hover {
             text-decoration: underline;
