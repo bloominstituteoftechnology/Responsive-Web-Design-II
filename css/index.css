@@ -279,7 +279,7 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rems;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -404,4 +404,5 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.6rems;
 }
