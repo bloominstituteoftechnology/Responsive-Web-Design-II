@@ -169,6 +169,7 @@ header nav ul {
   justify-content: space-around;
 }
 header nav ul li a {
+  font-size: 1.6rem;
   text-decoration: none;
   color: #b0b0b0;
 }
