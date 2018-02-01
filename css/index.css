@@ -272,9 +272,6 @@ header .logo {
   .cta {
     flex-flow: column nowrap;
     align-items: center;
-    background: url(../img/header-img.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
   }
 }
 .cta .cta-text {
@@ -311,11 +308,6 @@ header .logo {
     margin-bottom: 8px;
   }
 }
-@media (max-width: 400px) {
-  .cta .cta-img {
-    display: none;
-  }
-}
 /* Main Content Styles */
 .main-content {
   display: flex;
@@ -349,6 +341,11 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    display: none;
+  }
 }
 .main-content .bottom-content {
   display: flex;
