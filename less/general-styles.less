@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; // implemented for rem use
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -19,14 +23,5 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     max-width: 880px;
     margin: auto;
-    padding: 0 10px 10px;
-    @media @laptop {
-        max-width: 769px;
-    }
-    @media @tablet {
-        max-width: 401px;
-    }
-    @media @phone {
-        max-width: 320px
-    }
+    padding: 0 10px 10px; // 10px left/right padding over devices
 }
