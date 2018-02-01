@@ -233,6 +233,14 @@ header .logo {
     justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  .cta {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}
 .cta .cta-text {
   font-size: 72px;
   text-align: center;
