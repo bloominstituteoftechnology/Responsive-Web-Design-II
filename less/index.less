@@ -7,15 +7,50 @@
 @import "contact";
 @import "footer";
 
+header {
+  @media @laptop {
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}
 
+.logo {
+  @media @laptop {
+    display: none;
+  }
+}
 
+.cta {
+  @media @laptop {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
+h1 {
+  @media @laptop {
+    padding-top: 100px;
+    justify-content: center;
+    color: white;
+    width: 379px;
+    height: 379px;
+    font-size: 56px;
+    background-image: url("../img/header-img.png");
+  }
+}
+.circle{
+  @media @laptop {
+    display: none;
+  }
+}
 
+.contact {
+  margin:0px;
+  padding: 10px;
+  text-align: center;
+}
 
-
-
-
-
-
-
+footer {
+  padding: 0px;
+}
 
