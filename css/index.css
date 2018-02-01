@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -159,18 +160,58 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    justify-content: space-between;
+  }
+}
+header nav {
+  width: 70%;
+}
 header nav ul {
   margin-top: 40px;
-  width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+header nav ul li {
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  header nav ul li {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    margin-left: 10%;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -182,7 +223,7 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 10%;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -190,21 +231,46 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 4% 0 4%;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+}
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 10% 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    font-size: 5.2rem;
+    margin: 0 4% 0 4%;
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 58%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -213,36 +279,104 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 768px) {
+  .cta img {
+    width: 45%;
+    margin-right: 4%;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
+  }
+}
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin: 75px 3% 35px 3%;
+  }
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .top-content .text-content {
+    margin-bottom: 20px;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    display: none;
+  }
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .bottom-content .text-content {
+    margin-bottom: 20px;
+  }
+}
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 4%;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content p {
+    padding: 0;
+  }
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  .contact {
+    margin: 0 3% 0 3%;
+  }
+}
 .contact p {
   margin: 40px 0;
 }
+@media (max-width: 768px) {
+  .contact p {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  .contact p {
+    margin: 20px 0;
+  }
+}
 /* Footer Styles */
 footer {
+  font-size: 1.5rem;
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 40px 0 20px 0;
 }
