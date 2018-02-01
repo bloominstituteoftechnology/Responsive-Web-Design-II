@@ -164,11 +164,6 @@ h5 {
   max-width: 880px;
   margin: auto;
 }
-@media (max-width: 1100px) {
-  .container {
-    width: 100%;
-  }
-}
 header {
   width: 100%;
   display: flex;
@@ -250,7 +245,8 @@ header .logo {
 .cta {
   display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  justify-content: center;
+  width: 100%;
 }
 @media (max-width: 1100px) {
   .cta {
@@ -271,14 +267,14 @@ header .logo {
 }
 @media (max-width: 1100px) {
   .cta img {
-    width: 400px;
-    height: 400px;
+    width: 45%;
+    height: auto;
   }
 }
 @media (max-width: 768px) {
   .cta img {
-    width: 200px;
-    height: 200px;
+    width: 45%;
+    height: 45%;
   }
 }
 @media (max-width: 400px) {
@@ -296,11 +292,11 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  width: 45%;
 }
 @media (max-width: 768px) {
   .cta .cta-text {
-    font-size: 32px;
+    font-size: 4.8rem;
     margin-right: 0px;
   }
 }
@@ -310,9 +306,7 @@ header .logo {
     color: white;
     z-index: 1;
     margin-top: 55px;
-    margin-left: 75px;
-    margin-right: 82px;
-    font-size: 56px;
+    font-size: 5.6rem;
   }
 }
 .cta .cta-text button {
