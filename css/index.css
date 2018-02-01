@@ -165,8 +165,9 @@ h5 {
 }
 @media (max-width: 768px) {
   .container {
+    position: absolute;
     margin: 0;
-    width: 100%;
+    width: auto;
   }
 }
 header {
