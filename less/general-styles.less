@@ -28,6 +28,10 @@ h5 {
 
 @max-width: 880px;
 
+.convertToPercent(@pixels, @width: @max-width) {
+	@percent: @pixels / @width * 100%;
+}
+
 .container {
 	max-width: @max-width;
 	width: 100%;

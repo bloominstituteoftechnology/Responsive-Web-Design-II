@@ -1,7 +1,8 @@
 /* Call To Action (CTA) Styles */
 
 .cta {
-  margin: 40px 15px 0 15px;
+  width: 100%;
+  margin: 40px 0 0 0;
 
   display: flex;
   flex-direction: column;
@@ -18,7 +19,7 @@
   }
 
   .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -27,15 +28,17 @@
     align-items: center;
 
     @media @laptop {
-      margin: 0 82px 0 0;
+      .convertToPercent(82);
+      margin: 0 @percent 0 0;
     }
   }
 
   .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    .convertToPercent(170, 500);
+    width: @percent;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -44,11 +47,17 @@
       background: black;
       color: white;
     }
+
+    @media @laptop {
+      .convertToPercent(170,292.11);
+      width: @percent;
+    }
   }
 
   img {
     margin: 25px 0 0 0;
-    padding: 0 35px 0 35px;
+    .convertToPercent(35);
+    padding: 0 @percent 0 @percent;
 
     object-fit: contain;
 
