@@ -309,7 +309,7 @@ header .logo {
 }
 .main-content .top-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .main-content .middle-img {
   display: block;
