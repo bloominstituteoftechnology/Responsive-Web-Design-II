@@ -14,16 +14,16 @@
 // Container
 .container {
   @media @tablet {
-    width: 750px;
+    max-width: 750px;
   }
   @media @phone {
-    width: 390px;
+    max-width: 390px;
   }
 }
 
 // Header
 header {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   @media @tablet {
     flex-wrap: wrap;
@@ -36,17 +36,17 @@ header {
   nav {
     ul {
       @media @phone {
-        width: 20px;
+        width: 5%;
         flex-direction: column;
         margin-left: 150px;
       }
       li {
         @media @phone {
-          width: 20px;
+          width: 5%;
           padding-top: 20px;
         }
         a {
-        max-width: 100%;
+        width: 100%;
         }
         }
       }
@@ -64,7 +64,7 @@ header {
 
 // CTA
 .cta {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -80,7 +80,7 @@ header {
 
 // Main Content
 .main-content {
-  max-width: 100%;
+  width: 100%;
   @media @tablet {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +104,7 @@ header {
   }
 }
 .main-content .middle-img {
-  max-width: 100%;
+  width: 100%;
 }
 .main-content .bottom-content {
   @media @phone {
@@ -121,11 +121,11 @@ header {
 
 // Contact
 .contact {
-  max-width: 100%;
+  width: 100%;
   p {}
 }
 
 // Footer
 footer {
-  max-width: 100%;
+  width: 100%;
 }

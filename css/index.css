@@ -168,7 +168,7 @@ header {
 }
 header nav ul {
   margin-top: 40px;
-  width: 610px;
+  width: 205%;
   justify-content: space-between;
   display: flex;
 }
@@ -182,7 +182,12 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 375px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    padding-top: 100px;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -191,7 +196,7 @@ header .logo {
   justify-content: flex-end;
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 4.5em;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -202,9 +207,9 @@ header .logo {
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 0.2em;
   background: white;
-  width: 170px;
+  width: 40%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -219,7 +224,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.0em;
   line-height: 18px;
 }
 .main-content .top-content {
@@ -248,16 +253,16 @@ footer {
 }
 @media (max-width: 768px) {
   .container {
-    width: 750px;
+    max-width: 750px;
   }
 }
 @media (max-width: 400px) {
   .container {
-    width: 390px;
+    max-width: 390px;
   }
 }
 header {
-  max-width: 100%;
+  width: 100%;
   display: flex;
 }
 @media (max-width: 768px) {
@@ -274,19 +279,19 @@ header {
 }
 @media (max-width: 400px) {
   header nav ul {
-    width: 20px;
+    width: 5%;
     flex-direction: column;
     margin-left: 150px;
   }
 }
 @media (max-width: 400px) {
   header nav ul li {
-    width: 20px;
+    width: 5%;
     padding-top: 20px;
   }
 }
 header nav ul li a {
-  max-width: 100%;
+  width: 100%;
 }
 @media (max-width: 768px) {
   header .logo {
@@ -300,7 +305,7 @@ header nav ul li a {
   }
 }
 .cta {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -311,7 +316,7 @@ header nav ul li a {
   }
 }
 .main-content {
-  max-width: 100%;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .main-content {
@@ -339,7 +344,7 @@ header nav ul li a {
   }
 }
 .main-content .middle-img {
-  max-width: 100%;
+  width: 100%;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
@@ -354,8 +359,8 @@ header nav ul li a {
   }
 }
 .contact {
-  max-width: 100%;
+  width: 100%;
 }
 footer {
-  max-width: 100%;
+  width: 100%;
 }
