@@ -221,17 +221,19 @@ header .logo {
 }
 /* Call To Action (CTA) Styles */
 .cta {
-  display: flex;
+  display: inline-flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  justify-content: space-around;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .cta {
-    justify-content: space-around;
+    flex-direction: column;
   }
 }
 @media (max-width: 415px) {
   .cta {
+    display: flex;
     flex-direction: column;
     margin: 10px 0;
   }

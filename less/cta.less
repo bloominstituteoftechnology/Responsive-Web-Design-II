@@ -1,19 +1,20 @@
 /* Call To Action (CTA) Styles */
 
 .cta {
-    display: flex;
+    display: inline-flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: space-around;
+    width: 100%;
     @media @tablet {
-        justify-content: space-around;
+        flex-direction: column;
     }
     @media @phone {
+        display: flex;
         flex-direction: column;
         margin: 10px 0;
     }
 
     .cta-text {
-        
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
