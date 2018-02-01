@@ -277,6 +277,11 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .main-content .top-content {
+    margin: 0 5px 0 10px;
+  }
+}
 .main-content .top-content .text-content p {
   margin-right: 5px;
 }
@@ -297,6 +302,11 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    margin: 0 5px 0 10px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
