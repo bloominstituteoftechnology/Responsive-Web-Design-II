@@ -156,7 +156,7 @@ h3,
 h4,
 h5 {
   font-family: 'Bangers', cursive;
-  letter-spacing: 1;
+  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 .container {
@@ -247,7 +247,14 @@ header .logo {
 }
 @media (max-width: 909px) {
   .cta {
-    width: 90%;
+    width: 100%;
+    padding: 1%;
+  }
+}
+@media (max-width: 743px) {
+  .cta {
+    width: 100%;
+    padding: 1%;
   }
 }
 @media (max-width: 500px) {
@@ -255,11 +262,11 @@ header .logo {
     margin-top: 20px;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -268,11 +275,18 @@ header .logo {
   align-items: center;
   margin: 10px;
 }
+@media (max-width: 743px) {
+  .cta .cta-text {
+    font-size: 6rem;
+    width: 100%;
+    margin: 0;
+  }
+}
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 55%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -281,9 +295,14 @@ header .logo {
   background: black;
   color: white;
 }
+.cta img {
+  max-width: 300px;
+  min-width: 250px;
+}
 @media (max-width: 743px) {
   .cta img {
-    width: 40%;
+    width: 100%;
+    height: auto;
   }
 }
 /* Main Content Styles */
@@ -325,7 +344,7 @@ header .logo {
 }
 @media (max-width: 909px) {
   .main-content .middle-img {
-    width: 100%;
+    width: 0%;
   }
 }
 @media (max-width: 743px) {
@@ -360,7 +379,8 @@ header .logo {
 }
 @media (max-width: 743px) {
   .main-content .bottom-content p {
-    padding: 3%;
+    padding: 1%;
+    padding-bottom: 10px;
   }
 }
 /* Contact Styles */
