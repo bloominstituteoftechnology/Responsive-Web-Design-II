@@ -191,6 +191,7 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
+  margin-left: 18%;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -258,6 +259,9 @@ header .logo {
     width: 400%;
   }
 }
+.main-content h4 {
+  letter-spacing: 0.1rem;
+}
 .main-content .top-content {
   display: flex;
   background: lightblue;
@@ -276,6 +280,9 @@ header .logo {
 }
 .main-content .middle-img {
   width: 98%;
+  max-width: 880px;
+  min-width: 412px;
+  height: auto;
   background: peachpuff;
   margin: 20px auto;
 }
@@ -310,7 +317,11 @@ header .logo {
   padding-right: 20px;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.5rem;
+}
 .contact p {
+  font-size: 1.5rem;
   margin: 40px 0;
 }
 @media (max-width: 768px) {
@@ -321,6 +332,7 @@ header .logo {
 }
 /* Footer Styles */
 footer {
+  font-size: 1rem;
   text-align: center;
   margin: 40px 0 20px;
 }

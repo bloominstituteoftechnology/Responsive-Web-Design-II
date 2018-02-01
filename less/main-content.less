@@ -20,6 +20,10 @@
     }
 }
 
+.main-content h4{
+    letter-spacing: 0.1rem;
+}
+
 .main-content .top-content {
     display: flex; // Both top and bottom content need flex in order to remain in rows
     background: lightblue;
@@ -42,8 +46,12 @@
 .main-content .middle-img {
     // This also needs to be adjusted
     width: 98%; // You can adjust this to give margins
+    max-width: 880px;
+    min-width: 412px;
+    height: auto;
     background: peachpuff;
     margin: 20px auto;
+
     @media @tablet {
         // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
         width: 100%; // margin: 30px; // Makes page less squashed on the sides under 768px
