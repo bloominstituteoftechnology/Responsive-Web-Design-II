@@ -4,9 +4,6 @@ header {
     width: 100%;
     display: flex;
 
-    @media @tablet {
-        //
-    }
     @media @phone {
         flex-direction: column-reverse;
         align-items: center;
@@ -15,9 +12,6 @@ header {
     }
 
     img {
-        @media @tablet {
-			width: 40%;
-		}
 		@media @phone {
             width: 40%;
 		}
@@ -34,11 +28,6 @@ header {
             justify-content: space-between;
             display: flex;
 
-            @media @tablet {
-                flex-wrap: wrap;
-                flex-direction: column;
-                width: 100%;
-            }
             @media @phone {
                 box-sizing: border-box;
                 flex-wrap: wrap;
@@ -58,9 +47,6 @@ header {
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
-                    @media @tablet {
-                        box-sizing: border-box;
-                    }
                     @media @phone {
                         box-sizing: border-box;
                     }

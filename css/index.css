@@ -172,11 +172,6 @@ h5 {
   width: 880px;
   margin: auto;
 }
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
 @media (max-width: 414px) {
   .container {
     width: 100%;
@@ -186,19 +181,12 @@ header {
   width: 100%;
   display: flex;
 }
-@media (max-width: 768px) {
-}
 @media (max-width: 414px) {
   header {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     border: 1px solid white;
-  }
-}
-@media (max-width: 768px) {
-  header img {
-    width: 40%;
   }
 }
 @media (max-width: 414px) {
@@ -217,13 +205,6 @@ header nav ul {
   width: 610px;
   justify-content: space-between;
   display: flex;
-}
-@media (max-width: 768px) {
-  header nav ul {
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-  }
 }
 @media (max-width: 414px) {
   header nav ul {
@@ -246,11 +227,6 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
-}
-@media (max-width: 768px) {
-  header nav ul li a {
-    box-sizing: border-box;
-  }
 }
 @media (max-width: 414px) {
   header nav ul li a {
@@ -369,11 +345,6 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-}
-@media (max-width: 768px) {
-  .main-content .middle-img {
-    width: 100%;
-  }
 }
 @media (max-width: 414px) {
   .main-content .middle-img {
