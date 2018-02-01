@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 html h1,
 body h1,
@@ -165,7 +166,8 @@ body h5 {
 }
 html .container,
 body .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 @media (max-width: 768px) {

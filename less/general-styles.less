@@ -8,6 +8,9 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 
+    // adjusting font-size for REM
+    font-size: 62.5%;
+
     h1, h2, h3, h4, h5 {
         font-family: 'Bangers', cursive;
         letter-spacing: 1px;
@@ -15,7 +18,11 @@ html, body {
     }
 
     .container {
-        width: 880px;
+        // adjusting for %-based layout
+        width: 100%;
+        max-width: 880px;
+
+        // width: 880px;
         margin: auto;
 
         // added @tablet escaping from mixins.less
