@@ -1,4 +1,17 @@
 /* Contact Styles */
+.contact {
+  font-size: 1.2rem;
+}
+@media (max-width: 879px) {
+  .contact {
+    margin: 0 15px;
+  }
+}
 .contact p {
   margin: 40px 0;
+}
+@media (max-width: 879px) {
+  .contact p {
+    margin: 15px 0;
+  }
 }
