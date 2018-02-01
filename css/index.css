@@ -199,6 +199,12 @@ header nav ul {
     width: 450px;
   }
 }
+@media (max-width: 400px) {
+  header nav ul {
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
@@ -220,6 +226,17 @@ header .logo {
   header .logo {
     margin: 5px 0 0 30px;
     padding-right: 30px;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 400px) {
+  .main-header {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 /* Call To Action (CTA) Styles */
