@@ -7,58 +7,60 @@
 @import "contact";
 @import "footer";
 
+// html, body {
+//   height: 100%;
+//   font-family: 'Titillium Web', sans-serif;
+//   font-size: 62.5%; // 16px into a base of 10px
+// }
 
-.main-header {
-  @media @laptop {
-    display: flex;
-    justify-content: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-}
+// .container {
+//   width: 100%;
+//   max-width: 880px;
+//   margin: auto;
+// }
 
-.logo {
-  @media @laptop {
-    display: none;
-  }
-}
-
-.cta {
-  @media @laptop {
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
+html, body {
+  height: 100%;
+  font-size: 62.5%;
+  display: flex;
+  justify-content: center;
 }
 
 .cta-text {
   padding-left: 80px;
 }
 
-
-
-h1 {
-  @media @laptop {
-    padding-top: 100px;
+@media @laptop {
+  .main-header {
+    display: flex;
     justify-content: center;
-    color: white;
-    width: 379px;
-    height: 379px;
-    font-size: 56px;
-    background-image: url("../img/header-img.png");
-  }
-}
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }// holds the nav bar
 
-.circle{
-  @media @laptop {
+  .logo {
     display: none;
-  }
+  } // Good Idea! logo
+
+  .cta {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    h1 {
+      padding-top: 100px;
+      justify-content: center;
+      color: white;
+      width: 379px;
+      height: 379px;
+      font-size: 56px;
+      background-image: url("../img/header-img.png");
+    } // Innovation on Demand / text
+
+    .circle{
+      display: none;
+    } // Circle image
+  } // Center page content: Innovation // Button // Circle image
 }
-
-.contact {
-  text-align: center;
-}
-
-
 
 @media @tablet {
   .container {
@@ -82,3 +84,15 @@ h1 {
   margin-top: 0px;
   }
 }
+
+.contact {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
