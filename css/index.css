@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -163,25 +164,14 @@ img {
   height: auto;
 }
 .container {
-  width: 800px;
+  width: 100%;
+  max-width: 880px;
   display: flex;
   flex-flow: column nowrap;
   margin: auto;
 }
-@media (max-width: 1100px) {
-  .container {
-    width: 80%;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    margin: 0px;
-  }
-}
 @media (max-width: 400px) {
   .container {
-    width: 100%;
     margin: 0px;
   }
 }
@@ -316,12 +306,12 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.2;
 }
 @media (max-width: 400px) {
   .main-content {
-    line-height: 24px;
+    line-height: 1.5;
   }
 }
 .main-content .top-content {

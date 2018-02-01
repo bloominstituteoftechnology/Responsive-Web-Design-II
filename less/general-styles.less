@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%; //16px to base of 10px
 }
 
 h1, h2, h3, h4, h5 {
@@ -21,19 +22,19 @@ img {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
+    max-width: 880px;
     display: flex;
     flex-flow: column nowrap;
     margin: auto;
-    @media @laptop {
-        width: 80%;
-    }
-    @media @tablet {
-        width: 100%;
-        margin: 0px;
-    }
+    // @media @laptop {
+    //     max-width: 80%;
+    // }
+    // @media @tablet {
+    //     max-width: 100%;
+    //     margin: 0px;
+    // }
     @media @phone {
-        width: 100%;
         margin: 0px;
     }
 }
