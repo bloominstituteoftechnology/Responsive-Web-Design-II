@@ -12,14 +12,11 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
-
-    @media @tablet {
-        padding: 10px;
-
+    @media @laptop {
+        margin: 0 1%;
     }
 
     @media @phone {
-        padding: 5px;
         flex-direction: column;
     }
 
@@ -34,6 +31,11 @@
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    max-width: 880px;
+
+    @media @laptop {
+        width: 100%;
+    }
 
     @media @tablet {
         width: 100%;
@@ -48,14 +50,13 @@
     display: flex;
     justify-content: space-around;
 
-
-    @media @tablet {
-        padding: 10px;
+    @media @laptop {
+        margin: 0 1%;
     }
+
 
     @media @phone {
         flex-direction: column;
-        padding: 5px;
     }
 
     h4 {
