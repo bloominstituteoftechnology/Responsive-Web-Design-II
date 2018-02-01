@@ -165,35 +165,31 @@ img {
 .container {
   width: 800px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   margin: auto;
 }
 @media (max-width: 1100px) {
   .container {
     width: 80%;
-    background: lemonchiffon;
   }
 }
 @media (max-width: 768px) {
   .container {
     width: 100%;
     margin: 0px;
-    background: tan;
   }
 }
 @media (max-width: 400px) {
   .container {
     width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
     margin: 0px;
-    background: palegreen;
   }
 }
 header {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
 }
 @media (max-width: 400px) {
   header {
@@ -219,10 +215,10 @@ header nav {
   }
 }
 header nav ul {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   flex-flow: row nowrap;
 }
 @media (max-width: 400px) {
@@ -232,9 +228,20 @@ header nav ul {
     justify-content: center;
   }
 }
+header nav ul li {
+  margin: 0 3%;
+}
+@media (max-width: 768px) {
+  header nav ul li {
+    margin: 0 2%;
+  }
+}
 @media (max-width: 400px) {
   header nav ul li {
-    margin: 0;
+    margin: 0 2px;
+    text-align: center;
+    font-size: 24px;
+    border: solid #c4c4c4 1px;
   }
 }
 header nav ul li a {
@@ -314,8 +321,17 @@ header .logo {
 }
 .main-content .top-content {
   display: flex;
-  flex-flow: column nowrap;
   justify-content: space-around;
+}
+@media (max-width: 1100px) {
+  .main-content .top-content {
+    flex-flow: row nowrap;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-flow: column nowrap;
+  }
 }
 .main-content .middle-img {
   display: block;
@@ -323,20 +339,48 @@ header .logo {
 }
 .main-content .bottom-content {
   display: flex;
-  flex-flow: column nowrap;
   justify-content: space-around;
+}
+@media (max-width: 1100px) {
+  .main-content .bottom-content {
+    flex-flow: row nowrap;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    flex-flow: column nowrap;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
 }
+@media (max-width: 1100px) {
+  .text-content {
+    width: 50%;
+    padding: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .text-content {
+    padding: 3%;
+  }
+}
 @media (max-width: 400px) {
   .text-content {
     width: 100%;
+    padding: 3%;
   }
 }
 /* Contact Styles */
+@media (max-width: 400px) {
+  .contact {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
 .contact p {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 /* Footer Styles */
 footer {

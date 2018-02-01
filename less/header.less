@@ -4,6 +4,7 @@ header {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     @media @phone {
         flex-flow: column-reverse nowrap;
     }
@@ -20,11 +21,17 @@ header {
             flex-flow: column nowrap;
         }
         ul {
-            margin-top: 40px; 
+            margin-top: 20px;
             width: 100%;
-            justify-content: space-between;
             display: flex;
+            justify-content: space-between;
             flex-flow: row nowrap;
+            // @media @laptop {
+            //     width: 500px;
+            // }
+            // @media @tablet {
+            //     width: 400px;
+            // }
             @media @phone {
                 margin-top: 0px;
                 flex-flow: column nowrap;
@@ -32,9 +39,15 @@ header {
             }
 
             li {
-                // margin: 0 0 0 20%;
+                margin: 0 3%;
+                @media @tablet {
+                    margin: 0 2%;
+                }
                 @media @phone {
-                    margin: 0;
+                    margin: 0 2px;
+                    text-align: center;
+                    font-size: 24px;
+                    border: solid rgb(196, 196, 196) 1px;
                 }
                 a {
                     text-decoration: none;

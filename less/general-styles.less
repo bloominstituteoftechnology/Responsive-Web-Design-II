@@ -23,22 +23,17 @@ img {
 .container {
     width: 800px;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     margin: auto;
     @media @laptop {
         width: 80%;
-        background: lemonchiffon;
     }
     @media @tablet {
         width: 100%;
         margin: 0px;
-        background: tan;
     }
     @media @phone {
         width: 100%;
-        display: flex;
-        flex-flow: column nowrap;
         margin: 0px;
-        background: palegreen;
     }
 }

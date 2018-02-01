@@ -16,8 +16,13 @@
 
 .main-content .top-content {
     display: flex;
-    flex-flow: column nowrap;
     justify-content: space-around;
+    @media @laptop {
+        flex-flow: row nowrap;
+    }
+    @media @phone {
+        flex-flow: column nowrap;
+    }
 }
 
 .main-content .middle-img {
@@ -27,8 +32,13 @@
 
 .main-content .bottom-content {
     display: flex;
-    flex-flow: column nowrap;
     justify-content: space-around;
+    @media @laptop {
+        flex-flow: row nowrap;
+    }
+    @media @phone {
+        flex-flow: column nowrap;
+    }
 }
 
 .main-content .bottom-content p {
@@ -36,7 +46,15 @@
 }
 
 .text-content {
+    @media @laptop {
+        width: 50%;
+        padding: 1%;
+    }
+    @media @tablet {
+        padding: 3%;
+    }
     @media @phone {
         width: 100%;
+        padding: 3%;
     }
 }
