@@ -126,6 +126,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.container {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .container {
+    max-wdith: 90%;
+  }
+}
 /*
 
 	Example usage:
@@ -155,7 +168,7 @@ h3,
 h4,
 h5 {
   font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
+  letter-spacing: .1rem;
   margin-bottom: 10px;
 }
 .container {
@@ -171,6 +184,9 @@ header nav ul {
   width: 610px;
   justify-content: space-between;
   display: flex;
+}
+header nav ul li {
+  font-size: 1.6rem;
 }
 header nav ul li a {
   text-decoration: none;
@@ -188,24 +204,28 @@ header .logo {
 .cta {
   display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .cta {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.5rem;
   background: white;
-  width: 170px;
-  height: 32px;
+  padding: 5% 15%;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -219,8 +239,8 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
 }
 .main-content .top-content {
   display: flex;
@@ -228,21 +248,116 @@ header .logo {
 }
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: 30px 0;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
   margin: 40px 0;
 }
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 40px 0 2%;
+}
+header {
+  margin-top: 30px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
+header .logo {
+  margin: 0;
+  align-self: unset;
+}
+@media (max-width: 768px) {
+  header .logo {
+    align-self: center;
+    margin-bottom: 30px;
+  }
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  width: unset;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+@media (max-width: 400px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+header nav ul li {
+  align-items: center;
+}
+@media (max-width: 768px) {
+  header nav ul li {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 0;
+  }
+}
+.cta img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .cta img {
+    margin: 0 auto 10% auto;
+  }
+}
+.main-content {
+  padding: 35px 0;
+}
+.main-content .middle-img {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content,
+  .main-content .top-content {
+    flex-direction: column;
+  }
+  .main-content .bottom-content .text-content,
+  .main-content .top-content .text-content {
+    margin-bottom: 20px;
+  }
+}
+section {
+  padding: 35px 0;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 35px 2%;
+  }
 }

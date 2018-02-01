@@ -1,4 +1,17 @@
 @import "reset";
+
+html, body {
+    height:100%;
+    font-size: 62.5%;
+}
+.container {
+    max-width: 100%;
+    @media @tablet {
+        max-wdith: 90%;
+    }
+}
+
+
 @import "mixins";
 @import "general-styles";
 @import "header";
@@ -9,13 +22,81 @@
 
 
 
+header {
+    margin-top: 30px;
+    align-items: center;
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
+    .logo {
+        margin: 0;
+        align-self: unset;
+        @media @tablet {
+            align-self: center;
+            margin-bottom: 30px;
+        }
+    }
+    nav {
+        width: 100%;
+        ul {
+            width: unset;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0;
+            @media @phone {
+                flex-direction: column;
+                text-align: center;
+            }
+            li {
+                align-items: center;
+                @media @tablet {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
 
+.cta {
+    @media @phone {
+        margin-top: 0;
+    }
+    img {
+        max-width: 100%;
+        @media @tablet {
+            margin: 0 auto 10% auto;
+        }
+    }
+}
 
+.main-content {
+    padding: 35px 0;
+    .middle-img {
+        max-width: 100%;
+    }
+    @media @tablet {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    @media @phone {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .bottom-content,
+    .top-content {
+        @media @tablet {
+            flex-direction: column;
+            .text-content {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
 
-
-
-
-
-
-
-
+section {
+    padding:35px 0;
+    @media @tablet {
+        padding: 35px 2%;
+    }
+}

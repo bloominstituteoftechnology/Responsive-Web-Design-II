@@ -3,25 +3,26 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
-
+    justify-content: space-around;
+    @media @tablet {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
     .cta-text {
-        font-size: 72px;
+        font-size: 7rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.5rem;
         background: white;
-        width: 170px;
-        height: 32px;
+        padding: 5% 15%;
         margin-top: 10px;
         cursor: pointer;
 
