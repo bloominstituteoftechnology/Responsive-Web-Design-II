@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -159,12 +160,13 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 95%;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 @media (max-width: 768px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
 }
 header {
@@ -174,6 +176,7 @@ header {
   margin-left: 5px;
 }
 header nav ul {
+  font-size: 1.6rem;
   margin-top: 40px;
   width: 610px;
   justify-content: space-around;
@@ -209,9 +212,9 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.6rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 0.5rem;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -243,7 +246,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 .main-content .top-content {
@@ -280,6 +283,9 @@ header .logo {
   padding-right: 20px;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
   margin: 40px 0;
 }
