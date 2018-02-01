@@ -19,3 +19,8 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 879px) {
+  .container {
+    width: 100%;
+  }
+}

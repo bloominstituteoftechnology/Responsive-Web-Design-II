@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -159,7 +160,8 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 @media (max-width: 879px) {
@@ -173,19 +175,13 @@ header {
   justify-content: space-between;
   margin: 40px auto 0 auto;
 }
-@media (max-width: 1100px) {
+@media (max-width: 879px) {
   header {
-    width: 750px;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    width: 380px;
+    width: 80%;
   }
 }
 @media (max-width: 400px) {
   header {
-    width: 250px;
     flex-direction: column;
   }
 }
@@ -195,6 +191,7 @@ header nav {
 }
 header nav ul {
   display: flex;
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   header nav ul {
@@ -207,10 +204,9 @@ header nav ul {
     align-items: center;
   }
 }
-header nav ul li {
-  flex: 1;
-}
 header nav ul li a {
+  flex: 1;
+  font-size: 1.6rem;
   text-decoration: none;
   color: #b0b0b0;
 }
@@ -279,33 +275,75 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 @media (max-width: 879px) {
   .main-content {
-    margin: 75px 15px 35px 15px;
+    margin: 40px 15px 35px 15px;
   }
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 600px) {
+  .main-content .top-content {
+    flex-direction: column;
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 600px) {
+  .main-content .top-content h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
   width: 100%;
 }
+@media (max-width: 650px) {
+  .main-content .middle-img {
+    margin: 15px auto;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 650px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: 650px) {
+  .main-content .bottom-content h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.2rem;
+}
+@media (max-width: 879px) {
+  .contact {
+    margin: 0 15px;
+  }
+}
 .contact p {
   margin: 40px 0;
+}
+@media (max-width: 879px) {
+  .contact p {
+    margin: 15px 0;
+  }
 }
 /* Footer Styles */
 footer {

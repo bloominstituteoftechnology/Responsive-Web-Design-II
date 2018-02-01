@@ -2,14 +2,10 @@
 
 header {
     width: 100%;
-    @media @laptop {
-        width: 750px;
-    }
-    @media @tablet {
-        width: 380px;
+    @media (max-width: 879px) {
+        width: 80%;
     }
     @media @phone {
-        width: 250px;
         flex-direction: column;
     }
     display: flex;
@@ -20,6 +16,7 @@ header {
         margin: auto 0;
         ul {
             display: flex;
+            justify-content: space-around;
             @media @tablet {
                 flex-wrap: wrap;
             }
@@ -28,8 +25,9 @@ header {
                 align-items: center;
             }
             li {
-                flex: 1;
                 a {
+                    flex: 1;
+                    font-size: 1.6rem;
                     text-decoration: none;
                     color: #b0b0b0;
 
@@ -43,7 +41,6 @@ header {
     }
 
     .logo {
-        //flex-basis: 30%;
         align-items: flex-end;
         margin: auto 0;
         @media @phone {
