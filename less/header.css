@@ -4,11 +4,11 @@ header {
   justify-content: space-between;
 }
 header nav ul {
-  gitstawidth: 60%;
-  display: flex;
-}
-header nav ul li {
+  max-width: 610px;
+  width: 100%;
   justify-content: space-between;
+  display: flex;
+  margin-top: 10%;
 }
 header nav ul li a {
   text-decoration: none;
@@ -19,7 +19,7 @@ header nav ul li a:hover {
   color: black;
 }
 header .logo {
-  justify-content: flex-end;
-  width: 30%;
-  margin: 2% 0 0 1%;
+  align-self: flex-end;
+  margin-left: 5%;
+  margin-top: 5%;
 }

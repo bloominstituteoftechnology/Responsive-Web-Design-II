@@ -3,10 +3,15 @@
 .cta {
     display: flex;
     margin-top: 75px;
-    justify-content: flex-end;
+    justify-content: center;
+
+    img {
+        width: 50%;
+        height: 50%;
+    }
 
     .cta-text {
-        font-size: 5rem;
+        font-size: 2rem;
         text-align: center;
         letter-spacing: 0.05%;
         display: flex;
@@ -16,17 +21,15 @@
         margin: 0 10% 0 0;
     }
 
-    .cta img {
-        width: 50%;
-        height: 50%;
-    }
+    
+    
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1rem;
         background: white;
         width: 40%;
-        height: 10%;
+        height: 20%;
         margin-top: 1%;
         cursor: pointer;
 
@@ -36,3 +39,19 @@
         }
     }
 }// cta
+
+.cta {
+    @media @phone {
+        flex-direction: column;
+     
+    }
+}
+
+.cta-text {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    justify-content: center;
+}
