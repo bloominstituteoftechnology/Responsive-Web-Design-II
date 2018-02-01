@@ -1,4 +1,7 @@
 // General Styles
+@laptop ~'(max-width: 1100px)';
+@tablet ~'(max-width: 768px)';
+@phone ~'(max-width: 400px)';
 
 * {
     box-sizing: border-box;
@@ -7,6 +10,18 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    @media @laptop {
+        width: 100%;
+        // background: red;
+    }
+    @media @tablet {
+        width: 100%;
+        // background: yellow;
+    }
+    @media @phone {
+        width: 100%;
+        // background: green;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -18,4 +33,16 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    @media @laptop {
+        width: 100%;
+        // background: red;
+    }
+    @media @tablet {
+        width: 100%;
+        // background: yellow;
+    }
+    @media @phone {
+        width: 100%;
+        // background: green;
+    }
 }

@@ -4,26 +4,35 @@
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 35px 0;
+   padding: 10%;
    font-size: 16px;
    line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
+    @media @laptop {
+        max-width: 100%;
+        // padding: 15%;
+    }
+    @media @tablet {
+        max-width: 100%;
+        // padding: 15%;
+    }
+    @media @phone {
+        max-width: 100%;
+        // padding: 15%;
+    }
+    .top-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    .middle-img {
+        display: block;
+        margin: 30px auto;
+        width: 100%;
+    }
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+        p {
+            padding-right: 20px;
+        }
+    }
 }
