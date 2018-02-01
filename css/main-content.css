@@ -1,5 +1,6 @@
 /* Main Content Styles */
 .main-content {
+  width: 100%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
@@ -8,14 +9,23 @@
   line-height: 18px;
 }
 .main-content .top-content {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  .text-content {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    
+  }
 }
 .main-content .middle-img {
+  width: 100%;
   display: block;
   margin: 30px auto;
 }
 .main-content .bottom-content {
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
