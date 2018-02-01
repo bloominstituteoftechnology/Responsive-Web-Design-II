@@ -30,10 +30,9 @@ header {
     }
 
     @media @laptop {
-      width: initial;
       display: initial;
-      align-items: initial;
       justify-content: initial;
+      flex-direction: initial;
     }
 
     ul {
@@ -50,22 +49,22 @@ header {
 
       @media @laptop {
         flex-direction: initial;
-        box-sizing: border-box;
-        margin: 0 0 0 0;
+        text-align: none;
+        // margin: 0 0 0 0;
         flex-flow: initial;
         justify-content: initial;
+        align-items: initial;
 
         margin-top: 40px;
+
         width: 610px;
+        // width: 100.67%;
+
         justify-content: space-between;
         display: flex;
       }
 
       li {
-        .convertToPercent(@pixels) {
-          // @percent:
-        }
-
         width: 100%;
         margin: 10px 0 10px 0;
 
