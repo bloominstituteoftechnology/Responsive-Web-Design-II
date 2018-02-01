@@ -1,0 +1,75 @@
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
+/*navigation*/
+.navLogo {
+  color: white;
+}
+#primary_nav ul {
+  list-style: none;
+  width: 880px;
+  background: #1c1c1c;
+  padding: 5px 0;
+}
+#primary_nav li a {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  height: 2em;
+  border-bottom: 1px solid #383838;
+}
+#primary_nav li:last-child a {
+  border-bottom: none;
+}
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+  color: #1c1c1c;
+  background: #ccc;
+}
+/*footer*/
+@media (min-width: 1100px) {
+  a.to_nav {
+    display: none;
+  }
+  .container {
+    position: relative;
+    margin: auto;
+  }
+  #primary_nav {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+  }
+  #primary_nav li {
+    display: inline;
+  }
+  #primary_nav li a {
+    float: left;
+    border: none;
+    padding: 0 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+}
+#primary_nav li.top {
+  display: none;
+}

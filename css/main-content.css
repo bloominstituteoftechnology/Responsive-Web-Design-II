@@ -1,3 +1,18 @@
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
 /* Main Content Styles */
 .main-content {
   border-top: 2px solid black;
@@ -14,6 +29,33 @@
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  -webkit-animation: fade-in 8s linear infinite alternate;
+  -moz-animation: fade-in 8s linear infinite alternate;
+  animation: fade-in 8s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .main-content .bottom-content {
   display: flex;

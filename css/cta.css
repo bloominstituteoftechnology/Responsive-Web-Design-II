@@ -1,3 +1,18 @@
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
@@ -13,6 +28,17 @@
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  text-shadow: 4px 4px 3px grey;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+.cta .cta-text:hover {
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -22,8 +48,51 @@
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  box-shadow: 2px 3px 4px 2px black;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  box-shadow: 2px 3px 4px 2px grey;
+}
+.cta img {
+  border-radius: 190px;
+  box-shadow: 2px 3px 4px 2px black;
+  -webkit-transform: skew(15deg, 10deg);
+  -moz-transform: skew(15deg, 10deg);
+  -ms-transform: skew(15deg, 10deg);
+  -o-transform: skew(15deg, 10deg);
+  -webkit-animation: fade-in 4s linear infinite alternate;
+  -moz-animation: fade-in 4s linear infinite alternate;
+  animation: fade-in 4s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cta img:hover {
+  -webkit-transform: translate(5px, 3px);
+  -moz-transform: translate(5px, 3px);
+  -ms-transform: translate(5px, 3px);
+  -o-transform: translate(5px, 3px);
 }

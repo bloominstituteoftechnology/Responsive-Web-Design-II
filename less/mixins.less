@@ -1,3 +1,8 @@
+// #1 Inspect Element
+// #2 Adjust CSS in the the dev inspector
+// #3 Copy new styles into your actual project
+// #4 Save and watch terminal for updates
+// #5 refresh browser and start over again
 // Variables on top
 
 /*
@@ -18,11 +23,31 @@
 
 // LESS escaping
 
-@phone: ~"(max-width: 400px)";
-@tablet: ~"(max-width: 768px)";
-@laptop: ~"(max-width: 1100px)";
+@phone: ~"(min-width: 400px)";
+@tablet: ~"(min-width: 768px)";
+@laptop: ~"(min-width: 1100px)";
+@background-color--blue:#1539E9;
 
 // Mixins below variables
+
+.transition-properties(...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
@@ -30,7 +55,7 @@
 	opacity: 		@opacity;
 }
 
-.animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
+.animation2 (@name, @duration: 300ms, @delay: 0, @ease: ease) {
 	-webkit-animation: @name @duration @delay @ease;
 	-moz-animation:    @name @duration @delay @ease;
 	-ms-animation:     @name @duration @delay @ease;
