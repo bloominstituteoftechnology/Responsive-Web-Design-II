@@ -9,7 +9,7 @@
    line-height: 18px;
 
    @media @tablet {
-       margin: 10px 0 20px 0;
+       margin: 0 0 20px 0;
        padding: 25px 0;
    }
 }
@@ -54,17 +54,35 @@
     @media @tablet {
         width: 100%;
     }
+
+    @media @phone {
+        margin: 10px 0 25px 0;
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
 
+    p {
+        padding-right: 20px;
+
+        @media @phone {
+            margin-bottom: 15px;
+        }
+    }
+
+    h4 {
+        @media @phone {
+            margin-bottom: 0;
+        }
+    }
+
     @media @tablet {
         margin: 0 5px 0 10px;
     }
-}
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+    @media @phone {
+        flex-direction: column;
+    }
 }
