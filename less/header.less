@@ -1,11 +1,11 @@
 // Header Styles
 
 header {
+    background: purple;
     width: 100%;
     display: flex;
 
     @media @laptop {
-        padding-right: 10px;
 
     }
 
@@ -20,15 +20,17 @@ header {
     }
 
     nav {
+        display: flex;
+        background: green;
+        width: 69%;
         @media @laptop {
             padding-left: 10px;
             padding-right: 10px;
         }
     
         @media @tablet {
-            align-self: center;
-            padding-left: 5px;
-            padding-right: 5px;
+            width: 100%;
+            justify-content: center;
     
         }
     
@@ -40,26 +42,24 @@ header {
 
         ul {
             margin-top: 40px; 
-            width: 610px;
+            width: 100%;
+            max-width: 610px;
             justify-content: space-between;
             display: flex;
+            background: blue;
 
             @media @laptop {
-                width: 550px;
             }
         
             @media @tablet {
-                width: 400px;
                 align-self: center;
                 
             }
         
             @media @phone {
-                width: 100%;
-                align-self: center;
-                font-size: 25px;
-                flex-wrap: wrap;
-                justify-content: space-around;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
             }
 
             li {
@@ -67,6 +67,10 @@ header {
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    font-size: 1.6rem;
+                    @media @phone {
+                        font-size: 2.5rem;
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -86,13 +90,15 @@ header {
         }
     
         @media @tablet {
-            width: 30%;
+            width: 33%;
             align-self: center;
+            margin: 0;
         }
     
         @media @phone {
-           width: 50%;
+           width: 100%;
            align-self: center;
+           margin: 0;
         }
     }
 }// header
