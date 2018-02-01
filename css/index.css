@@ -165,6 +165,7 @@ h5 {
   h4,
   h5 {
     margin: 0px;
+    text-align: center;
   }
 }
 .container {
@@ -355,6 +356,7 @@ header .logo {
 @media (max-width: 400px) {
   .main-content .top-content {
     flex-direction: column;
+    padding: 0 10px 0 10px;
   }
 }
 @media (max-width: 400px) {
@@ -391,6 +393,7 @@ header .logo {
 @media (max-width: 400px) {
   .main-content .bottom-content {
     flex-direction: column;
+    padding: 0 10px 0 10px;
   }
 }
 .main-content .bottom-content p {
@@ -410,6 +413,16 @@ header .logo {
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
+}
+@media (max-width: 768px) {
+  .contact {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .contact {
+    text-align: center;
+  }
 }
 /* Footer Styles */
 footer {
