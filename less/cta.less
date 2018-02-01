@@ -4,9 +4,11 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    @media @tablet {
+        justify-content: space-around;
+    }
     @media @phone {
         flex-direction: column;
-        padding: 0 30%;
     }
 
     .cta-text {
