@@ -177,7 +177,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap-reverse;
 }
 header nav {
   width: 70%;
@@ -207,8 +206,19 @@ header nav ul {
 }
 @media (max-width: 400px) {
   header nav ul {
+    width: 95%;
     justify-content: space-around;
     margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  header nav ul li {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    padding: 0;
   }
 }
 header nav ul li a {
@@ -231,7 +241,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   header .logo {
-    margin: 5px 15px 0 10px;
+    margin: 5px 15px 0 20px;
   }
 }
 @media (max-width: 400px) {
