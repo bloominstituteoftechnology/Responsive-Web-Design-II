@@ -12,18 +12,42 @@
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
+    @media @phone {
+        flex-direction: column;
+        padding: 0 10px 0 10px;
+    }
+    p {
+        @media @phone {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+
+    @media @phone {
+        flex-direction: column;
+        margin: 20px auto;
+        width: 100%;
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
 }
 
 .main-content .bottom-content p {
     padding-right: 20px;
+
+    @media @phone {
+        margin-bottom: 30px;
+        text-align: center;
+    }
 }

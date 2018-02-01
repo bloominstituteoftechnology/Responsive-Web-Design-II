@@ -1,3 +1,18 @@
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,21 +141,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*
-
-	Example usage:
-
-	.some-element {
-		@media @tablet {
-			width: 100%;
-		}
-
-		@media @phone {
-			width: 50%;
-		}
-	}
-
-*/
 * {
   box-sizing: border-box;
 }
@@ -158,13 +158,46 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-botom: 0px;
+    text-align: center;
+  }
+}
 .container {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
+}
+@media (max-width: 400px) {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+    border: 2px white;
+  }
+}
+@media (max-width: 400px) {
+  header img {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 header nav ul {
   margin-top: 40px;
@@ -172,17 +205,49 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 400px) {
+  header nav ul {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    box-sizing: border-box;
+    border: 2px white;
+    width: 100%;
+    text-align: center;
+    background: darkmagenta;
+  }
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+}
+@media (max-width: 400px) {
+  header nav ul li a {
+    box-sizing: border-box;
+  }
 }
 header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav ul li a:hover {
+    color: white;
+  }
+}
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+}
+@media (max-width: 400px) {
+  header .logo {
+    margin: 28px 0 0 0px;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -226,16 +291,43 @@ header .logo {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    flex-direction: column;
+    margin: 20px auto;
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content p {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 /* Contact Styles */
 .contact p {
