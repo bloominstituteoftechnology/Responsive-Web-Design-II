@@ -404,3 +404,11 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
+@media (max-width: 400px) {
+  footer {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+}
