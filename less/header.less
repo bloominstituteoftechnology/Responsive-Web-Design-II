@@ -3,13 +3,44 @@
 header {
     width: 100%;
     display: flex;
+    font-size: 1.6rem;
+
+    @media @laptop {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media @tablet {
+        flex-direction: column-reverse;
+    }
 
     nav {
+        width: 70%;
+
+        @media @tablet {
+            width: 100%;
+        }
+
         ul {
-            margin-top: 40px; 
-            width: 610px;
+            margin-top: 40px;
+            width: 100%;
             justify-content: space-between;
             display: flex;
+
+            @media @laptop {
+                justify-content: space-between;
+                padding-right: 2%;
+                padding-left: 2%;
+            }
+
+            @media @tablet {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            @media @phone {
+                margin-bottom: 15px;
+            }
 
             li {
 
@@ -28,6 +59,11 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin-left: 5%;
+
+        @media @tablet {
+            margin-top: 5px;
+            margin-right: 1%;
+        }
     }
 }// header
