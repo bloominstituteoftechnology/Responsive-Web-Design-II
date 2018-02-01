@@ -8,7 +8,6 @@ header {
     @media @laptop {
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
     }
 
     @media @tablet {
@@ -16,10 +15,14 @@ header {
     }
 
     nav {
+        width: 70%;
+
+        @media @tablet {
+            width: 100%;
+        }
 
         ul {
-            margin-top: 40px; 
-            width: 610px;
+            margin-top: 40px;
             justify-content: space-between;
             display: flex;
 
