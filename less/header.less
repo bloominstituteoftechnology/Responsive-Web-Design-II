@@ -3,17 +3,19 @@
 header {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     @media @phone {
         display: inline-block;
     }
 
     nav {
+        .pixToPer(610); // width: 610px;
 
         ul {
-            margin-top: 40px; 
-            width: 610px;
+            margin: 40px 2% 0px 2%;     
             justify-content: space-between;
             display: flex;
+            font-size: 1.6rem;
 
             @media @tablet {
                 width: 460px;
@@ -49,7 +51,7 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 2% 0 (91 / 880 * 100%);
         @media @phone {
             align-self: center;
             margin: auto;
