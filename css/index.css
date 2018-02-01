@@ -235,6 +235,7 @@ header .logo {
 }
 @media (max-width: 743px) {
   header .logo {
+    margin-left: 10%;
     align-self: center;
     order: -1;
   }
@@ -244,18 +245,8 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: center;
-}
-@media (max-width: 909px) {
-  .cta {
-    width: 100%;
-    padding: 1%;
-  }
-}
-@media (max-width: 743px) {
-  .cta {
-    width: 100%;
-    padding: 1%;
-  }
+  width: 100%;
+  padding: 1%;
 }
 @media (max-width: 500px) {
   .cta {
@@ -273,13 +264,13 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 10px;
+  margin: 1%;
 }
 @media (max-width: 743px) {
   .cta .cta-text {
     font-size: 6rem;
     width: 100%;
-    margin: 0;
+    margin: 5% 0 5% 0;
   }
 }
 .cta .cta-text button {
@@ -314,16 +305,7 @@ header .logo {
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
-}
-@media (max-width: 909px) {
-  .main-content {
-    width: 100%;
-  }
-}
-@media (max-width: 743px) {
-  .main-content {
-    width: 100%;
-  }
+  width: 100%;
 }
 .main-content .top-content {
   display: flex;
@@ -341,16 +323,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-}
-@media (max-width: 909px) {
-  .main-content .middle-img {
-    width: 0%;
-  }
-}
-@media (max-width: 743px) {
-  .main-content .middle-img {
-    width: 100%;
-  }
+  width: 100%;
 }
 .main-content .bottom-content {
   display: flex;
@@ -385,51 +358,25 @@ header .logo {
 }
 /* Contact Styles */
 .contact {
+  margin: 0;
+  width: 100%;
+  font-size: 1.5rem;
   text-align: center;
-}
-.contact h4 {
-  margin-left: 100px;
+  border-bottom: 1px solid black;
 }
 @media (max-width: 743px) {
   .contact h4 {
     margin-left: 0px;
   }
 }
-@media (max-width: 909px) {
-  .contact {
-    width: 600px;
-  }
-}
-@media (max-width: 743px) {
-  .contact {
-    width: 380px;
-  }
-}
 .contact p {
   margin: 40px 0;
-}
-@media (max-width: 909px) {
-  .contact p {
-    width: 713px;
-  }
-}
-@media (max-width: 743px) {
-  .contact p {
-    width: 380px;
-  }
+  width: 100%;
 }
 /* Footer Styles */
 footer {
   text-align: center;
   margin: 40px 0 20px;
-}
-@media (max-width: 909px) {
-  footer {
-    width: 713px;
-  }
-}
-@media (max-width: 743px) {
-  footer {
-    width: 380px;
-  }
+  font-size: 1.3rem;
+  width: 100%;
 }
