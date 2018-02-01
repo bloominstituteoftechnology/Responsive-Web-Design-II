@@ -196,6 +196,9 @@ header {
     width: 40%;
   }
 }
+header nav {
+  width: 69%;
+}
 @media (max-width: 414px) {
   header nav {
     box-sizing: border-box;
@@ -204,9 +207,8 @@ header {
 }
 header nav ul {
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 414px) {
   header nav ul {
@@ -216,13 +218,16 @@ header nav ul {
     width: 100%;
   }
 }
+header nav ul li {
+  font-size: 1.6rem;
+}
 @media (max-width: 414px) {
   header nav ul li {
     box-sizing: border-box;
     border: 1px solid white;
     width: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 3rem;
     background: black;
   }
 }
@@ -272,28 +277,28 @@ header .logo {
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: .5rem;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9% 0 0;
 }
 @media (max-width: 414px) {
   .cta .cta-text {
     color: white;
     z-index: 1;
-    font-size: 60px;
-    margin: 70px 82px 0px 65px;
+    font-size: 6rem;
+    margin: 70px 19% 0px 16%;
   }
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 58%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -319,8 +324,8 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 @media (max-width: 414px) {
   .main-content {
@@ -367,7 +372,7 @@ header .logo {
   }
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 @media (max-width: 414px) {
   .main-content .bottom-content p {
@@ -376,6 +381,9 @@ header .logo {
   }
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
 @media (max-width: 414px) {
   .contact {
     text-align: center;
@@ -393,6 +401,7 @@ header .logo {
 }
 /* Footer Styles */
 footer {
+  font-size: 1.6rem;
   text-align: center;
   margin: 40px 0 20px;
 }

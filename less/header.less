@@ -18,15 +18,16 @@ header {
     }
 
     nav {
+        width: 69%;
+
         @media @phone {
             box-sizing: border-box;
             width: 100%;
         }
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+            margin-top: 40px;
             display: flex;
+            justify-content: space-between;
 
             @media @phone {
                 box-sizing: border-box;
@@ -36,12 +37,14 @@ header {
             }
 
             li {
+                font-size: 1.6rem;
+
                 @media @phone {
                     box-sizing: border-box;
                     border: 1px solid white;
                     width: 100%;
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 3rem;
                     background: black;
                 }
                 a {
@@ -65,6 +68,7 @@ header {
 
     .logo {
         margin: 28px 0 0 91px;
+
         @media @phone {
             align-self: center;
             margin: 28px 0 0 0px;
