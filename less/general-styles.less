@@ -1,21 +1,29 @@
 // General Styles
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+  width: 880px;
+  margin: auto;
+
+  @media @phone {
+      width: 100%;
+  }
+
+  .main-header {
+      justify-content: center;
+  }
 }
