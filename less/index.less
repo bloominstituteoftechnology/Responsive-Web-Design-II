@@ -1,11 +1,4 @@
 @import "reset";
-@import "mixins";
-@import "general-styles";
-@import "header";
-@import "cta";
-@import "main-content";
-@import "contact";
-@import "footer";
 
 html, body {
     height:100%;
@@ -17,6 +10,17 @@ html, body {
         max-wdith: 90%;
     }
 }
+
+
+@import "mixins";
+@import "general-styles";
+@import "header";
+@import "cta";
+@import "main-content";
+@import "contact";
+@import "footer";
+
+
 
 header {
     margin-top: 30px;
@@ -91,5 +95,8 @@ header {
 }
 
 section {
-    padding: 35px 2%;
+    padding:35px 0;
+    @media @tablet {
+        padding: 35px 2%;
+    }
 }
