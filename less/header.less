@@ -1,20 +1,21 @@
 // Header Styles
 
 header {
-    width: 100%;
     display: flex;
     font-size: 2rem;
-    background: red;
 
     nav {
+        background: red;
+        width: 100%;
+
         ul {
-            width: 100%;
+            margin-top: 40px; 
             justify-content: space-between;
             display: flex;
-            padding: 5%;
 
             li {
-                width:100%;
+                width: 15%;
+                text-align: center;
 
                 a {
                     text-decoration: none;
@@ -22,6 +23,7 @@ header {
 
                     &:hover {
                         text-decoration: underline;
+                        color: black;
                     }
                 }
             }
@@ -30,5 +32,7 @@ header {
 
     .logo {
         align-self: flex-end;
+        padding: 28px 0 0px 5%;
+        background: blue;
     }
 }// header
