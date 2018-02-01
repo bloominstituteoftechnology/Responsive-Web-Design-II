@@ -12,6 +12,10 @@ header {
             display: flex;
 
             li {
+                @media @tablet {
+                    margin-left: 20px;
+                    width: 70%; // Provides space for GREAT IDEA logo margin on right
+                }
 
                 a {
                     text-decoration: none;
@@ -27,7 +31,11 @@ header {
     }
 
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        align-self: flex-end; // This is on the cross-axis - don't mess
+        margin: 9px 0 0 91px;
+        @media @tablet {
+            justify-content: flex-start;
+            margin: 9px 0 0 10px;
+        }
     }
 }// header

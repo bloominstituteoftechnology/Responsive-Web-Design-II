@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 880px; // [1:25PM] - Your first hurdle.  This is a hard coded width!  John recommends using the escaping.
     margin: auto;
+
+    @media @tablet {
+        width: 100%;
+       
+    }
+
+    @media @phone {
+        width: 50%;
+    }
 }

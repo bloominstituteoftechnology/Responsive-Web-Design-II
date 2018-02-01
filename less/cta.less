@@ -3,18 +3,41 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center; // changed this to center cuz flex-end was pulling it over to far right in laptop
+
+    @media @tablet {
+        flex-flow: column; // Sets everything in .cta to column, bringing image down under "Get Started" button
+        justify-content: space-around;
+        
+    }
 
     .cta-text {
         font-size: 72px;
-        text-align: center;
+        text-align: center; // Centers "INNOVATION ON DEMAND" - keep
         letter-spacing: 5px;
         display: flex;
-        justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 82px 0 0; // adds a little space between INNO and circle image in laptop view
+
+        @media @tablet { // Everything appears pushed to the left... not sure why.
+            flex-direction: left;
+            width: 100%;
+            margin-left: 55px;
+
+            
+        }     
     }
+
+    .top-img { // Added to adjust for tablet and iphone
+        @media @tablet {
+        width: 70%;
+        height: 70%;
+        margin-left: 170px;
+        margin-top: 20px;
+        }
+    }
+
 
     .cta-text button {
         border: 1px double black;

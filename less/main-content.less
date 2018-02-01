@@ -7,21 +7,42 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+
+   @media @tablet {
+    width: 100%;
+    margin: 55px; // Makes page less squashed on the sides under 768px
+}
+
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
+    @media @tablet { // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
+        width: 100%;
+        // margin: 30px; // Makes page less squashed on the sides under 768px
+    }
 }
 
-.main-content .middle-img {
+.main-content .middle-img { // This also needs to be adjusted 
     display: block;
     margin: 30px auto;
+
+    @media @tablet { // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
+        width: 100%;
+        // margin: 30px; // Makes page less squashed on the sides under 768px
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+
+    @media @tablet {
+        // margin: 30px; // Makes page less squashed on the sides under 768px
+
+    }
 }
 
 .main-content .bottom-content p {

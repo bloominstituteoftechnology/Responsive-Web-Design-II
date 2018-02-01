@@ -12,6 +12,14 @@ Layout changes based on device width
 
 Percent vs fixed layouts
 
+Josh's Recommendation for tackling this:
+
+#1 Inspect Element
+#2 Adjust CSS in the the dev inspector
+#3 Copy new styles into your actual project
+#4 Save and watch terminal for updates
+#5 refresh browser and start over again
+
 
 ## Task: 
 
