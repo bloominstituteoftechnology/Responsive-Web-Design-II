@@ -13,6 +13,24 @@
 	}
 
 */
+/* Mixins */
+.shadow {
+  box-shadow: 0 1px 2px 0 #555;
+}
+/** Operation **/
+.divider {
+  border-style: solid;
+  border-width: 0 1px 0 1px;
+  border-color: transparent #444444 transparent #888888;
+}
+.gradient {
+  background: linear-gradient(top, #7a7a7a 0%, #6c6c6c 50%, #545454 51%, #6a6a6a 100%);
+}
+.hovereffect {
+  background: linear-gradient(top, #545454 0%, #434343 50%, #333333 51%, #505050 100%);
+}
+/* Parametric Mixins */
+/** Guarded Mixins **/
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;

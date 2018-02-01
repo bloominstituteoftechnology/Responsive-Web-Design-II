@@ -1,11 +1,63 @@
 @import "mixins";
 
+/* Font */
+@font-face {
+    font-family: 'AsapRegular';
+    src: url('fonts/Asap-Regular-webfont.eot');
+    src: url('fonts/Asap-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Asap-Regular-webfont.woff') format('woff'),
+         url('fonts/Asap-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Asap-Regular-webfont.svg#AsapRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Body */
+// body {
+// 	font-family: AsapRegular, sans-serif;
+// 	font-size: 11pt;
+// }
+nav {
+	
+	width: 700px;
+	height: 45px;
+	
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline;
+			a {
+				text-decoration: none;
+				display: inline-block;
+				width: 90px;
+				height: 45px;
+				text-align: center;
+				line-height: 100%;
+				.textcolor(#f2f2f2); // You can change this line
+				
+				&:hover {
+					.hovereffect;
+				}
+			}
+		}
+		li:first-child a {
+			border-left: none;
+		}
+		li:last-child a {
+			border-right: none;
+		}
+	}
+}
+
+
 /*navigation*/ 
  
 #primary_nav ul {
     list-style: none;
     background: #1c1c1c;
     padding: 5px 0;
+    
 }
  
 #primary_nav li a {
@@ -38,29 +90,31 @@
         display: none;
     }
      
-    .wrapper {
-        position: relative;
+    .container {
+        
         width: 768px;
         margin: auto;
     }
      
     #primary_nav {
-        width: 600px;
+        
         position: absolute;
         top: 5px;
         margin-left: auto;
         margin-right: auto;
-        left: 35px;
+        left: 60px;
         right: 0;
         background: none;
     }
      
     #primary_nav li {
-        display: inline;
+        display: inline-block;
     }
      
     #primary_nav li a {
+        
         float: left;
+        
         border: none;
         padding: 0 10px;
         -webkit-border-radius: 2px;
@@ -69,5 +123,5 @@
     }
     #primary_nav li.top {
     display: none;
-}
+    }
 }

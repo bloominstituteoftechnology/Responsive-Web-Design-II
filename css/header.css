@@ -27,7 +27,7 @@ h1.logo a {
   letter-spacing: 0.2em;
 }
 a.to_nav {
-  float: right;
+  float: left;
   color: #fff;
   background: #4e4e4e;
   text-decoration: none;
@@ -47,6 +47,6 @@ a.to_nav:focus {
   color: #1c1c1c;
   background: #ccc;
 }
-.logo {
-  background: white;
+.navLogo a {
+  color: white;
 }
