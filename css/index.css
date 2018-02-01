@@ -238,8 +238,7 @@ header .logo {
   .cta .top-img {
     width: 70%;
     height: 70%;
-    margin-left: 170px;
-    margin-top: 20px;
+    margin: 20px 0px 20px 170px;
   }
 }
 .cta .cta-text button {
@@ -267,7 +266,12 @@ header .logo {
 @media (max-width: 768px) {
   .main-content {
     width: 100%;
-    margin: 55px;
+    margin: 0px 25px 0px 25px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content {
+    margin-left: 100px;
   }
 }
 .main-content .top-content {
@@ -304,7 +308,7 @@ header .logo {
 @media (max-width: 768px) {
   .contact {
     width: 100%;
-    margin: 55px;
+    margin: 25px;
   }
 }
 /* Footer Styles */
@@ -314,6 +318,6 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    margin-left: 120px;
+    margin-left: 90px;
   }
 }
