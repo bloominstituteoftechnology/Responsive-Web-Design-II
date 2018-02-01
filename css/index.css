@@ -272,6 +272,9 @@ header .logo {
   .cta {
     flex-flow: column nowrap;
     align-items: center;
+    background: url(../img/header-img.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 }
 .cta .cta-text {
@@ -302,6 +305,16 @@ header .logo {
 .cta .cta-text button:hover {
   background: black;
   color: white;
+}
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .cta .cta-img {
+    display: none;
+  }
 }
 /* Main Content Styles */
 .main-content {

@@ -7,6 +7,9 @@
     @media @phone {
         flex-flow: column nowrap;
         align-items: center;
+        background: url(../img/header-img.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
     .cta-text {
         display: flex;
@@ -35,6 +38,15 @@
         &:hover {
             background: black;
             color: white;
+        }
+        @media @phone {
+            margin-bottom: 8px;
+        }
+    }
+
+    .cta-img {
+        @media @phone {
+            display: none;
         }
     }
 }// cta
