@@ -22,10 +22,12 @@
 
     img {
         @media @laptop {
+            align-self: center; 
             width: 45%;
             height: auto;
         }
         @media @tablet {
+            align-self: center;
             width: 45%;
             height: 45%;
         }
@@ -48,7 +50,6 @@
 
         @media @tablet {
             font-size: 4.8rem;
-            margin-right: 0px;
         }
 
         @media @phone {
@@ -64,8 +65,9 @@
         border: 1px double black;
         font-size: 1.6rem;
         background: white;
-        width: 170px;
-        height: 32px;
+        min-width: 170px;
+        width: 50%;
+        height: 30px;
         margin-top: 10px;
         cursor: pointer;
 
