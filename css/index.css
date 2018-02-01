@@ -247,7 +247,8 @@ footer {
   margin: 40px 0 20px;
 }
 @media (max-width: 1100px) {
-  header {
+  .main-header {
+    display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -261,7 +262,11 @@ footer {
   .cta {
     flex-direction: column;
     justify-content: center;
+    align-content: center;
   }
+}
+.cta-text {
+  padding-left: 80px;
 }
 @media (max-width: 1100px) {
   h1 {
@@ -280,10 +285,27 @@ footer {
   }
 }
 .contact {
-  margin: 0px;
-  padding: 10px;
   text-align: center;
 }
-footer {
-  padding: 0px;
+@media (max-width: 768px) {
+  .container {
+    margin: 0px;
+  }
+  .top-content {
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    margin-top: 0px;
+  }
+  .text-content {
+    font-size: 20px;
+    padding: 25px;
+  }
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    margin-top: 0px;
+  }
 }

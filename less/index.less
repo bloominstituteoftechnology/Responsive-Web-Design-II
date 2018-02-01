@@ -7,8 +7,10 @@
 @import "contact";
 @import "footer";
 
-header {
+
+.main-header {
   @media @laptop {
+    display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -24,8 +26,15 @@ header {
   @media @laptop {
     flex-direction: column;
     justify-content: center;
+    align-content: center;
   }
 }
+
+.cta-text {
+  padding-left: 80px;
+}
+
+
 
 h1 {
   @media @laptop {
@@ -38,6 +47,7 @@ h1 {
     background-image: url("../img/header-img.png");
   }
 }
+
 .circle{
   @media @laptop {
     display: none;
@@ -45,12 +55,30 @@ h1 {
 }
 
 .contact {
-  margin:0px;
-  padding: 10px;
   text-align: center;
 }
 
-footer {
-  padding: 0px;
-}
 
+
+@media @tablet {
+  .container {
+    margin: 0px;
+  }
+  .top-content {
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    margin-top: 0px;
+  }
+  .text-content {
+    font-size: 20px;
+    padding: 25px;
+  }
+  .bottom-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+  margin-top: 0px;
+  }
+}
