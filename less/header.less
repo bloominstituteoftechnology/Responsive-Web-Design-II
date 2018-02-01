@@ -10,6 +10,10 @@ header {
             width: 610px;
             justify-content: space-between;
             display: flex;
+            @media @phone {
+                width:90%;
+                justify-content: space-evenly;
+             }
 
             li {
 
@@ -29,8 +33,10 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
-        @media @phone {
-        margin: 18px 0 0 20px;
-        }
     }
+    @media @phone {
+        width:50%;
+        display:inline-block;
+        justify-content: flex-start;
+        }
 }// header

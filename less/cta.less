@@ -14,6 +14,10 @@
         flex-flow: column;
         align-items: center;
         margin: 0 82px 0 0;
+        @media @phone {
+        margin:auto;
+        padding-right: 10%;
+        }
     }
 
     .cta-text button {
@@ -28,6 +32,12 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+    .top-img {
+        .opacity(.7);
+        @media @phone {
+         .opacity(0);
         }
     }
 }// cta
