@@ -1,9 +1,27 @@
 /* Contact Styles */
 
 .contact {
+    text-align: center;
 
+    h4 {
+        margin-left: 100px;
+        @media @phone {
+            margin-left: 0px;
+        }
+    }
+    @media @tablet {
+        width: 600px;
+    }
+    @media @phone {
+        width: 380px;
+    }
     p {
         margin: 40px 0;
+        @media @tablet {
+            width: 713px;
+        }
+        @media @phone {
+            width: 380px;
+        }
     }
-   
 }

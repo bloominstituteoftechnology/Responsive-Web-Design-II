@@ -4,13 +4,35 @@ header {
     width: 100%;
     display: flex;
 
+    @media @tablet {
+        width: 713px;
+        margin-right: 0;
+    }
+
+    @media @phone {
+        width: 380px;
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav {
         ul {
-            margin-top: 40px; 
+            margin-top: 30px;
             width: 610px;
             justify-content: space-between;
             display: flex;
 
+            @media @tablet {
+                width: 470px;
+                margin-left: 20px;
+                margin-right: 8px;
+            }
+
+            @media @phone {
+                width: 350px;
+                flex-direction: column;
+                align-items: center;
+            }
             li {
 
                 a {
@@ -29,5 +51,14 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+        margin-right: 0;
+
+        @media @tablet {
+            margin-left: 15px;
+        }
+        @media @phone {
+            align-self: center;
+            order: -1;
+        }
     }
 }// header

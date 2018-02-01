@@ -3,7 +3,17 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
+
+    @media @tablet {
+        width: 710px;
+    }
+    @media @phone {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        width: 380px;
+    }
 
     .cta-text {
         font-size: 72px;
@@ -13,7 +23,7 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 10px;
     }
 
     .cta-text button {
@@ -28,6 +38,12 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        @media @phone {
+            width: 200px;
         }
     }
 }// cta
