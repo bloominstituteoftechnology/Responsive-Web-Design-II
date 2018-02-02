@@ -1,33 +1,45 @@
 // Header Styles
 
 header {
-    width: 100%;
+    width: 98%;
     display: flex;
+    flex-flow: row wrap;
+    margin-left: 5px;
+      
+      nav {
+        width: 65%;
+        flex-grow: 1;
+        
+          ul {
+              font-size: 1.6rem;
+              margin-top: 40px;
+              justify-content: space-evenly;
+              display: flex;
+              flex-flow: row wrap;
+              // @media @tablet {
+              //   width: 100%;
+              // }
 
-    nav {
-        ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
-            display: flex;
+              li {
 
-            li {
+                  a {
+                      text-decoration: none;
+                      color: #b0b0b0;
 
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-            }
-        }
-    }
-
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
+                      &:hover {
+                          text-decoration: underline;
+                          color: black;
+                      }
+                  }
+              }
+          }
+          
+          
+      }
+    
+      .logo {
+          align-self: flex-end;
+          margin: 28px 0 0 3%;
+      }
+    
 }// header

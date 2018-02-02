@@ -3,26 +3,40 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
+    
+    
+    @media @tablet {
+      flex-flow: row wrap;
+    }
+    
 
     .cta-text {
-        font-size: 72px;
+        font-size: 7.6rem;
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: 0.5rem; // 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
-    }
+        margin: 0 9% 0 0;
+        
+        @media @tablet {
+          // font-size: 50px;
+    			margin: 0;
+    		}
+    	}
+        
+
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
-        width: 170px;
+        width: 55%;
         height: 32px;
         margin-top: 10px;
+        margin-bottom: 20px;
         cursor: pointer;
 
         &:hover {

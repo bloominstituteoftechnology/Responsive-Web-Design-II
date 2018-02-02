@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -159,18 +160,31 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
-  width: 100%;
+  width: 98%;
   display: flex;
+  flex-flow: row wrap;
+  margin-left: 5px;
+}
+header nav {
+  width: 65%;
+  flex-grow: 1;
 }
 header nav ul {
+  font-size: 1.6rem;
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
+  flex-flow: row wrap;
 }
 header nav ul li a {
   text-decoration: none;
@@ -182,31 +196,42 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 3%;
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
   margin-top: 72px;
-  justify-content: flex-end;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .cta {
+    flex-flow: row wrap;
+  }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.6rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 0.5rem;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9% 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    margin: 0;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 55%;
   height: 32px;
   margin-top: 10px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
@@ -219,25 +244,47 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  margin: 1%;
+}
+@media (max-width: 768px) {
+  .main-content .top-content {
+    flex-wrap: wrap;
+  }
+  .main-content .top-content p {
+    margin: 1%;
+  }
 }
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
+  height: auto;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+  }
+  .main-content .bottom-content p {
+    margin: 1%;
+  }
+}
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
   margin: 40px 0;
 }
