@@ -188,6 +188,12 @@ header nav {
     justify-content: center;
   }
 }
+@media (max-width: 768px) {
+  header nav {
+    justify-content: center;
+    min-width: 300px;
+  }
+}
 header nav ul {
   margin-top: 40px;
   width: 100%;
@@ -202,6 +208,7 @@ header nav ul {
 @media (max-width: 768px) {
   header nav ul {
     width: 80%;
+    margin-top: 20px;
   }
 }
 @media (max-width: 400px) {
@@ -213,7 +220,7 @@ header nav ul {
 }
 @media (max-width: 768px) {
   header nav ul li {
-    padding: 0 10px;
+    padding: 0 1%;
   }
 }
 @media (max-width: 400px) {
@@ -224,7 +231,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
-  padding: 0 2px;
+  padding: 0 1%;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -232,21 +239,27 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 50px;
+  margin: 28px 0 0 10%;
 }
 @media (max-width: 1100px) {
   header .logo {
-    margin: 0 40px;
+    margin-left: 5%;
   }
 }
 @media (max-width: 768px) {
   header .logo {
-    margin: 5px 15px 0 20px;
+    margin: 20px 4% 0 4%;
   }
 }
 @media (max-width: 400px) {
   header .logo {
-    padding: 0 100px;
+    padding: 0 26%;
+  }
+}
+@media (max-width: 768px) {
+  .main-header {
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
 }
 @media (max-width: 400px) {
