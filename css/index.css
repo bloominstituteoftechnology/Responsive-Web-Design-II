@@ -151,17 +151,11 @@ h5 {
   max-width: 880px;
   min-width: 275px;
   margin: auto;
-  padding: 0 10px 10px;
+  padding: 0 3% 10px;
 }
 header {
   width: 100%;
   display: flex;
-}
-@media (max-width: 1100px) {
-  header {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
 }
 header nav ul {
   display: flex;
@@ -242,7 +236,7 @@ header .logo {
   margin-top: 10px;
   background: white;
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
@@ -287,7 +281,7 @@ header .logo {
   text-align: center;
 }
 .main-content .top-content p {
-  padding-right: 20px;
+  padding-right: 4%;
 }
 @media (max-width: 400px) {
   .main-content .top-content {
@@ -297,11 +291,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
-}
-@media (max-width: 1100px) {
-  .main-content .middle-img {
-    width: 100%;
-  }
+  width: 100%;
 }
 .main-content .bottom-content {
   display: flex;
@@ -312,7 +302,7 @@ header .logo {
   text-align: center;
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 4%;
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
