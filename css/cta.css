@@ -3,6 +3,13 @@
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .cta img {
+    padding: 10px 0px;
+  }
 }
 .cta .cta-text {
   font-size: 72px;
