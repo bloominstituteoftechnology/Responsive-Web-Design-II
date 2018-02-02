@@ -1,4 +1,7 @@
 /* Contact Styles */
+.contact {
+  max-width: 100%;
+}
 .contact p {
   margin: 40px 0;
 }

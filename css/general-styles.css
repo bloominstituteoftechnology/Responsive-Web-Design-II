@@ -16,6 +16,17 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 390px;
+  }
 }
