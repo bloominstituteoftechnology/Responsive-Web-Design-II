@@ -1,33 +1,59 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 
-    nav {
-        ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
-            display: flex;
 
-            li {
 
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
+  nav {
 
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
-                    }
-                }
-            }
+
+    ul {
+      margin-top: 40px;
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+
+
+      @media @tablet {
+        display: none;
+      }
+
+
+      li {
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          color: #b0b0b0;
+          font-size: 1.7rem;
+           &:hover {
+            text-decoration: underline;
+            color: black;
+          }
         }
+      }
     }
 
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+    select {
+      display: none;
+
+
+      @media @tablet {
+        display: inline-block;
+        margin-top: 40px;
+        justify-content: center;
+        margin-left: 52%;
+      }
     }
+  }
+
+  .logo {
+    margin: 40px 0 0 50%;
+    align-self: flex-end;
+
+    @media @tablet {
+      margin: 28px 0 0 60%;
+    }
+  }
 }// header

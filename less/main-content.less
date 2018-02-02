@@ -5,18 +5,27 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+
+    @media @tablet {
+      width: 100%;
+    }
+
+    @media @phone{
+      width: 100%;
+    }
 }
 
 .main-content .bottom-content {
@@ -25,5 +34,5 @@
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 5%;
 }

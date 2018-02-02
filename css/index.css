@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -162,27 +163,62 @@ h5 {
   width: 880px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
 header {
   width: 100%;
   display: flex;
 }
 header nav ul {
   margin-top: 40px;
-  width: 610px;
+  width: 100%;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav ul li {
+  justify-content: space-between;
 }
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.7rem;
 }
 header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+header nav select {
+  display: none;
+}
+@media (max-width: 768px) {
+  header nav select {
+    display: inline-block;
+    margin-top: 40px;
+    justify-content: center;
+    margin-left: 52%;
+  }
+}
 header .logo {
+  margin: 40px 0 0 50%;
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+}
+@media (max-width: 768px) {
+  header .logo {
+    margin: 28px 0 0 60%;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -190,21 +226,36 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+@media (max-width: 768px) {
+  .cta {
+    position: relative;
+    justify-content: center;
+  }
+  .cta img {
+    position: absolute;
+    -webkit-opacity: 0.3;
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+    z-index: -1;
+    top: -60px;
+    left: .8%;
+  }
+}
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9% 0 0;
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 58%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -219,7 +270,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 .main-content .top-content {
@@ -230,19 +281,37 @@ header .logo {
   display: block;
   margin: 30px auto;
 }
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 5%;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+}
+.contact h4 {
+  text-align: center;
+}
 .contact p {
   margin: 40px 0;
+  text-align: center;
 }
 /* Footer Styles */
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.6rem;
 }
