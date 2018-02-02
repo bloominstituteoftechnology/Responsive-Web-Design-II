@@ -196,7 +196,7 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 20px;
+  margin: 28px 0 0 3%;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -217,7 +217,7 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9% 0 0;
 }
 @media (max-width: 768px) {
   .cta .cta-text {
@@ -226,9 +226,9 @@ header .logo {
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 55%;
   height: 32px;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -250,13 +250,14 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  margin: 1%;
 }
 @media (max-width: 768px) {
   .main-content .top-content {
     flex-wrap: wrap;
   }
   .main-content .top-content p {
-    margin: 10px;
+    margin: 1%;
   }
 }
 .main-content .middle-img {
@@ -274,11 +275,11 @@ header .logo {
     flex-wrap: wrap;
   }
   .main-content .bottom-content p {
-    margin: 10px;
+    margin: 1%;
   }
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 /* Contact Styles */
 .contact {
