@@ -2,25 +2,49 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 35px;
     justify-content: flex-end;
+    background:red;
+
+    @media @tablet {
+        margin: 0;        
+    }
+
+    @media @jacked {
+        flex-flow: column;
+        align-items: center;
+    }
 
     .cta-text {
-        font-size: 72px;
+        width:100%;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 10% 0 0;
+        background: yellow;
+
+        @media @tablet {
+            .scale(.80);
+            margin: 0 5% 0 0;
+            padding: 2%;
+        }
+
+        @media @jacked {
+            width: 75%;
+            margin: 0;
+            padding: 0;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
-        width: 170px;
+        width: 75%;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
@@ -28,6 +52,24 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        background:green;
+
+        @media @tablet {
+            .scale(.80);
+        }
+
+        @media @jacked {
+            width: 75%;
+        }
+
+        @media @phone {
+            display: none;
         }
     }
 }// cta
