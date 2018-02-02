@@ -2,32 +2,88 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 10%;
+    justify-content: center;
+    width: 100%;
+    @media @laptop {
+        flex-wrap: wrap;
+    }
+    @media @tablet {
+        flex-wrap: wrap;
+    }
+    @media @phone {
+        flex-wrap: wrap;
+    }
+
+    .graphics {
+        @media @laptop {
+            width: 60%;
+            height: 60%;
+            padding: 5%;
+            margin-left: 10%;
+        }
+        @media @tablet {
+            width: 60%;
+            height: 60%;
+            padding: 5%;
+            margin-left: 10%;
+            }
+        @media @phone {
+            width: 55%;
+            height: 50%; 
+            padding: 5%;
+            margin-left: 3%;
+                }
+        }
+}
+
 
     .cta-text {
         font-size: 72px;
+        @media @laptop {
+            margin-left: 10%;
+
+        }
+        @media @tablet {
+            margin
+            font-size: 250%;
+        }
+        @media @phone {
+            font-size: 250%;
+        }
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: 10px;
         display: flex;
         justify-content: center;
-        flex-flow: column;
+        flex-flow: center;
         align-items: center;
-        margin: 0 82px 0 0;
+        min-width: 50%;
+        .button {
+            @media @tablet {
+                padding: 0%;
+            }
+        }
     }
 
     .cta-text button {
-        border: 1px double black;
+        border: 2px double red;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
+        background: #0241c8;
+        width: 50%;
+        height: 52px;
+        margin-left: 10%;
+        @media @tablet {
+            margin-left: 0%;
+            right: 50%;
+        }
+        @media @phone {
+            margin-left: 0%;
+            right: 50%;
+        }
         cursor: pointer;
-
         &:hover {
-            background: black;
-            color: white;
+            background: red;
+            color: black;
         }
     }
-}// cta
+// cta
