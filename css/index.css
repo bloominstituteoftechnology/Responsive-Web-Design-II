@@ -267,6 +267,9 @@ nav {
   padding: 0%;
   text-align: center;
 }
+.contact p {
+  margin: 0;
+}
 footer {
   font-size: 1.5rem;
 }
@@ -311,35 +314,49 @@ footer {
   .container {
     align-self: center;
   }
-  .cta {
-    width: 100%;
+  nav {
+    display: none;
   }
-  .top-content {
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .middle-img {
-    width: 100%;
-    justify-content: flex-start;
-  }
-  .middle-img img {
-    width: 100%;
-    height: 100%;
-  }
-  .text-content {
-    font-size: 1.5rem;
-    width: 100%;
-    padding: 2.5%;
-  }
-  .bottom-content {
+  .logo {
+    padding-right: 19%;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px;
-    margin-top: 0px;
+    justify-content: center;
   }
+  .cta {
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+  }
+}
+.cta {
+  width: 100%;
+}
+.top-content {
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.middle-img {
+  width: 100%;
+  justify-content: flex-start;
+}
+.middle-img img {
+  width: 100%;
+  height: 100%;
+}
+.text-content {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 2.5%;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px;
+  margin-top: 0px;
 }
 @media (max-width: 640px) {
   nav {
