@@ -1,25 +1,77 @@
 // Header Styles
 
 header {
+
+    font-size: 1.6rem;
     width: 100%;
     display: flex;
-
+    @media @tablet {
+        width:100%
+    }
+    @media @phone {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+    }
+    img {
+        @media @tablet {
+			width: 40%;
+		}
+		@media @phone {
+            width: 40%;
+            justify-content: center;
+		}
+    }
     nav {
+        @media @phone{
+            box-sizing: border-box;
+            width: 100%
+        }
         ul {
             margin-top: 40px; 
             width: 610px;
-            justify-content: space-between;
-            display: flex;
+            justify-content: space-around;
+            display:flex;
 
+            @media @tablet {
+                flex-wrap:wrap;
+                flex-direction: column;
+                width:100%;
+            }
+        
+            @media @phone {
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            flex-direction:column;
+            width:100%;
+        }
             li {
 
+                @media @phone {
+                    box-sizing: border-box;
+                    border: 1px solid white;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 3rem;
+                    background: black;
+                }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    @media @tablet {
+                        box-sizing: border-box;
+                    }
+                    @media @phone {
+                        box-sizing: border-box;
+                    }
 
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        @media @phone {
+                            color: white;
+                        }
                     }
                 }
             }
@@ -27,7 +79,10 @@ header {
     }
 
     .logo {
-        align-self: flex-end;
         margin: 28px 0 0 91px;
+        @media @phone {
+            align-self: center;
+            margin: 28px 0 0 0px;
+        }
     }
-}// header
+}
