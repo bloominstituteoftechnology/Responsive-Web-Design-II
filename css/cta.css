@@ -4,21 +4,24 @@
   margin-top: 72px;
   justify-content: flex-end;
 }
+.cta img {
+  width: 27.8vw;
+  height: 27.8vw;
+}
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 5.27vw;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 1.71%;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9.3% 0 0;
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
   background: white;
-  width: 170px;
+  width: 85px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;

@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
 }
 h1,
 h2,
@@ -155,22 +156,41 @@ h3,
 h4,
 h5 {
   font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
+  width: calc(100px + 57.8%;
   margin: auto;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 50%;
+  }
 }
 header {
   width: 100%;
   display: flex;
 }
+header nav {
+  width: 44.7vw;
+}
 header nav ul {
   margin-top: 40px;
-  width: 610px;
+  width: 100%;
   justify-content: space-between;
   display: flex;
+	font-size: calc(12px + 0.293vw);
+	flex-wrap: wrap;
 }
 header nav ul li a {
   text-decoration: none;
@@ -182,7 +202,9 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  width: calc(92px + 6.66vw);
+  height: calc(24px + 1.32vw);
+  margin: 28px 0 0 6.75%;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -190,22 +212,27 @@ header .logo {
   margin-top: 72px;
   justify-content: flex-end;
 }
+.cta img {
+  width: 27.8vw;
+  height: 27.8vw;
+}
+
 .cta .cta-text {
-  font-size: 72px;
+  font-size: calc(30px + 3.07vw);
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 1.71%;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9.3% 0 0;
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: calc(12px + 0.293vw);
   background: white;
-  width: 170px;
-  height: 32px;
+  width: calc(85px + 6.22vw);
+  height: 2.67em;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -229,20 +256,38 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
+	height: 13.5vw;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 1.48%;
+}
+.main-content h4 {
+  letter-spacing: 1.79%;
 }
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
 }
+.contact .contact h4 {
+  letter-spacing: 0.179%;
+}
+
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 40px 0 20px;
 }
