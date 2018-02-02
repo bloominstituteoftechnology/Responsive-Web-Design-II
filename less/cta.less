@@ -1,18 +1,17 @@
 /* Call To Action (CTA) Styles */
 
 .cta {
-    width: 100%;
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-    
+    background:orange;
 
     @media @tablet {
-        margin: 0;
-        background:orange;
+        margin: 0;        
     }
 
     .cta-text {
+        width:100%;
         font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
@@ -20,12 +19,12 @@
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 20% 0 0;
+        margin: 0 10% 0 0;
+        background: yellow;
 
         @media @tablet {
             .scale(.80);
-            margin: 0 10% 0 0;
-            background: yellow;
+            margin: 0 5% 0 0;
             padding: 2%;
         }
     }
@@ -46,8 +45,11 @@
     }
 
     img {
+        width: 100%;
+        height: auto;
+        background:green;
+
         @media @tablet {
-            background:green;
             .scale(.80);
         }
     }

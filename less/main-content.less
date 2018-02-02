@@ -7,23 +7,33 @@
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-}
 
-.main-content .top-content {
+   @media @tablet {
+       margin: 0;
+       background:lightblue;
+   }
+
+   .top-content {
     display: flex;
     justify-content: space-around;
-}
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
+        .text-content {
+            padding: 0 2% 0 2%;
+        }
+    }   
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
+    .middle-img {
+        display: block;
+        margin: 30px auto;
+        width:100%;
+    }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+
+        .text-content {
+            padding: 0 2% 0 2%;
+        }
+    }
 }
