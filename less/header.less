@@ -20,14 +20,19 @@ header {
   }
 
   nav {
+    @media @laptop {
+      width: 100%;
+    }
+
     ul {
       display: inherit;
       flex-direction: column;
 
       @media @tablet {
-        box-sizing: none;
-
-        margin: 0 35px 0 35px;
+        box-sizing: content-box;
+        // background: blue;
+        .convertToPercent(35);
+        margin: 0 @percent 0 @percent;
 
         display: flex;
         flex-flow: row wrap;
@@ -42,7 +47,7 @@ header {
         justify-content: initial;
 
         margin-top: 40px;
-        width: 610px;
+        width: 100%;
         justify-content: space-between;
         display: flex;
       }
@@ -73,8 +78,11 @@ header {
     margin: 28px 0 20px 0;
 
     @media @laptop {
+      height: 36px;
+      width: 20.34%;
+      object-fit: fill;
       align-self: flex-end;
-      margin: 28px 0 0 91px;
+      margin: 28px 0 0 10.34%;
     }
   }
 } // header
