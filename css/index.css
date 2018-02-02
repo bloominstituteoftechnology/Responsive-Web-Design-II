@@ -430,6 +430,11 @@ header .logo {
 .contact p {
   margin: 20px 0;
 }
+@media (max-width: 400px) {
+  .contact p {
+    margin: 5px 0;
+  }
+}
 /* Footer Styles */
 footer {
   font-size: 1.6rem;
