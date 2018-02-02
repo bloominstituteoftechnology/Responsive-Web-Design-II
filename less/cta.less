@@ -4,21 +4,45 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    @media @laptop {
+        justify-content: space-between;
+    }
+    @media @tablet {
+        margin-top: 50px;
+        justify-content: center;
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+    @media @phone {
+        margin-top: 52px;
+    }
+    @media @smallest {
+        margin-bottom: 0;
+        margin-top: 20px;
+        padding-bottom: 0;
+        position: relative;
+    }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 6rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 10vw 0 0;
+        @media @laptop {
+            margin-left: auto;
+        }
+        @media @tablet {
+            margin-right: auto;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
         width: 170px;
         height: 32px;
@@ -28,6 +52,23 @@
         &:hover {
             background: black;
             color: white;
+        }
+    }
+
+    img {
+        @media @tablet {
+            position: absolute;
+            .opacity(.3);
+            z-index: -1;
+            top: 140px;
+            width: 355px;
+        }
+        @media @phone {
+            overflow: hidden;
+        }
+        @media @smallest {
+            top: -5px;
+            width: 90vw;
         }
     }
 }// cta
