@@ -2,32 +2,77 @@
 
 header {
     width: 100%;
+    max-width: 880px;
+    position: fixed;
+    background-color: white;
+    top: 0px;
     display: flex;
+    @media @tablet {
+        // position: relative;
+    }
+    @media @phone {
+        position: relative;
+    }
 
     nav {
+        width: 99%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        top: 15px;
+        margin-left: 2%;
+        margin-right: 2%;
+        @media @tablet {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        
+        @media @phone {
+            width: 100%;
+            flex-direction: column-reverse;
+        } 
+
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
             display: flex;
+            margin-top: 20px;
+            width: 60%;
+            // min-width: 400px;
+            justify-content: space-between;
+            @media @phone {
+                width: 65%;
+                flex-wrap: wrap;
+                height: 50px;
+                margin-left: 17.5%;
+            }
 
             li {
-
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
 
                     &:hover {
+                        font-weight: bold;
                         text-decoration: underline;
                         color: black;
                     }
                 }
             }
-        }
-    }
-
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
+        } // navbar
+        
+        .logo {
+            min-width: 150px;
+            max-width: 150px;
+            display: flex;
+            flex-direction: row;
+            align-self: flex-end;
+            @media @tablet {
+                align-self: flex-start;
+            }
+            @media @phone {
+                align-self: center;
+            }
+        } // logo
+    } // nav
 }// header

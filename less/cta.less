@@ -1,33 +1,77 @@
 /* Call To Action (CTA) Styles */
 
 .cta {
+    border: 1px solid red;
+    height: 400px;
     display: flex;
-    margin-top: 72px;
+    margin: 72px 0%;
     justify-content: flex-end;
+    // @media @laptop {
+    //     flex-flow: row;
+    // }
+    @media @tablet {
+        width: 100%;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        margin: 75px 0 0 0;
+        position: relative;
+    }
+    @media @phone {
+        // width: 100%;
+    }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 7rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
-    }
-
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
+        margin: 0 10% 0 0;
+        @media @laptop {
+            font-size: 5rem;
+            // flex-flow: column;
+            margin: 75px 0 0 0;
+            // justify-content: center;
         }
-    }
+        @media @tablet {
+            // align-items: center;
+            justify-items: center;
+        }
+        
+        button {
+            border: 1px double black;
+            font-size: 16px;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+            
+            &:hover {
+                background: black;
+                color: white;
+            }
+        } //button
+    } // cta-text
+
+    .cta-img {
+        // align-self: flex-end;
+        @media @tablet {
+            // opacity: .5;
+            // position: absolute;
+            // z-index: -1;
+            // height: auto;
+            // width: 70%;
+            // align-self: center;
+            // margin: -70px 0 0 5%;
+            display: none;
+        }
+        @media @phone {
+            // width: 90%;
+            display: none;
+        }
+    } // cta-img
 }// cta
