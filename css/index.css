@@ -258,6 +258,11 @@ header .logo {
     padding-bottom: 50px;
   }
 }
+@media (max-width: 400px) {
+  .cta {
+    margin-top: 32px;
+  }
+}
 .cta .cta-text {
   font-size: 6rem;
   text-align: center;
