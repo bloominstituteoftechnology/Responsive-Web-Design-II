@@ -2,32 +2,56 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
     justify-content: flex-end;
+    margin-top: 72px;
+    @media @tablet {
+        flex-flow: column;
+    } 
 
     .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
-    }
-
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
+        text-align: center;
+        font-size: 7.2rem;
+        letter-spacing: 5px;
+        margin: 0 10% 0 0;
+        h1 {
+            @media @phone {
+                font-size: 6rem;
+            } 
         }
+        button {
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            background: white;
+            border: 1px double black;
+            font-size: 1.6rem;
+            cursor: pointer;
+    
+            &:hover {
+                background: black;
+                color: white;
+            }
+        }
+        @media @tablet {
+            margin-right: 0;
+        } 
+    }
+    img {
+        @media @tablet {
+            width: 60%;
+            height: 60%;
+            margin: 30px auto;
+            margin-bottom: 0;
+        }  
+        @media @phone {
+            width: 75%;
+            height: 75%;
+            margin: 30px auto;
+            margin-bottom: 0;
+        }  
     }
 }// cta

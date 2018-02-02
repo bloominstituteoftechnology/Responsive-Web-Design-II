@@ -4,18 +4,25 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%; // implemented for rem use
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
+    margin-bottom: 10px;
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
+    min-width: 275px;
     margin: auto;
+    padding: 0 3% 10px;
 }
