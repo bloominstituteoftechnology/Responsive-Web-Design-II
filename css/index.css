@@ -183,17 +183,16 @@ header {
 header nav {
   width: 69.31818182%;
 }
+@media (max-width: 768px) {
+  header nav {
+    width: 66.81818182%;
+  }
+}
 header nav ul {
   margin: 40px 2% 0px 2%;
   justify-content: space-between;
   display: flex;
   font-size: 1.6rem;
-}
-@media (max-width: 768px) {
-  header nav ul {
-    width: 52.27272727%;
-    justify-content: space-evenly;
-  }
 }
 @media (max-width: 400px) {
   header nav ul {
@@ -239,19 +238,17 @@ header .logo {
   justify-content: flex-end;
   max-width: 880px;
   width: 100%;
+  position: relative;
 }
-@media (max-width: 400px) {
-  .cta {
-    flex-flow: column;
-  }
+@media (max-width: 768px) {
   .cta img {
     opacity: 0.23;
     position: absolute;
-    left: 5%;
-    width: 90%;
+    center: 50%;
   }
 }
 .cta .cta-text {
+  width: 31.13636364%;
   font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
@@ -263,7 +260,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta .cta-text {
-    margin: 0px;
+    margin: 72px auto;
   }
 }
 .cta .cta-text button {

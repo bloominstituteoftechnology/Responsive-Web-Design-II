@@ -6,17 +6,18 @@
     justify-content: flex-end;
     max-width: 880px;
     width: 100%;
-    @media @phone {
-        flex-flow: column;
+    position: relative;
+    @media @tablet {
         img {
             opacity: 0.23;
             position: absolute;
-            left: 5%;
-            width: 90%;
+            center: 50%;
         }
+
     }
 
     .cta-text {
+        .pixToPer(274);
         font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
@@ -26,7 +27,7 @@
         align-items: center;
         margin: 0 ((82 / @container-width) * 100%)/* 82px */ 0 0;
         @media @tablet {
-            margin: 0px;
+            margin: 72px auto;
         }
     }
 

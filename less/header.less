@@ -10,6 +10,9 @@ header {
 
     nav {
         .pixToPer(610); // width: 610px;
+        @media @tablet {
+            .pixToPer(588);// width: 460px;
+            }
 
         ul {
             margin: 40px 2% 0px 2%;     
@@ -17,10 +20,7 @@ header {
             display: flex;
             font-size: 1.6rem;
 
-            @media @tablet {
-                .pixToPer(460);// width: 460px;
-                justify-content: space-evenly;
-            }
+
     
             @media @phone {
                 width: 100%;
