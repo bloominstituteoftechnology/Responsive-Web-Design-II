@@ -141,9 +141,6 @@ table {
 	}
 
 */
-@laptop ~'(max-width: 1100px)';
-@tablet ~'(max-width: 768px)';
-@phone ~'(max-width: 400px)';
 * {
   box-sizing: border-box;
 }
@@ -151,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 @media (max-width: 1100px) {
   html,
@@ -176,11 +174,12 @@ h3,
 h4,
 h5 {
   font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  letter-spacing: .2rem;
+  margin-bottom: 1%;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
 }
 @media (max-width: 1100px) {
@@ -201,22 +200,36 @@ h5 {
 header {
   width: 100%;
   display: flex;
+  font-size: 1.5rem;
 }
-header nav ul {
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
-  display: flex;
+header img {
+  width: 25%;
+}
+header nav {
+  width: 75%;
 }
 @media (max-width: 768px) {
-  header nav ul {
-    width: 400px;
+  header nav {
+    width: 50%;
+    font-size: 1.25rem;
+  }
+  header nav img {
+    width: 25%;
   }
 }
 @media (max-width: 400px) {
-  header nav ul {
-    width: 300px;
+  header nav {
+    width: 38%;
+    font-size: .75rem;
   }
+  header nav img {
+    width: 25%;
+  }
+}
+header nav ul {
+  margin-top: 5%;
+  justify-content: space-between;
+  display: flex;
 }
 header nav ul li a {
   text-decoration: none;
@@ -228,13 +241,17 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 4% 0 0 11%;
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
-  margin-top: 72px;
+  margin-top: 9%;
   justify-content: space-around;
+}
+.cta image {
+  height: 100%;
+  width: 100%;
 }
 @media (max-width: 1100px) {
   .cta {
@@ -243,18 +260,18 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta {
-    max-width: 100%;
+    max-width: 75%;
   }
 }
 @media (max-width: 400px) {
   .cta {
-    max-width: 100%;
+    max-width: 50%;
   }
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 6.75rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: .5rem;
   display: flex;
   justify-content: space-around;
   flex-flow: column;
@@ -263,21 +280,21 @@ header .logo {
 }
 @media (max-width: 768px) {
   .cta .cta-text {
-    font-size: 60px;
+    font-size: 5.75rem;
   }
 }
 @media (max-width: 400px) {
   .cta .cta-text {
-    font-size: 50px;
+    font-size: 4rem;
   }
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.5rem;
   background: white;
   width: 170px;
   height: 32px;
-  margin-top: 10px;
+  margin-top: 1%;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
@@ -288,9 +305,9 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 75px 0 35px 0;
+  margin: 9% 0 4% 0;
   padding: 10%;
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 18px;
 }
 @media (max-width: 1100px) {
@@ -301,11 +318,13 @@ header .logo {
 @media (max-width: 768px) {
   .main-content {
     max-width: 100%;
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 400px) {
   .main-content {
     max-width: 100%;
+    font-size: .75rem;
   }
 }
 .main-content .top-content {
@@ -314,7 +333,7 @@ header .logo {
 }
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: 4% auto;
   width: 100%;
 }
 .main-content .bottom-content {
@@ -322,9 +341,12 @@ header .logo {
   justify-content: space-around;
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 3%;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.5rem;
+}
 @media (max-width: 1100px) {
   .contact {
     width: 100%;
@@ -335,16 +357,32 @@ header .logo {
   .contact {
     width: 100%;
     padding: 10%;
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 400px) {
   .contact {
     width: 100%;
     padding: 10%;
+    font-size: .75rem;
   }
+}
+.contact p {
+  margin: .5% 0;
 }
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  font-size: 1.5rem;
+  margin: 5% 0 3%;
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    font-size: .75rem;
+  }
 }

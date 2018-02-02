@@ -2,39 +2,43 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 9%;
     justify-content: space-around;
+    image {
+        height: 100%;
+        width: 100%;
+    }
     @media @laptop {
         max-width: 100%;
     }
     @media @tablet {
-        max-width: 100%;
+        max-width: 75%;
     }
     @media @phone {
-        max-width: 100%;
+        max-width: 50%;
     }
     .cta-text {
-        font-size: 72px;
+        font-size: 6.75rem;
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: .5rem;
         display: flex;
         justify-content: space-around;
         flex-flow: column;
         align-items: center;
         padding: 10%;
         @media @tablet {
-            font-size: 60px;
+            font-size: 5.75rem;
         }
         @media @phone {
-            font-size: 50px;
+            font-size: 4rem;
         }
         button {
             border: 1px double black;
-            font-size: 16px;
+            font-size: 1.5rem;
             background: white;
             width: 170px;
             height: 32px;
-            margin-top: 10px;
+            margin-top: 1%;
             cursor: pointer;
     
             &:hover {

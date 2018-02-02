@@ -3,18 +3,30 @@
 header {
     width: 100%;
     display: flex;
+    font-size: 1.5rem;
+    img {
+        width: 25%;
+    }
     nav {
+        width: 75%;
+        @media @tablet {
+            width: 50%;
+            font-size: 1.25rem;
+            img {
+                width: 25%;
+            }
+        }
+        @media @phone {
+            width: 38%;
+            font-size: .75rem;
+            img {
+                width: 25%;
+            }
+        }
         ul {
-            margin-top: 40px; 
-            width: 610px;
+            margin-top: 5%; 
             justify-content: space-between;
             display: flex;
-            @media @tablet {
-                width: 400px;
-            }
-            @media @phone {
-                width: 300px;
-            }
             li {
                 a {
                     text-decoration: none;
@@ -29,6 +41,6 @@ header {
     }
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 4% 0 0 11%;
     }
 }
