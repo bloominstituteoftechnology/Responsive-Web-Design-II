@@ -1,24 +1,24 @@
 // Header Styles
 
 header {
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-flow: row wrap;
     margin-left: 5px;
       
       nav {
-        
+        width: 65%;
+        flex-grow: 1;
         
           ul {
               font-size: 1.6rem;
-              margin-top: 40px; 
-              width: 610px;
-              justify-content: space-around;
+              margin-top: 40px;
+              justify-content: space-evenly;
               display: flex;
               flex-flow: row wrap;
-              @media @tablet {
-                width: 122%;
-              }
+              // @media @tablet {
+              //   width: 100%;
+              // }
 
               li {
 
@@ -33,13 +33,13 @@ header {
                   }
               }
           }
+          
+          
       }
     
-
+      .logo {
+          align-self: flex-end;
+          margin: 28px 0 0 20px;
+      }
     
-
-    .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
 }// header

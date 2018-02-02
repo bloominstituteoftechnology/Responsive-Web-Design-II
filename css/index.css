@@ -170,23 +170,21 @@ h5 {
   }
 }
 header {
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-flow: row wrap;
   margin-left: 5px;
 }
+header nav {
+  width: 65%;
+  flex-grow: 1;
+}
 header nav ul {
   font-size: 1.6rem;
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   display: flex;
   flex-flow: row wrap;
-}
-@media (max-width: 768px) {
-  header nav ul {
-    width: 122%;
-  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -198,7 +196,7 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 20px;
 }
 /* Call To Action (CTA) Styles */
 .cta {
