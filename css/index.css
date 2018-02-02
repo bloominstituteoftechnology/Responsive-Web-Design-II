@@ -305,12 +305,13 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
   line-height: 18px;
+  font-size: 1.6rem;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  margin: 0 1% 0;
 }
 @media (max-width: 768px) {
   .main-content .top-content {
@@ -346,6 +347,7 @@ header .logo {
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  margin: 0 1% 0;
 }
 .main-content .bottom-content p {
   padding-right: 20px;
@@ -376,6 +378,10 @@ header .logo {
   }
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+  margin: 0 1% 0;
+}
 .contact p {
   margin: 40px 0;
 }
@@ -395,4 +401,5 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.6rem;
 }

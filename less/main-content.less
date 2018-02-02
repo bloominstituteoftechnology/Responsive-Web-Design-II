@@ -5,12 +5,18 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   //font-size: 16px;
    line-height: 18px;
+
+   //REM
+   font-size: 1.6rem;
 
    .top-content {
         display: flex;
         justify-content: space-around;
+
+        //percentage-based layout refactoring
+        margin: 0 1% 0;
 
         // added @tablet escaping from mixins.less
         @media @tablet {
@@ -54,6 +60,9 @@
         p {
             padding-right: 20px;
         }
+
+        //percentage-based layout refactoring
+        margin: 0 1% 0;
 
         // added @tablet escaping from mixins.less
         @media @tablet {
