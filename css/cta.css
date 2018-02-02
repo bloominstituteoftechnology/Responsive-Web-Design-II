@@ -11,7 +11,7 @@
 .cta .cta-text {
   font-size: 5.27vw;
   text-align: center;
-  letter-spacing: 1.71%;
+  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -21,8 +21,7 @@
 .cta .cta-text button {
   border: 1px double black;
   background: white;
-  width: 85px;
-  height: 32px;
+  height: 2.67em;
   margin-top: 10px;
   cursor: pointer;
 }

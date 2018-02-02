@@ -8,7 +8,7 @@ header nav {
 header nav ul {
   width: 100%;
   margin-top: 40px;
-  justify-content: space-between;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
 }
@@ -22,7 +22,6 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  width: 13.4vw;
-  height: 2.64vw;
   margin: 28px 0 0 6.75%;
+
 }

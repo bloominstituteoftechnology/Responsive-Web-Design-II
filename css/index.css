@@ -127,19 +127,15 @@ table {
   border-spacing: 0;
 }
 /*
-
 	Example usage:
-
 	.some-element {
 		@media @tablet {
 			width: 100%;
 		}
-
 		@media @phone {
 			width: 50%;
 		}
 	}
-
 */
 * {
   box-sizing: border-box;
@@ -203,7 +199,7 @@ header .logo {
 .cta .cta-text {
   font-size: calc(30px + 3.07vw);
   text-align: center;
-  letter-spacing: 1.71%;
+  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -249,15 +245,9 @@ header .logo {
 .main-content .bottom-content p {
   padding-right: 1.48%;
 }
-.main-content h4 {
-  letter-spacing: 1.79%;
-}
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
-}
-.contact .contact h4 {
-  letter-spacing: 0.179%;
 }
 /* Footer Styles */
 footer {
