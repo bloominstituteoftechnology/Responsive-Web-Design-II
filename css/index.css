@@ -179,9 +179,25 @@ header nav ul {
   justify-content: space-between;
   display: flex;
 }
+@media (max-width: 768px) {
+  header nav ul {
+    flex-flow: wrap;
+    margin-top: 10px;
+  }
+}
 header nav ul li {
   width: 15%;
   text-align: center;
+}
+@media (max-width: 768px) {
+  header nav ul li {
+    width: 33%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    width: 50%;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -195,6 +211,11 @@ header .logo {
   align-self: flex-end;
   padding: 28px 0 0px 5%;
   background: blue;
+}
+@media (max-width: 400px) {
+  header .logo {
+    display: none;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -232,7 +253,7 @@ header .logo {
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
   width: 75%;
   height: 32px;
@@ -254,6 +275,11 @@ header .logo {
     -moz-transform: scale(0.8);
     -ms-transform: scale(0.8);
     -o-transform: scale(0.8);
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    display: none;
   }
 }
 /* Main Content Styles */

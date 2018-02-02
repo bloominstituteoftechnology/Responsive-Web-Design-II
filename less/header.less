@@ -13,9 +13,22 @@ header {
             justify-content: space-between;
             display: flex;
 
+            @media @tablet {
+                flex-flow: wrap;
+                margin-top: 10px;
+            }
+
             li {
                 width: 15%;
                 text-align: center;
+
+                @media @tablet {
+                    width: 33%;
+                }
+
+                @media @phone {
+                    width: 50%;
+                }
 
                 a {
                     text-decoration: none;
@@ -34,5 +47,9 @@ header {
         align-self: flex-end;
         padding: 28px 0 0px 5%;
         background: blue;
+
+        @media @phone {
+            display: none;
+        }
     }
 }// header
