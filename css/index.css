@@ -127,19 +127,15 @@ table {
   border-spacing: 0;
 }
 /*
-
 	Example usage:
-
 	.some-element {
 		@media @tablet {
 			width: 100%;
 		}
-
 		@media @phone {
 			width: 50%;
 		}
 	}
-
 */
 * {
   box-sizing: border-box;
@@ -170,9 +166,12 @@ h5 {
 }
 header {
   display: flex;
-  height: 60px;
+  flex-wrap: wrap;
+  height: 20%;
+  background: violet;
 }
 header nav {
+  background: lightgoldenrodyellow;
   width: 70%;
   align-self: flex-end;
 }
@@ -180,7 +179,19 @@ header nav ul {
   display: flex;
   font-size: 1.6rem;
   width: 100%;
-  justify-content: space-between;
+}
+@media (max-width: 520px) {
+  header nav ul {
+    font-size: 1rem;
+  }
+}
+header nav ul li {
+  margin: 0px 3%;
+}
+@media (max-width: 520px) {
+  header nav ul li {
+    margin: 0px 0.8%;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -191,41 +202,68 @@ header nav ul li a:hover {
   color: black;
 }
 header .logo {
+  background: lightgreen;
   align-self: flex-end;
-  margin-left: 10%;
+  width: 25%;
+  padding-left: 5%;
+}
+@media (max-width: 768px) {
+  header .logo {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 520px) {
+  header .logo {
+    margin-left: 5%;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
-  margin-top: 72px;
+  margin-top: 9%;
   justify-content: center;
+  background: sandybrown;
 }
 @media (max-width: 768px) {
   .cta {
     flex-flow: row;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 520px) {
   .cta {
     display: flex;
     flex-wrap: wrap;
   }
 }
 .cta .cta-text {
-  width: 33.5%;
+  background: lightgreen;
+  width: 50%;
   font-size: 5.5rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 7% 11% 0 0;
+  margin: 7% 0 0 0;
 }
 @media (max-width: 768px) {
 }
-@media (max-width: 400px) {
+@media (max-width: 520px) {
   .cta .cta-text {
     width: 100%;
+    font-size: 3.2rem;
+    margin: 0 0 0 0;
+  }
+}
+.cta .top-img {
+  background: lightsalmon;
+  width: 45%;
+  height: 45%;
+}
+@media (max-width: 520px) {
+  .cta .top-img {
+    width: 80%;
+    height: 80%;
   }
 }
 .cta .cta-text button {
@@ -241,8 +279,16 @@ header .logo {
   background: black;
   color: white;
 }
+@media (max-width: 520px) {
+  .cta .cta-text button {
+    width: 27%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
 /* Main Content Styles */
 .main-content {
+  background: lightgoldenrodyellow;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -259,7 +305,14 @@ header .logo {
     margin: 0px 0px 0px 0px;
   }
 }
+@media (max-width: 520px) {
+  .main-content {
+    margin: 20px 0px 20px 0px;
+    padding: 20px 0;
+  }
+}
 .main-content h4 {
+  background: violet;
   letter-spacing: 0.1rem;
 }
 .main-content .top-content {
@@ -267,23 +320,19 @@ header .logo {
   width: 98%;
 }
 @media (max-width: 768px) {
-  .main-content .top-content {
-    width: 100%;
-  }
 }
-.main-content .top-content p {
+.main-content p {
   padding-right: 4%;
 }
 .main-content .middle-img {
-  width: 98%;
-  max-width: 880px;
-  min-width: 412px;
-  height: auto;
-  margin: 20px auto;
+  width: 95%;
+  height: 95%;
+  margin: 2%;
+  background: yellow;
 }
 @media (max-width: 768px) {
   .main-content .middle-img {
-    width: 100%;
+    width: 95%;
   }
 }
 .main-content .bottom-content {
@@ -293,11 +342,13 @@ header .logo {
 }
 @media (max-width: 768px) {
 }
-.main-content .bottom-content p {
+.main-content p {
+  background: burlywood;
   padding-right: 4%;
 }
 /* Contact Styles */
 .contact {
+  background: lightgreen;
   font-size: 1.5rem;
 }
 .contact p {
@@ -306,8 +357,13 @@ header .logo {
 }
 @media (max-width: 768px) {
   .contact {
-    width: 100%;
-    margin: 25px;
+    width: 50%;
+    margin: 15px;
+  }
+}
+@media (max-width: 520px) {
+  .contact {
+    margin: 10px;
   }
 }
 /* Footer Styles */
@@ -315,4 +371,9 @@ footer {
   font-size: 1rem;
   text-align: center;
   padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+  footer {
+    font-size: 1.6rem;
+  }
 }

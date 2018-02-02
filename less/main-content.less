@@ -1,6 +1,7 @@
 /* Main Content Styles */
 
 .main-content {
+    background: lightgoldenrodyellow;
     display: flex; // This is actually still in 'row'
     flex-wrap: wrap; // b/c of this, the images are wrapping down and stacking
     justify-content: center;
@@ -15,10 +16,13 @@
         margin: 0px 0px 0px 0px; // Makes page less squashed on the sides under 768px
     }
     @media @phone {
+        margin: 20px 0px 20px 0px;
+        padding: 20px 0;
     }
 }
 
 .main-content h4{
+    background: violet;
     letter-spacing: 0.1rem;
 }
 
@@ -28,7 +32,7 @@
 
     @media @tablet {
         // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
-        width: 100%; // margin: 30px; // Makes page less squashed on the sides under 768px
+        // margin: 30px; // Makes page less squashed on the sides under 768px
     }
 
     @media @phone {
@@ -37,21 +41,20 @@
     
 }
 
-.main-content .top-content p {
+.main-content p {
     padding-right: 4%;
 }
 
 .main-content .middle-img {
     // This also needs to be adjusted
-    width: 98%; // You can adjust this to give margins
-    max-width: 880px;
-    min-width: 412px;
-    height: auto;
-    margin: 20px auto;
+    width: 95%; // You can adjust this to give margins
+    height: 95%;
+    margin: 2%;
+    background: yellow;
 
     @media @tablet {
         // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
-        width: 100%; // margin: 30px; // Makes page less squashed on the sides under 768px
+        width: 95%; // margin: 30px; // Makes page less squashed on the sides under 768px
     }
 
     @media @phone {
@@ -73,6 +76,7 @@
     }
 }
 
-.main-content .bottom-content p {
+.main-content p {
+    background: burlywood;
     padding-right: 4%;
 }
