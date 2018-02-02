@@ -5,23 +5,30 @@
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+    @media @tablet {
+      display:flex;
+    }
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
+
+    @media @phone {
+        margin-bottom: 0px;
+        text-align: center;
+    }
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
     @media @tablet {
-        position:absolute;
       margin: 0;
-      width: auto;
     }
 }
