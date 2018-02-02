@@ -3,7 +3,9 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
+
+    //percentage-based layout refactoring
 
     // added @phone escaping from mixins.less
     @media @phone {
@@ -14,18 +16,28 @@
     }
 
     .cta-text {
-        font-size: 72px;
+        // font-size: 72px;
+
+        // REM
+        font-size: 7.2rem;
+
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        // margin: 0 82px 0 0;
+
+        //percentage-based layout refactoring
+        margin: 0 9.3% 0 0;
 
         button {
             border: 1px double black;
-            font-size: 16px;
+            // font-size: 16px;
+            //REM
+            font-size: 1.6rem;
+
             background: white;
             width: 170px;
             height: 32px;
