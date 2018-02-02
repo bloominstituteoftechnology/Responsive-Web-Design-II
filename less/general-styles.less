@@ -2,20 +2,37 @@
 
 * {
     box-sizing: border-box;
-}
-
-html, body {
+  }
+  
+  html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
+    font-size: 62.5%;
+  }
+  
+  h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
-}
-
-.container {
-    width: 880px;
+   
+    @media @tablet {
+      width: 100%;
+  }  
+    @media @phone {
+      margin: 0px;
+      text-align: center;
+    }
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 880px;
     margin: auto;
-}
+  
+    @media @tablet {
+        width: 100%;
+    }
+    @media @phone {
+        width: 100%;
+    }
+  }

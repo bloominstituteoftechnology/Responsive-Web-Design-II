@@ -1,9 +1,23 @@
 /* Contact Styles */
 
 .contact {
-
+    font-size: 1.6rem;
+    text-align: center;
+  
+    @media @tablet {
+      width: 100%;
+    }
+    @media @phone {
+        text-align: center;
+        font-size: 30px;
+    }
+  
     p {
         margin: 40px 0;
+  
+        @media @phone {
+            font-size: 20px;
+            margin: 10px;
+        }
     }
-   
-}
+  }

@@ -18,7 +18,7 @@
 
 // LESS escaping
 
-@phone: ~"(max-width: 400px)";
+@phone: ~"(max-width: 414px)";
 @tablet: ~"(max-width: 768px)";
 @laptop: ~"(max-width: 1100px)";
 
@@ -27,7 +27,7 @@
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
+	opacity: 			@opacity;
 }
 
 .animation (@name, @duration: 300ms, @delay: 0, @ease: ease) {
@@ -43,10 +43,10 @@
 	-o-transition:      @transition;  
 }
 .transform(@string){
-	-webkit-transform: @string;
-	-moz-transform: 	 @string;
-	-ms-transform: 		 @string;
-	-o-transform: 		 @string;
+	-webkit-transform:	@string;
+	-moz-transform: 	@string;
+	-ms-transform: 		@string;
+	-o-transform: 		@string;
 }
 
 .scale (@factor) {
@@ -64,28 +64,28 @@
 }
 
 .skew (@deg, @deg2) {
-	-webkit-transform:       skew(@deg, @deg2);
+	-webkit-transform:   skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
 }
 
 .translate (@x, @y:0) {
-	-webkit-transform:       translate(@x, @y);
+	-webkit-transform:   translate(@x, @y);
 	-moz-transform: 	 translate(@x, @y);
 	-ms-transform: 		 translate(@x, @y);
 	-o-transform: 		 translate(@x, @y);
 }
 
 .translate3d (@x, @y: 0, @z: 0) {
-	-webkit-transform:       translate3d(@x, @y, @z);
+	-webkit-transform:   translate3d(@x, @y, @z);
 	-moz-transform: 	 translate3d(@x, @y, @z);
 	-ms-transform: 		 translate3d(@x, @y, @z);
 	-o-transform: 		 translate3d(@x, @y, @z);
 }
 .perspective (@value: 1000) {
 	-webkit-perspective: 	@value;
-	-moz-perspective: 	@value;
-	-ms-perspective: 	@value;
-	perspective: 		@value;
+	-moz-perspective: 		@value;
+	-ms-perspective: 		@value;
+	perspective: 			@value;
 }
