@@ -1,0 +1,420 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+@media (max-width: 400px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}
+header {
+  font-size: 1.6rem;
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+  }
+}
+@media (max-width: 768px) {
+  header img {
+    width: 40%;
+  }
+}
+@media (max-width: 400px) {
+  header img {
+    width: 40%;
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+header nav ul {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-around;
+  display: flex;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li {
+    box-sizing: border-box;
+    border: 1px solid white;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    background: black;
+  }
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+@media (max-width: 768px) {
+  header nav ul li a {
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 400px) {
+  header nav ul li a {
+    box-sizing: border-box;
+  }
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+@media (max-width: 400px) {
+  header nav ul li a:hover {
+    color: white;
+  }
+}
+header .logo {
+  margin: 28px 0 0 91px;
+}
+@media (max-width: 400px) {
+  header .logo {
+    align-self: center;
+    margin: 28px 0 0 0px;
+  }
+}
+/* Call To Action (CTA) Styles */
+.cta {
+  display: block;
+  margin-top: 72px;
+  justify-content: flex-end;
+}
+@media (max-width: 400px) {
+  .cta {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    position: absolute;
+    width: 300px;
+    height: auto;
+  }
+}
+.cta .cta-text {
+  font-size: 4.675rem;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    color: black;
+    z-index: 1;
+    font-size: 60px;
+    margin: 50px 82px 0px 65px;
+  }
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 1.6rem;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .cta .cta-text button {
+    margin-top: 65px;
+  }
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+@media (max-width: 400px) {
+  .cta .cta-text button:hover {
+    background: lightgray;
+    color: black;
+  }
+}
+/* Main Content Styles */
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 75px 0 35px 0;
+  padding: 35px 0;
+  font-size: 1.6rem;
+  line-height: 18;
+}
+@media (max-width: 400px) {
+  .main-content {
+    margin: 30px 0 35px 0;
+    padding: 35px 0 15px 0;
+  }
+}
+.main-content .main-content .top-content {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .main-content .main-content .top-content {
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .main-content .top-content p {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}
+.main-content .main-content .middle-img {
+  display: block;
+  margin: 30px auto;
+}
+@media (max-width: 768px) {
+  .main-content .main-content .middle-img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .main-content .middle-img {
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+}
+.main-content .main-content .bottom-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+}
+.main-content .main-content .bottom-content p {
+  padding-right: 20px;
+}
+@media (max-width: 400px) {
+  .main-content .main-content .bottom-content p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+/* Contact Styles */
+.contact p {
+  margin: 40px 0;
+}
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
