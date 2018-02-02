@@ -269,6 +269,14 @@ header .logo {
     margin-top: 52px;
   }
 }
+@media (max-width: 300px) {
+  .cta {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-bottom: 0;
+    position: relative;
+  }
+}
 .cta .cta-text {
   font-size: 6rem;
   text-align: center;
@@ -311,6 +319,17 @@ header .logo {
     z-index: -1;
     top: 140px;
     width: 355px;
+  }
+}
+@media (max-width: 400px) {
+  .cta img {
+    overflow: hidden;
+  }
+}
+@media (max-width: 300px) {
+  .cta img {
+    top: -5px;
+    width: 90vw;
   }
 }
 /* Main Content Styles */
