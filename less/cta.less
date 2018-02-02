@@ -2,27 +2,36 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 10%;
+    justify-content: center;
+
+    img {
+        max-width: 50%;
+        width: 30%;
+        height: 30%;
+    }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 4rem;
         text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
+        letter-spacing: 0.05%;
+       display: flex;
+       justify-content: center;
+     flex-flow: column;
+      align-items: center;
+        margin: 0 10% 0 0;
     }
+
+    
+    
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1rem;
         background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
+        width: 100%;
+        height: 10%;
+        margin-top: 1%;
         cursor: pointer;
 
         &:hover {
@@ -31,3 +40,36 @@
         }
     }
 }// cta
+
+.cta {
+    @media @phone {
+     // width: 100%;
+     flex-direction: column;
+     justify-content: center;
+    }
+}
+
+
+
+button {
+    @media @phone {
+        align-self: center;
+    }
+}
+
+img {
+    @media @phone {
+    width: 100%;
+    margin-bottom: 2%;
+    align-self: center;
+    order: -1;
+    }
+}
+
+.cta-text {
+    @media @phone {
+     text-align: center;
+     width: 100%;
+     margin: 0 0 0 0;
+    }
+}

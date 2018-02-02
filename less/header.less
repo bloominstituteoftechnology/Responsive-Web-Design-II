@@ -1,33 +1,63 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
+   display: flex;
+   justify-content: space-between;
 
     nav {
+        width: 60%;
+        
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
             display: flex;
+            justify-content: space-between;
+                    li {
+                       
+                        a {
+                            text-decoration: none;
+                            color: #b0b0b0;
 
-            li {
-
-                a {
-                    text-decoration: none;
-                    color: #b0b0b0;
-
-                    &:hover {
-                        text-decoration: underline;
-                        color: black;
+                            &:hover {
+                                text-decoration: underline;
+                                color: black;
+                                }
+                        }
                     }
-                }
+                }  
             }
-        }
-    }
-
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+       justify-content: flex-end;          
     }
-}// header
+} // header
+
+
+header {
+    @media @tablet {
+       justify-content: center;
+    }
+}
+
+ul {
+    @media @phone {
+        flex-direction: column;
+     }
+}
+
+nav {
+    @media @tablet {
+        margin-top: 5%;
+    }
+    @media @phone {
+        width: 100%;
+        text-align: center;
+     }
+}
+
+.logo {
+    @media @tablet {
+       width: 20%;
+       justify-content: flex-end;
+    }
+    @media @phone {
+        display: none;
+     }
+}

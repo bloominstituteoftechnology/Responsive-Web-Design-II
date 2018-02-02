@@ -1,12 +1,13 @@
 header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
+header nav {
+  width: 75%;
+}
 header nav ul {
-  width: 610px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
 }
 header nav ul li a {
   text-decoration: none;
@@ -17,6 +18,5 @@ header nav ul li a:hover {
   color: black;
 }
 header .logo {
-  align-self: flex-end;
-  margin: 28px 0 0 91px;
+  justify-content: flex-end;
 }

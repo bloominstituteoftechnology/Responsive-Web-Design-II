@@ -1,0 +1,33 @@
+/* Call To Action (CTA) Styles */
+.cta {
+  display: flex;
+  margin-top: 75px;
+  justify-content: center;
+}
+.cta .cta-text {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.05%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 10% 0 0;
+}
+.cta img {
+  width: 50%;
+  height: 50%;
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 1rem;
+  background: white;
+  width: 40%;
+  height: 20%;
+  margin-top: 1%;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
