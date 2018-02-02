@@ -218,6 +218,12 @@ header nav ul li a:hover {
     align-content: space-between;
   }
 }
+@media (max-width: 400px) {
+  header nav ul {
+    height: 80%;
+    margin-top: 20px;
+  }
+}
 @media (max-width: 1100px) {
   header nav {
     margin-right: auto;
@@ -260,7 +266,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .cta {
-    margin-top: 32px;
+    margin-top: 52px;
   }
 }
 .cta .cta-text {
