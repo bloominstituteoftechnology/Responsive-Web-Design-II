@@ -5,11 +5,19 @@ header {
     display: flex;
 
     nav {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 5%;
+        font-size: 1.6rem;
+
         ul {
-            margin-top: 40px; 
-            width: 610px;
+            
             justify-content: space-between;
             display: flex;
+            @media @phone {
+                width:90%;
+                justify-content: space-evenly;
+             }
 
             li {
 
@@ -28,6 +36,12 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: auto;
+    }
+    @media @phone {
+        width:50%;
+        display:inline-block;
+        justify-content: flex-start;
+
     }
 }// header

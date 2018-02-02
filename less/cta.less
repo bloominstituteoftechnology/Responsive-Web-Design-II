@@ -2,27 +2,32 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.5%;
     justify-content: flex-end;
 
     .cta-text {
-        font-size: 72px;
+        font-size: 7rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin-right: 9.2%;
+
+        @media @phone {     // media query phone.
+        margin:auto;
+        padding-right: 10%;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
         background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
+        width: 50%;
+        height: 10%;
+        margin-top: 2.5%;
         cursor: pointer;
 
         &:hover {
@@ -30,4 +35,6 @@
             color: white;
         }
     }
+    
+    
 }// cta

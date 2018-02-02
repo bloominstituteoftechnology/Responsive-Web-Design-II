@@ -148,6 +148,13 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
+}
+html .container,
+body .container {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
 }
 h1,
 h2,
@@ -156,21 +163,27 @@ h4,
 h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-.container {
-  width: 880px;
-  margin: auto;
+  margin-bottom: 2%;
 }
 header {
   width: 100%;
   display: flex;
 }
+header nav {
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5%;
+  font-size: 1.6rem;
+}
 header nav ul {
-  margin-top: 40px;
-  width: 610px;
   justify-content: space-between;
   display: flex;
+}
+@media (max-width: 400px) {
+  header nav ul {
+    width: 90%;
+    justify-content: space-evenly;
+  }
 }
 header nav ul li a {
   text-decoration: none;
@@ -182,31 +195,44 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: auto;
+}
+@media (max-width: 400px) {
+  header {
+    width: 50%;
+    display: inline-block;
+    justify-content: flex-start;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
-  margin-top: 72px;
+  margin-top: 8.5%;
   justify-content: flex-end;
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin-right: 9.2%;
+}
+@media (max-width: 400px) {
+  .cta .cta-text {
+    margin: auto;
+    padding-right: 10%;
+  }
 }
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
   background: white;
-  width: 170px;
-  height: 32px;
-  margin-top: 10px;
+  width: 50%;
+  height: 10%;
+  margin-top: 2.5%;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
@@ -217,32 +243,95 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 75px 0 35px 0;
-  padding: 35px 0;
-  font-size: 16px;
+  margin-top: 9%;
+  margin-bottom: 5%;
+  padding: 4%;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 400px) {
+  .main-content .top-content {
+    display: block;
+    justify-content: stretch;
+    margin: auto;
+    padding: 10px;
+  }
+  .main-content .top-content .text-content {
+    margin: 10px,0,10px,10px;
+    width: 45%;
+  }
+  .main-content .top-content .text-content h4 {
+    text-align: center;
+    margin: 15px;
+  }
+}
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: auto;
+  margin-top: 3.5%;
+  margin-bottom: 3%;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  .main-content .middle-img {
+    width: 45%;
+    margin: 0px;
+  }
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+  margin-top: 5
+    %;
+}
+.main-content .bottom-content .text-content {
+  margin-right: 2%;
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    display: block;
+    justify-content: stretch;
+    margin: auto;
+    padding: 10px;
+  }
+  .main-content .bottom-content .text-content {
+    margin: 10px,0,10px,10px;
+    width: 45%;
+  }
+  .main-content .bottom-content .text-content h4 {
+    text-align: center;
+    margin: 15px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
 }
 /* Contact Styles */
+.contact {
+  font-size: 1.6rem;
+  margin-left: 2%;
+}
 .contact p {
-  margin: 40px 0;
+  margin-top: 4%;
+}
+@media (max-width: 400px) {
+  .contact {
+    margin: 40px;
+  }
 }
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-size: 1.6rem;
+}
+@media (max-width: 400px) {
+  footer {
+    width: 45%;
+  }
 }
