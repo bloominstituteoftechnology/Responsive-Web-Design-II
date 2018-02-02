@@ -264,6 +264,24 @@ header nav .logo {
   justify-content: space-around;
   margin: 0 .5% 0 .5%;
 }
+@media (max-width: 768px) {
+  .main-content .top-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main-content .top-content h4 {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .top-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main-content .top-content h4 {
+    margin-top: 10px;
+  }
+}
 .main-content .text-content {
   display: flex;
   justify-content: space-between;
@@ -271,25 +289,33 @@ header nav .logo {
   flex-wrap: wrap;
   margin-right: 1%;
 }
-@media (max-width: 768px) {
-  .main-content .text-content {
-    width: 100%;
-    flex-direction: row;
-  }
-}
-@media (max-width: 400px) {
-  .main-content .text-content {
-    width: 100%;
-  }
-}
 .main-content .middle-img {
-  display: flex;
   align-items: center;
   margin: 30px auto;
+  width: 99%;
+  height: auto;
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .main-content .bottom-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main-content .bottom-content h4 {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .bottom-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .main-content .bottom-content h4 {
+    margin-top: 10px;
+  }
 }
 .main-content .bottom-content p {
   padding-right: 20px;
