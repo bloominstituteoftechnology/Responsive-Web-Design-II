@@ -4,11 +4,13 @@
     display: flex;
     margin-top: 72px;
     justify-content: center; // changed this to center cuz flex-end was pulling it over to far right in laptop
-    background: lightblue;
 
     @media @tablet {
         flex-flow: row; // Sets everything in .cta to column, bringing image down under "Get Started" button
-        
+    }
+    @media @phone {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .cta-text {
@@ -19,16 +21,17 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        margin: 0 11% 0 0; // adds a little space between INNO and circle image in laptop view - 82/880
-        background: lightpink;
+        margin: 7% 11% 0 0; // adds a little space between INNO and circle image in laptop view - 82/880
 
         @media @tablet { // Everything appears pushed to the left... not sure why.
            
-        }     
+        }
+        @media @phone {
+            width: 100%;
+        }
     }
 
     .top-img { // Added to adjust for tablet and iphone
-        background: lightgreen;
 
         @media @tablet {
      
@@ -44,7 +47,6 @@
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-        background: lightseagreen;
 
         &:hover {
             background: black;

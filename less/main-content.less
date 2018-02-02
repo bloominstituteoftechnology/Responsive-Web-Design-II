@@ -6,17 +6,15 @@
     justify-content: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    background: green;
     margin: 75px 0 35px 0;
     padding: 35px 0;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 18px;
     @media @tablet {
         width: 100%;
         margin: 0px 0px 0px 0px; // Makes page less squashed on the sides under 768px
     }
     @media @phone {
-       width: 400%
     }
 }
 
@@ -26,21 +24,21 @@
 
 .main-content .top-content {
     display: flex; // Both top and bottom content need flex in order to remain in rows
-    background: lightblue;
     width: 98%;
 
-    
-    
     @media @tablet {
         // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
         width: 100%; // margin: 30px; // Makes page less squashed on the sides under 768px
     }
+
     @media @phone {
-        
-        float: none;
-        margin-right: 0;
+    
     }
     
+}
+
+.main-content .top-content p {
+    padding-right: 4%;
 }
 
 .main-content .middle-img {
@@ -49,35 +47,32 @@
     max-width: 880px;
     min-width: 412px;
     height: auto;
-    background: peachpuff;
     margin: 20px auto;
 
     @media @tablet {
         // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
         width: 100%; // margin: 30px; // Makes page less squashed on the sides under 768px
     }
+
     @media @phone {
-        width: auto;
-        float: none;
-        margin-right: 0;
+
     }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
-    background: lightsalmon;
     width: 98%;
+
     @media @tablet {
         // margin: 30px; // Makes page less squashed on the sides under 768px
     }
+
     @media @phone {
-        width: auto;
-        float: none;
-        margin-right: 0;
+
     }
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 4%;
 }
