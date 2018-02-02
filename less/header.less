@@ -1,4 +1,3 @@
-
 // Header Styles
 
 header {
@@ -10,10 +9,13 @@ header {
     }
     nav {
         width: 70%;
+        @media @tablet {
+            width: 95%;
+        }
         ul {
             display: flex;
             margin-top: 40px; 
-            width: 100%; //610px
+            width: 100%;
             justify-content: space-around;
             li {
                 a {
@@ -36,8 +38,7 @@ header {
             @media @phone {
                 flex-direction: column;                
                 margin: 0;
-                width: 319px;
-            }    
+            } 
         }
     }
     .logo {
