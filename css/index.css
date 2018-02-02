@@ -157,10 +157,19 @@ header {
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+header nav {
+  width: 70%;
+}
 header nav ul {
   display: flex;
   margin-top: 40px;
-  width: 610px;
+  width: 100%;
   justify-content: space-around;
 }
 header nav ul li a {
@@ -192,11 +201,11 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 4%;
 }
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
   header .logo {
-    margin-right: 91px;
+    margin-right: 4%;
   }
 }
 /* Call To Action (CTA) Styles */

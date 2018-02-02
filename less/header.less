@@ -4,15 +4,16 @@
 header {
     width: 100%;
     display: flex;
-    // @media @laptop {
-    //     justify-content: center;   
-    //     flex-wrap: wrap;             
-    // }
+    @media @tablet {
+        justify-content: center;   
+        flex-wrap: wrap;             
+    }
     nav {
+        width: 70%;
         ul {
             display: flex;
             margin-top: 40px; 
-            width: 610px;
+            width: 100%; //610px
             justify-content: space-around;
             li {
                 a {
@@ -41,9 +42,9 @@ header {
     }
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
-        @media @laptop {
-            margin-right: 91px;
+        margin: 28px 0 0 4%;
+        @media @tablet {
+            margin-right: 4%;
         }
     }
 }// header
