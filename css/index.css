@@ -136,7 +136,7 @@ table {
 		}
 
 		@media @phone {
-			width: 50%;
+			width: 100%;
 		}
 	}
 
@@ -169,19 +169,21 @@ h5 {
 }
 header {
   width: 100%;
+  max-width: 880px;
   position: fixed;
   background-color: white;
   top: 0px;
   display: flex;
 }
 header nav {
+  border: 1px solid red;
   width: 99%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 1.6rem;
   top: 15px;
-  justify-content: flex-start;
 }
 @media (max-width: 768px) {
   header nav {
@@ -216,7 +218,6 @@ header nav .logo {
   display: flex;
   flex-direction: row;
   align-self: flex-end;
-  margin: 10px 0 0 0;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -249,6 +250,8 @@ header nav .logo {
 }
 /* Main Content Styles */
 .main-content {
+  width: 100%;
+  max-width: 880px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
@@ -259,9 +262,29 @@ header nav .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  margin: 0 .5% 0 .5%;
+}
+.main-content .text-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 1%;
+}
+@media (max-width: 768px) {
+  .main-content .text-content {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+@media (max-width: 400px) {
+  .main-content .text-content {
+    width: 100%;
+  }
 }
 .main-content .middle-img {
-  display: block;
+  display: flex;
+  align-items: center;
   margin: 30px auto;
 }
 .main-content .bottom-content {

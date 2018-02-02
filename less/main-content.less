@@ -1,29 +1,50 @@
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 3% 0;
-   font-size: 1.6rem;
-   line-height: 18px;
-}
+    width: 100%;
+    max-width: 880px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 3% 0;
+    font-size: 1.6rem;
+    line-height: 18px;
+   
+    .top-content {
+       display: flex;
+       justify-content: space-around;
+       margin: 0 .5% 0 .5%;
+    }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
+    .text-content {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-right: 1%;
+        @media @tablet {
+            
+            width: 100%;
+            flex-direction: row;
+		}
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
+		@media @phone {
+			width: 100%;
+		}
+    }
+    
+    .middle-img {
+        display: flex;
+        align-items: center;
+        margin: 30px auto;
+    }
+    
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .bottom-content p {
+        padding-right: 20px;
+    }
 }

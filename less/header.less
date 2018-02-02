@@ -2,19 +2,21 @@
 
 header {
     width: 100%;
+    max-width: 880px;
     position: fixed;
     background-color: white;
     top: 0px;
     display: flex;
 
     nav {
+        border: 1px solid red;
         width: 99%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
         font-size: 1.6rem;
         top: 15px;
-        justify-content: flex-start;
         @media @tablet {
             width: 100%;
             flex-direction: column-reverse;
@@ -51,7 +53,6 @@ header {
             display: flex;
             flex-direction: row;
             align-self: flex-end;
-            margin: 10px 0 0 0;
         } // logo
     } // nav
 }// header
