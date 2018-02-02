@@ -10,6 +10,11 @@
         margin: 0;        
     }
 
+    @media @jacked {
+        flex-flow: column;
+        align-items: center;
+    }
+
     .cta-text {
         width:100%;
         font-size: 7.2rem;
@@ -26,6 +31,12 @@
             .scale(.80);
             margin: 0 5% 0 0;
             padding: 2%;
+        }
+
+        @media @jacked {
+            width: 75%;
+            margin: 0;
+            padding: 0;
         }
     }
 
@@ -51,6 +62,10 @@
 
         @media @tablet {
             .scale(.80);
+        }
+
+        @media @jacked {
+            width: 75%;
         }
 
         @media @phone {
