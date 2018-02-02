@@ -3,31 +3,72 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
+
+    // added @phone escaping from mixins.less
+    @media @phone {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 42px;
+    }
 
     .cta-text {
-        font-size: 72px;
+        // font-size: 72px;
+
+        // REM
+        font-size: 7.2rem;
+
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        // margin: 0 82px 0 0;
+
+        //percentage-based layout refactoring
+        margin: 0 9.3% 0 0;
+
+        button {
+            border: 1px double black;
+            // font-size: 16px;
+            //REM
+            font-size: 1.6rem;
+
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+    
+            &:hover {
+                background: black;
+                color: white;
+            }
+        }
+
+        // added @tablet escaping from mixins.less
+        @media @tablet {
+            margin: 0 72px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            font-size: 72px;
+            margin: 0 0 42px 0;
+        }
     }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
+    // added @tablet escaping from mixins.less
+    img {
+        @media @tablet {
+            margin-right: 10px;
+        }
 
-        &:hover {
-            background: black;
-            color: white;
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 0;
         }
     }
 }// cta

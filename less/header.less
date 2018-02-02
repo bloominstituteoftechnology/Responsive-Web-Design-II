@@ -4,12 +4,43 @@ header {
     width: 100%;
     display: flex;
 
+    // REM
+    font-size: 1.6rem;
+
+    // added @tablet escaping from mixins.less
+    @media @tablet {
+        justify-content: space-around;
+    }
+
+    // added @phone escaping from mixins.less
+    @media @phone {
+        flex-wrap: wrap;
+        font-size: 70%;
+        justify-content: flex-start;
+    }
+
     nav {
+        //percentage-based layout refactoring
+        width: 100%;
+        margin-left: 5%;
+
         ul {
             margin-top: 40px; 
-            width: 610px;
+            // width: 610px;
+
             justify-content: space-between;
             display: flex;
+
+            // added @tablet escaping from mixins.less
+            @media @tablet {
+                width: 450px;
+            }
+
+            // added @phone escaping from mixins.less
+            @media @phone {
+                margin-top: 10px;
+                width: 390px;
+            }
 
             li {
 
@@ -28,6 +59,23 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        // margin: 28px 0 0 91px;
+        margin-top: 28px;
+
+        //percentage-based layout refactoring
+        width: 31%;
+        margin-left: 10.3%;
+        margin-right: 5%;
+
+        // added @tablet escaping from mixins.less
+        @media @tablet {
+            width: 120px;
+            margin: 10px 0 0;
+        }
+
+        // added @phone escaping from mixins.less
+        // @media @phone {
+
+        // }
     }
 }// header

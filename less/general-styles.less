@@ -7,15 +7,33 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-}
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
+    // adjusting font-size for REM
+    font-size: 62.5%;
 
-.container {
-    width: 880px;
-    margin: auto;
+    h1, h2, h3, h4, h5 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        // adjusting for %-based layout
+        width: 100%;
+        max-width: 880px;
+        min-width: 769px;
+
+        // width: 880px;
+        margin: auto;
+
+        // added @tablet escaping from mixins.less
+        @media @tablet {
+            width: 768px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            width: 400px;
+        }
+    }
 }

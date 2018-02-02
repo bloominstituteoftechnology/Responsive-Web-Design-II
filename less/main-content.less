@@ -5,25 +5,90 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   //font-size: 16px;
    line-height: 18px;
-}
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
+   //REM
+   font-size: 1.6rem;
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
+   .top-content {
+        display: flex;
+        justify-content: space-around;
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
+        //percentage-based layout refactoring
+        margin: 0 1% 0;
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+        // added @tablet escaping from mixins.less
+        @media @tablet {
+            margin: 0 10px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 0 10px;
+            flex-direction: column;
+        }
+
+        // added margin-bottom to .text-content, added @phone escaping from mixins.less
+        .text-content {
+            @media @phone {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .middle-img {
+        display: block;
+        margin: 30px auto;
+        
+        // added @tablet escaping from mixins.less
+        @media @tablet {
+            margin: 30px 5px;
+            width: 758px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            display: none;
+        }
+    }
+
+    .bottom-content {
+        display: flex;
+        justify-content: space-around;
+
+        p {
+            padding-right: 20px;
+        }
+
+        //percentage-based layout refactoring
+        margin: 0 1% 0;
+
+        // added @tablet escaping from mixins.less
+        @media @tablet {
+            margin: 0 10px;
+        }
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 0 10px;
+            flex-direction: column;
+        }
+
+        // added margin-bottom to .text-content, added @phone escaping from mixins.less
+        .text-content {
+            @media @phone {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    // added @phone escaping from mixins.less
+    @media @phone {
+        margin: 42px 0 42px;
+        padding: 10px 0 0;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
 }

@@ -4,6 +4,23 @@
 
     p {
         margin: 40px 0;
+
+        // added @phone escaping from mixins.less
+        @media @phone {
+            margin: 10px 0;
+        }
     }
-   
+
+    //REM
+    font-size: 1.6rem;
+    
+    //percentage-based layout refactoring
+    margin: 0 1% 0;
+
+    // added @phone escaping from mixins.less
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
