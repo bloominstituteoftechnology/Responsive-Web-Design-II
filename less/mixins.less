@@ -21,8 +21,13 @@
 @phone: ~"(max-width: 400px)";
 @tablet: ~"(max-width: 768px)";
 @laptop: ~"(max-width: 1100px)";
+@container-width: 880;
 
 // Mixins below variables
+
+.pixToPer (@pixels) {
+	width: (@pixels / @container-width) * 100%;
+}
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
