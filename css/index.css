@@ -188,6 +188,10 @@ header {
     flex-direction: column-reverse;
   }
 }
+header nav {
+  width: 76%;
+  justify-content: space-between;
+}
 @media (max-width: 768px) {
   header nav {
     width: 100%;
@@ -200,24 +204,34 @@ header {
 }
 header nav ul {
   margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
+  width: 76%;
   display: flex;
 }
 @media (max-width: 768px) {
   header nav ul {
-    width: 410px;
-    margin-left: 40px;
+    width: 51%;
+    margin-left: 5%;
   }
 }
 @media (max-width: 400px) {
   header nav ul {
     flex-direction: column;
+    margin-left: 26%;
+  }
+}
+header nav ul li {
+  margin-right: 5%;
+}
+@media (max-width: 768px) {
+  header nav ul li {
+    margin-right: 5%;
   }
 }
 @media (max-width: 400px) {
   header nav ul li {
     margin: 5px;
+    width: 80%;
+    background-color: black;
   }
 }
 header nav ul li a {
@@ -228,13 +242,18 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
+@media (max-width: 400px) {
+  header nav ul li a:hover {
+    color: white;
+  }
+}
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 11%;
 }
 @media (max-width: 768px) {
   header .logo {
-    margin: 28px 0 0 30px;
+    margin: 28px 0 0 4%;
   }
 }
 @media (max-width: 400px) {
@@ -292,6 +311,12 @@ header .logo {
 @media (max-width: 768px) {
   .cta .codesnipt {
     width: 96%;
+  }
+}
+@media (max-width: 690px) {
+  .cta .codesnipt {
+    width: 32%;
+    height: 32%;
   }
 }
 @media (max-width: 400px) {
@@ -356,5 +381,5 @@ header .logo {
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 40px 0 3%;
 }

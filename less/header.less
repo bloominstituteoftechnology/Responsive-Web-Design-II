@@ -14,31 +14,40 @@ flex-direction: column-reverse;
     }
 
     nav {
+        width: 76%;
+        justify-content: space-between;
         @media @tablet {
 			width: 100%;
 		}
 
 		@media @phone {			
-    flex-direction: column;
+    flex-direction: column;     
+
 		}
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+            margin-top: 40px;  
+            width: 76%;              
             display: flex;
 
             @media @tablet {
-                width: 410px;
-                margin-left: 40px;
+                width: 51%;
+                margin-left: 5%;
             }
     
             @media @phone {
                 flex-direction: column;
+                margin-left: 26%;
             }
 
-            li {
+            li {   
+                margin-right: 5%;
+                @media @tablet {
+                margin-right: 5%;
+                }
                 @media @phone {
-                    margin: 5px;                    
+                    margin: 5px; 
+                    width: 80%;
+                    background-color: black;                   
                  }
 
                 a {
@@ -48,6 +57,9 @@ flex-direction: column-reverse;
                     &:hover {
                         text-decoration: underline;
                         color: black;
+                        @media @phone {
+                            color: white;               
+                         }
                     }
                 }
             }
@@ -56,9 +68,9 @@ flex-direction: column-reverse;
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 11%;
         @media @tablet {          
-            margin: 28px 0 0 30px;
+            margin: 28px 0 0 4%;
         }
 
         @media @phone {
