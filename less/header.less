@@ -9,41 +9,51 @@ header {
   nav {
 
 
-
     ul {
       margin-top: 40px;
-      width: 610px;
-      display: flex;
+      width: 100%;
       justify-content: space-between;
+      display: flex;
 
-      @media @tablet{
-        width: 100%;
+
+      @media @tablet {
+        display: none;
       }
 
+
       li {
+        justify-content: space-between;
         a {
           text-decoration: none;
           color: #b0b0b0;
-
-          &:hover {
+          font-size: 1.7rem;
+           &:hover {
             text-decoration: underline;
             color: black;
           }
         }
-        @media @tablet{
-          margin-left: 5px;
-          margin-right: 5px;
-        }
+      }
+    }
+
+    select {
+      display: none;
+
+
+      @media @tablet {
+        display: inline-block;
+        margin-top: 40px;
+        justify-content: center;
+        margin-left: 52%;
       }
     }
   }
 
   .logo {
+    margin: 40px 0 0 50%;
     align-self: flex-end;
-    margin: 28px 0 0 91px;
 
     @media @tablet {
-      margin-left: 5%;
+      margin: 28px 0 0 60%;
     }
   }
 }// header
