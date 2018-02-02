@@ -9,7 +9,6 @@
   height: 27.8vw;
 }
 .cta .cta-text {
-  font-size: 5.27vw;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -21,7 +20,6 @@
 .cta .cta-text button {
   border: 1px double black;
   background: white;
-  height: 2.67em;
   margin-top: 10px;
   cursor: pointer;
 }
