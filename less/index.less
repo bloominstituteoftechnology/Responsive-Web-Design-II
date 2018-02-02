@@ -7,7 +7,42 @@
 @import "contact";
 @import "footer";
 
+@laptop: ~"(max-width: 1100px)";
+@tablet: ~"(max-width: 768px)";
+@phone: ~"(max-width: 400px)";
 
+.container {
+    @media @laptop {
+        width: 1090;
+        background-color: rgb(94, 243, 193)
+    }
+    
+    
+    @media @tablet {
+        width: 750px;
+        background-color: rgb(120, 120, 241)
+    }
+    @media @phone {
+        width: 390px;
+        background-color: rgb(45, 160, 160);
+    }
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    @media @phone {
+        width: 20px;
+        flex-direction: column;
+        margin-left: 150px;
+    }
+}
 
 
 
