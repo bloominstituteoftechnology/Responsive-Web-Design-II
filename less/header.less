@@ -1,12 +1,15 @@
 // Header Styles
 
 header {
-   
+   display: flex;
+   justify-content: space-between;
 
     nav {
+        width: 60%;
+        
         ul {
-       
-               
+            display: flex;
+            justify-content: space-between;
                     li {
                        
                         a {
@@ -22,11 +25,39 @@ header {
                 }  
             }
     .logo {
-                 
+       justify-content: flex-end;          
     }
 } // header
 
 
+header {
+    @media @tablet {
+       justify-content: center;
+    }
+}
 
+ul {
+    @media @phone {
+        flex-direction: column;
+     }
+}
 
+nav {
+    @media @tablet {
+        margin-top: 5%;
+    }
+    @media @phone {
+        width: 100%;
+        text-align: center;
+     }
+}
 
+.logo {
+    @media @tablet {
+       width: 20%;
+       justify-content: flex-end;
+    }
+    @media @phone {
+        display: none;
+     }
+}

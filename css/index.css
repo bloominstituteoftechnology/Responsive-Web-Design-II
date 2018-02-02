@@ -163,6 +163,17 @@ h5 {
   width: 100%;
   margin: auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  width: 60%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
@@ -170,6 +181,41 @@ header nav ul li a {
 header nav ul li a:hover {
   text-decoration: underline;
   color: black;
+}
+header .logo {
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+}
+@media (max-width: 400px) {
+  ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 400px) {
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 20%;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 400px) {
+  .logo {
+    display: none;
+  }
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -209,7 +255,6 @@ header nav ul li a:hover {
   .cta {
     flex-direction: column;
     justify-content: center;
-    background: red;
   }
 }
 @media (max-width: 400px) {
@@ -265,8 +310,9 @@ header nav ul li a:hover {
   }
 }
 @media (max-width: 400px) {
-  .text-content {
+  .text-content p {
     margin-bottom: 5%;
+    padding: 1%;
   }
 }
 @media (max-width: 400px) {
