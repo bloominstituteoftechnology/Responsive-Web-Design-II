@@ -307,7 +307,7 @@ header .logo {
   align-items: center;
   margin: 0 82px 0 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .cta .cta-text {
     margin: 0;
   }
@@ -325,7 +325,7 @@ header .logo {
   background: black;
   color: white;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .cta .cta-image {
     display: none;
   }
