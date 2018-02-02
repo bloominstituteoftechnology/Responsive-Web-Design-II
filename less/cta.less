@@ -3,24 +3,42 @@
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: space-around;
+
+    @media @laptop {
+        justify-content: center;
+    }
+
+    @media @tablet {
+        .scale(0.8);
+        margin-top: 10px;
+    }
+
+    @media @phone {
+        .scale(0.7);
+        margin: 0;
+    }
 
     .cta-text {
-        font-size: 72px;
+        font-size: 4.5rem;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
+        margin: 0 10% 0 0;
+
+        @media (max-width: 600px) {
+            margin: 0;
+        }
     }
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1rem;
         background: white;
-        width: 170px;
+        width: 50%;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
@@ -30,4 +48,10 @@
             color: white;
         }
     }
-}// cta
+
+    .cta-image {
+        @media (max-width: 600px) {
+            display: none;
+        }
+    }
+}// .cta

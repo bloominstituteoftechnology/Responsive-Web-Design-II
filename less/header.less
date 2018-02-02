@@ -3,31 +3,104 @@
 header {
     width: 100%;
     display: flex;
+    justify-content: center;
+    // flex-wrap: wrap-reverse;
 
     nav {
+        width: 70%;
+
+        @media @laptop {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media @tablet {
+            justify-content: center;
+            // margin-left: 3%;
+            min-width: 300px;
+        }
+
+        // @media (max-width: 635px) {
+        //     justify-content: center;
+        //     margin: 0;
+        //     min-width: 100px;
+        // }
+
         ul {
             margin-top: 40px; 
-            width: 610px;
+            width: 100%;
             justify-content: space-between;
             display: flex;
 
-            li {
+            @media @laptop {
+                width: 90%;
+            }
 
+            @media @tablet {
+                width: 80%;
+                margin-top: 20px;
+            }
+
+            @media @phone {
+                width: 95%;
+                justify-content: space-around;
+                margin-top: 10px;
+            }
+
+            li {
+                @media @tablet {
+                    padding: 0 1%;
+                }
+
+                @media @phone {
+                    padding: 0;
+                }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    padding: 0 1%;
 
                     &:hover {
                         text-decoration: underline;
                         color: black;
                     }
-                }
-            }
-        }
-    }
+                } // a
+            } // li
+        } // ul
+    } // nav
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 10%;
+
+        @media @laptop {
+            margin-left: 5%;
+        }
+
+        @media @tablet {
+            margin: 20px 4% 0 4%;
+        }
+
+        // @media (max-width: 635px) {
+        //     display: none;
+        // }
+
+        @media @phone {
+            padding: 0 26%;
+            // display: flex;
+        }
+    } // .logo
+} // header
+
+.main-header {
+    @media @tablet {
+        display: flex;
+        flex-wrap: wrap-reverse;
     }
-}// header
+
+    @media @phone {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
