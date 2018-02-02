@@ -3,16 +3,42 @@
 header {
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    @media @tablet {
+        flex-flow: column-reverse nowrap;
+    }
 
     nav {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+            margin-top: 20px;
             display: flex;
+            justify-content: space-between;
+            @media @tablet {
+                max-width: 100%;
+                margin-top: 0px;
+                flex-flow: row wrap;
+                justify-content: center;
+            }
+            @media @phone {
+                flex-flow: column nowrap;
+            }
 
             li {
-
+               // margin: 0 3%;
+                font-size: 1.6rem;
+                @media @tablet {
+                    padding: 5px;
+                    font-size: 2.0rem;
+                }
+                @media @phone {
+                    text-align: center;
+                    font-size: 2.4rem;
+                    border: solid rgb(196, 196, 196) 1px;
+                }
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -28,6 +54,10 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 0 0 0 5%;
+        @media @tablet {
+            align-self: center;
+            margin: 0px;
+        }
     }
 }// header

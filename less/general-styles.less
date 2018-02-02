@@ -7,15 +7,52 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%; //16px to base of 10px
+    body::-webkit-scrollbar {
+        width: 1rem;
+    }
+    body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: rgb(91, 143, 255);
+        outline: 1px solid rgb(30, 63, 134);
+        border-radius: 10px;
+        &:hover {
+            background-color: rgb(176, 201, 255);;
+        }
+        &:active {
+            background-color: rgb(30, 63, 134);
+        }
+    }
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     margin-bottom: 10px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
+    display: flex;
+    flex-flow: column nowrap;
     margin: auto;
+    // @media @laptop {
+    //     max-width: 80%;
+    // }
+    // @media @tablet {
+    //     max-width: 100%;
+    //     margin: 0px;
+    // }
+    @media @phone {
+        margin: 0px;
+    }
 }
