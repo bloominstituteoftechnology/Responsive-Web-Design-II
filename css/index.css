@@ -148,6 +148,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -157,20 +158,49 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: #191919;
 }
 .container {
-  width: 880px;
+  width: 100%;
+  max-width: 880px;
   margin: auto;
+  border: 1px dotted gray;
+  font-size: 1.6rem;
 }
 header {
   width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0px;
   display: flex;
 }
-header nav ul {
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
+header nav {
+  width: 99%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  top: 15px;
+  justify-content: flex-start;
+}
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+header nav ul {
+  display: flex;
+  margin-top: 20px;
+  width: 60%;
+  min-width: 400px;
+  justify-content: space-between;
 }
 header nav ul li a {
   text-decoration: none;
@@ -180,9 +210,13 @@ header nav ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-header .logo {
+header nav .logo {
+  min-width: 150px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: row;
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 10px 0 0 0;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -198,7 +232,7 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 10% 0 0;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -218,8 +252,8 @@ header .logo {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
-  padding: 35px 0;
-  font-size: 16px;
+  padding: 3% 0;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 .main-content .top-content {
@@ -239,10 +273,12 @@ header .logo {
 }
 /* Contact Styles */
 .contact p {
+  font-size: 1.4rem;
   margin: 40px 0;
 }
 /* Footer Styles */
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1rem;
 }
