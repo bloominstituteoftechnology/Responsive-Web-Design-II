@@ -329,6 +329,11 @@ header .logo {
     padding-top: 15px;
   }
 }
+@media (max-width: 400px) {
+  .main-content {
+    margin-top: 20px;
+  }
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-between;
