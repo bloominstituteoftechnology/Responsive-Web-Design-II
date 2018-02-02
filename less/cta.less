@@ -1,33 +1,70 @@
 /* Call To Action (CTA) Styles */
 
 .cta {
+  width: 100%;
+  margin: 40px 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media @laptop {
+    margin: 0 0 0 0;
+    flex-direction: initial;
+    justify-content: initial;
+
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+  }
 
-    .cta-text {
-        font-size: 72px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
+  .cta-text {
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+
+    @media @laptop {
+      .convertToPercent(82);
+      margin: 0 @percent 0 0;
+    }
+  }
+
+  .cta-text button {
+    border: 1px double black;
+    font-size: 1.6rem;
+    background: white;
+    .convertToPercent(170, 500);
+    width: @percent;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background: black;
+      color: white;
     }
 
-    .cta-text button {
-        border: 1px double black;
-        font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-
-        &:hover {
-            background: black;
-            color: white;
-        }
+    @media @laptop {
+      .convertToPercent(170,292.11);
+      width: @percent;
     }
-}// cta
+  }
+
+  img {
+    margin: 25px 0 0 0;
+    .convertToPercent(35);
+    padding: 0 @percent 0 @percent;
+
+    object-fit: contain;
+
+    @media @laptop {
+      margin: 0;
+      padding: 0;
+      object-fit: none;
+    }
+  }
+} // cta

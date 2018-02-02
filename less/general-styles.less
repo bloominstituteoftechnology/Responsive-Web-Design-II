@@ -1,21 +1,44 @@
 // General Styles
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
+	min-width: 340px;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+@laptop: ~'(min-width: 1100px) ';
+@tablet: ~'(min-width: 768px) ';
+@phone: ~'(min-width: 400px) ';
+
+@max-width: 880px;
+
+.convertToPercent(@pixels, @width: @max-width) {
+	@percent: @pixels / @width * 100%;
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+	max-width: @max-width;
+	width: 100%;
+	margin: auto;
+
+	@media @laptop {
+		width: 100%;
+		margin: auto;
+	}
 }

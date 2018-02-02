@@ -1,29 +1,124 @@
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 45px 0 45px 0;
+  padding: 15px 0 40px 0;
+  font-size: 1.6rem;
+  line-height: 18px;
+
+  @media @laptop {
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+  }
 }
 
 .main-content .top-content {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 2%;
+  padding-right: 2%;
+
+  @media @phone {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media @tablet {
+    box-sizing: none;
+
     display: flex;
+    flex-direction: row;
+  }
+
+  @media @laptop {
+    flex-direction: none;
+    padding: 0;
+
     justify-content: space-around;
+  }
 }
 
 .main-content .middle-img {
+  width: 100%;
+
+  margin: 25px 0 0 0;
+  .convertToPercent(35);
+  padding: 0 @percent 0 @percent;
+
+  @media @laptop {
+    width: initial;
+    margin: 0;
+    padding: 0;
+
     display: block;
     margin: 30px auto;
+  }
 }
 
 .main-content .bottom-content {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 2%;
+  padding-right: 2%;
+
+  @media @phone {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media @tablet {
+    box-sizing: none;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media @laptop {
+    flex-direction: initial;
+    flex-flow: initial;
+    padding: 0;
+
     display: flex;
     justify-content: space-around;
+  }
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+  @media @laptop {
+    .convertToPercent(20,293.33);
+    padding-right: @percent;
+  }
+}
+
+.text-content {
+  width: 90%;
+  margin: 25px auto 0 auto;
+
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+
+  @media @phone {
+    width: 59%;
+
+    display: flex;
+    align-self: center;
+  }
+
+  @media @tablet {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  @media @laptop {
+    margin: 0;
+
+    display: initial;
+    flex-direction: initial;
+    align-items: initial;
+  }
 }
