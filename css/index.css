@@ -159,13 +159,22 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    width: 100%;
+  }
+}
 @media (max-width: 414px) {
   h1,
   h2,
   h3,
   h4,
   h5 {
-    margin-bottom: 0px;
+    margin: 0px;
     text-align: center;
   }
 }
@@ -173,6 +182,11 @@ h5 {
   width: 100%;
   max-width: 880px;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
 }
 @media (max-width: 414px) {
   .container {
@@ -269,6 +283,18 @@ header .logo {
     align-items: center;
   }
 }
+.cta img {
+  width: 37%;
+  max-width: 379px;
+  min-width: 300px;
+  height: auto;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .cta img {
+    margin-right: auto;
+  }
+}
 @media (max-width: 414px) {
   .cta img {
     position: absolute;
@@ -285,6 +311,14 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 9% 0 0;
+}
+@media (max-width: 768px) {
+  .cta .cta-text {
+    color: black;
+    z-index: 1;
+    font-size: 6rem;
+    margin: 70px auto 0px auto;
+  }
 }
 @media (max-width: 414px) {
   .cta .cta-text {
@@ -352,6 +386,12 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .main-content .middle-img {
+    width: 100%;
+  }
 }
 @media (max-width: 414px) {
   .main-content .middle-img {
@@ -383,6 +423,12 @@ header .logo {
 /* Contact Styles */
 .contact {
   font-size: 1.6rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .contact {
+    width: 100%;
+  }
 }
 @media (max-width: 414px) {
   .contact {
@@ -395,7 +441,7 @@ header .logo {
 }
 @media (max-width: 414px) {
   .contact p {
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
   }
 }
