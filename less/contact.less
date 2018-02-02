@@ -1,9 +1,26 @@
 /* Contact Styles */
 
 .contact {
+    font-size: 1.6rem;
+    @media @laptop {
+        margin: 0 1%;
+    }
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h4 {
+        align-self: center;
+    }
 
     p {
         margin: 40px 0;
+        @media @phone {
+            align-self: center;
+            font-size: 20px;
+        }
     }
    
 }

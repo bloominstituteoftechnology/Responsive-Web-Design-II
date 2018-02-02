@@ -5,25 +5,78 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    @media @laptop {
+        margin: 0 1%;
+    }
+
+    @media @phone {
+        flex-direction: column;
+    }
+
+    h4 {
+        @media @phone {
+           padding: 5px 0 0 5px;
+           text-align: center;
+         }
+     }
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    max-width: 880px;
+
+    @media @laptop {
+        width: 100%;
+    }
+
+    @media @tablet {
+        width: 100%;
+    }
+
+    @media @phone {
+        width: 100%;
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+
+    @media @laptop {
+        margin: 0 1%;
+    }
+
+
+    @media @phone {
+        flex-direction: column;
+    }
+
+    h4 {
+        @media @phone {
+           padding: 5px 0 0 5px;
+           text-align: center;
+         }
+     }
+
 }
 
 .main-content .bottom-content p {
     padding-right: 20px;
+}
+
+.main-content .text-content {
+
+    @media @phone {
+        font-size: 2rem;
+        padding: 5px 0 0 5px;
+        text-align: center;
+    }
 }

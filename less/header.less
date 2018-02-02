@@ -4,18 +4,66 @@ header {
     width: 100%;
     display: flex;
 
+    @media @laptop {
+
+    }
+
+    @media @tablet {
+        flex-direction: column;
+
+    }
+
+    @media @phone {
+      flex-direction: column;
+        
+    }
+
     nav {
+        display: flex;
+        width: 69%;
+        @media @laptop {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    
+        @media @tablet {
+            width: 100%;
+            justify-content: center;
+    
+        }
+    
+        @media @phone {
+            align-self: center;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
         ul {
             margin-top: 40px; 
-            width: 610px;
+            width: 100%;
+            max-width: 610px;
             justify-content: space-between;
             display: flex;
+        
+            @media @tablet {
+                align-self: center;
+                
+            }
+        
+            @media @phone {
+                flex-direction: column;
+                text-align: center;
+            }
 
             li {
 
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+                    font-size: 1.6rem;
+                    @media @phone {
+                        font-size: 2.5rem;
+                    }
 
                     &:hover {
                         text-decoration: underline;
@@ -29,5 +77,21 @@ header {
     .logo {
         align-self: flex-end;
         margin: 28px 0 0 91px;
+
+        @media @laptop {
+            width: 30%;
+        }
+    
+        @media @tablet {
+            width: 33%;
+            align-self: center;
+            margin: 15px 0 0 0;
+        }
+    
+        @media @phone {
+           width: 50%;
+           align-self: center;
+           margin: 15px 0 0 0;
+        }
     }
 }// header
