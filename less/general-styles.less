@@ -1,3 +1,7 @@
+// convert all fixed widths to percents
+// convert all left and right margins and paddings into percents
+// convert all font-size pixels into rem units
+
 // General Styles
 
 * {
@@ -7,15 +11,35 @@
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+    @media @laptop {
+        width: 100%;
+    }
+    @media @tablet {
+        width: 100%;
+    }
+    @media @phone {
+        width: 100%;
+    }
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    margin-bottom: 1%;
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
+    @media @laptop {
+        width: 100%;
+    }
+    @media @tablet {
+        width: 100%;
+    }
+    @media @phone {
+        width: 100%;
+    }
 }
