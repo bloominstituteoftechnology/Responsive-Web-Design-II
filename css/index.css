@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -162,7 +162,7 @@ h5 {
 .container {
   width: 100%;
   max-width: 880px;
-  margin: auto;
+  margin: 0 auto;
 }
 @media (max-width: 768px) {
   .container {
@@ -191,7 +191,7 @@ header nav ul {
 }
 @media (max-width: 768px) {
   header nav ul {
-    width: 460px;
+    width: 52.27272727%;
     justify-content: space-evenly;
   }
 }
@@ -237,6 +237,8 @@ header .logo {
   display: flex;
   margin-top: 72px;
   justify-content: flex-end;
+  max-width: 880px;
+  width: 100%;
 }
 @media (max-width: 400px) {
   .cta {
@@ -252,7 +254,7 @@ header .logo {
 .cta .cta-text {
   font-size: 7.2rem;
   text-align: center;
-  letter-spacing: 0.56818182%;
+  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -268,8 +270,8 @@ header .logo {
   border: 1px double black;
   font-size: 1.6rem;
   background: white;
-  width: 50%
-        height: 32px;
+  width: 50%;
+  height: 32px;
   margin-top: 10px;
   padding: 0 2%;
   cursor: pointer;
@@ -282,7 +284,7 @@ header .logo {
   .cta {
     display: flex;
     justify-content: space-evenly;
-    margin: 36px 0;
+    margin-bottom: 74px;
   }
 }
 /* Main Content Styles */
@@ -291,7 +293,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 @media (max-width: 768px) {
@@ -329,6 +331,8 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  max-width: 880px;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .main-content .middle-img {
@@ -358,16 +362,11 @@ header .logo {
   }
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2.27272727%;
 }
 /* Contact Styles */
-.contact p {
-  margin: 40px 0;
-}
-@media (max-width: 768px) {
-  .contact {
-    margin: 15px;
-  }
+.contact {
+  margin: 40px 1.70454545%;
 }
 /* Footer Styles */
 footer {

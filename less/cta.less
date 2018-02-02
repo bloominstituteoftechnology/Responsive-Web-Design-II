@@ -4,6 +4,8 @@
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    max-width: 880px;
+    width: 100%;
     @media @phone {
         flex-flow: column;
         img {
@@ -17,7 +19,7 @@
     .cta-text {
         font-size: 7.2rem;
         text-align: center;
-        letter-spacing: (5 / @container-width) * 100%; // 5px;
+        letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
@@ -32,7 +34,7 @@
         border: 1px double black;
         font-size: 1.6rem;
         background: white;
-        width: 50%
+        width: 50%;
         height: 32px;
         margin-top: 10px;
         padding: 0 2%;
@@ -46,6 +48,6 @@
     @media @tablet {
         display: flex;
         justify-content: space-evenly;
-        margin: 36px 0;
+        margin-bottom: 74px;
     }
 }// cta

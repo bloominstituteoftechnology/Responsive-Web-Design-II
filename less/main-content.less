@@ -5,7 +5,7 @@
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
     @media @tablet {
         margin: 0px;
@@ -37,6 +37,8 @@
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    max-width: 880px;
+    width: 100%;
     @media @tablet {
         width: 100%;
         margin: 15px 0;
@@ -62,5 +64,5 @@
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: (20 / 880) * 100%;
 }
