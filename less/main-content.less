@@ -3,9 +3,9 @@
 .main-content {
     width: 100%;
     max-width: 880px;
+    margin: 75px 0% 35px 0%;
     border-top: 2px solid black; 
     border-bottom: 2px solid black;
-    margin: 75px 0 35px 0;
     padding: 3% 0;
     font-size: 1.6rem;
     line-height: 18px;
@@ -13,14 +13,12 @@
     .top-content {
        display: flex;
        justify-content: space-around;
-       margin: 0 .5% 0 .5%;
        @media @tablet {
         h4 {
             margin-top: 10px;
             }
         width: 98%;
         flex-direction: column;
-        margin-left: 2%;
         }
 
         @media @phone {
@@ -29,7 +27,6 @@
             }
         width: 98%;
         flex-direction: column;
-        margin-left: 2%;
         }
     }
 
@@ -39,14 +36,18 @@
         flex-direction: column;
         flex-wrap: wrap;
         margin-right: 1%;
+        margin-left: 1%;
     }
     
     .middle-img {
         // display: flex;
         align-items: center;
         margin: 30px auto;
-        width: 99%;
+        width: 100%;
         height: auto;
+        @media @phone {
+            display: none;
+        }
     }
     
     .bottom-content {
@@ -58,7 +59,6 @@
             }
         width: 98%;
         flex-direction: column;
-        margin-left: 2%;
         }
     
         @media @phone {
@@ -67,7 +67,6 @@
             }
         width: 98%;
         flex-direction: column;
-        margin-left: 2%;
         }
     }
     

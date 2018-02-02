@@ -7,6 +7,12 @@ header {
     background-color: white;
     top: 0px;
     display: flex;
+    @media @tablet {
+        // position: relative;
+    }
+    @media @phone {
+        position: relative;
+    }
 
     nav {
         width: 99%;
@@ -17,6 +23,7 @@ header {
         font-size: 1.6rem;
         top: 15px;
         margin-left: 2%;
+        margin-right: 2%;
         @media @tablet {
             width: 100%;
             flex-direction: column-reverse;
@@ -31,8 +38,14 @@ header {
             display: flex;
             margin-top: 20px;
             width: 60%;
-            min-width: 400px;
+            // min-width: 400px;
             justify-content: space-between;
+            @media @phone {
+                width: 65%;
+                flex-wrap: wrap;
+                height: 50px;
+                margin-left: 17.5%;
+            }
 
             li {
                 a {
@@ -40,6 +53,7 @@ header {
                     color: #b0b0b0;
 
                     &:hover {
+                        font-weight: bold;
                         text-decoration: underline;
                         color: black;
                     }
@@ -53,6 +67,12 @@ header {
             display: flex;
             flex-direction: row;
             align-self: flex-end;
+            @media @tablet {
+                align-self: flex-start;
+            }
+            @media @phone {
+                align-self: center;
+            }
         } // logo
     } // nav
 }// header
