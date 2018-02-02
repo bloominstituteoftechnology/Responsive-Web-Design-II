@@ -23,7 +23,18 @@ Remember that an adaptive layout updates at breakpoints only.  Don't worry about
 * *Stretch Goal:* Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.
 
 
+<<<<<<< HEAD
+Josh's Recommendation for tackling this:
+
+#1 Inspect Element
+#2 Adjust CSS in the the dev inspector
+#3 Copy new styles into your actual project
+#4 Save and watch terminal for updates
+#5 refresh browser and start over again
+
+=======
 ## Challenge Responsive Web Design II: 
+>>>>>>> 7698afaa85cebe409200519eece5e4db826ba5a0
 
 Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a full on fluid layout.  
 

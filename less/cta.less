@@ -2,25 +2,62 @@
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 9%; // 72/396
+    justify-content: center; // changed this to center cuz flex-end was pulling it over to far right in laptop
+    background: sandybrown;
+
+    @media @tablet {
+        flex-flow: row; // Sets everything in .cta to column, bringing image down under "Get Started" button
+    }
+    @media @phone {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .cta-text {
-        font-size: 72px;
-        text-align: center;
+        background: lightgreen;
+        width: 50%; // AWESOME! Okay so you can look up any px width with the Inspect option on Chrome Dev - 298/880
+        font-size: 5.5rem;
+        text-align: center; // Centers "INNOVATION ON DEMAND" - keep
         letter-spacing: 5px;
         display: flex;
-        justify-content: center;
         flex-flow: column;
-        align-items: center;
-        margin: 0 82px 0 0;
+        align-items: center; // Need this
+        margin: 7% 0 0 0; // adds a little space between INNO and circle image in laptop view - 82/880
+
+        @media @tablet { // Everything appears pushed to the left... not sure why.
+           
+        }
+        @media @phone {
+            width: 100%;
+            font-size: 3.2rem;
+            margin: 0 0 0 0;
+        }
     }
+
+    .top-img { // Added to adjust for tablet and iphone
+        background: lightsalmon;
+
+        width: 45%;
+        height: 45%;
+    
+
+        @media @tablet {
+        
+            
+        }
+        @media @phone {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
 
     .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.2rem;
         background: white;
-        width: 170px;
+        width: 39.3%; // 117/298
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
@@ -28,6 +65,11 @@
         &:hover {
             background: black;
             color: white;
+        }
+        @media @phone {
+            width: 27%;
+            margin-bottom: 10px;
+            font-size: 1rem;
         }
     }
 }// cta

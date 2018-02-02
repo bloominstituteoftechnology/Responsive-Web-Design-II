@@ -1,18 +1,81 @@
 // Header Styles
 
 header {
-    width: 100%;
-    display: flex;
+    display: flex; 
+    flex-wrap: wrap;
+    height: 20%;
+    background: violet;
+//     /* Dropdown Button */ // Uncomment to continue working on drop down menu
+// .dropbtn {
+//     background-color: royalblue;
+//     color: white;
+//     padding: 16px;
+//     font-size: 16px;
+//     border: none;
+// }
+
+// /* The container <div> - needed to position the dropdown content */
+// .dropdown {
+//     position: relative;
+//     display: inline-block;
+//     /* Dropdown Content (Hidden by Default) */
+//     .dropdown-content {
+//         display: none;
+//         position: absolute;
+//         background-color: #f1f1f1;
+//         min-width: 160px;
+//         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//         z-index: 1;
+//         /* Links inside the dropdown */
+//         a {
+//             color: black;
+//             padding: 12px 16px;
+//             text-decoration: none;
+//             display: block;
+//         }
+        
+//     }
+// }
+
+// /* Change color of dropdown links on hover */
+// .dropdown-content a:hover {background-color: salmon}
+
+// /* Show the dropdown menu on hover */
+// .dropdown:hover .dropdown-content {
+//     display: block;
+// }
+
+// /* Change the background color of the dropdown button when the dropdown content is shown */
+// .dropdown:hover .dropbtn {
+//     background-color: #3e8e41;
+// }
 
     nav {
+        background: lightgoldenrodyellow;
+        width: 70%;
+        align-self: flex-end; // This works, but seems like the wrong way to apply self - pulling 
+        
+        
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
             display: flex;
+            font-size: 1.6rem; 
+            width: 100%;
+            
+           
+            
+            @media @tablet {
+                
+            }
+            @media @phone {
+                font-size: 1rem;
+            }
 
             li {
-
+                margin: 0px 3%;
+                @media @phone {
+                    margin: 0px 0.8%;
+                }
+                
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
@@ -27,7 +90,15 @@ header {
     }
 
     .logo {
-        align-self: flex-end;
-        margin: 28px 0 0 91px;
+        background: lightgreen;
+        align-self: flex-end; // This is on the cross-axis - Bottom
+        width: 25%;
+        padding-left: 5%;
+        @media @tablet {
+            margin-left: 5%;
+        }
+        @media @phone {
+            margin-left: 5%;
+        }
     }
 }// header

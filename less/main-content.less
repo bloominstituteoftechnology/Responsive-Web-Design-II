@@ -1,29 +1,82 @@
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    background: lightgoldenrodyellow;
+    display: flex; // This is actually still in 'row'
+    flex-wrap: wrap; // b/c of this, the images are wrapping down and stacking
+    justify-content: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 1.2rem;
+    line-height: 18px;
+    @media @tablet {
+        width: 100%;
+        margin: 0px 0px 0px 0px; // Makes page less squashed on the sides under 768px
+    }
+    @media @phone {
+        margin: 20px 0px 20px 0px;
+        padding: 20px 0;
+    }
+}
+
+.main-content h4{
+    background: violet;
+    letter-spacing: 0.1rem;
 }
 
 .main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+    display: flex; // Both top and bottom content need flex in order to remain in rows
+    width: 98%;
+
+    @media @tablet {
+        // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
+        // margin: 30px; // Makes page less squashed on the sides under 768px
+    }
+
+    @media @phone {
+    
+    }
+    
+}
+
+.main-content p {
+    padding-right: 4%;
 }
 
 .main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+    // This also needs to be adjusted
+    width: 95%; // You can adjust this to give margins
+    height: 95%;
+    margin: 2%;
+    background: yellow;
+
+    @media @tablet {
+        // Added this so that at 768px and below, the middle-img  does not "bleed" into other content
+        width: 95%; // margin: 30px; // Makes page less squashed on the sides under 768px
+    }
+
+    @media @phone {
+
+    }
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    width: 98%;
+
+    @media @tablet {
+        // margin: 30px; // Makes page less squashed on the sides under 768px
+    }
+
+    @media @phone {
+
+    }
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.main-content p {
+    background: burlywood;
+    padding-right: 4%;
 }

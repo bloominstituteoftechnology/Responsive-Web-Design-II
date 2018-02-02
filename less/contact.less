@@ -1,9 +1,23 @@
 /* Contact Styles */
 
 .contact {
+    background: lightgreen;
+    font-size: 1.5rem;
+
+    
 
     p {
-        margin: 40px 0;
+        font-size: 1.5rem;
+        margin: 14px 0;
+        
     }
-   
+    
+    @media @tablet {
+        width: 50%;
+        margin: 15px; // Makes page less squashed on the sides under 768px
+    }
+    @media @phone {
+        margin: 10px;
+    }
+    
 }
