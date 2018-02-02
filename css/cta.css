@@ -10,7 +10,6 @@
 }
 .cta .cta-text {
   text-align: center;
-  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;

@@ -127,15 +127,19 @@ table {
   border-spacing: 0;
 }
 /*
+
 	Example usage:
+
 	.some-element {
 		@media @tablet {
 			width: 100%;
 		}
+
 		@media @phone {
 			width: 50%;
 		}
 	}
+
 */
 * {
   box-sizing: border-box;
@@ -182,9 +186,9 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
+  margin: 28px 0 0 6.75%;
   width: calc(92px + 6.66vw);
   height: calc(18px + 1.32vw);
-  margin: 28px 0 0 6.75%;
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -252,7 +256,7 @@ header .logo {
 .contact p {
   margin: 40px 0;
 }
-.contact h4 {
+.contact .contact h4 {
   letter-spacing: 1px;
 }
 /* Footer Styles */
