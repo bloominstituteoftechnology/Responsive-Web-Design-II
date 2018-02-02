@@ -176,7 +176,6 @@ header {
   display: flex;
 }
 header nav {
-  border: 1px solid red;
   width: 99%;
   display: flex;
   flex-direction: row;
@@ -184,6 +183,7 @@ header nav {
   justify-content: space-between;
   font-size: 1.6rem;
   top: 15px;
+  margin-left: 2%;
 }
 @media (max-width: 768px) {
   header nav {
@@ -266,8 +266,9 @@ header nav .logo {
 }
 @media (max-width: 768px) {
   .main-content .top-content {
-    width: 100%;
+    width: 98%;
     flex-direction: column;
+    margin-left: 2%;
   }
   .main-content .top-content h4 {
     margin-top: 10px;
@@ -275,8 +276,9 @@ header nav .logo {
 }
 @media (max-width: 400px) {
   .main-content .top-content {
-    width: 100%;
+    width: 98%;
     flex-direction: column;
+    margin-left: 2%;
   }
   .main-content .top-content h4 {
     margin-top: 10px;
@@ -301,8 +303,9 @@ header nav .logo {
 }
 @media (max-width: 768px) {
   .main-content .bottom-content {
-    width: 100%;
+    width: 98%;
     flex-direction: column;
+    margin-left: 2%;
   }
   .main-content .bottom-content h4 {
     margin-top: 10px;
@@ -310,8 +313,9 @@ header nav .logo {
 }
 @media (max-width: 400px) {
   .main-content .bottom-content {
-    width: 100%;
+    width: 98%;
     flex-direction: column;
+    margin-left: 2%;
   }
   .main-content .bottom-content h4 {
     margin-top: 10px;
@@ -321,6 +325,9 @@ header nav .logo {
   padding-right: 20px;
 }
 /* Contact Styles */
+.contact {
+  margin-left: 2%;
+}
 .contact p {
   font-size: 1.4rem;
   margin: 40px 0;
