@@ -148,7 +148,6 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 16px;
 }
 h1,
 h2,
@@ -162,21 +161,6 @@ h5 {
   width: calc(100px + 57.8%);
   margin: auto;
 }
-/*@media (max-width: 1100px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .container {
-    width: 50%;
-  }
-}*/
 header {
   width: 100%;
   display: flex;
@@ -185,12 +169,12 @@ header nav {
   width: 44.7vw;
 }
 header nav ul {
-  margin-top: 40px;
   width: 100%;
+  margin-top: 40px;
   justify-content: space-between;
   display: flex;
-	font-size: calc(12px + 0.293vw);
-	flex-wrap: wrap;
+  font-size: calc(12px + 0.293vw);
+  flex-wrap: wrap;
 }
 header nav ul li a {
   text-decoration: none;
@@ -202,9 +186,9 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  width: calc(92px + 6.66vw);
-  height: calc(24px + 1.32vw);
   margin: 28px 0 0 6.75%;
+  width: calc(92px + 6.66vw);
+  height: calc(18px + 1.32vw);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -216,11 +200,10 @@ header .logo {
   width: 27.8vw;
   height: 27.8vw;
 }
-
 .cta .cta-text {
-  font-size: calc(30px + 3.07vw);
+  font-size: calc(16px + 4.15vw);
   text-align: center;
-  letter-spacing: 1.71%;
+  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -229,10 +212,10 @@ header .logo {
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: calc(12px + 0.293vw);
+  font-size: calc(12px +0.293vw);
   background: white;
   width: calc(85px + 6.22vw);
-  height: 2.67em;
+  height: 2em;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -257,18 +240,8 @@ header .logo {
   display: block;
   margin: 30px auto;
   width: 100%;
-	height: 13.5vw;
+  height: 13.5vw;
 }
-/*@media (max-width: 768px) {
-  .main-content .middle-img {
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .main-content .middle-img {
-    width: 100%;
-  }
-}*/
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
@@ -277,17 +250,17 @@ header .logo {
   padding-right: 1.48%;
 }
 .main-content h4 {
-  letter-spacing: 1.79%;
+  letter-spacing: 1px;
 }
 /* Contact Styles */
 .contact p {
   margin: 40px 0;
 }
 .contact .contact h4 {
-  letter-spacing: 0.179%;
+  letter-spacing: 1px;
 }
-
 /* Footer Styles */
 footer {
   text-align: center;
+  margin: 40px 0 20px;
 }

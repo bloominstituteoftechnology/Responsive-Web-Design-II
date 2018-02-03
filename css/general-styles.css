@@ -15,6 +15,12 @@ h5 {
   margin-bottom: 10px;
 }
 .container {
-  width: calc(157.8px);
+  width: calc(100px + 57.8%);
   margin: auto;
 }
+/*	@media @laptop {
+    width : 100%;
+  }*/
+/*	@media @tablet {
+      width: 100%;
+   }*/
