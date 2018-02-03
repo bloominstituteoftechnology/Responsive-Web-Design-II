@@ -5,29 +5,123 @@
     margin-top: 72px;
     justify-content: flex-end;
 
-    .cta-text {
+       img {
+        // if max-width:
+        /* @media @laptop {
+            width: 200px;
+            height: 200px;
+       // }
+        @media @tablet {
+            width: 100px;
+            height: 100px;
+        }
+        @media @phone {
+            width: 75px;
+            height: 75px;
+        }
+        width: 379px;
+        height: 379px;*/ 
+
+        // if min-width:
+        @media @tablet {
+            width: 100px;
+            height: 100px;
+        }
+        @media @laptop {
+            width: 200px;
+            height: 200px;
+        }
+        @media @desktop {
+            width: 379px;
+            height: 379px;
+        }
+        width: 75px;
+        height: 75px;
+    }
+ 
+		.cta-text {
+         // if max-width:
+        /* @media @laptop {
+            font-size: 59px;
+            margin: 0 68.5px 0 0;
+        }
+       /* @media @tablet {
+            font-size: 58px;
+            margin: 0 50.5px 0 0;
+        }
+        @media @phone {
+            font-size: 40px;
+            margin: 0 31px 0 0;
+        }
         font-size: 72px;
+        margin: 0 82px 0 0; */
+
+        // if min-width:
+        @media @tablet {
+            font-size: 54px;
+            margin: 0 50.5px 0 0;
+        }
+        @media @laptop {
+            font-size: 64px;
+            margin: 0 68.5px 0 0;
+        }
+        @media @desktop {
+            font-size: 72px;
+            margin: 0 82px 0 0;
+        }
+        
+        font-size: 32px;
+        margin: 0 31px 0 0;
         text-align: center;
         letter-spacing: 5px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 82px 0 0;
-    }
+}   
 
     .cta-text button {
-        border: 1px double black;
+        // if max-width:
+        /* @media @laptop {
+            font-size: 15.3px;
+            width: 154.5px;
+       // }
+        @media @tablet {
+            font-size: 14.3px;
+            width: 134px;
+        }
+        @media @phone {
+            font-size: 13.2px;
+            width: 111px;
+        }
         font-size: 16px;
+        width: 170px; */
+
+        // if min-width:
+        @media @tablet {
+            font-size: 14.3px;
+            width: 134px;
+        }
+        @media @laptop {
+            font-size: 15.3px;
+            width: 154.5px;
+        }
+        @media @desktop {
+            font-size: 16px;
+            width: 170px;
+        }
+        font-size: 13.2px;
+        width: 111px;
+
+        border: 1px double black;
         background: white;
-        width: 170px;
         height: 32px;
         margin-top: 10px;
         cursor: pointer;
-
-        &:hover {
+     
+		     &:hover {
             background: black;
             color: white;
-        }
-    }
+		    }
+		}
 }// cta

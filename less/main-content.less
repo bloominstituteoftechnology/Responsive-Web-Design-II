@@ -17,6 +17,8 @@
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+		width: 100%;
+    height: 21%;				
 }
 
 .main-content .bottom-content {
@@ -25,5 +27,27 @@
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    // if max-width:
+    /* @media @laptop {
+        padding-right: 10.9px;
+    }
+   /* @media @tablet {
+        padding-right: 8.05px;
+    }
+    @media @phone {
+        padding-right: 4.9px;
+    }
+    padding-right: 13px; */
+
+    // if min-width:
+    @media @tablet {
+        padding-right: 8.05px;
+    }
+    @media @laptop {
+        padding-right: 10.9px;
+    }
+    @media @desktop {
+        padding-right: 13px;
+    }
+    padding-right: 4.9px;
 }
