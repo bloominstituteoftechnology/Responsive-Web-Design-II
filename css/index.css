@@ -424,7 +424,7 @@ header .logo {
 /* Contact Styles */
 .contact {
   font-size: 1.6rem;
-  text-align: center;
+  text-align: left;
 }
 @media (max-width: 768px) {
   .contact {
