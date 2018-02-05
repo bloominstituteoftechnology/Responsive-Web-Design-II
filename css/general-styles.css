@@ -12,10 +12,8 @@ h3,
 h4,
 h5 {
   font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 .container {
-  width: 880px;
   margin: auto;
 }
