@@ -173,3 +173,81 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+@media(min-width: 320px){
+
+    /* nav */
+
+    header{
+        justify-content: flex-start;
+    }
+    header nav ul{
+        flex-flow: column;
+        height: 65%;
+        width: 0;
+        justify-content: space-around;
+        position: absolute;  
+    }
+
+    header nav ul li a{
+        color: #022f41;
+        font-weight: 600;
+    }
+
+    header .logo{
+        margin: 0;
+    }
+
+    /* jumbotron */
+
+    .cta{
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .cta .cta-text{
+        font-size: 52px;
+        text-align: right;
+        
+        flex-flow: column wrap;
+        align-items: center;
+        width: 43%;
+    }
+
+    .cta img{
+        display: none;
+    }
+
+    .cta .cta-text button{
+        width: 125px;
+        margin-left: 75px;
+    }
+
+    /* body */
+
+    .main-content{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 34%;
+    }
+
+    .main-content .top-content{
+        display: flex;
+        flex-flow: column;
+        text-align: right;
+        width: 55%;
+        font-size: 100%;
+    }
+
+    .text-content{
+        padding: 20px 0 0 0;
+    }
+
+    .main-content .middle-img{
+        width: 98%;
+    }
+
+}
