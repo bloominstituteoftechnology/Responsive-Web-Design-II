@@ -5,17 +5,21 @@ header {
     display: flex;
 
     nav {
+			  width: 44.7vw;
         ul {
-            margin-top: 40px; 
-            width: 610px;
-            justify-content: space-between;
+					  width: 100%;
+            margin-top: 40px; 			 
+            justify-content: space-around;
             display: flex;
+				    font-size: ~"calc(12px + 0.293vw)";
+            flex-wrap: wrap;						 
 
             li {
 
                 a {
                     text-decoration: none;
                     color: #b0b0b0;
+         
 
                     &:hover {
                         text-decoration: underline;
@@ -28,6 +32,9 @@ header {
 
     .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
-    }
+        margin: 28px 0 0 6.75%;
+				width: ~"calc(92px + 6.66vw)";
+				height: ~"calc(18px + 1.32vw)";
+		 }
+ 
 }// header

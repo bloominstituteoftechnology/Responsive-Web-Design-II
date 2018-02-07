@@ -2,11 +2,16 @@ header {
   width: 100%;
   display: flex;
 }
+header nav {
+  width: 44.7vw;
+}
 header nav ul {
+  width: 100%;
   margin-top: 40px;
-  width: 610px;
   justify-content: space-between;
   display: flex;
+  font-size: calc(12px + 0.293vw);
+  flex-wrap: wrap;
 }
 header nav ul li a {
   text-decoration: none;
@@ -18,5 +23,7 @@ header nav ul li a:hover {
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 6.75%;
+  width: calc(92px + 6.66vw);
+  height: calc(18px + 1.32vw);
 }
