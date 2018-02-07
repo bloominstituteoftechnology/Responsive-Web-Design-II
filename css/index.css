@@ -173,3 +173,96 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 1100px){
+/* Container is at 880px, not chainging much at 1100px since there's no point */
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 748px;
+    }
+
+    header nav ul {
+        width: 450px;
+        margin-left: 20px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        font-size: 62px;
+        margin: 0 0px 0 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top-content .text-content {
+        padding-right: 10px;
+    }
+
+    .main-content img {
+        width: 100%;
+    }
+
+    .contact {
+        padding-left: 20px;
+    }
+
+}
+
+
+@media (max-width:400px){
+    .container {
+        width: 370px;
+    }
+
+    header {
+        flex-wrap: wrap-reverse;
+    }
+
+    header nav ul {
+        width: 370px;
+        margin-left: -5px;
+   
+    }
+
+    .cta .cta-text {
+        font-size: 50px;
+    }
+
+    .cta .cta-text button {
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding-top: 10px;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+    
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    
+    }
+
+    .main-content .text-content {
+        margin-top: 20px;
+    }
+
+}
+
+
