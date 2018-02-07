@@ -230,10 +230,43 @@ footer {
         flex-wrap: wrap-reverse;
     }
 
+    head nav {
+
+    }
+
     header nav ul {
+        width: 100%;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-left: 0px;
+        background-color: gray;
+     
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+        
+    }
+
+    header nav ul li a:hover {
+        background: darkslategrey;
+    }
+
+
+    header nav ul li a {
         width: 370px;
-        margin-left: -5px;
-   
+        display: block;
+        color: white;
+        transition: .3s background-color;
+        padding: 10px 0 10px 0;
+
+    }
+
+    header nav ul li a:hover {
+        background: lightgrey;
+        text-decoration: none;
     }
 
     .cta .cta-text {
