@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -172,4 +173,63 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 768px){
+    header nav ul {
+        width: 390px;
+        margin-left: 20px;
+    }
+    
+    .cta {
+        margin: 72px 150px 0 0;
+    }
+
+    .cta .cta-text {
+        font-size: 55px;
+    }
+
+    .main-content {
+        margin: 75px 150px 35px 35px;
+    }
+
+    .middle-img {
+        max-width: 695px;
+    }
+
+    .contact {
+        margin: 0 0 0 40px;
+    }
+}
+
+@media (max-width: 400px){
+    
+    .container {
+        width: 100%;
+    }
+
+    header nav ul {
+        width: 270px;
+        font-size: 12px;
+        margin: 15px 0 0 8px;
+    }
+
+    header .logo{
+        margin: 9px 0 0 9px;
+        max-width: 91px;
+    }
+
+    .cta {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .main-content {
+        margin: 15px 11px 20px 16px;
+    }
+
+    .main-content .middle-img {
+        max-width: 350px;
+    }
 }
