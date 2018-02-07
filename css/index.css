@@ -67,12 +67,35 @@ h1, h2, h3, h4, h5 {
     width: 880px;
     margin: auto;
 }
+@media (max-width: 786px) {
+    .container {
+        width: 700px;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        width: 380px;
+    }
+}
 
 /* Header Styles */
 
 header {
     width: 100%;
     display: flex;
+
+}
+@media (max-width: 786px) {
+    header {
+        width: 100%;
+        justify-content: space-between;
+        }
+}
+@media (max-width: 400px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 header nav ul {
@@ -81,11 +104,29 @@ header nav ul {
     justify-content: space-between;
     display: flex;
 }
+@media (max-width: 786px) {
+    header nav ul {
+        margin-top: 40px; 
+        width: 150%;
+        justify-content: space-between;
+        display: flex;
+    }
+}
+@media (max-width: 400px) {
+    header nav ul {
+        
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
 
 header nav ul li a {
     text-decoration: none;
     color: #b0b0b0;
 }
+
 
 header nav ul li a:hover {
     text-decoration: underline;
@@ -93,8 +134,19 @@ header nav ul li a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     margin: 28px 0 0 91px;
+}
+@media (max-width: 786px) {
+    header .logo {
+        margin: 20px 0 0 60px;
+    }
+}
+@media (max-width: 400px) {
+    header .logo {
+        margin: 0 0;
+        padding: 0 100px;
+    }
 }
 
 /* Call To Action (CTA) Styles */
@@ -105,6 +157,22 @@ header .logo {
     justify-content: flex-end;
 }
 
+@media (max-width: 786px) {
+    .cta {
+        justify-content: center;
+        zoom: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .cta {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
@@ -114,6 +182,11 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
+}
+@media (max-width: 400px) {
+    .cta .cta-text {
+        margin: 0;
+    }
 }
 
 .cta .cta-text button {
@@ -150,6 +223,17 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+}
+@media (max-width: 786px) {
+    .main-content .middle-img {
+        width: 700px;
+    }
+}
+@media (max-width: 400px) {
+    .main-content .middle-img {
+        width: 350px;
+        
+    }
 }
 
 .main-content .bottom-content {
