@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+
 .container {
     width: 880px;
     margin: auto;
@@ -98,7 +99,6 @@ header .logo {
 }
 
 /* Call To Action (CTA) Styles */
-
 .cta {
     display: flex;
     margin-top: 72px;
@@ -132,7 +132,6 @@ header .logo {
 }
 
 /* Main Content Styles */
-
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -172,4 +171,207 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/*------START MEDIA QUERIES---------------------*/
+
+@media(max-width:1100px){
+    .container{
+        width:90vw;
+        margin:auto;
+    }
+    header {
+        width: 90%;
+        display: flex;
+    }
+    header nav ul {
+        margin-top: 40px; 
+        width: 60vw;
+        justify-content: space-between;
+        display: flex;
+    }
+    header .logo {
+        align-self: flex-end;
+        margin: 28px 0 0 40px;
+    }
+    .main-content .middle-img {
+        display: block;
+        width:100%;
+    }
+    .cta {
+        display: flex;
+        width:90vw;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .cta .cta-text {
+        font-size: 72px;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 25px 0 0;
+    }
+}
+@media(max-width:760px){
+    .container{
+        width:90vw;
+        margin:auto;
+    }
+    header {
+        width: 90%;
+        display: flex;
+    }
+    header nav ul {
+        margin-top: 35px; 
+        width: 70vw;
+        margin-left:-10px;
+        justify-content: space-between;
+        display: flex;
+        font-size:.9em;
+    }
+    header .logo {
+        align-self: flex-end;
+        margin: 28px 0 0 15px;
+        width:20vw;
+        height:auto;
+    }
+    .cta {
+        display: flex;
+        width:85vw;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .cta .cta-text {
+        margin-top:4px;
+        font-size: 6.7vw;
+        text-align: center;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+    .cta img{
+        width:35vw;
+        height:35vw;
+    }
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: 2.5vw;
+        background: white;
+        width: 19vw;
+        height: 32px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .main-content {
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 35px 0 35px 0;
+        padding: 20px 0;
+        font-size: 2.45vw;
+        line-height: 18px;
+     }
+     .main-content h4{
+        font-size:3;
+     }
+     .main-content .top-content {
+         display: flex;
+         justify-content: space-around;
+     }
+     .main-content .middle-img {
+        display: block;
+        width:90vw;
+    }
+     .main-content .bottom-content {
+         display: flex;
+         justify-content: space-around;
+     }
+     .main-content .bottom-content p {
+         padding-right: 20px;
+     }
+}
+@media(max-width:400px){
+    .container{
+        width:90vw;
+        margin:auto;
+    }
+    header {
+        width: 90%;
+        display: flex;
+    }
+    header nav ul {
+        margin-top: 20px; 
+        width: 70vw;
+        margin-left:-10px;
+        justify-content: space-between;
+        display: flex;
+        font-size:.75em;
+    }
+    header .logo {
+        align-self: flex-end;
+        margin: 13px 0 0 2px;
+        width:17vw;
+        height:auto;
+    }
+    .cta {
+        display: flex;
+        width:85vw;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .cta .cta-text {
+        margin-top:4px;
+        font-size: 6.2vw;
+        text-align: center;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+    .cta img{
+        width:35vw;
+        height:35vw;
+    }
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: 2.5vw;
+        background: white;
+        width: 19vw;
+        height: 32px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .main-content {
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 15px 0 35px 0;
+        padding: 10px 0;
+        font-size: 2.45vw;
+        line-height: 18px;
+     }
+     .main-content h4{
+        font-size:3;
+        margin:0px;
+     }
+     .main-content .top-content {
+         display: flex;
+         justify-content: space-around;
+     }
+     .main-content .middle-img {
+        display: block;
+        width:100%;
+        margin:0px;
+    }
+     .main-content .bottom-content {
+         display: flex;
+         justify-content: space-around;
+     }
+     .main-content .bottom-content p {
+         padding-right: 20px;
+     }
 }
