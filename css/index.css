@@ -262,6 +262,28 @@ footer {
 
 /* ipad */
 @media (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  header nav ul {
+    width: 457px;
+    margin-left: 20px;
+  }
+
+  header .logo {
+    margin: 28px 0 0 59px;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .cta .cta-text {
+  }
+
+  .main-content .middle-img {
+  }
 }
 
 /* Phone */
