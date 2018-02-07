@@ -63,67 +63,82 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+
 .container {
-    width: 880px;
-    margin: auto;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
 }
 
 /* Header Styles */
 
 header {
-    width: 100%;
-    display: flex;
+	height:75px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+header nav {
+    width:calc(100% - 183px);
 }
 
 header nav ul {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+	display:flex;
+    justify-content:flex-start;
+    margin-left:20px;
+}
+
+header nav ul li {
+	flex-grow:0.15;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
+	text-decoration: none;
+	color:#b0b0b0;
+	}
 
 header nav ul li a:hover {
-    text-decoration: underline;
-    color: black;
+	text-decoration: underline;
+	color: black;
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+	margin-right:20px;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-bottom:1px solid black;
+	padding: 50px 30px;
+	justify-content:space-around;
 }
 
 .cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.cta .cta-text h1 {
+	font-size:72px;
+	text-align:center;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+	border:1px double black;
+	font-size:16px;
+	background:white;
+	height:32px;
+	width:150px;
+	cursor:pointer;
+	text-align:center;
 }
 
 .cta .cta-text button:hover {
@@ -131,45 +146,106 @@ header .logo {
     color: white;
 }
 
-/* Main Content Styles */
+/*Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+	display:flex;
+	flex-direction:column;
+	border-bottom:1px solid black;
 }
 
 .main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+	display:flex;
 }
 
 .main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+	display:flex;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+div.top-content .text-content, div.bottom-content .text-content {
+	margin:20px 10px;
+}
+/*Contact & Footer Styles*/
+
+section.contact, footer {
+	margin-top:20px;
 }
 
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+section.contact {
+    margin-left:10px;
 }
 
-/* Footer Styles */
-
+section.contact p {
+	margin-bottom: 12px;
+}
 footer {
-    text-align: center;
-    margin: 40px 0 20px;
+	text-align:center;
+}
+
+@media (max-width:1100px) {
+    /*not needed */
+}
+
+@media (max-width:768px) {
+
+    header {
+        flex-wrap:wrap-reverse;
+    }
+
+    header .logo {
+        margin: 10px auto;
+    }
+
+    header nav {
+        width:100%;
+    }
+
+    header nav ul {
+        justify-content:center;
+        margin-left:0;
+    }
+
+    header nav ul li {
+        text-align:center;
+    }
+
+    header nav ul li a {
+        font-size:16px;
+    }
+
+    .cta {
+        flex-wrap:wrap-reverse;
+        padding:20px 30px;
+    }
+
+    .cta img {
+        width:90%;
+        height:auto;
+        max-width:379px;
+    }
+
+    .cta .cta-text h1 {
+        font-size:10vw;
+        
+    }
+
+    .cta .cta-text h1 br {
+        display:none;
+    }
+
+    .main-content .middle-img {
+        width:100%;
+        height:auto;
+        max-width: 1000px;
+        min-height:100px;
+    }
+}
+
+@media (max-width:400px) {
+    .main-content .top-content, .main-content .bottom-content {
+        flex-wrap:wrap;
+    }
+    header nav ul li a {
+        font-size:4vw;
+    }
 }
