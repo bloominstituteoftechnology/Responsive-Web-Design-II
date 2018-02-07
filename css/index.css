@@ -64,21 +64,23 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 400px;
     margin: auto;
 }
 
 /* Header Styles */
 
 header {
-    width: 100%;
-    display: flex;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
 }
 
 header nav ul {
     margin-top: 40px;
-    width: 610px;
-    justify-content: space-between;
+    width: 400px;
+		flex-flow: wrap;
+		justify-content: space-evenly;
     display: flex;
 }
 
@@ -102,7 +104,7 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+		justify-content: center;
 }
 
 .cta .cta-text {
@@ -131,6 +133,10 @@ header .logo {
     color: white;
 }
 
+.cta img {
+	display: none;
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -148,6 +154,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+		width: 400px;
     display: block;
     margin: 30px auto;
 }
@@ -176,39 +183,23 @@ footer {
 
 /* Adaptive Breakpoints */
 
-@media (max-width: 1100px){
-	.container, .middle-img {
-		width: 1100px;
+@media (min-width: 769px){
+	.container {
+		width: 80%;
 	}
-	header {
-		flex-flow: wrap;
-		justify-content: center;
+	.main-content .middle-img {
+		width: 100%;
 	}
 	header nav ul{
-		width: 1100px;
-		flex-flow: wrap;
-		justify-content: space-evenly;
-	}
-	header .logo {
-	    align-self: flex-start;
-	    margin: 28px 0 0 91px;
-	}
-	.cta {
-		justify-content: center;
-	}
-}
-
-@media (max-width: 768px){
-	.container, .middle-img, header nav ul {
 		width: 768px;
 	}
 	.cta img {
-		display: none;
+		display: block;
 	}
 }
 
-@media (max-width: 400px){
-	.container, .middle-img, header nav ul {
-		width: 400px;
+@media (min-width: 1101px){
+	header {
+	    width: 100%;
 	}
 }
