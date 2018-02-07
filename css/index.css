@@ -204,7 +204,7 @@ footer {
         border: none;
     }
 
-    .main-content img {
+    .main-content .middle-img {
         display: none;
     }
 
@@ -244,6 +244,10 @@ footer {
 
     }
 
+    header img {
+        display: none;
+    }
+
     header nav ul li {
         padding: 3px;
     }
@@ -267,14 +271,14 @@ footer {
         border: none;
     }
 
-    .main-content img {
+    .main-content .middle-img {
         display: none;
     }
 
     .main-content .top-content {
         display: flex;
         flex-direction: column;
-        width: 700px;
+        width: 400px;
         margin: 0 0 50px 0;
         padding: 50px;
     }
@@ -282,7 +286,7 @@ footer {
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
-        width: 700px;
+        width: 400px;
         padding: 50px;
     }
 
@@ -291,6 +295,75 @@ footer {
     }
 
     footer {
-        margin-right: 100px;
+        margin-right: 500px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header nav ul {
+        margin-top: 10px;
+        padding-left: 50px;
+        width: 150px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header img {
+        display: none;
+    }
+
+    header nav ul li {
+        padding: 3px;
+    }
+
+    .cta .cta-text {
+        font-size: 72px;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0px 540px 0 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        border: none;
+        background-color: gray;
+        color: white;
+    }
+
+    .main-content .middle-img {
+        display: none;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 0 0 50px 0;
+        padding: 50px;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 50px;
+    }
+
+    .contact {
+        margin: 15px 55px;
+    }
+
+    footer {
+        margin-right: 500px;
     }
 }
