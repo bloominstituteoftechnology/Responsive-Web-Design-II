@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 0;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,8 +65,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
+    font-size: 1.6rem;
 }
 
 /* Header Styles */
@@ -75,9 +78,13 @@ header {
     display: flex;
 }
 
+header nav {
+    width: 69.32%;
+}
+
 header nav ul {
     margin-top: 40px; 
-    width: 610px;
+    width: 100%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +101,7 @@ header nav ul li a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.18% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,21 +113,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.32% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 54%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -137,8 +144,8 @@ header .logo {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   padding: 3.98% 0;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -158,7 +165,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;
 }
 
 /* Contact Styles */
@@ -178,19 +185,28 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
+        max-width: 768px;
     }
+    header nav {
+        width: 55.21%;
+    }
+
     header nav ul { 
-        width: 424px;
-        margin-left: 23px;
+        width: 100%;
+        margin-left: 9.61%;
+    }
+    header .logo {
+        align-self: flex-end;
+        margin: 3.18% 0 -5px 15.34%;
     }
     .cta {
         justify-content: center;
     }
     .cta .cta-text {
-        margin: 0 40px 0 0;
+        margin: 0 4.55% 0 0;
     }
     .main-content {
-        margin: 75px 20px 35px 20px;
+        margin: 75px 2.27% 35px 2.27%;
      }
     .main-content .middle-img {
         max-width: 100%;
@@ -204,6 +220,7 @@ footer {
 @media (max-width: 400px) {
     
     .container {
+        max-width: 400px;
         width: 100%;
     }
 
@@ -214,13 +231,14 @@ footer {
 
     header nav {
         width: 100%;
+        margin: 0% 18% 0% 0%;
     }
 
     header nav ul {
-        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 40px;
         align-items: center;
     }
 
@@ -232,8 +250,9 @@ footer {
     header nav ul li a {
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 2.27% 0;
+        font-size: 2.0rem;
+        margin: 0 0 0 0;
         border-bottom: 1px solid gray;
     }
 
@@ -248,7 +267,7 @@ footer {
     header .logo {
         order: -1;
         max-width: 100%;
-        margin: 20px 0;
+        margin: 20px 2% 0% 10%;
     }
 
     .cta {
