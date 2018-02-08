@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
 }
 
-/* 07 Feb 2018, Responsive Web Design, Project 2, Cesar Mejia  */
+/* 08 Feb 2018, Responsive Web Design, Project 2, Cesar Mejia  */
 /* DESKTOP-FIRST Fully Responsive Web Design */
 .container {
     max-width: 880px;
@@ -86,14 +86,14 @@ header {
     margin-top: 26px;
 }
 
-header nav {
-    flex-grow: 1;
+header nav { 
+    flex-grow: 1; /* header @880px => nav @691px*/
     border: 1px solid green;
 }
 
 header nav ul {
     display: flex;
-    margin: 0 7.2%; /* 50/691 = 7.2%*/
+    margin: 0 7.2%; /* 50px/691px = 7.2%*/
 }
 
 header nav ul li {
