@@ -282,83 +282,70 @@ footer {
         width: 100%;
     }
 
-    /* nav */
-
     header{
-        justify-content: flex-start;
-        padding-left: 5px;
-    }
-    header nav ul{
-        flex-flow: column;
-        height: 80%;
-        width: 0;
-        justify-content: space-around;
-        position: absolute; 
-        /* padding-left: 5px;  */
+        width: 80%;
+        flex-flow: column wrap;
     }
 
-    header nav ul li a{
-        color: #022f41;
-        font-weight: 600;
+    header nav ul{
+        width: 129%;
+        justify-content: space-evenly;
+        margin-left: 2%;
     }
 
     header .logo{
-        margin: 0;
+        margin: 28px 0 0 30%;
+        align-self: center;
     }
-
-    /* jumbotron */
 
     .cta{
-        justify-content: flex-end;
-        width: 375px;
-    }
-
-    .cta .cta-text{
-        font-size: 52px;
-        text-align: right;
-        margin: 0;
+        justify-content: space-evenly;
+        width: 100%;
         flex-flow: column wrap;
         align-items: center;
     }
 
+    .cta .cta-text{
+        font-size: 70px;
+        margin-left: 3%;
+        margin-right: 0;
+    }
+
+  .cta .cta-text button{
+        width: 40%;
+        height: 45px;
+        text-align: center;
+        margin-left: 4%;
+    }
+
     .cta img{
-        display: none;
+        width: 40%;
+        margin: 5% 0 0 6%;
     }
-
-    .cta .cta-text button{
-        width: 125px;
-        margin-left: 75px;
-    }
-
-    /* body */
 
     .main-content{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: flex-start;
-        width: 100%;
-        margin-top: 30px;
-        padding: 10px 0;
+        margin-left: 5%;
     }
 
     .main-content .top-content{
-        display: flex;
-        flex-flow: column;
-        text-align: right;
-        width: 99%;
-        font-size: 100%;
-    }
+        text-align: center;
+        font-size: 1.1875rem;
 
-    .text-content{
-        padding: 20px 5px 0 5px;
     }
 
     .main-content .middle-img{
-        width: 98%;
+        width: 100%;
     }
 
-    .main-content .bottom-content {
-        flex-flow: row wrap;
+    .main-content .bottom-content{
+        flex-flow: column wrap;
+        text-align: center;
+        font-size: 1.125rem;
+
+    }
+
+    .bottom-content .text-content{
+        padding: 10px 0 10px 0;
     }
 
     .contact{
