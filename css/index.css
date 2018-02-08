@@ -53,6 +53,7 @@ table {
 }
 
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -106,7 +107,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -118,7 +119,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -138,7 +139,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -174,10 +175,17 @@ footer {
     margin: 40px 0 20px;
 }
 
-@media (max-width: 1100px){
+
+
+
+/* Responsive Web Design - Project 1 */ 
+
+/* Laptop */ 
+@media (max-width: 1100px){ 
 /* Container is at 880px, not chainging much at 1100px since there's no point */
 }
 
+/* Tablet */
 @media (max-width: 768px){
     .container {
         width: 748px;
@@ -203,7 +211,7 @@ footer {
     }
 
     .cta .cta-text {
-        font-size: 62px;
+        font-size: 6.2rem;
         margin: 0 0px 0 0;
     }
 
@@ -231,6 +239,7 @@ footer {
 }
 
 
+/* Phone */
 @media (max-width:400px){
     .container {
         width: 370px;
@@ -245,21 +254,17 @@ footer {
         flex-flow: column nowrap;
         align-items: center;
         margin-left: 0px;
-        background-color: gray;
+        background-color: lightslategray;
+
      
     }
 
     header nav ul li {
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid darkslategrey;
         
     }
-
-    header nav ul li a:hover {
-        background: darkslategrey;
-    }
-
 
     header nav ul li a {
         width: 370px;
@@ -276,12 +281,12 @@ footer {
     }
 
     .cta .cta-text {
-        font-size: 50px;
+        font-size: 6.2rem;
     }
 
     .cta .cta-text button {
         width: 140px;
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
     .main-content {
@@ -303,5 +308,4 @@ footer {
     }
 
 }
-
 
