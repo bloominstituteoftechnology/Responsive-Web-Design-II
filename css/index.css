@@ -230,7 +230,7 @@ footer {
     }
 
     header nav ul li a {
-        font-size:16px;
+        font-size:calc(0.6rem + 1vw);
     }
 
     .cta {
@@ -244,6 +244,10 @@ footer {
 
     .cta .cta-text h1 br {
         display:none;
+    }
+
+    .cta img {
+        margin-bottom:1%;
     }
 
     .main-content .middle-img {
@@ -271,7 +275,7 @@ footer {
         flex-wrap:wrap;
     }
     header nav ul li a {
-        font-size:4vw;
+        font-size: calc(0.25rem + 2.5vw);
     }
 
     .cta .cta-text button {
