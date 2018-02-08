@@ -47,6 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -65,13 +67,13 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 880px;
-    margin: auto;
+    margin: auto; */
 }
 
 /* Header Styles */
 
 header {
-    width: 100%;
+    width: 760px;
     display: flex;
 }
 
@@ -172,4 +174,90 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 768px){
+    .container {
+        width: 100vw;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    header nav ul{
+        width: 427px;
+        margin-left: 20px;
+    }
+    
+    .cta{
+        width: 100%;
+        justify-content: center;
+        
+
+
+    }
+
+    .cta .cta-text{
+        margin-left: 10px;
+    }
+
+    .cta img{
+        width: 352px;  
+    }
+
+    .main-content{
+        width: 100%;
+    }
+    
+    .main-content .top-content {
+        margin: 0 20px;
+    }
+
+    .main-content .top-content .text-content{
+        margin: 0 20px;
+    }
+
+    .middle-img {
+        max-width: 90%;
+    }
+
+    .main-content .bottom-content{
+        margin: 0 20px;
+    }
+
+    .main-content .bottom-content .text-content{
+        margin: 0 20px;
+    }
+
+    .contact{
+        margin-left:20px;
+    }
+    
+    
+}
+
+@media (max-width:400px){
+    header{
+        flex-wrap: wrap-reverse;
+        align-items: center;
+
+    }
+
+    header nav ul{
+        width: 360px;
+        margin-right: 20px;
+
+    }
+
+    .cta{
+        flex-wrap:wrap;
+        align-content: center;
+    }
+
+    .cta .cta-text{
+        margin: 30px;
+    }
+
+
 }
