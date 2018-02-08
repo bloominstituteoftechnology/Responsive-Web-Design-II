@@ -71,13 +71,17 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-    width: 100%;
+    max-width: 100%;
     display: flex;
+}
+
+header nav {
+	width: 69.32%
 }
 
 header nav ul {
     margin-top: 4.5%; /* 40px / 880 */
-    width: 38rem; /* 610 */
+    width: 100%; /* 610 // 38rem*/
     justify-content: space-between;
     display: flex;
 }
@@ -86,6 +90,7 @@ header nav ul li a {
     text-decoration: none;
     color: #b0b0b0;
 		display: flex;
+		margin: 0 auto;
 }
 
 header nav ul li a:hover {
@@ -151,6 +156,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+		max-width: 100%;
 }
 
 .main-content .bottom-content {
@@ -179,14 +185,14 @@ footer {
 
 /* 768px */
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 
 	.body {
 		overflow-x: hidden;
 	}
 
-	.container {
-	    width: 751px;
+	/* .container {
+	    max-width: 7px;
 	    margin: auto;
 			overflow-x: hidden;
 	}
@@ -246,21 +252,25 @@ footer {
 
 /* 400px */
 
-/* @media (max-width: 400px) {
+@media (max-width: 555px) {
 
 	.body {
 		overflow-x: hidden;
 	}
 
 	.container {
-	    width: 383px;
+	    max-width: 555px;
 	    margin: auto;
 			overflow: hidden;
 	}
 
+	header nav {
+		max-width: 69.7%;
+	}
+
 	header nav ul {
 	    margin: 40px 0 0 5px;
-	    width: 168px;
+	    max-width: 100%; /* 168 */
 	    justify-content: space-around;
 	    display: flex;
 			flex-wrap: wrap;
@@ -270,14 +280,14 @@ footer {
 	header .logo {
 	    align-self: flex-end;
 	    margin: 28px 0 0 40px;
-			width: 168px;
+			width: 30.2%; /* 168 */
 	}
 
 	.cta {
 	    display: flex;
-	    margin-top: 72px;
-			margin-left: 50px;
-			width: 350px;
+	    margin-top: 12.9%; /* 72 */
+			margin-left: 9%; /* 50 */
+			width: 63%; /* 350 */
 	    justify-content: center;
 	}
 
@@ -289,14 +299,14 @@ footer {
 	    justify-content: center;
 	    flex-flow: column;
 	    align-items: center;
-	    margin: 0 67px 0 0;
+	    margin: 5% 5% 0 40%;
 	}
 
 	.logo2 {
 		display: none;
 	}
 
-	.main-content {
+	/* .main-content {
 	   border-top: 2px solid black;
 	   border-bottom: 2px solid black;
 	   margin: 75px 0 35px 5px;
@@ -320,10 +330,10 @@ footer {
 	.contact p {
 	    margin: 15px 0 0 5px;
 			width: 300px;
-	}
+	} */
 
 	/* h4 {
 		width: 380px;
 	} */
 
-} */
+}
