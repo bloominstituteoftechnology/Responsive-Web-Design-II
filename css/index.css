@@ -97,6 +97,8 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
+
+
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -172,4 +174,113 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+
+
+
+/* Tablet */
+@media (max-width: 768px) {
+    
+    .container {
+        width: 100%; /* 768px */
+    }
+    
+    header nav ul {
+        width: 457px;
+        margin-left: 20px;
+        font-size: 75%;   
+    }
+
+    header .logo {
+     margin: 28px 0 0 59px; 
+    }
+
+    .main-content {
+        margin: 75px 20px 35px;
+    }
+
+    .main-content .middle-img {
+        width: 100%
+     }
+
+     .cta {
+         justify-content: center;
+         margin: 70px 70px 0 0; 
+     }
+
+     .cta img {
+        height: 250px;
+     }
+
+     .cta .cta-text {
+         width: 70%;
+         font-size: 54px;
+         margin: 0 33px 0 0;
+     }
+
+     .contact {
+         font-size: 18px;
+         display: flex; 
+         flex-direction: column; 
+         align-items: center;  
+         align-content: space-between; 
+         
+     }
+
+     footer {
+         font-size: 15px; 
+     }
+}
+
+/* Phone */  
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column; 
+        align-content: center; 
+    }
+    header nav ul {
+        flex-direction: column; 
+        align-content: space-between;
+    }
+
+    header nav ul li a {
+        display: flex; 
+        align-content: space-between;
+        font-size: 15px; 
+    }
+
+
+    header .logo {
+      margin-right: 100px;  
+     
+     }
+
+     .cta {
+         flex-direction: column; 
+     }
+
+     .cta .cta-text {
+        margin-left: 80px
+    }
+    
+    .cta img {
+        display: none; 
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        flex-wrap: wrap;   
+    }
+     
+    .main-content .bottom-content p {
+        padding-bottom: 20px;  
+    }
 }
