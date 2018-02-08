@@ -176,6 +176,7 @@ footer {
     margin: 40px 0 20px;
 }
 
+
 /* Tablet */
 @media (max-width: 768px) {
 
@@ -184,7 +185,7 @@ footer {
     }
 
     header nav ul {
-        width: 457px;
+        width: 59%;
         margin-left: 20px;
     }
 
