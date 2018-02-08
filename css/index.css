@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    
 }
 
 
@@ -131,6 +132,7 @@ header .logo {
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
+    
 }
 
 
@@ -259,6 +261,20 @@ footer {
              max-width: 100%;
              margin: 42px 0;
          }
-     
+         .cta {
+             margin-top: 35px;
+             flex-flow: column;
+             align-items: center;
+         }
+         .cta .cta-text {
+             margin: 0 0 20px 0;
+         }
+         .cta .cta-text button {
+            font-size: 16px;
+         }
+         .cta img {
+             max-width: 80%;
+
+         }
          
      }
