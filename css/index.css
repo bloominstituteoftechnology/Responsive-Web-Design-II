@@ -98,6 +98,7 @@ header nav ul li a:hover {
 
 header .logo {
     align-self: flex-end;
+    margin: 28px 0 0 91px;
     
 }
 
@@ -158,7 +159,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    /* margin: 30px auto; */
+    margin: 30px auto;
 }
 
 .main-content .bottom-content {
@@ -182,11 +183,20 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
-
-@media (max-width: 400px) {
-
-}
-
+/* tablet */
 @media (max-width: 768px) {
+    .container {
+    width: 768px;
+    }
+    header nav ul {
+        width: 457px;
+        margin-left:20px;
+    }
+    header .logo {
+        margin: 25px 0 0 60px;
+    }
+}
+/* phone */
+@media (max-width: 400px) {
 
 }
