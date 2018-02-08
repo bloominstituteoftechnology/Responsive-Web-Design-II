@@ -60,7 +60,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 
@@ -75,10 +75,11 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-	height:75px;
+	height:100%;
 	display:flex;
 	justify-content:space-between;
-	align-items:center;
+    align-items:center;
+    margin-top:1%;
 }
 
 header nav {
@@ -88,7 +89,7 @@ header nav {
 header nav ul {
 	display:flex;
     justify-content:flex-start;
-    margin-left:20px;
+    margin-left:5%;
 }
 
 header nav ul li {
@@ -106,7 +107,10 @@ header nav ul li a:hover {
 }
 
 header .logo {
-	margin-right:20px;
+    margin-right:5%;
+    width:60%;
+    height:auto;
+    max-width:183px;
 }
 
 /* Call To Action (CTA) Styles */
@@ -116,8 +120,14 @@ header .logo {
 	justify-content:center;
 	align-items:center;
 	border-bottom:1px solid black;
-	padding: 50px 30px;
+	padding: 5% 5%;
 	justify-content:space-around;
+}
+
+.cta img {
+    width: 60%;
+    height: auto;
+    max-width: 379px;
 }
 
 .cta .cta-text {
@@ -127,18 +137,21 @@ header .logo {
 }
 
 .cta .cta-text h1 {
-	font-size:72px;
+	font-size:5rem;
 	text-align:center;
 }
 
 .cta .cta-text button {
 	border:1px double black;
-	font-size:16px;
+	font-size:1rem;
 	background:white;
-	height:32px;
-	width:150px;
+	height:100%;
+	width:40%;
 	cursor:pointer;
-	text-align:center;
+    text-align:center;
+    max-width:150px;
+    min-width:71px;
+    line-height:1.2;
 }
 
 .cta .cta-text button:hover {
@@ -162,29 +175,35 @@ header .logo {
 	display:flex;
 }
 
-div.top-content .text-content, div.bottom-content .text-content {
-	margin:20px 10px;
+.main-content h4, .contact h4 {
+    font-size:1rem;
+    line-height:1.1;
+}
+
+.main-content p, .contact p, footer p {
+    font-size:1rem;
+    line-height:1.1;
+}
+
+div.top-content, div.bottom-content {
+    margin-bottom:1%;
+}
+
+div.top-content .text-content, div.bottom-content .text-content, section.contact {
+	margin:1.5% 0.5%;
 }
 /*Contact & Footer Styles*/
 
-section.contact, footer {
-	margin-top:20px;
-}
-
-section.contact {
-    margin-left:10px;
-}
-
 section.contact p {
-	margin-bottom: 12px;
+	margin-bottom: 1%;
 }
 footer {
 	text-align:center;
 }
-
+/* ---- Not needed ---
 @media (max-width:1100px) {
-    /*not needed */
-}
+
+} */
 
 @media (max-width:768px) {
 
@@ -193,7 +212,7 @@ footer {
     }
 
     header .logo {
-        margin: 10px auto;
+        margin: 0 auto;
     }
 
     header nav {
@@ -203,6 +222,7 @@ footer {
     header nav ul {
         justify-content:center;
         margin-left:0;
+        margin-top:1%;
     }
 
     header nav ul li {
@@ -218,15 +238,8 @@ footer {
         padding:20px 30px;
     }
 
-    .cta img {
-        width:90%;
-        height:auto;
-        max-width:379px;
-    }
-
     .cta .cta-text h1 {
-        font-size:10vw;
-        
+        font-size:calc(2rem + 6vw);
     }
 
     .cta .cta-text h1 br {
@@ -239,6 +252,18 @@ footer {
         max-width: 1000px;
         min-height:100px;
     }
+
+    .main-content h4, .contact h4 {
+        font-size:0.9rem;
+    }
+    
+    .main-content p, .contact p, footer p {
+        font-size:0.9rem;
+    }
+
+    div.top-content .text-content, div.bottom-content .text-content, section.contact {
+        margin:1.5% 1%;
+    }
 }
 
 @media (max-width:400px) {
@@ -248,4 +273,27 @@ footer {
     header nav ul li a {
         font-size:4vw;
     }
+
+    .cta .cta-text button {
+        font-size:calc(0.5rem + 2vw);
+        height: 100%;
+        width: 50%;
+    }
+
+    .cta .cta-text h1 {
+        font-size: calc(1rem + 8vw);
+    }
+
+    div.top-content .text-content, div.bottom-content .text-content, section.contact {
+        margin:1.5% 1.5%;
+    }
+
+    .main-content h4, contact p, footer p {
+        font-size:0.8rem;
+    }
+    
+    .main-content p, .contact p, footer p {
+        font-size:0.8rem;
+        line-height:1.1;
+    }    
 }
