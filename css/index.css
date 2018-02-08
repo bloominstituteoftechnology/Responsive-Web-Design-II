@@ -102,7 +102,7 @@ header nav ul li a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 0 0 0 10.3%;
+    margin: 15px 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -212,6 +212,10 @@ footer {
         
     }
 
+    header nav {
+        width: 95%;
+    }
+
     header .logo {
         align-self: center;
         margin: 3.1% 0 0 0;
@@ -260,6 +264,10 @@ footer {
     header {
         
         flex-wrap: wrap-reverse;
+    }
+
+    header nav {
+        width: 100%;
     }
 
     header nav ul {
