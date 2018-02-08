@@ -134,7 +134,7 @@ header .logo {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: 19.3%;
+    width: 36%;
     height: 32px;
     margin-top: 1.1%;
     cursor: pointer;
@@ -199,7 +199,7 @@ footer {
     header .logo {
         margin-left: 22.7%;
     }
-    .cta{
+    .cta {
         justify-content: space-around;
     }
     .middle-img{
