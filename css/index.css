@@ -278,16 +278,22 @@ footer {
              display: none;
 
          }
+        
          .main-content .top-content {
              justify-content: space-around;
              flex-direction: column;
              height: 60%;
              
          }
+         .main-content .top-content .text-content {
+             margin: 3.5% 0 3.5% 0; 
+         }
          .main-content .bottom-content {
             flex-wrap: wrap;
             align-content: space-between;
             height: 60%;
         }
-
+        .main-content .bottom-content .text-content {
+            margin: 3.5% 0 3.5% 0; 
+        }
      }
