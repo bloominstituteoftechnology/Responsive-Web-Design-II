@@ -75,6 +75,7 @@ header {
     display: flex;
 }
 
+
 header nav ul {
     margin-top: 40px; 
     width: 610px;
@@ -140,6 +141,7 @@ header .logo {
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
+   
 }
 
 .main-content .top-content {
@@ -172,4 +174,104 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Build an adaptive website that has breakpoints at 400px, 768px, and 1100px.  
+This project is very open ended and meant to challenge what you learned today.  
+The correct solution will have breakpoints at the directed values but
+how it looks is up to you. */
+
+/* my new code*/
+@media (max-width:1100px )  {
+    header  {
+      background: blue;
+    }
+    
+   
+   
+}
+
+@media (max-width:768px )  {
+    .cta {
+        justify-content: flex-start;
+    }
+    header .logo {
+        margin: 28px 0 0 0px;
+        
+    }
+    header nav ul {
+        width: 580px;
+        justify-content: space-around;
+    }
+    .main-content {
+        width: 768px;
+        padding: 10px 0 10px 5px;
+     }
+     .middle-img {
+         width: 748px;
+         padding-right: 10px;
+     }
+     .contact p {
+       width: 768px;
+    }
+     footer {
+         width: 768px;
+        display: flex;
+        justify-content:center;
+        
+    }
+    .container {
+        width:768px;
+    }
+       
+}
+@media (max-width:400px )  {
+    header .logo {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        justify-content:space-around;
+        align-items:center;
+        margin-top: 5px;
+    }
+    .container {
+        width:400px;
+    }
+  .cta {
+        justify-content: center;
+        margin-top: 10px;
+    }
+        .top-img {
+            display: none;
+        }
+    
+    .main-content {
+        margin-top: 25px;
+        width:400px;
+        padding: 10px 0 10px 5px;
+     }
+     .middle-img {
+         width: 400px;
+         padding-right: 10px;
+     }
+     .contact p {
+       width: 400px;
+    }
+     footer {
+         width: 400px;
+        display: flex;
+        justify-content:center;
+        
+    }
+    .cta .cta-text {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+
 }
