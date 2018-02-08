@@ -139,7 +139,7 @@ table {
 			width: 50%;
 		}
 	}
-
+/* In using rem units 16px was base */
 */
 * {
   box-sizing: border-box;
@@ -156,7 +156,7 @@ h4,
 h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 1%;/*10/880 = */
 }
 .container {
   width: 880px;
@@ -168,7 +168,7 @@ header {
 }
 header nav ul {
   margin-top: 40px;
-  width: 610px;
+  width: 69%; /*610/880 = .693*/
   justify-content: space-between;
   display: flex;
 }
@@ -178,39 +178,39 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: black;
+  color: goldenrod;
 }
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 3% 0 0 10%; /* Divided by 880 to gain percentage*/
 }
 /* Call To Action (CTA) Styles */
 .cta {
   display: flex;
-  margin-top: 72px;
+  margin-top: 72px; /*not left or right margin*/
   justify-content: flex-end;
 }
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 11rem; /* Divided by 880 to gain percentage*/
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9% 0 0; /* Divided by 880 to gain percentage*/
 }
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1rem;
   background: white;
-  width: 170px;
+  width: 20%; /* Divided by 880 to gain percentage*/
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
-  background: black;
+  background: goldenrod;
   color: white;
 }
 /* Main Content Styles */
@@ -218,8 +218,8 @@ header .logo {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
-  padding: 35px 0;
-  font-size: 16px;
+  padding: 4% 0; /* Divided by 880 to gain percentage*/
+  font-size: 1rem;
   line-height: 18px;
 }
 .main-content .top-content {
@@ -228,14 +228,14 @@ header .logo {
 }
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: 4% auto; /* Divided by 880 to gain percentage*/
 }
 .main-content .bottom-content {
   display: flex;
   justify-content: space-around;
 }
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 3%; /* Divided by 880 to gain percentage*/
 }
 /* Contact Styles */
 .contact p {
@@ -244,5 +244,124 @@ header .logo {
 /* Footer Styles */
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 40px 0 20px; 
+}
+/* Tablet */
+@media (max-width: 768px) {
+
+  .container {
+      width: 100%;
+  }
+
+  header nav ul {
+      width: 60%; /* Divided by 768 to gain percentage*/
+      margin-left: 3%; /* Divided by 768 to gain percentage*/
+  }
+
+  header .logo {
+      margin: 28px 0 0 10%; /* Divided by 768 to gain percentage*/
+  }
+
+  .cta {
+      justify-content: center;
+  }
+  
+  .cta .cta-text {
+      margin: 0 5% 0 0;/* Divided by 768 to gain percentage*/
+  }
+
+  .main-content .middle-img {
+     width: 100%;
+  }
+
+  .main-content {
+     margin: 75px 3% 35px; /* Divided by 768 to gain percentage*/
+  }
+}
+
+/* Phone */
+@media (max-width: 400px) {
+  
+  .container {
+      width: 100%;
+  }
+
+  header {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  header nav {
+      width: 100%;
+  }
+
+  header nav ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+  }
+
+  header nav ul li {
+      width: 100%;
+      margin: 0;
+  }
+
+  header nav ul li a {
+      display: block;
+      text-align: center;
+      padding: 5% 0; /* Divided by 400 to gain percentage*/
+      font-size: 1.25rem;
+      border-bottom: 1px solid gray;
+  }
+
+  header nav ul li:first-child {
+      border-top: 1px solid gray;
+  }
+
+  header nav ul li a:hover {
+      background: goldenrod;
+  }
+
+  header .logo {
+      order: -1;
+      max-width: 100%;
+      margin: 4.5% 0; /* Divided by 400 to gain percentage*/
+  }
+
+  .cta {
+      margin-top: 13%; /* Divided by 400 to gain percentage*/
+      flex-flow: column;
+      align-items: center;
+  }
+  
+  .cta .cta-text {
+      margin: 0% 0% 13% 0%; /* Divided by 400 to gain percentage*/
+  }
+  
+  .cta .cta-text button {
+    display: flex;
+     
+  }
+
+  .cta img {
+      max-width: 80%;
+  }
+
+  .main-content .top-content {
+      justify-content: space-around;
+      flex-direction: column;
+      height: 75%; /* Divided by 400 to gain percentage*/
+  }
+
+  .main-content .bottom-content {
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 100%;/* Divided by 400 to gain percentage*/
+  }
+
+  .contact {
+      margin: 7%;/* Divided by 400 to gain percentage*/
+  }
 }
