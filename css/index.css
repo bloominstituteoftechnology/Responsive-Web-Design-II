@@ -63,43 +63,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .container {
-      width: 60%
-    }
- }
- 
-@media (max-width: 400px) {
-    .container {
-      width: 60%
-    }
- }
-
-@media (max-width: 1000px) {
-    .container {
-      width: 80%
-    }
- }
-
-@media (min-width: 768px) {
-    .container {
-      width: 20%
-    }
- }
- 
-@media (min-width: 400px) {
-    .container {
-      width: 20%
-    }
- }
-
-@media (min-width: 1000px) {
-    .container {
-      width: 40%
-    }
- }
-
-
 /* Header Styles */
 
 header {
@@ -205,3 +168,43 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/*-------------MEDIA QUERIES--------------*/
+
+/*Tablet*/
+@media (max-width: 768px) {
+    .container {
+      width: 60%
+    }
+ }
+ /*Ipad*/
+@media (max-width: 400px) {
+    .container {
+      width: 60%
+    }
+ }
+
+@media (max-width: 1000px) {
+    .container {
+      width: 80%
+    }
+ }
+/*Tablet*/
+@media (min-width: 768px) {
+    .container {
+      width: 20%
+    }
+ }
+ /*Ipad*/
+@media (min-width: 400px) {
+    .container {
+      width: 20%
+    }
+ }
+
+@media (min-width: 1000px) {
+    .container {
+      width: 40%
+    }
+ }
+
