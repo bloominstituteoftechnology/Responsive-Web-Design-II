@@ -174,37 +174,48 @@ footer {
     margin: 40px 0 20px;
 }
 
-@media (max-width: 1100px) {
-    .container {
-        width: 100%;
-        margin: auto;
-    }
-}
-
+/* Tablet */
 @media (max-width: 768px) {
+
     .container {
-        width: 100%;
-        margin: auto;
-        margin-left: 20px;
+        width: 768px;
     }
 
     header nav ul {
         margin-top: 40px; 
-        width: 768px;
-        justify-content: center;
+        width: 474px;
+        justify-content: space-between;
         display: flex;
-    }
+        margin-left: 20px;
+    }  
 
     header .logo {
         align-self: flex-end;
-        margin: 28px 0 0 91px;
+        margin: 28px 0 0 65px;
+    }
+
+    .cta {
+        justify-content: space-around;
+    }
+    
+    .cta .cta-text {
+        margin: 47px 0 20px;
+    }
+    
+    .main-content .top-content {
+        margin: 0 5px 0 10px;
+    }
+
+    .main-content .bottom-content {
+        margin: 0 5px 0 10px;
+    }
+
+    .contact {
+        margin: 0 5px 0 10px;
     }
 }
 
-
+/* Phone */
 @media (max-width: 400px) {
-    .container {
-        width: 100%;
-        margin: auto;
-    }
+
 }
