@@ -64,13 +64,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Header Styles */
 
 header {
+    max-width: 880px;
     width: 100%;
     display: flex;
 }
@@ -101,8 +103,8 @@ header .logo {
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 5%;
+    justify-content: center;
 }
 
 .cta .cta-text {
@@ -113,7 +115,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 0 0 0;
 }
 
 .cta .cta-text button {
@@ -149,7 +151,8 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 5% auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -158,13 +161,13 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 4%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 3% 0;
 }
 
 /* Footer Styles */
@@ -175,15 +178,29 @@ footer {
 }
 
 @media (max-width: 1100px){
-    .container {
-        margin-left: 5%;
+    body .container {
+        margin: auto;
+    }
+
+    
+
+@media (max-width: 905px){
+
+    body .container header nav {
+        width: 70%
+    }
+
+    body .container header nav ul {
+        width: 100%;
+    }
+    body .container header .logo {
+        margin-left: 3%;
     }
 }
 
 @media (max-width: 768px){
     body .container {
-        margin: 2%;
-        width: 96%;
+        width: 100%;
     }
 
     .container .middle-img {
@@ -217,37 +234,70 @@ footer {
         height: 50%;
         width: 50%;
     }
+    
+    .container .main-content .middle-img {
+        width: 100%;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 468px) {
     body .container {
         margin: 0;
         width: 100%;
+    }
+
+    body .container header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body .container header nav {
+        width: 70%;
+        flex-direction: column;
+        
+    }
+
+    body .container header nav ul {
+        font-size: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        
+    }
+
+  
+
+    body .container header .logo {
+        order: -1;
+        align-self: center;
+        width: 45%;
+        height: 20%;
+        
+    }
+
+    body .container .cta img {
+        display: none;
+    }
+    
+    body .container .cta{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    body .container .cta .cta-text {
+        width: 20%;
+        font-size: 3rem;
     }
 
     body .container .main-content .bottom-content {
         flex-flow: column;
     }
 
-    body .container header nav {
-        width: 70%;
+    body .container .main-content .top-content {
+        flex-direction: column;
     }
-
-    body .container header nav ul {
-        font-size: 0.7rem;
-    }
-    
-    body .container .cta{
-        width: 100%;
-
-    }
-
-    body .container .cta .cta-text {
-        width: 5%;
-        font-size: 1.5rem;
-    }
-
-    
 
 }
 
