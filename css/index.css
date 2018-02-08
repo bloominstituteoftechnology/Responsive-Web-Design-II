@@ -80,7 +80,7 @@ header {
 }
 
 header nav {
-    width: 69.3%;
+    width: 100%;
 }
 
 header nav ul {
@@ -218,28 +218,12 @@ footer {
         
     }
 
-   
-
     header .logo {
         align-self: center;
         margin: 3.1% 0 0 0;
     }
-
-    header nav {
-        width: 60%;
-    }
     
-
-
-    header nav ul {
-        width: 100%;
-        
-    }
-
-    header nav ul li {
-
-
-    }
+   
 
     .cta {
         justify-content: center;
@@ -282,12 +266,12 @@ footer {
     }
 
     header {
-        width: 100%;
+        
         flex-wrap: wrap-reverse;
     }
 
     header nav ul {
-        width: 100%;
+      
         flex-flow: column nowrap;
         align-items: center;
         margin-left: 0;
@@ -304,7 +288,7 @@ footer {
     }
 
     header nav ul li a {
-        width: 370px;
+        width: 100%;
         display: block;
         color: white;
         transition: .3s background-color;
