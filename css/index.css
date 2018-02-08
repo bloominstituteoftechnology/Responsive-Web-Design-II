@@ -240,9 +240,14 @@ footer {
         border-bottom: 1px solid blue;
     }
 
+    .main-content .text-content {
+        margin: 10px 0;
+    }
+
     .main-content .top-content {
         flex-direction: column;
         text-align: justify;
+        
 
     }
     .main-content .bottom-content {
