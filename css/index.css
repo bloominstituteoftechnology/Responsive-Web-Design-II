@@ -173,3 +173,72 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/*iPad layout*/
+@media (max-width:768px) {
+    .container {
+        display: flex;
+        width: 768px;
+        flex-flow: row wrap;
+    }
+
+    .container header nav {
+        display: flex;
+        width: 768px;
+        flex-flow: row wrap;
+    }
+    .main-content .middle-img {
+        max-width: 768px;
+    }
+}
+
+/*iPhone layout*/
+@media (max-width:400px) {
+    .container {
+        width: 400px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .container header {
+        width: 400px;
+        margin-top: 30px;
+        flex-flow: row wrap-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .container header nav {
+        width: 400px;
+    }
+
+    .container header nav ul {
+        width: 400px;
+        justify-content: space-around;
+    }
+    
+    .container header .logo {
+        margin: 0 0 0 0;
+    }
+
+    .cta {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .cta .cta-text {
+        margin: 0 0 30px 0;
+    }
+
+    .main-content .top-content {
+        flex-flow: row wrap;
+    }
+
+    .main-content .middle-img {
+        max-width: 400px;
+    }
+
+    .main-content .bottom-content {
+        flex-flow: row wrap;
+    }
+}
