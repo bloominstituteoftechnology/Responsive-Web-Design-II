@@ -243,6 +243,9 @@ footer {
 
     .cta {
         justify-content: center;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .cta .cta-text {
@@ -264,6 +267,7 @@ footer {
     header {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     header nav {
@@ -278,10 +282,15 @@ footer {
     header nav ul li a {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
     }
 
     header nav ul li {
         display: flex;
         justify-content: space-around;
+    }
+
+    .cta .cta-text button {
+        margin-bottom: 40px;
     }
 }
