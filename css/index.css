@@ -177,46 +177,84 @@ margin: 40px 0 20px;
 /*Ipad*/
 
 @media (max-width: 768px) {
-    .container{
-    width: 768px;
-    }
-    header nav ul {
-    margin-top: 40px;
-    width: 466px;
-    margin-left: 20px;
-    }
-    header .logo {
-    margin: 32px 0 0 73px;
-    }
-    .cta{
-    justify-content: center;
-    width: 759px;
-    }
-    .cta .cta-text{
-    margin: 0px 70px 0 0;
-    font-size: 61px;
-    }
-    .cta .cta-text button{
-    width: 155px;
-    height: 30px;
-    font-size: 15px;
-    }
-    .main-content{
-    padding: 29px 0;
     
+       .container{
+        width: 768px;
+        }
+        header nav ul {
+        margin-top: 40px;
+        width: 466px;
+        margin-left: 20px;
+        }
+        header .logo {
+        margin: 32px 0 0 73px;
+        }
+        .cta{
+        justify-content: center;
+        }
+        .cta .cta-text{
+        margin: 0px 70px 0 0;
+        font-size: 61px;
+        }
+        .cta .cta-text button{
+        width: 155px;
+        height: 30px;
+        font-size: 15px;
+        }
+        .main-content{
+        padding: 29px 0;
+        }
+        .main-content .top-content .text-content {
+        margin-left: 20px;
+        margin-right: 12px;
+        }
+        .main-content .middle-img {
+        margin: 30px 24px 30px 20px;
+        width: 93%;
+        }
+        .main-content .bottom-content .text-content{
+        margin-left: 20px;
+        }
+        .contact {
+        margin-left: 20px;
+        }
     }
-    .main-content .top-content .text-content {
-    margin-left: 20px;
-    margin-right: 12px;
-    }
-    .main-content .middle-img {
-    margin: 30px 24px 30px 18px;
-    width: 95%;
-    }
-    .main-content .bottom-content .text-content{
-    margin-left: 20px;
-    }
-    .contact {
-    margin-left: 20px;
-    }
+
+    @media (max-width: 400px) {
+        .container{
+            width: 400px;
+            }
+        
+        header nav ul {
+            width: 354px;
+            }
+        img {
+            width: 80px;
+            display: none;
+        }
+        .cta .cta-text {
+            margin: 0px 70px 0 57px;
+            font-size: 51px;
+        }
+        .cta .cta-text button {
+            width: 136px;
+            height: 29px;
+            font-size: 14px;
+        }
+        .main-content .top-content .text-content {
+            margin-left: 10px;
+        }
+        .main-content .middle-img {
+            margin: 30px 24px 30px 18px;
+            width: 87%;
+        }
+        .main-content .bottom-content {
+            display: block;
+        }
+        .main-content .bottom-content .text-content {
+            margin-left: 10px;
+        }
+       .main-content .bottom-content .text-content h4{
+        margin-top: 10px;
+       }
     }
