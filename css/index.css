@@ -177,8 +177,12 @@ header .logo {
 
 /* Contact Styles */
 
+.contact{
+    font-size: 1.6rem; /*16px*/
+}
+
 .contact p {
-    margin: 1.7% 0;
+    margin: 2% 0 0 0;
 }
 
 /* Footer Styles */
