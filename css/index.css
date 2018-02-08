@@ -285,7 +285,6 @@ footer {
     }
     header{
         margin: 0;
-        height: 200px;
         flex-wrap: wrap;
         flex-direction: column-reverse;
         justify-content: space-around;
@@ -294,14 +293,19 @@ footer {
 
     header nav {
         margin: 0;
+        padding: 4%;
 }
     header nav ul {
-        height: 140px;
         margin: 0;
         width: 100%;
         flex-direction: column; 
         justify-content: space-around;
         align-items: center;
+        display: flex;
+    }
+    header nav ul li a{
+        display: block;
+        height: 30px;
     }
     header .logo {
         margin: 0 0 0;
