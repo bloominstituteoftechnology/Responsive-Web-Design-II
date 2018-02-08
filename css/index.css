@@ -193,7 +193,7 @@ footer {
     }
 
     header .logo {
-        margin: 28px 0 0 59px;
+        margin: 28px 20px 0 59px;
     }
 
     .cta {
@@ -205,7 +205,7 @@ footer {
     }
 
     .main-content .middle-img {
-        width: 100%;
+        width: 80%;
     }
 
     .main-content {
@@ -223,8 +223,9 @@ footer {
 /* Phone */
 
 @media (max-width: 400px) {
+
     .container {
-        width:400px;
+        max-width: 400px;
     }
 
     header nav ul {
@@ -236,7 +237,8 @@ footer {
     }
 
     header .logo {
-        margin: 28px 0 0 59px;
+        order: -1;
+        margin: 28px 0 0 30px;
         display: flex;
         align-items: center;
     }
@@ -249,11 +251,12 @@ footer {
     }
 
     .cta .cta-text {
-        margin: 0 10px 0 0;
+        margin: 0 0 0 12px;
     }
 
     .main-content .middle-img {
-        width: 100%;
+        margin-right: 28px;
+        width: 90%;
     }
 
     .main-content {
@@ -280,7 +283,12 @@ footer {
     }
 
     header nav ul li a {
-        display: flex;
+        display: block;
+        text-align: center;
+        margin-right: 32px;
+        padding: 20px;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
         justify-content: space-between;
         margin-bottom: 20px;
     }
@@ -288,6 +296,12 @@ footer {
     header nav ul li {
         display: flex;
         justify-content: space-around;
+    }
+
+    .circular {
+        height: 310px;
+        width: 310px;
+        margin-left: 50px;
     }
 
     .cta .cta-text button {
