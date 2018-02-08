@@ -73,29 +73,31 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
-}
+    }
 
 header nav ul {
     margin-top: 40px; 
     width: 610px;
     justify-content: space-between;
     display: flex;
-}
+    flex-direction: column;
+    
+    }
 
 header nav ul li a {
     text-decoration: none;
     color: #b0b0b0;
-}
+    }
 
 header nav ul li a:hover {
     text-decoration: underline;
     color: black;
-}
+    }
 
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 91px;
-}
+    }
 
 /* Call To Action (CTA) Styles */
 
@@ -103,7 +105,7 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-}
+    }
 
 .cta .cta-text {
     font-size: 72px;
@@ -114,7 +116,7 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
-}
+    }
 
 .cta .cta-text button {
     border: 1px double black;
@@ -124,12 +126,12 @@ header .logo {
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
-}
+    }
 
 .cta .cta-text button:hover {
     background: black;
     color: white;
-}
+    }
 
 /* Main Content Styles */
 
@@ -140,32 +142,32 @@ header .logo {
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-}
+    }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
-}
+    }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
-}
+    }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
-}
+    }
 
 .main-content .bottom-content p {
     padding-right: 20px;
-}
+    }
 
 /* Contact Styles */
 
 .contact p {
     margin: 15px 0;
-}
+    }
 
 /* Footer Styles */
 
@@ -178,71 +180,123 @@ footer {
 
 
 
+
+
 /*iP*/
 @media(min-width:401px){
     .container {
-         width: 400px;
-}
-    header nav ul {
-        width: 157px;
-        margin-left:50px;
-    }
-     header .logo {
-        margin: 2 5 0 0;
-    }
-    .cta {
-        justify-content: center;
-        margin: 2 5 2 5;
+         width: 100%;
         }
-    .cta .cta-text {
-        margin: 0 10 0 0;
-    }
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        
+    header nav ul {
+        width: 100%;
+        flex-direction: column;
+        margin-left:8%;
+        }
+    header nav ul li {
+        width: 60%;
+        margin: 0;
+        }
+    header nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 10% 0;
+        font-size: 5%;
+        border-bottom: 1px solid gray;
+        }
+    header nav ul li:first-child {
+        border-top: 1px solid gray;
+        }
+    header nav ul li a:hover {
+        background: gray;
+        }
+
+    header .logo {
+        margin: .5% 3% .5% 3%;
+        }
+    .cta {
+        margin-top: 12%;
+        flex-flow: column;
+        align-items: center;
+        }
+    .cta img {
+        max-width: 80%;
+        }
+    
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 200px;
+        }
     .main-content .middle-img{
         width:100%;
-    margin: 20px auto 10px auto;
-    }
+        margin: 5.5% auto 10px auto;
+        }
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 300px;
+        padding-right: 2%
+        }
 
     .main-content{
-        margin: 48px 20px 25px;
-    }
+        margin: 12% 5% 5.4%;
+        }
 
     .contact {
-        margin: 5px;
-    }
+        margin: 5.5%;
+     }
+    
 }
 
 /*Tab*/
 @media (min-width:768px){
     .container {
-         width: 800px;
-    }
+         width: 100%;
+        }
+    header {
+        flex-wrap: wrap;
+        justify-content: center
+        }
+    header nav {
+        width: 90%;
+     }
     header nav ul {
-        width: 357px;
-        margin-left: 20px;
-    }
+        flex-direction: row;
+        width: 46%;
+        margin-left: 2.6%;
+        }
 
     header .logo {
-        margin: 18px 0 0 49px;
-    }
+        margin: 18px 0 0 6.3%;
+        }
 
     .cta {
         justify-content: center;
+        
         }
-
+    .cta img {
+        max-width: 60%;
+        }
+        
     .cta .cta-text {
-        margin: 0  40px 0 0;
-    }
+        margin: 0  5.2% 11% 0;
+        }
 
     .main-content .middle-img{
         width:100%;
-    margin: 30px auto 30px auto;
-    }
+        margin: 3.9% auto 3.9% auto;
+        }
 
     .main-content{
         margin: 48px 10px 25px;
-    }
+        }
     .contact {
-        margin: 10px;
+    margin: 2%;
     }
 }
 
