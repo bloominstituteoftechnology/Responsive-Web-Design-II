@@ -127,7 +127,6 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
@@ -150,7 +149,7 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 8.5% 0 4% 0;
+   margin: 5% 0 4% 0;
    padding: 4% 0;
    font-size: 1.6rem;
    line-height: 18px;
