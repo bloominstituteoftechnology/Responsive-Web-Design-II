@@ -148,7 +148,7 @@ header .logo {
    margin: 8.5% 0 4% 0;
    padding: 4% 0;
    font-size: 1.6rem;
-   line-height: 18px;
+   line-height: 1.3;
 
 }
 
@@ -169,7 +169,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 2.2%;
+    padding-right: 2.5%;
 }
 
 /* Contact Styles */
@@ -280,10 +280,15 @@ footer {
      
     }
 
+
+    header nav ul li:first-child {
+        border-top: 1px solid black;
+        
+    }
     header nav ul li {
         width: 100%;
         text-align: center;
-        border-bottom: 1px solid darkslategrey;
+        border-bottom: 1px solid black;
         
     }
 
