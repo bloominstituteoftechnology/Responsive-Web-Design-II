@@ -222,6 +222,7 @@ footer {
         width: 90%;
     }
     header nav ul li a{
+        font-size: 1.4rem;
        display: block;
     }
     header .logo {
@@ -260,6 +261,9 @@ footer {
     }
     .bottom-content {
         margin: 3.4% 2.3%;
+    }
+    .bottom-content .text-content {
+        width: 31%;
     }
     .contact{
         margin: 3.4% 2.3%;
