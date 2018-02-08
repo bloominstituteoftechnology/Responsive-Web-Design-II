@@ -284,7 +284,7 @@ footer {
         width: 100%;
     }
     header{
-        margin: 0;
+        margin: 0 auto;
         flex-wrap: wrap;
         flex-direction: column-reverse;
         justify-content: space-around;
@@ -298,17 +298,28 @@ footer {
     header nav ul {
         margin: 0;
         width: 100%;
-        flex-direction: column; 
-        justify-content: space-around;
+        flex-flow: column;
+        justify-content: center; 
         align-items: center;
         display: flex;
     }
+
+        
     header nav ul li a{
+        width: 100%;
         display: block;
+        padding: 3%;
         height: 30px;
+        border-bottom: 1px solid black;
     }
+
+    header nav ul li a:hover{
+        background: rgb(94, 151, 207);
+        color: white;
+    }
+
     header .logo {
-        margin: 0 0 0;
+        margin: 4% 0 0 0;
         align-self: center;
     }
     .cta {
