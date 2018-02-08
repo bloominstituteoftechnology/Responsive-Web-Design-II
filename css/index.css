@@ -173,3 +173,38 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/*Tablet-View*/
+@media (max-width: 768px) {
+    
+    .container {
+        width: 100%;
+    } 
+
+    header nav ul {
+        width: 450px;
+        margin-left: 20px;
+    }
+
+    header .logo {
+        margin: 28px 0 0 51px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 42px 0 0;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+ 
+}
+
+
+
+
+
