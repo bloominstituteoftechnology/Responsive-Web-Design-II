@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
 }
 
 header nav {
@@ -89,11 +88,6 @@ header nav ul {
     justify-content: space-between;
     display: flex;
     font-size: 1.6rem;
-    
-}
-
-header nav ul li {
- 
 }
 
 header nav ul li a {
@@ -108,7 +102,7 @@ header nav ul li a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 3.18% 0 0 10.3%;
+    margin: 0 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -222,8 +216,6 @@ footer {
         align-self: center;
         margin: 3.1% 0 0 0;
     }
-    
-   
 
     .cta {
         justify-content: center;
