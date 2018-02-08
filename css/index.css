@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
 }
 
@@ -207,9 +208,6 @@ footer {
 }
 
 @media(max-width: 768px){
-    .container{
-        width: 100%;
-    }
     header nav ul {
         margin-top: 4.5%;
         width: 51.1%;
