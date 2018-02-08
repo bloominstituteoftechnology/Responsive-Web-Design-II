@@ -196,8 +196,16 @@ footer {
 /* Responsive Stuff */
 
 @media(max-width: 1100px){
+    header{
+        width: 95%;
+        margin: 5% auto;
+    }
+    header nav {
+        width:65%;
+        display: flex;
+    }
     header .logo {
-        margin-left: 22.7%;
+        margin-left: 15%;
     }
     .cta {
         justify-content: space-around;
@@ -213,6 +221,7 @@ footer {
     }
     
     header nav{
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -223,7 +232,7 @@ footer {
     }
     header nav ul li a{
         font-size: 1.4rem;
-       display: block;
+        display: block;
     }
     header .logo {
         align-self: center;
