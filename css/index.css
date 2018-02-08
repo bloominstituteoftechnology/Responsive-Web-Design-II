@@ -276,5 +276,14 @@ footer {
              max-width: 80%;
 
          }
-         
+         .main-content .top-content {
+             justify-content: space-around;
+             flex-direction: column;
+             height: 242px;
+         }
+         .main-content .bottom-content {
+            flex-wrap: wrap;
+            align-content: space-between;
+            height: 442px;
+        }
      }
