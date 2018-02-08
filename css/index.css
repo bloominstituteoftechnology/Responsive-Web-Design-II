@@ -190,6 +190,35 @@ footer {
         justify-content: space-between;
         display: flex;
     }
+
+    img {
+        margin-right: 5px;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        margin: 15px auto;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    .contact {
+        margin: 15px;
+    }
+
+
+
+
 }
 
 @media (max-width: 400px) {
