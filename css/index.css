@@ -122,9 +122,9 @@ header .logo {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 19.3%;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 1.1%;
     cursor: pointer;
 }
 
@@ -138,9 +138,9 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 1.6;
+   margin: 8.5% 0 4% 0;
+   padding: 4% 0;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -151,7 +151,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -160,13 +160,13 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.3%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.7% 0;
 }
 
 /* Footer Styles */
@@ -195,18 +195,18 @@ footer {
         width: 100%;
     }
     header nav ul {
-        margin-top: 40px;
-        width: 450px;
+        margin-top: 4.5%;
+        width: 51.1%;
         justify-content: space-between;
         display: flex;
-        margin-left: 19px;
+        margin-left: 2.2%;
     }
     header .logo {
-        margin-left: 60px;
+        margin-left: 6.8%;
     }
     .cta {
         display: flex;
-        margin-top: 30px;
+        margin-top: 3.4%;
         justify-content: flex-start;
     }
     .cta .cta-text {
@@ -216,22 +216,22 @@ footer {
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0px 75px 0 30px;
+        margin: 0 8.5% 0 3.4%;
     }
     .main-content{
         width: 100%;
     }
     .main-content .top-content {
-        margin: 40px 20px;
+        margin: 4.5% 2.3%;
     }
     .main-content .middle-img {
         width: 100%;
     }
     .bottom-content {
-        margin: 30px 20px;
+        margin: 3.4% 2.3%;
     }
     .contact{
-        margin: 30px 20px;
+        margin: 3.4% 2.3%;
     }
 }
 
@@ -270,10 +270,10 @@ footer {
 
     }
     .cta .cta-text {
-        margin: 0 0 30px 0;
+        margin: 0 0 3.4% 0;
     }
     .cta img {
-        margin: 20px;
+        margin: 2.3%;
     }
     .main-content {
         width: 100%;
@@ -282,6 +282,6 @@ footer {
         flex-direction: column;
     }
     .bottom-content .text-content {
-        margin: 20px 0;
+        margin: 2.3% 0;
     }
 }
