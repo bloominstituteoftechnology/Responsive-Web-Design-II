@@ -183,9 +183,19 @@ footer {
         width: 748px;
     }
 
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header .logo {
+        align-self: center;
+        margin: 28px 0 0 0;
+    }
+
     header nav ul {
         width: 450px;
-        margin-left: 20px;
+
     }
 
     .cta {
@@ -228,10 +238,6 @@ footer {
 
     header {
         flex-wrap: wrap-reverse;
-    }
-
-    head nav {
-
     }
 
     header nav ul {
