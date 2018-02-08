@@ -48,7 +48,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -173,3 +173,91 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+
+
+
+/*iP*/
+@media(min-width:401px){
+    .container {
+         width: 400px;
+}
+    header nav ul {
+        width: 157px;
+        margin-left:50px;
+    }
+     header .logo {
+        margin: 2 5 0 0;
+    }
+    .cta {
+        justify-content: center;
+        margin: 2 5 2 5;
+        }
+    .cta .cta-text {
+        margin: 0 10 0 0;
+    }
+    .main-content .middle-img{
+        width:100%;
+    margin: 20px auto 10px auto;
+    }
+
+    .main-content{
+        margin: 48px 20px 25px;
+    }
+
+    .contact {
+        margin: 5px;
+    }
+}
+
+/*Tab*/
+@media (min-width:768px){
+    .container {
+         width: 800px;
+    }
+    header nav ul {
+        width: 357px;
+        margin-left: 20px;
+    }
+
+    header .logo {
+        margin: 18px 0 0 49px;
+    }
+
+    .cta {
+        justify-content: center;
+        }
+
+    .cta .cta-text {
+        margin: 0  40px 0 0;
+    }
+
+    .main-content .middle-img{
+        width:100%;
+    margin: 30px auto 30px auto;
+    }
+
+    .main-content{
+        margin: 48px 10px 25px;
+    }
+    .contact {
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+
