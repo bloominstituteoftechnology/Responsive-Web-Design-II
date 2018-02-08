@@ -226,7 +226,7 @@ footer {
     }
     header .logo {
         align-self: center;
-        margin-left: 6.8%;
+        margin: 0;
     }
     .cta {
         display: flex;
@@ -243,12 +243,11 @@ footer {
         margin: 0 8.5% 0 3.4%;
     }
     .cta img {
-        align-self: center;
-        width: 50%;
-        max-width: 100%;
+        display: none;
     }
     .main-content{
         width: 100%;
+        padding: 0;
     }
     .main-content .top-content {
         margin: 4.5% 2.3%;
