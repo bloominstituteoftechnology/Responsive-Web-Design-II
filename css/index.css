@@ -208,14 +208,18 @@ footer {
 }
 
 @media(max-width: 768px){
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
     header nav ul {
+        align-content: center;
         margin-top: 4.5%;
-        width: 51.1%;
-        justify-content: space-between;
-        display: flex;
+        width: 90%;
         margin-left: 2.2%;
     }
     header .logo {
+        align-self: center;
         margin-left: 6.8%;
     }
     .cta {
