@@ -252,6 +252,9 @@ footer {
     .main-content .top-content {
         margin: 4.5% 2.3%;
     }
+    .main-content .text-content {
+        width: 48%;
+    }
     .main-content .middle-img {
         width: 100%;
     }
