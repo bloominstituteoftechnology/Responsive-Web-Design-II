@@ -82,6 +82,7 @@ header nav ul {
     display: flex;
 }
 
+
 header nav ul li a {
     text-decoration: none;
     color: #b0b0b0;
@@ -114,16 +115,6 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
 }
 
 .cta .cta-text button:hover {
@@ -172,4 +163,52 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    header nav ul {
+        width: 434px;
+        margin-left: 20px;
+    }
+
+    header .logo {
+        margin: 28px 0 0 46px;
+    }
+
+    .cta {
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 26px;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+    .main-content {
+        margin: 75px 20px 35px 20px;
+    }
+
+    .contact {
+        margin-left: 20px;
+    }
+
+
+}
+
+/* Phone*/
+@media (max-width: 768px) {
+    
 }
