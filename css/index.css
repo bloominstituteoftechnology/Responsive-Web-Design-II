@@ -76,6 +76,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    margin: 4% 0 0 0;
 }
 
 header nav {
@@ -83,13 +84,19 @@ header nav {
 }
 
 header nav ul {
-    width: 69.3%;
-    justify-content: space-between;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    width: 100%;
+    text-align: center;
 }
 
 header nav ul li a {
     display: block;
+    font-size: 2rem; /* 20px */
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -101,7 +108,7 @@ header nav ul li a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 3.2% 0 0 10.3%;
+    margin: 0 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
