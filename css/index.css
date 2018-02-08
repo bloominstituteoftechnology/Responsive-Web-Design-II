@@ -64,7 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 96%;
+    margin: 2%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -74,10 +76,13 @@ header {
     width: 100%;
     display: flex;
 }
+header nav {
+    width: 80%;
+}
 
 header nav ul {
     margin-top: 40px; 
-    width: 610px;
+    width: 100%;
     justify-content: space-between;
     display: flex;
 }
@@ -93,6 +98,7 @@ header nav ul li a:hover {
 }
 
 header .logo {
+    width: 20%;
     align-self: flex-end;
     margin: 28px 0 0 91px;
 }
@@ -102,7 +108,7 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
 .cta .cta-text {
@@ -113,7 +119,6 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
 }
 
 .cta .cta-text button {
@@ -149,6 +154,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -172,4 +178,88 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 786px) {
+
+    header {
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+
+    header nav {
+        width:80%;
+        margin: 2% 10%;
+    }
+
+    header nav ul {
+       
+        width: 100%;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    header .logo {
+        order: -1;
+        align-self: center;
+        margin: 2%
+    }
+    .cta img {
+        display: none;
+    
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 400px) {
+
+    header {
+        margin-top: 25px;
+    }
+    header nav {
+        margin:0;
+        align-self: center;
+        
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 3%;
+        text-align: center;
+        border-top: 1px solid blue;
+        border-bottom: 1px solid blue;
+    }
+
+    .main-content .text-content {
+        margin: 10px 0;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        text-align: justify;
+        
+
+    }
+    .main-content .bottom-content {
+        flex-direction: column;
+        text-align: justify;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .main-content .bottom-content p {
+        padding-right: 0;
+    }
+    
 }
