@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,29 +22,36 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -62,35 +68,23 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+/* 07 Feb 2018, Responsive Web Design, Project 1, Cesar Mejia  */
+/* DESKTOP-FIRST Adapative Web Design */
 .container {
     width: 880px;
     margin: auto;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 768px;
-    }
-}
-
-@media (max-width: 400px) {
-    .container {
-        width: 400px;
-    }
-}
-
 /* Header Styles */
-
 header {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 header nav {
     width: 70%;
-    margin-left: 2%;
 }
 
 header nav ul {
@@ -99,25 +93,27 @@ header nav ul {
 
 header nav ul li {
     text-align: center;
-    width: 100px;
+    width: 16.666%;
     flex-grow: 1;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #b0b0b0;
+    color: grey;
+    font-weight: bold;
 }
 
 header nav ul li a:hover {
     text-decoration: underline;
     color: black;
+    cursor: pointer;
 }
 
 header .logo {
+
 }
 
 /* Call To Action (CTA) Styles */
-
 .cta {
     display: flex;
     justify-content: space-around;
@@ -150,9 +146,7 @@ header .logo {
 
 .cta img{
 }
-
 /* Main Content Styles */
-
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
@@ -187,16 +181,14 @@ header .logo {
 }
 
 /* Contact Styles */
-
 .contact p {
     margin: 15px 0;
 }
 
 /* Footer Styles */
-
 footer {
     text-align: center;
-    margin: 40px 0px 20px;
+    margin: 30px 0px 20px;
 }
 
 @media (max-width: 768px) {
@@ -212,22 +204,17 @@ footer {
 
     header nav {
         width: 100%;
-        margin-left: 0px;
-    }
-
-    header nav ul {
-        display: flex;
-    }
-
-    header nav ul li {
     }
 
     header .logo {
-        display: none;
+        display: none; /*site cleaner w/o logo @ 400px*/
     }
 
+    .cta {
+        margin-top: 15px;
+    }
     .cta img{
-        display: none;
+        display: none; /*site cleaner w/o img @ 400px*/
     }
 
     .main-content {
@@ -251,7 +238,6 @@ footer {
     }
     
     /* Footer Styles */
-    
     footer {
         text-align: center;
         margin: 10px 0px 5px;
