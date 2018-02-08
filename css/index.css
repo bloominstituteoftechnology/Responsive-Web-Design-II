@@ -103,7 +103,7 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .cta .cta-text {
@@ -111,7 +111,7 @@ header .logo {
     text-align: center;
     letter-spacing: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: flex start;
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
@@ -173,4 +173,39 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 768px){
+    .container 
+    {width: 90%;
+    margin: auto;}
+    header nav ul 
+    {margin-top: 40px; 
+    width: 80%;}
+    header nav ul li a 
+    {margin-right: 20px}
+    .cta .cta-text
+    {margin-right: 42px;} 
+    .main-content .middle-img 
+    {width: 100%}
+}
+
+@media (max-width: 400px){
+    .container 
+    {width: 90%;
+    margin: auto;}
+    header
+    {flex-wrap: wrap}
+    header nav ul 
+    {margin-top: 40px; 
+    width: 80%;}
+    header nav ul li a 
+    {margin-right: 10px}
+    .cta
+    {flex-wrap: wrap;}
+    .cta .cta-text
+    {margin-right: 42px;
+    margin-left: 44px} 
+    .main-content .middle-img 
+    {width: 100%}
 }
