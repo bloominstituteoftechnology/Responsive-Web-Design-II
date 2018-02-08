@@ -54,13 +54,14 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
     font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 1.1%;
 }
 
 .container {
@@ -77,8 +78,8 @@ header {
 }
 
 header nav ul {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.5%; 
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -95,14 +96,14 @@ header nav ul li a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.2% 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.2%;
     justify-content: flex-end;
 }
 
@@ -172,15 +173,14 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.5% 0 2.3%;
 }
 
+/* Responsive Stuff */
+
 @media(max-width: 1100px){
-    .container{
-        width: 1000px;
-    }
     header .logo {
-        margin-left: 200px;
+        margin-left: 22.7%;
     }
     .cta{
         justify-content: space-around;
