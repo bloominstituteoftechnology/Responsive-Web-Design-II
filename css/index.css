@@ -311,6 +311,16 @@ header .logo {
     text-decoration: none;
     color: white;
   }
+  .main-content .top-content {
+    flex-direction: column;
+  }
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+
+  .main-content .bottom-content .text-content {
+    margin: 0 0 10px 0;
+  }
 }
 
 /* Contact Styles */
