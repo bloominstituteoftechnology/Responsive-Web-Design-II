@@ -23,11 +23,11 @@ Remember that an adaptive layout updates at breakpoints only.  Don't worry about
 * *Stretch Goal:* Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.
 
 
-## Project 2: 
+## Project 2:
 
 Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a full on responsive layout.  
 
-To accomplish this challenge you will need to incorporate your knowedges of max and min width, media queries, rem units, and percents.
+To accomplish this challenge you will need to incorporate your knowledges of max and min width, media queries, rem units, and percents.
 
 *Tasks to complete:*
 * Convert all fixed widths into percents.
