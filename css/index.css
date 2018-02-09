@@ -49,6 +49,7 @@ table {
 html, body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%
 }
 
 h1, h2, h3, h4, h5 {
@@ -58,8 +59,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
+  font-size: 1rem;
 }
 
 /* Header Styles */
@@ -69,9 +72,13 @@ header {
   display: flex;
 }
 
+header nav {
+  width: 100%;
+}
+
 header nav ul {
-  margin-top: 40px;
-  width: 610px;
+  margin: 5% 2% 0 2%;
+  width: 100%;
   justify-content: space-between;
   display: flex;
 }
@@ -79,6 +86,7 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.7em;
 }
 
 header nav ul li a:hover {
@@ -88,26 +96,26 @@ header nav ul li a:hover {
 
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 3% 2% 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
   display: flex;
-  margin-top: 72px;
-  justify-content: flex-end;
+  margin-top: 10%;
+  justify-content: center;
 }
 
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 8em;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 3% 0 1%;
 }
 
 .cta .cta-text button {
@@ -125,6 +133,11 @@ header .logo {
   color: white;
 }
 
+.cta img {
+  max-width: 80%;
+  margin-right: 1%;
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -132,8 +145,8 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 1.6rem;
+  line-height: 1.2em;
 }
 
 .main-content .top-content {
@@ -142,8 +155,9 @@ header .logo {
 }
 
 .main-content .middle-img {
+  max-width: 100%;
   display: block;
-  margin: 30px 0;
+  margin: 30px auto;
 }
 
 .main-content .bottom-content {
@@ -152,10 +166,14 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
 /* Contact Styles */
+
+.contact {
+  font-size: 1.6rem;
+}
 
 .contact p {
   margin: 15px 0;
@@ -166,89 +184,111 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.6rem;
 }
+
+/* project 2 updated */
 
 @media (max-width: 768px) {
   .container {
-    width: 765px;
+    width: 100%;
   }
   header {
-    padding: 0 0 0 20px;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    order: -2;
   }
   header nav ul {
-    width: 450px;
+    width: 90%;
+    margin-left: 5%;
   }
   header .logo {
-    margin: 28px 0 0px 70px;
+    margin-left: 2%;
+  }
+  .cta img {
+    visibility: hidden;
   }
   .cta {
-    justify-content: flex-start;
-    flex-flow: row;
+    flex-flow: row wrap;
+    height: 400px;
   }
   .cta .cta-text {
     margin: 0 20px 0 10px;
+    justify-content: center;
   }
   .main-content {
-    width: 765px;
-    margin-right: 0;
+    width: 100%;
   }
   .top-content {
-    width: 765px;
+    width: 100%;
   }
-  .middle-img {
-    width: 765px;
+  .top-content p {
+    margin-left: 1%;
+    margin-right: 1%;
   }
-  @media (max-width: 400px) {
-    .container {
-      width: 380px;
-      margin: 0;
-    }
-    header {
-      padding-left: 0;
-      flex-flow: wrap;
-      width: 378px;
-      margin: 0;
-    }
-    header nav ul {
-      width: 372px;
-    }
-    header .logo {
-      margin-left: 100px;
-    }
-    .cta {
-      flex-flow: row wrap;
-      justify-content: center;
-    }
-    .cta img {
-      height: 350px;
-      width: 350px;
-      margin-top: 20px;
-    }
-    .cta-text h1 {
-      font-size: 65px;
-    }
-    .main-content {
-      margin: 70px 0;
-      margin-left: 1px;
-      width: 380px;
-      flex-flow: wrap;
-      padding-left: 3px;
-    }
-    .top-content {
-      flex-flow: wrap;
-      width: 378px;
-    }
-    .top-content .text-content {
-      padding: 10px 0;
-      width: 378px;
-    }
-    .middle-img {
-      width: 375px;
-      margin: 30px 0;
-    }
-    .bottom-content .text-content p {
-      padding-right: 0;
-      padding-left: 1px;
-    }
+  .bottom-content {
+    padding: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .contact {
+    margin: 1%;
   }
 }
+
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  header {
+    padding-left: 5px;
+    flex-flow: wrap;
+    width: ;
+    margin: 0;
+  }
+  header nav ul {
+    width: 372px;
+  }
+  header .logo {
+    margin-left: 100px;
+  }
+  .cta {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .cta img {
+    height: 350px;
+    width: 350px;
+    margin-top: 20px;
+  }
+  .cta-text h1 {
+    font-size: 65px;
+  }
+  .main-content {
+    margin: 60px 0;
+    margin-left: 1px;
+    width: 380px;
+    flex-flow: wrap;
+    padding-left: 3px;
+  }
+  .top-content {
+    flex-flow: wrap;
+    width: 378px;
+  }
+  .top-content .text-content {
+    padding: 10px 0;
+    width: 378px;
+  }
+  .middle-img {
+    width: 375px;
+    margin: 30px 0;
+  }
+  .bottom-content .text-content p {
+    padding-right: 0;
+    padding-left: 1px;
+  }
+}
+
+*/
