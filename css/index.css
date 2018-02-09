@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%; /* 62.5% ~= 10px */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -75,26 +76,26 @@ header {
     display: flex;
 }
 
-header nav ul {
+header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.3%; /* 610px / 880px = 69.3% */
     justify-content: space-between;
     display: flex;
 }
 
-header nav ul li a {
+header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
 
-header nav ul li a:hover {
+header nav a:hover {
     text-decoration: underline;
     color: black;
 }
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%; /* 91px / 880px = 10.34% */
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,23 +107,23 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 5.0rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.9% 0 0; /* 82px / 880px = 9.3% */
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
-    width: 170px;
+    width: 170px;  /* Does this need to be converted into %? Seems like its fine as is. */
     height: 32px;
-    margin-top: 10px;
+    margin-top: 1px;
     cursor: pointer;
 }
 
@@ -138,7 +139,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1rem;
    line-height: 18px;
 }
 
@@ -148,6 +149,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+    max-width: 100%;
     display: block;
     margin: 30px auto;
 }
@@ -158,7 +160,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%; /* 20px / 880px = 2.27% */
 }
 
 /* Contact Styles */
@@ -172,4 +174,133 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* ADAPTIVE STYLES BELOW: */
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%; /* 457px / 768px = 59.5% */
+        margin-left: 2.6%; /* 20px / 768px = 2.6% */
+    }
+
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 28px 0 0 7.68%; /* 59px / 768px = 7.68% */
+    }
+
+    .cta {
+        margin: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 5.2% 0 10%; /* 40px / 768px = 5.2% */
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content .middle-img {
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 75px 2.6% 35px;  /* 20px / 768px = 2.6% */
+    }
+
+    .contact {
+        margin: 20px 2.6%;
+    }
+}
+
+/* Phone */
+@media (max-width: 400px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+        color: white; 
+    }
+
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta .cta-text {
+        margin: 0 0 50px 0;
+    }
+
+    .cta img {
+        max-width: 80%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .contact {
+        margin: 5%; /* 20px / 400px = 5% */
+    }
 }
