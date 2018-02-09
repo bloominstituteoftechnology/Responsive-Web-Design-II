@@ -170,7 +170,7 @@ footer {
 }
 
 /*-------------MEDIA QUERIES--------------*/
-
+Convert all fixed widths into percents.
 /*Tablet*/
 @media (max-width: 768px) {
     .container {
@@ -207,4 +207,3 @@ footer {
       width: 40%
     }
  }
-
