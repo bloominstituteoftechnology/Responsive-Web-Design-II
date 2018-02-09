@@ -210,6 +210,23 @@ footer {
     .cta {
         justify-content: space-around;
     }
+
+    .main-content .top-content{
+        width: 100%;
+    }
+    .main-content .top-content .text-content{
+        width: 45%;
+    }
+    .main-content .bottom-content{
+        width: 100%;
+    }
+    .main-content .bottom-content .text-content{
+        width: 30%;
+    }
+    .contact{
+        margin: 2%;
+    }
+
     .middle-img{
         width: 100%;
     }
