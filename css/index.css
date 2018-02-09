@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+display: block;
 }
 body {
-    line-height: 1;
+line-height: 1;
 }
 ol, ul {
-    list-style: none;
+list-style: none;
 }
 blockquote, q {
-    quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+content: '';
+content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -71,13 +71,13 @@ margin: auto;
 /* Header Styles */
 
 header {
-width: 100%;
+width: 100%; /* 880px */
 display: flex;
 }
 
 header nav ul {
 margin-top: 40px;
-width: 610px;
+width: 69%; /*610/880*/
 justify-content: space-between;
 display: flex;
 }
@@ -94,18 +94,18 @@ color: black;
 
 header .logo {
 align-self: flex-end;
-margin: 28px 0 0 91px;
+margin: 28px 0 0 10.3%; /* 91/880 */
 }
 
 /* Call To Action (CTA) Styles */
 
-.cta {
+.cta { /* 880px */
 display: flex;
 margin-top: 72px;
 justify-content: flex-end;
 }
 
-.cta .cta-text {
+.cta .cta-text { /* 880px */
 font-size: 72px;
 text-align: center;
 letter-spacing: 5px;
@@ -113,15 +113,15 @@ display: flex;
 justify-content: center;
 flex-flow: column;
 align-items: center;
-margin: 0 82px 0 0;
+margin: 0 9.3% 0 0; /* 82/880 */
 }
 
-.cta .cta-text button {
+.cta .cta-text button { /* 880 */
 border: 1px double black;
 font-size: 16px;
 background: white;
-width: 170px;
-height: 32px;
+width: 19.3%; /* 170/880 */
+height: 3.6%; /* 32/880 */
 margin-top: 10px;
 cursor: pointer;
 }
@@ -133,7 +133,7 @@ color: white;
 
 /* Main Content Styles */
 
-.main-content {
+.main-content { /* 880px */
 border-top: 2px solid black;
 border-bottom: 2px solid black;
 margin: 75px 0 35px 0;
@@ -142,12 +142,12 @@ font-size: 16px;
 line-height: 18px;
 }
 
-.main-content .top-content {
+.main-content .top-content { /* 880px */
 display: flex;
 justify-content: space-around;
 }
 
-.main-content .middle-img {
+.main-content .middle-img { /* 880px */
 display: block;
 margin: 30px auto;
 }
@@ -157,8 +157,8 @@ display: flex;
 justify-content: space-around;
 }
 
-.main-content .bottom-content p {
-padding-right: 20px;
+.main-content .bottom-content p { /* 880px */
+padding-right: 2.3%; /* 20/880 */
 }
 
 /* Contact Styles */
@@ -177,84 +177,85 @@ margin: 40px 0 20px;
 /*Ipad*/
 
 @media (max-width: 768px) {
-    
-       .container{
-        width: 768px;
-        }
-        header nav ul {
-        margin-top: 40px;
-        width: 466px;
-        margin-left: 20px;
-        }
-        header .logo {
-        margin: 32px 0 0 73px;
-        }
-        .cta{
-        justify-content: center;
-        }
-        .cta .cta-text{
-        margin: 0px 70px 0 0;
-        font-size: 61px;
-        }
-        .cta .cta-text button{
-        width: 155px;
-        height: 30px;
-        font-size: 15px;
-        }
-        .main-content{
-        padding: 29px 0;
-        }
-        .main-content .top-content .text-content {
-        margin-left: 20px;
-        margin-right: 12px;
-        }
-        .main-content .middle-img {
-        margin: 30px 24px 30px 20px;
-        width: 93%;
-        }
-        .main-content .bottom-content .text-content{
-        margin-left: 20px;
-        }
-        .contact {
-        margin-left: 20px;
-        }
-    }
+.container{
+width: 100%;
+}
+header {
+width: 100%;
+}
+header nav ul {
+margin-top: 40px;
+width: 60.7%; /*466/768 */
+margin-left: 2.6%; /* 20/768 */
+}
+header .logo { /* 768 px */
+margin: 32px 0 0 9.5%; /* 73/ 768 */
+}
+.cta{ /* 768px */
+justify-content: center;
+}
+.cta .cta-text{ /* 768px */
+margin: 0px 9.1% 0 0; /* 70/768 */
+font-size: 61px;
+}
+.cta .cta-text button{ /* 768px */
+width: 20.2%;/* 155/768 */
+height: 4.2%; /* 30/768 */
+font-size: 15px;
+}
+.main-content{
+padding: 29px 0;
+}
+.main-content .top-content .text-content {
+margin-left: 2.6%; /* 20/768 */
+margin-right: 1.6%; /* 12/768 */
+}
+.main-content .middle-img {
+margin: 3.9% 3.1% 3.9% 2.6%; /*30px 24px 30px 20px;*/
+width: 93%;
+}
+.main-content .bottom-content .text-content{
+margin-left: 2.6%; /*20/768 */
+}
+.contact {
+margin-left: 2.6%x;
+}
+}
 
-    @media (max-width: 400px) {
-        .container{
-            width: 400px;
-            }
-        
-        header nav ul {
-            width: 354px;
-            }
-        img {
-            width: 80px;
-            display: none;
-        }
-        .cta .cta-text {
-            margin: 0px 70px 0 57px;
-            font-size: 51px;
-        }
-        .cta .cta-text button {
-            width: 136px;
-            height: 29px;
-            font-size: 14px;
-        }
-        .main-content .top-content .text-content {
-            margin-left: 10px;
-        }
-        .main-content .middle-img {
-            margin: 30px 24px 30px 18px;
-            width: 87%;
-        }
-        .main-content .bottom-content {
-            display: block;
-        }
-        .main-content .bottom-content .text-content {
-            margin-left: 10px;
-        }
-       .main-content .bottom-content .text-content h4{
-        margin-top: 10px;
-       }
-    }
+@media (max-width: 400px) {
+.container{
+width: 100%;
+}
+header nav ul {
+width: 88.5%; /*354 / 400 */
+}
+img {
+width: 20%; /* 80/400 */
+display: none;
+}
+.cta .cta-text { /* 400px */
+margin: 0px 17.5% 0 14.25%; /* 0px 70px 0 57px;*/
+font-size: 51px;
+}
+.cta .cta-text button {
+width: 34%; /*136/400 */
+height: 7.3%; /* 29/400 */
+font-size: 14px;
+}
+.main-content .top-content .text-content {
+margin-left: 10px;
+}
+.main-content .middle-img {
+margin: 30px 6% 30px 4.5%; /*30px 24px 30px 18px; */
+width: 87%;
+}
+.main-content .bottom-content {
+display: block;
+}
+.main-content .bottom-content .text-content {
+margin-left: 2.5%; /*10/400 */
+}
+.main-content .bottom-content .text-content h4{
+margin-top: 10px;
+}
+}
