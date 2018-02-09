@@ -71,13 +71,11 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-		border: thin solid red;
     width: 100%;
     display: flex;
 }
 
 header nav ul {
-		border: thin solid red;
     margin-top: 40px;
     width: 610px;
     justify-content: space-between;
@@ -95,7 +93,6 @@ header nav ul li a:hover {
 }
 
 header .logo {
-		border: thin solid red;
     align-self: flex-end;
     margin: 28px 0 0 91px;
 }
@@ -103,14 +100,12 @@ header .logo {
 /* Call To Action (CTA) Styles */
 
 .cta {
-		border: thin solid red;
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-		border: thin solid red;
     font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
@@ -139,7 +134,6 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-	 border: thin solid red;
    border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
