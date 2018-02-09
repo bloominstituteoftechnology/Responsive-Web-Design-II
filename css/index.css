@@ -336,11 +336,34 @@ footer {
     }
     .main-content {
         width: 100%;
+        margin: 0;
     }
-    .bottom-content{
+    .main-content .top-content{
+        width: 100;
+        margin: 0;
         flex-direction: column;
+        align-items: center;
+
     }
-    .bottom-content .text-content {
-        margin: 2.3% 0;
+    .main-content .top-content .text-content {
+        width: 90%;
+        text-align: justify;
+        padding: 2% 0 0 0;
+    }
+    .main-content .bottom-content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .main-content .bottom-content p {
+        padding: 0;
+    }
+    .main-content .bottom-content .text-content {
+        text-align: justify;
+        width: 90%;
+        padding: 2% 0 0 0;
     }
 }
