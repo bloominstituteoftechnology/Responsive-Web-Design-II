@@ -74,6 +74,10 @@ header {
 width: 100%; /* 880px */
 display: flex;
 }
+header nav {
+width: 100%;
+display: flex;
+}    
 
 header nav ul {
 margin-top: 40px;
@@ -120,8 +124,8 @@ margin: 0 9.3% 0 0; /* 82/880 */
 border: 1px double black;
 font-size: 16px;
 background: white;
-width: 19.3%; /* 170/880 */
-height: 3.6%; /* 32/880 */
+width: 170px; /* 170/880 */
+height: 32px; /* 32/880 */
 margin-top: 10px;
 cursor: pointer;
 }
@@ -180,13 +184,16 @@ margin: 40px 0 20px;
 .container{
 width: 100%;
 }
-header {
+
+header nav{
 width: 100%;
+display:flex;
 }
 header nav ul {
 margin-top: 40px;
 width: 60.7%; /*466/768 */
 margin-left: 2.6%; /* 20/768 */
+
 }
 header .logo { /* 768 px */
 margin: 32px 0 0 9.5%; /* 73/ 768 */
@@ -199,8 +206,8 @@ margin: 0px 9.1% 0 0; /* 70/768 */
 font-size: 61px;
 }
 .cta .cta-text button{ /* 768px */
-width: 20.2%;/* 155/768 */
-height: 4.2%; /* 30/768 */
+width: 155px/* 155/768 */
+height: 30px /* 30/768 */
 font-size: 15px;
 }
 .main-content{
@@ -218,17 +225,22 @@ width: 93%;
 margin-left: 2.6%; /*20/768 */
 }
 .contact {
-margin-left: 2.6%x;
+margin-left: 2.6%;
 }
-}
+
 
 @media (max-width: 400px) {
 .container{
 width: 100%;
 }
+header nav{
+    width: 100%;
+    display: flex;    
+        }
 header nav ul {
 width: 88.5%; /*354 / 400 */
 }
+
 img {
 width: 20%; /* 80/400 */
 display: none;
@@ -238,8 +250,8 @@ margin: 0px 17.5% 0 14.25%; /* 0px 70px 0 57px;*/
 font-size: 51px;
 }
 .cta .cta-text button {
-width: 34%; /*136/400 */
-height: 7.3%; /* 29/400 */
+width: 136px; 
+height: 29px; 
 font-size: 14px;
 }
 .main-content .top-content .text-content {
