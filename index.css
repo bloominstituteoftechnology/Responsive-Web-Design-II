@@ -106,19 +106,19 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -131,6 +131,11 @@ header .logo {
     color: white;
 }
 
+.cta image {
+    max-width: 100%;
+    margin-right: 2%;
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -138,8 +143,8 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem;
+   line-height: 1.3rem;
 }
 
 .main-content .top-content {
@@ -148,6 +153,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+    max-width: 100%;
     display: block;
     margin: 30px auto;
 }
@@ -158,39 +164,65 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
+}
+
+.main-content .text-context {
+    margin: 0 1%;
 }
 
 /* Contact Styles */
 
+.contact {
+    margin: 20px 1%;
+}
+
 .contact p {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 10px 0 6px;
+    margin: 35px 0 15px;
 }
 
-/*Entering of Max-width*/
+/*Entering of Max-width--Tablet*/
 
 @media (max-width: 768px) {
     .container {
-        width: 400px;
-    }
-    
-    header nav {
         width: 100%;
     }
 
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    header nav {
+        width: 90%;
+    }
+
+    header nav ul {
+        width: 100%;
+        margin: 20px 0;
+    }
+
     header .logo {
-        display: none;
+        order: -1;
+        max-width: 100%;
+        margin: 20px 0;
     }
 
     .cta {
-        margin-top: 15px;
+        margin-top: 45px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta .cta-text {
+        margin: 0;
     }
 
     .cta img {
@@ -198,18 +230,74 @@ footer {
     }
 
     .main-content {
-        margin: 15px 0px;
-        height: 100%;
+        margin: 45px 2 % 30px;
     }
 
-    .main-content .top-content {
-        margin: 10px 0;
+    .contact {
+        margin: 20px 2%;
+    }
+}
+   /***Phone***/
+
+   @media (max-width: 400px){
+       .container {
+           width: 100%;
+       }
+
+       header {
+           flex-wrap: wrap;
+           justify-content: center;
+       }
+
+       header nav {
+           width: 100%;
+       }
+
+       header nav ul {
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           margin: 0;
+           align-items: center;
+       }
+
+       header nav ul li {
+           width: 100%;
+           margin: 0;
+       }
+
+       header nav ul li a {
+           display: block;
+           text-align: center;
+           padding: 15px 0;
+           font-size: 2rem;
+           border bottom: 1px solid gray;
+       }
+
+       header nav ul li:first-child {
+           border-top: 1 px solid gray;
+       }
+
+       header nav ul li a:hover {
+           background: gray;
+       }
+
+       .main-content .top-content {
+           justify-content: space-around;
+           flex-direction: column;
+           height: 250px;
+       }
+
+       ,.main-content .bottom-content {
+           flex-wrap: wrap;
+           align-content: space-between;
+           height: 400px;
+       }
+
+       .contact {
+           margin: 15px;
+       }
     }
 
-    .main-content .bottom-content {
-        margin: 10px 0;
-    }
+   }
 
-    .contact p {
-        margin: 5px;
-    }
