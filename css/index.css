@@ -48,128 +48,196 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
-html, body {
-    height: 100%;
+/*Kenny(finished)*/
+html, body 
+{   height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
+h1, h2, h3, h4, h5 
+    {font-family: 'Bangers', cursive;
+    letter-spacing: 1%;
+    margin-bottom: 4%;}
 
-.container {
-    width: 880px;
+h4 
+    {font-size: 1.9rem;
+        margin-left: 5%}
+
+.container 
+    {max-width: 880px;
+    width: 100%;
     margin: auto;
-}
+    font-size: 1.6 rem;}
 
 /* Header Styles */
 
-header {
-    width: 100%;
-    display: flex;
-}
+header
+    {width: 100%;
+    display: flex;}
 
-header nav ul {
-    margin-top: 40px; 
-    width: 610px;
+header nav
+    {width: 100%;}
+
+header nav ul 
+{   margin-top: 5.5%;
+    width: 100%;
     justify-content: space-between;
     display: flex;
 }
 
-header nav ul li a {
+header nav ul li a 
+{   font-size: 1.6rem;
     text-decoration: none;
     color: #b0b0b0;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+header nav ul li a:hover 
+{   text-decoration: underline;
     color: black;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+header .logo
+{   align-self: flex-end;
+    margin: 3% 1% 0 3%;
 }
 
 /* Call To Action (CTA) Styles */
 
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+.cta 
+{   display: flex;
+    margin-top: 5%;
+    justify-content: center;
 }
 
-.cta .cta-text {
-    font-size: 72px;
+.cta .cta-text 
+{   font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 2%;
     display: flex;
-    justify-content: center;
+    justify-content: flex start;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 5% 11% 0 5%;
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+.cta .cta-text button 
+{   border: 1px double black;
+    font-size: 1.6rem;
+    background: silver;
+    width: 50%;
+    height: 12%;
+    margin-top: 10%;
     cursor: pointer;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.cta .cta-text button:hover 
+    {background: black;
+        color: grey;
+}
+.cta img
+    {max-width: 100%;
+        margin-right: 2%
 }
 
 /* Main Content Styles */
 
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+.main-content 
+    {border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 8% 0 5% 0;
+        padding: 7% 0;
+        font-size: 1.6rem;
+        line-height: 18px;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+.main-content .top-content 
+    {display: flex;
+        justify-content: space-around;
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.main-content .middle-img 
+    {max-width: 100%;
+        display: block;
+        margin: 5% auto;
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+.main-content .bottom-content 
+    {display: flex;
+        justify-content: space-around;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.main-content .bottom-content p 
+    {padding-right: 2%;
 }
 
 /* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+.contact h4
+    {font-size: 1.5rem;
+}
+.contact p 
+    {font-size: 1.4rem;
+        margin: 1%;
 }
 
 /* Footer Styles */
 
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+footer 
+    {font-size: 1.2rem;
+        text-align: center;
+            margin: 2%;
+}
+
+@media (max-width: 768px){
+    .container 
+        {width: 90%;
+            margin: auto;}
+
+    header nav ul 
+        {margin-top: 6%; 
+            width: 80%;}
+    header nav ul li a 
+        {margin-right: 55%}
+    .cta
+        {justify-content: center;
+            margin-left: 6%;}
+    .cta .cta-text
+        {margin-right: 2%;} 
+    .main-content .middle-img 
+        {width: 100%}
+    .cta img
+        {margin-right: 10%}
+}
+
+@media (max-width: 400px){
+    .container 
+        {width: 90%;
+            margin: auto;}
+    header
+        {flex-wrap: wrap}
+    header nav ul 
+        {margin-top: 6%; 
+            width: 80%;}
+    header nav ul li a 
+        {margin-right: 20%;
+            justify-content: center;}
+    header .logo
+        {margin-left: 27%;
+            order: -1}
+    .cta
+        {flex-wrap: wrap;}
+    .cta .cta-text
+        {margin-right: 15%;
+            margin-left: 11%} 
+    .cta img
+        {margin-left: 11%;
+            margin-right: 15%}
+    .main-content .middle-img 
+        {width: 100%}
+    .contact h4
+        {font-size:  1.4rem;}
+    .contact p
+        {font-size: 1.3rem}
 }
