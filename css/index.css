@@ -271,11 +271,8 @@ footer {
     margin-top: 20px;
   }
   .main-content {
-    margin: 60px 0;
-    margin-left: 1px;
-    width: 380px;
+    width: 99%;
     flex-flow: wrap;
-    padding-left: 3px;
   }
   .top-content {
     flex-flow: wrap;
