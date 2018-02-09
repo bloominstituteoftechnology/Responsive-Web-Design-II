@@ -243,28 +243,32 @@ footer {
     margin: 0;
   }
   header {
-    padding-left: 5px;
     flex-flow: wrap;
-    width: ;
+    width: 100%;
     margin: 0;
   }
   header nav ul {
-    width: 372px;
+    width: 96%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+  }
+  header nav ul li a {
+    padding: 5%;
+    border-right: black solid 1px;
   }
   header .logo {
-    margin-left: 100px;
+    margin-left: ;
   }
   .cta {
     flex-flow: row wrap;
     justify-content: center;
+    height: 300px;
+    padding-top: 5%;
   }
   .cta img {
     height: 350px;
     width: 350px;
     margin-top: 20px;
-  }
-  .cta-text h1 {
-    font-size: 65px;
   }
   .main-content {
     margin: 60px 0;
@@ -275,19 +279,20 @@ footer {
   }
   .top-content {
     flex-flow: wrap;
-    width: 378px;
+    width: 98%;
   }
   .top-content .text-content {
-    padding: 10px 0;
-    width: 378px;
+    padding: 2% 0;
+    width: 98%;
   }
   .middle-img {
-    width: 375px;
-    margin: 30px 0;
+    width: 99%;
   }
   .bottom-content .text-content p {
-    padding-right: 0;
-    padding-left: 1px;
+    padding: 2% 2%;
+  }
+  .contact {
+    margin: 2%;
   }
 }
 
