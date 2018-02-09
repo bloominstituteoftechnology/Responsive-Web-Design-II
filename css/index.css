@@ -95,7 +95,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 10.34%; /* 91px / 880px = 10.34% */
+    margin: 28px 0 0 10%; /* 91px / 880px = 10.34% */
 }
 
 /* Call To Action (CTA) Styles */
@@ -107,14 +107,14 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 4.5rem;
+    font-size: 5.0rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9.3% 0 0; /* 82px / 880px = 9.3% */
+    margin: 0 9.9% 0 0; /* 82px / 880px = 9.3% */
 }
 
 .cta .cta-text button {
@@ -123,7 +123,7 @@ header .logo {
     background: white;
     width: 170px;  /* Does this need to be converted into %? Seems like its fine as is. */
     height: 32px;
-    margin-top: 10px;
+    margin-top: 1px;
     cursor: pointer;
 }
 
@@ -149,6 +149,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+    max-width: 100%;
     display: block;
     margin: 30px auto;
 }
@@ -186,21 +187,35 @@ footer {
         max-width: 768px;
     }
 
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
     header nav {
-        width: 59.5%; /* 457px / 768px = 59.5% */
+        width: 100%; /* 457px / 768px = 59.5% */
         margin-left: 2.6%; /* 20px / 768px = 2.6% */
     }
 
     header .logo {
+        order: -1;
+        max-width: 100%;
         margin: 28px 0 0 7.68%; /* 59px / 768px = 7.68% */
     }
 
     .cta {
-        justify-content: center;
+        margin: 50px;
+        flex-flow: column;
+        align-items: center;
     }
     
     .cta .cta-text {
-        margin: 0 5.2% 0 0; /* 40px / 768px = 5.2% */
+        margin: 0 5.2% 0 10%; /* 40px / 768px = 5.2% */
+    }
+
+    .cta img {
+        display: none;
     }
 
     .main-content .middle-img {
@@ -209,6 +224,10 @@ footer {
 
     .main-content {
        margin: 75px 2.6% 35px;  /* 20px / 768px = 2.6% */
+    }
+
+    .contact {
+        margin: 20px 2.6%;
     }
 }
 
@@ -226,25 +245,16 @@ footer {
 
     header nav {
         width: 100%;
-    }
-
-    header nav {
-        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0;
         align-items: center;
     }
 
-    header nav {
-        width: 100%;
-        margin: 0;
-    }
-
     header nav a {
         display: block;
         text-align: center;
-        padding: 20px 0;
+        padding: 10px 0;
         font-size: 1.2rem;
         border-bottom: 1px solid gray;
     }
@@ -255,6 +265,7 @@ footer {
 
     header nav a:hover {
         background: gray;
+        color: white; 
     }
 
     header .logo {
@@ -268,13 +279,9 @@ footer {
         flex-flow: column;
         align-items: center;
     }
-    
+
     .cta .cta-text {
         margin: 0 0 50px 0;
-    }
-    
-    .cta .cta-text button {
-       
     }
 
     .cta img {
