@@ -55,12 +55,14 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    /* font-size: 62.5%; */
+
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: 0.0625rem;
+    margin-bottom: 1.13%;
 }
 
 .container {
@@ -79,7 +81,7 @@ header {
 
 header nav {
     margin-top: 5.2%; 
-    width: 79.4%;
+    width: 100%;
     justify-content: space-between;
     display: flex;
 }
@@ -98,7 +100,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 3.6% 0 0 91px;
+    margin: 3.6% 0 0 10.3%;
     
 }
 
@@ -107,25 +109,25 @@ header .logo {
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.08%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 4.5rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.3125rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.31% 0 0;
 }
 
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.1rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -139,6 +141,10 @@ header .logo {
     background: black;
     color: white;
 }
+.cta img P{
+    max-width: 100%;
+    margin-right: 1%;
+}
 
 
 /* Main Content Styles */
@@ -146,10 +152,10 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   margin: 8.5% 0 3.9% 0;
+   padding: 3.9% 0;
+   font-size: 1rem;
+   line-height: 1.2rem;
 }
 
 
@@ -160,7 +166,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -169,26 +175,27 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 3%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 10px 0;
+    margin: 1.13% 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.5% 0 2.2%;
 }
 /* tablet */
 @media (max-width: 768px) {
     .container {
     width: 100%;
     }
+   
     header nav  {
         width: 59.5%;
         margin-left: 2%;
@@ -202,6 +209,7 @@ footer {
     }
     .cta .cta-text {
         margin: 0 5.2% 0 0;
+        font-size: 3.7rem;
     }
     .cta img {
         width: 40%;
@@ -249,7 +257,7 @@ footer {
              display: block;
              text-align: center;
              padding: 1% 0;
-             font-size: 22px;
+             font-size: 1.375rem;
              
          }
      
@@ -264,15 +272,15 @@ footer {
              margin: 7.3% 0;
          }
          .cta {
-             margin-top: 35px;
+             margin-top: 6.1%;
              flex-flow: column;
              align-items: center;
          }
          .cta .cta-text {
-             margin: 0 0 20px 0;
+             margin: 0 0 3.5% 0;
          }
          .cta .cta-text button {
-            font-size: 16px;
+            font-size: 1rem;
          }
          .cta img {
              display: none;
