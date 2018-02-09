@@ -199,5 +199,8 @@ header .logo{
 }
 /*Phone*/
 @media(max-width:400px){
+    .container {
+        width: 400px;
+    }
 
 }
