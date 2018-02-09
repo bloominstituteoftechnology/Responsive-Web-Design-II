@@ -290,6 +290,29 @@ header .logo {
   }
 }
 
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li {
+    display: flex;
+    margin: 10px 0 10px 0;
+    border: solid black;
+    width: 100%;
+    justify-content: center;
+    background: grey;
+  }
+  header nav ul li:hover {
+    background: black;
+  }
+
+  header nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
 /* Contact Styles */
 
 .contact p {
