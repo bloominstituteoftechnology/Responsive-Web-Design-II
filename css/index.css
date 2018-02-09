@@ -125,7 +125,7 @@ header .logo {
 }
 
 .cta .cta-text button {
-    border: 1px double black;
+    border: 0.12rem double black;
     font-size: 1.6rem;
     background: white;
     /* Button width is less than 300px so we can leave it alone! */
