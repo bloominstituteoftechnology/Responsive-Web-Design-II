@@ -58,21 +58,24 @@ table {
 }
 
 html, body {
-    height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-/* 07 Feb 2018, Responsive Web Design, Project 1, Cesar Mejia  */
-/* DESKTOP-FIRST Adapative Web Design */
+/* 08 Feb 2018, Responsive Web Design, Project 2, Cesar Mejia  */
+/* DESKTOP-FIRST Fully Responsive Web Design */
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
+    font-size: 1.6rem;
 }
 
 /* Header Styles */
@@ -81,26 +84,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 26px;
 }
 
-header nav {
-    width: 70%;
+header nav { 
+    flex-grow: 1; /* header @880px => nav @691px*/
 }
 
 header nav ul {
     display: flex;
+    margin: 0 7.2%; /* 50px/691px = 7.2%*/
 }
 
 header nav ul li {
-    text-align: center;
-    width: 16.666%;
     flex-grow: 1;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: grey;
-    font-weight: bold;
+    font-size: 1.4rem;
 }
 
 header nav ul li a:hover {
@@ -110,7 +113,7 @@ header nav ul li a:hover {
 }
 
 header .logo {
-
+    margin: 0 0.6%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -122,9 +125,9 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem; /* 72px */
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,9 +135,9 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 17rem;
     height: 32px;
     cursor: pointer;
 }
@@ -150,9 +153,9 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
-   margin: 30px 0px;
+   margin: 30px 0;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -165,10 +168,12 @@ header .logo {
 }
 
 .main-content .top-content .text-content{
-    margin-left: 5px;
+    margin: 0 0.6%; /* 5px/880px = .6% */
 }
 
 .main-content .middle-img {
+    max-width: 100%;
+    margin: 0 0.6%;
 }
 
 .main-content .bottom-content {
@@ -177,12 +182,12 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content{
-    margin-left: 5px;
+    margin-left: 0.6%; /* 5px/880px = .6% */
 }
 
 /* Contact Styles */
 .contact {
-    margin-left: 5px;
+    margin-left: 0.6%; /* 5px/880px = .6% */
 }
 .contact p {
     margin: 15px 0;
@@ -196,28 +201,40 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 720px) {
     .container {
-        width: 400px;
+        max-width: 720px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
     }
 
     header nav {
         width: 100%;
     }
 
+    .cta img{
+        display: none; /*site cleaner w/o img @ 400px*/
+    }
+
+    .main-content {
+        height: 530px;
+    }
+}
+
+@media (max-width: 400px) {
     header .logo {
-        display: none; /*site cleaner w/o logo @ 400px*/
     }
 
     .cta {
         margin-top: 15px;
-    }
-    .cta img{
-        display: none; /*site cleaner w/o img @ 400px*/
     }
 
     .main-content {
