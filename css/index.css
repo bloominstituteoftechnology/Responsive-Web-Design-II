@@ -242,7 +242,7 @@ footer {
   .contact {
     text-align: center;
   }
-	
+
 }
 
 /* Media query for tablet size */
@@ -297,7 +297,7 @@ footer {
   .contact {
     margin-left: 10px;
   }
-	
+
 }
 
 /* Media query for desktop size */
@@ -317,11 +317,11 @@ footer {
   }
 
   .main-content {
-    margin: 75px 10px 35px 10px;;
+    margin: 75px 10px 35px 10px;
   }
 
   .contact {
     margin-left: 10px;
   }
-	
+
 }
