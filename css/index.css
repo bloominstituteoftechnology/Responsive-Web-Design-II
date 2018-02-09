@@ -193,8 +193,74 @@ footer {
 	.main-content {
 		margin: 75px 26px 30px;
 	}
+  .contact {
+    margin: 0 20px 0;
+  }
 }
 
 /* Phone */
 
-@media (max-width:)
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+  header nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+  }
+  header nav ul li:first-child {
+    border-top: 1px soid gray;
+  }
+  header nav ul li a:hover {
+    background: gray;
+  }
+  header .logo {
+    margin: 20px 0;
+    order: -1;
+    max-width: 100%;
+  }
+  .cta {
+    /* align-items: center; */
+  }
+  .cta .cta-text {
+    margin: 0 0 50px 0;
+  }
+
+  /* how can I include the img w/o using display: none; or using flex-direction: column; ? */
+  .cta img {
+    display: none;
+  }
+  .main-content .top-content {
+    flex-direction: column;
+    height: 300px;
+  }
+  .main-content .bottom-content {
+    flex-direction: column;
+    height: 400px;
+    align-content: space-between;
+  }
+  .contact {
+    margin: 25px;
+  }
+
+}
