@@ -55,7 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    /* font-size: 62.5%; */
+    font-size: 100%;
 
 }
 
@@ -191,7 +191,7 @@ footer {
     margin: 4.5% 0 2.2%;
 }
 /* tablet */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .container {
     width: 100%;
     }
