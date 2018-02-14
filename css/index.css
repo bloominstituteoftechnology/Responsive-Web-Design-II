@@ -54,6 +54,7 @@ table {
 
 html, body {
     height: 100%;
+	width: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -76,8 +77,8 @@ header {
 }
 
 header nav ul {
+	width: 610px;
     margin-top: 40px;
-    width: 610px;
     justify-content: space-between;
     display: flex;
 }
@@ -158,7 +159,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    /*padding-right: 20px;*/
 }
 
 /* Contact Styles */
@@ -171,107 +172,43 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 20px 0;
 }
 
-/* Media query for phone size */
+/* Media query for desktop size */
 
-@media (max-width: 400px) {
+@media (max-width: 1100px)  {
 
   .container {
-    width: 400px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav {
-    order: 1;
-  }
-
-  header nav ul {
-    text-align: center;
-    width: 276px;
-    height: 200px;
-    flex-direction: column;
-  }
-
-  header .logo {
-    align-self: center;
-    margin: 28px auto;
-  }
-
-  .cta {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .cta .cta-text {
-    font-size: 32px;
-    margin: 15px auto;
-  }
-
-  .cta .cta-text button {
-    font-size: 10px;
-    letter-spacing: 2px;
-  }
-
-  .cta img {
-    margin-top: 35px;
-    max-width: 300px;
-    align-self: center;
-  }
-
-  .main-content .top-content, .bottom-content {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .main-content .text-content {
-    margin: 20px 15px;
-  }
-
-  .middle-img {
-    max-width: 400px;
-    height: 150px;
-    margin: 0 15px;
-  }
-
-  .contact {
-    text-align: center;
+    width: 100%;
   }
 
 }
 
 /* Media query for tablet size */
 
-@media (min-width: 401px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .container {
-    width: 768px;
+    width: 100%;
   }
 
   header {
     flex-direction: column;
   }
 
-  header nav {
-    margin: 0 auto;
-  }
-
   header nav ul {
+	width: 100%;
+	justify-content: space-around;
     margin-bottom: 40px;
   }
 
   header .logo {
     order: -1;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .cta {
-    margin: 72px 10px 0 10px;
     justify-content: center;
   }
 
@@ -285,43 +222,90 @@ footer {
   }
 
   .main-content {
-    margin: 75px 10px 35px 10px;
     display: flex;
     flex-direction: column;
+	padding: 15px;
   }
 
   .main-content .middle-img {
-    margin: 30px 0;
+	max-width: 100%;
   }
 
   .contact {
-    margin-left: 10px;
+	text-align: center;
   }
-
 }
 
-/* Media query for desktop size */
 
-@media (min-width: 950px)  {
+/* Media query for phone size */
+
+@media (max-width: 400px) {
 
   .container {
-    width: 1100px;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
   }
 
   header nav {
-    margin-left: 10px;
+    order: 1;
+  }
+
+  header nav ul {
+	width: 100%;
+	height: 200px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  header .logo {
+    align-self: center;
+    margin: 28px 0;
   }
 
   .cta {
-    justify-content: center;
+    flex-direction: column;
+  }
+
+  .cta .cta-text {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .cta .cta-text button {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .cta img {
+    display: none;
   }
 
   .main-content {
-    margin: 75px 10px 35px 10px;
+    display: flex;
+    flex-direction: column;
+	padding: 0 15px
+  }
+
+  .main-content .top-content, .bottom-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-content .text-content {
+    margin: 20px auto;
+	padding: 0 15px;
+  }
+
+  .main-content .middle-img {
+	display: none;
   }
 
   .contact {
-    margin-left: 10px;
+    text-align: center;
   }
 
 }
