@@ -229,3 +229,58 @@ footer {
         font-size: 12px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 728px;
+    }
+    header nav ul {
+        width: 650px;
+    }
+    .cta {
+        width: 700px;
+    }
+    .cta img {
+        width: 300px;
+        height: 300px;
+    }
+    .main-content {
+        width: 700px;
+    }
+    .middle-img {
+        width: 680px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .container {
+        width: 1080px;
+    }
+    header nav ul {
+        width: 600px;
+    }
+    header nav ul li {
+        padding: 5px;
+    }
+    header .logo {
+        width: 120px;
+        margin: 5px 35px;
+    }
+    .cta {
+        justify-content: center;
+    }
+    .cta .cta-text {
+        font-size: 50px;
+    }
+    .cta img {
+        width: 200px;
+        height: 200px;
+    }
+    .main-content {
+        width: 980px;
+    }
+    .middle-img {
+        width: 980px;
+    }
+}
