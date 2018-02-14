@@ -179,6 +179,85 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .container {
+        width: 80%;
+        margin: 15px 15px;
+    }
+    header {
+        flex-wrap: wrap-reverse;
+        margin: 0 0;
+        margin-top: 10px;
+        justify-content: center;
+
+    }
+    header nav {
+        margin: 0 0;
+        display: flex;
+        justify-content: space-around;
+
+    }
+    header nav ul {
+        margin: 0 0;
+        font-size: 90%;
+    }
+    header .logo {
+        margin: 0 0;
+    }
+    .cta {
+        width: 100%;
+        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cta img {
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    
+    .cta .cta-text {
+        font-size: 48px;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 0;
+    }
+
+    .main-content {
+        width: 80%;
+        margin-left: 25px;
+     }
+
+    h4 {
+        margin-top: 20px;
+    }
+
+    .top-content {
+        flex-wrap: wrap;
+     }
+
+    .middle-img {
+         width: 97%;
+     }
+
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    .contact p {
+        margin: 15px 0;
+        margin-left: 30px;
+    }
+    .contact h4 {
+        margin-left: 30px;
+    }
+    
+    /* Footer Styles */
+    
+    footer {
+        text-align: center;
+        margin-right: 50px;
+    }
 
 }
 
