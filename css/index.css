@@ -173,3 +173,34 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 1100px) {
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+    width: 768px;
+    margin: auto;
+}
+    header {
+    width: 630px;
+    display: flex;
+}
+    header nav ul {
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 530px;
+    justify-content: space-between;
+    display: flex;
+}
+    header .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 32px;
+}
+    
+}
+
+@media (max-width: 400px) {
+    
+}
