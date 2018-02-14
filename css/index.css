@@ -77,7 +77,7 @@ header {
 
 header nav ul {
     margin-top: 40px; 
-    width: 610px;
+    width: 600px;
     justify-content: space-between;
     display: flex;
 }
@@ -172,4 +172,277 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* ============================================================
+
+Media Queries */
+
+@media (max-width: 1100px) {
+    .container {
+        width: 765px;
+    }
+
+    /* Header */
+
+    header .logo {
+        margin: 20px 0 0 50px;
+        width: 200px;
+    }
+
+    header nav ul {
+        width: 500px;
+        justify-content: space-around;
+    }
+
+    header nav ul li a {
+
+        color: red;
+    }
+
+    /* Call to Action */
+
+    .cta {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-around;
+    }
+    
+    .cta .cta-text {
+        font-size: 60px;
+        text-align: center;
+        letter-spacing: 4px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 125px 0 0;
+    }
+    
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: 14px;
+        background: white;
+        width: 150px;
+        height: 25px;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+    
+    .cta .cta-text button:hover {
+        background: black;
+        color: white;
+    }
+    .cta .cta-img {
+        width: 300px;
+        height: 300px;
+        align-self: left;
+    }
+
+    /* Main Content  */
+    
+    .main-content {
+        width: 755px;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        margin: 30px auto;
+        width: 755px;
+    }
+    
+    
+}
+@media (max-width: 768px) {
+
+    .container {
+        width: 398px;
+    }
+
+        /* Header */
+
+    header .logo {
+        margin: 15px 0 0 0;
+        width: 70px;
+    }
+
+    header nav ul {
+        width: 300px;
+        justify-content: space-around;
+        margin-right: 10px;
+        font-size: .75em;
+    }
+
+    header nav ul li a {
+        color: green;
+    }
+
+    /* Call to Action */
+    
+    .cta {
+        display: flex;
+        margin-top: 45px;
+    }
+    
+    .cta .cta-text {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 40px 0 0;
+    }
+    
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: 10px;
+        background: white;
+        width: 100px;
+        height: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .cta .cta-text button:hover {
+        background: black;
+        color: white;
+    }
+
+        .cta .cta-img {
+        width: 175px;
+        height: 175px;
+    }
+
+    /* Main Content */
+
+    .main-content {
+        width: 385px;
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 40px 0 25px 0;
+        padding: 35px 0;
+        line-height: 18px;
+     }
+    
+    .main-content .top-content {
+        font-size: 12px;
+    }
+
+    .main-content .bottom-content {
+        font-size: 12px
+    }
+
+    .main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+    width: 385px
+    }
+
+    /* Contact/Footer */
+
+    .contact {
+        font-size: 12px;
+    }
+        
+    footer {
+        text-align: center;
+        margin: 30px 0 15px;
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 400px) {
+
+    .container {
+        width: 385px;
+    }
+
+        /* Header */
+
+    header nav ul {
+        width:275px;
+        justify-content: space-around;
+    }
+
+    header nav ul li a {
+        color: blue;
+    }
+
+        /* Call to Action */
+
+    .cta {
+        display: flex;
+        margin-top: 45px;
+        width: 375px;
+    }
+    
+    .cta .cta-text {
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 0 0 0;
+    }
+    
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: 10px;
+        background: white;
+        width: 100px;
+        height: 20px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    .cta .cta-text button:hover {
+        background: black;
+        color: white;
+    }
+    .cta .cta-img {
+        width: 175px;
+        height: 175px;
+    }
+
+    /* Main Content */
+
+    .main-content {
+        width: 385px;
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 30px 10px 25px 0;
+        padding: 25px 0;
+        line-height: 18px;
+     }
+    
+    .main-content .top-content {
+        font-size: 10px;
+    }
+
+    .main-content .bottom-content {
+        font-size: 10px
+    }
+    
+    .main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+    width: 385px
+    }
+
+    /* Contact/Footer */
+    .contact {
+        font-size: 10px;
+    }
+        
+    footer {
+        text-align: center;
+        margin: 25px 0 10px;
+        font-size: 12px;
+    }
+
+
 }
