@@ -173,3 +173,59 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/*-------------------------------*/
+
+@media (max-width: 400px) {
+    .container {
+        width: 380px;
+    }
+    header nav ul {
+        width: 300px;
+        margin-top: 20px;
+    }
+    header nav ul li {
+        padding: 3px;
+        font-size: 10px;
+    }
+    header .logo {
+        width: 40px;
+        margin: 0 auto;
+    }
+    .cta {
+        width: 360px;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+    .cta .cta-text {
+        font-size: 25px;
+        margin: 0;
+    }
+    .cta img {
+        width: 150px;
+        height: 150px;
+    }
+    .cta .cta-text button {
+        width: 85px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .main-content {
+        width: 360px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .middle-img {
+        width: 340px;
+        margin: 0;
+    }
+    .contact p {
+        margin: 0;
+        font-size: 12px;
+    }
+    footer {
+        margin: 0 auto;
+        width: 360px;
+        font-size: 12px;
+    }
+}
