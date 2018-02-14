@@ -173,3 +173,72 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 400px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 1100px) {
+
+    header {
+        margin-left: 50px;
+        width: 80%;
+    }
+    header nav {
+        width: 85%;
+    }
+    header nav ul {
+        margin-top: 40px; 
+        width: 85%;
+    }
+    header .logo {
+        align-self: flex-end;
+        margin: 0 0 0 10px;
+    }
+    .cta {
+        width: 80%;
+    }
+    
+    .cta .cta-text {
+        font-size: 60px;
+        text-align: center;
+        letter-spacing: 5px;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 40px 0 50px;
+    }
+    .snippet {
+        width: 80%
+        height: auto;
+    }
+
+    .main-content {
+        width: 80%;
+        margin-left: 25px;
+     }
+
+    .middle-img {
+         width: 97%;
+     }
+
+    .contact p {
+        margin: 15px 0;
+        margin-left: 30px;
+    }
+    .contact h4 {
+        margin-left: 30px;
+    }
+    
+    /* Footer Styles */
+    
+    footer {
+        text-align: center;
+        margin-right: 50px;
+    }
+
+}
