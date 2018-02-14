@@ -177,16 +177,15 @@ footer {
 @media (max-width: 1100px) {
 
     .container {
-        width: 1100px;
+        width: 100%;
     }
     
-    header nav ul { 
-        width: 435px;
-        margin-left: 28px;
+    header nav ul {
+        margin-left: 7%;
     } 
     
     header .logo {
-        margin: 20px 205px 0px;
+        margin: 0 20% 0;
     }
 
     .cta {
@@ -194,12 +193,12 @@ footer {
     }
     
     .cta .cta-text {
-        font-size: 90px;
-        margin-left: -130px;
+        font-size: 5rem;
+        margin-left: -13%;
     }
 
     .cta img {
-        margin-right: 50px;
+        margin-right: 5%;
     }
 
     .main-content .middle-img {
@@ -207,12 +206,21 @@ footer {
     }
 
     .main-content {
-        margin: 75px 20px 35px;
+        margin: 7% 2% 3%;
+        max-width: 80%;
     }
-    
+
+    .main-content .top-content {
+        display: flex;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+    }
+
     footer {
         text-align: center;
-        margin: 35px 0 20px -180px;
+        margin: 3% 0 2% -18%;
     }
     
 }
@@ -221,16 +229,15 @@ footer {
 @media (max-width: 768px) {
 
     .container {
-        width: 768px;
+        width: 100%;
     }
     
-    header nav ul { 
-        width: 457px;
-        margin-left: 28px;
+    header nav ul {
+        margin: 8% 17% 0%;
     } 
     
     header .logo {
-        margin: 28px 0 0 59px;
+        display: none;
     }
 
     .cta {
@@ -238,24 +245,24 @@ footer {
     }
     
     .cta .cta-text {
-        margin: 0 60px 0 0;
+        margin: 0 15% 0 0;
     }
 
     .main-content .middle-img {
-        width: 100%
+        width: 80%
+    }
+
+    .cta img {
+        display: none;
     }
 
     .main-content {
-        margin: 75px 20px 35px;
+        margin: 6% 21% 3% 2%;
     }
 
     .main-content .top-content {
         display: flex;
         justify-content: space-around;
-    }
-
-    .main-content h4 {
-        margin: 15px 0 10px;
     }
 
     .main-content .bottom-content {
@@ -269,19 +276,19 @@ footer {
 @media (max-width: 400px) {
     
     .container {
-        width: 400px;
+        width: 100%;
     }
     
     header nav ul { 
         display: flex;
         flex-flow: column wrap;
-        width: 355px;
-        font-size: 32px;
+        width: 80%;
+        font-size: 2rem;
     } 
 
     header nav ul li a {
         color: black;
-        margin: 120px;
+        margin: 100%;
     }
     
     header .logo {
@@ -293,11 +300,11 @@ footer {
     }
     
     .cta .cta-text {
-        margin: 0 60px 0;
+        margin: 0 12% 0;
     }
 
     .main-content .middle-img {
-        max-width: 100%;
+        display: none;
     }
 
     .main-content {
@@ -305,7 +312,8 @@ footer {
     }
 
     .cta .cta-text {
-        margin: 0 50% 0;
+        font-size: 3rem;
+        margin: 0 20% 0 0;
     }
         
     .cta img {
