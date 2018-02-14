@@ -239,10 +239,13 @@ footer {
 
 @media (max-width: 400px) {
     .container {
-        width: 380px;
+        width: 300px;
+    }
+    header {
+        width: 300px;
     }
     header nav ul {
-        width: 300px;
+        width: 250px;
         margin-top: 20px;
     }
     header nav ul li {
@@ -251,20 +254,20 @@ footer {
     }
     header .logo {
         width: 40px;
-        margin: 0 auto;
+        margin: 5px 10px;;
     }
     .cta {
-        width: 360px;
+        width: 300px;
         margin-top: 20px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .cta .cta-text {
         font-size: 25px;
         margin: 0;
     }
     .cta img {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
     .cta .cta-text button {
         width: 85px;
@@ -272,12 +275,13 @@ footer {
         font-size: 10px;
     }
     .main-content {
-        width: 360px;
-        font-size: 12px;
+        width: 300px;
+        font-size: 10px;
         padding: 10px;
+        margin: 20px auto;
     }
     .middle-img {
-        width: 340px;
+        width: 290px;
         margin: 0;
     }
     .contact p {
@@ -285,8 +289,7 @@ footer {
         font-size: 12px;
     }
     footer {
-        margin: 0 auto;
-        width: 360px;
+        width: 300px;
         font-size: 12px;
     }
 }
