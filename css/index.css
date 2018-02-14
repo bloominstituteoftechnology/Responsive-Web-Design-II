@@ -77,7 +77,7 @@ header {
 
 header nav ul {
     margin-top: 40px; 
-    width: 610px;
+    width: 457px;
     justify-content: space-between;
     display: flex;
 }
@@ -172,4 +172,161 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 1100px) {
+
+    .container {
+        width: 1100px;
+    }
+    
+    header nav ul { 
+        width: 435px;
+        margin-left: 28px;
+    } 
+    
+    header .logo {
+        margin: 20px 205px 0px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        font-size: 90px;
+        margin-left: -130px;
+    }
+
+    .cta img {
+        margin-right: 50px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+    .main-content {
+        margin: 75px 20px 35px;
+    }
+    
+    footer {
+        text-align: center;
+        margin: 35px 0 20px -180px;
+    }
+    
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+
+    .container {
+        width: 768px;
+    }
+    
+    header nav ul { 
+        width: 457px;
+        margin-left: 28px;
+    } 
+    
+    header .logo {
+        margin: 28px 0 0 59px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 60px 0 0;
+    }
+
+    .main-content .middle-img {
+        width: 100%
+    }
+
+    .main-content {
+        margin: 75px 20px 35px;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-content h4 {
+        margin: 15px 0 10px;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        justify-content: space-around;
+    }
+        
+}
+
+/*phone*/
+@media (max-width: 400px) {
+    
+    .container {
+        width: 400px;
+    }
+    
+    header nav ul { 
+        display: flex;
+        flex-flow: column wrap;
+        width: 355px;
+        font-size: 32px;
+    } 
+
+    header nav ul li a {
+        color: black;
+        margin: 120px;
+    }
+    
+    header .logo {
+        display: none;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 60px 0;
+    }
+
+    .main-content .middle-img {
+        max-width: 100%;
+    }
+
+    .main-content {
+        margin: 35px 5px 20px;
+    }
+
+    .cta .cta-text {
+        margin: 0 50% 0;
+    }
+        
+    .cta img {
+        display: none;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    .main-content h4 {
+        margin: 15px 0 10px;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+    }
 }
