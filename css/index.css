@@ -262,6 +262,10 @@ footer {
     margin-left: 123px;
     /* margin-right: 20px; */
    }
+    .main-content .middle-img {
+        margin: 0px;
+        max-width: 400px;
+    }
 /*
     header nav ul {
     margin-top: 40px;
