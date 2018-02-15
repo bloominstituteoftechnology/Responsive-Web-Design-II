@@ -247,6 +247,29 @@ footer {
         width: 400px;
         margin: auto;
     }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 395px;
+    }
+    header nav ul {
+        margin-top: 30px;
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        line-height: 2;
+    }
+    header nav ul li {
+    border-bottom: 1px solid black;
+    width: 245px;
+    }
+    header nav ul li a {
+        font-size: 14px;
+    }
+    header .logo {
+        align-self: flex-start;
+        margin: 15px 0 0 112px;
+    }
     
     .cta{
         flex-direction: column-reverse;
@@ -263,7 +286,7 @@ footer {
     /* margin-right: 20px; */
    }
     .main-content {
-        padding: 20px;
+        padding: 20px 0 20px 0;
     }
     .main-content .top-content, .main-content .bottom-content {
         flex-direction: column;
