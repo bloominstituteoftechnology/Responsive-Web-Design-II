@@ -247,6 +247,22 @@ footer {
         width: 400px;
         margin: auto;
     }
+    
+    .cta{
+        flex-direction: column-reverse;
+    }
+    .cta .cta-text {
+        font-size: 46px;
+        line-height: 1;
+        margin: 20px 0 0 0;
+    }
+    .cta img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 123px;
+    /* margin-right: 20px; */
+   }
+/*
     header nav ul {
     margin-top: 40px;
     margin-left: 15px;
@@ -260,4 +276,5 @@ footer {
         margin: 0px 15px 0px 15px;
         padding: 30px 0;
     }
+*/
 }
