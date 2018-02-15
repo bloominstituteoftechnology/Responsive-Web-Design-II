@@ -56,9 +56,6 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
-body, html {
-    font-size: 62.5%;
-}
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
@@ -131,7 +128,7 @@ header .logo {
 
 .cta .cta-text button:hover {
     background: black;
-    color: white;
+color: white;
 }
 
 /* Main Content Styles */
@@ -178,6 +175,8 @@ footer {
 }
 
 /*-------------------------------*/
+
+
 /* @media (max-width: 1100px) {
     .container {
         width: 700px;
@@ -212,47 +211,72 @@ footer {
         max-width: 700px;
     }
 } */
-
 @media (max-width: 768px) {
-   
+    body, html {
+    font-size: 62.5%;
+    }
     .container {
         width: 78%;
-    }
-    header nav ul {
-        width: 58%;
-    }
-    header li {
-        width: 50%;
-    }
-    header .logo {
         margin: 0 auto;
     }
+    header {
+        flex-direction: column;
+    }
+    header nav ul {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    header li {
+        padding-right: 1.2rem;
+        align-content: space-around;
+    }
+    header .logo {
+        font-size: 1rem;
+        margin: 1rem auto;
+    }
     .cta {
-        width: 70%;
-        margin: 5% auto;
+        width: 100%;
     }
-    .cta .cta-text {
-        font-size: 7rem;
+    .cta-text {
+        margin: 0 auto;
     }
-    .cta img {
-        width: 50%;
-        height: 50%;
-        justify-content: center;
+    .cta-text h1 {
+        font-size: 3rem;
     }
     .cta .cta-text button {
-        font-size: 1.6rem;
-        width: 17rem;
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+    .cta img {
+        width: 40%;
+        height: 40%;
+        justify-content: center;
     }
     .main-content {
-        width: 90%;
+        width: 100%;
     }
     .middle-img {
-        width: 90%;
+        width: 100%;
+        margin: 0 auto;
+    }   
+    .contact h4 {
+        font-size: 1rem;
     }
-
+    .contact p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    footer {
+        width: 100%;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 400px) {
+    body, html {
+        font-size: 62.5%;
+    }
     .container {
         width: 75%;
     }
@@ -276,7 +300,7 @@ footer {
     header .logo {
         order: -1;
         display: block;
-        width: 10rem;
+        size: 10rem;
         margin: 1rem auto;
     }
     .cta {
@@ -308,7 +332,6 @@ footer {
         width: 99%;
         margin: 0 auto;
     }
-
     .contact p {
         margin: 0;
         font-size: 1.2rem;
@@ -318,5 +341,6 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
