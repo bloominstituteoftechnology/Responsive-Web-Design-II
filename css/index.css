@@ -219,10 +219,13 @@ footer {
     }
     
     .top-content, .bottom-content {
-        margin: 0px 15px 0px 15px;
+        margin: 0 0 0 15px;
         padding: 30px 0;
     }
     .text-content{
+        padding: 4px;
+    }
+    .bottom-content .text-contet {
         
     }
     
