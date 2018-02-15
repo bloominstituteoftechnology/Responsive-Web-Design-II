@@ -260,7 +260,7 @@ footer {
         line-height: 2;
     }
     header nav ul li {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     width: 245px;
     }
     header nav ul li a {
@@ -287,6 +287,7 @@ footer {
    }
     .main-content {
         padding: 20px 0 20px 0;
+        margin: 45px 0 30px 0;
     }
     .main-content .top-content, .main-content .bottom-content {
         flex-direction: column;
@@ -298,6 +299,10 @@ footer {
     .text-content {
         padding: 0px;
         margin-bottom: 16px;
+        font-size: 14px;
+    }
+    .contact , footer p {
+        font-size: 14px;
     }
 /*
     header nav ul {
