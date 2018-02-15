@@ -177,40 +177,42 @@ footer {
 /*-------------------------------*/
 
 
-/* @media (max-width: 1100px) {
+@media (max-width: 1100px) {
     .container {
-        width: 700px;
+        width: 80%;
+        margin: 0 auto;
     }
     header {
-        width: 600px;
+        width: 100%;
     }
     header nav ul {
-        width: 600px;
+        width: 100%;
     }
     header nav ul li {
-        padding: 5px;
+        padding: 5%;
     }
     header .logo {
-        width: 120px;
-        margin: 5px 35px;
+        width: 1.2%;
+        margin: 0 0 0 15%;
+        justify-content: flex-end;
     }
     .cta {
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .cta .cta-text {
-        font-size: 50px;
+        font-size: 3rem;
     }
     .cta img {
-        width: 200px;
-        height: 200px;
+        width: 45%;
+        height: 45%;
     }
     .main-content {
-        width: 700px;
+        width: 100%;
     }
     .middle-img {
-        max-width: 700px;
+        max-width: 100%;
     }
-} */
+}
 @media (max-width: 768px) {
     body, html {
     font-size: 62.5%;
@@ -221,18 +223,20 @@ footer {
     }
     header {
         flex-direction: column;
+        width: 100%;
     }
     header nav ul {
         width: 100%;
         font-size: 1.25rem;
+        margin: 3% auto;
     }
     header li {
-        padding-right: 1.2rem;
-        align-content: space-around;
+        padding-right: 10%;
+        align-content: space-evenly;
     }
     header .logo {
-        font-size: 1rem;
-        margin: 1rem auto;
+        width: 40%;
+        margin: 3% auto;
     }
     .cta {
         width: 100%;
@@ -244,7 +248,7 @@ footer {
         font-size: 3rem;
     }
     .cta .cta-text button {
-        width: 10rem;
+        width: 100%;
         height: 2rem;
         font-size: 1rem;
     }
@@ -286,7 +290,7 @@ footer {
     }
     header nav ul {
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 5%;
         display: block;
     }
     header nav ul li {
@@ -300,8 +304,8 @@ footer {
     header .logo {
         order: -1;
         display: block;
-        size: 10rem;
-        margin: 1rem auto;
+        size: 30%;
+        margin: 10% auto;
     }
     .cta {
         width: 100%;
@@ -315,14 +319,14 @@ footer {
        display: none;
     }
     .cta .cta-text button {
-        width: 8.5rem;
+        width: 100%;
         height: 2rem;
         font-size: 1rem;
     }
     .main-content {
         width: 100%;
         font-size: 1rem;
-        padding: 1rem;
+        padding: 1%;
         margin: 2rem auto;
     }
     .main-content .top-content, .main-content .bottom-content {
