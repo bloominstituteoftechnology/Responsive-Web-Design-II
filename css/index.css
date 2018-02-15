@@ -262,9 +262,19 @@ footer {
     margin-left: 123px;
     /* margin-right: 20px; */
    }
+    .main-content {
+        padding: 20px;
+    }
+    .main-content .top-content, .main-content .bottom-content {
+        flex-direction: column;
+    }
     .main-content .middle-img {
         margin: 0px;
         max-width: 400px;
+    }
+    .text-content {
+        padding: 0px;
+        margin-bottom: 16px;
     }
 /*
     header nav ul {
