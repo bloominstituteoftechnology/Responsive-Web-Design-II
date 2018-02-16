@@ -187,7 +187,7 @@ footer {
 
 @media (max-width: 1100px) {
     .container {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     header {
@@ -211,10 +211,6 @@ footer {
     .cta .cta-text {
         font-size: 7rem;
     }
-    .cta img {
-        width: 90%;
-        height: 90%;
-    }
     .main-content {
         width: 100%;
     }
@@ -226,6 +222,9 @@ footer {
     header .logo {
         margin: 1% 0 0 3%;
     }
+    .main-content .top-content p, .main-content .bottom-content p {
+        padding-right: 10%;
+    }
 }
 @media (max-width: 768px) {
     .container {
@@ -234,14 +233,13 @@ footer {
     }
     header {
         flex-direction: column;
-        width: 100%;
     }
     header nav ul {
         width: 100%;
         margin: 3% auto;
     }
     header li {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
     }
     header .logo {
         order: -1;
@@ -260,9 +258,6 @@ footer {
     .cta img {
         display: none;
      }
-    .main-content {
-        width: 100%;
-    }
     .middle-img {
         width: 100%;
         margin: 0 auto;
@@ -273,6 +268,7 @@ footer {
     .contact p {
         margin: 0;
         font-size: 1.2rem;
+        padding-bottom: 2%;
     }
     footer {
         width: 100%;
@@ -294,10 +290,9 @@ footer {
 }
 @media (max-width: 400px) {
     .container {
-        width: 80%;
+        width: 90%;
     }
     header {
-        width: 100%;
         flex-direction: column;
     }
     header nav ul {
@@ -317,7 +312,7 @@ footer {
         order: -1;
         display: block;
         margin: 10% auto;
-        width: 67%;
+        width: 85%;
     }
     .cta {
         width: 100%;
@@ -327,16 +322,14 @@ footer {
         font-size: 2.5rem;
         margin: 0 auto;
     }
-    .cta .cta-text button {
-        width: 100%;
-        height: 2rem;
-        font-size: 1rem;
-    }
     .main-content {
         width: 100%;
-        font-size: 1rem;
-        padding: 1%;
         margin: 2rem auto;
+        line-height: 2rem;
+    }
+    .main-content h4 {
+        padding-top: 5%;
+        text-align: center;
     }
     .main-content .top-content, .main-content .bottom-content {
         flex-direction: column;
