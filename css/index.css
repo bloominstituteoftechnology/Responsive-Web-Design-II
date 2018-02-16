@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -106,7 +106,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -118,7 +118,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -138,7 +138,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -180,18 +180,24 @@ Media Queries */
 
 @media (max-width: 1100px) {
     .container {
-        width: 765px;
+        width: 100%;
     }
 
     /* Header */
+    header {
+        justify-content: space-around;
+    }
 
     header .logo {
-        margin: 20px 0 0 50px;
-        width: 200px;
+        margin: 2% 0 0 5%;
+        width: 25%;
+    }
+    header nav {
+        width: 75%;
     }
 
     header nav ul {
-        width: 500px;
+        width: 100%;
         justify-content: space-around;
     }
 
@@ -204,28 +210,29 @@ Media Queries */
 
     .cta {
         display: flex;
-        margin-top: 60px;
+        margin-top: 7%;
         justify-content: space-around;
     }
     
     .cta .cta-text {
-        font-size: 60px;
+        height: 100%;
+        width: 60%;
+        font-size: 5.5rem;
         text-align: center;
-        letter-spacing: 4px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 125px 0 0;
+        margin: 0 10% 0 0;
     }
     
     .cta .cta-text button {
         border: 1px double black;
-        font-size: 14px;
+        font-size: 1.2rem;
         background: white;
-        width: 150px;
-        height: 25px;
-        margin-top: 8px;
+        width: 45%;
+        height: 10%;
+        margin-top: 4%;
         cursor: pointer;
     }
     
@@ -234,43 +241,58 @@ Media Queries */
         color: white;
     }
     .cta .cta-img {
-        width: 300px;
-        height: 300px;
+        width: 40%;
+        height: 100%;
         align-self: left;
     }
 
     /* Main Content  */
     
     .main-content {
-        width: 755px;
+        width: 100%;
+        font-size: 1.2rem;
     }
+
 
     .main-content .middle-img {
         display: block;
-        margin: 30px auto;
-        width: 755px;
+        margin: 5% auto;
+        width: 100%;
+    }
+        /* Contact/Footer */
+
+    .contact {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 1.4rem;
     }
     
     
 }
 @media (max-width: 768px) {
-
     .container {
-        width: 398px;
+        width: 100%;
     }
 
-        /* Header */
+    /* Header */
+    header {
+        justify-content: space-around;
+        font-size: .8rem;
+    }
 
     header .logo {
-        margin: 15px 0 0 0;
-        width: 70px;
+        margin: 2% 0 0 5%;
+        width: 25%;
+    }
+    header nav {
+        width: 75%;
     }
 
     header nav ul {
-        width: 300px;
+        width: 100%;
         justify-content: space-around;
-        margin-right: 10px;
-        font-size: .75em;
     }
 
     header nav ul li a {
@@ -278,124 +300,32 @@ Media Queries */
     }
 
     /* Call to Action */
-    
+
     .cta {
         display: flex;
-        margin-top: 45px;
-    }
-    
-    .cta .cta-text {
-        font-size: 25px;
-        text-align: center;
-        letter-spacing: 3px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 40px 0 0;
-    }
-    
-    .cta .cta-text button {
-        border: 1px double black;
-        font-size: 10px;
-        background: white;
-        width: 100px;
-        height: 20px;
-        margin-top: 10px;
-        cursor: pointer;
-    }
-    
-    .cta .cta-text button:hover {
-        background: black;
-        color: white;
-    }
-
-        .cta .cta-img {
-        width: 175px;
-        height: 175px;
-    }
-
-    /* Main Content */
-
-    .main-content {
-        width: 385px;
-        border-top: 2px solid black; 
-        border-bottom: 2px solid black;
-        margin: 40px 0 25px 0;
-        padding: 35px 0;
-        line-height: 18px;
-     }
-    
-    .main-content .top-content {
-        font-size: 12px;
-    }
-
-    .main-content .bottom-content {
-        font-size: 12px
-    }
-
-    .main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-    width: 385px
-    }
-
-    /* Contact/Footer */
-
-    .contact {
-        font-size: 12px;
-    }
-        
-    footer {
-        text-align: center;
-        margin: 30px 0 15px;
-        font-size: 16px;
-    }
-
-}
-@media (max-width: 400px) {
-
-    .container {
-        width: 385px;
-    }
-
-        /* Header */
-
-    header nav ul {
-        width:275px;
+        margin-top: 7%;
         justify-content: space-around;
     }
-
-    header nav ul li a {
-        color: blue;
-    }
-
-        /* Call to Action */
-
-    .cta {
-        display: flex;
-        margin-top: 45px;
-        width: 375px;
-    }
     
     .cta .cta-text {
-        font-size: 25px;
+        height: 100%;
+        width: 60%;
+        font-size: 3rem;
         text-align: center;
-        letter-spacing: 3px;
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0 0 0 0;
+        margin: 0 10% 0 0;
     }
     
     .cta .cta-text button {
         border: 1px double black;
-        font-size: 10px;
+        font-size: .8rem;
         background: white;
-        width: 100px;
-        height: 20px;
-        margin-top: 10px;
+        width: 45%;
+        height: 10%;
+        margin-top: 4%;
         cursor: pointer;
     }
     
@@ -404,45 +334,126 @@ Media Queries */
         color: white;
     }
     .cta .cta-img {
-        width: 175px;
-        height: 175px;
+        width: 40%;
+        height: 100%;
+        align-self: left;
     }
 
-    /* Main Content */
-
+    /* Main Content  */
+    
     .main-content {
-        width: 385px;
-        border-top: 2px solid black; 
-        border-bottom: 2px solid black;
-        margin: 30px 10px 25px 0;
-        padding: 25px 0;
-        line-height: 18px;
-     }
-    
-    .main-content .top-content {
-        font-size: 10px;
+        width: 100%;
+        font-size: .8rem;
     }
 
-    .main-content .bottom-content {
-        font-size: 10px
-    }
-    
+
     .main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-    width: 385px
+        display: block;
+        margin: 5% auto;
+        width: 100%;
     }
+        /* Contact/Footer */
 
-    /* Contact/Footer */
     .contact {
-        font-size: 10px;
+        font-size: 1rem;
     }
-        
+
     footer {
+        font-size: 1.2rem;
+    }
+    
+    
+}
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    /* Header */
+    header {
+        justify-content: space-around;
+        font-size: .8rem;
+    }
+
+    header .logo {
+        margin: 2% 0 0 5%;
+        width: 25%;
+    }
+    header nav {
+        width: 75%;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header nav ul li a {
+        color: blue;
+    }
+
+    /* Call to Action */
+
+    .cta {
+        display: flex;
+        margin-top: 7%;
+        justify-content: space-around;
+    }
+    
+    .cta .cta-text {
+        height: 100%;
+        width: 60%;
+        font-size: 1.5rem;
         text-align: center;
-        margin: 25px 0 10px;
-        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 10% 0 0;
+    }
+    
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: .5rem;
+        background: white;
+        width: 45%;
+        height: 10%;
+        margin-top: 4%;
+        cursor: pointer;
+    }
+    
+    .cta .cta-text button:hover {
+        background: black;
+        color: white;
+    }
+    .cta .cta-img {
+        width: 40%;
+        height: 100%;
+        align-self: left;
+    }
+
+    /* Main Content  */
+    
+    .main-content {
+        width: 100%;
+        font-size: .5rem;
     }
 
 
+    .main-content .middle-img {
+        display: block;
+        margin: 5% auto;
+        width: 100%;
+    }
+    
+    /* Contact/Footer */
+
+    .contact {
+        font-size: .8rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+    
 }
