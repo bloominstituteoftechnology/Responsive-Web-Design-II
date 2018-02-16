@@ -186,15 +186,16 @@ footer {
         width: 100%;
     }
     header nav ul {
-        width: 100%;
+        width: 85%;
     }
     header nav ul li {
-        padding: 5%;
+        padding: 3%;
+        justify-content: space-between;
     }
     header .logo {
-        width: 1.2%;
-        margin: 0 0 0 15%;
-        justify-content: flex-end;
+        width: 25%;
+        margin: 2% 0 0 4%;
+        justify-content: space-between;
     }
     .cta {
         justify-content: space-evenly;
@@ -213,9 +214,14 @@ footer {
         max-width: 100%;
     }
 }
+@media (max-width: 900px) {
+    header .logo {
+        margin: 1% 0 0 3%;
+    }
+}
 @media (max-width: 768px) {
-    body, html {
-    font-size: 62.5%;
+    html, body {
+        font-size: 62.5%;
     }
     .container {
         width: 78%;
@@ -227,12 +233,10 @@ footer {
     }
     header nav ul {
         width: 100%;
-        font-size: 1.25rem;
         margin: 3% auto;
     }
     header li {
-        padding-right: 10%;
-        align-content: space-evenly;
+        font-size: 1.35rem;
     }
     header .logo {
         width: 40%;
@@ -276,13 +280,25 @@ footer {
         font-size: 1rem;
     }
 }
-
+@media (max-width: 600px) {
+    .container {
+        width: 83%;
+    }
+    header nav ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header li {
+        align-content: space-around;
+        font-size: 1.25rem;
+    }
+}
 @media (max-width: 400px) {
-    body, html {
+    html, body {
         font-size: 62.5%;
     }
     .container {
-        width: 75%;
+        width: 80%;
     }
     header {
         width: 100%;
@@ -304,8 +320,8 @@ footer {
     header .logo {
         order: -1;
         display: block;
-        size: 30%;
         margin: 10% auto;
+        width: 67%;
     }
     .cta {
         width: 100%;
