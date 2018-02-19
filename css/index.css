@@ -173,3 +173,171 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* media queries */
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 720px;
+        margin-left: 15px;
+    }
+    
+    header nav {
+        width: 70%;
+    }
+
+    header nav ul {
+        width: 100%;
+    }
+    
+    header .logo {
+        width: 20%;
+        margin-left:100px;
+    }
+
+    nav li a {
+        font-size: 90%;
+    }
+
+    nav li:first-child {
+        margin-left: 5px;
+    }
+
+    .cta {
+        margin-top: 50px;
+    }
+
+    .cta .cta-text {
+        margin-right: 62px;
+    }
+
+    .cta img {
+        width: 330px;
+        height: 330px;
+        margin-right: 20px;
+    }
+
+    .main-content {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: 10px;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 380px;
+        margin: auto;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .logo {
+        order: -1;
+        width: 50%;
+        align-self: center;
+        margin-left: 0px;
+        margin: 10px;
+    }
+
+    header nav {
+        display: flex;
+        width: 100%;
+    }
+
+    header nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    header nav li {
+        border-bottom: 1px solid black;
+        padding: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav li a {
+        font-size: 100%;
+        padding: 5px;
+    }
+
+    nav li:first-child {
+        margin-left: 0px;
+    }
+
+    .cta {
+        margin-top: 25px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cta img {
+        height: 190px;
+        width: 190px;
+        margin-right: 0px;
+        align-self: center;
+        margin-top: 25px;
+    }
+
+    .cta .cta-text {
+        margin-right: 5px;
+        font-size: 40px;
+    }
+
+    .main-content {
+        margin-top: 25px;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: none;
+    }
+
+    .top-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .top-content .text-content {
+        margin-bottom: 25px;
+    }
+
+    .top-content .text-content:last-child {
+        margin-bottom: 0px;
+    }
+
+    .bottom-content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bottom-content .text-content {
+        margin-bottom: 25px;
+    }
+
+    .bottom-content .text-content:last-child {
+        margin-bottom: 0px;
+    }
+
+    .contact {
+        font-size: 12px;
+    }
+}
