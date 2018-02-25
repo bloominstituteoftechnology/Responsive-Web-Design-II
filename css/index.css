@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -54,6 +54,7 @@ table {
 
 html, body {
     height: 100%;
+	width: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -76,8 +77,8 @@ header {
 }
 
 header nav ul {
-    margin-top: 40px; 
-    width: 610px;
+	width: 610px;
+    margin-top: 40px;
     justify-content: space-between;
     display: flex;
 }
@@ -134,7 +135,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -157,10 +158,6 @@ header .logo {
     justify-content: space-around;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
 /* Contact Styles */
 
 .contact p {
@@ -171,5 +168,140 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 20px 0;
+}
+
+/* Media query for desktop size */
+
+@media (max-width: 1100px)  {
+
+  .container {
+    width: 100%;
+  }
+
+}
+
+/* Media query for tablet size */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header nav ul {
+	width: 100%;
+	justify-content: space-around;
+    margin-bottom: 40px;
+  }
+
+  header .logo {
+    order: -1;
+    margin: 0 auto;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .cta .cta-text {
+    margin-right: 41px;
+  }
+
+  .cta img {
+    height: 320px;
+    width: 350px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+	padding: 15px;
+  }
+
+  .main-content .middle-img {
+	max-width: 100%;
+  }
+
+  .contact {
+	text-align: center;
+  }
+}
+
+
+/* Media query for phone size */
+
+@media (max-width: 400px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    order: 1;
+  }
+
+  header nav ul {
+	width: 100%;
+	height: 200px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  header .logo {
+    align-self: center;
+    margin: 28px 0;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .cta .cta-text {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .cta .cta-text button {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+	padding: 0 15px
+  }
+
+  .main-content .top-content, .bottom-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-content .text-content {
+    margin: 20px auto;
+	padding: 0 15px;
+  }
+
+  .main-content .middle-img {
+	display: none;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
 }
