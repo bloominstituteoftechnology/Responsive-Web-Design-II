@@ -216,6 +216,7 @@ footer {
 @media(max-width: 400px) {
     .container {
         width: 100%;
+        background-color: blue;
     }
     header{
         display: flex;
@@ -271,6 +272,7 @@ footer {
     .cta img {
         margin-left: 3vw;
         margin-top: 30px;
+        max-width: 100%;
     }
 
     .main-content .top-content {
