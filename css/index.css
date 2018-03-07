@@ -236,5 +236,76 @@ footer {
 /*PHONE*/
 
 @media (max-width: 400px) {
-    
+    /* Header Styles */
+    .container {
+        margin: 0 auto;
+    }
+
+    header {
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+    }
+
+    header nav {
+        width: 93%;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    header nav a {
+        border: 1px solid black;
+        width: 398px;
+        height: 60px;
+        align-items: center;
+    }
+
+     /* Call To Action (CTA) Styles */
+     .cta {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .cta .cta-text button {
+         margin-bottom: 20px;
+     }
+
+     /* Main Content Styles */
+     .main-content {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .main-content .top-content {
+        flex-wrap: wrap;
+        margin-bottom: 0 auto;
+        padding: 25px 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .main-content .top-content .text-content {
+        margin-bottom: 10px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 25px 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin-bottom: 10px;
+    }
+
+     /* Contact Styles */
+    .contact {
+        
+    }
+
 }
