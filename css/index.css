@@ -175,34 +175,32 @@ footer {
 }
 
 
-/* CSS Media Queries */
+/*------------------ CSS Media Queries----------------------------- */
 
 
 @media (max-width: 768px) {
-      /* header part */
-    header {
-        width: 60%;
-        display: flex;
-    }
-    
 
+     
+    .container {
+        width: 750px;
+  
+    }
+
+      /* header part */
     header nav {
         margin-top: 20px; 
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
         display: flex;
     }
     
     header nav a {
-        text-decoration: none;
-        color: #b0b0b0;
-        padding: 10px;
         font-size: 12px;
     }
 
     header .logo {
         align-self: baseline;
-        margin: 20px 0 0 15px;
+        margin: 10px 0 0 15px;
         width: 120px;
     }
 
@@ -210,42 +208,60 @@ footer {
     /* cta part */
 
     .cta {
-        display: flex;
-        margin: 40px 20px;
-        justify-content: flex-start;
+        width: 100%;
+        margin: 40px auto;
+        justify-content: center;
     }
     
     .cta .cta-text {
         font-size: 45px;
-        text-align: center;
-        letter-spacing: 5px;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
         margin: 0 50px 0 0;
     }
     
     .cta .cta-text button {
-        border: 1px double black;
         font-size: 13px;
-        background: white;
         width: 120px;
         height: 25px;
         margin-top: 5px;
-        cursor: pointer;
     }
     
-    .cta .cta-text button:hover {
-        background: black;
-        color: white;
-    }
-
     .cta img {
         width: 250px;
         height: 250px;
     }
 
-    
-  }
+
+    /* Main Content Styles */
+
+.main-content {
+    width: 95%;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
+    margin: 75px 10px 35px 10px;
+ }
+ 
+ 
+ .middle-img {
+     display: block;
+     max-width: 100%;
+ }
+
+/* Contact & Footer Styles */
+
+
+.contact {
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+}
+
+ 
+ }
+
+
+
   
