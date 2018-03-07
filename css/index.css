@@ -176,29 +176,37 @@ footer {
 
 /*########################################################  TABLET #####################################################*/
 @media (max-width: 768px) {
+   
     .container{
         max-width: 100%;
     }
+   
     header nav {
         width: 450px;
         justify-content: space-around;
     }
+   
     header .logo {
         margin: 28px 0 0 76px;
     }
+   
     .cta {
         justify-content: center;
     }
+   
     .cta .cta-text {
         font-size: 62px;
     }
+   
     .main-content {
         padding: 19px 19px;
         width: 100%;
      }
+   
      .main-content .middle-img {
         width: 100%;
     }
+   
     .contact {
         padding: 35px 19px;
     }
@@ -207,6 +215,7 @@ footer {
 /*########################################################  PHONE  #####################################################*/
 
 @media (max-width: 400px) {
+    
     .container {
         max-width: 100%;
     }
@@ -214,51 +223,70 @@ footer {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        width: 90%;
-        margin-left: 19px;
+        width: 100%;
     }
+   
     header nav {
         justify-content: space-around;
         display: flex;
         flex-direction: column;
         height: 300px;
         align-items: center;
-        border-bottom: 1px solid gray;
+    }
+
+    header nav a {
+        border-bottom: 1px solid #b0b0b0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+
+    header nav .a1 {
+        border-top: 1px solid #b0b0b0;
     }
 
     header .logo {
         order: -1;
-        margin-left: 98px;   /* see if this can be adjusted some other way*/
+        margin-left: 120px;   /* see if this can be adjusted some other way*/
     }
+   
     .cta {
         display: flex;
         flex-direction: column;
         margin-top: 72px;
     }
+    
     .cta .cta-text {
         margin: 0 3px 0 0;
     }
+    
     .cta img {
         width: 75%;
         margin-top: 40px;
         align-self: center;
     }
+    
     .main-content {
         border-bottom: 1px solid black;
         border-top: 1px solid black;
         width: 95%;
         margin-left: 10px;
     }
+   
     .main-content .top-content {
         flex-direction: column;
         margin-top: 10px;
     }
+   
     .main-content .top-content .text-content {
         margin-bottom: 15px;
     }
+   
     .main-content .bottom-content {
         flex-direction: column;
     }
+   
     .main-content .bottom-content .text-content {
         margin-bottom: 15px;
     }
