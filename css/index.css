@@ -208,11 +208,7 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
-  .containter {
-    
-  }
-  
+@media (max-width: 400px) {  
   /* header */
   header {
     flex-flow: column;
@@ -259,8 +255,16 @@ footer {
   }
 
   /* section 2 - .main-content */
+  .main-content {
+    margin: 75px 20px 35px;
+    padding-top: 30px;
+  }
 
-  /* section 3 - .contact */
+  .top-content, .bottom-content {
+    flex-flow: column;
+  }
 
-  /* footer */
+  .text-content {
+    padding: 15px 0;
+  }
 }
