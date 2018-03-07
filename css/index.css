@@ -202,7 +202,6 @@ footer {
 
 @media (max-width: 400px) {
     header {
-        border: 1px solid purple;
         width: 100%;
         flex-direction: column;
         border-bottom: 1px solid black;
@@ -231,7 +230,6 @@ footer {
 
     .cta {
         width: 100%;
-        border: 1px solid orange;
         flex-direction: column;
     }
 
@@ -239,13 +237,20 @@ footer {
         width: 100%;
         margin: 0 auto;
         padding-bottom: 10%;
-        border: 1px solid blue;
     }
 
     .cta img {
-        width: 100%;
-        border: 1px solid green;
+        width: 80%;
         align-self: center;
-        justify-self: center;
     }
+
+    .main-content .top-content, .bottom-content{
+        flex-direction: column;
+    }
+
+    .text-content {
+        margin: 3% 0%;
+    }
+
+    
 }
