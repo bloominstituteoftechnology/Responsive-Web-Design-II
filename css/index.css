@@ -179,7 +179,7 @@ footer {
 
 
 @media (max-width: 768px) {
-      
+      /* header part */
     header {
         width: 60%;
         display: flex;
@@ -206,6 +206,45 @@ footer {
         width: 120px;
     }
 
+
+    /* cta part */
+
+    .cta {
+        display: flex;
+        margin: 40px 20px;
+        justify-content: flex-start;
+    }
+    
+    .cta .cta-text {
+        font-size: 45px;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 50px 0 0;
+    }
+    
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: 13px;
+        background: white;
+        width: 120px;
+        height: 25px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    
+    .cta .cta-text button:hover {
+        background: black;
+        color: white;
+    }
+
+    .cta img {
+        width: 250px;
+        height: 250px;
+    }
 
     
   }
