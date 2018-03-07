@@ -205,4 +205,49 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    header nav {
+        margin: 0px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    header .logo {
+        order: -1;
+        margin: 20px 0;
+        align-self: center;
+    }
+
+    .cta {
+        margin-top: 60px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cta .cta-text {
+        margin: 0px 0px 40px 0px;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+  
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main-content .text-content:first-child {
+        margin-top: 0px;
+    }
+    .main-content .text-content {
+        margin-top: 30px;
+    }
 }
