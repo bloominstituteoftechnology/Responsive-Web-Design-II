@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -172,4 +172,97 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* For tabets ~768px */
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    padding: 0 30px;
+  }
+
+  .cta {
+    margin: 72px 30px 0;
+  }
+
+  .cta .cta-text {
+    margin: 0 auto;
+  }
+
+  .main-content {
+    margin: 75px 30px 35px;
+  }
+
+  .main-content img {
+    width: 100%;
+  }
+
+  .contact {
+    margin-left: 30px;
+  }
+}
+
+/* For phones ~400px */
+
+@media (max-width: 400px) {
+
+  header {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  header nav {
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    margin: 20px 0;
+    border-top: 1px solid grey;
+  }
+
+  nav a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  header .logo {
+    margin: 20px auto 0;
+    order: -1;
+  }
+
+  .cta {
+    flex-flow: column;
+    margin: 30px auto;
+    justify-content: center;
+  }
+
+  .cta .cta-text {
+    margin-bottom: 50px;
+  }
+
+  .cta img {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .main-content {
+    margin: 75px 20px 35px;
+    padding-top: 30px;
+  }
+
+  .top-content, .bottom-content {
+    flex-flow: column;
+  }
+
+  .text-content {
+    padding: 15px 0;
+  }
 }
