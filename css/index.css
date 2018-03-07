@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -73,12 +73,14 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
 }
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
+    width: 500px;
+    justify-content: space-around;
     display: flex;
 }
 
@@ -93,8 +95,7 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin-top: 28px;
 }
 
 /* Call To Action (CTA) Styles */
@@ -113,7 +114,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 auto;
 }
 
 .cta .cta-text button {
@@ -136,7 +137,7 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 75px 30px 35px;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
@@ -150,6 +151,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -174,6 +176,7 @@ footer {
     margin: 40px 0 20px;
 }
 
+/* When page is less than 768px */
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -181,25 +184,24 @@ footer {
 
   /* header */
   header {
-    padding: 0 30px;
+    flex-flow: wrap-reverse;
+    justify-content: center;
   }
 
   /* section 1 - .cta */
   .cta {
+    flex-flow: wrap;
+    justify-content: center;
     margin: 72px 30px 0;
   }
 
   .cta .cta-text {
-    margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   /* section 2 - .main-content */
-  .main-content {
-    margin: 75px 30px 35px;
-  }
-
-  .main-content img {
-    width: 100%;
+  .text-content {
+    padding-right: 15px;
   }
 
   /* section 3 - .contact */
@@ -208,6 +210,7 @@ footer {
   }
 }
 
+/* When page is less than 400px*/
 @media (max-width: 400px) {  
   /* header */
   header {
