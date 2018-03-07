@@ -200,6 +200,55 @@ footer {
 
  header .logo {
      align-self: flex-start;
+     flex-direction: column;
  }
+ /* cta content */
+
+ .cta {
+     display: flex;
+     flex-direction: column;
+ }
+ .cta-text {
+     justify-content: center;
+ }
+
+ .cta img {
+     width: 40%;
+     align-self: center;
+ }
+
+ /* main content */ 
+.main-content {
+    flex-flow: column;
+}
+ .text-content {
+	display: flex;
+	flex-flow: column;
+    align-items: center;
+    flex-wrap: wrap;
+	font-size: 3vw;
+ }
+
+ .text-content h4 p {
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .top-content {
+     flex-flow: column;
+ }
+
+ .bottom-content {
+     flex-flow: column;
+ }
+
+ .contact {
+     display: flex;
+     flex-flow: column;
+     align-items: center;
+ }
+
 
 }
