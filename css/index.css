@@ -186,9 +186,11 @@ footer {
 
 /* display at 400px */
 @media (max-width: 768px) {
-    html { width: 100%; }
+    html { width: 400px; 
+    display: flex}
  header {
-     display: 100%;
+     display: flex;
+     flex-direction: column;
      justify-content: center;
  }
 
@@ -196,11 +198,17 @@ footer {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
+ }
+
+ header nav a {
+     border: solid 1px black;
  }
 
  header .logo {
-     align-self: flex-start;
-     flex-direction: column;
+     flex-direction: row;
+     align-self: center;
+     border: solid 1px blue;
  }
  /* cta content */
 
@@ -220,13 +228,20 @@ footer {
  /* main content */ 
 .main-content {
     flex-flow: column;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 30%;
+    
 }
  .text-content {
 	display: flex;
 	flex-flow: column;
     align-items: center;
     flex-wrap: wrap;
-	font-size: 3vw;
+ }
+
+ .main-content img {
+     width: 100%;
  }
 
  .text-content h4 p {
