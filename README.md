@@ -1,29 +1,27 @@
-# Responsive-Web-Design
+# Responsive-Web-Design I & II
 
-We will be using the same codebase for Responsive Web Design I and II.  They are as follows:
+We will be using the same codebase for Responsive Web Design I and II modules.  You have been provided design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder.  
 
-## Project 1:
+## Project 1: Adaptive Layout
 
-For this project, no new syntax has been introduced but many new concepts are needed to accomplish the task.
+For project 1 you will build an adaptive website that has max-width breakpoints at 400px and 768px based on the designs provided to you in this repository.  You have been provided desktop styles so you can focus on your media queries.
 
 *Concepts required to complete the task:*
-* How to use media queries
-* Min and max width
-* Layout changes based on device width
-* Adaptive vs fixed layouts
-
-Build an adaptive website that has breakpoints at 400px, 768px, and 1100px.  This project is very open ended and meant to challenge what you learned today.  The correct solution will have breakpoints at the directed values but how it looks is up to you.  
+* How to use min and max-width
+* Media queries using max-width
+* Flexbox layout techniques are preferred
 
 Remember that an adaptive layout updates at breakpoints only.  Don't worry about fluid layouts for this challenge.
 
 *Tasks to complete:*
-* Introduce max-width media queries into your project at 400px, 768px, and 1100px
-* Review each breakpoint and adjust the layout so that you don't experience horizontal scroll bars at the media query.  
+* Introduce max-width media queries into your project at 400px, 768px.  
+* Review each design file and adjust your styles at each breakpoint. **Hint: Change your container class to width: 100% at the 768px breakpoint.**
+* No horizontal scroll bars are acceptable at the exact breakpoint.  At 400px and 768px you should only see a vertical scrollbar.  Everything else is fine to have a horizontal scroll bar as this is not fully responsive.
 
 * *Stretch Goal:* Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.
 
 
-## Project 2: 
+## Project 2: Fully Responsive Website
 
 Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a full on responsive layout.  
 
