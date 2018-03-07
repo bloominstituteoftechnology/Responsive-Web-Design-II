@@ -206,8 +206,12 @@ footer {
 
   /* section 3 - .contact */
 
-  /* footer */
+  .contact {
+    margin-left: 30px;
+  }
 
+  /* footer */
+  /* no styling needed*/
 }
 
 @media (max-width: 400px) {
