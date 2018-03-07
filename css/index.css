@@ -266,6 +266,40 @@ header .logo {
   color: white;
 }
 
+/* Tablet Call to Action  */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 20px;
+  }
+  .cta img {
+    width: 50%;
+  }
+  .cta .cta-text {
+    width: 50%;
+  }
+}
+
+/* Mobile Call to Action */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .cta .cta-text {
+    width: 100%;
+  }
+}
+
 /* Main Content Styles */
 
 .main-content {
