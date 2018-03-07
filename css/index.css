@@ -199,3 +199,53 @@ footer {
         width: 100%;
     }
 }
+
+@media (max-width: 400px) {
+    header {
+        border: 1px solid purple;
+        width: 100%;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        padding: 5% 0%;
+        border-top: 1px solid black;
+    }
+
+    header .logo {
+        margin: 0 auto;
+        margin: 6% 0% 0%;
+        width: 50%;
+        align-self: center;
+        order: -1;
+    }
+
+    .cta {
+        width: 100%;
+        border: 1px solid orange;
+        flex-direction: column;
+    }
+
+    .cta .cta-text {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10%;
+        border: 1px solid blue;
+    }
+
+    .cta img {
+        width: 100%;
+        border: 1px solid green;
+        align-self: center;
+        justify-self: center;
+    }
+}
