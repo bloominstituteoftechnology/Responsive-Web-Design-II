@@ -173,3 +173,41 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container{
+        width: 95%;
+    }
+    
+    header {
+        width: 100%;
+        align-content: center;
+        justify-content: space-around;
+    }
+    
+    header nav {
+        width: 70%;
+        padding-bottom: 5px;
+    }
+    
+    header .logo {
+        width: 20%;
+        margin-left: 0;
+    }
+    
+    .cta {
+        justify-content: space-between;
+    }
+    
+    .cta .cta-text {
+        margin-right: 0;
+    }
+    
+    .main-content .middle-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}
