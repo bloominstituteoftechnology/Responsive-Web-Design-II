@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -173,3 +174,41 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Footer Styles */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .cta .cta-text{
+        margin: 0 auto;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
