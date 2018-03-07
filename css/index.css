@@ -67,53 +67,6 @@ h1, h2, h3, h4, h5 {
     width: 880px;
     margin: auto;
 }
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-    header {
-        flex-wrap: wrap;
-        height: 100%;
-        justify-content: center;
-    }
-    header nav {
-        flex-direction: column;
-    }
-    .main-content {
-        display: flex;
-        flex-direction: column;
-    }
-    header .logo{
-        width: 100%;
-        flex-direction: column;
-        justify-content: inherit;
-        order: -1;
-    }
-    header nav a {
-        width:100%;
-        display:flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 10px;
-    }
-    .cta {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-content .top-content {
-        display: flex;
-        flex-direction: column;
-    }
-    .main-content .bottom-content {
-        display: flex;
-        flex-direction: column;
-    }
-    .main-content .middle-img {
-        width: 100%;
-    }
-}
 
 
 /* Header Styles */
@@ -220,4 +173,75 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: center;
+    }
+    header nav {
+        flex-direction: column;
+        order: 1;
+        border-top: solid grey 0.2px;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    header .logo{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+    header nav a {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        border-bottom: solid grey 0.2px;
+    }
+    .cta {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+   .cta .cta-text {
+        margin: 0 0 30px 0;
+        padding: 10px;
+        width:50%;
+    }
+    .cta img{
+        width: 100%;
+    }
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .main-content .middle-img {
+        width: 100%;
+        padding: 10px;
+    }
+    .text-content{
+        padding-bottom: 30px;
+    }
+    .contact {
+        padding: 10px;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
 }
