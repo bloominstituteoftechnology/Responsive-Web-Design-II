@@ -271,4 +271,12 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
+
+    .cta .cta-text {
+        font-size: 250%;
+        width: 70%;
+        height: auto;
+        align-self: center;
+        margin: 40px 0 0 0;
+    }
 }
