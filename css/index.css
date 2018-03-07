@@ -208,7 +208,7 @@ footer {
 
 @media (max-width: 400px) {
     .container {
-        max-width: 100%;;
+        max-width: 100%;
     }
     header {
         display: flex;
@@ -246,7 +246,7 @@ footer {
     .main-content {
         border-bottom: 1px solid black;
         border-top: 1px solid black;
-        width: 90%;
+        width: 95%;
         margin-left: 10px;
     }
     .main-content .top-content {
