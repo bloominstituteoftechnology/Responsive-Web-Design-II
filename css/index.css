@@ -216,7 +216,6 @@ footer {
 @media(max-width: 400px) {
     .container {
         width: 100%;
-        background-color: blue;
     }
     header{
         display: flex;
