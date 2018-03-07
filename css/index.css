@@ -198,15 +198,31 @@ footer {
 
 
 @media (max-width: 400px) {
+	.container {
+		width: 100%;
+		justify-content: center;
+	}
 	header {
-		flex-wrap: warp;
-		height: 100%
+		flex-wrap: wrap;
+		height: 100%;
 	}
 
 	header nav {
+		width: 100%;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 20px;
-		width: 400px;
+	}
+
+	header nav a{
+		height: 20px;
+		align-self: stretch;
+		text-align: center;
+	}
+	header .logo {
+		order: -1;
+		align-self: center;
+		margin: 0 auto;
 	}
 }
+
+/* code here */
