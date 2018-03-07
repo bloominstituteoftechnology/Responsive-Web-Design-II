@@ -247,4 +247,16 @@ footer {
 		margin-top: 20px;
 		align-self: center;
 	}
+
+	.main-content .top-content {
+	    flex-direction: column;
+	}
+
+	.main-content .bottom-content {
+	    flex-direction: column;
+	}
+
+	.text-content {
+		margin: 10px 0px;
+	}
 }
