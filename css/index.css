@@ -180,7 +180,6 @@ footer {
     }
     
     header {
-        width: 100%;
         align-content: center;
         justify-content: space-around;
     }
@@ -209,5 +208,81 @@ footer {
 }
 
 @media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
     
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    header nav {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding 0;
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    header nav a {
+        width: 100%;
+        padding: 20px;
+        border-top: 2px solid gray;
+    }
+    
+    header nav a:last-child {
+        border-bottom: 2px solid gray;
+    }
+    
+    header .logo {
+        align-self: auto;
+        width: 50%;
+        margin: 15px;
+        padding 0;
+    }
+    
+    .cta {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px 20px 0;
+    }
+    
+    .cta .cta-text {
+        margin-bottom: 50px;
+    }
+    
+    .cta img {
+        width: 95%;
+        align-self: center;
+    }
+    
+    .main-content {
+        margin: 35px 15px;
+    }
+    
+    .top-content {
+        flex-direction: column;
+    }
+    
+    .top-content .text-content:last-child {
+        margin-top: 35px;
+    }
+    
+    .bottom-content {
+        flex-direction: column;
+    }
+    
+    .bottom-content .text-content:first-child {
+        margin-top: 0;
+    }
+    
+    .bottom-content .text-content {
+        margin-top: 35px;
+    }
+    
+    .contact {
+        margin: 35px 15px;
+    }
 }
