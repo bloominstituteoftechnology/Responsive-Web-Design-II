@@ -175,6 +175,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.container {
+		width: 100%;
+	}
 	header nav{
 		flex-wrap: wrap;
 		height: auto;
@@ -183,9 +186,27 @@ footer {
 	}
 	.logo {
 		align-self: flex-end;
+		flex-wrap: wrap;
+}
+
+.middle-img {
+	width: 90%;
+}
+
 }
 
 
-@media (max-width) {
-	
+
+@media (max-width: 400px) {
+	header {
+		flex-wrap: warp;
+		height: 100%
+	}
+
+	header nav {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+		width: 400px;
+	}
 }
