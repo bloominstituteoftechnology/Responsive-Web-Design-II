@@ -272,9 +272,7 @@ header .logo {
     width: 100%;
     margin: 0 20px;
   }
-  .cta img {
-    width: 50%;
-  }
+  .cta img,
   .cta .cta-text {
     width: 50%;
   }
@@ -291,12 +289,12 @@ header .logo {
     display: flex;
     flex-direction: column;
   }
-  .cta img {
-    width: 100%;
-    margin-top: 50px;
-  }
+  .cta img,
   .cta .cta-text {
     width: 100%;
+  }
+  .cta img {
+    margin-top: 50px;
   }
 }
 
