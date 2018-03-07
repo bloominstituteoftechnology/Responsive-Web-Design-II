@@ -173,3 +173,68 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/*TABLET*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Header Styles */
+    header {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    header nav { 
+        margin: 40px 0 0 15px;
+        width: 60%;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    header .logo {
+        align-self: flex-end;
+       
+    }
+
+    /* Call To Action (CTA) Styles */
+    .cta {
+        display: flex;
+        margin: 72px 15px 0 20px;
+        justify-content: flex-end;
+    }
+
+    /* Main Content Styles */
+    .main-content {
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 75px 20px 35px 20px;
+        padding: 35px 0;
+        font-size: 16px;
+        line-height: 18px;
+     }
+
+     .main-content .middle-img {
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
+     
+    /* Contact Styles */
+    .contact p {
+        margin: 15px 20px;
+    }
+
+    .contact h4 {
+        margin: 15px 20px;
+    }
+}
+
+/*PHONE*/
+
+@media (max-width: 400px) {
+    
+}
