@@ -190,12 +190,20 @@ footer {
 
   /* section 1 - .cta */
 
+  .cta {
+    margin: 72px 30px 0;
+  }
+
+  .cta .cta-text {
+    margin: 0 auto;
+  }
+
   /* section 2 - .main-content */
 
   /* section 3 - .contact */
 
   /* footer */
-  
+
 }
 
 @media (max-width: 400px) {
