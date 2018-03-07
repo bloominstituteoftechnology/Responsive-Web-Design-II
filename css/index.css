@@ -173,3 +173,15 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+/*Beginning of Justin's media code*/
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+
+    header nav {
+        margin: 20px 20px 0 20px;
+    }
+}
