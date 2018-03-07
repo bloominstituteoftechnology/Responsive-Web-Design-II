@@ -175,7 +175,7 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* Tablet baed media query */
+/* Tablet based media query */
 
 @media (max-width: 768px) {
     .container {
