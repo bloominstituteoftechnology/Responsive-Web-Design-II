@@ -184,10 +184,6 @@ footer {
     padding: 0 30px;
   }
 
-  .main-content img {
-    width: 100%;
-  }
-
   /* section 1 - .cta */
 
   .cta {
@@ -199,6 +195,14 @@ footer {
   }
 
   /* section 2 - .main-content */
+
+  .main-content {
+    margin: 75px 30px 35px;
+  }
+
+  .main-content img {
+    width: 100%;
+  }
 
   /* section 3 - .contact */
 
