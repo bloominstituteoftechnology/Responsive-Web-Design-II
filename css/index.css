@@ -173,3 +173,61 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .cta {
+
+    }
+}
+
+@media(max-width: 400px) {
+    header {
+        flex-wrap: wrap;
+        width: 90%;  
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a{
+        width: 90%;
+        border-bottom: 1px solid black;
+        margin: 5px 0px;
+        padding: 5px 0px;
+        text-align: center;
+    }
+    header .logo {
+        align-items: center;
+        order: -6;
+    }
+    .cta {
+        flex-wrap: wrap;
+        flex-direction: center;
+    }
+    .cta-text h1 {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+    }
+    .main-content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .middle-img {
+        width: 90%;
+    }
+    .bottom-content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
