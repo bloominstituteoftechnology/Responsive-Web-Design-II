@@ -259,116 +259,73 @@ footer {
   text-align: center;
   margin: 40px 0 20px;
 }
-
+/* for tablets */
 @media (max-width: 768px) {
+  /* settting the container to 100% of the max width */
   .container {
-    width: 880px;
-    margin: auto;
-    background: brown;
-    padding: 30px;
-  }
-  header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background: white;
-    font-size: 30px;
   }
-
-  header nav {
-    margin-top: 40px;
-    width: 410px;
-
-    font-size: 20px;
-    display: flex;
-  }
-
-  header nav a {
-    justify-content: space-between;
-    text-decoration: none;
-    color: #b0b0b0;
-  }
-
-  header nav a:hover {
-    text-decoration: underline;
-    color: black;
-  }
-
-  header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-  }
-
-  /* Call To Action (CTA) Styles */
-
-  .cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: center;
-  }
-
+  /* centering the tex from cta */
   .cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  /* setting the margin for the main part of the text */
+  .main-content {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* making sure the width of the main img is the same as the main content width */
+  .main-content img {
+    width: 100%;
+  }
+
+  .contact {
+    margin-left: 30px;
+  }
+}
+/* For phones */
+@media (max-width: 400px) {
+  /* puts the header into a column */
+  header {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
   }
+  /* add a box around the header nav also setting it's width to the same as container */
+  header nav {
+    width: 100%;
+    flex-flow: column;
 
-  .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+    border-top: 1px solid grey;
   }
-
-  .cta .cta-text button:hover {
-    background: black;
-    color: white;
-  }
-
-  /* Main Content Styles */
-
-  .main-content {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin: 75px 0 35px 0;
-    padding: 35px 0;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  .main-content .top-content {
+  /* setting the spacing for the a tags */
+  nav a {
     display: flex;
+    align-content: center;
     justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid grey;
+    font-size: 25px;
   }
-
-  .main-content .middle-img {
-    display: flex;
-    margin: 30px auto;
-    margin-right: 40px;
-    /* width: 840px; */
+  /* moves the logo up to the top */
+  header .logo {
+    margin: 0 auto;
+    order: -1;
+  }
+  .cta {
+    flex-flow: column;
+    maargin: 30px auto;
     justify-content: center;
   }
-
-  .main-content .bottom-content {
+  .cta .cta-text {
+    margin-bottom: 30px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
-
-  .main-content .bottom-content p {
-    padding-right: 20px;
-  }
-
-  /* Contact Styles */
-
-  .contact p {
-    margin: 15px 0;
+  .cta img {
+    display: flex;
+    justify-content: center;
   }
 }
