@@ -202,8 +202,11 @@ footer {
 @media (max-width: 400px){
 
     hearder {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        width: 100%;
+   
     }
 
     header nav {
@@ -220,9 +223,10 @@ footer {
     }
 
     header .logo {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 0 0;
         order: -1;
-        margin: 20px 0;
-        align-self: center;
     }
 
     .cta {
