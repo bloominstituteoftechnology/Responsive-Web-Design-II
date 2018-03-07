@@ -178,13 +178,9 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        display:flex;
         width: 100%;
-        flex-wrap: wrap;
-        align-items: center;
         padding-left: 3%;
         padding-right: 3%;
-        height:1500px;
     }
     header {
         width: 100%;
@@ -204,20 +200,41 @@ footer {
    
     .main-content, .bottom-content, .top-content {
         width: 100%;
-        align-items: center;
     }
 
     .main-content img {
         width: 100%
     }
-
-    .contact {
-        min-height: 180px;
+}
+/*
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    header {
+        width: 100%;
     }
 
-    footer {
-        align-content: flex-end;
-        margin:0;
-        border: solid red 2px;
+    header nav{
+        width: 100%;
+    }
+
+    .cta {
+        width:100%;
+    }
+
+    .cta .cta-text {
+        margin: 20px;
+    }
+   
+    .main-content, .bottom-content, .top-content {
+        width: 100%;
+    }
+
+    .main-content img {
+        width: 100%
     }
 }
+*/
