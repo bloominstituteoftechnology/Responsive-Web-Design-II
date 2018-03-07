@@ -243,6 +243,20 @@ footer {
   }
 
   /* section 1 - .cta */
+  .cta {
+    flex-flow: column;
+    margin: 30px auto;
+    justify-content: center;
+  }
+
+  .cta .cta-text {
+    margin-bottom: 50px;
+  }
+
+  .cta img {
+    margin: 0 auto;
+    width: 75%;
+  }
 
   /* section 2 - .main-content */
 
