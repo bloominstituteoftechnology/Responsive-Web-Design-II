@@ -191,39 +191,60 @@ footer {
     }
 
     header .logo {
-    align-self: flex-end;
-    margin: 5% 0 0 15%;
+    margin: 1% 0 0 15%;
 }
 
     .cta {
-    display: flex;
     margin-top: 8%;
     justify-content: center;
 }
 
 .cta .cta-text {
     font-size: 4rem;
-    text-align: center;
-    letter-spacing: 4px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
     align-items: center;
-    margin: 0 42px 0 0;
+    margin: 0 5% 0 0;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
     font-size: 1rem;
-    background: white;
-    width: 44%;
-    height: 32px;
+    width: 54%;
     margin-top: 2%;
-    cursor: pointer;
+}
+
+
+.main-content {
+   margin: 12% 1% 6% 1%;
+   padding: 2% 0;
+   font-size: 0.9rem;
+   line-height: 16px;
+}
+
+
+.main-content .middle-img {
+    margin: 4% auto;
+}
+
+
+.main-content .bottom-content p {
+    padding-right: 1%;
 }
 
 .middle-img {
     max-width: 100%;
 }
 
+.contact {
+    margin-left: 1%;
+}
+
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
 }
