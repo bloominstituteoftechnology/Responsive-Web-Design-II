@@ -175,7 +175,7 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* Tablet view 768px media */
+/* Tablet baed media query */
 
 @media (max-width: 768px) {
     .container {
@@ -183,14 +183,11 @@ footer {
         margin: 0% 2% 0% 2%;
     }
 
-    header {
-        justify-content: space-around;
-    }
-
     header nav {
         margin: 40px 1% 0px;
     }
 
+    /* readjusting sizes for tablet screen*/
     .main-content{
         width: 100%;
     }
@@ -200,17 +197,21 @@ footer {
     }
 }
 
+/*  Mobile based media query*/
 @media (max-width: 400px) {
+    /* listed logo vs nav for mobile with readjusted screen*/
     header {
         width: 100%;
         flex-direction: column;
         border-bottom: 1px solid black;
     }
 
+    /* listed navigation bar for mobile with 1/line */
     header nav {
         width: 100%;
         flex-direction: column;
     }
+
 
     header nav a {
         width: 100%;
@@ -228,6 +229,7 @@ footer {
         order: -1;
     }
 
+    /* Listed Call to Action with readjusted screen size*/
     .cta {
         width: 100%;
         flex-direction: column;
@@ -243,7 +245,7 @@ footer {
         width: 80%;
         align-self: center;
     }
-
+    
     .main-content .top-content, .bottom-content{
         flex-direction: column;
     }
