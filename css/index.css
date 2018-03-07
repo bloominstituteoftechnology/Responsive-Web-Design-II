@@ -173,3 +173,123 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/*MEDIA QUERIES BELOW THIS LINE////////////////////////////////////////////////////////////////////*/
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding-left: 2%;
+    }
+
+    .cta .cta-text{
+        font-size: 60px;
+    }
+
+    .top-content .text-content {
+        margin: 10px;
+    }
+
+    .bottom-content {
+        margin: 10px;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .contact {
+        margin-left: 10px;
+    }
+}
+/*END 768PX MEDIA QUERY HERE*/
+
+
+/* NOTE:
+    Browser didn't allow me to go to 400px width, so tried with 450px 
+    then set it to 400px when finished so it may look slighlty off
+*/
+@media(max-width: 400px) {
+    .container {
+        width: 100%;
+        background-color: blue;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav {
+        width: 400px;
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        border: 5px solid black;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+        width: 100vw;
+        max-width: 100%;
+        text-align: center;
+        padding: 10px 0 10px 0;
+        font-size: 25px;
+
+    }
+
+    #border-bottom {
+        border-bottom: 5px solid black;
+    }
+    header .logo {
+        display: block;
+        margin: 0 ;
+        align-self: center;
+        order: -1;
+        height: 45px;
+
+    }
+
+    section.cta {
+        display: block;
+        max-width: 100%;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta img {
+        margin-left: 3vw;
+        margin-top: 30px;
+    }
+
+    .main-content .top-content {
+        display: block;
+    }
+
+    .main-content .bottom-content {
+        display: block;
+    }
+
+    .top-content .text-content {
+        padding-bottom: 30px;
+    }
+
+    .bottom-content .text-content {
+        padding-bottom: 30px;
+    }
+
+}
+
+/*END 400PX MEDIA QUERY*/
