@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -172,4 +173,108 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    html, body {
+    overflow-x: hidden;
+    }
+
+    body {
+    position: relative;
+    }
+
+    header {
+        display: inline-flex;
+        flex-flow: column wrap;
+        align-items: center;
+        
+    }
+
+    header nav {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 300px
+
+    }
+
+    header nav a {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .logo {
+        order: -1;
+        align-content: center;
+        float: left;
+    }
+
+    .cta {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+
+    }
+
+    .cta-text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        padding-bottom: 30px;
+}
+
+    .cta img {
+        width: 80%;
+        display: flex;
+        align-self: center;
+    }
+
+    .main-content {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        padding-top: 20px;
+    }
+
+    .middle-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact {
+        margin-left: 20px;
+    }
+
+
 }
