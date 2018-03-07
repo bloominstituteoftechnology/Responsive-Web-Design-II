@@ -173,3 +173,54 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+    header nav {
+        width: 450px;
+        justify-content: space-around;
+    }
+    header .logo {
+        margin: 28px 0 0 76px;
+    }
+    .cta {
+        justify-content: center;
+    }
+    .cta .cta-text {
+        font-size: 62px;
+    }
+    .main-content {
+        padding: 0 19px;
+        width: 100%;
+     }
+     .main-content .middle-img {
+        width: 100%;
+    }
+    .contact {
+        padding: 35px 19px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 400px;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    header nav {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        align-items: center;
+    }
+    header .logo {
+        order: -1;
+        margin-left: 120px   /* see if this can be adjusted some other way*/
+    }
+}
