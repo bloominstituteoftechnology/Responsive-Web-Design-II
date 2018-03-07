@@ -18,6 +18,8 @@ Remember that an adaptive layout updates at breakpoints only.  Don't worry about
 * Review each design file and adjust your styles at each breakpoint. **Hint: Change your container class to width: 100% at the 768px breakpoint.**
 * No horizontal scroll bars are acceptable at the exact breakpoint.  At 400px and 768px you should only see a vertical scrollbar.  Everything else is fine to have a horizontal scroll bar as this is not fully responsive.
 
+* Once you have completed these tasks, reach out to your Project Manager for approval before moving into the stretch goal.
+
 * *Stretch Goal:* Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.
 
 
