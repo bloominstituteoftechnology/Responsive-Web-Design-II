@@ -174,28 +174,50 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* Responsive Design Changes */
+/* Responsive Design Changes per Cruise */
 
 @media (max-width: 768px) {
-    container {
+    .container {
+        display:flex;
         width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        height:1500px;
     }
     header {
-        flex-wrap: wrap;
-        height: 100%;
+        width: 100%;
     }
 
     header nav{
         width: 100%;
-        flex-direction: column;
-        align-items: center;
     }
 
-    header .logo {
-        order: -1;
+    .cta {
+        width:100%;
+    }
+
+    .cta .cta-text {
+        margin: 20px;
     }
    
     .main-content, .bottom-content, .top-content {
         width: 100%;
+        align-items: center;
+    }
+
+    .main-content img {
+        width: 100%
+    }
+
+    .contact {
+        min-height: 180px;
+    }
+
+    footer {
+        align-content: flex-end;
+        margin:0;
+        border: solid red 2px;
     }
 }
