@@ -177,7 +177,7 @@ footer {
 /*########################################################  TABLET #####################################################*/
 @media (max-width: 768px) {
     .container{
-        max-width: 768px;
+        max-width: 100%;
     }
     header nav {
         width: 450px;
@@ -208,7 +208,7 @@ footer {
 
 @media (max-width: 400px) {
     .container {
-        max-width: 400px;
+        max-width: 100%;;
     }
     header {
         display: flex;
