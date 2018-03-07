@@ -173,3 +173,21 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+
+@media(max-width:1024px){
+
+body {
+    line-height: 1;
+    background: black;
+}
+
+
+   
+.container {
+    width: 1024px;
+    height: 1536;
+    margin: auto;
+    background: white;
+}
