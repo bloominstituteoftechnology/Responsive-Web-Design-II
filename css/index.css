@@ -196,6 +196,7 @@ header .logo {
 @media (max-width: 768px) {
   .container {
     width: 100%;
+    margin: 0 20px;
   }
 
   header nav {
@@ -205,6 +206,31 @@ header .logo {
 
 /* Mobile Header */
 @media (max-width: 400px) {
+  .container {
+    width: 100%;
+    margin: 0 20px;
+  }
+  header {
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+
+  header nav {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: center;
+    border: solid #808080 1px;
+  }
+  header img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* Call To Action (cta) Styles */
