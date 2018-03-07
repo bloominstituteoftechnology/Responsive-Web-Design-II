@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    border: 1px solid blue;
 }
 
 /* Header Styles */
@@ -173,3 +174,68 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid red;
+    }
+
+    header {
+        flex-wrap: nowrap; 
+        height: 100%;
+        border: 1px solid red;
+    } 
+    
+    header nav {
+        width: 100%;
+        align-items: center;
+        border: 1px solid blue;
+    }
+    
+    header .logo {
+        border: 1px solid green;
+    }
+
+    .cta {
+        display: flex;
+        margin-top: 72px;
+        border: 1px solid red;
+    }
+    
+    .cta .cta-text {
+        font-size: 72px;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        border: 1px solid purple;
+    }
+    
+    .cta .cta-text button {
+        border: 1px double black;
+        font-size: 16px;
+        background: white;
+        width: 170px;
+        height: 32px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .cta img {
+        display: flex;
+        margin-left: 0 auto;
+        width: 100%;
+        border: 1px solid green;
+    }
+
+    .main-content .middle-img {
+        display: flex;
+        margin: 30px auto;
+        width: 100%;
+    }
+}
+  
