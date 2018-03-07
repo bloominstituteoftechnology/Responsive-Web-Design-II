@@ -1,11 +1,10 @@
 # Responsive-Web-Design I & II
 
-We will be using the same codebase for Responsive Web Design I and II.  You have been provided design mock ups for desktop, tablet, and mobile devices.  
+We will be using the same codebase for Responsive Web Design I and II modules.  You have been provided design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder.  
 
 ## Project 1: Adaptive Layout
 
-For this project you will build an adaptive website that has max-width breakpoints at 400px and 768px based on the designs provided to you in this repository located in the `design-.  The initial styles in the project are fixed and 
-
+For project 1 you will build an adaptive website that has max-width breakpoints at 400px and 768px based on the designs provided to you in this repository.  You have been provided desktop styles so you can focus on your media queries.
 
 *Concepts required to complete the task:*
 * How to use min and max-width
