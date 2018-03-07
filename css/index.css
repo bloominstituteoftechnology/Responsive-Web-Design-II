@@ -80,6 +80,7 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+  border: 2px solid red
 }
 
 header nav a {
@@ -172,4 +173,119 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+@media (max-width: 768px) {
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 305px;
+    justify-content: space-between;
+    display: flex;
+  border: 2px solid red
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    align-self: flex-end;
+    margin: 14px 0 0 45px;
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 36px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 41px 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 8px;
+    background: white;
+    width: 85px;
+    height: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 37px 0 17px 0;
+   padding: 35px 0;
+   font-size: 8px;
+   line-height: 9px;
+}
+
+.main-content .top-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 15px auto;
+}
+
+.main-content .bottom-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content .bottom-content p {
+    padding-right: 10px;
+}
+
+/* Contact Styles */
+
+.contact p {
+    margin: 7px 0;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
 }
