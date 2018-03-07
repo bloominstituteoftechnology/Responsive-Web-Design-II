@@ -173,3 +173,21 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* At 768px And Below */
+
+@media (max-width: 768px) { 
+    .container {
+        width: 100%;
+    }
+
+    .cta {
+        padding: 0 30px;
+}
+
+    .main-content .middle-img {
+        margin: 30px;
+        width: 100%;
+  }
+       
+}
