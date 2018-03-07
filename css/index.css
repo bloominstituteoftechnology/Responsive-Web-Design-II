@@ -211,17 +211,15 @@ footer {
         font-size: larger; 
         border-bottom: black solid thin; 
         }
- 
+    a:first-child {
+            border-top: black solid thin; 
+        }
     header .logo {
-      	height: 100%; 
+        display: flex;
         width: 100%; 
         order: -1; 
-        diplay: flex; 
         align-items: center;
-        padding: 45px;
-        flex-shrink: 10; 
-        padding-bottom: 50px; 
-        border-bottom: black thin solid; 
+        padding: 35px; 
       }
     .cta {
         display: flex; 
