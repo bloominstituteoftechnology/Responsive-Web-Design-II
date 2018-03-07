@@ -185,7 +185,6 @@ footer {
   }
 
   /* section 1 - .cta */
-
   .cta {
     margin: 72px 30px 0;
   }
@@ -195,7 +194,6 @@ footer {
   }
 
   /* section 2 - .main-content */
-
   .main-content {
     margin: 75px 30px 35px;
   }
@@ -205,15 +203,50 @@ footer {
   }
 
   /* section 3 - .contact */
-
   .contact {
     margin-left: 30px;
   }
-
-  /* footer */
-  /* no styling needed*/
 }
 
 @media (max-width: 400px) {
+  .containter {
+    
+  }
+  
+  /* header */
+  header {
+    flex-flow: column;
+    padding: 0;
+  }
 
+  header nav {
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    margin: 20px 0;
+    border-top: 1px solid grey;
+  }
+
+  nav a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  header .logo {
+    margin: 20px auto 0;
+    order: -1;
+  }
+
+  /* section 1 - .cta */
+
+  /* section 2 - .main-content */
+
+  /* section 3 - .contact */
+
+  /* footer */
 }
