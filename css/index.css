@@ -234,5 +234,17 @@ footer {
 		margin: 0 auto;
   }
 
+	.cta {
+    flex-direction: column;
+	}
 
+	.cta .cta-text {
+    align-self: center;
+    margin: 0 0;
+	}
+
+	.cta img {
+		margin-top: 20px;
+		align-self: center;
+	}
 }
