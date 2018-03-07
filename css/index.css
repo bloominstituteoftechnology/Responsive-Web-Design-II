@@ -179,7 +179,7 @@ footer {
     Browser didn't allow me to go to 400px width, so tried with 450px 
     then set it to 400px when finished so it may look slighlty off
 */
-@media(min-width: 400px) and (max-width: 756px) {
+@media(min-width: 400px) and (max-width: 768px) {
     .container {
         width: 100%;
     }
@@ -270,12 +270,25 @@ footer {
 
     header {
         padding-left: 2%;
+        width: 100%;
+    }
+
+    header .logo {
+        margin-left: 10%;
+    }
+    nav {
+        margin-left: 10%;
+    }
+
+    .cta {
+        justify-content: center;
     }
 
     .cta .cta-text{
         font-size: 60px;
     }
 
+    }
     .top-content .text-content {
         margin: 10px;
     }
