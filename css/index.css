@@ -183,8 +183,16 @@ footer {
 @media (max-width: 768px) {
 
     .container {
-        padding: 10px 20px;
+        padding: 0 20px;
         width: 100%;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    header .logo {
+        margin-left: 20;
     }
 
     .cta .cta-text{
