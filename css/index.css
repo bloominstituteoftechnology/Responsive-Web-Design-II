@@ -254,6 +254,7 @@ footer {
         justify-content: center;
         text-align: center;
         font-size: 24px;
+        margin-top: 5px;
     }
 
     header nav a {
@@ -264,7 +265,8 @@ footer {
     }
 
     header .logo {
-        align-self: flex-start;
+        align-self: flex-end;
+        order: -1;
     }
 
      /* Call To Action (CTA) Styles */
