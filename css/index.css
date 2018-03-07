@@ -236,6 +236,26 @@ footer {
     .cta img {
         width: 90%;
     }
+
+    .main-content {
+        padding: 0 5px;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .text-content p {
+        margin-bottom: 30px;
+    }
+
+
 }
 
 
