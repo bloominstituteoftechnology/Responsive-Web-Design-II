@@ -129,6 +129,7 @@ header .logo {
 .cta .cta-text button:hover {
     background: black;
     color: white;
+    border-radius: 5px;
 }
 
 /* Main Content Styles */
@@ -172,4 +173,29 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Tablet view 768px media */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 0% 2% 0% 2%;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    header nav {
+        margin: 40px 1% 0px;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .main-content .middle-img{
+        width: 100%;
+    }
 }
