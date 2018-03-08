@@ -63,22 +63,32 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 .container {
-    width: 880px;
+    width: 1250px;
+    width: 100%;    
     margin: auto;
+    /* border: 2px solid blue; */
+
+
 }
 header {
     width: 100%;
     display: flex;
+    /* border: 1px solid red; */
+
 }
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 91px;
+    /* border: 1px solid yellow; */
+
 }
 header nav {
     margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
+    /* border: 1px solid blueviolet; */
+    
 }
 .main-content .middle-img {
     display: block;
@@ -144,56 +154,66 @@ footer {
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
 .container {
-    width: 1100px;
+    max-width: 1024px;
+    width: 100%;
     margin: auto;
+    border: 2px solid blue;
 }
 header {
     width: 98%;
     display: flex;
     justify-content: center;
+    border: 2px solid red;
+
+
 }
 .main-content .middle-img {
     display: inline-flex;
     width: 88%;
-    margin: 30px auto;
+    margin: 3% auto;
     justify-content: center;
-    margin-left: 58px;
+    margin-left: 6%;
+    border: 2px solid yellow;
+
 }
 .cta {
     display: inline-flex;
-    width: 1100px;
+    width: 100%;
     justify-content: space-around;
-    padding-right: 115px;
+    padding-right: 11%;
+    border: 2px solid yellow;
+
 }
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 5rem;/*72px; */
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.5%;
     display: flex;
     justify-content: center;
-
     align-items: center;
-    margin: 0px auto;
+    margin: 0% auto;
+    border: 4px solid purple;
 }
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem; /*16px; */
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 2px;
-    margin-bottom: 35px;
+    width: 10.63rem; /*170px; */
+    height: 2rem; /*32px; */
+    margin-top: .2% ;/*2px; */
+    margin-bottom: 3.4% ;/*35px; */
     cursor: pointer;
 }
 .main-content {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    margin: 75px 0 35px 0;
-    padding: 35px 0;
-    font-size: 16px;
-    line-height: 18px;
+    margin: 7.3% 0% 3.4% 0%;/*75px 0 35px 0;*/
+    padding: 3.4%;/*35px 0;*/
+    font-size: 1rem;/*16px;*/
+    line-height: 1.125rem;/*18px;*/
+    border: 2px solid red;
 
  }
 
@@ -203,6 +223,8 @@ header {
      align-items: center;
      margin: auto;
      width: 85%;
+     border: 2px solid greenyellow;
+
 
  }
  .main-content .bottom-content {
@@ -210,23 +232,33 @@ header {
     justify-content: space-around;
     margin: auto;
     width: 85%;
+    border: 2px solid orange;
+
 }
 .main-content .top-content p {
-    margin-bottom: 25px;
+    margin-bottom: 2.4%;/*25px;*/
+    border: 2px solid blue;
+
 
 }
 .main-content .bottom-content p {
-    margin-bottom: 25px;
+    margin-bottom: 2.4% ;/*25px; */
+    border: 2px solid yellow;
+
 }
 .contact p {
-    margin: 15px 0;
+    margin: 1rem 0rem;
+    border: 4px solid green;
+
 }
 .contact {
-    margin-left: 80px;
+    margin-left: 5rem;
+    border: 2px solid red;
+
 }
 footer {
     text-align: center;
-    margin: 60px 0 20px;
+    margin: 3.75rem 0rem 1.25rem; /*60px 0 20px; */
 }
 
 
@@ -235,66 +267,77 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
+        /* max-height: 1365px; */
+        width: 100%;
+        /* height: 100%; */
         margin: auto;
+        border: 2px solid red;
+
 
     }
     header {
         width: 98%;
         display: flex;
         justify-content: space-around;
+        border: 2px solid yellow;
     }
     header .logo {
         align-self: flex-end;
-        margin: 24.4px 0 0 74.42px;
+        margin: 1.53rem 0rem 0rem 4.65rem;/*24.4px 0 0 74.42px; */
+        border: 2px solid blue;
     }
     header nav {
-        margin-top: 34.9px;
-        width: 450px;
+        margin-top: 2.19rem;/* 34.9px; */
+        width: 59%;/*450px; */
         justify-content: space-between;
         display: flex;
+        border: 2px solid black;
     }
     .main-content .middle-img {
         display: inline-flex;
         width: 96%;
-        margin: 30px auto;
-        margin-left: 15px;
+        margin: 1.875rem auto;/*30px auto; */
+        margin-left: .94rem;/*15px; */
+        border: 2px solid red;
     }
     .cta {
         display: inline-flex;
-        width: 768px;
-
-
+        width: 100%;
         justify-content: space-around;
-        padding-right: 50px;
+        padding-right: 3.125rem;
+        border: 2px solid yellow;
     }
     .cta .cta-text {
-        font-size: 72px;
+        font-size: 4rem;/*72px; */
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: .313rem;
         display: flex;
         justify-content: center;
 
         align-items: center;
-        margin: 0px auto;
+        margin: 0rem auto;
+        border: 2px solid red;
     }
     .cta .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1rem;
         background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 2px;
-        margin-bottom: 35px;
+        width: 30% ;/*170px; */
+        height: 2.8rem ;/*32px;*/
+        margin-top: .3;/*2px; */
+        margin-bottom: 4.6%;/*35px; */
         cursor: pointer;
+
     }
     .main-content {
         border-top: 2px solid black;
         border-bottom: 2px solid black;
-        margin: 75px 0 35px 0;
-        padding: 35px 0;
-        font-size: 16px;
-        line-height: 18px;
+        margin: 9.7% 0% 4.6% 0% ;/*75px 0 35px 0; */
+        padding: 4.6% 0%; /*35px 0; */
+        font-size: 1rem;/*16px; */
+        line-height: 1.125rem; /*18px; */
+        border: 2px solid red;
 
      }
 
@@ -304,6 +347,7 @@ footer {
          align-items: center;
          margin: auto;
          width: 96%;
+         border: 2px solid red;
 
      }
      .main-content .bottom-content {
@@ -311,31 +355,38 @@ footer {
         justify-content: space-around;
         margin: auto;
         width: 96%;
+        border: 2px solid red;
     }
     .main-content .top-content p {
-        margin-bottom: 25px;
+        margin-bottom: 3.3%; /*25px; */
+        border: 2px solid red;
 
     }
     .main-content .bottom-content p {
-        margin-bottom: 25px;
+        margin-bottom: 3.3%;  /*25px; */
+        border: 2px solid red;
     }
     .contact p {
-        margin: 15px 0;
+        margin: 2.3% 0%;/*15px 0; */
     }
     .contact {
-        margin-left: 25px;
+        margin-left: 2.3% ;/*25px; */
+        border: 2px solid red;
     }
     footer {
         text-align: center;
-        margin: 45px 0 20px;
+        margin: 6% 0%  2.6% ;/*45px 0 20px; */
+        border: 2px solid blue;
     }
 
 }
 
 @media (max-width: 400px) {
     .container {
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
         margin: auto;
+        border: 2px solid blue;
     }
     header {
         width: 100%;
@@ -345,16 +396,20 @@ footer {
         flex-direction: column;
         margin: auto;
         margin-bottom: 45px;
+        border: 2px solid blue;
     }
     header .logo {
-        width: 200px;
-        margin: 10px auto;
+        width: 50%;
+        /* margin: 10px auto; */
+        margin: 2.5% auto;
         order: -1;
+        border: 2px solid blue;
 
     }
     header nav {
-        margin-top: 18px;
-        width: 400px;
+        /* margin-top: 18px; */
+        margin-top: 4.5%;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         display: flex;
@@ -363,19 +418,23 @@ footer {
         margin: auto;
         border-top: 1px solid grey;
 
-        margin-right: 5px;
+        /* margin-right: 5px; */
+        margin-right: 1.3%;
+        border: 2px solid blue;
 
     }
     header nav a {
         text-decoration: none;
         display: flex;
         color: #b0b0b0;
-        padding: 20px;
-        width: 400px;
+        /* padding: 20px; */
+        padding: 5%;
+        width: 100%;
         align-items: center;
         justify-content: center;
 
         border-bottom: 1px solid grey;
+        border: 2px solid blue;
 
     }
     .main-content .middle-img {
@@ -384,43 +443,59 @@ footer {
         justify-content: center;
         align-items: center;
         margin-left: 12px;
+        border: 2px solid blue;
     }
     .cta {
         display: flex;
-        width: 400px;
-        margin-top: 12px;
-        padding-left: 38px;
-        margin-bottom: 0px;
+        width: 100%;
+        margin-top: 3%;
+        padding-left: 9.5%;
+        margin-bottom: 0%;
         justify-content: center;
         flex-wrap: wrap;
+        border: 2px solid blue;
     }
     .cta .cta-text {
-        font-size: 72px;
+        /* font-size: 72px; */
+        font-size: 4rem;
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: .313rem;
+        /* letter-spacing: 5px; */
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
-        margin: 0px auto;
+        margin: 0% auto;
+        border: 2px solid blue;
     }
     .cta .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        /* font-size: 16px; */
+        font-size: 1rem;
         background: white;
-        width: 170px;
-        height: 32px;
-        margin-top: 2px;
-        margin-bottom: 35px;
+        width: 42.5%;
+        /* width: 170px; */
+        height: 8%;
+        /* height: 32px; */
+        /* margin-top: 2px; */
+        margin-top: .5%
+        /* margin-bottom: 35px; */
+        margin-bottom: 8.8%;
         cursor: pointer;
+        border: 2px solid blue;
     }
     .main-content {
         border-top: 2px solid black;
         border-bottom: 2px solid black;
-        margin: 75px 0 35px 0;
-        padding: 35px 0;
-        font-size: 16px;
+        margin: 18.8% 0 8.8% 0;
+        /* margin: 75px 0 35px 0; */
+        padding: 8.8% 0%;
+        /* padding: 35px 0; */
+        font-size: 1rem;
+        /* font-size: 16px; */
+        line-height: 1.125rem;
         line-height: 18px;
+        border: 2px solid blue;
 
      }
 
@@ -431,6 +506,7 @@ footer {
          flex-wrap: wrap;
          margin: auto;
          width: 90%;
+         border: 2px solid blue;
 
      }
      .main-content .bottom-content {
@@ -439,24 +515,36 @@ footer {
         flex-wrap: wrap;
         margin: auto;
         width: 91%;
+        border: 2px solid blue;
     }
     .main-content .top-content p {
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
+        margin-bottom: 6.25%;
+        border: 2px solid blue;
 
     }
     .main-content .bottom-content p {
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
+        margin-bottom: 6.25%;
+        border: 2px solid blue;
 
     }
     .contact p {
-        margin: 15px 0;
+
+        /* margin: 15px 0; */
+        margin: 3.75%; 
+        border: 2px solid blue;
     }
     .contact {
-        margin-left: 20px;
+        /* margin-left: 20px; */
+        margin-left: 5%;
+        border: 2px solid blue;
     }
     footer {
         text-align: center;
-        margin: 45px 0 20px;
+        margin: 11% 0%  5% 
+        /* margin: 45px 0 20px; */
+        border: 2px solid blue;
     }
 
 
