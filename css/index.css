@@ -172,4 +172,90 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+
+}
+@media (max-width:768px){
+    header{
+        width:500px;
+        
+        
+    }
+    header a{
+        margin-left:30px;
+    }
+    header .logo {
+        align-self: flex-start;
+        margin:25px 0 0 25px;
+    }
+
+    .cta{
+        width: 768px;
+        justify-content:center;
+        padding-right:20px;
+    }
+    .cta .cta-text{
+        font-size:55px;
+    }
+    .cta img{
+        height: 300px;
+    }
+    .container{
+        width:90%;
+        overflow-x: hidden;
+    }
+    .middle-img{
+        width: 675px;;
+    }
+}
+
+@media (max-width:400px){
+    header{
+        width:400px;
+        flex-direction:column-reverse;
+        align-items: flex-end;
+        margin-left: 60px;
+        
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a{
+        margin-top:15px;
+       height: 40px;
+        width: 400px;
+        border-bottom: 1px solid black;
+        align-self: center;
+        text-align: center;
+        vertical-align: center;
+    }
+    .cta .cta-text{
+        font-size: 50px;
+
+    }
+    .cta{
+        width:400px;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .cta img{
+        width: 300px;
+    }
+    .cta button{
+        margin-bottom: 30px;
+    }
+    .bottom-content{
+        flex-direction: column;
+    }
+    .top-content{
+        flex-direction: column;
+   
+    }
+    .text-content{
+        margin-top: 40px;
+    }
+
+    .container{
+        overflow-x: hidden;
+    }
 }
