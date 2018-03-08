@@ -236,6 +236,39 @@ footer {
     }
 }
 
+
+/*##################################### EXTRA MEDIA QUERIES ###################################*/
+@media (max-width: 650px) and (min-width: 401px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header nav {
+        width: 100%;
+    }
+
+    header nav a{
+        font-size: 1.5rem;
+    }
+
+    header .logo {
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+        order: -1;
+        
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text button {
+        height: auto;
+    }
+}
+
 /*########################################################  PHONE  #####################################################*/
 
 @media (max-width: 400px) {
@@ -318,34 +351,3 @@ footer {
     }
 }
 
-/*##################################### EXTRA MEDIA QUERIES ###################################*/
-@media (max-width: 650px) and (min-width: 401px) {
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    header nav {
-        width: 100%;
-    }
-
-    header nav a{
-        font-size: 1.5rem;
-    }
-
-    header .logo {
-        max-width: 100%;
-        height: auto;
-        align-self: center;
-        order: -1;
-        
-    }
-
-    .cta img {
-        display: none;
-    }
-
-    .cta .cta-text button {
-        height: auto;
-    }
-}
