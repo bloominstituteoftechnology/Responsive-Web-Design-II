@@ -97,6 +97,46 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
+/* At 768px and below do the following: */
+@media (max-width: 768px) {
+    header nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    header .logo {
+        margin: 28px 140px 0 0;
+    }
+}
+
+/* At 400px and below do the following: */
+@media (max-width: 400px) {
+    header {
+        width: 400px;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    
+    header nav {
+        border-top: 2px solid gray;
+        flex-direction: column;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    header nav a {
+        display: flex;
+        padding: 20px 0;
+        border-bottom: 2px solid gray;
+        justify-content: space-evenly;
+    }
+    
+    header .logo {
+        align-self: center;
+        margin: 28px 0 10px 0;
+    }
+}
+
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -131,6 +171,40 @@ header .logo {
     color: white;
 }
 
+/* At 768px and below do the following: */
+@media (max-width: 768px) {
+    .cta {
+        justify-content: space-evenly;
+        margin: 72px 120px 0 0;
+    }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
+}
+
+/* At 400px and below do the following: */
+@media (max-width: 400px) {
+    .cta {
+        flex-wrap: wrap;
+        margin-right: 400px;
+        margin-top: 20px;
+    }
+    
+    .cta .cta-text {
+        margin-right: 82px;
+    }
+    
+    .cta .cta-text button {
+        border: 1px double black;
+        margin: 10px 0 40px 0;
+    }
+
+    .cta img {
+        max-width: 80%;
+        margin-right: 80px;
+    }
+}
 /* Main Content Styles */
 
 .main-content {
@@ -161,15 +235,80 @@ header .logo {
     padding-right: 20px;
 }
 
+/* At 768px and below do the following: */
+@media (max-width: 768px) {
+    .main-content {
+        margin: 75px 130px 75px 20px;
+     }
+     
+     .main-content .top-content {
+         justify-content: space-evenly;
+     }
+     
+     .main-content .middle-img {
+         width: 100%;
+     }
+}
+
+/* At 400px and below do the following: */
+@media (max-width: 400px) {
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 20px 500px 0 15px;
+        padding: 10px 0;
+     }
+     
+     .main-content .top-content {
+         height: 250px;
+         flex-direction: column;
+     }
+     
+     .main-content .middle-img {
+        margin: 10px 0 20px 0;
+    }
+     .main-content .bottom-content {
+        flex-wrap: wrap;
+        height: 400px;
+     }
+}
 /* Contact Styles */
 
 .contact p {
     margin: 15px 0;
 }
 
+/* At 768px and below do the following: */
+@media (max-width: 768px) {
+    .contact {
+        margin-left: 20px;
+    }
+}
+
+/* At 400px and below do the following: */
+@media (max-width: 400px) {
+    .contact {
+        margin-top: 30px;
+    }
+}
 /* Footer Styles */
 
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* At 768px and below do the following: */
+@media (max-width: 768px) {
+    footer {
+    margin-right: 100px;    
+    }
+}
+
+/* At 400px and below do the following: */
+@media (max-width: 400px) {
+    footer {
+        margin-right: 490px;
+    }
 }
