@@ -157,19 +157,25 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 3.41% auto;
+    margin: 5.41% auto 4%;
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+    margin-block-end: 2%;
 }
 
 .main-content .bottom-content p {
     padding-right: 2.27%;
+    margin-bottom: 7%;
 }
 
 /* Contact Styles */
+
+.contact {
+    margin-top: 5%;
+}
 
 .contact p {
     margin: 1.70% 0;
@@ -178,13 +184,14 @@ header .logo {
 
 .contact h4 {
     font-size: 1.6rem;
+    margin-bottom: 2.15%;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 4.54% 0 2.27%;
+    margin: 6.54% 0 2.27%;
     font-size: 1.6rem;
 }
 
