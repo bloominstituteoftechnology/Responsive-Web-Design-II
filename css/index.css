@@ -65,8 +65,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 /* Header Styles */
@@ -151,6 +154,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -175,8 +179,9 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* Footer Styles */
+/* Media Queries */
 
+/* tablet size */
 @media (max-width: 768px) {
 
     .container {
@@ -189,7 +194,7 @@ footer {
     }
 
     header .logo {
-        margin-left: 20;
+        margin-left: 20px;
     }
 
     .cta .cta-text{
@@ -204,6 +209,7 @@ footer {
 
 }
 
+/* phone size */
 @media (max-width: 400px) {
 
     .container {
