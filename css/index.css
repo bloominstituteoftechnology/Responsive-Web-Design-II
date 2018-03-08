@@ -64,7 +64,7 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 0.1rem;
+    /*letter-spacing: 0.1rem;*/
     margin-bottom: 1rem;
 }
 
@@ -122,15 +122,16 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 8.2rem 0 0;
+    padding-top: 1.0rem;
 }
 
 .cta .cta-text button {
     border: .1rem double black;
     font-size: 1.6rem;
     background: white;
-    width: 58%;
-    height: 32px;
-    margin-top: 1rem;
+    width: 53%;
+    height: 3.5rem;
+    margin-top: 2rem;
     cursor: pointer;
 }
 
