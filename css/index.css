@@ -216,4 +216,65 @@ footer {
     .container {
         width: 100%;
     }
+
+    header {
+        flex-direction: column-reverse;        ;
+    }
+
+    header .logo {        
+        align-self: center;
+        margin: 20px 0 10px 0;
+    }
+
+    header nav {
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0 0 0;
+        width: 100%;             
+    }
+
+    nav a {        
+        border-top: 1px #b0b0b0 solid;
+        border-bottom: 1px #b0b0b0 solid;             
+    }
+
+    .cta {
+        flex-direction: column;        
+        align-items: center;
+        margin: 20px 0 0 0;        
+    }
+
+    .cta .cta-text {
+        align-self: center;
+        margin: 0 0 0 0;
+    }
+
+    .cta img {
+        max-width: 100%;
+        margin: 40px 0 0 0;       
+    }
+
+    .main-content {
+        margin: 40px 0 0 0;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;        
+    }
+
+    .top-content .text-content {
+        margin: 10px 0 ;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-content {
+        margin: 10px 0;
+    }
+
+    .contact {
+        margin-top: 40px;
+    }
 }
