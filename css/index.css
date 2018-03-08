@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+		max-width: 880px;
     margin: auto;
 }
 
@@ -81,6 +82,7 @@ header nav {
     width: 70%;
     justify-content: space-between;
     display: flex;
+		font-size: 1.4rem;
 }
 
 header nav a {
@@ -114,12 +116,12 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9%	 0 0;
+    margin: 0 9%	0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -138,8 +140,8 @@ header .logo {
    border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   padding: 4% 0;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -150,7 +152,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3% auto;
 }
 
 .main-content .bottom-content {
@@ -159,13 +161,18 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
 /* Contact Styles */
 
+.contact h4 {
+	font-size: 1.8rem;
+}
+
 .contact p {
     margin: 15px 0;
+		font-size: 1.6rem;
 }
 
 /* Footer Styles */
@@ -217,7 +224,7 @@ footer {
 
 	header nav a{
 		height: 50px;
-		padding: 15px 0;
+		padding: 1% 0;
 		border-top: 1px solid gray;
 		align-self: stretch;
 		text-align: center;
