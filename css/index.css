@@ -87,6 +87,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: .8rem;
 }
 
 header nav a:hover {
@@ -96,7 +97,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 12%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -110,19 +111,19 @@ header .logo {
 .cta .cta-text {
     font-size: 4.5rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .08rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0% 10% 0% 0%;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 1rem;
     background: white;
-    width: 19.31%;
+    width: 51.31%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -151,7 +152,8 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 6% auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -160,20 +162,22 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 12%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 2% 0;
+    font-size: 1rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 10.54% 0 0.27%;
+    font-size: .9rem;
 }
 
 
@@ -185,12 +189,12 @@ footer {
     }
 
     header nav {
-        width: 457px;
-        margin-left: 20px;
+        width: 59.50%;
+        margin-left: 2.5%;
     }
 
     header .logo {
-        margin: 28px 0 0 59px;
+        margin: 28px 0 0 8%;
     }
 
     .cta {
@@ -198,7 +202,7 @@ footer {
     }
     
     .cta .cta-text {
-        margin: 0 40px 0 0;
+        margin: 0 -1% 0 0;
     }
 
     .main-content .middle-img {
@@ -206,11 +210,11 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 75px 2.5% 35px;
     }
 
     .contact {
-        margin: 20px 20px 35px;
+        margin: 20px 2.5% 35px;
     }
 }
 
@@ -276,12 +280,29 @@ footer {
         justify-content: space-around;
         flex-direction: column;
         height: 300px;
+        font-size: 1.06rem;
+    }
+    .main-content .middle-img {
+        width: 95%;
+        padding-top: 8px;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
         height: 440px;
+        font-size: 1.02rem;
+        padding-top: 8px;
+    }
+    .contact {
+        padding-top: 15px;
+        font-size: 1.04rem;
+    }
+
+    footer {
+        padding-top: 12px;
+        font-size: 1.02rem;
+
     }
 
 }
