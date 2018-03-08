@@ -151,9 +151,18 @@ header .logo {
    line-height: 1.8rem;
 }
 
+.main-content h4 {
+    padding-left: 0.5rem;
+}
+
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+}
+
+.top-content .text-content{
+    padding-top: 0.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .main-content .text-content {
@@ -162,13 +171,17 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 3rem auto;
+    margin: 4rem 0 4rem 1rem;
     width: 98%;
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+}
+
+.bottom-content .text-content {
+    letter-spacing: 0.1rem;
 }
 
 .main-content .bottom-content p {
