@@ -59,20 +59,24 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: .08vw;
+    margin-bottom: 3%;
+}
+
+body {
+    background: black;
 }
 
 .container {
     width: 100%;
+    margin: 0 auto;
+    background: white;
 }
 
 /* Header Styles */
 
 header {
-    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -80,22 +84,11 @@ header nav {
     width: 100%;
     justify-content: space-between;
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
-    font-size: 110%;
-    width: 100%;
-    padding: 20px 0px;
-    text-align: center;
-    border-top: 1px solid black;
-}
-
-header nav a:last-child {
-    border-bottom: 1px solid black;
 }
 
 header nav a:hover {
@@ -104,39 +97,37 @@ header nav a:hover {
 }
 
 header .logo {
-    order: -1; /* Source order */
-    margin: 20px 0px;
-    align-self: center;
+    margin-left: 8%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
-    margin-top: 60px;
-    padding: 0 5%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    margin: 7.5%;
 }
 
 .cta .cta-text {
-    margin-bottom: 40px;
-    font-size: 72px;
     text-align: center;
-    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
 }
 
+.cta .cta-text h1 {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: bolder;
+}
+
 .cta .cta-text button {
+    margin-top: 1rem;
     border: 1px double black;
-    font-size: 16px;
+    padding: 0 13%;
+    height: 2rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -145,110 +136,134 @@ header .logo {
     color: white;
 }
 
+.cta img {
+    width: 100%;
+}
+
 /* Main Content Styles */
 
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   padding: 35px 0px;
-   margin: 75px 3% 35px 3%;
-   font-size: 16px;
-   line-height: 18px;
 }
 
 .main-content .middle-img {
     width: 100%;
     display: block;
-    margin: 30px auto;
 }
 
 .main-content .top-content,
 .main-content .bottom-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
-.main-content .text-content {
-    margin-top: 30px;
+
+.main-content, .contact {
+    margin: 0 7%;
 }
 
-.main-content .text-content:first-child {
-    margin-top: 0px;
+.top-content, .bottom-content,
+.contact {
+    margin-top: 4%;
 }
 
-/* Contact Styles */
-.contact{
-    margin-left: 3%;
+.top-content, .bottom-content {
+    margin-bottom: 5%;
+}
+
+
+
+.contact h1 {
+    margin-bottom: 0.6rem;
 }
 
 .contact p {
-    margin-top: 15px;
+    margin-bottom: 0.8rem;
 }
+
+/* Contact Styles */
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    padding: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 400px) {
     header {
-        flex-direction: row-reverse; /* Source order again */
-        padding: 1% 3% 0;
+        flex-direction: column-reverse;
     }
 
     header nav {
-        flex-direction: row;
+        flex-direction: column;
     }
 
-    header nav a, header nav a:last-child {
-        font-size: 100%;
-        padding: 0px;
-        border: 0px
+    header nav a {
+        border-top: 1px solid black;
+        padding: 0.7rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid black;
     }
 
     header .logo {
-        margin-left: 10%;
+        margin: 1rem 0;
     }
 
     .cta {
-        flex-direction: row;
-        padding: 0px 7%;
+        flex-direction: column;
     }
 
     .cta img {
-        margin-left: 5%;
+        margin-top: 2rem;
     }
 
-    .main-content .top-content,
-    .main-content .bottom-content {
-        flex-direction: row;
+    .top-content, .bottom-content {
+        flex-direction: column;
     }
 
-    .main-content .text-content {
-        margin-top: 0px;
-        margin-right: 4%;
+    .text-content {
+        margin-bottom: 1rem;
     }
 
-    .main-content .text-content:last-child {
-        margin-right: 0;
+    .text-content:last-child {
+        margin: 0;
     }
 }
 
-@media (min-width: 880px) {
-    body {
-        background: black;
+@media (min-width: 401px) {
+    header {
+        margin: 0 7%;
     }
 
+    header nav {
+        width: 70%;
+    }
+
+    .cta {
+        margin-left: 14%;
+    }
+    
+    .cta img {
+        margin-left: 8%;
+    }
+
+    .text-content {
+        margin-right: 2%;
+    }
+
+    .text-content:last-child {
+        margin: 0;
+    }
+}
+
+@media (min-width: 769px) {
     .container {
-        width: 880px;
-        margin: auto;
-        background: white;
-    }
-
-    .main-content .bottom-content p {
-        padding-right: 20px;
+        max-width: 1024px;
+        margin: 0px auto;
     }
 }
