@@ -262,7 +262,6 @@ footer {
         display: flex;
         flex-direction: column;
         padding: 0;
-        border: 1px solid red;
     }
     
     header nav {
