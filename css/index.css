@@ -249,19 +249,31 @@ footer {
 
 @media only screen and (max-width: 550px) {
 
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin: 3%;
+        padding-left: 3%;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        margin: 3%;
+        padding-left: 3%;
+    }
+
     .main-content .top-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 100%;
-        margin: 0;
     }
 
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 100%;
-        margin: 0;
     }
+}
+
+@media only screen and (max-width: 400px) {
+
 }
