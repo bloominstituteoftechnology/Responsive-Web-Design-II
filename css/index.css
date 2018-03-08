@@ -195,13 +195,13 @@ footer {
 @media (max-width: 768px) {
 
     .container {
-        padding: 0 20px;
+        padding: 0 2rem;
         width: 100%;
     }
 
     header {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 1rem;
         justify-content: space-between;
     }
 
@@ -247,16 +247,16 @@ footer {
 
     header nav a {
         border-top: 1px solid gray;
-        padding: 20px 0;
+        padding: 2rem 0;
         text-align: center;
         display: inline-block;
         width: 100%;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: bold;
     }
 
     header .logo {
-        margin: 20px 0;
+        margin: 2rem 0;
         align-self: center;
     }
 
@@ -267,7 +267,7 @@ footer {
     }
 
     .cta .cta-text {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
     }
 
     .cta img {
@@ -275,13 +275,13 @@ footer {
     }
 
     .main-content {
-        padding: 0 5px;
+        padding: 0 0.5rem;
     }
 
     .main-content .top-content {
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 40px;
+        margin-top: 4rem;
     }
 
     .main-content .bottom-content {
@@ -289,11 +289,11 @@ footer {
     }
 
     .text-content p {
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
     }
 
     .contact {
-        padding-left: 5px;
+        padding-left: 0.5rem;
     }
 
 }
