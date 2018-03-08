@@ -181,6 +181,7 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+		font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
@@ -234,6 +235,10 @@ footer {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	.cta .cta-text {
+		margin-bottom: 5%;
 	}
 	header .logo {
 		order: -1;
