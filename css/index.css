@@ -139,7 +139,7 @@ header .logo {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 8.5% 0 4% 0;
-   padding: 35px 0;
+   padding: 4% 0;
    font-size: 16px;
    line-height: 18px;
 }
@@ -160,7 +160,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.3%;
 }
 
 /* Contact Styles */
@@ -330,19 +330,19 @@ footer {
         flex-direction: column;
     }
     .cta .cta-text {
-        margin: 0 50px 0 50px;
+        margin: 0 5.7% 0 5.7%;
         align-self: center;
     }
     .cta img {
         align-self: center;
         width: 80%;
-        margin-top: 50px;
+        margin-top: 5.7%;
     }
 
     .main-content {
         width: 88%;
         flex-direction: column;
-        margin-top: 70px;
+        margin-top: 7.9%;
     }
     .main-content .top-content {
         justify-content: space-around;
