@@ -59,12 +59,14 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 6px;
     margin-bottom: 10px;
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    font-size: 62.5%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -77,7 +79,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.31%;
     justify-content: space-between;
     display: flex;
 }
@@ -106,7 +108,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 4.5rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -118,9 +120,9 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
-    width: 170px;
+    width: 19.31%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -138,7 +140,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1rem;
    line-height: 18px;
 }
 
