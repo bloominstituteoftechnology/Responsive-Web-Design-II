@@ -163,7 +163,7 @@ header .logo {
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
-    margin-block-end: 2%;
+    margin-bottom: 3%;
 }
 
 .main-content .bottom-content p {
@@ -173,9 +173,9 @@ header .logo {
 
 /* Contact Styles */
 
-.contact {
+/* .contact {
     margin-top: 5%;
-}
+} */
 
 .contact p {
     margin: 1.70% 0;
@@ -207,13 +207,39 @@ footer {
         margin: 4.54% 1% 0;
     }
 
+    .cta {
+        margin-bottom: 13%;
+    }
+
+    .cta h1 {
+        letter-spacing: .2rem;
+    }
+
+    .cta .cta-text {
+        margin: 3.5rem 5.2rem 0 0;
+    }
+
+    .cta .ctra-text button {
+        margin-top: 2rem;
+    }
+
     /* readjusting sizes for tablet screen*/
     .main-content{
         width: 100%;
+        padding-bottom: 2%;
     }
 
-    .main-content .middle-img{
+    .main-content .middle-img {
         width: 100%;
+        margin-top: 4.41%;
+    }
+
+    .main-content .bottom-content {
+        margin-bottom: 1%;
+    }
+
+    .contact {
+        margin-top: 5%;
     }
 }
 
