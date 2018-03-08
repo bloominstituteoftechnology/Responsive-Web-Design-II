@@ -213,28 +213,28 @@ footer {
         justify-content: center;
     }
     header nav{
-        flex-flow: column;
+        flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-left: 0px;
     }
     header nav a {
         font-size: 20px;
         border-bottom: 1px grey solid;
-        width: 370px;
-        height: 100%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        padding: 20px;
     }
     header nav a:first-child {
         border-top: 1px grey solid;
-        width: 370px;
+        width: 100%;
     }
     header .logo {
-        align-self: flex-start;
         order: -1; 
+        align-self: center;
+        margin: 20px 0 0 30px;
     }
 
     .cta {
