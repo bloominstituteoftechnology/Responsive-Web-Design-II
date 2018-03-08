@@ -249,12 +249,13 @@ footer {
     .cta img {
         align-self: center;
         width: 320px;
-        margin: 20px;
+        margin-top: 50px;
     }
 
     .main-content {
         width: 350px;
         flex-direction: column;
+        margin-top: 70px;
     }
     .main-content .top-content {
         justify-content: space-around;
