@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,6 +64,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+
+html {
+    font-size: 62.5%
+}
 .container {
     width: 880px;
     margin: auto;
@@ -110,26 +115,28 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    /*font-size: 72px;*/
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9% 0 0;
+    margin: 0 8.2rem 0 0;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: 0.1rem double black;
+    /*font-size: 16px;*/
+    font-size: 1.6rem;
     background: white;
     /*width: 170px;*/
     width: 19.3%;
     /*height: 32px;*/
     height: 3.6%;
     /*margin-top: 10px;*/
-    margin-top: 1.1%;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -144,11 +151,11 @@ header .logo {
    border-top: 2px solid black;
    border-bottom: 2px solid black;
    /*margin: 75px 0 35px 0;*/
-   margin: 8.5% 0 3.9% 0;
+   margin: 7.5rem 0 3.5rem 0;
    /*padding: 35px 0;*/
-   padding: 3.9% 0;
-   font-size: 16px;
-   line-height: 18px;
+   padding: 3.5rem 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -159,7 +166,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     /*margin: 30px auto;*/
-    margin: 3.4% auto;
+    margin: 3rem auto;
 }
 
 .main-content .bottom-content {
@@ -169,14 +176,14 @@ header .logo {
 
 .main-content .bottom-content p {
     /*padding-right: 20px;*/
-    padding-right: 2.3%;
+    padding-right: 2rem;
 }
 
 /* Contact Styles */
 
 .contact p {
     /*margin: 15px 0;*/
-    margin: 1.7% 0;
+    margin: 1.5rem 0;
 }
 
 /* Footer Styles */
@@ -184,7 +191,7 @@ header .logo {
 footer {
     text-align: center;
     /*margin: 40px 0 20px;*/
-    margin: 4.5% 0 2.3%;
+    margin: 4rem 0 2rem;
 }
 
 /* RWD Solution */
@@ -198,7 +205,9 @@ footer {
         /*width: 457px;*/
         width: 59.5%;
         /*margin-left: 20px;*/
-        margin-left: 2.6%;
+        margin-left: 3.6%;
+        margin-top: 5.5%;
+        font-size: 1.5rem;
     }
 
     header .logo {
@@ -256,7 +265,7 @@ footer {
         display: block;
         text-align: center;
         padding: 5% 0;
-        font-size: 20px;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
