@@ -174,84 +174,110 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* 768px */
+/* RWD Solution */
 @media (max-width: 768px) {
+
     .container {
         width: 100%;
     }
 
+    header nav {
+        width: 457px;
+        margin-left: 20px;
+    }
+
+    header .logo {
+        margin: 28px 0 0 59px;
+    }
+
     .cta {
-        padding: 0 25px;
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 40px 0 0;
+    }
+
+    .main-content .middle-img {
+       width: 100%;
     }
 
     .main-content {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .middle-img {
-        width: 100%;
+       margin: 75px 20px 35px;
     }
 
     .contact {
-        padding: 0 20px;
+        margin: 20px 20px 35px;
     }
 }
 
-/* 460px */
-@media (max-width: 400px){
+/* Phone */
+@media (max-width: 400px) {
 
-    hearder {
-        display: flex;
-        flex-direction: column;
+    header {
+        flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
-   
     }
 
     header nav {
-        margin: 0px;
         width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
         flex-direction: column;
+        margin: 0;
         align-items: center;
     }
 
     header nav a {
         width: 100%;
-        padding: 20px 0px;
+        margin: 0;
+        display: block;
         text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
     }
 
     header .logo {
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 0 0 0;
         order: -1;
+        max-width: 100%;
+        margin: 20px 0;
     }
 
     .cta {
-        margin-top: 60px;
-        flex-direction: column;
-        justify-content: space-between;
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
     }
+    
     .cta .cta-text {
-        margin: 0px 0px 40px 0px;
+        margin: 0 0 50px 0;
+    }
+
+    .cta img {
+        max-width: 80%;
     }
 
     .main-content .top-content {
-        flex-direction: column;
-  
+        flex-wrap: wrap;
+        height: 300px;
     }
 
     .main-content .bottom-content {
-        flex-direction: column;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
     }
 
-    .main-content .text-content:first-child {
-        margin-top: 0px;
-    }
-    .main-content .text-content {
-        margin-top: 30px;
-    }
 }
