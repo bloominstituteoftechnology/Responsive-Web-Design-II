@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,8 +65,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
+    font-size: 1.6rem;
 }
 
 /* Header Styles */
@@ -76,8 +79,12 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    width: 100%;
+}
+
+header nav ul {
+    margin: 40px 0 0 10%; 
+    width: 100%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +101,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 37%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -103,24 +110,25 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 96%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 8.5rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 45%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -131,15 +139,20 @@ header .logo {
     color: white;
 }
 
+.cta img {
+    max-width: 44%;
+    height: 50%;
+}
+
 /* Main Content Styles */
 
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 75px 2% 35px 2%;
    padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem;
+   line-height: 1.4;
 }
 
 .main-content .top-content {
@@ -150,6 +163,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    max-width: 100%;
 }
 
 .main-content .bottom-content {
@@ -158,10 +172,14 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
 /* Contact Styles */
+
+.contact {
+    margin: 20px 1%;
+}
 
 .contact p {
     margin: 15px 0;
@@ -171,5 +189,130 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 2%;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 90%;
+    }
+
+    header nav ul{ 
+        width: 100%;
+        margin: 20px 0;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .main-content .middle-img {
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 50px 2% 35px;
+    }
+
+    .contact {
+        margin: 20px 2%;
+    }
+}
+
+/* Phone */
+@media (max-width: 400px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 0 50px 0;
+    }
+
+    .cta img {
+        max-width: 80%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .contact {
+        margin: 20px;
+    }
+
 }
