@@ -263,7 +263,7 @@ footer {
         width: 100%;
         text-align: center;
         align-items: center;
-        padding: 5% 0%;
+        padding: 5% 0% 6%;
         border-top: .1rem solid black;
     }
 
@@ -283,22 +283,46 @@ footer {
 
     .cta .cta-text {
         width: 100%;
-        margin: 0 auto;
+        margin: 10% auto 5%;
         padding-bottom: 10%;
     }
 
     .cta img {
         width: 80%;
+        padding-bottom: 10%;
         align-self: center;
+    }
+    
+    /* main content adjustments*/
+
+    .main-content {
+        padding-bottom: 4%;
     }
     
     .main-content .top-content, .bottom-content{
         flex-direction: column;
     }
 
-    .text-content {
-        margin: 3% 0%;
+    .main-content .bottom-content p {
+        margin-bottom: 5%;
     }
 
-    
+    .main-content .top-content .text-content {
+        margin: 8% 0%;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin: 7% 0% 5%;
+    }
+
+    /* contact adjustments*/
+
+    .contact {
+        margin-top: 5%;
+        padding: 5% 0% 0;
+    }
+
+    .contact p {
+        margin: 4.5% 0;
+    }
 }
