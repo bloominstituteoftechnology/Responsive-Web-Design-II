@@ -194,11 +194,14 @@ footer {
     }
 
     header {
-        justify-content: space-around;
+        width: 100%;
+        padding: 0 10px;
+        border: 1px solid green;
+        justify-content: space-between;
     }
 
     header .logo {
-        margin-left: 20px;
+        /*margin: 0;*/
     }
 
     .cta .cta-text{
