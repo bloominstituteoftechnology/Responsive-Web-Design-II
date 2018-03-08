@@ -179,26 +179,36 @@ footer {
     .container {
         width: 100%;
     }
+
+    header {
+        width: 10%;
+        display: flex;
+    }
     
     header nav ul {
-        margin-left: 7%;
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 250px 0px;
+        width: 600px;
     } 
     
     header .logo {
-        margin: 0 20% 0;
+        display: none;
     }
 
     .cta {
+        display: flex;
         justify-content: center;
+        margin: 90px;
     }
     
     .cta .cta-text {
         font-size: 5rem;
-        margin-left: -13%;
+        margin: 0%;
     }
 
     .cta img {
-        margin-right: 5%;
+        margin: 0px 0px 0px 125px;
     }
 
     .main-content .middle-img {
@@ -206,21 +216,31 @@ footer {
     }
 
     .main-content {
-        margin: 7% 2% 3%;
+        margin: 10% 10% 10%;
         max-width: 80%;
+        line-height: 25px;
     }
 
     .main-content .top-content {
         display: flex;
+        justify-content: space-around;
+        font-size: 1.15rem;
     }
 
     .main-content .bottom-content {
         display: flex;
+        justify-content: space-around;
+        font-size: 1.15rem;
+    }
+
+    .contact {
+        display: block;
+        margin: -75px 0px 0px 110px;
     }
 
     footer {
         text-align: center;
-        margin: 3% 0 2% -18%;
+        margin: 3% 0px 0% 5%;
     }
     
 }
