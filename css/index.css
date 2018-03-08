@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
-    padding: 1rem;
 }
 
 /* Header Styles */
@@ -83,7 +82,7 @@ header {
 }
 
 header nav {
-    margin-top: 4rem; 
+    margin-top: 3.8rem; 
     width: 69%;
     justify-content: space-between;
     display: flex;
@@ -102,7 +101,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 2.8rem 0 0 9.1rem;
+    margin: 2.8rem 0 0 8rem;
+    padding-left: 1rem;
 }
 
 /* Call To Action (CTA) Styles */
