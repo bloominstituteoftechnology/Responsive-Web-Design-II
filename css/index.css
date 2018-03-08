@@ -64,8 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
 }
 
 /* Header Styles */
@@ -73,18 +72,30 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    width: 100%;
     justify-content: space-between;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 110%;
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+header nav a:last-child {
+    border-bottom: 1px solid black;
 }
 
 header nav a:hover {
@@ -93,19 +104,23 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    order: -1; /* Source order */
+    margin: 20px 0px;
+    align-self: center;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
+    margin-top: 60px;
+    padding: 0 5%;
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .cta .cta-text {
+    margin-bottom: 40px;
     font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
@@ -113,7 +128,6 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
 }
 
 .cta .cta-text button {
@@ -136,35 +150,40 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   padding: 35px 0px;
+   margin: 75px 3% 35px 3%;
    font-size: 16px;
    line-height: 18px;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
 .main-content .middle-img {
+    width: 100%;
     display: block;
     margin: 30px auto;
 }
 
+.main-content .top-content,
 .main-content .bottom-content {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.main-content .text-content {
+    margin-top: 30px;
+}
+
+.main-content .text-content:first-child {
+    margin-top: 0px;
 }
 
 /* Contact Styles */
+.contact{
+    margin-left: 3%;
+}
 
 .contact p {
-    margin: 15px 0;
+    margin-top: 15px;
 }
 
 /* Footer Styles */
@@ -174,80 +193,62 @@ footer {
     margin: 40px 0 20px;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-
-    .cta {
-        padding: 0px 30px;
-    }
-
-    .main-content {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .main-content .middle-img {
-        width: 100%;
-    }
-
-    .contact {
-        padding: 0px 20px;
-    }
-}
-
-@media (max-width: 400px) {
+@media (min-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row-reverse; /* Source order again */
+        padding: 1% 3% 0;
     }
 
     header nav {
-        margin: 0px;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
     }
 
-    header nav a {
-        font-size: 110%;
-        width: 100%;
-        padding: 20px 0px;
-        text-align: center;
-        border-top: 1px solid black;
-    }
-
-    header nav a:last-child {
-        border-bottom: 1px solid black;
+    header nav a, header nav a:last-child {
+        font-size: 100%;
+        padding: 0px;
+        border: 0px
     }
 
     header .logo {
-        order: -1;
-        margin: 20px 0px;
-        align-self: center;
+        margin-left: 10%;
     }
 
     .cta {
-        margin-top: 60px;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        padding: 0px 7%;
     }
 
-    .cta .cta-text {
-        margin: 0px 0px 40px 0px;
+    .cta img {
+        margin-left: 5%;
     }
 
     .main-content .top-content,
     .main-content .bottom-content {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .main-content .text-content {
-        margin-top: 30px;
+        margin-top: 0px;
+        margin-right: 4%;
     }
 
-    .main-content .text-content:first-child {
-        margin-top: 0px;
+    .main-content .text-content:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 880px) {
+    body {
+        background: black;
+    }
+
+    .container {
+        width: 880px;
+        margin: auto;
+        background: white;
+    }
+
+    .main-content .bottom-content p {
+        padding-right: 20px;
     }
 }
