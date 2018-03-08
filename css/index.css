@@ -64,7 +64,7 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     margin-bottom: 1rem;
 }
 
@@ -84,7 +84,7 @@ header {
 
 header nav {
     margin-top: 4rem; 
-    width: 610px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -127,7 +127,7 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+    width: 58%;
     height: 32px;
     margin-top: 1rem;
     cursor: pointer;
