@@ -20,18 +20,19 @@ Remember that an adaptive layout updates at breakpoints only.  Don't worry about
 
 * Once you have completed these tasks, reach out to your Project Manager for approval before moving into the stretch goal.
 
-* *Stretch Goal:* Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.
+* Stretch Goal: Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.
 
 
 ## Project 2: Fully Responsive Website
 
-Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a full on responsive layout.  
+Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a fully responsive layout!  
 
 To accomplish this challenge you will need to incorporate your knowedges of max and min width, media queries, rem units, and percents.
 
 *Tasks to complete:*
-* Convert all fixed widths into percents.
-* Convert all left and right margins and paddings into percents.
-* Convert all font-size pixels into rem units.
+* Convert all fixed widths throughout the site into percents
+* Convert all left and right margins and paddings into percents
+* Convert all font-size pixels into rem units
+* Make the breakpoints look pixel perfect using the design files
+* Stretch Goal: Copy and paste your project to a new folder and make a 100% fluid layout design by removing breakpoints.  There is no right answer here, I just want you to see what happens when constraints are removed.
 
-* *Stretch Goal:* See how close you can get to the media query and still have your site look decent.  Hint: you may need to introduce a few more media queries!
