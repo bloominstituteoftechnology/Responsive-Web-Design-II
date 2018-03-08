@@ -218,7 +218,7 @@ footer {
         justify-content: center;
     }
     header {
-        width: 340px;
+        width: 370px;
         flex-flow: column wrap; 
         justify-content: center;
         align-items: center;
@@ -255,16 +255,19 @@ footer {
         flex-flow: column;
         align-items: center;
         justify-content: center;
-        width: 400px;
+        width: 350px;
+        align-self: flex-end;
+        margin-right: 20px;
     }
     .cta .cta-text {
         margin-bottom: 50px;
-        align-self: flex-end;
+        align-self: flex-start;
+        margin-left: 20px;
     }
     .cta img {
-        align-self: space-between;
-        margin-right: 50px;
+        align-self: center;
         width: 370px;
+        margin-right: 10px;
     }
     .main-content {
         width: 350px;
