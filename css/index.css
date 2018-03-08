@@ -262,12 +262,11 @@ footer {
     .cta .cta-text {
         margin-bottom: 50px;
         align-self: flex-start;
-        margin-left: 20px;
+
     }
     .cta img {
         align-self: center;
         width: 370px;
-        margin-right: 10px;
     }
     .main-content {
         width: 350px;
@@ -281,6 +280,17 @@ footer {
         display: flex;
         width: 350px;
     }
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 400px;
+    }
     .contact h4 {
         width: 350px;
         margin-left: 20px;
@@ -288,8 +298,5 @@ footer {
     .contact p {
         width: 350px;
         margin-left: 20px;
-    }
-    footer {
-        width: 370px;
     }
 }
