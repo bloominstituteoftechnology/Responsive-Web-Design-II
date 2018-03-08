@@ -248,7 +248,9 @@ footer {
 
     .main-content{
         display: flex;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
+        margin-left: 1px;
+        margin-right: 1px;        
     }
 
     .top-content{
@@ -258,13 +260,19 @@ footer {
         flex-wrap: wrap;
 
     }
+    .text-content{
+    margin-left:1px;
+    margin-right:1px;
+    padding-top:20px;  
+    }
+
     .bottom-content{
         flex-direction: column;
     }
 
     .middle-img{
-        width:100%;
-        height: auto;
+        width: 80%;
+        height: 70%;    
 
 
     }
