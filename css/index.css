@@ -118,7 +118,6 @@ header .logo {
     margin-top: 72px;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .cta img {
@@ -161,30 +160,30 @@ header .logo {
    line-height: 18px;
 }
 
-.main-content .top-content {
+ .top-content {
     display: flex;
     justify-content: space-between;
 }
 
-.main-content .top-content .text-content {
+ .top-content .text-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 48.5%;
 }
 
-.main-content .middle-img {
+.middle-img {
     width: 100%;
     align-self: center;
     margin: 30px auto;
 }
 
-.main-content .bottom-content {
+.bottom-content {
     display: flex;
     justify-content: space-between;
 }
 
-.main-content .bottom-content .text-content {
+.bottom-content .text-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -249,32 +248,20 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-    
-    /* Main Content Styles */
-    .main-content {
-        border-top: 2px solid black; 
-        border-bottom: 2px solid black;
-        margin: 75px 0 35px 0;
-        padding: 35px 0;
-        font-size: 1rem;
-        line-height: 18px;
+
+    .main-content .top-content {
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        max-width: 100%;
+        margin: 0;
     }
 
-    body .container .main-content .top-content {
-        width: 100%;
-    }
-
-    body .container .main-content .middle-img {
-        width: 100%;
-        align-self: center;
-        margin: 30px auto;
-    }
-
-    body .container .main-content .bottom-content {
-        width: 100%;
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0;
     }
 }
