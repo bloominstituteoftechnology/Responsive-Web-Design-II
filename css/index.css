@@ -151,10 +151,14 @@ header .logo {
     justify-content: space-around;
 }
 
+.main-content .text-content {
+    margin: 0 10px;
+}
+
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
-    width: 100%;
+    width: 98%;
 }
 
 .main-content .bottom-content {
