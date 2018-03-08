@@ -227,7 +227,7 @@ footer {
         flex-flow: column;
         align-items: center;
         height: 350px;
-        margin: 15px;
+        /* margin: 15px; */
         width: 400px;
     }
     header nav a {
@@ -248,7 +248,6 @@ footer {
     header .logo {
         align-self: flex-start;
         order: -1; 
-
     }
     .cta {
         margin-top: 50px;
@@ -257,12 +256,10 @@ footer {
         justify-content: center;
         width: 350px;
         align-self: flex-end;
-        margin-right: 20px;
     }
     .cta .cta-text {
         margin-bottom: 50px;
         align-self: flex-start;
-
     }
     .cta img {
         align-self: center;
@@ -276,20 +273,21 @@ footer {
         display: flex;
         width: 100px;
     }
-    .main-content .middle-img {
-        display: flex;
-        width: 350px;
-    }
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;
         height: 300px;
+        width: 300px;
     }
-
+    .main-content .middle-img {
+        display: flex;
+        width: 350px;
+    }
     .main-content .bottom-content {
-        justify-content: space-around;
+        justify-content: space-between;
         flex-direction: column;
         height: 400px;
+        width: 300px;
     }
     .contact h4 {
         width: 350px;
