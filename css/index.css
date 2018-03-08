@@ -137,6 +137,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
 }
 
 h1,
@@ -193,7 +194,7 @@ header .logo {
 }
 
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -214,11 +215,11 @@ header .logo {
 } */
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 19.3%;
-  height: 3.6%;
-  margin-top: 0.01%;
+  width: 58.2%;
+  height: 10.9%;
+  margin-top: 3.4%;
   cursor: pointer;
 }
 
@@ -229,13 +230,22 @@ header .logo {
 
 /* Main Content Styles */
 
-.main-content {
+/* .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
   font-size: 16px;
   line-height: 18px;
+} */
+
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 8.5% 0 3.9% 0;
+  padding: 3.9% 0;
+  font-size: 1.6rem;
+  line-height: 100%;
 }
 
 .main-content .top-content {
@@ -245,7 +255,7 @@ header .logo {
 
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -254,35 +264,35 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2.2%;
 }
 
 /* Contact Styles */
 
 .contact p {
-  margin: 15px 0;
+  margin: 1.7% 0;
 }
 
 /* Footer Styles */
 
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 4.5% 0 2.2%;
 }
 /* Tablet */
 @media (max-width: 768px) {
   .container {
     width: 100%;
-    max-width: 880px;
+    max-width: 768px;
   }
 
   header nav {
-    width: 457px;
-    margin-left: 20px;
+    width: 59.5%;
+    margin-left: 2.6%;
   }
 
   header .logo {
-    margin: 28px 0 0 59px;
+    margin: 3.6% 0 0 7.6%;
   }
 
   .cta {
@@ -290,7 +300,7 @@ footer {
   }
 
   .cta .cta-text {
-    margin: 0 40px 0 0;
+    margin: 0 5.2% 0 0;
   }
 
   .main-content .middle-img {
@@ -331,7 +341,7 @@ footer {
     display: block;
     text-align: center;
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 2rem;
     border-bottom: 1px solid gray;
   }
 
@@ -346,17 +356,17 @@ footer {
   header .logo {
     order: -1;
     max-width: 100%;
-    margin: 20px 0;
+    margin: 2.2% 0;
   }
 
   .cta {
-    margin-top: 50px;
+    margin-top: 5.6%;
     flex-flow: column;
     align-items: center;
   }
 
   .cta .cta-text {
-    margin: 0 0 50px 0;
+    margin: 0 0 5.6% 0;
   }
 
   .cta img {
