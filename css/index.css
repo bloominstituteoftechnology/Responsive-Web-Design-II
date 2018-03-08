@@ -192,7 +192,7 @@ footer {
     text-align: center;
     margin: 5% 0 2.3%;
 }
-@media (max-width: 400px){
+@media (max-width: 40rem){
 	*{
 		margin: 0;
 		padding: 0;
