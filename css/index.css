@@ -238,6 +238,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    header nav a:first-child {
+        border-top: 1px grey solid; 
+    }
     header .logo {
         align-self: flex-start;
         order: -1; 
