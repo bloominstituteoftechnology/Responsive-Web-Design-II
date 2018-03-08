@@ -204,8 +204,27 @@ footer {
     }
 
 
+    .cta{
+        width:100%;
+        padding-right: 10px;
+        justify-content: center;
+        
+    }
+    .cta .cta-text{
+        margin-right:20px;
+    }
+    .cta img{
+      width:auto; 
+    }
 
+    .main-content{
+        margin-left:20px;
+        margin-right: 20px;
+    }
 
+    .contact{
+        margin-left: 20px;
+    }    
 }
 
 
@@ -250,18 +269,16 @@ footer {
         padding-top:15px;
         padding-bottom: 15px;
         font-weight: bold;
+    }
 
-       
-    }
      nav a:last-child{
-        border-bottom: 1px solid black;
-            
-        
+        border-bottom: 1px solid black;   
     }
+
     header .logo {
     order:-1;
     margin: 20px auto;
-}
+    }
     
     .cta{
         margin-top: 0px;
@@ -303,7 +320,7 @@ footer {
     }
 
     .bottom-content{
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .middle-img{
