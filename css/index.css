@@ -54,18 +54,21 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
     font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
+    font-size: 1.6rem;
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: .115%;
+    margin-bottom: 1.15%;
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
+    width: 100%;
 }
 
 /* Header Styles */
@@ -76,8 +79,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.54%; 
+    width: 69.32%;
     justify-content: space-between;
     display: flex;
 }
@@ -85,6 +88,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -94,53 +98,53 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.12% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 8.18%;
+    justify-content: center;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 8.2rem 0 0;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: .1rem double black;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 17rem;
+    height: 3.2rem;
+    margin-top: 1.14%;
     cursor: pointer;
 }
 
 .cta .cta-text button:hover {
     background: black;
     color: white;
-    border-radius: 5px;
+    border-radius: .57%;
 }
 
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   border-top: .1rem solid black; 
+   border-bottom: .2rem solid black;
+   margin: 8.52% 0 3.98% 0;
+   padding: 3.98% 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -150,7 +154,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.41% auto;
 }
 
 .main-content .bottom-content {
@@ -159,20 +163,21 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.70% 0;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.54% 0 2.27%;
 }
 
 /* Tablet based media query */
@@ -184,7 +189,7 @@ footer {
     }
 
     header nav {
-        margin: 40px 1% 0px;
+        margin: 4.54% 1% 0;
     }
 
     /* readjusting sizes for tablet screen*/
@@ -203,7 +208,7 @@ footer {
     header {
         width: 100%;
         flex-direction: column;
-        border-bottom: 1px solid black;
+        border-bottom: .1rem solid black;
     }
 
     /* listed navigation bar for mobile with 1/line */
@@ -218,7 +223,7 @@ footer {
         text-align: center;
         align-items: center;
         padding: 5% 0%;
-        border-top: 1px solid black;
+        border-top: .1rem solid black;
     }
 
     header .logo {
