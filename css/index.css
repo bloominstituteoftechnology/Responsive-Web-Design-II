@@ -289,6 +289,8 @@ footer {
 @media (max-width: 400px) {
     /* Header Styles */
     .container {
+        width: 100%;
+        max-width: 400px;
         margin: 0 auto;
     }
 
@@ -309,32 +311,32 @@ footer {
          margin: 0;
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 5% 0;
+        font-size: 2rem;
         width: 100%;
-        border-bottom: 1px solid grey;
+        border-bottom: .1rem solid grey;
     }
 
     header .logo {
         max-width: 100%;
-        margin: 20px 0;
+        margin: 2rem 0;
         order: -1;
     }
 
      /* Call To Action (CTA) Styles */
      .cta {
-         margin-top: 50px;
+         margin-top: 5rem;
          display: flex;
          flex-direction: column;
          align-items: center;
      }
 
      .cta .cta-text {
-         margin: 0 0 50px 0;
+         margin: 0 20% 5rem 0;
      }
 
      .cta .cta-text button {
-         margin-bottom: 20px;
+         margin-bottom: 2rme;
      }
 
      .cta img {
@@ -345,35 +347,35 @@ footer {
      .main-content {
          display: flex;
          flex-direction: column;
+         width: 90%;
      }
 
      .main-content .top-content {
         flex-wrap: wrap;
         margin-bottom: 0 auto;
-        padding: 25px 0;
-        font-size: 16px;
-        line-height: 18px;
+        padding: 8% 0;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
     }
 
     .main-content .top-content .text-content {
-        margin-bottom: 10px;
+        margin-bottom: 1.8rem;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
         margin: 0 auto;
-        padding: 25px 0;
-        font-size: 16px;
-        line-height: 18px;
+        padding: 6% 0;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
     }
 
     .main-content .bottom-content .text-content {
-        margin-bottom: 10px;
-    }
-
-     /* Contact Styles */
-    .contact {
-        
+        margin-bottom: 1rem;
     }
 
 }
