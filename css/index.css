@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+    font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -176,9 +176,7 @@ footer {
 
 /* Project 1: Adaptive Web Design */
 
-/* 768px (tablet) Breakpoint */
-
-@media(max-width: 768px) {
+/* @media(max-width: 768px) {
     
     .container {
         width: 100%;
@@ -203,9 +201,6 @@ footer {
         margin-left: 20px;
     }
 }
-
-/* 400px (phone) Breakpoint */
-
 @media(max-width: 400px) {
 
     header {
@@ -267,14 +262,32 @@ footer {
         flex-direction: column;
         height: 440px;
     
-    }
-
+} */
 
 /* Project 2: Responsive Web Design */
 
 /* @media(max-width: 768px) {
+    
     .container {
         width: 100%;
-        max-width: 768px;
+    }
+    header nav {
+        width: 427px;
+        margin-left: 20px;
+    }
+    .cta {
+        justify-content: center;
+    }
+    .main-content {
+        margin: 75px 20px 35px;
+    }
+    .main-content .middle-img {
+        width: 100%;
+    }
+    .contact h4 {
+        margin-left: 20px;
+    }
+    .contact p {
+        margin-left: 20px;
     }
 } */
