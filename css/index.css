@@ -173,3 +173,165 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+
+@media(max-width: 768px){
+
+   
+    .container{
+        width:100%;
+
+    }
+
+
+    header {
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 10px;
+    
+    }
+
+    header .logo {
+   margin-left: 40px;
+   margin-right: 20px   
+       
+    }
+
+    .middle-img{
+        width: 90%;
+           
+    }
+
+
+    .cta{
+        width:100%;
+        padding-right: 10px;
+        justify-content: center;
+        
+    }
+    .cta .cta-text{
+        margin-right:20px;
+    }
+    .cta img{
+      width:auto; 
+    }
+
+    .main-content{
+        margin-left:20px;
+        margin-right: 20px;
+    }
+
+    .contact{
+        margin-left: 20px;
+    }    
+}
+
+
+
+
+@media(max-width: 400px){
+
+    
+    .container{
+        width:100%;}
+
+    header{
+        flex-wrap: wrap;
+        height:100%;
+        justify-content: center;
+        padding-left: 0px;
+            
+    }
+
+ 
+    header nav  {
+        
+        
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    height: 325px;
+    font-size: 20px;
+    margin-top: 0px;
+    justify-content: center;
+    margin-left:1px;
+    margin-right:1px;
+       
+    
+    }
+    nav a{
+        border-top: 1px solid black;
+        width:100%;
+        align-self: center;
+        display: flex;  
+        justify-content: center;
+        padding-top:15px;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+
+     nav a:last-child{
+        border-bottom: 1px solid black;   
+    }
+
+    header .logo {
+    order:-1;
+    margin: 20px auto;
+    }
+    
+    .cta{
+        margin-top: 0px;
+        flex-direction:column;
+        justify-content: space-between;
+        align-content: center;
+        padding-top: 30px;
+    }
+
+    .cta .cta-text{
+        margin: auto;   
+    }
+
+    .cta img{
+        width: 75%;
+        height:auto;
+        align-self:center;
+        margin-top: 40px;
+    }
+
+    .main-content{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1px;
+        margin-right: 1px;        
+    }
+
+    .top-content{
+
+        flex-direction: column;
+        
+        flex-wrap: wrap;
+
+    }
+    .text-content{
+    margin-left:1px;
+    margin-right:1px;
+    padding-top:20px;  
+    }
+
+    .bottom-content{
+        flex-direction: column; 
+    }
+
+    .middle-img{
+        width: 80%;
+        height: 70%;    
+    }
+
+
+}
+
+  
+
+
+
