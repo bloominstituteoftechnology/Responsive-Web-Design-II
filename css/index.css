@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    
 }
 
 header nav {
@@ -80,6 +81,7 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+    
 }
 
 header nav a {
@@ -172,4 +174,124 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/*768px tablet version*/
+
+@media (max-width: 768px) {
+
+    .container{
+        width: 100%;
+    }
+     header nav { 
+      
+      /* border: 5px  blue; */
+      width: 400px;
+      margin-left: 20px;
+     /* border: 1px double black;*/
+    } 
+     .logo{
+         margin: 28px 0 0 59px;
+     }
+
+     .cta {
+        justify-content: center;
+    }
+
+     .cta .cta-text {
+        /* 0 is top */
+        margin: 0 40px 0 0;
+    }
+
+    .main-content .middle-img {
+        width: 300;
+    }
+
+    .main-content {
+        
+        margin: 75px 20px 35px ;
+     }
+
+    .contact{
+        margin: 20px 20px 35px;
+    }
+
+
+    
+    
+    
+  }
+
+/*400px phone version*/
+/* Phone */
+@media (max-width: 400px) {
+
+    header {
+        flex-wrap: wrap; /*Works because display flex is already on it above*/
+        justify-content: center; /*Works because display flex is already on it above*/
+    }
+
+    header nav {
+        width: 100%; /*100% of what? Why are there 2 of them? Does this value change when screen size does*/
+    }
+
+    header nav {
+        width: 100%;
+        display: flex; /*Why is display flex down here also?*/
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        margin: 0;
+        display: block; /*Why do you need to display 
+        block if it was never changed isn't block the default?*/
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 0 50px 0;
+    }
+
+    .cta img {
+        max-width: 80%; /*80% of the images actual size?*/ 
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
 }
