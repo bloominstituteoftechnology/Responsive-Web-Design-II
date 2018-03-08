@@ -193,16 +193,26 @@ footer {
  
     header nav  {
         
-  
+        
     flex-direction: column;
     flex-wrap: wrap;
     align-items:center;
     height: 200px;
+    font-size: 20px;
+    margin-top: 0px;
     
+    }
+    nav a{
+        border-top: 1px solid black;
+        width:100%;
+        align-self: center;
+        display: flex;  
+        justify-content: center;
+        
     }
     header .logo {
     order:-1;
-    margin:auto;
+    margin: 20px auto;
 }
     
     .cta{
@@ -249,6 +259,7 @@ footer {
 
 
     }
+
 
 }
 
