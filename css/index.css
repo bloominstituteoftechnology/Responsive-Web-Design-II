@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    /*border: green solid 2px;*/
 }
 
 /* Header Styles */
@@ -73,6 +74,7 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    /*border: red solid 1px; */
 }
 
 header nav {
@@ -80,11 +82,13 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+    /*border: blue solid 2px; */
 }
 
 header nav a {
+    /*order: purple solid 1px;*/
     text-decoration: none;
-    color: #b0b0b0;
+    /*color: #b0b0b0; */
 }
 
 header nav a:hover {
@@ -95,6 +99,7 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 91px;
+    /*border: blue solid 2px; */
 }
 
 /* Call To Action (CTA) Styles */
@@ -172,4 +177,155 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Media-Query */
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 100%;
+    }
+    header { /*red*/
+        /*width: 100%;
+        display: flex;
+        border: red solid 1px; */
+        flex-direction: column;
+        max-width: 100%;
+        border-bottom: grey solid 1px;
+    }
+    header .logo {
+       /* align-self: flex-end;
+        margin: 28px 0 0 91px;*/
+        align-self: center;
+        margin: 20px 0;
+
+    }
+
+    header nav { /*blue*/
+        /*margin-top: 40px; 
+        width: 610px;
+        justify-content: space-between;
+        display: flex;
+        border: blue solid 2px; */
+        margin-top: 0;
+        width: 100%;
+        flex-direction: column;
+        order:1;
+    }
+    
+    header nav a { /*purple*/
+    /*border: purple solid 1px;
+    text-decoration: none;
+    color: #b0b0b0;
+    }*/
+    border-top: grey solid 1px;
+    border-left: grey solid 1px;
+    border-right: grey solid 1px;
+    display:flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    font-size: 120%;
+    color: grey;
+    }
+
+
+    .cta {
+        /*display: flex;
+        margin-top: 72px;
+        justify-content: flex-end; */
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+                            /* Cannot for the life of me get 
+                            .cta-text to center*/
+    .cta-text {
+        max-width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        /* 
+            font-size: 72px;
+            text-align: center;
+            letter-spacing: 5px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            margin: 0 82px 0 0;
+    */
+    }
+
+    .cta-text button {
+        margin-bottom: 30px;
+    }
+                        /* Cannot get .cta image to shrink down or have a margin below it */
+    .cta image {
+        max-width: 100%;
+
+    }
+
+
+    .main-content {
+        /*   border-top: 2px solid black; 
+      border-bottom: 2px solid black;
+     margin: 75px 0 35px 0;
+     padding: 35px 0;
+     font-size: 16px;
+     line-height: 18px;*/
+     padding: 18px 0;
+     margin: 20px auto;
+     width: 95%;
+     display: flex;
+     flex-direction: column;
+     max-width: 100%;
+
+
+    }
+    .main-content .top-content {
+        /*display: flex;
+        justify-content: space-around; */
+        flex-direction: column;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    .top-content .text-content {
+        margin: 10px 0;
+    }
+    
+    .main-content .middle-img {
+        /* display: block;
+        margin: 30px auto; */
+        max-width: 100%;
+    }
+    
+    .main-content .bottom-content {
+        /* display: flex;
+        justify-content: space-around; */
+        flex-direction: column;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .bottom-content .text-content {
+        margin: 10px 0;
+    }
+
+    .main-content .bottom-content p {
+        /* padding-right: 20px; */
+        max-width: 100%;
+    }
+
+    .contact {
+        margin-top: 18px;
+    }
+
+}
+
+@media (max-width: 768px) {
+                                     /*did not work on tablet view*/
 }
