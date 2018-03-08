@@ -194,7 +194,7 @@ footer {
 
     header .logo {
    margin-left: 40px;
-   margin-right: 20px
+   margin-right: 20px   
        
     }
 
@@ -221,6 +221,7 @@ footer {
         flex-wrap: wrap;
         height:100%;
         justify-content: center;
+        padding-left: 0px;
             
     }
 
@@ -236,7 +237,8 @@ footer {
     margin-top: 0px;
     justify-content: center;
     margin-left:1px;
-    margin-right: 1px;    
+    margin-right:1px;
+       
     
     }
     nav a{
