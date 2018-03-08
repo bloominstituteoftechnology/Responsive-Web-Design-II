@@ -269,6 +269,11 @@ footer {
 
 /* At 768px and below do the following */
 @media (max-width: 768px) {
+  /* body {
+    display: flex;
+    justify-content: center;
+  } */
+
   .container {
     width: 100%;
     display: flex;
@@ -396,11 +401,23 @@ footer {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    height: 200px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 15px;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid black;
   }
 
   header .logo {
-    margin: auto;
+    margin: 10px auto;
     order: -1;
   }
 
