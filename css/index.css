@@ -245,6 +245,11 @@ footer {
 
 /*  Mobile based media query*/
 @media (max-width: 400px) {
+    .container {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
     /* listed logo vs nav for mobile with readjusted screen*/
     header {
         width: 100%;
@@ -296,6 +301,7 @@ footer {
     /* main content adjustments*/
 
     .main-content {
+        margin: 0 5%;
         padding-bottom: 4%;
     }
     
@@ -318,7 +324,7 @@ footer {
     /* contact adjustments*/
 
     .contact {
-        margin-top: 5%;
+        margin: 5% 5% 0%;
         padding: 5% 0% 0;
     }
 
