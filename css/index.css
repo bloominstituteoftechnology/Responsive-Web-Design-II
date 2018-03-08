@@ -281,16 +281,16 @@ footer {
         justify-content: center;
     }
     .main-content {
-        margin: 75px 20px 35px;
+        margin: 8.5% 2.3% 4%;
     }
     .main-content .middle-img {
         width: 100%;
     }
     .contact h4 {
-        margin-left: 20px;
+        margin-left: 2.3%;
     }
     .contact p {
-        margin-left: 20px;
+        margin-left: 2.3%;
     }
 }
 @media(max-width: 400px) {
@@ -303,13 +303,13 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        margin-left: 0px;
+        margin-left: 0;
     }
     header nav a {
         font-size: 20px;
         border-bottom: 1px grey solid;
         width: 100%;
-        margin: 0px;
+        margin: 0;
         display: flex;
         justify-content: center;
         padding: 20px;
@@ -321,11 +321,11 @@ footer {
     header .logo {
         order: -1; 
         align-self: center;
-        margin: 20px 0 0 30px;
+        margin: 2.3% 0 0 3.4%;
     }
 
     .cta {
-        margin-top: 50px;
+        margin-top: 5.7%;
         justify-content: center;
         flex-direction: column;
     }
