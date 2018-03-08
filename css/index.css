@@ -207,6 +207,14 @@ footer {
 
     .main-content .middle-img {
        width: 100%;
+       height: 138px;
+    }
+
+    .main-content .bottom-content {
+        font-size: 1.03rem;
+        height: 140px;
+        align-items: center;
+        letter-spacing: -1px;
     }
 
     .main-content {
@@ -285,18 +293,19 @@ footer {
     .main-content .middle-img {
         width: 95%;
         padding-top: 8px;
+        height: 83px;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
-        height: 440px;
-        font-size: 1.02rem;
+        height: 449px;
+        font-size: 1.14rem;
         padding-top: 8px;
     }
     .contact {
-        padding-top: 15px;
-        font-size: 1.04rem;
+        padding-top: 10px;
+        font-size: 1.1rem;
     }
 
     footer {
