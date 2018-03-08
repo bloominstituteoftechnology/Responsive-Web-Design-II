@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5 {
 .container {
     max-width: 880px;
     margin: auto;
+    width: 100%;
 }
 
 /* Header Styles */
@@ -77,7 +78,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -103,6 +104,7 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .cta .cta-text {
@@ -120,7 +122,7 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+    width: 58%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -266,13 +268,13 @@ footer {
 
 /* Project 2: Responsive Web Design */
 
-/* @media(max-width: 768px) {
+@media(max-width: 768px) {
     
     .container {
         width: 100%;
     }
     header nav {
-        width: 427px;
+        width: 55.6%;
         margin-left: 20px;
     }
     .cta {
@@ -290,4 +292,68 @@ footer {
     .contact p {
         margin-left: 20px;
     }
-} */
+}
+@media(max-width: 400px) {
+
+    header {
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+    header nav a {
+        font-size: 20px;
+        border-bottom: 1px grey solid;
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    header nav a:first-child {
+        border-top: 1px grey solid;
+        width: 100%;
+    }
+    header .logo {
+        order: -1; 
+        align-self: center;
+        margin: 20px 0 0 30px;
+    }
+
+    .cta {
+        margin-top: 50px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cta .cta-text {
+        margin: 0 50px 0 50px;
+        align-self: center;
+    }
+    .cta img {
+        align-self: center;
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .main-content {
+        width: 88%;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+    .main-content .bottom-content {
+        justify-content: space-between;
+        flex-direction: column;
+        height: 440px;
+    
+}
+
+
