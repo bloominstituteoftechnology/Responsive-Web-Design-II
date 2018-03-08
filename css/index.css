@@ -315,22 +315,26 @@ footer {
     
     header nav ul { 
         display: flex;
-        flex-flow: column wrap;
-        width: 80%;
-        font-size: 2rem;
+        flex-direction: column;
+        width: 9.5%;
+        font-size: 1.5rem;
+        margin: 30px 0px -60px 180px;
     } 
 
     header nav ul li a {
+        display: flex;
+        flex-direction: column;
         color: black;
-        margin: 100%;
+        align-items: center;
     }
     
+
     header .logo {
         display: none;
     }
 
     .cta {
-        justify-content: center;
+        margin: 115px 0px 0px 50px;
     }
     
     .cta .cta-text {
@@ -342,7 +346,9 @@ footer {
     }
 
     .main-content {
-        margin: 35px 5px 20px;
+        margin: 15% 16% 20%;
+        max-width: 80%;
+        line-height: 20px;
     }
 
     .cta .cta-text {
@@ -358,7 +364,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .main-content h4 {
@@ -369,6 +375,17 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    contact {
+        display: flex;
+        flex-direction: column;
+        width: 63%;
+        align-items: center;
+    }
+
+    .footer {
+        margin: auto;
     }
 }
