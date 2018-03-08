@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%; /*Double check if this is the correct spot*/
+	font-size: 100%; 
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -87,6 +87,7 @@ header nav { /*880px*/
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -97,6 +98,8 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 3% 0 0 10%; /*28/880 & 91/880*/
+    max-width: 100%;
+    height: auto; 
 }
 
 /* Call To Action (CTA) Styles */
@@ -105,11 +108,11 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-    border: 1px solid black;
+    width: 100%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -119,12 +122,17 @@ header .logo {
     margin: 0 9% 0 0; /*82/880*/
 }
 
+.cta img {
+    max-width: 100%;
+    height: auto;
+}
+
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px; /*170/880*/
-    height: 32px;
+    width: 170px; /*170/440*/
+    height: 7%; /*32/440*/
     margin-top: 10px;
     cursor: pointer;
 }
@@ -136,12 +144,12 @@ header .logo {
 
 /* Main Content Styles */
 
-.main-content {
+.main-content { 
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0; 
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -153,6 +161,8 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .main-content .bottom-content {
@@ -161,20 +171,22 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px; /*20/880*/
+    padding-right: 2%; /*20/880*/
 }
 
 /* Contact Styles */
 
-.contact p {
-    margin: 15px 0;
+.contact p, h4 {
+    margin: 1.7% 0; /*15/880*/
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 5% 0 2%; /*40/880 & 20/880*/
+    font-size: 1.6rem;
 }
 
 /*########################################################  TABLET #####################################################*/
@@ -190,15 +202,24 @@ footer {
     }
    
     header .logo {
-        margin: 4% 0 0 10%; /*28/768 & 76/768*/
+        margin: 4% 0 0 7%; /*28/768 & 76/768*/
+        max-width: 100%;
+        height: auto; 
     }
    
     .cta {
         justify-content: center;
+        width: 100%;
     }
    
     .cta .cta-text {
         font-size: 6.2rem;
+        margin: 0;
+    }
+
+    .cta img {
+        max-width: 100%;
+        height: auto;
     }
    
     .main-content {
@@ -220,7 +241,7 @@ footer {
 @media (max-width: 400px) {
     
     .container {
-        max-width: 100%;
+        width: 100%;  
     }
     header {
         display: flex;
@@ -234,6 +255,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     header nav a {
@@ -250,6 +272,8 @@ footer {
     header .logo {
         order: -1;
         margin-left: 30%;   /* see if this can be adjusted some other way*/ /*120/400*/ 
+        max-width: 100%;
+        height: auto; 
     }
    
     .cta {
@@ -290,5 +314,37 @@ footer {
    
     .main-content .bottom-content .text-content {
         margin-bottom: 15px;
+    }
+}
+
+/*##################################### EXTRA MEDIA QUERIES###################################*/
+@media (max-width: 650px) and (min-width: 401px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header nav {
+        width: 100%;
+    }
+
+    header nav a{
+        font-size: 1.5rem;
+    }
+
+    header .logo {
+        max-width: 100%;
+        height: auto;
+        align-self: center;
+        order: -1;
+        
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text button {
+        height: auto;
     }
 }
