@@ -230,7 +230,6 @@ footer {
         justify-content: space-around;
         display: flex;
         flex-direction: column;
-        height: 300px;
         align-items: center;
     }
 
@@ -240,7 +239,6 @@ footer {
         text-align: center;
         padding: 20px 0;
     }
-
 
     header nav .a1 {
         border-top: 1px solid #b0b0b0;
