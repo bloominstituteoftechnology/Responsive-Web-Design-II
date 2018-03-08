@@ -320,6 +320,7 @@ footer {
   header {
     flex-direction: column;
     width: 100%;
+    margin: 0;
   }
 
   header nav {
@@ -351,6 +352,7 @@ footer {
   .cta {
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
 
   .cta .cta-text {
@@ -359,7 +361,7 @@ footer {
 
   .cta img {
     width: 72%;
-    align-self: center;
+    margin-right: 0;
   }
 
   /* Main Content Styles */
@@ -367,7 +369,7 @@ footer {
   .main-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 75px 0 35px 15px;
+    margin: 50px 20px;
   }
 
   .main-content .top-content {
@@ -391,8 +393,6 @@ footer {
   .contact {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-left: 15px;
   }
 
   /* Footer Styles */
