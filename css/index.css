@@ -179,6 +179,35 @@ footer {
     .container {
         width: 100%;
     }
+
+    header nav {
+        width: 457px;
+        margin-left: 20px;
+    }
+
+    header .logo {
+        margin: 28px 0 0 59px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 40px 0 0;
+    }
+
+    .main-content .middle-img {
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 75px 20px 35px;
+    }
+
+    .contact {
+        margin: 20px 20px 35px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -211,15 +240,26 @@ footer {
     }
 
     header nav a {
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
         font-size: 20px;
         font-weight: bold;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
     }
 
 
-    .logo {
+    header .logo {
         order: -1;
-        align-content: center;
-        float: left;
+        max-width: 100%;
+        margin: 20px 0;
+        align-self: center;
     }
 
     .cta {
