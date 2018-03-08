@@ -253,7 +253,9 @@ footer {
     }
     
     header nav ul {
-        margin: 8% 17% 0%;
+        
+        margin: 10% 5% -10%;
+        width: 210%;
     } 
     
     header .logo {
@@ -261,11 +263,13 @@ footer {
     }
 
     .cta {
-        justify-content: center;
+        display: block;
+        margin: 100px 0px 0px;
     }
     
     .cta .cta-text {
-        margin: 0 15% 0 0;
+        width: 85%;
+        padding: 20px 0px;
     }
 
     .main-content .middle-img {
@@ -277,17 +281,27 @@ footer {
     }
 
     .main-content {
-        margin: 6% 21% 3% 2%;
+        width: 67%;
     }
 
     .main-content .top-content {
         display: flex;
         justify-content: space-around;
+        font-size: .8rem;
     }
 
     .main-content .bottom-content {
         display: flex;
         justify-content: space-around;
+        font-size: .8rem;
+    }
+
+    .contact {
+        margin: -55px 0px 0px 75px;
+    }
+
+    footer {
+        margin: 3% 0px 0% -12%;
     }
         
 }
