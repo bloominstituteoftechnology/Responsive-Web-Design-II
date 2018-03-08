@@ -81,7 +81,7 @@ header {
 
 header nav {
     font-size: 1.4rem; /*14px*/
-    margin-top: 40px; 
+    margin-top: 4rem; 
     width: 69%;
     justify-content: space-between;
     display: flex;
@@ -99,14 +99,14 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 10%;
+    margin: 2.8rem 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 7.2rem;
     justify-content: flex-end;
     width: 100%;
 }
@@ -132,7 +132,7 @@ header .logo {
     background: white;
     width: 50%; /*167px = 19%(too small) 60% = 528px(just right percentage wise, too big pixel wise)*/
     height: 3.2rem; /*32px*/
-    margin-top: 18px;
+    margin-top: 1.8rem;
     cursor: pointer;
 }
 
@@ -146,7 +146,7 @@ header .logo {
 .main-content {
    border-top: .2rem solid black; /*2px*/
    border-bottom: .2rem solid black; /*2px*/
-   margin: 75px 0 35px 0;
+   margin: 7.5rem 0 3.5rem 0;
    padding: 4% 0; 
    font-size: 1.6rem; /*16px*/
    line-height: 1.8rem; /*18px*/
@@ -182,7 +182,7 @@ header .logo {
 }
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.5rem 0;
 }
 
 /* Footer Styles */
@@ -190,7 +190,7 @@ header .logo {
 footer {
     font-size: 1.4rem;
     text-align: center;
-    margin: 50px 0 20px;
+    margin: 5rem 0 2rem;
 }
 
 /*TABLET*/
@@ -198,6 +198,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
+        max-width: 768px;
         margin: 0 auto;
     }
 
@@ -208,10 +209,14 @@ footer {
     }
 
     header nav { 
-        margin: 40px 0 0 15px;
-        width: 60%;
-        justify-content: space-between;
+        margin: 4rem 7% 0 3%;
+        width: 50%;
         display: flex;
+        font-size: 1.6rem;
+    }
+
+    header nav a {
+        margin-right: 8%;
     }
 
     header .logo {
@@ -222,33 +227,60 @@ footer {
     /* Call To Action (CTA) Styles */
     .cta {
         display: flex;
-        margin: 72px 15px 0 20px;
+        margin: 7.2rem 10% 0 2%;
         justify-content: flex-end;
+    }
+
+    .cta .cta-text h1 {
+        letter-spacing: .3rem; /*6px*/
+        margin-left: 25%;
+        font-size: 7rem;
+    }
+
+    .cta .cta-text button {
+        margin-left: 25%;
+    }
+
+    .cta img {
+        margin-right: 5%;
     }
 
     /* Main Content Styles */
     .main-content {
-        border-top: 2px solid black; 
-        border-bottom: 2px solid black;
-        margin: 75px 20px 35px 20px;
-        padding: 35px 0;
-        font-size: 16px;
-        line-height: 18px;
+        width: 95%;
+        border-top: .2rem solid black; /*2px*/
+        border-bottom: .2rem solid black; /*2px*/
+        margin: 7.5rem 5% 3.5rem 3%;
+        padding: 5% 0;
+        font-size: 1.6rem; /*16px*/
+        line-height: 1.8rem; /*18px*/
      }
 
      .main-content .middle-img {
         display: flex;
-        width: 90%;
+        width: 100%;
         height: auto;
+        margin-bottom: 3%;
+    }
+
+    .main-content .bottom-content {
+        line-height: 1.5rem;
+        padding-right: 2%;
+        justify-content: space-around;
     }
      
     /* Contact Styles */
     .contact p {
-        margin: 15px 20px;
+        margin: 1.5rem 3% 2rem;
     }
 
     .contact h4 {
-        margin: 15px 20px;
+        margin: 1.5rem 3%;
+    }
+
+    footer {
+        margin: 2% auto;
+        font-size: 1.6rem;
     }
 }
 
