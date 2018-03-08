@@ -25,7 +25,7 @@ Remember that an adaptive layout updates at breakpoints only.  Don't worry about
 
 Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a full on responsive layout.  
 
-To accomplish this challenge you will need to incorporate your knowedges of max and min width, media queries, rem units, and percents.
+To accomplish this challenge you will need to incorporate your knowledges of max and min width, media queries, rem units, and percents.
 
 *Tasks to complete:*
 * Convert all fixed widths into percents.
