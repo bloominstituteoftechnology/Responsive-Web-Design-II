@@ -59,9 +59,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 1.6rem;
     font-family: 'Bangers', cursive;
-    letter-spacing: .115%;
+    letter-spacing: .1rem;
     margin-bottom: 1.15%;
 }
 
@@ -106,7 +105,11 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 8.18%;
-    justify-content: center;
+    justify-content: flex-end;
+}
+
+.cta h1 {
+    letter-spacing: .6rem;
 }
 
 .cta .cta-text {
@@ -173,11 +176,16 @@ header .logo {
     font-size: 1.6rem;
 }
 
+.contact h4 {
+    font-size: 1.6rem;
+}
+
 /* Footer Styles */
 
 footer {
     text-align: center;
     margin: 4.54% 0 2.27%;
+    font-size: 1.6rem;
 }
 
 /* Tablet based media query */
