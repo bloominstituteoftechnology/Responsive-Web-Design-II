@@ -312,7 +312,7 @@ footer {
         margin: 0;
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 2.3%;
     }
     header nav a:first-child {
         border-top: 1px grey solid;
