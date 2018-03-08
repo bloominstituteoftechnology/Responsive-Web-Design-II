@@ -191,17 +191,19 @@ footer {
     .main-content {
         display: flex;
         flex-direction: column;
+        margin: 0 20px 0 20px;
     }
     header .logo{
         flex-direction: column;
         justify-content: center;
         margin: 0 0 0 0;
+        padding-top: 30px;
     }
     header nav a {
         display:flex;
         align-items: center;
         flex-direction: column;
-        padding: 10px;
+        padding: 20px;
         border-bottom: solid grey 0.2px;
     }
     .cta {
@@ -222,12 +224,12 @@ footer {
     .main-content .top-content {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        
     }
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        
     }
     .main-content .middle-img {
         width: 100%;
@@ -237,11 +239,12 @@ footer {
         padding-bottom: 30px;
     }
     .contact {
-        padding: 10px;
+        padding: 20px;
     }
 }
 @media (max-width: 768px){
     .container{
         width: 100%;
     }
+
 }
