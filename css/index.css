@@ -179,7 +179,7 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* J-Query */
+/* Media-Query */
 
 @media (max-width: 400px) {
     .container {
@@ -191,7 +191,7 @@ footer {
         border: red solid 1px; */
         flex-direction: column;
         max-width: 100%;
-        border-bottom: black solid 1px;
+        border-bottom: grey solid 1px;
     }
     header .logo {
        /* align-self: flex-end;
@@ -218,9 +218,9 @@ footer {
     text-decoration: none;
     color: #b0b0b0;
     }*/
-    border-top: black solid 1px;
-    border-left: black solid 1px;
-    border-right: black solid 1px;
+    border-top: grey solid 1px;
+    border-left: grey solid 1px;
+    border-right: grey solid 1px;
     display:flex;
     justify-content: center;
     height: 60px;
@@ -228,6 +228,7 @@ footer {
     font-size: 120%;
     color: grey;
     }
+
 
     .cta {
         /*display: flex;
@@ -237,12 +238,15 @@ footer {
         flex-direction: column;
         align-content: center;
         max-width: 100%;
-        margin-top: 0;
+        margin-top: 30px;
     }
-
+                            /* Cannot for the life of me get 
+                            .cta-text to center*/
     .cta-text {
         max-width: 100%;
-        margin: 0 0 0 0;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 15px;
         /* 
             font-size: 72px;
             text-align: center;
@@ -255,8 +259,13 @@ footer {
     */
     }
 
+    .cta-text button {
+        margin-bottom: 30px;
+    }
+                        /* Cannot get .cta image to shrink down or have a margin below it */
     .cta image {
-        max-width: 100%
+        max-width: 100%;
+
     }
 
 
@@ -267,11 +276,13 @@ footer {
      padding: 35px 0;
      font-size: 16px;
      line-height: 18px;*/
-     padding: 0 0;
-     margin: 0 0;
+     padding: 18px 0;
+     margin: 20px auto;
+     width: 95%;
      display: flex;
      flex-direction: column;
      max-width: 100%;
+
 
     }
     .main-content .top-content {
@@ -279,6 +290,11 @@ footer {
         justify-content: space-around; */
         flex-direction: column;
         max-width: 100%;
+        margin: 15px 0;
+    }
+
+    .top-content .text-content {
+        margin: 10px 0;
     }
     
     .main-content .middle-img {
@@ -292,16 +308,24 @@ footer {
         justify-content: space-around; */
         flex-direction: column;
         max-width: 100%;
+        margin: 10px 0;
     }
     
+    .bottom-content .text-content {
+        margin: 10px 0;
+    }
+
     .main-content .bottom-content p {
         /* padding-right: 20px; */
         max-width: 100%;
     }
 
+    .contact {
+        margin-top: 18px;
+    }
+
 }
 
-
 @media (max-width: 768px) {
-
+                                     /*did not work on tablet view*/
 }
