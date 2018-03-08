@@ -126,8 +126,8 @@ header .logo {
     border: .1rem double black;
     font-size: 1.6rem;
     background: white;
-    width: 20%;
-    height: 4%;
+    width: 55%;
+    height: 10%;
     margin-top: 1%;
     cursor: pointer;
 }
@@ -142,7 +142,7 @@ header .logo {
 .main-content {
    border-top: .2rem solid black; 
    border-bottom: .2rem solid black;
-   margin: 20% 1% 4%;
+   margin: 10% 3% 4%;
    padding: 4% 0;
    font-size: 1.6rem;
    line-height: 1.8rem;
@@ -171,7 +171,7 @@ header .logo {
 /* Contact Styles */
 
 .contact {
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
 .contact p {
@@ -198,23 +198,24 @@ footer {
   }
 
   header .logo {
-    margin: 28px 0 0 0;
+    width: 40%;
+    margin: 5% 0 0 0;
   }
 
   /* section 1 - .cta */
   .cta {
     flex-flow: wrap;
     justify-content: center;
-    margin: 72px 30px 0;
+    margin: 8% 5% 8%;
   }
 
   .cta .cta-text {
-    margin-bottom: 50px;
+    margin-bottom: 8%;
   }
 
   /* section 2 - .main-content */
   .text-content {
-    padding-right: 15px;
+    padding-right: 3%;
   }
 }
 
@@ -230,34 +231,34 @@ footer {
     width: 100%;
     flex-flow: column;
     align-items: center;
-    margin: 20px 0;
-    border-top: 1px solid grey;
+    margin: 5% 0;
+    border-top: .1rem solid grey;
   }
 
   nav a {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 20px 0;
-    border-bottom: 1px solid grey;
-    font-size: 20px;
+    padding: 6% 0;
+    border-bottom: .1rem solid grey;
+    font-size: 5%;
     font-weight: bold;
   }
 
   header .logo {
-    margin: 20px auto 0;
+    margin: 5% auto 0;
     order: -1;
   }
 
   /* section 1 - .cta */
   .cta {
     flex-flow: column;
-    margin: 30px auto;
+    margin: 8% auto;
     justify-content: center;
   }
 
   .cta .cta-text {
-    margin-bottom: 50px;
+    margin-bottom: 12%;
   }
 
   .cta img {
@@ -267,8 +268,8 @@ footer {
 
   /* section 2 - .main-content */
   .main-content {
-    margin: 75px 20px 35px;
-    padding-top: 30px;
+    margin: 19% 5% 9%;
+    padding-top: 8%;
   }
 
   .top-content, .bottom-content {
@@ -276,11 +277,11 @@ footer {
   }
 
   .text-content {
-    padding: 15px 0;
+    padding: 4% 0;
   }
 
   /* section 3 - contact */
   .contact {
-    margin-left: 20px;
+    margin: 0 5% 10%;
   }
 }
