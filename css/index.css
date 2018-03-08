@@ -269,7 +269,7 @@ footer {
 
      
     .container {
-        width: 368px;
+        width: 360px;
     }
 
       /* header part */
@@ -309,7 +309,7 @@ footer {
     
     .cta .cta-text {
         font-size: 45px;
-        margin: 20px auto;
+        margin: 10px auto;
     }
     
     .cta .cta-text button {
@@ -317,6 +317,7 @@ footer {
         width: 120px;
         height: 25px;
         margin-top: 5px;
+        margin-bottom: 20px;
     }
     
     .cta img {
@@ -332,7 +333,12 @@ footer {
     border-top: 2px solid black; 
     border-bottom: 2px solid black;
  }
- 
+
+.main-content .text-content {
+    margin-bottom: 20px;
+}
+
+
  .main-content .top-content {
     flex-direction: column;
     justify-content: center;
