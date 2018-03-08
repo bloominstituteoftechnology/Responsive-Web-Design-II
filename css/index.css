@@ -209,15 +209,12 @@ footer {
 @media(max-width: 400px) {
 
     header {
-        /* width: 370px; */
         flex-wrap: wrap; 
         justify-content: center;
-        /* align-items: center; */
     }
     header nav{
         flex-flow: column;
         align-items: center;
-        height: 350px;
         width: 100%;
     }
     header nav a {
