@@ -173,3 +173,105 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media(max-width: 768px) {
+    header {
+        /* border: 4px blue solid; */
+        width: 720px;
+        margin-left: 20px;
+
+    }
+    header nav {
+        width: 720px;
+        margin-left: 20px;
+        /* border: 4px blue solid; */
+    }
+    .cta {
+        width: 650px;
+        margin-left: 60px;
+        justify-content: center;
+        /* border: 4px blue solid; */
+    }
+    .main-content {
+        width: 720px;
+        margin-left: 20px;
+    }
+    .main-content .middle-img {
+        display: flex;
+        width: 720px;
+    }
+    .contact h4 {
+        width: 720px;
+        margin-left: 20px;
+    }
+    .contact p {
+        width: 720px;
+        margin-left: 20px;
+    }
+}
+@media(max-width: 400px) {
+    .container{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        width: 350px;
+        flex-flow: column wrap; 
+        align-items: center;
+    }
+    header nav{
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 370px;
+        margin: 15px;
+    }
+    header nav a {
+        font-size: 20px;
+        border-bottom: 1px grey solid;
+        width: 400px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logo {
+        align-self: flex-start;
+        order: -1; 
+    }
+    .cta {
+        display: flex;
+        flex-flow: column wrap;
+        border: 4px blue solid;
+    }
+    .cta .cta-text button {
+        height: 35px;
+    }
+    .cta img {
+        display: flex;
+    }
+    .main-content {
+        width: 350px;
+        flex-direction: column;
+    }
+    h4 {
+        display: flex;
+        width: 100px;
+    }
+    .main-content .middle-img {
+        display: flex;
+        width: 350px;
+    }
+    .contact h4 {
+        width: 350px;
+        margin-left: 20px;
+    }
+    .contact p {
+        width: 350px;
+        margin-left: 20px;
+    }
+
+}
