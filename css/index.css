@@ -230,6 +230,11 @@ footer {
 		align-self: stretch;
 		text-align: center;
 	}
+	.cta {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
 	header .logo {
 		order: -1;
 		align-self: center;
