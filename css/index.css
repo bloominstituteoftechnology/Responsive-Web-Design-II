@@ -194,7 +194,7 @@ header .logo {
 }
 
 .cta .cta-text {
-  font-size: 7.2rem;
+  font-size: 5rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
@@ -226,7 +226,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 18px;
 }
 
@@ -264,10 +264,10 @@ footer {
 
 /* Tablet formatting */
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .container {
     width: 100%;
-    padding: 0px 20px;
+		padding: 0px 20px;
   }
 
 	header nav {
@@ -294,6 +294,7 @@ footer {
 	}
 
   .main-content {
+		font-size: 1rem;
   }
 
   .main-content .middle-img {
