@@ -318,12 +318,14 @@ footer {
   }
 
   header nav a {
-    height: 30px;
+    height: 60px;
+		font-size: 1.4rem;
     border-style: solid;
     border-top-width: 1px;
     border-color: gray;
     align-self: stretch;
     text-align: center;
+		padding-top: 20px;
   }
 
   header .logo {
