@@ -55,17 +55,18 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 1.14%;
 }
 
 .container {
     max-width: 880px;
-    width:100%;
+    width: 100%;
     margin: auto;
 }
 
@@ -77,8 +78,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.54%; 
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -95,7 +96,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.1% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -107,22 +108,25 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.4rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.31% 0 0;
 }
 
+.cta .cta-text h1 {
+    letter-spacing: 6px;
+}
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.8rem;
     background: white;
-    width: 170px;
-    height: 32px;
+    width: 47%;
+    height: 9%;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -137,9 +141,9 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   margin: 8.52% 0 3.97% 0;
+   padding: 3.97% 0;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -150,7 +154,8 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin-top: 5.5%;
+    margin-bottom: 4.4%;
 }
 
 .main-content .bottom-content {
@@ -159,20 +164,28 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right:2%;
+    padding-bottom: 6%;
 }
 
 /* Contact Styles */
 
+.contact {
+    margin-top: 5%;
+    font-size: 1.6rem;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin-bottom: 3.3%;
+    
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    font-size: 1.38rem;
+    margin: 5.5%;
 }
 
 @media(max-width: 768px){
