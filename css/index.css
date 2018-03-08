@@ -218,24 +218,30 @@ footer {
     }
 
     header {
-        flex-direction: column-reverse;        ;
+        flex-direction: column-reverse;  
+        justify-content: center;
+        width: 100%;        
     }
 
     header .logo {        
         align-self: center;
-        margin: 20px 0 10px 0;
+        margin: 20px 0 20px 0;        
     }
 
-    header nav {
+    header nav {       
         align-items: center;
         flex-direction: column;
         margin: 0 0 0 0;
-        width: 100%;             
+        width: 100%;  
+        border-top: 1px #b0b0b0 solid;        
     }
 
     nav a {        
-        border-top: 1px #b0b0b0 solid;
-        border-bottom: 1px #b0b0b0 solid;             
+        flex-grow: 10;
+        padding: 15px 0;            
+        border-bottom: 1px #b0b0b0 solid;
+        width: 100%;
+        text-align: center;
     }
 
     .cta {
