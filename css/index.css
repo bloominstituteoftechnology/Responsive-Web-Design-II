@@ -197,9 +197,12 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items:center;
-    height: 200px;
+    height: 325px;
     font-size: 20px;
     margin-top: 0px;
+    justify-content: center;
+    margin-left:1px;
+    margin-right: 1px;    
     
     }
     nav a{
@@ -208,6 +211,15 @@ footer {
         align-self: center;
         display: flex;  
         justify-content: center;
+        padding-top:15px;
+        padding-bottom: 15px;
+        font-weight: bold;
+
+       
+    }
+     nav a:last-child{
+        border-bottom: 1px solid black;
+            
         
     }
     header .logo {
@@ -216,30 +228,27 @@ footer {
 }
     
     .cta{
+        margin-top: 0px;
         flex-direction:column;
         justify-content: space-between;
-        
         align-content: center;
-       
-
-
-
+        padding-top: 30px;
     }
+
     .cta .cta-text{
         margin: auto;   
     }
+
     .cta img{
         width: 75%;
         height:auto;
         align-self:center;
         margin-top: 40px;
     }
+
     .main-content{
         display: flex;
-        flex-wrap: wrap;
-       
-
-        
+        flex-wrap: wrap;        
     }
 
     .top-content{
