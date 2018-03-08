@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,8 +65,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 /* Header Styles */
@@ -147,9 +150,14 @@ header .logo {
     justify-content: space-around;
 }
 
+.main-content .text-content {
+    margin: 0 10px;
+}
+
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 98%;
 }
 
 .main-content .bottom-content {
@@ -173,3 +181,125 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Media Queries */
+
+/* tablet size */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        padding: 0 10px;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        /*margin: 0;*/
+    }
+
+    .cta .cta-text{
+        margin: 0 auto;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        width: 97%;
+    }
+
+
+}
+
+/* phone size */
+@media (max-width: 400px) {
+
+    .container {
+        padding: 0;
+    }
+
+    header {
+        padding: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav {
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        order: 1;
+    }
+
+    header nav a {
+        border-top: 1px solid gray;
+        padding: 20px 0;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    header .logo {
+        margin: 20px 0;
+        align-self: center;
+    }
+
+    .cta {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cta .cta-text {
+        margin-bottom: 30px;
+    }
+
+    .cta img {
+        width: 90%;
+    }
+
+    .main-content {
+        padding: 0 5px;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .text-content p {
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        padding-left: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
