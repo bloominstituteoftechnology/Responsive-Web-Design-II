@@ -62,9 +62,13 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-
+/* BASE STYLES */
+html {
+    font-size: 62.5%; /*10px*/
+}
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -76,8 +80,9 @@ header {
 }
 
 header nav {
+    font-size: 1.4rem; /*14px*/
     margin-top: 40px; 
-    width: 610px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +99,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -103,26 +108,31 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem; /*72px*/
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem; /*5px*/
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 10% 0 0;
+}
+
+.cta .cta-text h1 {
+    letter-spacing: .6rem; /*6px*/
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: .1rem double black; /*1px*/
+    font-size: 1.6rem; /*16px*/
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 50%; /*167px = 19%(too small) 60% = 528px(just right percentage wise, too big pixel wise)*/
+    height: 3.2rem; /*32px*/
+    margin-top: 18px;
     cursor: pointer;
 }
 
@@ -134,12 +144,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+   border-top: .2rem solid black; /*2px*/
+   border-bottom: .2rem solid black; /*2px*/
    margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   padding: 4% 0; 
+   font-size: 1.6rem; /*16px*/
+   line-height: 1.8rem; /*18px*/
 }
 
 .main-content .top-content {
@@ -149,7 +159,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 4% auto; 
 }
 
 .main-content .bottom-content {
@@ -157,11 +167,19 @@ header .logo {
     justify-content: space-around;
 }
 
+.main-content .bottom-content .text-content {
+    margin: .8%; 
+}
+
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 23%;
+    line-height: 1.7rem; /*17px*/
 }
 
 /* Contact Styles */
+.contact {
+    font-size: 1.6rem; /*16px*/
+}
 
 .contact p {
     margin: 15px 0;
@@ -170,8 +188,9 @@ header .logo {
 /* Footer Styles */
 
 footer {
+    font-size: 1.4rem;
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 50px 0 20px;
 }
 
 /*TABLET*/
