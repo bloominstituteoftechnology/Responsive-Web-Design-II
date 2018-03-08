@@ -219,7 +219,31 @@ footer {
   }
 }
 
-/* When page is less than 400px*/
+/* When page is less than 650px */
+@media (max-width: 650px) {
+  
+}
+
+/* When page is less than 550px */
+@media (max-width: 550px) {
+  .top-content, .bottom-content {
+    flex-flow: column;
+  }
+
+  .text-content {
+    padding: 4% 0;
+  }
+
+  .top-content .text-content {
+    padding: 4% 0;
+  }
+
+  footer {
+    margin-top: 10%;
+  }
+}
+
+/* When page is less than 400px */
 @media (max-width: 400px) {  
   /* header */
   header {
@@ -273,16 +297,13 @@ footer {
     padding-top: 8%;
   }
 
-  .top-content, .bottom-content {
-    flex-flow: column;
-  }
-
-  .text-content {
-    padding: 4% 0;
-  }
-
   /* section 3 - contact */
   .contact {
-    margin: 0 5% 10%;
+    margin: 0 5%;
+  }
+
+  /* footer */
+  footer {
+    margin-top: 15%;
   }
 }
