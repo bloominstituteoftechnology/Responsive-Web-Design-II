@@ -151,7 +151,7 @@ header .logo {
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-   border: 1px solid transparent;
+
 }
 
 .main-content .top-content {
@@ -187,11 +187,7 @@ footer {
     margin: 40px 0 20px;
 }
 
-hr {
-	width: 90%; 
-	height: 3px; 
-    background: black;
-}
+
 
 /* media q for 768 #still need a bit of attention in line */
     
@@ -205,6 +201,11 @@ hr {
             flex-wrap: nowrap;
             height: 100%;
             
+        }
+
+        header .logo {
+            margin: 28px 4% 0 91px;
+            border: 1px solid transparent;
         }
 
         .cta {
@@ -226,7 +227,7 @@ hr {
             width: 100%;
         }
         .contact {
-            margin: 1%;
+            margin: 3% 1% 1% 1%;
         }
     }
 
