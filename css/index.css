@@ -194,21 +194,21 @@ header .logo {
 }
 
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin-right: 9.318%;
 }
 
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 19.318%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -226,7 +226,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 
@@ -246,7 +246,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
 /* Contact Styles */
