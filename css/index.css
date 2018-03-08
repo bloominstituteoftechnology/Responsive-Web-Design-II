@@ -239,19 +239,17 @@ footer {
 
     .cta {
         margin-top: 50px;
-        flex-flow: column;
-        align-items: center;
         justify-content: center;
-        width: 350px;
-        align-self: flex-end;
+        flex-direction: column;
     }
     .cta .cta-text {
-        margin-bottom: 50px;
-        align-self: flex-start;
+        margin: 0 50px 0 50px;
+        align-self: center;
     }
     .cta img {
         align-self: center;
-        width: 370px;
+        width: 320px;
+        margin: 20px;
     }
 
     .main-content {
