@@ -297,11 +297,12 @@ footer {
     }
 
     .container header nav ul li {
-        width: 100%;
+        width: 120%;
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid gray;
     }
 
     .container header nav ul li a {
@@ -309,6 +310,26 @@ footer {
         margin: 2px;
         font-size: 2rem;
         text-align: center;
-        border: 1px solid gray;
     }
+
+    header nav ul li a:hover {
+        background: rgb(151, 148, 148);
+        text-decoration: none;
+        color: black;
+    }
+
+    .cta .cta-text {
+        font-size: 3rem;
+        margin: 2% 0 5% 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .contact {
+    font-size: 1rem;
+    margin: 15px 0;
+    text-align: center;
+}
 }
