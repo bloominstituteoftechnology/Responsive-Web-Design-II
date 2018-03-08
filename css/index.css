@@ -65,6 +65,7 @@ header nav {
     display: flex;
 }
 header nav a {
+				font-size: 1rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -73,6 +74,9 @@ header nav a:hover {
     color: black;
 }
 header .logo {
+				zoom: 70%;
+				
+		
     align-self: flex-end;
     margin: 3% 0 0 10%;
 }
@@ -81,10 +85,10 @@ header .logo {
 				width: 100%;
     display: flex;
     margin-top: 8%;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .cta .cta-text {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -122,6 +126,7 @@ header .logo {
     justify-content: space-around;
 }
 .main-content .middle-img {
+				max-width: 90%;
     display: block;
     margin: 3.5% auto;
 }
@@ -150,12 +155,19 @@ footer {
     }
 
     header nav {
-        width: 59%;
+        width: 52%;
         margin-left: 2.6%;
     }
+	
+	header nav a {
+				font-size: .5rem;
+    text-decoration: none;
+    color: #b0b0b0;
+}
 
     header .logo {
-        margin: 3.5% 0 0 7.5%;
+								zoom: 50%;
+        margin: 3.5% 0 0 5%;
     }
 
     .cta {
@@ -166,16 +178,16 @@ footer {
         margin-right: 5%;
     }
 				
-	.cta img{
-		max-width: 80%;
-	}
+  .cta img {
+        zoom: 50%;
+    }
 
     .main-content .middle-img {
-       width: 100%;
+       max-width: 90%;
     }
 
     .main-content {
-       margin: 10% 2.6% 4.5%;
+       margin: 10% 2.6% 4.5% 0;
     }
 
 		.contact {
@@ -211,8 +223,8 @@ footer {
     header nav a {
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 5% 0;
+        font-size: 1.5rem;
         border-bottom: 1px solid gray;
     }
 
@@ -227,17 +239,17 @@ footer {
     header .logo {
         order: -1;
         max-width: 100%;
-        margin: 20px 0;
+        margin: 5% 0;
     }
 
     .cta {
-        margin-top: 50px;
+        margin-top: 12%;
         flex-flow: column;
         align-items: center;
     }
 
     .cta .cta-text {
-        margin: 0 0 50px 0;
+        margin: 0 0 12% 0;
     }
 
     .cta img {
@@ -247,13 +259,18 @@ footer {
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;
-        height: 300px;
+        height: 75%;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
         height: 440px;
+					 		margin-bottom: 5%;
     }
+	
+	.contact {
+    margin: 1% 0;
+}
 }
 /*test ResponsiveWebDesign2*/
