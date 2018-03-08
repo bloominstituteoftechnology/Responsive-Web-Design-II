@@ -50,18 +50,18 @@ table {
     box-sizing: border-box;
 }
 html, body {
-    font-size: 62.5%;
+    font-size: 62.5%;  /*  <-------------------- 62.5% font */
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 }
 .container {
-    max-width: 880px;
     width: 100%;
+    max-width: 880px;
     margin: auto;
     font-size: 1.6rem;
 }
@@ -93,6 +93,7 @@ header .logo {
 }
                                     /* Call To Action (CTA) Styles */
 .cta {
+    width: 100%;
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
@@ -105,7 +106,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9% 0 0;
+    margin: 0 12% 0 0;
 }
 .cta .cta-text button {
     border: 1px double black;
@@ -136,12 +137,14 @@ header .logo {
 .main-content .middle-img {
     max-width: 100%;
     display: block;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 .main-content .bottom-content {
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
+
 .main-content .bottom-content p {
     padding-right: 2%;
 }
@@ -163,31 +166,52 @@ footer {
         width:100%;
     }
     header nav ul {
-        width: 457px;
-        margin: 0;
+        width: 100%;
+        margin-top: 40px;
     }
     header .logo {
         margin: 28px 20px 0 59px;
     }
     .cta {
+        width: 100%;
         justify-content: center;
     }
     .cta .cta-text {
         margin: 0 10px 0 0;
     }
+
     .main-content .middle-img {
         width: 100%;
+        margin-bottom: 4%;
     }
     .main-content {
         margin: 75px 2% 35px;
     }
+
+    .main-content .top-content {
+        margin:
+    }
+
+    .main-content .top-content .text-content p {
+        line-height: 1;
+    }
+
+    .main-content .bottom-content p {
+        line-height: 1.2;
+    }
+
     .contact{
         margin-left: 20px 2%;
     }
     .contact {
         margin-left: 2%;
     }
+
+    footer p {
+        margin-bottom: 20%;
+    }
 }
+
                                     /* Phone breakpoint below */
 @media (max-width: 400px) {
     .container {
@@ -195,16 +219,18 @@ footer {
     }
     header nav ul {
         width: 100%;
+        margin: 0;
         display: flex;
         flex-flow: column;
     }
     header .logo {
         order: -1;
-        margin: 28px 0 0 30px;
+        margin: 28px 0 3% 30px;
         display: flex;
         align-items: center;
     }
     .cta {
+        width: 100%;
         justify-content: center;
         display: flex;
         flex-direction: column;
@@ -212,12 +238,19 @@ footer {
     .cta .cta-text {
         margin: 0 0 0 12px;
     }
+
+    h1 {
+        margin-bottom: 8%;
+    }
     .main-content .middle-img {
         margin-left: 10px;
+        margin-bottom: 12%;
+        margin-top: 8%;
         width: 100%;
     }
     .main-content {
-        margin: 75px 20px 35px;
+        margin: 75px 20px 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
@@ -227,19 +260,32 @@ footer {
         justify-content: space-around;
     }
     .main-content .top-content p {
-        margin-bottom: 30px;
+        line-height: 1;
+        margin-bottom: 1%;
+        margin-top: 6%;
     }
+
+    .main-content .top-content h4 {
+        margin-top: 10%;
+    }
+
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin-bottom: 10%;
     }
     .main-content .bottom-content p {
-        margin-bottom: 30px;
+        line-height: 1.2;
+        margin-bottom: 10%;
     }
+
     .contact{
         margin-left: 20px;
+        margin-top: 8%;
+        margin-bottom: 3%;
     }
+
     header {
         display: flex;
         width: 100%;
@@ -258,12 +304,12 @@ footer {
     header nav ul li a {
         width: 100%;
         text-align: center;
-        line-height: 2;
+        line-height: 1.8;
         padding: 2%;
         font-size: 2rem;
         align-content: flex-start;
         border-top: 1px solid black;
-        margin-bottom: 20px;
+        margin-bottom: 2%;
     }
     header nav ul li {
         display: flex;
