@@ -256,25 +256,15 @@ footer {
         width: 350px;
         flex-direction: column;
     }
-    h4 {
-        display: flex;
-        width: 100px;
-    }
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;
         height: 300px;
-        width: 300px;
-    }
-    .main-content .middle-img {
-        display: flex;
-        width: 350px;
     }
     .main-content .bottom-content {
         justify-content: space-between;
         flex-direction: column;
-        height: 400px;
-        width: 300px;
+        height: 440px;
     }
 
 
