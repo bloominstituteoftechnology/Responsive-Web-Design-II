@@ -208,7 +208,7 @@ header .logo {
   border: 1px double black;
   font-size: 1.6rem;
   background: white;
-  width: 19.318%;
+  width: 50%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -264,15 +264,19 @@ footer {
 
 /* Tablet formatting */
 
-@media (max-width: 920px) {
+@media (max-width: 880px) {
   .container {
-    max-width: 880px;
-    width: calc(100% - 40px);
-    margin: 0px 20px;
+    width: 100%;
+    padding: 0px 20px;
   }
 
+	header nav {
+		width: 67%;
+	}
+
   header .logo {
-    margin: 28px 0 0 40px;
+    margin-top: 28px;
+		margin-left: 4.55%;
   }
 
   .cta {
@@ -281,8 +285,13 @@ footer {
 
   .cta .cta-text {
     margin: 0;
-    width: 40%;
+		font-size: 4.5rem;
   }
+
+	.cta .cta-text button {
+		width: 60%;
+		font-size: 1rem;
+	}
 
   .main-content {
   }
