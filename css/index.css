@@ -215,22 +215,25 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     header {
-        width: 350px;
+        width: 340px;
         flex-flow: column wrap; 
+        justify-content: center;
         align-items: center;
     }
     header nav{
-        flex-flow: column nowrap;
+        flex-flow: column;
         align-items: center;
-        height: 370px;
+        height: 350px;
         margin: 15px;
+        width: 400px;
     }
     header nav a {
         font-size: 20px;
         border-bottom: 1px grey solid;
-        width: 400px;
+        width: 370px;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -239,22 +242,29 @@ footer {
         align-items: center;
     }
     header nav a:first-child {
-        border-top: 1px grey solid; 
+        border-top: 1px grey solid;
+        width: 370px;
     }
     header .logo {
         align-self: flex-start;
         order: -1; 
+
     }
     .cta {
-        display: flex;
-        flex-flow: column wrap;
-        border: 4px blue solid;
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
     }
-    .cta .cta-text button {
-        height: 35px;
+    .cta .cta-text {
+        margin-bottom: 50px;
+        align-self: flex-end;
     }
     .cta img {
-        display: flex;
+        align-self: space-between;
+        margin-right: 50px;
+        width: 370px;
     }
     .main-content {
         width: 350px;
@@ -276,5 +286,7 @@ footer {
         width: 350px;
         margin-left: 20px;
     }
-
+    footer {
+        width: 370px;
+    }
 }
