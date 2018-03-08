@@ -117,13 +117,14 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 9%	0 0;
+		width: 50%
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 65%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -171,7 +172,7 @@ header .logo {
 }
 
 .contact p {
-    margin: 15px 0;
+    margin: 2% 0;
 		font-size: 1.6rem;
 }
 
