@@ -60,7 +60,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 1.1%;
 }
 
 .container {
@@ -77,7 +77,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 5%;
     width: 69.3%;
     justify-content: space-between;
     display: flex;
@@ -95,14 +95,14 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.1% 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.1%;
     justify-content: flex-end;
     width: 100%;
 }
@@ -110,12 +110,12 @@ header .logo {
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 1%;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
@@ -124,7 +124,7 @@ header .logo {
     background: white;
     width: 58%;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 1.1%;
     cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 8.5% 0 4% 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
@@ -151,7 +151,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -166,14 +166,14 @@ header .logo {
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.7% 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.5% 0 2.3%;
 }
 
 /* Project 1: Adaptive Web Design */
@@ -275,7 +275,7 @@ footer {
     }
     header nav {
         width: 55.6%;
-        margin-left: 20px;
+        margin-left: 2.6%;
     }
     .cta {
         justify-content: center;
