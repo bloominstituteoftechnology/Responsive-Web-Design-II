@@ -165,6 +165,10 @@ header .logo {
 
 /* Contact Styles */
 
+.contact {
+  margin-left: 30px;
+}
+
 .contact p {
     margin: 15px 0;
 }
@@ -202,11 +206,6 @@ footer {
   /* section 2 - .main-content */
   .text-content {
     padding-right: 15px;
-  }
-
-  /* section 3 - .contact */
-  .contact {
-    margin-left: 30px;
   }
 }
 
