@@ -75,19 +75,19 @@ header {
     display: flex;
 }
 
-header nav ul {
+header nav {
     margin-top: 40px; 
     width: 457px;
     justify-content: space-between;
     display: flex;
 }
 
-header nav ul li a {
+header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
 
-header nav ul li a:hover {
+header nav a:hover {
     text-decoration: underline;
     color: black;
 }
