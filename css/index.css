@@ -137,7 +137,7 @@ html,
 body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
-  font-size: 14px;
+  font-size: 62.5%;
 }
 
 h1,
@@ -287,6 +287,7 @@ footer {
   }
 
   header nav {
+    font-size: 1.6rem;
     width: 59.5%;
     margin-left: 2.6%;
   }
@@ -308,16 +309,22 @@ footer {
   }
 
   .main-content {
-    margin: 75px 20px 35px;
+    margin: 9.7% 2.6% 4.5%;
   }
 
   .contact {
-    margin: 20px 20px 35px;
+    font-size: .8rem
+    margin: 2.6% 2.6% 4.5%;
   }
 }
 
 /* Phone */
 @media (max-width: 400px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
   header {
     flex-wrap: wrap;
     justify-content: center;
@@ -340,7 +347,7 @@ footer {
     margin: 0;
     display: block;
     text-align: center;
-    padding: 20px 0;
+    padding: 5% 0;
     font-size: 2rem;
     border-bottom: 1px solid gray;
   }
@@ -356,17 +363,17 @@ footer {
   header .logo {
     order: -1;
     max-width: 100%;
-    margin: 2.2% 0;
+    margin: 5% 0;
   }
 
   .cta {
-    margin-top: 5.6%;
+    margin-top: 12.5%;
     flex-flow: column;
     align-items: center;
   }
 
   .cta .cta-text {
-    margin: 0 0 5.6% 0;
+    margin: 0 0 12.5% 0;
   }
 
   .cta img {
