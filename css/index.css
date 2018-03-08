@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%
 }
 
 h1, h2, h3, h4, h5 {
@@ -77,8 +78,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.5%; 
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -86,6 +87,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -95,35 +97,35 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3% 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.1rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .6%;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 59%;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 1%;
     cursor: pointer;
 }
 
@@ -137,9 +139,9 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   margin: 9% 0 4% 0;
+   padding: 4% 0;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -150,7 +152,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3% auto;
 }
 
 .main-content .bottom-content {
@@ -159,20 +161,26 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin: 2% 0;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 5% 0 2%;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 768px) {
@@ -181,12 +189,12 @@ footer {
     }
 
     header nav {
-        width: 457px;
-        margin-left: 20px;
+        width: 60%;
+        margin-left: 3%;
     }
 
     header .logo {
-        margin: 28px 0 0 59px;
+        margin: 4% 0 0 8%;
     }
 
     .cta {
@@ -194,7 +202,7 @@ footer {
     }
     
     .cta .cta-text {
-        margin: 0 40px 0 0;
+        margin: 0 5% 0 0;
     }
 
     .main-content .middle-img {
@@ -202,11 +210,11 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 10% 3% 5%;
     }
 
     .contact {
-        margin: 20px 20px 35px;
+        margin: 3% 3% 5%;
     }
 }
 
@@ -236,17 +244,16 @@ footer {
         align-items: center;
         justify-content: space-around;
         height: 300px
-
+        margin: 2%;
     }
 
     header nav a {
-        width: 100%;
+        width: 200%;
         margin: 0;
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
-        font-weight: bold;
+        padding: 10% 0;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
@@ -258,7 +265,7 @@ footer {
     header .logo {
         order: -1;
         max-width: 100%;
-        margin: 20px 0;
+        margin: 5% 0;
         align-self: center;
     }
 
@@ -274,8 +281,8 @@ footer {
         width: 100%;
         display: flex;
         align-items: center;
-        margin: 20px;
-        padding-bottom: 30px;
+        margin: 5%;
+        padding-bottom: 8%;
 }
 
     .cta img {
@@ -288,8 +295,8 @@ footer {
         display: flex;
         width: 90%;
         flex-direction: column;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 
     .top-content {
@@ -298,7 +305,7 @@ footer {
     }
 
     .text-content {
-        padding-top: 20px;
+        padding-top: 5%;
     }
 
     .middle-img {
@@ -313,7 +320,7 @@ footer {
     }
 
     .contact {
-        margin-left: 20px;
+        margin-left: 5%;
     }
 
 
