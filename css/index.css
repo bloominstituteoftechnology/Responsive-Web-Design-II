@@ -345,15 +345,16 @@ footer {
     .bottom-content p{
         margin-bottom: 3%;        
     }
-}
 
-.contact {
-    margin-top: 10%;
-}
-.contact p{
-    text-align: left;    
-}
+    .contact {
+        margin-top: 10%;
+    }
 
-footer {
-    margin-top: 16%;
+    .contact p{
+        text-align: left;    
+    }
+
+    footer {
+        margin-top: 16%;
+    }
 }
