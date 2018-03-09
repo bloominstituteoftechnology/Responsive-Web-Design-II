@@ -199,7 +199,7 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        max-width: 100%;
+        width: 100%;
         margin: 0% 2% 0% 2%;
     }
 
@@ -270,6 +270,7 @@ footer {
         align-items: center;
         padding: 5% 0% 6%;
         border-top: .1rem solid black;
+        border-top-width: 100%;
     }
 
     header .logo {
@@ -299,7 +300,7 @@ footer {
         align-self: center;
     }
     
-    /* main content adjustments*/
+    /* main content adjustments with pixel perfect %*/
 
     .main-content {
         margin: 0 5%;
