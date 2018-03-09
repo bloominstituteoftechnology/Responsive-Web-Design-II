@@ -298,6 +298,11 @@ footer {
         font-size: 1.9rem;
     }
 
+    header nav a:hover {
+        background: gray;
+        text-decoration: none;
+    }
+
     header nav .a1 {
         border-top: 1px solid #b0b0b0;
     }
