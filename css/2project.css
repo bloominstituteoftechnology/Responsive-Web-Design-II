@@ -55,17 +55,18 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     margin-bottom: 1%; 
 }
 
 .container {
     width: 100%; 
-    max-width: 880px;
+    max-width: 88rem;
     margin: auto;
 }
 
@@ -107,7 +108,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -119,10 +120,10 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 58%; 
-    height: 32px;
+    height: 3.2rem;
     margin-top: 3%; 
     cursor: pointer;
 }
@@ -135,12 +136,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+   border-top: .2rem solid black; 
+   border-bottom: .2rem solid black;
    margin: 9% 0 4% 0; 
    padding: 4% 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -164,8 +165,11 @@ header .logo {
 
 /* Contact Styles */
 
+.contact {
+  font-size: 1.6rem;
+}
 .contact p {
-    margin: 2%;
+    margin: 2% 2% 2% 0;
 }
 
 /* Footer Styles */
@@ -218,7 +222,7 @@ footer {
   header {
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid;
+    border: .1rem solid;
   }
 
   header nav {
@@ -235,12 +239,12 @@ footer {
         display: block;
         text-align: center;
         padding: 2% 0;
-        font-size: 20px;
-        border-bottom: 1px solid gray;
+        font-size: 2rem;
+        border-bottom: .1rem solid gray;
     }
 
     header nav a:first-child {
-        border-top: 1px solid gray;
+        border-top: .1rem solid gray;
     }
 
     header nav a:hover {
@@ -270,13 +274,13 @@ footer {
 
     .main-content .top-content {
         flex-wrap: wrap;
-        height: 300px;
+        height: 30rem;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
-        height: 440px;
+        height: 44rem;
     }
 
 }
