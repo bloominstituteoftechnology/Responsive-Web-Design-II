@@ -317,12 +317,17 @@ footer {
         flex-direction: column;
     }
 
-    .text-content p {
+   /* .text-content p {
         margin-bottom: 3rem;
-    }
+    }*/
 
     .contact {
-        padding-left: 0.5rem;
+        padding-left: 3%;
+
+    }
+
+    .contact p {
+        margin: 15px 0 21px 0;
     }
 
 }
