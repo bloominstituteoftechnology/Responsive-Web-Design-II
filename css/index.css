@@ -66,7 +66,6 @@ h1, h2, h3, h4, h5 {
     max-width: 1150px;
     width: 100%;
     margin: auto;
-    /* border: 2px solid blue; */
 
 
 }
@@ -74,26 +73,22 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid red; */
 
 }
 header .logo {
     align-self: flex-end;
-    /* margin: 28px 0 0 91px; */
-    /* border: 1px solid yellow; */
-
 }
 header nav {
     margin-top: 40px;
     width: 50%;
     justify-content: space-between;
     display: flex;
-    /* border: 1px solid blueviolet; */
     
 }
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    width: 100%;
+    margin: 60px 0%;
 }
 .cta {
     display: flex;
@@ -101,20 +96,19 @@ header nav {
     justify-content: space-around;
 }
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 4.5rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
 }
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
-    width: 170px;
+    width: 60%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -126,9 +120,11 @@ header nav a {
 .main-content {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    margin: 75px 0 35px 0;
     padding: 35px 0;
-    font-size: 16px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 1rem;
     line-height: 18px;
  }
 
@@ -145,11 +141,12 @@ header nav a {
     padding-right: 20px;
 }
 .contact p {
-    margin: 15px 0;
+    
+    margin: 20px 0;
 }
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin-top: 50px;
 }
 
 
@@ -160,7 +157,6 @@ footer {
     max-width: 1024px;
     width: 100%;
     margin: auto;
-    /* border: 2px solid blue; */
     align-items: center;
     align-content: center;
 }
@@ -168,23 +164,20 @@ header {
     width: 98%;
     display: flex;
     justify-content: space-around;
-    /* border: 2px solid red; */
     margin-top: 26px;
     
 }
 header .logo {
     align-self: flex-end;
-    margin: auto;/*24.4px 0 0 74.42px; */
-    /* border: 2px solid blue; */
+    margin: auto;
 }
 header nav {
-    margin-top: auto;/* 34.9px; */
-    width: 67%;/*450px; */
+    margin-top: auto;
+    width: 67%;
     justify-content: space-around;
     margin-bottom: auto;
     margin-left: 4.42%;
     display: flex;
-    /* border: 2px solid black; */
 }
 
 .cta {
@@ -192,43 +185,37 @@ header nav {
     width: 100%;
     justify-content: space-between;
     padding-right: 2%;
-    /* border: 2px solid yellow; */
     margin-bottom: 65px;
 
 }
 .cta .cta-text {
-    font-size: 5rem;/*72px; */
+    font-size: 5rem;
     text-align: center;
     letter-spacing: 0.5%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0% auto;
-    /* border: 4px solid purple; */
 }
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 1rem; /*16px; */
+    font-size: 1rem; 
     background: white;
-    width: 10.63rem; /*170px; */
-    height: 2rem; /*32px; */
-    margin-top: .2% ;/*2px; */
-    margin-bottom: 3.4% ;/*35px; */
+    width: 10.63rem; 
+    height: 2rem; 
+    margin-top: .2% ;
+    margin-bottom: 3.4% ;
     cursor: pointer;
 }
 
 .main-content {
-    width: 88%;
-    /* justify-content: center; */
+    width: 90%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    /* margin: 7.3% 0% 3.4% 0%;75px 0 35px 0;
-    padding: 3.4%;35px 0; */
     margin: auto;
     margin-top: 10px;
-    font-size: 1rem;/*16px;*/
-    line-height: 1.125rem;/*18px;*/
-    /* border: 2px solid red; */
+    font-size: 1rem;
+    line-height: 1.125rem;
 
  }
 
@@ -238,13 +225,10 @@ header nav {
      align-items: center;
      margin: auto;
      width: 98%;
-     /* margin-top: 0px; */
-     /* border: 2px solid greenyellow; */
 
  }
  .main-content .top-content p {
-    margin-bottom: 2.4%;/*25px;*/
-    /* border: 2px solid blue; */
+    margin-bottom: 2.4%;
 
 
 }
@@ -253,8 +237,6 @@ header nav {
     width: 100%;
     margin: 3% auto;
     justify-content: center;
-    /* margin-left: 3%; */
-    /* border: 2px solid yellow; */
 
 }
  .main-content .bottom-content {
@@ -263,30 +245,26 @@ header nav {
     margin: auto;
     margin-top: 12px;
     width: 100%;
-    /* border: 2px solid orange; */
 
 }
 
 .main-content .bottom-content p {
-    margin-bottom: 2.4% ;/*25px; */
-    /* border: 2px solid yellow; */
+    margin-bottom: 2.4% ;
 
 }
 .contact p {
     margin: 1.5% 0%;
-    /* border: 4px solid green; */
 
 }
 .contact {
     margin-left: 7.8%;
     margin-top: 40px;
-    /* border: 2px solid red; */
 
 
 }
 footer {
     text-align: center;
-    margin: 5.8% 0% 1.95%; /*60px 0 20px; */
+    margin: 5.8% 0% 1.95%; 
 }
 
 
@@ -296,11 +274,8 @@ footer {
 @media (max-width: 768px) {
     .container {
         max-width: 768px;
-        /* max-height: 1365px; */
         width: 100%;
-        /* height: 100%; */
         margin: auto;
-        /* border: 2px solid red; */
 
 
     }
@@ -308,27 +283,17 @@ footer {
         width: 100%;
         display: inline-flex;
         justify-content: flex-start;
-        /* border: 2px solid yellow; */
         margin-top: 20px;
-        /* margin-bottom: auto; */
         align-items: center;
 
     }
     header .logo {
-        /* display: inline-flex; */
-        /* align-self: flex-start; */
-        /* margin-left: 5px;  */
-        /* border: 2px solid blue; */
-        /* margin-left: 80px; */
-        /* justify-content: space-around; */
+   
     }
     header nav {
-        /* margin-top: 2.19rem;34.9px; */
-        width: 63%;/*450px; */
-        /* justify-content: space-between; */
+        width: 63%;
         display: flex;
-        /* border: 2px solid black; */
-        /* margin-right: 75px; */
+       
         
     }
  
@@ -337,10 +302,9 @@ footer {
         width: 100%;
         justify-content: space-around;
         padding-right: 6.5%;
-        /* border: 2px solid yellow; */
     }
     .cta .cta-text {
-        font-size: 4.5rem;/*72px; */
+        font-size: 4.5rem;
         text-align: center;
         letter-spacing: .313rem;
         display: flex;
@@ -348,29 +312,25 @@ footer {
 
         align-items: center;
         margin: 0% auto;
-        /* border: 2px solid red; */
     }
     .cta .cta-text button {
         border: 1px double black;
         font-size: 1rem;
         background: white;
-        width: 56% ;/*170px; */
-        height: 32px ;/*32px;*/
-        margin-top: 8px;/*2px; */
-        margin-bottom: 35px;/*35px; */
+        width: 56% ;
+        height: 32px ;
+        margin-top: 8px;
+        margin-bottom: 35px;
         cursor: pointer;
 
     }
     .main-content {
         border-top: 2px solid black;
-        /* border-bottom: 2px solid black; */
-        /* margin: 9.7% 0% 4.6% 0% ;75px 0 35px 0; */
-        /* padding: 4.6% 0%; 35px 0; */
+      
         margin-top: 0px;
-        font-size: 1rem;/*16px; */
+        font-size: 1rem;
         width: 98%;
-        line-height: 1.125rem; /*18px; */
-        /* border: 2px solid red; */
+        line-height: 1.125rem; 
 
      }
 
@@ -379,47 +339,38 @@ footer {
          justify-content: center;
          align-items: center;
          margin: auto;
-         width: 100%;
-         /* border: 2px solid red; */
+         width: 98%;
 
      }
      .main-content .top-content p {
-        margin-bottom: 6px; /*25px; */
-        /* border: 2px solid red; */
+        margin-bottom: 6px; 
 
     }
      .main-content .middle-img {
         display: inline-flex;
         width: 100%;
-        margin: 1.875rem auto;/*30px auto; */
+        margin: 1.875rem auto;
         margin-bottom: 20px;
-        /* margin-left: 2%;15px; */
-        /* border: 2px solid red; */
     }
      .main-content .bottom-content {
         display: flex;
         justify-content: space-around;
         margin: auto;
         width: 100%;
-        /* border: 2px solid red; */
     }
   
     .main-content .bottom-content p {
-        margin-bottom: 0px;  /*25px; */
-        /* border: 2px solid red; */
+        margin-bottom: 0px;  
     }
     .contact p {
-        margin: 15px 0%;/*15px 0; */
+        margin: 15px 0%;
     }
     .contact {
-        margin-left: 2.3% ;/*25px; */
-        /* border: 2px solid red; */
+        margin-left: 2.3% ;
     }
     footer {
         text-align: center;
-        /* margin: 6% 0%  2.6% ;45px 0 20px; */
         margin-top: 16px;
-        /* border: 2px solid blue; */
     }
 
 }
@@ -429,7 +380,6 @@ footer {
         max-width: 400px;
         width: 100%;
         margin: auto;
-        /* border: 2px solid blue; */
     }
     header {
         width: 100%;
@@ -439,20 +389,16 @@ footer {
         flex-direction: column;
         margin: auto;
         margin-bottom: 45px;
-        margin-top: 14px;
-        /* border: 2px solid blue; */
+        margin-top: 10px;
     }
     header .logo {
         width: 50%;
-        /* margin: 10px auto; */
         margin: 2.5% auto;
         order: -1;
-        /* border: 2px solid blue; */
 
     }
     header nav {
-        /* margin-top: 18px; */
-        /* margin-top: 27px; */
+       
         width: 100%;
         justify-content: space-between;
         align-items: center;
@@ -462,24 +408,20 @@ footer {
         margin: auto;
         border-top: 1px solid grey;
 
-        /* margin-right: 5px; */
-        /* margin-right: 1.3%; */
-        /* border: 2px solid yellow; */
+        
 
     }
     header nav a {
         text-decoration: none;
         display: flex;
         color: #b0b0b0;
-        /* padding: 20px; */
         font-size: 1.3rem;
-        padding: 18px 0%;
+        padding: 20.5px 0%;
         width: 100%;
         align-items: center;
         justify-content: center;
 
         border-bottom: 1px solid grey;
-        /* border: 2px solid blue; */
 
     }
 
@@ -491,41 +433,27 @@ footer {
         margin-bottom: 0%;
         justify-content: center;
         flex-wrap: wrap;
-        /* border: 2px solid blue; */
     }
     .cta .cta-text {
-        /* font-size: 72px; */
         font-size: 4.5rem;
         text-align: center;
         letter-spacing: .313rem;
-        /* letter-spacing: 5px; */
         display: flex;
         justify-content: center;
         flex-flow: column;
         align-items: center;
         margin: 0% auto;
-        /* border: 2px solid blue; */
     }
     .cta .cta-text button {
         border: 1px double black;
-        /* font-size: 16px; */
         font-size: 1rem;
-        background: white;
-        /* width: 170px; */
-        /* height: 32px; */
-        /* height: 32px; */
-        /* margin-top: 2px; */
-        margin-top: .5%
-        /* margin-bottom: 35px; */
+        background: white;        
+        margin-top: 20px;
         margin-bottom: 8.8%;
         cursor: pointer;
-        /* border: 2px solid blue; */
     }
     .cta img {
-        /* width: 75%; */
-        /* height: 50%; */
-        /* padding: -50px; */
-        /* max-width: 80%; */
+        
         width: 100%;
   
 
@@ -534,18 +462,11 @@ footer {
         width: 99%;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
-        /* margin: 45px 0 10px 0; */
         margin: auto;
-        margin-top: 47px;
-
-        /* margin: 75px 0 35px 0; */
-        /* padding: 8.8% 0%; */
-        /* padding: 35px 0; */
+        margin-top: 54px;        
         font-size: 1rem;
-        /* font-size: 16px; */
         line-height: 1.125rem;
         line-height: 18px;
-        /* border: 2px solid blue; */
 
      }
 
@@ -556,22 +477,18 @@ footer {
          flex-wrap: wrap;
          margin: auto;
          width: 97%;
-         /* border: 2px solid blue; */
 
      }
      .main-content .top-content p {
-        /* margin-bottom: 25px; */
-        margin-bottom: 25px;
-        /* border: 2px solid blue; */
+        margin-bottom: 34px;
+        
 
     }
      .main-content .middle-img {
-        /* display: inline-flex; */
         width: 100%;
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* margin-left: 12px; */
-        /* border: 2px solid blue; */
+        margin-top: 0px;
+        margin-bottom: 35px;
+        
     }
      .main-content .bottom-content {
         display: flex;
@@ -579,32 +496,24 @@ footer {
         flex-wrap: wrap;
         margin: auto;
         width: 100%;
-        /* border: 2px solid blue; */
     }
  
     .main-content .bottom-content p {
-        /* margin-bottom: 25px; */
-        margin-bottom: 28px;
-        /* border: 2px solid blue; */
+        margin-bottom: 42px;
 
     }
     .contact p {
 
-        /* margin: 15px 0; */
         margin: 3.75%; 
-        /* border: 2px solid blue; */
     }
     .contact {
-        /* margin-left: 20px; */
         margin-left: 5%;
-        /* border: 2px solid blue; */
+        margin-top: 20px;
     }
     footer {
         text-align: center;
-        /* margin: 35px 0%  5% ; */
         margin-top: 30px;
-        /* margin: 45px 0 20px; */
-        /* border: 2px solid blue; */
+        
     }
 
 
