@@ -229,12 +229,25 @@ footer {
         padding: 0;
     }
 
-    .main-content .middle-img {
-        display: block;
-        width: 97%;
+    .main-content {
+        margin: 78px 0 11px 0;
+        padding: 33px 0 20px 0;
     }
 
+    .main-content .top-content {
+        padding-left: 3%;
+    }
 
+    .main-content .middle-img {
+        display: block;
+        width: 95%;
+        padding: 0;
+        margin: 22px auto 31px auto;
+    }
+
+    .main-content .bottom-content {
+        padding-left: 3%;
+    }
 }
 
 /* phone size */
