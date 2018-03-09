@@ -251,73 +251,108 @@ footer {
     }
 
     header {
-        width: 10%;
-        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
-    header nav ul { 
+    header nav {
         display: flex;
         flex-direction: column;
-        width: 9.5%;
-        font-size: 1.5rem;
-        margin: 30px 0px -60px 180px;
-    } 
+        width: 100%;
+        margin: 5% 0% 0% 0%;
+    }
 
-    header nav ul li a {
-        display: flex;
-        flex-direction: column;
-        color: black;
-        align-items: center;
+    header nav a {
+        padding: 16px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        border-bottom: 1px solid gray;
     }
     
+    header nav:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
 
     header .logo {
-        display: none;
+        width: 47%;
+        display: flex;
+        align-self: flex-start;
+        flex-flow: column;
+        margin: 5% -12% 0%;
+        order: -1;
     }
 
     .cta {
-        margin: 115px 0px 0px 50px;
-    }
-    
-    .cta .cta-text {
-        margin: 0 12% 0;
+        margin: 15% 9% 0%;
     }
 
     .main-content .middle-img {
-        display: none;
+        width: 100%;
+        margin: 10% 0% 10%;
     }
 
     .main-content {
-        margin: 15% 16% 20%;
-        max-width: 80%;
-        line-height: 20px;
+        margin: 15% 5% 15%;
+        width: 90%;
+        line-height: 23px;
+        padding: 5% 0%;
+
     }
 
     .cta .cta-text {
-        font-size: 3rem;
-        margin: 0 20% 0 0;
+        font-size: 4rem;
+        margin: 6% -96% 0%;
     }
         
     .cta img {
-        display: none;
+        display: block;
+        width: auto;
+        margin: 0% -8% 0% 0%;
+    }
+
+    h1 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        position: relative;
+        color: rosybrown;
+        text-shadow: 4px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .cta .cta-text button {
+        border: -1px double black;
+        font-size: 20px;
+        background: beige;
+        color: rosybrown;
+        width: 163px;
+        height: 37px;
+        margin-top: 10px;
+        cursor: pointer;
+        position: relative;
     }
 
     .main-content .top-content {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .main-content h4 {
-        margin: 15px 0 10px;
+        margin: 3% 0;
     }
 
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     contact {
