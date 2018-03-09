@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 1024px;
+    font-size: 62.5%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 85.5%;
+    margin: auto;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 38px; 
+    width: 69%;
+    justify-content: space-between;
+    display: flex;
+    /*background-color: red;*/
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    align-self: flex-end;
+    margin: 27px 0 0 10%;
+    /*background-color: blue;*/
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 70px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 8.4rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 10% 0 0;
+    padding-top: 55px; 
+    line-height: 7.6rem;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Titillium Web', sans-serif;
+    background: white;
+    width: 54%;
+    height: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.cta img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 76px 0 40px 0;
+   padding: 35px 0;
+   font-size: 1.6rem;
+   line-height: 2rem;
+}
+
+.main-content .top-content {
+    display: inline-flex;
+    width: 102.5%;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 34px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content .bottom-content {
+    display: inline-flex;
+    width: 102.5%;
+}
+
+.main-content .bottom-content p {
+    padding-right: 2%;
+}
+
+.bottom-content .text-content {
+    padding-right: 2%;
+}
+
+/* Contact Styles */
+.contact {
+    font-size: 1.6rem;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+
+footer {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 52px 0 20px;
+}
+
+/* At 768px And Below */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 2.8%;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        margin-top: 2px;
+    }
+
+    header nav {
+        width: 63%;
+    }
+
+    header .logo {
+        margin: 26px 0 0 8%;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        font-size: 7.05rem;
+        padding-left: 0.5%;
+        line-height: 7.2rem;
+        margin-right: 6.5%;
+    }
+
+    .cta .cta-text button {
+        width: 60%;
+        font-size: 1.7rem;
+        font-family: 'Titillium Web', sans-serif;
+
+    }
+
+    .cta img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .top-content .text-content {
+        width: 48.9%;
+        line-height: 1.8rem;
+    }
+
+    .main-content {
+        margin-bottom: 34px;
+    }
+
+    .main-content .middle-img {
+        margin: 30px auto 29px;
+    }
+
+    .bottom-content .text-content {
+        width: 32.5%;
+        line-height: 1.8rem;
+    }
+
+    .contact p {
+        margin: 15px 0;
+    }
+
+    footer {
+        margin: 40px 0 20px;
+        font-size: 1.6rem;
+    }    
+
+}
+
+/* At 400px And Below */
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 100%;
+
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0 0 0;
+        justify-content: space-around;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a {
+        display: flex;
+        border-top: 1px solid gray;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+
+        font-size: 2rem;
+    }
+
+    header .logo {
+        align-self: center;
+        order: -1;
+        margin: 20px 0 0 0;
+    }
+
+    .cta {
+        flex-flow: column wrap;
+        margin-top: 0px;
+    }
+
+    .cta .cta-text {
+        margin: 0 0 0 0;
+    }
+
+    .cta .cta-text button {
+        width: 45%;
+        height: 30px;
+    }
+
+    .cta img {
+        margin: 50px 0 0 0%;
+        max-width: 85%;
+        height: auto;
+        align-self: center;
+    }
+
+    .main-content {
+        width: 96%;
+    }
+
+    .main-content .top-content {
+        flex-flow: column nowrap;
+    }
+
+    .main-content .bottom-content {
+        flex-flow: column nowrap;
+    }
+
+    .top-content .text-content {
+        width: 100%;
+        margin: 17px 0;
+        padding: 0 2%;
+        line-height: 1.8rem;
+    }
+
+    .main-content .middle-img {
+        margin: 28px 0 0;
+    }
+
+    .bottom-content .text-content {
+        width: 100%;
+        margin: 26px 0 17px 0;
+        padding: 0 2%;
+    }
+
+    .main-content {
+        margin-bottom: 12px;
+    }
+
+    .contact {
+        padding: 2%;
+    }
+
+    footer {
+        margin-top:20px;
+    }
+
+}
