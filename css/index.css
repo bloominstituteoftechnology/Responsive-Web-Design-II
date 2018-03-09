@@ -132,6 +132,7 @@ table {
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
@@ -157,8 +158,10 @@ h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
+  font-size: 1.6rem;
 }
 
 /* Header Styles */
@@ -170,9 +173,11 @@ header {
 
 header nav {
   margin-top: 40px;
-  width: 610px;
+  /* width: 610px; */
   justify-content: space-between;
   display: flex;
+  font-size: 1.6rem;
+  width: 100%;
 }
 
 header nav a {
@@ -187,7 +192,7 @@ header nav a:hover {
 
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 9%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -199,21 +204,21 @@ header .logo {
 }
 
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9% 0 0;
 }
 
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 58%;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -231,7 +236,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 
@@ -243,6 +248,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  max-width: 100%;
 }
 
 .main-content .bottom-content {
@@ -256,6 +262,11 @@ header .logo {
 
 /* Contact Styles */
 
+.contact {
+  font-size: 1.5rem;
+  margin: 12.8% 1.6%;
+}
+
 .contact p {
   margin: 15px 0;
 }
@@ -265,6 +276,7 @@ header .logo {
 footer {
   text-align: center;
   margin: 40px 0 20px;
+  font-size: 1.5rem;
 }
 
 /* At 768px and below do the following */
@@ -277,7 +289,11 @@ footer {
 
   header {
     width: 90%;
-    margin: 0 20px;
+    margin: 0 2.6%;
+  }
+
+  header .logo {
+    margin: 3.6% 0 0 4%;
   }
 
   /* Call To Action (CTA) Styles */
@@ -288,23 +304,27 @@ footer {
   }
 
   .cta img {
-    margin-right: 20px;
+    margin-right: 2.6%;
   }
 
   /* Main Content Styles */
 
   .main-content {
-    margin: 50px 20px;
+    margin: 10.5% 3% 6%;
   }
 
   .main-content .middle-img {
     width: 100%;
   }
 
+  .text-content {
+    margin-right: 2%;
+  }
+
   /* Contact Styles */
 
   .contact {
-    margin: 0 20px;
+    margin: 0 2.6%;
   }
 }
 
@@ -328,14 +348,17 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    font-size: 2.4rem;
   }
 
   header nav a {
     width: 100%;
     text-align: center;
     border-bottom: 1px solid black;
-    padding: 15px;
+    padding: 4.75%;
+    padding-left: 11%;
+    padding-bottom: 5.8%;
   }
 
   header nav a:first-child {
@@ -343,8 +366,9 @@ footer {
   }
 
   header .logo {
-    margin: 10px auto;
+    margin: 5.5% auto;
     order: -1;
+    margin-right: 22%;
   }
 
   /* Call To Action (CTA) Styles */
@@ -353,10 +377,11 @@ footer {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    margin-top: 6.75%;
   }
 
   .cta .cta-text {
-    margin: 0 0 50px;
+    margin: 0 0 12.5%;
   }
 
   .cta img {
@@ -369,7 +394,9 @@ footer {
   .main-content {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 20px;
+    margin: 34.5% 5% 1%;
+    font-size: 1.5rem;
+    padding: 14% 2% 0 0;
   }
 
   .main-content .top-content {
@@ -377,11 +404,13 @@ footer {
   }
 
   .text-content {
-    margin-bottom: 30px;
+    margin-bottom: 14.5%;
   }
 
   .main-content .middle-img {
     width: 100%;
+    height: 53%;
+    margin: 0;
   }
 
   .main-content .bottom-content {
@@ -393,11 +422,18 @@ footer {
   .contact {
     display: flex;
     flex-direction: column;
+    font-size: 1.5rem;
+    margin: 7.8% 5.6%;
+  }
+
+  .contact p {
+    margin: 2.7% 0;
   }
 
   /* Footer Styles */
 
   footer {
-    width: 100%;
+    font-size: 1.5rem;
+    margin: 5% 0 0 2.69%;
   }
 }
