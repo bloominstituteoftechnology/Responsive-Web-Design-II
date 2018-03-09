@@ -283,7 +283,7 @@ footer {
 
     header .logo{
         order: -1;
-        margin: 5.5% 0 2.4% 30%;
+        margin: 5.5% 0 2.4% 29%;
     }
     
     header nav a{
@@ -291,35 +291,40 @@ footer {
         border-bottom: 1px solid gray;
         width: 100%;
         text-align: center;
-        padding:5.6%;
+        padding:5.4%;
+        padding-bottom: 6%;
         font-size: 1.8rem;
                      
     }    
-    .middle-img {
+    .main-content .middle-img {
         width: 100%;
+        height: 100%;
+        padding-left: 5%;
+        padding-right: 1%;
     }
     
-    .cta {             
+    .cta {
+        flex-direction: column;             
         flex-wrap: wrap;
         margin: 0%;
+        align-content: center;
     }
 
     .cta .cta-text{
-        padding: 3% 0% 55px 0;
-        text-align: center;
+        padding: 2% 2% 9.75% 5%;
+        text-align: center;        
     }
 
     .cta img {
         justify-content: center;
         width: 87%;
         height: 100%;
-        margin: 0% 0% 12% 11%;
+        margin: 0% 0% 12% 7%;
     }
 
     .main-content{
         display: flex;
         flex-wrap: wrap;
-        margin-top: 24%%;
     }
 
     .top-content {
@@ -328,7 +333,7 @@ footer {
     }
 
     .top-content p{
-        margin-bottom: 33px;
+        margin-bottom: 22%;
     }
 
     h4 {
@@ -343,13 +348,13 @@ footer {
     }
 
     .bottom-content p{
-        margin-bottom: 3%;        
+        margin-bottom: 6%;        
     }
 
     .contact {
         margin-top: 10%;
     }
-
+    
     .contact p{
         text-align: left;    
     }
