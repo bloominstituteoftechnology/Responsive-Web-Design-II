@@ -95,7 +95,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -114,7 +114,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
@@ -159,7 +159,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.3%;
 }
 
 /* Contact Styles */
@@ -174,6 +174,62 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .main-content{
+        width: 100%;
+        margin: 0 2.6% 0 2.6%;
+    }
+    header nav a{
+        padding: 0 13px;
+        margin-left: 1.2%;
+        margin-right: 0%;
+    }
+    header .logo{
+        width: 100%;
+        position: relative;
+        right: 5.9%;
+    }
+    
+    .cta{
+        padding: 20px;
+        margin-bottom: 7px;
+    }
+    .cta img{
+       margin: -20px 0 0 0;
+       position: relative;
+       left: 3.5%;
+    }
+    .cta .cta-text {
+        width:50%;
+        letter-spacing: 6px;
+        margin-right: 1%;
+        margin-bottom: 20px;
+    }
+    .contact{
+        padding: 2;
+        margin: 64px 0 0 0;
+    }
+    .main-content{
+        margin: 55px 2.6% -50px 2.6%;
+    }
+    .main-content .top-content{
+        margin: 0 0.9% 0 0;
+    }
+    .main-content .middle-img{
+        margin: 30px 0 67px 0;
+        width: 100%;
+    }
+    .main-content .bottom-content{
+        margin: -37px 1% 0 0px;;
+    }
+    footer{
+        margin:4px 0 0 4.4%;
+    }
+}
+
 @media (max-width: 400px) {
     .container {
         width: 100%;
@@ -182,29 +238,30 @@ footer {
         flex-wrap: wrap;
         height: 100%;
         justify-content: center;
+        margin-top:37px;
     }
     header nav {
         flex-direction: column;
         order: 1;
         border-top: solid grey 0.2px;
     }
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        margin: 0 20px 0 20px;
-    }
+   
     header .logo{
         flex-direction: column;
         justify-content: center;
-        margin: 0 0 0 0;
+        margin: -57px -16.5% 20px 0;
         padding-top: 30px;
+        width: 48%;
     }
     header nav a {
         display:flex;
         align-items: center;
         flex-direction: column;
-        padding: 20px;
+        padding: 21px;
         border-bottom: solid grey 0.2px;
+        font-size: 21px;
+        margin: -2px 0 0 1.8%;
+        width: 100%;
     }
     .cta {
         width:100%;
@@ -212,39 +269,52 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        margin: 21px 0 1px 1.8%;
     }
    .cta .cta-text {
-        margin: 0 0 30px 0;
-        padding: 10px;
+        margin: 0 0.5% 30px 0;
+        padding: 2.6%;
         width:50%;
     }
     .cta img{
-        width: 100%;
+        width: 93%;
+        align-content: center;
+        margin: 10px 6.8% 56px 0;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 7% 0 6%;
     }
     .main-content .top-content {
         display: flex;
         flex-direction: column;
+        margin: 16px 6% -14px -0.8%;
         
     }
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
+        margin: -48px 3% -43px -0.5%;
         
     }
+    .main-content .bottom-content .text-content{
+        padding:0 0 60px 0;
+    }
     .main-content .middle-img {
-        width: 100%;
-        padding: 10px;
+        width: 99%;
+        padding: 2.5%;
+        max-height: 95px;
+        margin: 18px 0 68px -2.8%;
     }
     .text-content{
-        padding-bottom: 30px;
+        padding-bottom: 50px;
     }
     .contact {
-        padding: 20px;
+        padding: 4.5%;
+        margin: 12px 0 0 0;
     }
-}
-@media (max-width: 768px){
-    .container{
-        width: 100%;
+    footer{
+        margin: 7px 5% 0 8.5%;
     }
-
 }
