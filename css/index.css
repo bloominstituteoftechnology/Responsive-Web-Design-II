@@ -108,7 +108,7 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: wrap;
 }
 
@@ -124,7 +124,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -169,14 +169,19 @@ header .logo {
 }
 
 /* Contact Styles */
+.contact {
+    font-size: 1.6rem;
+}
 
 .contact p {
+    font-size: 1.6rem;
     margin: 15px 0;
 }
 
 /* Footer Styles */
 
 footer {
+    font-size: 1.6rem;
     text-align: center;
     margin: 40px 0 20px;
 }
@@ -192,21 +197,23 @@ footer {
     }
     
     header nav {
+        align-self: center;
         width: 70%;
-        padding-bottom: 5px;
+        margin: 10px 0 0;
     }
     
     header .logo {
+        align-self: center;
         width: 20%;
-        margin-left: 0;
+        margin: 5px 0 0;
     }
     
     .cta {
-        justify-content: space-between;
+        justify-content: center;
     }
     
     .cta .cta-text {
-        margin-right: 0;
+        margin-bottom: 20px;
     }
     
     .top-content .text-content {
@@ -261,7 +268,12 @@ footer {
     }
     
     .cta .cta-text {
+        width: 95%;
         margin-bottom: 50px;
+    }
+    
+    .cta .cta-text h1 {
+        width: 100%;
     }
     
     .cta img {
