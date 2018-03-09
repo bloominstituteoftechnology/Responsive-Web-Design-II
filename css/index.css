@@ -78,8 +78,9 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
-		align-items: flex-end;
-		justify-content: space-between;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
 		margin-top: 3.4%;
 }
 
@@ -90,6 +91,7 @@ header nav {
 }
 
 header nav a {
+		width: 100%;
     text-decoration: none;
     color: #b0b0b0;
 		font-size: 1.4rem;
@@ -103,6 +105,7 @@ header nav a:hover {
 header .logo {
 	max-width: 100%;
 	margin-left: 2.3%;
+	margin-bottom: 2rem;
 }
 
 /* Call To Action (CTA) Styles */
@@ -110,6 +113,7 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 8.2%;
+		flex-flow: row wrap;
     justify-content: space-around;
 		align-items: center;
 }
@@ -121,6 +125,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
+		margin-bottom: 5rem;
 }
 .cta .cta-text h1{
 	letter-spacing: 0.5rem;
@@ -192,6 +197,12 @@ footer {
     text-align: center;
     margin: 5% 0 2.3%;
 }
+@media (max-width: 69.2rem){
+	.container header nav{
+		order: 1;
+		width: 100%;
+	}
+}
 @media (max-width: 40rem){
 	*{
 		margin: 0;
@@ -203,7 +214,7 @@ footer {
 		align-items: center;
 	}
 	header{
-		flex-direction: column-reverse;
+		flex-direction: column;
 		margin-bottom: 3rem;
 	}
 	.container header nav{
@@ -223,7 +234,6 @@ footer {
 	}
 	.cta .cta-text{
 		font-size: 6rem;
-		margin-bottom: 5rem;
 	}
 	.cta img{
 		margin-bottom: 3rem;
