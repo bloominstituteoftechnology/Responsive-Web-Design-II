@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size; 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -64,8 +68,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
+    font-size; 1.6rem;
 }
 
 /* Header Styles */
@@ -76,8 +82,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin: 38px 1% 0; 
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -106,21 +112,27 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 10% 0 0;
 }
+
+/*
+.cta .cta-text h1 {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}*/
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 52%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -131,6 +143,11 @@ header .logo {
     color: white;
 }
 
+.cta img {
+    max-width: 100%;
+    margin-right: 1%;
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -138,7 +155,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -148,6 +165,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+    max-width: 100%;
     display: block;
     margin: 30px auto;
 }
@@ -158,10 +176,14 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
 /* Contact Styles */
+
+.contact {
+    margin: 20px 1%;
+}
 
 .contact p {
     margin: 15px 0;
@@ -182,32 +204,40 @@ footer {
     }
 
     header nav {
-        width: 457px;
-        margin-left: 20px;
+        width: 59%;
+        margin-left: 3%;
     }
 
     header .logo {
-        margin: 28px 0 0 59px;
+        margin: 28px 0 0 8%;
     }
 
     .cta {
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .cta .cta-text {
-        margin: 0 40px 0 0;
+        margin: 0 5% 0 0;
+        font-size: 4.4rem;
+    }
+
+    .cta img {
+        max-width: 100%;
+        margin-right: 2%;
     }
 
     .main-content .middle-img {
         width: 100%;
+        margin: 25px auto;
     }
 
     .main-content {
-        margin: 75px 20px 35px;
+        margin: 75px 2% 35px;
+        font-size: 1.4rem;
     }
 
     .contact {
-        margin: 20px 20px 35px;
+        margin: 20px 2%;
     }
 }    
 
@@ -215,18 +245,18 @@ footer {
 @media (max-width: 400px) {
 
     header {
-        border: 1px solid orange;
+        /*border: 1px solid orange;*/
         flex-wrap: wrap;
         justify-content: center;
     }
 
     header nav {
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         width: 100%;
     }
 
     header nav {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -235,7 +265,7 @@ footer {
     }
 
     header nav a {
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         width: 100%;
         margin: 0;
         display: block;
@@ -246,7 +276,7 @@ footer {
     }
 
     header nav a:first-child {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         border-top: 1px solid gray;
     }
 
@@ -257,38 +287,38 @@ footer {
     }
 
     .cta {
-        border: 1px solid darkorchid;
+        /*border: 1px solid darkorchid;*/
         margin-top: 50px;
         flex-flow: column;
         align-items: center;
     }
     
     .cta .cta-text {
-        border: 1px solid brown;
+        /*border: 1px solid brown;*/
         margin: 0 0 50px 0;
     }
 
     .cta img {
-        border: 1px solid darkgreen;
+        /*border: 1px solid darkgreen;*/
         max-width: 80%;
     }
 
     .main-content .top-content {
-        border: 1px solid teal;
+        /*border: 1px solid teal;*/
         justify-content: space-around;
         flex-direction: column;
         height: 300px;
     }
 
     .main-content .bottom-content {
-        border: 1px solid pink;
+        /*border: 1px solid pink;*/
         flex-wrap: wrap;
         align-content: space-between;
         height: 440px;
     }
 
     .contact {
-        border: 1px solid deepskyblue;
+        /*border: 1px solid deepskyblue;*/
     }
 
 }
