@@ -315,7 +315,7 @@ footer {
     }
 
     .cta img {
-        margin: 0 auto;
+        margin: 44px auto 0 auto;
         width: 80%;
     }
 
@@ -325,22 +325,31 @@ footer {
     }
 
     .main-content {
-        padding: 0 0.5rem;
+        padding: 0 5% 75px 5%;
+        margin-top: 87px;
+        margin-bottom: 35px;
     }
 
     .main-content .top-content {
         flex-direction: column;
-        justify-content: space-between;
-        margin-top: 4rem;
+        justify-content: space-around;
+        margin-top: 39px;
+        padding: 0;
+        height: 300px;
     }
 
     .main-content .bottom-content {
         flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 400px;
+        padding: 0;
     }
 
-   /* .text-content p {
-        margin-bottom: 3rem;
-    }*/
+
+    .main-content .middle-img {
+        margin: 27px 0 36px 0;
+    }
 
 
 }
