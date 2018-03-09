@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-    font-size: 62.5%;
+    font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -86,6 +87,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.4rem;
 }
 
 header nav a:hover {
@@ -108,7 +110,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 1%;
     display: flex;
@@ -120,7 +122,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 58%;
     height: 32px;
@@ -140,7 +142,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 8.5% 0 4% 0;
    padding: 4% 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -167,6 +169,7 @@ header .logo {
 
 .contact p {
     margin: 1.7% 0;
+    font-size: 1.4rem;
 }
 
 /* Footer Styles */
@@ -288,6 +291,7 @@ footer {
     }
     .contact h4 {
         margin-left: 2.3%;
+        font-size: 1.6rem;
     }
     .contact p {
         margin-left: 2.3%;
@@ -306,7 +310,7 @@ footer {
         margin-left: 0;
     }
     header nav a {
-        font-size: 20px;
+        font-size: 2rem;
         border-bottom: 1px grey solid;
         width: 100%;
         margin: 0;
