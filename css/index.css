@@ -1,260 +1,228 @@
 /* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
 }
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-/*---------------desktop view---------------*/
-
  body {
+     line-height: 1;
+}
+ ol, ul {
+     list-style: none;
+}
+ blockquote, q {
+     quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: '';
+     content: none;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+ html, body {
+     height: 100%;
+     font-family: 'Titillium Web', sans-serif;
+}
+ h1, h2, h3, h4, h5 {
+     font-family: 'Bangers', cursive;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+}
+/*start*/
+ html {
      font-size:62.5%;
 }
- .container {
-     max-width: 880px;
-     width:100%;
-     margin: auto;
+/* Set every element's box-sizing to border-box */
+/*Desktop view*/
+ * {
+     box-sizing: border-box;
 }
-/* Header Styles */
+ .container {
+     max-width: 800px;
+     width: 100%;
+     margin: 0 auto;
+}
  header {
      width: 100%;
      display: flex;
 }
  header nav {
-     margin-top: 5.2%;
-     width: 78%;
+     width: 100%;
+     margin-top: 5%;
      justify-content: space-between;
      display: flex;
 }
  header nav a {
-     font-size: 1rem;
      text-decoration: none;
-     color: #b0b0b0;
-}
- header nav a:hover {
-     text-decoration: underline;
-     color: black;
+     color: gray;
+     font-size: 1.5rem;
 }
  header .logo {
-     zoom: 70%;
      align-self: flex-end;
-     margin: 3% 0 0 10%;
+     margin: 3% 0 0 5%;
 }
-/* Call To Action (CTA) Styles */
  .cta {
      width: 100%;
      display: flex;
-     margin-top: 8%;
+     margin-top: 5%;
      justify-content: center;
+     align-items: center;
+     margin: 2% auto;
 }
  .cta .cta-text {
-     font-size: 3rem;
+     font-size: 5rem;
      text-align: center;
-     letter-spacing: 5px;
-     display: flex;
-     justify-content: center;
-     flex-flow: column;
-     align-items: center;
-     margin-right: 5%;
+     margin-right: 3%;
 }
- .cta .cta-text button {
-     border: 1px double black;
-     font-size: 1rem;
+ .cta button {
+     width: 67%;
+}
+ .cta button:hover {
      background: white;
-     width: 50%;
-     height: 8%;
-     margin-top: 2%;
-     cursor: pointer;
+     font-size: 1.5rem;
+     border: 2px solid brown;
 }
- .cta .cta-text button:hover {
-     background: black;
-     color: white;
+ .cta img {
+     max-height: 50%;
+     max-width: 50%;
 }
-/* Main Content Styles */
  .main-content {
-     border-top: 2px solid black;
-     border-bottom: 2px solid black;
-     margin: 8% 0 4% 0;
-     padding: 4% 0;
-     font-size: 1rem;
-     line-height: 18px;
+     width: 100%;
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     margin:2% 0 2% 0;
+     padding: 2% 1%;
+     font-size: 1.5rem;
 }
  .main-content .top-content {
      display: flex;
-     justify-content: space-around;
-}
- .main-content .middle-img {
-     max-width: 98%;
-     display: block;
-     margin: 3.5% auto;
+     margin-bottom: 1%;
 }
  .main-content .bottom-content {
      display: flex;
-     justify-content: space-around;
+     margin-top: 1%;
 }
- .main-content .bottom-content p {
-     padding-right: 3%;
+ .main-content .middle-img {
+     max-width: 99%;
 }
-/* Contact Styles */
- .contact p {
-     margin: 1.5% 0;
+ .contact {
+     font-size: 1.5rem;
+     margin-left: 1%;
 }
-/* Footer Styles */
  footer {
+     font-size: 1.5rem;
      text-align: center;
-     margin: 4.5% 0 2.2%;
 }
-/*------------------ CSS Media Queries----------------------------- */
-/* Tablet */
- @media (max-width: 768px) {
-     .container {
-         width: 100%;
-    }
-		
-			p {
-			padding: 2%;
-			} 
+ @media(max-width: 768px){
      header nav {
-         width: 80%;
-         margin-left: 2.6%;
+         justify-content: space-around;
+         padding-left: 1%;
     }
      header nav a {
-         font-size: .5rem;
-         text-decoration: none;
-         color: #b0b0b0;
+         font-size: 1rem;
     }
      header .logo {
-         zoom: 70%;
-         margin: 3.5% 0 0 5%;
-    }
-     .cta {
-         justify-content: center;
+         align-self: baseline;
+         margin: 3% 0 0 3%;
+         max-width: 25%;
     }
      .cta .cta-text {
-         margin-right: 5%;
+         font-size: 4rem;
     }
-     .cta img {
-         zoom: 40%;
-    }
-				.cta .cta-text button {
-   
-    font-size: 0.7rem;
-    height: 12%;
- 			}
-     .main-content .middle-img {
-         max-width: 98%;
-    }
-     .main-content {
-         margin: 10% 2.6% 4.5% 0;
-    }
-     .contact {
-         margin: 2.6% 2.6% 4.5%;
+     .cta button {
+         width: 60%;
+         font-size: 1.2rem;
     }
 }
-/* Phone */
- @media (max-width: 400px) {
-
+ @media(max-width: 400px){
      header {
-         flex-wrap: wrap;
+         margin: 1% auto;
+         flex-wrap: wrap-reverse;
          justify-content: center;
     }
      header nav {
          width: 100%;
-    }
-     header nav {
-         width: 100%;
-         display: flex;
          flex-direction: column;
          margin: 0;
-         align-items: center;
     }
-
+     header .logo {
+         max-width: 35%;
+    }
      header nav a {
-									width: 100%;
-         display: block;
          text-align: center;
-         padding: 5% 0;
-         font-size: 1rem;
+         width: 100%;
          border-bottom: 1px solid gray;
+         height: 25px;
+         padding-top: 2%;
+         padding-bottom: 2%;
+         font-size: 1.5rem;
     }
      header nav a:first-child {
          border-top: 1px solid gray;
     }
-     header nav a:hover {
-         background: gray;
-    }
-     header .logo {
-         order: -1;
-         margin: 5% 0;
-    }
-     .cta {
-         margin-top: 12%;
-         flex-flow: column;
-         align-items: center;
-    }
      .cta .cta-text {
-									font-size: 2rem;
-         margin: 0 0 12% 0;
+         font-size: 2.5rem;
     }
-			.cta .cta-text button {
-									width: 60%;
-				}
-     .cta img {
-         max-width: 80%;
+     .cta button {
+         width: 65%;
+         font-size: 1rem;
+    }
+     .cta button:hover {
+         background: white;
+         font-size: 1rem;
+         border: 2px solid brown;
     }
      .main-content .top-content {
-         justify-content: space-around;
+         font-size: 1.3rem;
          flex-direction: column;
-         height: 75%;
     }
      .main-content .bottom-content {
-         flex-wrap: wrap;
-         align-content: space-between;
-         height: 440px;
-         margin-bottom: 5%;
-									
+         font-size: 1.3rem;
+         flex-direction: column;
+    }
+     .main-content .text-content {
+         padding: 2% 0;
     }
      .contact {
-							  margin: 1% 0;
+         font-size: 1.3rem;
+         text-align: center;
+    }
+     .contact h4 {
+         font-size: 2rem;
+    }
+     footer {
+         padding: 4%;
+         font-size: 1rem;
+         font-weight: bold;
+    }
+}
+ @media(max-width: 300px){
+     header .logo {
+         max-width: 50%;
+    }
+     .cta .cta-text {
+         font-size: 2rem;
+    }
+     .cta button {
+         width: 80%;
+         font-size: 1rem;
+    }
+     .cta button:hover {
+         background: white;
+         font-size: 0.7rem;
+         border: 2px solid brown;
+    }
+     .cta img {
+         display: none;
     }
 }
 
-
-/*test ResponsiveWebDesign2*/
