@@ -209,7 +209,7 @@ footer {
 
     .main-content .middle-img {
         width: 100%;
-        margin: 0;
+        margin: 0%;
         margin-top: 2%;
         margin-bottom: 4.4%;
     }
@@ -264,6 +264,11 @@ footer {
 }
 
 @media(max-width: 400px){
+    .container {
+        padding:0%;
+        text-align: center;       
+    }
+
     header {
         height: 100%;
         flex-wrap: wrap;
@@ -277,19 +282,18 @@ footer {
     }
 
     header .logo{
-        order:-1;
-        margin:0 auto;
-        padding: auto;
+        order: -1;
+        margin: 5.5% 0 2.4% 30%;
     }
     
     header nav a{
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
-        width:400px;
+        width: 100%;
         text-align: center;
-        padding: 22px;
-        font-size: 120%;
-        font-weight: bold;                
+        padding:5.6%;
+        font-size: 1.8rem;
+                     
     }    
     .middle-img {
         width: 100%;
@@ -297,29 +301,40 @@ footer {
     
     .cta {             
         flex-wrap: wrap;
+        margin: 0%;
     }
 
-    .cta-text{
-        padding: 0 22px 55px 22px;
+    .cta .cta-text{
+        padding: 3% 0% 55px 0;
+        text-align: center;
     }
 
     .cta img {
         justify-content: center;
-        width: 100%;
+        width: 87%;
         height: 100%;
+        margin: 0% 0% 12% 11%;
     }
 
     .main-content{
-        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 24%%;
     }
 
     .top-content {
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
 
     .top-content p{
         margin-bottom: 33px;
+    }
+
+    h4 {
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 5%;
     }
     
     .bottom-content{
@@ -328,6 +343,17 @@ footer {
     }
 
     .bottom-content p{
-        margin-bottom: 33px;        
+        margin-bottom: 3%;        
     }
+}
+
+.contact {
+    margin-top: 10%;
+}
+.contact p{
+    text-align: left;    
+}
+
+footer {
+    margin-top: 16%;
 }
