@@ -44,233 +44,217 @@ h1, h2, h3, h4, h5 {
 
 /*---------------desktop view---------------*/
 
-	body { 
-		font-size:62.5%; 
+ body {
+     font-size:62.5%;
 }
-
-.container {
-    max-width: 880px;
-				width:100%;
-    margin: auto;
+ .container {
+     max-width: 880px;
+     width:100%;
+     margin: auto;
 }
 /* Header Styles */
-header {
-    width: 100%;
-    display: flex;
+ header {
+     width: 100%;
+     display: flex;
 }
-header nav {
-    margin-top: 5.2%;
-    width: 78%;
-    justify-content: space-between;
-    display: flex;
+ header nav {
+     margin-top: 5.2%;
+     width: 78%;
+     justify-content: space-between;
+     display: flex;
 }
-header nav a {
-				font-size: 1rem;
-    text-decoration: none;
-    color: #b0b0b0;
+ header nav a {
+     font-size: 1rem;
+     text-decoration: none;
+     color: #b0b0b0;
 }
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+ header nav a:hover {
+     text-decoration: underline;
+     color: black;
 }
-header .logo {
-				zoom: 70%;
-				
-		
-    align-self: flex-end;
-    margin: 3% 0 0 10%;
+ header .logo {
+     zoom: 70%;
+     align-self: flex-end;
+     margin: 3% 0 0 10%;
 }
 /* Call To Action (CTA) Styles */
-.cta {
-				width: 100%;
-    display: flex;
-    margin-top: 8%;
-    justify-content: center;
+ .cta {
+     width: 100%;
+     display: flex;
+     margin-top: 8%;
+     justify-content: center;
 }
-.cta .cta-text {
-    font-size: 3rem;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin-right: 5%;
+ .cta .cta-text {
+     font-size: 3rem;
+     text-align: center;
+     letter-spacing: 5px;
+     display: flex;
+     justify-content: center;
+     flex-flow: column;
+     align-items: center;
+     margin-right: 5%;
 }
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 1rem;
-    background: white;
-    width: 50%;
-    height: 8%;
-    margin-top: 2%;
-    cursor: pointer;
+ .cta .cta-text button {
+     border: 1px double black;
+     font-size: 1rem;
+     background: white;
+     width: 50%;
+     height: 8%;
+     margin-top: 2%;
+     cursor: pointer;
 }
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+ .cta .cta-text button:hover {
+     background: black;
+     color: white;
 }
-
-
 /* Main Content Styles */
-.main-content {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    margin: 8% 0 4% 0;
-    padding: 4% 0;
-    font-size: 1rem;
-    line-height: 18px;
+ .main-content {
+     border-top: 2px solid black;
+     border-bottom: 2px solid black;
+     margin: 8% 0 4% 0;
+     padding: 4% 0;
+     font-size: 1rem;
+     line-height: 18px;
 }
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+ .main-content .top-content {
+     display: flex;
+     justify-content: space-around;
 }
-.main-content .middle-img {
-				max-width: 90%;
-    display: block;
-    margin: 3.5% auto;
+ .main-content .middle-img {
+     max-width: 98%;
+     display: block;
+     margin: 3.5% auto;
 }
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+ .main-content .bottom-content {
+     display: flex;
+     justify-content: space-around;
 }
-.main-content .bottom-content p {
-    padding-right: 3%;
+ .main-content .bottom-content p {
+     padding-right: 3%;
 }
 /* Contact Styles */
-.contact p {
-    margin: 1.5% 0;
+ .contact p {
+     margin: 1.5% 0;
 }
 /* Footer Styles */
-footer {
-    text-align: center;
-    margin: 4.5% 0 2.2%;
+ footer {
+     text-align: center;
+     margin: 4.5% 0 2.2%;
 }
 /*------------------ CSS Media Queries----------------------------- */
 /* Tablet */
-@media (max-width: 768px) {
-
-    .container {
-        width: 100%;
+ @media (max-width: 768px) {
+     .container {
+         width: 100%;
     }
-
-    header nav {
-        width: 52%;
-        margin-left: 2.6%;
+		
+			p {
+			padding: 2%;
+			} 
+     header nav {
+         width: 80%;
+         margin-left: 2.6%;
     }
-	
-	header nav a {
-				font-size: .5rem;
-    text-decoration: none;
-    color: #b0b0b0;
+     header nav a {
+         font-size: .5rem;
+         text-decoration: none;
+         color: #b0b0b0;
+    }
+     header .logo {
+         zoom: 70%;
+         margin: 3.5% 0 0 5%;
+    }
+     .cta {
+         justify-content: center;
+    }
+     .cta .cta-text {
+         margin-right: 5%;
+    }
+     .cta img {
+         zoom: 40%;
+    }
+				.cta .cta-text button {
+   
+    font-size: 0.7rem;
+    height: 12%;
+ 			}
+     .main-content .middle-img {
+         max-width: 98%;
+    }
+     .main-content {
+         margin: 10% 2.6% 4.5% 0;
+    }
+     .contact {
+         margin: 2.6% 2.6% 4.5%;
+    }
 }
-
-    header .logo {
-								zoom: 50%;
-        margin: 3.5% 0 0 5%;
-    }
-
-    .cta {
-        justify-content: center;
-    }
-
-    .cta .cta-text {
-        margin-right: 5%;
-    }
-				
-  .cta img {
-        zoom: 50%;
-    }
-
-    .main-content .middle-img {
-       max-width: 90%;
-    }
-
-    .main-content {
-       margin: 10% 2.6% 4.5% 0;
-    }
-
-		.contact {
-				margin: 2.6% 2.6% 4.5%;
-		}
-}
-
 /* Phone */
-@media (max-width: 400px) {
+ @media (max-width: 400px) {
 
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
+     header {
+         flex-wrap: wrap;
+         justify-content: center;
+    }
+     header nav {
+         width: 100%;
+    }
+     header nav {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         margin: 0;
+         align-items: center;
     }
 
-    header nav {
-        width: 100%;
+     header nav a {
+									width: 100%;
+         display: block;
+         text-align: center;
+         padding: 5% 0;
+         font-size: 1rem;
+         border-bottom: 1px solid gray;
     }
-
-    header nav {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        align-items: center;
+     header nav a:first-child {
+         border-top: 1px solid gray;
     }
-
-    header nav a {
-        width: 100%;
-        margin: 0;
+     header nav a:hover {
+         background: gray;
     }
-
-    header nav a {
-        display: block;
-        text-align: center;
-        padding: 5% 0;
-        font-size: 1.5rem;
-        border-bottom: 1px solid gray;
+     header .logo {
+         order: -1;
+         margin: 5% 0;
     }
-
-    header nav a:first-child {
-        border-top: 1px solid gray;
+     .cta {
+         margin-top: 12%;
+         flex-flow: column;
+         align-items: center;
     }
-
-    header nav a:hover {
-        background: gray;
+     .cta .cta-text {
+									font-size: 2rem;
+         margin: 0 0 12% 0;
     }
-
-    header .logo {
-        order: -1;
-        max-width: 100%;
-        margin: 5% 0;
+			.cta .cta-text button {
+									width: 60%;
+				}
+     .cta img {
+         max-width: 80%;
     }
-
-    .cta {
-        margin-top: 12%;
-        flex-flow: column;
-        align-items: center;
+     .main-content .top-content {
+         justify-content: space-around;
+         flex-direction: column;
+         height: 75%;
     }
-
-    .cta .cta-text {
-        margin: 0 0 12% 0;
+     .main-content .bottom-content {
+         flex-wrap: wrap;
+         align-content: space-between;
+         height: 440px;
+         margin-bottom: 5%;
+									
     }
-
-    .cta img {
-        max-width: 80%;
+     .contact {
+							  margin: 1% 0;
     }
-
-    .main-content .top-content {
-        justify-content: space-around;
-        flex-direction: column;
-        height: 75%;
-    }
-
-    .main-content .bottom-content {
-        flex-wrap: wrap;
-        align-content: space-between;
-        height: 440px;
-					 		margin-bottom: 5%;
-    }
-	
-	.contact {
-    margin: 1% 0;
 }
-}
+
+
 /*test ResponsiveWebDesign2*/
