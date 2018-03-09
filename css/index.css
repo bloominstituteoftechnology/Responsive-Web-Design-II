@@ -220,6 +220,15 @@ footer {
         margin: 0 auto;
     }
 
+    .cta .cta-text h1 {
+        margin-top: 10px;
+    }
+
+    .cta .cta-text button {
+        margin: 10px 6% 5px 0;
+        padding: 0;
+    }
+
     .main-content .middle-img {
         display: block;
         width: 97%;
