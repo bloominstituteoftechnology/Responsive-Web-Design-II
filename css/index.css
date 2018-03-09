@@ -238,7 +238,7 @@ footer {
 
 
 /*##################################### EXTRA MEDIA QUERIES ###################################*/
-@media (max-width: 650px) and (min-width: 401px) {
+@media (max-width: 680px) and (min-width: 401px) {
     header{
         display: flex;
         flex-direction: column;
@@ -257,7 +257,6 @@ footer {
         height: auto;
         align-self: center;
         order: -1;
-        
     }
 
     .cta img {
