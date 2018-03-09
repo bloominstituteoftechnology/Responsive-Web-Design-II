@@ -198,8 +198,6 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        max-width: 768px;
-        margin: 0 auto;
     }
 
     /* Header Styles */
@@ -247,35 +245,18 @@ footer {
 
     /* Main Content Styles */
     .main-content {
-        width: 95%;
-        border-top: .2rem solid black; /*2px*/
-        border-bottom: .2rem solid black; /*2px*/
-        margin: 7.5rem 5% 3.5rem 3%;
-        padding: 5% 0;
-        font-size: 1.6rem; /*16px*/
-        line-height: 1.8rem; /*18px*/
+        font-size: 1.4rem;
+       margin: 75px 2% 35px;
      }
 
      .main-content .middle-img {
-        display: flex;
         width: 100%;
-        height: auto;
-        margin-bottom: 3%;
-    }
-
-    .main-content .bottom-content {
-        line-height: 1.5rem;
-        padding-right: 2%;
-        justify-content: space-around;
+       margin: 25px auto;
     }
      
     /* Contact Styles */
-    .contact p {
-        margin: 1.5rem 3% 2rem;
-    }
-
-    .contact h4 {
-        margin: 1.5rem 3%;
+    .contact {
+        margin: 20px 2%;
     }
 
     footer {
@@ -344,38 +325,15 @@ footer {
      }
 
      /* Main Content Styles */
-     .main-content {
-         display: flex;
-         flex-direction: column;
-         width: 90%;
-     }
-
      .main-content .top-content {
         flex-wrap: wrap;
-        margin-bottom: 0 auto;
-        padding: 8% 0;
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-    }
-
-    .main-content .top-content .text-content {
-        margin-bottom: 1.8rem;
-    }
-
-    .main-content .middle-img {
-        width: 100%;
+        height: 300px;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
-        margin: 0 auto;
-        padding: 6% 0;
-        font-size: 1.6rem;
-        line-height: 1.8rem;
-    }
-
-    .main-content .bottom-content .text-content {
-        margin-bottom: 1rem;
+        align-content: space-between;
+        height: 440px;
     }
 
 }
