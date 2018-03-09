@@ -167,9 +167,13 @@ header .logo {
 
 /* Contact Styles */
 
+.contact h4 {
+    font-size: 1.4rem;
+}
+
 .contact p {
     margin: 1.7% 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
@@ -177,6 +181,7 @@ header .logo {
 footer {
     text-align: center;
     margin: 4.5% 0 2.3%;
+    font-size: 1.6rem;
 }
 
 /* Project 1: Adaptive Web Design */
@@ -342,7 +347,6 @@ footer {
         width: 80%;
         margin-top: 5.7%;
     }
-
     .main-content {
         width: 88%;
         flex-direction: column;
