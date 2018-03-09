@@ -69,9 +69,9 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width: 880px;
-    margin: auto;
-    padding-left: 3%;
-    padding-right: 3%;
+    margin: 0 auto;
+    /* padding-left: 10px;
+    padding-right: 10px; */
 }
 
 /* Header Styles */
@@ -101,35 +101,38 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.2% 0 0 91px;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 9%;
+    margin-top: 8%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 7.2rem;
+    font-size: 7.7rem;
     text-align: center;
-    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9.3% 0 0;
+    margin: 1.0% 9.0% 0 0;
+}
+
+.cta .cta-text h1 {
+    letter-spacing: .4rem;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 1.65rem;
     background: white;
-    width: 60%;
-    height: 10%;
-    margin-top: 10px;
+    width: 52%;
+    height: 8%;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -189,10 +192,11 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 2.2%;
+        padding-right: 2.2%;
     }
     header {
+        margin: 1rem;
         width: 100%;
     }
 
@@ -204,8 +208,22 @@ footer {
         width:100%;
     }
 
+    .cta img {
+        width: 50%;
+        height: 50%;
+    }
+
     .cta .cta-text {
         margin: 20px;
+        margin-top: 7rem;
+        margin-bottom: 0;
+        font-size: 6.9rem;
+    }
+
+    .cta .cta-text button {
+        height: 30px;
+        width: 55%;
+        margin: 8rem;
     }
    
     .main-content, .bottom-content, .top-content {
@@ -217,38 +235,61 @@ footer {
     }
 }
 
-@media (max-width: 400px) {
-    .container {
-        width: 100%;
-        padding-left: 3%;
-        padding-right: 3%;
+@media (max-width: 700px) {
+    .cta {
+        flex-wrap: wrap;
+        justify-content: center;
     }
     header {
+        flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+    }
+    header nav {
+        flex-wrap: wrap;
+        width:100%;
     }
     header .logo {
         margin: 0;
         order: -1;
         align-self: center;
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container header {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    header .logo {
+        margin: 0;
+        order: -1;
+        align-self: center;
+        margin-top: 20px;
         margin-bottom: 15px;
     }
 
-    header nav {
+    .container header nav {
         flex-direction: column;
         justify-content: center;
         width: 100%;
         margin:0;
         padding: 0;
         align-items: center;
-        font-size: 22px;
     }
 
     header nav a {
-        width: 106%;
+        margin:0;
+        font-size: 2.3rem;
+        width: 100%;
         padding: 19px;
         text-align: center;
         border-bottom: solid black 1px;
@@ -265,17 +306,28 @@ footer {
     }
 
     .cta .cta-text {
-        margin: 20px;
+        margin-top: 20px;
+    }
+    .cta .cta-text button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width:54%
     }
 
     .cta img {
-        padding-top: 30px;
-        width: 92%;
+        width: 85%;
+        padding-bottom: 13px;
     }
    
     .main-content, .bottom-content, .top-content {
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        align-items: center;
+    }
+
+    .main-content .top-content{
+        align-items: center;
     }
 
     .text-content {
