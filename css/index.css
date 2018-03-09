@@ -184,6 +184,7 @@ footer {
 		font-size: 1.4rem;
 }
 
+/* Tablet mode */
 @media (max-width: 768px) {
 	.container {
 		width: 100%;
@@ -199,13 +200,20 @@ footer {
 		flex-wrap: wrap;
 }
 
+.cta .cta-text {
+	letter-spacing: 0
+	justify-content: flex-start;
+}
+
 .middle-img {
 	width: 90%;
 }
 
 }
 
+/* End Tablet mode */
 
+/* phone mode */
 
 @media (max-width: 400px) {
 	.container {
@@ -247,4 +255,4 @@ footer {
 	}
 }
 
-/* code here */
+/* phone mode end */
