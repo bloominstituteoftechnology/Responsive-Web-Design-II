@@ -55,11 +55,12 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     margin-bottom: 10px;
 }
 
@@ -84,8 +85,8 @@ header nav {
 }
 
 header nav a {
+    font-size: 1.6rem;
     text-decoration: none;
-    /*color: #b0b0b0; */
 }
 
 header nav a:hover {
@@ -95,7 +96,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 43%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -104,12 +105,13 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .cta .cta-text h1 {
-    font-size: 79px;
+    font-size: 7.9rem;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: .3rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -120,13 +122,13 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
     cursor: pointer;
     margin: 16px 0 0px 79px;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
 }
 
 .cta .cta-text button:hover {
@@ -137,14 +139,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-    width: 100%;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
     margin: 71px 0 35px 0;
     padding: 36px 0 51px 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 18px;
-
 }
 
 .main-content .top-content {
@@ -167,6 +167,10 @@ header .logo {
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+}
+
 .contact p {
     margin: 15px 0;
 }
@@ -176,7 +180,7 @@ header .logo {
 footer {
     text-align: center;
     margin: 63px 0 20px;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 /* Media-Query */
@@ -203,38 +207,36 @@ footer {
     .cta {
         justify-content: center;
         width: 100%;
+        margin-top: 67px;
     }
     
-    .cta .cta-text button {
-        margin: 21px 0 0px 58px;
-    }
-
-        .cta .cta-text h1 {
-            font-size: 72px;
-            letter-spacing: 1px;
-            margin: 54px -3px 0 0;
-        }
-
     .cta .cta-text {
-        margin: 0 40px 0 0;
+        margin: 0 -62px 0 0;
     }
 
-    .main-content {
-        padding: 36px 0 40px 0;
-    }
-
-    .main-content .middle-image {
-        margin: 29px auto;
+    .circle {
+        margin-right: 17px;
     }
  
-    /*.main-content .middle-img {
-       width: 100%;
-    }*/
+    .main-content {
+        padding: 34px 0 36px 0;
+        margin: 75px 20px 35px;
+    }
+
+    .middle-image {
+        margin: 27px auto;
+    }
+
+    footer {
+        margin: 40px 0 20px;
+        font-size: 1.6rem;
+    }
  
     .main-content {
        margin: 75px 20px 35px;
     }
  }
+
 
  /*@media (max-width: 730px) {
 
@@ -269,26 +271,30 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
- 
+
+    .logobox {
+    margin: 6px 0 -7px 0;
+    }
+
     header nav {
         width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0;
         align-items: center;
+        order: 1;
     }
  
     header nav a {
         width: 100%;
         margin: 0;
-        order: 1;
     }
  
     header nav a {
         display: block;
         text-align: center;
         padding: 20px 0;
-        font-size: 20px;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
  
@@ -301,27 +307,43 @@ footer {
     }
  
     header .logo {
+        order: -1;
         max-width: 100%;
         margin: 20px 0;
     }
  
     .cta {
         margin-top: 50px;
+        flex-direction: column;
 
     }
     
     .cta .cta-text {
-        margin: 0 0 50px 0;
+        margin: -54px -74px 36px 16px;
     }
  
+    .cta .cta-text button {
+        margin: 8px 0 0px 96px;
+    }
+
     .cta img {
         max-width: 80%;
+        margin: 13px 0px 0px 38px;
+    }
+
+    .main-content {
+        padding: 34px 0px 35px 0px;
+        margin: 79px 26px 33px 13px;
     }
  
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;
         height: 300px;
+    }
+
+    .main-content .middle-image {
+        margin: 30px auto;
     }
  
     .main-content .bottom-content {
@@ -331,6 +353,6 @@ footer {
     }
  
     .contact {
-        margin: 20px;
+        margin: 36px 0px 16px 11px;
     } 
 }
