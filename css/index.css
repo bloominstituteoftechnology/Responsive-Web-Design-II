@@ -57,6 +57,10 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+    font-size: 62.5%;  /* 1 rem= 10px */
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -64,8 +68,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
     margin: auto;
+    max-width: 880px;
 }
 
 /* Header Styles */
@@ -73,18 +78,21 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
     text-decoration: none;
+    font-size: 1.5rem;
     color: #b0b0b0;
+    padding: 0 1% 0 0;
 }
 
 header nav a:hover {
@@ -94,26 +102,26 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    padding-top: 3%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
+	width: 100%;
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    padding: 8.3% 0 0;
+    margin: 0 0 8.4%
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.6rem;
     text-align: center;
-    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    padding: 0 10%;
 }
 
 .cta .cta-text button {
@@ -134,22 +142,23 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
+   width: 100%;
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   padding: 4% 0;
+   font-size: 1.6rem;
    line-height: 18px;
+   justify-content: left;
 }
 
 .main-content .top-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
 }
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 5% 0;
 }
 
 .main-content .bottom-content {
@@ -158,18 +167,133 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
 }
 
 /* Contact Styles */
 
+section.contact {
+	font-size: 1.7rem;
+	margin-top:5%
+}
+
 .contact p {
-    margin: 15px 0;
+    line-height:30px;
 }
 
 /* Footer Styles */
 
 footer {
+	margin-top: 5%;
     text-align: center;
-    margin: 40px 0 20px;
+	font-size: 1.35rem;
 }
+
+/* At 768px And below do the following: */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+ 
+    header nav {
+        width: 457px;
+        margin-left: 20px;
+    }
+ 
+    header .logo {
+        margin: 28px 0 0 59px;
+    }
+ 
+    .contact {
+        margin: 20px 20px 35px;
+    }
+    
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 40px 0 0;
+    }
+ 
+    .main-content .middle-img {
+       width: 100%;
+    }
+ 
+    .main-content {
+       margin: 75px 20px 35px;
+    }
+ }
+ 
+ /* Phone */
+ /* @media (max-width: 400px) {
+ 
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+ 
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+ 
+    header nav a {
+        width: 100%;
+        margin: 0;
+    }
+ 
+    header nav a {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+ 
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+ 
+    header nav a:hover {
+        background: gray;
+    }
+ 
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+ 
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 0 50px 0;
+    }
+ 
+    .cta img {
+        max-width: 80%;
+    }
+ 
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+ 
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+ 
+    .contact {
+        margin: 20px;
+    }  */
