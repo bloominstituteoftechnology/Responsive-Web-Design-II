@@ -66,7 +66,6 @@ h1, h2, h3, h4, h5 {
 .container {
     max-width: 880px;
     margin: auto;
-    border: green solid 2px;
 }
 
 /* Header Styles */
@@ -74,20 +73,17 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
-    border: red solid 1px; 
 }
 
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.32%;
     justify-content: space-between;
     display: flex;
-    border: blue solid 2px; 
 }
 
 header nav a {
-    order: purple solid 1px;
     text-decoration: none;
     /*color: #b0b0b0; */
 }
@@ -100,7 +96,6 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 91px;
-    border: blue solid 2px; 
 }
 
 /* Call To Action (CTA) Styles */
@@ -109,7 +104,6 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
-    border: red solid 1px;
 }
 
 .cta .cta-text h1 {
@@ -143,18 +137,19 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
+    width: 100%;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
     margin: 71px 0 35px 0;
     padding: 36px 0 51px 0;
     font-size: 16px;
     line-height: 18px;
+
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
-    border: green 1px dashed;
 }
 
 .main-content .middle-img {
@@ -166,7 +161,6 @@ header .logo {
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
-    border: cyan 2px solid;
 }
 
 
@@ -211,8 +205,26 @@ footer {
         width: 100%;
     }
     
+    .cta .cta-text button {
+        margin: 21px 0 0px 58px;
+    }
+
+        .cta .cta-text h1 {
+            font-size: 72px;
+            letter-spacing: 1px;
+            margin: 54px -3px 0 0;
+        }
+
     .cta .cta-text {
         margin: 0 40px 0 0;
+    }
+
+    .main-content {
+        padding: 36px 0 40px 0;
+    }
+
+    .main-content .middle-image {
+        margin: 29px auto;
     }
  
     /*.main-content .middle-img {
@@ -224,11 +236,15 @@ footer {
     }
  }
 
- @media (max-width: 730px) {
+ /*@media (max-width: 730px) {
 
     .cta {
         flex-flow: column;
         align-items: center;
+    }
+
+    .cta .cta-text {
+        margin: 0 0 0 0;
     }
 
     .cta img {
@@ -244,7 +260,7 @@ footer {
     header nav {
         flex-wrap: wrap;
     }
- }
+ } */
  
  /* Phone */
  @media (max-width: 400px) {
@@ -265,6 +281,7 @@ footer {
     header nav a {
         width: 100%;
         margin: 0;
+        order: 1;
     }
  
     header nav a {
@@ -284,7 +301,6 @@ footer {
     }
  
     header .logo {
-        order: -1;
         max-width: 100%;
         margin: 20px 0;
     }
