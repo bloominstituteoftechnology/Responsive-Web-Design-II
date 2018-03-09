@@ -173,6 +173,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -181,6 +182,7 @@ header nav a:hover {
 }
 
 header .logo {
+  max-width: 100%;
   align-self: flex-end;
   margin: 03% 0 0 10.5%;
 }
@@ -256,6 +258,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 3.4% auto;
+  max-width: 100%;
 }
 
 .main-content .bottom-content {
