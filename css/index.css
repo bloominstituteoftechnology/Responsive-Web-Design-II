@@ -223,6 +223,7 @@ header .logo {
   height: 10.9%;
   margin-top: 10px;
   cursor: pointer;
+  letter-spacing: 5px;
 }
 
 .cta .cta-text button:hover {
@@ -249,7 +250,8 @@ header .logo {
   font-size: 1.6rem;
   line-height: 1.3;
 }
-
+.main-content .text-content {
+}
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
@@ -337,17 +339,17 @@ footer {
 
 /* Phone */
 @media (max-width: 400px) {
-  .container {
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-  }
   header {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   header nav {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
   }
 
   header nav {
@@ -358,7 +360,6 @@ footer {
 
   header nav a {
     width: 100%;
-    margin: 0;
     display: block;
     text-align: center;
     padding: 5% 0;
@@ -376,7 +377,6 @@ footer {
 
   header .logo {
     order: -1;
-    max-width: 100%;
     margin: 5% 0;
   }
 
@@ -387,16 +387,17 @@ footer {
   }
 
   .cta .cta-text {
-    margin: 0 0 12.5% 0;
+    margin: 0;
   }
 
   .cta img {
+    display: block;
     max-width: 80%;
+    margin: 55px 0 0 0;
   }
 
   .main-content .top-content {
-    justify-content: space-around;
-    flex-direction: column;
+    flex-wrap: wrap;
     height: 300px;
   }
 
