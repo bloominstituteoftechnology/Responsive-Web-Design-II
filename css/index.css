@@ -306,14 +306,22 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-top: 40px;
     }
 
     .cta .cta-text {
-        margin-bottom: 3rem;
+        margin: 0 auto;
+        letter-spacing: 0;
     }
 
     .cta img {
-        width: 90%;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .cta .cta-text button {
+        margin: 10px 0 5px 2%;
+        padding: 0;
     }
 
     .main-content {
