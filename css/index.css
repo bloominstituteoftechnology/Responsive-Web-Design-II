@@ -284,6 +284,7 @@ footer {
     .cta {
         width: 100%;
         flex-direction: column;
+        margin-top: 0%:
     }
 
     .cta .cta-text {
@@ -293,8 +294,8 @@ footer {
     }
 
     .cta img {
-        width: 80%;
-        padding-bottom: 10%;
+        width: 85%;
+        padding-bottom: 12%;
         align-self: center;
     }
     
@@ -304,13 +305,21 @@ footer {
         margin: 0 5%;
         padding-bottom: 4%;
     }
+
+    .top-content .text-content {
+        padding-bottom: 2%;
+    }
+
+    .main-content .middle-img {
+        padding-top: 2%;
+    }
     
     .main-content .top-content, .bottom-content{
         flex-direction: column;
     }
 
     .main-content .bottom-content p {
-        margin-bottom: 5%;
+        margin-bottom: 2%;
     }
 
     .main-content .top-content .text-content {
