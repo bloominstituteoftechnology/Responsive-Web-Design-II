@@ -321,14 +321,19 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid gray;
+        border-top: 1px solid gray;
+    }
+
+    .container header nav ul li:nth-of-type(6) {
+        border-bottom: 1px solid gray;
     }
 
     .container header nav ul li a {
         width: 100%;
-        margin: 2px;
-        font-size: 2rem;
+        height: 100%;
+        font-size: 1.5rem;
         text-align: center;
+        padding-top: 1.5%;
     }
 
     header nav ul li a:hover {
