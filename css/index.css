@@ -261,6 +261,9 @@ footer {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
     }
     .container header {
         justify-content: center;
@@ -324,17 +327,25 @@ footer {
         flex-direction: column;
         width: 90%;
         align-items: center;
+        justify-content: center;
+        margin-right: 0;
     }
 
     .main-content .top-content{
         align-items: center;
+        padding-right: 0;
+        margin-right: 0;
     }
-
+    .contact{
+        font-size: 1.6rem;
+        padding-left: 30px;
+    }
     .text-content {
         padding:10px;
     }
 
-    .main-content img {
+    .main-content .middle-img{
+        align-items: center;
         width: 100%
     }
 }
