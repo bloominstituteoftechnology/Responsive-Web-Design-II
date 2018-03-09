@@ -79,7 +79,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 69.31%; /*610px*/
+    width: 70%; /*610px*/
     justify-content: space-between;
     display: flex;
     font-size: 1.6rem;
