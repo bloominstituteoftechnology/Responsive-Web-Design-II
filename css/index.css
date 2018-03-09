@@ -51,7 +51,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html{
+    font-size:62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -76,15 +78,18 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    display:flex;
+    margin:  40px 5% 0;
+    width: 100%;
     justify-content: space-between;
-    display: flex;
+ 
 }
 
 header nav a {
     text-decoration: none;
-    color: #b0b0b0;
+    color: silver;
+    font-size: 1.6rem;
+    
 }
 
 header nav a:hover {
@@ -94,7 +99,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,21 +111,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 10% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 50%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -130,6 +135,10 @@ header .logo {
     background: black;
     color: white;
 }
+.cta img {
+    max-width: 100%;
+    margin-right: 1%;
+}
 
 /* Main Content Styles */
 
@@ -138,8 +147,8 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem;
+   line-height: 1.3;
 }
 
 .main-content .top-content {
@@ -148,6 +157,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+    max-width:100%;
     display: block;
     margin: 30px auto;
 }
@@ -158,10 +168,14 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 5%;
 }
 
 /* Contact Styles */
+
+.contact {
+    margin: 20px 5%;
+}
 
 .contact p {
     margin: 15px 0;
@@ -172,4 +186,115 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+
+}
+@media (max-width:768px){
+
+    header nav{
+        width:60%;
+        margin-left: 5%;
+    }
+    header .logo {
+        margin: 30px 0 0 10%;
+    }
+
+    .cta{
+        justify-content:flex-end;
+    }
+    .cta .cta-text{
+        margin: 0 5% 0 0;
+    }
+
+    .cta .cta-text h1{
+        letter-spacing:0;
+    }
+    .cta img{
+        max-width: 100%;
+        margin-right:5%;
+    }
+    .container{
+        width:100%;
+        overflow-x: hidden;
+    }
+    .middle-img{
+        width: 100%;
+        margin: 25px auto;
+    }
+    .main-content{
+        font-size: 1.5rem;
+        margin 75px 5% 40px;
+    }
+    .contact {
+        margin: 20px 2%;
+        font-size: 1.5rem;
+    }
+    footer{
+        font-size:1.5rem;
+    }
+}
+
+@media (max-width:400px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+    header nav a{
+        display: block;
+        text-align:center;
+        width:100%;
+        padding: 20px 0;
+        font-size:2rem;
+        border-bottom: 1px solid black;
+        text-decoration: none;
+    }
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo{
+        order: -1;
+        margin: 20px 0;
+    }
+    .cta .cta-text{
+        margin:0;
+
+    }
+    .cta{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta img{
+        max-width: 80%;
+        margin: 20px 0 0 10px;
+    }
+    .cta button{
+        margin-bottom: 30px;
+    }
+    .bottom-content{
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+    .top-content{
+        flex-direction: wrap;
+        height: 300px;
+   
+    }
+    .text-content{
+        margin-top: 40px;
+    }
+
+    .container{
+        overflow-x: hidden;
+    }
 }
