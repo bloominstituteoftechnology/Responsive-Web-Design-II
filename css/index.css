@@ -170,6 +170,8 @@ header .logo {
     flex-direction: column;
     justify-content: space-between;
     width: 48.5%;
+    margin: 1%;
+    padding-left: 1%;
 }
 
 .middle-img {
@@ -188,9 +190,14 @@ header .logo {
     flex-direction: column;
     justify-content: space-between;
     width: 32%;
+    margin: 1%;
+    padding-left: 1%;
 }
 
 /* Contact Styles */
+.contact {
+    margin: 2%;
+}
 
 .contact h4 {
     font-size: 1rem;
@@ -244,6 +251,18 @@ footer {
     .cta .cta-text {
         font-size: 4.5rem;
         margin: 2% 0 5% 0;
+    }
+
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin: 1%;
+        padding-left: 1%;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        margin: 1%;
+        padding-left: 1%;
     }
 }
 
