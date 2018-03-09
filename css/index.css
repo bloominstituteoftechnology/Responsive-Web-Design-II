@@ -87,6 +87,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.5rem;
 }
 
 header nav a:hover {
@@ -191,26 +192,75 @@ footer {
 @media(max-width: 768px){
     .container {
         width: 100%;
-        padding:33px;           
+        padding-left:2.7%;           
     }
     
-    .middle-img {
+    header nav {
+        margin-top: 5.55%;
+        display: flex;        
+        justify-content: space-between; 
+    }
+
+    header .logo {
+        margin-top: 4.1%;
+        margin-left: 8.2%;
+        margin-right: 2.2%;
+    }
+
+    .main-content .middle-img {
         width: 100%;
+        margin: 0;
+        margin-top: 2%;
+        margin-bottom: 4.4%;
     }
-    
-    .cta {             
+
+    .cta {
+        margin-top: 10%;             
         justify-content: flex-start;
+        margin-bottom: 10.5%;
+    }
+
+    .cta .cta-text {
+        margin: auto;
+        font-size: 7.2rem;
+        margin-top: 7.8%;
+        margin-right: 5.8%;
+    }
+
+    .cta .cta-text h1 {
+        letter-spacing: 2px;       
+    }
+
+    .cta .cta-text button{
+        margin-top: 6.5%;
+        text-align: center;
+    }
+
+    h4 {
+        margin-bottom: 2.3%;
     }
 
     .cta img {
         justify-content: flex-end;
-        width: 46%;
-        height: 46%;
+        
     }
 
     .main-content{
         width:100%;
-    }     
+        padding-top: 5%;
+        padding-bottom: 3.3%;
+        margin-bottom: 0.3%;
+    }
+    
+    .contact p{
+        margin-bottom: 2%;
+    }
+
+    footer {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 91%;
+    }
 }
 
 @media(max-width: 400px){
@@ -220,7 +270,7 @@ footer {
     }
 
     header nav{
-        margin:22px auto;
+        margin:2.86% auto;
         width:100%;
         flex-direction: column;
         align-items: center;
