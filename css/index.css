@@ -77,7 +77,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69%;
  justify-content: space-between;
     display: flex
 }
@@ -94,7 +94,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    width: 21%;
+    margin-left: 10%
 }
 
 /* Call To Action (CTA) Styles */
@@ -103,6 +104,7 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    width:96%;
 }
 
 .cta .cta-text {
@@ -136,8 +138,8 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   width: 92%;
+   padding:1% 1%;
    font-size: 16px;
    line-height: 18px;
 }
@@ -177,29 +179,42 @@ footer {
 @media(max-width:768px){
 
     .container{
-     justify-content: center
+     max-width:100% ;
+     justify-content: center;
     }
 
     header.nav{
-        width: 460px
+        width: 64%
     }
     
     header.logo{
-        margin: 30 0 0 60;
+        align-self: flex-end;
+        width: 26%;
+        margin-right:10%
         
     }
 
 
 .cta{
-    justify-content: git lsddcenter;
+    justify-content: center;
+    
+
 }
 .cta.cta-text{
-    margin:0 5px 0 0;
+   width:36%;
+   margin-right: 2%
+  
+    
+}
+.cta.img/header-img.png{
+    
+    width:60%;
+   margin-left:2%; 
+
 }
 
 .main-content{
-margin:50px 10px;
-
+width:97%;
 }
 
 .footer{
@@ -207,3 +222,75 @@ margin:50px 10px;
 }
 }
 
+
+@media (max-width: 400px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 0 50px 0;
+    }
+
+    .cta img {
+        max-width: 80%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+  
+}
