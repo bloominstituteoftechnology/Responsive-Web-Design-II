@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -172,4 +173,156 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header nav {
+        font-size: 1.6rem;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        align-items: flex-end;
+        margin-right: 5%;
+    }
+
+    .cta {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .cta .cta-text {
+        margin-right: 5%;
+        width: 60%;
+    }
+
+    .cta img {
+        width: 60%;
+    }
+
+    .main-content {
+        width: 95%;
+        margin-left: 3%;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .contact {
+        margin-left: 3%;
+        font-size: 1.5rem;
+    }
+    
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 400px) {
+
+    header {
+        flex-wrap: wrap;
+        width: 90%;  
+        margin-left: 6%;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    header nav a{
+        width: 90%;
+        border-bottom: 1px solid black;
+        margin: 2% 0;
+        padding: 2% 0;
+        text-align: center;
+    }
+
+    header .logo {
+        align-items: center;
+        order: -1;
+    }
+
+    .cta {
+        width: 80%;
+        margin-left: 12%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+        margin-bottom: 8%;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .cta img{
+        width: 90%;
+        margin: 0;
+    }
+
+    .main-content {
+        width: 90%;
+       margin-left: 5%;       
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content .top-content {
+        margin: 0 5% 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    body h4 {
+        margin-top: 10%;
+    }
+
+    .middle-img {
+        width: 90%;
+    }
+
+    .bottom-content {
+        
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .contact {
+        margin-left: 8%;
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
 }
