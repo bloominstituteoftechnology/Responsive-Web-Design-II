@@ -1,175 +1,228 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
 }
-body {
-	line-height: 1;
+ body {
+     line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ ol, ul {
+     list-style: none;
 }
-blockquote, q {
-	quotes: none;
+ blockquote, q {
+     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: '';
+     content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
 }
-
+ html, body {
+     height: 100%;
+     font-family: 'Titillium Web', sans-serif;
+}
+ h1, h2, h3, h4, h5 {
+     font-family: 'Bangers', cursive;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+}
+/*start*/
+ html {
+     font-size:62.5%;
+}
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+/*Desktop view*/
+ * {
+     box-sizing: border-box;
+}
+ .container {
+     max-width: 800px;
+     width: 100%;
+     margin: 0 auto;
+}
+ header {
+     width: 100%;
+     display: flex;
+}
+ header nav {
+     width: 100%;
+     margin-top: 5%;
+     justify-content: space-between;
+     display: flex;
+}
+ header nav a {
+     text-decoration: none;
+     color: gray;
+     font-size: 1.5rem;
+}
+ header .logo {
+     align-self: flex-end;
+     margin: 3% 0 0 5%;
+}
+ .cta {
+     width: 100%;
+     display: flex;
+     margin-top: 5%;
+     justify-content: center;
+     align-items: center;
+     margin: 2% auto;
+}
+ .cta .cta-text {
+     font-size: 5rem;
+     text-align: center;
+     margin-right: 3%;
+}
+ .cta button {
+     width: 67%;
+}
+ .cta button:hover {
+     background: white;
+     font-size: 1.5rem;
+     border: 2px solid brown;
+}
+ .cta img {
+     max-height: 50%;
+     max-width: 50%;
+}
+ .main-content {
+     width: 100%;
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     margin:2% 0 2% 0;
+     padding: 2% 1%;
+     font-size: 1.5rem;
+}
+ .main-content .top-content {
+     display: flex;
+     margin-bottom: 1%;
+}
+ .main-content .bottom-content {
+     display: flex;
+     margin-top: 1%;
+}
+ .main-content .middle-img {
+     max-width: 99%;
+}
+ .contact {
+     font-size: 1.5rem;
+     margin-left: 1%;
+}
+ footer {
+     font-size: 1.5rem;
+     text-align: center;
+}
+ @media(max-width: 768px){
+     header nav {
+         justify-content: space-around;
+         padding-left: 1%;
+    }
+     header nav a {
+         font-size: 1rem;
+    }
+     header .logo {
+         align-self: baseline;
+         margin: 3% 0 0 3%;
+         max-width: 25%;
+    }
+     .cta .cta-text {
+         font-size: 4rem;
+    }
+     .cta button {
+         width: 60%;
+         font-size: 1.2rem;
+    }
+}
+ @media(max-width: 400px){
+     header {
+         margin: 1% auto;
+         flex-wrap: wrap-reverse;
+         justify-content: center;
+    }
+     header nav {
+         width: 100%;
+         flex-direction: column;
+         margin: 0;
+    }
+     header .logo {
+         max-width: 35%;
+    }
+     header nav a {
+         text-align: center;
+         width: 100%;
+         border-bottom: 1px solid gray;
+         height: 25px;
+         padding-top: 2%;
+         padding-bottom: 2%;
+         font-size: 1.5rem;
+    }
+     header nav a:first-child {
+         border-top: 1px solid gray;
+    }
+     .cta .cta-text {
+         font-size: 2.5rem;
+    }
+     .cta button {
+         width: 65%;
+         font-size: 1rem;
+    }
+     .cta button:hover {
+         background: white;
+         font-size: 1rem;
+         border: 2px solid brown;
+    }
+     .main-content .top-content {
+         font-size: 1.3rem;
+         flex-direction: column;
+    }
+     .main-content .bottom-content {
+         font-size: 1.3rem;
+         flex-direction: column;
+    }
+     .main-content .text-content {
+         padding: 2% 0;
+    }
+     .contact {
+         font-size: 1.3rem;
+         text-align: center;
+    }
+     .contact h4 {
+         font-size: 2rem;
+    }
+     footer {
+         padding: 4%;
+         font-size: 1rem;
+         font-weight: bold;
+    }
+}
+ @media(max-width: 300px){
+     header .logo {
+         max-width: 50%;
+    }
+     .cta .cta-text {
+         font-size: 2rem;
+    }
+     .cta button {
+         width: 80%;
+         font-size: 1rem;
+    }
+     .cta button:hover {
+         background: white;
+         font-size: 0.7rem;
+         border: 2px solid brown;
+    }
+     .cta img {
+         display: none;
+    }
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.container {
-    width: 880px;
-    margin: auto;
-}
-
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
-}
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
-}
