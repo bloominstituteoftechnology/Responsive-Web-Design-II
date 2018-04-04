@@ -206,10 +206,86 @@ footer section.copy-right p {
 	margin-bottom: 50px;
 }
 
+/* TABLET @MEDIA  QUERIES */
+@media only screen and (max-width: 768px) {
+	
+	body {
+		width: 95%;
+	}
 
+	header {
+		flex-direction: column-reverse;
+		align-items: center;∫
+	}
+	
+	header nav {
+		margin-right: 0px;
+		margin-top: 41px;
+		justify-content: space-between;
+		font-size: 2vw;
+	}
 
+	header nav a {
+		padding: 0 22px;
+	}
+	header nav a:first-child {
+		padding-left: 11px;
+	}
+	header nav a:last-child {
+		padding-right: 12px;
+	}
 
+	aside .slogan {
+		padding-top: 12px;
+		font-size: 9.5vw;
+	}
 
+	aside .slogan h1, aside .slogan button {
+		margin: 0;
+	}
+
+	aside .slogan h1 {
+		margin-right: 33px;
+	}
+
+	aside .slogan button {
+		margin-top: 26px;
+		margin-right: 41px;
+		padding: 5px 0px;
+		font-size: 2.1vw;
+		width: 47%;
+	}
+
+	aside .aside-img {
+		display: none;
+	}
+
+	.hr1 {
+		margin-top: 74px;
+	}
+
+	main .up-side .services {
+		padding: 0 11px;
+	}
+	main .bottom-side .services:first-of-type {
+		padding: 0 11px;
+		margin-top: 28px;
+	}
+	main .bottom-side .services:nth-of-type(2) {
+		/* color: turquoise; */
+		padding-left: 31px;
+		padding-right: 36px;	
+	}
+	main .bottom-side .services:last-of-type {
+
+	}
+
+	footer section.contact address, footer section.contact h3 {
+		padding: 0 11px;
+	}
+}
+
+/* END TABLET @MEDIA  QUERIES */
 
 
 /* temp */
