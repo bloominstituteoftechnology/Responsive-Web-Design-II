@@ -176,7 +176,8 @@ footer {
 
 @media(max-width: 768px) {
 
-    .container {      
+    .container {     
+        max-width: 768px; 
         width: 100%;
         margin: 0 auto;
         display: flex;
@@ -222,9 +223,10 @@ footer {
         align-items: center;
     }
 
-    .cta-text {
+    .cta .cta-text {
         display: flex;
         justify-content: center;
+        margin: auto;
     }
 
     .text-container {
@@ -239,3 +241,7 @@ footer {
     }
 
 }
+
+/* @media(max-width: 400px) {
+
+} */
