@@ -340,4 +340,7 @@ footer {
         width: 100%;
         margin: 40px auto;
     }
+    .content {
+        margin-top: 20px;
+    }
 }
