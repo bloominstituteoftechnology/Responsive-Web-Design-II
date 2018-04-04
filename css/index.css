@@ -154,7 +154,6 @@ header .logo {
 
 .main-content .bottom-content {
     display: flex;
-    justify-content: space-around;
 }
 
 .main-content .bottom-content p {
@@ -210,11 +209,13 @@ footer {
 }
 
 @media (max-width: 400px) {
+
     nav {
         display: flex;
         flex-direction: column;
         justify-content: center; 
     }
+
     nav a {
         margin: 0 auto;
         padding: 1em;
@@ -223,19 +224,24 @@ footer {
         text-align: center;
         /* border-bottom: 1px solid grey; */
     }
+
     nav a:last-child {
         border-bottom: 1px solid grey;
     }
 
-    .top-centent {
+    .top-content {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         flex-wrap: wrap;
+    }
+
+    .top-content .text-content:last-child {
+        margin-top: 2em;
     }
 
     .bottom-content {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         flex-wrap: wrap;
     }
     
