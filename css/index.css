@@ -187,7 +187,6 @@ footer {
     header .logo {
         order: -1;
         align-self: center;
-        border: 1px solid black;
         margin-left: 20px;
         margin-top: 90px;
     }
@@ -207,7 +206,6 @@ footer {
     }
     .cta .cta-text {
         margin-right: 0;
-        border: 1px solid black;
     }
 
     .middle-img {
