@@ -173,3 +173,48 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        margin: auto;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .logo {
+        align-self: center;
+        order: 1;
+    }
+
+    header nav {
+        display: flex;
+        width: 100%;
+        order: 2;
+        justify-content: space-between;
+    }
+
+    .cta {
+        width: 100%;
+        justify-content: center;
+        padding-right: 30px;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text {
+        margin-right: 0px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+}
