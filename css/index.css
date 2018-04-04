@@ -261,9 +261,22 @@ footer {
  /*   .main-content {
         align-content: space-between;
     }*/
+    .main-content {
+        margin: 75px 20px 35px 20px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
 
     .main-content .top-content, .main-content .bottom-content{
-        flex-wrap: wrap;
-        
+        flex-direction: column;
+        /*justify-content: space-around;*/
     }
+
+    .main-content .top-content .text-content, .main-content .bottom-content .text-content {
+        margin-top: 20px;
+    }
+
+    
 }
