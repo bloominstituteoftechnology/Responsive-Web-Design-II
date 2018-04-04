@@ -261,6 +261,10 @@ footer {
 		/*align-items: center;*/
 	}
 
+	.middle-img{
+		width: 100%;
+	}
+
 	.text-content{
 		padding: 1.25rem 0;
 	}
