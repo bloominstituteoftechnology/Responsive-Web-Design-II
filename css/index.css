@@ -218,6 +218,10 @@ footer {
         width: 100%;
     }
 
+    .main-content .top-content .text-content {
+        margin-right: 20px;
+    }
+
 }
 
 
@@ -236,7 +240,6 @@ footer {
     header nav {
         width: 100%;
         flex-direction: column;
-        /*justify-content: center;*/
         align-items: center;
         margin-top: 0;
      }
@@ -258,9 +261,7 @@ footer {
         margin: 20px 0;
         justify-content: center;
     }
- /*   .main-content {
-        align-content: space-between;
-    }*/
+
     .main-content {
         margin: 75px 20px 35px 20px;
     }
@@ -271,11 +272,15 @@ footer {
 
     .main-content .top-content, .main-content .bottom-content{
         flex-direction: column;
-        /*justify-content: space-around;*/
+
     }
 
     .main-content .top-content .text-content, .main-content .bottom-content .text-content {
         margin-top: 20px;
+    }
+
+    .contact {
+        margin-left: 20px;
     }
 
     
