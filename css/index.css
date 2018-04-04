@@ -178,7 +178,7 @@ footer {
 
 /* Media Queries */
 
-/* Phone Size */
+/* Tablet Size */
 @media(max-width: 768px) {
     .container {
       padding: 10px;
@@ -212,6 +212,7 @@ footer {
     }
   }
   
+  /* Phone Size */
   @media(max-width: 400px) {
     .container {
       padding: 0;
