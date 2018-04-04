@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
 }
 
 /* Header Styles */
@@ -73,6 +74,7 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    border: solid green;
 }
 
 header nav {
@@ -80,6 +82,7 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+    border: solid red;
 }
 
 header nav a {
@@ -172,4 +175,29 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+/* At 768px */
+
+@media(max-width: 768px){
+    
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    header .logo {
+        order: -1;
+        align-self: center;
+    }
+
+    .cta img {
+        display: none;
+    }
 }
