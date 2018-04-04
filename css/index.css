@@ -250,4 +250,38 @@ footer {
         font-size: 20px;
         padding: 20px 0px 20px 16px;
     }
+    .cta {
+        margin-top: 50px;
+    }
+    .cta .cta-text {
+        margin: 0px 0px 0px 16px;
+    }
+    .main-content {
+        padding: 35px 0px 0px 0px;
+    }
+    .main-content .top-content {
+        flex-direction: column;
+        margin: 14px 0px 0px 0px;
+    }
+    .main-content .top-content p {
+        width: 104%;
+        margin-bottom: 26px;
+    }
+    .main-content .middle-img {
+        margin: 16px 0px;
+    }
+    .main-content .bottom-content {
+        flex-direction: column;
+        margin: 34px 0px 0px 0px;
+    }
+    .main-content .bottom-content p {
+        width: 104%;
+        margin-bottom: 35px;
+    }
+    .contact {
+        margin: 0px 0px 0px 20px;
+    }
+    footer {
+        margin: 40px 0px 20px 16px;
+    }
 }
