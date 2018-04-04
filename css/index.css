@@ -190,6 +190,7 @@ footer {
     header .logo {
         align-self: center;
         order: 1;
+        margin-left: 0;
     }
 
     header nav {
@@ -217,4 +218,52 @@ footer {
         width: 100%;
     }
 
+}
+
+
+@media(max-width: 400px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+        margin-top: 0;
+     }
+
+    header nav a {
+        border-bottom: 2px solid gray;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        display: block;
+        font-size: 20px;
+    }
+
+    header nav:first-child {
+        border-top: 2px solid gray;
+    }
+
+    header .logo {
+        margin: 20px 0;
+        justify-content: center;
+    }
+ /*   .main-content {
+        align-content: space-between;
+    }*/
+
+    .main-content .top-content, .main-content .bottom-content{
+        flex-wrap: wrap;
+        
+    }
 }
