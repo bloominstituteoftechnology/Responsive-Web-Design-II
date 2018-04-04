@@ -262,7 +262,7 @@ footer {
     }
     .main-content .middle-img {
         display: block;
-        margin: auto;
+        margin: 15px 0px;
     }
     .main-content .bottom-content {
         display: flex;
