@@ -205,13 +205,26 @@ footer {
         width: 100;
     }
     nav {
+        max-width: 100%;
         display: flex;
         flex-direction: row;
+        order: 1;
         margin: 20px;
     }
     nav a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         padding: 20px;
-        order: 1;
+        order: 2;
+    }
+    .main-content {
+        max-width: 768px;
+        display: flex;
+        flex-direction: coulumn;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
