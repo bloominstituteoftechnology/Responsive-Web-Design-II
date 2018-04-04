@@ -207,7 +207,6 @@ footer {
     .cta .cta-text button {
         margin-top: 15px;
     }
-    }
     .main-content .middle-img {
         width: 100%;
     }
@@ -231,5 +230,24 @@ footer {
     }
     .contact {
         margin: 0px 0px 0px 30px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    header .logo {
+        margin: 20px 0px 0px 17px;
+    }
+    header nav {
+        margin-top: 20px;
+        padding: 0px;
+        flex-direction: column;
+        border-top: solid 1px black;
+    }
+    header nav a {
+        border-bottom: black 1px solid;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px 0px 20px 16px;
     }
 }
