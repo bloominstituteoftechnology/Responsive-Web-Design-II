@@ -173,3 +173,122 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    header {
+        flex-direction: column;
+        align-content: center;
+    }
+    header nav {
+        width: 90%;
+    }
+    header .logo {
+        order: -1;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cta img {
+        display: none;
+    }
+    .cta .cta-text {
+        margin-right: 33%;
+        
+    }
+    .main-content .middle-img {
+        width: 100%;
+    }
+    .main-content .top-content .text-content {
+        margin-top: 1.5%
+    }
+    .main-content .top-content .text-content:first-child {
+        padding-right: 5%;
+    }
+    .main-content .bottom-content .text-content:first-child  {
+        padding-right: 5%;
+    }
+    .main-content .bottom-content .text-content:last-child {
+        padding-left: 5%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        padding: 0;
+    }
+    
+    header nav {
+        flex-direction: column;
+        margin-top: 5.5%;
+    }
+    header nav a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-top: 1.4px slategray solid;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 4.9%;
+        padding-bottom: 4.9%;
+    }
+    header .logo {
+        margin-top: 5%;
+    }
+    header nav a:last-child {
+        width: 100%;
+        border-bottom: 1.4px slategray solid;
+    }
+    .cta {
+        margin-top: 8%;
+        padding: 4%;
+        margin-bottom: 15%;
+    }
+    .cta .cta-text button {
+        margin: 5%;
+    }
+    .main-content {
+        margin: -12px 5% 5% 5%;
+    }
+    .main-content .top-content {
+        flex-direction: column;
+    }
+    .main-content .top-content .text-content:first-child {
+        padding-top: 4.5%;
+    }
+    .main-content .top-content .text-content:last-child {
+        padding-top: 6.8%;
+        padding-bottom: 5%;
+    }
+    .main-content .top-content .text-content:last-child p {
+        padding-top: 2.5%;
+    }
+    .main-content .middle-img {
+        margin-top: 7%;
+        margin-bottom: auto;
+    }
+    .main-content .bottom-content {
+        flex-direction: column;
+        padding-top: 7.9%;
+    }
+    .main-content .bottom-content .text-content {
+        padding-bottom: 6%;
+        margin-bottom: 5%;
+    }
+    .main-content .bottom-content .text-content:first-child {
+        padding-top: 0;
+    }
+    .main-content .bottom-content .text-content:last-child {
+        padding-bottom: 0;
+        margin-bottom: 3%;
+    }
+    .contact {
+        padding-top: 3%;
+        margin: 5%;
+    }
+}
