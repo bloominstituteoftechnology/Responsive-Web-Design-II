@@ -181,8 +181,6 @@ footer {
    
     .main-content{
        padding-left: 10px;
-       padding-right: 10px;
-    }
 
 
     .cta img{
@@ -306,17 +304,21 @@ width:97%;
 
 
 
+
+
+
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;
-        height: 300px;
+        height:
     }
-
+h
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
-        height: 440px;
-    }
+        height: ;
+
+       
 
   
 }
