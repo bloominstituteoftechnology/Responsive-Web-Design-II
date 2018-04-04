@@ -175,6 +175,7 @@ footer {
 }
 
 /*at media 768px*/
+
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -215,12 +216,14 @@ footer {
     }
     
 /*    contact  */
+    
     .contact{
         padding-left: 20px;
     }
 }
 
 /*at media 400px*/
+
 @media(max-width:400px){
     .container {
         width: 100%;
@@ -247,8 +250,8 @@ footer {
     flex-direction: column;
     }
     .main-content .middle-img {
-        width: 380px;
-        margin: auto;
+        width: 92%;
+        margin: 0 auto;
     }
     .bottom-content {
         flex-direction: column;
