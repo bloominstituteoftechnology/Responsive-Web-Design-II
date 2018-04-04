@@ -174,6 +174,10 @@ footer {
     margin: 40px 0 20px;
 }
 
+/************************
+**Breakpoint for tablet**
+************************/
+
 @media screen and (min-width: 401px) and (max-width: 768px) {
     
     .container {
@@ -181,6 +185,8 @@ footer {
         margin: auto;
         padding: 0 20px;
     }
+
+    /* Header Styles */
 
     header {
         flex-direction: column-reverse;
@@ -197,6 +203,8 @@ footer {
         margin: 29px 0 0 0;
     }
 
+    /* CTA styles */
+
     .cta img {
         display: none;
     }
@@ -211,6 +219,8 @@ footer {
         margin: 0;
     }
 
+    /* Main Content styles */
+
     .text-content {
         padding: 0 10px;
     }
@@ -219,7 +229,99 @@ footer {
         max-width: 100%;
     }
 
+    /* Contact styles */
+
     .contact {
         padding-left: 10px;
+    }
+}
+
+/****************************
+**Breakpoint for smartphone**
+****************************/
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Header Styles */
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid gray;
+        margin-top: 20px;
+    }
+
+    header nav a {
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    header .logo {
+        align-self: center;
+        margin: 20px 0 0 0;
+    }
+
+    /* CTA styles */
+
+    .cta {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        align-self: center;
+        margin: 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    /* Main Content styles */
+
+    .main-content {
+       margin: 75px 20px 35px 20px;
+       padding-bottom: 0px;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .main-content .top-content .text-content {
+        padding: 14px 0;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        padding-bottom: 36px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+    /* Contact styles */
+
+    .contact {
+        margin-left: 20px
     }
 }
