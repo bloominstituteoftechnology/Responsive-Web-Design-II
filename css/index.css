@@ -113,7 +113,8 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 84px 0 0;
+    padding-bottom: 1px;
 }
 
 .cta .cta-text button {
@@ -122,8 +123,10 @@ header .logo {
     background: white;
     width: 170px;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 18px;
+    margin-left: 5px;
     cursor: pointer;
+    
 }
 
 .cta .cta-text button:hover {
@@ -147,6 +150,10 @@ header .logo {
     justify-content: space-around;
 }
 
+.main-content .top-content .text-content p {
+    padding-top: 5px;
+}
+
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
@@ -159,6 +166,7 @@ header .logo {
 
 .main-content .bottom-content p {
     padding-right: 20px;
+    padding-top: 5px;
 }
 
 /* Contact Styles */
