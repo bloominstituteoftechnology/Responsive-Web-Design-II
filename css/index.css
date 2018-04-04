@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -172,4 +172,141 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media(max-width: 768px){
+
+	.container{
+		width: 100%;
+	}
+
+	header{
+		flex-flow: column wrap;
+	}
+
+	header .logo {
+			order: -1;
+			align-self: center;
+			margin: 28px 0 0 91px;
+	}
+
+	header a {
+		margin: 25px;
+		height: 25px;
+		display: flex;
+		align-items: space-between;
+
+	}
+
+	section img {
+		visibility: hidden;
+	}
+
+
+	.cta {
+
+	    display: flex;
+	    margin-top: 72px;
+	    justify-content: flex-end;
+			position: relative;
+	}
+
+	.cta .cta-text {
+		margin: 25px;
+		position: relative;
+		left: 250px;
+	}
+
+	.middle-img{
+		visibility: visible;
+		width: 80%;
+	}
+
+	@media(max-width: 400px){
+		.container{
+			width: 100%;
+		}
+
+		header{
+			flex-flow: column wrap;
+			/*border: 1px solid orange;*/
+		}
+
+		header nav {
+			width: 400px;
+			flex-direction: column;
+
+		}
+
+		 header .logo {
+			order: -1;
+			align-self: center;
+			visibility: visible;
+		}
+
+		header a{
+			font-size: 18pt;
+			margin: 10px 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid grey;
+		}
+
+		.cta{
+			display: flex;
+			justify-content: center;
+			margin-right: 120px;
+		}
+
+		.text-content{
+			padding: 15px;
+		}
+
+		.top-content{
+			flex-flow: column wrap;
+			margin: 25px;
+			padding: 5px;
+		}
+
+		.bottom-content{
+			flex-flow: column wrap;
+			margin: 25px;
+			padding: 5px;
+		}
+
+		.contact{
+			margin: 25px;
+			padding: 5px;
+		}
+
+		footer{
+			justify-content: center;
+		}
+
+	}
+
+	/*.cta{
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+
+	.cta-text{
+		width: 800px;
+		display: flex;
+		flex-flow: row wrap;
+		padding: 0 0;
+		margin-left: 550px;
+		font-size: 48pt;
+		justify-content: center;
+	}
+
+	button{
+		font-size: 14pt;
+		width: 150px;
+		height: 40px;
+		border: 2px solid black
+	}*/
+
 }
