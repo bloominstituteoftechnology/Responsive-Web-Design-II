@@ -208,25 +208,23 @@ footer {
     }
 
 }
-@media(max-width: 450px){
+@media(max-width: 400px){
     .container{
-        max-width: 420;
-        margin: auto
+        max-width: 390px;
+        margin: auto;
     }
     nav{
         flex-direction: column;
         padding-left: 400px;
     }
 
-    .top-content{
+    .top-content, .bottom-content{
         justify-content: space-between;
         flex-direction: column;
-        align-items: center
+        align-items: center;
     }
-    .bottom-content{
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center
-    }
+
+    .main-content{
+        width: 100%;
     }
 }
