@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,8 +65,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
+    
+    
 }
 
 /* Header Styles */
@@ -73,18 +77,25 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.5%; 
+    width: 70%; /*610px*/
     justify-content: space-between;
     display: flex;
+    
+    
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
+    
+    
+    
 }
 
 header nav a:hover {
@@ -94,35 +105,41 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    /* margin: 28px 0 0 91px; */
+    margin: 3.2% 0 0 10.4%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    /* margin-top: 72px; */
+    margin-top: 8.1%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    /* font-size: 72px; */
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    /* margin: 0 82px 0 0; */
+    margin: 0 10% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    /* width: 170px; */
+    width: 20rem;
     height: 32px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 1.2%;
     cursor: pointer;
 }
 
@@ -136,9 +153,9 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 9% 0 4% 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -149,7 +166,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -158,18 +175,150 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.4%;
+    
 }
 
 /* Contact Styles */
+.contact{
+    font-size: 1.6rem;
+}
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.8% 0;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.5% 0 2.3%;
+    font-size: 1.6rem;
+}
+
+/*768px tablet version*/
+
+@media (max-width: 768px) {
+
+    .container{
+        width: 100%;
+        max-width: 768px;
+    }
+     header nav { 
+      
+      /* border: 5px  blue; */
+      width: 52%;
+      margin-left: 2.6%;
+     /* border: 1px double black;*/
+    } 
+     .logo{
+         margin: 3.7% 0 0 7.7%;
+     }
+
+     .cta {
+        justify-content: center;
+    }
+
+     .cta .cta-text {
+        /* 0 is top */
+        margin: 0 5.2% 0 0;
+    }
+
+    .main-content .middle-img {
+        width: 40%; /*300px*/
+    }
+
+    .main-content {
+        
+        margin: 10% 2.3% 4.5% ;
+     }
+
+    .contact{
+        margin: 3% 3% 4.5%;
+    }
+
+
+    
+    
+    
+  }
+
+/*400px phone version*/
+/* Phone */
+@media (max-width: 400px) {
+
+    .container{
+        max-width: 400px;
+        width: 100%; 
+    }
+
+    header {
+        flex-wrap: wrap; /*Works because display flex is already on it above*/
+        justify-content: center; /*Works because display flex is already on it above*/
+    }
+
+    header nav {
+        width: 100%; /*100% of what? Why are there 2 of them? Does this value change when screen size does*/
+    }
+
+    header nav {
+        width: 100%;
+        display: flex; /*Why is display flex down here also?*/
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        margin: 0;
+        display: block; /*Why do you need to display 
+        block if it was never changed isn't block the default?*/
+        text-align: center;
+        padding: 5% 0;
+        font-size: 2.0rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        order: -1;
+        max-width: 100%;
+        margin: 5% 0;
+    }
+
+    .cta {
+        margin-top: 12.5%;
+        flex-flow: column;
+        align-items: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0 0 12.5% 0;
+    }
+
+    .cta img {
+        max-width: 80%; /*80% of the images actual size?*/ 
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
 }
