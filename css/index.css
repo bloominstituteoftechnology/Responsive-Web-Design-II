@@ -247,13 +247,14 @@ footer {
 		border: 1px solid gray;
 		width: 100%;
 		text-align: center;
-		padding: 1rem;
-		font-size: 1.5rem;
+		padding: 1.25rem;
+		font-size: 1.25rem;
 	}
 
 	.cta{
 		justify-content: center;
-		padding-left: 3.75rem;
+		padding-left: 6rem;
+		margin-top: 2.75rem;
 	}
 
 	.main-content .top-content{
