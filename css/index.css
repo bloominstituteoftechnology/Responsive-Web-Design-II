@@ -173,3 +173,39 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    header {
+        display: flex;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        width: 100%;
+    }
+    nav a {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: orange;
+    }
+}
