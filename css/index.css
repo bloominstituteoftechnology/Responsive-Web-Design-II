@@ -184,7 +184,7 @@ footer {
         justify-content: center;
     }
 
-    header img {
+    header .logo {
         display: block;
         order: -1;
         margin: 0;
