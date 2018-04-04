@@ -176,10 +176,12 @@ footer {
 
 @media(max-width: 768px) {
     .container {
-        width: 100%;
+        width: 95%;
+        padding: 2rem 0rem;
     }
 
     header {
+        width: 100%;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -187,14 +189,41 @@ footer {
     header .logo {
         display: block;
         order: -1;
-        margin: 0;
+        margin: auto;
+    }
+
+    header nav {
+        width: 100%;
+        padding: 0rem 0.75rem;
     }
 
     .cta {
+        
         justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin: 0 35px 0 0;
+    }
+
+    .cta .cta-text button {
+        margin: 12px 6px 0 0;
     }
 
     .cta img {
         display: none;
+    }
+
+    .main-content {
+        font-size: 17px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        margin: 2.2rem auto;
+    }
+
+    .contact {
+        margin: 0 13px;
     }
 }
