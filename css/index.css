@@ -178,9 +178,23 @@ footer {
 
 
 @media(max-width:768px){
+   
+    .main-content{
+       padding-left: 10px;
+       padding-right: 10px;
+    }
 
+
+    .cta img{
+        display: none;
+    }
+
+    .cta .cta-text{
+        margin: auto;
+    }
+    
     .container{
-     max-width:100% ;
+     max-width:768px ;
      justify-content: center;
     }
 
@@ -193,6 +207,10 @@ footer {
         width: 26%;
         margin-right:10%
         
+    }
+
+    .main-content .middle-img{
+        display: none;
     }
 
 
@@ -225,6 +243,11 @@ width:97%;
 
 
 @media (max-width: 400px) {
+
+    .container{
+        max-width: 400px;
+        
+    }
 
     header {
         flex-wrap: wrap;
@@ -280,6 +303,8 @@ width:97%;
     .cta img {
         max-width: 80%;
     }
+
+
 
     .main-content .top-content {
         justify-content: space-around;
