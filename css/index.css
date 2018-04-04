@@ -194,7 +194,6 @@ footer {
         width: 100%;
         order: 2;
         justify-content: space-between;
-
     }
 
     .cta {
@@ -205,6 +204,7 @@ footer {
     .cta .cta-text {
         margin-right: 0;
     }
+
     .cta img {
         display: none;
     }
@@ -221,5 +221,51 @@ footer {
 
     .container .middle-img {
         width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    header .logo {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header nav {
+        margin-top: 20px;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    header nav a {
+        padding: 20px;
+        border-bottom: 1px solid black;
+        width: 100vw;
+        margin-left: -20px;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .top-content .text-content:first-child {
+        margin-bottom: 20px;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin-bottom: 20px;
+    }
+
+    .main-content .bottom-content .text-content:last-child {
+        margin-bottom: 0;
     }
 }
