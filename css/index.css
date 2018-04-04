@@ -64,8 +64,17 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    /* set width: 100% in order to avoid the horizontal scroll bar. */
+    max-width: 880px;
+    width: 100%;
     margin: auto;
+}
+
+@media (max-width: 398px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Header Styles */
@@ -95,6 +104,48 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 91px;
+}
+
+/* @media for 768px. Nav bar still stays as row but the logo move up to the center-top of the page. */
+
+@media(max-width: 766px) {
+    .container header {
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+
+    .container header nav {
+       width: 100%; 
+    }
+
+    .container header .logo {
+        align-self: center;
+    }
+}
+
+/* @media for 400px. Everything in column */
+
+@media(max-width: 398px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 880px;
+        order: 1;
+        justify-content: space-around; 
+    }
+
+    header nav a {
+        border: 1px solid gray;
+    }
+
+    header .logo {
+        order: 0;
+    }
 }
 
 /* Call To Action (CTA) Styles */
@@ -131,6 +182,19 @@ header .logo {
     color: white;
 }
 
+/* @media for 768px.  Remove the image and move cta-text to center of the page. */
+
+@media(max-width: 766px) {
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text {
+        width: 100%;
+        align-items: center;
+    }
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -159,6 +223,35 @@ header .logo {
 
 .main-content .bottom-content p {
     padding-right: 20px;
+}
+
+/* @media for 768px. Set main-content width for 100% in order to avoid scroll bar. */
+
+@media(max-width: 766px) {
+    .main-content {
+        width: 100%; 
+    }
+
+    .main-content img {
+        max-width: 880px;
+        width: 100%
+    }
+}
+
+/* @media for 400px. Set main-content width for 100% in order to avoid scroll bar. */
+
+@media(max-width: 398px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        justify-content: space-around;
+    }
+
+    .main-content img {
+        max-width: 880px;
+        width: 100%
+    }
 }
 
 /* Contact Styles */
