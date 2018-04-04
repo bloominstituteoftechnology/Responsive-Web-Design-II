@@ -208,3 +208,25 @@ footer {
     }
 
 }
+@media(max-width: 450px){
+    .container{
+        max-width: 420;
+        margin: auto
+    }
+    nav{
+        flex-direction: column;
+        padding-left: 400px;
+    }
+
+    .top-content{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center
+    }
+    .bottom-content{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center
+    }
+    }
+}
