@@ -198,7 +198,6 @@ footer {
     }
 
     .cta {
-        
         justify-content: center;
     }
 
@@ -225,5 +224,86 @@ footer {
 
     .contact {
         margin: 0 13px;
+    }
+}
+
+@media(max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 22px 0;
+        /* margin: 0px; */
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        align-self: center;
+        margin: 0;
+    }
+
+    header nav {
+        margin-top: 20px;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        width: 100%;
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .cta {
+        margin-top: 48px;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta .cta-text button {
+        margin: 15px 0px 0px 2px;
+    }
+
+    .main-content {
+        width: 90%;
+        margin: 76px 0px 0px 19px;
+        padding-bottom: 14px;
+    }
+
+    .main-content > * {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content .top-content .text-content h4 {
+        margin: 14px 0 16px 0;
+    }
+
+    .main-content .top-content .text-content p {
+        margin: 12px 0 12px 0;
+    }
+
+    .main-content .middle-img {
+        margin: 28px 0px 14px 0px;
+    }
+    .main-content .bottom-content .text-content h4 {
+        margin: 14px 0 16px 0;
+    }
+
+    .main-content .bottom-content .text-content p {
+        margin: 12px 0 22px 0;
+    }
+    .contact {
+        margin: 32px 0px 0px 20px;
     }
 }
