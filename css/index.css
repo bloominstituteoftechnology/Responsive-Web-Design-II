@@ -179,7 +179,6 @@ footer {
 
     .container {
         width: 700px;
-        /* background: lightblue; */
     }
     
     /* Header Styles */
@@ -187,7 +186,6 @@ footer {
     header {
         flex-direction: column;
         align-content: center;
-        /* background: red; */
     }
 
     header nav {
@@ -199,7 +197,6 @@ footer {
         order: -1;
         align-self: center;
         margin: 28px 0 0 0;
-        /* background: red; */
     }
 
     /* CTA Styles */
@@ -211,7 +208,6 @@ footer {
     .cta .cta-text{
         margin: auto;
         justify-content: center;
-        /* background: red; */
     }
 
     /* Main Content */
@@ -232,5 +228,80 @@ footer {
 
     .contact {
         margin: 0 10px 0 10px;
+    }
+}
+
+/* Mobile Media Query */
+@media (max-width: 400px){
+    
+    .container{
+        width: 370px;
+    }
+
+    /* Header Styles */
+
+    header {
+        width: 370px;
+    }
+
+    header nav{
+        width: 370px;
+        height: 370px;
+        flex-direction: column;
+    }
+
+    header nav a{
+        width: 370px;
+        text-align: center;
+        font-size: 20px;
+
+        padding: 22px 0 23px 0;
+        
+        border-top: solid grey thin;
+    }
+
+    header nav a:last-child{
+        border-top: solid grey thin;
+        border-bottom: solid grey thin;
+    }
+
+    /* Main Content Styles */
+
+    .main-content {
+        width: 360px;
+        padding: 35px 0;
+        margin: 75px auto 35px auto;
+    }
+
+    .main-content .top-content{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .main-content .top-content .text-content:last-child{
+        padding-top: 25px;
+    }
+
+    .main-content .middle-img{
+        width: 360px;
+    }
+
+    .main-content .bottom-content{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .main-content .bottom-content .text-content:nth-child(2){
+        padding-top: 25px;
+    }
+
+    .main-content .bottom-content .text-content:nth-child(3){
+        padding-top: 25px;
+    }
+
+    /* Contact */
+
+    .contact{
+        margin-left: 5px;
     }
 }
