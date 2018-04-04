@@ -97,6 +97,52 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
+@media(max-width: 768px) {
+    
+    .container {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+       order: 1;
+    }
+
+    header .logo {
+        order: -1;
+        justify-content: center;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text h1 {
+        justify-content: center;
+    }
+
+    .cta .cta-text button {
+        border: 1px solid black;
+        justify-content: center;
+    }
+
+    .cta img {
+        border: 1px solid black;
+        display: none;
+    }
+}
+
 /* Call To Action (CTA) Styles */
 
 .cta {
