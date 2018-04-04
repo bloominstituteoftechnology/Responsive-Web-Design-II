@@ -56,6 +56,7 @@ table {
 
 :root {
 	--black: #000000;
+	--light-black: #b5b0b0;
 }
 
 html, body {
@@ -92,7 +93,12 @@ header nav {
 	justify-content: space-between;
 	align-items: center;
 	margin-right: 10%;
-	font-size: 1.5vw;
+	font-size: 1.2vw;
+	
+}
+
+header nav a {
+	color: var(--light-black);
 }
 
 aside {
@@ -144,7 +150,21 @@ aside .aside-img img {
 }
 
 hr {
-	margin-top: 60px;
+	margin-top: 10px;
+	border: 1px solid var(--black);
+}
+
+.hr1 {
+	margin-top: 79px;
+}
+
+.hr2 {
+	margin-top: 26px;
+	margin-bottom: 35px;
+}
+
+main {
+	margin-bottom: 35px;
 }
 
 main .up-side, main .bottom-side {
@@ -152,8 +172,14 @@ main .up-side, main .bottom-side {
 }
 
 main .services {
-	margin-top: 30px;
-	margin-right: 20px;
+	margin-top: 27px;
+	/* margin-right: 20px; */
+	line-height: 18px
+}
+
+main .bottom-side .services {
+	padding-right: 19px;
+
 }
 
 main img {
@@ -163,7 +189,7 @@ main img {
 
 
 footer section {
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 footer section.contact address {
