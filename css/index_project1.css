@@ -55,7 +55,6 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,32 +63,26 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
-/* ------ BEGIN CODE ------ */
-/* ------ SECTION: CONTAINER ------ */
 .container {
-    max-width: 1024px;
+    width: 880px;
     margin: auto;
 }
 
-/* ------ SECTION:  ------ */
+/* Header Styles */
 
 header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    border: 1px solid red;
 }
 
 header nav {
     margin-top: 40px; 
-    width: 60%;
+    width: 610px;
     justify-content: space-between;
     display: flex;
-    border: 1px solid blue;
 }
 
 header nav a {
-    font-size: 1.6rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -101,32 +94,33 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
+    margin: 28px 0 0 91px;
 }
 
-/* ------ SECTION: CALL TO ACTION ------ */
+/* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 7.2rem;
+    font-size: 72px;
     text-align: center;
-    letter-spacing: .3rem;
+    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 8% 0 0;
+    margin: 0 82px 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 1.6rem;
+    font-size: 16px;
     background: white;
-    width: 55%;
+    width: 170px;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -137,14 +131,14 @@ header .logo {
     color: white;
 }
 
-/* ------ SECTION: MAIN CONTENT ------ */
+/* Main Content Styles */
 
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 3.4% 0;
+   margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 1.6rem;
+   font-size: 16px;
    line-height: 18px;
 }
 
@@ -155,7 +149,6 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    width: 100%;
     margin: 30px auto;
 }
 
@@ -165,67 +158,105 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 15%;
+    padding-right: 20px;
 }
 
-/* ------ SECTION: CONTACT ------ */
-.contact {
-    font-size: 1.6rem;
-}
+/* Contact Styles */
+
 .contact p {
-
     margin: 15px 0;
 }
 
-/* ------ SECTION: FOOTER ------ */
+/* Footer Styles */
 
 footer {
     text-align: center;
-    font-size: 1.6rem;
     margin: 40px 0 20px;
 }
 
-@media(max-width: 768px){
+@media (max-width: 768px){
+    .container {
+        width: 100%;
+        margin: auto;
+    }
 
+    /* ------ SECTION: HEADER ------ */
+    header {
+        width: 100%;
+        display: flex;
+    }
+    
+    header nav {
+        width: 100%;
+        padding-left: 40px;
+    }
+    
+    header .logo {
+        padding-right: 40px;
+    }
+    
+    /* ------ SECTION: CTA ------*/
+        
     .cta {
-        display: flex;
-        margin-top: 72px;
-        justify-content: center;
+        margin-top: 65px;
+        margin-right: 40px;
     }
-    
+
     .cta .cta-text {
-        font-size: 6.5rem;
+        font-size: 65px;
         text-align: center;
-        letter-spacing: .04rem;
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-        margin: 0 8% 0 0;
+        letter-spacing: 4px;
+        margin: 0 74px 0 0;
     }
-    
+
     .cta .cta-text button {
-        border: 1px double black;
-        font-size: 1.4rem;
-        background: white;
-        width: 55%;
-        height: 32px;
-        margin-top: 10px;
-        cursor: pointer;
-    }
-    
-    .cta .cta-text button:hover {
-        background: black;
-        color: white;
+        font-size: 14px;
+        width: 153px;
+        height: 29px;
+        margin-top: 9px;
     }
     .cta img {
         width: 45%;
-        height: 45%;
+    }
+
+    /* ------ SECTION: MAIN CONTENT ------ */
+
+    .main-content {
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 75px 0 35px 0;
+        padding: 35px 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .main-content .top-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .main-content .middle-img {
+        width: 90%;
+    }
+    
+    .main-content .bottom-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /* ------ SECTION: CONTACT ------ */
+    .contact {
+        margin-left: 20px;
     }
 }
 
-@media(max-width: 400px){
-/* ------ SECTION: HEADER ------ */
+@media (max-width: 400px){
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* ------ SECTION: HEADER ------ */
     header {
         width: 100%;
         display: flex;
@@ -256,7 +287,9 @@ footer {
         border-bottom: 1px solid gray;
     }
 
-/* ------ SECTION: CTA ------*/
+    
+    /* ------ SECTION: CTA ------*/
+        
     .cta {
         margin-top: 65px;
         flex-direction: column;
@@ -289,35 +322,40 @@ footer {
         padding: 20px 0 0 0;
     }
 
-/* ------ SECTION: MAIN CONTENT ------ */
+    /* ------ SECTION: MAIN CONTENT ------ */
 
-.main-content {
-    border-top: 2px solid black; 
-    border-bottom: 2px solid black;
-    margin: 75px 0 8.7% 0;
-    padding: 35px 0;
-    font-size: 16px;
-    line-height: 18px;
-    flex-direction: column;
-}
+    .main-content {
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 75px 0 35px 0;
+        padding: 35px 0;
+        font-size: 16px;
+        line-height: 18px;
+        flex-direction: column;
+    }
+    
+    .main-content .top-content {
+        padding-right: 20px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    
+    .main-content .middle-img {
+        width: 90%;
+    }
+    
+    .main-content .bottom-content {
+        padding-right: 20px;
+        padding-left: 20px;
+        flex-direction: column;
+    }
 
-.main-content .top-content {
-    padding-right: 5%;
-    padding-left: 5%;
-    flex-direction: column;
-}
+    .text-content h4 {
+        margin: 20px 0px 0px 0px;
+    }
 
-.main-content .middle-img {
-    width: 100%;
-}
-
-.main-content .bottom-content {
-    padding-right: 5%;
-    padding-left: 5%;
-    flex-direction: column;
-}
-
-.text-content h4 {
-    margin: 20px 0px 0px 0px;
-}
+    /* ------ SECTION: CONTACT ------ */
+    .contact {
+        margin-left: 20px;
+    }
 }
