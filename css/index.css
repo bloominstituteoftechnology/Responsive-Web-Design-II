@@ -66,7 +66,14 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+
+
 
 /* Header Styles */
 
@@ -181,3 +188,48 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+/*responsive design setting for tablet*/
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        /* display: flex; Not required here because flex inheritance is one level deep */
+        justify-content: space-around;
+    }
+
+    header .logo {
+        /* display: flex; Not required here because flex inheritance is one level deep */
+        order: -1;
+        align-self: center;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    
+
+}
+
+
+
+
