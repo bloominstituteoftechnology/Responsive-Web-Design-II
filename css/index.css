@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -172,4 +172,104 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/*Media Queries*/
+
+@media (min-width:401px) and (max-width: 768px){
+	.container{
+		width: 95%;
+	}
+
+	header{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	header nav{
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	header nav a{
+		margin: 0rem 2.45rem;
+	}
+
+	header .logo{
+		align-self: center;
+		padding-right: 4.5rem;
+	}
+
+	.cta img{
+		display: none;
+	}
+
+	.cta{
+		justify-content: center;
+		padding-left: 3.75rem;
+	}
+
+	.main-content{
+		padding: 2.5rem 1rem;
+	}
+
+	.middle-img{
+		width: 100%;
+	}
+
+	.main-content .top-content{
+		justify-content: space-between;
+	}
+
+	.main-content .top-content .text-content{
+		width: 48%;
+	}
+}
+
+@media(max-width: 400px){
+	.container{
+		width: 95%;
+	}
+
+	header{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	header .logo{
+		align-self: center;
+		padding-right: 4.5rem;
+	}
+
+	header nav{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	header nav a{
+		border: 1px solid gray;
+		width: 100%;
+		text-align: center;
+		padding: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.cta{
+		justify-content: center;
+		padding-left: 3.75rem;
+	}
+
+	.main-content .top-content{
+		flex-direction: column;
+		/*align-items: center;*/
+	}
+
+	.text-content{
+		padding: 1.25rem 0;
+	}
+
+	.main-content .bottom-content{
+		flex-direction: column;
+	}
 }
