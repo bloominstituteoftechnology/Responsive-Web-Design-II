@@ -70,8 +70,9 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-	max-width: 90%;
+	max-width: 880px;
 	margin: auto;
+	width: 80%;
 }
 
 a {
@@ -82,7 +83,7 @@ a {
 header {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 28px;
 }
 
 header nav {
@@ -106,12 +107,17 @@ aside .slogan, aside .aside-img {
 
 aside .slogan {
 	margin: 0 auto;
-	font-size: 7.5vw;
+	font-size: 5.5vw;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: space-around; */
 	align-items: center;
+}
+
+aside .slogan h1 {
+	margin-top: 67px;
+	margin-left: 126px;
 }
 
 aside .slogan button {
@@ -119,10 +125,17 @@ aside .slogan button {
 	width: 40%;
 	border: 1px solid var(--black);
 	background-color: inherit;
+	margin-left: 113px;
+	margin-top: 14px;
+}
+
+aside .aside-img {
+	margin-top: 12px;
+	margin-left: 31px;
 }
 
 aside .aside-img figure, aside .aside-img img {
-	width: 90%;
+	width: 93%;
 	margin: auto;
 }
 
