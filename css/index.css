@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    max-width: 880px;
+    margin: 0 auto;
+    width: 100%
 }
 
 /* Header Styles */
@@ -145,6 +146,7 @@ header .logo {
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
 }
 
 .main-content .middle-img {
@@ -172,4 +174,111 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+/* Media */
+
+@media(max-width: 768px) {
+.container {
+    width: 100%; 
+}
+header {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+header .logo{
+    order: -1;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header nav {
+    justify-content: space-between;
+    width: 92%;
+}
+
+.cta img {
+    display: none;
+}
+.cta .cta-text {
+    margin: auto;
+    padding-right: 30px;
+}
+
+.cta .cta-text button {
+    margin-top: 15px;
+}
+.main-content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.main-content .top-content {
+    padding: 5px;
+}
+.main-content .middle-img {
+    width: 100%;
+}
+.contact p {
+    margin-left: 20px;
+}
+.contact h4 {
+    margin-left: 20px;
+}
+footer {
+    margin-bottom: 0;
+}
+}
+
+@media(max-width: 400px) {
+.container {
+    width: 100%;
+}
+header .logo {
+   margin-top: -10px;
+}
+header nav {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 0;
+ 
+  
+}
+header nav a {
+    border: .75px gray solid;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size:20px;
+    padding-left: 160px;
+    padding-right: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.cta .cta-text {
+    margin-left: 50px;
+}
+.main-content .top-content {
+    flex-wrap: wrap;
+    margin: auto;
+}
+.main-content .top-content .text-content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-content .bottom-content {
+    flex-wrap: wrap;
+    margin: auto;
+}
+.main-content .bottom-content .text-content{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
 }
