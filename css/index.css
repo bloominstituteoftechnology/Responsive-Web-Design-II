@@ -192,7 +192,6 @@ footer {
 
     .cta {
         justify-content: center;
-
     }
 
     .cta img {
@@ -224,3 +223,37 @@ footer {
         margin: 40px 0 0 0;
     }
 }
+
+    @media(max-width: 400px) {
+        .container {
+            width: 400px;
+            margin: auto;
+        }
+        header {
+            width: 400px;
+            margin: 0;
+        }
+
+        header nav {
+            flex-flow: column wrap;
+            align-items:flex-start;
+        }
+
+        header nav a {
+            border: 1px double black;
+            font-size: 18px;
+            background: white;
+            text-align: center;
+            padding: 20px 200px;
+        }
+        
+        .main-content .top-content {
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+
+        .main-content .bottom-content {
+            flex-flow: column wrap;
+        } 
+
+    }
