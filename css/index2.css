@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%; /* 10px if the browser was 16px*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -85,6 +86,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -94,7 +96,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    /* margin: 28px 0 0 91px; */
+    margin: 3.18% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,7 +109,8 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    /* font-size: 72px; */
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -118,11 +122,13 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.6rem;
     background: white;
     width: 58%;
     height: 32px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 1.14%;
     cursor: pointer;
 }
 
@@ -136,9 +142,11 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   /* margin: 75px 0 35px 0; */
+   margin: 8.52% 0 3.98% 0;
    padding: 3.98% 0;
-   font-size: 16px;
+   /* font-size: 16px; */
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -163,6 +171,10 @@ header .logo {
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+}
+
 .contact p {
     margin: 1.7% 0;
 }
@@ -172,6 +184,7 @@ header .logo {
 footer {
     text-align: center;
     margin: 4.55% 0 2.27%;
+    font-size: 1.6rem;
 }
 
 @media(max-width: 768px) {
