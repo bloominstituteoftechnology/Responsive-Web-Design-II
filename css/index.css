@@ -118,10 +118,10 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
-    width: 19%; /* percent base change made */
-    height: 3%;
+    width: 170px; /* percent base change made using the method given it was to small  */
+    height: 32px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -138,7 +138,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 3% 0;
-   font-size: 16px;
+   font-size: 1rem;
    line-height: 18px;
 }
 
