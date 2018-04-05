@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -48,8 +48,15 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
+*, *:before, *:after {
     box-sizing: border-box;
+		/* border: 1px solid blue; */
+		/* outline: 1px solid blue; */
+}
+
+:root {
+	--black: #000000;
+	--light-black: #b5b0b0;
 }
 
 html, body {
@@ -60,116 +67,287 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+body {
+	max-width: 880px;
+	margin: auto;
+	width: 80%;
 }
 
-/* Header Styles */
+a {
+	text-decoration: none;
+	color: var(--black);
+}
 
 header {
-    width: 100%;
-    display: flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 28px;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 10%;
+	font-size: 1.2vw;
+	
 }
 
 header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+	color: var(--light-black);
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+aside {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+aside .slogan, aside .aside-img {
+	min-width: 49%;
 }
 
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+aside .slogan {
+	margin: 0 auto;
+	font-size: 5.5vw;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	align-items: center;
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+aside .slogan h1 {
+	margin-top: 67px;
+	margin-left: 126px;
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+aside .slogan button {
+	font-size: 1.5vw;
+	width: 40%;
+	border: 1px solid var(--black);
+	background-color: inherit;
+	margin-left: 113px;
+	margin-top: 14px;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+aside .aside-img {
+	margin-top: 12px;
+	margin-left: 31px;
 }
 
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+aside .aside-img figure, aside .aside-img img {
+	width: 93%;
+	margin: auto;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+aside .aside-img img {
+	float: right;
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+hr {
+	margin-top: 10px;
+	border: 1px solid var(--black);
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+.hr1 {
+	margin-top: 79px;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.hr2 {
+	margin-top: 26px;
+	margin-bottom: 35px;
 }
 
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+main {
+	margin-bottom: 35px;
 }
 
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+main .up-side, main .bottom-side {
+	display: flex;
 }
+
+main .services {
+	margin-top: 27px;
+	/* margin-right: 20px; */
+	line-height: 18px
+}
+
+main .bottom-side .services {
+	padding-right: 19px;
+
+}
+
+main img {
+	width: 100%;
+	margin-top: 30px;
+}
+
+
+footer section {
+	margin-top: 25px;
+}
+
+footer section.contact address {
+	display: flex;
+	flex-direction: column;
+}
+
+footer section.contact address a {
+	margin-bottom: 15px;
+}
+
+footer section.copy-right p {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* TABLET @MEDIA  QUERIES */
+@media only screen and (max-width: 768px) {
+	
+	body {
+		width: 95%;
+	}
+
+	header {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	header nav {
+		margin-right: 0px;
+		margin-top: 41px;
+		justify-content: space-between;
+		font-size: 2vw;
+	}
+
+	header nav a {
+		padding: 0 22px;
+	}
+	header nav a:first-child {
+		padding-left: 11px;
+	}
+	header nav a:last-child {
+		padding-right: 12px;
+	}
+
+	aside .slogan {
+		padding-top: 12px;
+		font-size: 9.5vw;
+	}
+
+	aside .slogan h1, aside .slogan button {
+		margin: 0;
+	}
+
+	aside .slogan h1 {
+		margin-right: 33px;
+	}
+
+	aside .slogan button {
+		margin-top: 26px;
+		margin-right: 41px;
+		padding: 5px 0px;
+		font-size: 2.1vw;
+		width: 47%;
+	}
+
+	aside .aside-img {
+		display: none;
+	}
+
+	.hr1 {
+		margin-top: 74px;
+	}
+
+	main .up-side .services {
+		padding: 0 11px;
+	}
+	main .bottom-side .services:first-of-type {
+		padding: 0 11px;
+		margin-top: 28px;
+	}
+	main .bottom-side .services:nth-of-type(2) {
+		/* color: turquoise; */
+		padding-left: 31px;
+		padding-right: 36px;	
+	}
+
+	footer section.contact address, footer section.contact h3 {
+		padding: 0 11px;
+	}
+} /* END TABLET @MEDIA  QUERIES */
+
+/* MOBILE @MEDIA QUERIES */
+@media only screen and (max-width: 400px) {
+	body {
+		width: 100%;
+	}
+
+	header {
+		margin-top: 21px;
+		/* width: 100% */
+	}
+	header nav {
+		flex-direction: column;
+		align-items: center;
+		font-size: 5vw;
+		margin-top: 16px;
+		/* width:100%∫∫∫ */
+	}
+
+	header nav a {
+		width: 100%;
+		padding: 20px 0;
+		border: 1px solid black;
+		text-align: center;
+	}
+
+	aside {
+		margin-top: 35px;
+	}
+
+	aside .slogan {
+		font-size: 18vw;
+	}
+
+	aside .slogan h1 {
+		margin: 0px;  
+	}
+
+	aside .slogan button {
+		margin: 25px 0 0;
+		font-size: 4vw;
+		width: 58%;
+	}
+
+	hr {
+		width: 93%;
+	}
+
+	main .up-side, main .bottom-side {
+		flex-wrap: wrap;
+	}
+
+	main .up-side  .services {
+		margin-top: 40px;
+		height:	110px;
+	}
+
+	main .bottom-side .services,
+	main .bottom-side .services:first-of-type,
+	main .bottom-side .services:nth-of-type(2) {
+		padding: 0 21px 0 11px;
+		line-height: 18.7px;
+	}
+
+	main figure {
+		width: 93%;
+		margin: 27px auto 0;
+	}
+} 
+/* END MOBILE @MEDIA QUERIES */
