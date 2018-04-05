@@ -107,6 +107,10 @@ header .logo {
     margin-top: 73px;
 }
 
+.cta img {
+    width: 43%;
+}
+
 .cta .cta-text {
     display: flex;
     justify-content: center;
