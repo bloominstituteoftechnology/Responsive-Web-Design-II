@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -55,6 +55,8 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+    /*Should set rem to 10px if default is 16px*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -77,13 +79,14 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.54545%/*40px*/; 
+    width: 69.31818%/*610px*/;
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
+    font-size: 1.6rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -95,35 +98,41 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.18182% 0 0 10.34091%;
+    /* margin: 28px 0 0 91px; */
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.18182%/*72px*/;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem/*72px*/;
     text-align: center;
-    letter-spacing: 5px;
+    /* letter-spacing: 0.5rem; */
+    /* The above is messing w/ my button :( */
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.31818% 0 0;
+    /* margin: 0 82px 0 0; */
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: 0.1rem/*1px*/ double black;
+    font-size: 1.6rem/*16px*/;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 17rem/*170px*/;
+    /* I think flexbox is determining the 
+    width of CTA, so if I do a %, I have
+    to do it from that, which I don't know*/
+    height: 3.2rem/*32px*/;
+    margin-top: 1rem/*10px*/;
     cursor: pointer;
 }
 
@@ -135,12 +144,14 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   border-top: 0.2rem/*2px*/ solid black; 
+   border-bottom: 0.2rem/*2px*/ solid black;
+   margin: 8.52273% 0 3.97727% 0;
+   /* margin: 75px 0 35px 0; */
+   padding: 3.97727% 0;
+   /* padding: 35px 0; */
+   font-size: 1.6rem/*16px*/;
+   line-height: 1.8rem/*18px*/;
 }
 
 .main-content .top-content {
@@ -150,7 +161,8 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.40909% auto;
+    /* margin: 30px auto; */
 }
 
 .main-content .bottom-content {
@@ -159,26 +171,36 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27273%/*20px*/;
 }
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+ } /*turn it back to 16px relatively*/
+
 .contact p {
-    margin: 15px 0;
+    margin: 1.70455% 0;
+    /* margin: 15px 0; */
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    font-size: 1.6rem;
+    margin: 4.54545% 0 2.27273%;
+    /* margin: 40px 0 20px; */
 }
 
+/* CSS styles at <= 768px */
 @media(max-width: 768px) {
     .container {
         width: 95%;
-        padding: 2rem 0rem;
+        padding: 3.2rem 0;
+        /* padding: 2rem 0rem; */
+        /* Prev rem value based on 16px*/
     }
 
     header {
@@ -195,7 +217,8 @@ footer {
 
     header nav {
         width: 100%;
-        padding: 0rem 0.75rem;
+        padding: 0.7rem 1.64474%;
+        /* padding: 0rem 0.75rem; */
     }
 
     .cta {
@@ -203,11 +226,14 @@ footer {
     }
 
     .cta .cta-text {
-        margin: 0 35px 0 0;
+        margin: 0.4rem 3.7rem 0 0;
+        /* margin: 0 35px 0 0; */
     }
 
     .cta .cta-text button {
-        margin: 12px 6px 0 0;
+        margin: 1.3rem 0.4rem 1.3rem 0;
+        /* margin: 12px 6px 0 0; */
+        padding: 0.4rem 0 0 0.05rem;
     }
 
     .cta img {
@@ -215,24 +241,41 @@ footer {
     }
 
     .main-content {
-        font-size: 17px;
+        font-size: 1.7rem;
+        margin-bottom: 3.7rem;
+        /* font-size: 17px; */
+    }
+
+    .main-content .text-content {
+        margin: 0.7rem 0 0 1.37061%;
+        word-spacing: 0.5rem;
+    }
+
+    .main-content .text-content p {
+        padding: 0.5rem 0 0.4rem;
     }
 
     .main-content .middle-img {
         width: 100%;
-        margin: 2.2rem auto;
+        margin: 2.6rem auto 2.2rem;
+        /* margin: 2.2rem auto; */
     }
 
     .contact {
-        margin: 0 13px;
+        margin: 0 1.69271%;
+        /* margin: 0 13px; */
+    }
+
+    .container .contact p {
+        padding: 0.4rem 0 0 0;
     }
 }
 
 @media(max-width: 400px) {
     .container {
         width: 100%;
-        padding: 22px 0;
-        /* margin: 0px; */
+        padding: 2.2rem 0;
+        /* padding: 22px 0; */
     }
 
     header {
@@ -245,7 +288,8 @@ footer {
     }
 
     header nav {
-        margin-top: 20px;
+        margin-top: 2rem;
+        /* margin-top: 20px; */
         padding: 0;
         flex-direction: column;
         align-items: center;
@@ -255,8 +299,10 @@ footer {
         width: 100%;
         border-top: 1px solid black;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 2rem 0;
+        /* padding: 20px 0; */
+        font-size: 2rem;
+        /* font-size: 20px; */
     }
 
     header nav a:last-child {
@@ -264,7 +310,8 @@ footer {
     }
 
     .cta {
-        margin-top: 48px;
+        margin-top: 4.8rem;
+        /* margin-top: 48px; */
     }
 
     .cta .cta-text {
@@ -272,13 +319,18 @@ footer {
     }
 
     .cta .cta-text button {
-        margin: 15px 0px 0px 2px;
+        margin: 1.4rem 0 0 0.5%;
+        /* I think % works this time because
+        the width of .cta is now 100% */
+        /* margin: 15px 0px 0px 2px; */
     }
 
     .main-content {
-        width: 90%;
-        margin: 76px 0px 0px 19px;
-        padding-bottom: 14px;
+        margin: 7.6rem 3.75% 1.5rem;
+        padding: 4rem 0 1rem 0;
+        font-size: 1.5rem;
+        /* margin: 76px 0px 0px 19px; */
+        /* padding-bottom: 14px; */
     }
 
     .main-content > * {
@@ -286,25 +338,31 @@ footer {
         align-items: center;
     }
 
-    .main-content .top-content .text-content h4 {
-        margin: 14px 0 16px 0;
+    .main-content h4 {
+        margin: 0;
+        font-size: 1.7rem
+        /* margin: 14px 0 16px 0; */
     }
 
-    .main-content .top-content .text-content p {
-        margin: 12px 0 12px 0;
+    .main-content p {
+        margin: 1.3rem 0;
+    }
+
+    .main-content .bottom-content p {
+        margin: 1.3rem 0 2rem 0;
     }
 
     .main-content .middle-img {
-        margin: 28px 0px 14px 0px;
-    }
-    .main-content .bottom-content .text-content h4 {
-        margin: 14px 0 16px 0;
+        margin: 2.5rem 0 2.2rem 0;
+        /* margin: 28px 0px 14px 0px; */
     }
 
-    .main-content .bottom-content .text-content p {
-        margin: 12px 0 22px 0;
-    }
     .contact {
-        margin: 32px 0px 0px 20px;
+        margin: 3.5rem 0 3.5rem 5%;
+        /* margin: 32px 0px 0px 20px; */
+    }
+
+    .container .contact p {
+        padding-bottom: 0.5rem;
     }
 }
