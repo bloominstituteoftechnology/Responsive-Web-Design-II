@@ -64,8 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
+    margin: 5%;
 }
 
 /* Header Styles */
@@ -76,13 +76,15 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
+    margin-top: 9%; 
+    width: 68%;
     display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-size: 100%;
 }
 
-header nav a {
+header nav a:link {
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -93,22 +95,22 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    justify-content: space-around;
+    margin: 8% 0 0 6%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 5%;
+    justify-content: space-around;
 }
 
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -148,8 +150,10 @@ header .logo {
 }
 
 .main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    width:99%;
+    margin:3% 0 3% 0;
 }
 
 .main-content .bottom-content {
@@ -171,7 +175,7 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 5% auto 30% auto;
 }
 
 @media (max-width:480px){
@@ -186,15 +190,16 @@ footer {
     header nav{
         flex-direction:column;
         width: 100%;
-        font-size:20px;
+        font-size:100%;
+        margin-top:15%;
     }
     header nav a{
-        border-bottom:1px solid gray;
-        padding:20px;
+        border-bottom: 1px solid gray;
+        padding:5%;
         text-align: center;
     }
     header nav a:nth-child(1){
-        margin-top:25px;
+        margin-top:5%;
         margin-bottom:0;
         border-top:1px solid gray;
 
@@ -204,9 +209,9 @@ footer {
         order: -1;
         display:flex;
         align-items:center;
-        margin-top:20px;
-        margin-right:102px;
-        margin-bottom:-41px;
+        margin-top:5%;
+        margin-right:25%;
+        margin-bottom:-18%;
 
     }
     .cta{
@@ -218,10 +223,11 @@ footer {
     .cta img{
         display:none;
     }
-    .cta-text{
+    .cta .cta-text{
         padding-bottom:10%;
         width:95%;
-        margin: 0 auto 0 0;
+        margin: 0;
+        font-size:280%;
     }
     .cta h1{
         text-align:center;
@@ -233,8 +239,8 @@ footer {
         content: ""; /* This is necessary for the pseudo element to work. */ 
         display: block; /* This will put the pseudo element on its own line. */
         margin: 0 auto; /* This will center the border. */
-        width: 95%; /* Change this to whatever width you want. */
-        padding-top: 20px; /* This creates some space between the element and the border. */
+        width: 90%; /* Change this to whatever width you want. */
+        padding-top: 5%; /* This creates some space between the element and the border. */
         border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
     }
 
@@ -266,7 +272,7 @@ footer {
         margin-bottom:0;
     }
 }
-@media (max-width:1024px){
+@media (min-width:481){
     .container{
         width:100%;
     }
@@ -280,9 +286,11 @@ footer {
         width: 100%;
         font-size:100%;
         justify-content: space-around;
-        margin:1%;
+        margin-top:15%;
+        
     }
     header nav a{
+        padding-top:5%;
         padding-bottom:5%;
         text-align: center;
         padding-left:2%;
