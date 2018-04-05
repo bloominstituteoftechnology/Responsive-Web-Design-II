@@ -215,7 +215,7 @@ footer section.copy-right p {
 
 	header {
 		flex-direction: column-reverse;
-		align-items: center;∫
+		align-items: center;
 	}
 	
 	header nav {
@@ -276,16 +276,78 @@ footer section.copy-right p {
 		padding-left: 31px;
 		padding-right: 36px;	
 	}
-	main .bottom-side .services:last-of-type {
-
-	}
 
 	footer section.contact address, footer section.contact h3 {
 		padding: 0 11px;
 	}
-}
+} /* END TABLET @MEDIA  QUERIES */
 
-/* END TABLET @MEDIA  QUERIES */
+/* MOBILE @MEDIA QUERIES */
+@media only screen and (max-width: 400px) {
+	body {
+		width: 100%;
+	}
 
+	header {
+		margin-top: 21px;
+		/* width: 100% */
+	}
+	header nav {
+		flex-direction: column;
+		align-items: center;
+		font-size: 5vw;
+		margin-top: 16px;
+		/* width:100%∫∫∫ */
+	}
 
-/* temp */
+	header nav a {
+		width: 100%;
+		padding: 20px 0;
+		border: 1px solid black;
+		text-align: center;
+	}
+
+	aside {
+		margin-top: 35px;
+	}
+
+	aside .slogan {
+		font-size: 18vw;
+	}
+
+	aside .slogan h1 {
+		margin: 0px;  
+	}
+
+	aside .slogan button {
+		margin: 25px 0 0;
+		font-size: 4vw;
+		width: 58%;
+	}
+
+	hr {
+		width: 93%;
+	}
+
+	main .up-side, main .bottom-side {
+		flex-wrap: wrap;
+	}
+
+	main .up-side  .services {
+		margin-top: 40px;
+		height:	110px;
+	}
+
+	main .bottom-side .services,
+	main .bottom-side .services:first-of-type,
+	main .bottom-side .services:nth-of-type(2) {
+		padding: 0 21px 0 11px;
+		line-height: 18.7px;
+	}
+
+	main figure {
+		width: 93%;
+		margin: 27px auto 0;
+	}
+} 
+/* END MOBILE @MEDIA QUERIES */
