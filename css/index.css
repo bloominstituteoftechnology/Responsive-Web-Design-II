@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,19 +12,21 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
+html {
+   font-size: 62.5%;
+}
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,6 +66,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+		font-size: 1.6rem;
     width: 880px;
     margin: auto;
 }
@@ -76,8 +79,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 40px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -106,7 +109,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -118,9 +121,9 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 58%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -134,11 +137,11 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -158,8 +161,9 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 7%;
 }
+
 
 /* Contact Styles */
 
@@ -172,4 +176,110 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* media queries*/
+
+
+
+@media (max-width: 768px) {
+ .container {
+	 	 font-size: 1.6rem;
+		 width: 100%;
+		 padding: 3%;
+ }
+ header {
+		 flex-direction: column;
+		 align-items: center;
+ }
+
+ header .logo {
+		 align-self: center;
+		 order: 1;
+		 margin-right: 0;
+		 margin-left: 0;
+ }
+ header nav {
+	 	 width: 100%;
+	 	 justify-content: space-between;
+		 order: 2;
+ }
+
+ .cta {
+	 flex-direction: column;
+ }
+
+ .cta .cta-text {
+ 	flex-direction: column;
+	margin: 2%;
+ }
+
+ .cta img {
+		 display: none;
+ }
+ .main-content .middle-img {
+		 width: 100%;
+		 display: flex;
+ }
+ .main-content .top-content {
+		 justify-content: space-between;
+		 padding: 2%;
+		 margin: 2%;
+ }
+
+
+}
+
+@media (max-width: 400px) {
+	.container {
+ 		width: 100%;
+		font-size: 1.6rem;
+		padding: 2%;
+  }
+
+header nav {
+		width: 100%;
+ 		flex-direction: column;
+		border-bottom: 1px solid black;
+  }
+header nav a {
+	border-top: 1px solid black;
+	font-size: 3rem;
+	text-align: center;
+	padding: 2%;
+	}
+
+	.cta .cta-text{
+		flex-direction: column;
+		margin: 2%;
+		align-self: center;
+		text-align: center;
+	}
+	.main-content .top-content{
+			padding: 2%;
+			margin: 2%;
+	    flex-direction: column;
+	}
+
+	.main-content .middle-img {
+ 		 width: 100%;
+ 		 display: flex;
+  }
+
+	.main-content .bottom-content {
+			padding: 2%;
+			margin: 2%;
+	    flex-direction: column;
+	}
+
+	.main-content .bottom-content p {
+		padding: 2%;
+		margin: 2%;
+	}
+
+	.contact {
+		padding: 2%;
+		margin: 2%;
+	}
+
 }

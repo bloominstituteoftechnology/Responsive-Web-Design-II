@@ -27,7 +27,7 @@ Remember that an adaptive layout updates at breakpoints only.  Don't worry about
 
 Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a fully responsive layout!  
 
-To accomplish this challenge you will need to incorporate your knowedges of max and min width, media queries, rem units, and percents.
+To accomplish this challenge you will need to incorporate your knowledge of max and min width, media queries, rem units, and percents.
 
 *Tasks to complete:*
 * Convert all fixed widths throughout the site into percents
@@ -35,4 +35,3 @@ To accomplish this challenge you will need to incorporate your knowedges of max 
 * Convert all font-size pixels into rem units
 * Make the breakpoints look pixel perfect using the design files
 * Stretch Goal: Copy and paste your project to a new folder and make a 100% fluid layout design by removing breakpoints.  There is no right answer here, I just want you to see what happens when constraints are removed.
-
