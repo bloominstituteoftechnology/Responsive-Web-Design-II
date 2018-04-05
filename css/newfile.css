@@ -19,9 +19,10 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,6 +56,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,8 +66,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    max-width: 860px;
+    width: 100%;
+    margin: auto 0;
 }
 
 /* Header Styles */
@@ -77,7 +80,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 70%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +97,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 11%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,21 +109,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 5rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 11% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
-    width: 170px;
+    width: 40%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -138,7 +141,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1rem;
    line-height: 18px;
 }
 
@@ -158,13 +161,13 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.3%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 15px 0%;
 }
 
 /* Footer Styles */
@@ -175,56 +178,103 @@ footer {
 }
 @media(max-width: 768px){
     .container{
-        max-width: 740;
-        margin: auto;
-    }
-    nav{
-        flex-direction: row;
-        margin: 20px;
-        padding-left: 150px;
-    }
-    nav a{
-        padding: 20px;
+        margin: auto 0;
     }
     header {
-        flex-direction: column-reverse;
+        flex-wrap: wrap;
     }
-    .logo{
-        align-self: center;
-        margin-right: 36px;
-        width: 500px; 
-        padding-right: 288px;
+    header nav{
+        width: 100%;
+        padding: 0 4%;
+    }
+   
+    header .logo{
+        order: -1;
+        display: block;
+        margin: 30px auot 0;
+
     }
     .cta img{
         display: none;
     }
     .cta{
-        align-items: center;
+        justify-content: center;
     }
 
-    .cta-text{
-        align-items: center;
-        padding-right: 180px;
+    .cta .cta-text{
+        margin: 0;
     }
 
+    .cat img{
+        display: none;
+    }
+
+    .main-content .middle-img{
+        margin: 75px 3% 35px;
+    }
+    .text-content{
+        margin: 0 1%;
+    }
+    .contact{
+        margin: 0 4%;
+    }
 }
 @media(max-width: 400px){
     .container{
-        max-width: 390px;
+        width: 100%;
         margin: auto;
     }
-    nav{
-        flex-direction: column;
-        padding-left: 400px;
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .top-content, .bottom-content{
-        justify-content: space-between;
+    header nav{
+        width: 100%;
+        display: flex;
         flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 0;
+    }
+     header nav a{
+        flex-direction: column;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2.2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header .log{
+        margin: 20px 0;
+    }
+
+    .cta{
+        margin-top: 50px;
+        flex-flow: column;
         align-items: center;
     }
 
-    .main-content{
-        width: 100%;
+    .cta img{
+        max-width: 80%;
+    }
+
+    .main-content .top-content{
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content{
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+    .text-content{
+        margin: 0;
+    }
+    .contact{
+        margin: 20px;
     }
 }
