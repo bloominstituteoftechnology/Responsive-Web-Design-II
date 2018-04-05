@@ -239,11 +239,137 @@ header nav {
 footer {
     text-align: center;
     margin: 40px 0 20px;
-}
+    }
 
 }
 
-
+@media(max-width: 400px){
+    
+        header {
+            display: flex;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            
+        }
+        
+        header nav {
+            order: 2;
+            margin-top: 40px; 
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+    
+        
+        }
+        header nav a{
+            padding: 20px;
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            font-size: 20px;
+        }
+        
+        header .logo {
+            order: 1;
+            align-self: flex-start;
+            padding-left: 20px;
+        }
+        
+        /* Call To Action (CTA) Styles */
+        
+        .cta {
+            display: flex;
+            margin-top: 20px;
+            justify-content: flex-end;
+        }
+        
+       .cta .cta-text {
+           display: none;
+            font-size: 72px;
+            text-align: center;
+            letter-spacing: 5px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            align-items: center;
+            padding: 10px;
+            margin: auto 10px;
+        }
+        
+        .cta .cta-text button {
+            border: 1px double black;
+            font-size: 16px;
+            background: white;
+            width: 170px;
+            height: 32px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        .cta .cta-text button:hover {
+            background: black;
+            color: white;
+        }
+        
+        /* Main Content Styles */
+        
+        .main-content {
+           border-top: 2px solid black; 
+           border-bottom: 2px solid black;
+           padding: 20px;
+           font-size: 16px;
+           line-height: 18px;
+           justify-content: space-between;
+        }
+        
+        .main-content .top-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            margin: 10px auto;
+        }
+        .main-content .top-content .text-content{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .main-content .middle-img {
+            display: block;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .main-content .bottom-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            
+        }
+        .main-content .bottom-content .text-content{
+            padding-top: 10px;
+            padding-bottom: 10px;
+       }
+        
+        .main-content .bottom-content p {
+            padding: 0;
+        }
+        
+        /* Contact Styles */
+        
+        .contact {
+            margin: 15px 25px;
+        }
+        
+        /* Footer Styles */
+        
+        footer {
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+    }
+       
 
 
 
