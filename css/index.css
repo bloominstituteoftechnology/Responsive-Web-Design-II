@@ -185,7 +185,7 @@ footer {
         align-content: center;
     }
     header nav {
-        width: 90%;
+        width: 100%;
     }
     header .logo {
         order: -1;
@@ -204,19 +204,25 @@ footer {
         width: 100%;
     }
     .main-content .top-content .text-content {
-        margin-top: 1.5%
+        margin-top: 1%;
     }
     .main-content .top-content .text-content:first-child {
-        padding-right: 5%;
+        padding-left: 1%;
+        padding-right: 3%;
     }
-    .main-content .bottom-content .text-content:first-child  {
-        padding-right: 5%;
+    .main-content .bottom-content .text-content {
+        margin-top: 1%;
+    }
+    .main-content .bottom-content .text-content:first-child {
+        padding-right: 2%;
     }
     .main-content .bottom-content .text-content:last-child {
-        padding-left: 5%;
+        padding-left: 2%;
+    }
+    .contact {
+        padding-top: .8%
     }
 }
-
 
 @media (max-width: 400px) {
     .container {
@@ -249,6 +255,9 @@ footer {
         padding: 4%;
         margin-bottom: 15%;
     }
+    .cta .cta-text {
+        margin: auto;
+    }
     .cta .cta-text button {
         margin: 5%;
     }
@@ -260,6 +269,7 @@ footer {
     }
     .main-content .top-content .text-content:first-child {
         padding-top: 4.5%;
+        padding-left: 0;
     }
     .main-content .top-content .text-content:last-child {
         padding-top: 6.8%;
@@ -274,11 +284,11 @@ footer {
     }
     .main-content .bottom-content {
         flex-direction: column;
-        padding-top: 7.9%;
+        padding-top: 7%;
     }
     .main-content .bottom-content .text-content {
         padding-bottom: 6%;
-        margin-bottom: 5%;
+        margin-bottom: 3.5%;
     }
     .main-content .bottom-content .text-content:first-child {
         padding-top: 0;
@@ -286,6 +296,7 @@ footer {
     .main-content .bottom-content .text-content:last-child {
         padding-bottom: 0;
         margin-bottom: 3%;
+        padding-left: 0;
     }
     .contact {
         padding-top: 3%;
