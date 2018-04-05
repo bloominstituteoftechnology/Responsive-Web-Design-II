@@ -99,6 +99,7 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 10.3%;
+    width: 20%;
 }
 
 .cta {
@@ -120,7 +121,7 @@ header .logo {
     margin: 0 9.3% 0 0;
     width: 43%;
     text-align: center;
-    font-size: 8vw;
+    font-size: 8vmin;
     letter-spacing: .5rem;
 }
 
@@ -154,7 +155,7 @@ header .logo {
 }
 
 .main-content .top-content p {
-    margin: 16px 0 0 0;
+    margin: 16px 6.5% 0 0;
 
 }
 
@@ -170,7 +171,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding: 5px 6.5% 0 0;
+    margin: 5px 6.5% 0 0;
 }
 
 .contact {
