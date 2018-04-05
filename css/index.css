@@ -97,52 +97,6 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
-@media(max-width: 768px) {
-    
-    .container {
-        max-width: 768px;
-        width: 100%;
-    }
-
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header nav a {
-       order: 1;
-    }
-
-    header .logo {
-        order: -1;
-        justify-content: center;
-    }
-
-    .cta {
-        justify-content: center;
-    }
-
-    .cta .cta-text h1 {
-        justify-content: center;
-    }
-
-    .cta .cta-text button {
-        border: 1px solid black;
-        justify-content: center;
-    }
-
-    .cta img {
-        border: 1px solid black;
-        display: none;
-    }
-}
-
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -218,4 +172,84 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media(max-width: 768px) {
+    
+    .container {
+        max-width: 768px;
+        /* width: 100%; */
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+       order: 1;
+    }
+
+    header .logo {
+        order: -1;
+        margin: 20px 40px;
+        justify-content: center;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .cta .cta-text button {
+        justify-content: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        /* width: 680px; */
+        /* justify-content: center; */
+        /* width: 95%; */
+        margin: 20px;
+        padding-top: 40px;
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        /* justify-content: center; */
+        /* align-content: center;*/
+    }
+
+    .main-content .middle-img {
+        display: flex;
+        width: 95%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .main-content .bottom-content p {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        padding: 0px;
+    }
 }
