@@ -240,7 +240,7 @@ footer {
 
     .main-content .middle-img {
         width: 100%;
-        margin: 20px auto;
+        margin: 40px auto;
     }
 
 }
@@ -269,7 +269,7 @@ footer {
         width: 100%;
         align-items: center;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 10px auto;
         margin-bottom: 20px;
     }
 
@@ -278,15 +278,15 @@ footer {
         justify-content: center;
         width: 100%;
         align-items: center;
-        margin-top: 20px;
-        padding-top: 15px;
+        margin-top: 10px;
+        padding: 20px 0 10px;
         border-top: 1px solid gray;
-        font-size: 2.1rem;
+        font-size: 2.4rem;
     }
 
     nav a:last-child {
         border-bottom: 1px solid gray;
-        padding-bottom: 15px;
+        padding: 15px 0 20px;
     }
 
     header .logo {
@@ -305,8 +305,8 @@ footer {
 
     .cta {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
 
