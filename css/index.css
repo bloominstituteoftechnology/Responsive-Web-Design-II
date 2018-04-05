@@ -62,7 +62,18 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
+ @media (max-width: 768px) {
+    h1, h2, h3, h4, h5 {
+        font-family: 'Bangers', cursive;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-right: 303px;
+    }
 
+    .cta img {
+        display: none;
+    }
+ }
 .container {
     width: 880px;
     margin: auto;
@@ -97,6 +108,15 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
+@media (max-width: 768px) {
+    header .logo {
+    align-self: flex-end;
+    margin: 34px 11px 35px 275px;
+    order: -1;
+    height: 31px;
+    }
+}
+
 /* Call To Action (CTA) Styles */
 
 .cta {
@@ -126,6 +146,11 @@ header .logo {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .cta .cta-text button {
+         margin-right: 276px;
+    }
+}
 .cta .cta-text button:hover {
     background: black;
     color: white;
@@ -173,3 +198,10 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+
+
+
+
+  
