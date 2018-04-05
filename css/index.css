@@ -310,3 +310,9 @@ footer {
     }
 
 }
+
+@media only screen and (max-width: 322px) {
+    .cta .cta-text {
+        font-size: 6rem;    
+    }
+}
