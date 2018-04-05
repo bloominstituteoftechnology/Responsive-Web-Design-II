@@ -63,9 +63,15 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 .container {
-    width: 880px;
-    margin: auto;
+    width: 100%;
+	max-width: 880px;
+    margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 /* Header Styles */
@@ -73,13 +79,15 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    /* border: solid green; */
 }
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
+    /* border: solid red; */
 }
 
 header nav a {
@@ -94,7 +102,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%;
+    
 }
 
 /* Call To Action (CTA) Styles */
@@ -103,24 +112,25 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    /* border: solid slateblue; */
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 60%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -138,7 +148,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -147,9 +157,15 @@ header .logo {
     justify-content: space-around;
 }
 
+.main-content .top-content .text-content {
+    width: 47%;
+}
+
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 100%;
+    height: auto;
 }
 
 .main-content .bottom-content {
@@ -157,10 +173,10 @@ header .logo {
     justify-content: space-around;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
 
+.main-content .bottom-content .text-content {
+    width: 30%;
+}
 /* Contact Styles */
 
 .contact p {
@@ -172,4 +188,113 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+/* At 768px */
+
+@media(max-width: 900px){
+    
+    .container {
+        padding: 0 2.5%;
+        max-width: 768px;
+    }
+    
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    header nav {
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    header .logo {
+        order: -1;
+        align-self: center;
+        margin: 28px 0 0 0px;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        justify-content: center;
+        /* padding-left: 50px; */
+
+    }
+
+    .cta .cta-text {
+        margin: 0 5% 0 0;
+    }
+}
+
+/* At 400px */
+@media(max-width: 550px){
+    
+    .container {
+        padding: 0 0px;
+    }
+
+    header .logo {
+        margin: 18px 0 0 0px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; 
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    header nav a {
+        border-top: 1px solid black;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .cta {
+        margin-top: 50px;
+        margin-bottom: 75px;
+    }
+
+    .main-content {
+        width: 90%;
+        margin: 55px auto;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+    }
+
+    .main-content .top-content .text-content {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .main-content .middle-img {
+        margin: 40px 0px 5px 0px;
+    }
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .contact {
+        width: 90%;
+        margin: 55px auto;
+        /* border:  */
+    }
+
+
 }
