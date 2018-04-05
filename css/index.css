@@ -173,3 +173,68 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/************
+** BRANDON **
+************/
+@media(max-width: 768px) {
+  .container {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  header .logo {
+    align-self: center;
+    margin-left: 0;
+  }
+  
+  .cta {
+    justify-content: center;
+  }
+  
+  .cta .cta-text {
+    margin: 0;
+  }
+  
+  .cta img {
+    display: none;
+  }
+  
+  .main-content .middle-img {
+    width: 100%;
+  }
+}
+
+@media(max-width: 400px) {
+  .container {
+    padding: 0;
+  }
+  
+  .cta,
+  .main-content,
+  .contact {
+    margin: 75px 10px;
+  }
+  
+  header nav {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  
+  nav a {
+    border-top: 1px solid #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+  
+  nav a:last-child {
+    border-bottom: 1px solid #000;
+  }
+}
