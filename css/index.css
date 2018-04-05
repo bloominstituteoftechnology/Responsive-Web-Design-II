@@ -291,6 +291,139 @@ footer {
 }
 
 @media(max-width: 400px){
-  nav {
-    flex-direction: row;
+	.container {
+	    width: 100%;
+			padding: 0 0 0 0;
+	}
+
+	header {
+		flex-flow: column;
+		justify-content:space-between;
+		width:100%;
+	}
+
+
+  header nav {
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top:20px;
+		width:400px;
+		flex-flow: column;
   }
+
+  header nav a {
+    padding: 20px;
+		font-size: 20px;
+		border-bottom:1px solid grey;
+		text-align:center;
+		width:100%;
+  }
+
+	header nav a:first-child {
+    border-top: 1px grey solid;
+  }
+
+	header .logo {
+			/* outline: 2px red solid; */
+			margin:20px 0 0 0;
+			align-self: center;
+			order:-1;
+	}
+
+	.cta img{
+		display:none;
+	}
+
+	.cta {
+	    display: flex;
+	    margin-top: 30px;
+	    justify-content: center;
+			padding:20px;
+	}
+
+	.cta .cta-text {
+	    font-size: 72px;
+	    text-align: center;
+	    letter-spacing: 5px;
+	    display: flex;
+	    justify-content: center;
+	    flex-flow: column;
+	    align-items: center;
+	    margin: 0 0 0 0;
+			/* padding: 20px 20px 0 0; */
+	}
+
+	.cta .cta-text button {
+	    border: 1px double black;
+	    font-size: 16px;
+	    background: white;
+	    width: 170px;
+	    height: 32px;
+	    margin-top: 15px;
+	    cursor: pointer;
+	}
+
+	.cta .cta-text button:hover {
+	    background: black;
+	    color: white;
+	}
+
+	/* Main Content Styles */
+
+	.main-content {
+	   border-top: 2px solid black;
+	   border-bottom: 2px solid black;
+	   margin: 55px 20px 35px 20px;
+	   padding: 35px 0;
+	   font-size: 16px;
+	   line-height: 20px;
+	}
+
+	.main-content .top-content {
+	    display: flex;
+	    justify-content: space-around;
+			flex-flow:column;
+	}
+
+	.main-content .top-content .text-content {
+			padding:10px 0 0 0;
+	}
+
+	.main-content .middle-img {
+		    display: flex;
+				width:100%;
+		    margin: 30px auto;
+		}
+
+	.main-content .bottom-content {
+	    display: flex;
+	    justify-content: space-around;
+			flex-flow:column;
+	}
+
+
+
+	.main-content .bottom-content p {
+	    padding-right: 0;
+	}
+
+	.main-content .bottom-content .text-content {
+			padding:10px 0 0 0;
+	}
+
+	/* Contact Styles */
+
+	.contact {
+	    margin: 15px 20px;
+	}
+
+	/* Footer Styles */
+
+	footer {
+	    text-align: center;
+	    margin: 40px 0 20px;
+	}
+
+
+}
