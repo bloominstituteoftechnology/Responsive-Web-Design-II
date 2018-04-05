@@ -178,14 +178,17 @@ footer {
 
 @media(max-width: 768px) {
     .container {
-        width: 100%;
+        max-width: 768;
     }
 
     header {
-        flex-wrap: wrap;
-        width: 100%;
-        margin: .3% 5.2%;
-  
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 95%
+
     }
 
     header .logo {
@@ -256,5 +259,4 @@ footer {
         .main-content .bottom-content {
             flex-flow: column wrap;
         } 
-
     }
