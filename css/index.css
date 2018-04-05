@@ -59,6 +59,11 @@ table {
 	--light-black: #b5b0b0;
 }
 
+/* Set root font size to 10px */
+html {
+	font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -66,8 +71,8 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
 }
 
 body {
@@ -84,7 +89,7 @@ a {
 header {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 28px;
+	margin-top: 2.8rem;
 }
 
 header nav {
@@ -104,7 +109,7 @@ header nav a {
 aside {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 60px;
+	margin-top: 6rem;
 }
 
 aside .slogan, aside .aside-img {
@@ -122,22 +127,22 @@ aside .slogan {
 }
 
 aside .slogan h1 {
-	margin-top: 67px;
-	margin-left: 126px;
+	margin-top: 6.7rem;
+	margin-left: 12.6rem;
 }
 
 aside .slogan button {
 	font-size: 1.5vw;
 	width: 40%;
-	border: 1px solid var(--black);
+	border: 0.1rem solid var(--black);
 	background-color: inherit;
-	margin-left: 113px;
-	margin-top: 14px;
+	margin-left: 29%;
+	margin-top: 3.5%;
 }
 
 aside .aside-img {
-	margin-top: 12px;
-	margin-left: 31px;
+	margin-top: 1.5%;
+	margin-left: 3.6%;
 }
 
 aside .aside-img figure, aside .aside-img img {
@@ -151,11 +156,11 @@ aside .aside-img img {
 
 hr {
 	margin-top: 10px;
-	border: 1px solid var(--black);
+	border: 0.1rem solid var(--black);
 }
 
 .hr1 {
-	margin-top: 79px;
+	margin-top: 9%;
 }
 
 .hr2 {
@@ -169,27 +174,29 @@ main {
 
 main .up-side, main .bottom-side {
 	display: flex;
+	font-size: 1.6rem;
 }
 
 main .services {
-	margin-top: 27px;
+	margin-top: 3.4%;
 	/* margin-right: 20px; */
-	line-height: 18px
+	line-height: 1.8rem;
 }
 
 main .bottom-side .services {
-	padding-right: 19px;
+	padding-right: 2.3%;
 
 }
 
 main img {
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 3.5%;
 }
 
 
 footer section {
-	margin-top: 25px;
+	margin-top: 3.1%;
+	font-size: 1.6rem;
 }
 
 footer section.contact address {
@@ -198,12 +205,11 @@ footer section.contact address {
 }
 
 footer section.contact address a {
-	margin-bottom: 15px;
+	margin-bottom: 1.8%;
 }
 
 footer section.copy-right p {
 	text-align: center;
-	margin-bottom: 50px;
 }
 
 /* TABLET @MEDIA  QUERIES */
@@ -219,24 +225,24 @@ footer section.copy-right p {
 	}
 	
 	header nav {
-		margin-right: 0px;
-		margin-top: 41px;
+		margin-right: 0%;
+		margin-top: 5.6%;
 		justify-content: space-between;
 		font-size: 2vw;
 	}
 
 	header nav a {
-		padding: 0 22px;
+		padding: 0 3.2%;
 	}
 	header nav a:first-child {
-		padding-left: 11px;
+		padding-left: 1.6%;
 	}
 	header nav a:last-child {
-		padding-right: 12px;
+		padding-right: 1.75%;
 	}
 
 	aside .slogan {
-		padding-top: 12px;
+		padding-top: 1.64%;
 		font-size: 9.5vw;
 	}
 
@@ -245,13 +251,13 @@ footer section.copy-right p {
 	}
 
 	aside .slogan h1 {
-		margin-right: 33px;
+		margin-right: 7%;
 	}
 
 	aside .slogan button {
-		margin-top: 26px;
-		margin-right: 41px;
-		padding: 5px 0px;
+		margin-top: 7%;
+		margin-right: 11%;
+		padding: 1.4% 0px;
 		font-size: 2.1vw;
 		width: 47%;
 	}
@@ -261,24 +267,24 @@ footer section.copy-right p {
 	}
 
 	.hr1 {
-		margin-top: 74px;
+		margin-top: 10.3%;
 	}
 
 	main .up-side .services {
-		padding: 0 11px;
+		padding: 0 1.47%;
 	}
 	main .bottom-side .services:first-of-type {
-		padding: 0 11px;
-		margin-top: 28px;
+		padding: 0 1.47%;
+		margin-top: 3.74%;
 	}
 	main .bottom-side .services:nth-of-type(2) {
 		/* color: turquoise; */
-		padding-left: 31px;
-		padding-right: 36px;	
+		padding-left: 4.14%;
+		padding-right: 4.81%;	
 	}
 
 	footer section.contact address, footer section.contact h3 {
-		padding: 0 11px;
+		padding: 0 1.47%;
 	}
 } /* END TABLET @MEDIA  QUERIES */
 
@@ -289,26 +295,26 @@ footer section.copy-right p {
 	}
 
 	header {
-		margin-top: 21px;
+		margin-top: 5.45%;
 		/* width: 100% */
 	}
 	header nav {
 		flex-direction: column;
 		align-items: center;
 		font-size: 5vw;
-		margin-top: 16px;
-		/* width:100%∫∫∫ */
+		margin-top: 4.15%;
+		/* width:100%*/
 	}
 
 	header nav a {
 		width: 100%;
-		padding: 20px 0;
-		border: 1px solid black;
+		padding: 5.194% 0;
+		border: 0.1rem solid black;
 		text-align: center;
 	}
 
 	aside {
-		margin-top: 35px;
+		margin-top: 9.09%;
 	}
 
 	aside .slogan {
@@ -320,7 +326,7 @@ footer section.copy-right p {
 	}
 
 	aside .slogan button {
-		margin: 25px 0 0;
+		margin: 8.55% 0 0;
 		font-size: 4vw;
 		width: 58%;
 	}
@@ -328,26 +334,30 @@ footer section.copy-right p {
 	hr {
 		width: 93%;
 	}
+	hr.hr1 {
+		margin-top: 21.3%;
+	}
 
 	main .up-side, main .bottom-side {
 		flex-wrap: wrap;
 	}
 
 	main .up-side  .services {
-		margin-top: 40px;
-		height:	110px;
+		margin-top: 10.389%;
+		height:	28.571%;
+		padding: 0 3.3%
 	}
 
 	main .bottom-side .services,
 	main .bottom-side .services:first-of-type,
 	main .bottom-side .services:nth-of-type(2) {
-		padding: 0 21px 0 11px;
-		line-height: 18.7px;
+		padding: 0 5.454% 0 2.857%;
+		line-height: 1.87rem;
 	}
 
 	main figure {
 		width: 93%;
-		margin: 27px auto 0;
+		margin: 7.012% auto 0;
 	}
 } 
 /* END MOBILE @MEDIA QUERIES */
