@@ -46,7 +46,6 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
@@ -55,10 +54,10 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
-html {
-    font-size: 62.5%; /* 10px if the browser was 16px*/
-}
 
+html {
+    font-size: 62.5%; 
+}
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
@@ -66,20 +65,17 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+
+
 .container {
     margin: auto;
     width: 100%;
     max-width: 880px;
-
 }
-
-/* Header Styles */
-
 
 header {
     display: flex;
     width: 100%;
-
 }
 
 header nav {
@@ -88,8 +84,6 @@ header nav {
     margin-top: 40px; 
     width: 69.3%;
     font-size: 1.6rem;
-
-
 }
 
 header nav a {
@@ -106,8 +100,6 @@ header .logo {
     align-self: flex-end;
     margin: 28px 0 0 10.3%;
 }
-
-/* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
@@ -140,8 +132,6 @@ header .logo {
     background: black;
     color: white;
 }
-
-/* Main Content Styles */
 
 .main-content {
     margin: 75px 0 35px 0;
@@ -177,15 +167,13 @@ header .logo {
     padding: 5px 6.5% 0 0;
 }
 
-/* Contact Styles */
 .contact {
     font-size: 1.6rem;
 }
 .contact p {
+
     margin: 15px 0;
 }
-
-/* Footer Styles */
 
 footer {
     margin: 40px 0 20px;
@@ -207,6 +195,7 @@ footer {
         align-self: center;
         margin: 30px 0 0 0;
     }
+
     header nav {
         padding: 0 3.4%;
         width: 100%;
