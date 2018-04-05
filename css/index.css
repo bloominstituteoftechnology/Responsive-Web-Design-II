@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+		font-size: 62.5% 10px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -234,27 +235,32 @@ footer {
 
 	header .logo{
 		align-self: center;
-		padding-right: 4.5rem;
+		margin: auto;
+		margin-top: 2rem;
 	}
 
 	header nav{
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		margin: 1.25rem;
 	}
 
 	header nav a{
-		border: 1px solid gray;
+		border-top: 1px solid gray;
 		width: 100%;
 		text-align: center;
 		padding: 1.25rem;
 		font-size: 1.25rem;
 	}
 
+	header nav a:last-child{
+		border-bottom: 1px solid gray;
+	}
+
 	.cta{
 		justify-content: center;
-		padding-left: 6rem;
-		margin-top: 2.75rem;
+		margin: 2rem 0 0 5rem;
 	}
 
 	.main-content .top-content{
