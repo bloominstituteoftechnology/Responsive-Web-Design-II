@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
 }
 
@@ -76,15 +77,17 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: /*40px;*/ 5%; /* 40 / 880 = 0.045454545454545  = 4.5% ~ 5% */
+    width: /*610px;*/ 69.3%; /*610 / 880 = 0.69.3181818181818 */
     justify-content: space-between;
     display: flex;
+    /* border: 1px solid slateblue; */
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    /* border: 1px solid slateblue;  */
 }
 
 header nav a:hover {
@@ -94,15 +97,17 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: /* 28px 0 0 91px; */ 3% 0 0 10%; /* 28 / 880 = 0.031818181818182 = 3.2% ~ 3% | 91 / 880 = 0.103409090909091 = 10.3% ~10% */
+    /* border: 1px solid slateblue; */
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8%; /* 72px; */ /* 72 / 880 = 0.081818181818182 = 8.2% ~ 8% */
     justify-content: flex-end;
+    /* border: 1px solid slateblue; */
 }
 
 .cta .cta-text {
@@ -113,14 +118,15 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0; /* 0 82px 0 0; */ /* 82 / 880 = 0.093181818181818 = 9.3% ~ 9% */
+    border: 1px solid slateblue;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+    width: 19%; /* 170px; */ /* 170 / 880 = 0.193181818181818 = 19.3% ~ 19% */
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
