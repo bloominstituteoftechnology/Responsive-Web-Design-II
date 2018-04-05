@@ -173,3 +173,58 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+@media(max-width: 768px){
+    .container{
+        max-width: 740;
+        margin: auto;
+    }
+    nav{
+        flex-direction: row;
+        margin: 20px;
+        padding-left: 150px;
+    }
+    nav a{
+        padding: 20px;
+    }
+    header {
+        flex-direction: column-reverse;
+    }
+    .logo{
+        align-self: center;
+        margin-right: 36px;
+        width: 500px; 
+        padding-right: 288px;
+    }
+    .cta img{
+        display: none;
+    }
+    .cta{
+        align-items: center;
+    }
+
+    .cta-text{
+        align-items: center;
+        padding-right: 180px;
+    }
+
+}
+@media(max-width: 400px){
+    .container{
+        max-width: 390px;
+        margin: auto;
+    }
+    nav{
+        flex-direction: column;
+        padding-left: 400px;
+    }
+
+    .top-content, .bottom-content{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+}
