@@ -186,29 +186,83 @@ footer {
     header nav{
         flex-direction:column;
         width: 100%;
+        font-size:20px;
     }
     header nav a{
-        border-top: 1px solid gray;
         border-bottom:1px solid gray;
-        padding:25px;
+        padding:20px;
         text-align: center;
+    }
+    header nav a:nth-child(1){
+        margin-top:25px;
+        margin-bottom:0;
+        border-top:1px solid gray;
+
+
     }
     header .logo{
         order: -1;
         display:flex;
         align-items:center;
+        margin-top:20px;
+        margin-right:102px;
+        margin-bottom:-41px;
 
+    }
+    .cta{
+        padding-bottom:10%;
+        width:95%;
+        
     }
 
     .cta img{
         display:none;
     }
+    .cta-text{
+        padding-bottom:10%;
+        width:95%;
+        margin: 0 auto 0 0;
+    }
+    .cta h1{
+        text-align:center;
+        margin:0;
+    }
     .main-content{
         flex-direction: column;
+        margin: 0;
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 95%; /* Change this to whatever width you want. */
+        padding-top: 20px; /* This creates some space between the element and the border. */
+        border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    .main-content .middle-img{
+        width:95%;
     }
     .main-content .top-content {
         flex-direction:column;
         width:95%;
-        padding:5%;
+        margin-left:5%;
+    }
+    .main-content .bottom-content {
+        flex-direction:column;
+        width:95%;
+        margin-left:5%;
+        
+    }
+    .text-content{
+        margin-top:5%;
+    }
+    .contact{
+        flex-direction: column;
+        width:95%;
+        margin-left: 5%;
+        margin-top:5%;
+    }
+    footer {
+        font-size: 50%;
+        margin-bottom:0;
     }
 }
