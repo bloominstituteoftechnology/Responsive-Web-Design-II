@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    
 }
 
 /* Header Styles */
@@ -172,4 +173,76 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+/* Project 1 RWD */
+@media (max-width: 400px) {
+
+    .container {
+        width: 400px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 18px 0;
+        font-size: 18px;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 18px 0;
+    }
+
+    .cta {
+        margin-top: 40px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta img {
+        max-width: 85%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 420px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 25px;
+    }
 }
