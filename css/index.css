@@ -94,14 +94,14 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 1.8em 0 0 8em;
+    margin: 1.8em 0 0 5em;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 5em;
     justify-content: flex-end;
 }
 
@@ -113,15 +113,16 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: -.2em 1em 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 16px;
+    letter-spacing: 1px;
     background: white;
-    width: 60%;
-    height: 10%;
+    width: 58%;
+    height: 8%;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -136,7 +137,7 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 4em 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
