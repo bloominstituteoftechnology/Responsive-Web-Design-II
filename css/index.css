@@ -178,7 +178,6 @@ footer {
     
     .container {
         max-width: 768px;
-        /* width: 100%; */
     }
 
     nav {
@@ -236,10 +235,6 @@ footer {
     .main-content .top-content {
         display: flex;
         flex-direction: row;
-        /* width: 95%;
-        margin: 20px; */
-        /* justify-content: center; */
-        /* align-content: center;*/
     }
 
     .main-content .top-content p {
@@ -266,4 +261,100 @@ footer {
     .contact {
         padding-left: 30px;
     }
+}
+
+@media(max-width: 400px) {
+    
+    .container {
+        max-width: 400px;
+    }
+
+    nav {
+        margin-top: 1px;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+        align-items: center;
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+       order: 1;
+       border-top: 1px solid black;
+       width: 100%;
+       padding: 20px;
+       font-size: 18px;
+    }
+
+    header .logo {
+        order: -1;
+        margin: 20px 40px;
+        justify-content: center;
+    }
+
+    /* .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .cta .cta-text button {
+        justify-content: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        margin: 20px;
+        padding-top: 40px;
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-content .top-content p {
+        padding-right: 15px;
+    }
+
+    .main-content p, .main-content h4 {
+        padding-left: 15px;
+    }
+
+    .main-content .middle-img {
+        display: flex;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .main-content .bottom-content p {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .contact {
+        padding-left: 30px;
+    } */
 }
