@@ -109,6 +109,7 @@ header .logo {
 
 .cta img {
     width: 43%;
+    height: 43%;
 }
 
 .cta .cta-text {
@@ -119,7 +120,7 @@ header .logo {
     margin: 0 9.3% 0 0;
     width: 43%;
     text-align: center;
-    font-size: 9vw;
+    font-size: 8vw;
     letter-spacing: .5rem;
 }
 
