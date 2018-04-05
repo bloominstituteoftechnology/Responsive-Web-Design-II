@@ -206,9 +206,8 @@ footer {
 	.cta {
 
 	    display: flex;
-	    margin-top: 72px;
+	    /*margin-top: 72px;*/
 	    justify-content: flex-end;
-			position: relative;
 	}
 
 	.cta .cta-text {
@@ -230,6 +229,7 @@ footer {
 		header{
 			flex-flow: column wrap;
 			/*border: 1px solid orange;*/
+			position: relative;
 		}
 
 		header nav {
@@ -242,6 +242,8 @@ footer {
 			order: -1;
 			align-self: center;
 			visibility: visible;
+			position: relative;
+			right: 35px;
 		}
 
 		header a{
@@ -254,9 +256,23 @@ footer {
 		}
 
 		.cta{
-			display: flex;
+			margin-left:40px;
+			width: 100%;
+			flex-flow: column wrap;
+			position: relative;
+		}
+
+		.cta-text{
+			position: relative;
+			top: 50px;
 			justify-content: center;
-			margin-right: 120px;
+			font-size: 48pt;
+			align-items: flex-end;
+		}
+
+		.main-content{
+			display: flex;
+			flex-flow: column wrap;
 		}
 
 		.text-content{
