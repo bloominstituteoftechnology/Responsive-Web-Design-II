@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -48,8 +48,20 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
+*, *:before, *:after {
     box-sizing: border-box;
+		/* border: 1px solid blue; */
+		/* outline: 1px solid blue; */
+}
+
+:root {
+	--black: #000000;
+	--light-black: #b5b0b0;
+}
+
+/* Set root font size to 10px */
+html {
+	font-size: 62.5%;
 }
 
 html, body {
@@ -59,117 +71,293 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+body {
+	max-width: 880px;
+	margin: auto;
+	width: 80%;
 }
 
-/* Header Styles */
+a {
+	text-decoration: none;
+	color: var(--black);
+}
 
 header {
-    width: 100%;
-    display: flex;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2.8rem;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 10%;
+	font-size: 1.2vw;
+	
 }
 
 header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+	color: var(--light-black);
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+aside {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6rem;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+aside .slogan, aside .aside-img {
+	min-width: 49%;
 }
 
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+aside .slogan {
+	margin: 0 auto;
+	font-size: 5.5vw;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-around; */
+	align-items: center;
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+aside .slogan h1 {
+	margin-top: 6.7rem;
+	margin-left: 12.6rem;
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+aside .slogan button {
+	font-size: 1.5vw;
+	width: 40%;
+	border: 0.1rem solid var(--black);
+	background-color: inherit;
+	margin-left: 29%;
+	margin-top: 3.5%;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+aside .aside-img {
+	margin-top: 1.5%;
+	margin-left: 3.6%;
 }
 
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+aside .aside-img figure, aside .aside-img img {
+	width: 93%;
+	margin: auto;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+aside .aside-img img {
+	float: right;
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+hr {
+	margin-top: 10px;
+	border: 0.1rem solid var(--black);
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+.hr1 {
+	margin-top: 9%;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.hr2 {
+	margin-top: 26px;
+	margin-bottom: 35px;
 }
 
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+main {
+	margin-bottom: 35px;
 }
 
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+main .up-side, main .bottom-side {
+	display: flex;
+	font-size: 1.6rem;
 }
+
+main .services {
+	margin-top: 3.4%;
+	/* margin-right: 20px; */
+	line-height: 1.8rem;
+}
+
+main .bottom-side .services {
+	padding-right: 2.3%;
+
+}
+
+main img {
+	width: 100%;
+	margin-top: 3.5%;
+}
+
+
+footer section {
+	margin-top: 3.1%;
+	font-size: 1.6rem;
+}
+
+footer section.contact address {
+	display: flex;
+	flex-direction: column;
+}
+
+footer section.contact address a {
+	margin-bottom: 1.8%;
+}
+
+footer section.copy-right p {
+	text-align: center;
+}
+
+/* TABLET @MEDIA  QUERIES */
+@media only screen and (max-width: 768px) {
+	
+	body {
+		width: 95%;
+	}
+
+	header {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	header nav {
+		margin-right: 0%;
+		margin-top: 5.6%;
+		justify-content: space-between;
+		font-size: 2vw;
+	}
+
+	header nav a {
+		padding: 0 3.2%;
+	}
+	header nav a:first-child {
+		padding-left: 1.6%;
+	}
+	header nav a:last-child {
+		padding-right: 1.75%;
+	}
+
+	aside .slogan {
+		padding-top: 1.64%;
+		font-size: 9.5vw;
+	}
+
+	aside .slogan h1, aside .slogan button {
+		margin: 0;
+	}
+
+	aside .slogan h1 {
+		margin-right: 7%;
+	}
+
+	aside .slogan button {
+		margin-top: 7%;
+		margin-right: 11%;
+		padding: 1.4% 0px;
+		font-size: 2.1vw;
+		width: 47%;
+	}
+
+	aside .aside-img {
+		display: none;
+	}
+
+	.hr1 {
+		margin-top: 10.3%;
+	}
+
+	main .up-side .services {
+		padding: 0 1.47%;
+	}
+	main .bottom-side .services:first-of-type {
+		padding: 0 1.47%;
+		margin-top: 3.74%;
+	}
+	main .bottom-side .services:nth-of-type(2) {
+		/* color: turquoise; */
+		padding-left: 4.14%;
+		padding-right: 4.81%;	
+	}
+
+	footer section.contact address, footer section.contact h3 {
+		padding: 0 1.47%;
+	}
+} /* END TABLET @MEDIA  QUERIES */
+
+/* MOBILE @MEDIA QUERIES */
+@media only screen and (max-width: 400px) {
+	body {
+		width: 100%;
+	}
+
+	header {
+		margin-top: 5.45%;
+		/* width: 100% */
+	}
+	header nav {
+		flex-direction: column;
+		align-items: center;
+		font-size: 5vw;
+		margin-top: 4.15%;
+		/* width:100%*/
+	}
+
+	header nav a {
+		width: 100%;
+		padding: 5.194% 0;
+		border: 0.1rem solid black;
+		text-align: center;
+	}
+
+	aside {
+		margin-top: 9.09%;
+	}
+
+	aside .slogan {
+		font-size: 18vw;
+	}
+
+	aside .slogan h1 {
+		margin: 0px;  
+	}
+
+	aside .slogan button {
+		margin: 8.55% 0 0;
+		font-size: 4vw;
+		width: 58%;
+	}
+
+	hr {
+		width: 93%;
+	}
+	hr.hr1 {
+		margin-top: 21.3%;
+	}
+
+	main .up-side, main .bottom-side {
+		flex-wrap: wrap;
+	}
+
+	main .up-side  .services {
+		margin-top: 10.389%;
+		height:	28.571%;
+		padding: 0 3.3%
+	}
+
+	main .bottom-side .services,
+	main .bottom-side .services:first-of-type,
+	main .bottom-side .services:nth-of-type(2) {
+		padding: 0 5.454% 0 2.857%;
+		line-height: 1.87rem;
+	}
+
+	main figure {
+		width: 93%;
+		margin: 7.012% auto 0;
+	}
+} 
+/* END MOBILE @MEDIA QUERIES */
