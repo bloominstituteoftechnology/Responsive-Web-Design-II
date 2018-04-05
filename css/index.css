@@ -177,148 +177,199 @@ footer {
 
 
 
-@media(max-width:768px){
+@media(max-width:815px){
    
     .main-content{
-       padding-left: 10px;
+    padding: 0 0 0 10px;
 
-
+    }
     .cta img{
-        display: none;
+    display:;
     }
 
     .cta .cta-text{
-        margin: auto;
+    margin: auto;
     }
     
     .container{
-     max-width:768px ;
+     max-width:100% ;
      justify-content: center;
     }
 
-    header.nav{
-        width: 64%
-    }
+header.nav{
+     width: 64%
+}
     
-    header.logo{
-        align-self: flex-end;
-        width: 26%;
-        margin-right:10%
+header.logo{
+    align-self: flex-end;
+    width: 26%;
+    margin-right:10%
         
-    }
+}
 
-    .main-content .middle-img{
-        display: none;
-    }
+.main-content .middle-img{
+    display:none;
+}
 
 
 .cta{
     justify-content: center;
-    
-
 }
 .cta.cta-text{
-   width:36%;
-   margin-right: 2%
+    width:36%;
+    margin-right: 2%
   
     
 }
 .cta.img/header-img.png{
     
     width:60%;
-   margin-left:2%; 
+    margin-left:2%; 
 
 }
 
 .main-content{
-width:97%;
+    width:97%;
 }
 
 .footer{
     margin: 20px 5px;
 }
+
+
+
+
+@media(max-width:650px){
+
+    .main-content{
+    padding: 0 0 0 10px;
+    }
+
+    .cta img{
+    display:;
+    }
+
+    .cta .cta-text{
+    margin: auto;
+    }
+    
+    .container{
+     max-width:100% ;
+     justify-content: center;
+    }
+
+    header.nav{
+    width: 64%;
+    justify-content: space-around;
+    }
+    
+    header.logo{
+    align-self: flex-end;
+    width: 26%;
+    margin-right:10%   
+    }
+
+    .main-content .middle-img{
+    display:none;
+    }
+
+
+.cta{
+    justify-content: center;
+}
+
+.cta.cta-text{
+    width:36%;
+    margin-right: 2%   
+}
+
+.main-content{
+    width:97%;
+}
+
+.footer{
+    margin: 20px 5px;
 }
 
 
-@media (max-width: 400px) {
 
-    .container{
-        max-width: 400px;
+
+@media (max-width: 420px) {
+
+ .container{
+    max-width: 100%;
         
     }
 
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
+header {
+    flex-wrap: wrap;
+    justify-content: center;
     }
 
-    header nav {
-        width: 100%;
+header nav {
+    width: 100%;
     }
 
-    header nav {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        align-items: center;
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
     }
 
-    header nav a {
-        width: 100%;
-        margin: 0;
-        display: block;
-        text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
-        border-bottom: 1px solid gray;
+header nav a {
+    width: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
     }
 
-    header nav a:first-child {
-        border-top: 1px solid gray;
+header nav a:first-child {
+    border-top: 1px solid gray;
     }
 
-    header nav a:hover {
-        background: gray;
+header nav a:hover {
+    background: gray;
     }
 
-    header .logo {
-        order: -1;
-        max-width: 100%;
-        margin: 20px 0;
+header .logo {
+    order: -1;
+    max-width: 100%;
+    margin: 20px 0;
     }
 
-    .cta {
-        margin-top: 50px;
-        flex-flow: column;
-        align-items: center;
+.cta {
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
     }
     
-    .cta .cta-text {
-        margin: 0 0 50px 0;
+.cta .cta-text {
+    margin: 0 0 50px 0;
     }
 
-    .cta img {
-        max-width: 80%;
+.cta img {
+    max-width: 80%;
+    }
+
+.main-content .top-content {
+    justify-content: space-around;
+    flex-direction: column;
+    }
+    .text-content{
+        border-bottom: 1px solid black;
+        padding:3px;
+
     }
 
 
-
-
-
-
-    .main-content .top-content {
-        justify-content: space-around;
-        flex-direction: column;
-        height:
+.main-content .bottom-content {
+    justify-content: space-around;
+    flex-direction: column;
+        
     }
-h
-    .main-content .bottom-content {
-        flex-wrap: wrap;
-        align-content: space-between;
-        height: ;
-
-       
-
-  
 }
