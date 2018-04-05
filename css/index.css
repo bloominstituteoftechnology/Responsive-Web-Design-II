@@ -60,7 +60,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
 }
 
 .container {
@@ -106,24 +106,24 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 4.5em;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .25em;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: -.2em 1em 0 0;
+    margin: .2em 1em .5em 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: .25em;
+    letter-spacing: .01em;
     background: white;
     width: 58%;
     height: 8%;
-    margin-top: 1em;
+    margin-top: -2.5em;
     cursor: pointer;
 }
 
@@ -135,12 +135,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+   border-top: .15em solid black; 
+   border-bottom: .15em solid black;
    margin: 4.2em 0 2em 0;
    padding: 2em 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1em;
+   line-height: 1.15em;
 }
 
 .main-content .top-content {
@@ -218,7 +218,7 @@ footer {
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 .8em;
     }
 
     .contact {
@@ -252,12 +252,12 @@ footer {
         display: block;
         text-align: center;
         padding: 1em 0;
-        font-size: 20px;
-        border-bottom: 1px solid gray;
+        font-size: 1.28em;
+        border-bottom: .05em solid gray;
     }
 
     header nav a:first-child {
-        border-top: 1px solid gray;
+        border-top: .05em solid gray;
     }
 
     header nav a:hover {
@@ -265,7 +265,7 @@ footer {
     }
 
     header .logo {
-        margin: 1em 0;
+        margin: .9em 0;
     }
 
     .cta {
