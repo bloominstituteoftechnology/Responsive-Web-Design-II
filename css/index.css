@@ -200,7 +200,7 @@ footer {
 		 margin-left: 0;
  }
  header nav {
-	 		width: 100%;
+	 	 width: 100%;
 	 	 justify-content: space-between;
 		 order: 2;
  }
@@ -251,6 +251,8 @@ header nav a {
 	}
 
 	.cta .cta-text{
+		flex-direction: column;
+		margin: 2%;
 		align-self: center;
 		text-align: center;
 	}
