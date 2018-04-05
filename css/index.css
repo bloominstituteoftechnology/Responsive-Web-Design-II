@@ -101,12 +101,12 @@ header .logo {
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    /*margin-top: 72px;*/
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    /*font-size: 72px;*/
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -212,9 +212,9 @@ footer {
 	}
 
 	.cta .cta-text {
-		margin: 25px;
+		/*margin: 25px;
 		position: relative;
-		left: 250px;
+		left: 250px;*/
 	}
 
 	.middle-img{
@@ -285,28 +285,5 @@ footer {
 		}
 
 	}
-
-	/*.cta{
-		display: flex;
-		justify-content: center;
-		position: relative;
-	}
-
-	.cta-text{
-		width: 800px;
-		display: flex;
-		flex-flow: row wrap;
-		padding: 0 0;
-		margin-left: 550px;
-		font-size: 48pt;
-		justify-content: center;
-	}
-
-	button{
-		font-size: 14pt;
-		width: 150px;
-		height: 40px;
-		border: 2px solid black
-	}*/
 
 }
