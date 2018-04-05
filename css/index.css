@@ -173,3 +173,121 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Media Query */
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 880px;
+        margin: 0 auto;
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    header {
+        border: 1px solid red;
+        display: flex; 
+        flex-direction: column-reverse;
+        width: 100%
+    }
+
+    nav {  
+        display: flex;
+        /* flex-flow: row wrap; */
+        justify-content: space-around; 
+        width: 1000px; 
+        border: 1px solid red;
+    }
+
+    nav a {
+        border: 1px solid red; 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around; 
+
+        padding: 0 38px 10px 38px;
+        font-size: 14px; 
+    }
+
+    .logo {
+        padding: 0 280px 0 0;
+        border: 1px solid red;
+    }
+    
+    .cta {
+        border: 1px solid red;        
+    }
+
+    .cta .cta-text {
+        border: 1px solid blue;
+        margin: 0;  
+    }
+
+    .cta .cta-text .img {        
+        display: flex;
+    }
+    
+    .cta .cta-text .img {        
+        display: none;
+    }
+    
+    .cta-text h1 {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0;
+        border: 1px solid red;
+    }
+
+    .cta-text h1 {
+        display: flex;
+        /* flex-flow: row;  */
+        /* margin-right: 150px;           */
+        border: 1px solid red;
+        /* margin-right: 50px; 
+        padding: 0 105px 125px 30px;  */
+    } 
+
+    .cta-text button {
+        display: flex;
+        justify-content: center;
+        margin-right: 50px; 
+    }
+
+    .main-content {
+        /* border: 1px solid red;  */
+    }
+
+    .top-content {
+
+    }
+
+    .top-content .text-content h4 {
+
+    }
+
+    .top-content .text-content p {
+    }
+
+    .main-content .middle-img {
+
+    }  
+
+    .bottom-content .text-content h4 {
+    }
+
+    .bottom-content .text-content p {
+    }
+
+    .contact {
+
+    }
+
+    footer {
+
+    }
+
+
+
+
+}
