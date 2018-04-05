@@ -60,7 +60,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -77,7 +77,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69%; /* percent base change made */
     justify-content: space-between;
     display: flex;
 }
@@ -118,9 +118,9 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
-    width: 170px;
+    width: 170px; /* percent base change made using the method given it was to small  */
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -137,8 +137,8 @@ header .logo {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   padding: 3% 0;
+   font-size: 1rem;
    line-height: 18px;
 }
 
@@ -158,7 +158,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
 /* Contact Styles */
@@ -172,4 +172,128 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100% 
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        width: 87%; /* percent base change made */
+        padding: 0 3%;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content .middle-img {
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 75px 2% 35px;
+    }
+
+    .text-content {
+        margin: 0 1%;
+    }
+
+    .contact {
+        margin: 0 3%;
+    }
+}
+
+/* Phone */
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%; /* percent base change made */
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 2% 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta img {
+        max-width: 80%; 
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 20px;
+    }
 }
