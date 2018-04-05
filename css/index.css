@@ -181,13 +181,21 @@ footer {
 /* container */
     
   .container {
-    border: 1px solid red;
     width: 880px;
     width: 100%;
     margin: 0 auto;
   }
 
 /* header */
+
+  header {
+      display: flex;
+      width: 100%;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+  }
 
   nav {
     border: 1px solid red;
@@ -205,7 +213,7 @@ footer {
   }
 
   .logo {
-    padding: 20px;
+    justify-content: center;
     border: 1px solid red;
   }
 
