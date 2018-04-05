@@ -100,6 +100,8 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 8.3rem;
+    max-width: 183px;
+    width: 18.3rem;
 }
 
 /* Call To Action (CTA) Styles */
@@ -126,8 +128,8 @@ header .logo {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
+    width: 17.0rem;
+    height: 3.2rem;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -201,12 +203,13 @@ footer {
     /* Header Styles */
 
     header {
+        width: 100%;
         flex-direction: column;
         align-content: center;
     }
 
     header nav {
-        width: 700px;
+        width: 100%;
         justify-content: space-between;
     }
 
@@ -230,21 +233,21 @@ footer {
     /* Main Content */
 
     .main-content .top-content{
-        margin: 0 10px 0 10px;
+        margin: 0 1rem 0 1rem;
     }
 
     .main-content .middle-img{
-        width: 700px;
+        width: 100%;
     }
 
     .main-content .bottom-content{
-        margin: 0 10px 0 10px;
+        margin: 0 1rem 0 1rem;
     }
 
     /* Contact */
 
     .contact {
-        margin: 0 10px 0 10px;
+        margin: 0 1rem 0 1rem;
     }
 }
 
@@ -252,27 +255,28 @@ footer {
 @media (max-width: 400px){
     
     .container{
-        width: 370px;
+        max-width: 370px;
+        width: 100%;
     }
 
     /* Header Styles */
 
     header {
-        width: 370px;
+        width: 100%;
     }
 
     header nav{
-        width: 370px;
-        height: 370px;
+        width: 100%;
+        height: 37rem;
         flex-direction: column;
     }
 
     header nav a{
-        width: 370px;
+        width: 100%;
         text-align: center;
-        font-size: 20px;
+        font-size: 2rem;
 
-        padding: 22px 0 23px 0;
+        padding: 2.2rem 0 2.3rem 0;
         
         border-top: solid grey thin;
     }
@@ -282,10 +286,22 @@ footer {
         border-bottom: solid grey thin;
     }
 
+    header .logo {
+        max-width: 183px;
+        width: 97.3%;
+    }
+
+    /* CTA Styles */
+    .cta .cta-text button{
+        max-width: 17.0rem;
+        max-height: 3.2rem;
+        width: 97.3%;
+    }
+
     /* Main Content Styles */
 
     .main-content {
-        width: 360px;
+        width: 97.3%;
         padding: 35px 0;
         margin: 75px auto 35px auto;
     }
@@ -300,7 +316,7 @@ footer {
     }
 
     .main-content .middle-img{
-        width: 360px;
+        width: 97.3%;
     }
 
     .main-content .bottom-content{
@@ -319,6 +335,7 @@ footer {
     /* Contact */
 
     .contact{
-        margin-left: 5px;
+        width: 97.3%;
+        margin-left: 1%;
     }
 }
