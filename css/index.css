@@ -195,6 +195,7 @@ header .logo {
 }
 
 .cta {
+  justify-content: center;
   margin-top: 8%;
 }
 
@@ -218,6 +219,7 @@ header .logo {
 
 .main-content .middle-img {
   margin: 3.5% auto;
+  width: 100%;
 }
 
 footer {
