@@ -77,7 +77,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 4.5%; 
     width: 69%;
     justify-content: space-between;
     display: flex;
@@ -102,14 +102,14 @@ header .logo {
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.2%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 5rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -118,12 +118,12 @@ header .logo {
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: .09rem double black;
+    font-size: 1rem;
     background: white;
     width: 50%;
-    height: 32px;
-    margin-top: 10px;
+    height: 2rem;
+    margin-top: 1.2rem;
     cursor: pointer;
 }
 
@@ -139,8 +139,8 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 8.5% 0 4% 0; /*how? divide by what?*/
    padding: 4% 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1rem;
+   line-height: 1.1rem;
 }
 
 .main-content .top-content {
@@ -159,7 +159,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 1.3rem;
 }
 
 /* Contact Styles */
@@ -257,24 +257,24 @@ footer {
         border-bottom: .1rem solid gray;
         width: 100%;
         text-align: center;
-        padding: 20px 0;
-        display: block;
-        font-size: 20px;
+        padding: 5.5% 0;
+        /*display: block;*/
+        font-size: 1.2rem;
     }
 
     header nav:first-child {
-        border-top: 2px solid gray;
+        border-top: 0.1rem solid gray;
     }
 
     header .logo {
-        margin: 20px 0;
+        margin: 5.5% 0;
         justify-content: center;
     }
  /*   .main-content {
         align-content: space-between;
     }*/
     .main-content {
-        margin: 75px 20px 35px 20px;
+        margin: 22% 6% 10.5% 6%;
     }
 
     .main-content .middle-img {
@@ -287,11 +287,11 @@ footer {
     }
 
     .main-content .top-content .text-content, .main-content .bottom-content .text-content {
-        margin-top: 20px;
+        margin-top: 7%;
     }
 
     .contact {
-        margin-left: 20px;
+        margin-left: 6%;
     }
 
     
