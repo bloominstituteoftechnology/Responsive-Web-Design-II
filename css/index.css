@@ -117,8 +117,9 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 9.3% 0 0;
+    width: 43%;
     text-align: center;
-    font-size: 7.2rem;
+    font-size: 9vw;
     letter-spacing: .5rem;
 }
 
