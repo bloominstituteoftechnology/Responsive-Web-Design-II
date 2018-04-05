@@ -192,6 +192,11 @@ footer {
         justify-content: center;
     }
 
+    header nav {
+        margin-top: 30px;
+        width: 690px;
+    }
+
     header nav a {
        order: 1;
     }
@@ -220,9 +225,6 @@ footer {
     }
 
     .main-content {
-        /* width: 680px; */
-        /* justify-content: center; */
-        /* width: 95%; */
         margin: 20px;
         padding-top: 40px;
         margin-top: 60px;
@@ -234,14 +236,23 @@ footer {
     .main-content .top-content {
         display: flex;
         flex-direction: row;
-        width: 95%;
+        /* width: 95%;
+        margin: 20px; */
         /* justify-content: center; */
         /* align-content: center;*/
     }
 
+    .main-content .top-content p {
+        padding-right: 15px;
+    }
+
+    .main-content p, .main-content h4 {
+        padding-left: 15px;
+    }
+
     .main-content .middle-img {
         display: flex;
-        width: 95%;
+        width: 100%;
         align-content: center;
         justify-content: center;
     }
@@ -250,6 +261,9 @@ footer {
         display: flex;
         flex-direction: row;
         width: 95%;
-        padding: 0px;
+    }
+
+    .contact {
+        padding-left: 30px;
     }
 }
