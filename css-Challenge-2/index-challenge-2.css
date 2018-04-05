@@ -180,7 +180,7 @@ footer {
 
 /*Media Queries*/
 
-@media (min-width:401px) and (max-width: 768px){
+@media (min-width:401px) and (max-width: 860px){
 	.container{
 		width: 95%;
 	}
@@ -226,6 +226,18 @@ footer {
 	}
 }
 
+@media (max-width: 660px){
+
+	.text-content{
+		padding: 1.25rem 0;
+	}
+
+	.main-content .bottom-content{
+		flex-direction: column;
+	}
+
+}
+
 @media(max-width: 400px){
 	.container{
 		width: 95%;
@@ -263,10 +275,6 @@ footer {
 
 	.main-content .top-content{
 		flex-direction: column;
-	}
-
-	.middle-img{
-		width: 100%;
 	}
 
 	.text-content{

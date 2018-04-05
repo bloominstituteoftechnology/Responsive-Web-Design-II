@@ -179,6 +179,12 @@ footer {
 
 /*Media Queries*/
 
+@media (max-width: 860px){
+	.cta img{
+		display: none;
+	}
+}
+
 @media (min-width:401px) and (max-width: 768px){
 	.container{
 		width: 95%;
