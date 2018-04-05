@@ -62,18 +62,7 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
- @media (max-width: 768px) {
-    h1, h2, h3, h4, h5 {
-        font-family: 'Bangers', cursive;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-        margin-right: 303px;
-    }
-
-    .cta img {
-        display: none;
-    }
- }
+ 
 .container {
     width: 880px;
     margin: auto;
@@ -108,14 +97,6 @@ header .logo {
     margin: 28px 0 0 91px;
 }
 
-@media (max-width: 768px) {
-    header .logo {
-    align-self: flex-end;
-    margin: 34px 11px 35px 275px;
-    order: -1;
-    height: 31px;
-    }
-}
 
 /* Call To Action (CTA) Styles */
 
@@ -146,11 +127,7 @@ header .logo {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .cta .cta-text button {
-         margin-right: 276px;
-    }
-}
+
 .cta .cta-text button:hover {
     background: black;
     color: white;
@@ -199,6 +176,72 @@ footer {
     margin: 40px 0 20px;
 }
 
+@media (max-width: 768px){
+    .container {
+
+    width: 100%;
+}
+
+header {
+    height: 100px;
+    flex-direction: column;
+}
+
+header nav {
+    background: grey;
+    height: 50px;
+    align-self: center;
+    margin-bottom:100px;
+}
+
+ header .logo {
+    order: -1;
+    margin-right: 300px;
+    margin-bottom: 0px;
+}
+
+.cta {
+    flex-direction: column;
+    align-self: center;
+    margin-top: 100px;
+
+}
+
+.cta .cta-text {
+    margin: 0 5% 0 0;
+}
+
+.cta .cta-text h1 {
+    letter-spacing: 0;
+}
+
+.cta img {
+    max-width: 100%;
+    margin-right: 2%;
+    display: none;
+}
+
+.main-content .middle-img {
+    width: 100%;
+}
+
+.main-content {
+    margin: 75px 2.6% 35px;
+}
+/* Contact Styles */
+
+.contact  {
+    margin-left: 25px;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+}
 
 
 
