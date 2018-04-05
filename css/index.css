@@ -63,8 +63,12 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 .container {
-    max-width: 880px;
+    max-width: 900px;
     margin: auto;
     width: 90%;
 }
@@ -72,14 +76,15 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-    width: 100%;
     display: flex;
+    margin: 4.4% 0;
+    align-items: center;
 }
 
 header nav {
-    margin-top: 40px;
-    width: 610px;
     justify-content: space-between;
+    font-size: 1.6rem;
+    flex: 1;
     display: flex;
 }
 
@@ -94,36 +99,35 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin-left: 10%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.3%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.1% 0 0;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: 0.1rem double black;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 18.89rem;
+    height: 3.56rem;
+    margin-top: 1.11%;
     cursor: pointer;
 }
 
@@ -135,12 +139,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black;
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   border-top: 0.2rem solid black;
+   border-bottom: 0.2rem solid black;
+   margin: 8.33% 0 3.89% 0;
+   padding: 3.89% 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -150,7 +154,8 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    width: 100%;
+    margin: 3.33% auto;
 }
 
 .main-content .bottom-content {
@@ -159,33 +164,36 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.22%;
 }
 
 /* Contact Styles */
+.contact h4 {
+    font-size: 1.6rem;
+}
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.67% 0;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.44% 0 2.22%;
+    font-size: 1.6rem;
 }
 
 @media(max-width: 768px) {
 
     header {
-
         flex-direction: column;
         justify-content: center;
     }
 
     header .logo {
         align-self: center;
-        margin-left: 0;
         order: 1;
     }
 
@@ -198,7 +206,6 @@ footer {
 
     .cta {
         justify-content: center;
-
     }
 
     .cta .cta-text {
@@ -216,7 +223,6 @@ footer {
 
     .top-content .text-content {
         flex-basis: 48%;
-
     }
 
     .container .middle-img {
@@ -227,26 +233,26 @@ footer {
 @media(max-width: 400px) {
     header .logo {
         display: block;
-        margin-top: 20px;
+        padding: 0.22% 0;
     }
 
     header nav {
-        margin-top: 20px;
+        margin-top: 0.22%;
         flex-direction: column;
         align-content: center;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     header nav a {
-        padding: 20px;
+        padding: 2.0rem;
         border-bottom: 1px solid black;
         width: 100vw;
-        margin-left: -20px;
+        margin-left: -2.0rem;
     }
 
     header nav a:first-child {
-        border-top: 1px solid black;
+        border-top: 0.1rem solid black;
     }
 
     .top-content {
@@ -254,7 +260,7 @@ footer {
     }
 
     .top-content .text-content:first-child {
-        margin-bottom: 20px;
+        margin-bottom: 2.0rem;
     }
 
     .main-content .bottom-content {
@@ -262,7 +268,7 @@ footer {
     }
 
     .main-content .bottom-content .text-content {
-        margin-bottom: 20px;
+        margin-bottom: 2.0rem;
     }
 
     .main-content .bottom-content .text-content:last-child {
