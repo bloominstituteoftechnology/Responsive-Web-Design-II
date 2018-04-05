@@ -200,17 +200,10 @@ footer {
     .container {
         max-width: 95%;
     }
-}
-
-/*header queries*/
-
-@media(min-width: 401px) and (max-width: 768px) {
 
     header {
-       /* display: flex; */
-       flex-direction: column-reverse;
-       /* justify-content: center; */
-       align-items: center;
+       display: flex;
+       flex-wrap: wrap;
        
    }
 
@@ -219,229 +212,105 @@ footer {
        justify-content: space-around;
    }
 
-  
    header .logo {
-       /* margin: 0;
        order: -1;
-       flex-direction: column;
-       align-self: center; */
-       align-self: center;
-	   margin: 0;
+       display: block;
+	   margin: 30px auto 0;
    }  
-
-
-}
-
-/*cta queries*/
-
-@media(min-width: 401px) and (max-width: 768px) {
 
     .cta {
         justify-content: center;
     }
 
+    .cta .cta-text {
+        margin: 0;
+    }
+
     .cta img{ 
         display: none;
     }
-}
-
-/*media queries for main-content*/
-
-@media(min-width: 401px) and (max-width: 768px) {
-
-    .main-content {
-        max-width: 100%;
-        margin: 15px;
-    }
 
     .main-content .middle-img {
-        max-width: 100%;
+        width: 100%;
     }
 
-    .main-content .top-content {
-        justify-content: space-between;
+    .main-content {
+        margin: 75px 20px 35px;
+    }
+
+    .text-content {
+        margin: 0 10px;
+    }
+
+    .contact {
+        margin: 0 30px;
     }
 }
+
+
+/*mobile queries*/
 
 @media(max-width: 400px) {
     .container {
         max-width: 95%;
     }
-}
-
-@media(max-with: 400px) {
     
     header{
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
-	header .logo{
-		align-self: center;
-		padding-right: 4.5rem;
+        flex-direction: column;
+		justify-content: center;
 	}
 
 	header nav{
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
 	}
 
 	header nav a{
-		border: 1px solid gray;
-		width: 100%;
-		text-align: center;
-		padding: 1.25rem;
-		font-size: 1.25rem;
-	}
-
-} 
-
-@media(max-width: 400px) {
-
-    .cta {
-        justify-content: center;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid grey;
+    }
+    
+    header nav a:first-child {
+        border-top: 1px solid gray;
     }
 
-    .cta .cta-text button {
-        
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 20px 0;
+        order: -1;
         align-self: center;
     }
 
-    .cta img{ 
+    .cta {
+        justify-content: center;
+        padding-left: 69px;
+		margin-top: 44px;
+    }
+
+    .cta img {
         display: none;
     }
 
-}
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
 
+    .text-content {
+        margin: 0;
+    }
 
-@media(max-width: 400px) {
-
-    .main-content .top-content{
-		flex-direction: column;
-	}
-
-	.middle-img{
-		width: 100%;
-	}
-
-	.text-content{
-		padding: 1.25rem 0;
-	}
-
-	.main-content .bottom-content{
-		flex-direction: column;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (min-width:401px) and (max-width: 768px){
-	.container{
-		width: 95%;
-	}
-
-	header{
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
-	header nav{
-		width: 100%;
-		justify-content: space-around;
-	}
-
-	header .logo{
-		align-self: center;
-		margin: 0;
-	}
-
-	.cta img{
-		display: none;
-	}
-
-	.cta{
-		justify-content: center;
-		padding-left: 3.75rem;
-	}
-
-	.main-content{
-		padding: 2.5rem 1rem;
-	}
-
-	.middle-img{
-		width: 100%;
-	}
-
-	.main-content .top-content{
-		justify-content: space-between;
-	}
-
-	.main-content .top-content .text-content{
-		width: 48%;
-	}
-}
-
-@media(max-width: 400px){
-	.container{
-		width: 95%;
-	}
-
-	header{
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
-	header .logo{
-		align-self: center;
-		padding-right: 4.5rem;
-	}
-
-	header nav{
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
-	}
-
-	header nav a{
-		border: 1px solid gray;
-		width: 100%;
-		text-align: center;
-		padding: 1.25rem;
-		font-size: 1.25rem;
-	}
-
-	.cta{
-		justify-content: center;
-		padding-left: 6rem;
-		margin-top: 2.75rem;
-	}
-
-	.main-content .top-content{
-		flex-direction: column;
-	}
-
-	.middle-img{
-		width: 100%;
-	}
-
-	.text-content{
-		padding: 1.25rem 0;
-	}
-
-	.main-content .bottom-content{
-		flex-direction: column;
-	}
-} */
+    .contact {
+        margin: 20px;
+    }
+} 
