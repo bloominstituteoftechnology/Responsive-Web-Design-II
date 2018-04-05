@@ -105,6 +105,7 @@ header .logo {
     display: flex;
     margin-top: 4.5rem;
     justify-content: flex-end;
+		width: 100%;
 }
 
 .cta .cta-text {

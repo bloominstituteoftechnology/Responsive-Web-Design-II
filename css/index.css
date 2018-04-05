@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+		width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -151,6 +152,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+		width: 100%;
 }
 
 .main-content .bottom-content {
@@ -263,13 +265,13 @@ footer {
 		margin: 2rem 0 0 5rem;
 	}
 
-	.main-content .top-content{
-		flex-direction: column;
-		/*align-items: center;*/
+	.cta img{
+		display: none;
 	}
 
-	.middle-img{
-		width: 100%;
+	.main-content .top-content{
+		flex-direction: column;
+
 	}
 
 	.text-content{
