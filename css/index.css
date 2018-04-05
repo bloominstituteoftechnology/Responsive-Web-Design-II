@@ -286,7 +286,7 @@ footer {
         
        .cta .cta-text {
            display: none;
-            font-size: 72px;
+            font-size: 58px;
             text-align: center;
             letter-spacing: 5px;
             display: flex;
@@ -295,6 +295,7 @@ footer {
             align-items: center;
             padding: 10px;
             margin: auto 10px;
+            margin-top: 371px;
         }
         
         .cta .cta-text button {
@@ -317,6 +318,7 @@ footer {
         .main-content {
            border-top: 2px solid black; 
            border-bottom: 2px solid black;
+           margin-top: 36px;
            padding: 20px;
            font-size: 16px;
            line-height: 18px;
