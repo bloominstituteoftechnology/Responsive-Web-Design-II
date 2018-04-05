@@ -133,6 +133,11 @@ header .logo {
     color: white;
 }
 
+.cta img {
+    max-width: 50%;
+    align-self: center;
+}
+
 /* Main Content Styles */
 
 .main-content {
