@@ -78,7 +78,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 70%;
     justify-content: space-between;
     display: flex;
 }
@@ -86,6 +86,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.8rem;
 }
 
 header nav a:hover {
@@ -95,33 +96,33 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 7.2rem;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 80px 0 0;
+    margin: 0 9% 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 45%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -139,7 +140,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -151,7 +152,6 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
-    max-width: 100;
 }
 
 .main-content .bottom-content {
@@ -160,13 +160,18 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
 /* Contact Styles */
 
+.contact h4 {
+    font-size: 1.8rem;
+}
+
 .contact p {
     margin: 15px 0;
+    font-size: 1.4rem;
 }
 
 /* Footer Styles */
@@ -174,70 +179,168 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+    font-size: 1.2rem;
 }
 
-/* Media Queries */
-
-/* Tablet Size */
 @media(max-width: 768px) {
-    .container {
-      padding: 10px;
-      width: 100%;
+
+    .container {     
+        max-width: 768px; 
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 3%;
     }
-    
+
     header {
-      flex-direction: column-reverse;
-      align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-around;
+        width: 100%;
     }
-    
-    header .logo {
-      align-self: center;
-      margin-left: 0;
-    }
-    
-    .cta {
-      justify-content: center;
-    }
-    
-    .cta .cta-text {
-      margin: 0;
-    }
-    
-    .cta img {
-      display: none;
-    }
-    
-    .main-content .middle-img {
-      width: 100%;
-    }
-  }
-  
-  /* Phone Size */
-  @media(max-width: 400px) {
-    .container {
-      padding: 0;
-    }
-    
-    .cta,
-    .main-content,
-    .contact{
-      margin: 75px 10px;
-    }
-    
+
     header nav {
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
-    
+
+    header .logo {
+        margin:  auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta .cta-text {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .text-container {
+        display: flex;
+        display: column;
+        flex-wrap: wrap;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    .container {     
+        max-width: 400px; 
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 6%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-around;
+        width: 100%;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
     nav a {
-      border-top: 1px solid #000;
-      font-size: 1.2rem;
-      font-weight: bold;
-      padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid gray;
+        font-size: 2.1rem;
     }
-    
+
     nav a:last-child {
-      border-bottom: 1px solid #000;
+        border-bottom: 1px solid gray;
+        padding-bottom: 15px;
     }
-  }
+
+    header .logo {
+        margin:  0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta .cta-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .top-content  {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .text-content {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .bottom-content .text-content {
+        margin: 10px auto;
+        padding: 10x auto;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        margin: 40px auto;
+    }
+    .content {
+        margin-top: 20px;
+    }
+}
