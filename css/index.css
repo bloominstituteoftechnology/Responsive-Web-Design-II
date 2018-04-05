@@ -224,6 +224,10 @@ footer {
         text-align: center;
     }
 
+    nav a:first-child {
+        margin-top: -1em;
+    }
+
     nav a:last-child {
         border-bottom: 1px solid grey;
     }
@@ -246,5 +250,9 @@ footer {
     
     .bottom-content .text-content {
         margin-top: 2em;
+    }
+
+    .bottom-content .text-content:first-child {
+       margin-top: 0; 
     }
 }
