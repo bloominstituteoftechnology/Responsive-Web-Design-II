@@ -64,8 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 100%;
-    margin: 5%;
+    width: 880px;
+    margin-left: 72px;
 }
 
 /* Header Styles */
@@ -76,15 +76,13 @@ header {
 }
 
 header nav {
-    margin-top: 9%; 
-    width: 68%;
-    display: flex;
-    flex-direction:row;
+    margin-top: 40px; 
+    width: 610px;
     justify-content: space-between;
-    font-size: 100%;
+    display: flex;
 }
 
-header nav a:link {
+header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -95,22 +93,22 @@ header nav a:hover {
 }
 
 header .logo {
-    justify-content: space-around;
-    margin: 8% 0 0 6%;
+    align-self: flex-end;
+    margin: 28px 0 0 91px;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 5%;
-    justify-content: space-around;
+    justify-content: flex-end;
+    margin-top:69px;
 }
 
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -138,7 +136,7 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 78px 0 43px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
@@ -150,10 +148,8 @@ header .logo {
 }
 
 .main-content .middle-img {
-    display: flex;
-    justify-content: center;
-    width:99%;
-    margin:3% 0 3% 0;
+    display: block;
+    margin: 30px auto;
 }
 
 .main-content .bottom-content {
@@ -175,16 +171,17 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 5% auto 30% auto;
+    padding: 24px;
 }
-
-@media (max-width:480px){
+@media (max-width:400px){
     .container{
-        width:100%;
+        max-width:100%;
+        margin:0;
     }
     header{
         flex-direction:column;
-        justify-content: center;
+        margin:6px 0px 0px 10px;
+        font-size: x-large;
       
     }
     header nav{
@@ -195,7 +192,7 @@ footer {
     }
     header nav a{
         border-bottom: 1px solid gray;
-        padding:5%;
+        padding:19px;
         text-align: center;
     }
     header nav a:nth-child(1){
@@ -217,6 +214,9 @@ footer {
     .cta{
         padding-bottom:10%;
         width:95%;
+        margin-top: 51px;
+        margin-left: 12px;
+        font-size: 26px;
         
     }
 
@@ -272,92 +272,43 @@ footer {
         margin-bottom:0;
     }
 }
-@media (min-width:481){
+@media (max-width:768px){
     .container{
-        width:100%;
+        max-width:100%;
+        margin:0;
     }
-    header{
-        flex-direction:column;
-        
-      
+    header {
+        flex-wrap: wrap;
     }
-    header nav{
-        flex-direction:row;
-        width: 100%;
-        font-size:100%;
-        justify-content: space-around;
-        margin-top:15%;
-        
-    }
-    header nav a{
-        padding-top:5%;
-        padding-bottom:5%;
-        text-align: center;
-        padding-left:2%;
-    }
-    header .logo{
+    header .logo {
         order: -1;
-        align-self:center;
-        margin:4%;
-        
-        
-
+        display: block;
+        margin: 25px auto 0;
     }
+
+    
     .cta{
-        width:95%;
-        margin-top:-1%;
-        
+        justify-content: center;
     }
 
     .cta img{
         display:none;
     }
     .cta .cta-text{
-        padding-bottom:10%;
-        width:95%;
         margin: 0;
-        padding-top:5%;
-    }
-    .cta h1{
-        text-align:center;
-        margin:0;
-    }
-    .main-content{
-        flex-direction: column;
-        margin: 0;
-        content: ""; /* This is necessary for the pseudo element to work. */ 
-        display: block; /* This will put the pseudo element on its own line. */
-        margin: 0 auto; /* This will center the border. */
-        width: 95%; /* Change this to whatever width you want. */
-        padding-top: 20px; /* This creates some space between the element and the border. */
-        border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
-    }
-
-    .main-content .middle-img{
-        width:95%;
-    }
-    .main-content .top-content {
-        flex-direction:row;
-        width:95%;
-        margin-left:5%;
-    }
-    .main-content .bottom-content {
-        flex-direction:row;
-        width:95%;
-        margin-left:5%;
         
     }
+    .main-content{
+        margin: 72px 20px 34px;
+    
+    }    
     .text-content{
-        margin-top:5%;
+        margin: 0 10px;
     }
     .contact{
-        flex-direction: column;
-        width:95%;
-        margin-left: 5%;
-        margin-top:5%;
+        margin: 0 25px;
     }
-    footer {
-        font-size: 75%;
-        margin-bottom:5%;
-    }
+    
 }
+
+  
