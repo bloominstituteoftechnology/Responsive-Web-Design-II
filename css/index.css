@@ -180,30 +180,20 @@ footer {
 @media (max-width: 768px) {
     body {
         background-color: orange;
+        max-width: 786px;
+        
     }
     .container {
         display: flex;
-        flex-direction: column;
-        max-width: 768px;
+        flex-direction: column; 
     }
 
-    .main-content {
-        padding-left: 10px;
-        padding-right: 10px;    
-    }
-
-    .cta img {
-        display: none;
-    }
-
-    .cta .cta-text {
-        margin: auto;
-    }
-
-    header {
+    .container header {
         display: flex;
-        width: 100;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
     }
+
     nav {
         max-width: 100%;
         display: flex;
@@ -221,10 +211,30 @@ footer {
     .main-content {
         max-width: 768px;
         display: flex;
-        flex-direction: coulumn;
+        flex-direction: row;
         flex-wrap: wrap;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text {
+        margin: auto;
     }
 }
 
@@ -233,8 +243,74 @@ footer {
        max-width: 400px;
        display: flex;
        flex-direction: column;
-       
-   }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        max-width: 400px;;
+    }
+
+    .container header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+
+    .container header img {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    nav {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 20px;
+    }
+    nav a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
+    
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 15px;
+    }
+
+    .top-content h4 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+
+    }
+
+    .bottom-content h4 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+     }
+
+     .contact {
+         display: flex;
+         flex-direction: column;
+         padding: 15px;
+     }
 }
 
 
