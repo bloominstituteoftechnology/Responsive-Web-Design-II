@@ -190,6 +190,7 @@ footer {
     }
     header .logo{
         align-self: center;
+        margin-left:0;
     }
     .cta{
         display:flex;
@@ -198,7 +199,9 @@ footer {
     .cta img {
         display:none;
     }
-    
+    .cta .cta-text{
+        margin:0;
+    }
     .main-content .top-content {
         width: 100%;
     }
@@ -225,11 +228,18 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    header nav a {
+        width:100%;
+        display:flex;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding: 10px 0 10px 0;
+        justify-content: center;
+    }
     header .logo{
         align-self: center;
     }
     .cta{
-        border:1px solid black;
         width:100%;
         align-content: center;
     }
