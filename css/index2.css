@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%; /* 10px if the browser was 16px*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -77,7 +78,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -85,6 +86,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -94,7 +96,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    /* margin: 28px 0 0 91px; */
+    margin: 3.18% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,23 +109,26 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    /* font-size: 72px; */
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.5% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 58%;
     height: 32px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 1.14%;
     cursor: pointer;
 }
 
@@ -136,9 +142,11 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   /* margin: 75px 0 35px 0; */
+   margin: 8.52% 0 3.98% 0;
+   padding: 3.98% 0;
+   /* font-size: 16px; */
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -149,7 +157,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.41% auto;
 }
 
 .main-content .bottom-content {
@@ -158,20 +166,25 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 6.75%;
 }
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin: 1.7% 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.55% 0 2.27%;
+    font-size: 1.6rem;
 }
 
 @media(max-width: 768px) {
@@ -193,7 +206,7 @@ footer {
 
     header nav {
         margin-top: 30px;
-        width: 690px;
+        width: 90%;
     }
 
     header nav a {
@@ -202,7 +215,8 @@ footer {
 
     header .logo {
         order: -1;
-        margin: 20px 40px;
+        /* margin: 20px 40px; */
+        margin: 2.6% 5.21%;
         justify-content: center;
     }
 
@@ -211,7 +225,7 @@ footer {
     }
 
     .cta .cta-text {
-        margin: 0;
+        margin: 0%;
         justify-content: center;
     }
 
@@ -224,7 +238,8 @@ footer {
     }
 
     .main-content {
-        margin: 20px;
+        /* margin: 20px; */
+        margin: 2.6%;
         padding-top: 40px;
         margin-top: 60px;
         display: flex;
@@ -238,11 +253,13 @@ footer {
     }
 
     .main-content .top-content p {
-        padding-right: 15px;
+        /* padding-right: 15px; */
+        padding-right: 1.95%;
     }
 
     .main-content p, .main-content h4 {
-        padding-left: 15px;
+        /* padding-left: 15px; */
+        padding-left: 3%;
     }
 
     .main-content .middle-img {
@@ -259,7 +276,8 @@ footer {
     }
 
     .contact {
-        padding-left: 30px;
+        /* padding-left: 30px; */
+        padding-left: 3.91%;
     }
 }
 
@@ -286,19 +304,22 @@ footer {
         margin-top: 1px;
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     header nav a {
        order: 1;
        border-top: 1px solid black;
        width: 100%;
-       padding: 20px;
+       /* padding: 20px; */
+       padding: 5%;
        font-size: 18px;
     }
 
     header .logo {
         order: -1;
-        margin: 20px 40px;
+        /* margin: 20px 40px; */
+        margin: 5.2% 5.2%;
         justify-content: center;
     }
 
@@ -315,19 +336,24 @@ footer {
     .main-content .top-content {
         display: flex;
         flex-direction: column;
-        margin: 0px;
+        margin: 0%;
     }
 
-    .main-content .top-content p {
-        padding: 0px;
-    }
+    /* .main-content .top-content p {
+        padding: 0%;
+    } */
 
     .main-content p, .main-content h4 {
-        padding: 0px;
+        padding: 0%;
+    }
+
+    .main-content p {
+        padding: 4% 0%;
     }
 
     .main-content h4 {
-        padding-top: 15px;
+        /* padding-top: 15px; */
+        padding-top: 1.95%;
     }
 
     .main-content .middle-img {
@@ -345,5 +371,13 @@ footer {
         /* display: flex; */
         /* flex-direction: column; */
         width: 95%;
+    }
+
+    .contact {
+        padding-top: 4%;
+    }
+
+    footer {
+        padding-top: 4%;
     }
 }
