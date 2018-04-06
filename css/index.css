@@ -95,7 +95,7 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
+    align-self: center;
     margin: 28px 0 0 10.3%;
 }
 
@@ -124,7 +124,7 @@ header .logo {
     background: white;
     width: 58%;
     height: 32px;
-    margin-top: 3.4%;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 75px 0 75px 0;
    padding: 35px 0;
    font-size: 1.6rem;
    line-height: 18px;
@@ -270,8 +270,6 @@ footer {
     }
 
     .container header {
-        /* flex-direction: column;
-        align-items: center; */
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
@@ -318,8 +316,7 @@ footer {
 
     .container .cta .cta-text button {
         
-    height: 32px;
-    margin-top: 3.4%;
+        height: 32px;
     }
 
     .container .cta img {
@@ -336,16 +333,15 @@ footer {
     /* start main content */
 
     .main-content .top-content {
-        justify-content: space-around;
-        flex-direction: column;
+        
+        flex-wrap: wrap;
         height: 300px;
-        /* margin: 0 2.2% 0; */
+        
     }
 
-    
     .main-content .bottom-content {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 440px;
     }
 
