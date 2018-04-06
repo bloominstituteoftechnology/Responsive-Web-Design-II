@@ -94,7 +94,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%; /* percent base change made */
 }
 
 /* Call To Action (CTA) Styles */
@@ -113,7 +113,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9% 0 0; /* percent base change made */
 }
 
 .cta .cta-text button {
@@ -137,7 +137,7 @@ header .logo {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 3% 0;
+   padding: 3% 0; /* percent base change made */
    font-size: 1rem;
    line-height: 18px;
 }
@@ -158,7 +158,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 2%;
+    padding-right: 2%; /* percent base change made */
 }
 
 /* Contact Styles */
@@ -187,7 +187,7 @@ footer {
 
     header nav {
         width: 87%; /* percent base change made */
-        padding: 0 3%;
+        padding: 0 3%; /* percent base change made */
     }
 
     header .logo {
@@ -213,15 +213,15 @@ footer {
     }
 
     .main-content {
-       margin: 75px 2% 35px;
+       margin: 75px 2% 35px; /* percent base change made */
     }
 
     .text-content {
-        margin: 0 1%;
+        margin: 0 1%; /* percent base change made */
     }
 
     .contact {
-        margin: 0 3%;
+        margin: 0 3%; /* percent base change made */
     }
 }
 
@@ -229,7 +229,7 @@ footer {
 @media (max-width: 400px) {
 
     .container {
-        width: 100%; /* percent base change made */
+        width: 100%; 
     }
 
     header {
@@ -250,7 +250,7 @@ footer {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 2% 0;
+        padding: 2% 0; /* percent base change made */
         font-size: 20px;
         border-bottom: 1px solid gray;
     }
