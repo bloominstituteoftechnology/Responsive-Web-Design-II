@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+    max-width: 1024px;
     width: 86%;
     margin: auto;
     font-size: 62.5%;
@@ -195,6 +196,7 @@ footer {
 @media screen and (min-width: 401px) and (max-width: 768px) {
     
     .container {
+        max-width: 768px;
         width: 100%;
         margin: auto;
         padding: 0 2.6%;
@@ -262,6 +264,7 @@ footer {
 @media screen and (max-width: 400px) {
 
     .container {
+        max-width: 400px;
         width: 100%;
         margin: 0;
     }
