@@ -1,4 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+  
+    /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -51,9 +52,7 @@ table {
 * {
     box-sizing: border-box;
 }
-html{
-    font-size:62.5%;
-}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -66,25 +65,24 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    max-width: 880px;
-    width:100%;
-    margin: auto;
-    font-size: 1.6rem;
+    width: 100%;
+    margin: 5%;
 }
 
 /* Header Styles */
 
 header {
-    width: 100%;
+    width: 800px;
     display: flex;
 }
 
 header nav {
-    margin-top: 32px 5px 0; 
-    width: 100%;
+    margin-top: 9%; 
+    width: 68%;
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
- 
+    font-size: 100%;
 }
 
 header nav a:link {
@@ -98,7 +96,7 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
+    justify-content: space-around;
     margin: 8% 0 0 6%;
 }
 
@@ -107,27 +105,23 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 5%;
-    justify-content: flex-end;
+    justify-content: space-around;
 }
 
-.cta img{
-    display:flex;
-    justify-content: space-between;
-}
 .cta .cta-text {
-    font-size: 7.2rem;
+    font-size: 72px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9% 0 0;
+    margin: 0 82px 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size:1.6rem;
+    font-size: 16px;
     background: white;
     width: 170px;
     height: 32px;
@@ -147,8 +141,8 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 1.6rem;
-   line-height: 1.3rem;
+   font-size: 16px;
+   line-height: 18px;
 }
 
 .main-content .top-content {
@@ -157,8 +151,9 @@ header .logo {
 }
 
 .main-content .middle-img {
-    display: block;
-    max-width:100%;
+    display: flex;
+    justify-content: center;
+    width:99%;
     margin:3% 0 3% 0;
 }
 
@@ -168,7 +163,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 2%;
+    padding-right: 20px;
 }
 
 /* Contact Styles */
@@ -181,11 +176,104 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 15px 0
+    margin: 5% auto 30% auto;
 }
 
+@media (max-width:480px){
+    .container{
+        width:100%;
+    }
+    header{
+        flex-direction:column;
+        justify-content: center;
+      
+    }
+    header nav{
+        flex-direction:column;
+        width: 100%;
+        font-size:100%;
+        margin-top:15%;
+    }
+    header nav a{
+        border-bottom: 1px solid gray;
+        padding:5%;
+        text-align: center;
+    }
+    header nav a:nth-child(1){
+        margin-top:5%;
+        margin-bottom:0;
+        border-top:1px solid gray;
 
-@media (max-width:768px){
+
+    }
+    header .logo{
+        order: -1;
+        display:flex;
+        align-items:center;
+        margin-top:5%;
+        margin-right:25%;
+        margin-bottom:-18%;
+
+    }
+    .cta{
+        padding-bottom:10%;
+        width:95%;
+        
+    }
+
+    .cta img{
+        display:none;
+    }
+    .cta .cta-text{
+        padding-bottom:10%;
+        width:95%;
+        margin: 0;
+        font-size:280%;
+    }
+    .cta h1{
+        text-align:center;
+        margin:0;
+    }
+    .main-content{
+        flex-direction: column;
+        margin: 0;
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 90%; /* Change this to whatever width you want. */
+        padding-top: 5%; /* This creates some space between the element and the border. */
+        border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    .main-content .middle-img{
+        width:95%;
+    }
+    .main-content .top-content {
+        flex-direction:column;
+        width:95%;
+        margin-left:5%;
+    }
+    .main-content .bottom-content {
+        flex-direction:column;
+        width:95%;
+        margin-left:5%;
+        
+    }
+    .text-content{
+        margin-top:5%;
+    }
+    .contact{
+        flex-direction: column;
+        width:95%;
+        margin-left: 5%;
+        margin-top:5%;
+    }
+    footer {
+        font-size: 50%;
+        margin-bottom:0;
+    }
+}
+@media (min-width:481){
     .container{
         width:100%;
     }
@@ -238,7 +326,16 @@ footer {
     .main-content{
         flex-direction: column;
         margin: 0;
-        border-bottom: 1px solid black; 
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 95%; /* Change this to whatever width you want. */
+        padding-top: 20px; /* This creates some space between the element and the border. */
+        border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+    }
+
+    .main-content .middle-img{
+        width:95%;
     }
     .main-content .top-content {
         flex-direction:row;
@@ -263,93 +360,5 @@ footer {
     footer {
         font-size: 75%;
         margin-bottom:5%;
-    }
-}
-@media (max-width:400px){
-    .container{
-        width:100%;
-    }
-    header{
-        flex-direction:column;
-        justify-content: center;
-      
-    }
-    header nav{
-        flex-direction:column;
-        width: 100%;
-        display:flex;
-        margin:0;
-        align-items:center;
-    }
-    header nav a:link{
-        width:100%;
-        display:flex;
-        flex-direction: column;
-        border-bottom: 1px solid gray;
-        padding:22px 0;
-        font-size:2rem;
-        text-align: center;
-    }
-    header nav a:nth-child(1){
-        border-top:1px solid gray;
-
-
-    }
-    header .logo{
-        order: -1;
-        margin: 20px 0;
-        align-self:center;
-
-    }
-    .cta{
-        display:flex;
-        margin:5%;
-        flex-direction:column;
-        align-items:center;
-        
-        
-    }
-
-    .cta img{
-        display:none;
-    }
-    .cta .cta-text{
-        margin: 0;
-        
-    }
-    .cta h1{
-        text-align:center;
-        margin:0;
-    }
-    .main-content{
-        flex-direction: column;
-        margin: 0;
-        border-bottom: 1px solid black; 
-    }
-    .main-content .top-content {
-        flex-direction:column;
-        flex-wrap:wrap;
-        display:flex;
-        height:300px;
-    }
-    .main-content .bottom-content {
-        flex-direction:column;
-        display:flex;
-        flex-wrap:wrap;
-        height: 420px;
-        
-    }
-    .text-content{
-        margin-top:5%;
-    }
-    .contact{
-        flex-direction: column;
-        width:95%;
-        margin-left: 5%;
-        margin-top:5%;
-    }
-    footer {
-        font-size: 50%;
-        margin-bottom:0;
     }
 }
