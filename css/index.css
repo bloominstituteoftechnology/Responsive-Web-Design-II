@@ -173,3 +173,79 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media(max-width:768px){
+    .container{
+        width: 768px;
+    }
+    header{
+        flex-direction: column-reverse;
+    
+    }
+
+    header .logo {
+        align-self: center;
+    }
+    header nav {
+        align-self: center;
+    }
+    .cta img{
+        display:none;
+
+    }
+    .cta {
+        justify-content: center;
+    }
+    .cta .cta-text{
+        margin:0;
+    }
+    .main-content{
+        margin: 75px 20px 35px;
+    }
+    .main-content .middle-img{
+        width: 100%
+
+    }
+    .contact{
+        margin:0 30px;
+    }
+}
+@media(max-width:400px){
+    .container{
+        width: 400px;
+
+    }
+    header{
+        justify-content: center;
+    }
+    header nav{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        margin-top: 10px;
+    }
+    header nav a{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 1px solid grey;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .main-content .top-content{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;
+    }
+    .main-content .bottom-content{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 440px;
+    }
+
+
+}
