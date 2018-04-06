@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
     font-size: 1.6rem; /*ADDED*/
 }
@@ -142,7 +143,7 @@ header .logo {
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
-   border: solid red;
+   
    
 }
 
@@ -355,6 +356,11 @@ footer {
         
         display: flex; 
         flex-direction: column;
+    }
+
+    .text-content{
+        margin: 20px 0;
+        
     }
 
     
