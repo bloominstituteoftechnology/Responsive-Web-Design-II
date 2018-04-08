@@ -60,7 +60,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -80,7 +80,6 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
-    order: 1;
 }
 
 header nav a {
@@ -96,7 +95,6 @@ header nav a:hover {
 header .logo {
     align-self: flex-end;
     margin: 28px 0 0 91px;
-    order: 2;
 }
 
 /* Call To Action (CTA) Styles */
@@ -176,141 +174,123 @@ footer {
     margin: 40px 0 20px;
 }
 
-
+/* Tablet */
 @media (max-width: 768px) {
-    body {
-        background-color: orange;
-        max-width: 786px;
-        
-    }
+
     .container {
-        display: flex;
-        flex-direction: column; 
+        width: 768px;
     }
 
-    .container header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap-reverse;
-    }
-
-    nav {
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        order: 1;
-        margin: 20px;
-    }
-    nav a {
-        display: flex;
-        flex-direction: column;
+    header {
         flex-wrap: wrap;
-        padding: 20px;
-        order: 2;
     }
-    .main-content {
-        max-width: 768px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-left: 10px;
-        padding-right: 10px;
+  
+    header nav {
+        width: 768px;
+        padding: 0 30px;
     }
 
-    .top-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .cta {
+        justify-content: center;
     }
     
-    .bottom-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+    .cta .cta-text {
+        margin: 0;
     }
 
     .cta img {
         display: none;
     }
 
-    .cta .cta-text {
-        margin: auto;
+    .main-content .middle-img {
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 75px 20px 35px;
+    }
+
+    .text-content {
+        margin: 0 10px;
+    }
+
+    .contact {
+        margin: 0 30px;
     }
 }
 
+/* Phone */
 @media (max-width: 400px) {
-   .container {
-       max-width: 400px;
-       display: flex;
-       flex-direction: column;
-    }
 
     .container {
-        display: flex;
-        flex-direction: column; 
-        max-width: 400px;;
+        width: 400px;
     }
 
-    .container header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap-reverse;
+    header {
+        justify-content: center;
     }
 
-    .container header img {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-
-    nav {
-        max-width: 100%;
-        display: flex;
+    header nav {
+        width: 100%;
         flex-direction: column;
-        flex-wrap: nowrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta img {
+        max-width: 80%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
         margin: 20px;
     }
-    nav a {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 20px;
-        text-align: center;
-        border-bottom: 1px solid white;
-    }
-
-    .top-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 15px;
-    }
-    
-    .bottom-content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        padding: 15px;
-    }
-
-    .top-content h4 {
-        display: flex;
-        flex-direction: column;
-        margin-top: 15px;
-
-    }
-
-    .bottom-content h4 {
-        display: flex;
-        flex-direction: column;
-        margin-top: 15px;
-     }
-
-     .contact {
-         display: flex;
-         flex-direction: column;
-         padding: 15px;
-     }
 }
-
-
