@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+    
 }
 
 /* Header Styles */
@@ -73,6 +74,7 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    justify-content:center;
 }
 
 header nav {
@@ -172,4 +174,122 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media(max-width:768px) {
+  .container  {
+      
+      width:100%;
+    
+   }
+   header {
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+   header nav {
+       width: 100%;
+   }
+   header nav ul{ 
+            width: 100%;
+            margin: 20px 0;
+            justify-content: space-between;
+        }
+    
+        header .logo {
+            order: -1;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+    
+        .cta {
+            margin-top: 50px;
+            flex-flow: column;
+            align-items: center;
+        }
+        
+        .cta .cta-text {
+            margin: 0;
+        }
+    
+        .main-content .middle-img {
+            margin:-1;
+            width: 100%;
+        }
+    
+        .main-content {
+           margin: 50px 2% 35px;
+        }
+    
+        .contact {
+            margin: 20px 2%;
+        }
+    
+}
+
+@media(max-width: 400px){
+    header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        
+           header nav {
+                width: 100%;
+            }
+        
+            header nav {
+                width: 100%;
+                display: flex;
+                justify-content:center;
+            
+            
+            }
+        
+            header nav a {
+                width: 100%;
+                border-bottom: 1px solid gray;
+            }
+        
+           header nav a:first-child {
+                border-top: 1px solid gray;
+            }
+        
+            header nav a:hover {
+                background: gray;
+            }
+        
+            header .logo {
+                order: -1;
+                max-width: 100%;
+                margin: 20px 0;
+            }
+        
+            .cta {
+                margin-top: 50px;
+                flex-flow: column;
+                align-items: center;
+            }
+            
+            .cta .cta-text {
+                margin: 0 0 50px 0;
+           }
+        
+            .cta img {
+                max-width: 80%;
+            }
+        
+            .main-content .top-content {
+                justify-content: space-around;
+                flex-direction: column;
+                height: 300px;
+            }
+        
+            .main-content .bottom-content {
+                flex-wrap: wrap;
+                align-content: space-between;
+                height: 440px;
+            }
+        
+            .contact {
+                margin: 20px;
+             }                                          
 }
