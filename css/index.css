@@ -173,3 +173,69 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* At the point of 768px, break into tablet view. */
+
+@media(max-width: 768px) {
+
+/* container */
+    
+  .container {
+    width: 880px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+/* header */
+
+  header {
+      display: flex;
+      width: 100%;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+  }
+
+  nav {
+    border: 1px solid red;
+    margin: 20px;
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    border: 1px solid red;
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .logo {
+    justify-content: center;
+    border: 1px solid red;
+  }
+
+/* cta */
+
+  .cta {
+    border: 1px solid red;
+  }
+
+  .cta-text h1 {
+    border: 1px solid red;
+    margin-left: -100px;
+  } 
+
+  .cta-text button {
+    border: 1px solid red;
+    margin-left: 300px;
+  }
+
+  .cta img {
+    border: 1px solid red;
+    display: none;
+  }
+    
+}
