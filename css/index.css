@@ -173,3 +173,132 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Tablet */
+
+@media(max-width: 768px) {
+
+    .container {
+        width: 768px;
+        border: 1px solid red;     
+    }
+
+    header {
+        display: flex; 
+        flex-direction: column-reverse;
+    }
+
+    header nav {          
+        width: 768px;     
+        padding: 0px 30px;      
+    }
+    
+    header .logo {
+        display: block; 
+        border: 1px solid blue;      
+
+    }
+    
+    .cta {
+        justify-content: center; 
+    }
+
+    .cta .cta-text {
+        margin: 0;  
+    }
+
+    .cta img {        
+        display: none;
+    }    
+    
+    .main-content {
+        border: 1px solid purple; 
+        margin: 75px 20px 35px;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+    
+    .main-content {
+        margin: 75px 20px 35px;
+     }
+ 
+     .text-content {
+         margin: 0 10px;
+     }
+ 
+     .contact {
+         margin: 0 30px;
+     }
+ }
+ 
+ /* Phone */
+ @media (max-width: 400px) {
+ 
+     .container {
+         width: 400px;         
+     }
+ 
+     header {
+         justify-content: center;
+     }
+ 
+     header nav {
+         width: 100%;
+         flex-direction: column;
+         margin: 0;
+         padding: 0;
+     }
+ 
+     header nav a {
+         width: 100%;
+         display: block;
+         text-align: center;
+         padding: 20px 0;
+         font-size: 20px;
+         border-bottom: 1px solid gray;
+     }
+ 
+     header nav a:first-child {
+         border-top: 1px solid gray;
+     }
+ 
+     header nav a:hover {
+         background: gray;
+     }
+ 
+     header .logo {
+         margin: 20px 0;
+     }
+ 
+     .cta {
+         margin-top: 50px;
+         flex-flow: column;
+         align-items: center;
+     }
+ 
+     .cta img {
+         max-width: 80%;
+     }
+ 
+     .main-content .top-content {
+         justify-content: space-around;
+         flex-direction: column;
+         height: 300px;
+     }
+ 
+     .main-content .bottom-content {
+         flex-wrap: wrap;
+         align-content: space-between;
+         height: 440px;
+     }
+ 
+     .text-content {
+         margin: 0;
+     }
+ 
+     .contact {
+         margin: 20px;
+     }   
+}
