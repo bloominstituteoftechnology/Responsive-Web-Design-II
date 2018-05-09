@@ -178,6 +178,7 @@ footer {
     margin: 40px 0 20px;
 }
 
+/* tablets */
 @media (max-width: 768px) {
     .container{
         width: 100%;
@@ -265,6 +266,7 @@ footer {
 
 }
 
+/* phone */
 @media (max-width: 400px) {
     .container{
         width: 100%;
