@@ -176,8 +176,10 @@ footer {
 
 /*Tablet size */
 @media (max-width: 768px){
+
     .container{
         max-width: 768px;
+        width: 100%;
         margin: 0px auto;
         padding: 0px 15px;
     }
@@ -186,9 +188,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 768;
+        max-width: 768px;
         width: 100%;
-        border: 1px solid red;
     }
     header .logo {
         order: 0;
@@ -198,6 +199,7 @@ footer {
     }
     header nav {
         order: 1;
+        max-width: 768px;
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -228,6 +230,9 @@ footer {
         margin: 0px;
     }
 
+    .bottom-content .text-content {
+        width: 32%;
+    }
 
 
 }
