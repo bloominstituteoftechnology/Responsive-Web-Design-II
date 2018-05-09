@@ -214,5 +214,16 @@ footer {
     display: none;
   }
 
+  .main-content {
+    margin: 5%;
+  }
+
+  .main-content .middle-img {
+    width: 600px;
+  }
+
+  .contact {
+    margin: 0 5%;
+  }
 }
 
