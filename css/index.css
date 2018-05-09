@@ -173,3 +173,130 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/*Tablet size */
+@media (max-width: 768px){
+
+    .container{
+        max-width: 768px;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 15px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 768px;
+        width: 100%;
+    }
+    header .logo {
+        order: 0;
+        padding: 0px;
+        margin: 20px 0 0 0;
+        align-self: center;
+    }
+    header nav {
+        order: 1;
+        max-width: 768px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .cta .cta-text {
+        margin: 0px;
+    }
+
+    /* hide images */
+    .cta img{
+        display: none;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-content .text-content {
+        width: 48%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .bottom-content .text-content {
+        width: 32%;
+    }
+
+
+}
+/* Mobile size */
+@media (max-width: 400px) {
+    .container{
+        max-width: 400px;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1.2em;
+        padding: 15px 0;
+        border-bottom: 1px solid black;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
+    }
+
+    header nav a:hover {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .main-content {
+        align-self: center;
+        padding: 0px;
+        max-width: 380px;
+        margin: 30px 10px;
+        width: 100%;
+    }
+    
+    .main-content .top-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 380px;
+    }
+    .main-content .text-content {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .main-content .bottom-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+}
