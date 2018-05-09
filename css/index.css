@@ -336,7 +336,14 @@ footer {
     .main-content .bottom-content {
         flex-flow: column wrap;
     }
+    .main-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .main-content .text-content {
         margin-top: 24px;
+    }
+    .contact {
+        padding: 0 10px;
     }
 }
