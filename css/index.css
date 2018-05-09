@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -173,3 +173,84 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+@media (max-width: 768px) {
+	.circle-image {
+		display: none;
+		}
+		.container {
+		width: 768px;
+		}
+		header {
+			margin-top: 18px;
+			flex-wrap: wrap;
+		}
+		header nav {
+		    justify-content: space-around;
+		    display: flex;
+				width: 100%;
+		}
+		header .logo {
+		    justify-content: center;
+		    order: -1;
+				margin-left: 293px;
+		}
+		.cta {
+			justify-content: center;
+			margin-left: 40px;
+		}
+		.cta .cta-text button {
+			margin-top: 15px;
+		}
+		.main-content .middle-img {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.container {
+		width: 400px;
+		justify-content: center;
+		display: inline-block;
+		}
+		header nav {
+			flex-wrap: wrap;
+			text-align: center;
+		}
+		header .logo {
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 0;
+
+		}
+		header nav a {
+			width: 100%;
+			border-top: solid 1px;
+			height: 60px;
+			padding-top: 20px;
+		}
+		header nav a:first-child {
+			margin-top: 0;
+		}
+		header nav a:last-of-type {
+			border-bottom: 1px solid;
+		}
+		.cta h1{
+			display: flex;
+			justify-content: flex-start;
+			justify-content: center;
+		}
+		.cta-text{
+			display: flex;
+		}
+		.top-content, .bottom-content{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.text-content h4{
+			margin-top: 30px;
+		}
+		main-content .middle-img {
+			margin: 0;
+		}
+	}
