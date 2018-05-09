@@ -177,27 +177,28 @@ footer {
 /* Media Queries */
 
 @media (max-width: 768px) {
-    .container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        border: red;
+    body {
+        overflow-x: hidden !important;
     }
-    .cta img{
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    .cta img {
         display: none;
     }
-    /* header{
-        width: 760px;
+    header {
         display: flex;
-
-    } */
+        flex-direction: column-reverse;
+    }
 }
 
 @media (max-width: 400px) {
+    body {
+        overflow-x: hidden !important;
+    }
     .container {
-        display: flex;
-        width: 100%;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
     }
 }
