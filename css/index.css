@@ -173,3 +173,133 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Tablet styles */
+
+@media (max-width: 768px){
+    .container{
+        max-width: 768px;
+        margin: 0px auto;
+        padding: 0px 15px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 768;
+        width: 100%;
+        margin-top: 10px; 
+    }
+
+/* need space around */
+
+    header nav a {
+        padding-left: 40px;
+        
+    }
+
+    header .logo {
+        order: -1;
+        padding: 0px;
+        margin: 20px 0 0 0;
+        align-self: center;
+    }
+    
+    .cta {
+        margin-right: 160px;
+    }
+
+    .cta h1 {
+        padding-bottom: 5px;
+    }
+
+    .cta img {
+        display:none;
+    }
+
+    .main-content {
+        margin-left: 15px;
+        line-height: 1.4em;
+    }
+
+    .middle-img {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .contact {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* Mobile styles */
+
+@media (max-width: 400px){
+    .container{
+        max-width: 400px;
+        margin: 0px auto;
+        padding: 0px 15px;
+    }
+
+    /* header nav {
+        flex-wrap: wrap;
+        text-decoration: none;
+        padding-bottom: -20px;
+    }
+
+    header nav a {
+        display: flex;
+        width: 400px;
+        margin: 20px auto;
+        font-size: 18px;
+    } */
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin-top: -10px;
+    }
+    
+    header nav a {    
+        font-size: 20px;
+        border-bottom: 1px solid #b0b0b0;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+    }
+
+    .cta {
+        margin-right: -50px; 
+        margin-left: 300px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .main-content h4 {
+        margin-top: 10px;
+    }
+
+    p {
+        width: 370px;
+    }
+
+}
