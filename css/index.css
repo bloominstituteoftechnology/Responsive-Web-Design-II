@@ -173,3 +173,57 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+/* tablet view */
+@media(max-width:768px){
+	.container{
+		width:768px;
+	}
+
+	header {
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	header .logo{
+		order:-1;
+		width:183px;
+		height:36px;
+		 margin: 28px 0px 0px 0px;
+		
+	}
+	header nav {
+		width:768px;
+		justify-content:space-around;
+	}
+	.cta {
+		justify-content:center;
+		padding-left:40px;
+	}
+	.cta img {
+		display:none;
+	}
+	.cta .cta-text h1{
+		margin-bottom:15px;
+	}
+	.main-content{
+		width:768px;
+		margin-left:20px;
+		padding-bottom:50px;
+	}
+	.main-content .top-content .text-content {
+		height:150px;
+		width: 350px;
+	}
+	.main-content .middle-img{
+		width:725px;
+		height:150px;
+		margin:5px auto 35px 0px;
+	}
+	.contact {
+    margin-left: 30px;
+}
+	
+	
+	
+	
+	
+}
