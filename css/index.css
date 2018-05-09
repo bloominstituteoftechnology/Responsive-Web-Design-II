@@ -220,10 +220,44 @@ footer {
 	}
 	.contact {
     margin-left: 30px;
+	}
 }
+/* mobile view */
+@media(max-width:400px){
+	.container{
+		width:400px;
+	}
+	header nav {
+		margin-top:20px;
+		width:400px;
+		align-items:center;
+		flex-flow:column;
+		border-bottom:1px solid black;
+		height:363px;
+	}
+	header nav a{
+		border-top:1px solid black;
+		width:100%;
+		height:64px;
+		text-align:center;
+		padding-top:14px;
+		font-size:20px;
+		padding-bottom:6px;
+	}
+	.main-content{
+		width:400px;
+	}
 	
-	
-	
-	
-	
+	.main-content .middle-img{
+		width:400px;	
+	}
+	.cta {
+		justify-content:center;
+		padding-left:0px;
+			margin-top:50px;
+	}
+	.cta .cta-text {
+    margin:0px;
+}
+
 }
