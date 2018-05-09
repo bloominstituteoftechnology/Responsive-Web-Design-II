@@ -174,12 +174,13 @@ footer {
     margin: 40px 0 20px;
 }
 
-/*---Media Queries-----*/
+/*---Media Queries for 768px-----*/
 @media screen and (max-width: 768px) {
 
 .container {
     width: 768px;
     margin: auto;
+
 }
 
 /* Header Styles */
@@ -197,6 +198,59 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+}
+
+header .logo {
+    align-self: flex-end;
+    margin: 28px 0 0 91px;
+    order: -1;
+
+}
+
+/*--CTA content---*/
+
+.cta img {
+    display: none;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+/*---Media Queries for 400px-----*/
+@media screen and (max-width: 400px) {
+
+.container {
+    width: 400px;
+    margin: auto;
+
+}
+
+/* Header Styles */
+
+header {
+   /* width: 20%;*/
+    display: flex;
+    flex-wrap: wrap;
+ /*   flex-direction: column;*/
+    justify-content: center;
+}
+
+header nav {
+    /*margin: 40px 0 30px 0;*/
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    border: lightgray;
+    text-align: center;
+}
+nav a {
+    padding: 40px 0 40px 0;
+    border: solid 1px lightgray ;
 }
 
 header .logo {
