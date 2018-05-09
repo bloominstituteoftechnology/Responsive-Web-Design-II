@@ -180,6 +180,7 @@ footer {
 @media (max-width: 768px) {
     .container{
         width: 768px;
+        margin: auto;
         margin-left: 30px;
     }
     header{
@@ -215,19 +216,28 @@ footer {
 }
 
 
-/* @media (max-width: 415px) {
+ @media (max-width: 400px) {
+    .container{
+        width: 400px;
+        margin: auto;
+    }
     header{
         width: 400px;
         flex-flow: column wrap;
-        align-items: center;
-        border: 2px solid red;
+        align-content: flex-start;
+
     }
     header nav{
-        height: 40px;
         flex-flow: column nowrap;
-        align-content: space-between;
-        align-items: center;
-        border: 2px solid red;
+        align-items: stretch;
+    }
+    header nav a{
+        align-self: center;
+        width: 400px;
+        font-size: 50px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+
     }
 
-} */
+} 
