@@ -173,6 +173,107 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+ /* Tablet Styles */
+    
+ @media (max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header .logo{
+        margin: 30px 0 0px 15px;
+        order: 1;
+        align-self: center;
+    }
+    header nav{
+        justify-content: space-between;
+        order: 2;
+        margin: 40x 15px 0 15px;
+        text-align:center;
+    }
+
+    header nav a{
+        margin: 0px 40px 0px 40px;
+    }
+    .cta {
+        display: flex;
+        margin: 0px;
+        margin-top: 25px;
+        flex-direction: column;
+        /* border: solid yellow 1px; */
+    }
+    .cta .cta-text{
+        margin: 50px 17px 15px 0;
+    }
+    .cta .cta-text button{
+        margin-top: 12px;
+    }
+
+    .cta img{
+        display: none;
+    }
+
+    .main-content{
+        align-self: center;
+        margin-top: 60px;
+
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        margin-left: 19px;
+    }
+
+    .main-content .top-content{
+        flex-direction: row;
+    }
+
+    /* .main-content .top-content .text-content{
+        margin-top: 35px;
+    }
+
+    .main-content .top-content .text-content p{
+        margin-top: 11px;
+    } */
+    
+    .main-content .middle-img{
+        width: 100%;
+        margin-top: 30px;
+        padding-top: 15px;
+    }
+
+    .main-content .bottom-content{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .main-content .bottom-content .text-content{
+        margin-bottom: 42px;
+    }
+
+    .main-content .bottom-content .text-content h4{
+        padding-bottom: 9px;
+        margin: 0px;
+        margin-bottom: 1px;
+    }
+
+    .main-content .bottom-content .text-content p{
+        padding-top: 1px;
+    }
+
+    .contact{
+        align-self:center;
+        margin-top:31px;
+        width: 360px;
+        margin-bottom: 0;
+    }
+}
+
+/* Phone Styles */
 
 @media (max-width: 400px){
     .container{
@@ -277,5 +378,6 @@ footer {
         width: 360px;
         margin-bottom: 0;
     }
-    
-    
+}
+
+   
