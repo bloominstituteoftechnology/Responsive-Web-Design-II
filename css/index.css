@@ -194,10 +194,27 @@ margin-right: 200px;
 }
 
 header nav{
-    margin-right: 100px;
+    margin-left: 70px;
 }
 
+header .logo{
+    margin-left: 240px;
 }
+.top-content{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.bottom-content{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.contact{
+    margin-left: 10px;
+}
+}
+
 
 @media(max-width: 400px){
 
