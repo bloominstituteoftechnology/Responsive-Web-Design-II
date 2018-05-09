@@ -184,12 +184,13 @@ footer {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     header .logo {
         order: -1;
         margin: 28px 0 0 0;
+
     }
 
     .cta {
@@ -231,10 +232,14 @@ footer {
 }
 
 @media (max-width: 400px) {
-
+    
     header nav {
         flex-direction: column;
+        margin-top: 20px;
+    }
 
+    header .logo {
+        margin-top: 20px;
     }
 
     header nav a {
@@ -242,12 +247,13 @@ footer {
         color: #b0b0b0;
         text-align: center;
         border-top: 1px solid #b0b0b0;
-        padding: 15px 0;
+        padding: 20px 0;
+        font-size: 20px;
     }
 
     .cta {
         margin-top: 0;
-        padding-top: 72px;
+        padding-top: 42px;
         border-top: 1px solid #b0b0b0;
     }
 
