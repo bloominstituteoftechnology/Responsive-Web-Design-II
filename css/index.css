@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -173,3 +174,34 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container{
+        width: 768px;
+    }
+    header{
+        flex-wrap: wrap;
+    }
+    header nav{
+        width:768px;
+        padding: 0 20px;
+    }
+}
+
+
+/* @media (max-width: 415px) {
+    header{
+        width: 400px;
+        flex-flow: column wrap;
+        align-items: center;
+        border: 2px solid red;
+    }
+    header nav{
+        height: 40px;
+        flex-flow: column nowrap;
+        align-content: space-between;
+        align-items: center;
+        border: 2px solid red;
+    }
+
+} */
