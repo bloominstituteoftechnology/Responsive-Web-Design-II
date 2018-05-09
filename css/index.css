@@ -200,7 +200,7 @@ footer {
 
 header nav {
     display:flex;
-    width: 100%
+    width: 100%;
     justify-content: space-between;
     margin-top: 35px;
 
@@ -259,3 +259,65 @@ header nav a{
 
 
 }
+
+
+/*   Mobile */
+
+
+@Media (max-width: 400px) {
+    .container {
+         width: 400px;
+         margin:auto;
+         background-color: pink;
+         padding:5px;
+     }
+
+header nav {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 2px double gray;
+
+
+
+}
+
+header nav a{
+    display: flex;
+    font-size: 18px ;
+    font-weight: 865;
+    letter-spacing: 2.5px;
+    margin: 10px 10px;
+    padding-left: 37%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    border-top: 2px double gray;
+
+
+}
+
+.cta {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+    padding-left: 20%;
+
+}
+
+.cta .cta-text button{
+    margin-top: 18%;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
