@@ -229,3 +229,42 @@ footer {
     }
 
 }
+
+@media (max-width: 400px) {
+
+    header nav {
+        flex-direction: column;
+
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: #b0b0b0;
+        text-align: center;
+        border-top: 1px solid #b0b0b0;
+        padding: 15px 0;
+    }
+
+    .cta {
+        margin-top: 0;
+        padding-top: 72px;
+        border-top: 1px solid #b0b0b0;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+    }
+
+    .main-content .top-content .text-content {
+        margin: 10px 0;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin: 10px 0;
+    }
+
+}
