@@ -225,16 +225,19 @@ footer {
         width: 400px;
         flex-flow: column wrap;
         align-content: flex-start;
+        margin-left: -55px;
 
     }
     header nav{
         flex-flow: column nowrap;
         align-items: stretch;
+
     }
     header nav a{
         align-self: center;
         width: 400px;
-        font-size: 50px;
+        height: 80px;
+        font-size: 40px;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
 
