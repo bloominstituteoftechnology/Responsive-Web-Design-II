@@ -177,9 +177,40 @@ footer {
 @media (max-width: 400px){
     .container{
         display: flex;
+        flex-direction: column;
+        border: solid red 1px;
+        width: 400px;
+    }
+    header{
+        display:flex;
+        flex-direction: column;
+        border: solid green 1px;
+        width: 400px;
     }
     header .logo{
-        margin: 7px 0 40px 92px;
+        margin: 15px 0 21px 0px;
         order: 1;
+        border: solid purple 1px;
+        align-self: center;
     }
+    header nav{
+        flex-direction: column;
+        order: 2;
+        border: solid blue 1px;
+        width: 100%;
+        margin: 0px;
+    }
+    .cta {
+        display: flex;
+        margin: 0px;
+        flex-direction: column;
+        border: solid yellow 1px;
+    }
+
+    .cta img{
+        display:none;
+    }
+    
+
+    
 }
