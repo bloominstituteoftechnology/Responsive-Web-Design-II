@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -172,4 +172,171 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Tablet Style */
+@media (max-width: 768px) {
+
+	* {
+	    box-sizing: border-box;
+	}
+
+	.container {
+		width: 768px;
+		margin: auto;
+	}
+
+	header {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		width: 768px;
+	}
+
+	header nav {
+	    margin: 40px 23px 0 23px;
+	    width: 768px;
+	    display: flex;
+			justify-content: space-between;
+	}
+
+	.cta {
+	  display: flex;
+	  margin-top: 72px;
+	  justify-content: center;
+		margin-left: 20px;
+	}
+
+	header .logo {
+	    margin: 28px 0 0 291px;
+	}
+
+	.cta img {
+		display: none;
+	}
+
+	.main-content {
+		margin: 75px 30px 35px 30px;
+
+	}
+
+	.main-content img {
+		width: 100%;
+	}
+
+	.contact {
+		margin: 25px 30px 35px 30px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
