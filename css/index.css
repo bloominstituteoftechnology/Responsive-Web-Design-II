@@ -50,6 +50,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 html, body {
@@ -172,4 +173,43 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+@media (max-width: 768) {
+
+    * {
+        border: 1px solid black !important;
+  }
+    .container {
+      width: 100%;
+      background: red;
+    }
+    .header nav {
+        display: flex;
+        margin-top: 105px; 
+        width: 850px;
+        justify-content: space-around;
+        border: 1px solid red;
+    }
+    .header logo {
+    align-self: center;
+    margin: -405px;
+    }
+
+    .cta .cta-text {
+        font-size: 72px;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin-bottom: 105px;
+}
+
+}
+
+@media (max-width: 400) {
+
 }
