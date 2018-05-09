@@ -214,6 +214,7 @@ footer {
 		}
 
 		header nav {
+			margin-top: 21px;
 			  display: flex;
 				padding: 20px;
 		    width: 100%;
@@ -236,7 +237,8 @@ footer {
 		.cta {
 		    display: flex;
 				flex-flow: column;
-		    margin-top: 72px;
+		    margin-top: 53px;
+				padding-right: 40px;
 		    justify-content: flex-end;
 		}
 
@@ -257,7 +259,7 @@ footer {
 		    background: white;
 		    width: 170px;
 		    height: 32px;
-		    margin-top: 10px;
+		    margin-top: 16px;
 		    cursor: pointer;
 		}
 
@@ -272,22 +274,31 @@ footer {
 
 		 .main-content .middle-img {
 			width: 100%;
-			max-width: 718px;
+			max-width: 728px;
+			margin-bottom: 29px;
 		}
 
 		.main-content {
 			width: 100%;
-			max-width: 718px;
-			margin: 75px 20px 35px 20px;
-		}
-
-		.main-content .top-content p {
-				padding-right: 40px;
+			max-width: 728px;
+			margin: 75px 20px 35px 15px;
 		}
 
 		.main-content .top-content {
 		    display: flex;
 		    justify-content: space-around;
+				padding-left: 10px;
+		}
+
+		.main-content .top-content h4 {
+				margin-bottom: 15px;
+		}
+		.main-content .top-content p {
+				padding-right: 10px;
+		}
+
+		.main-content .top-content .top1 {
+				margin-right: 10px;
 		}
 
 		.main-content .bottom-content {
@@ -295,14 +306,27 @@ footer {
 		    justify-content: space-around;
 		}
 
+		.main-content .bottom-content  h4 {
+
+		}
+
 		.main-content .bottom-content p {
+				margin-top: 15px;
 		    padding-right: 40px;
+		}
+
+		.main-content .bottom-content .text-content h4 {
+				margin-left: 10px;
+		}
+
+		.main-content .bottom-content .text-content p {
+				margin-left: 6.3px;
 		}
 
 		/* Tablet Contact Styling */
 
 		.contact {
-				margin-left: 20px;
+				margin-left: 25px;
 		}
 
 		/* Footer Styles */
