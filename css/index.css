@@ -232,6 +232,30 @@ footer {
     }
 
     .cta {
-        margin-top: 
+        margin-top: 50px;
+    }
+
+    .cta h1 {
+        margin-bottom: 15px;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .main-content {
+        margin: 75px 15px 35px 15px;
+    }
+
+    .main-content .text-content {
+        margin: 15px 0;
+    }
+
+    .contact {
+        margin: 15px;
     }
 }
