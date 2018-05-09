@@ -173,3 +173,85 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    }
+
+    header nav {
+    width: 720px;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 4%;
+    }
+
+    header .logo {
+    align-self: center;
+    margin-left: 1%;
+    }
+
+    .cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: center;
+    }
+
+    .cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 40px;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 20px 35px 20px;
+    padding: 35px 20px;
+    font-size: 16px;
+    line-height: 18px;
+    }
+
+    .main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    }
+
+    .contact {
+    display: block;
+    margin-left: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
