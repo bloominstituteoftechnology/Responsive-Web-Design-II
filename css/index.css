@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -172,4 +172,131 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+@media (max-width: 768px) {
+
+	header {
+			width: 680px;
+	    display: flex;
+			flex-flow: column;
+	}
+
+	header nav {
+			margin-top: 35px;
+	    margin-left: 10px;
+			width: 725px;
+	    justify-content: space-between;
+	    display: flex;
+	}
+
+	header nav a {
+			text-decoration: none;
+	    color: #b0b0b0;
+	}
+
+	header nav a:hover {
+	    text-decoration: underline;
+	    color: black;
+	}
+
+	header .logo {
+	    align-self: center;
+			order: -1;
+	}
+
+	/* Call To Action (CTA) Styles */
+
+	.cta {
+	    display: flex;
+			width: 750px;
+	    margin-top: 72px;
+			padding-left: 80px;
+	    justify-content: center;
+	}
+
+	.cta .cta-text {
+	    font-size: 72px;
+	    text-align: center;
+	    letter-spacing: 5px;
+	    display: flex;
+	    justify-content: center;
+	    flex-flow: column;
+	    align-items: center;
+	    margin: 0 82px 0 0;
+	}
+
+	.cta .cta-text button {
+	    font-size: 16px;
+	    background: white;
+	    width: 170px;
+	    height: 32px;
+	    margin-top: 18px;
+	    cursor: pointer;
+	}
+
+	.cta .cta-text button:hover {
+	    background: black;
+	    color: white;
+	}
+
+	.cta img {
+			display: none;
+	}
+	/* Main Content Styles */
+
+	.main-content {
+	   border: none;
+		 margin: 35px 0 35px 0;
+	   padding: 35px 30px;
+	   font-size: 16px;
+	   line-height: 18px;
+	}
+
+	.main-content .top-content {
+			border-top: 2px black solid;
+	    display: flex;
+	    justify-content: space-around;
+			padding-top: 50px;
+			width: 715px;
+	}
+
+	.main-content .middle-img {
+			margin-left: -5px;
+			width: 720px;
+	}
+
+	.main-content .bottom-content {
+	    display: flex;
+	    justify-content: space-around;
+			height: 215px;
+			width: 715px;
+			border-bottom: 2px solid black;
+
+	}
+
+	.main-content .bottom-content p {
+	    padding-right: 20px;
+	}
+
+	/* Contact Styles */
+
+	.contact {
+		margin: -30px 30px;
+	}
+	.contact p {
+	}
+
+	body {
+		overflow-x:hidden;
+	}
+
+	/* Footer Styles */
+
+	footer {
+	    text-align: center;
+	    margin-top: 70px;
+			padding-right: 90px;
+	}
 }
