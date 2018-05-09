@@ -173,3 +173,77 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .code-snippet {
+        display: none;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    
+    header nav {
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header .logo {
+        margin: 5% 0 0 0;
+        align-self: center;
+    }
+
+    .cta {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    }
+
+    .cta .cta-text{
+        margin: 0%;
+    }
+
+    .main-content {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 75px 50px 35px 50px;
+        padding: 35px 0;
+        font-size: 16px;
+        line-height: 18px;
+     }
+
+     .main-content .top-content {
+         width: 100%;
+        display: flex;       
+    }
+    .main-content .text-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 2%;
+    }
+    
+     .main-content .middle-img {
+         width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact {
+        margin-left: 7%;
+    }
+
+    .contact p {
+        margin: 1% 0;
+    }
+
+}
