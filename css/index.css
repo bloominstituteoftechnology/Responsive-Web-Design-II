@@ -290,8 +290,6 @@ footer {
     .cta .cta-text {
         margin: 0;
     }
-    .cta .cta-text .cta-button {
-    }
     .cta img {
         display: none;
     }
@@ -306,4 +304,6 @@ footer {
 
 /* Mobile Breakpoint */
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+
+}
