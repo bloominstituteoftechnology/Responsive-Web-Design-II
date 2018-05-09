@@ -169,7 +169,61 @@ header .logo {
 
 /* Footer Styles */
 
-footer {
+.footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 400px; 
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border: 1px solid red;
+    }
+
+    header nav a {
+        width: 400px;
+    }
+}   
+
+/*Tablet*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    header {
+        width: 768px;
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 768px; 
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 768px;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
 }
