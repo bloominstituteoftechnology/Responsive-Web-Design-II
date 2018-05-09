@@ -173,3 +173,57 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+/*////MY CODE BELOW////*/
+/*TABLETS*/
+#deleteme {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+    header nav a {
+        width: 100%;
+        border: 1px solid black;
+        text-align: center;
+    }
+    header .logo {
+        align-self: center;
+    }
+    .cta {
+        align-self: center; 
+    }
+    .cta img {
+        display: none;
+    }
+    .middle-img {
+        width: 100%;
+    }
+
+}
+
+
+/* phone */
+@media(max-width: 400px) {
+    header nav {
+       flex-direction: column;
+    }
+    header nav a {
+        height: 50px;
+    }
+    
+}
