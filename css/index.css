@@ -263,7 +263,7 @@ footer {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     .container{
         width: 100%;
     }
@@ -344,7 +344,7 @@ footer {
     }
 
     .contact {
-        margin-left: 14%;
+        margin-left: 14%; 
     }
 
     .contact p {
