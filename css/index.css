@@ -277,6 +277,7 @@ footer {
         width:100%;
         display: flex;
         justify-content: center;
+        margin-right: 0px;
     }
 
     .cta img {
@@ -297,6 +298,9 @@ footer {
         padding-top: 20px;
     }
 
+    .text-content{
+        padding-left: 10px;
+    }
     .bottom-content {
         border-bottom: 2px solid black;
         padding-bottom: 40px;
