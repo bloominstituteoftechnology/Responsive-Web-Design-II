@@ -180,12 +180,20 @@ footer {
         width: 768px;
     }
     header{
-        flex-wrap: wrap;
+        flex-flow: column wrap;
     }
     header nav{
         width:768px;
-        padding: 0 20px;
+        align-content: flex-start;
+        padding: 0 10px;
     }
+
+    header .logo{
+        align-self: center;
+        flex-direction: column-reverse;
+        order:-4;
+    }
+
 }
 
 
