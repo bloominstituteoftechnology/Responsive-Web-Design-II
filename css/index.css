@@ -214,6 +214,10 @@ footer {
         margin-top: 15px;
     }
 
+    .main-content {
+        line-height: 1.2;
+    }
+
     .main-content .top-content {
         padding: 0 10px;
         justify-content: space-between;
@@ -239,11 +243,92 @@ footer {
     .main-content .bottom-content p {
         padding-right: 20px;
     }
+
+    .contact {
+        padding: 0 10px;
+    }
 }
 
 /* Phones */
 
 @media (max-width: 400px) {
+
+    .container {
+        width: 400px;
+    }    
+
+    header .logo {
+        margin: 20px 0 0 0;
+    }
+
+    header nav {
+        margin-top: 20px; 
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        padding: 20px 0;
+        border-top: 1px solid #808080;
+        text-align: center;
+        font-size: 125%;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid #808080;
+    }
+
+    .cta {
+        margin: 50px 0 0 0;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta .cta-text button {
+        margin-top: 15px;
+    }
+
+    .main-content {
+        margin: 75px 20px 35px;
+        padding: 50px 0 0;
+    }
+
+    .main-content .top-content {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main-content .top-content .text-content {
+        width: 100%;
+    }
+
+    .main-content .top-content p {
+        padding: 0 0 25px 0;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        margin: 15px auto 30px;
+    }
+
+    .main-content .bottom-content {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+    }
+
+    .main-content .bottom-content p {
+        padding: 0 10px 35px 0;
+    }
+
+    .contact {
+        padding: 0 20px;
+    }
     
 }
 
