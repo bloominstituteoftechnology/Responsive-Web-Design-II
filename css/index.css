@@ -173,3 +173,134 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+/* Media Queries */
+
+/* Mobile */
+@media (max-width: 400px){
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+    }
+
+    header img{
+        margin-top: 10px;
+    }
+
+    header nav {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a{
+        text-align: center;
+        padding: 19px;
+        font-size: 22px;
+        text-decoration: bold;
+    }
+
+    .cta {
+        margin-top: 48px;
+    }
+    
+    .cta .cta-text{
+        width:100%;
+        margin-right: 0;
+
+    }
+    
+    section.main-content{
+        flex-direction: column;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    .text-content{
+        padding-bottom: 20px;
+        margin-top: 14px;
+    }
+    
+    .middle-img {
+        width: 100%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Header */
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header img{
+        order: -1;
+        padding-right: 60px;
+
+    }
+
+    /* CTA */
+    .cta .cta-text{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta img {
+        align-self: center;
+    }
+
+    section img{
+        display: none;
+    }
+    .main-content {
+        padding: 20px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .top-content {
+        border-top: 2px solid black;
+        padding-top: 20px;
+    }
+
+    .bottom-content {
+        border-bottom: 2px solid black;
+        padding-bottom: 40px;
+    }
+    .middle-img {
+        width: 100%;
+    }
+    
+    .contact {
+        margin-left: 20px;
+    }
+}
