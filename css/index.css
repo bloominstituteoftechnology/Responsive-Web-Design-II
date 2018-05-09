@@ -187,6 +187,11 @@ footer {
         justify-content: space-evenly;
     }
 
+    header nav {
+        width: 100%;
+        padding: 0 24px;
+    }
+
     header .logo {
         order: -1;
         margin: 28px 0 0 0;
@@ -253,12 +258,22 @@ footer {
 
     .cta {
         margin-top: 0;
-        padding-top: 42px;
+        padding-top: 50px;
         border-top: 1px solid #b0b0b0;
+    }
+
+    .cta .cta-text button {
+        margin-top: 15px;
+    }
+
+    .main-content {
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .main-content .top-content {
         flex-direction: column;
+        margin-left: 2px;
     }
 
     .main-content .top-content .text-content {
