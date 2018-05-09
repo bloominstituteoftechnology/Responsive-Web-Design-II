@@ -173,3 +173,20 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        display: flex;
+        width: 100%;
+    }
+}
