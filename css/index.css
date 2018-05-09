@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -172,4 +172,138 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Tablet Display */
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 0 20px 0 20px;
+		/* border: 1px solid red; */
+	}
+
+	body .container header {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+			align-content:space-around;
+		}
+
+	.container header nav {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-between;
+		width: 100%;
+		margin: 40px 10px 0px 10px;
+	}
+
+	.container header nav a {
+		margin: 0 10px;
+	}
+
+	header .logo {
+		margin: 0;
+		align-self: center;
+	}
+
+	.cta {
+		display: flex;
+		justify-content: center;
+	}
+
+	.cta .cta-text {
+		margin: 0 45px 0 0;
+		padding-bottom: 0px;
+	}
+
+	.cta .cta-text button {
+		letter-spacing: .5px;
+		margin: 13px 0px 7px 0px;
+	}
+
+	.cta img {
+		display: none;
+	}
+
+	.main-content {
+		/* margin-bottom: 20px; */
+	}
+
+	.main-content img {
+		width: 100%;
+	}
+
+	footer {
+		margin-top: 0px;
+	}
+
+}
+/* Phone Display */
+@media (max-width: 400px) {
+	.container {
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		padding: 0 0;
+	}
+
+
+	.container header {
+		border: 1px grey solid;
+	}
+
+	body .container header .logo {
+		margin: 0;
+	}
+
+	.container header nav a {
+		text-align: center;
+		width: 100%;
+		border: 1px grey solid;
+		padding: 15px;
+		font-size: 20px;
+		margin: 0;
+	}
+
+	body .container header {
+		}
+
+	body .container header nav {
+	}
+
+	.main-content .top-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-content .top-content .text-content {
+		padding: 9px;
+		margin-top: 10px;
+	}
+
+	.main-content img {
+		padding: 0 11px;
+	}
+
+	.main-content .bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-content .bottom-content .text-content {
+		padding: 9px;
+	}
+
+	.main-content .bottom-content .text-content p {
+		margin: 14px 0px;
+	}
+
+	.contact {
+		padding-left: 10px;
+	}
+
+	footer {
+	    text-align: center;
+	    margin: 40px 0 20px;
+	}
 }
