@@ -131,6 +131,10 @@ header .logo {
     color: white;
 }
 
+.logo2 {
+    display:none;
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -185,7 +189,7 @@ footer {
     header {
         width: 100%;
         display: flex;
-        flex-flow: column;
+        flex-flow: column-reverse;
         justify-content: center;
     }
     
@@ -238,6 +242,17 @@ footer {
         justify-content: space-around;
     }
 
+    .bottom-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;    
+
+    }
+
+    .bottom-content .text-content {
+        margin-bottom: 2%;
+    }
+
     .contact {
         margin-left: 7%;
     }
@@ -246,4 +261,93 @@ footer {
         margin: 1% 0;
     }
 
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .code-snippet {
+        display: none;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: center;
+        border-bottom: 1px solid lightgrey;
+    }
+    
+    header nav {
+        display: flex;
+        margin-top: 40px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header nav a {
+        display: flex;
+        justify-content: center;
+        padding-top: 6%;
+        padding-bottom: 5%;
+        border-top:1px solid lightgrey;
+        margin: 0% 0%;
+
+
+    }
+
+    header .logo {
+        margin: 5% 0% -5% 0%;
+        align-self: center;
+    }
+
+    .cta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+
+    .cta .cta-text{
+        margin: 0%;
+    }
+
+    .main-content {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 75px 50px 35px 50px;
+        padding: 35px 0;
+        font-size: 16px;
+        line-height: 18px;
+     }
+
+     .main-content .top-content {
+         width: 100%;
+        display: flex;
+        flex-direction: column;
+              
+    }
+    .main-content .text-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 2%;
+        margin-top: .5%;
+        margin-bottom: 3%;
+    }
+    
+     .main-content .middle-img {
+         width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact {
+        margin-left: 14%;
+    }
+
+    .contact p {
+        margin: 1% 0;
+    }
 }
