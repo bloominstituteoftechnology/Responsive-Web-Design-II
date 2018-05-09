@@ -173,3 +173,71 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Tablet Styles */
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 3px 20px;
+	}
+	
+	header {
+		height: 68px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	header nav {
+		width: 768px;
+		display: flex;
+		align-self: flex-end;
+		justify-content: space-between;
+		padding:0 10px;
+	}
+	.logo {
+		display: flex;
+		order: -1;
+		align-self: flex-start;
+		padding-right: 90px;
+	}
+	
+	.cta img {
+		display: none;
+	}
+	
+	.cta .cta-text {
+		display: flex;
+		justify-content: center;
+		margin: 52px auto 0 auto;
+		padding-right: 42px;
+	}
+	
+	.cta .cta-text button {
+		font-size: 15.5px;
+		margin-top: 15px;
+	}
+	
+
+	.main-content .middle-img {
+		width: 100%
+	}
+	.main-content .top-content .text-content {
+		padding: 0 10px;
+	}
+	
+	.main-content .bottom-content .text-content {
+		padding: 0 10px;
+	}
+	
+	.contact {
+		padding: 10px;
+		border: 1px red solid;
+	}
+	
+	footer {
+		margin: 10px 0 45px;
+		border: 1px red solid;
+	}
+	
+}
