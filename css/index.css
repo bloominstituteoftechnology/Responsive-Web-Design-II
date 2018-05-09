@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -76,7 +76,7 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -134,7 +134,7 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
@@ -172,4 +172,90 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+
+/* Tablet Styles */
+
+@Media (max-width: 768px) {
+    .container {
+         width: 768px;
+         margin:auto;
+         background-color:
+         padding:5px;
+         margin-left: 8px;
+         ;
+
+
+
+ }
+
+
+ header {
+    margin-top: 32px;
+       display: flex;
+    flex-direction: column-reverse;
+
+}
+
+header nav {
+    display:flex;
+    width: 100%
+    justify-content: space-between;
+    margin-top: 35px;
+
+}
+
+header .logo{
+    margin-top:0px;
+    align-self: center;
+    margin-right: 90px;
+
+}
+
+header nav a{
+    width: 100%;
+    padding-left: 65px
+}
+
+.cta {
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-bottom: 70px;
+
+}
+.cta img{
+    display: none;
+}
+
+.main-content{
+    display: inline-flex;
+    width: 95%;
+    flex-flow: column;
+    padding-top: 20px;
+    margin-top: :20px;
+    padding: 25px;
+    justify-content: space-around;
+}
+
+.main-content .text-content{
+    margin-left: 12px ;
+    margin-right: 10px;
+
+}
+
+.main-content .middle-img{
+         max-width: 100%;
+     }
+
+.contact {
+    margin-left: 28px;
+}
+
+.footer{
+    margin-bottom: 32px;
+}
+
+
+
 }
