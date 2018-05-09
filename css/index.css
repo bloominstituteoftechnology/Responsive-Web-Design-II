@@ -343,6 +343,18 @@ footer {
         justify-content: space-around;
     }
 
+    .bottom-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;    
+
+    }
+
+    .bottom-content .text-content {
+        margin-bottom: 4%;
+    }
+
+
     .contact {
         margin-left: 14%; 
     }
