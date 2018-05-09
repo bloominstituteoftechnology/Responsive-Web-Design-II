@@ -180,6 +180,7 @@ footer {
 @media (max-width: 768px) {
     .container{
         width: 768px;
+        margin-left: 30px;
     }
     header{
         flex-flow: row wrap;
@@ -193,16 +194,24 @@ footer {
     }
 
     header .logo{
+        margin-right: 50px;
         justify-content: center;
         order:-1;
     }
     .cta {
+        margin-left: 100px;
         justify-content: center;
     }
     .cta img {
         display: none;
     }
 
+    .main-content{
+        margin-right: 30px;
+    }
+    .main-content .middle-img {
+        width: 738px;
+    }
 }
 
 
