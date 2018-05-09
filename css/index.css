@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -73,18 +73,23 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
     justify-content: space-between;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
 }
 
 header nav a:hover {
@@ -92,9 +97,14 @@ header nav a:hover {
     color: black;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+header div {
+    align-self: center;
+    margin: 0 0 0 0;
+    order: -1;
+    border: 1px solid black;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
 }
 
 /* Call To Action (CTA) Styles */
@@ -105,7 +115,12 @@ header .logo {
     justify-content: flex-end;
 }
 
+.cta img {
+    display: none;
+}
+
 .cta .cta-text {
+    width: 100%;
     font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
@@ -113,7 +128,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    /* margin: 0 82px 0 0; */
 }
 
 .cta .cta-text button {
@@ -137,24 +152,29 @@ header .logo {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 35px 0;
+   padding: 35px 20px;
    font-size: 16px;
    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+
+.text-content {
+    margin: 10px 0;
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .main-content .bottom-content p {
@@ -162,6 +182,9 @@ header .logo {
 }
 
 /* Contact Styles */
+.contact {
+    padding: 0 20px;
+}
 
 .contact p {
     margin: 15px 0;
@@ -172,4 +195,23 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (min-width: 768px) {
+    header nav {
+        flex-direction: row;
+    }
+
+    header nav a, header div {
+        border: none;
+    }
+
+    .main-content .top-content, .main-content .bottom-content {
+        flex-direction: row;
+    }
+
+    .text-content {
+        /* justify-content: space-between; */
+        margin-right: 10px; 
+    }
 }
