@@ -173,3 +173,63 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* css for Tablet */
+
+@media (max-width: 768px) {
+    /* *{
+      border: 1px solid black !important;
+    } */
+    
+    .container {
+      width: 768px;
+    margin: 20px;
+  }
+    header {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    
+    header .logo {
+      align-self: center;
+      margin: 10px 80px 20px 40px;
+    }
+    
+    header nav {
+        width: 720px;
+        margin: 15px 15px 10px 5px;
+        justify-content: space-between;
+    }
+    .cta img {
+      display: none;
+    }
+    
+    .cta {
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .main-content {
+        margin: 75px 0 55px 0;
+        padding: 30px 0;
+    }
+
+    .main-content .top-content {
+        height: 120px;
+    }
+
+    .main-content .middle-img {
+        height: 160px;
+        margin-bottom: 25px;
+    }
+    
+    footer {
+        margin-top: 20px;
+    }
+    }
+
+/* css for Phone */
+
+@media (max-width: 415px) {
+
+}
