@@ -259,7 +259,7 @@ footer {
     header nav {
         width: 100%;
         flex-direction: column;
-        margin-top: -10px;
+        margin-top: -15px;
     }
     
     header nav a {    
