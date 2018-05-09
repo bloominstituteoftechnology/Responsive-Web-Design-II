@@ -264,8 +264,18 @@ footer {
   .container {
     width: 100%;
   }
+  header {
+    flex-direction: column-reverse;
+  }
+  header .logo {
+    align-self: center;
+    margin-right: 75px;
+  }
+  header nav {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
-
 @media (max-width: 400px) {
   .container {
     width: 100%;
