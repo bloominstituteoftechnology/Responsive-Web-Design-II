@@ -222,37 +222,38 @@ footer {
     .main-content{
         align-self: center;
         margin-top: 60px;
-
+        width: 97%;
         margin-bottom: 0px;
         padding-bottom: 0px;
-        margin-left: 19px;
+        margin-left: 10px;
     }
 
     .main-content .top-content{
         flex-direction: row;
+        margin-left: 10px;
     }
 
-    /* .main-content .top-content .text-content{
-        margin-top: 35px;
+     .main-content .top-content .text-content{
+        margin-right: 10px;
     }
 
     .main-content .top-content .text-content p{
-        margin-top: 11px;
-    } */
+        margin-top: 10px;
+    } 
     
     .main-content .middle-img{
-        width: 100%;
-        margin-top: 30px;
+        margin-top: 20px;
         padding-top: 15px;
+        width: 100%;
     }
 
     .main-content .bottom-content{
-        flex-direction: column;
-        padding-bottom: 0px;
+        flex-direction: row;
+        margin-left: 10px;
     }
 
     .main-content .bottom-content .text-content{
-        margin-bottom: 42px;
+        margin-bottom: 60px;
     }
 
     .main-content .bottom-content .text-content h4{
@@ -266,8 +267,8 @@ footer {
     }
 
     .contact{
-        align-self:center;
-        margin-top:31px;
+        margin-left: 20px;
+        margin-top:30px;
         width: 360px;
         margin-bottom: 0;
     }
