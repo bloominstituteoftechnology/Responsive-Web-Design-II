@@ -249,30 +249,61 @@ footer {
 
 
     .main-content {
-        padding:30px;
+        padding:20px;
+        margin-bottom:0;
+        
+        
         
 
     }
 
     .main-content .middle-img {
-        width: 750px;
+        width: 758px;
         padding-bottom:30px;
         padding-right:31px;
+        margin-bottom: 0;
+        
     }
 
     .main-content .top-content {
+        margin-bottom:20px;
+        padding-top:10px;
+        display:flex;
+        justify-content: space-between;
+        
         
         
 
     }
+
+    .main-content .top-content .text1 {
+        padding-right: 40px;
+    }
+
+    .main-content .top-content .text1 h4 {
+        padding-left:10px;
+        
+    }
+    
 
     .main-content .top-content .text1 p {
-        padding-top:10px;
-    }
+        padding-left:10px;
+        margin-top:20px;
+        
+        
+       
+    
     }
 
     .main-content .top-content .text2 {
-        padding-left:20px;
+        padding-right:20px;
+        
+        
+    }
+
+    .main-content .top-content .text2 h4 {
+        padding-right:40px;
+        margin-right: 10px;
     }
 
     .main-content .top-content .text2 p {
@@ -280,10 +311,36 @@ footer {
     }
 
 
+    .main-content .bottom-content {
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .main-content .bottom-content .text1 {
+        
+    }
+
+    .main-content .bottom-content .text1 h4 {
+
+    }
+
+    .main-content .bottom-content .text1 p {
+        padding-top:5px;
+        padding-right:45px;
+        margin-bottom:20px;
+    }
 
 
 
-    
+    footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact {
+        padding-left:30px;
+        padding-top:20px;
+    }
 }
 
 /*CSS for Responsive Phone*/
