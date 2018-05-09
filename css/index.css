@@ -173,3 +173,46 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        background: orange;
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .cta img {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    header .logo{
+        display: flex;
+        justify-content: center;
+        order: -1;
+        margin-right: 110px;
+        
+    }
+    .main-content{
+        margin: 0 20px 0 20px;
+        margin-right: 20px;
+    }
+    header nav {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+}
+
+
+
+
+
+
