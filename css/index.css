@@ -307,6 +307,8 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     }
 
     .cta .cta-text{
@@ -316,7 +318,7 @@ footer {
     .main-content {
         border-top: 2px solid black;
         border-bottom: 2px solid black;
-        margin: 75px 40px 35px 40px;
+        margin: 50px 40px 35px 40px;
         padding: 35px 0;
         font-size: 16px;
         line-height: 18px;
