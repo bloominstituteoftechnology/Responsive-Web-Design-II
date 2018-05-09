@@ -177,7 +177,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        background: orange;
+       /* background: orange;*/
     }
     .cta{
         display: flex;
@@ -227,7 +227,7 @@ footer {
 @media (max-width: 400px) {
     .container {
         width: 100%;
-        background: yellow;
+        /*background: yellow;*/
     }
      header nav{
         width: 100%;
@@ -259,8 +259,17 @@ footer {
         flex-direction: column;
         padding: 10px 10px;
     }
-
-
+.main-content .bottom-content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    .main-content .bottom-content .text-content{
+        padding: 10px 10px;
+    }
+.main-content .top-content .text-content{
+        padding: 10px 10px;
+    }
 
 
 
