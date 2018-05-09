@@ -173,3 +173,46 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  header .logo {
+    order: -1;
+    align-self: center;
+    margin-right: 90px;
+    margin-top: 29px;
+  }
+
+  header nav {
+    align-self: center;
+    width: 92%;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .cta .cta-text {
+    margin-left: 43px;
+    margin-top: 1px;
+  }
+
+  .cta .cta-text button {
+    margin-top: 15px;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+}
+
