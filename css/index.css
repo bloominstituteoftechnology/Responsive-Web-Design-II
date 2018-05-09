@@ -177,9 +177,6 @@ footer {
 
 @media (max-width: 768) {
 
-    * {
-        border: 1px solid black !important;
-  }
     .container {
         width: 100%;
         max-width: 768px;
@@ -224,6 +221,10 @@ footer {
         margin: 0px 82px 0px 0px;
 }
 
+    .cta .cta-text img {
+        display: none;
+    }
+
     .main-content {
         border-top: 2px solid black;
         border-bottom: 2px solid black;
@@ -248,7 +249,7 @@ footer {
     .main-content .bottom-content {
         display: flex;
     }
-    
+
     footer {
         text-align: center;
         margin: 46px 110px 0px 0px;
