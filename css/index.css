@@ -205,6 +205,11 @@ footer {
         padding: 19px;
         font-size: 22px;
         text-decoration: bold;
+        border-top: 1px solid black;
+    }
+    
+    nav a:last-child{
+        border-bottom: 1px solid black;
     }
 
     .cta {
