@@ -276,13 +276,12 @@ footer {
         padding: 0 10px;
     }
     header {
-       flex-flow: column-reverse;
-       align-items: center;
+        flex-flow: column-reverse;
+        align-items: center;
     }
     header nav {
         width: 100%;
-     }
-   
+    }
     header .logo {
         align-self: center;
         margin: 28px 0 0 0;
@@ -301,22 +300,33 @@ footer {
     }
     .main-content .middle-img {
         display: flex;
-       width: 100%;
+        width: 100%;
     }
 }
 
 /* Mobile Breakpoint */
 
 @media (max-width: 400px) {
-    
+    .container {
+        padding: 0;
+    }
+    header {
+        justify-content: center;
+    }
+    header .logo {
+        margin: 20px 0;
+    }
     header nav {
         flex-flow: column;
-        align-items: center;
-
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
     header nav a {
-        padding: 20px 100%;
-        border-top: 1px solid black;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgb(53, 53, 53);
         font-size: 24px;
     }
     header nav a:last-child {
