@@ -174,7 +174,7 @@ footer {
     margin: 40px 0 20px;
 }
 
-@media (max-width:775) {
+@media (max-width:775px) {
     .container {
         max-width: 775px;
         margin: auto;
@@ -222,5 +222,8 @@ footer {
         height: 32px;
         margin-top: 15px;
         cursor: pointer;
+    }
+    .container .cta img {
+        display: none;
     }
 }
