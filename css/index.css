@@ -181,13 +181,13 @@ footer {
 @media (max-width: 400px){
     .container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        /* display: flex; */
+        /* flex-direction: column; */
     }
 
     /* Header */
     header {
-        display: flex;
+        /* display: flex; */
     }
 
     header img{
@@ -196,7 +196,7 @@ footer {
 
     header nav {
         margin-top: 20px;
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
     }
 
@@ -222,10 +222,6 @@ footer {
 
     }
     
-    section.main-content{
-        flex-direction: column;
-    }
-
     .top-content {
         flex-direction: column;
     }
@@ -249,19 +245,15 @@ footer {
 @media (max-width: 768px){
     .container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
     }
     
     /* Header */
     header {
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
     
     header nav{
-        display: flex;
         justify-content: space-around;
         width: 100%;
     }
@@ -275,13 +267,7 @@ footer {
     /* CTA */
     .cta .cta-text{
         width:100%;
-        display: flex;
-        justify-content: center;
         margin-right: 0px;
-    }
-
-    .cta img {
-        align-self: center;
     }
 
     section img{
