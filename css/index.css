@@ -173,3 +173,39 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+/*CSS for Responsive Tablet*/
+
+@media (max-width: 768px) {
+
+    .container {
+        width:768px;
+        background-color:green;
+        
+    
+    }
+
+    header {
+        display: flex;
+        flex-direction:column-reverse;
+        background-color:yellow;
+        align-items:center;
+    }
+
+    header nav {
+        border:1px solid red;
+
+    }
+
+    .logo {
+        border:1px solid red;
+    }
+
+
+
+    
+}
+
+/*CSS for Responsive Phone*/
+
