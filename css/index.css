@@ -260,5 +260,25 @@ footer {
   margin: 40px 0 20px;
 }
 
-/* For Tablet */ `@media (max-width: 768px) {...}` */
-/* For phone */ `@media (max-width: 400px) {...}` */
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        width: 768px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    /* Phone */
+    @media (max-width: 400px) {
+
+        .container {
+            width: 400px;
+
+        }
+
+        header {
+            flex-wrap: wrap;
+        }
