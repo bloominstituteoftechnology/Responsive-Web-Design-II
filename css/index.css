@@ -173,3 +173,17 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Tablet Breakpoint */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    
+}
+
+
+/* Mobile Breakpoint */
+@media (max-width: 400px) {
+   
+}
