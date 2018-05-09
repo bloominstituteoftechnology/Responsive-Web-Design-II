@@ -173,3 +173,49 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: auto;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    }
+
+    header .logo {
+            order: -1;
+            align-self: center;
+            margin-top: 27px;
+            margin-left: auto;
+            margin-right: auto;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    
+    header nav a {
+        align-self: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin-top: 20px;
+    }
