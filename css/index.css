@@ -183,9 +183,20 @@ footer {
 
 header{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 
 }
+
+.cta{
+    display: flex;
+    align-items: center;
+margin-right: 200px;
+}
+
+header nav{
+    margin-right: 100px;
+}
+
 }
 
 @media(max-width: 400px){
