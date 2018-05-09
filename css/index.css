@@ -2,7 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+* {
+	box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -232,12 +234,85 @@ footer {
 	
 	.contact {
 		padding: 10px;
-		border: 1px red solid;
 	}
 	
 	footer {
 		margin: 10px 0 45px;
-		border: 1px red solid;
 	}
 	
 }
+
+@media (max-width: 415px) {
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	
+	header {
+		width: 100%;
+		height: 370px;
+	}
+	
+	header nav {
+		display: flex;
+		flex-direction: column;
+		margin: 20px 0 30px 0;
+		padding: 0;
+		width: 100%;
+		height: 368px;
+
+	}
+	
+	header nav a {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 60px;
+		width: 100%;
+		border-top: 1px black solid;
+		font-size: 20px;
+	}
+	header nav a:last-child {
+		border-bottom: 1px black solid;
+	}
+	
+	header .logo {
+		margin: 20px auto 0 auto;
+		padding: 0 3px 0 0;
+
+		
+	}
+	
+	.cta .cta-text {
+		display: flex;
+		justify-content: center;
+		margin: 50px auto 0 auto;
+		padding: 0;
+	}
+	
+	.main-content {
+		margin: 75px 20px 25px 20px;
+		display: block;
+	}
+	
+	.main-content .top-content {
+		display: block;
+	
+	}
+	.main-content .top-content .text-content {
+		padding: 15px 0;
+	}
+	
+	.main-content .bottom-content {
+		display: block;
+	}
+	.main-content .bottom-content .text-content {
+		padding: 15px 0;
+	}
+	
+	.contact {
+		margin: 0 10px;
+	}
+	
+}
+
