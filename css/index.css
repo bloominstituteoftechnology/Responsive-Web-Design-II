@@ -175,23 +175,32 @@ footer {
     margin: 40px 0 20px;
 }
 
+/******** Tablet sizing ********/
+
 @media (max-width: 768px) {
     .container{
         width: 768px;
     }
     header{
-        flex-flow: column wrap;
+        flex-flow: row wrap;
+        justify-content: center;
     }
     header nav{
         width:768px;
-        align-content: flex-start;
-        padding: 0 10px;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 0 50px;
     }
 
     header .logo{
-        align-self: center;
-        flex-direction: column-reverse;
-        order:-4;
+        justify-content: center;
+        order:-1;
+    }
+    .cta {
+        justify-content: center;
+    }
+    .cta img {
+        display: none;
     }
 
 }
