@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -172,4 +173,65 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Responsive styles*/
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column-reverse;
+    }
+
+    header .logo {
+        align-self: center;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+    
+    header .logo {
+        margin: 20px 0 0 15px;
+    }
+
+    header nav {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid gray;
+        align-items: center;
+    }
+
+    header nav a {
+        border-top: 1px solid gray;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .cta {
+        margin-top: 
+    }
 }
