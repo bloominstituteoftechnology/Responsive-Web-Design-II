@@ -1,6 +1,6 @@
 # Responsive-Web-Design I & II
 
-We will be using the same codebase for Responsive Web Design I and II modules.  You have been provided design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder.  
+We will be using the same codebase for Responsive Web Design I and II modules.  You have been provided design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder.
 
 ## Project 1: Adaptive Layout
 
@@ -14,7 +14,7 @@ For project 1 you will build an adaptive website that has max-width breakpoints 
 Remember that an adaptive layout updates at breakpoints only.  Don't worry about fluid layouts for this challenge.
 
 *Tasks to complete:*
-* Introduce max-width media queries into your project at 400px, 768px.  
+* Introduce max-width media queries into your project at 400px, 768px.
 * Review each design file and adjust your styles at each breakpoint. **Hint: Change your container class to width: 100% at the 768px breakpoint.**
 * No horizontal scroll bars are acceptable at the exact breakpoint.  At 400px and 768px you should only see a vertical scrollbar.  Everything else is fine to have a horizontal scroll bar as this is not fully responsive.
 
@@ -25,7 +25,7 @@ Remember that an adaptive layout updates at breakpoints only.  Don't worry about
 
 ## Project 2: Fully Responsive Website
 
-Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a fully responsive layout!  
+Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a fully responsive layout!
 
 To accomplish this challenge you will need to incorporate your knowedges of max and min width, media queries, rem units, and percents.
 
