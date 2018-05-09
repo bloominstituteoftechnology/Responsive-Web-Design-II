@@ -174,6 +174,7 @@ footer {
     margin: 40px 0 20px;
 }
 
+
 /* Tablet styles */
 @media (max-width: 768px) {
 	.container {
@@ -189,7 +190,7 @@ footer {
 
 	header nav {
 		align-self: center;
-		width: 710px;
+		width: 708px;
 	}
 
 	header .logo {
@@ -241,4 +242,66 @@ footer {
 		width: 700px;
 		align-self: center;
 	}
+}
+
+
+/* Mobile Styles */
+
+@media (max-width: 400px) {
+	.container {
+
+	}
+
+	header nav {
+		display: flex;
+		flex-flow: column;
+		align-self: center;
+		justify-content: center;
+		align-items: center;
+		width: 400px;
+	}
+
+	header nav a {
+		width: 400px;
+		height: 50px;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+		padding-top: 15px;
+		text-align: center;
+	}
+
+	.main-content {
+		width: 360px;
+		height: 800px;
+		display: flex;
+		flex-flow: column;
+
+	}
+
+	.main-content .top-content {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		width: 380px;
+	}
+
+	.main-content .middle-img {
+		width: 360px;
+	}
+
+	.main-content .bottom-content {
+		display: flex;
+		flex-flow: column;
+		width: 380px;
+	}
+
+	.text-content {
+		margin-top: 20px;
+	}
+
+	.contact {
+		width: 350px;
+	}
+
+
 }
