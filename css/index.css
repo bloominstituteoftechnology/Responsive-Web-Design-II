@@ -68,52 +68,6 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
-/*Tablet*/
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    header nav {
-        width: 768px;
-        padding: 0 30px
-    }
-
-    header .logo {
-        order: -1;
-        display: block;
-        margin: 30px auto 0;
-    }
-
-    .cta {
-        justify-content: center;
-    }
-
-    .cta .cta-text {
-        margin: 0;
-    }
-
-    .cta img {
-        display: none;
-    }
-
-    .main-content img {
-        width: 100%;
-    }
-}
-
-/*Mobile*/
-@media (max-width: 400px) {
-    .container {
-        width: 100%
-    }
-}
-
 /* Header Styles */
 
 header {
@@ -218,4 +172,79 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/*Tablet*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    header .logo {
+        margin: 30px auto 0;
+    }
+
+    header nav {
+        width: 768px;
+        padding: 0 30px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content img {
+        width: 100%;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%
+    }
+
+    header {
+        flex-wrap: Wrap;
+        flex-direction: column-reverse;
+    }
+
+    header nav a {
+        border: 1px solid grey;
+        /* width: 100%;
+        align-items: center; */
+    }
+
+    .main-content .top-content {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .main-content .top-content .text-content {
+        padding: 15px 0;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        height: 440px;
+        justify-content: space-between;
+        border: 1px solid red;
+    }
 }
