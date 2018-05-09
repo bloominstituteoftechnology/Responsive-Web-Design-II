@@ -68,6 +68,52 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+/*Tablet*/
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        width: 768px;
+        padding: 0 30px
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content img {
+        width: 100%;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 400px) {
+    .container {
+        width: 100%
+    }
+}
+
 /* Header Styles */
 
 header {
