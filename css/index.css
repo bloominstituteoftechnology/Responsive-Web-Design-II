@@ -174,9 +174,10 @@ footer {
     margin: 40px 0 20px;
 }
 
-@media (max-width:775px) {
+@media (max-width:768px) {
     .container {
         max-width: 775px;
+        padding-left: 15px;
         margin: auto;
     }
     .container header {
@@ -225,5 +226,85 @@ footer {
     }
     .container .cta img {
         display: none;
+    }
+}
+@media (max-width:400px) {
+    .container {
+        max-width: 400px;
+        padding:0px;
+        margin: auto;
+    }
+    .container header {
+        padding:0px;
+        margin:0px;
+        width: 100%;
+        max-width: 415px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container  header nav {
+        margin-top: 20px;
+        width: 100%;
+        height: 400px;
+        max-width: 415px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+    .container  header .logo {
+        order: -1;
+        align-self: center;
+    }
+    .container  header nav a {
+        width:100%;
+        height:70px;
+        border-top: solid darkgray 1px;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }     
+    .container .cta {
+        display: flex;
+        margin-top: 0px;
+        padding-top: 30px;
+        border-top: solid darkgray 1px;
+        justify-content: center;
+    }   
+    .main-content {
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black;
+        margin: 75px 15px 35px 15px;
+        padding: 35px 0;
+        font-size: 16px;
+        line-height: 18px;
+     }
+     
+     .main-content .top-content {
+         display: flex;
+         height: 220px;
+         flex-direction: column;
+         justify-content: space-between;
+        
+     }
+     .main-content .middle-img {
+        display: flex;
+        width:100%;
+    }
+    .main-content .bottom-content {
+        display: flex;
+        height: 360px;
+        flex-direction: column;
+        justify-content: space-between;
+      
+    }
+    .main-content .bottom-content .text-content {
+        padding-top: 10px;
+    
+    }
+    .contact {
+        margin: 15px 15px;
     }
 }
