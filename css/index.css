@@ -176,7 +176,7 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* Tablet Styles */
+/* Tablet Styles -- EKM */
 
 @media (max-width: 768px) {
 	.container {
@@ -241,6 +241,84 @@ footer {
 	}
 	
 }
+/* Services Styles -- copy/pasted from solution on Codepen*/
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.3;
+}
+
+.services-content .services-header-img {
+    margin: 20px 0;
+}
+
+.services-content h1 {
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.services-content .services-text {
+ border-bottom: 1px solid black;
+ padding-bottom: 40px;
+ margin-bottom: 20px
+}
+
+.services-content .card {
+    padding: 20px;
+    border: 1px solid black;
+    width: 420px;
+    background: whitesmoke;
+    margin: 20px 0;
+}
+
+.services-content .card button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.services-content .card button:hover {
+    background: black;
+    color: white;
+} 
+
+.services-content .services-info ul {
+    margin: 20px;
+}
+
+.services-content .services-info ul li{
+    list-style: square;
+    padding: 5px;
+}
+
+.services-content .services-info {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid black; 
+    margin: 20px 0 35px 0;
+    padding-top: 40px; 
+}
+
+.services-content .services-info .facts {
+  width: 400px;
+  margin: 0 60px 20px 0;
+}
+
+.services-content .services-info .facts p {
+  margin-bottom: 20px;
+}
+
+.services-content .services-info .services-info-img {
+  width: 420px;
+  height: 300px;
+}
+
+/* Mobile Styles -- EKM */
 
 @media (max-width: 415px) {
 	.container {
@@ -314,5 +392,65 @@ footer {
 		margin: 0 10px;
 	}
 	
+}
+
+
+
+/* Services Tablet Styles --EKM */
+
+@media (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 3px 20px;
+	}
+	
+	header {
+		height: 68px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	header nav {
+		width: 768px;
+		display: flex;
+		align-self: flex-end;
+		justify-content: space-between;
+		padding:0 10px;
+	}
+	.logo {
+		display: flex;
+		order: -1;
+		align-self: flex-start;
+		padding-right: 90px;
+	}
+	.services-header-img {
+		width: 100%;		
+	}
+	
+	.services-content .card {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 350px;
+	}
+	
+	.services-content .services-info {
+		display: flex;
+		justify-content: space-between;
+		margin-right: 0;
+		border: 1px red solid;
+	}
+	.services-content .services-info .facts {
+  width: 340px;
+  margin: 0 0 20px 0;
+	}
+	
+	.services-content .services-info .services-info-img {
+  width: 360px;
+  height: 270px;
+}
+	footer {
+		margin: 10px 0 45px;
+	}
 }
 
