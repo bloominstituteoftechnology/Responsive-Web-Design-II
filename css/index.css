@@ -3,53 +3,51 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 html, body {
@@ -60,7 +58,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -71,18 +69,18 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-    width: 100%;
     display: flex;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 40px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
+    font-size: 1.5rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -93,8 +91,7 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3% 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,21 +103,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 70%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -134,17 +131,16 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 1.6rem;
+    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
-    justify-content: space-around;
 }
 
 .main-content .middle-img {
@@ -154,7 +150,6 @@ header .logo {
 
 .main-content .bottom-content {
     display: flex;
-    justify-content: space-around;
 }
 
 .main-content .bottom-content p {
@@ -170,6 +165,108 @@ header .logo {
 /* Footer Styles */
 
 footer {
+    font-size: 1.6rem;
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    header nav {
+        width: 100%;
+        padding: 0 3.4%;
+    }
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+    .cta {
+        justify-content: center;
+    }
+    .cta .cta-text {
+        margin: 0;
+    }
+    .cta img {
+        display: none;
+    }
+    .main-content .middle-img {
+        width: 100%;
+    }
+    .main-content {
+        margin: 75px 2.3% 35px;
+    }
+    .text-content {
+        margin: 0 1.1%;
+    }
+    .contact {
+        font-size: 1.6rem;
+        margin: 0 3.4%;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        justify-content: center;
+    }
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+    header nav a:hover {
+        background: gray;
+    }
+    header .logo {
+        margin: 20px 0;
+    }
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+    .cta img {
+        max-width: 80%;
+    }
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+    .text-content {
+        margin: 0;
+    }
+    .contact {
+        font-size: 1.6rem;
+        margin: 20px;
+    }
 }
