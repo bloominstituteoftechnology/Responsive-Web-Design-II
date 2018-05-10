@@ -50,7 +50,10 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 html, body {
@@ -65,8 +68,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Header Styles */
@@ -74,18 +78,19 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 40px;
+    width: 69.31%;
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
     text-decoration: none;
-    color: #b0b0b0;
+    color: grey;
 }
 
 header nav a:hover {
@@ -94,8 +99,8 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+	display: flex;
+	margin: 28px 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -107,39 +112,38 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 10.889% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 60%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.cta .cta-text img {
+    display: none;
 }
 
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   padding: 40px 0;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -159,7 +163,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.65%;
 }
 
 /* Contact Styles */
@@ -172,21 +176,26 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px auto;
+    font-size: 1.6rem;
 }
 
 /* Tablet */
-@media (max-width: 768) {
+@media (max-width: 768px) {
 
     header nav {
-        width: 768px;
+        width: 100%;
         padding: 0 30px;
+        display: flex;
+        font-size: 1.6rem;
+        /* flex-flow: row; */
     }
 
     header .logo {
         order: -1;
-        display: block;
-        margin: 30px auto 0;
+        /* display: block; */
+        width: 25%;
+        margin: 30px 0 0 290px;
     }
 
     .cta {
@@ -194,7 +203,7 @@ footer {
     }
     
     .cta .cta-text {
-        margin: 0;
+        margin: 0px 2.60% 0px 0px;
     }
 
     .cta img {
@@ -206,7 +215,7 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 75px 2.60% 4.557%;
     }
 
     .text-content {
@@ -214,7 +223,9 @@ footer {
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 30px 0 0 2.60%;
+        padding: 0;
+        font-size: 1.6rem;
     }
 }
 
@@ -222,18 +233,20 @@ footer {
 @media (max-width: 400px) {
 
     .container {
-        width: 400px;
+        width: 100%;
     }
 
     header {
         justify-content: center;
+        flex-flow: column;
+        /* font-size: 1.6rem; */
     }
 
     header nav {
         width: 100%;
-        flex-direction: column;
         margin: 0;
-        padding: 0;
+        flex-flow: column;
+        padding: 0px;
     }
 
     header nav a {
@@ -241,7 +254,7 @@ footer {
         display: block;
         text-align: center;
         padding: 20px 0;
-        font-size: 20px;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
@@ -254,7 +267,9 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+    	display: block;
+    	margin: 20px auto;
+    	width: 45%;
     }
 
     .cta {
@@ -285,5 +300,6 @@ footer {
 
     .contact {
         margin: 20px;
+        font-size: 1.6rem;
     }
 }
