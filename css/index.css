@@ -106,7 +106,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;                 /*72px;*/
     text-align: center;
     letter-spacing: 5px;
     display: flex;
