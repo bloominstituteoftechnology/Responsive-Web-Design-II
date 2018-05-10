@@ -173,3 +173,66 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+/* Mobile */
+/* @media (max-width: 400px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header nav {
+        width: 400px; 
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border: 1px solid red;
+    }
+    header nav a {
+        width: 400px;
+    }
+    
+}    */
+/*Tablet*/
+@media (max-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 768px;
+        padding: 0 30px;
+    }
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
+    .cta img {
+        display: none;
+    }
+    .main-content .middle-img {
+       width: 100%;
+    }
+    .main-content {
+       margin: 75px 20px 35px;
+    }
+    .text-content {
+        margin: 0 10px;
+    }
+    .contact {
+        margin: 0 30px;
+    }
+}
