@@ -57,6 +57,14 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html { 
+    font-size: 62.5%; 
+} 
+
+body { 
+    font-size: 1.6rem; 
+} 
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -64,7 +72,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -76,8 +85,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin: 40px 0 0 0; 
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,35 +103,35 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.18% 0 0 auto;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin: 72px 0 0 0;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     cursor: pointer;
 }
 
@@ -138,11 +147,11 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
 
-.main-content .top-content {
+.main-content .top-content, .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
 }
@@ -152,13 +161,8 @@ header .logo {
     margin: 30px auto;
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding: 0 6.85% 0 0;
 }
 
 /* Contact Styles */
@@ -173,3 +177,164 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+/* Tablets */
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 728px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header .logo {
+        align-self: center;
+        margin: 30px 0 0 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin: 0 5.63% 0 0;
+    }
+
+    .cta .cta-text button {
+        margin: 15px 0 0 0;
+    }
+
+    .main-content {
+        line-height: 1.2;
+    }
+
+    .main-content .top-content, .main-content .bottom-content {
+        padding: 0 1.37%;
+        justify-content: space-between;
+    }
+
+    .main-content .top-content .text-content {
+        width: 47.39%;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 30.49%;
+    }
+
+    .main-content .bottom-content p {
+        padding-right: 20px;
+    }
+
+    .contact {
+        padding: 0 1.37%;
+    }
+}
+
+/* Phones */
+
+@media (max-width: 400px) {
+
+    .container {
+        max-width: 400px;
+    }    
+
+    header .logo {
+        margin: 20px 0 0 0;
+    }
+
+    header nav {
+        margin: 20px 0 0 0; 
+        width: 100%;
+        flex-direction: column;
+    }
+
+    header nav a {
+        padding: 20px 0;
+        border-top: 1px solid #808080;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid #808080;
+    }
+
+    .cta {
+        margin: 50px 0 0 0;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta .cta-text button {
+        margin: 15px 0 0 0;
+    }
+
+    .main-content {
+        margin: 75px 5% 35px;
+        padding: 50px 0 0;
+    }
+
+    .main-content .top-content {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main-content .top-content .text-content {
+        width: 100%;
+    }
+
+    .main-content .top-content p {
+        padding: 0 0 25px 0;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        margin: 15px auto 30px;
+    }
+
+    .main-content .bottom-content {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+    }
+
+    .main-content .bottom-content p {
+        padding: 0 2.77% 35px 0;
+    }
+
+    .contact {
+        padding: 0 20px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
