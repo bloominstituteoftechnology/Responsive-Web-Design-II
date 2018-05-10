@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -76,8 +77,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.546%; 
+    width: 69.3181%;
     justify-content: space-between;
     display: flex;
 }
@@ -85,6 +86,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -94,35 +96,39 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.183% 0 0 10.340909%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.181818%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.318181812% 0 0;
+}
+
+.cta .cta-text h1 {
+    letter-spacing: .1rem;
+    margin-bottom: 3.425%;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: .1rem double black;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    padding: 2.5% 15%;
+    margin-top: 3.4234851%;
     cursor: pointer;
 }
 
@@ -134,12 +140,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   border-top: 0.2rem solid black; 
+   border-bottom: 0.2rem solid black;
+   margin: 8.5227272% 0 3.97727272% 0;
+   padding: 3.97727272% 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -147,9 +153,13 @@ header .logo {
     justify-content: space-around;
 }
 
+.main-content .top-content .text-content p {
+    padding-top: 2.75%;
+}
+
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.4090909% auto;
 }
 
 .main-content .bottom-content {
@@ -158,18 +168,161 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 6.818026%;
 }
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+}
+
+.contact h4 {
+    margin-bottom: 1.136%;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin: 1.7045% 0;
 }
 
 /* Footer Styles */
 
 footer {
+    font-size: 1.6rem;
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.545454% 0 2.265%;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    header nav {
+        width: 100%;
+        padding: 0 2.6%;
+    }
+
+    header .logo {
+        order: -1;
+        margin: 3.64583% 0 0 0;
+
+    }
+
+    .cta {
+        justify-content: center;
+        margin-top: 10.25%;
+        margin-right: 4.25%;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+        padding-bottom: 3%;
+    }
+
+    .cta .cta-text button {
+        margin-top: 4.75%;
+        margin-right: 2.25%;
+
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        margin: 7% 1% 4.5572916% 1%;
+        padding-bottom: 6.5%;
+    }
+
+    .main-content .top-content {
+        padding: 1% 2%;
+    }
+
+    .main-content .middle-img {
+        max-width: 98%;
+    }
+
+    .main-content .bottom-content .text-content h4 {
+        letter-spacing: .1rem;
+        margin-left: 8.24198%;
+        margin-bottom: 4.120992%;
+    }
+
+    .main-content .bottom-content .text-content p {
+        padding: 0 8.24198%;
+    }
+
+    .contact {
+        margin-top: 5%;
+        margin-left: 2.5%;
+    }
+
+    footer {
+        margin-top: 5.75%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+    header nav {
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    header .logo {
+        margin-top: 5%;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: #b0b0b0;
+        text-align: center;
+        border-top: .1rem solid #b0b0b0;
+        padding: 5% 0;
+        font-size: 2rem;
+    }
+
+    .cta {
+        margin-top: 0;
+        padding-top: 12.5%;
+        border-top: .1rem solid #b0b0b0;
+    }
+
+    .cta .cta-text button {
+        margin-top: 5.1352276%;
+    }
+
+    .main-content {
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        margin-left: 0.525%;
+    }
+
+    .main-content .top-content .text-content {
+        margin: 2.645432% 0;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    .main-content .bottom-content .text-content {
+        margin: 2.6315789% 0;
+    }
+
 }
