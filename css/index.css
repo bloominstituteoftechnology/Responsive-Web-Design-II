@@ -52,10 +52,6 @@ table {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -68,8 +64,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 /* Header Styles */
@@ -124,9 +125,9 @@ header .logo {
     border: 1px double black;
     font-size: 1.6rem; /*16px*/
     background: white;
-    width: /*19.318%;*/ 170px;
-    height: 3.636%; /*32px;*/
-    margin-top: 10px;
+    width: 170px;
+    height: 32px;
+    margin-top: 1.136%; /*10px*/
     cursor: pointer;
 }
 
@@ -140,10 +141,10 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   margin: /*8.523% 0 3.977% 0;*/ 75px 0 35px 0;
+   padding: 3.977% 0; /*35px 0;*/
+   font-size: 1.6rem; /*16px;*/
+   line-height: 1.8rem; /*18px*/
 }
 
 .main-content .top-content {
@@ -153,7 +154,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.409% auto; /*30px auto;*/
 }
 
 .main-content .bottom-content {
@@ -162,29 +163,28 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%; /*20px;*/
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.705% 0; /*15px 0;*/
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.545% 0 2.273%; /*40px 0 20px;*/
 }
 
 /*Tablet*/
 
 @media (max-width: 768px) {
     .container {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 1.953%; /*15px;*/
+        padding-right: 1.953%; /*15px;*/
     }
 
     header {
@@ -194,12 +194,12 @@ footer {
 
     header .logo {
         display: block;
-        margin: 30px auto 0;
+        margin: 3.906% auto 0; /*30px auto 0;*/
     }
 
     header nav {
-        width: 768px;
-        padding: 0 30px;
+        width: 100%;
+        padding: 0 3.906%; /*0 30px;*/
     }
 
     .cta {
@@ -214,8 +214,24 @@ footer {
         display: none;
     }
 
+    .main-content .top-content {
+        justify-content: space-between;
+    }
+
+    .main-content .top-content .text-content {
+        width: 48.047%; /* 369px */  
+    }
+
     .main-content img {
         width: 100%;
+    }
+
+    .main-content .bottom-content {
+        justify-content: space-between;
+    }
+
+    .main-content .bottom-content .text-content{
+        width: 30.729%; /*236px*/
     }
 }
 
@@ -223,7 +239,6 @@ footer {
 
 @media (max-width: 400px) {
     .container {
-        width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
@@ -235,7 +250,7 @@ footer {
     header nav {
         flex-direction: column;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 2.5%; /*10px;*/
         padding: 0;
     }
 
@@ -244,7 +259,7 @@ footer {
         display: block;
         border-bottom: 1px solid #b0b0b0;
         text-align: center;
-        padding: 10px 0;
+        padding: 2.5% 0; /*10px 0;*/
         margin: 0;
     }
 
@@ -257,16 +272,16 @@ footer {
     }
 
     header .logo {
-        margin: 20px auto 0;
+        margin: 5% auto 0; /*20px auto 0;*/
     }
 
     .cta {
-        margin-top: 35px;
+        margin-top: 8.75%; /*35px;*/
     }
     
     .main-content {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 3.75%; /*15px;*/
+        margin-right: 3.75%; /*15px;*/
     }
 
     .main-content .top-content {
@@ -275,17 +290,17 @@ footer {
     }
 
     .main-content .top-content .text-content {
-        padding: 15px 0;
+        padding: 3.75% 0; /*15px 0;*/
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
-        height: 420px;
+        height: 39rem; /*390px;*/
         align-content: space-between;
     }
 
     .contact {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 3.75%; /*15px;*/
+        margin-right: 3.75%; /*15px;*/
     }
 }
