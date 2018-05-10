@@ -344,6 +344,9 @@ footer {
     header nav a:last-child {
         border-bottom: 1px solid black;
     }
+    .cta .cta-text {
+        font-size: 5.4rem;
+    }
     .main-content .top-content,
     .main-content .bottom-content {
         flex-flow: column wrap;
