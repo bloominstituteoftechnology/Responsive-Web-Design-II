@@ -219,7 +219,7 @@ footer {
 
 @media (max-width: 400px) {
     .container {
-        width: 400px;
+        width: 100%;
         padding-left: 0;
         padding-right: 0;
     }
@@ -233,7 +233,6 @@ footer {
         width: 100%;
         margin-top: 10px;
         padding: 0;
-        border: 1px solid red;
     }
 
     header nav a {
@@ -243,7 +242,6 @@ footer {
         text-align: center;
         padding: 10px 0;
         margin: 0;
-
     }
 
     header nav a:first-child {
@@ -255,7 +253,16 @@ footer {
     }
 
     header .logo {
-        margin: 0 auto 0;
+        margin: 20px auto 0;
+    }
+
+    .cta {
+        margin-top: 35px;
+    }
+    
+    .main-content {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .main-content .top-content {
@@ -271,5 +278,10 @@ footer {
         flex-wrap: wrap;
         height: 420px;
         align-content: space-between;
+    }
+
+    .contact {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
