@@ -226,7 +226,7 @@ footer {
 @media (max-width: 400px) {
 
     .container {
-        width: 400px;
+        width: 45.45%;
     }
 
     header {
@@ -258,11 +258,11 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+        margin: 2.27% 0;
     }
 
     .cta {
-        margin-top: 50px;
+        margin-top: 5.68%;
         flex-flow: column;
         align-items: center;
     }
@@ -288,7 +288,7 @@ footer {
     }
 
     .contact {
-        margin: 20px;
+        margin: 2.27%;
     }
 }
 
