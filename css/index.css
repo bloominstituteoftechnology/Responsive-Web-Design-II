@@ -119,7 +119,7 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 58.19%;             /*170px;*/
+    width: 58.19%;                    /*170px;*/
     height: 32px;
     margin-top: 3.42%;                /*10px;*/
     cursor: pointer;
@@ -135,8 +135,8 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   margin: 8.52% 0% 3.97% 0%;         /*75px 0 35px 0;*/
+   padding: 3.97% 0%;                  /*35px 0;*/
    font-size: 16px;
    line-height: 18px;
    
