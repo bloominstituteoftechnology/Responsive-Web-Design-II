@@ -189,6 +189,7 @@ footer {
     }
 
     header .logo {
+        display: block;
         margin: 30px auto 0;
     }
 
@@ -218,18 +219,43 @@ footer {
 
 @media (max-width: 400px) {
     .container {
-        width: 100%
+        width: 400px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    header {
+        justify-content: center;
     }
 
-    header {
-        flex-wrap: Wrap;
-        flex-direction: column-reverse;
+    header nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        padding: 0;
+        border: 1px solid red;
     }
 
     header nav a {
-        border: 1px solid grey;
-        /* width: 100%;
-        align-items: center; */
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #b0b0b0;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid grey;
+    }
+
+    header nav a:hover {
+        background: grey;
+    }
+
+    header .logo {
+        margin: 0 auto 0;
     }
 
     .main-content .top-content {
@@ -243,8 +269,7 @@ footer {
 
     .main-content .bottom-content {
         flex-wrap: wrap;
-        height: 440px;
-        justify-content: space-between;
-        border: 1px solid red;
+        height: 420px;
+        align-content: space-between;
     }
 }
