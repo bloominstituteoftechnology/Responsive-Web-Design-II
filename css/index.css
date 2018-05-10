@@ -54,6 +54,7 @@ table {
 
 html, body {
     height: 100%;
+		font-size: 62.5%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -66,6 +67,7 @@ h1, h2, h3, h4, h5 {
 .container {
     width: 880px;
     margin: auto;
+		font-size: 1.6rem;
 }
 
 /* Header Styles */
@@ -77,7 +79,8 @@ header {
 
 header nav {
     margin-top: 40px;
-    width: 610px;
+    /* width: 610px; */
+		width: 69.31%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +97,11 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    /* margin: 28px 0 0 91px; */
+		margin-top: 28px;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-left: 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -107,20 +114,27 @@ header .logo {
 
 .cta .cta-text {
     font-size: 72px;
+		font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    /* margin: 0 82px 0 0; */
+		margin-top: 0;
+		margin-right: 9.31%;
+		margin-bottom: 0;
+		margin-left: 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 16px;
+		font-size: 1.6rem;
     background: white;
-    width: 170px;
+    /* width: 170px; */
+		width: 58.19%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -139,6 +153,7 @@ header .logo {
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
+	 font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -158,7 +173,8 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    /* padding-right: 20px; */
+		padding-right: 12.14%;
 }
 
 /* Contact Styles */
@@ -178,8 +194,7 @@ footer {
 @media (max-width: 768px) {
 	.container {
 		width: 100%;
-		padding: 0 20px 0 20px;
-		/* border: 1px solid red; */
+		padding: 0 2.60%;
 	}
 
 	body .container header {
@@ -194,11 +209,16 @@ footer {
 		flex-flow: row wrap;
 		align-content: space-between;
 		width: 100%;
-		margin: 40px 10px 0px 10px;
+		/* margin: 40px 10px 0px 10px; */
+		margin-top: 40px;
+		margin-right: 1.40%
+		margin-bottom: 0px;
+		margin-left: 1.40%
 	}
 
 	.container header nav a {
-		margin: 0 10px;
+		/* margin: 0 10px; */
+		margin: 0 1.40%;
 	}
 
 	header .logo {
@@ -212,13 +232,17 @@ footer {
 	}
 
 	.cta .cta-text {
-		margin: 0 45px 0 0;
+		/* margin: 0 45px 0 0; */
+		margin-top: 0;
+		margin-right: 6.30%;
+		margin-bottom: 0;
+		margin-left: 0;
 		padding-bottom: 0px;
 	}
 
 	.cta .cta-text button {
 		letter-spacing: .5px;
-		margin: 13px 0px 7px 0px;
+		margin: 13px 0px 7px;
 	}
 
 	.cta img {
@@ -247,10 +271,21 @@ footer {
 		padding: 0 0;
 	}
 
+	header {
+		justify-content: center;
+	}
 
 	.container header {
-		border: 1px grey solid;
+		/* border: 1px grey solid; */
 	}
+
+	body .container header {
+		}
+
+	body .container header nav {
+		margin: 0;
+		padding: 0;
+		}
 
 	body .container header .logo {
 		margin: 0;
@@ -259,16 +294,26 @@ footer {
 	.container header nav a {
 		text-align: center;
 		width: 100%;
-		border: 1px grey solid;
-		padding: 15px;
+		border-bottom: 1px grey solid;
+		padding: 15px 3.91% 15px;
 		font-size: 20px;
 		margin: 0;
 	}
 
-	body .container header {
-		}
+	header nav a:first-child {
+		border-top: 1px solid grey;
+	}
 
-	body .container header nav {
+	header .logo {
+		margin: 20px 0;
+	}
+
+	.cta .cta-text {
+		text-align: center;
+	}
+
+	.main-content {
+		padding: 35px 2.59%;
 	}
 
 	.main-content .top-content {
@@ -277,12 +322,12 @@ footer {
 	}
 
 	.main-content .top-content .text-content {
-		padding: 9px;
+		padding: 9px 2.46%;
 		margin-top: 10px;
 	}
 
 	.main-content img {
-		padding: 0 11px;
+		padding: 0 2.85%;
 	}
 
 	.main-content .bottom-content {
@@ -291,7 +336,7 @@ footer {
 	}
 
 	.main-content .bottom-content .text-content {
-		padding: 9px;
+		padding: 9px 2.46%;
 	}
 
 	.main-content .bottom-content .text-content p {
@@ -299,11 +344,11 @@ footer {
 	}
 
 	.contact {
-		padding-left: 10px;
+		padding-left: 2.59%;
 	}
 
 	footer {
-	    text-align: center;
-	    margin: 40px 0 20px;
+	   text-align: center;
+	   margin: 40px 0 20px;
 	}
 }
