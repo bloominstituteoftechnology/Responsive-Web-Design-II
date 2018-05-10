@@ -197,12 +197,13 @@ footer {
     header .logo {
         order: -1;
         display: block;
-        margin: 30px auto 0;
+        margin: 3.9% auto 0;
     }
 
     .cta {
         justify-content: center;
     }
+
     .cta .cta-text {
         margin: 0;
     }
@@ -212,21 +213,21 @@ footer {
     }
 
     .main-content {
-        margin: 75px 20px 35px;
+        margin: 9.8% 2.6% 4.56%;
      }
  
      .text-content {
-         margin: 0 10px;
+         margin: 0 1.3%;
      }
  
      .contact {
-         margin: 0 30px;
+         margin: 0 3.91%;
      }
 }
 /* Phone */
 @media (max-width:400px) {
     .container {
-        width: 400px;
+        width: 100%;
     }
     
     header {
