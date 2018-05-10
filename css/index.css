@@ -205,7 +205,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -217,7 +217,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -337,7 +337,7 @@ footer {
         width: 100%;
         text-align: center;
         border-top: 1px solid rgb(53, 53, 53);
-        font-size: 24px;
+        font-size: 2.4rem;
     }
     header nav a:last-child {
         border-bottom: 1px solid black;
