@@ -227,3 +227,40 @@ footer {
   }
 }
 
+@media (max-width: 400px) {
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 100%;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
+
+  header nav a {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 5% 0;
+  }
+
+  .main-content { 
+    margin: 11.5% 5%;
+  }
+
+  .main-content .top-content,
+  .main-content .bottom-content {
+     display: block; 
+  }
+
+  .main-content .text-content {
+    padding: 3.5% 0;
+  }
+
+  .main-content .middle-img {
+    width: 100%;
+}
