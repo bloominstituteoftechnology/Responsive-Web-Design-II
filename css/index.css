@@ -68,6 +68,10 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 /* Header Styles */
 
 header {
@@ -83,6 +87,7 @@ header nav {
 }
 
 header nav a {
+    font-size: 1.6rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -161,13 +166,20 @@ header .logo {
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+}
+
 .contact p {
+    font-size: 1.6rem;
     margin: 15px 0;
+   
 }
 
 /* Footer Styles */
 
 footer {
+    font-size: 1.6rem;
     text-align: center;
     margin: 40px 0 20px;
 }
@@ -189,11 +201,13 @@ footer {
     }
 
     header .logo {
+        padding-left: 5%;
         margin: 30px auto 0;
     }
 
    .cta {
        justify-content: center;
+       padding-right: 3%;
     }
 
     .cta .cta-text {
