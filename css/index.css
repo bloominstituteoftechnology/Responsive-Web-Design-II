@@ -183,7 +183,7 @@ header .logo {
 
 @media (max-width: 768px) {
     .container {
-        width: 768px;
+        width: 100%;
     }
 
     header {
@@ -228,6 +228,7 @@ header .logo {
 
     .text-content {
         margin: 0 1.37%;
+        line-height: 21px;
     }
 
     .contact {
@@ -237,10 +238,7 @@ header .logo {
 
 /* Mobile */
 @media (max-width: 400px) {
-    .container {
-        width: 400px;
-    }
-
+    
     header {
         justify-content: center;
     }
@@ -254,19 +252,18 @@ header .logo {
 
     header nav a {
         width: 100%;
-        display: block;
         text-align: center;
         padding: 20px 0;
         font-size: 2rem;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid black;
     }
 
     header nav a:first-child {
-        border-top: 1px solid gray;
+        border-top: 1px solid black;
     }
 
     header nav a:hover {
-        background: gray;
+        background: black;
     }
 
     header .logo {
@@ -286,20 +283,16 @@ header .logo {
 
     .main-content .top-content {
         justify-content: space-around;
-        flex-direction: column;
+        flex-wrap: wrap;
         height: 300px;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
-        align-content: space-between;
+        align-content: space-around;
         height: 440px;
+        line-height: 35px;
     }
-
-    .text-content {
-        margin: 0;
-    }
-
     .contact {
         margin: 20px 4.54%;
     }
