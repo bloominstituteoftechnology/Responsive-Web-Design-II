@@ -212,7 +212,7 @@ footer {
     }
 
     header nav a{
-        margin: 0px 5.2%;
+        /* margin: 0px 5.2%; */
     }
     .cta {
         display: flex;
