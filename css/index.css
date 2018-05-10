@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -79,7 +79,7 @@ header {
 
 header nav {
     margin-top: 40px;
-    width: 76%;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
     font-size: 1.4rem;
@@ -117,7 +117,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.31% 0 0;
 }
 
 .cta .cta-text button {
@@ -162,7 +162,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;
 }
 
 /* Contact Styles */
@@ -211,7 +211,7 @@ header nav {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 50px 0 91px;
+    margin: 28px 6.51% 0 11.8%;
     order: -1;
 }
 
@@ -233,14 +233,14 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 70px;
+    margin: 0 10.68% 0 9.11%;
 }
 /*--Main Content (768)*/
 
 .main-content {
    border-top: 2px solid black;
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 35px;
+   margin: 75px 0 35px 4.55%;
    padding: 35px 0;
    font-size: 1.6rem;
    line-height: 18px;
@@ -248,12 +248,12 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
-    width: 700px;
+    width: 93.8%;
 }
 /* Contact Styles(400px) */
 
 .contact {
-    margin: 15px 0 0 35px;
+    margin: 15px 0 0 4.55%;
 }
 
 }
