@@ -177,6 +177,7 @@ header .logo {
 
 footer {
     text-align: center;
+    font-size: 1.6rem;
     margin: 40px 0 20px;
 }
 
@@ -285,7 +286,11 @@ footer {
         .cta img {
             max-width: 80%;
         }
-    
+        
+        .main-content {
+            padding: 5.2% 0 0 2.6%;
+        }
+
         .main-content .top-content {
             justify-content: space-around;
             flex-direction: column;
@@ -303,6 +308,6 @@ footer {
         }
     
         .contact {
-            margin: 20px;
+            margin: 2.6%;
         }
     }
