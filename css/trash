@@ -1,0 +1,117 @@
+header {
+    padding-left:130px;
+    width: 100%;
+    height:40px;
+    display: flex;
+    border:5px dotted blue;
+    flex-wrap:wrap;
+}
+
+header nav {
+    margin: 100px 0 0 0; 
+    width: 610px;
+    height:30px;
+    justify-content: space-between;
+    display: flex;
+    border:1px solid red;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    padding-left:50px;
+    justify-content: center;
+    align-self: center;
+    margin: 28px 0 0 91;
+    border:3px solid red;
+    order:-1;
+    flex-direction:column-reverse;
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 110px;
+    margin-left:60px;
+    padding: 40px;
+    border: 5px dotted purple;
+    flex-wrap: wrap;
+}
+
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    margin: 0 82px 0 0;
+    border: 1px solid black;
+    width:650px;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 370px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+}
+
+.main-content .bottom-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content .bottom-content p {
+    padding-right: 20px;
+}
+
+/* Contact Styles */
+
+.contact p {
+    margin: 15px 0;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+}
