@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,6 +50,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -203,14 +199,22 @@ header .logo{
 	/*width: 100px;*/
 	order:-1;
 	align-self: center;
-	margin-left: 3px;
+	margin-left:0.1%; /*3px;*/
 }
 
 header nav{
 	width: 100%;
+	display: flex;
+	justify-content: space-around;
 	/*margin-left: 5%;
         margin-right: 5%;*/
 }
+
+.cta .cta-text button{
+	margin-top: 6%;
+}
+
+
 
 
 .cta{
@@ -220,11 +224,12 @@ header nav{
 }
 
 .cta .cta-text{
-	margin: 0px 0px 0px 0px;
+	/*margin: 0px 0px 0px 0px;*/
+    margin-right:5% /*40px;*/
 }
 
 h1{
-	font-size: 60px;	
+	/*font-size: 60px;*/	
 }
 
 .cta img{
