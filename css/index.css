@@ -50,7 +50,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 62.5%;
+    /*font-size: 62.5%;*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -72,8 +72,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.5%;             /*40px;*/ 
+    width: 69.31%;                        /*610px;*/
     justify-content: space-between;
     display: flex;
 }
@@ -90,7 +90,10 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin-top: 3.18%;
+    margin: 3.18% 0% 0% 10.34%;	
+
+    /*margin: 28px 0 0 91px;*/
 }
 
 /* Call To Action (CTA) Styles */
