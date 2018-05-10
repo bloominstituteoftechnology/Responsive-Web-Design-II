@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 header nav {
@@ -80,6 +81,7 @@ header nav {
     width: 69.3%;
     justify-content: space-between;
     display: flex;
+    margin-left: 5%;
 }
 
 header nav a {
@@ -94,7 +96,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -102,7 +104,7 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .cta .cta-text {
@@ -113,7 +115,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
@@ -136,7 +138,7 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 75px 5% 35px 5%;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
@@ -149,6 +151,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -158,11 +161,13 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 5.6%;
 }
 
 /* Contact Styles */
-
+.contact{
+    margin:0 5%;
+}
 .contact p {
     margin: 15px 0;
 }
@@ -171,7 +176,7 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 5.6%;
 }
  /* Tablet Styles */
     
@@ -185,21 +190,23 @@ footer {
     header{
         display: flex;
         flex-direction: column;
+        align-content: center;
     }
     header .logo{
-        margin: 30px 0 0px 15px;
+        margin: 30px 0 0px 0;
         order: 1;
         align-self: center;
     }
     header nav{
         justify-content: space-between;
+        width: 97%;
         order: 2;
-        margin: 40x 15px 0 15px;
-        text-align:center;
+        margin: 40px 1.95% 0 1.95%;
+        text-align: center;
     }
 
     header nav a{
-        margin: 0px 40px 0px 40px;
+        margin: 0px 5.2%;
     }
     .cta {
         display: flex;
@@ -209,10 +216,11 @@ footer {
         /* border: solid yellow 1px; */
     }
     .cta .cta-text{
-        margin: 50px 17px 15px 0;
+        margin: 50px 0 15px 0;
     }
     .cta .cta-text button{
         margin-top: 12px;
+        width: 25%;
     }
 
     .cta img{
@@ -225,16 +233,16 @@ footer {
         width: 97%;
         margin-bottom: 0px;
         padding-bottom: 0px;
-        margin-left: 10px;
+        margin-left: 5%;
     }
 
     .main-content .top-content{
         flex-direction: row;
-        margin-left: 10px;
+        margin-left: 1.46%;
     }
 
      .main-content .top-content .text-content{
-        margin-right: 10px;
+        margin-right: 2.8%;
     }
 
     .main-content .top-content .text-content p{
@@ -249,7 +257,7 @@ footer {
 
     .main-content .bottom-content{
         flex-direction: row;
-        margin-left: 10px;
+        margin-left: 1.46%;
     }
 
     .main-content .bottom-content .text-content{
@@ -267,8 +275,8 @@ footer {
     }
 
     .contact{
-        margin-left: 20px;
-        margin-top:30px;
+        margin-left: 2.6%;
+        margin-top: 30px;
         width: 40.9%;
         margin-bottom: 0;
     }
@@ -308,6 +316,7 @@ footer {
         border-top: solid gray 0.5px;
         border-bottom: solid gray 0.5px;
         font-size: 20px;
+        margin:0;
     }
     .cta {
         display: flex;
@@ -320,6 +329,7 @@ footer {
     }
     .cta .cta-text button{
         margin-top: 18px;
+        width: 25%;
     }
 
     .cta img{
@@ -348,7 +358,7 @@ footer {
     }
     
     .main-content .middle-img{
-        width: 90%;
+        width: 100%;
         height:92px;
         margin-top: 30px;
         padding-top: 15px;
