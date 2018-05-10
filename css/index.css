@@ -52,7 +52,13 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html {
+    height: 100%;
+    font-size: 62.5%;
+    font-family: 'Titillium Web,' sans-serif;
+} 
+
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -71,13 +77,13 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-    width: 100%;
+    width: 100%; /*880px*/
     display: flex;
 }
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,33 +100,33 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 967%; /*L: 91px*/
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 7.2rem;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 1073% 0 0; /*R: 82px*/
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 58%; /*170px*/
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -138,7 +144,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -149,7 +155,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 30px auto; /*R/L?*/
 }
 
 .main-content .bottom-content {
@@ -158,7 +164,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 4400%; /* R: 20px*/
 }
 
 /* Contact Styles */
@@ -172,4 +178,128 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* css for Tablet */
+
+@media (max-width: 768px) {
+    /* *{
+      border: 1px solid black !important;
+    } */
+
+    .container {
+    width: 100%;
+    margin: 20px 3800% 20px 3800%; /* R/L: 20px*/
+  }
+    header {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    
+    header .logo {
+      align-self: center;
+      margin: 10px 960% 20px 1920%; /*R/L: 80, 40*/
+    }
+    
+    header nav {
+        width: 106.6%; /*720px*/
+        margin: 15px 5120% 10px 15360%; /*R/L: 15, 5*/
+        justify-content: space-between;
+    }
+    .cta img {
+      display: none;
+    }
+    
+    .cta {
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .main-content {
+        margin: 75px 20px 35px; /*R/L: 20*/
+    }
+
+    .text-content {
+        margin: 0 10px; /*R/L: 10px*/
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+    }
+    
+    .contact {
+        margin: 0 30px; /*R/L: 30px*/
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+    }
+
+/* css for Phone */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0; /*?*/
+        padding: 0; /*?*/
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0; /*?*/
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+    
+    header .logo {
+        margin: 20px 0; /*?*/
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta img {
+        max-width: 80%; 
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .text-content {
+        margin: 0; /*?*/
+    }
+
+    .contact {
+        margin: 20px; /*?*/
+    }
+
 }
