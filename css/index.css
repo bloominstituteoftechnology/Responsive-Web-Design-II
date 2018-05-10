@@ -57,6 +57,10 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -73,11 +77,12 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+		font-size: 1.6rem;
 }
 
 header nav {
     margin-top: 40px;
-    width: 610px;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -106,19 +111,19 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.31% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -138,7 +143,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -158,7 +163,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;
 }
 
 /* Contact Styles */
@@ -174,11 +179,15 @@ footer {
     margin: 40px 0 20px;
 }
 
+.contact p, .contact h4, footer {
+	font-size: 1.6rem;
+}
+
 /*tablet*/
 @media (max-width: 768px) {
 
 	.container {
-		width: 768px;
+		width: 100%;
 	}
 
 	header {
@@ -186,9 +195,9 @@ footer {
 	}
 
 	header nav {
-		width: 768px;
-		margin-left: 20px;
-		margin-right: 20px;
+		width: 100%;
+		margin-left: 2.60%;
+		margin-right: 2.60%;
 	}
 
 	header .logo {
@@ -213,15 +222,15 @@ footer {
 	}
 
 	.main-content {
-		margin: 75px 20px 35px;
+		margin: 75px 2.60% 35px;
 	}
 
 	.text-content {
-		margin: 0 10px;
+		margin: 0 1.30%;
 	}
 
 	.contact {
-		margin: 0 30px;
+		margin: 0 3.90%;
 	}
 
 }
@@ -230,7 +239,7 @@ footer {
 @media (max-width: 400px) {
 
 	.container {
-		width: 400px;
+		width: 100%;
 	}
 
 	header {
@@ -248,7 +257,7 @@ footer {
 		text-align: center;
 		border-bottom: 1px solid grey;
 		padding: 15px 0;
-		font-size: 20px;
+		font-size: 2.0rem;
 	}
 
 	header nav a:first-child {
@@ -275,10 +284,11 @@ footer {
 	}
 
 	.text-content {
-	  margin: 0;
+	  margin: 0%;
 	}
 
 	.contact {
-		margin: 20px;
+		margin: 2.5%;
 	}
+
 }
