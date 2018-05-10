@@ -3,7 +3,6 @@
    License: none (public domain)
 */
 
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,7 +51,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -61,7 +62,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -72,18 +73,18 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-    width: 100%;
     display: flex;
 }
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
+    font-size: 1.5rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -94,7 +95,6 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
     margin: 28px 0 0 91px;
 }
 
@@ -107,7 +107,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -119,7 +119,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -139,13 +139,12 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
-    justify-content: space-around;
 }
 
 .main-content .middle-img {
@@ -155,7 +154,6 @@ header .logo {
 
 .main-content .bottom-content {
     display: flex;
-    justify-content: space-around;
 }
 
 .main-content .bottom-content p {
@@ -175,72 +173,123 @@ footer {
     margin: 40px 0 20px;
 }
 
-/******** Tablet sizing ********/
-
+/* Tablet */
 @media (max-width: 768px) {
-    .container{
+
+    .container {
         width: 768px;
-        margin: auto;
-        margin-left: 30px;
-    }
-    header{
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    header nav{
-        width:768px;
-        justify-content: center;
-        justify-content: space-evenly;
-        padding: 0 50px;
     }
 
-    header .logo{
-        margin-right: 50px;
-        justify-content: center;
-        order:-1;
+    header {
+        flex-wrap: wrap;
     }
+  
+    header nav {
+        width: 768px;
+        padding: 0 30px;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+
     .cta {
-        margin-left: 100px;
         justify-content: center;
     }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
+
     .cta img {
         display: none;
     }
 
-    .main-content{
-        margin-right: 30px;
-    }
     .main-content .middle-img {
-        width: 738px;
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 75px 20px 35px;
+    }
+
+    .text-content {
+        margin: 0 10px;
+    }
+
+    .contact {
+        margin: 0 30px;
     }
 }
 
+/* Phone */
+@media (max-width: 400px) {
 
- @media (max-width: 400px) {
-    .container{
+    .container {
         width: 400px;
-        margin: auto;
-    }
-    header{
-        width: 400px;
-        flex-flow: column wrap;
-        align-content: flex-start;
-        margin-left: -55px;
-
-    }
-    header nav{
-        flex-flow: column nowrap;
-        align-items: stretch;
-
-    }
-    header nav a{
-        align-self: center;
-        width: 400px;
-        height: 80px;
-        font-size: 40px;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-
     }
 
-} 
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta img {
+        max-width: 80%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 20px;
+    }
+}
