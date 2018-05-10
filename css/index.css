@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -59,8 +63,8 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: .114%; /*1 / 880*/
+    margin-bottom: 1.1364%; /*10 / 880 */
 }
 
 .container {
@@ -76,8 +80,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.545%; /*40 / 880/*/ 
+    width: 69.318%; /*610px*/
     justify-content: space-between;
     display: flex;
 }
@@ -94,34 +98,34 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.182% 0% 0% 10.341%; /*28px 0 0 91px */
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.182%; /*72px*/
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem; /*72px*/
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem; /*5px*/
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0% 9.318% 0% 0%; /*0 82px 0 0*/
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem; /*16px*/
     background: white;
-    width: 170px;
-    height: 32px;
+    width: /*19.318%;*/ 170px;
+    height: 3.636%; /*32px;*/
     margin-top: 10px;
     cursor: pointer;
 }
