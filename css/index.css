@@ -193,7 +193,7 @@ footer {
         width: 100%;
         font-size: 16px; 
         justify-content: space-around;
-        margin-top: 34px;
+        margin-top: 42px;
         margin-right: 13px;
     }
 
@@ -229,7 +229,7 @@ footer {
         margin-top: 16px;
     }
     .main-content {
-        margin: 73px 0px 0px 20px;
+        margin: 82px 0px 0px 20px;
         width: 100%;
         padding: 0;
     }
@@ -239,16 +239,13 @@ footer {
     }
 
     .main-content .top-content {
-        justify-content: space-around;
-        display: flex;
+
         padding-top: 29px;
         width:100%
         
     }
 
     .bottom-content {
-        display: flex;
-        justify-content: space-around;
         padding-top: 24px;
         padding-right: 27px;
         padding-left: 9px;
@@ -257,8 +254,8 @@ footer {
 
     section.contact {
         display: block;
-        margin-left: 32px;
-        margin-top: 40px;
+        margin-left: 29px;
+        margin-top: 30px;
         font-size: 16px;
     }
 
