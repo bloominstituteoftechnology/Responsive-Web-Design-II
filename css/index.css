@@ -205,12 +205,12 @@ footer {
 
     header nav {
         width: 100%;
-        padding: 0 24px;
+        padding: 0 2.6%;
     }
 
     header .logo {
         order: -1;
-        margin: 28px 0 0 0;
+        margin: 3.64583% 0 0 0;
 
     }
 
@@ -227,11 +227,11 @@ footer {
     }
 
     .main-content {
-        margin: 75px 20px 35px 20px;
+        margin: 9.765625% 2.604167% 4.5572916% 2.604167%;
     }
 
     .main-content .top-content {
-        margin-left: 14px;
+        margin-left: 1.925%;
     }
 
     .main-content .middle-img {
@@ -239,15 +239,17 @@ footer {
     }
 
     .main-content .bottom-content .text-content h4 {
-        margin-left: 20px;
+        letter-spacing: .1rem;
+        margin-left: 8.24198%;
+        margin-bottom: 4.120992%;
     }
 
     .main-content .bottom-content .text-content p {
-        padding: 0 20px;
+        padding: 0 8.24198%;
     }
 
     .contact {
-        margin-left: 25px;
+        margin-left: 3.2552083%;
     }
 
 }
