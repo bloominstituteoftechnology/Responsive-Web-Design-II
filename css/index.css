@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -184,6 +185,7 @@ footer {
     .container {
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
     
     /* Header Styles */
@@ -197,11 +199,13 @@ footer {
     }
     
     header nav {
-        justify-content: space-between
+        justify-content: space-between;
+        position: relative;
     }
     
     header nav a {
-        margin-right: 81px;
+        /* margin-right: 81px; */
+        position: relative;
     }
     
     header nav a:hover {
@@ -297,6 +301,9 @@ footer {
     
     /* Contact Styles */
     
+    .contact {
+        max-width: 768px;
+    }
     .contact h4 {
         padding-left: 31px;
     }
@@ -314,7 +321,8 @@ footer {
         display: flex;
         justify-content: center;
         text-align: center;
-        margin: 25px 111px 20px 0;
+        position: relative;
+        right: 111px;
     }
 }
 
