@@ -119,9 +119,9 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+    width: 58.19%;             /*170px;*/
     height: 32px;
-    margin-top: 10px;
+    margin-top: 3.42%;                /*10px;*/
     cursor: pointer;
 }
 
