@@ -54,6 +54,7 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+    font-size: 62.5%;
     width: 880px;
     margin: auto;
 }
@@ -73,11 +75,13 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    font-size: 2rem;
 }
+/* */
 
 header nav {
     margin-top: 40px;
-    width: 610px;
+    width: 69.319%;
     justify-content: space-between;
     display: flex;
 }
@@ -106,21 +110,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin-right: 9.3%;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 24.22%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -138,8 +142,8 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   font-size: 1.6rem;
+   line-height: 18px;   /* ????? what do we do about line-height? */
 }
 
 .main-content .top-content {
@@ -158,13 +162,17 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.28%;
 }
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.8rem;
+}
 .contact p {
     margin: 15px 0;
+
 }
 
 /* Footer Styles */
@@ -179,21 +187,17 @@ footer {
 
 @Media (max-width: 768px) {
     .container {
+        font-size: 62.5%;
          width: 768px;
          margin:auto;
-         background-color:
-         padding:5px;
-         margin-left: 8px;
-         ;
-
-
-
+         padding:5px .65%;
+         margin-left: 1.042%
  }
 
 
  header {
     margin-top: 32px;
-       display: flex;
+    display: flex;
     flex-direction: column-reverse;
 
 }
@@ -215,7 +219,7 @@ header .logo{
 
 header nav a{
     width: 100%;
-    padding-left: 65px
+    padding-left: 24px
 }
 
 .cta {
@@ -234,7 +238,7 @@ header nav a{
     flex-flow: column;
     padding-top: 20px;
     margin-top: :20px;
-    padding: 25px;
+    padding: 25px 3.47% 25px;
     justify-content: space-around;
 }
 
@@ -245,15 +249,21 @@ header nav a{
 }
 
 .main-content .middle-img{
-         max-width: 100%;
+    max-width: 102%;
+    display: block;
+    padding-right: .73%;
      }
 
 .contact {
-    margin-left: 28px;
+    margin-left: 3.84%;
 }
 
 .footer{
     margin-bottom: 32px;
+}
+
+.footer p{
+    font-size: 1.6rem;
 }
 
 
@@ -266,49 +276,79 @@ header nav a{
 
 @Media (max-width: 400px) {
     .container {
+        font-size: 62.5%;
          width: 400px;
          margin:auto;
-         background-color: pink;
-         padding:5px;
+         padding:2px 0 2px;
+         padding-right:2%;
+
      }
 
 header nav {
     display:flex;
     flex-direction: column;
-    width: 100%;
-    border-bottom: 2px double gray;
 
-
+    padding-left: 2%;
 
 }
 
-header nav a{
+
+header nav a {
     display: flex;
     font-size: 18px ;
-    font-weight: 865;
+    font-weight: 565;
     letter-spacing: 2.5px;
     margin: 10px 10px;
     padding-left: 37%;
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding-top: 4.5%;
+    padding-bottom: 1.2%;
     border-top: 2px double gray;
-
-
 }
+
 
 .cta {
     justify-content: center;
     flex-direction: column-reverse;
     margin-bottom: 30px;
     padding-left: 20%;
+    border-top: 2px double gray;
+    margin-top: 10px;
+    padding-top: 20%;
 
 }
+
+
 
 .cta .cta-text button{
-    margin-top: 18%;
+    margin-top: 11%;
+    width: 54.22%;
+    height: 28px;
+    margin-bottom:9%;
+
+}
+
+.main-content .top-content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 8px 18px 4px;
+
+}
+
+.main-content {
+    margin: 5px 10px 22px 0px;
+    padding: 10px 0px 28px 4px;
+}
+
+.main-content .bottom-content{
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0px 0px 0px;
 }
 
 
+.footer p{
+    font-size: 1.6rem;
+}
 
 
 
