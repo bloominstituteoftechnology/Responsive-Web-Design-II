@@ -53,7 +53,7 @@ table {
 }
 
 html, body {
-    height: 100%;
+    font-size: 62.5%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    max-width: 880px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Header Styles */
@@ -76,13 +77,15 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    justify-content: space-around;
     display: flex;
+    font-size: 1.2rem;
 }
 
 header nav a {
+    margin-top: 70px;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -94,34 +97,33 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 20px 0 0 9%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    font-size: 6.2rem;
+    justify-content: flex-end
 }
 
 .cta .cta-text {
-    font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 6% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.4rem;
     background: white;
-    width: 170px;
-    height: 32px;
+    width: 40%;
+    height: 30px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -138,8 +140,9 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.4rem;
    line-height: 18px;
+   width: 100%;
 }
 
 .main-content .top-content {
@@ -163,6 +166,9 @@ header .logo {
 
 /* Contact Styles */
 
+.contact {
+    font-size: 1.6rem;
+}
 .contact p {
     margin: 15px 0;
 }
@@ -170,8 +176,9 @@ header .logo {
 /* Footer Styles */
 
 footer {
+    font-size: 1.4rem;
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 0;
 }
 
 /* Tablet */
@@ -193,7 +200,7 @@ footer {
 
     header nav {
         width: 100%;
-        font-size: 16px; 
+        font-size: 1.6rem; 
         justify-content: space-around;
         margin-top: 42px;
         margin-right: 13px;
@@ -258,11 +265,11 @@ footer {
         display: block;
         margin-left: 29px;
         margin-top: 30px;
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     footer {
-        font-size: 16px;
+        font-size: 1.6rem;
         padding-top: 27px;
         padding-left: 18px;
     }
@@ -272,30 +279,28 @@ footer {
 /* Phone */
 @media (max-width: 400px) {
     .container {
-        width: 400px;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
 
     header {
-        width: 400px;
+        width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
     header nav {
-        font-size: 20px;
-        width: 400px;
+        font-size: 2rem;
         flex-direction: column;
         margin-top: 13px;
     }
 
     header nav a {
         border-bottom: 1px solid;
-        width: 400px;
         margin: 0;
         align: center;
-        padding: 20px;
+        padding: 4% 0;
         text-align: center;
     }
 
@@ -305,12 +310,12 @@ footer {
     
     section.cta {
         width: 400px;
-        margin: 32px auto auto 11px;
+        margin: 3% auto auto 11px;
         padding-bottom: 15px;
     }
     
     section.main-content {
-        width: 400px;
+        width: 400%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
