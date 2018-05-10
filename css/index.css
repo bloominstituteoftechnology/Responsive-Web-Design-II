@@ -50,7 +50,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    /*font-size: 62.5%;*/
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -81,6 +81,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
