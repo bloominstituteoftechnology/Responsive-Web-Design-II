@@ -174,12 +174,12 @@ footer {
     margin: 40px 0 20px;
 }
 
-
 /* Tablet */
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        margin: auto;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
     }
 
@@ -250,7 +250,7 @@ footer {
     .bottom-content {
         padding-top: 24px;
         padding-right: 27px;
-        padding-left: 9px;
+        padding-left: 0px;
         padding-bottom: 65px;
     }
 
@@ -268,10 +268,13 @@ footer {
     }
 }
 
+
 /* Phone */
 @media (max-width: 400px) {
     .container {
         width: 400px;
+        margin: 0;
+        padding: 0;
     }
 
     header {
@@ -303,6 +306,7 @@ footer {
     section.cta {
         width: 400px;
         margin: 32px auto auto 11px;
+        padding-bottom: 15px;
     }
     
     section.main-content {
@@ -310,28 +314,45 @@ footer {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    section .top-content {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
+        margin: 60px 0px 0px 17px;
+        padding: 0;
     }
-    section .bottom-content {
+
+
+    .main-content .top-content {
         width: 400px;
         display: flex;
         flex-direction: column;
-        align-items: space-between;
+        align-items: space-evenly;
+        margin: 0;
+    }
+    .main-content .bottom-content {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly;
+        
     }
 
-    div.bottom-content .text-content {
-        width: 400px;
+    div.top-content .text-content {
         font-weight: 400;
+        margin: 0;
+        align-self: space-between;
+        height: 160px;
+    }
+    div.bottom-content .text-content {
+        font-weight: 400;
+        margin: 0;
+        align-self: space-between;
+        height: 160px;
     }
 
     .main-content .middle-img {
-        max-width: bold;
+        max-width: 360px;
+        margin: 0;
+        padding: 0;
     }
+
 }
+
