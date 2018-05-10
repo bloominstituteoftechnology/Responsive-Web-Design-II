@@ -149,7 +149,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.40% auto;     /*30px auto;*/
 }
 
 .main-content .bottom-content {
