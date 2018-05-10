@@ -318,12 +318,10 @@ header nav a{
         display: flex;
         flex-direction: column;
 	align-items: center;
-        /*justify-content: space-between;*/
 }
 
 
 .cta{
-	/*margin-top: 26px;*/
     margin-top: 54px;
 }
 
@@ -337,12 +335,17 @@ p{
 }
 
 .main-content{
-       /* margin-left: 5%;
-        margin-right: 5%;*/
     margin-left: 5%;
     margin-top: 18%;
     margin-right: 5%;
 }
+
+.top-content{
+	margin-top: 10%;
+
+}
+
+
 
 .contact{
         margin-left: 5%;
