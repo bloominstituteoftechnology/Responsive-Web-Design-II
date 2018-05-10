@@ -49,6 +49,7 @@ table {
 html, body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -56,6 +57,11 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
+/* CSS RESET COMPLETE */
+
+/* Desktop */
+
+
 
 .container {
   width: 880px;
@@ -70,8 +76,8 @@ header {
 }
 
 header nav {
-  margin-top: 40px;
-  width: 610px;
+  margin-top: 4.5%;
+  width: 100%;
   justify-content: space-between;
   display: flex;
 }
@@ -79,6 +85,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -88,7 +95,7 @@ header nav a:hover {
 
 header .logo {
   align-self: flex-end;
-  margin: 28px 0 0 91px;
+  margin: 3.2% 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -100,23 +107,23 @@ header .logo {
 }
 
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 0.5rem;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.7rem;
   background: white;
-  width: 170px;
+  width: 58.1%;
   height: 32px;
-  margin-top: 10px;
+  margin-top: 16px;
   cursor: pointer;
 }
 
@@ -130,20 +137,29 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 75px 0 35px 0;
-  padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+  margin: 75px .002% 35px 0;
+  padding: 4% 0;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+  padding-top: 5px;
+}
+
+.main-content .top-content h4 {
+  margin-top: -5px;
+}
+
+.main-content .top-content .text-content p {
+  margin-top: 15px;
 }
 
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -151,28 +167,34 @@ header .logo {
   justify-content: space-around;
 }
 
+
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2.3%;
+  margin-top: 15px;
 }
 
 /* Contact Styles */
+.contact h4 {
+  font-size: 1.6rem;
+}
 
 .contact p {
   margin: 15px 0;
+  font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 4.5% 0 2.3%;
+  font-size: 1.6rem;
 }
 
 /* tablet */
 
 @media (max-width: 768px) {
   .container {
-    width: 95%;
     padding: 0 20px 0 20px;
 
   }
