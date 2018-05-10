@@ -129,7 +129,7 @@ header .logo {
 .cta .cta-text button {
     border: 1px double black;
     background: white;
-    width: 170px; /* 170px */
+    width: 170px;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -166,7 +166,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 2.27%; /* 20px */
+    padding-right: 20ox;
 }
 
 /* Contact Styles */
@@ -179,7 +179,7 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 2.27%; /* 20px */
+    margin: 40px 0 20px; /* 20px */
 }
 
 @media (max-width: 768px) {
@@ -187,7 +187,7 @@ footer {
     .container{
         max-width: 768px;
         width: 100%;
-        /* padding: 0 20px; */
+
     }
 
     header {
@@ -199,7 +199,7 @@ footer {
 
     header nav{
         width: 100%;
-        padding: 2px 1.02%; /* 9px */
+        padding: 2px 9px;
     }
 
     header .logo{
@@ -217,7 +217,7 @@ footer {
     .cta .cta-text {
         margin: 0;
         align-self: center;
-        padding: 2px 4.32% 8px 0; /* 38px */
+        padding: 2px 38px 8px 0;
     }
 
     .cta .cta-text button {
@@ -243,7 +243,7 @@ footer {
     }
 
     .contact {
-        padding: 33px 1.14%; /* 10px */
+        padding: 33px 10px;
     }
 
     footer {
@@ -257,7 +257,6 @@ footer {
         max-width: 400px;
         width: 100%;
         padding: 0;
-        /* padding: 0 20px; */
     }
 
     header {
@@ -299,7 +298,7 @@ footer {
     }
 
     .cta .cta-text {
-        padding:0 1.14% 30px;
+        padding:0 10px 30px;
         align-self: center;
     }
 
