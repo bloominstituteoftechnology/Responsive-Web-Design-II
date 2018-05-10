@@ -176,7 +176,7 @@ footer {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     body {
         overflow-x: hidden !important;
     }
@@ -227,9 +227,9 @@ footer {
     .contact {
         margin: 0 3.90%;
     }
-}
+} */
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     body {
         overflow-x: hidden !important;
     }
@@ -304,4 +304,4 @@ footer {
     .contact {
         margin: 5%;
     }
-}
+} */
