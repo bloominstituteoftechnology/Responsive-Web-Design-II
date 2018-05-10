@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -77,7 +77,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.3%; /*610px*/
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +94,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 14.9%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -136,8 +136,8 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   margin: 8.5% 0 ;
+   padding: 4.3% 0;
    font-size: 16px;
    line-height: 18px;
 }
@@ -164,14 +164,14 @@ header .logo {
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.7% 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.5% 0 20px;
 }
 @media(max-width:768px){
     .container{
@@ -235,7 +235,7 @@ footer {
         max-width: 100%;
     }
     .contact{
-        margin-left:75px;
+        margin-left:9.76%;   /*75px*/
         margin-bottom:50px;
         
     }
@@ -249,22 +249,44 @@ footer {
         width:400px;
         
     }
-    header{
-        
-    }
+   
     header nav{
         
         flex-direction: column;
+        margin-top:20px;
         
     }
     header nav a{
         border:1px solid gray;
         justify-content: center;
-        margin-top:20px;
-        font-size: 25px;
-        padding-left:140px;
+        font-size: 16px;
+        padding-left:35%; /*140px*/
         padding-bottom:20px;
         padding-top:20px;
+        margin-top:0px;
+        
+        
+    }
+    header .logo{
+        margin-left:35%; /*140px*/
+    }
+    .main-content{
+        width:100%;
+        margin-left:3%; /*12px*/
+        margin-top:40px;
+        padding-top:15px;
+
+    }
+    .top-content{
+        flex-direction: column;
+    }
+    
+    .bottom-content{
+        flex-direction: column;
+    }
+    .contact{
+        margin-left:3.75%;     /* 15px*/
+
     }
     
 }
