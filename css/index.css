@@ -63,21 +63,26 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
 /* Header Styles */
 
 header {
+		font-size: 1.6rem;
     width: 100%;
     display: flex;
 }
 
 header nav {
     margin-top: 40px;
-    width: 610px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +99,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,21 +111,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 40%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -138,7 +143,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -158,10 +163,15 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 6%;
 }
 
 /* Contact Styles */
+
+.contact {
+	  font-size: 1.6rem;
+}
+
 
 .contact p {
     margin: 15px 0;
@@ -170,6 +180,7 @@ header .logo {
 /* Footer Styles */
 
 footer {
+		font-size: 1.6rem;
     text-align: center;
     margin: 40px 0 20px;
 }
@@ -194,8 +205,8 @@ footer {
 
 	header nav {
 			width: 100%;
-			margin-left: 20px;
-			margin-right: 20px;
+			margin-left: 2%;
+			margin-right: 2%;
 	}
 
 	header nav a {
@@ -225,22 +236,14 @@ footer {
 	}
 
 	.cta .cta-text {
-	    font-size: 72px;
-	    text-align: center;
-	    letter-spacing: 5px;
-	    display: flex;
-	    justify-content: center;
-	    flex-flow: column;
-	    align-items: center;
-	    margin-left: 45%;
-			margin-right: 50%;
+	    margin: 0;
 	}
 
 	.cta .cta-text button {
 	    border: 1px double black;
-	    font-size: 16px;
+	    font-size: 1.6rem;
 	    background: white;
-	    width: 170px;
+	    width: 22%;
 	    height: 32px;
 	    margin-top: 20px;
 	    cursor: pointer;
@@ -263,8 +266,8 @@ footer {
 		 margin-left: 20px;
 		 margin-right: 20px;
 	   padding: 35px 0;
-	   font-size: 16px;
-	   line-height: 18px;
+	   font-size: 1.6rem;
+	   line-height: 1.8rem;
 	}
 
 	.main-content .top-content {
@@ -273,11 +276,11 @@ footer {
 	}
 
 	.main-content .text-content {
-	    margin: 0 10px 0 10px;
+	    margin: 0 2% 0 2%;
 	}
 
 	.main-content .text-content p {
-	    margin-top: 10px;
+	    margin-top: 2%;
 	}
 
 	.main-content .middle-img {
@@ -294,7 +297,7 @@ footer {
 	}
 
 	.main-content .bottom-content p {
-	    padding-right: 20px;
+	    padding-right: 9%;
 	}
 
 	.bottom-content .text-content {
@@ -304,11 +307,11 @@ footer {
 	/* Contact Styles */
 
 	.contact h4 {
-	    margin: 15px 0 0 30px;
+	    margin: 15px 0 0 4%;
 	}
 
 	.contact p {
-	    margin: 15px 0 0 30px;
+	    margin: 15px 0 0 4%;
 	}
 
 	/* Footer Styles */
@@ -358,7 +361,7 @@ footer {
 			height: 62px;
 			padding: 20px auto 20px auto;
 			border-top: 1px solid #b0b0b0;
-			font-size: 20px;
+			font-size: 2rem;
 	}
 
 	header nav a:last-child {
@@ -382,14 +385,14 @@ footer {
 
 	.cta {
 	    display: flex;
-	    margin: 49px auto auto 15px;
+	    margin: 49px auto auto 3%;
 	    flex-direction: column;
 	}
 
 	.cta .cta-text {
-	    font-size: 72px;
+	    font-size: 7.2rem;
 	    text-align: center;
-	    letter-spacing: 5px;
+	    letter-spacing: 0.5rem;
 	    display: flex;
 	    justify-content: center;
 	    flex-flow: column;
@@ -400,7 +403,7 @@ footer {
 
 	.cta .cta-text button {
 	    border: 1px double black;
-	    font-size: 16px;
+	    font-size: 1.6rem;
 	    background: white;
 	    width: 170px;
 	    height: 32px;
@@ -422,11 +425,11 @@ footer {
 	.main-content {
 	   border-top: 2px solid black;
 	   border-bottom: 2px solid black;
-		 margin-left: 20px;
-		 margin-right: 20px;
+		 margin-left: 5%;
+		 margin-right: 5%;
 	   padding: 35px 0;
-	   font-size: 16px;
-	   line-height: 18px;
+	   font-size: 1.6rem;
+	   line-height: 1.8rem;
 	}
 
 	.main-content .top-content {
@@ -464,7 +467,7 @@ footer {
 	}
 
 	.main-content .bottom-content p {
-	    padding-right: 20px;
+	    padding-right: 5%;
 			margin-top: 10px;
 	}
 
