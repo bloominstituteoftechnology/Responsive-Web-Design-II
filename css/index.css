@@ -253,20 +253,19 @@ h1{
 
 .bottom-content{
         margin-top: 7%; 
-       /* margin-right: -3%;*/
+        margin-bottom: 4%;
+        margin-right: -3%;
 }
 
 
 .contact{
-        margin-top: 8%;
+        margin-top: 4%; 
         margin-left: 4%;
         margin-right: 53%;
 }
 
 .contact p{
 	margin-top: 4%;
-
-
 }
 
 
