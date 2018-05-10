@@ -175,7 +175,7 @@ footer {
 @media (max-width: 768px) {
 
     .container {
-        width: 768px;
+        width: 87.27%;
     }
 
     header {
@@ -183,14 +183,14 @@ footer {
     }
   
     header nav {
-        width: 768px;
+        width: 87.27%;
         padding: 0 30px;
     }
 
     header .logo {
         order: -1;
         display: block;
-        margin: 30px auto 0;
+        margin: 3.41% auto 0;
     }
 
     .cta {
@@ -210,15 +210,15 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 8.52% 2.27% 3.98%;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 1.14%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 0 3.41%;
     }
 }
 
