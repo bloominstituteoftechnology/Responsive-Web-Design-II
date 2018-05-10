@@ -188,11 +188,9 @@ footer {
 
 .container{
 	width: 100%;
-	/*max-width:700px;*/
 }
 
 header{
-	/*border: 1px solid blue;*/
 	width: 100%;
 	margin-top: 1%;
 	margin-left: 0%;
@@ -200,9 +198,6 @@ header{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/*align-content: center;*/
-	/*margin-left: 3%;
-	margin-right: 3%;*/
 }
 
 
@@ -234,10 +229,6 @@ header nav{
 	 margin-right: 5%;           /*40px;*/
 }
 
-h1{
-	/*font-size: 60px;*/	
-}
-
 .cta img{
 	display: none;
 }
@@ -256,7 +247,6 @@ h1{
         margin-bottom: 4%;
         margin-right: -3%;
 }
-
 
 .contact{
         margin-top: 4%; 
@@ -286,8 +276,6 @@ h1{
 
 header .logo{
         order:-1;
-      /*  align-self: center;
-        margin-left: 3px;*/
 	margin-top: 20px;
 }
 
@@ -337,9 +325,9 @@ p{
 }
 
 .main-content{
-    margin-left: 5%;
-    margin-top: 18%;
-    margin-right: 5%;
+        margin-left: 5%;
+    	margin-top: 18%;
+    	margin-right: 5%;
 }
 
 
