@@ -175,6 +175,7 @@ header .logo {
 /* Footer Styles */
 
 footer {
+   /* font-size: 1.6rem;*/	 
     text-align: center;
     margin: 4.54% 0% 2.27%;             /*40px 0 20px;*/
 }
@@ -216,8 +217,6 @@ header nav{
 	margin-top: 5%;
 	display: flex;
 	justify-content: space-around;
-	/*margin-left: 5%;
-        margin-right: 5%;*/
 }
 
 .cta .cta-text button{
@@ -226,14 +225,13 @@ header nav{
 
 
 .cta{
-	/*border: 1px solid blue;*/
 	display: flex;
 	justify-content: center;
 }
 
 .cta .cta-text{
          margin-top: 1%;
-	 margin-right: 5%            /*40px;*/
+	 margin-right: 5%;           /*40px;*/
 }
 
 h1{
@@ -247,12 +245,24 @@ h1{
 .main-content{
 	margin-left: 3%;
         margin-right: 3%;
-	/*display: flex;*/
 }
+
+.top-content{
+	margin-top: 2%;
+}
+
+.bottom-content{
+        margin-top: 7%; 
+       /* margin-right: -3%;*/
+}
+
 
 .contact{
 	margin-left: 3%;
         margin-right: 3%;
+/*margin-top: 8%;
+    margin-left: 4%;
+    margin-right: 53%;*/
 }
 
 .middle-img{
