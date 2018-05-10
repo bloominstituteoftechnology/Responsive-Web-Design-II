@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -77,14 +79,16 @@ header {
 
 header nav {
     margin-top: 40px;
-    width: 610px;
+    width: 76%;
     justify-content: space-between;
     display: flex;
+    font-size: 1.4rem;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+
 }
 
 header nav a:hover {
@@ -106,7 +110,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -118,7 +122,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -138,7 +142,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -162,7 +166,9 @@ header .logo {
 }
 
 /* Contact Styles */
-
+.contact {
+    font-size: 1.4rem;
+}
 .contact p {
     margin: 15px 0;
 }
@@ -195,9 +201,10 @@ header {
 
 header nav {
     /*margin: 40px 0 30px 0;*/
-    width: 610px;
+    width: 76%;
     justify-content: space-between;
     display: flex;
+    font-size: 100%
 
 }
 
@@ -218,7 +225,7 @@ header .logo {
     justify-content: center;
 }
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -234,7 +241,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 35px;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 .main-content .middle-img {
@@ -303,7 +310,7 @@ header .logo {
     justify-content: center;
 }
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -320,7 +327,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 35px 0 35px;
    padding: 20px 10px;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 
 }
