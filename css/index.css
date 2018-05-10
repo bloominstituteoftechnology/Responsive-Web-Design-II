@@ -190,15 +190,17 @@ header{
 .cta{
     display: flex;
     align-items: center;
-margin-right: 200px;
+margin-right: 110px;
 }
-
+.cta img{
+    display: none;
+}
 header nav{
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 header .logo{
-    margin-left: 240px;
+    margin-left: 300px;
 }
 .top-content{
     display: flex;
@@ -215,3 +217,40 @@ header .logo{
 }
 }
 
+@media(max-width: 400px){
+    
+    .container{
+        width: 100%
+    }
+    header{
+        justify-content: center;
+        
+    }
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header nav a{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid gray;
+}
+header .logo{
+    margin-left: 50px;
+}
+.cta{
+    margin-right: -42px;
+}
+.top-content{
+    flex-direction: column;
+}
+.bottom-content{
+    flex-direction: column;
+}
+}
