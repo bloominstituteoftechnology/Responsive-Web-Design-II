@@ -124,11 +124,10 @@ header .logo {
 }
 
 .cta .cta-text button {
-    border: 1px double black;
+    border: .1rem double black;
     font-size: 1.6rem;
     background: white;
-    width: 58.3%;
-    height: 8.45%;
+    padding: 2.5% 15%;
     margin-top: 3.4234851%;
     cursor: pointer;
 }
@@ -152,6 +151,10 @@ header .logo {
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+}
+
+.main-content .top-content .text-content p {
+    padding-top: 2.75%;
 }
 
 .main-content .middle-img {
@@ -190,7 +193,7 @@ footer {
     margin: 4.545454% 0 2.265%;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .container {
         width: 100%;
@@ -216,10 +219,19 @@ footer {
 
     .cta {
         justify-content: center;
+        margin-top: 10.25%;
+        margin-right: 4.25%;
     }
 
     .cta .cta-text {
         margin: 0;
+        padding-bottom: 3%;
+    }
+
+    .cta .cta-text button {
+        margin-top: 4.75%;
+        margin-right: 2.25%;
+
     }
 
     .cta img {
@@ -227,11 +239,12 @@ footer {
     }
 
     .main-content {
-        margin: 9.765625% 2.604167% 4.5572916% 2.604167%;
+        margin: 7% 1% 4.5572916% 1%;
+        padding-bottom: 6.5%;
     }
 
     .main-content .top-content {
-        margin-left: 1.925%;
+        padding: 1% 2%;
     }
 
     .main-content .middle-img {
@@ -249,7 +262,12 @@ footer {
     }
 
     .contact {
-        margin-left: 3.2552083%;
+        margin-top: 5%;
+        margin-left: 2.5%;
+    }
+
+    footer {
+        margin-top: 5.75%;
     }
 
 }
@@ -307,4 +325,4 @@ footer {
         margin: 2.6315789% 0;
     }
 
-} */
+}
