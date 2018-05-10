@@ -154,6 +154,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 3.4% auto;
+    max-width: 90%;
 }
 
 .main-content .bottom-content {
@@ -215,7 +216,10 @@ footer {
     .main-content {
         margin: 9.8% 2.6% 4.56%;
      }
- 
+
+     .main-content .middle-img {
+        max-width: 90%;
+    }
      .text-content {
          margin: 0 1.3%;
      }
@@ -265,8 +269,8 @@ footer {
         align-items: center;
     }   
 
-    .cta img {
-        max-width: 80%;
+    .main-content .middle-img {
+        max-width: 90%;
     }
 
      .main-content .top-content {
@@ -284,6 +288,6 @@ footer {
         margin: 0;
     }
     .contact {
-        margin: 20px;
+        margin: 5%;
     }
 }
