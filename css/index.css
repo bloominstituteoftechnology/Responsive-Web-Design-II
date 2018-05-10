@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+	max-width:95rem;
+    width: 100%;
     margin: auto;
 }
 
@@ -76,8 +77,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4rem; 
+    width: 69.318%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,35 +95,39 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3rem 0 0 6rem;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 4.5rem;
+    justify-content: center;
+	flex-wrap:wrap;
+	flex-flow:row;
+	width:100%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 5rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin-right:9.318%;
+	width:auto;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 11rem;
+    height: 2.2rem;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -148,6 +153,8 @@ header .logo {
 }
 
 .main-content .middle-img {
+	max-width:87.6rem;
+	width:99.5%;
     display: block;
     margin: 30px auto;
 }
