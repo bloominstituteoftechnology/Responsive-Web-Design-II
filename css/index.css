@@ -173,3 +173,133 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+  /* Tablet */
+
+  @media (max-width: 783px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header  {
+
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
+    header nav {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    header .logo {
+      align-self: center;
+      margin: 20px auto 0;
+      padding: 10px;
+    }
+
+    .cta {
+      justify-content: center;
+    }
+
+    .cta img {
+      display: none;
+    }
+
+    .cta .cta-text {
+      margin: 0 10px;
+    }
+
+    .main-content {
+      margin: 75px 20px 35px;
+    }
+
+    .main-content .middle-img {
+      width: 100%;
+    }
+
+    .text-content {
+      margin: 0 10px;
+      padding: 5px;
+    }
+
+    .contact {
+      margin: 0 30px;
+    }
+
+  }
+
+  /* Phone */ 
+
+  @media (max-width: 415px) {
+
+    .container {
+        width: 400px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 20px 0;
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta img {
+        max-width: 80%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 20px;
+    }
+}
+
+  }
