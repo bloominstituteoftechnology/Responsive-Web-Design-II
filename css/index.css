@@ -15,198 +15,288 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
+
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
 }
+
+html{
+    font-size: 62.5%
+}
+
 /* Header Styles */
+
 header {
-    width: 100%;
+    width: 100%; /*880 */
     display: flex;
 }
+
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top:4.5%; 
+    width: 69.3% 
     justify-content: space-between;
     display: flex;
 }
+
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
+
 header nav a:hover {
     text-decoration: underline;
     color: black;
 }
+
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.1% 0 0 10.3%;
 }
+
 /* Call To Action (CTA) Styles */
+
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 9.6%;
+    margin-right: 5.6%;
     justify-content: flex-end;
 }
+
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0;
 }
+
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 58.2%;
+    height: 3.2rem;
+    margin-top: 3.4%;
     cursor: pointer;
 }
+
 .cta .cta-text button:hover {
     background: black;
     color: white;
 }
+
 /* Main Content Styles */
+
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   border-top: 0.2rem solid black; 
+   border-bottom: 0.2rem solid black;
+   margin: 8.5% 0 3.9% 0;
+   padding: 4% 0%;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
+
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    margin-top: 0.8%;
 }
+
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 4.1% auto;
 }
+
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
 }
+
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 9%;
 }
+
 /* Contact Styles */
+
 .contact p {
-    margin: 15px 0;
+    margin: 2.1% 0%;
+    margin-top: 5.5%;
+    font-size: 1.6rem;
 }
+
 /* Footer Styles */
+
 .footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.5% 0% 2.3%;
 }
-/* Mobile */
-/* @media (max-width: 400px) {
-    .container {
-        width: 100%;
-    }
-    header {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    header nav {
-        width: 400px; 
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        border: 1px solid red;
-    }
-    header nav a {
-        width: 400px;
-    }
-    
-}    */
-/*Tablet*/
+
+/* Tablet */
 @media (max-width: 768px) {
     .container {
         width: 768px;
     }
+
     header {
         flex-wrap: wrap;
     }
   
     header nav {
         width: 768px;
-        padding: 0 30px;
+        padding: 0 3.9%;
     }
+
     header .logo {
         order: -1;
         display: block;
-        margin: 30px auto 0;
+        margin: 3.9% auto 0;
     }
+
     .cta {
         justify-content: center;
+        /* display: flex; */
     }
     
     .cta .cta-text {
         margin: 0;
     }
+
     .cta img {
         display: none;
     }
+
     .main-content .middle-img {
        width: 100%;
     }
+
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 9.8% 2.6% 4.6%;
     }
+
     .text-content {
-        margin: 0 10px;
+        margin: 0% 1.4%;
     }
+
     .contact {
-        margin: 0 30px;
+        margin: 0% 3.9%;
     }
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+    .container {
+        width: 400px;
+        /* flex-wrap: wrap; */
+    }
+
+    header {
+        /* display: flex; */
+        justify-content: center;
+        /* flex-direction: column;
+        width: 100%; */
+    }
+
+    header nav {
+        width: 100%; 
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid green; */
+    }
+
+    header nav a {
+        width: 100%;
+        padding: 20px 0px;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+
+    header nav a:first-child{
+        border-top: 1px solid black
+    }
+
+    .cta {
+        margin-top: 50px;
+        flex-wrap:wrap;
+        align-items: center;
+
+    }
+
+    .cta image{
+        max-width: 80%;
+    }
+
+    .main-content .top-content{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 300px;  
+    }
+
+    .main-content .bottom-content{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 440px;
+    }
+
+    .contact{
+        margin: 20px 4.54%;
+    }
+
+
+
+
+
+    
 }
