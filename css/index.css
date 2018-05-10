@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+		font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -76,8 +77,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.54%;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -85,6 +86,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+		font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -94,34 +96,34 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.181% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.18%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.5681%;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3181% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
+    width: 58.197%;
+    height: 8.443%;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -134,12 +136,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
+   border-top: 2px solid black;
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   margin: 8.5227% 0 3.977% 0;
+   padding: 3.977% 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -149,7 +151,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.409% auto;
 }
 
 .main-content .bottom-content {
@@ -157,19 +159,170 @@ header .logo {
     justify-content: space-around;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.main-content .bottom-content .text-content p {
+    padding-right: 6.818%;
 }
 
 /* Contact Styles */
 
+.contact {
+	font-size: 1.6rem;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin: 1.7045% 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+		font-size: 1.6rem;
+    margin: 4.5454% 0 2.27272%;
+}
+
+
+/* Tablet styles */
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	header nav {
+		align-self: center;
+		width: 92.1875%;
+	}
+
+	header .logo {
+		order: -1;
+		align-self: center;
+		margin-left: 0;
+	}
+
+	.cta {
+		display: flex;
+		justify-content: center;
+	}
+
+	.cta img {
+		display: none;
+	}
+
+	.cta .cta-text {
+		margin-right: 5.2083%;
+	}
+
+	.cta .cta-text button {
+		margin-top: 5.135%;
+	}
+
+	.main-content {
+		width: 94.791667%;
+		height: 75.911458%;
+		align-self: center;
+	}
+
+	.main-content .top-content {
+		width: 100%;
+	}
+
+	.main-content .top-content .text-content {
+		width: 47.390%;
+	}
+
+	.main-content .top-content .text-content p {
+		margin-top: 4.05797%;
+	}
+
+	.main-content .middle-img {
+		width: 98.901%;
+	}
+
+	.contact {
+		width: 91.1458%;
+		align-self: center;
+	}
+}
+
+
+/* Mobile Styles */
+
+@media (max-width: 400px) {
+	.container {
+		max-width: 400px;
+	}
+
+	header nav {
+		display: flex;
+		flex-flow: column;
+		align-self: center;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 5%;
+	}
+
+	header nav a {
+		width: 100%;
+		height: 15.25;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	.cta {
+		margin-top: 13.6986%;
+		padding-left: 9.58904%;
+	}
+
+	.main-content {
+		width: 90%;
+		display: flex;
+		flex-flow: column;
+	}
+
+	.main-content .top-content {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.main-content .top-content .text-content {
+		margin-top: 11.1111%;
+		width: 90%;
+	}
+
+	.main-content .middle-img {
+		width: 100%;
+		margin-top: 5%;
+		margin-bottom: 0;
+	}
+
+	.main-content .bottom-content {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.main-content .bottom-content .text-content {
+		margin-top: 11.1111%;
+		width: 90%;
+	}
+
+	.contact {
+		width: 90%;
+	}
+
 }
