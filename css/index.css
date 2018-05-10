@@ -226,14 +226,20 @@ footer {
     }
 
     header nav a {
+        width: 100%;
         border-top: 1px solid gray;
         padding: 20px 0;
         font-size: 20px;
+        text-align: center;
     }
 
     .cta {
         margin-top: 50px;
     }
+
+    /*.cta .cta-text {
+        padding-left: 15px;
+    }*/
 
     .cta h1 {
         margin-bottom: 15px;
@@ -243,19 +249,28 @@ footer {
         flex-direction: column;
     }
 
+    .main-content  .middle-img {
+        margin: 35px 0 15px 0;
+    }
+
     .main-content .bottom-content {
         flex-direction: column;
     }
 
     .main-content {
-        margin: 75px 15px 35px 15px;
+        margin: 75px 15px 0px 20px;
+        padding: 35px 0 17px 0;
     }
 
     .main-content .text-content {
         margin: 15px 0;
     }
 
+    .main-content .bottom-content .text-content {
+        margin: 15px 0 25px 0;
+    }
+
     .contact {
-        margin: 15px;
+        margin: 35px 15px;
     }
 }
