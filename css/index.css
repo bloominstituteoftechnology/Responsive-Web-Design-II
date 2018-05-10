@@ -255,7 +255,8 @@ footer {
 
 
     .main-content {
-        padding:20px;
+        width:100%;
+        padding:20px 2.60% ;/*20px*/
         margin-bottom:0;
         
         
@@ -264,9 +265,9 @@ footer {
     }
 
     .main-content .middle-img {
-        width: 758px;
+        width: 98.68%;/*758px;*/
         padding-bottom:30px;
-        padding-right:31px;
+        
         margin-bottom: 0;
         
     }
@@ -283,17 +284,15 @@ footer {
     }
 
     .main-content .top-content .text1 {
-        padding-right: 40px;
+        padding-right: 5.2083%;/*40px*/
     }
 
     .main-content .top-content .text1 h4 {
-        padding-left:10px;
-        
+        padding-left:2.6721%; /*10px*/
     }
-    
 
     .main-content .top-content .text1 p {
-        padding-left:10px;
+        
         margin-top:20px;
         
         
@@ -302,14 +301,14 @@ footer {
     }
 
     .main-content .top-content .text2 {
-        padding-right:20px;
+        padding-right:2.7469%; /*20px*/
         
         
     }
 
     .main-content .top-content .text2 h4 {
-        padding-right:40px;
-        margin-right: 10px;
+        padding-right:11.2650%;/*40px*/
+        margin-right: 2.8162%;/*10px*/
     }
 
     .main-content .top-content .text2 p {
@@ -319,7 +318,8 @@ footer {
 
     .main-content .bottom-content {
         padding-bottom: 10px;
-        padding-left: 10px;
+        padding-left: 1.3734%;/*10px*/
+        
     }
 
     .main-content .bottom-content .text1 {
@@ -332,7 +332,7 @@ footer {
 
     .main-content .bottom-content .text1 p {
         padding-top:5px;
-        padding-right:45px;
+        padding-right:6.1806%;/*45px*/
         margin-bottom:20px;
     }
 
@@ -344,8 +344,13 @@ footer {
     }
 
     .contact {
-        padding-left:30px;
-        padding-top:20px;
+        padding-left:3.9062%;/*30px*/
+        padding-top:40px;
+        font-size:1.6rem;
+    }
+
+    footer {
+        font-size:1.6rem;
     }
 }
 
@@ -357,7 +362,7 @@ footer {
     .container {
         width: 400px;
         height: auto;
-        border:1px solid red;
+        
         
 
 
