@@ -318,25 +318,29 @@ footer {
 
 	}
 	.main-content .top-content .text-content {
-		padding: 15px 0;
+		padding: 13px 0;
+		line-height: 1.9rem;
 	}
 	
 	.main-content .middle-img {
-		margin: 20px 0 0 .15%;
+		margin: 27px 0 0 .13%;
 	}
 	
 	.main-content .bottom-content {
 		display: block;
+		height: 460px;
 		margin-top: 3%;
 
 	}
+	
 	.main-content .bottom-content .text-content {
-		padding: 15px 0;
-		line-height: 119%;
+		padding: 17px 0;
+		line-height: 1.9rem;
 	}
 	
+	
 	.contact {
-		margin: 0 2.5%;
+		margin: 35px 3.85% 10px;
 	}
 
 	
