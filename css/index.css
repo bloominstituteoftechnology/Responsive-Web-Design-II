@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+    font-size: 62.5%;
     width: 880px;
     margin: auto;
 }
@@ -85,6 +86,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.2rem;
 }
 
 header nav a:hover {
@@ -106,7 +108,8 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 62.5%;
+    font-size: 7.2em;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
