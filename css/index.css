@@ -285,7 +285,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        padding: 0 1.3%;
+        padding: 0 1.3%; /* 10px / 768px (Number for tablet container) */
     }
     header {
         flex-flow: column-reverse;
@@ -349,12 +349,12 @@ footer {
         flex-flow: column wrap;
     }
     .main-content {
-        padding: 0 2.5%;
+        padding: 0 2.5%; /*(Number for mobile container)*/
     }
     .main-content .text-content {
         margin: 24px 0;
     }
     .contact {
-        padding: 0 2.5%;
+        padding: 0 2.5%; /*10px / 400px (Number for mobile container)*/
     }
 }
