@@ -258,12 +258,17 @@ h1{
 
 
 .contact{
-	margin-left: 3%;
-        margin-right: 3%;
-/*margin-top: 8%;
-    margin-left: 4%;
-    margin-right: 53%;*/
+        margin-top: 8%;
+        margin-left: 4%;
+        margin-right: 53%;
 }
+
+.contact p{
+	margin-top: 4%;
+
+
+}
+
 
 .middle-img{
 	width:100%;
