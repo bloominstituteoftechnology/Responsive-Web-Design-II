@@ -164,7 +164,7 @@ header .logo {
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.70% 0%; 	    /*15px 0;*/
 }
 
 /* Footer Styles */
