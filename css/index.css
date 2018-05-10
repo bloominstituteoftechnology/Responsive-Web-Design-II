@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+	max-width:95rem;
+    width: 100%;
     margin: auto;
 }
 
@@ -76,8 +77,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4rem; 
+    width: 69.318%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,35 +95,39 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3rem 0 0 6rem;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+    margin-top: 4.5rem;
+    justify-content: center;
+	flex-wrap:wrap;
+	flex-flow:row;
+	width:100%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 5rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin-right:9.318%;
+	width:auto;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 11rem;
+    height: 2.2rem;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -148,6 +153,8 @@ header .logo {
 }
 
 .main-content .middle-img {
+	max-width:87.6rem;
+	width:99.5%;
     display: block;
     margin: 30px auto;
 }
@@ -172,4 +179,94 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+/* tablet view */
+@media(max-width:768px){
+	.container{
+		max-width:768px;
+		width:100%;
+	}
+
+	header {
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	header .logo{
+		order:-1;
+		max-width:183px;
+		height:36px;
+		 margin: 28px 0px 0px 0px;
+		
+	}
+	header nav {
+		width:100%;
+		justify-content:space-around;
+	}
+	.cta {
+		justify-content:center;
+		padding-left:5.2%;
+	}
+	.cta img {
+		display:none;
+	}
+	.cta .cta-text h1{
+		margin-bottom:15px;
+	}
+	.main-content{
+		width:100%;
+		margin-left:2.7%;
+		padding-bottom:50px;
+	}
+	.main-content .top-content .text-content {
+		height:150px;
+		width: 45.57%;
+	}
+	.main-content .middle-img{
+		width:94.4%;
+		max-width:725px;
+		height:150px;
+		margin:5px auto 35px 0px;
+	}
+	.contact {
+    margin-left: 3.9306%;
+	}
+}
+/* mobile view */
+@media(max-width:400px){
+	.container{
+		max-width:400px;
+	}
+	header nav {
+		margin-top:20px;
+		width:100%;
+		align-items:center;
+		flex-flow:column;
+		border-bottom:1px solid black;
+		height:363px;
+	}
+	header nav a{
+		border-top:1px solid black;
+		width:100%;
+		height:64px;
+		text-align:center;
+		padding-top:14px;
+		font-size:20px;
+		padding-bottom:6px;
+	}
+	.main-content{
+		width:100%;
+	}
+	
+	.main-content .middle-img{
+		width:100%;	
+	}
+	.cta {
+		justify-content:center;
+		padding-left:0px;
+			margin-top:50px;
+	}
+	.cta .cta-text {
+    margin:0px;
+}
+
 }
