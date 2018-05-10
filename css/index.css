@@ -176,31 +176,36 @@ header .logo {
 
 /* Mobile */
 
-/* @media (max-width: 400px) {
+@media (max-width: 400px) {
     .container {
         width: 100%;
     }
 
     header {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     header nav {
-        width: 400px; 
+        width: 100%;
         flex-direction: column;
+        padding: 0 0;
         margin: 0;
-        padding: 0;
-        border: 1px solid red;
     }
 
     header nav a {
-        width: 400px;
+        border: 1px solid black;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 15px auto;
     }
 
+    header .logo {
+        width: 400px;
+        margin: 15px auto 15px;
+    }
     
-}    */
+}   
 
 /*Tablet*/
 
