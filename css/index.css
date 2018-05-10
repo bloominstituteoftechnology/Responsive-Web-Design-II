@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -190,7 +190,7 @@ footer {
     margin: 4.545454% 0 2.265%;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
     .container {
         width: 100%;
@@ -307,4 +307,4 @@ footer {
         margin: 2.6315789% 0;
     }
 
-}
+} */
