@@ -181,13 +181,6 @@ footer {
 @media (max-width: 400px){
     .container {
         width: 100%;
-        /* display: flex; */
-        /* flex-direction: column; */
-    }
-
-    /* Header */
-    header {
-        /* display: flex; */
     }
 
     header img{
@@ -196,7 +189,6 @@ footer {
 
     header nav {
         margin-top: 20px;
-        /* display: flex; */
         flex-direction: column;
     }
 
