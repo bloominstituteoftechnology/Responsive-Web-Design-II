@@ -327,7 +327,8 @@ footer {
 
 	.services-header-img {
 		width: 100%;
-		margin-top: 70px;
+		height: 100%;
+		max-width: 768px;
 	}
 	
 	.services-content .card {
@@ -435,6 +436,50 @@ footer {
 	.contact {
 		margin: 0 10px;
 	}
+	
+/* Services Mobile styles -- EKM */	
+	
+	.services-header-img {
+		width: 100%;
+		height: 100%;
+		max-width: 768px;
+	}
+	
+	.services-content {
+		margin: 20px;
+	}
+	
+	.services-content .card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.services-content .card button {
+		height: 35px;
+		width: 141px;
+		margin: 20px auto 0 auto;
+	}	
+	
+	.services-content .services-info {
+		display: flex;
+		justify-content: space-between;
+		margin-right: 0;
+	}
+	.services-content .services-info .facts {
+		width: 340px;
+		margin: 0 0 20px 0;
+	}
+	
+	.services-content .services-info .services-info-img {
+		display: none;
+		
+}
+	footer {
+		margin: 10px 0 45px;
+	}
+
 	
 }
 
