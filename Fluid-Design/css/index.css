@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+/* Fluid Design */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -66,7 +68,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
     margin: auto;
 		font-size: 1.6rem;
 }
@@ -77,16 +79,21 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+		border: solid black 2px;
+		background-color: midnightblue;
 }
 
 header nav {
     margin-top: 40px;
-    width: 69.32%;
-    justify-content: space-between;
+    width: 70%;
+    justify-content: space-around;
     display: flex;
+		flex-wrap: wrap;
 }
 
 header nav a {
+		width: 70px;
+		text-align: center;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -98,7 +105,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 10.34%;
+		width: 150px;
+    margin: 28px 0 0 10%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -107,17 +115,32 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+		flex-wrap: nowrap;
+		width: 100%;
+		justify-content: space-around;
 }
 
 .cta .cta-text {
-    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 9.32% 0 0;
+		height: 100%;
+		width: 100%;
+		align-self: center;
+}
+
+.cta .iOD {
+		width: 80%;
+		max-width: 310px;
+		max-height: 226px;
+}
+
+.cta .circle {
+	width: 50%;
+	height: 100%;
+	max-height: none;
 }
 
 .cta .cta-text button {
@@ -142,6 +165,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
+	 padding-top: 2px;
    font-size: 1.6rem;
    line-height: 1.8rem;
 }
@@ -149,20 +173,31 @@ header .logo {
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+		flex-direction: column;
 }
 
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+		width: 100%;
 }
 
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+		flex-direction: column;
+ 	 	margin-top: 5px;
 }
 
 .main-content .bottom-content p {
     padding-right: 6.82%;
+}
+
+.text-content h4 {
+	padding: 2px;
+	border: solid black 2px;
+	background-color: midnightblue;
+	color: lightgray;
 }
 
 /* Contact Styles */
@@ -176,85 +211,4 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
-}
-
-
-@media (max-width: 768px) {
-	.container {
-		width: 100%;
-	}
-
-	header .logo {margin-left: 0%;}
-
-	header {
-		flex-wrap: wrap-reverse;
-		justify-content: center;
-	}
-
-	header nav{
-		width: 100%;
-		justify-content: space-around;
-	}
-
-	.cta img {display: none;}
-	.cta .cta-text {margin: 0%;}
-	.cta {
-		justify-content: center;
-		margin-bottom: 75px;
-	}
-
-	.main-content {
-		margin: 0px 2.66%;
-	}
-	.main-content .middle-img {
-		max-width: 100%;
-	}
-
-	.top-content {
-		justify-content: space-around;
-	}
-
-	.top-content .text-content {
-		padding: 0px 1.4%;
-	}
-
-	.bottom-content .text-content {
-		padding: 0px 1.4%;
-		padding-bottom: 10px;
-	}
-
-	.contact {
-		margin: 3.32%;
-		padding-top: 20px;
-	}
-}
-
-@media (max-width: 400px) {
-	header nav {
-		height: 350px;
-		flex-direction: column;
-		margin-top: 0px;
-	}
-	header .logo {
-		border-bottom: solid black 1px;
-		padding: 0px 25%;
-		padding-bottom: 20px;
-		margin-bottom: 10px;
-	}
-	nav a {
-		border-bottom: solid black 1px;
-		padding: 20px 0px;
-		width: 100%;
-		text-align: center;
-		font-size: 2rem;
-	}
-	.top-content {
-		flex-direction: column;
-	}
-	.bottom-content{
-		flex-direction: column;
-	}
-	.text-content p {
-		padding-bottom: 20px;
-	}
 }
