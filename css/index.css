@@ -312,12 +312,14 @@ header nav a{
 	display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 10%;
 }
 
 .bottom-content{
         display: flex;
         flex-direction: column;
 	align-items: center;
+	margin-top: 15%;
 }
 
 
@@ -340,16 +342,16 @@ p{
     margin-right: 5%;
 }
 
-.top-content{
-	margin-top: 10%;
 
+.main-content .middle-img{
+	margin-top: 6%;
 }
-
-
 
 .contact{
         margin-left: 5%;
         margin-right: 5%;
+	margin-top: 3%;
+        margin-bottom: 10%;
 }
 
 }
