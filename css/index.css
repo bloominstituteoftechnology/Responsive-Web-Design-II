@@ -181,6 +181,7 @@ header nav {
 }
 
 header nav a {
+    font-size: 1.5rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -236,7 +237,7 @@ header .logo {
     border-bottom: 2px solid black;
     margin: 75px 0 35px 0;
     padding: 35px 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 18px;
 }
 
@@ -260,7 +261,10 @@ header .logo {
 }
 
 /* Contact Styles */
-
+.contact h4,
+.contact p {
+    font-size: 1.6rem;
+}
 .contact p {
     margin: 15px 0;
 }
@@ -268,6 +272,7 @@ header .logo {
 /* Footer Styles */
 
 footer {
+    font-size: 1.6rem;
     text-align: center;
     margin: 40px 0 20px;
 }
