@@ -259,43 +259,44 @@ footer {
     header nav {
         flex-direction: column;
         margin-top: 20px;
+        padding: 0;
     }
 
     header .logo {
-        margin-top: 20px;
+        margin-top: 5%;
     }
 
     header nav a {
         text-decoration: none;
         color: #b0b0b0;
         text-align: center;
-        border-top: 1px solid #b0b0b0;
-        padding: 20px 0;
-        font-size: 20px;
+        border-top: .1rem solid #b0b0b0;
+        padding: 5% 0;
+        font-size: 2rem;
     }
 
     .cta {
         margin-top: 0;
-        padding-top: 50px;
-        border-top: 1px solid #b0b0b0;
+        padding-top: 12.5%;
+        border-top: .1rem solid #b0b0b0;
     }
 
     .cta .cta-text button {
-        margin-top: 15px;
+        margin-top: 5.1352276%;
     }
 
     .main-content {
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
     }
 
     .main-content .top-content {
         flex-direction: column;
-        margin-left: 2px;
+        margin-left: 0.525%;
     }
 
     .main-content .top-content .text-content {
-        margin: 10px 0;
+        margin: 2.645432% 0;
     }
 
     .main-content .bottom-content {
@@ -303,7 +304,7 @@ footer {
     }
 
     .main-content .bottom-content .text-content {
-        margin: 10px 0;
+        margin: 2.6315789% 0;
     }
 
 }
