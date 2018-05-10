@@ -162,7 +162,8 @@ h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
 }
 
@@ -175,7 +176,8 @@ header {
 
 header nav {
     margin-top: 40px;
-    width: 610px;
+    max-width: 610px;
+    width: 69.3%; /*610 (child | nav) / 880 (parent container | .container)*/
     justify-content: space-between;
     display: flex;
 }
@@ -193,7 +195,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%; /* 91px / 880px (parent | header)*/
 }
 
 /* Call To Action (CTA) Styles */
@@ -212,7 +214,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0; /* 82px / 880px (parent | .cta)*/
 }
 
 .cta .cta-text button {
@@ -258,7 +260,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%; /*20px / 880 (parent | .bottom-content*/
 }
 
 /* Contact Styles */
@@ -275,7 +277,7 @@ header .logo {
 footer {
     font-size: 1.6rem;
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 20px; /*If margin has three values: top left/right bottom*/
 }
 
 /* Tablet Breakpoint */
@@ -283,7 +285,7 @@ footer {
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        padding: 0 10px;
+        padding: 0 1.1%;
     }
     header {
         flex-flow: column-reverse;
@@ -347,13 +349,12 @@ footer {
         flex-flow: column wrap;
     }
     .main-content {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 1.1%;
     }
     .main-content .text-content {
         margin-top: 24px;
     }
     .contact {
-        padding: 0 10px;
+        padding: 0 1.1%;
     }
 }
