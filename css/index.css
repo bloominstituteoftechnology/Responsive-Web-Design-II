@@ -77,7 +77,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,14 +94,14 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 4.5% 0 0 14%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8%;
     justify-content: flex-end;
 }
 
@@ -113,7 +113,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 13% 0 0;
 }
 
 .cta .cta-text button {
@@ -122,7 +122,7 @@ header .logo {
     background: white;
     width: 170px;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 1%;
     cursor: pointer;
 }
 
@@ -136,8 +136,8 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   margin: 8% 0 4% 0;
+   padding: 4% 0;
    font-size: 16px;
    line-height: 18px;
 }
@@ -149,7 +149,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.5% auto;
 }
 
 .main-content .bottom-content {
@@ -158,20 +158,20 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 2% 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 6.5% 0 3%;
 }
 @media (max-width: 768px) {
    
@@ -184,7 +184,7 @@ footer {
     header{
         flex-wrap: wrap;
 justify-content: center;
-padding-right: 100px;
+padding-right: 13%;
 
     }
      header .logo{
@@ -199,17 +199,17 @@ padding-right: 100px;
      }
      .cta{
          justify-content: center;
-         padding-left:  35px;
+         padding-left:  4.5%;
      }
      .cta button{
-         padding-left: 10px;
-         padding-top: 10px;
+         padding-left: 1%;
+         padding-top: 1%;
      }
      .main-content {
          max-width: 100%;
         
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 2.6%;
+        margin-right: 2.6%;
      }
      .main-content .middle-img{
          max-width: 100%;
@@ -218,7 +218,7 @@ padding-right: 100px;
          margin-top: ;
      }
      .contact{
-         margin-left: 20px;
+         margin-left: 2.6%;
      }
 }
 @media (max-width: 400px){
@@ -244,15 +244,15 @@ header nav a{
     font-size: 21px;
     border-bottom: 1px solid black;
     
-    padding-bottom: 25px;
-    padding-top: 15px;
-    padding-left: 25px;
+    padding-bottom: 6%;
+    padding-top: 3.7%;
+    padding-left: 6%;
 }
 header nav a:first-child{
     border-top: 1px solid black;
 }
 header .logo{
-padding-right: 55px;
+padding-right: 13.7%;
 
 }
 .cta .cta-text{
@@ -263,7 +263,7 @@ padding-right: 55px;
 .main-content .top-content {
     max-width: 100%;
     flex-direction: column;
-    padding-bottom: 15px;
+    padding-bottom: .25%;
     
 }
 .main-content .bottom-content{
@@ -274,7 +274,7 @@ flex-direction: column;
     width: 100%;
 }
 .text-content p{
-    padding-bottom: 15px;
+    padding-bottom: .25%;
 }
 
 
