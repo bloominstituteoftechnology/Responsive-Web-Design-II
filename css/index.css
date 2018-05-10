@@ -269,10 +269,6 @@ footer {
 		margin-top: 5%;
 	}
 
-	header .logo {
-
-	}
-
 	header nav a {
 		width: 100%;
 		height: 15.25;
@@ -293,37 +289,40 @@ footer {
 		width: 90%;
 		display: flex;
 		flex-flow: column;
-
 	}
 
 	.main-content .top-content {
 		display: flex;
 		flex-flow: column;
 		align-items: center;
-		width: 380px;
+		width: 100%;
+	}
+
+	.main-content .top-content .text-content {
+		margin-top: 11.1111%;
+		width: 90%;
 	}
 
 	.main-content .middle-img {
-		width: 360px;
+		width: 100%;
+		margin-top: 5%;
+		margin-bottom: 0;
 	}
 
 	.main-content .bottom-content {
 		display: flex;
 		flex-flow: column;
-		width: 380px;
+		align-items: center;
+		width: 100%;
 	}
 
-	.main-content .top-content {
-
-	}
-
-	.text-content {
-		margin-top: 40px;
+	.main-content .bottom-content .text-content {
+		margin-top: 11.1111%;
+		width: 90%;
 	}
 
 	.contact {
-		width: 350px;
+		width: 90%;
 	}
-
 
 }
