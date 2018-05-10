@@ -193,6 +193,8 @@ footer {
 header{
 	/*border: 1px solid blue;*/
 	width: 100%;
+	margin-top: 1%;
+	margin-left: 0%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -204,7 +206,6 @@ header{
 
 
 header .logo{
-	/*width: 100px;*/
 	order:-1;
 	align-self: center;
 	margin-left:0.1%; /*3px;*/
@@ -212,6 +213,7 @@ header .logo{
 
 header nav{
 	width: 100%;
+	margin-top: 5%;
 	display: flex;
 	justify-content: space-around;
 	/*margin-left: 5%;
@@ -219,10 +221,8 @@ header nav{
 }
 
 .cta .cta-text button{
-	margin-top: 6%;
+	margin-top: 4%;
 }
-
-
 
 
 .cta{
@@ -232,8 +232,8 @@ header nav{
 }
 
 .cta .cta-text{
-	/*margin: 0px 0px 0px 0px;*/
-    margin-right:5% /*40px;*/
+         margin-top: 1%;
+	 margin-right: 5%            /*40px;*/
 }
 
 h1{
