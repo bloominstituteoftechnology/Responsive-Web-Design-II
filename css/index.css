@@ -69,6 +69,15 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Header Styles */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 880px;
+    width: 100%;
+    font-size: 1.6rem;
+}
 
 header {
     width: 100%;
@@ -76,8 +85,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.54%; /* 40px  */
+    width: 69.32%;/* 610px */
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +103,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10.23%;  /* 90px */
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,19 +115,19 @@ header .logo {
 }
 
 .cta .cta-text {
+    width: 35%;
     font-size: 72px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .05rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 8.2rem /* 82px */ 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
     background: white;
     width: 170px;
     height: 32px;
@@ -138,7 +147,6 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
    line-height: 18px;
 }
 
@@ -158,7 +166,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 20ox;
 }
 
 /* Contact Styles */
@@ -171,5 +179,173 @@ header .logo {
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 20px; /* 20px */
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        max-width: 768px;
+        width: 100%;
+
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top:2px;
+    }
+
+    header nav{
+        width: 100%;
+        padding: 2px 9px;
+    }
+
+    header .logo{
+        order: -1;
+        align-self: center;
+        margin: 28px 0 -2px;
+    }
+
+    .cta {
+        width: 100%;
+        justify-content: center;
+        margin: 68px 0 ;
+    }
+
+    .cta .cta-text {
+        margin: 0;
+        align-self: center;
+        padding: 2px 38px 8px 0;
+    }
+
+    .cta .cta-text button {
+        margin-top: 15px;
+    }
+
+    .cta img{
+        display: none;
+    }
+
+    .main-content{
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-content .top-content .text-content, .main-content .bottom-content .text-content{
+        padding: 0 10px;
+        line-height: 1.2;
+    }
+
+    .main-content .middle-img{
+        width: 100%;
+    }
+
+    .contact {
+        padding: 33px 10px;
+    }
+
+    footer {
+        margin: -8px 0 30px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .container{
+        max-width: 400px;
+        width: 100%;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav{
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 0 0 10px 0;
+    }
+
+    header nav a{
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    header nav a:first-child{
+        border-top: 1px solid lightgray;
+    }
+
+    header .logo{
+        order: -1;
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .cta {
+        width: 100%;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    .cta .cta-text {
+        padding:0 10px 30px;
+        align-self: center;
+    }
+
+    .cta img{
+        display: none;
+    }
+
+    .main-content {
+        width: 90%;
+        height: 950px;
+        margin: auto;
+    }
+
+    .top-content, .bottom-content {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top-content .text-content {
+        width: 100%;
+        height: 130px;
+        margin: 13px -1.14%;
+    }
+
+    .main-content .middle-img{
+        margin-top: 20px;
+    }
+
+
+    .bottom-content .text-content {
+        width: 100%;
+        height: 157px;
+        margin: 0px -1.14%;
+        padding-bottom: 0;
+    }
+
+    .bottom-content:last-child {
+        padding-top: 5px;
+    }
+
+    .main-content .bottom-content p {
+        padding-right: 0;
+    }
+
+    .contact {
+        margin: 5px 0 0 2.2%;
+    }
 }
