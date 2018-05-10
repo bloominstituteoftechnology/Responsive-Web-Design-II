@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
     margin: auto;
 }
 
@@ -77,7 +77,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.31%;
     justify-content: space-between;
     display: flex;
 }
@@ -100,6 +100,7 @@ header .logo {
 /* Call To Action (CTA) Styles */
 
 .cta {
+    width: 100%;
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
@@ -120,7 +121,7 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+    /* width: 19.31%; */
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -193,7 +194,7 @@ footer {
     }
 
     header nav {
-        width: 768px;
+        width: 100%;
         padding: 0 30px;
     }
 
