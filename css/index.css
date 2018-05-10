@@ -65,11 +65,23 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+		width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
 /* Header Styles */
+
+/**************************
+  Alex McEvoy
+	Responsive Design II
+	Date: 05/10/18
+***************************/
+
+
+html {
+	font-size: 62.5%;
+}
 
 header {
     width: 100%;
@@ -77,13 +89,14 @@ header {
 }
 
 header nav {
-    margin-top: 40px;
-    width: 610px;
+    margin-top: 4.5%;
+    width: 69.3%;		 /* 610 / 880 = 0.6931 */
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
+		font-size: 1.6rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -95,35 +108,36 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 3.81% 0 0 10.34%; /*28px 0 0 91px  = 0.0381% 0 0 0.1034% */
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.18%;
     justify-content: flex-end;
+		width: 100%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;	/* originally 72px*/
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.57%; /* 5px*/
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0;  /*0 82px 0 0*/
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: .01rem double black;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 45.5%; /*  170px / 373.91 width of parent (cta-text)(292.11 + 81.8 padding) = 373.91*/
+    height: 8.4%; /* 32px / 379  = 8.4%*/
+    margin-top: 1.14%;
     cursor: pointer;
 }
 
@@ -135,12 +149,12 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black;
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   border-top: .2rem solid black;
+   border-bottom: .2rem solid black;
+   margin: 8.5% 0 3.98% 0;
+   padding: 3.98% 0;
+   font-size: 1.6rem; /* 16px */
+   line-height: 1.8rem; /* 18px */
 }
 
 .main-content .top-content {
@@ -150,7 +164,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.4% auto; /* 30px */
 }
 
 .main-content .bottom-content {
@@ -159,21 +173,27 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;	/* 20px */
 }
 
 /* Contact Styles */
 
+.contact {
+	font-size: 1.6rem;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin: 1.7% 0; /* 15px */
 }
 
 /* Footer Styles */
 
 footer {
+		font-size: 1.6rem;
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.55% 0 2.27%; /* 40px 0 20px */
 }
+
 
 /**************************
   Alex McEvoy
@@ -199,27 +219,23 @@ footer {
 
 		header {
 			width: 100%;
-			max-width: 758px;
 			display: flex;
 			flex-flow: column;
 		}
 
 		.container header .logo {
 			order: -1;
-			width: 100%;
-			width: 183px;
-			height: 36px;
-			margin-left: 0px;
+			width: 24.1%;
+			margin-left: 0%;
 			align-self: center;
 		}
 
 		header nav {
-			margin-top: 21px;
-			  display: flex;
-				padding: 20px;
-		    width: 100%;
-				max-width: 758px;
-		    align-content: space-between;
+			margin-top: 2.78%;	/* 21px*/
+		  display: flex;
+			padding: 2.64%; /* 20px*/
+	    width: 100%;
+	    align-content: space-between;
 
 		}
 
@@ -237,15 +253,15 @@ footer {
 		.cta {
 		    display: flex;
 				flex-flow: column;
-		    margin-top: 53px;
-				padding-right: 40px;
+		    margin-top: 6.99%; /* 53px */
+				padding-right: 5.28%; /* 40px */
 		    justify-content: flex-end;
 		}
 
 		.cta .cta-text {
-		    font-size: 72px;
+		    font-size: 7.2rem; /* 72px */
 		    text-align: center;
-		    letter-spacing: 5px;
+		    letter-spacing: .5rem; /* 5px */
 		    display: flex;
 		    justify-content: center;
 		    flex-flow: column;
@@ -254,12 +270,12 @@ footer {
 		}
 
 		.cta .cta-text button {
-		    border: 1px double black;
-		    font-size: 16px;
+		    border: .01rem double black;
+		    font-size: 1.6rem;
 		    background: white;
-		    width: 170px;
-		    height: 32px;
-		    margin-top: 16px;
+		    width: 23.68%; /* 170px / 717.984 = 23.68% */
+		    height: 3.2rem;
+		    margin-top: 2.11%;	/* 16px / 274 */
 		    cursor: pointer;
 		}
 
@@ -272,33 +288,31 @@ footer {
 
 		/* Tablet Main Content Styling*/
 
-		 .main-content .middle-img {
-			width: 100%;
-			max-width: 728px;
-			margin-bottom: 29px;
+		.main-content {
+			width: 96.04%;
+			margin: 9.89% 0% 4.62% 1.98%; /* 75px 20px 35px 15px */
 		}
 
-		.main-content {
-			width: 100%;
-			max-width: 728px;
-			margin: 75px 20px 35px 15px;
+		 .main-content .middle-img {
+			width: 96.04%;
+			margin-bottom: 29px;
 		}
 
 		.main-content .top-content {
 		    display: flex;
 		    justify-content: space-around;
-				padding-left: 10px;
+				padding-left: 1.32%;  /* 10px */
 		}
 
 		.main-content .top-content h4 {
-				margin-bottom: 15px;
+				margin-bottom: 1.98%; /* 15px */
 		}
 		.main-content .top-content p {
-				padding-right: 10px;
+				padding-right: 1.32%;
 		}
 
 		.main-content .top-content .top1 {
-				margin-right: 10px;
+				margin-right: 1.31%;
 		}
 
 		.main-content .bottom-content {
@@ -306,34 +320,27 @@ footer {
 		    justify-content: space-around;
 		}
 
-		.main-content .bottom-content  h4 {
-
-		}
-
-		.main-content .bottom-content p {
-				margin-top: 15px;
-		    padding-right: 40px;
-		}
-
 		.main-content .bottom-content .text-content h4 {
 				margin-left: 10px;
 		}
 
 		.main-content .bottom-content .text-content p {
-				margin-left: 6.3px;
+				margin-top: 1.98%;
+				padding-right: 5.25%;
+				margin-left: 0.83%;
 		}
 
 		/* Tablet Contact Styling */
 
 		.contact {
-				margin-left: 25px;
+				margin-left: 3.3%;
 		}
 
 		/* Footer Styles */
 
 		footer {
 		    text-align: center;
-		    margin: 40px 0 20px;
+		    margin: 5.28% 0 2.64%;
 		}
 
 	}
@@ -350,52 +357,67 @@ footer {
 			}
 			/* Phone Header Styles */
 
+			.container header .logo {
+					width: 45.75%;
+					margin-top: 4.5%;
+			}
+
 			header nav {
 					display: flex;
 					flex-flow: column;
 					justify-content: center;
 					width: 100%;
-					max-width: 400px;
-					margin: 0;
+					padding-left: 0%;
+					padding-right: 0%;
 
 			}
 
 			header nav a {
+					width: 100%;
+					font-size: 2rem;
 					text-align: center;
-					padding: 15px 0px;
-					border-top: 1px solid grey;
-					border-bottom: 1px solid grey;
+					padding: 5% 0% 5% 0%;
+					border-bottom: .1rem solid grey;
+			}
+
+			header nav a:first-child{
+					border-top: .1rem solid grey;
 			}
 
 
 			/* Mobile CTA Styles */
 
 			.cta {
-					margin-top: 20px;
+					margin-top: 10%;
+					padding: 0;
+			}
+
+			.cta .cta-text button {
+					width: 42.5%;
+					margin-top: 4.5%;
 			}
 
 			/* Mobile Main Content Styles */
 
 			.main-content {
-				width: 100%;
-				max-width: 360px
+				width: 90%;
+				margin-top: 18%;
+				margin-left: 4.5%;
+				padding-top: 12.25%;
 			}
 
 			 .main-content .middle-img {
-				 width: 100%;
-				 max-width: 360px;
-				 margin-top: 10px;
+				 width: 90%;
+				 /* max-width: 360px; */
+				 margin-top: 2.5%;
+			 }
+
+			 .main-content .text-content {
+				 
 			 }
 
 			 .main-content .top-content {
-				 width: 100%;
-				 max-width: 360px;
-				 margin: 0px 20px 0px 0px;
 				 flex-flow: column;
-			 }
-
-			 .main-content .top-content p {
-
 			 }
 
 			 .main-content .bottom-content {
@@ -404,9 +426,7 @@ footer {
 			 }
 
 			 .text-content p {
-				 margin-bottom: 20px;
-				 width: 100%
-				 max-width: 400px;
+				 margin-bottom: 5%;
 			 }
 
 	}
