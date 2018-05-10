@@ -182,7 +182,7 @@ footer {
     .container {
         width:768px;
         height:auto;
-        background-color:green;
+        
         
     
     }
@@ -194,14 +194,14 @@ footer {
         width:768px;
         
         width:100%;
-        background-color:yellow;
+        
         
     }
 
     header nav {
         width:100%;
         justify-content: space-around;
-        border:1px solid red;
+        
         
 
     }
@@ -217,7 +217,7 @@ footer {
         
         
         
-        border:1px solid red;
+        
     }
 
     .cta {
@@ -344,4 +344,48 @@ footer {
 }
 
 /*CSS for Responsive Phone*/
+
+@media (max-width: 400px) {
+    
+
+    .container {
+        width: 400px;
+        height: auto;
+        border:1px solid red;
+        
+
+
+    }
+
+   
+
+    header {
+       width:400px;
+       flex-wrap:wrap;
+       align-items:center;
+        
+    }
+
+    header .logo {
+        display:flex;
+        padding:0;
+        border: 1px solid red;
+        width: 400px;
+        margin:0;
+        height:20px;
+        width:40px;
+       
+        
+    }
+
+    header nav {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        border:1px solid red;
+        margin:0;
+    }
+}
+
+
 
