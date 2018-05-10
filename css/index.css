@@ -174,11 +174,13 @@ footer {
     margin: 40px 0 20px;
 }
 
+
 /* Tablet */
 @media (max-width: 768px) {
     .container {
-        max-width: 768px;
+        width: 100%;
         margin: auto;
+        overflow: hidden;
     }
 
     /* Nav Bar */
@@ -220,7 +222,7 @@ footer {
     }
 
     .cta .cta-text {
-        margin-right: 44px;
+        margin-right: 23px;
         margin-top: 18.5px;
         
     }
@@ -261,6 +263,34 @@ footer {
 
     footer {
         font-size: 16px;
-        margin: 41px 0 20px;
+        padding-top: 27px;
+        padding-left: 18px;
     }
+}
+
+/* Phone */
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    header nav {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    header nav a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid;
+    }
+    
 }
