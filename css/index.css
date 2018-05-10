@@ -248,6 +248,13 @@ header .logo {
     justify-content: space-around;
 }
 
+.main-content .top-content .text-content {
+    padding-right: 1.8%;
+}
+.main-content .top-content .text-content:last-child {
+    padding-right: 0;
+}
+
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
@@ -257,6 +264,13 @@ header .logo {
 .main-content .bottom-content {
     display: flex;
     justify-content: space-around;
+}
+
+.main-content .bottom-content .text-content {
+    padding-right: 1.8%;
+}
+.main-content .bottom-content .text-content:last-child {
+    padding-right: 0;
 }
 
 .main-content .bottom-content p {
