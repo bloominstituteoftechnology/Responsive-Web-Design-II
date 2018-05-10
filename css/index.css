@@ -271,26 +271,67 @@ footer {
 /* Phone */
 @media (max-width: 400px) {
     .container {
-        width: 100%;
-        margin: auto;
+        width: 400px;
+    }
+
+    header {
+        width: 400px;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     header nav {
+        font-size: 20px;
+        width: 400px;
         flex-direction: column;
-        display: flex;
-        align-items: center;
+        margin-top: 13px;
     }
 
     header nav a {
-        padding-top: 15px;
-        padding-bottom: 15px;
         border-bottom: 1px solid;
+        width: 400px;
+        margin: 0;
+        align: center;
+        padding: 20px;
         text-align: center;
-        width: 100%;
     }
 
     header nav a:first-child {
         border-top: 1px solid;
     }
     
+    section.cta {
+        width: 400px;
+        margin: 32px auto auto 11px;
+    }
+    
+    section.main-content {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section .top-content {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    section .bottom-content {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+    }
+
+    div.bottom-content .text-content {
+        width: 400px;
+        font-weight: 400;
+    }
+
+    .main-content .middle-img {
+        max-width: bold;
+    }
 }
