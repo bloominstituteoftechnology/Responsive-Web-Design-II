@@ -151,6 +151,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+    width: 100%;
     display: block;
     margin: 30px auto;
 }
@@ -203,7 +204,7 @@ footer {
         font-size: 1.6rem; 
         justify-content: space-around;
         margin-top: 42px;
-        margin-right: 13px;
+        margin-right: 1.7%;
     }
 
     header .logo {
@@ -216,7 +217,6 @@ footer {
 
     .cta {
         margin-top: 56px;
-        margin-left: 3px;
     }
 
     .cta img {
@@ -229,7 +229,7 @@ footer {
     }
 
     .cta .cta-text {
-        margin-right: 23px;
+        margin-right: 3%;
         margin-top: 18.5px;
         
     }
@@ -238,32 +238,32 @@ footer {
         margin-top: 16px;
     }
     .main-content {
-        margin: 82px 0px 0px 20px;
+        margin: 82px 0px 0px 2.6%;
         width: 100%;
         padding: 0;
     }
 
     .middle-img {
-        max-width: 720px;
+        max-width: 93.75%;
     }
 
     .main-content .top-content {
 
-        padding-top: 29px;
+        padding-top: 30px;
         width:100%
         
     }
 
     .bottom-content {
         padding-top: 24px;
-        padding-right: 27px;
+        padding-right: 2.8%;
         padding-left: 0px;
         padding-bottom: 65px;
     }
 
     section.contact {
         display: block;
-        margin-left: 29px;
+        margin-left: 2.9%;
         margin-top: 30px;
         font-size: 1.6rem;
     }
@@ -271,7 +271,7 @@ footer {
     footer {
         font-size: 1.6rem;
         padding-top: 27px;
-        padding-left: 18px;
+        padding-left: 2.3%;
     }
 }
 
@@ -315,7 +315,7 @@ footer {
     }
     
     section.main-content {
-        width: 400%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -354,7 +354,7 @@ footer {
     }
 
     .main-content .middle-img {
-        max-width: 360px;
+        max-width: 90%;
         margin: 0;
         padding: 0;
     }
