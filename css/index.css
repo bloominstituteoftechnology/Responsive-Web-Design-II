@@ -175,7 +175,7 @@ header .logo {
 /* Footer Styles */
 
 footer {
-   /* font-size: 1.6rem;*/	 
+    font-size: 1.6rem;	 
     text-align: center;
     margin: 4.54% 0% 2.27%;             /*40px 0 20px;*/
 }
