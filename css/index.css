@@ -368,7 +368,7 @@ footer {
     header .logo {
         display:flex;
         padding:0;
-        border: 1px solid red;
+        
         align-self:center;
         margin:0;
         padding-top:20px;
@@ -383,7 +383,7 @@ footer {
         display: flex;
         flex-direction:column;
         align-items: center;
-        border:1px solid red;
+        
         margin:0;
         height:auto;
     }
@@ -399,10 +399,10 @@ footer {
     }
 
     .container .cta {
-        border:1px solid red;
+        
         margin:0;
         margin-top:40px;
-        margin-bottom:70px;
+        margin-bottom:65px;
         padding-left:40px;
         padding-top:5px;
         
@@ -420,10 +420,82 @@ footer {
 
     .container .main-content {
         margin:0;
+        width:400px;
+        display: flex;
+        flex-direction:column;
+        height: auto;
+        padding-bottom:10px;
+        margin-bottom:12px;
     }
 
     
+    .container .main-content .top-content {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 0;
+        padding-top:30px;
+    }
+    
+    .container .main-content .bottom-content {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container .main-content .top-content .text1 {
+        padding-right:0;
+    }
+
+    .main-content .top-content .text1 h4 {
+        padding-left: 0;
+    
+    }
+
+    .main-content .top-content .text1 p {
+        padding-left: 0;
+    }
+    
+    .container .main-content .top-content .text2 {
+        padding-top:28px;
+        padding-right:0;
+    }
+
+    .main-content .middle-img {
+        height:110px;
+        width: 100%;
+        padding-right:0;
+        margin:0;
+        margin-bottom: 20px;
+        padding:0;
+        padding-top:35px;
+        margin-bottom:15px;
+    }
+
+    .container .main-content .bottom-content {
+        padding:0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+
+    .main-content .bottom-content .text1 {
+        margin-bottom: 15px;
+
+    }
+
+    .main-content .bottom-content .text2 {
+        margin-bottom: 15px;
+    }
+
+    .main-content .bottom-content .text3 {
+        margin-top:30px;
+        margin-bottom:35px;
+    }
+
+    .contact {
+        padding-left:20px;
+    }
+
 }
-
-
 
