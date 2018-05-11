@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size:65%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -64,8 +68,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width:100%;
     margin: auto;
+    font-size:1.6rem;
 }
 
 /* Header Styles */
@@ -77,7 +83,8 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    /* width: 610px; */
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -94,7 +101,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    /* margin: 28px 0 0 91px; */
+    margin: 28px 0 0 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,28 +114,32 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    /* font-size: 72px; */
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    /* margin: 0 82px 0 0; */
+    margin: 0 9.32% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    /* width: 170px; */
+    width: 58.2%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
 }
 
 .cta .cta-text button:hover {
-    background: black;
+    background: rgb(187, 66, 66);
     color: white;
 }
 
@@ -137,19 +149,24 @@ header .logo {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
+   /* margin: 75px 0 3.98% 0; */
    padding: 35px 0;
-   font-size: 16px;
+   /* font-size: 16px; */
+   font-size: 1.6rem;
    line-height: 18px;
+   
 }
 
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+
 }
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    max-width: 100%;
+    margin: 30px auto; /* WHY AUTO HERE */
 }
 
 .main-content .bottom-content {
@@ -158,7 +175,12 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    /* padding-right: 20px; */
+    padding-right: 2.6%;
+}
+
+.text-content {
+    margin:0 1%;
 }
 
 /* Contact Styles */
@@ -173,3 +195,182 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+
+/* Media Queries */
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .container {
+        /* background:green; */
+        width: 100%; 
+        /* border:1px solid black; */
+        margin: 0px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        /* border:1px solid blue; */
+        align-items: center;
+    }
+
+    header nav {
+        /* margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left:30px;
+        margin-right: 30px; */
+        /* margin: 40px 30px 30px 30px; */
+        margin: 40px 3.41% 30px 3.41%;
+        /* padding-left: 20px;
+        padding-right: 10px; */
+        padding-left: 2.27%;
+        padding-right: 1.14%;
+        justify-content: space-between;
+        width: 100%;
+        /* border:1px solid purple; */
+
+    }
+
+    header .logo {
+        align-self: center;
+        /* margin-right: 77px;    */
+        margin-right: 8.75%;
+    }
+    .cta {
+        /* border:1px solid rgb(0, 225, 255); */
+        justify-content:center;
+        margin: 0px;
+        margin-top:38px;
+        /* margin-left: 53px; */
+        margin-left: 6.02%
+        /* margin-bottom: 30px; */
+    }
+
+    .cta img {
+        display:none;
+    }
+
+    .main-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        /* padding-left: 30px; */
+        padding-left: 3.9%;
+        padding-right: 3.9%;
+        border-top: 2px solid black; 
+        border-bottom: 2px solid black; 
+        margin: 73px 0 35px 0;
+    }
+
+    .main-content .top-content {
+        /* border: 1px solid red;  */
+    }
+
+    .main-content .middle-img {
+        display: block;
+        height: 150px;
+        margin-top: 30px;
+        /* margin-left: -10px; */
+        margin-left: 1.3%;
+        margin-right: 1.3%;
+        
+        /* border: 1px solid red; */
+    }
+
+    .bottom-content {
+        /* display: block;
+        height: 150px;
+        margin-top: 30px;
+        margin-left: -10px;
+         */
+        /* border: 1px solid red; */
+        
+    }
+    .bottom-content .text-content {
+        /* display: block;
+        height: 150px;
+        margin-top: 30px;
+        margin-left: -10px;
+         */
+        /* border: 1px solid red; */
+        /* line-height: 1.3; */
+    }
+
+
+    .contact {
+        margin: 0px 20px;
+        margin: 0px 2.6%;
+        /* border: 1px solid red; */
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 400px) {
+    .container {
+        background:lightblue;
+        width: 100%;
+        border: 1px solid red;
+        margin: 0px;
+    }
+    
+    header {
+        flex-direction: column-reverse;
+        border:1px solid orange;
+        align-items: center;
+    }
+
+    header nav {
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border:1px solid purple;
+        flex-direction: column;
+
+        /* margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left:30px;
+        margin-right: 30px;
+        padding-left: 20px;
+        padding-right: 10px;
+        justify-content: space-between;
+        width: 100%;
+        border:1px solid purple; */
+
+    }
+
+    header .logo {
+        margin: 20px;   
+    }
+
+    header nav a {
+        border-top:1px solid red;
+        border-bottom:1px solid red;
+        border-left: 1px solid red;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 100%;
+        padding-left: 100%;
+        font-size: 20px;
+        /* flex-direction: column; */
+    }
+
+
+
+    .main-content .top-content{
+        flex-wrap:wrap;
+        /* padding:0 0px; */
+    }
+
+    .main-content .bottom-content{
+        flex-wrap:wrap;
+    }
+}
+
+
