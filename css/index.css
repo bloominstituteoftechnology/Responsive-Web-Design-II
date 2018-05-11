@@ -173,3 +173,20 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        width: 100%;
+    }
+    header {
+        flex-direction: column-reverse;
+    }
+    header .logo {
+       align-self: center;
+      
+    }
+}
