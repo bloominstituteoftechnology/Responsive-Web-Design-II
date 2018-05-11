@@ -62,7 +62,6 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-
 .container {
     width: 880px;
     margin: auto;
@@ -172,4 +171,48 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width:768px){
+
+.container {
+    width: 768px;
+    margin: auto;
+}
+
+header{
+    border: 1px solid red;
+    width:780px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-right:134px;
+}
+
+header nav{
+    border:1px solid purple;
+    width:780px;
+    display:flex;
+    justify-content: flex-start;
+    justify-content:space-between;
+    margin-left:70px;
+}
+
+header .logo{
+    border:1px solid black;
+    display:flex;
+    order: -1;
+    flex-direction:column-reverse;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.cta{
+    width:700px;
+    border: 1px solid blue;
+    display:flex;
+    justify-content:center;
+    padding-left:65px;
+}
+
 }
