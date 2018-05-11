@@ -403,7 +403,7 @@ footer {
 
     header nav a {
         border:1px solid gray;
-        width:100%;
+        width:100%; /*IS THE MOBILE BUILD RESPONSIVE? THIS SHOULD BE 100% I BELIEVE*/
         display:flex;
         justify-content: center;
         font-size: 2rem;/*20px*/
