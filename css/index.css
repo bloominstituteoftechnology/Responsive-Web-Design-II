@@ -396,6 +396,7 @@ footer {
         display: flex;
         flex-direction:column;
         align-items: center;
+        width:100%; /*HAD TO ADD THIS IN> IT SHOULD HELP WITH RESPONSIVENESS*/
         
         margin:0;
         height:auto;
