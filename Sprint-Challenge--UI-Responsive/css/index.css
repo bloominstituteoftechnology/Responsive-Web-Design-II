@@ -51,13 +51,17 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,8 +71,41 @@ p {
 }
 
 .container {
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+/*Header Styles*/
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 50px; 
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header .logo {
+    margin: 25px 0 0 0;
+
+}
+
+/*Main content styles*/
+
+.jumbo {
+    margin: 35px 0 25px 0;
 }
 
 .top-content {
@@ -83,7 +120,10 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    font-size: 1.6rem;
 }
+
+/*Middle content*/
 
 .middle-content {
     margin-bottom: 20px;
@@ -93,7 +133,7 @@ p {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
-}
+} 
 
 .middle-content .boxes {
     display: flex;
@@ -110,7 +150,30 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem; 
 }
+
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+/*bottom content*/
 
 .bottom-content {
     display: flex;
@@ -120,11 +183,14 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/*Footer styles*/
 
 footer {
     width: 100%;
@@ -137,10 +203,109 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*Tablet*/
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .jumbo {
+        margin: 35px 0 16px 0;
+    }
+
+        
+    .middle-content .boxes .box1 {
+    background: teal;
+    }
+
+    .middle-content .boxes .box3 {
+    background: gold;
+    }
+
+    .middle-content .boxes .box5 {
+    background: cadetblue;
+    }
+
+    .middle-content .boxes .box7 {
+    background: coral;
+    }
+
+    .middle-content .boxes .box9 {
+    background: crimson;
+    }
+}
+
+/*Phone*/
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.4rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 30px 0;
+    }
+
+    .top-content .jumbo {
+        margin-top: 0;
+        width: 100%;
+        max-height: 75px;
+    }
+
+    .top-content {
+        
+    }
