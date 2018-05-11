@@ -53,6 +53,7 @@ table {
 }
 
 html, body {
+    font-size: 62.5%;
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -62,6 +63,8 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
+
+/*For me to see where to start, disregard*/
 
 .container {
     width: 880px;
@@ -77,7 +80,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.318%; /*610px69.318*/
     justify-content: space-between;
     display: flex;
 }
@@ -85,6 +88,8 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
+    
 }
 
 header nav a:hover {
@@ -94,7 +99,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10.34%;/*91px*/
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,21 +111,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;/*72px*/
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 5px;/*5px*/
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.3% 0 0; /*right 82px*/
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;/*16px*/
     background: white;
-    width: 170px;
+    width: 58.88%;/*170px*/
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -138,7 +143,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;/*16px*/
    line-height: 18px;
 }
 
@@ -149,7 +154,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 30px auto;/*auto*/
 }
 
 .main-content .bottom-content {
@@ -158,13 +163,18 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;/*20px*/
 }
 
 /* Contact Styles */
 
+.contact {
+    font-size:1.6rem;
+}
+
 .contact p {
     margin: 15px 0;
+    
 }
 
 /* Footer Styles */
@@ -172,4 +182,341 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+    font-size:1.6rem;
 }
+
+
+/*CSS for Responsive Tablet*/
+
+@media (max-width: 768px) {
+
+    .container {
+        width:768px;
+        height:auto;
+        
+        
+        
+    
+    }
+
+    header {
+        display: flex;
+        flex-direction:column-reverse;
+        align-items: center;
+        width:100%;
+        
+        
+        
+        
+    }
+
+    header nav {
+        width:100%;
+        justify-content: space-around;
+        
+        
+
+    }
+
+    header nav a {
+        width:7.2786%;  /*55.9px*/
+
+    }
+
+
+
+    .logo {
+        padding-right: 37.76%;/*290px*/
+        
+        
+        
+        
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        width:100%;
+        
+
+    }
+
+    .cta .cta-text {
+        padding-left:5.20%;/*40px*/
+        
+
+    }
+
+    .cta .cta-text h1 {
+        
+    }
+
+    .cta .cta-text button {
+        margin-top:15px;
+    }
+
+
+    .snippet {
+        display: none;
+    }
+
+
+
+    .main-content {
+        width:100%;
+        padding:20px 2.60% ;/*20px*/
+        margin-bottom:0;
+        
+        
+        
+
+    }
+
+    .main-content .middle-img {
+        width: 98.68%;/*758px;*/
+        padding-bottom:30px;
+        
+        margin-bottom: 0;
+        
+    }
+
+    .main-content .top-content {
+        margin-bottom:20px;
+        padding-top:10px;
+        display:flex;
+        justify-content: space-between;
+        
+        
+        
+
+    }
+
+    .main-content .top-content .text1 {
+        padding-right: 5.2083%;/*40px*/
+    }
+
+    .main-content .top-content .text1 h4 {
+        padding-left:2.6721%; /*10px*/
+    }
+
+    .main-content .top-content .text1 p {
+        
+        margin-top:20px;
+        
+        
+       
+    
+    }
+
+    .main-content .top-content .text2 {
+        padding-right:2.7469%; /*20px*/
+        
+        
+    }
+
+    .main-content .top-content .text2 h4 {
+        padding-right:11.2650%;/*40px*/
+        margin-right: 2.8162%;/*10px*/
+    }
+
+    .main-content .top-content .text2 p {
+        padding-top:10px;
+    }
+
+
+    .main-content .bottom-content {
+        padding-bottom: 10px;
+        padding-left: 1.3734%;/*10px*/
+        
+    }
+
+    .main-content .bottom-content .text1 {
+        
+    }
+
+    .main-content .bottom-content .text1 h4 {
+
+    }
+
+    .main-content .bottom-content .text1 p {
+        padding-top:5px;
+        padding-right:6.1806%;/*45px*/
+        margin-bottom:20px;
+    }
+
+
+
+    footer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact {
+        padding-left:3.9062%;/*30px*/
+        padding-top:40px;
+        font-size:1.6rem;
+    }
+
+    footer {
+        font-size:1.6rem;
+    }
+}
+
+/*CSS for Responsive Phone*/
+
+@media (max-width: 400px) {
+    
+
+    .container {
+        width: 400px;
+        height: auto;
+        
+        
+
+
+    }
+
+   
+
+    header {
+       
+      justify-content: center;
+        
+    }
+
+    header .logo {
+        display:flex;
+        padding:0;
+        
+        align-self:center;
+        margin:0;
+        padding-top:20px;
+        margin-bottom: 15px;
+        
+        
+       
+        
+    }
+
+    header nav {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width:100%; /*HAD TO ADD THIS IN> IT SHOULD HELP WITH RESPONSIVENESS*/
+        
+        margin:0;
+        height:auto;
+    }
+
+    header nav a {
+        border:1px solid gray;
+        width:100%; /*IS THE MOBILE BUILD RESPONSIVE? THIS SHOULD BE 100% I BELIEVE*/
+        display:flex;
+        justify-content: center;
+        font-size: 2rem;/*20px*/
+        padding: 20px 0;
+        margin:0 100%;
+    }
+
+    .container .cta {
+        
+        margin:0;
+        margin-top:40px;
+        margin-bottom:65px;
+        padding-left:5%;
+        padding-top:5px;
+        
+    }
+
+    .container .cta .cta-text {
+        margin-bottom:5px;
+    }
+
+
+
+
+
+
+
+    .container .main-content {
+        margin:0;
+        width:100%;
+        display: flex;
+        flex-direction:column;
+        height: auto;
+        padding-bottom:10px;
+        margin-bottom:12px;
+    }
+
+    
+    .container .main-content .top-content {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 30px;
+        padding-top:30px;
+    }
+    
+    .container .main-content .bottom-content {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container .main-content .top-content .text1 {
+        padding-right:0;
+        margin-bottom:12px;
+    }
+
+    .main-content .top-content .text1 h4 {
+        padding-left: 0;
+    
+    }
+
+    .main-content .top-content .text1 p {
+        padding-left: 0;
+    }
+    
+    .container .main-content .top-content .text2 {
+        padding-top:28px;
+        padding-right:0;
+    }
+
+    .main-content .middle-img {
+        height:110px;
+        width: 100%;
+        padding-right:0;
+        margin:0;
+        margin-bottom: 20px;
+        padding:0;
+        padding-top:35px;
+        margin-bottom:15px;
+    }
+
+    .container .main-content .bottom-content {
+        padding:0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+
+    .main-content .bottom-content .text1 {
+        margin-bottom: 15px;
+
+    }
+
+    .main-content .bottom-content .text2 {
+        margin-bottom: 15px;
+    }
+
+    .main-content .bottom-content .text3 {
+        margin-top:30px;
+        margin-bottom:35px;
+    }
+
+    .contact {
+        padding-left:5%;/*20px*/
+    }
+
+}
+
