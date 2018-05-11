@@ -287,27 +287,5 @@ footer {
             max-width: 80%;
         }
         
-        .main-content {
-            padding: 5.2% 0 0 2.6%;
-        }
-
-        .main-content .top-content {
-            justify-content: space-around;
-            flex-direction: column;
-            height: 300px;
-        }
-    
-        .main-content .bottom-content {
-            flex-wrap: wrap;
-            align-content: space-between;
-            height: 440px;
-        }
-    
-        .text-content {
-            margin: 0;
-        }
-    
-        .contact {
-            margin: 2.6%;
-        }
+        
     }
