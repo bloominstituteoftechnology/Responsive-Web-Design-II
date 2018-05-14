@@ -57,6 +57,10 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -199,4 +203,54 @@ footer {
     .middle-img {
         max-width: 768px;
     }
+    
+}
+
+/* Mobile */
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 400px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    header nav {
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        align-content: space-between;
+        font-size: 20px;
+      }
+      header nav a {
+          border-bottom: 1px solid black;
+           padding-bottom: 20px;
+          padding-left: 140px;
+         
+      }
+
+      header nav .services {
+          border-top: 1px solid black;
+          padding-top: 20px;
+      }
+
+      header .logo {
+          padding-left: 20px;
+      }
+  .cta .cta-text {
+      margin-right: 50px;
+      
+  }
+  .top-content {
+      flex-direction: column;
+      height: 300px;
+      padding: 10px;
+  }
+  .bottom-content {
+      flex-direction: column;
+      height: 500px;
+      padding: 10px;
+  }
+  .contact {
+      padding: 10px;
+  }
 }
