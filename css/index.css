@@ -85,7 +85,6 @@ header {
 
 header nav {
     margin-top: 40px; 
-    /* width: 610px; */
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -104,7 +103,6 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    /* margin: 28px 0 0 91px; */
     margin: 28px 0 0 10.34%;
 }
 
@@ -123,8 +121,6 @@ header .logo {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    align-items: center;
-    /* margin: 0 82px 0 0; */
     margin: 0 9.3% 0 0;
 }
 
@@ -132,7 +128,6 @@ header .logo {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    /* width: 170px; */
     min-width: 170px;
     width: 19.3%;
     height: 32px;
@@ -172,7 +167,6 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    /* padding-right: 20px; */
     padding-right: 2.3%
 }
 
@@ -242,7 +236,6 @@ footer {
         .container{
             max-width: 400px;
             width: 100%;
-            /* padding: 0px 20px; */
         }
 
         header nav {
@@ -255,7 +248,6 @@ footer {
             height: 55px;
             text-align: center;
             width: 100%;
-            /* border-top: 1px solid gray; */
             border-bottom: 1px solid gray;
             padding: 17px 1.9% 17px;
             font-size:2rem;
