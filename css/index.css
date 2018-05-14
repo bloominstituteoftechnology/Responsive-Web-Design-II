@@ -63,12 +63,13 @@ html {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     margin-bottom: 10px;
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
 }
 
@@ -81,7 +82,8 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    /* width: 610px; */
+    width: 69.32%;
     justify-content: space-between;
     display: flex;
 }
@@ -98,7 +100,8 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    /* margin: 28px 0 0 91px; */
+    margin: 28px 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -110,21 +113,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.32% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 58.22%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -154,6 +157,8 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    max-width: 880px;
+    width: 100%;
 }
 
 .main-content .bottom-content {
