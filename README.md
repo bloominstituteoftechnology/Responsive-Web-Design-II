@@ -1,3 +1,4 @@
+View project [HERE](https://htmlpreview.github.io/?https://github.com/TheDeterminator/Responsive-Web-Design/blob/master/index.html)
 # Responsive-Web-Design I & II
 
 We will be using the same codebase for Responsive Web Design I and II modules.  You have been provided design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder.  
