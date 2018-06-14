@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width:880px;
+    padding: 2%;
     margin: auto;
     background: olive;
 }
@@ -147,6 +148,7 @@ header .logo {
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    background:khaki
 }
 
 .main-content .middle-img {
@@ -177,16 +179,30 @@ footer {
 }
 @media(max-width: 768px ) {
     .container{
-        background: lightskyblue; }
-    .cta {
+        background: lightskyblue; 
+        padding: 2%
+        margin: 0 50% 0 50%};
+   .container .cta {
+        width:100%;
         width: 100%;
-        margin: 0 50% 0 50%
         justify-content: center;
-        flex-flow: column;}
-    .cta .circle {
+        flex-flow: column};     
+
+    .container .main-content .middle-img{
+        width: 100%
+     }
+     .container .main-content .top-content{
+        width: 100%;
+        background: lavenderblush;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        font-size: 2vw;
+        }
+
+
+     .container .cta .circle {
         display: none
      }
 @media(max-width: 400px ) {
     .container{
         background: rgb(238, 165, 30); 
-}
