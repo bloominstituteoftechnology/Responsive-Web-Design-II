@@ -64,7 +64,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-	width: 880px;
+	max-width: 880px;
+	width: 100%;
 	margin: 0 auto;
   }
   
@@ -244,4 +245,36 @@ h1, h2, h3, h4, h5 {
   }
   .services-facts ul li {
 	margin-bottom: 10px;
-  }
+	}
+	
+	/* TABLET MEDIA QUERY */
+	@media ( max-width: 768px ){
+		body {
+			justify-content: center;
+			text-align: center;
+		}
+		.container {
+			width: 100%;
+			max-width: 768px;
+			margin: auto;
+		}
+		/* HEADER */
+		header {
+			display: flex;
+			flex-direction: column;
+		}
+		header nav {
+			order: 2;
+		}
+		header .logo {
+			order: 1;
+			}
+		.cta img {
+			display: none;
+			}
+	}
+
+	/* MOBILE MEDIA QUERY */
+	@media ( max-width: 400px ) {
+
+	}
