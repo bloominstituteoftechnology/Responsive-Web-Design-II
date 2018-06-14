@@ -154,15 +154,16 @@ footer {
 	text-align: center;
 }
 @media (max-width: 800px) {
-    .container {
-        display: flex;	
+    .container {	
         height: 40px;
         width:95%;	
         margin: 10%;
         font-size: 1.6rem;
     }
     .nav-bar {
-        width: 90%;
+        width:95%;	
+        margin: 10%;
+        font-size: 1.6rem;
     }
     .nav-bar .logo {
         top:0;
@@ -173,9 +174,10 @@ footer {
     }
 }
 @media (max-width: 504px) {
+    .container {
+        
+    }
     .nav-bar {
         flex-direction: column;
-        position:fixed;
-        order: -1;
     }
 }
