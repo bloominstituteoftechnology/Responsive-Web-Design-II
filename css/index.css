@@ -54,122 +54,191 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Ubuntu', sans-serif;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+/* Your code starts here! */
+html{
+    font-size: 62.5%;
 }
-
-/* Header Styles */
-
-header {
+body{
+	height: 1536px;
     width: 100%;
-    display: flex;
+    max-width: 880px;
+    margin: auto;
+    font-size: 1.6rem;
 }
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
+.Navigation{
+	top: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 2;
+	display: flex;
+	position: sticky;
     justify-content: space-between;
-    display: flex;
+    margin-top: 2%;
 }
-
-header nav a {
+nav{
+	width: 75%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+a{
+	color: gray;
     text-decoration: none;
-    color: #b0b0b0;
+    font-size: 1.6rem;
+    width: 100%;
 }
-
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+.logo{
+    width: 20%;
 }
-
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+.logo img{
+    width: 100%;
 }
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
+header{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 50px 0;
 }
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+header .Innovation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	justify-content: space-evenly;
 }
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
-footer {
+h1 {
+	font-size: 6rem;
+	font-weight: bold;
     text-align: center;
-    margin: 40px 0 20px;
+    width: 100%;
+}
+h2{
+	font-weight: bold;
+}
+.button{
+	background-color: white;
+    color: black;
+	border: 2px solid black;
+	width: 40%;
+	padding: 5px;
+}
+.button:hover{
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+header div img{
+    width: 100%;
+}
+.main-content{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.top-content{
+	border-top: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+    width: 100%;
+    padding: 5% 0;
+}
+.top-content div{
+	width: 50%;
+	display: inline-block;
+	padding: 0 0 0 2%;
+}
+.mid-picture img{
+    width: 100%;
+}
+.bottom-content{
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+    width: 100%;
+    padding: 5% 0;
+}
+.bottom-content div{
+	width: 33.333%;
+	display: inline-block;
+	padding: 0 0 0 2%;
+}
+.content{
+    padding: 5% 0;
+    width: 100%;
+}
+footer{
+	text-align: center;
+}
+@keyframes example {
+    0% {background-color:white;}
+	50% {background-color: red;}
+	100% {background-color:white;}
+}
+
+@media (max-width: 768px) {
+   .Navigation{
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+    }
+    .logo {
+       order: -1;
+       margin: 3%;
+       width: 176px;
+       display: flex;
+       align-items: center;
+   }
+   header div img {
+       display: none;
+   }
+   header {
+       justify-content: center;
+       margin: 0;
+   }
+   header .Innovation {
+       width: 100%;
+   }
+}
+
+@media (max-width: 400px) {
+    .Navigation{
+        position: static;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black;        
+    }    
+    nav a {
+        padding: 4%;
+        border-top: 1px solid black;
+    }
+    .top-content{
+        flex-direction: column;
+    }
+    .top-content div{
+        width: 100%;
+        margin:20px 0;
+    }
+    .bottom-content{
+        flex-direction: column;
+    }
+    .bottom-content div{
+        width: 100%;
+        margin:20px 0;
+    }
 }
