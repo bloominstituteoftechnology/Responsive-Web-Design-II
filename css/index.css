@@ -284,6 +284,30 @@ h1, h2, h3, h4, h5 {
 			margin: 0;
 			padding: 0;
 			}
+		/* MAIN CONTENT*/
+		.main-content {
+			border-top: 1px solid black;
+			margin-top: 1%;
+			padding-top: 5%;
+			}
+		.main-content .top-content {
+			display: flex;
+			text-align: left;
+		}
+		.main-content .bottom-content {
+			display: flex;
+			text-align: left;
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
+		.main-content img {
+			margin: 0;
+		}
+		/* CONTACT*/
+		.contact {
+			margin-top: 30px;
+			text-align: left;
+		}
 	}
 
 	/* MOBILE MEDIA QUERY */
