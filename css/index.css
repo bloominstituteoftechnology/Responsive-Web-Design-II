@@ -223,16 +223,16 @@ h5 {
 .topInfoSection {
 	display: flex;
 	align-items: center;
-	padding: 30px 0;
+    padding: 30px 0;
+    justify-content: space-between;
+
 }
 
 .topInfoSectionLeft {
-	width: 50%;
+	width: 49%;
 }
 
-.topInfoSectionRight {
-	width: 50%;
-}
+
 
 .bottomInfoSection {
 	display: flex;
@@ -297,6 +297,13 @@ h5 {
 
 
 @media( max-width: 768px ) {
+
+    .fullPageContainer {
+        max-width: 95%;
+        margin:  auto;
+        
+    }
+
     .headerOfPage img{
         display: none;
         
@@ -311,17 +318,98 @@ h5 {
 
     
     .navBar{
-        flex-wrap: wrap;
+        flex-flow: row wrap;
+        padding: 0 20px;
+
+    }
+    .menuItem{
+        padding: 10px 0;
+        font-size: 16px;
+
 
     }
     .menuLogo{
         order: -4;
+        margin-left: 35%;
+        margin-right: 35%;
+        
+
+        width:30%;
+    }
+
+    .infoImg{
+        max-width:100%;
+        
     }
 }
 
 @media( max-width: 400px ) {
+    .fullPageContainer {
+        max-width: 95%;
+        margin:  auto;
+        
+    }
+
     .headerOfPage img{
         display: none;
+        
 
+    }
+    .headerOfPageLeft{
+
+        width: 100%;
+
+        
+    }
+
+    
+    .navBar{
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+        text-align:center;
+
+    }
+    .menuItem{
+        padding: 10px 0;
+        font-size: 16px;
+        border-style: solid;
+        border-width: 1px 0 ;
+        width :100%;
+
+
+    }
+    .menuLogo{
+        order: -4;
+       width: auto;
+       border-width: 0px;
+
+        
+
+    
+    }
+
+    .infoImg{
+        max-width:100%;
+        
+    }
+    .topInfoSection{
+        flex-direction: column;
+        padding-top: 10px;
+
+    }
+    .topInfoSectionLeft {
+        width:100%;
+        padding-top: 25px;
+    }
+
+    .bottomInfoSection{
+        flex-direction: column;
+        padding-top: 10px;
+
+    }
+    .bottomInfoSectionLeft {
+        width:100%;
+        padding-top: 25px;
     }
 }
