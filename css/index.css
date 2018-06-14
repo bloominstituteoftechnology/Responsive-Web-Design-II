@@ -164,7 +164,7 @@ header {
 }
 
 .indexheader {
-	height: 500px;
+    height: 500px;
 	background-image: url("../img/header-img.png");
 	background-repeat: no-repeat;
 	background-position: right center;
@@ -341,7 +341,6 @@ ul li {
         justify-content: center;
         align-items: center;
         height: 140px;
-        border: 1px solid green;
     }
 
     .navimg {
@@ -361,15 +360,142 @@ ul li {
         font-size: 1.5rem;
     }
 
+    header {
+        height: 395px;
+        width: 95%;
+        margin: 0 auto;
+        border-bottom: 2px solid black;
+    }
+
     .indexheader {
-        width: 50%;
+        width: 52%;
         background-image: none;
         margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 7rem;
+        margin: 40px auto 0 auto;
+    }
+
+    button {
+        min-width: 25%;
+        margin: 280px auto 0 -30%;
+        /* margin-left: -30%; */
+        /* margin: 0 auto; */
+    }
+
+    .double-content {
+        justify-content: space-evenly;
+        margin-left: -0.5%;
+    }
+
+    .double-content span {
+        padding: 0 2%;
+        margin-top: 15px;
+        width: 47.5%;
+    }
+
+    .double-content span p, .triple-content span p {
+        line-height: 1.8rem;
+    }
+
+    .middle-image {
+        background-size: contain;
+        width: 95%;
+        margin: -25px auto 0 auto;
+    }
+
+    .triple-content {
+        justify-content: space-evenly;
+        margin: -10px auto 0 auto;
+        width: 95%;
+        border-bottom: 2px solid black;
+        padding-bottom: 0px;
+    }
+
+    .triple-content span {
+        width: 28%;
+    }
+
+    .triple-content p {
+        margin-top: 10px;
+    }
+
+    .contact {
+        margin-left: 5%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        font-size: 1.6rem;
     }
 }
 
 @media(max-width: 400px) {
-    .container {
-        /* display: none; */
+    nav span {
+        flex-wrap: wrap;
+    }
+
+    .links {
+        margin-top: -30px;
+    }
+
+    .links a {
+        height: 60px;
+        width: 100%;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .links a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .navimg {
+        margin-top: -30px;
+    }
+
+    .indexheader {
+        width: 100%;
+        margin: 300px auto 0 auto;
+    }
+
+    h1 {
+        margin-left: 10%;
+    }
+
+    button {
+        margin-left: -55%;
+        padding: 3px 8%;
+    }
+
+    .double-content, .triple-content {
+        flex-wrap: wrap;
+    }
+
+    .double-content span, .triple-content span {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .double-content {
+        margin-bottom: -10px;
+    }
+
+    .triple-content {
+        margin-top: -20px;
+    }
+
+    .middle-image {
+        width: 90%;
+    }
+
+    footer {
+        margin-bottom: 20px;
     }
 }
