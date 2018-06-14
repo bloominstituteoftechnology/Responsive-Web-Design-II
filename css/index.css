@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -62,114 +62,133 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
+/* my code below*/
+.contain{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@media(max-width: 700px){
+	.navbar{
+		width:0 auto;
+		display: flex;
+		flex-wrap:wrap;
+	}
+
+}
+@media(max-width: 600px){
+	.navbar{
+		width:0 auto;
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.navbar a{
+		padding: 10px 0;
+	}
+}
+/*end of navbar section */
+
+
+}
+
+.head{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 40px 0 40px 0;
+}
+.iod{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 5%;
+	font-size: 4rem;
+}
+button{
+	display: flex;
+	align-self: flex-end;
+	margin: 0 0 0 5%;
+}
+.circle{
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 5% 0 0;
+}
+
+
+/* end of top section */
+
+/*start of Features About Middle Image and lower text*/
+.passage{
+	display: flex;
+	justify-content: space-around;
+}
+
+.middle{
+	display: flex;
+	justify-content: center;
+	padding: 40px 0 40px 0;
+}
+.lastSection{
+	display: flex;
+}
+h3{
+	margin: 0 10px 60px 0;
+}
+
+.copy{
+	display: flex;
+	flex-direction: column;
+}
+
+/* // services page css starts here */
+.head1{
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
 
 .container {
-    width: 880px;
-    margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
-/* Header Styles */
+.box{
+	display: flex;
+	width: 350px;
+	height:150px;
+	margin:20px;
+	background: #EFEADB;
+	font-size: 15px;
 
-header {
-    width: 100%;
-    display: flex;
+
+
 }
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+.services{
+	width: 800px;
+	height: auto;
+	margin: 10px
 }
+.bottomc{
+	display:flex;
+	justify-content: space-around;
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
 }
-
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+.list{
+	margin: 10px 0;
 }
-
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+.para{
+	margin: 20px 0 0 0;
 }
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+.facts{
+	width: 300px;
+	height:400px;
 }
