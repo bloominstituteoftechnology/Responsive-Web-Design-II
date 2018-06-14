@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    font-size: ;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -63,113 +64,146 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+/* Code Starts Here */
+
 .container {
-    width: 880px;
-    margin: auto;
-}
-
-/* Header Styles */
-
-header {
     width: 100%;
-    display: flex;
+	max-width: 880px;
+	/* TB LR */
+	margin: 0 auto;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+@media( max-width: 768px;) {
+
+}
+  
+@media (max-width: 400px) {
+
 }
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
+  /* header */
+  header {
+	  display: flex;
+	  flex-direction: row;
+  }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
+  header nav {
+		width: 78.52%;
+		margin-top: 35px;
+  }
+  
+  header nav a {
+		margin-right: 7.39%;
+		font-size: 14px;
+		color: gray;
+		text-decoration: none;
+  }
+  
+  header nav a:hover {
+		text-decoration: underline;
+  }
+  
+  header nav a:first-child {
+		margin-left: 0%;
+  }
+  
+  header nav a:last-child {
+		margin-right: 0%;
+  }
+  
+  header .logo {
+		margin-top: 25px;
+  }
+  
+  /* cta */
+  
+  .cta {
+	  display: flex;
+  }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
+  .cta .cta-text {
+		font-size: 77px;
+		margin-top: 120px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		padding: 0px 10.23%;
+	}
 
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
-}
+  
+  .cta .cta-text button {
+		background: white;
+		margin-top: 6px;
+		padding: 8px 0px 8px 0px;
+		font-size: 17px;
+		border: 1px solid black;
+		cursor: pointer;
+  }
+  
+  .cta .cta-text button:hover {
+		background: black;
+		color: white;
+  }
+  
+  .cta img {
+		margin-top: 69px;
+  }
+  
+  .main-content {
+		border-top: 1px solid black;
+		margin-top: 76px;
+		padding-top: 39px;
+  }
+  
+  .main-content .top-content {
+		padding: 0 1.14%;
+		display: flex;
+		flex-direction: row;
+  }
+  
+  .main-content .top-content .text-content {
+		width: 46.59%;
+		margin-right: 3.86%;
+  }
+  
+  .main-content .top-content .text-content:last-child {
+		margin-right: 0%;
+  }
+  
+  .main-content .middle-img {
+		margin-top: 45px;
+  }
+  
+  .main-content .bottom-content {
+		margin-top: 37px;
+		padding: 0 1.14%x;
+		display: flex;
+		flex-direction: row;
+  }
+  
+  .main-content .bottom-content .text-content {
+		width: 31.25%;
+		margin-right: 1.36%;
+  }
+  
+  .main-content .bottom-content .text-content:last-child {
+		margin-right: 0%;
+  }
+  
+  .contact {
+		margin-top: 57px;
+		border-top: 1px solid black;
+		padding: 39px 1.14% 0;
+  }
+  
+  .contact p {
+		margin: 20px 0;
+  }
+  
+  footer {
+		display: flex;
+		justify-content: center;
+		margin: 32px 0;
+		font-size: 14px;
+  }
