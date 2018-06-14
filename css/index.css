@@ -404,7 +404,16 @@ body {
 	.col-1-3:not(:last-child) {
 		margin-bottom: 30px
 	}
-
+	/* Services page styles */
+	.service-detail.mb-0 {
+		margin-bottom: 40px;
+	}
+	.service-detail:last-child {
+		margin-bottom: 0;
+	}
+	.services-header-img {
+		display: none;
+	}
 }
 
 /*
