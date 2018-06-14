@@ -60,116 +60,257 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html{
+	font-size: 62.5%;
+}
+div .container {
+	max-width: 880px;
 }
 
-/* Header Styles */
+	.navbar{
+		display: flex;
+		justify-content:space-around;
+		align-items: center;
+		flex-wrap: nowrap;
+		color: rgb(160, 156, 156);
+		width:100%;
+	}
+	/*fix  navbar, seems to be padding/margin (fixed, set width to 100vw)*/
+		div section1 div{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				background-color: rgba(0, 25, 243, 0.897);
+				width: 100vw;
+				padding: 2.5%;
+			}
 
-header {
-    width: 100%;
-    display: flex;
-}
+			nav{
+				width:100%;
+			}
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
+			nav a{
+				color: white;
+				padding: 2%;
+				font-size: 2rem;
+				font-family: 'Pacifico';
+			}
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
+			nav a:hover{
+					background-color: rgb(240, 236, 8);
+					color: rgb(0, 0, 0);
+					font-size: 4rem;
+			}
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
+			.logo{
+				z-index: 1;
+			}
+	
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
+			.home section2 div{
+				display: flex;
+				flex-direction:row;
+				align-content: center;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+				padding: 5% 2%;
+				position: relative;
+			}
 
-/* Call To Action (CTA) Styles */
+				.home section2 div header{
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					font-family: 'Bangers', cursive;
+					font-size: 8rem;
+					z-index: -1;
+					text-align: center;
+				}
 
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
+				.home section2 div header box{
+					border: 0.1rem solid black;
+					margin: 2%;
+					padding: 2% 3%;
+					font-family: sans-serif;
+					font-weight: normal;
+					font-size: 3rem;
+				}
+				.logo2{
+					z-index: -1;
+			}
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
+		.home section3{
+			margin: 2%;
+		}
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
+		
+		section3{
+			display:flex;
+			flex-direction: column;
+			justify-content: space-around;
+			border-top: 0.2rem solid black;
+			padding: 5% 0;
+		}
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
+		container{
+			padding: 2%;
+		}
 
-/* Main Content Styles */
+		.columns{
+			display: flex;
+			flex-direction: row;
+		}
 
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
+			.middle-img{
+				width:100%;
+				align-self: center;
+			}
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
+		.home section4 div .columns{
+			margin: 2%;
+			border-bottom: solid 0.2rem black;
+		}
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
+		contact div{
+			padding: 5%;
+			font-family: Julius Sans One;
+			font-size: 1.5rem;
+		}
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
+		contact div h2{
+			font-size: 1rem;
+		}
 
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
+		.copy{
+			width: 100%;
+			text-align: center;
+			padding-bottom: 3%;
+		}
 
-/* Contact Styles */
+		h1{
+			font-family: 'Pacifico', cursive;
+			font-weight: bold;
+			font-size: 2rem;
+		}
 
-.contact p {
-    margin: 15px 0;
-}
+		h2{
+			font-family: 'Pacifico';
+			font-size: 1.5rem;
+		}
 
-/* Footer Styles */
+		/* .services-header-img{
+			display:flex;
+			justify-content: center;
+			width:100%;
+			padding: 100px 50px 20px 50px;
+		}
 
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
-}
+		.services-intro{
+			padding-bottom: 30px;
+			border-bottom: 1px solid black;
+		}
+
+		.services-title{
+			font-size: 30px;
+		}
+
+		.container1{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			padding: 30px 0;
+
+		}
+		
+		.content-box{
+			padding: 30px;
+			background-color: rgb(221, 217, 217);
+			border: 1px solid black;
+			width: 400px;
+		}
+
+		.learn{
+			border: 1px solid black;
+			padding: 5px 40px;
+			background-color: white;
+		}
+	
+		.columns2{
+			padding: 30px 0;
+			border-top: 2px solid black;
+		}
+
+		li{
+			list-style-type: square;
+			list-style-position: inside;
+			font-family: 'Pacifico', cursive;
+		} */
+
+/*tablet view*/
+	@media (max-width:768px){
+		.navbar div{
+			flex-direction: column;
+			width: 100vw;
+		}
+
+		.navbar div nav {
+			display: flex;
+			justify-content: space-around;
+			vertical-align: center;
+			order:1;
+			text-align: center;
+		}
+
+		.navbar div img{
+			display:flex;
+			flex-direction: center;
+			order:0;
+			padding:10%; 
+		}
+
+		.logo2{
+			display: none;
+		}
+
+/*mobile view*/
+	@media (max-width:400px){
+			.container .navbar div nav{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 100vw;
+			}
+
+			.container .navbar div nav a{
+			/*not center*/
+				border-top:1px solid yellow;
+				border-bottom:1px solid yellow;
+				width: 100%;
+				padding: 5% 10%;
+			}
+
+			content section2 div header box{
+				border: 0.1rem solid black;
+				margin: 2%;
+				padding: 2% 3%;
+				font-family: sans-serif;
+				font-weight: normal;
+				font-size: 2rem;
+			}
+			.container content section3 div .columns{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.container content section4 div .columns{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			
+	}
