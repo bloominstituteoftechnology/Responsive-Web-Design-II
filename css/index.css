@@ -49,127 +49,133 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+    /*position: relative;*/
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 960px;
+    margin: 0 auto;
 }
-
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
+.nav-bar {
+	display: flex;	
+	height: 40px;
+	width:95%;	
+    margin: 10%;
+    font-size: 1.6rem;
 }
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+.nav-bar nav {
+	align-content: center;
+	margin: auto;
 }
-
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+.nav-bar .logo {
+	justify-content: flex-end;
 }
-
-header nav a:hover {
-    text-decoration: underline;
+.nav-bar nav a {
     color: black;
 }
-
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+.nav-bar nav a:hover {
+	color: black;
 }
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+header {
+    display:flex;
+    height: 30%;
+    width: 100%;
+    border: 1px solid black;
 }
-
-.cta .cta-text {
-    font-size: 72px;
+header .top {
+	justify-content: center;
+	width: 100%;
+}
+header .top div {
+	align-self: center;
+	padding: 20px;
+    width: 50%;
+    border: 1px solid black;
+}
+header .top p {
+	font-size: 3.8rem;
+	font-family: 'Bangers', cursive;
+	/*margin: 0 33% 0 auto;*/
+}
+header .button {
     text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+    width: 30%;
 }
+header .circle-img {
+    width: 40%;
+    justify-content:baseline;
+    border: 1px solid black;
+    
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
 }
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
+	border-top: solid silver;
+	border-bottom: solid silver;
     display: flex;
-    justify-content: space-around;
+    font-size: 1.8rem;
+	flex-flow: wrap;
+	align-items: flex-start;
+	padding: 20px 15px;	
 }
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.main-content info {
+	display: flex;
 }
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+.main-content .top {
+	justify-content: space-between;
+	width: 50%;
 }
-
-.main-content .bottom-content p {
-    padding-right: 20px;
+.main-content .bottom {
+    justify-content: space-between;
+    width: 33.33%;
 }
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+.middle-img {
+	width: 100%;
 }
-
-/* Footer Styles */
-
+.contact {
+    font-size: 1.6rem;
+	justify-content: flex-start;
+	width: 33%;
+}
 footer {
-    text-align: center;
-    margin: 40px 0 20px;
+    font-size: 1.2rem;
+	text-align: center;
+}
+@media (max-width: 800px) {
+    .container {
+        display: flex;	
+        height: 40px;
+        width:95%;	
+        margin: 10%;
+        font-size: 1.6rem;
+    }
+    .nav-bar {
+        width: 90%;
+    }
+    .nav-bar .logo {
+        top:0;
+        width:100%;
+    }
+    header .circle-img {
+        display:none;
+    }
+}
+@media (max-width: 504px) {
+    .nav-bar {
+        flex-direction: column;
+        position:fixed;
+        order: -1;
+    }
 }
