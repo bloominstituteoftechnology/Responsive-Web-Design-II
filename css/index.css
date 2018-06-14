@@ -325,7 +325,7 @@ h2 .services-title {
 @media (max-width: 768px) {
 
     .full-container {
-        max-width: 700px;
+        padding: 0px 2%;
     }
 
     .nav-container {
