@@ -332,6 +332,8 @@ h1 {
 
     .nav-bar {
         justify-content: flex-start;
+        margin: 5vh auto;
+        background: white;
     }
     .nav-buttons li a {
         display: flex;
@@ -355,6 +357,13 @@ h1 {
         
     }
 
+    .nav-bar img {
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        background: white;
+        z-index: 1;;
+    }
     header {
         margin-top: 85vh;
     }
