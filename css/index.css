@@ -159,4 +159,33 @@ html {
     text-align: center;
     
 }
+@media(max-width: 768px){
+    .container header {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .container header nav {
+        width: 100%;
+    }
+    .container .logo-img {
+        /* justify-content: center; */
+        padding-left: 38.216%;
+        /* The picture is 474.5 px wide 
+        picture size / container width =
+        61.78385 i then took 100% - 61.78385
+        to provide the percentange to pad by */
+        padding-bottom: 30px;
+        
+        
+        
+    }
+    .container .top-content {
+        width: 100%;
+    }
+    .container .syntax-logo {
+        display: none;
+    }
+    
+
+}
 
