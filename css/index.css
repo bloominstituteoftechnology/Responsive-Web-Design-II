@@ -21,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -98,7 +98,7 @@ header nav {
 header nav a {
 	text-decoration: none;
 	color: lightgray;
-	font-size: 14.5px;
+	font-size: 0.90625rem;
 }
 
 
@@ -137,15 +137,15 @@ header nav a {
 }
 
 p {
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 h5 {
-	font-size: 17px;
+	font-size: 1.0625rem;
 }
 
 h1 {
-	font-size: 77px;
+	font-size: 4.8125rem;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
@@ -154,7 +154,7 @@ h1 {
 button {
 	width: 173px;
 	height: 35px;
-	font-size: 17px;
+	font-size: 1.0625rem;
 	border: 1px solid black;
 	margin-left: 2%;
 	
@@ -177,13 +177,13 @@ button {
 .container5 .boxes button {
 	width: 140px;
 	height: 35px;
-	font-size: 12px;
+	font-size: 0.75rem;
 	border-radius: 4px;
 	margin-top: 16px;
 }
 
 .container5 .boxes p {
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 1.3;
 }
 
@@ -196,7 +196,7 @@ button {
 footer {
 	width: 100%;
 	text-align: center;
-	font-size: 14px;
+	font-size: 0.875rem;
 	/*  */
 }
 
@@ -239,12 +239,12 @@ footer {
 }
 
 .lastcontainer .textbox1 p {
-	font-size: 16.5px;
+	font-size: 1.03125rem;
 	line-height: 1.3px;
 }
 ul {
 	list-style-type: square;
-	font-size: 16.5px;
+	font-size: 1.03125rem;
 	margin-top: 30px;
 }
 
@@ -253,7 +253,7 @@ ul li {
 }
 
 h3 {
-	font-size: 25px;
+	font-size: 1.5625rem;
 	padding-top: 30px;
 }
 
@@ -264,9 +264,7 @@ h3 {
 
 	.big-text{
 		width: 97%;
-		padding-top:25px;
-		padding-left: 0;
-		padding-right: 3%;
+		padding:25px 3% 0 0;
 	}
 
 	header {
@@ -290,12 +288,9 @@ h3 {
 
 	.container2 {
 		width: 95%;
-		padding-top: 34px;
-		margin-top: 67px;
-		margin-left: 2.5%;
-		margin-right: 2.5%; 
+		padding: 34px 0 30px;
+		margin: 67px 2.5% 0 2.5%;
 		border-top: 2px solid black;
-		padding-bottom: 30px;
 	}
 
 	.middle-img {
@@ -305,34 +300,26 @@ h3 {
 
 	.container3 {
 		width: 95%;
-		padding-top: 28px;
-		margin-left: 2.5%;
-		margin-right: 2.5%;
+		padding: 28px 0 33px;
+		margin: 0 2.5%;
 		border-bottom: 2px solid black;
-		padding-bottom: 33px;
 	}
 
 	.text-box{
-		/* padding-right: 1%; */
 		padding-left: 1%;
-		font-size: 17px;
+		font-size: 1.0625rem;
 		line-height: 18px;
 	}
 
 	.container4{
 		margin-left: 3.5%;
-		padding-top: 35px;
-		padding-bottom: 5px;
+		padding-top: 35px 0 5px;
 	}
 
 }
 
 @media(max-width: 400px) {
-
-	
-
 	header {
-		
 		width: 100%;
 		flex-direction: column-reverse;
 		align-items: center;
@@ -342,13 +329,10 @@ h3 {
 
 	header .logo{
 		padding-top: 20px;
-
-
 	}
 
 	.big-text{
 		padding-top: 0;
-		padding-left: 0;
 	}
 
 	h1{
@@ -368,7 +352,7 @@ h3 {
 		height: 59px;
 		width: 100%;
 		text-align: center;
-		font-size: 20px;
+		font-size: 1.25rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -376,29 +360,23 @@ h3 {
 
 	.container2 {
 		flex-direction: column;
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%; 
-		margin-top: 71px;
+		width: 90%; 
+		margin: 71px 5% 0 5%;
 		padding-bottom: 20px;
 	}
 
 	.container3 {
 		flex-direction: column;
 		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%; 
-		padding-bottom: 20px;
-		padding-top: 20px;
+		margin:0 5%; 
+		padding: 20px 0 20px;
 	}
 
 	.text-box{
 		width: 100%;
-		padding-top: 12px;
-		padding-bottom: 20px;
-		
-		
+		padding-top: 12px 0 20px 1%;
 	}
+
 	.middle-img {
 		width: 90%;
 		margin: 0 5%;
