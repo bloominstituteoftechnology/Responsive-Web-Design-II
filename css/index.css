@@ -17,8 +17,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
@@ -67,8 +68,8 @@ h1, h2, h3, h4, h5 {
 
 .page-container {
   padding: 0 auto;
-	max-width: 880px;
-	margin: 0 auto;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
 header {
@@ -77,7 +78,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-	background: white;
+  background: white;
 }
 
 /* .fixed {
@@ -97,21 +98,16 @@ header nav {
 }
 
 header nav a {
-  margin: 10px 60px 0 0;
+  margin: 1rem 6rem 0 0;
   text-decoration: none;
   color: #444;
-	font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 header nav a:hover {
   color: black;
   transition: 0.2s ease;
 }
-
-.header-img {
-  max-width: 100%;
-}
-
 
 button {
   border: 1px solid #444;
@@ -171,7 +167,7 @@ p {
   padding: 0 30px 0 0;
   color: #444;
   line-height: 1.6;
-	font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .middle-img {
@@ -202,7 +198,8 @@ h1 {
 
 .services-row {
   /* background-color: lightgray; */
-  /* flex-direction: row;
+
+/* flex-direction: row;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -231,16 +228,48 @@ ul {
   width: 450px;
   max-width: 100%;
   max-height: auto;
-} */ */
+} */
 
 
 /* Tablet media query */
-@media ( max-width: 768px ) {
 
+@media ( max-width: 768px) {
+  .page-container {
+    padding: 0 3.33%;
+  }
+  .header-img {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  nav {
+    order: 1;
+    justify-content: space-between;
+    margin: 0;
+    flex-direction: row;
+  }
+
+  header nav a {
+    margin: 0 2rem;
+
+  }
+
+  .logo {
+    order: 0;
+  }
+  .main-content {
+    justify-content: center;
+  }
 }
 
 /* Phone media query */
 
-@media ( max-width: 400px ) {
-
+@media ( max-width: 400px) {
+  .header-img {
+    display: none;
+  }
 }
