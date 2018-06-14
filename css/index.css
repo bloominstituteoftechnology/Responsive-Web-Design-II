@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -61,6 +65,12 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 880px;
+    width: 100%;
 }
 
 
@@ -80,22 +90,25 @@ body {
 }
 
 button {
-	background: black;
+    background: black;
+    border: 1.5px solid lightslategray;
 	color: white;
-	display: block;
-	margin: 0 auto;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin: 0 auto;
 	padding: 2% 10% 2% 10%;
-	border: 1.5px solid lightslategray;
-	font-size: 100%;
 	transition-duration: .5s;
 }
 
 button:hover {
-	background: lightslategray;}
+    background: lightslategray;
+    color: black;
+}
 
 footer {
 	color: white;
-	font-size: 90%;
+	font-size: 1.2rem;
 	margin-top: 5%;
     text-align: center;
 }
@@ -110,40 +123,40 @@ hr {
 
 h1 {
 	color: darkcyan;
-	font-size: 400%;
+	font-size: 4rem;
 	text-align: center;
 }
 
 h3 {
-	color: darkcyan;
+    color: darkcyan;
+    font-size: 2rem;
+	margin: 1%;
 }
 
-h3, section {
-	font-size: 110%;
-	margin: 1%;
+img {
+    display: none;
 }
 
 nav {
 	align-items: center;
-	background: lightyellow;
 	display: flex;
 	font-family: 'Sunflower';
-	height: 3.5%;
-	justify-content: space-around;
-	overflow: hidden;
-	padding-bottom: 1%;
-	position: fixed;
+	height: 50px;
+    justify-content: space-around;
+    overflow: hidden;
+    position: fixed;
 	top: 0;
-	width: 100%;
+	width: 80%;
 	z-index: 1;
 }
 
-/* nav a {
-	margin: 0 4%;
-} */
-
 p {
-	color: darkgray;
+    color: darkgray;
+}
+
+section {
+    font-size: 1.5rem;
+	margin: 1%;
 }
 
 .bottom-content {
@@ -170,20 +183,16 @@ p {
 	background-size: cover;
 }
 
-.lorem {
-	margin: 1%;
+.logo {
+    display: flex;
+    position: relative;
 }
 
-.main-content {
-	display: flex;
-	margin: 0 4%;
-	text-align: left;
-}
-
-.middle-img {
-	display: block;
-	margin: 0 auto;
-	width: 90%;
+.navigation {
+    background: lightyellow;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1%;
 }
 
 .small-heading {
@@ -196,75 +205,6 @@ p {
 	margin: 0 4%;
 }
 
-.top-img {
-	display: block;
-	margin: 4% 5% 0;
-	width: 90%;
-}
+@media (max-width: 768px) {
 
-#opener {
-	color: palevioletred;
-    position: relative;
-    top: 9%;
-}
-
-#services button {
-	border-radius: 4px;
-	color: lightgray;
-	font-size: 60%;
-	margin: 3% 0 0 2%;
-}
-
-#services h1 {
-	font-size: 150%;
-	text-align: left;
-}
-
-#services ul {
-	color: darkgray;
-	list-style-type: square;
-	margin-left: 4%;
-}
-
-#services ul li {
-	margin-bottom: 2%;
-}
-
-#services .bottom {
-	align-items: center;
-	display: flex;
-}
-
-#services .content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 0 5%;
-}
-
-#services .content section {
-	border: 1px solid white;
-	margin-bottom: 1.5%;
-	margin-top: 1.5%;
-	padding: 2%;
-	width: 45%;
-}
-
-#services .facts {
-	margin: 0 5%;
-	width: 45%;
-}
-
-#services .facts section {
-	margin-bottom: 3%;
-	margin-right: 5%;
-}
-
-#services .info-img {
-	margin-right: 5%;
-	width: 400px;
-}
-
-#services .intro {
-	margin: 2% 5% 0;
 }
