@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,16 +66,19 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-hr {
-	margin-left: 50px;
-	margin-right: 50px;
+
+.container {
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
+	position:relative;
 }
 
-.nav {
+.container .nav {
 	background-color: teal;
-	position: fixed;
+	position: relative;
 	width: 100%;
-	padding: 7px;
+	padding: 5px 1%;
 	z-index: 1000;
 	display: flex;
 	justify-content: space-evenly;
@@ -85,6 +89,7 @@ hr {
 .nav a {
 	font-family: 'Jua';
 	text-decoration: none;
+	font-size: 1.5rem;
 	color: white;
 }
 
@@ -94,14 +99,17 @@ hr {
 }
 
 .nav .logo {
-	width: 150px;
+	width: 17rem;
 }
 
 .copyright {
 	display: flex;
 	justify-content: center;
-	padding: 10px;
+	padding: 10px 1%;
+	font-size: 1.5rem;
 }
+
+
 
 /* Index Page CSS */
 
@@ -121,7 +129,7 @@ hr {
 }
 
 .home-content .title .title-text {
-	font-size: 70px;
+	font-size: 6rem;
 	text-align: center;
 }
 
@@ -129,10 +137,10 @@ hr {
 	background-color: white;
     border: 1px solid;
     color: black;
-    padding: 15px 32px;
+    padding: 5px 10%;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.5rem;
     transition-duration: 0.4s;
 }
 
@@ -146,7 +154,7 @@ hr {
 }
 
 .home-content .title .test {
-	margin-left: 100px;
+	margin-left: 11.36%;
 	margin-bottom: 100px;
 }
 
@@ -159,56 +167,53 @@ hr {
 
 .home-content .main-content {
 	display: flex;
-	margin-left: 50px;
-	margin-right: 50px;
-	padding: 20px 0px 20px 0px;
+	padding: 20px 0;
 	flex-wrap: wrap;
 	justify-content: center;
+	font-size: 1.5rem;
 }
 
 .home-content .main-content .features {
 	width: 50%;
 	height: 80px;
-	padding: 0 10px;
+	padding: 0 1% 0 0;
 }
 
 .home-content .main-content .about {
 	width: 50%;
 	height: 80px;
-	padding: 0 10px;
+	padding: 0 0 0 1%;
 }
 
 .home-content .main-content .middle-img {
-	padding: 30px 20px;
+	padding: 30px 0;
 	width: 100%;
 }
 
 .home-content .main-content .services {
-	width: 33%;
-	height: 140px;
-	padding: 0 10px;
+	width: 33.33%;
+	height: 110px;
+	padding: 0 1% 0 0;
 }
 
 .home-content .main-content .product {
-	width: 33%;
-	height: 140px;
-	padding: 0 10px;
+	width: 33.33%;
+	height: 110px;
+	padding: 0 1% 0 1%;
 }
 
 .home-content .main-content .vision {
-	width: 33%;
-	height: 140px;
-	padding: 0 10px;
+	width: 33.33%;
+	height: 110px;
+	padding: 0 0 0 1%;
 }
 
 .home-content .contact-info-container {
 	display: flex;
-	margin-left: 50px;
-	width: 200px;
-	padding: 10px;
+	width: 20%;
+	padding: 20px 0;
+	font-size: 1.5rem;
 }
-
-
 
 /* Services Page Specific CSS */
 
@@ -382,4 +387,16 @@ hr {
 	list-style-type: disc;
 	list-style-position: inside;
 	line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+	.container {
+	  max-width: 400px;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+	  max-width: 400px;
+	}
 }
