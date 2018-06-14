@@ -58,9 +58,11 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 html {
@@ -89,6 +91,18 @@ html {
     width: 100%;
     justify-content: space-between;
     margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(122, 122, 122);
+}
+
+.features, .about, .services, .product, .vision { 
+    font-size: 1.3rem;
+    padding: 1%;
 }
 
 .container .top-content {
@@ -105,11 +119,12 @@ html {
 .container .top-content button {
     display: flex;
     justify-content: center;
-    padding: 8px 40px;
+    padding: 2% 6%;
     border-radius: 2px;
     border: 2px solid black;
     text-align: center;
     margin-top: 20px;
+    font-size: 1.5rem;
 }
 
 .container .syntax-logo {
@@ -165,9 +180,24 @@ html {
 
 
 @media(max-width: 768px){
-    .syntax-logo{
+
+    .container {
+        display: flex;
+        width: 100%;
+    }
+
+    .syntax-logo {
         display: none;
     }
+
+    .container .top-content {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    }
+
+
+
 }
 
 @media(max-width: 400px){
