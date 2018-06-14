@@ -63,113 +63,171 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+.center {
+	display: flex;
+	justify-content: center;
 }
 
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
+.wrap {
+	display: flex;
+	flex-direction: column;
+	max-width: 880px;
+	width: 100%;
+	margin: 40px 0;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
+
+.header-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.header-nav .navigation {
+	display: flex;
+	width: 610px;
+	justify-content: space-between;	
+}
+
+.header-nav .navigation a {
+	text-decoration: none;
+	font-size: 18px;
+	color: grey;
+
+}
+
+.header-nav .navigation a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+/*Index.html CSS code starts here-->*/
+
+.call-to-action {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+}
+
+.call-to-action button {
+	padding: 5px 40px;
+	font-size: 16px;
+}
+
+.cta-inner-content {
+   text-align: center;
+   padding: 20px 0 20px 0;
+}
+
+.cta-inner-content h1 {
+   font-size: 70px;
+}
+
+.features-about {
+	display: flex;
+	margin: 30px 0 30px 0;
+	padding-top: 40px;
+	border-top: 1px solid black;
+
+}
+
+ .fa {
+	text-align: left;
+	padding: 0 5px 0 0;
+}
+
+.long-image {
+	display: flex;
+	justify-content: center;
+}
+
+.services-product-vision {
+	display: flex;
+	margin: 30px 0 30px 0;
+	border-bottom: 1px solid black;
+	padding-bottom: 40px;
+}
+.spv {
+	text-align:left;
+	padding: 0 5px 0 0;
+}
+
+.contact {
+	display: flex;
+	margin: 20px 0 20px 0;
+}
+
+.copyright {
+	display:flex;
+	justify-content: center;
+	margin-top:40px;
+}
+/* Index.html CSS code end */
+
+/* Services.html CSS code starts here */
+
+.services-img {
+	display: flex;
+	padding: 20px 0;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0;
+	border-bottom: 1px solid black;
+}
+
+.services h1 {
+	font-size: 26px;
+}
+
+.services-container {
+	
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+}
+
+.services-container .box {
+	border: 1px solid black;
+	width: 420px;
+	background: whitesmoke;
+	padding: 20px;
+	margin: 20px 0;
+
+}
+
+.services-container .box button {
+	padding: 10px 40px;
+	background: white;
+	border-radius: 5px;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+
+.facts {
+	display: flex;
     justify-content: space-between;
-    display: flex;
+    border-top: 2px solid black; 
+    margin: 20px 0 35px 0;
+    padding-top: 40px; 
 }
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+.facts .some-facts {
+	display: flex;
+	flex-direction: column;
+	width: 420px;
+	margin: 0 60px 20px 0;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+.facts .some-facts p {
+	margin-bottom: 20px;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+.facts .some-facts ul li {
+	list-style: inside square;
+	padding: 5px 0;
 }
