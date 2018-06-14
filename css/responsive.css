@@ -55,6 +55,25 @@
     footer .copyright {
         margin: 1% 0 5% 0;
     }
+}
 
+/* 400px */
+
+@media(max-width: 405px){
+    .center-content {
+        /* flex-direction: column; */
+    }
+
+    .center-content .body-content {
+        flex-direction: column;
+    }
+
+    .contact-content {
+
+    }
+
+    footer .copyright {
+        font-size: 1.5rem;
+    }
 
 }

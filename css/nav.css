@@ -56,13 +56,24 @@ a:hover {
         justify-self: center;
     }
 
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
     nav a {
         width:100%;
+        padding: 1% 0;
     }
 }
 
 /* Max-Width 400px */
 @media(max-width:405px){
+
+    * {
+        box-sizing: border-box;
+    }
     .great-header{
         width: 100%;
         display: flex;
@@ -87,7 +98,10 @@ a:hover {
 
     nav a {
         width: 100%;
+        padding: 1% 0;
         max-width: 400px;
-        justify-self: center;
+        text-align: center;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
     }
 }
