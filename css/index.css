@@ -71,7 +71,7 @@ html {
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
-    /* border: 1px solid red; */
+    border: 1px solid red; 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -159,7 +159,7 @@ html {
     border-top: 1px solid black;
     padding-top: 15px;
     margin-top: 30px;
-    margin-bottom: 30px;
+    
 }
 .container footer {
     /* display: flex;
@@ -167,7 +167,48 @@ html {
     justify-content: center; */
     width: 100%;
     text-align: center;
+    margin-top: 30px;
     
+}
+/* Services Page */
+.container .services-img {
+    max-width: 100%;
+    padding-bottom: 30px;
+}
+.container .services-page {
+    padding-top: 30px;
+    border-bottom: 1px sold black;
+    margin-bottom:10px;
+}
+.container .all-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.container .box {
+    width: 45%;
+    background: beige;
+    border: 1px solid black;
+    margin-top: 10px;
+    
+}
+.container .facts {
+    width: 50%;
+    padding-top: 30px;
+}
+.container .facts ul li {
+    list-style-type: square;
+    margin-left: 3.70%;
+    padding-top: 5px;
+
+}
+.container .services-info {
+    width: 50%;
+}
+.container .services-pic {
+    max-width: 100%;
 }
 @media(max-width: 768px){
     .container header {
@@ -197,7 +238,12 @@ html {
     .container .middle {
         max-width: 100%;
     }
-    
+    .container .services-img {
+        display: none;
+    }
+    .container .services-pic {
+        display: none;
+    }
 
 }
 @media(max-width: 400px) {
@@ -242,5 +288,14 @@ html {
         width: 100%;
         padding-top: 30px;
     }
+    .container .all-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container .box {
+        width: 100%;
+    }
+    
 }
 
