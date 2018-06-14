@@ -68,21 +68,22 @@ h1, h2, h3, h4, h5 {
 
 
 .container {
-	max-width: 880px;
+	max-width: 400px;
 	width: 100%;
 	margin: 0 auto;
 }
 
 .nav {
 	background-color: teal;
-	position: sticky;
-	top: 0;
+	position: relative;
+	justify-content: center;
+	height: 350px;
+	padding: 0;
 	width: 100%;
-	padding: 5px 1%;
 	z-index: 1000;
 	display: flex;
-	justify-content: space-evenly;
 	align-items: center;
+	flex-wrap:wrap;
 }
 
 
@@ -91,6 +92,13 @@ h1, h2, h3, h4, h5 {
 	text-decoration: none;
 	font-size: 1.5rem;
 	color: white;
+	width: 100%;
+	height: 50px;
+	border: 1px solid black;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	order: 1;
 }
 
 .nav a:visited {
@@ -100,10 +108,15 @@ h1, h2, h3, h4, h5 {
 
 .nav .nav-logo {
 	display: flex;
+	width: 100%;
+	order: 0;
+	justify-content: center;
 }
 
 .nav img {
-	width: 100%;
+	width: 25%;
+	height: 50px;
+	padding: 10px 0;
 }
 
 .copyright {
@@ -225,190 +238,26 @@ h1, h2, h3, h4, h5 {
 	font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-	.container {
-	  max-width: 768px;
-	}
-
-	
-	.nav {
-		flex-wrap: wrap;
-		height: 100px;
-	}
-
-	.nav .nav-item {
-		order: 1;
-	}
-
-	.nav .nav-logo {
-		order: 0;
-		width: 100%;
-		justify-content: center;
-	}
-
-	.nav img {
-		width: 25%;
-	}
-	
-	.home-content .title {
-		width: 100%;
-		padding: 0;
-		height: 300px;
-	}
-
-	.home-content .title .test {
-		margin-left: 0;
-		margin-bottom: 0;
-	}
-
-	.home-content .title-logo {
-		display: none;
-	}
-
-	.home-content .main-content {
-		padding: 20px 2%;
-		font-size: 1.5rem;
-	}
-
-	.home-content .main-content .features {
-		width: 50%;
-		height: 150px;
-		padding: 0 1% 0 0;
-	}
-
-	.home-content .main-content .about {
-		width: 50%;
-		height: 150px;
-		padding: 0 0 0 1%;
-	}
-
-	.home-content .main-content .middle-img {
-		padding: 30px 0;
-		width: 100%;
-	}
-
-	.home-content .main-content .services {
-		width: 33.33%;
-		height: 200px;
-		padding: 0 1% 0 0;
-	}
-
-	.home-content .main-content .product {
-		width: 33.33%;
-		height: 200px;
-		padding: 0 1% 0 1%;
-	}
-
-	.home-content .main-content .vision {
-		width: 33.33%;
-		height: 200px;
-		padding: 0 0 0 1%;
-	}
-
-	.home-content .contact-info-container {
-		padding: 20px 1%;
-		font-size: 1.5rem;
-	}
-}
-
-@media (max-width: 400px) {
-	.container {
-	  max-width: 400px;
-	}
-
-	.nav {
-		position: relative;
-		justify-content: center;
-		height: 350px;
-		padding: 0;
-	}
-
-	.nav .nav-item {
-		width: 100%;
-		height: 50px;
-		border: 1px solid black;
-		display:flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.nav .nav-logo {
-		width: 100%;
-	}
-
-	.nav img {
-		width: 25%;
-		height: 50px;
-		padding: 10px 0;
-	}
-
-	.home-content .main-content {
-		padding: 20px 0;
-		flex-wrap: wrap;
-		justify-content: center;
-		font-size: 1.5rem;
-	}
-
-	.home-content .main-content .features {
-		width: 100%;
-		height: 140px;
-		padding: 10px 1%;
-	}
-
-	.home-content .main-content .about {
-		width: 100%;
-		height: 140px;
-		padding: 10px 1%;
-	}
-
-	.home-content .main-content .middle-img {
-		padding: 10px 1%;
-		width: 100%;
-	}
-
-	.home-content .main-content .services {
-		width: 100%;
-		height: 140px;
-		padding: 10px 1%;
-	}
-
-	.home-content .main-content .product {
-		width: 100%;
-		height: 140px;
-		padding: 10px 1%;
-	}
-
-	.home-content .main-content .vision {
-		width: 100%;
-		height: 140px;
-		padding: 10px 1%;
-	}
-
-	.home-content .contact-info-container {
-		padding: 10px 1%;
-		font-size: 1.5rem;
-	}
-}
-
 /* Services Page Specific CSS */
 
 /* Header */
 .services-content header {
 	display: flex;
 	flex-wrap: wrap;
+	font-size: 1.5rem;
 }
 
 .services-content header .services-header {
 	width: 100%;
-	padding: 0px 50px 20px 50px;
+	padding: 10px 5%;
 }
 
 .services-content header .header-img {
-	padding-top: 80px;
+	display:none;
 }
 
 .services-content header .header-content h1 {
-	font-size: 24px;
+	font-size: 3rem;
 }
 
 /* Main Content */
@@ -416,8 +265,6 @@ h1, h2, h3, h4, h5 {
 .services-content .services-main-content {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: 50px;
-	margin-right: 50px;
 	padding: 20px 0px 20px 0px;
 }
 
@@ -425,9 +272,10 @@ h1, h2, h3, h4, h5 {
 	background-color: lightgrey;
 	border: 1px solid black;
 	height: 200px;
-	width: 45%;
+	width: 100%;
 	padding: 20px;
 	margin: 10px 2.5%;
+	font-size: 1.5rem;
 }
 
 .services-content .services-main-content button {
@@ -453,14 +301,17 @@ h1, h2, h3, h4, h5 {
 
 .services-content .end {
 	display: flex;
-	margin-left: 50px;
-	margin-right: 50px;
+	padding: 10px 5%;
 }
 
 .services-content .services-facts {
-	width:50%;
-	padding: 20px 20px 20px 0;
+	width:100%;
+	font-size: 1.5rem;
 	line-height: 1.2;
+}
+
+.services-content .services-facts h1 {
+	font-size: 2.4rem;
 }
 
 .services-content .services-facts ul {
@@ -470,10 +321,129 @@ h1, h2, h3, h4, h5 {
 }
 
 .services-content .services-facts-image {
-	display: inline-block;
-	margin: 5px 0px 5px 20px;
-	width: 50%;
-	height:300px;
+	display: none;
+}
+
+
+@media (min-width: 768px) {
+	.container {
+	  max-width: 1000px;
+	  
+	}
+
+	.nav {
+		height: 100px;
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 1000;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.nav .nav-item {
+		order: 1;
+		width: auto;
+		border: none;
+	}
+
+	.nav .nav-logo {
+		order: 0;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.nav img {
+		width: 20%;
+	}
+
+	hr {
+		margin: 0px 5%;
+	}
+	
+	.services-content header .header-img {
+		display: block;
+	}
+
+	.services-content .services-main-content {
+		flex-wrap: wrap;
+	}
+
+	.services-content .services-main-content .main-box {
+		width: 40%;
+		margin: 10px 5%;
+	}
+	
+	.services-content .end {
+		padding: 10px 5%;
+	}
+
+	.services-content .services-facts {
+		width:50%;
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.services-content .services-facts-image {
+		display: flex;
+		width: 50%;
+		padding-left: 5%;
+		height: 200px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.nav {
+		height: 50px;
+	}
+
+	.nav .nav-item {
+		order: 0;
+	}
+
+	.nav .nav-logo {
+		display: flex;
+		width: 17%;
+	}
+
+	.nav img {
+		width: 100%;
+	}
+
+	hr {
+		margin: 0px 2.5%;
+	}
+
+	.services-content header .services-header {
+		padding: 10px 2.5%;
+	}
+
+	.services-content header .header-img {
+		display: block;
+	}
+
+	.services-content .services-main-content {
+		flex-wrap: wrap;
+	}
+
+	.services-content .services-main-content .main-box {
+		width: 45%;
+		margin: 10px 2.5%;
+	}
+
+	.services-content .end {
+		padding: 10px 2.5%;
+	}
+	
+	.services-content .services-facts {
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.services-content .services-facts-image {
+		height: 300px;
+		padding-left: 2.5%;
+	}
 }
 
 
