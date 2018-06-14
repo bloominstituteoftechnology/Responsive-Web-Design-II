@@ -64,20 +64,26 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+html {
+	font-size: 67.5%;
+}
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 90px;
-	padding-left: 23px;
-	padding-right: 10px;
+	margin: auto;
+}
+.header .nav {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin-right: 10.227%;
 }
 .header .nav a{
-	margin-right: 63px;
 	color: grey;
-	font-size: 14px;
+	font-size: 1.4rem;
 	text-decoration: none;
-	padding: 20px 0;
 }
 .header .nav a:hover {
 	text-decoration: underline;
@@ -93,21 +99,20 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 2.6rem;
 }
 h4 {
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 h6 {
-	font-size: 14px;
-	text-align: center;
+	font-size: 1.4rem;
 }
 p {
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 li {
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 ul {
 	list-style-type: disc;
@@ -115,16 +120,13 @@ ul {
 }
 
 .home-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 50px;
+	margin: auto;
+	max-width: 880px;
 }
 
 .home-content .cta {
 	display: flex;
 	align-items: center;
-	align-content: center;
 	justify-content: space-evenly;
 	height: 475px;
 }
@@ -134,18 +136,20 @@ ul {
 	align-content: center;
 	align-items: center;
 	width: 50%;
-	padding-left: 10px;
-	margin: 0 40px 20px 30px;
+	padding-left: 1.14%;
+	margin: 0 4.55% 2.27% 3.41%;
 }
-.home-content .cta img {
-	padding-left: 50px;
+.home-content .cta .pic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .home-content .cta .get-started h1 {
 	margin: 0;
-	font-size: 75px;
+	font-size: 7.5rem;
 }
 .home-content .cta .get-started button {
-	width: 100px;
+	width: 22.73%;
 	margin-top: 20px;
 }
 
@@ -154,11 +158,8 @@ ul {
 	justify-content: space-between;
 	margin-top: 20px;
 }
-.home-content .upper-text .features{
-	padding: 15px;
-}
-.home-content .upper-text .about {
-	padding: 15px;
+.home-content .upper-text .info{
+	padding: 15px 3.41%;
 }
 
 .home-content .middle-img {
@@ -173,7 +174,7 @@ ul {
 	margin-bottom: 40px;
 }
 .home-content .lower-text div {
-	margin: 20px 10px;
+	margin: 20px 3.41%;
 }
 
 .home-content .contact {
@@ -181,11 +182,12 @@ ul {
 	align-self: flex-start;
 	flex-direction: column;
 	align-items: flex-start;
-	margin: 30px 0 60px 20px;
+	margin: 30px 0 60px 2.27%;
 }
 
 
-.services-content {
+/*  Services Page
+	.services-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -227,4 +229,4 @@ ul {
 	display: flex;
 	flex-direction: column;
 	margin-right: 50px;
-}
+} */
