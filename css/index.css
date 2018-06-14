@@ -187,13 +187,32 @@ html {
 
 	.container .section-content .section-text {
 		margin-bottom: 25px;
+		margin-right: 4%;
+		margin-left: 4%;
 	}
 
+	.container .middle-img {
+		width: 92%;
+		margin-left: 4%;
+		margin-right: 4%.
+	}
+
+	.container hr {
+		margin-left: 4%;
+		margin-right: 4%;
+		border: none;
+		background-color: black;
+		height: 2px;
+	}
 	.container .contact {
 		margin-bottom: 50px;
+		margin-left: 4%;
+		margin-top: 25px;
 	}
 }
 
+
+/*The following CSS is for services.html */
 .services-content .services-header-img {
 	margin-top: 15px;
 	margin-bottom: 15px;
