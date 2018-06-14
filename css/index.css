@@ -259,8 +259,10 @@ header a:hover {
 @media (max-width: 768px) {
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
+        border: 1px rgb(201, 126, 14) solid;
+
     }
     header ul {
         display: flex;
@@ -269,6 +271,8 @@ header a:hover {
         order: 1;
         width: 100%;
         margin-bottom: 40px;
+        border: 1px rgb(36, 14, 161) solid;
+
         }
     
     
@@ -281,10 +285,11 @@ header a:hover {
     }
     
     header .logo {
+        display:flex;
+        border: 1px green solid;
         margin-top: 10px;
         margin-bottom: 40px;
-        padding-left: 40%;
-        display:flex;
+        /* padding-left: 40%; */
         
         
     }
@@ -402,10 +407,11 @@ header a:hover {
     }
     
     header .logo {
-        margin-top: 10px;
-        margin-left: .011%
         display:flex;
         justify-content: center;
+        margin-top: 10px;
+        margin-left: 0;
+        border: 1px solid blue;
         
     }
 }
