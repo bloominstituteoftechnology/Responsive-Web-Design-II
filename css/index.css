@@ -355,7 +355,9 @@ margin: 0 auto;
 img.logo-original {
 	display: none
 }
-
+.Contact-Section {
+	margin-top: 30px;
+}
 
 
 
@@ -395,21 +397,27 @@ img.logo-original {
 
 @media (max-width: 520px) {
 	* {
-		background: aquamarine;
+		
 	}
 
+
 	
-	nav {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		border: 1px solid black;
+		
 			
-}
+
+	.home-content nav {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: space-between;
+		justify-content: center;
+
+	}
 	.home-content {
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
+		justify-content: center;
 	}
 	.content {
 		display: flex;
@@ -429,6 +437,7 @@ img.logo-original {
 		display: flex;
 		flex-direction: column;
 
+
 	}
 	.Features {
 		margin: 0 0 10% 0;
@@ -436,7 +445,32 @@ img.logo-original {
 	}	
 	.Services {
 		margin: 0 0 10% 0;
-		height: 40rem;
+		max-height: 240px;
 
 	}
+	.Product {
+		margin: 0 0 10% 0;
+		max-height: 240px;
+	}
+
+	.Vision {
+		margin: 0 0 10% 0;
+		max-height: 150px;
+		margin: 0 0 5px 0 ;
+	}
+	
+	.content .middle-img {
+		height: 20rem;
+		width: 100%;
+	}
+
+
+	.home-content h1 {
+		margin-top: 100px;
+	}
+	.home-content nav a {
+	width: 100rem;
+
+	border: 1px solid black;
+}
 }
