@@ -75,9 +75,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: white;
     margin-top: 20px;
-
 }
 
 .header-nav .navigation {
@@ -125,6 +123,13 @@ h1, h2, h3, h4, h5 {
    
 }
 
+.cta-inner-content-image, .cta-image {
+    text-align: center;
+    padding: 20px 0 30px;
+    width: 50%;
+}
+
+
 .cta-inner-content h1 {
    font-size: 7rem;
 }
@@ -146,11 +151,11 @@ h1, h2, h3, h4, h5 {
     line-height: 1.2em;
 }
 
-.long-image {
+.long-image, .middle-img {
 	display: flex;
     justify-content: center;
     padding: 5px 0;
-    width:100%;
+    width: 100%;
 }
 
 .services-product-vision {
@@ -185,7 +190,140 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 40px;
     width:100%;
 }    
+
+@media (max-width: 768px){
+
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width:100%;
+    
+    }
+    
+    .header-nav .navigation {
+        order: 1;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 30px 0;
+    }
+    
+    .header-nav .navigation a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: grey;
+        padding: 0;
+    
+    }
+    
+    .header-nav .navigation a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+    .call-to-action {
+        display: flex;
+        align-items: center;
+        margin: 50px 0 45px;
+    
+    }
+    
+    .call-to-action button {
+        padding: 5px 4rem;
+        font-size: 1.6rem;
+        background: white;
+        border: 1px solid black ;
+        
+        margin-top: 20px;
+    }
+    
+    .cta-inner-content {
+       text-align: center;
+       padding: 20px 0 30px;
+       width: 100%;
+    }
+
+    .call-to-action img {
+        
+        display: none;
+    }
+    
+    .cta-inner-content h1 {
+       font-size: 7rem;
+    }
+    
+    .features-about {
+        display: flex;
+        margin: 30px 0 30px 0;
+        padding-top: 30px;
+        border-top: 2px solid black;
+        width:100%;
+    
+    }
+    
+     .fa {
+        text-align: left;
+        padding: 0 5px 0 0;
+        font-size: 1.6rem;
+        width: 50%;
+        line-height: 1.2em;
+    }
+    
+    .long-image, .middle-img{
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+        width: 100%;
+    }
+    
+    .services-product-vision {
+        display: flex;
+        margin: 25px 0 30px 0;
+        border-bottom: 1px solid black;
+        padding-bottom: 30px;
+    }
+    .spv {
+        text-align:left;
+        padding: 0 1.66% 0 0;
+        width: 33.33%;
+        font-size: 1.6rem;
+        line-height: 1.2em;
+        
+    }
+    
+    .contact {
+        text-align: left;
+        padding: 10px 0 0;
+        font-size: 1.6rem;
+        width:100%;
+    }
+    
+    .copyright {
+    
+        display:flex;
+        justify-content: center;
+        margin-top:40px;
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+        width:100%;
+    }    
+
+
+}
+
+@media (max-width: 400px){
+
+
+
+
+}
 /* Index.html CSS code end */
+
+
+
+
+
+
 
 /* Services.html CSS code starts here */
 
