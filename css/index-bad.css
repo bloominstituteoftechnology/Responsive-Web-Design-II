@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+* {
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	padding: 30px 0 30px 0;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	padding: 5px;
+	/* padding-top: 30px;
+	margin-bottom: 50px; */
+	background-color: white;
+	justify-content: space-around;
+	/* border: 1px solid red; */
+
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	/* border: 1px solid red; */
+	width: 100%;
+	padding: 10px;
+ }
+
+header nav a{
+	/* padding-right: 40px; */
+	/* margin: 10px; */
+	/* vertical-align: middle; */
+	/* display: inline-block; */
+	text-decoration: none;
+	color: black;
+	display: flex;
+	justify-content: center;
+	padding:5px;
+	/* justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	margin-right: 80px; */
+	/* border: 1px solid green; */
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* header .logo{
+	display: flex;
+	position: relative;
+	right: 20;
+	border: 1px solid blue;
+} */
+
+.section-one{
+
+	position: relative;
+	width: 100%;
+	padding-top: 100px;
+ 	z-index: 0;
+	display:flex;
+	justify-content: space-between;
+	border: 1px solid red;
+}
+
+h1 {
+	font-size: 60pt;
+	text-align: center;
+}
+
+button{
+	/* position: relative;
+	margin-left: 175px;
+	height: 25px;
+	width: 150px; */
+	display:flex;
+	align-self: center;
+}
+
+.left, .right {
+
+	margin: 0px;
+	display: inline-block;
+	border: 1px solid red;
+
+}
+.section-one{
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+}
+.right {
+	border: 1px solid purple;
+	/* padding: 60px; */
+}
+
+.left{
+	display: flex;
+	align-content: space-around;
+	flex-direction: column;
+}
+
+.line{
+	background: black;
+	height: 2px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+h2{
+	font-size: 25px;
+}
+
+.double-textbox{
+	display: flex;
+	justify-content: space-around;
+
+	/* border: 1px solid black; */
+	width: 100%;
+}
+
+.features, .about{
+	width: 49%; */
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	padding-right: 50px;
+}
+
+.features {
+	padding-right: 50px;
+}
+
+.middle-img{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.triple-textbox{
+		position: relative;
+		width: 100%;
+		border: 1px solid black;
+		display: flex;
+		flex-direction: row;
+}
+
+.services, .product, .vision {
+	padding-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	border: 1px solid red;
+}
+
+.contact{
+	margin-top: 10px;
+}
+.copyright{
+	margin:20px;
+	text-align: center;
+	font-size: 10px;
+}
+
+/* below CSS is to for services page */
+.blank{
+	height: 70px;
+}
+.banner{
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.intro{
+	margin-bottom: 20px;
+}
+
+.block-bin{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.blocks {
+	border: 1px solid black;
+	display: flex;
+	width: 49%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+	margin-bottom: 20px;
+	flex-direction: row;
+}
+
+.blocks button{
+	margin: 15px 0 5px 0;
+	padding: 5px 30px;
+}
+
+.line{
+	margin: 0 0 30px 0;
+}
+
+.details{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.details-words{
+	width: 49%;
+}
+
+ul {
+		list-style-type: square;
+		list-style-position: inside;
+		/* border: 1px solid red; */
+}
+
+.detail-pic{
+	width: 49%;
+	padding: 20 0 0 20;
+	bordr: 50px solid black;
+}
+
+.copyright{
+	margin: 40px 0 0 0;
+}
