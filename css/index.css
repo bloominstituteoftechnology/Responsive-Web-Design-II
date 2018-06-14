@@ -81,11 +81,12 @@ body{
 	z-index: 2;
 	display: flex;
 	position: sticky;
-	justify-content: space-between;
+    justify-content: space-between;
+    margin-top: 2%;
 }
 nav{
 	width: 75%;
-	height: 36px;
+	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -104,10 +105,11 @@ a{
 }
 header{
 	width: 100%;
-	height: 500px;
+	height: 400px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    margin: 50px 0;
 }
 header .Innovation{
 	display: flex;
@@ -192,21 +194,51 @@ footer{
        align-items: center;
        justify-content: space-evenly;
     }
-    .logo{
+    .logo {
        order: -1;
        margin: 3%;
-       width: 100%;
+       width: 176px;
+       display: flex;
+       align-items: center;
    }
-   header div img{
+   header div img {
        display: none;
    }
-   header{
+   header {
        justify-content: center;
+       margin: 0;
    }
-   header .Innovation{
+   header .Innovation {
        width: 100%;
    }
 }
+
 @media (max-width: 400px) {
-    
+    .Navigation{
+        position: static;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid black;        
+    }    
+    nav a {
+        padding: 4%;
+        border-top: 1px solid black;
+    }
+    .top-content{
+        flex-direction: column;
+    }
+    .top-content div{
+        width: 100%;
+        margin:20px 0;
+    }
+    .bottom-content{
+        flex-direction: column;
+    }
+    .bottom-content div{
+        width: 100%;
+        margin:20px 0;
+    }
 }
