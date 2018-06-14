@@ -49,7 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+    box-sizing: content-box
 }
 
 html, body {
@@ -104,6 +104,7 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    background: pink
 }
 
 .cta .cta-text {
@@ -174,7 +175,16 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
-@media(max-width: 600px ) {
+@media(max-width: 768px ) {
     .container{
-        background: lightskyblue; 
+        background: lightskyblue; }
+    .cta {
+        width:100%;
+        flex-flow: column;}
+    .cta .circle {
+        display: none
+     }
+@media(max-width: 400px ) {
+    .container{
+        background: rgb(238, 165, 30); 
 }
