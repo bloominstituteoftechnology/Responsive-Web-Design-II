@@ -66,7 +66,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	width: 880px;
+	width: 100%;
+	max-width: 880px;
 	/* TB LR */
 	margin: 0 auto;
 }
@@ -250,4 +251,42 @@ header nav a:hover {
 
 .services-content .bottom-content .box ul li {
 	list-style-position: inside;
+}
+
+@media (max-width: 768px) {
+	header nav {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	
+	/* header nav a {
+	
+	}
+	header nav a img {
+		display: none;
+	} */
+	/* don't leave at none */
+	
+	.cta {
+		display: flex;
+		align-items: center;
+	}
+	
+	.cta img {
+		display: none;
+	}
+	/* leave at none */
+
+	
+		
+
+}
+
+
+
+
+@media (max-width: 400px) {
+
+
 }
