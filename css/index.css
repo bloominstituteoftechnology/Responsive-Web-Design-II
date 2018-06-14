@@ -69,7 +69,6 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    border: 1px solid teal;
 }
 
 /* Nav Bar */
@@ -83,7 +82,6 @@ h1, h2, h3, h4, h5 {
     height: 80px;
 	background: lightblue;
     z-index: 1;
-    border: 1px solid red;
 }
 
 .navigation {
@@ -93,7 +91,6 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     color: gray;
     order: 0;
-    border: 1px solid green;
 }
 
 .navLinks {
@@ -103,22 +100,21 @@ h1, h2, h3, h4, h5 {
     width: 100%;
 }
 
-..navLinks a{
+.navLinks a{
 	text-decoration: none;
 }
 
-..navLinks a:hover{
+.navLinks a:hover{
 	text-decoration: underline;
 }
 
-/* Custome Header */
+/* Custom Header */
 .custom-header {
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	height: 385px;
     margin: 60px auto 70px;
-    border: 1px solid red;
 }
 
 .custom-header .title-container {
@@ -127,9 +123,8 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 57%;
+	width: 56%;
     height: 385px;
-    border: 1px solid blue;
 }
 
 .custom-header .title-container .title-text {
@@ -168,7 +163,6 @@ hr {
 	display: flex;
 	justify-content: center;
     margin: 30px 0px 40px;
-    border: 1px solid red;
 }
 
 .top-content .top-content-block {
@@ -182,13 +176,13 @@ hr {
 	display: flex;
     justify-content: center;
     width: 100%;
+    height: 25%;
 }
 
 .bottom-content {
 	display: flex;
 	justify-content: center;
     margin: 30px 0 40px;
-    border: 1px solid red;
 }
 
 .bottom-content .bottom-content-block {
@@ -196,14 +190,12 @@ hr {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	width: 33.3%;
-    border: 1px solid yellow;
 }
 
 .contact-container {
 	display: flex;
 	justify-content: center;
     margin: 30px 0 40px;
-    border: 1px solid red;
 }
 
 .contact {
@@ -220,8 +212,7 @@ footer {
 	margin-bottom: 100px;
 }
 
-/* Services CSS Index */
-
+/* NEW HTML Services CSS Index */
 .service-img {
 	display: flex;
 	justify-content: center;
@@ -367,7 +358,7 @@ h2 .services-title {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: auto;
+        height: 25%;
     }
 
     .bottom-content .bottom-content-block {
@@ -383,6 +374,93 @@ h2 .services-title {
     }
 }
 
+/* Phone Resolution */
 @media (max-width: 400px) {
+  
+    .full-container {
+        padding: 0px 1%;
+    }
 
+    .nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: 375px;
+        background: lightblue;
+    }
+    
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        order: 1;
+    }
+
+    .navLinks a{
+        font-size: 25px;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 12px;
+        border-bottom: 1px solid black;
+    }
+
+    .navLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75px;
+        margin: 0 auto;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+
+    .custom-header {
+        margin: 10px auto 10px;
+    }
+
+    .cir-image {
+        display: none;
+    }
+   
+    .middle-img img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 25%;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px 40px;
+    }
+
+    .top-content .top-content-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px 0 40px;
+    }
+
+    .bottom-content .bottom-content-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .index-footer {
+        margin-bottom: 20px;
+    }
 }
