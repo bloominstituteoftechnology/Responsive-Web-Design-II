@@ -60,116 +60,247 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+html {
+    font-size: 62.5;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+	box-sizing: border-box;
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
 }
 
-/* Header Styles */
+h1 {
+	font-size: 4rem;
+}
 
 header {
-    width: 100%;
     display: flex;
-}
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+header ul {
     display: flex;
-}
+    align-items: center;
+    
+    }
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+header li {
+    padding-right: 5%;
+    padding-left: 5%;
+    color: gray;
+    display:flex;
+    justify-content: space-between;
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
     margin-top: 10px;
-    cursor: pointer;
+    margin-left: .011%;
+    display:flex;
+    justify-content: center;
+    
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+header a:link {
+    color: gray;
+    text-decoration: none;
 }
 
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+header a:visited {
+    color: gray;
 }
 
-.main-content .top-content {
+header a:hover {
+    color: black;
+}
+.contact {
+	display: flex;
+	justify-content: start;
+	}
+
+.contact h4 {
     display: flex;
-    justify-content: space-around;
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.copyright {
+	text-align: center;
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+.call-to-action {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.innovation{
+	text-align: center;
 }
 
-/* Contact Styles */
 
-.contact p {
-    margin: 15px 0;
+.home-content .button {
+	display: flex;
+	justify-content: center;
+	border: 1px black solid;
+	padding: 15px .017%;
+
+
 }
 
-/* Footer Styles */
 
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+
+
+.home-content .middle-img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.home-content .main-content {
+	border-top: 2px black solid;
+	border-bottom: 2px black solid;
+	padding: 20px 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.home-content .main-content .top-content {
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0
+}
+
+.home-content .main-content .top-content .paragraphs {
+	width: 42%;
+}
+
+.home-content .main-content .bottom-content {
+	display:flex;
+	justify-content: space-between;
+}
+
+.home-content .main-content .bottom-content .paragraphs{
+
+	width: 29%;
+}
+
+.services-content .top-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+
+	border-bottom: 1px black solid;
+}
+
+.services-content .top-content h3 {
+	margin-top: 10px;
+	font-size: 30px;
+	margin-top: 30px;
+	
+}
+
+.services-content .middle-content .boxes{
+	border: 1px black solid;
+	width: 350px;
+	padding: 15px;
+	margin-bottom: 30px;
+	background: #F4F3F4;
+}
+
+.services-content .middle-content .boxes .button {
+	border: 1px black solid;
+	width: 150px;
+	padding: 10px 30px;
+	background: white;
+	border-radius: 5px;
+}
+
+.services-content .middle-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	
+	
+}
+
+.bottom-content li {
+	list-style: square;
+	margin-left: 15px;
+}
+
+.services-content .bottom-content{
+	border-top: 1px black solid;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.services-content .bottom-content .left{ 
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    header ul {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        order: 1;
+        width: 100%;
+        }
+    
+    
+    header li {
+        padding-right: 4%;
+        padding-left: 4%
+        color: gray;
+        display:flex;
+        /* justify-content: space-between; */
+    }
+    
+    header .logo {
+        margin-top: 10px;
+        padding-left: 40%;
+        display:flex;
+        
+        
+    }
+    
+    header a:link {
+        color: gray;
+        text-decoration: none;
+    }
+    
+    header a:visited {
+        color: gray;
+    }
+    
+    header a:hover {
+        color: black;
+    }
+
+    .home-content .call-to-action .circle {
+        display: none;
+    }
 }
