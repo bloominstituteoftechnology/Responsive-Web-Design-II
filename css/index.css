@@ -60,116 +60,277 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* index.html */
+body {
+	width: 1024px;
+	margin: 0 auto;
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+	max-width: 880px;
+	margin: 0 auto;
+	position: relative;
 }
 
-/* Header Styles */
+nav {
+	height: 50px;
+	width: 876px;
+	background-color: dodgerblue;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	/* background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-position: right; */
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+	font-size: 15px;
+	/* display: inline-block; */
+	margin: 15px 40px 5px 10px;
+	z-index: 2;
+}
+
+nav a:hover, nav a:visited, nav a:active, nav a:link {
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover, button:hover {
+	animation-duration: 2s;
+	animation-name: fadeInOut;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fadeInOut {
+	from {
+		background-color: white;
+	}
+
+	to {
+		background-color: dodgerblue;;
+	}
+}
+
+.logo {
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	margin-top: 10px;
+	z-index: 2;
+}
+
+h1 {
+	font-size: 5em;
+	text-align: center;
+	float: left;
+	margin-left: 65px;
+	margin-top: 110px;
+}
+
+button {
+	font-family: 'Quicksand', sans-serif;
+	position: absolute;
+	border: 1px solid black;
+	padding: 5px 35px;
+	margin-top: 360px;
+	margin-left: -240px;
+	font-size: 20px;
+}
 
 header {
-    width: 100%;
-    display: flex;
+	height: 500px;
+	border-bottom: 1px solid black;
+	padding-bottom: 75px;
+	margin-top: 50px;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+.indexheader {
+	height: 500px;
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+header span {
+	display: block;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+header img {
+	margin-left: 95px;
+	margin-top: 65px;
+	padding: 0px;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+.double-content span {
+	width: 430px;
+	/* display: inline-block; */
+	margin: 20px 5px 20px 0px;
 }
 
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+.double-content, .triple-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+.middle-image {
+	height: 200px;
+	background-image: url("../img/mid-page-accent.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+.triple-content span {
+	width: 280px;
+	/* display: inline-block; */
+	margin: 20px 5px 35px 0px;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.triple-content {
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
 }
 
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+.contact {
+	position: relative;
+	float: left;
+	margin-bottom: 55px;
+	margin-top: 25px;
 }
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
 
 footer {
-    text-align: center;
-    margin: 40px 0 20px;
+	font-size: 13px;
+	clear: both;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* services.html */
+
+.servicesheader {
+	margin-top: 50px;
+	height: 200px;
+	background-image: url("../img/services-header.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.services {
+	margin: 30px 0px;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+}
+
+.design-ux, .marketing-web, .ios-android {
+	display: flex;
+	justify-content: space-between;
+}
+
+.design-ux span, .marketing-web span, .ios-android span {
+	width: 400px;
+	height: 230px;
+	/* display: inline-block; */
+	border: 1px solid black;
+	padding: 20px;
+	margin: 10px 0px;
+}
+
+.design-ux button, .marketing-web button, .ios-android button {
+	margin-left: 0px;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+
+.somefacts {
+	height: 350px;
+	width: 876px;
+	background-image: url("../img/services-info.png");
+	background-repeat: no-repeat;
+	background-position: right center; 
+	margin-bottom: 40px;
+}
+
+.somefacts span {
+	width: 400px;
+	float: left;
+	margin-top: 30px;
+}
+
+.somefacts p{
+	margin-bottom: 20px;
+}
+
+ul li {
+	list-style: square;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+/* products.html */
+
+.productsheader {
+	margin-top: 0px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	height: 400px;
+	width: 876px;
+	border-bottom: 1px solid black;
+	background-image: url("../img/laptop-mobile.jpg");
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.products h1 {
+	margin-top: 50px;
+}
+
+.productsbutton button {
+	margin-top: 250px;
+	position: relative;
+}
+
+.productsboxes {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 700px; 
+	border-bottom: 1px solid black;
+}
+
+.productsboxes span {
+	width: 420px;
+	height: 180px;
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.productsboxes span button {
+	margin: 120px 0 20px 0;
+}
+
+/* media queries */
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 400px) {
+    
 }
