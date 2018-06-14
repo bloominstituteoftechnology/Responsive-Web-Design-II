@@ -110,9 +110,10 @@ hr {
 
 /* Index Page */
 
-.index-page {
+.page-container {
 	max-width: 880px;
 	/* margin: 20px 2.27% 0; */
+	padding: 30px 5% 0;
 	margin: 0 auto;
 	/* margin: 36px; */
 	/* display: flex;
@@ -232,7 +233,7 @@ hr {
 }
 
 .services-page .page .content .content-box {
-	width: 420px;
+	width: 45%;
 	border: 1px solid black;
 	background-color: whitesmoke;
 	padding: 15px;
@@ -240,7 +241,7 @@ hr {
 }
 
 .services-page .page .content .content-box button {
-	font-size: 1rem;
+	font-size: 1.6rem;
 	background-color: white;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -266,8 +267,8 @@ hr {
 
 @media(max-width: 768px) {
 
-	.index-page {
-		padding: 30px 5% 0;
+	.page-container {
+		/* padding: 30px 5% 0; */
 	}
 
 	header nav {
@@ -285,17 +286,51 @@ hr {
 	.index-page .page .header img {
 		display: none;
 	}
+
+	.services-page .page .content-top img {
+		height: 100px;
+	}
+
+	.services-page .page .content {
+		justify-content: center;
+	}
+
+	.services-page .page .content .content-box{
+		width: 75%;
+	}
+
+	.services-page .page .content-bottom {
+		justify-content: center;
+	}
+
+	.services-page .page .content-bottom .content-bottom-text ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services-page .page .content-bottom img {
+		display: none;
+	}
 }
 
 @media(max-width: 400px) {
-	.index-page {
-		margin: 0;
+	/* .page-container {
 		padding: 0;
+	} */
+
+	.page-container {
+		padding: 0;
+	}
+
+	.page-container .page {
+		padding: 30px 5% 0;
 	}
 
 	header nav {
 		flex-wrap: wrap;
 		flex-direction: column;
+		padding: 0;
 	}
 
 	header nav a {
@@ -341,6 +376,7 @@ hr {
 
 	.index-page .page .content img {
 		margin: 0 0 25px;
+		height: 91px;
 	}
 
 	hr {
