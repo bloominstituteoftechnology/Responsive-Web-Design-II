@@ -66,26 +66,25 @@ h1, h2, h3, h4, h5 {
 /* My CSS */
 
 body {
-	width: 1024px;
-	margin: 0 auto;
 	/* padding: 36px; */
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 }
 
 img, h1 {
-	animation: fadein;
-	animation-duration: 5s;
+	/* animation: fadein;
+	animation-duration: 5s; */
 }
 
-nav {
+header nav {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 15px;
 }
 
-nav a {
+header nav a {
 	text-decoration: none;
 	color: lightgray;
 	font-size: small;
@@ -107,6 +106,8 @@ hr {
 /* Index Page */
 
 .index-page {
+	max-width: 880px;
+	margin: 20px 2.27% 0;
 	/* margin: 36px; */
 	/* display: flex;
 	flex-direction: column;
@@ -245,6 +246,53 @@ hr {
 .services-page .page .content-bottom .content-bottom-text ul {
 	list-style-type: square;
 	list-style-position: inside;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+	header nav {
+		flex-wrap: wrap;
+	}
+
+	header nav a:last-child {
+		order: -1;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.index-page .page .header img {
+		display: none;
+	}
+}
+
+@media(max-width: 400px) {
+	.index-page {
+		margin-top: 0;
+	}
+
+	header nav {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+
+	header nav a {
+		border: 1px solid black;
+		margin: 0 auto;
+		height: 80px;
+		font-size: 25px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 15px auto;
+	}
+
+	header nav a:last-child {
+		margin: 0 auto;
+	}
 }
 
 /* CSS Animations */
