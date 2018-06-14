@@ -336,25 +336,25 @@ ul li {
 
 /* media queries */
 
-@media (max-width: 768px) {
-    .container {
-        width: 100vw;
-    }
+@media(max-width: 768px) {
 
     nav {
-        flex-flow: wrap column;
+        width: 100vw;
+        flex-flow: wrap column-reverse;
     }
 
     nav span {
-        width: 100%;
+        width: 100vw;
         justify-content: space-around;
     }
 
-    .middle-image {
-        display: none;
+    .indexheader {
+        background-image: none;
     }
 }
 
 @media(max-width: 400px) {
-
+    .container {
+        /* display: none; */
+    }
 }
