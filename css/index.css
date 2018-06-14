@@ -177,7 +177,11 @@ footer {
 
 
 @media( max-width: 768px ) {
-/* Header Styles */
+    .container {
+        padding: 0 2vw;
+    }
+
+    /* Header Styles */
 
 header {
     width: 100%;
@@ -296,10 +300,9 @@ header .logo {
 
 
 @media( max-width: 400px ) {
-   
-.container {
-    padding: 0 5vw;
-}
+    .container {
+        padding: 0;
+    }
     /* Header Styles */
 
 header {
@@ -336,12 +339,20 @@ header .logo {
     margin: 28px 0 0 0;
 }
 
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 55px;
+    justify-content: center;
+}
+
 /* Main Content Styles */
 
 .main-content {
     border-top: 2px solid black; 
     border-bottom: 2px solid black;
-    margin: 75px 0 35px 0;
+    margin: 75px 5vw 35px;
     padding: 35px 0;
     font-size: 16px;
     line-height: 18px;
@@ -374,7 +385,11 @@ header .logo {
      padding-right: 6.81%;
  }
 
-
+ /* Contact Styles */
+ 
+ .contact  {
+    margin: 15px 5vw;
+}
 
 
 }
