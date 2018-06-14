@@ -75,6 +75,8 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .container header {
     display:flex;
@@ -87,6 +89,14 @@ html {
     width: 75%;
     justify-content: space-between;
     margin-bottom: 30px;
+}
+.container header nav a {
+    text-decoration: none;
+    color: black;
+}
+.container header nav a:hover {
+    text-decoration: underline;
+    background: red;
 }
 .container .top-content {
     width: 50%;
@@ -174,18 +184,63 @@ html {
         picture size / container width =
         61.78385 i then took 100% - 61.78385
         to provide the percentange to pad by */
-        padding-bottom: 30px;
-        
-        
+        padding-bottom: 30px;  
         
     }
+
     .container .top-content {
         width: 100%;
     }
     .container .syntax-logo {
         display: none;
     }
+    .container .middle {
+        max-width: 100%;
+    }
     
 
+}
+@media(max-width: 400px) {
+    .container header nav {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+
+    }
+    .container header nav a{
+        border-top: 1px solid gray;
+        border-bottom:1px solid gray;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        width: 100%;
+
+    }
+    .container .logo-img{
+        padding-left: 30.00% ;
+    }
+
+    .container .features {
+        width: 100%;
+    }
+    .container .about {
+        width: 100%;
+    }
+    .container .middle {
+        max-width: 100%;
+    }
+    .container .product {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .container .services {
+        width: 100%;
+    }
+    .container .vision {
+        width: 100%;
+        padding-top: 30px;
+    }
 }
 
