@@ -30,7 +30,6 @@ a:hover {
 }
 
 .logo {
-    float: right;
     margin-right: 3%;
 }
 
@@ -38,15 +37,22 @@ a:hover {
     
 
     .great-header {
-       height:100px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        max-width: 780px;
+        height:100px;
     }
 
-    .logo {
-        
-        order:-1;
+    .great-header .logo {
+        margin: 0 auto;
+        order: -1;
         align-self: flex-start;
-        flex: 1 0 100%;
-        flex-grow: 1;
+        justify-self: center;
+    }
+
+    nav {
+        width:100%;
     }
 
     

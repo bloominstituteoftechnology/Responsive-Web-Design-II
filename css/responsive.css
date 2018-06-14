@@ -4,7 +4,8 @@
 
 @media(max-width:780px) {
     .home-content {
-    
+        width:100%;
+        max-width: 780px;
     }
 
     .body-content {
@@ -20,11 +21,40 @@
     }
 
     .on-demand .get-started {
+        align-self: center;
         margin-bottom: 1%;
+        padding: 4%;
     }
 
     .code-image {
         display: none;
     }
+
+    /* Center Content */
+    .center-content {
+        width: 90%;
+        max-width: 752px;
+        margin: 0 auto;
+    }
+
+    .text-block {
+        margin: 2% 2% 4% 0;
+    }
+
+    .middle-img {
+        margin: 1% 0;
+    }
+
+    /* Contact */
+    .contact-content {
+            width: 90%;
+            max-width: 752px;
+            margin: 4% auto;
+    }
+
+    footer .copyright {
+        margin: 1% 0 5% 0;
+    }
+
 
 }

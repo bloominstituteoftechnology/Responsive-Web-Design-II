@@ -44,8 +44,8 @@
 
 .center-content {
     /* flex-direction: column; */
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
     padding: 3% 0;
 }
 
@@ -87,5 +87,5 @@ footer {
 }
 
 .learn-more {
-    
+
 }
