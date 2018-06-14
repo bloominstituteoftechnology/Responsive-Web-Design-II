@@ -270,21 +270,22 @@ h1, h2, h3, h4, h5 {
     }
 
     .home-content .bottom-content {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         flex-direction: column;
         padding-bottom: 20px;
     }
 
     .home-content .bottom-content div {
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         flex-direction: column;
         width: 100%;
         margin: 10px 0;
     }
 
     .home-content .contact {
-        border: 1px solid green;
+        /* border: 1px solid green; */
         padding-left: 10px;
+        padding-top: 10px;
     }
 }
 
