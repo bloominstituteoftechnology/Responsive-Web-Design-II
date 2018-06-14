@@ -293,10 +293,14 @@ h1 {
       background: orange;
     }
 
-    /* .navbar a img {
-        
-    } */
+    .nav-bar ul a {
+        display: flex;
+        order: -1;
+    }
 
+    .nav-bar ul li:child {
+        top: 0;
+    }
     header img {
         display: none;
     }
