@@ -65,6 +65,10 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+html {
+	font-size: 62.5%;
+}
+
 body{
 	font-family: Titillium Web;
 	
@@ -73,14 +77,32 @@ body{
 
 	
 }
+
+.home-content	{
+	width: 80%;
+	max-width: 1024;
+	margin: 0 auto;
+}
+.content p {
+	font-size: 1.6rem;
+	padding: 60% 0;
+}
+
+.content h2 {
+	border: 1px solid red;
+}
+
+.Contact-Section  {
+	font-size:1.6rem;
+}
+
 header {
 
   	position: relative;
 	height: 50px;
-	margin: 0 -800px 30px -800px;
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 
 	background: rgba(76,76,76,1);
@@ -100,27 +122,23 @@ header {
 	background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%,
 	 rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
-	margin: 0 0px 30px 0px;
-	max-width: 80%;
+
 
 }
 nav  {
 	line-height: 36px;
-	font-size: 14px;
+	font-size: 1.4rem;
 	display: flex;
-
+	justify-content: space-between;
 }
 
 nav a {
 	margin: 13px 35px 10px 5px;
-	display: inline-block;
-	text-decoration: none;
 	display: flex;
-	justify-content: center;
-	flex-wrap: nowrap;
-
+	justify-content: space-evenly;
+	text-decoration: none;
 	color: #b7b7b7;
-	font-family: Titillium Web;
+
 
 	
 }
@@ -151,13 +169,13 @@ header .logo:hover {
 	display: flex;
 	justify-content: center;
 	align-self: inherit;
-	border: 1px yellow;
+
 
 }
 .header-img {
 display:flex;
 flex-wrap: nowrap;
-
+width: 30%
 
 
 
@@ -184,7 +202,7 @@ button a {
 .Upper-Content {
 	position: relative;
 	height: 200px;
-
+	font-size: 1.6rem;
 	display: flex;
 	align-items: center;
 	flex-wrap: nowrap;
@@ -209,6 +227,7 @@ button a {
 	display: flex;
 	flex-direction: column;
 	margin: 0 40px 0 0;
+	
 
 }
 
@@ -216,21 +235,20 @@ button a {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	margin: 0 0px 0 0px;
+
 	
 	
 
 }
 
 .Lower-Content {
-	position: relative;
+
 
 	margin: 0 auto;
 	padding: 40px 0px 40px 0px;
 	margin-bottom: 20px;
-	position: relative;
 
+	font-size: 1.6rem;
 	height: 200px;
 	display: flex;
 	align-items: center;
@@ -322,13 +340,8 @@ margin: 20px 0px;
 	
 }
 
-.Services-Blocks {
-	display: flex;
-	flex-flow: wrap row;
-	justify-content: center;
-}
 
-.Services-Blocks p {
-	width: 400px;
-	border: 1px solid black;
+.header nav {
+	display: flex;
+	justify-content: space-evenly;
 }
