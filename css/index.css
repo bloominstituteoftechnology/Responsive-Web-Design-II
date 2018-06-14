@@ -54,11 +54,11 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: cursive;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
@@ -78,22 +78,22 @@ html {
 }
 
 .container header {
-    display:flex;
+    display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 15px;
 }
 
 .container header nav {
     display: flex;
-    width: 75%;
+    width: 100%;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 .container .top-content {
     width: 50%;
-    display:flex;
+    display: flex;
     text-align: center;
     font-size: 7.2rem;
     justify-content: center;
@@ -102,18 +102,14 @@ html {
     font-family: impact;
 }
 
-.container .top-content p {
-    display: flex;
-    justify-content: center;
-}
-
 .container .top-content button {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    border-radius: 3px;
-    border: 1px solid black;
+    padding: 8px 40px;
+    border-radius: 2px;
+    border: 2px solid black;
     text-align: center;
+    margin-top: 20px;
 }
 
 .container .syntax-logo {
@@ -122,19 +118,19 @@ html {
 
 .container .features {
     width: 50%;
-    border-top: 1px solid black;
     margin-bottom: 30px;
     margin-top: 30px;
     padding-top: 15px;
     padding-right: 1%;
+    border-top: 1px solid black;
 }
 .container .about {
     width: 50%;
-    border-top: 1px solid black;
     margin-bottom: 30px;
     margin-top: 30px;
     padding-top: 15px;
     padding-left: 1%;
+    border-top: 1px solid black;
 }
 .container .middle-img {
     width: 100%;
@@ -162,10 +158,18 @@ html {
 }
 
 .container footer {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    padding-bottom: 20px;
     width: 100%;
     text-align: center;
-    
+}
+
+
+@media(max-width: 768px){
+    .syntax-logo{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+
 }
