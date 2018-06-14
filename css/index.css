@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 .container header {
     width: 100%;
     display: flex;
-		border: 1px solid blue;
+
 }
 
 header nav {
@@ -86,9 +86,13 @@ header nav {
 }
 
 header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+		text-decoration: none;
+		color: lightgray;
+
 }
+
+
+
 
 header nav a:hover {
     text-decoration: underline;
@@ -106,7 +110,7 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: nowrap;
-		border: 1px solid red;
+
 }
 
 .cta .cta-text {
@@ -137,7 +141,6 @@ header .logo {
 
 .img-container {
 	width: 50%;
-	border: 1px solid blue;
 }
 
 /* Main Content Styles */
@@ -148,7 +151,6 @@ header .logo {
    margin: 75px 0 35px 0;
    font-size: 1.6rem;
    line-height: 18px;
-	 border: 1px solid green;
 	 width: 100%;
 }
 
@@ -176,7 +178,6 @@ header .logo {
 .contact{
 	font-size: 1.6rem;
 	width: 100%;
-	border: 1px solid black;
 }
 
 .contact p {
@@ -192,32 +193,20 @@ footer {
 }
 
 @media( max-width: 768px ) {
-	.container {
 
+	.container header {
+		flex-direction: column;
 	}
-
-	header nav {
-	    margin-top: 40px;
-			width: 100%;
-	    justify-content: space-between;
-	    display: flex;
-			align-items: flex-end;
-			flex-wrap: nowrap;
-	}
-
-	header nav a {
-	    width: 100%;
-			border: 1px solid black;
-			display: flex;
-			
-	}
-
 
 	header .logo {
 		order: -1;
-		align-self: flex-start;
-		margin: 0 30px 0;
+		align-self: center;
+		margin: 30px 0 0 0;
 		justify-content: center;
+	}
+
+	header nav a {
+		font-size: 1.6rem;
 
 	}
 	.cta .cta-text {
@@ -228,4 +217,47 @@ footer {
 	.img-container {
 		display: none;
 	}
+}
+
+@media ( max-width: 400px ) {
+
+	.container {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.container header {
+			justify-content: space-between;
+
+	}
+
+	.container header nav {
+			height: 350px;
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+	}
+	 .container header nav a {
+			text-decoration: none;
+			color: #b0b0b0;
+			font-size: 3.0rem
+			
+
+	}
+
+	.main-content .top-content {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-content: space-around;
+	}
+
+	.main-content .bottom-content {
+		flex-wrap: wrap
+	}
+
+
 }
