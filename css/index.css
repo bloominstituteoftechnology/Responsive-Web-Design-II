@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 .container {
     /*width: 880px;*/
     width: 100%;
-    max-width: 880px;
+    max-width: 828px;
     margin: 0 auto;
 }
 
@@ -114,8 +114,8 @@ header .logo {
     /*font-size: 72px;*/
     font-size: 4rem;
     text-align: center;
-    /*letter-spacing: 5px;*/
-    letter-spacing: 1%;
+    letter-spacing: 5px;
+    /*letter-spacing: 2%;*/
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -125,18 +125,25 @@ header .logo {
 }
 
 .cta .cta-text button {
+    display: flex;
     /*border: 1px double black;*/
     /*font-size: 16px;*/
-    border: .001% double black;*/
+    border: 1px double black;*/
     font-size: 1rem;
     background: white;
     /*width: 170px;*/
-    width: 19%;
+    width: 30%;
     /*height: 32px;*/
-    height: 4%;
+    height: 6%;
     /*margin-top: 10px;*/
     margin-top: 1%;
     cursor: pointer;
+}
+
+.cta  img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
 }
 
 .cta .cta-text button:hover {
@@ -147,13 +154,17 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   /*border-top: 2px solid black; */
+   /*border-bottom: 2px solid black;*/
+   border-top: .02% solid black; */
+   border-bottom: .02% solid black;
+   /*margin: 75px 0 35px 0;*/
+   margin: 8% 0 3.5% 0;
    /*padding: 35px 0;*/
    padding: 4% 0;
    font-size: 1rem;
    line-height: 18px;
+   /*line-height: 18px;*/
 }
 
 .main-content .top-content {
@@ -163,7 +174,9 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3% auto;
+    /*margin: 30px auto;*/
+}
 }
 
 .main-content .bottom-content {
@@ -172,13 +185,16 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
+    /*padding-right: 20px;*/
+}
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.5% 0;
+    /*margin: 15px 0;*/
 }
 
 /* Footer Styles */
@@ -206,8 +222,9 @@ footer {
 
   .container header nav a{
     display: flex;
-    margin-top: 40px; 
-    width: 98.75%px;
+    /*margin-top: 40px;*/
+    margin-top: 0;  
+    width: 98.75%;
     justify-content: space-between;
     
   }
@@ -222,6 +239,7 @@ footer {
   
   .container .img-container img {
     width: 100%;
+    display: none;
   }
 } 
 
