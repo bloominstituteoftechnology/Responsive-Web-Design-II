@@ -126,12 +126,14 @@ header a:hover {
 }
 .contact {
 	display: flex;
-	justify-content: start;
+    justify-content: start;
+    border: 1px solid black;
 	}
 
-.contact h4 {
+/* .contact h4 {
     display: flex;
-}
+    justify-content: :start;
+} */
 
 .copyright {
 	text-align: center;
@@ -278,7 +280,7 @@ header a:hover {
     
     header li {
         padding-right: 4%;
-        padding-left: 4%
+        padding-left: 4%;
         color: gray;
         display:flex;
         /* justify-content: space-between; */
@@ -343,7 +345,7 @@ header a:hover {
     
     .home-content .main-content{
         margin-left: 2%;
-        margin-rgith: 2%;
+        margin-right: 2%;
     }
     .home-content .middle-img {
         width: 100%;
@@ -403,7 +405,6 @@ header a:hover {
         justify-content: center;
         padding-top: 20px;
         padding-bottom: 20px;
-        background:
     }
 
     header li:last-child {
@@ -434,6 +435,7 @@ header a:hover {
     
     .home-content .middle-img {
         width: 100%;
+        max-height: 100px;
         margin-bottom: 20px;
     }
     
