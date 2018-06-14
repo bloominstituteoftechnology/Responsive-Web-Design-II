@@ -51,7 +51,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 62.5%;
+    /*font-size: 62.5%;*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-	width: 880px;
+	width: 100%;
 	/* TB LR */
     margin: 0 auto;
     max-width: 880px;
@@ -80,19 +80,19 @@ h1, h2, h3, h4, h5 {
   
   header nav {
 	/*display: inline-block;*/
-	width: 7.84%;
+	width: 690px;
 	vertical-align: top;
 	margin-top: 35px;
 	justify-content: space-between;
-	display: flex;
+    display: flex;
   }
   
   header nav a {
 	/*display: inline-block;*/
-	margin-right: 130%;
+	margin-right: 65px;
 	font-size: 14px;
 	color: gray;
-	text-decoration: none;
+    text-decoration: none;
   }
   
   header nav a:hover {
@@ -107,11 +107,11 @@ h1, h2, h3, h4, h5 {
 	margin-right: 0;
   }
   
-  header .logo {
+   .container header .navigation img .logo {
 	/*display: inline-block;*/
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 28px 0 0 91px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 28px 0 0 91px;
 
   }
   
@@ -155,6 +155,10 @@ h1, h2, h3, h4, h5 {
 	background: black;
 	color: white;
   }
+
+  hr{
+      margin-top: 10%; 
+  }
   
   .main-content {
 	
@@ -169,7 +173,7 @@ h1, h2, h3, h4, h5 {
   
   .main-content .top-content .text-content {
 	width: 410px;
-	display: inline-block;
+    display: inline-block;
 	margin-right: 34px;
   }
   
@@ -284,10 +288,32 @@ button{
 
 @media(max-width:768px){
 
-    background-color: yellow;
+    .container header .navigation img .logo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    header .navigation{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta-text{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .cta img{
+        display: none;
+    }
 }
 
-@media(max-width: 400px){
+@media(max-width:400px){
 
-    background-color: pink;
+    .container{
+    display: flex;
+    width: 60%;
+    }
 }
