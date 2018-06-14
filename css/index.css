@@ -48,7 +48,22 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
+/* Set your own code here and refer to the code below for reference */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     box-sizing: border-box;
 }
 
@@ -172,4 +187,4 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
-}
+} */
