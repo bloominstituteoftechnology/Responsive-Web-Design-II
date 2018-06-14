@@ -64,8 +64,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width:880px;
     margin: auto;
+    background: olive;
 }
 
 /* Header Styles */
@@ -172,4 +173,8 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+@media(max-width: 600px ) {
+    .container{
+        background: lightskyblue; 
 }
