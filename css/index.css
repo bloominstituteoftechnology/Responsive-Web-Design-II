@@ -16,35 +16,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
@@ -59,39 +59,53 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
 }
 
 .container {
-    width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
-/*tablet breakpoint */
-@media only screen and (max-width: 768px) {
-.container {
-    margin: auto;
+/*if viewport smaller than 768px*/
+
+@media(max-width: 768px) {
+    .container .logo {
+        order:-1;
+        background-color: green;
+
+    }
+    
+    .container header {
+        display: flex;
+        flex-flow: column wrap;
+        /*flex-direction: column;*/
+        background-color: red;
+    }
 }
 
-/*mobile breakpoint */
-@media only screen and (max-width: 400px) {
-.container {
-    margin: auto;
-}
 
+/*if viewport smaller than 400px*/
 
+@media(max-width: 400px) {
+    .container header nav{
+        flex-flow: column wrap;
+        /*flex-direction: column;*/
+        background-color: red;
+        justify-content: space-between;
+    }
 }
 /* Header Styles */
 
 header {
-    width: 79.4%;
+    width: 100%;
     display: flex;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4rem; 
+    width: 79.4%;
     justify-content: space-between;
     display: flex;
 }
@@ -108,35 +122,35 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 91px;
+    margin: 2.8rem 0 0 9.1rem;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 7.2rem;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0rem 8.2rem 0rem 0rem;
 }
 
 .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: .1rem double black;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 17rem;
+    height: 3.2rem;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -148,13 +162,14 @@ header .logo {
 /* Main Content Styles */
 
 .main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+   border-top: .2rem solid black; 
+   border-bottom: .2rem solid black;
+   margin: 7.5rem 0 3.5rem 0;
+   padding: 3.5rem 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
 }
+
 
 .main-content .top-content {
     display: flex;
@@ -163,7 +178,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3rem auto;
 }
 
 .main-content .bottom-content {
@@ -172,18 +187,18 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2rem;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.5rem 0;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4rem 0 2rem;
 }
