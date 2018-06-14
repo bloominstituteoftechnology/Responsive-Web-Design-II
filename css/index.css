@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -59,12 +63,13 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     margin-bottom: 10px;
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+    width: 100%;
     margin: auto;
 }
 
@@ -72,19 +77,21 @@ h1, h2, h3, h4, h5 {
 
 header {
     width: 100%;
-    display: flex;
+    display:flex;
+    margin-top: 5%;
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
     display: flex;
+    width: 76.25%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6em;
 }
 
 header nav a:hover {
@@ -93,83 +100,37 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+    /* align-self: flex-end; */
+    margin: 0 3% 0 10%;
 }
 
-/* Call To Action (CTA) Styles */
+/* CTA Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
     justify-content: flex-end;
+    margin: 8% 0;
+    width: 100%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 8% 0 0;
+    align-content: center;  
+}
+
+.cta .cta-text h1 {
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: 0.2%;
 }
 
 .cta .cta-text button {
+    font-size: 1.6rem;
     border: 1px double black;
-    font-size: 16px;
     background: white;
-    width: 170px;
+    margin: 20%;
     height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
 }
