@@ -57,6 +57,14 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html{
+	font-size: 62.5%;
+}
+
+body{
+		font-size: 1.2rem;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -75,17 +83,19 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+		align-items: center;
 }
 
 header nav {
 		border: 1px solid red;
     margin-top: 40px;
-    width: 610px;
+    width: 75%;
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
+		font-size: 1.2rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -95,14 +105,15 @@ header nav a:hover {
     color: black;
 }
 
-.container .header .logo-container{
-	width: 12%;
+header .logo-container{
+	width: 20%;
 }
 
 header .logo {
 		border: 1px solid red;
-    align-self: flex-end;
-    margin: 28px 0 0 91px; /*T R B L*/
+    margin: 40px 0 0 1px; /*T R B L*/
+		padding: 0 1.5% 0 1.5%;
+		width: 100%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -110,6 +121,7 @@ header .logo {
 .cta {
 		border: 1px solid red;
     display: flex;
+		flex-direction: row;
     margin-top: 72px;
 		flex-wrap: nowrap;
 		width: 100%;
@@ -150,7 +162,7 @@ header .logo {
 
 .cta .image-container img{
 	border: 1px solid red;
-	width: 80%;
+	width: 90%;
 }
 
 /* Main Content Styles */
@@ -206,4 +218,88 @@ footer {
 		border: 1px solid red;
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/*Media Queries*/
+
+/*Tablet Design*/
+@media(max-width: 768px){
+
+.container .logo-container{
+	order: -1;
+	margin: 0;
+}
+
+	.container header{
+		width: 100%
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.container .cta{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+  .container .cta .cta-text{
+		margin: 40px 0 40px 0;
+	}
+
+	.container .cta .image-container{
+		display: none;
+	}
+} /*end of Tablet Display*/
+
+
+/*Mobile Design*/
+@media(max-width: 400px){
+
+	.container .logo-container{
+		order: -1;
+		width: 30%;
+	}
+
+	.container header{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.container header nav{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container header nav a{
+		border-top: 1px solid black;
+		padding: 15px 45px 15px 45px;
+	}
+
+	.container header nav a .last{
+		border-bottom: 1px solid black;
+		padding: 15px 45px 15px 45px;
+	}
+
+	.container .cta{
+		margin: 0 0;
+	}
+
+	.container .main-content{
+		margin: 0 0;
+	}
+
+	.container .main-content .top-content{
+		display: flex;
+		flex-direction: column;
+	}
+	.container .main-content .bottom-content{
+		display: flex;
+		flex-direction: column;
+	}
 }
