@@ -14,14 +14,13 @@
 
 .body-content {
     display: flex;
-    position: relative;
-    width: 100%;
-    flex-direction: row;
     justify-content: space-around;
+    margin: 0 0 3% 0;
 }
 
 .on-demand {
     flex-direction: column;
+    padding-top: 3%;
 }
 
 .body-content h1 {
@@ -40,6 +39,7 @@
 
 .code-image {
     align-self: flex-end;
+
 }
 
 .center-content {
