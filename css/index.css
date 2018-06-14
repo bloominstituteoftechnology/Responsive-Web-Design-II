@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5 {
     /* width: 880px; */
     margin: auto;
     max-width: 880px;
+    /* margin-left: 2%; */
 }
 
 /* Header Styles */
@@ -228,10 +229,56 @@ footer {
     header .logo {
         align-self: auto;
     }
+
+    /* .container .main-content {
+        margin: 0 0 0 2%;
+    } */
 }
 
 @media( max-width: 400px ) {
     .container {
-        background: lime;
+        /* background: lime; */
     }
+
+    header nav {
+        flex-wrap: wrap;
+        /* border: 1px solid blue; */
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid black;
+    }
+
+    header nav a {
+        border-bottom: 1px solid black;
+        width: 100%;
+        text-align: center;
+        font-size: 2.0rem;
+        padding: 20px 0;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+    }
+
+    .container .main-content{
+        margin: 0 0 0 2%;
+    }
+
+    .main-content .text-content {
+        margin-bottom: 19px;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 1%;
+        border
+    }
+
+    .container .contact {
+        margin-left: 2%;
+    }
+    
 }
