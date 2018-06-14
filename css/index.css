@@ -64,13 +64,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
+    width: 100%;
+
 }
 
 /* Header Styles */
 
 header {
+    max-width: 880px;
     width: 100%;
     display: flex;
 }
@@ -145,6 +148,8 @@ header .logo {
 .main-content .top-content {
     display: flex;
     justify-content: space-around;
+    max-width: 700px;
+    width: 100%;
 }
 
 .main-content .middle-img {
@@ -173,3 +178,28 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+
+@media( max-width: 768px ) {
+  
+  
+  
+  .container .main-content {
+    height: 600px;
+  }
+  
+  .container .text {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+  }
+  
+  .container .img-container img {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+  }
+}
+  
+
