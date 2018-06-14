@@ -97,6 +97,8 @@ h1, h2, h3, h4, h5 {
 }
 .nav-bar a {
     display: flex;
+    padding: 2.5vh;
+    background: white;
 }
 .nav-bar  ul{
 	display: flex;
@@ -293,7 +295,7 @@ h1 {
       background: orange;
     }
 
-    .nav-bar ul a {
+    .nav-bar a {
         display: flex;
         order: -1;
     }
@@ -322,9 +324,19 @@ h1 {
         display: flex;
         flex-wrap: wrap;
     }
-    ul {
-        display:flex;
-        flex-wrap: wrap;
+
+    .nav-buttons li a {
+        display: flex;
+        padding: 2.5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        padding: 2.5vh 6vw;
+        width: 100%;
+        border-top: .1rem solid black;
+        justify-content: center;
     }
 
     .nav-bar ul{
@@ -336,7 +348,7 @@ h1 {
     }
 
     header {
-        margin-top: 50vh;
+        margin-top: 65vh;
     }
 
   }
