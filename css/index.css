@@ -79,9 +79,10 @@ body{
 }
 
 .home-content	{
-	width: 80%;
-	max-width: 1024;
+	padding: 0 10%;
+	max-width: 1024px;
 	margin: 0 auto;
+
 }
 .content p {
 	font-size: 1.6rem;
@@ -100,11 +101,15 @@ body{
 header {
 
   	position: relative;
-	height: 50px;
+	height: 50px; 
+	
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
+	min-width: 100%;
+	margin: 0 -74px;
+	padding: 0 0%;
 
 	background: rgba(76,76,76,1);
 	background: rgba(76,76,76,1);
@@ -147,8 +152,9 @@ nav a {
 header nav a:hover {
 
 	background-color: rgba(255, 255, 255, 0.678) ;
-	width: 60px;
-	height: 51px;
+	
+	
+	height: 50px;
 	color: black;
 
 
@@ -176,7 +182,9 @@ header .logo:hover {
 .header-img {
 display:flex;
 flex-wrap: nowrap;
-width: 30%
+
+
+
 
 
 
@@ -208,14 +216,12 @@ button a {
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
 	align-content: space-between;
-	padding-top: 20px;
+	padding-top: 40px;
 
 }
 .content .middle-img {
-
-
-
-
+	width: 100%;
+	height: 100%;
 	padding: 40px 0 40px 0;
 	
 
@@ -246,7 +252,6 @@ button a {
 
 	margin: 0 auto;
 	padding: 0px 0px 40px 0px;
-	margin-bottom: 20px;
 	height: 100%;
 	font-size: 1.6rem;
 
@@ -318,6 +323,7 @@ footer {
 .Header-Container {
 	display: flex;
 	justify-content: space-evenly;
+
 	margin: 50px 0 40px 0;
 
 
@@ -330,7 +336,7 @@ flex-direction: column;
 
 border-bottom: 1px solid black;
 border-top: 1px solid black;
-margin: 20px 0px;
+margin: 0 auto;
 
 
 }
@@ -344,4 +350,93 @@ margin: 20px 0px;
 .header nav {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+img.logo-original {
+	display: none
+}
+
+
+
+
+@media (max-width: 768px) {
+	* {
+
+	}
+	.home-content {
+		margin: 0 auto;
+	}
+	.header-img {
+		display: none;
+	}
+	header {
+	background:	none;
+	display:	flex;
+	flex-direction:	column-reverse;
+	}
+	.header nav {
+		display: flex;
+		justify-content: center;
+
+	}
+	img.logo {
+		display: none;
+	}
+
+	img.logo-original {
+		display: unset;
+	}
+
+}
+
+
+
+
+
+@media (max-width: 520px) {
+	* {
+		background: aquamarine;
+	}
+
+	
+	nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		border: 1px solid black;
+			
+}
+	.home-content {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.content {
+		display: flex;
+		flex-wrap: nowrap;
+		
+
+	}
+	.Upper-Content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		
+
+	}
+
+	.Lower-Content {
+		display: flex;
+		flex-direction: column;
+
+	}
+	.Features {
+		margin: 0 0 10% 0;
+
+	}	
+	.Services {
+		margin: 0 0 10% 0;
+		height: 40rem;
+
+	}
 }
