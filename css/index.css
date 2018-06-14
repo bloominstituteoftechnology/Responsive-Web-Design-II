@@ -67,8 +67,11 @@ h1, h2, h3, h4, h5 {
 
 /* Shared */
 .main-container {
-	width: 880px;
-	margin: auto;
+    width: 100%;
+    max-width: 880px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: auto;
 }
 .main-header {
 	width: 100%;
@@ -137,6 +140,9 @@ h3 {
 p {
 	font-size: 1.6rem;
 }
+img {
+    width: 100%;
+}
 
 
 /* Home */
@@ -145,19 +151,15 @@ p {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin: 50px 0 75px;
+	margin: 50px 0 70px;
 }
 .cta-overview__title-container {
     text-align: center;
     margin-left: 14%;
 }
 .cta-overview__title-container h1 {
-    line-height: 70px;
+    line-height: 75px;
     margin-bottom: 30px;
-}
-.cta-overview__img-container img {
-	width: 380px;
-	height: auto;
 }
 .cta-overview__img-container img:hover {
 	animation: spinMe 400ms 1s linear infinite;
@@ -199,12 +201,17 @@ p {
 {
     width: 50%;
 }
-
+.sec-one__features {
+    margin-right: 4%;
+}
+.sec-three__services, .sec-three__product {
+    margin-right: 4%;
+}
 .sec-three__services, 
 .sec-three__product, 
 .sec-three__vision
 {
-    width: 33%;
+    width: 32%;
 }
 
 .sec-one__features p, 
@@ -288,6 +295,49 @@ p {
 	margin: 15px 0;
 }
 
+@media (max-width: 768px) {
+    .main-header {
+        padding: 30px 0;
+        flex-direction: column-reverse;
+    }
+    .main-header .main-logo {
+        margin-bottom: 30px; 
+    }
+    .main-nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .cta-overview {
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .cta-overview__img-container {
+        display: none;
+    }
+    .cta-overview__title-container {
+        margin: 0;
+    }
+    .cta-overview__title-container h1 {
+        line-height: 75px;
+        margin-bottom: 15px;
+    }
+    .sec-one-container {
+        margin-top: 35px;
+    }
+    .sec-two-container {
+        margin-top: 35px;
+    }
+    .sec-three-container {
+        margin: 30px 0 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-color: black;
+    }
+}
 
 @keyframes wiggle {
     0% {
