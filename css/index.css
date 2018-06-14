@@ -84,11 +84,17 @@ h1, h2, h3, h4, h5 {
 /* Navigation Bar CSS */
 .nav-bar {
     display: flex;
-    justify-content: space-between;
-	position: fixed;
-	width: 100vw;
-}
+    justify-content: flex-start;
+    position: fixed;
 
+    /* why do I manually have to set the width? */
+    width: 880px;
+    
+}
+.nav-bar li a {
+    display: flex;
+    justify-content: space-between;
+}
 .nav-bar a {
     display: flex;
 }
@@ -96,7 +102,7 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	align-content: space-between;
 	text-decoration: none;
-	
+    justify-content: space-between;
 }
 
 /* .nav-bar img {
@@ -106,7 +112,8 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: white;
+    background: white;
+    width: 100%;
 	padding: 2.5vh;
 }
 
@@ -128,16 +135,18 @@ header {
 	align-items: center;
 	margin-top: 12vh;
 	text-align: center;
-	font-size: 7.5vh;
 }
 
+header p {
+    font-size: 200%;
+}
 header a {
 	border: .3vh solid black;
 	padding: 1.2vh 2.4vh;
 	display: inline-block;
 	text-decoration: none;
 	color: black;
-	font-size: 15px;
+	font-size: 93%;
 }
 
 header a:hover {
@@ -180,21 +189,21 @@ section .home-sec {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	padding-top: 10vh;
+	padding-top: 4vh;
 }
 
 footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10vh;
+	padding: 8vh;
 }
 
 /* End Home Page CSS */
 
 /* Start Service Page CSS */
 
-/* Top Section */
+Top Section
 .services-header-img {
 	display: flex;
 	margin-top: 12vh;
@@ -204,7 +213,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-top: 25px;
+	padding-top: 1.5%;
 }
 
 section {
@@ -212,11 +221,11 @@ section {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	flex-direction: row;
-	padding-top: 50px;
+	padding-top: 1.5%;
 }
 
 h1 {
-	font-size: 25px;
+	font-size: 150%;
 	font-weight: bold;
 }
 .content-boxes {
@@ -224,26 +233,26 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-around;
-	padding: 25px;
-	margin-top: 35px;
-	width: 380px;
-	border: 1px solid black;
+	padding: 1.5%;
+	margin-top: 2%;
+	width: 3.80vh;
+	border: .3vh solid black;
 }
 
 .serv-buttons {
-	padding: 10px 40px;
-    margin-top: 20px;
+	padding: 1vh 4vh;
+    margin-top: 2vh;
     cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black;
+    border-radius: 1.5vh;
+    border: .3vh solid black;
 }
 
 .content-boxes a:hover {
-	padding: 10px 40px;
-    margin-top: 20px;
+	padding: 1vh 4vh;
+    margin-top: 2vh;
     cursor: pointer;
-    border-radius: 5px;
-	border: 1px solid black;
+    border-radius: 1.5vh;
+	border: .3vh solid black;
 	background: black;
 	color: white;
 }
@@ -258,21 +267,22 @@ h1 {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	padding: 25px;
-	margin-top: 50px;
-	border-top: 1px solid black;
+	padding: 1.5%;
+	margin-top: 5vh;
+	border-top: .3vh solid black;
 }
 
 .btm-serv-lft, .services-info-img {
 	display: flex;
 	flex-direction: column;
-	padding: 25px;
-	width: 400px;
+	padding: 2.5vh;
+	width: 40vh;
 }
 .bottom-services li {
 	list-style: square;
-	padding: 5px;
-}
+	padding: 1.5vh;
+}/* Ending my Service page css */
+
 
 /* My introduction of media queries */
 
@@ -283,8 +293,12 @@ h1 {
       background: orange;
     }
 
-    .navbar a {
+    .navbar a img {
         display: table-header-group; 
+    }
+
+    header img {
+        display: none;
     }
   }
 
