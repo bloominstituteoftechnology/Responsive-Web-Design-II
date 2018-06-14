@@ -183,7 +183,6 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
     justify-content: center;
 }
 
@@ -192,13 +191,11 @@ header nav {
     width: 100%;
     justify-content: space-between;
     display: flex;
-    border: 1px solid black;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
-    border: 1px solid black;
 }
 
 header nav a:hover {
@@ -207,12 +204,46 @@ header nav a:hover {
 }
 
 header .logo {
-    border: 1px solid black;
     margin: 28px 0 0 0;
     order: -1;
 }
 
+/* Call To Action (CTA) Styles */
 
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: center;
+}
+
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 9.31% 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 58.2%;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+ 
+.cta img {
+    display: none;
+}
 
 }
 
