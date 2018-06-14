@@ -12,11 +12,11 @@ It's time to expand our skills into mobile devices.  You will be creating a full
 
 * [---] Constrain your container class with a `max-width` of 880px
 * [---] Introduce max-width media queries into your project at 768px and 400px.  
-* [ ] Review each [design file](design-files) and build your styles at each breakpoint.
-* [ ] Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.
+* [---] Review each [design file](design-files) and build your styles at each breakpoint.
+* [---] Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.
 * [---] Introduce `font-size: 62.5%;` into your `html` selector.
 * [---e] Convert all font-size pixels into rem units
-* [ ] Do your best to make the breakpoints look pixel-close-enough
+* [---] Do your best to make the breakpoints look pixel-close-enough
 
 ## Stretch Goals:
 * [ ] Build the services page from earlier assignments into a responsive design using your own creativity
