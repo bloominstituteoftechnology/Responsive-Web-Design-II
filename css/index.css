@@ -51,10 +51,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif,'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -68,11 +67,6 @@ h1, h2, h3, h4, h5 {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif,'Open Sans', sans-serif;
-}
-
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -83,30 +77,27 @@ h1, h2, h3, h4, h5 {
 * {
 	box-sizing: border-box;
 }
-body {
-	margin-left: 60px;
-	margin-right: 60px;
+
+.container {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
 }
-header {
-	margin-top: 20px;
-	height: 36px;
+header nav {
+    margin-top: 20px;
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav a{
-	margin: 50px;
 	text-decoration: none;
 	color:lightgray;
 }
-header nav a: hover {
-	text-decoration: underline;
-}
 
 .get-started {
-	margin-top: 60px;
+    margin-top: 60px;
 	height: 450px;
 	border-bottom: 1px solid gray;
 	width: 100%;
@@ -154,11 +145,11 @@ header nav a: hover {
 }
 .bottom-info {
 	display: flex;
-	justify-content: flex-start;
+    justify-content: flex-start;
+    border-bottom: 1px solid gray;
 }
 .bottom-info div {
 	width: 33%;
-	border-bottom: 1px solid gray;
 }
 .bottom-info div h2 {
 	padding-top: 30px;
@@ -268,4 +259,65 @@ ul {
 }
 ul li {
 	padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+   
+}
+@media (max-width: 400px) {
+    .container .get-started img {
+        display: none;
+    }
+    .container .get-started {
+        border-bottom: 1px solid black;
+    }
+    .container header *{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container header nav a {
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid gray;
+    }
+    .container header nav .last {
+        order: -1;
+    }
+    .container header nav .last img {
+        width: 50%;
+    }
+    .container .top-info {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .container .top-info div {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+    }
+    .container .middle-img {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 70%;
+    }
+    .container .bottom-info {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: 1px solid black;
+    }
+    .container .bottom-info div {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+    }
+    .container .contact {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
