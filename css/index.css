@@ -305,7 +305,17 @@ p, a{
  	margin: 40px 0 0 0;
  }
 
+ @media(max-width:911px){
+ 	.container {
+ 		margin: 0 10px;
+ 		max-width: 911px;
+ 	}
+
+
  @media(max-width:768px){
+	 .container {
+		 max-width: 768px;
+	 }
 	 .right{
 		 display: none;
 	 }
@@ -322,6 +332,19 @@ p, a{
 	 }
  }
 
+ }
+@media(max-width:660px){
+	.details {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		align-items: flex-start;
+		min-width: 100%;
+		padding: 0;
+		width: 100%;
+	}
+	
+}
  @media(max-width:576px){
 	  header nav {
 		 display: flex;
@@ -330,16 +353,16 @@ p, a{
 	 }
 	 .container header{
 		 border-bottom: none;
+		 background: linear-gradient(lightgrey, white)
 	 }
 	 .blank{
 		 display: none;
 	 }
 
-
 	 .services{
 		 display: flex;
 		 justify-content: center;
-		 padding: 5px;
+		 padding: 5px 0;
 	 }
 	 header nav{
 		 padding-top: 0;
@@ -363,21 +386,56 @@ p, a{
 			/* border-top: 1px solid black; */
 			margin-top: 5px;
 		}
+		/* .details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		} */
 }
 
+
 @media(max-width:440px){
+
+/* services page */
+
+
 		.block-bin {
 			display: flex;
-			justify-content: center;
+			justify-content: flex-start;
+			max-width: 100%;
 		}
 
 		.blocks{
 			display: flex;
 			flex-direction: column;
+			align-items: flex-start;
+			max-width: 100%;
+			border: none;
+			min-width: 100%;
+			border: 1px solid green;
+		}
+
+		.blocks button{
+			border: 1px solid red;
+			/* display: flex;
+			flex-direction: row;
+			justify-content: flex-end; */
+			float: right;
+		}
+
+		.intro {
+			display: flex;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
 			align-content: center;
 			max-width: 100%;
 			margin: 10px ;
+
 		}
+
+/* homepage */
+
 		.container{
 			max-width: 440px;
 		}
@@ -409,7 +467,9 @@ p, a{
 			padding: 0px;
 			margin: 8px 0;
 		}
-
+		.intro {
+			margin: 0;
+		}
 
  }
 
