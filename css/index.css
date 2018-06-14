@@ -268,6 +268,7 @@ header a:hover {
         align-items: center;
         order: 1;
         width: 100%;
+        margin-bottom: 40px;
         }
     
     
@@ -281,6 +282,7 @@ header a:hover {
     
     header .logo {
         margin-top: 10px;
+        margin-bottom: 40px;
         padding-left: 40%;
         display:flex;
         
@@ -302,5 +304,78 @@ header a:hover {
 
     .home-content .call-to-action .circle {
         display: none;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: start;
+        }
+    
+    /* .contact h4 {
+        display: flex;
+    } */
+    
+    .copyright {
+        text-align: center;
+    }
+    
+    .call-to-action {
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .innovation{
+        text-align: center;
+    }
+    
+    
+    .home-content .button {
+        display: flex;
+        justify-content: center;
+        border: 1px black solid;
+        margin-bottom: 40px;
+    
+    
+    }
+    
+    .home-content .main-content{
+        margin-left: 2%;
+        margin-rgith: 2%;
+    }
+    .home-content .middle-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .home-content .main-content {
+        border-top: 2px black solid;
+        border-bottom: 2px black solid;
+        padding: 20px 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .home-content .main-content .top-content {
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0
+    }
+    
+    .home-content .main-content .top-content .paragraphs {
+        width: 42%;
+    }
+    
+    .home-content .main-content .bottom-content {
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .home-content .main-content .bottom-content .paragraphs{
+    
+        width: 29%;
     }
 }
