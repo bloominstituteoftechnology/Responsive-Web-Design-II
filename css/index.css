@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -60,116 +60,171 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+/* Your code starts here! */
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 90px;
+	padding-left: 23px;
+	padding-right: 10px;
+}
+.header .nav a{
+	margin-right: 63px;
+	color: grey;
+	font-size: 14px;
+	text-decoration: none;
+	padding: 20px 0;
+}
+.header .nav a:hover {
+	text-decoration: underline;
+}
+.border {
+	height: 10px;
+	width: 95%;
+	border-bottom: 1px solid black;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+}
+h1 {
+	font-weight: bold;
+	font-size: 26px;
+}
+h4 {
+	font-weight: bold;
+	font-size: 16px;
+}
+h6 {
+	font-size: 14px;
+	text-align: center;
+}
+p {
+	font-size: 17px;
+}
+li {
+	font-size: 18px;
+}
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
 }
 
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
+.home-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 50px;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+.home-content .cta {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
+	height: 475px;
+}
+.home-content .cta .get-started {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	width: 50%;
+	padding-left: 10px;
+	margin: 0 40px 20px 30px;
+}
+.home-content .cta img {
+	padding-left: 50px;
+}
+.home-content .cta .get-started h1 {
+	margin: 0;
+	font-size: 75px;
+}
+.home-content .cta .get-started button {
+	width: 100px;
+	margin-top: 20px;
 }
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+.home-content .upper-text {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.home-content .upper-text .features{
+	padding: 15px;
+}
+.home-content .upper-text .about {
+	padding: 15px;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+.home-content .middle-img {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+.home-content .lower-text{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+.home-content .lower-text div {
+	margin: 20px 10px;
 }
 
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+.home-content .contact {
+	display: flex;
+	align-self: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 30px 0 60px 20px;
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+
+.services-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 50px;
 }
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+.services-content .about {
+	padding: 30px 10px 40px 10px;
 }
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.services-content .row{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
 }
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+.services-content .block {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid black;
+	background: lightgrey;
+	height: 250px;
 }
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+.services-content .block button {
+	width: 130px;
+	height: 50px;
+	margin-top: 20px;
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	border-radius: 6px;
 }
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.services-content .bottom-text {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 20px 50px 10px;
+	padding: 10px;
 }
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+.services-content .bottom-text .facts {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
 }
