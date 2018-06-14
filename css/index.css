@@ -82,7 +82,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -126,7 +126,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 58%;
     height: 32px;
@@ -196,8 +196,37 @@ footer {
 @media( max-width: 768px ) {
   
     .container {
-      background: lightgray;
+      /* background: lightgray; */
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        /* border: 1px solid red; */
+        justify-content: center;
+    }
     
+    .cta .cta-text {
+        margin: auto;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        /* border: 1px solid red; */
+        align-items: center;
+        /* align-content: space-around;  */
+    }
+
+    header nav {
+        /* border: 1px solid lime; */
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header .logo {
+        align-self: auto;
     }
 }
 
