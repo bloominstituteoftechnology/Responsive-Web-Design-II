@@ -1,4 +1,4 @@
-# Responsive-Web-Design I & II
+# Responsive-Web-Design
 
 It's time to expand our skills into mobile devices.  You will be creating a fully responsive version of the desktop that you have been building all week. You will be working through design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder. 
 
