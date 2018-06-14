@@ -50,8 +50,99 @@ table {
 /* Set every element's box-sizing to border-box */
 /* Set your own code here and refer to the code below for reference */
 
+/* * {
+    max-width: 880px; 
+    display: flex;
+    justify-content: center;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.container { 
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ .cta-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.cta-titles {
+    font-size: 72px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
+    .btn {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-left {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+.upper-right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
 
+}
+
+
+
+/* 
+.tab-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* @meda(max-width: 880px ) {
+    .container{ 
+        display: flex; 
+        flex-direction: column;
+    
+} */
 
 
 
@@ -84,7 +175,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Header Styles */
-
+/* 
 header {
     width: 100%;
     display: flex;
@@ -114,7 +205,7 @@ header .logo {
 
 /* Call To Action (CTA) Styles */
 
-.cta {
+/* .cta {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
@@ -144,11 +235,11 @@ header .logo {
 .cta .cta-text button:hover {
     background: black;
     color: white;
-}
+} */
 
 /* Main Content Styles */
 
-.main-content {
+/* .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
@@ -174,17 +265,17 @@ header .logo {
 
 .main-content .bottom-content p {
     padding-right: 20px;
-}
+} */
 
 /* Contact Styles */
-
+/* 
 .contact p {
     margin: 15px 0;
-}
+} */
 
 /* Footer Styles */
 
-footer {
+/* footer {
     text-align: center;
     margin: 40px 0 20px;
 } */
