@@ -85,11 +85,12 @@ body{
 }
 .content p {
 	font-size: 1.6rem;
-	padding: 60% 0;
+	padding:  0;
 }
 
 .content h2 {
-	border: 1px solid red;
+	
+	
 }
 
 .Contact-Section  {
@@ -201,14 +202,13 @@ button a {
 
 .Upper-Content {
 	position: relative;
-	height: 200px;
+	height: 100%;
 	font-size: 1.6rem;
 	display: flex;
-	align-items: center;
 	flex-wrap: nowrap;
-	
-
 	justify-content: space-evenly;
+	align-content: space-between;
+	padding-top: 20px;
 
 }
 .content .middle-img {
@@ -216,7 +216,7 @@ button a {
 
 
 
-	padding: 20px 0 50px 0;
+	padding: 40px 0 40px 0;
 	
 
 
@@ -245,11 +245,11 @@ button a {
 
 
 	margin: 0 auto;
-	padding: 40px 0px 40px 0px;
+	padding: 0px 0px 40px 0px;
 	margin-bottom: 20px;
-
+	height: 100%;
 	font-size: 1.6rem;
-	height: 200px;
+
 	display: flex;
 	align-items: center;
 	
