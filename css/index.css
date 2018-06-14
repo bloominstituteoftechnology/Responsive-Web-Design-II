@@ -71,7 +71,7 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 90px;
+	padding: 40px 0;
 	margin: 2.27%;
 }
 .header .nav {
@@ -152,6 +152,8 @@ ul {
 .home-content .cta .get-started button {
 	width: 22.73%;
 	margin-top: 20px;
+	background: white;
+	border: 1px solid black;
 }
 
 .home-content .upper-text {
@@ -166,10 +168,14 @@ ul {
 .home-content .middle-img {
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
+	align-items: center;
+	margin: 0 1%;
+	width: auto;
+	height: auto;
 }
 .home-content .middle-img img {
-	width: 95%;
+	width: 100%;
+	height: auto;
 }
 
 .home-content .lower-text{
@@ -192,10 +198,12 @@ ul {
 	.header {
 		flex-direction: column;
 		align-items: center;
+		padding-top: 0;
 	}
 	.header .nav {
 		order: 1;
 		margin-right: 0;
+		padding: 40px 0;
 	}
 	.home-content .cta .pic {
 		display: none;
@@ -206,6 +214,51 @@ ul {
 }
 
 @media(max-width: 400px) {
+	.home-content {
+		padding: 0;
+	}
+	.header {
+		margin: 0;
+	}
+	.header .nav {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+	}
+	.header .nav a {
+		height: 100px;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.header .logo {
+		padding: 40px 0;
+		border-bottom: 1px solid black;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.home-content .cta .get-started {
+		width: 100%;
+	}
+	.home-content .cta .get-started button {
+		width: 70%;
+		height: 50px;
+	}
+	.home-content .upper-text {
+		flex-direction: column;
+		align-items: center;
+	}
+	.home-content .lower-text {
+		flex-direction: column;
+		align-items: center;
+	}
 
 }
 
