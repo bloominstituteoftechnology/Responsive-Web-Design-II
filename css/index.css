@@ -100,16 +100,17 @@ h1, h2, h3, h4, h5 {
     padding: 2.5vh;
     background: white;
 }
-.nav-bar  ul{
+.nav-bar ul{
 	display: flex;
 	align-content: space-between;
 	text-decoration: none;
     justify-content: space-between;
 }
 
-/* .nav-bar img {
-	margin-left: 5vh;
-} */
+.nav-bar img {
+	padding: 2.5vh;
+}
+
 .nav-buttons {
 	display: flex;
 	justify-content: space-between;
@@ -292,7 +293,7 @@ h1 {
  /* Tablet */
  @media (max-width: 768px) {
     .wrapper {
-      background: orange;
+      background: white;
     }
 
     .nav-bar a {
@@ -300,13 +301,17 @@ h1 {
         order: -1;
     }
 
-    .nav-bar ul li:child {
-        top: 0;
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: white;;
     }
+
     header img {
         display: none;
     }
-  }
+
 
 /* Mobile 8/
  /* At 400px And below do the following: */
@@ -325,6 +330,9 @@ h1 {
         flex-wrap: wrap;
     }
 
+    .nav-bar {
+        justify-content: flex-start;
+    }
     .nav-buttons li a {
         display: flex;
         padding: 2.5vh;
@@ -348,7 +356,7 @@ h1 {
     }
 
     header {
-        margin-top: 65vh;
+        margin-top: 85vh;
     }
 
   }
