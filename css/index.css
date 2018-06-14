@@ -107,7 +107,8 @@ hr {
 
 .index-page {
 	max-width: 880px;
-	margin: 20px 2.27% 0;
+	/* margin: 20px 2.27% 0; */
+	margin: 0 auto;
 	/* margin: 36px; */
 	/* display: flex;
 	flex-direction: column;
@@ -143,7 +144,7 @@ hr {
 	border: 1px solid black;
 	text-align: center;
 	text-decoration: none;
-	padding: 7px 45px;
+	padding: 7px 15%;
 }
 
 .index-page .page .header img {
@@ -162,11 +163,11 @@ hr {
 }
 
 .index-page .page .content .content-panel .lg:not(:last-child) {
-	padding-right: 15px;
+	padding-right: 2.19%;
 }
 
 .index-page .page .content .content-panel .sm:not(:last-child) {
-	padding-right: 35px;
+	padding-right: 8%;
 }
 
 /* .index-page .page .content .content-panel .lg {
@@ -251,6 +252,11 @@ hr {
 /* Media Queries */
 
 @media(max-width: 768px) {
+
+	.index-page {
+		padding: 30px 5% 0;
+	}
+
 	header nav {
 		flex-wrap: wrap;
 	}
@@ -271,6 +277,7 @@ hr {
 @media(max-width: 400px) {
 	.index-page {
 		margin: 0;
+		padding: 0;
 	}
 
 	header nav {
@@ -280,14 +287,14 @@ hr {
 
 	header nav a {
 		border-bottom: 1px solid black;
-		margin: 0 auto;
+		margin: 0;
 		height: 65px;
 		font-size: 25px;
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 15px auto;
+		padding: 15px 0;
 	}
 
 	header nav a:last-child {
@@ -297,7 +304,7 @@ hr {
 	}
 
 	.index-page .page {
-		margin: 0 20px;
+		margin: 0 5.55%;
 	}
 
 	.index-page .page .content .content-panel {
