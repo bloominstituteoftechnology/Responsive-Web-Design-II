@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
 }
 
-@media(max-width: 700px){
+@media(max-width: 750px){
 	.navbar{
 		width:0 auto;
 		display: flex;
@@ -91,6 +91,7 @@ h1, h2, h3, h4, h5 {
 	}
 	.navbar a{
 		padding: 10px 0;
+		display:flex;
 	}
 }
 /*end of navbar section */
@@ -121,7 +122,40 @@ button{
 	margin: 0 5% 0 0;
 }
 
+@media(max-width: 750px){
+	.head{
+		display: flex;
+		flex-direction: column;
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+	.iod{
+		font-size: 6rem;
+		display: flex;
+		padding: 10px 0;
+		align-self: center;
+	}
+	button{
+		display:flex;
+		align-self: center;
+		padding: 10px 20%;
+	}
+	.circle{
+		display:none;
+	}
+}
+@media(max-width:600px){
+	.iod{
+		font-size: 6rem;
+		display: flex;
+		padding: 10px 0;
+		align-self: center;
+	}
+	button{
+		padding: 10px 20%;
+	}
 
+}
 /* end of top section */
 
 /*start of Features About Middle Image and lower text*/
