@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5 {
 	height: auto;
     margin: 0 auto;
     /* display: flex; */
+    font-size: 1rem;
   }
 
 
@@ -85,9 +86,11 @@ display:flex;
 line-height: 36px;
 justify-content: space-around;
 width:100%;
+
 }
 
 header nav a {
+
 	color: gray;
 	margin: 0 2.27%;
 	text-decoration: none;
@@ -96,19 +99,23 @@ header nav a {
 }
 
 header .logo {
+    
 	display: flex;
 	justify-content: flex-end;
 	}
 
 .CTA {
+    font-size: 1rem;
 	display: flex;
 	/* width: 876px; */
 	height: 379px;
 	justify-content: space-around;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
 }
 
 .CTA .cta-content {
+    font-size: 1rem;
 	height: 379px;
 	display: flex;
 	flex-direction: column;
@@ -116,6 +123,7 @@ header .logo {
 }
 
 .CTA .cta-content h1{
+    font-size: 1rem;
 	font-family: 'Bangers', cursive;
 	font-size: 60px;
 	font-weight: bolder;
@@ -150,6 +158,7 @@ header .logo {
 text-decoration: none;
 border: 1px solid black;
 text-align: center;
+line-height: 1.5rem;
 }
 
 .top-content {
@@ -194,14 +203,7 @@ flex-direction: row
     display: flex;
     flex-direction: column;
     }
-    /* /
-    .bottom-content .content2 {
-        display: flex;
-        }
-    .bottom-content .content3 {
-        display: flex;
-        } */ 
-    
+  
     .contact{
         display: flex;
         padding: 10px;
