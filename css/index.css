@@ -1,7 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -68,30 +65,32 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	width: 1024px;
-	height: 1536px;
-	padding: 0 74px;
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+	/* padding: 0 7.23%; */
 }
 
 header {
-	position: absolute;
+	position: relative; 
 	top: 0;
-	width: 876px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-end;
-	height: 55px;
+    height: 55px;
+    
 	
 }
 
 header nav {
+    
 	display: flex;
 	align-items: flex-end;
-	width: 600px;
+	width: 68%;
 	justify-content: space-between;
 	
 }
@@ -104,14 +103,15 @@ header nav a {
 
 
 .container1 {
-	margin-top: 129px;
-	width: 876px;
+	margin-top: 75px;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between; 
+	justify-content: space-between;  
 }
 
 .big-text {
+	padding-left: 3%;
 	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
@@ -122,6 +122,7 @@ header nav a {
 
 .container2 {
 	border-top: 1px solid black;
+	width: 100%;
 	margin-top:80px;
 	padding: 40px 0 42px;
 	display: flex;
@@ -131,8 +132,7 @@ header nav a {
 .container3 {
 	display: flex;
 	justify-content: space-between;
-	padding: 40px 0 53px;
-	margin-bottom: 40px;
+	padding: 40px 0;
 	border-bottom: 1px solid black;
 }
 
@@ -145,28 +145,34 @@ h5 {
 }
 
 h1 {
-	font-size: 78px;
+	font-size: 77px;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
 }
 
 button {
-	width: 170px;
-	height: 40px;
-	font-size: 16px;
+	width: 173px;
+	height: 35px;
+	font-size: 17px;
 	border: 1px solid black;
-	font-family: 'Titillium Web', sans-serif;
+	margin-left: 2%;
 	
 }
+
+
 
 .text-box {
 	display: flex;
 	flex-wrap: wrap;
-
-	width: 500px;
+	margin-right: 3%;
+	width: 50%;
 	
 }
+
+.container1 .text-box:last-child{
+	margin-right: 0;
+} 
 
 .container5 .boxes button {
 	width: 140px;
@@ -190,12 +196,13 @@ button {
 footer {
 	width: 100%;
 	text-align: center;
+	font-size: 14px;
 	/*  */
 }
 
 .container4 {
-	padding: 30px 0 52px;
-	margin-top: 55px;
+	padding: 40px 0 15px;
+	
 }
 
 .container5 {
@@ -248,4 +255,153 @@ ul li {
 h3 {
 	font-size: 25px;
 	padding-top: 30px;
+}
+
+@media(max-width: 768px) {
+	.round-picture{
+		display: none;
+	}
+
+	.big-text{
+		width: 97%;
+		padding-top:25px;
+		padding-left: 0;
+		padding-right: 3%;
+	}
+
+	header {
+		flex-direction: column-reverse;
+		align-items: center;
+		height: 90px;
+		margin-top: 10px;
+	}
+
+	header nav {
+		width: 100%;
+		justify-content: space-between;
+		padding: 0 4%;
+
+	}
+
+	.container1 {
+		margin-top: 50px;
+	}
+
+
+	.container2 {
+		width: 95%;
+		padding-top: 34px;
+		margin-top: 67px;
+		margin-left: 2.5%;
+		margin-right: 2.5%; 
+		border-top: 2px solid black;
+		padding-bottom: 30px;
+	}
+
+	.middle-img {
+		width: 95%;
+		margin: 0 2.5%;
+	}
+
+	.container3 {
+		width: 95%;
+		padding-top: 28px;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		border-bottom: 2px solid black;
+		padding-bottom: 33px;
+	}
+
+	.text-box{
+		/* padding-right: 1%; */
+		padding-left: 1%;
+		font-size: 17px;
+		line-height: 18px;
+	}
+
+	.container4{
+		margin-left: 3.5%;
+		padding-top: 35px;
+		padding-bottom: 5px;
+	}
+
+}
+
+@media(max-width: 400px) {
+
+	
+
+	header {
+		
+		width: 100%;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-top: 0;
+		height: 426px;
+	}
+
+	header .logo{
+		padding-top: 20px;
+
+
+	}
+
+	.big-text{
+		padding-top: 0;
+		padding-left: 0;
+	}
+
+	h1{
+		padding-bottom: 5px;
+		line-height: 74px;
+	}
+
+	header nav {
+		justify-content: space-between;
+		flex-direction: column;
+		padding: 0;
+
+	}
+
+	header nav a {
+		border: 1px solid lightgray;
+		height: 59px;
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container2 {
+		flex-direction: column;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%; 
+		margin-top: 71px;
+		padding-bottom: 20px;
+	}
+
+	.container3 {
+		flex-direction: column;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%; 
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	.text-box{
+		width: 100%;
+		padding-top: 12px;
+		padding-bottom: 20px;
+		
+		
+	}
+	.middle-img {
+		width: 90%;
+		margin: 0 5%;
+	}
+
 }
