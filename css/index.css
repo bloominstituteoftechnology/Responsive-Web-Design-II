@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5 {
 
 nav {
     margin: auto;
-    border: 1px solid red;
     margin-top: 40px; 
     width: 100%;
     display: flex;
@@ -84,7 +83,7 @@ nav a {
     align-items: center;
     text-decoration: none;
     color: #b0b0b0;
-    margin: 45px 43px 30px;
+    margin: 45px 30px;
 }
 
 nav a:hover {
@@ -99,8 +98,9 @@ nav a:hover {
 /* Call To Action (CTA) Styles */
 
 .home-top {
+    margin: auto;
     border: 1px solid red;
-    width: 100%;
+    width: 880px;
     display: flex;
     justify-content: center;
     margin-top: 72px;
@@ -146,7 +146,11 @@ section {
 }
 
 .top-main {
+    margin: auto;
+    width: 880px;
+    border: 1px solid red;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -156,7 +160,14 @@ section {
 }
 
 .bottom-main {
+    margin: auto;
+    width: 880px;
     display: flex;
+    justify-content: space-around;
+}
+
+.bottom-main div{
+    width: 33.3%
     justify-content: space-around;
 }
 
@@ -165,6 +176,12 @@ section {
 }
 
 /* Contact Styles */
+
+.contact{
+    width: 880px;
+    border: 1px solid red;
+    margin: auto;
+}
 
 .contact p {
     margin: 15px 0;
@@ -178,6 +195,15 @@ footer {
 }
 
 @media( max-width: 880px ) {
+
+.home-top {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+
+}
   
   .container {
     background: teal;
