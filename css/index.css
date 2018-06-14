@@ -71,12 +71,12 @@ h1, h2, h3, h4, h5 {
 	max-width: 880px;
 	width: 100%;
 	margin: 0 auto;
-	position:relative;
 }
 
-.container .nav {
+.nav {
 	background-color: teal;
-	position: relative;
+	position: sticky;
+	top: 0;
 	width: 100%;
 	padding: 5px 1%;
 	z-index: 1000;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.nav a {
+.nav .nav-item {
 	font-family: 'Jua';
 	text-decoration: none;
 	font-size: 1.5rem;
@@ -98,8 +98,12 @@ h1, h2, h3, h4, h5 {
 	color: white;
 }
 
-.nav .logo {
-	width: 17rem;
+.nav .nav-logo {
+	display: flex;
+}
+
+.nav img {
+	width: 100%;
 }
 
 .copyright {
@@ -116,7 +120,7 @@ h1, h2, h3, h4, h5 {
 /* Index Page Header CSS */
 
 .home-content header {
-	padding: 70px 0 0 0;
+	padding: 20px 0 0 0;
 	display: flex;
 	justify-content: center;
 }
@@ -125,7 +129,7 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 	padding-top: 100px;
 	width: 50%;
-	height: 500px;
+	height: 450px;
 }
 
 .home-content .title .title-text {
@@ -159,8 +163,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .home-content .title-logo {
-	height: 400px;
 	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-content .title-logo img {
+	width:100%;
 }
 
 /* Index Page Main Content */
@@ -213,6 +223,41 @@ h1, h2, h3, h4, h5 {
 	width: 20%;
 	padding: 20px 0;
 	font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+	.container {
+	  max-width: 768px;
+	}
+	
+	.nav {
+		flex-wrap: wrap;
+		height: 100px;
+	}
+
+	.nav .nav-item {
+		order: 1;
+	}
+
+	.nav .nav-logo {
+		order: 0;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.nav img {
+		width: 25%;
+	}
+
+	.home-content .title-logo {
+		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+	  max-width: 400px;
+	}
 }
 
 /* Services Page Specific CSS */
@@ -389,14 +434,3 @@ h1, h2, h3, h4, h5 {
 	line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-	.container {
-	  max-width: 400px;
-	}
-}
-
-@media (max-width: 400px) {
-	.container {
-	  max-width: 400px;
-	}
-}
