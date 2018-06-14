@@ -113,7 +113,7 @@ button {
   border: 1px solid #444;
   font-size: 1.8rem;
   text-align: center;
-  padding: 8px 40px;
+  padding: .8rem 4rem;
   margin-top: 10px;
   border-radius: 2px;
 }
@@ -127,7 +127,7 @@ button:hover {
 /* hack solution for index page */
 
 span button {
-  margin: 0px;
+  margin: 0;
 }
 
 .main-content {
@@ -148,7 +148,7 @@ span button {
 }
 
 hr {
-  margin: 48px 0px;
+  margin: 4.8rem 0px;
 }
 
 .flex {
@@ -164,7 +164,7 @@ h2 {
 }
 
 p {
-  padding: 0 30px 0 0;
+  padding: 0 3rem 0 0;
   color: #444;
   line-height: 1.6;
   font-size: 1.6rem;
@@ -172,7 +172,7 @@ p {
 
 .middle-img {
   width: 100%;
-  padding: 40px 0px;
+  padding: 4rem 0;
 }
 
 footer {
@@ -234,9 +234,11 @@ ul {
 /* Tablet media query */
 
 @media ( max-width: 768px) {
+
   .page-container {
     padding: 0 3.33%;
   }
+
   .header-img {
     display: none;
   }
@@ -261,15 +263,19 @@ ul {
   .logo {
     order: 0;
   }
+
   .main-content {
     justify-content: center;
   }
+
 }
 
 /* Phone media query */
 
 @media ( max-width: 400px) {
+
   .header-img {
     display: none;
   }
+
 }
