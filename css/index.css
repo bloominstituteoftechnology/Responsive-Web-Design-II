@@ -74,7 +74,7 @@ html {
 	margin: auto;
 }
 
-header {
+.container header {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
@@ -94,18 +94,18 @@ header {
 	text-decoration: none;
 }
 
-header img {
+.container header img {
 	align-self: center;
 }
 
-footer {
+.container footer {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
 	font-size: 1.6rem;
 }
 
- section {
+ .container section {
 	 margin-top: 50px;
 	 margin-bottom: 50px;
 	 width: 100%;
@@ -113,24 +113,24 @@ footer {
 	 justify-content: space-around;
 }
 
- section .section-text {
+ .container section .section-text {
 	 margin: 0 1.71% 0 1.71%;
 	 font-size: 1.6rem;
 	 display: flex;
 	 flex-direction: column;
 }
 
-section .sec-one {
+.container section .sec-one {
 	justify-content: center;
 	align-items: center;
 
 }
-section .sec-one h1 {
+.container section .sec-one h1 {
 	font-size: 6rem;
 	text-align: center;
 }
 
-button {
+.container button {
 	border-color: black;
 	border-width: 1px;
 	background-color: white;
@@ -147,9 +147,6 @@ button {
 }
 
 @media(max-width: 768px) {
-	.container {
-		border: 1px solid red;
-	}
 	.container header {
 		flex-direction: column-reverse;
 	}
@@ -166,8 +163,34 @@ button {
 }
 
 @media(max-width: 400px) {
-	.container {
-		background-color: crimson;
+	.container header .nav-bar {
+		flex-flow: column wrap;
+	}
+
+	.container header .nav-bar a {
+		width: 100%;
+		padding: 5%;
+		margin-right: 0;
+		border-bottom:1px solid black;
+		text-align: center;
+	}
+
+	.container header .nav-bar > a:first-child {
+		border-top: 1px solid black;
+	}
+
+	.container .section-content {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 25px;
+	}
+
+	.container .section-content .section-text {
+		margin-bottom: 25px;
+	}
+
+	.container .contact {
+		margin-bottom: 50px;
 	}
 }
 
