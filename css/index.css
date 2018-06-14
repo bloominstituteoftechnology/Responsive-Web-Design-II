@@ -260,7 +260,7 @@ hr {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 
 	.index-page .page .header img {
@@ -281,7 +281,7 @@ hr {
 	header nav a {
 		border-bottom: 1px solid black;
 		margin: 0 auto;
-		height: 80px;
+		height: 65px;
 		font-size: 25px;
 		width: 100%;
 		display: flex;
@@ -291,8 +291,36 @@ hr {
 	}
 
 	header nav a:last-child {
+		height: 85px;
 		margin: 0 auto;
 		border-top: 1px solid black;
+	}
+
+	.index-page .page {
+		margin: 0 20px;
+	}
+
+	.index-page .page .content .content-panel {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.index-page .page .content .content-panel div {
+		margin-bottom: 25px;
+	}
+
+	.index-page .page .content .content-panel .sm:last-child {
+		margin-bottom: 0;
+	}
+
+	.index-page .page .content img {
+		margin: 0 0 25px;
+	}
+
+	hr {
+		margin-top: 25px;
+		margin-bottom: 35px;
 	}
 }
 
