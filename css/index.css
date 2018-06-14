@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     max-width: 880px;
     margin: 0 auto;
+    
 }
 
 /* Header Styles */
@@ -150,6 +151,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 3.4% auto; 
+    width: 100%;
 }
 
 .main-content .bottom-content {
