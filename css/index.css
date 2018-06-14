@@ -69,9 +69,11 @@ h1, h2, h3, h4, h5 {
 .main-container {
     width: 100%;
     max-width: 880px;
+    margin: auto;
+}
+header, main {
     padding-left: 2%;
     padding-right: 2%;
-    margin: auto;
 }
 .main-header {
 	width: 100%;
@@ -334,9 +336,81 @@ img {
 }
 
 @media (max-width: 400px) {
-    body {
-        background-color: black;
+    .main-header {
+        padding: 20px 0;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
+    .nav-items {
+        display: block;
+        text-align: center;
+    }
+    .nav-item {
+        border: solid .5px black;
+        border-bottom: none;
+        padding: 20px;
+    }
+    .nav-item:last-child {
+        border-bottom: solid .5px black;
+    }
+    .nav-item a {
+        font-size: 2rem;
+    }
+    .main-header .main-logo {
+        margin-bottom: 8px; 
+    }
+    .cta-overview {
+        margin-top: 30px;
+    }
+    .sec-one-container, .sec-three-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sec-one-container {
+        margin-top: 50px;
+    }
+    .sec-one__features,
+    .sec-one__about
+    {
+        width: 100%;
+    }
+    .sec-one__features {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .sec-three__services, .sec-three__product {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .sec-three__services, 
+    .sec-three__product, 
+    .sec-three__vision
+    {
+        width: 100%;
+    }
+    
+    .sec-one__features p, 
+    .sec-one__about p,
+    .sec-three__services p, 
+    .sec-three__product p, 
+    .sec-three__vision p
+    {
+        margin-top: 24px;
+    }
+    
+    .sec-two-container {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .sec-three-container {
+        margin: 30px 0 40px;
+    }
+    .main-overview {
+        margin-bottom: 20px;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
 }
 
 @keyframes wiggle {
