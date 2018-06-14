@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+		font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -68,7 +69,9 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
  /* My code starts here  */
-
+p, a{
+	font-size: 1.6rem;
+}
  * {
  	box-sizing: border-box;
  }
@@ -148,7 +151,7 @@ h1, h2, h3, h4, h5 {
  }
 
 		 h1 {
-		 	font-size: 60pt;
+		 	font-size: 8rem;
 		 	text-align: center;
 		 }
 
@@ -180,7 +183,7 @@ h1, h2, h3, h4, h5 {
  }
 
 		 h2{
-		 	font-size: 25px;
+		 	font-size: 2rem;
 		 }
 
 		 .features, .about{
@@ -204,7 +207,7 @@ h1, h2, h3, h4, h5 {
 
  .triple-textbox{
  		width: 100%;
- 		border: 1px solid black;
+ 		/* border: 1px solid black; */
  		display: flex;
  		flex-direction: row;
 		justify-content: space-around;
@@ -216,7 +219,7 @@ h1, h2, h3, h4, h5 {
  	margin-top: 10px;
  	margin-bottom: 20px;
  	margin-right: 10px;
- 	border: 1px solid red;
+ 	/* border: 1px solid red; */
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -230,7 +233,7 @@ h1, h2, h3, h4, h5 {
  .copyright {
  	margin: 20px;
  	text-align: center;
- 	font-size: 10px;
+ 	font-size: 1rem;
  }
 
  /* below CSS is to for services page */
@@ -337,7 +340,7 @@ h1, h2, h3, h4, h5 {
 		}
 
 	 .serv {
-			border-top: 1px solid black;
+			/* border-top: 1px solid black; */
 			margin-top: 5px;
 		}
 }
@@ -355,25 +358,28 @@ h1, h2, h3, h4, h5 {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			border: 1px solid red;
+			/* border: 1px solid red; */
 		}
 		.features, .about{
 			padding: 0;
-			border: 1px solid green;
+			/* border: 1px solid green; */
 		}
 
 		.triple-textbox {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			border: 1px solid red;
+			/* border: 1px solid red; */
 		}
 
 		.services, .product, .vision{
-			border: 1px solid green;
+			/* border: 1px solid green; */
 			padding: 0px;
 			margin: 8px 0;
 		}
+
+
+ }
 
 
  }
