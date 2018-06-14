@@ -83,12 +83,15 @@ h1, h2, h3, h4, h5 {
 
 /* Navigation Bar CSS */
 .nav-bar {
-	display: flex;
+    display: flex;
+    justify-content: space-between;
 	position: fixed;
-	margin: 0 auto;
-	width: 900px;
+	width: 100vw;
 }
 
+.nav-bar a {
+    display: flex;
+}
 .nav-bar  ul{
 	display: flex;
 	align-content: space-between;
@@ -96,16 +99,15 @@ h1, h2, h3, h4, h5 {
 	
 }
 
-.nav-bar img {
-	margin-left: 50px;
-}
+/* .nav-bar img {
+	margin-left: 5vh;
+} */
 .nav-buttons {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background: white;
-	width: 100%;
-	padding: 25px;
+	padding: 2.5vh;
 }
 
 .nav-buttons li a:link {
@@ -126,12 +128,12 @@ header {
 	align-items: center;
 	margin-top: 12vh;
 	text-align: center;
-	font-size: 75px;
+	font-size: 7.5vh;
 }
 
 header a {
-	border: 2px solid black;
-	padding: 12px 24px;
+	border: .3vh solid black;
+	padding: 1.2vh 2.4vh;
 	display: inline-block;
 	text-decoration: none;
 	color: black;
@@ -146,7 +148,7 @@ header a:hover {
 
 
 /* Section and Content */
-section {
+section .home-sec {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -154,23 +156,23 @@ section {
 
 .div-top {
 	display: flex;
-	border-top: 2px solid black;
-	padding: 25px;
+	border-top: .3vh solid black;
+	padding: 2.5vh;
 }
 
 .sect {
-	margin: 100px 0 50px 0;
-	padding: 0 20px;
+	margin: 10vh 0 5vh 0;
+	padding: 0 2vh;
 }
 
 .div-img {
 	display: flex;
-	margin-top: 20px;
+	margin-top: 2vh;
 }
 .div-bottom {
 	display: flex;
 	justify-content: center;
-	border-bottom: 2px solid black;
+	border-bottom: .3vh solid black;
 }
 
 /* Contact div */ 
@@ -178,14 +180,14 @@ section {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	padding-top: 95px;
+	padding-top: 10vh;
 }
 
 footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 50px;
+	padding: 10vh;
 }
 
 /* End Home Page CSS */
@@ -273,14 +275,21 @@ h1 {
 }
 
 /* My introduction of media queries */
- /* At 300px And below do the following: */
+
+ /* At 768px And below do the following: */
+ /* Tablet */
  @media (max-width: 768px) {
     .wrapper {
       background: orange;
     }
+
+    .navbar a {
+        display: table-header-group; 
+    }
   }
 
- /* At 300px And below do the following: */
+/* Mobile 8/
+ /* At 400px And below do the following: */
   @media (max-width: 400px) {
     .wrapper {
       background: teal;
