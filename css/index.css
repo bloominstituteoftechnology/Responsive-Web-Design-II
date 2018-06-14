@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -63,113 +63,334 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+/* My CSS */
+
+html {
+	font-size: 62.5%
 }
 
-/* Header Styles */
+body {
+	/* padding: 36px; */
+	/* display: flex;
+	justify-content: center; */
+}
 
-header {
-    width: 100%;
-    display: flex;
+img, h1 {
+	/* animation: fadein;
+	animation-duration: 5s; */
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
 }
 
 header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+	text-decoration: none;
+	color: lightgray;
+	font-size: small;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+hr {
+	border: none;
+	height: 2px;
+	background-color: black;
+	margin: 50px 0;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+.footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-size: 1.6em;
 }
 
-/* Call To Action (CTA) Styles */
+/* Index Page */
 
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+.page-container {
+	max-width: 880px;
+	/* margin: 20px 2.27% 0; */
+	padding: 30px 5% 0;
+	margin: 0 auto;
+	/* margin: 36px; */
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
+.index-page .page {
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-between; */
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+.index-page .page .header {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 50px auto;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.index-page .page .header .header-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	/* height: 379px;
+	width: 379px; */
+	font-size: 8em;
 }
 
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+.index-page .page .header .header-left button{
+	display: block;
+	font-size: 1.5rem;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	text-decoration: none;
+	padding: 7px 15%;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+.index-page .page .header img {
+	/* display: inline-block; */
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.index-page .page .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+.index-page .page .content .content-panel {
+	display: flex;
+	justify-content: space-between;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+.index-page .page .content .content-panel {
+	font-size: 1.6rem;
 }
 
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+.index-page .page .content .content-panel .lg:not(:last-child) {
+	padding-right: 2.19%;
 }
 
-/* Footer Styles */
-
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+.index-page .page .content .content-panel .sm:not(:last-child) {
+	padding-right: 8%;
 }
+
+/* .index-page .page .content .content-panel .lg {
+	margin-right: 10px;
+} */
+
+.index-page .page .content img {
+	margin: 50px 0;
+}
+
+/* .index-page .page .content .content-panel .sm {
+	margin-right: 10px;
+} */
+
+.index-page .page .contact {
+	font-size: 1.6em;
+}
+
+/* Services Page */
+
+.services-page {
+}
+
+.services-page .page hr {
+	height: 1px;
+}
+
+.services-page .page hr:first-child {
+	margin-bottom: 0;
+}
+
+.services-page .page hr:last-child {
+	margin-top: 0;
+}
+
+.services-page .page .content-top {
+	display: flex;
+	flex-direction: column;
+}
+
+.services-page .page .content-top .content-top-text {
+	margin-top: 20px;
+}
+
+/* .services-page .page * {
+	margin: 10px 0;
+} */
+
+.services-page .page .content {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.services-page .page .content .content-box {
+	width: 45%;
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 15px;
+	margin: 20px 0;
+}
+
+.services-page .page .content .content-box button {
+	font-size: 1.6rem;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 10px 30px;
+}
+
+.services-page .page .content-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-page .page .content-bottom .content-bottom-text {
+	width: 420px;
+	height: 300px;
+}
+
+.services-page .page .content-bottom .content-bottom-text ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+
+	.page-container {
+		/* padding: 30px 5% 0; */
+	}
+
+	header nav {
+		flex-wrap: wrap;
+	}
+
+	header nav a:last-child {
+		order: -1;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.index-page .page .header img {
+		display: none;
+	}
+
+	.services-page .page .content-top img {
+		height: 100px;
+	}
+
+	.services-page .page .content {
+		justify-content: center;
+	}
+
+	.services-page .page .content .content-box{
+		width: 75%;
+	}
+
+	.services-page .page .content-bottom {
+		justify-content: center;
+	}
+
+	.services-page .page .content-bottom .content-bottom-text ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services-page .page .content-bottom img {
+		display: none;
+	}
+}
+
+@media(max-width: 400px) {
+	/* .page-container {
+		padding: 0;
+	} */
+
+	.page-container {
+		padding: 0;
+	}
+
+	.page-container .page {
+		padding: 30px 5% 0;
+	}
+
+	header nav {
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding: 0;
+	}
+
+	header nav a {
+		border-bottom: 1px solid black;
+		margin: 0;
+		height: 65px;
+		font-size: 2.5rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 15px 0;
+	}
+
+	header nav a:not(:last-child):hover {
+		background-color: black;
+		color: white;
+	}
+
+	header nav a:last-child {
+		height: 85px;
+		margin: 0 auto;
+		border-top: 1px solid black;
+	}
+
+	.index-page .page {
+		margin: 0 5.55%;
+	}
+
+	.index-page .page .content .content-panel {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.index-page .page .content .content-panel div {
+		margin-bottom: 25px;
+	}
+
+	.index-page .page .content .content-panel .sm:last-child {
+		margin-bottom: 0;
+	}
+
+	.index-page .page .content img {
+		margin: 0 0 25px;
+		height: 91px;
+	}
+
+	hr {
+		margin-top: 25px;
+		margin-bottom: 35px;
+	}
+}
+
+/* CSS Animations */
+	@keyframes fadein {
+	    0% {
+				opacity: 0;
+			}
+
+	    100% {
+				opacity: 1;
+			} */
