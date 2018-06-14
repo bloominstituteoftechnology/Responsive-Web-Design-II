@@ -378,7 +378,34 @@ header a:hover {
 
 @media (max-width: 400px) {
     header {
-        display:flex;
+        display: flex;
         justify-content: column;
+        border: 1px solid red;
+    }
+    header ul {
+        display: flex;
+        align-items: center;
+        justify-content: column;
+        border: 1px solid green;
+        flex-wrap: wrap;
+        }
+    
+    
+    header li {
+        padding-right: 5%;
+        padding-left: 5%;
+        color: gray;
+        display:flex;
+        width: 100%;
+        border: 1px solid purple;
+        justify-content: center;
+    }
+    
+    header .logo {
+        margin-top: 10px;
+        margin-left: .011%
+        display:flex;
+        justify-content: center;
+        
     }
 }
