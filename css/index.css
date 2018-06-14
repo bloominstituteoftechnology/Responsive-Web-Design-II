@@ -293,9 +293,9 @@ h1 {
       background: orange;
     }
 
-    .navbar a img {
-        display: table-header-group; 
-    }
+    /* .navbar a img {
+        
+    } */
 
     header img {
         display: none;
@@ -308,4 +308,31 @@ h1 {
     .wrapper {
       background: teal;
     }
+
+    .div-top {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .div-bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar ul{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        position: fixed;
+        
+    }
+
+    header {
+        margin-top: 50vh;
+    }
+
   }
