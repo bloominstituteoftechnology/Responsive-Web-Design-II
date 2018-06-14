@@ -82,8 +82,8 @@ h1, h2, h3, h4, h5 {
 
  .container header {
  	display: flex;
- 	flex-direction: row;
-	flex-wrap: wrap;
+ 	flex-direction: row-reverse;
+	flex-wrap: nowrap;
  	width: 100%;
 	max-width: 880px;
  	position: fixed;
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5 {
 		 display: none;
 	 }
 .section-one{
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	display: flex;
 	width: 100%;
 	max-width: 768px;
@@ -302,7 +302,41 @@ h1, h2, h3, h4, h5 {
 }
 .left {
 	 justify: center;
-	 border: 1px red solid;
+	 /* border: 1px red solid; */
 	 }
+ }
+
+ @media(max-width:576px){
+	  header nav {
+		 display: flex;
+		 flex-direction: column;
+		 /* border: 1px solid red; */
+	 }
+	 header nav{
+		 padding-top: 0;
+	 }
+	  header nav a{
+			 /* margin: 5px 0; */
+			 border-bottom: 1px solid black;
+			 justify-content: center;
+			 align-content: space-between;
+			 /* border: 1px solid red; */
+			 padding: 10px 0;
+		}
+		.container header {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+		}
+
+	 .serv {
+			border-top: 1px solid black;
+			margin-top: 5px;
+		}
+
+		.section-one{
+			justify-content: center;
+			padding: 10px;
+		}
 
  }
