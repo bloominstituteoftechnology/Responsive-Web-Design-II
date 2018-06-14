@@ -270,7 +270,7 @@ hr {
 
 @media(max-width: 400px) {
 	.index-page {
-		margin-top: 0;
+		margin: 0;
 	}
 
 	header nav {
@@ -279,7 +279,7 @@ hr {
 	}
 
 	header nav a {
-		border: 1px solid black;
+		border-bottom: 1px solid black;
 		margin: 0 auto;
 		height: 80px;
 		font-size: 25px;
@@ -292,6 +292,7 @@ hr {
 
 	header nav a:last-child {
 		margin: 0 auto;
+		border-top: 1px solid black;
 	}
 }
 
