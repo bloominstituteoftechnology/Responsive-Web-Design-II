@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
  /* My code starts here  */
@@ -138,14 +138,12 @@ h1, h2, h3, h4, h5 {
  } */
 
  .section-one{
- 	position: relative;
  	width: 100%;
  	padding-top: 100px;
   z-index: 0;
  	display: flex;
  	justify-content: space-around;
 	align-items: center;
-	margin-bottom: 40px;
  	/* border: 1px solid red; */
  }
 
@@ -170,7 +168,7 @@ h1, h2, h3, h4, h5 {
  	background: black;
  	height: 2px;
  	width: 100%;
- 	margin: 10px 0;
+ 	margin: 20px 0;
  }
 
  .double-textbox{
@@ -185,20 +183,18 @@ h1, h2, h3, h4, h5 {
 		 	font-size: 25px;
 		 }
 
-
 		 .features, .about{
-		 	width: 49%; */
+		 	width: 49%;
 		 	display: flex;
-
-		 	/* margin-top: 20px;
-		 	margin-bottom: 20px; */
-		 	/* padding: 10px;
-		 	padding-right: 50px; */
+			justify-content: center;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-bottom: 25px;
 		 }
 
- .features {
- 	padding-right: 50px;
- }
+		 .features {
+		 	padding-right: 0px;
+		 }
 
  .middle-img{
  	width: 100%;
@@ -207,7 +203,6 @@ h1, h2, h3, h4, h5 {
  }
 
  .triple-textbox{
- 		position: relative;
  		width: 100%;
  		border: 1px solid black;
  		display: flex;
@@ -219,32 +214,32 @@ h1, h2, h3, h4, h5 {
  	margin-top: 10px;
  	margin-bottom: 20px;
  	margin-right: 10px;
- 	border: 1px solid red;
+ 	/* border: 1px solid red; */
  }
 
  .contact{
  	margin-top: 10px;
  }
- .copyright{
- 	margin:20px;
+ .copyright {
+ 	margin: 20px;
  	text-align: center;
  	font-size: 10px;
  }
 
  /* below CSS is to for services page */
- .blank{
+ .blank {
  	height: 70px;
  }
- .banner{
+ .banner {
  	margin-bottom: 20px;
  	width: 100%;
  }
 
- .intro{
+ .intro {
  	margin-bottom: 20px;
  }
 
- .block-bin{
+ .block-bin  {
  	width: 100%;
  	display: flex;
  	justify-content: space-between;
@@ -263,22 +258,18 @@ h1, h2, h3, h4, h5 {
  	flex-direction: row;
  }
 
- .blocks button{
+ .blocks button {
  	margin: 15px 0 5px 0;
  	padding: 5px 30px;
  }
 
- .line{
- 	margin: 0 0 30px 0;
- }
-
- .details{
+ .details {
  	display: flex;
  	justify-content: space-between;
  	width: 100%;
  }
 
- .details-words{
+ .details-words {
  	width: 49%;
  }
 
@@ -288,7 +279,7 @@ h1, h2, h3, h4, h5 {
  		/* border: 1px solid red; */
  }
 
- .detail-pic{
+ .detail-pic {
  	width: 49%;
  	padding: 20 0 0 20;
  	bordr: 50px solid black;
@@ -296,4 +287,22 @@ h1, h2, h3, h4, h5 {
 
  .copyright{
  	margin: 40px 0 0 0;
+ }
+
+ @media(max-width:768px){
+	 .right{
+		 display: none;
+	 }
+.section-one{
+	border: 1px solid green;
+	display: flex;
+	width: 100%;
+	max-width: 768px;
+	align-items: center;
+}
+.left {
+	 justify: center;
+	 border: 1px red solid;
+	 }
+
  }
