@@ -1,11 +1,12 @@
 /* Your code starts here! */
 
 .great-header {
-    position: fixed;
+    position: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
     max-width: 880px;
     margin: 1% 17%;
-    display: inline-block;
     z-index: 1000;
     padding: 1% 0;
     color: black;
@@ -31,4 +32,22 @@ a:hover {
 .logo {
     float: right;
     margin-right: 3%;
+}
+
+@media(max-width:780px) {
+    
+
+    .great-header {
+       height:100px;
+    }
+
+    .logo {
+        
+        order:-1;
+        align-self: flex-start;
+        flex: 1 0 100%;
+        flex-grow: 1;
+    }
+
+    
 }

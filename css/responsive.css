@@ -1,0 +1,30 @@
+
+/*  768px and 400px. */
+
+
+@media(max-width:780px) {
+    .home-content {
+    
+    }
+
+    .body-content {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .on-demand {
+        padding-bottom: 9%;
+    }
+
+    .on-demand .get-started {
+        margin-bottom: 1%;
+    }
+
+    .code-image {
+        display: none;
+    }
+
+}
