@@ -70,42 +70,45 @@ h1, h2, h3, h4, h5 {
 
 /* Header Styles */
 
-header {
+nav {
+    margin: auto;
+    border: 1px solid red;
+    margin-top: 40px; 
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
-
-header nav a {
+nav a {
+    align-items: center;
     text-decoration: none;
     color: #b0b0b0;
+    margin: 45px 43px 30px;
 }
 
-header nav a:hover {
+nav a:hover {
     text-decoration: underline;
     color: black;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+.logo {
+    width: 210px;
 }
 
 /* Call To Action (CTA) Styles */
 
-.cta {
+.home-top {
+    border: 1px solid red;
+    width: 100%;
     display: flex;
+    justify-content: center;
     margin-top: 72px;
-    justify-content: flex-end;
+
 }
 
-.cta .cta-text {
+.home-top div {
+    border: 1px solid red;
     font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
@@ -113,10 +116,9 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
 }
 
-.cta .cta-text button {
+.home-top button {
     border: 1px double black;
     font-size: 16px;
     background: white;
@@ -126,38 +128,39 @@ header .logo {
     cursor: pointer;
 }
 
-.cta .cta-text button:hover {
+.home-top button:hover {
     background: black;
     color: white;
 }
 
+#circle {
+    border: 1px solid red;
+}
 /* Main Content Styles */
 
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
+section {
    margin: 75px 0 35px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
 }
 
-.main-content .top-content {
+.top-main {
     display: flex;
     justify-content: space-around;
 }
 
-.main-content .middle-img {
+.middle-img {
     display: block;
     margin: 30px auto;
 }
 
-.main-content .bottom-content {
+.bottom-main {
     display: flex;
     justify-content: space-around;
 }
 
-.main-content .bottom-content p {
+.bottom-main p {
     padding-right: 20px;
 }
 
@@ -172,4 +175,61 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media( max-width: 880px ) {
+  
+  .container {
+    background: teal;
+  }
+  
+  .container .main-content {
+    height: 400px;
+  }
+  
+  .container .text {
+    width: 30%;
+  }
+  
+  .container .img-container img {
+    width: 100%;
+  }
+}
+
+@media( max-width: 768px ) {
+  
+  .container {
+    background: lightgray;
+  }
+  
+  .container .main-content {
+    height: 600px;
+  }
+  
+  .container .text {
+    width: 60%;
+  }
+  
+  .container .img-container img {
+    width: 100%;
+  }
+}
+
+@media( max-width: 400px ) {
+  
+  .container {
+    background: orange;
+  }
+  
+  .container .main-content {
+    height: 600px;
+  }
+  
+  .container .text {
+    width: 60%;
+  }
+  
+  .container .img-container img {
+    width: 100%;
+  }
 }
