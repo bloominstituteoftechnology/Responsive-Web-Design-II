@@ -66,40 +66,51 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 /* index.html */
+html {
+    font-size: 62.5%;
+}
+
 body {
-	width: 1024px;
 	margin: 0 auto;
 }
 
 .container {
 	max-width: 880px;
 	margin: 0 auto;
-	position: relative;
+    position: relative;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
 }
 
 nav {
-	height: 50px;
-	width: 876px;
-	background-color: dodgerblue;
-	position: fixed;
-	top: 0;
-	z-index: 1;
-	/* background-image: url("../img/logo.png");
-	background-repeat: no-repeat;
-	background-position: right; */
-	display: flex;
-	align-items: center;
+	height: 60px;
+    width: 880px;
+	margin-top: 10px;	
+    display: flex;
+    justify-content: space-between;
 }
 
-nav a {
-	font-size: 15px;
-	/* display: inline-block; */
-	margin: 15px 40px 5px 10px;
-	z-index: 2;
+nav span {
+    width: 68%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav span a {
+	font-size: 1.3rem;
 }
 
 nav a:hover, nav a:visited, nav a:active, nav a:link {
-	color: black;
+	color: gray;
 	text-decoration: none;
 }
 
@@ -107,6 +118,13 @@ nav a:hover, button:hover {
 	animation-duration: 2s;
 	animation-name: fadeInOut;
 	animation-iteration-count: infinite;
+}
+
+nav img {
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-right: 1.15%;
 }
 
 @keyframes fadeInOut {
@@ -119,37 +137,29 @@ nav a:hover, button:hover {
 	}
 }
 
-.logo {
-	position: absolute;
-	right: 0;
-	margin-right: 10px;
-	margin-top: 10px;
-	z-index: 2;
-}
 
 h1 {
-	font-size: 5em;
+    font-size: 8.5rem;
+    line-height: 7.5rem;
 	text-align: center;
 	float: left;
-	margin-left: 65px;
-	margin-top: 110px;
+	margin-left: 7.39%;
+    margin-top: 120px;
 }
 
 button {
 	font-family: 'Quicksand', sans-serif;
 	position: absolute;
 	border: 1px solid black;
-	padding: 5px 35px;
+	padding: 5px 3.97%;
 	margin-top: 360px;
-	margin-left: -240px;
-	font-size: 20px;
+    margin-left: -28.5%;
+	font-size: 2rem;
 }
 
 header {
-	height: 500px;
+	height: 520px;
 	border-bottom: 1px solid black;
-	padding-bottom: 75px;
-	margin-top: 50px;
 }
 
 .indexheader {
@@ -164,22 +174,21 @@ header span {
 }
 
 header img {
-	margin-left: 95px;
+	margin-left: 10.8%;
 	margin-top: 65px;
 	padding: 0px;
 }
 
 .double-content span {
-	width: 430px;
-	/* display: inline-block; */
-	margin: 20px 5px 20px 0px;
+	width: 48.9%;
+	margin: 20px 0.5% 15px 0;
 }
 
 .double-content, .triple-content {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .middle-image {
@@ -190,9 +199,8 @@ header img {
 }
 
 .triple-content span {
-	width: 280px;
-	/* display: inline-block; */
-	margin: 20px 5px 35px 0px;
+	width: 31.82%;
+	margin: 10px 0.05% 35px 0;
 }
 
 .triple-content {
@@ -204,11 +212,12 @@ header img {
 	position: relative;
 	float: left;
 	margin-bottom: 55px;
-	margin-top: 25px;
+    margin-top: 25px;
+    font-size: 1.6rem;
 }
 
 footer {
-	font-size: 13px;
+	font-size: 1.3rem;
 	clear: both;
 	text-align: center;
 	margin-bottom: 50px;
@@ -248,7 +257,7 @@ footer {
 	margin-left: 0px;
 	margin-top: 20px;
 	border-radius: 10px;
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 
 .somefacts {
@@ -327,10 +336,25 @@ ul li {
 
 /* media queries */
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+    .container {
+        width: 100vw;
+    }
 
+    nav {
+        flex-flow: wrap column;
+    }
+
+    nav span {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .middle-image {
+        display: none;
+    }
 }
 
 @media(max-width: 400px) {
-    
+
 }
