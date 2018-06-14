@@ -105,6 +105,7 @@ hr {
 	display: flex;
 	justify-content: center;
 	margin-top: 50px;
+	font-size: 1.6em;
 }
 
 /* Index Page */
@@ -189,6 +190,10 @@ hr {
 /* .index-page .page .content .content-panel .sm {
 	margin-right: 10px;
 } */
+
+.index-page .page .contact {
+	font-size: 1.6em;
+}
 
 /* Services Page */
 
@@ -303,6 +308,11 @@ hr {
 		justify-content: center;
 		align-items: center;
 		padding: 15px 0;
+	}
+
+	header nav a:not(:last-child):hover {
+		background-color: black;
+		color: white;
 	}
 
 	header nav a:last-child {
