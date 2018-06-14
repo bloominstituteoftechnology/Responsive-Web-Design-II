@@ -185,7 +185,6 @@ footer {
 @media (max-width: 768px) {
 
     .container {
-        border: 1px solid red;
         display: flex;
         width: 87.2%;
         flex-direction: column;
@@ -193,7 +192,6 @@ footer {
     }
 
     header{
-        border: 1px solid red;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -204,9 +202,9 @@ footer {
     }
 
     header nav{
-        border: 1px solid red;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .cta img {
@@ -219,7 +217,6 @@ footer {
     }
 
     .main-content {
-        border: 1px solid blue;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -231,9 +228,7 @@ footer {
        
     }
     
-    
     .contact{
-        border: 1px solid red;
         align-self: flex-start;
     }
 
