@@ -1,38 +1,26 @@
 # Responsive-Web-Design I & II
 
-We will be using the same codebase for Responsive Web Design I and II modules.  You have been provided design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder.  
+It's time to expand our skills into mobile devices.  You will be creating a fully responsive version of the desktop that you have been building all week. You will be working through design mock ups for desktop, tablet, and mobile devices located in the `design-files` folder. 
 
-## Project 1: Adaptive Layout
+## To Get Started
 
-For project 1 you will build an adaptive website that has max-width breakpoints at 400px and 768px based on the designs provided to you in this repository.  You have been provided desktop styles so you can focus on your media queries.
+* Fork / Clone this project into a directory on your machine.
+* Open the code with your preferred integrated development environment (IDE).
+* Start on the objectives 
 
-*Concepts required to complete the task:*
-* How to use min and max-width
-* Media queries using max-width
-* Flexbox layout techniques are preferred
+## Objectives
 
-Remember that an adaptive layout updates at breakpoints only.  Don't worry about fluid layouts for this challenge.
+* [ ] Constrain your container class with a `max-width` of 880px
+* [ ] Introduce max-width media queries into your project at 768px and 400px.  
+* [ ] Review each [design file](design-files) and build your styles at each breakpoint.
+* [ ] Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.
+* [ ] Introduce `font-size: 62.5%;` into your `html` selector.
+* [ ] Convert all font-size pixels into rem units
+* [ ] Do your best to make the breakpoints look pixel-close-enough 
 
-*Tasks to complete:*
-* Introduce max-width media queries into your project at 400px, 768px.  
-* Review each design file and adjust your styles at each breakpoint. **Hint: Change your container class to width: 100% at the 768px breakpoint.**
-* No horizontal scroll bars are acceptable at the exact breakpoint.  At 400px and 768px you should only see a vertical scrollbar.  Everything else is fine to have a horizontal scroll bar as this is not fully responsive.
-
-* Once you have completed these tasks, reach out to your Project Manager for approval before moving into the stretch goal.
-
-* Stretch Goal: Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.
+## Stretch Goals: 
+* [ ] Build the services page from earlier assignments into a responsive design using your own creativity
+* [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "min-width" to keep it separate
 
 
-## Project 2: Fully Responsive Website
-
-Now that you have introduced media queries into your project, it's time to upgrade your adaptive site to a fully responsive layout!  
-
-To accomplish this challenge you will need to incorporate your knowedges of max and min width, media queries, rem units, and percents.
-
-*Tasks to complete:*
-* Convert all fixed widths throughout the site into percents
-* Convert all left and right margins and paddings into percents
-* Convert all font-size pixels into rem units
-* Make the breakpoints look pixel perfect using the design files
-* Stretch Goal: Copy and paste your project to a new folder and make a 100% fluid layout design by removing breakpoints.  There is no right answer here, I just want you to see what happens when constraints are removed.
 
