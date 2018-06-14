@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -67,109 +67,233 @@ h1, h2, h3, h4, h5 {
     width: 880px;
     margin: auto;
 }
+ /* My code starts here  */
 
-/* Header Styles */
+ * {
+ 	box-sizing: border-box;
+ }
 
-header {
-    width: 100%;
-    display: flex;
-}
+ .container{
+ 	max-width: 880px;
+ 	margin: 0 auto;
+ 	/* margin-left: 50px;
+ 	margin-right: 50px; */
+ }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
+ .container header {
+ 	display: flex;
+ 	flex-direction: row;
+	flex-wrap: wrap;
+ 	width: 100%;
+	max-width: 880px;
+ 	position: fixed;
+ 	z-index: 2;
+ 	background-color: white;
+ 	justify-content: space-around;
+	align-items: center;
+	padding-top: 10px;
+ 	/* border: 1px solid blue; */
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
+ }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
+ nav .logo{
+	 /* border: 1px solid green; */
+	 display: flex;
+ }
+ header nav {
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex-direction: row;
+ 	/* border: 1px solid red; */
+ 	width: 100%;
+ 	padding: 10px;
+  }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
+ header nav a{
+ 	/* padding-right: 40px; */
+ 	/* margin: 10px; */
+ 	/* vertical-align: middle; */
+ 	/* display: inline-block; */
+ 	text-decoration: none;
+ 	color: black;
+ 	display: flex;
+ 	justify-content: center;
+ 	padding:5px;
+ 	/* justify-content: space-around;
+ 	align-content: center;
+ 	align-items: center;
+ 	margin-right: 80px; */
+ 	/* border: 1px solid green; */
+ }
 
-/* Call To Action (CTA) Styles */
+ header nav a:hover {
+   text-decoration: underline;
+ }
 
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
+ /* header .logo{
+ 	display: flex;
+ 	position: relative;
+ 	right: 20;
+ 	border: 1px solid blue;
+ } */
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
+ .section-one{
+ 	position: relative;
+ 	width: 100%;
+ 	padding-top: 100px;
+  z-index: 0;
+ 	display: flex;
+ 	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 40px;
+ 	/* border: 1px solid red; */
+ }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
+		 h1 {
+		 	font-size: 60pt;
+		 	text-align: center;
+		 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
+		 button {
+		 	display:flex;
+		 	align-self: center;
+			padding: 2px 35px;
+		 }
 
-/* Main Content Styles */
+		 .left {
+		 	display: flex;
+		 	align-content: space-around;
+		 	flex-direction: column;
+		 }
 
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
+ .line {
+ 	background: black;
+ 	height: 2px;
+ 	width: 100%;
+ 	margin: 10px 0;
+ }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
+ .double-textbox{
+ 	display: flex;
+ 	justify-content: space-around;
+ 	width: 100%;
+	align-content: center;
+	/* border: 1px solid black; */
+ }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
+		 h2{
+		 	font-size: 25px;
+		 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
 
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
+		 .features, .about{
+		 	width: 49%; */
+		 	display: flex;
 
-/* Contact Styles */
+		 	/* margin-top: 20px;
+		 	margin-bottom: 20px; */
+		 	/* padding: 10px;
+		 	padding-right: 50px; */
+		 }
 
-.contact p {
-    margin: 15px 0;
-}
+ .features {
+ 	padding-right: 50px;
+ }
 
-/* Footer Styles */
+ .middle-img{
+ 	width: 100%;
+ 	height: 200px;
+ 	margin-bottom: 10px;
+ }
 
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
-}
+ .triple-textbox{
+ 		position: relative;
+ 		width: 100%;
+ 		border: 1px solid black;
+ 		display: flex;
+ 		flex-direction: row;
+ }
+
+ .services, .product, .vision {
+ 	padding-right: 10px;
+ 	margin-top: 10px;
+ 	margin-bottom: 20px;
+ 	margin-right: 10px;
+ 	border: 1px solid red;
+ }
+
+ .contact{
+ 	margin-top: 10px;
+ }
+ .copyright{
+ 	margin:20px;
+ 	text-align: center;
+ 	font-size: 10px;
+ }
+
+ /* below CSS is to for services page */
+ .blank{
+ 	height: 70px;
+ }
+ .banner{
+ 	margin-bottom: 20px;
+ 	width: 100%;
+ }
+
+ .intro{
+ 	margin-bottom: 20px;
+ }
+
+ .block-bin{
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ }
+
+ .blocks {
+ 	border: 1px solid black;
+ 	display: flex;
+ 	width: 49%;
+ 	flex-wrap: wrap;
+ 	justify-content: space-between;
+ 	padding: 10px;
+ 	margin-bottom: 20px;
+ 	flex-direction: row;
+ }
+
+ .blocks button{
+ 	margin: 15px 0 5px 0;
+ 	padding: 5px 30px;
+ }
+
+ .line{
+ 	margin: 0 0 30px 0;
+ }
+
+ .details{
+ 	display: flex;
+ 	justify-content: space-between;
+ 	width: 100%;
+ }
+
+ .details-words{
+ 	width: 49%;
+ }
+
+ ul {
+ 		list-style-type: square;
+ 		list-style-position: inside;
+ 		/* border: 1px solid red; */
+ }
+
+ .detail-pic{
+ 	width: 49%;
+ 	padding: 20 0 0 20;
+ 	bordr: 50px solid black;
+ }
+
+ .copyright{
+ 	margin: 40px 0 0 0;
+ }
