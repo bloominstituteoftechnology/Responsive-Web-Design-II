@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5 {
 		 }
 
 		 .features, .about{
-		 	width: 49%;
+		 	/* width: 49%; */
 		 	display: flex;
 			justify-content: center;
 			flex-direction: column;
@@ -207,6 +207,8 @@ h1, h2, h3, h4, h5 {
  		border: 1px solid black;
  		display: flex;
  		flex-direction: row;
+		justify-content: space-around;
+		align-content: center;
  }
 
  .services, .product, .vision {
@@ -214,8 +216,13 @@ h1, h2, h3, h4, h5 {
  	margin-top: 10px;
  	margin-bottom: 20px;
  	margin-right: 10px;
- 	/* border: 1px solid red; */
- }
+ 	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+
+	}
 
  .contact{
  	margin-top: 10px;
@@ -333,10 +340,40 @@ h1, h2, h3, h4, h5 {
 			border-top: 1px solid black;
 			margin-top: 5px;
 		}
+}
 
+@media(max-width:440px){
+		.container{
+			max-width: 440px;
+		}
 		.section-one{
 			justify-content: center;
-			padding: 10px;
+			padding: 60px;
 		}
+
+		.double-textbox {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border: 1px solid red;
+		}
+		.features, .about{
+			padding: 0;
+			border: 1px solid green;
+		}
+
+		.triple-textbox {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border: 1px solid red;
+		}
+
+		.services, .product, .vision{
+			border: 1px solid green;
+			padding: 0px;
+			margin: 8px 0;
+		}
+
 
  }
