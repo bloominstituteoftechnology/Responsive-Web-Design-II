@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .head{
+	width: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -110,16 +111,19 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 	margin: 0 0 0 5%;
 	font-size: 4rem;
+	padding-top: 20px;
 }
 button{
 	display: flex;
 	align-self: flex-end;
 	margin: 0 0 0 5%;
+		padding: 10px 5%;
 }
 .circle{
 	display: flex;
 	justify-content: flex-end;
 	margin: 0 5% 0 0;
+
 }
 
 @media(max-width: 750px){
@@ -173,13 +177,61 @@ button{
 	display: flex;
 }
 h3{
-	margin: 0 10px 60px 0;
+	margin: 0 2% 60px 2%;
 }
 
 .copy{
 	display: flex;
 	flex-direction: column;
+		padding: 0 5% 0 5%;
+
 }
+
+@media(max-width:700px){
+	.passage{
+		display: flex;
+		justify-content: space-between;
+	}
+	.middle{
+		diplay:flex;
+		justify-content: center;
+	}
+	.lastSection{
+		display:flex;
+		justify-content: space-between;
+	}
+	.copy{
+		display:flex;
+		flex-direction: column;
+		padding: 0 5% 0 5%;
+	}
+}
+
+@media(max-width: 600px){
+	.passage{
+		display:flex;
+		flex-direction: column;
+		padding: 0 5% 0 5%;
+	}
+	h3{
+		margin: 10px 0 0 0;
+		padding: 10px 0;
+		font-size: 2rem;
+		display: flex;
+		justify-content: space-around;
+	}
+	.lastSection{
+		display:flex;
+		flex-direction: column;
+		padding: 0 5% 0 5%;
+	}
+	.copy{
+		display:flex;
+		flex-direction: column;
+		padding: 0 5% 0 5%;
+	}
+}
+
 
 /* // services page css starts here */
 .head1{
