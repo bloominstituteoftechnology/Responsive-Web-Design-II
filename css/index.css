@@ -94,7 +94,8 @@ p, a{
  	background-color: white;
  	justify-content: space-around;
 	align-items: center;
-	padding-top: 10px;
+	padding: 10px 0;
+	border-bottom: 1px solid black;
  	/* border: 1px solid blue; */
 
  }
@@ -185,6 +186,9 @@ p, a{
 		 h2{
 		 	font-size: 2rem;
 		 }
+		 h3{
+			 font-size: 1.6rem;
+		 }
 
 		 .features, .about{
 		 	/* width: 49%; */
@@ -238,7 +242,7 @@ p, a{
 
  /* below CSS is to for services page */
  .blank {
- 	height: 70px;
+ 	height: 54px;
  }
  .banner {
  	margin-bottom: 20px;
@@ -247,6 +251,7 @@ p, a{
 
  .intro {
  	margin-bottom: 20px;
+	padding: 0 ;
  }
 
  .block-bin  {
@@ -286,6 +291,7 @@ p, a{
  ul {
  		list-style-type: square;
  		list-style-position: inside;
+		font-size: 1.6rem;
  		/* border: 1px solid red; */
  }
 
@@ -322,9 +328,23 @@ p, a{
 		 flex-direction: column;
 		 /* border: 1px solid red; */
 	 }
+	 .container header{
+		 border-bottom: none;
+	 }
+	 .blank{
+		 display: none;
+	 }
+
+
+	 .services{
+		 display: flex;
+		 justify-content: center;
+		 padding: 5px;
+	 }
 	 header nav{
 		 padding-top: 0;
 	 }
+
 	  header nav a{
 			 /* margin: 5px 0; */
 			 border-bottom: 1px solid black;
@@ -346,6 +366,18 @@ p, a{
 }
 
 @media(max-width:440px){
+		.block-bin {
+			display: flex;
+			justify-content: center;
+		}
+
+		.blocks{
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			max-width: 100%;
+			margin: 10px ;
+		}
 		.container{
 			max-width: 440px;
 		}
