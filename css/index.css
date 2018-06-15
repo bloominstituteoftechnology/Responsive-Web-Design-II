@@ -287,10 +287,6 @@ footer {
 
 }
 
-.CTA button{
-	
-
-}
 
 .CTA {
 
@@ -343,9 +339,7 @@ img.logo-original {
 
 
 @media (max-width: 768px) {
-	* {
 
-	}
 	.home-content {
 		margin: 0 auto;
 	}
@@ -388,7 +382,7 @@ img.logo-original {
 		justify-content: center;
 		align-items: center;
 	}
-	.home-content
+
 }
 
 
