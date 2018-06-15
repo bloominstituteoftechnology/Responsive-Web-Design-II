@@ -124,16 +124,12 @@ header a:visited {
 header a:hover {
     color: black;
 }
-.contact {
-	display: flex;
-    justify-content: start;
-    border: 1px solid black;
-	}
 
-/* .contact h4 {
-    display: flex;
-    justify-content: :start;
-} */
+
+.contact h4 {
+    margin-bottom: 0px;
+
+}
 
 .copyright {
 	text-align: center;
