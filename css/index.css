@@ -138,6 +138,20 @@ nav a:hover, button:hover {
 	}
 }
 
+.indexheader {
+    height: 500px;
+	background-image: url("../img/header-img.png");
+	background-repeat: no-repeat;
+    background-position: right center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.indexheader span {
+    width: 50%;
+    height: 100%;
+}
 
 h1 {
     font-size: 8.5rem;
@@ -150,24 +164,19 @@ h1 {
 
 button {
 	font-family: 'Quicksand', sans-serif;
-	position: absolute;
+    position: relative;
+    clear: both;
+    /* float: left; */
 	border: 1px solid black;
 	padding: 5px 3.97%;
-	margin-top: 360px;
-    margin-left: -28.5%;
+	/* margin-top: 360px; */
+    margin-left: 30%;
 	font-size: 2rem;
 }
 
 header {
 	height: 520px;
 	border-bottom: 1px solid black;
-}
-
-.indexheader {
-    height: 500px;
-	background-image: url("../img/header-img.png");
-	background-repeat: no-repeat;
-	background-position: right center;
 }
 
 header img {
@@ -371,16 +380,21 @@ ul li {
         width: 52%;
         background-image: none;
         margin: 0 auto;
+        display: flow;
+        justify-content: center;
+    }
+
+    .indexheader span {
+        width: 100%;
     }
 
     h1 {
         font-size: 7rem;
-        margin: 40px auto 0 auto;
+        margin-top: 40px;
     }
 
     button {
         min-width: 25%;
-        margin: 280px auto 0 -30%;
         /* margin-left: -30%; */
         /* margin: 0 auto; */
     }
@@ -471,6 +485,7 @@ ul li {
 
     button {
         margin-left: -55%;
+        margin-top: 280px;
         padding: 3px 8%;
     }
 
