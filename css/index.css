@@ -144,10 +144,12 @@ nav {
 	height: 50px;
     justify-content: space-around;
     overflow: hidden;
-    position: fixed;
-	top: 0;
 	width: 80%;
-	z-index: 1;
+}
+
+nav a {
+	font-size: 1.5rem;
+	border-top: 1px solid black;
 }
 
 p {
@@ -157,6 +159,10 @@ p {
 section {
     font-size: 1.5rem;
 	margin: 1%;
+}
+
+section p {
+	margin-bottom: 10px;
 }
 
 .bottom-content {
@@ -184,15 +190,16 @@ section {
 }
 
 .logo {
-    display: flex;
-    position: relative;
+	display: flex;
+	width: 150px;
+	height: 32px;
 }
 
 .navigation {
     background: lightyellow;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 1%;
+	padding-bottom: 8px;
+	z-index: 1;
 }
 
 .small-heading {
@@ -206,5 +213,52 @@ section {
 }
 
 @media (max-width: 768px) {
+	nav {
+		width: 100%;
+	}
 
+    .navigation {
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+	nav {
+		align-items: center;
+		flex-direction: column;
+		height: 100px;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	nav a {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.bottom-content {
+		flex-wrap: wrap;
+	}
+
+	.center {
+		background: none;
+	}
+
+	.mid-img {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.navigation {
+		padding-bottom: 0;
+	}
+
+	.top-content {
+		flex-wrap: wrap;
+	}
 }
