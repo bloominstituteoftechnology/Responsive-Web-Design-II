@@ -143,7 +143,6 @@ nav {
 	font-family: 'Sunflower';
 	height: 50px;
 	justify-content: space-around;
-	overflow: hidden;
 	width: 80%;
 }
 
@@ -211,6 +210,7 @@ section p {
 	margin: 0 4%;
 }
 
+/* Tablet view */
 @media (max-width: 768px) {
 	nav {
 		width: 100%;
@@ -223,16 +223,18 @@ section p {
     }
 }
 
+/* Mobile view */
 @media (max-width: 400px) {
 	nav {
+		align-items: center;
 		flex-direction: column;
-		height: 150px;
+		height: 250px;
 		width: 100%;
 	}
 
 	nav a {
-		border-bottom: 1px solid black;
-		margin: 5px;
+		border-top: 1px solid black;
+		margin-bottom: 10px;
 		text-align: center;
 		width: 100%;
 	}
@@ -252,13 +254,12 @@ section p {
 	}
 
 	.navigation {
-		height: 200px;
 		padding-bottom: 0;
+		width: 100%;
 	}
 
 	.services-link {
-		border-top: 1px solid black;
-		padding-top: 4px;
+		margin-top: 10px;
 	}
 
 	.top-content {
