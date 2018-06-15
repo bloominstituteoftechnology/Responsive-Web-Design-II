@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,6 +64,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+/* NEW CODE START */
 .full-container {
     max-width: 880px;
     display: flex;
@@ -84,15 +86,6 @@ h1, h2, h3, h4, h5 {
     z-index: 1;
 }
 
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    color: gray;
-    order: 0;
-}
-
 .navLinks {
     display: flex;
     justify-content: space-evenly;
@@ -101,7 +94,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .navLinks a{
-	text-decoration: none;
+    text-decoration: none;
+    font-size: 1.6rem;
 }
 
 .navLinks a:hover{
@@ -128,7 +122,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .custom-header .title-container .title-text {
-	font-size: 70px;
+	font-size: 7rem;
 	text-align: center;
 }
 
@@ -146,9 +140,9 @@ button:hover {
     color: white;
 }
 
-.cir-image {
+.custom-header .cir-image {
     order: 1;
-    width: 43%;
+    width: 44%;
 }
 
 hr {
@@ -169,14 +163,14 @@ hr {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	width: 50%;
+    width: 50%;
+    font-size: 1.6rem;
 }
 
 .middle-img {
 	display: flex;
     justify-content: center;
     width: 100%;
-    height: 25%;
 }
 
 .bottom-content {
@@ -189,7 +183,8 @@ hr {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	width: 33.3%;
+    width: 33.3%;
+    font-size: 1.6rem;
 }
 
 .contact-container {
@@ -201,11 +196,13 @@ hr {
 .contact {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+    width: 100%;
+    font-size: 1.6rem;
 }
 
 footer {
-	text-align: center;
+    text-align: center;
+    font-size: 1.6rem;
 }
 
 .index-footer {
