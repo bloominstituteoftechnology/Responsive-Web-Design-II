@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -60,116 +60,375 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.container {
-    width: 880px;
-    margin: auto;
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*
+  =====================================
+  Global Styles
+  =====================================
+*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
 }
 
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
+/*
+	=====================================
+	Navigation
+	=====================================
+*/
+.primary-nav li {
+	list-style-type: none;
+	line-height: 36px;
+	transition: transform 0.2s;
+	margin-right: 8.75%;
+}
+.primary-nav li:hover,
+.logo:hover {
+	transform: scale(1.25);
+}
+.primary-nav a {
+	text-decoration: none;
+	color: #ccc;
+	cursor: pointer;
+}
+.primary-nav a:hover {
+	color: #ababab;
+}
+.logo {
+	transition: transform 0.2s;
+}
+.primary-nav {
+  display: flex;
+  flex-grow: 1;
+}
+.nav {
+	padding: 27px 0;
+	background: #f7f7f7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.nav > .container {
+	display: flex;
+	justify-content: space-between;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
+/*
+	=====================================
+	Grid
+	=====================================
+*/
+.container,
+.grid {
+  margin: 0 auto;
+  width: 98%;
+  max-width: 880px;
+}
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.col-1-2 {
+	flex-basis: 48%;
+}
+.col-1-3 {
+  flex-basis: 32%;
 }
 
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
+/*
+	=====================================
+	Header
+	=====================================
+*/
+.primary-header {
+	padding: 42px 0 78px 0;
+	text-align: center;
+}
+.hero-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.primary-header h1 {
+	font-size: 7.2rem;
+	margin-bottom: 18px;
+	letter-spacing: 5px;
+	line-height: 1.05;
+}
+.primary-header a {
+	text-decoration: none;
+	color: #000;
+	font-size: 1.8rem;
+}
+.primary-header > .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
+/*
+	=====================================
+	Buttons
+	=====================================
+*/
+.btn {
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+}
+.btn-alt {
+	border: 1px solid black;
+  padding: 8px 45px;
+  /* this padding doesn't have to do anything
+  withthe  layout, hence we don't bother to
+  set the width padding to percentage */
+}
+.btn-alt:hover,
+.btn-rounded:hover {
+	background: black;
+	color: #fff;
+}
+.btn-rounded {
+	border: 1px solid black;
+	border-radius: 5px;
+  padding: 10px 40px;
+  /* read note about padding above */
+	font-size: 1.2rem;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
+/*
+	=====================================
+  Section
+	=====================================
+*/
+.section {
+	padding: 40px 0;
+}
+.section p {
+	line-height: 17px;
 }
 
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
+/*
+	=====================================
+	Middle Image
+	=====================================
+*/
+.middle-img {
+	display: block;
+	width: 100%;
+	/* margin-bottom: 5px; */
 }
 
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
+/*
+	=====================================
+	Contact
+	=====================================
+*/
 .contact p {
-    margin: 15px 0;
+	margin-bottom: 18px;
 }
 
-/* Footer Styles */
+/*
+	=====================================
+	Footer
+	=====================================
+*/
+footer p {
+	text-align: center;
+	padding-bottom: 15px;
+	font-size: 1.4rem;
+}
 
-footer {
-    text-align: center;
-    margin: 40px 0 20px;
+/*
+	=====================================
+	Services Page Styles
+	=====================================
+*/
+.services-header-img {
+	height: 200px;
+	background: url('/img/services-header.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.services-info-img {
+	width: 100%;
+}
+.services-main {
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.services-main h2 {
+	font-size: 2.7rem;
+}
+.services-main p {
+	line-height: 19px;
+}
+.service-detail {
+	flex-basis: 48%;
+	margin-bottom: 40px;
+	padding: 20px 4.73%;
+	border: 1px solid black;
+	background-color: #f7f7f7;
+}
+.service-detail h4 {
+	line-height: 22px;
+}
+.service-detail p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.services-info-text,
+.services-info .img-wrapper {
+	flex-basis: 48%;
+}
+.services-info .img-wrapper {
+	height: 300px;
+	background: url("/img/services-info.png");
+	background-position: center;
+	background-size: cover;
+}
+.services-info-text h4 {
+	line-height: 22px;
+}
+.services-info-text p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+.services-info-text ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+.services-info-text ul > li {
+	margin-bottom: 14px;
+}
+.services-info {
+	padding-bottom: 90px;
+}
+/*
+	=====================================
+	Additional styles
+	=====================================
+*/
+body {
+	padding-top: 90px; /* this makes up for the fixed navbar (36px line height + (27px padding) * 2) */
+}
+
+/*
+  =====================================
+  Media Queries
+  =====================================
+*/
+/* Tablet size */
+
+@media( max-width: 768px ) {
+  .hero-img {
+    display: none;
+  }
+  .logo-container {
+		order: -1;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+	.nav {
+		position: static;
+	}
+	.nav .container {
+		flex-direction: column;
+	}
+	.primary-nav {
+		justify-content: space-between;
+	}
+	.primary-nav li {
+		margin-right: 0;
+	}
+	body {
+		padding-top: 0;
+	}
+	/* Services page styles */
+	.services-info-text {
+		flex-basis: 35%;
+	}
+	.services-info .img-wrapper {
+		flex-basis: 61%;
+	}
+
+
+}
+/* 640px */
+@media( max-width: 640px ) {
+	/* Services page style */
+	.services-info .grid {
+		flex-direction: column;
+	}
+	.services-info .img-wrapper {
+		order: -1;
+		margin-bottom: 20px;
+		flex-basis: 100%;
+	}
+}
+/* Mobile Size */
+@media( max-width: 400px ) {
+	.nav {
+		padding-bottom: 0;
+	}
+	.primary-nav {
+		text-align: center;
+		flex-direction: column;
+	}
+	.primary-nav li {
+		line-height: 1;
+		font-size: 2rem;
+		border-top: 1px solid #888;
+		padding: 20px 0;
+	}
+	.primary-nav li:last-child {
+		border-bottom: 1px solid #888;
+	}
+	.primary-header h1 {
+		letter-spacing: 0.5px;
+	}
+	.grid {
+		flex-direction: column;
+	}
+	.col-1-2:not(:last-child),
+	.col-1-3:not(:last-child) {
+		margin-bottom: 30px
+	}
+	/* Services page styles */
+	.service-detail.mb-0 {
+		margin-bottom: 40px;
+	}
+	.service-detail:last-child {
+		margin-bottom: 0;
+	}
+	.services-header-img {
+		display: none;
+	}
+}
+
+/*
+	=====================================
+	Utility Classes
+	!!always keep these styles at the
+	bottom of the file!!
+	====================================
+*/
+.mt-1 {
+	margin-top: 10px;
+}
+.mb-0 {
+	margin-bottom: 0;
+}
+.font-size-normal {
+	font-size: 1.6rem;
 }
