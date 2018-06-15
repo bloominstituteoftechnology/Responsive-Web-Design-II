@@ -49,7 +49,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 html, body {
@@ -61,88 +62,77 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
+    font-size: 1.8em;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
 .container {
+    background: lightgoldenrodyellow;
     width: 960px;
+    height: 100%;
     margin: 0 auto;
 }
-.nav-bar {
-	display: flex;	
-	height: 40px;
-	width:95%;	
-    margin: 10%;
+.top { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.top .logo {
+    order:1;
+    width: 20%;
+}
+.top .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 80%;
     font-size: 1.6rem;
 }
-.nav-bar nav {
-	align-content: center;
-	margin: auto;
+.top .nav-bar nav a{
+    width: 10%;
 }
-.nav-bar .logo {
-	justify-content: flex-end;
-}
-.nav-bar nav a {
-    color: black;
-}
-.nav-bar nav a:hover {
-	color: black;
-}
-header {
-    display:flex;
-    height: 30%;
-    width: 100%;
-    border: 1px solid black;
-}
-header .top {
-	justify-content: center;
-	width: 100%;
-}
-header .top div {
-	align-self: center;
-	padding: 20px;
-    width: 50%;
-    border: 1px solid black;
-}
-header .top p {
-	font-size: 3.8rem;
-	font-family: 'Bangers', cursive;
-	/*margin: 0 33% 0 auto;*/
-}
-header .button {
-    text-align: center;
-    width: 30%;
-}
-header .circle-img {
-    width: 40%;
-    justify-content:baseline;
-    border: 1px solid black;
-    
-
-}
-.main-content {
-	border-top: solid silver;
-	border-bottom: solid silver;
+.first {
     display: flex;
-    font-size: 1.8rem;
-	flex-flow: wrap;
-	align-items: flex-start;
-	padding: 20px 15px;	
+    justify-content: space-around;
 }
-.main-content info {
-	display: flex;
+.first .innovation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
-.main-content .top {
-	justify-content: space-between;
-	width: 50%;
+.first .innovation p {
+    font-family: 'Bangers', cursive;  
+    font-size: 4em;
+    padding-top: 20%;
+    width: 100%;
 }
-.main-content .bottom {
-    justify-content: space-between;
-    width: 33.33%;
+.first .innovation button {
+    margin: auto;
 }
-.middle-img {
-	width: 100%;
+.first .innovation .circle-img {
+    width: 49%;
+    border: solid green;
+}
+.content {
+    width: 100%;
+}
+.content .info {
+    display: inline-block;
+    font-size: 1.6em;
+    border: 1px solid red;
+}
+.content .begin {
+    width: 50%;
+}
+.content .middle-img {
+    width: 100%
+}
+.container .bottom {
+    width: 33%;
 }
 .contact {
     font-size: 1.6rem;
@@ -151,33 +141,53 @@ header .circle-img {
 }
 footer {
     font-size: 1.2rem;
-	text-align: center;
+    text-align: center;
+    padding-bottom: 2.5%;
 }
-@media (max-width: 800px) {
-    .container {	
-        height: 40px;
-        width:95%;	
-        margin: 10%;
-        font-size: 1.6rem;
-    }
-    .nav-bar {
-        width:95%;	
-        margin: 10%;
-        font-size: 1.6rem;
-    }
-    .nav-bar .logo {
-        top:0;
-        width:100%;
-    }
-    header .circle-img {
-        display:none;
-    }
-}
-@media (max-width: 504px) {
+
+
+
+
+/*tablet*/
+@media (max-width: 768px) {
     .container {
-        
+        background: lightseagreen;
+        width: 95%;
     }
-    .nav-bar {
+    .top {
+        display: inline-block;
+    }
+    .top .logo {
+        order:1;
+        width: 22%;
+        margin: 0 39% 0;
+    }
+    .circle-img{
+        display: none;
+    }
+}
+
+
+
+/*mobile*/
+@media (max-width:400) {
+    .container{
+        background: lightsalmon;
+        width: 95%;
+    }
+    .top .nav-bar {
+        display: flex;
+        justify-content: flex-start;
         flex-direction: column;
+        flex-wrap: wrap;
     }
+    .content .info {
+        display: flex;
+        justify-content: baseline;
+        flex-wrap: wrap;
+        font-size: 1.6em;
+        width:100%;
+        border: 1px solid red;
+    }
+    
 }
