@@ -456,7 +456,7 @@ img.logo-original {
 		margin-top: 100px;
 	}
 	.home-content nav a {
-	width: 100vw;
+	width: 95vw;
 	border: 2px solid black;
 }
 .home-content header {
@@ -493,7 +493,7 @@ flex-wrap: wrap;
 .mobile-footer-fix {
 	display: flex;
 	align-items: center;
-	
+	margin-top: 20px;
 	flex-wrap: wrap;
 	
 	
@@ -502,7 +502,9 @@ flex-wrap: wrap;
 }
 footer {
 	width: 100%;
-	margin-top: 20px;
+	margin-top: px;
+	display: flex;
+	justify-content: flex-end;
 	
 }
 
@@ -510,6 +512,8 @@ footer {
 
 	
 	padding: 0;
+	display:flex;
+
 	
 	
 
@@ -524,6 +528,10 @@ footer {
 }
 
 
-	
+.Contact-Section {
+	margin: 0 0 10% 0;
+	display:flex;
+	justify-content: center;
+}
 
 }
