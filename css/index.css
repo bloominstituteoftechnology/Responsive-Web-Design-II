@@ -283,35 +283,96 @@ nav {
     margin: auto;
     width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 
 nav a {
-    font-size: 25px;
+    margin: 0 0 7px 0;
+    font-size: 20px;
     text-decoration: none;
     color: #b0b0b0;
-    margin: 45px 32px 0;
 }
 
-.home-top {
+.one{
+    order:1;
+    text-align: center;
+    width: 100%;
+    border-top: 1.3px double black;
+    border-bottom: 1.3px double black;
+    padding: 20px 0;
+}
 
+.two{
+    order:2;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1.3px double black;
+    padding: 20px 0;
+}
+
+.three{
+    order:3;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1.3px double black;
+    padding: 20px 0;
+}
+
+.four{
+    order:4;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1.3px double black;
+    padding: 20px 0;
+}
+
+.five{
+    order:5;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1.3px double black;
+    padding: 20px 0;
+}
+
+.six{
+    order:6;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1.3px double black;
+    padding: 20px 0;
+}
+
+.seven{
+    justify-content: center;
+    order:0;
+    width: 50%;
+    padding: 20px 0;
+}
+
+
+.home-top {
     margin: auto;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 60px 0;
 }
 
 .home-top button {
     border: 1px double black;
     font-size: 15px;
     background: white;
+    margin: 15px 0;
     width: 160px;
     height: 30px;
     cursor: pointer;
+}
+
+hr{
+    margin: 20px auto;
 }
 
 .top-main {
@@ -326,6 +387,11 @@ nav a {
     width: 100%;
 }
 
+.middle-img {
+    width: 98%;
+    height: 100%;
+}
+
 .bottom-main {
     width: 89%;
     display: flex;
@@ -333,7 +399,7 @@ nav a {
 }
 
 .bottom-main div {
-    margin: 0 2px;
-    font-size: 2.2vw;
+    margin: 10px 2px;
+    font-size: 3.8vw;
     width: 100%;
 }
