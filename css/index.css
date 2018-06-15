@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-between;
 	align-items: center;
     background: white;
-    width: 100%;
+    width: 100vw;
 	padding: 1vh;
 }
 
@@ -308,6 +308,7 @@ h1 {
         justify-content: center;
 		background: white;
 		padding: .5vh;
+		width: 100vw;
     }
 
 	header {
@@ -348,8 +349,8 @@ h1 {
     }
 
     .nav-bar li {
-        padding: 2.5vh 6vw;
-        width: 100%;
+        padding: 2.5vh 6vh;
+        width: 100vw;
         border-top: .1rem solid black;
         justify-content: center;
     }
@@ -375,7 +376,7 @@ h1 {
 	
 	.nav-bar a {
 		padding: 2.5vh 0;
-        width: 100%;
+        width: 100vw;
 	}
     header {
         margin-top: 85vh;
