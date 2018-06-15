@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    /* font-size: 62.5%; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,61 +65,67 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 100%;
     max-width: 880px;
-    height: 100%;
-    margin: 0 auto;
+    width: 100%;
+    margin: auto;
 }
 
 /* Header Styles ---------------------------------------*/
+/* ---------------- D E S K T O P   V I E W ---------------------*/
 
 .home-content header {
-	width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
 	/* border: 1px solid blue; */
 }
 
 .home-content header nav {
-	display: flex;
-	margin-top: 40px;
-	justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+
+.home-content header nav {
+    width: 100%;
+	margin-top: 38px 1% 0;
+    justify-content: space-between;
+    display: flex;
 	/* border: 1px solid red; */
 }
 
 .home-content header nav a {
-	display: flex;
-	align-items: center;
 	text-decoration: none;
 	color: gray;
 }
 
 .home-content header nav a:hover{
-	text-decoration: underline;
+    text-decoration: underline;
+    color: black;
 }
 
-.home-content header nav .logo {
-    width: 183px;
-    height: 36px;
-	
+.home-content header .logo {
+    align-self: flex-end;
+    margin: 0 0 0 8%;
+    /* border: 1px solid blue;	 */
+    align-items: center;
 }
 
 .home-content .top-section {
 	display: flex;
 	justify-content: flex-end;
 	/* border: 1px solid blue; */
-	/*height: 428.25px;*/
 	margin-top: 50px;
 	margin-bottom: 20px;
 }
 
 .home-content .top-section div {
-	/*margin-top: 108.125px;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	/* border: 1px solid green; */
-	/*display: inline-block;*/
-	/*width: 50%;*/
 }
 
 .home-content .top-section div {
@@ -132,20 +139,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .home-content .top-section div button {
-	/*margin-left: 108.45px;*/
 	font-size: 16px;
 	font-family: 'Titillium Web', sans-serif;
 	border: 1px solid black;
 	background-color: #ffffff;
-	/*width:50%;*/
 	padding: 0px 35px;
-}
-
-.home-content .top-section .circleImage {
-	/* border: 1px solid green; */
-	/*margin-left: 100px;*/
-	/*width: 49;*/
-	/*float: right;*/
 }
 
 .home-content .middle-section {
@@ -156,12 +154,6 @@ h1, h2, h3, h4, h5 {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-top: 50px;
-}
-
-.home-content .middle-section div {
-	/* border: 1px solid blue; */
-	/*display: inline-block;
-	width: 49%;*/
 }
 
 .home-content .middle-image {
@@ -181,7 +173,6 @@ h1, h2, h3, h4, h5 {
 
 .home-content .bottom-content div {
 	/* border: 1px solid blue; */
-	/*display: inline-block;*/
 	width: 33%;
 }
 
@@ -203,6 +194,22 @@ h1, h2, h3, h4, h5 {
 /* ------------ T A B L E T   M O D E --------------- */
 @media(max-width: 768px){
 
+    .container {
+        width: 100%;
+    }
+
+    .home-content header {
+        display: flex;
+        flex-direction: column-reverse;
+        /* border: 1px solid red; */
+    }
+
+    .home-content header .logo {
+        /* border: 1px solid blue; */
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
     .home-content .top-section .circleImage {
         display: none;
     }
@@ -212,37 +219,43 @@ h1, h2, h3, h4, h5 {
     }
 
     .home-content .middle-section div {
-        padding: 20px 10px;
+        padding: 20px 1.302%;
+        /* border: 1px solid blue; */
     }
 
     .home-content .middle-image {
         /* border: 1px solid red; */
-        display: flex;
-        justify-content: center;
-    }
-
-    .home-content .bottom-content {
-        /* border: 1px solid red; */
+        max-width: 80%;
     }
 
     .home-content .bottom-content div {
         /* border: 1px solid blue; */
         width: 33.3%;
-        padding: 0 10px;
+        padding: 0 1.302%;
+    }
+
+    .home-content .contact {
+        display: flex;
+        justify-content: flex-start;
+        /* border: 1px solid red; */
+        margin-top: 30px;
+        padding: 0 1.302%;
     }
 }
 
 
 /* ------------ SMARTPHONE  M O D E --------------- */
 @media(max-width: 400px){
-    .home-content header {
-        /* border: 1px solid red; */
+
+    .home-content header .logo {
+        /* border: 1px solid blue; */
+        margin: auto;
     }
 
     .home-content header nav{
         /* border: 1px solid blue; */
         flex-direction: column;
-        align-items: center; 
+        text-align: center; 
     }
 
     .home-content header nav a{
@@ -258,15 +271,22 @@ h1, h2, h3, h4, h5 {
         margin-top: 15px;
     }
 
-    .home-content header nav .logo{
-        /* border: 1px solid blue; */
-        order: -1;
-        flex-grow: 1;
-    }
-
     .home-content .middle-section {
         /* border: 1px solid red; */
         flex-direction: column;
+    }
+
+    .home-content .middle-image {
+        /* border: 1px solid red; */
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .home-content .middle-image .middle-img  {
+        width: 100%;
+        height: auto;
     }
 
     .home-content .bottom-content {
@@ -284,7 +304,7 @@ h1, h2, h3, h4, h5 {
 
     .home-content .contact {
         /* border: 1px solid green; */
-        padding-left: 10px;
+        padding-left: 2.5%;
         padding-top: 10px;
     }
 }
