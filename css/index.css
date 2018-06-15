@@ -89,10 +89,7 @@ body{
 	padding:  0;
 }
 
-.content h2 {
-	
-	
-}
+
 
 .Contact-Section  {
 	font-size:1.6rem;
@@ -102,7 +99,7 @@ header {
 
   	position: relative;
 	height: 50px; 
-	
+
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
@@ -110,7 +107,6 @@ header {
 	min-width: 100%;
 	margin: 0 -74px;
 	padding: 0 0%;
-
 	background: rgba(76,76,76,1);
 	background: rgba(76,76,76,1);
 	background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, 
@@ -129,7 +125,6 @@ header {
 	 rgba(44,44,44,1) 50%, rgba(0,0,0,1) 51%, rgba(17,17,17,1) 60%, rgba(43,43,43,1) 76%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
 
-
 }
 nav  {
 	line-height: 36px;
@@ -144,21 +139,14 @@ nav a {
 	justify-content: space-evenly;
 	text-decoration: none;
 	color: #b7b7b7;
-
-
 	
 }
 
 header nav a:hover {
 
-	background-color: rgba(255, 255, 255, 0.678) ;
-	
-	
+	background-color: rgba(255, 255, 255, 0.678) ;	
 	height: 50px;
 	color: black;
-
-
-	
 
   }
 
@@ -167,9 +155,6 @@ display: flex;
 
 }
 
-header .logo:hover {
-
-}
 .CTA h1 {
 	text-align: center;
 	font-size: 7.2rem;
@@ -341,10 +326,6 @@ margin: 0 auto;
 
 }
 
-.Contact-Section {
-
-	
-}
 
 
 .header nav {
@@ -354,7 +335,7 @@ margin: 0 auto;
 
 img.logo-original {
 	display: none
-}5
+}
 .Contact-Section {
 	margin-top: 30px;
 }
@@ -414,15 +395,8 @@ img.logo-original {
 
 
 
-@media (max-width: 520px) {
-	* {
-		
-	}
+@media (max-width: 500px) {
 
-
-	
-		
-			
 
 	.home-content nav {
 		display: flex;
@@ -489,7 +463,6 @@ img.logo-original {
 	}
 	.home-content nav a {
 	width: 100vw;
-
 	border: 2px solid black;
 }
 .home-content header {
@@ -503,52 +476,59 @@ img.logo-original {
 .Contact-Section {
 
 display:flex;
-height: 2rem;
+
 flex-direction: column;
-
-
+justify-content: flex-start;
+margin-left: -60px;
 flex-wrap: wrap;
+
+
+
 
 }
 .Contact-Section li{
 	display: flex;
-	justify-content: flex-start;
-	margin: 0 auto;
-	flex-wrap: wrap;
-	flex-direction: column;
-
-	height: 1.6rem;
-
-}
-
-.home-content footer {
+	margin: 10%;
+	width: 100%;
+	height: .2rem;
+	align-self: center;
 	
-	flex-flow: wrap column;
-	align-items: flex-end;
-	justify-content: flex-end;
+
 }
+
 .mobile-footer-fix {
 	display: flex;
-	flex-direction: row;
-	align-content: space-between;
+	align-items: center;
+	
 	flex-wrap: wrap;
 	
+	
+	
+
+}
+footer {
 	width: 100%;
-	margin-top: 5%;
-	justify-content: center;
-	height: 25rem;
+	margin-top: 20px;
+	
 }
+
+.mobile-footer-fix section {
+
+	
+	padding: 0;
+	
+	
+
+
+}
+
 .mobile-footer-fix h2 {
-	margin-left: -50%;
-}
-.mobile-footer-fix li {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-
+	display:flex;
+	padding:10%;
+	margin-bottom: -10px;
 
 }
-.Contact-Section  li {
+
 
 	
 
