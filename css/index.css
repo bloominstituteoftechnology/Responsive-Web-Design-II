@@ -68,6 +68,8 @@ h1, h2, h3, h4, h5 {
     max-width:880px;
     width: 100%;
     margin: auto;
+    padding: 0 1.40%;
+    
 }
 
 
@@ -82,7 +84,6 @@ h1, h2, h3, h4, h5 {
     width: 85.58%;
     display: flex;
     justify-content: space-between;
-    margin-right: 10%;
 }
 
 .header-nav .navigation a {
@@ -98,6 +99,9 @@ h1, h2, h3, h4, h5 {
 	color: blue;
 }
 
+.logo-container {
+    margin-left: 10%;
+}
 
 /*Index.html CSS code starts here-->*/
 
@@ -195,16 +199,12 @@ h1, h2, h3, h4, h5 {
 
     .header-nav {
         display: flex;
-        flex-direction: column;
-        justify-items: center;
-        width:100%;
-    
+        flex-flow: wrap;
     }
     
     .header-nav .navigation {
         order: 1;
-        display: flex;
-        justify-content: space-evenly;
+        text-align: center;
         width: 100%;
         padding: 30px 0;
     }
