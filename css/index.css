@@ -3,25 +3,11 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.4rem;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -110,7 +96,7 @@ header nav a{
 	width: 50%;
 }
 .get-started div h1 {
-	font-size: 60px;
+	font-size: 6rem;
 }
 .get-started div button {
 	width: 130px;
@@ -161,105 +147,16 @@ header nav a{
 	padding-top: 30px;
 }
 .contact p {
-	margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .copyright p {
-	text-align: center;
-	margin-bottom: 120px;
-}
-.services-content .copyright p {
-	margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
 	margin-bottom: 30px;
 }
-.services-content .services {
-	margin-top: 30px;
-}
-.services-content .services .services-header-img {
-	height: 200px;
-	width: 100%;
-	padding-left: 130px;
-	padding-right: 130px;
-}
-.services-content .services h1 {
-	font-size: 36px;
-	margin-top: 30px;
-	padding-left: 130px;
-	padding-right: 80px;
-	margin-bottom: 30px;
-}
-.services-content .services p {
-	padding-bottom: 30px;
-	border-bottom: 1px solid gray;
-	padding-left: 130px;
-	padding-right: 130px;
-}
 
-.services-content .service-types .box {
-	margin-bottom: 10px;
-}
-
-.services-content .service-types .box h2 {
-	font-size: 24px;
-}
-.services-content .service-types .box {
-	width: 390px;
-	height: 240px;
-	border: 1px solid black;
-	background: lightgray;
-	padding-left: 10px;
-}
-.services-content .service-types .box h2 {
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.services-content .service-types .box p {
-	padding-bottom: 10px;
-}
-.services-content .service-types { 
-	border-bottom: 2px solid black;
-	display: flex;
-	height: 1000px;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-evenly;
-}
-.services-content .service-types .box button {
-	border: 1px solid black;
-	border-radius: 5px;
-	margin-top: 10px;
-	height: 30px;
-	width: 110px;
-}
-
-.services-content .service-facts {
-	display: flex;
-	justify-content: space-evenly;
-}
-.services-content .service-facts .info h2 {
-	margin-top: 30px;
-}
-.services-content .service-facts div {
-	width: 50%;
-}
-.services-content .service-facts .img {
-	margin-top: 30px;
-	padding-left: 110px; 
-	display: flex;
-}
-.services-content .service-facts .info {
-	padding-left: 140px;
-	padding-right: 110px;
-}
-ul {
-	margin-top: 30px;
-	list-style-type: square;
-	padding-left: 20px;
-}
-ul li {
-	padding-bottom: 10px;
-}
 @media (max-width: 768px) {
     .container header nav .last {
         order: -1;
@@ -297,9 +194,7 @@ ul li {
     padding-left: 15px;
     padding-right: 15px;
 }
-.container .contact p {
-    margin-bottom: 10px;
-}
+
 }
 @media (max-width: 400px) {
     .container .get-started img {
@@ -361,7 +256,5 @@ ul li {
         padding-left: 25px;
         padding-right: 25px;
     }
-    .container .contact p {
-        margin-bottom: 10px;
-    }
+    
 }
