@@ -90,7 +90,7 @@ p {
 
 nav {
 	height: 60px;
-    width: 880px;
+    width: 95%;
 	margin-top: 10px;	
     display: flex;
     justify-content: space-between;
