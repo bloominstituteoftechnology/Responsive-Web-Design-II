@@ -142,14 +142,13 @@ nav {
 	display: flex;
 	font-family: 'Sunflower';
 	height: 50px;
-    justify-content: space-around;
-    overflow: hidden;
+	justify-content: space-around;
+	overflow: hidden;
 	width: 80%;
 }
 
 nav a {
 	font-size: 1.5rem;
-	border-top: 1px solid black;
 }
 
 p {
@@ -226,17 +225,15 @@ section p {
 
 @media (max-width: 400px) {
 	nav {
-		align-items: center;
 		flex-direction: column;
-		height: 100px;
-		justify-content: center;
-		text-align: center;
+		height: 150px;
 		width: 100%;
 	}
 
 	nav a {
-		display: block;
-		margin: 0 auto;
+		border-bottom: 1px solid black;
+		margin: 5px;
+		text-align: center;
 		width: 100%;
 	}
 
@@ -255,7 +252,13 @@ section p {
 	}
 
 	.navigation {
+		height: 200px;
 		padding-bottom: 0;
+	}
+
+	.services-link {
+		border-top: 1px solid black;
+		padding-top: 4px;
 	}
 
 	.top-content {
