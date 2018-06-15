@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-bar img {
-	padding: 2.5vh;
+	padding: 1vh;
 }
 
 .nav-buttons {
@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
     background: white;
     width: 100%;
-	padding: 2.5vh;
+	padding: 1vh;
 }
 
 .nav-buttons li a:link {
@@ -291,33 +291,38 @@ h1 {
 
  /* At 768px And below do the following: */
  /* Tablet */
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .wrapper {
       background: white;
     }
 
     .nav-bar a {
         display: flex;
-        order: -1;
+		order: -1;
+		padding: 0;
     }
 
     .nav-bar {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background: white;;
+		background: white;
+		padding: .5vh;
     }
 
+	header {
+		margin-top: 20vh;
+	}
     header img {
         display: none;
     }
-
+}
 
 /* Mobile 8/
  /* At 400px And below do the following: */
-  @media (max-width: 400px) {
+@media (max-width: 400px) {
     .wrapper {
-      background: teal;
+		background: white;
     }
 
     .div-top {
@@ -354,18 +359,25 @@ h1 {
         flex-flow: column;
         justify-content: flex-start;
         position: fixed;
-        
+        background: white;
     }
 
     .nav-bar img {
-        position: fixed;
+		position: fixed;
+		justify-content: center;
         top: 0;
-        margin: 0 auto;
         background: white;
-        z-index: 1;;
-    }
+		z-index: 1;
+		padding-left: 33%;
+		padding-right: 33%;
+	}
+	
+	
+	.nav-bar a {
+		padding: 2.5vh 0;
+        width: 100%;
+	}
     header {
         margin-top: 85vh;
     }
-
-  }
+}
