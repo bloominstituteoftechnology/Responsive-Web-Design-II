@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,10 +17,16 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
+    border: 0;
+    font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.4rem;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -51,125 +56,235 @@ table {
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif,'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+* {
+	box-sizing: border-box;
 }
 
 .container {
-    width: 880px;
-    margin: auto;
-}
-
-/* Header Styles */
-
-header {
     width: 100%;
-    display: flex;
+    max-width: 880px;
+    margin: 0 auto;
 }
-
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 20px;
+	width: 100%;
+	display: flex;
     justify-content: space-between;
-    display: flex;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
 }
 
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+header nav a{
+	text-decoration: none;
+	color:lightgray;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.get-started {
+    margin-top: 60px;
+	height: 450px;
+	border-bottom: 1px solid gray;
+	width: 100%;
 }
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+.get-started div{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	width: 50%;
 }
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+.get-started div h1 {
+	font-size: 6rem;
 }
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.get-started div button {
+	width: 130px;
+	height: 35px;
+	border: 1px solid black;
 }
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+.get-started {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
 }
-
-.main-content .bottom-content p {
-    padding-right: 20px;
+.get-started img {
+	height: 379px;
 }
-
-/* Contact Styles */
-
+.top-info {
+	display: flex;
+	justify-content: flex-start;
+}
+.top-info div {
+    width: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.top-info div h2 {
+	padding-top: 30px;
+}
+.top-info div p {
+	padding-bottom: 30px;
+}
+.middle-img {
+	width: 100%;
+	height: 182px;
+    margin: 0 auto;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.bottom-info {
+	display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid gray;
+}
+.bottom-info div {
+    width: 33%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.bottom-info div h2 {
+	padding-top: 30px;
+}
+.bottom-info div p {
+	padding-bottom: 30px;
+}
+.contact {
+    padding-left: 1%;
+}
+.contact h2 {
+    padding-top: 30px;
+}
 .contact p {
-    margin: 15px 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
-/* Footer Styles */
-
-footer {
+.copyright p {
     text-align: center;
-    margin: 40px 0 20px;
+    margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .container header nav .last {
+        order: -1;
+        width: 100%;
+    }
+    .container header nav .last img {
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+   .container header *{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+   }
+   .container .get-started img {
+    display: none;
+   }
+   .container .get-started {
+       height: 300px;
+   }
+   .container .top-info div {
+       padding-left: 2%;
+       padding-right: 2%;
+   }
+   .container .bottom-info div {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.container .middle-img {
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 90%;
+    width:100%;
+}
+.container .contact {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+}
+@media (max-width: 400px) {
+    .container .get-started img {
+        display: none;
+    }
+    .container .get-started img {
+        height: 300px;
+    }
+    .container .get-started {
+        border-bottom: 1px solid black;
+    }
+    .container header *{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container header nav a {
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid gray;
+    }
+    .container header nav .last {
+        order: -1;
+    }
+    .container header nav .last img {
+        width: 50%;
+    }
+    .container .top-info {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .container .top-info div {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
+    .container .middle-img {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 70%;
+        width: 100%;
+    }
+    .container .bottom-info {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: 1px solid black;
+    }
+    .container .bottom-info div {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
+    .container .contact {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
 }
