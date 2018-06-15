@@ -58,118 +58,327 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Baloo', 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.container {
+/* Your code starts here! */
+
+/* Home Page css */
+
+/* Wrapper */
+.wrapper {
+	max-width: 880px;
+	box-sizing: inherit;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	margin: 0 auto;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+  }
+
+/* Navigation Bar CSS */
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+
+    /* why do I manually have to set the width? */
     width: 880px;
-    margin: auto;
+    
 }
-
-/* Header Styles */
-
-header {
-    width: 100%;
+.nav-bar li a {
     display: flex;
-}
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
     justify-content: space-between;
+}
+.nav-bar a {
     display: flex;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    padding: 2.5vh;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
+}
+.nav-bar ul{
+	display: flex;
+	align-content: space-between;
+	text-decoration: none;
+    justify-content: space-between;
 }
 
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
+.nav-bar img {
+	padding: 1vh;
 }
 
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
+.nav-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    background: white;
+    width: 100vw;
+	padding: 1vh;
 }
 
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
+.nav-buttons li a:link {
+	text-decoration: none;
+	opacity: .8;
+  	color: black;
 }
 
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+.nav-buttons li a:hover {
+	background-color: grey;
+	text-decoration: underline;
 }
 
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
+/* Header CSS */
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 12vh;
+	text-align: center;
 }
 
-.main-content .bottom-content p {
-    padding-right: 20px;
+header p {
+    font-size: 200%;
+}
+header a {
+	border: .3vh solid black;
+	padding: 1.2vh 2.4vh;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-size: 93%;
 }
 
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
+header a:hover {
+	background-color: black;
+	color: white;
+	text-decoration: underline;
 }
 
-/* Footer Styles */
+
+/* Section and Content */
+section .home-sec {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.div-top {
+	display: flex;
+	border-top: .3vh solid black;
+	padding: 2.5vh;
+}
+
+.sect {
+	margin: 10vh 0 5vh 0;
+	padding: 0 2vh;
+}
+
+.div-img {
+	display: flex;
+	margin-top: 2vh;
+}
+.div-bottom {
+	display: flex;
+	justify-content: center;
+	border-bottom: .3vh solid black;
+}
+
+/* Contact div */ 
+.contact {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	padding-top: 4vh;
+}
 
 footer {
-    text-align: center;
-    margin: 40px 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8vh;
+}
+
+/* End Home Page CSS */
+
+/* Start Service Page CSS */
+
+Top Section
+.services-header-img {
+	display: flex;
+	margin-top: 12vh;
+}
+
+.top-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 1.5%;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	flex-direction: row;
+	padding-top: 1.5%;
+}
+
+h1 {
+	font-size: 150%;
+	font-weight: bold;
+}
+.content-boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	padding: 1.5%;
+	margin-top: 2%;
+	width: 3.80vh;
+	border: .3vh solid black;
+}
+
+.serv-buttons {
+	padding: 1vh 4vh;
+    margin-top: 2vh;
+    cursor: pointer;
+    border-radius: 1.5vh;
+    border: .3vh solid black;
+}
+
+.content-boxes a:hover {
+	padding: 1vh 4vh;
+    margin-top: 2vh;
+    cursor: pointer;
+    border-radius: 1.5vh;
+	border: .3vh solid black;
+	background: black;
+	color: white;
+}
+
+.top-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bottom-services {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 1.5%;
+	margin-top: 5vh;
+	border-top: .3vh solid black;
+}
+
+.btm-serv-lft, .services-info-img {
+	display: flex;
+	flex-direction: column;
+	padding: 2.5vh;
+	width: 40vh;
+}
+.bottom-services li {
+	list-style: square;
+	padding: 1.5vh;
+}/* Ending my Service page css */
+
+
+/* My introduction of media queries */
+
+ /* At 768px And below do the following: */
+ /* Tablet */
+@media (max-width: 768px) {
+    .wrapper {
+      background: white;
+    }
+
+    .nav-bar a {
+        display: flex;
+		order: -1;
+		padding: 0;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+		background: white;
+		padding: .5vh;
+		width: 100vw;
+    }
+
+	header {
+		margin-top: 20vh;
+	}
+    header img {
+        display: none;
+    }
+}
+
+/* Mobile 8/
+ /* At 400px And below do the following: */
+@media (max-width: 400px) {
+    .wrapper {
+		background: white;
+    }
+
+    .div-top {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .div-bottom {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar {
+        justify-content: flex-start;
+        margin: 5vh auto;
+        background: white;
+    }
+    .nav-buttons li a {
+        display: flex;
+        padding: 2.5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        padding: 2.5vh 6vh;
+        width: 100vw;
+        border-top: .1rem solid black;
+        justify-content: center;
+    }
+
+    .nav-bar ul{
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        position: fixed;
+        background: white;
+    }
+
+    .nav-bar img {
+		position: fixed;
+		justify-content: center;
+        top: 0;
+        background: white;
+		z-index: 1;
+		padding-left: 33%;
+		padding-right: 33%;
+	}
+	
+	
+	.nav-bar a {
+		padding: 2.5vh 0;
+        width: 100vw;
+	}
+    header {
+        margin-top: 85vh;
+    }
 }
