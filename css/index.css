@@ -172,7 +172,7 @@ header .logo:hover {
 }
 .CTA h1 {
 	text-align: center;
-	font-size: 72px;
+	font-size: 7.2rem;
 	display: flex;
 	justify-content: center;
 	align-self: inherit;
@@ -294,7 +294,7 @@ button a {
 footer {
 
 	font-family: Titillium Web;
-	font-size: 14px; 
+	font-size: 1.4rem; 
 	display: flex;
 	justify-content: center;
 	margin: 10px 0 60px 0;
@@ -354,7 +354,7 @@ margin: 0 auto;
 
 img.logo-original {
 	display: none
-}
+}5
 .Contact-Section {
 	margin-top: 30px;
 }
@@ -387,8 +387,25 @@ img.logo-original {
 
 	img.logo-original {
 		display: unset;
+		margin-top: 30px;
 	}
 
+	.home-content nav a {
+		margin-top: 20px;
+	
+	}
+	.home-content h1 {
+		margin-top: 60px;
+	}
+
+	.home-content header {
+	
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.home-content
 }
 
 
@@ -469,8 +486,50 @@ img.logo-original {
 		margin-top: 100px;
 	}
 	.home-content nav a {
-	width: 100rem;
+	width: 100vw;
 
-	border: 1px solid black;
+	border: 2px solid black;
+}
+.home-content header {
+	height: 300px;
+	margin-top: 60px;
+	margin-bottom: -80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Contact-Section {
+
+display:flex;
+height: 2rem;
+flex-direction: column;
+border:1px solid black;
+
+flex-wrap: wrap;
+
+}
+.Contact-Section li{
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	flex-direction: column;
+	border:1px solid red;
+
+}
+
+.home-content footer {
+	border:1px solid red;
+	flex-flow: wrap column;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.mobile-footer-fix {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background: teal;
+	width: 100%;
+	height: 500px;
 }
 }
