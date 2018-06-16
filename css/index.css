@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -60,116 +64,205 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .container {
-    width: 880px;
-    margin: auto;
-}
-
-/* Header Styles */
-
-header {
+    margin: 0 auto;
+    max-width: 880px;
     width: 100%;
+}
+
+
+/* My code */
+
+a {
+	color: rgb(87, 88, 90);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	background: black;
+}
+
+button {
+    background: black;
+    border: 1.5px solid lightslategray;
+	color: white;
     display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    margin: 0 auto;
+	padding: 2% 10% 2% 10%;
+	transition-duration: .5s;
 }
 
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
-
-header nav a:hover {
-    text-decoration: underline;
+button:hover {
+    background: lightslategray;
     color: black;
 }
 
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
 footer {
+	color: white;
+	font-size: 1.2rem;
+	margin-top: 5%;
     text-align: center;
-    margin: 40px 0 20px;
+}
+
+header {
+	margin: 10% auto;
+}
+
+hr {
+	margin: 5%;
+}
+
+h1 {
+	color: darkcyan;
+	font-size: 4rem;
+	text-align: center;
+}
+
+h3 {
+    color: darkcyan;
+    font-size: 2rem;
+	margin: 1%;
+}
+
+img {
+    display: none;
+}
+
+nav {
+	align-items: center;
+	display: flex;
+	font-family: 'Sunflower';
+	height: 50px;
+	justify-content: space-around;
+	width: 80%;
+}
+
+nav a {
+	font-size: 1.5rem;
+}
+
+p {
+    color: darkgray;
+}
+
+section {
+    font-size: 1.5rem;
+	margin: 1%;
+}
+
+section p {
+	margin-bottom: 10px;
+}
+
+.bottom-content {
+	display: flex;
+	margin: 3% 4% 0;
+}
+
+.center {
+	background-image: url(../img/mid-page-accent.jpg);
+	background-size: cover;
+	padding: 2%;
+}
+
+.contact-info {
+	padding-left: 5%;
+}
+
+.contact-info p {
+	color: white;
+}
+
+.heading {
+	background-image: url(../img/header-img.png);
+	background-size: cover;
+}
+
+.logo {
+	display: flex;
+	width: 150px;
+	height: 32px;
+}
+
+.navigation {
+    background: lightyellow;
+    display: flex;
+	padding-bottom: 8px;
+	z-index: 1;
+}
+
+.small-heading {
+	color: darkcyan;
+    text-align: center;
+}
+
+.top-content {
+	display: flex;
+	margin: 0 4%;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+	nav {
+		width: 100%;
+	}
+
+    .navigation {
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 400px) {
+	nav {
+		align-items: center;
+		flex-direction: column;
+		height: 250px;
+		width: 100%;
+	}
+
+	nav a {
+		border-top: 1px solid black;
+		margin-bottom: 10px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.bottom-content {
+		flex-wrap: wrap;
+	}
+
+	.center {
+		background: none;
+	}
+
+	.mid-img {
+		display: block;
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.navigation {
+		padding-bottom: 0;
+		width: 100%;
+	}
+
+	.services-link {
+		margin-top: 10px;
+	}
+
+	.top-content {
+		flex-wrap: wrap;
+	}
 }
