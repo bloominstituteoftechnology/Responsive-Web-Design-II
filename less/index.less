@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+// =============== VARIABLES 
+
+// 
+// ============================= MIXINS
+.flex-box(@display: flex; @flex-direction: none; @flex-wrap: none; 
+        @justify-content: none; @align-items:none; @align-content: none; @perfect-center: false;
+        @align-self: none; @flex-flow: none; ){
+          & when (@perfect-center = true){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: @flex-direction;
+            flex-wrap: @flex-wrap;
+            align-content: @align-content;
+
+          }
+          & when not (@perfect-center = true){
+            display:@display;
+            flex-direction: @flex-direction;
+            flex-wrap: @flex-wrap;
+            justify-content: @justify-content;
+            align-items:@align-items;
+            align-content:@align-content;
+            align-self: @align-self;
+            flex-flow: @flex-flow;
+          }       
+}
+
+.a-tag(@text-decoration: none; @color: black; @background-color: none; ){
+    text-decoration: @text-decoration;
+    color: @color;
+    background-color: @background-color;
+}
+// end of mixins 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+html {
+    font-size: 62.5%;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    .flex-box(@flex-wrap: wrap, @justify-content: space-between);
+    padding-left: 3%;
+    padding-right: 3%;
+    header {
+        // display:flex;
+        width: 100%;
+        // justify-content: space-between;
+        .flex-box(@justify-content:space-between);
+        margin-top: 15px;
+        nav {
+            // display: flex;
+            width: 75%;
+            // justify-content: space-between;
+            .flex-box(@justify-content: space-between);
+            margin-bottom: 30px;
+            a {
+                text-decoration: none;
+                color: black;
+                .a-tag;
+            }
+            a:hover {
+                // text-decoration: underline;
+                // background: red;
+                .a-tag(@text-decoration:underline, @background-color:red);
+            }
+        }
+    }
+    .top-content {
+        width: 50%;
+        
+        // display:flex;
+        text-align: center;
+        font-size: 7.2rem;
+        // justify-content: center;
+        // flex-flow: column;
+        // align-items: center;
+        .flex-box(@justify-content: center, @flex-flow:column, @align-items:center);
+        font-family: impact;
+        p {
+            // display: flex;
+            // justify-content: center;
+            .flex-box(@justify-content: center);
+        }
+        button {
+            // display: flex;
+            // justify-content: center;
+            .flex-box(@justify-content:center);
+            padding-top: 10px;
+            border-radius: 3px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    }
+    .syntax-logo {
+        width: 50%;
+    }
+    .features {
+        width: 50%;
+        border-top: 1px solid black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding-top: 15px;
+        padding-right: 1%;
+    }
+    .about {
+        .features;
+    }
+    .middle-img img{
+        width: 100%;
+        margin-bottom: 30px;
+        max-width: 800px;
+    }
+    .services {
+        width: 33.33%;
+    }
+    .product {
+        .services;
+    }
+    .vision {
+        .services;
+    }
+    .contact {
+        width: 100%;
+        border-top: 1px solid black;
+        padding-top: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    footer {
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+@media(max-width: 768px){
+    .container header {
+        // flex-direction: column-reverse;
+        // justify-content: center;
+        .flex-box(@flex-direction:column-reverse, @justify-content:center);
+        nav {
+            width: 100%;
+        }
+    }
+    .container .logo-img {
+        padding-left: 38.216%;
+        /* The picture is 474.5 px wide 
+        picture size / container width =
+        61.78385 i then took 100% - 61.78385
+        to provide the percentange to pad by */
+        padding-bottom: 30px;    
+    }
+    .container .top-content {
+        width: 100%;
+    }
+    .container .syntax-logo {
+        display: none;
+    }
+    .container .middle {
+        max-width: 100%;
+    }
+}
+@media(max-width: 400px) {
+    .container header nav {
+        // display:flex;
+        // flex-direction: column;
+        // align-items: center;
+        .flex-box(@flex-direction:column, @align-items:center);
+        width: 100%;
+        a{
+            border-top: 1px solid gray;
+            border-bottom:1px solid gray;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            width: 100%;
+    
+        }
+
+    }
+    .container .logo-img{
+        padding-left: 30.00% ;
+    }
+
+    .container {
+        .features {
+        width: 100%;
+        }
+        .about {
+            .features;
+        }
+        .middle {
+            .features;
+        }
+        .product {
+            width: 100%;
+            padding-top: 30px;
+        }
+        .services {
+            width: 100%;
+        }
+        .vision {
+            .product;
+        }
+    
+}
+}
