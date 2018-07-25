@@ -1,175 +1,58 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html {
+  font-size: 62.5%;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+/*   start actual code here */
+/* start title area */
+#index-title-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
 }
-body {
-	line-height: 1;
+#index-title-area div {
+  width: 48%;
 }
-ol, ul {
-	list-style: none;
+#index-title-area #index-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-blockquote, q {
-	quotes: none;
+#index-title-area #index-title h1 {
+  font-size: 5rem;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+#index-title-area #index-title #start {
+  margin: 1% auto;
+  padding: 2% 8%;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* end title area */
+/* banner image */
+.imageBanner {
+  display: flex;
+  margin: 2% auto;
+  width: 100%;
 }
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+.imageBanner .middle-img {
+  margin: 0 auto;
+  width: 90%;
 }
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.container {
-    width: 880px;
-    margin: auto;
-}
-
-/* Header Styles */
-
-header {
-    width: 100%;
-    display: flex;
-}
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
-    justify-content: space-between;
-    display: flex;
-}
-
-header nav a {
-    text-decoration: none;
-    color: #b0b0b0;
-}
-
-header nav a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-header .logo {
-    align-self: flex-end;
-    margin: 28px 0 0 91px;
-}
-
-/* Call To Action (CTA) Styles */
-
-.cta {
-    display: flex;
-    margin-top: 72px;
-    justify-content: flex-end;
-}
-
-.cta .cta-text {
-    font-size: 72px;
-    text-align: center;
-    letter-spacing: 5px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    margin: 0 82px 0 0;
-}
-
-.cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
-    background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-/* Main Content Styles */
-
-.main-content {
-   border-top: 2px solid black; 
-   border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
-   line-height: 18px;
-}
-
-.main-content .top-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .middle-img {
-    display: block;
-    margin: 30px auto;
-}
-
-.main-content .bottom-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.main-content .bottom-content p {
-    padding-right: 20px;
-}
-
-/* Contact Styles */
-
-.contact p {
-    margin: 15px 0;
-}
-
-/* Footer Styles */
-
+/* start footer */
 footer {
-    text-align: center;
-    margin: 40px 0 20px;
+  margin: 0 auto;
+  width: 100%;
 }
+footer #contact {
+  font-size: 1.5rem;
+  padding: 2%;
+}
+footer #contact h3 {
+  font-size: 3.5rem;
+}
+footer #contact address {
+  font-weight: bold;
+}
+footer #contact #copyright {
+  margin: 5%;
+  text-align: center;
+}
+/* end footer */

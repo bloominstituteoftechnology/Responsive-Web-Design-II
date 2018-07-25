@@ -1,0 +1,33 @@
+
+@col1: #10324f;
+@col2: #40b299;
+@col3: #b1e1dd;
+/* header and main navbar */
+
+header {
+  align-items: center;
+  background-color: @col1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  .navbar {
+    width: 75%;
+    #main-nav {
+      width: 100%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: inherit;
+        li {
+          font-size: 1.6rem;
+          .main-nav-button {
+            text-decoration: none;
+            color: @col2;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* end header and navbar area */

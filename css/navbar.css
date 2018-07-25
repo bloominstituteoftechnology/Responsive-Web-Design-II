@@ -1,0 +1,27 @@
+/* header and main navbar */
+header {
+  align-items: center;
+  background-color: #10324f;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+header .navbar {
+  width: 75%;
+}
+header .navbar #main-nav {
+  width: 100%;
+}
+header .navbar #main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+}
+header .navbar #main-nav ul li {
+  font-size: 1.6rem;
+}
+header .navbar #main-nav ul li .main-nav-button {
+  text-decoration: none;
+  color: #40b299;
+}
+/* end header and navbar area */
