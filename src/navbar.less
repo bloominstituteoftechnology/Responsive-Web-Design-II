@@ -8,25 +8,35 @@ header {
   align-items: center;
   background-color: @col1;
   display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  .navbar {
-    width: 75%;
+  justify-content: space-around;
+  padding: 2% 0 0 0;
+  div {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    margin: 0 auto;
     #main-nav {
       width: 100%;
       ul {
         display: flex;
-        justify-content: space-between;
-        width: inherit;
+        justify-content: space-around;
+        width: 100%;
         li {
-          font-size: 1.6rem;
+          font-size: 1.3rem;
           .main-nav-button {
             text-decoration: none;
             color: @col2;
           }
         }
       }
+
     }
+  }
+  .logo-area {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 2%;
   }
 }
 

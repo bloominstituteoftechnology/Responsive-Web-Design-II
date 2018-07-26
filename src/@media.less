@@ -1,0 +1,157 @@
+@media (max-width:480px) {
+  .container {
+    width: 100%;
+  }
+
+/* header starts here */
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    div {
+      width: 100%;
+    }
+    .navbar {
+      justify-content: center !important;
+      #main-nav {
+        width: 100%;
+        #nav {
+          display: flex;
+          flex-direction: column;
+          li {
+            border-bottom: 1px solid black;
+            padding: 3% 0;
+            text-align: center;
+             .main-nav-button {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+    .logo-area {
+      border-bottom: 1px solid black;
+      padding-bottom: 3%;
+      margin-bottom: 0;
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  /* header ends here */
+
+  /* title area starts here */
+
+  #index-title-area {
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    #index-image {
+      display: none;
+      height: 0;
+    }
+  }
+  /* title area ends here */
+
+  /* twoCol starts here */
+
+  .twoCol {
+    flex-direction: column;
+  }
+  /* twoCol ends here */
+
+  /* threeCol starts here */
+
+  .threeCol {
+    flex-direction: column;
+  }
+  /* threeCol ends here */
+
+  /* image banner starts here */
+
+    #mid-banner {
+      margin: 0 auto;
+      width: 90%;
+      .middle-img {
+        width: 100%;
+      }
+    }
+  /* image banner ends here */
+}
+
+
+/* End of max-width: 480px */
+
+/* start of max-width: 768px */
+
+@media (max-width: 768px) {
+  html {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  /* start header and nav area */
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 3%;
+      width: 100%;
+      .main-nav-button {
+        font-size: 2rem;
+      }
+    }
+    #logo-design {
+      flex-direction: row;
+      justify-content: center;
+      margin: 0 0 4% 0;
+      width: 100%;
+    }
+  }
+  /* end header and nav area */
+
+  /* start title area */
+
+  main {
+    #index-title-area {
+      margin: 0 auto;
+      width: 100%;
+      #index-title {
+        margin: 10% auto;
+        h1 {
+          font-size: 6rem;
+        }
+      }
+      #index-image {
+        display: none;
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+  /* end title area */
+
+  /* start image banner area */
+  #mid-banner {
+    justify-content: center;
+    width: 90%;
+    .middle-img {
+      width: 100%;
+    }
+  }
+  /* end image banner area */
+
+  .hr {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+
+/* End of max-width: 768px */

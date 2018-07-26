@@ -3,25 +3,34 @@ header {
   align-items: center;
   background-color: #10324f;
   display: flex;
-  justify-content: space-between;
-  padding: 2%;
+  justify-content: space-around;
+  padding: 2% 0 0 0;
 }
-header .navbar {
-  width: 75%;
+header div {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  margin: 0 auto;
 }
-header .navbar #main-nav {
+header div #main-nav {
   width: 100%;
 }
-header .navbar #main-nav ul {
+header div #main-nav ul {
   display: flex;
-  justify-content: space-between;
-  width: inherit;
+  justify-content: space-around;
+  width: 100%;
 }
-header .navbar #main-nav ul li {
-  font-size: 1.6rem;
+header div #main-nav ul li {
+  font-size: 1.3rem;
 }
-header .navbar #main-nav ul li .main-nav-button {
+header div #main-nav ul li .main-nav-button {
   text-decoration: none;
   color: #40b299;
+}
+header .logo-area {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 2%;
 }
 /* end header and navbar area */
