@@ -54,6 +54,7 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.5%
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -63,8 +64,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
 }
 
+/* Desktop View */
+
 .container {
-    width: 880px;
+    max-width:880px;
     margin: auto;
 }
 
@@ -72,7 +75,7 @@ h1, h2, h3, h4, h5 {
 
 header {
     width: 100%;
-    display: flex;
+    display: flex;    
 }
 
 header nav {
@@ -173,3 +176,48 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
 }
+
+
+
+/*Tablet View */
+
+@media (max-width:800px) {
+
+.container {
+    width:100%;
+}
+    
+/* header */
+    
+header {
+    flex-wrap: wrap;
+    }
+    
+header nav {
+margin-right: 65px;
+    }
+    
+header .logo {
+width: 183px;
+justify-content: center;
+align-items: center;
+order: -1;
+    }
+
+}
+    
+    /* CTA */
+
+.cta {
+    justify-content: center;
+}
+
+.cta .cta-text {
+    align-items: center;
+    margin: 0;
+}
+
+.cta .cta-pic {
+    display: none;
+}
+
