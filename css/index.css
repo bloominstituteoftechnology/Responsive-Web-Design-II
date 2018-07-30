@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 800px;
     margin: auto;
 }
 
@@ -172,4 +172,103 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  header {
+    flex-direction: column-reverse;
+    
+    justify-content: space-around;
+  }
+
+  header nav {
+      margin: 5% auto;
+      width: 95%;
+  }
+
+  header .logo {
+      margin-right: 40%; 
+  }
+  
+
+  .cta {
+      justify-content: center;
+  }
+
+  .container .cta img {
+    display: none;
+  }
+
+  .main-content {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    justify-content: space-around;
+  }
+
+  .main-content .text-content {
+     padding: 2%;
+  }
+
+  .main-content .middle-img {
+      width: 99%;
+      max-height: 80%;
+  }
+
+  .contact {
+      
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+      width: 95%;
+      
+  }
+
+  header {
+     align-content: center; 
+      
+  }
+
+  header nav {
+    flex-direction: column;
+    
+    border-top: 1px solid gray;
+  }
+
+  header .logo {  
+    margin-left: 50%;
+    align-self: center;
+  }
+
+  header nav a {
+      border-bottom: 1px solid gray;
+      padding: 3%;
+      text-align: center;
+  }
+  
+  .cta-text { 
+    padding-left: 20%;
+  }
+
+  .main-content {
+    flex-direction: column;  
+    flex-wrap: nowrap;
+  }
+
+  .main-content .top-content {
+      display: block;
+  }
+
+  .main-content .bottom-content {
+      display: block;
+  }
 }
