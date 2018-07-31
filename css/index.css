@@ -410,7 +410,8 @@ footer .copyright {
 	}
 
 	.innov-box {
-		margin: 30px 0 0 0;
+        margin: 0;
+        left: 80px
 	}
 
 	.innovation {
@@ -428,8 +429,8 @@ footer .copyright {
 
 	.text1 {
 		border-top: 1px solid black;
-		margin: 80px 0 0 18px;
-		padding: 50px 0 20px 0px;
+		margin: 50px 0 0 18px;
+		padding: 35px 0 15px 0px;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
