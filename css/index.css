@@ -177,9 +177,9 @@ footer {
     margin: 40px 0 20px;
 }
 
+/* End of Desktop View */
 
-
-/*Tablet View */
+/* ---------- Tablet View ---------- */
 
 @media (max-width:800px) {
 
@@ -194,7 +194,8 @@ header {
     }
     
 header nav {
-margin-right: 65px;
+margin: 30px 65px;
+align-self: center;
     }
     
 header .logo {
@@ -202,8 +203,8 @@ width: 183px;
 justify-content: center;
 align-items: center;
 order: -1;
-    }
-    
+    }  
+
     /* CTA */
 
 .cta {
@@ -219,3 +220,4 @@ order: -1;
     display: none;
 }
 
+}
