@@ -204,20 +204,27 @@ h1, h2, h3, h4, h5 {
 
 	 .container .header-main img {
 	 	order: -1;
-	 	border-bottom: : 2px solid black;
+	 	width: 40%;
+	 	height: 40%;
+	 	margin-left: 30%;
 	 }
 
 	 .container .header-main nav a {
 	 	text-align: center;
-	 	color: black;
-	 	border-bottom: 2px solid black;
-	 	font-size: 3rem;
+	 	color: gray;
+	 	border-bottom: 2px solid gray;
+	 	font-size: 1.5rem;
+	 	padding: 2%;
+	 }
+
+	 .container .header-main nav a:first-child {
+	 	border-top: 2px solid gray;
 	 }
 
 
 	 .container .block1 div h1 {
 	 	text-align: center;
-	 	margin-left: 35%;
+	 	margin-left: 25%;
 	 	padding: 1%;
 	 }
 
