@@ -305,15 +305,23 @@ footer {
   }
 
   .main-content .top-content .text-content {
-    padding-right: 20px;
+    padding-right: 2.2%;
   }
 
   .main-content .bottom-content .text-content {
-    padding-right: 20px;
+    padding-right: 2.2%;
   }
 
   .main-content .middle-img {
     width: 100%;
+  }
+
+  .contact {
+    padding-bottom: 6%;
+  }
+
+  footer {
+    margin-bottom: 1%;
   }
 
 }
@@ -324,7 +332,7 @@ footer {
 
   .container {
     width: 100%;
-    padding: 20px;
+    padding: 2.2%;
   }
 
   .cta img {
@@ -335,32 +343,35 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+    width: 100%;
   }
 
   header nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   header nav a {
     display: flex;
     justify-content: center;
     width: 100%;
-    border-bottom: 1px solid black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border-top: 1px solid black;
+    padding-top: 4%;
+    padding-bottom: 4%;
   }
 
   header .logo {
-    width: 60%;
+    width: 40%;
+    margin: 0% 31.8%;
   }
 
 
   .cta {
     display: flex;
     justify-content: center;
-    padding-left: 60px;
+    padding-left: 6.81%;
   }
 
   .main-content .top-content {
@@ -374,13 +385,12 @@ footer {
   }
 
   .main-content .top-content .text-content {
-    padding-bottom: 20px;
+    padding-bottom: 6%;
   }
 
   .main-content .bottom-content .text-content {
-    padding-bottom: 20px;
+    padding-bottom: 6%;
   }
-
 
   .main-content .bottom-content {
     display: flex;
@@ -390,4 +400,13 @@ footer {
   .main-content .middle-img {
     width: 100%;
   }
+
+  .contact {
+    padding-bottom: 6%;
+  }
+
+  footer {
+    margin-bottom: 1%;
+  }
+  
 }
