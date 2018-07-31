@@ -280,14 +280,21 @@ footer {
     margin: 28px auto;
   }
 
-  .cta {
-    margin-top: 10%;
-    justify-content: center;
+  @keyframes wave {
+    0% { justify-content: flex-start; }
+    50% { justify-content: center; }
+    100% { justify-content: flex-end; }
   }
 
-  .cta .cta-text {
-    margin: 0 auto;
+  .cta {
+    margin-top: 10%;
+    justify-content: flex-start;
+    animation: wave 1s linear infinite alternate;
   }
+
+  /* .cta .cta-text {
+    margin: 0 auto;
+  } */
 
   .cta img {
     display: none;
