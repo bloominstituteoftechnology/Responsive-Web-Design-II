@@ -131,21 +131,22 @@ header .logo {
 .cta {
   display: flex;
   margin-top: 5rem;
-  flex-flow: row;
-  justify-content: space-between;
-	align-content: flex-end;
+  justify-content: flex-end;
+	align-content: center;
+	align-items: center;
+	width: 100%;
 
 }
 
 .cta .cta-text {
   display: flex;
-  flex-flow: column;
+	flex-direction: column;
   font-size: 7.7rem;
   text-align: center;
   align-items: center;
-	padding-top: 4rem;
-	padding-left: 10rem;
-
+	padding-top: 3rem;
+  align-self: baseline;
+	width: 50%;
 }
 
 .cta .cta-text button {
@@ -153,12 +154,11 @@ header .logo {
   justify-content: center;
   background: white;
   margin: 1rem;
+	padding: 0.7rem;
   font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
-  width: 60%;
-	padding: 1rem 0;
-	margin-left: 3rem;
+  width: 40%;
 }
 
 .cta .cta-text button:hover {
@@ -168,7 +168,6 @@ header .logo {
 
 .cta img {
   display: flex;
-  flex-flow: row-reverse;
 
 }
 
