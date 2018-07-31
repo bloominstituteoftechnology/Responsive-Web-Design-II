@@ -1,1 +1,318 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* index */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    max-width: 880px;
+    font-size: 1.6rem;
+}
+
+.navigation {
+    width: 75%;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: lightgray;
+    padding-right: 8.5%;
+}
+
+.head-nav {
+    margin: auto;
+    padding-bottom: 75px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro div {
+	text-align: center;
+    padding: 5.68%;
+}
+
+.intro h1 {
+    font-size: 7.2rem;
+}
+
+.intro h6 {
+    border: 1px solid black;
+    max-width: 175px;
+    padding: 8px 0;
+    margin: auto;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.blurb-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blurb-one div {
+	width: 47%;
+}
+
+.middle-img {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.blurb-two {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+	
+}
+
+.blurb-two div {
+	width: 30%;
+}
+
+/* .contact {
+	padding: 10px;
+	margin: auto;
+} */
+
+footer h6 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* services */
+/* .services {
+	width: 850px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.services-header-img{}
+
+.prod section {
+	width: 400px;
+	padding: 25px;
+	margin: 10px; 
+}
+
+.prod {
+	margin: auto;
+	width: 850px;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.facts {
+	width: 850px;
+	margin: auto;
+	padding: 10px;
+	display: flex;
+}
+
+.facts div ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+.services-info-img {}
+
+section button {
+	border-radius: 4px;
+	background-color: white;
+}
+
+div section {
+	background-color: lightgray;
+	border: 1px solid black;
+} */
+
+/* tablet */
+@media (max-width: 800px) {
+    .head-nav {
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .navigation {
+        width: 100%;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .head-nav img {
+        padding: 50px 0;
+    }
+
+    .intro {
+        padding-top: 35px;
+        padding-bottom: 50px;
+    }
+
+    .intro div {
+        padding: 0;
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .blurb-one {
+        padding: 1%;
+    }
+
+    .middle-img {
+        padding: 20px 0;
+    }
+
+    .blurb-two {
+        padding: 1%;
+        padding-bottom: 50px;
+    }
+
+    .contact {
+        padding: 1%;
+    }
+}
+
+/* mobile */
+@media (max-width: 500px) {
+    .head-nav {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .head-nav img {
+        padding: 25px 0;
+    }
+
+    .navigation {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        font-size: 1.8rem;
+        border: 1px solid lightgrey;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        padding-bottom: 40px;
+    }
+
+    .intro div {
+        padding: 0;
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .blurb-one {
+        padding-top: 40px;
+        flex-direction: column
+    }
+
+    .blurb-one div {
+        width: 100%;
+        padding-bottom: 45px;
+    }
+
+    .blurb-two {
+        height: 450px;
+        padding-bottom: 0px;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .blurb-two div {
+        width: 100%;
+    }
+
+}
