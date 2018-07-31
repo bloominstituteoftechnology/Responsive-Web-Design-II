@@ -139,6 +139,7 @@ html {
 }
 
 .call-to-action .button {
+
     /* make look like button */
     font-size: 1.8rem;
     color: black;
@@ -210,6 +211,7 @@ html {
 }
 
 .copyright {
+    font-size: 1.6rem;
 	text-align: center;
 	margin-bottom:1rem;
 }
@@ -219,6 +221,96 @@ html {
 	margin: 1rem;
 }
 
+
+/*services page CSS */
+
+
+.services-header-img {
+	height: 18rem;
+	width: 99%;
+ 
+}
+
+.services-description {
+	display: block;
+	width: 85%;
+	margin: 4rem 0;
+}
+
+.services-description h2 {
+    font-size: 2.5rem;
+}
+
+.services-description p {
+    font-size: 1.6rem;
+}
+
+.services-content {
+    font-size: 1.6rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+}
+
+.services-block {
+	display: flex;
+	flex-direction: column;
+	height:25rem;
+	width:35rem;
+	background: #D3D3D3;
+	border: 2px solid black;
+    padding: 1.5rem;
+    margin: 2rem 0;
+
+}
+
+.block-button {
+	text-decoration: none;
+	padding: 5px;
+	text-align: center;
+	width: 15rem;
+	height: 3rem;
+	text-align: center;
+    border: 1px solid black;
+	color: black;
+	background: white;
+	margin: 2rem 0px;
+}
+
+.extra-facts {
+    font-size: 1.6rem;
+	display: flex;
+	flex-flow: row wrap;
+    margin-top: 4rem;
+    justify-content: space-between;
+
+}
+
+.extra-facts h2 {
+	font-size: 24px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.extra-facts-text {
+    width: 40%;
+
+}
+
+.extra-facts-text ul {
+	margin-top: 2rem;
+	margin-left: 3rem;
+    list-style-type: circle;
+
+}
+
+.services-info-img {
+    height: 25rem;
+    width: 35rem;
+
+}
 
 /* tablet screen */
 @media only screen and (max-width: 800px) {
@@ -317,4 +409,19 @@ html {
         padding: 1rem;
     }
 
+
+    /*services page phone view */
+
+    .services-info-img {
+        display:none;
+    }
+
+    .extra-facts-text {
+        margin: 0 5%;
+        width: 100%
+    }
+
+    .services-description {
+        margin: 4rem 5%;
+    }
 }
