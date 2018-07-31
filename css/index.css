@@ -246,7 +246,21 @@ footer {
 		justify-content: center;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
+		animation-duration: 0.7s;
+		animation-name: slidein;
 	}
+
+	@keyframes slidein {
+		from {
+			margin-left: 100%;
+			width: 70%;
+		}
+		to {
+			margin-right: 0%;
+			width: 30%;
+		}
+	}
+
 	header nav {
 		align-items: flex-end;
 		width: 100%;
@@ -329,7 +343,7 @@ footer {
 	.main-content {
 		display: flex;
 		width: 100%;
-		font-size: .7em;
+	  font-size: .7em;
 		flex-direction: column;
 	}
 	.main-content p {
@@ -347,7 +361,7 @@ footer {
 		padding-top: 3em;
 	}
 	.middle-img {
-		width: 95%;
+		width: 100%;
 	}
 	.bottom-content {
 		width: 100%;
