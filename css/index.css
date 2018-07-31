@@ -75,7 +75,7 @@ html {
 	font-size: 1.5rem;
 }
 
-header {
+.container header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +97,6 @@ header {
 }
 
 .container .main-body .call-to-action {
-    background: brown;
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -108,7 +107,6 @@ header {
 }
 
 .container .main-body .call-to-action .call-to-action-div {
-    background: green;
     width: 50%;
 }
 
@@ -124,7 +122,7 @@ header {
     float: right;
 }
 
-.get-started {
+.container .main-body .call-to-action .innovation-on-demand .get-started {
     display: inline-block;
     border: 2px solid black;
     padding: 1.5% 9.5%;
@@ -133,14 +131,14 @@ header {
     font-size: 1.75rem;
 }
 
-.features-and-about-section {
+.container .main-body .features-and-about-section {
     display: flex;
     margin-top: 4%;
     font-size: 1.6rem;
     margin-bottom: 4.25%;
 }
 
-.middle-img, .services-header-img {
+.container .main-body .middle-img, .services-header-img {
 	display: block;
 	margin: auto;
 	width: 100%;
@@ -150,19 +148,25 @@ header {
 .services-product-vision-section, .services-section {
     display: flex;
     font-size: 1.6rem;
-	padding-bottom: 10%;
+    margin-top: -0.5%;
+    padding-bottom: 7.2%;
 	border-bottom: 2px solid black;
 }
 
 .contact-section {
-	margin-top: 40px;
-	margin-bottom: 40px;
+    margin-top: 4%;
+    margin-left: 0.2%;
+}
+
+.contact-section address {
+    font-size: 1.6rem;
 }
 
 .copyright {
 	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 120px;
+	margin-top: 4%;
+    margin-top: 4.75%;
+    margin-left: -1%;
 }
 
 
