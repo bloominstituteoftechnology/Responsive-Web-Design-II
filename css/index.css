@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5 {
 header {
   display: flex;
   flex-wrap: column;
-  margin-bottom: 7rem;
+  margin-bottom: 70px;
 }
 header nav {
   display: flex;
@@ -151,20 +151,30 @@ header img.logo {
 
 .main-content {
   border-top: 2px solid black;
-  margin-top: 7.5rem;
+  margin-top: 75px;
   padding-top: 39px;
 }
 
 .main-content .top-content {
   display: flex;
   /* padding: 0 10px; */
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-.main-content .top-content .text-content {
-  /* NEEDED? */
-  /* width: 51%; */
-  margin-right: 34px;
+.top-content .text-content {
+  width: 50%;
+}
+.top-content .text-content:first-child {
+  margin-right: 2rem;
+}
+.bottom-content .text-content:first-child {
+  margin-right: 2rem;
+}
+.bottom-content .text-content:last-child {
+  margin-left: 2rem;
+}
+.bottom-content .text-content {
+  width: 33.33%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -173,11 +183,12 @@ header img.logo {
 
 .main-content .middle-img {
     margin-top: 45px;
+    width: 100%;
   }
   
 .main-content .bottom-content {
   margin-top: 37px;
-  padding: 0 1%;
+  /* padding: 0 1%; */
   display: flex;
   justify-content: space-between
 }
@@ -204,7 +215,7 @@ header img.logo {
 }
 
 footer {
-  margin: 25px 0 20px 0;
+  margin: 25px 0 2rem 0;
   text-align: center;
 }
 
@@ -232,11 +243,11 @@ section.service-descriptions {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 420px;
-  height: 250px;
+  width: 42rem;
+  height: 25rem;
   border: 1px solid black;
   background: #F4F3F4;
-  padding: 20px;
+  padding: 2rem;
   margin-bottom: 40px;
 }
 
@@ -255,8 +266,8 @@ article.services h2 {
   align-items: center;
   border: 1px solid black;
   background-color: white;
-  height: 34px;
-  width: 140px;
+  height: 3.4rem;
+  width: 14rem;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -271,12 +282,12 @@ article.services h2 {
 }
 
 .service-facts {
-  width: 400px;
+  width: 40rem;
 }
 
 .services .bottom-content ul {
   list-style: square inside;
-  margin-top: 25px;
+  margin-top: 2.5rem;
 }
 
 .services .bottom-content li {
@@ -312,7 +323,8 @@ article.services h2 {
   }
 
   header {
-    flex-direction: column-reverse;        
+    flex-direction: column-reverse;      
+    margin-bottom: 0;
   }
   /* spaces header navigation bar correctly */
   header nav {
@@ -342,7 +354,7 @@ article.services h2 {
   }
 
   .service-box {
-    width: 340px;
+    width: 34rem;
     /* align-self: center; */
   }
   .services-header-img {
@@ -408,6 +420,16 @@ article.services h2 {
     display:none;
   }
   
+  .top-content .text-content:first-child {
+    margin-right: 0;
+  }
+  .bottom-content .text-content:first-child {
+    margin-right: 0;
+  }
+  .bottom-content .text-content:last-child {
+    margin-left: 0;
+  }
+
   .main-content .top-content {
     padding: 0;
   }
