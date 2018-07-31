@@ -241,19 +241,10 @@ ul {
     }
 
     .container header .logo-div {
-        background: yellow;
         order: -1;
         width: 100%;
         justify-content: center;
     }
-    /* .container .logo-div {
-        background: yellow;
-        order: -1;
-        display: block;
-        margin: 0 38%;
-        align-self: center;
-        padding-bottom: 5%
-    } */
 
     .container header .main-nav {
         width: 100%;
@@ -268,33 +259,56 @@ ul {
         font-size: 1.6rem;
     }
 
-    .call-to-action .top-img-div {
-        background: red;
+    .container .main-body .call-to-action {
+        padding-bottom: 9.5%;
+    }
+    
+    .container .main-body .call-to-action .top-img-div {
         display: none;
     }
 
-    .call-to-action .innovation-on-demand {
+    .container .main-body .call-to-action .innovation-on-demand {
         margin-left: -12%;
         margin-top: 2%;    
     }
 
-    .call-to-action .innovation-on-demand .get-started {
-        display: inline-block;
-        border: 2px solid black;
+    .container .main-body .call-to-action .innovation-on-demand .get-started {
         padding: 1.5% 10.5%;
         margin-top: 3.75%;
         margin-left: -1.75%;
-        font-size: 1.75rem;
+    }
+
+    .container .main-body .features-and-about-section {
+        margin-left: 2%;
+        margin-top: 6%;
+    }
+
+    .container .main-body .features-and-about-section div {
+        width: 50%;
+    }
+
+    .container .main-body .features-and-about-section div p {
+        width: 100%;
+        font-size: 1.67rem;
+    }
+
+    .container .main-body .services-product-vision-section {
+        margin-left: 1.75%;
+        margin-top: 5%;
+    }
+
+    .container .main-body .services-product-vision-section div p {
+        font-size: 1.67rem;
     }
 }
 
 @media ( max-width: 500px ) {
     body {
         width: 100%;
-        font-size: 19px;
+        font-size: 1.6rem;
     }
     .main-nav {
-        margin-top: 20px;
+        margin-top: 4%;
         margin: 0;
     }
     .main-nav a {
@@ -302,7 +316,7 @@ ul {
         border-top: 1px solid black;
         padding: 5%;
         text-align: center;
-        font-size: 24px;
+        font-size: 1.6rem;
     }
     .main-nav .contact-link {
         border-bottom: 1px solid black;
