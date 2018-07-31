@@ -149,7 +149,8 @@ h5 {
 
 .container {
   max-width: 880px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 html {
@@ -199,4 +200,50 @@ header {
     align-self: flex-end;
     margin: 28px 0 0 91px;
   }
+
+  /* cta */
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+  }
+  
+  .cta .cta-text {
+    font-size: 4.5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
+  }
+  
+  .cta .cta-text h1 {
+    width: 275px;
+    margin-right: 12px;
+    font-size: 7rem;
+  }
+  
+  .cta .cta-text button {
+    border: 1px solid #000;
+    font-size: 1.6rem;
+    background: #fff;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .cta img {
+    width: 45%;
+    height: 45%;
+  }
+  
+  .cta .cta-text button:hover {
+    background: #000;
+    color: #fff;
+  }
+  
   
