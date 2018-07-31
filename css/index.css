@@ -182,7 +182,7 @@ footer {
     margin: 40px 0 20px;
 }
 
-/* Tablet */
+/* index page Tablet css below*/
 @media (max-width: 800px) {
 
     .container {
@@ -234,7 +234,7 @@ footer {
     }
 }
 
-/* Phone */
+/* index page Phone css below*/
 @media (max-width: 500px) {
 
     header {
@@ -398,4 +398,18 @@ li  {
 
 .services footer    {
     padding-top: 10px;
+}
+
+/* Services page tablet CSS below */
+
+@media (max-width: 800px)   {
+    .services-intro {
+        text-align: center;
+    }
+}
+
+/* Services page phone CSS below */
+
+@media (max-width: 500px)   {
+
 }
