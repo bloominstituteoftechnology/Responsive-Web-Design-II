@@ -180,6 +180,7 @@ header {
   
   header nav {
     margin-top: 40px;
+    margin-right: 6%;
     width: 68.86%;
     justify-content: space-between;
     display: flex;
@@ -246,4 +247,35 @@ header {
     color: #fff;
   }
   
+  /* main content */
+
+.main-content {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    font-size: 1.6rem;
+    line-height: 18px;
+  }
+  
+  .main-content .top-2-col {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4%;
+  }
+  
+  .main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+  }
+  
+  .main-content .bottom-3-col {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4%;
+  }
+  
+  .main-content .bottom-3-col p {
+    padding-right: 20px;
+  }
   
