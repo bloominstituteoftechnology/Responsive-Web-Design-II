@@ -146,7 +146,7 @@ h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -159,7 +159,7 @@ header {
 
 header nav {
     margin-top: 40px;
-    width: 610px;
+    width: 69.32%;
     justify-content: space-between;
     display: flex;
 }
@@ -175,7 +175,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -194,14 +194,14 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 67px 0 0;
+    margin: 0 7.61% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+    width: 19.32%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -237,7 +237,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;
 }
 
 /* Contact Styles */
@@ -278,15 +278,15 @@ footer {
 }
 
 .services-content .card {
-    padding: 20px;
+    padding: 20px 2.27%;
     border: 1px solid black;
-    width: 420px;
+    width: 47.73%;
     background: whitesmoke;
     margin: 20px 0;
 }
 
 .services-content .card button {
-    padding: 10px 40px;
+    padding: 10px 4.55%;
     margin-top: 20px;
     cursor: pointer;
     background: white;
@@ -305,7 +305,7 @@ footer {
 
 .services-content .services-info ul li {
     list-style: square;
-    padding: 5px;
+    padding: 5px 0.57%;
 }
 
 .services-content .services-info {
@@ -317,8 +317,8 @@ footer {
 }
 
 .services-content .services-info .facts {
-    width: 400px;
-    margin: 0 60px 20px 0;
+    width: 45.45%;
+    margin: 0 6.82% 20px 0;
 }
 
 .services-content .services-info .facts p {
@@ -326,7 +326,7 @@ footer {
 }
 
 .services-content .services-info .services-info-img {
-    width: 420px;
+    width: 47.73%;
     height: 300px;
 }
 
@@ -415,4 +415,9 @@ footer {
     {
         display: block;
     }
+}
+
+html
+{
+    font-size: 62.5%;
 }
