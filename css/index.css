@@ -92,6 +92,11 @@ html {
     justify-content: space-between;
 }
 
+.container header .main-nav a {
+    color: grey;
+    text-decoration: none;
+}
+
 .container header .logo-div {
     display: flex;
 }
@@ -145,7 +150,7 @@ html {
 	margin-bottom: 4%;
 }
 
-.services-product-vision-section, .services-section {
+.container .main-body .services-product-vision-section, .services-section {
     display: flex;
     font-size: 1.6rem;
     margin-top: -0.5%;
@@ -153,16 +158,16 @@ html {
 	border-bottom: 2px solid black;
 }
 
-.contact-section {
+.container .main-body .contact-section {
     margin-top: 4%;
     margin-left: 0.2%;
 }
 
-.contact-section address {
+.container .main-body .contact-section address {
     font-size: 1.6rem;
 }
 
-.copyright {
+.container .main-body .contact-section .copyright {
 	text-align: center;
 	margin-top: 4%;
     margin-top: 4.75%;
@@ -228,17 +233,35 @@ ul {
 	margin-bottom: 40px;
 }
 
+/* media queries for index.html */
 @media ( max-width: 800px ) {
-    body {
+    .container {
         width: 95%;
     }
-    .main-nav .logo {
+
+    .container header {
+        flex-wrap: wrap;
+    }
+
+    .container header .logo-div {
+        background: yellow;
+        order: -1;
+        width: 100%;
+        justify-content: center;
+    }
+    /* .container .logo-div {
+        background: yellow;
         order: -1;
         display: block;
         margin: 0 38%;
         align-self: center;
         padding-bottom: 5%
+    } */
+
+    .container header .main-nav {
+        width: 100%;
     }
+
     .call-to-action .call-to-action-div .top-img {
         display: none;
     }
