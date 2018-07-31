@@ -336,21 +336,21 @@ ul li {
 
     .navigation a {
         border-bottom: 1px solid gray;
-        padding: 20px 28.41%;
+        padding: 20px 0 20px 43%;
         margin: 0 22.73%;
         width: 100%;
+        font-size: 1.2em;
     }
 
     .navigation .logo{
         order: -1;
         border-bottom: 1px solid gray;
-        /* margin: 0 22.73%;
-        padding: 0px 22.73% 20px 22.73%; */
+        padding: 0px 31.5% 20px 31.5%;
     }
 
         .main-heading {
         justify-content: center;
-        /* margin: 20px 7.95% 0 13.64%; */
+        margin: 20px 7.95% 0 13.64%;
         width: 100%;
     }
 
@@ -369,11 +369,12 @@ ul li {
 
     .features-about {
         width: 100%;
-        height: 120px;
+        height: 150px;
     }
 
     .middle-img {
         width: 100%;
+        padding: 0 3%;
     }
 
      .second-section {
@@ -382,13 +383,15 @@ ul li {
         padding-top: 30px;
         padding-bottom: 10px;
         width: 100%;
+        height: 500px;
     }
 
     .spv {
 	width: 100%;
 	height: 100px;
 	margin-bottom: 20px;
-    /* padding-right: 2.27%; */
+    padding-right: 2.27%;
+    padding-bottom: 50px;
     }
 
     /* Services Mobile Media Query Styling at 500px */
