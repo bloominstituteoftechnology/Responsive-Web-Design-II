@@ -154,15 +154,15 @@ hr {
 }
 
 .services-buttons {
-	margin-left: 16px;
+	margin-left: 1.8181%;
   align-self: flex-start;
   margin-bottom: 14px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 2.2727%;
+  padding-right: 2.2727%;
   padding-top: 5px;
   padding-bottom: 5px;
   border: solid black 1px;
-  border-radius: 4spx;
+  border-radius: 4px;
 }
 
 .extra-padding {
@@ -178,7 +178,7 @@ hr {
 
 .services-ul {
   list-style-type: square;
-  margin-left: 19px;
+  margin-left: 2.15909%;
 }
 
 .move-pick {
@@ -195,20 +195,23 @@ hr {
 }
 
 .cloud-award {
-	width: 18%;
-  height: 28%;
+	margin-top: 6px;
+	width: 23%;
+  height: 34%;
 }
 
 .service-award {
-	  width: 14%;
-    height: 28%;
+	margin-top: 10px;
+  width: 14%;
+  height: 28%;
+  margin-bottom: 10px;
 }
 
 .product-spacing {
 	border: solid black 1px;
   border-radius: 5%;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 1.13636%;
+  margin-right: 1.13636%;
 }
 
 .main-pic-products {
@@ -222,14 +225,14 @@ hr {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	font-size: 70px;
+	font-size: 6.8rem;
   text-align: center;
 }
 
 .product-button {
-  margin: 0px 50px 0px 50px;
+  margin: 0% 5.68181% 0% 5.68181%;
   height: 35px;
-  font-size: 16px
+  font-size: 1.6rem;
 }
 
 .tablet {
@@ -290,16 +293,18 @@ address {
     margin-top: 20px;
 	}
 	.web-award {
-		height: 26%;
-    width: 32%;
+		display:none;
 	}
 	.cloud-award{
-		width: 26%;
+		display: none;
 	}
 	.service-award {
-		width: 21%;
+		display: none;
 	}
 	.hide {
+		display: none;
+	}
+	.main-pic-products {
 		display: none;
 	}
 }
@@ -326,7 +331,7 @@ address {
 	nav a {
 		border: solid grey 1px;
 		margin: 0%;
-		font-size: 3.8rem;
+		font-size: 2.5rem;
 		display: flex;
 		justify-content: center;
 	}
@@ -355,7 +360,7 @@ address {
 
 	.tablet {
 		display: none;
-		padding: 0px;
+		padding: 0%;
 		border: solid grey 1px;
 		margin-top: 0px;
 	}
@@ -368,27 +373,34 @@ address {
 	.header-container {
 		width: 100%;
 	}
-	.main-pic-products {
-		display: none;
-	}
-	
+
 	.hide {
 		display: block;
 	}
 	.col-service {
-		margin-right: 0px;
+		margin-right: 0%;
 		margin-bottom: 10px;
 	}
 	.product-margin {
-		margin: 0px;
+		margin: 0%;
 	}
 	.services-info-img {
 		padding-top: 10px;
 	}
 	.product-spacing {
-		margin-right: 0px;
-		margin-left: 0px;
+		margin-right: 0%;
+		margin-left: 0%;
 		margin-bottom: 10px;
+	}
+	.web-award {
+		display: block;
+	}
+	.cloud-award{
+		margin-top: 10px;
+		display: block;
+	}
+	.service-award {
+		display: block;
 	}
 }
 
