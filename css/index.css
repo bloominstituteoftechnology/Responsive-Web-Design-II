@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 
+/* ****************** */
+/* *****HEADER******* */
+/* ****************** */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -101,40 +105,31 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 }
 
-/* ************************************ */
-/* up is done */
-/* ************************************ */
+/* ****************** */
+/* *****MAIN SECTION******* */
+/* ****************** */
+
 
 .main {
   display: flex;
 	padding: 5% 0 8% 12%;
 	border-bottom: 2px black solid;
 	justify-content: space-around;
-
 }
 
-.main div {
+.main div  {
 	vertical-align:  middle;
 }
 
-.main .title {
+.main .title  {
   padding-top: 6%;
   margin-left: 3%;
 	font-size: 7.2rem;
 	/* width: 60%; */
 	text-align: center;
 	display: inline-block;
-
 }
 
-.main-img{
-	margin-left: 7%;
-}
-
-.main-img__img{
-	height: auto;
-	width: 100%;
-}
 .title__button {
   margin: 25px auto;
   display: block;
@@ -149,14 +144,27 @@ h1, h2, h3, h4, h5 {
 
 
 
+.main-img  {
+	margin-left: 7%;
+}
+
+.main-img__img{
+	height: auto;
+	width: 100%;
+}
 
 
+
+/* ****************** */
+/* *****ARTICLES******* */
+/* ****************** */
 
 
 
 .articles{ /*the section*/
-
-	padding: 35px 0;
+  font-size:   1.6rem;
+  line-height: 1.84rem;
+	padding:     35px 0;
 	border-bottom: 2px black solid;
 }
 
@@ -170,10 +178,6 @@ h1, h2, h3, h4, h5 {
   padding: 0 1% 0 0;
 }
 
-.articles {
-	font-size:   1.6rem;
-  line-height: 1.84rem;
-}
 
 .articles__img {
 	width: 100%;
@@ -181,6 +185,10 @@ h1, h2, h3, h4, h5 {
 }
 
 
+
+/* ****************** */
+/* *****FOOTER******* */
+/* ****************** */
 
 
 
@@ -198,6 +206,11 @@ h1, h2, h3, h4, h5 {
 	display: block;
 }
 
+
+/* ****************** */
+/* *****MEDIA QUERIES******* */
+/* ****************** */
+
 @media (max-width: 800px){
 
   .container {
@@ -212,7 +225,6 @@ h1, h2, h3, h4, h5 {
 
   .header__nav {
     width: 97.5%;
-
   }
 
   .header-nav a{
@@ -246,6 +258,7 @@ h1, h2, h3, h4, h5 {
   }
 
 
+
   .articles .top-row,
   .articles .bottom-row{
     justify-content: space-around;
@@ -266,10 +279,17 @@ h1, h2, h3, h4, h5 {
     padding: 28.5px 0;
   }
 
+
+
+
   .footer address {
     padding-left: 1.5%;
     line-height: 1.6rem;
   }
+
+
+
+
 
 
 
@@ -291,7 +311,6 @@ h1, h2, h3, h4, h5 {
   .header__nav {
     flex-direction: column;
     width: 100%;
-
   }
 
   .header__nav a{
@@ -300,7 +319,6 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
     font-weight: bold;
     border-bottom: 1px solid gray;
-
   }
 
   .header__nav a:first-child {
@@ -311,6 +329,8 @@ h1, h2, h3, h4, h5 {
     margin-right: 0;
   }
 
+
+
   .main {
     width: 95.5%;
     margin: auto;
@@ -320,6 +340,8 @@ h1, h2, h3, h4, h5 {
   	/* width: 100%; */
   	padding: 23px 0 63px;
   }
+
+
 
 .articles {
   margin: auto;
@@ -337,26 +359,28 @@ h1, h2, h3, h4, h5 {
     padding: 20px 0 26px;
   }
 
-    /* .articles .top-row, */
-
   .articles .top-row__article {
     padding: 0 0 45px 0;
   }
 
-    .articles .bottom-row__article{
+  .articles .bottom-row__article{
     padding: 1px 0 9px 0;
     /* background-color: red; */
-    }
+  }
 
-    .bottom-row__article.product{
-      padding: 53px 0 63px;
-    }
+  .bottom-row__article.product{
+    padding: 53px 0 63px;
+  }
 
 
 
   .articles__img{
     padding: 7px 0;
   }
+
+
+
+
 
 footer  {
   width: 98.5%;
