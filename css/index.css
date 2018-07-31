@@ -81,7 +81,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 69.32%;
+    width: 100%;
     justify-content: space-between;
     display: flex;
     }
@@ -123,7 +123,7 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px; /* possible change? */
+    width: 170px;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -189,10 +189,11 @@ footer {
     
 header {
     flex-wrap: wrap;
+    flex-direction: column;
     }
     
 header nav {
-padding: 0 30px;
+padding: 0 3.41%;
     }
     
 header .logo {
