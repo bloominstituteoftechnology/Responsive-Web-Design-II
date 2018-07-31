@@ -64,18 +64,23 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */	
+/* Desktop Styles */
 
+html {
+    font-size: 62.5%;
+}
 
  .container {
-	 max-width: 1024px;
+     max-width: 880px;
+     width: 100%;
      margin: 0 auto;
-     padding: 20px;
+     font-size: 1.6rem;
  }
 
 .navigation {
-	margin: 30px 20px;
-	display: flex;
+	/* margin: 30px 2.27%; */
+    display: flex;
+    width: 100%;
 	justify-content: space-around;
 	align-items: baseline;
 	width: 100%;
@@ -87,7 +92,8 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-	display: flex;
+    display: flex;
+    width: 100%;
 	padding-bottom: 100px;
 	justify-content: space-between;
     align-items: center;
@@ -95,19 +101,19 @@ header {
 }
 
 .main-heading {
-	font-size: 70px;
+    font-size: 7rem;
 	color: black;
 	text-align: center;
-	margin-left: 150px;
+	/* margin-left: 17.05%; */
 }
 
 .header-image {
-	padding-right: 60px;
+	/* padding-right: 6.81%; */
 	padding-top: 30px;
 }
 
 .get-started { 
-	font-size: 20px;
+	font-size: 2rem;
 	width: 200px;
     height: 40px;
 	border: 1px solid black;
@@ -117,49 +123,54 @@ header {
 
 .first-section {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 	border-top: 2px solid black;
-	padding-top: 30px;
-	margin-left: 60px;
+	padding-top: 3.41%;
+	/* margin-left: 6.81%; */
 
 }
 .features-about {
-	width: 500px;
+	width: 56.75%;
     height: 140px;
-    padding-right: 20px;
+    /* padding-right: 2.27%; */
 }
 
 .middle-img {
 	display: flex;
     margin: 0 auto;
-    width: 975px;
-    padding-left: 55px;
+    width: 100%;
+    /* padding-left: 6.25%; */
 }
 
 .second-section {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 	border-bottom: 2px solid black;
 	padding-top: 40px;
-	margin-left: 60px;
+	/* margin-left: 6.82%; */
 }
 
 .spv {
-	width: 300px;
+	width: 34.09%;
 	height: 150px;
 	margin-bottom: 30px;
-    padding-right: 20px;
+    /* padding-right: 2.27%; */
 }
 
 .contact {
-	margin: 20px 60px 60px; 
+	/* margin: 20px 6.82% 60px 6.82%;  */
 }
 
 footer {
-	display: flex;
+    display: flex;
+    width: 100%;
 	justify-content: center;
 	margin-bottom: 40px;
 }
+
+/* Services Styles */
 
 .services-header-img {
 	width: 100%;
@@ -228,10 +239,12 @@ ul li {
 	align-self: flex-end;
 }
 
+/* Media Queries for Tablet at 800px*/
+
 @media (max-width: 800px) {
 
     .container {
-        width: 800px;
+        width: 100%;
     }
 
     .header-image{
@@ -240,30 +253,33 @@ ul li {
     .navigation {
         flex-wrap: wrap;
         align-items: center;
+        width: 100%;
     }
 
     .navigation .logo{
         order: -1;
-        margin: 10px 300px 40px 300px;
+        /* margin: 10px 34.09% 40px 34.09%; */
     }
 
     .header {
         flex-wrap: wrap;
+        width:100%;
     }
 
     .main-heading {
         justify-content: center;
-        margin: 40px 250px 0px 250px;
+        width: 100%;
+        /* margin: 40px 28.41% 0px 28.41%; */
     }
 
     .first-section {
         display: flex;
+        width: 100%;
         padding-top: 30px;
     }
 
     .middle-img {
-        width: 740px;
-        padding-right: 40px;
+        width: 100%;
     }
 
     .second-section {
@@ -271,7 +287,7 @@ ul li {
         padding-bottom: 30px;
     }
 
-/* Services media queries styles */
+/* Services tablet media queries styles at 800px*/
     .services-top {
         padding: 30px 0px 40px 20px;
         border-bottom: 1px solid black;
@@ -289,55 +305,60 @@ ul li {
 
 }
 
+/* Mobile Media Query Styles at 500px*/
+
 @media (max-width: 500px) {
 
      .container {
-	 width: 500px;
+	    width: 100%;
  }
 
     .navigation {
         flex-wrap: wrap;
         flex-direction: column;
+        width: 100%;
     }
 
     .navigation a {
         border-bottom: 1px solid gray;
-        padding: 20px 250px;
-        margin: 0 200px;
-        font-size: 20px;
+        /* padding: 20px 28.41%;
+        margin: 0 22.73%; */
+        width: 100%;
     }
 
     .navigation .logo{
         order: -1;
         border-bottom: 1px solid gray;
-        margin: 0 200px;
-        padding: 0px 200px 20px 200px;
+        /* margin: 0 22.73%;
+        padding: 0px 22.73% 20px 22.73%; */
     }
 
         .main-heading {
         justify-content: center;
-        margin: 20px 70px 0 120px;
+        /* margin: 20px 7.95% 0 13.64%; */
+        width: 100%;
     }
 
        .header {
         flex-wrap: wrap;
         flex-direction: column;
+        width: 100%;
     }
 
      .first-section {
         display: flex;
         flex-direction: column;
         padding-top: 30px;
+        width: 100%;
     }
 
     .features-about {
-        width: 450px;
+        width: 100%;
         height: 120px;
     }
 
     .middle-img {
-        width: 520px;
-        padding-left: 60px;
+        width: 100%;
     }
 
      .second-section {
@@ -345,16 +366,17 @@ ul li {
         flex-direction: column;
         padding-top: 30px;
         padding-bottom: 10px;
+        width: 100%;
     }
 
     .spv {
-	width: 450px;
+	width: 100%;
 	height: 100px;
 	margin-bottom: 20px;
-    padding-right: 20px;
+    /* padding-right: 2.27%; */
     }
 
-    /* Services media query styling at 500px */
+    /* Services Mobile Media Query Styling at 500px */
     .services-top {
     padding: 30px 0px 40px 20px;
     border-bottom: 1px solid black;
