@@ -308,17 +308,24 @@ ul {
         font-size: 1.6rem;
     }
 
+    .container header .logo-div {
+        margin-left: 7%;
+        margin-bottom: -1.5%;
+    }
+
     .container header .main-nav {
         margin-top: 4%;
         margin: 0;
     }
 
     .container header .main-nav a {
-        flex: 0 0 100%;
+        width: 100%;
         border-top: 1px solid black;
         padding: 5%;
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
+        margin: auto;
+        padding-left: 12%;
     }
 
     .container header .main-nav .contact-link {
@@ -346,7 +353,7 @@ ul {
     .container .main-body .services-product-vision-section {
         flex-wrap: wrap;
     }
-    
+
     .container .main-body .services-product-vision-section div {
         margin-top: 5%;
         flex: 0 0 100%;
