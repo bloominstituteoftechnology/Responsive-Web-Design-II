@@ -323,4 +323,23 @@ footer {
   header nav {
     width: 90%;
   }
+
+  /* cta tablet */
+
+  .cta {
+    /* change to column */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta .cta-text {
+    /* center text and button */
+    margin: auto;
+
+  }
+
+  .cta img {
+    /* hide image */
+    display: none;
+  }
 }
