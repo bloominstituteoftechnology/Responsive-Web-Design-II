@@ -78,17 +78,17 @@ html {
  }
 
 .navigation {
-	/* margin: 30px 2.27%; */
     display: flex;
+    margin-top: 30px;
     width: 100%;
-	justify-content: space-around;
-	align-items: baseline;
+	justify-content: space-between;
 	width: 100%;
 }
 
 .navigation a{
 	color: #a2a5a6;
-	text-decoration: none;
+    text-decoration: none;
+    margin-top: 10px;
 }
 
 header {
@@ -103,22 +103,24 @@ header {
 .main-heading {
     font-size: 7rem;
 	color: black;
-	text-align: center;
-	/* margin-left: 17.05%; */
+    text-align: center;
+    padding-top: 120px;
+    padding-left: 15%;
 }
 
 .header-image {
-	/* padding-right: 6.81%; */
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 .get-started { 
 	font-size: 2rem;
-	width: 200px;
-    height: 40px;
+	width: 175px;
+    height: 30px;
 	border: 1px solid black;
 	background-color: white;
     position: relative;
+    bottom: 30px;
+
 } 
 
 .first-section {
@@ -126,21 +128,18 @@ header {
     width: 100%;
     justify-content: space-between;
 	border-top: 2px solid black;
-	padding-top: 3.41%;
-	/* margin-left: 6.81%; */
+	padding-top: 30px;
 
 }
 .features-about {
 	width: 56.75%;
     height: 140px;
-    /* padding-right: 2.27%; */
 }
 
 .middle-img {
 	display: flex;
     margin: 0 auto;
     width: 100%;
-    /* padding-left: 6.25%; */
 }
 
 .second-section {
@@ -149,25 +148,23 @@ header {
     justify-content: space-between;
 	border-bottom: 2px solid black;
 	padding-top: 40px;
-	/* margin-left: 6.82%; */
 }
 
 .spv {
 	width: 34.09%;
 	height: 150px;
-	margin-bottom: 30px;
-    /* padding-right: 2.27%; */
 }
 
 .contact {
-	/* margin: 20px 6.82% 60px 6.82%;  */
+    margin: 10px 0 25px 0;
+    padding-top: 20px;
 }
 
 footer {
     display: flex;
     width: 100%;
 	justify-content: center;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
 /* Services Styles */
@@ -258,7 +255,7 @@ ul li {
 
     .navigation .logo{
         order: -1;
-        /* margin: 10px 34.09% 40px 34.09%; */
+        margin: 10px 34.09% 40px 34.09%;
     }
 
     .header {
@@ -269,7 +266,7 @@ ul li {
     .main-heading {
         justify-content: center;
         width: 100%;
-        /* margin: 40px 28.41% 0px 28.41%; */
+        margin: 40px 28.41% 0px 28.41%;
     }
 
     .first-section {
@@ -321,8 +318,8 @@ ul li {
 
     .navigation a {
         border-bottom: 1px solid gray;
-        /* padding: 20px 28.41%;
-        margin: 0 22.73%; */
+        padding: 20px 28.41%;
+        margin: 0 22.73%;
         width: 100%;
     }
 
