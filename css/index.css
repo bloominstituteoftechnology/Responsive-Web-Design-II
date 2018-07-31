@@ -95,15 +95,16 @@ header nav {
   flex-flow: row flex-start;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 70%
 }
 
 header nav a {
   display: flex;
   flex-flow: row wrap;
-  font-size: 16px;
-  color: gray;
+  font-size: 1.6rem;
+	font-weight: bold;
+  color: silver;
   text-decoration: none;
 }
 
@@ -122,13 +123,13 @@ header nav a:last-child {
 header .logo {
   display: flex;
   flex-flow: row-reverse;
-
+  margin-top: 20px;
  }
 
 /* cta */
 .cta {
   display: flex;
-  margin-top: 50px;
+  margin-top: 100px;
   flex-flow: row;
   justify-content: space-around;
 }
@@ -136,7 +137,7 @@ header .logo {
 .cta .cta-text {
   display: flex;
   flex-flow: column;
-  font-size: 77px;
+  font-size: 7.7rem;
   text-align: center;
   align-items: center;
 	align-self: center;
@@ -148,7 +149,7 @@ header .logo {
   justify-content: center;
   background: white;
   margin: 10px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
   width: 50%;
@@ -166,7 +167,7 @@ header .logo {
 }
 
 .main-content {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   margin-top: 76px;
   padding-top: 39px;
 }
@@ -203,7 +204,7 @@ header .logo {
 
 .contact {
   margin-top: 57px;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
   padding: 39px 10px 0;
 }
 
