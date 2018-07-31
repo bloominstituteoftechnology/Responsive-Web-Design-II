@@ -68,6 +68,16 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* index */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    max-width: 880px;
+    font-size: 1.6rem;
+}
+
 .navigation a {
 	text-decoration: none;
 	color: lightgray;
@@ -75,16 +85,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .head-nav {
-	width: 1000px;
     margin: auto;
     padding-bottom: 75px;
 	display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
 .intro {
-    width: 1000px;
     padding-bottom: 75px;
 	margin: auto;
     display: flex;
@@ -97,7 +105,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .intro h1 {
-	font-size: 72px;
+    font-size: 7.2rem;
 }
 
 .intro h6 {
@@ -108,7 +116,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .blurb-one {
-	width: 1000px;
 	margin: auto;
     display: flex;
     justify-content: center;
@@ -120,13 +127,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .middle-img {
-	margin: auto;
-	padding: 25px;
-	display: flex;
+    width: 100%;
 }
 
 .blurb-two {
-    width: 1000px;
     padding-bottom: 50px;
 	margin: auto;
     display: flex;
@@ -141,7 +145,6 @@ h1, h2, h3, h4, h5 {
 
 .contact {
 	padding: 10px;
-	width: 1000px;
 	margin: auto;
 }
 
@@ -149,9 +152,9 @@ footer h6 {
 	text-align: center;
 }
 
-hr {
-    width: 900px;
-}
+/* hr {
+    width: 90%;
+} */
 
 /* services */
 /* .services {
@@ -269,7 +272,8 @@ div section {
     }
 
     .navigation a {
-        font-size: 120%;
+        /* font-size: 120%; */
+        font-size: 1.2rem;
         border: 1px solid lightgrey;
         padding: 20px;
         display: flex;
