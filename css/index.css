@@ -235,12 +235,9 @@ ul {
 
 /* media queries for index.html */
 @media ( max-width: 800px ) {
-    .container {
-        width: 95%;
-    }
-
     .container header {
         flex-wrap: wrap;
+        margin-top: 4.6%;
     }
 
     .container header .logo-div {
@@ -260,13 +257,34 @@ ul {
 
     .container header .main-nav {
         width: 100%;
+        padding-top: 5.75%;
+        justify-content: space-between;
     }
 
-    .call-to-action .call-to-action-div .top-img {
+    .container header .main-nav a {
+        margin-top: -1%;
+        margin-left: 1.75%;
+        margin-right: 6%;
+        font-size: 1.6rem;
+    }
+
+    .call-to-action .top-img-div {
+        background: red;
         display: none;
     }
+
     .call-to-action .innovation-on-demand {
-        flex: 0 0 100%;
+        margin-left: -12%;
+        margin-top: 2%;    
+    }
+
+    .call-to-action .innovation-on-demand .get-started {
+        display: inline-block;
+        border: 2px solid black;
+        padding: 1.5% 10.5%;
+        margin-top: 3.75%;
+        margin-left: -1.75%;
+        font-size: 1.75rem;
     }
 }
 
