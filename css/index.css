@@ -95,7 +95,7 @@ header nav {
   flex-flow: row flex-start;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 1rem;
   width: 70%
 }
 
@@ -123,15 +123,18 @@ header nav a:last-child {
 header .logo {
   display: flex;
   flex-flow: row-reverse;
-  margin-top: 20px;
+  margin-top: 3rem;
+	margin-bottom: 3rem;
  }
 
 /* cta */
 .cta {
   display: flex;
-  margin-top: 100px;
+  margin-top: 5rem;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-between;
+	align-content: flex-end;
+
 }
 
 .cta .cta-text {
@@ -140,7 +143,8 @@ header .logo {
   font-size: 7.7rem;
   text-align: center;
   align-items: center;
-	align-self: center;
+	padding-top: 4rem;
+	padding-left: 10rem;
 
 }
 
@@ -148,11 +152,13 @@ header .logo {
   display: flex;
   justify-content: center;
   background: white;
-  margin: 10px;
+  margin: 1rem;
   font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
-  width: 50%;
+  width: 60%;
+	padding: 1rem 0;
+	margin-left: 3rem;
 }
 
 .cta .cta-text button:hover {
@@ -168,13 +174,13 @@ header .logo {
 
 .main-content {
   border-top: 2px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
+  margin-top: 7.6rem;
+  padding-top: 3.9rem;
 }
 
 .main-content .top-content {
   display: flex;
-  padding: 0 10px;
+
 }
 
 }
@@ -185,13 +191,13 @@ header .logo {
 
 .main-content .middle-img {
   display: flex;
-  margin-top: 45px;
+  margin-top: 4.5rem;
 }
 
 .main-content .bottom-content {
   display: flex;
-  margin-top: 37px;
-  padding: 0 10px;
+  margin-top: 3.7rem;
+  padding: 0 1rem;
 }
 
 .main-content .bottom-content .text-content {
@@ -203,19 +209,19 @@ header .logo {
 }
 
 .contact {
-  margin-top: 57px;
+  margin-top: 5.7rem;
   border-top: 2px solid black;
-  padding: 39px 10px 0;
+  padding: 3.9rem 1rem 0;
 }
 
 .contact p {
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 footer {
-  margin: 32px 0;
+  margin: 3.2rem 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* Tablet view */
@@ -229,15 +235,15 @@ footer {
 		justify-content: center;
 		align-content: center;
 		align-items: center;
-		margin-bottom: 30px;
+		margin-bottom: 3rem;
 		width: 100%;
 	}
 	header .logo {
 		display: flex;
     width: 30%;
 		justify-content: center;
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
 	header nav {
 		align-items: flex-end;
@@ -247,23 +253,23 @@ footer {
 	section .cta {
    display: flex;
 	 justify-content: center;
-	 margin-top: 20px;
-	 margin-bottom: 20px;
+	 margin-top: 2rem;
+	 margin-bottom: 2rem;
 	}
 	 .cta img {
 		 display: none;
 	 }
 	 .cta p {
-		 padding: 5px;
+		 padding: 0.5rem;
 	 }
 	 .cta-text {
-		 padding-bottom: 30px;
+		 padding-bottom: 3rem;
 	 }
 	 .main-content {
-		 margin: 20px;
+		 margin: 2rem;
 	 }
 	 .contact {
-		 margin: 20px;
+		 margin: 2rem;
 	 }
 	 .middle-img {
 		 display: flex;
@@ -277,7 +283,7 @@ footer {
 /* Mobile view */
 @media (max-width: 500px) {
 	header .logo {
-		margin: 20px;
+		margin: 2rem;
 	}
   header nav {
 		display: flex;
@@ -289,33 +295,33 @@ footer {
 	}
 	header nav a {
 		display: flex;
-		font-size: 20pt;
+		font-size: 2rem
 		border-top: 1px solid black;
-    margin: 20px;
+    margin: 2rem;
     width: 100%;
-		padding-top: 30px;
+		padding-top: 3rem;
 		justify-content: center;
 	}
 	header nav a:last-child {
 		border-bottom: 1px solid black;
-		padding-bottom: 30px;
+		padding-bottom: 3rem;
 	}
 	.cta h1 {
-		font-size: 80pt;
+		font-size: 8rem;
 	}
 	.cta button {
-		padding: 10px;
+		padding: 1rem;
 		}
 	.cta p {
-		font-size: 20pt;
+		font-size: 2rem;
 	}
 	.main-content {
 		display: flex;
-		font-size: 22pt;
+		font-size: 2rem;
 		flex-direction: column;
 	}
 	.main-content p {
-		padding: 30px;
+		padding: 3rem;
 	}
 	.top-content {
 		display: flex;
@@ -324,7 +330,7 @@ footer {
 		width: 100%;
 	}
 	.main-content h4 {
-		padding-top: 40px;
+		padding-top: 4rem;
 	}
 	.middle-img {
 		width: 100%;
@@ -333,6 +339,6 @@ footer {
 		flex-direction: column;
 	}
 	.contact p, h4 {
-		font-size: 22pt;
+		font-size: 2rem;
 	}
 }
