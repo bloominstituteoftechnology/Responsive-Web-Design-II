@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,8 +65,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    width: 90%;
+    max-width: 880px;
+    margin: 0px auto;
 }
 
 /* Header Styles */
@@ -76,15 +78,19 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 20px; 
+    width: 100%;
     justify-content: space-between;
     display: flex;
+    align-content: baseline;
 }
 
+
 header nav a {
+    padding: 20px;
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.5rem;
 }
 
 header nav a:hover {
@@ -93,7 +99,7 @@ header nav a:hover {
 }
 
 header .logo {
-    align-self: flex-end;
+    align-self: baseline;
     margin: 28px 0 0 91px;
 }
 
@@ -102,11 +108,11 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: space-evenly;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -118,7 +124,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.5rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -138,7 +144,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.5rem;
    line-height: 18px;
 }
 
@@ -149,7 +155,8 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 40px 0px;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -158,18 +165,149 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.3%;
 }
 
 /* Contact Styles */
 
 .contact p {
     margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.contact h4 {
+    font-size: 1.5rem;
 }
 
 /* Footer Styles */
 
 footer {
+    font-size: 1.5rem;
     text-align: center;
     margin: 40px 0 20px;
+}
+
+/* MEDIA BREAK POINTS */
+@media (max-width: 768px){
+    header nav {
+        display: flex;
+        width: 100%;
+        margin: 70px auto 0px auto;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        padding: 30px 0px;
+    }
+
+    header .logo {
+        text-align: center;
+        width: 90%;
+        order: -1;
+        display: block;
+        position: absolute;
+        top: 0;
+        margin: 30px auto;
+    }
+
+    .cta {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        margin-top: 45px;
+        justify-content: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta .cta-text {
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .main-content .top-content {
+        justify-content: space-between;
+    }
+
+    .main-content .top-content .text-content {
+        width: 100%;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        margin: 40px 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    header {
+        flex-flow: column wrap;
+    }
+
+    header nav {
+        margin-top: 0px;
+        flex-flow: column wrap;
+        margin-bottom: 40px;
+    }
+
+    header nav a {
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+
+    header .logo {
+        display: block;
+        position: relative;
+        border-bottom: 1px solid gray;
+        order: -1;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    header .logo img {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .main-content .top-content {
+        flex-flow: column nowrap;
+
+    }
+
+    .top-content .text-content {
+        margin: 20px 0px;
+    }
+
+
+    .main-content .middle-img {
+        display: block;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .main-content .bottom-content {
+        flex-flow: column nowrap;
+    }
+
+    .bottom-content .text-content {
+        margin: 20px 0px;
+    }
+
+    .contact p {
+        margin: 15px 0px;
+    }
+    
+    /* Footer Styles */
+    
+    footer {
+        text-align: center;
+        margin: 40px 0 20px;
+    }
 }
