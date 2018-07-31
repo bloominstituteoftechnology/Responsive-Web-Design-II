@@ -51,9 +51,11 @@ table {
 * {
     box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -66,9 +68,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
-  /* TB LR */
+  max-width: 880px;
+  /* Top-Bottom - Left-Rright */
   margin: 0 auto;
+  width: 100%;
+  font-size: 1.6rem;
 }
 
 /* header */
@@ -76,17 +80,18 @@ h1, h2, h3, h4, h5 {
 header {
   display: flex;
   flex-wrap: column;
+  margin-bottom: 7rem;
 }
 header nav {
   display: flex;
-  width: 691px;
+  width: 78.5%;
   vertical-align: top;
   margin-top: 35px;
+  justify-content: space-between;
+  margin-right: 10%;
 }
 
 header nav a {
-  margin-right: 65px;
-  font-size: 16px;
   font-weight: bold;
   color: gray;
   text-decoration: none;
@@ -110,23 +115,27 @@ header img.logo {
 
 /* cta */
 .cta {
-    display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cta .cta-text {
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 0px 75px;
+  font-size: 7.7rem;
+  width: 50%;
 }
 
 .cta .cta-text button {
   background: white;
-  vertical-align: top;
   margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
+  width: 17rem;
+  height: 3.2rem;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -137,24 +146,24 @@ header img.logo {
 }
 
 .cta img {
-  margin-top: 69px;
   align-self: flex-start;
 }
 
 .main-content {
   border-top: 2px solid black;
-  margin-top: 76px;
+  margin-top: 7.5rem;
   padding-top: 39px;
 }
 
 .main-content .top-content {
   display: flex;
-  padding: 0 10px;
+  /* padding: 0 10px; */
   justify-content: space-between
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  /* NEEDED? */
+  /* width: 51%; */
   margin-right: 34px;
 }
 
@@ -168,24 +177,26 @@ header img.logo {
   
 .main-content .bottom-content {
   margin-top: 37px;
-  padding: 0 10px;
+  padding: 0 1%;
   display: flex;
   justify-content: space-between
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
-  margin-right: 12px;
+  /* NEEDED? */
+  /* width: 275px;
+  margin-right: 12px; */
 }
 
 .main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+  /* NEEDED? */
+  /* margin-right: 0; */
 }
 
 .contact {
   margin-top: 57px;
   border-top: 2px solid black;
-  padding: 39px 10px 0;
+  padding: 39px 0 0 0;
 }
 
 .contact p {
@@ -195,7 +206,6 @@ header img.logo {
 footer {
   margin: 25px 0 20px 0;
   text-align: center;
-  font-size: 16px;
 }
 
 /* services */
@@ -235,7 +245,7 @@ section.service-descriptions {
 }
 
 article.services h2 {
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: bold;
 }
 
@@ -249,7 +259,7 @@ article.services h2 {
   width: 140px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: black;
 }
 
@@ -284,19 +294,21 @@ article.services h2 {
   margin-bottom: 60px;
 }
 
-/* !!! Tablet View !!! */
+/*-------------
+| Tablet View |
+-------------*/
 
 @media (max-width:800px) {
-  .container {
-    width: 95%;
-    /* TB LR */
-    margin: 0 auto;
-  }
   
+.container {
+  width: 95%
+}
+
   .cta .cta-text {
     margin-top: 50px;
     padding: 0;
     height: 300px;
+    width: 100%;
   }
 
   header {
@@ -307,6 +319,7 @@ article.services h2 {
     display: flex;
     width: auto;
     justify-content: space-around;
+    margin-right: 0;
   }
   /* relocates logo to top of page centered */
   header .logo {
@@ -336,7 +349,9 @@ article.services h2 {
     width: 100%;
   }
 }
-/* !!! Mobile View !!! */
+/*------------
+| Mobile View |
+ ------------*/
 @media (max-width:500px) {
   .container {
     display: flex;
@@ -349,7 +364,7 @@ article.services h2 {
   
   header {
     flex-direction: column-reverse;
-    width: 100%;      
+    width: 100%;
   }
   /* spaces header navigation bar correctly */
   header nav {
@@ -368,7 +383,7 @@ article.services h2 {
     border-bottom: solid 1px black;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 20px;
+    font-size: 2rem;
     justify-content: center;
   }
   /* relocates logo to top of page centered */
@@ -445,3 +460,5 @@ article.services h2 {
   }
 
 }
+
+
