@@ -396,3 +396,13 @@ footer {
     text-align: center;
   }
 }
+
+/* cta mobile */
+
+.container .cta {
+  margin-top: 49px;
+}
+
+.container .cta button {
+  margin-top: 10px;
+}
