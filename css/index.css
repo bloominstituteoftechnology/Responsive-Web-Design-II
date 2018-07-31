@@ -278,4 +278,14 @@ header {
   .main-content .bottom-3-col p {
     padding-right: 20px;
   }
-  
+
+  /* contact */
+
+.contact p {
+  margin: 15px 0;
+  font-size: 1.6rem;
+}
+
+.contact h4 {
+  font-size: 1.6rem;
+}
