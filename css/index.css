@@ -124,7 +124,7 @@ h1,h2,h3,h4,h5,h6{
     display: none;
   }
   .middle-section{
-    margin: 20px 0;
+    margin: 20px 1%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@ h1,h2,h3,h4,h5,h6{
     border-bottom: 2px solid black;
   }
   .middle-section div {
-    margin: 20px 0;
+    margin: 20px 0.5rem;
   }
   .middle-section div:last-of-type {
     margin: 10px 0;
@@ -172,7 +172,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* ************** ---------- Tablet View ---------- ************** */
 
-@media(min-width: 500px){
+@media(min-width: 501px){
   .nav{
     flex-direction: row;
     flex-wrap: wrap;
