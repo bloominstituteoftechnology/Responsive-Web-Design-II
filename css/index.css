@@ -265,19 +265,21 @@ footer .contact h4 {
 /* service */
 .serv {
 	margin-top: 75px;
-	padding-bottom: 40px; 
+  padding-bottom: 40px; 
+  padding-right: 1%;
 }
 
 .serv div {
-	margin-top: 20px;
-}
-
-.serv h1 {
-	font-size: 26px;
+  margin-top: 20px;
+  padding-left: 1%; 
 }
 
 .serv img {
-	width: 100%;
+  width: 100%;
+}
+
+.serv h1 {
+	font-size: 2.6rem;
 }
 
 /* Pins */
@@ -291,8 +293,8 @@ footer .contact h4 {
 .pin {
 	width: 47%;
 	height: auto;
-	padding: 25px 41px;
-	margin: 26px 0;
+	padding: 25px 4%;
+	margin: 26px 1%;
 	border: 2px solid black;
 	background-color: #e5e5e5;
 }
@@ -301,7 +303,7 @@ footer .contact h4 {
 	border: 2px solid black;
 	border-radius: 5px;
 	width: 40%;
-	padding: 9px;
+	padding: 9px 2.88%;
 	margin-top: 20px; 
 	text-align: center;
 	background-color: white;
@@ -320,17 +322,19 @@ footer .contact h4 {
 
 /* Facts */
 .facts {
-	margin-top: 40px; 
+  margin-top: 40px; 
+  padding-left: 1%;
 }
 
 .fact p {
-	padding: 3px 90px 16px 0; 
+	padding: 3px 5% 16px 0; 
 }
 
 .fact ul li {
 	list-style-type: square;
 	list-style-position: inside; 
-	padding: 9px 0;
+  padding: 9px 0;
+  font-size: 1.6rem;
 }
 
 /* Footer */
@@ -422,13 +426,7 @@ footer .contact h4 {
 
   /* Services page */
   .serv {
-    width: 750px;
     margin-top: 148px;
-  }
-
-  .serv div {
-    width: 100%;
-    padding-right: 4%;
   }
 
   /* Pins */
@@ -440,11 +438,6 @@ footer .contact h4 {
     width: 50%;
     height: auto;
   }
-
-  .facts p {
-    padding-right: 37px;
-  }
-
 }
 
 /* Mobile version */
@@ -536,19 +529,19 @@ footer .contact h4 {
 
   /* Services page */
   .serv {
-    width: 463px;
     margin-top: 0;
   }
 
   .serv div {
     width: 100%;
-    padding: 0 4%;
+    padding: 0 5%;
   }
 
   /* Pins */
   .pins {
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
   }
 
   .pins .pin {
@@ -560,6 +553,7 @@ footer .contact h4 {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
+    padding: 0 5%
   }
 
   .facts img {
@@ -567,9 +561,4 @@ footer .contact h4 {
     height: auto;
     margin-bottom: 29px;
   }
-
-  .facts {
-    padding: 0 37px;
-  }
-
 }
