@@ -121,10 +121,10 @@ header .logo {
   vertical-align: baseline;
   justify-content: space-around;
   font-size: 7.8rem;
-  margin-top: 0px;
+  margin-top: 3%;
   text-align: center;
-  padding: 1.13636% 0;
-  /* border: 1px solid black; */
+  padding: 3% 0;
+  border-top: 1px solid black;
 }
 .cta .cta-text h1 {
   padding-top: 4.5454%;
@@ -229,6 +229,16 @@ footer {
 
 @media(max-width:800px) {
     
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0% auto;
+        /* border: 1px solid black; */
+        
+      }
+    
     header {
         display: flex;
         flex-direction: row;
@@ -284,10 +294,10 @@ footer {
         vertical-align: baseline;
         justify-content: center;
         font-size: 7.8rem;
-        margin-top: 0%;
+        margin-top: 5%;
         text-align: center;
         padding: 1.25% 0%;
-        /* border: 1px solid black; */
+        border-top: 1px solid black;
       }
       .cta .cta-text h1 {
         padding-top: 8.75%;
@@ -401,7 +411,9 @@ footer {
     } */
 
     .container {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
         margin: 0% auto;
         /* border: 1px solid black; */
