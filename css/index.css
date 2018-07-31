@@ -328,6 +328,18 @@ footer {
 	header nav a:last-child {
 		border-bottom: 1px solid black;
 	}
+	.cta {
+		animation-name: adjust;
+		animation-duration: .5s;
+	}
+	@keyframes adjust {
+		from {
+			margin: 100%;
+		}
+		to {
+			width: 100%;
+		}
+	}
 	.cta h1 {
 		font-size: 1em;
 	}
