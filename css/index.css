@@ -385,24 +385,57 @@ footer {
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    border-bottom: 1px solid #000;
   }
 
   .container header nav a {
     border-top: 1px solid #000;
     padding: 18px 0px;
     font-size: 2.2rem;
-    width: 100%;
+    width: 112%;
+    overflow: none;
     text-align: center;
   }
-}
 
-/* cta mobile */
+  .container header nav a:last-of-type {
+    border-bottom: 1px solid #000;
+  }
 
-.container .cta {
-  margin-top: 49px;
-}
+  /* cta mobile */
 
-.container .cta button {
-  margin-top: 10px;
+  .container .cta {
+    margin-top: 49px;
+  }
+  
+
+  .container .cta button {
+    margin-top: 10px;
+  }
+
+  .container .cta h1 {
+    width: 90%;
+    padding-right: 2%;
+  }
+
+  /* main content mobile */
+
+  .container .main-content {
+    padding: 12px 0px;
+  }
+
+  .main-content .top-2-col,
+  .main-content .bottom-3-col {
+    /* using flex change of direction */
+    flex-direction: column;
+  }
+
+  /* add some margins for room to breathe */
+
+  .text-content {
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .text-content h4 {
+    margin-top: 20px;
+  }
 }
