@@ -268,6 +268,7 @@ header .logo {
 .main-content .middle-img {
   display: block;
   margin: 30px auto;
+  width: 100%;
 }
 
 .main-content .bottom-3-col {
