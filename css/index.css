@@ -418,6 +418,10 @@ header {
 }
 
 /* About page css */
+.header-about-page {
+    height: 360px;
+}
+
 header .container-about-page img {
     width: 100%;
     margin: 20px 0;
@@ -627,7 +631,7 @@ footer {
     text-align: center;
 }
 
-}
+
 
 /* ABOUT PAGE STARTS BELOW */
 
@@ -775,9 +779,6 @@ footer{
     padding-top: 10px;
 }
 
-}
-
-
 body .services-nav a{
     display: flex;
     justify-content: center;
@@ -850,4 +851,6 @@ nav a:first-of-type{
 .work-together{
     width: 95%;
     margin: 0 auto;
+}
+
 }
