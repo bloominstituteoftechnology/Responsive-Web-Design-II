@@ -239,22 +239,22 @@ footer {
         justify-content: center;
         width: 100%;
         vertical-align: center;
-        margin-top: 10px;
+        margin-top: .125%;
         border: none;
       }
       
       header nav .links {
           display: inline;
-          margin-left: 85px;
+          margin-left: 10.625%;
       }
 
       header nav a {
-        padding: 20px;
+        padding: 2.5%;
         font-size: 14px;
         color: gray;
         text-decoration: none;
-        width: 48.9px;
-        height: 36px;;
+        width: 6.1125%;
+        height: 4.5%;
       }
       
       header nav a:hover {
@@ -262,17 +262,17 @@ footer {
       }
       
       header nav a:first-child {
-        margin-left: 0px;
+        margin-left: 0%;
       }
       
       header nav a:last-child {
-        margin-right: 0px;
+        margin-right: 0%;
       }
       
       header nav .logo {
         /* border: 1px solid black; */
-        margin-bottom: 15px;
-        margin-left: 350px;
+        margin-bottom: 1.875%;
+        margin-left: 39.7727%;
         width: 183px;
         height: 36px;
       }
@@ -284,28 +284,25 @@ footer {
         font-size: 77px;
         margin-top: 0px;
         text-align: center;
-        padding: 10px 0px;
+        padding: 1.25% 0%;
         /* border: 1px solid black; */
       }
       .cta .cta-text h1 {
-        padding-top: 70px;
-        /* padding-left: -30px; */
-        justify-content: center;
-
+        padding-top: 8.75%;
         /* border: 1px solid black; */
       }
       .cta .cta-text button {
         background: white;
         vertical-align: center;
-        margin-top: 0px;
-        padding: 0px 44px;
+        margin-top: 0%;
+        padding: 0px 40px;
         font-size: 17px;
         border: 1px solid black;
         cursor: pointer;
       }
       
       h4 {
-        padding-right: 5px; 
+        padding-right: .625%; 
       }
       .cta .cta-text button:hover {
         background: black;
@@ -318,73 +315,73 @@ footer {
 
       .main-content {
         border-top: 1px solid black;
-        margin-top: 60px;
-        margin-left: 75px;
-        margin-right: 60px;
-        padding: 20px;
+        margin-top: 7.5%;
+        margin-left: 9.375%;
+        margin-right: 7.5%;
+        padding: 2.5%;
         width: 85%;
       }
       
       .main-content .top-content {
         display: flex;
         flex-direction: row;
-        padding: 8px 8px;
+        padding: 1% 1%;
       }
       
       .main-content .top-content .text-content {
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-right: 0px;
-        padding-right: 0px;
+        margin-right: 0%;
+        padding-right: 0%;
       }
       p {
-        padding-right: 50px;
+        padding-right: 6.25%;
       }
       
       .main-content .top-content .text-content:last-child {
-        margin-right: 0;
+        margin-right: 0%;
       }
       
       .main-content .top-content .middle-img {
-        margin-top: 0px;
+        margin-top: 0%;
         width: 80%;
       }
       
       .main-content .bottom-content {
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
-        padding: 8 8px;
+        margin-top: 1.25%;
+        padding: 1% 1%;
       }
       
       .main-content .bottom-content .text-content {
         width: 90%;
         display: flex;
         flex-direction: column;
-        margin-left: 5px;
+        margin-left: .625%;
       }
       
       .main-content .bottom-content .text-content:last-child {
         /* display: flex; */
-        margin-right: 0px;
-        padding: 0px;
+        margin-right: 0%;
+        padding: 0%;
       }
       
       .contact {
-        margin-top: 0px;
+        margin-top: 0%;
         border-top: 1px solid black;
-        padding: 39px 10px 0;
+        padding: 4.875% 1.25% 0%;
       }
       
       .contact p {
-        margin: 20px 0;
+        margin: 2.5% 0%;
       }
       
       
       footer {
           display: inline;
-        margin: 32px 0;
+        margin: 4% 0%;
         text-align: center;
         font-size: 14px;
         
