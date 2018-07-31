@@ -76,7 +76,7 @@ html {
     max-width: 880px;
     margin: 0 auto;
 
-    border: 2px solid red;
+
 }
 
 .header {
@@ -85,7 +85,7 @@ html {
     height: 15%;
     margin: 4rem; /*add margin of 40px */
 
-    border: 1px solid yellow; 
+
 }
 
 .nav-bar {
@@ -94,7 +94,7 @@ html {
     align-items: center;
     flex-wrap: nowrap;
 
-    border: 1px solid red;
+
 }
 
 .nav-bar .nav-bar-item {
@@ -129,7 +129,6 @@ html {
     flex-direction: center;
     align-items: center;
 
-    border: 2px solid blue;
 }
 
 .call-to-action h1 {
@@ -164,7 +163,7 @@ html {
     align-items: center;
     margin: 4rem 4rem 4rem 14rem;
 
-    border: 5px solid green;
+    
 }
 
 .header-img {
