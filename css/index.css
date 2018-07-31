@@ -78,10 +78,14 @@ html {
     font-size: 1.6rem;
 }
 
+.navigation {
+    width: 75%;
+}
+
 .navigation a {
 	text-decoration: none;
 	color: lightgray;
-	padding: 30px;
+    padding-right: 8.5%;
 }
 
 .head-nav {
@@ -93,15 +97,14 @@ html {
 }
 
 .intro {
-    padding-bottom: 75px;
-	margin: auto;
+    padding-bottom: 60px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .intro div {
 	text-align: center;
-	padding: 50px;
+    padding: 5.68%;
 }
 
 .intro h1 {
@@ -110,51 +113,50 @@ html {
 
 .intro h6 {
     border: 1px solid black;
-    width: 175px;
-    padding: 8px;
+    max-width: 190px;
+    padding: 8px 0;
     margin: auto;
 }
 
+hr {
+    margin: 20px 0;
+}
+
 .blurb-one {
-	margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .blurb-one div {
 	width: 49%;
-	padding: 10px;
 }
 
 .middle-img {
     width: 100%;
+    padding: 40px 0;
 }
 
 .blurb-two {
-    padding-bottom: 50px;
-	margin: auto;
+    padding-bottom: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 	
 }
 
 .blurb-two div {
 	width: 30%;
-	padding: 10px;
 }
 
-.contact {
+/* .contact {
 	padding: 10px;
 	margin: auto;
-}
+} */
 
 footer h6 {
-	text-align: center;
+    text-align: center;
+    padding-top: 50px;
 }
 
-/* hr {
-    width: 90%;
-} */
 
 /* services */
 /* .services {
@@ -207,7 +209,7 @@ div section {
 /* tablet */
 @media (max-width: 800px) {
     .head-nav {
-        width: 750px;
+        /* width: 750px; */
         flex-direction: column-reverse;
     }
 
@@ -220,7 +222,7 @@ div section {
     }
 
     .intro {
-        width: 750px;
+        /* width: 750px; */
         padding-bottom: 75px;
     }
 
@@ -233,25 +235,25 @@ div section {
     }
 
     .blurb-one {
-        width: 750px;
+        /* width: 750px; */
     }
 
     .middle-img {
-        width: 750px;
+        /* width: 750px; */
     }
 
     .blurb-two {
-        width: 750px;
+        /* width: 750px; */
         padding-bottom: 50px;
     }
 
     .contact {
+        /* width: 750px; */
         padding: 10px;
-        width: 750px;
     }
 
     hr {
-        width: 750px;
+        /* width: 750px; */
     }
 }
 
