@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
+	width: 100%
     margin: auto;
 }
 
@@ -76,13 +78,14 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    width: 69.32%;
+    margin-top: 4.54%; 
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
+	font-size: 1rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -93,35 +96,35 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 3.18% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.18%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 4.5rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 0.57%;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.32% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 58.22%;
+    height: 10.96%;
+    margin-top: 3.42%;
     cursor: pointer;
 }
 
@@ -135,9 +138,9 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   margin: 8.52% 0 3.98% 0;
+   padding: 3.98% 0;
+   font-size: 1rem;
    line-height: 18px;
 }
 
@@ -147,7 +150,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -155,20 +158,25 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;
 }
 
 /* Contact Styles */
 
+.contact {
+	font-size: 1rem;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin: 1.7% 0;
 }
 
 /* Footer Styles */
 
 footer {
+	font-size: 1rem;
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.55% 0 2.27%;
 }
 
 /* Tablet */
@@ -176,6 +184,7 @@ footer {
 
     .container {
         width: 100%;
+		max-width: 800px;
     }
 
     header {
@@ -183,14 +192,14 @@ footer {
     }
   
     header nav {
-        width: 768px;
-        padding: 0 30px;
+        width: 96%;
+        padding: 0 3.75%;
     }
 
     header .logo {
         order: -1;
         display: block;
-        margin: 30px auto 0;
+        margin: 3.75% auto 0;
     }
 
     .cta {
@@ -210,20 +219,25 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 9.38% 2.5% 4.38%;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 1.25%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 0 3.75%;
     }
 }
 
 /* Phone */
 @media (max-width: 500px) {
+
+    .container {
+        width: 100%;
+		max-width: 500px;
+    }
 
     header {
         justify-content: center;
@@ -240,8 +254,8 @@ footer {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 4% 0;
+        font-size: 1.25rem;
         border-bottom: 1px solid gray;
     }
 
@@ -254,11 +268,11 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+        margin: 4% 0;
     }
 
     .cta {
-        margin-top: 50px;
+        margin-top: 10%;
         flex-flow: column;
         align-items: center;
     }
@@ -270,13 +284,13 @@ footer {
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;
-        height: 300px;
+        height: 60%;
     }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
-        height: 440px;
+        height: 88%;
     }
 
     .text-content {
@@ -284,6 +298,6 @@ footer {
     }
 
     .contact {
-        margin: 20px;
+        margin: 4%;
     }
 }
