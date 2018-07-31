@@ -339,6 +339,7 @@ footer {
     header
     {
         flex-wrap: wrap;
+        justify-content: center;
     }
     header nav
     {
@@ -349,6 +350,7 @@ footer {
     {
         width: 25%;
         order: -1;
+        margin: 7% 0 0 0;
     }
     .cta
     {
@@ -381,5 +383,36 @@ footer {
 
 @media(max-width: 500px)
 {
-    
+    header
+    {
+        justify-content: center;
+    }
+    header nav
+    {
+        flex-direction: column;
+        padding: 0 0%;
+    }
+    header nav a
+    {
+        padding: 3% 0;
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
+    header nav a:first-child
+    {
+        border-top: 1px solid grey;
+    }
+    .main-content .top-content
+    {
+        padding-top: 2%;
+        display: block;
+    }
+    .text-content
+    {
+        padding-top: 10%;
+    }
+    .main-content .bottom-content
+    {
+        display: block;
+    }
 }
