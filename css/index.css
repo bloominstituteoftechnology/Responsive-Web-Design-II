@@ -253,35 +253,53 @@ ul li {
         width: 100%;
     }
 
-    .navigation .logo{
-        order: -1;
-        margin: 10px 34.09% 40px 34.09%;
+    .navigation a {
+        padding: 4%;
     }
 
-    .header {
+    .navigation .logo{
+        order: -1;
+        margin: 0px 34.09%;
+    }
+
+    header {
         flex-wrap: wrap;
         width:100%;
+        padding-bottom: 50px;
     }
 
     .main-heading {
-        justify-content: center;
         width: 100%;
-        margin: 40px 28.41% 0px 28.41%;
+        padding: 40px 0 0 0;
     }
 
     .first-section {
         display: flex;
         width: 100%;
-        padding-top: 30px;
+    }
+
+    .features-about {
+      padding-left: 3%;  
+      padding-right: 3%;
     }
 
     .middle-img {
         width: 100%;
+        padding: 3%;
     }
 
     .second-section {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 0;
+        padding-right: 4%;
+        padding-bottom: 60px;
+    }
+
+    .spv {
+        padding: 0 4% 30px 4%;
+    }
+
+    .contact {
+        padding: 25px 4% 0 4%;
     }
 
 /* Services tablet media queries styles at 800px*/
