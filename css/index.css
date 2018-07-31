@@ -265,6 +265,17 @@ footer {
     margin-top: 2%;
   }
 
+
+  header nav a:hover {
+    background: lightskyblue;
+    border: 3px solid blue;
+    color: purple;
+    transition: 3s ease-out border;
+    /* transition-duration: 3s;
+    transition-property: border;
+    transition-timing-function: ease-out; */
+  }
+
   header .logo {
     margin: 28px auto;
   }
