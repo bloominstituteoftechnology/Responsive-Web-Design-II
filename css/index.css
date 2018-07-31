@@ -113,7 +113,7 @@ html {
 
 .intro h6 {
     border: 1px solid black;
-    max-width: 190px;
+    max-width: 175px;
     padding: 8px 0;
     margin: auto;
 }
@@ -128,7 +128,7 @@ hr {
 }
 
 .blurb-one div {
-	width: 49%;
+	width: 47%;
 }
 
 .middle-img {
@@ -209,21 +209,24 @@ div section {
 /* tablet */
 @media (max-width: 800px) {
     .head-nav {
-        /* width: 750px; */
         flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .navigation {
+        width: 100%;
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .head-nav img {
-        padding: 50px;
-    }
-
-    .navigation a {
-        padding: 35px 35px 0 35px;
+        padding: 50px 0;
     }
 
     .intro {
-        /* width: 750px; */
-        padding-bottom: 75px;
+        padding-top: 35px;
+        padding-bottom: 50px;
     }
 
     .intro div {
@@ -235,57 +238,52 @@ div section {
     }
 
     .blurb-one {
-        /* width: 750px; */
+        padding: 1%;
     }
 
     .middle-img {
-        /* width: 750px; */
+        padding: 20px 0;
     }
 
     .blurb-two {
-        /* width: 750px; */
+        padding: 1%;
         padding-bottom: 50px;
     }
 
     .contact {
-        /* width: 750px; */
-        padding: 10px;
-    }
-
-    hr {
-        /* width: 750px; */
+        padding: 1%;
     }
 }
 
 /* mobile */
 @media (max-width: 500px) {
     .head-nav {
-        width: 465px;
-
-        flex-direction: column-reverse;
+        width: 100%;
+        padding-bottom: 20px;
     }
 
     .head-nav img {
-        padding: 25px;
+        padding: 25px 0;
     }
 
     .navigation {
         width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .navigation a {
-        /* font-size: 120%; */
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         border: 1px solid lightgrey;
-        padding: 20px;
+        padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .intro {
-        width: 450px;
-        padding-bottom: 75px;
+        padding-bottom: 40px;
     }
 
     .intro div {
@@ -297,36 +295,24 @@ div section {
     }
 
     .blurb-one {
-        width: 450px;
+        padding-top: 40px;
         flex-direction: column
     }
 
     .blurb-one div {
         width: 100%;
-        padding-bottom: 35px;
-    }
-
-    .middle-img {
-        width: 465px;
+        padding-bottom: 45px;
     }
 
     .blurb-two {
-        width: 450px;
-        padding-bottom: 50px;
+        height: 450px;
+        padding-bottom: 0px;
         flex-direction: column;
+        align-content: space-between;
     }
 
     .blurb-two div {
         width: 100%;
-        padding-bottom: 35px;
     }
 
-    .contact {
-        padding-bottom: 50px;
-        width: 450px;
-    }
-
-    hr {
-        width: 450px;
-    }
 }
