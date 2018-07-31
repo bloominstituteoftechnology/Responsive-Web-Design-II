@@ -207,6 +207,7 @@ header {
 .cta {
     display: flex;
     margin-top: 72px;
+    width: 90%;
     justify-content: flex-end;
   }
   
@@ -287,5 +288,13 @@ header {
 }
 
 .contact h4 {
+  font-size: 1.6rem;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
   font-size: 1.6rem;
 }
