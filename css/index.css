@@ -68,12 +68,7 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    background: red;
-}
-
 .container {
-    background: green;
 	max-width: 880px;
     margin: auto;
     margin-top: -0.45%;
@@ -101,48 +96,61 @@ header {
     display: flex;
 }
 
-.call-to-action {
+.container .main-body .call-to-action {
     background: brown;
 	display: flex;
 	justify-content: center;
 	text-align: center;
     align-items: center;
     margin-top: 8%;
-	margin-bottom: 35px;
-	padding-bottom: 75px;
+    padding-bottom: 9%;
 	border-bottom: 2px solid black;
 }
 
-.call-to-action-div {
+.container .main-body .call-to-action .call-to-action-div {
     background: green;
     width: 50%;
 }
 
-.get-started {
-	display: inline-block;
-	border: 2px solid black;
-	padding: 6px 45px 6px 45px;
+.container .main-body .call-to-action .innovation-on-demand * {
+    margin-right: -26%;
 }
 
-h1 {
-	font-size: 75px;
+.container .main-body .call-to-action .innovation-on-demand h1 {
+    font-size: 7rem;
+}
+
+.container .main-body .call-to-action .call-to-action-div .top-img {
+    float: right;
+}
+
+.get-started {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 1.5% 9.5%;
+    margin-top: 4.75%;
+    margin-left: -1.75%;
+    font-size: 1.75rem;
 }
 
 .features-and-about-section {
-	display: flex;
-    margin-bottom: 40px;
+    display: flex;
+    margin-top: 4%;
+    font-size: 1.6rem;
+    margin-bottom: 4.25%;
 }
 
 .middle-img, .services-header-img {
 	display: block;
 	margin: auto;
 	width: 100%;
-	margin-bottom: 30px;
+	margin-bottom: 4%;
 }
 
 .services-product-vision-section, .services-section {
-	display: flex;
-	padding-bottom: 50px;
+    display: flex;
+    font-size: 1.6rem;
+	padding-bottom: 10%;
 	border-bottom: 2px solid black;
 }
 
