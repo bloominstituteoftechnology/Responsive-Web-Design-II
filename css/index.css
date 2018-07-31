@@ -180,6 +180,73 @@ footer {
     font-size: 1.6rem;
 }
 
+/* Services Page */
+
+.services-header-img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.services-top h4{
+  font-size: 2rem;
+}
+
+.services-top p{
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+}
+.services-info{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.services-info button{
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 35px;
+}
+.cell{
+  width:45%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  background:#F5F5F5;
+  font-size: 1.6rem;
+}
+
+
+.facts{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+}
+
+.facts h4{
+  margin-top: 20px;
+}
+
+.facts p{
+  margin-bottom: 20px;
+}
+
+
+.facts ul li{
+  list-style-type: square;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
 /* Tablet */
 @media (max-width: 800px) {
 
@@ -203,6 +270,7 @@ footer {
         margin: 30px auto 0;
     }
 
+    
     .cta {
         justify-content: center;
     }
@@ -230,7 +298,43 @@ footer {
     .contact {
         margin: 0 3.75%;
     }
+        /* Services */
+
+    .cell{
+      width: 100%;
+    }
+    .services-top{
+      padding: 20px;
+    }
+
+    .facts{
+      padding: 2.5%;
+    }
+
+    .main-content .middle-img{
+    width: 100%;
+    }
+
+    .services-info{
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+
+
+    .facts{
+    display: flex;
+    flex-direction: column;
+    }
+
+
+    .facts img {
+    display: none;
+    }
 }
+
+
 
 /* Phone */
 @media (max-width: 500px) {
@@ -300,4 +404,12 @@ footer {
     .contact {
         margin: 4%;
     }
+
+        /* Services */
+    .services-header-img{
+      width: 100%;
+      padding: 20px;
+    }
+
 }
+
