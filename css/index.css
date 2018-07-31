@@ -342,4 +342,18 @@ footer {
     /* hide image */
     display: none;
   }
+
+    /* main content tablet */
+
+    .main-content .top-2-col .text-content {
+      padding: 0 4%;
+    }
+  
+    .main-content .top-2-col .text-content p {
+      padding-right: 2%;
+    }
+  
+    .main-content img {
+      width: 100%;
+    }
 }
