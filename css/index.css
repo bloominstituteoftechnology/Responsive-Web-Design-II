@@ -220,7 +220,8 @@ footer {
 
     header nav {
         width: 100%;
-        margin: 69px;
+        margin: 4%;
+        margin-top: 5%;
         /* border: 1px solid black; */
     }
 
@@ -228,6 +229,7 @@ footer {
        flex-direction: row;
        justify-content: flex-end;
        font-size: 1rem;
+       margin-right: 10.8%;
        /* border: 1px solid black; */
 	}
 	
@@ -250,8 +252,18 @@ footer {
 
     .cta .cta-text {
 		padding: 0;
-        margin: 60px auto;
+        margin: 40px auto;
         margin-bottom: 0px;
+    }
+
+    .cta .cta-text h1 {
+        font-size: 4.5rem;
+    }
+
+    .cta .cta-text button {
+        margin-top: 2px;
+        width: 58.9%;
+        font-size: 0.85rem;
     }
 
     .cta img {
@@ -260,12 +272,14 @@ footer {
 
     .main-content {
         width: 100%;
+        margin-top: 35px;
+        border-top: 1px solid black;
     }
 
     .main-content .top-content {
         display: flex;
         justify-content: space-between;
-        padding: 0 2.5%;
+        padding: 0 3%;
     }
 
     .main-content .top-content .text-content {
@@ -343,7 +357,7 @@ footer {
 	}
 
 	.cta .cta-text {
-		width: 100%;
+        width: 100%;
 		margin: 0 auto;
 		margin-bottom: 0px;
 	}
