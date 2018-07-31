@@ -68,8 +68,9 @@ html {
 }
 
 .container {
-    width: 880px;
+    max-width: 880px;
     margin: auto;
+    margin-left: 7%
 }
 
 /* Header Styles */
@@ -124,7 +125,7 @@ header .logo {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 60%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -152,6 +153,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
+    width: 100%;
     margin: 30px auto;
 }
 
@@ -178,6 +180,7 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+    font-size: 1.6rem;
 }
 
 /* Tablet */
@@ -185,6 +188,7 @@ footer {
 
     .container {
         width: 100%;
+        margin: 0;
     }
 
     header {
@@ -203,6 +207,7 @@ footer {
     }
 
     .cta {
+        width: 100%;
         justify-content: center;
     }
     
@@ -238,6 +243,10 @@ footer {
 
 /* Phone */
 @media (max-width: 500px) {
+
+    .container {
+        width: 99%;
+    }
 
     header {
         justify-content: center;
