@@ -302,48 +302,61 @@ footer {
 	}
 	header nav a {
 		display: flex;
-		font-size: 2rem;
+		font-size: 2em;
 		border: 1px solid black;
     width: 100%;
-		padding: 3rem;
+		padding: 1em;
 		justify-content: center;
 	}
 	header nav a:last-child {
 		border-bottom: 1px solid black;
 	}
 	.cta h1 {
-		font-size: 8rem;
+		font-size: 1em;
 	}
 	.cta button {
-		padding: 1rem;
+		display: flex;
+		text-align: center;
+		align-items: baseline;
+
 		}
 	.cta p {
-		font-size: 2rem;
+		flex-flow: row nowrap;
+		width: 100%;
+		align-items: center;
+		font-size: .7em;
 	}
 	.main-content {
 		display: flex;
-		font-size: 2rem;
+		width: 100%;
+		font-size: .7em;
 		flex-direction: column;
 	}
 	.main-content p {
-		padding: 3rem;
+		width: 100%;
+		/*padding: 3rem; */
 	}
 	.top-content {
-		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		width: 100%;
+	}
+	.text-content {
 		width: 100%;
 	}
 	.main-content h4 {
-		padding-top: 4rem;
+		padding-top: 3em;
 	}
 	.middle-img {
-		width: 100%;
+		width: 95%;
 	}
 	.bottom-content {
+		width: 100%;
 		flex-direction: column;
 	}
+	.bottom-content .text-content h4:first-child {
+		padding-top: 1em;
+	}
 	.contact p, h4 {
-		font-size: 2rem;
+		font-size: 1em;
 	}
 }
