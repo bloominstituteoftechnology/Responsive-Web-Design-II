@@ -71,14 +71,12 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
-  /* height: auto; */
-	/* padding: 0 5.25%; */
   margin: auto;
   max-width: 880px;
   width: 100%;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,16 +85,16 @@ header {
   padding: 30px 0;
 }
 
-header .header-nav {
+.header__nav {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
 }
 
-header .header-img {
+.header__img {
   margin-left: 11%;
 }
-.header-nav a {
+.header__nav a {
   font-size: 1.6rem;
 	color: gray;
 	text-decoration: none;
@@ -119,7 +117,7 @@ header .header-img {
 	vertical-align:  middle;
 }
 
-.main .main-title {
+.main .title {
   padding-top: 6%;
   margin-left: 3%;
 	font-size: 7.2rem;
@@ -133,11 +131,11 @@ header .header-img {
 	margin-left: 7%;
 }
 
-.img-1{
+.main-img__img{
 	height: auto;
 	width: 100%;
 }
-.main-button {
+.title__button {
   margin: 25px auto;
   display: block;
 	background-color: white;
@@ -168,16 +166,16 @@ header .header-img {
     justify-content: space-between;
 }
 
-.article { /*individual article*/
+.top-row__article, .bottom-row__article { /*individual article*/
   padding: 0 1% 0 0;
 }
 
-.article h3, .article p {
-	font-size: 1.6rem;
+.articles {
+	font-size:   1.6rem;
   line-height: 1.84rem;
 }
 
-.middle-img{
+.articles__img {
 	width: 100%;
 	padding: 27px 0 27px 0;
 }
@@ -207,27 +205,27 @@ header .header-img {
     padding: 0 1.45%;
   }
 
-  header {
+  .header {
     flex-direction: column-reverse;
     justify-content: center;
   }
 
-  header .header-nav {
+  .header__nav {
     width: 97.5%;
 
   }
 
-  header .heaver-nav a{
+  .header-nav a{
     display: inline-block;
     margin: auto;
   }
 
-  header .header-nav a:last-child {
+  .header__nav a:last-child {
     margin-right: 4.5%;
   }
 
-  header .header-img {
-  margin: 0 0 5% 0;
+  .header__img {
+    margin: 0 0 5% 0;
   }
 
 
@@ -237,11 +235,12 @@ header .header-img {
     padding: 5.7% 0 23% 2%;
   }
 
-  .main .main-title{
+  .main .title{
     font-size: 7.2rem;
     padding: 0;
     margin: 0;
   }
+
   .main .main-img{
     display: none;
   }
@@ -253,17 +252,17 @@ header .header-img {
     font-weight: bold;
   }
 
-  .articles .bottom-row .article{
+  .articles .bottom-row__article{
     padding: 0 4.5% 0 1%;
-
   }
 
-  .articles .article {
+  .articles .top-row__article,
+  .articles .bottom-row__article  {
     padding: 0 1.5%;
   }
 }
 
-  .articles .middle-img {
+  .articles__img {
     padding: 28.5px 0;
   }
 
@@ -274,28 +273,28 @@ header .header-img {
 
 
 
-@media (max-width: 550px){
+@media (max-width: 500px){
   .container {
     max-width: 500px;
     padding: 0;
   }
 
-  header {
+  .header {
     padding: 0;
   }
 
-  header .header-img {
-    padding: 19px 0;
+  .header__img {
+    padding: 0 0 19px 0;
     margin: 0;
   }
 
-  header .header-nav {
+  .header__nav {
     flex-direction: column;
     width: 100%;
 
   }
 
-  header .header-nav a{
+  .header__nav a{
     color: lightgray;
     padding: 20px 0;
     font-size: 2rem;
@@ -304,11 +303,11 @@ header .header-img {
 
   }
 
-  header .header-nav a:first-child {
+  .header__nav a:first-child {
     border-top: 1px solid gray;
   }
 
-  header .header-nav a:last-child {
+  .header__nav a:last-child {
     margin-right: 0;
   }
 
@@ -316,7 +315,7 @@ header .header-img {
     width: 95.5%;
     margin: auto;
   }
-  .main .main-title {
+  .main .title {
   	font-size: 7.2rem;
   	/* width: 100%; */
   	padding: 23px 0 63px;
@@ -340,28 +339,26 @@ header .header-img {
 
     /* .articles .top-row, */
 
-  .articles .top-row .article {
+  .articles .top-row__article {
     padding: 0 0 45px 0;
   }
 
-    .articles .bottom-row .article{
-    padding: 0 0 9px 0;
+    .articles .bottom-row__article{
+    padding: 1px 0 9px 0;
     /* background-color: red; */
     }
 
-    .articles .bottom-row .article.product{
-      padding: 11.5% 0 14%;
+    .bottom-row__article.product{
+      padding: 53px 0 63px;
     }
 
 
 
-  .articles .middle-img{
+  .articles__img{
     padding: 7px 0;
   }
 
 footer  {
   width: 98.5%;
   margin: auto;
-}
-
 }
