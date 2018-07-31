@@ -1,1 +1,464 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 1.7%;
+}
+
+.container {
+    max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+  width: 100%;
+  display: flex;
+}
+
+header nav {
+  margin-top: 4.54%;
+  width: 69.31%;
+  justify-content: space-between;
+  display: flex;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 1.6rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+header .logo {
+  margin: 3.13% 0 0 10.34%;
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+  display: flex;
+  margin-top: 8.4%;
+  justify-content: flex-end;
+}
+
+.cta .cta-text {
+  font-size: 7.2rem;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 9.31% 0 0;
+}
+
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 1.6rem;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+/* Main Content Styles */
+
+.main-content {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 8.52% 0 3.97% 0;
+  padding: 3.97% 0;
+  font-size: 1.6rem;
+  line-height: 18px;
+}
+
+.main-content .top-content {
+  display: flex;
+}
+
+.main-content .middle-img {
+  display: block;
+  margin: 3.4% auto;
+}
+
+.main-content .bottom-content {
+  display: flex;
+}
+
+.main-content .bottom-content p {
+  padding-right: 2.27%;
+}
+
+/* Contact Styles */
+
+.contact p {
+  margin: 1.7% 0;
+  font-size:1.6rem;
+}
+
+/* Footer Styles */
+
+footer {
+  text-align: center;
+  margin: 4.53% 0 2.27%;
+}
+
+/* Services Styles */
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 1;
+}
+
+.services-content .services-header-img {
+  margin: 2.27% 0;
+}
+
+.services-content h1 {
+  font-size: 2.6rem;
+  margin: 1.13% 0;
+}
+
+.services-content .services-text {
+  border-bottom: 1px solid black;
+  padding-bottom: 40px;
+  margin-bottom: 2.27%;
+}
+
+.services-content .card {
+  padding: 2.27%;
+  border: 1px solid black;
+  width: 47.72%;
+  background: whitesmoke;
+  margin: 2.27% 0;
+}
+
+.services-content .card button {
+  padding: 10px 40px;
+  margin-top: 2.27%;
+  cursor: pointer;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.services-content .card button:hover {
+  background: black;
+  color: white;
+}
+
+.services-content .services-info ul {
+  margin: 2.27%;
+}
+
+.services-content .services-info ul li {
+  list-style: square;
+  padding: 0.56%;
+}
+
+.services-content .services-info {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid black;
+  margin: 2.27% 0 3.97% 0;
+  padding-top: 40px;
+}
+
+.services-content .services-info .facts {
+  width: 45.45%;
+  margin: 0 6.81% 2.27% 0;
+}
+
+.services-content .services-info .facts p {
+  margin-bottom: 2.27%;
+}
+
+.services-content .services-info .services-info-img {
+  width: 47.72%;
+  height: 300px;
+}
+
+.contact h4{
+    font-size: 1.6rem;
+}
+footer p{
+    font-size: 1.6rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    width: 100%;
+    padding: 0 3.75%;
+  }
+
+  header .logo {
+    order: -1;
+    display: block;
+    margin: 6.25% auto 0;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .cta .cta-text {
+    margin: 0;
+  }
+
+  .cta img {
+    display: none;
+  }
+
+  .main-content .middle-img {
+    width: 100%;
+  }
+
+  .main-content {
+    margin: 9.375% 2.55 4.375%;
+  }
+
+  .text-content {
+    margin: 0 1.25%;
+  }
+
+  .contact {
+    margin: 0 3.75%;
+  }
+}
+
+/* Phone Styles */
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 4% 0;
+    font-size: 2.0rem;
+    border-bottom: 1px solid gray;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+
+  header nav a:hover {
+    background: gray;
+  }
+
+  header .logo {
+    margin: 4% 0;
+  }
+
+  .cta {
+    margin-top: 10%;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .cta img {
+    max-width: 80%;
+  }
+
+  .main-content .middle-img {
+    width: 95%;
+  }
+
+  .main-content .top-content {
+    justify-content: space-around;
+    flex-direction: column;
+    height: 300px;
+    /* T R B L */
+    margin:0 0 0 3%;
+  }
+
+  .main-content .bottom-content {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 440px;
+    margin:0 0 0 3%;
+  }
+
+  .text-content {
+    margin: 0;
+  }
+
+  .contact {
+    margin: 4%;
+  }
+}
