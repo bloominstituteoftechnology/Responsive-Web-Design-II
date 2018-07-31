@@ -285,8 +285,12 @@ footer {
 
 /* Mobile view */
 @media (max-width: 500px) {
+	.container {
+		max-width: 500px;
+		width: 100%;
+	}
 	header .logo {
-		margin: 2rem;
+		width: 40%;
 	}
   header nav {
 		display: flex;
@@ -298,16 +302,14 @@ footer {
 	}
 	header nav a {
 		display: flex;
-		font-size: 2rem
-		border-top: 1px solid black;
-    margin: 2rem;
+		font-size: 2rem;
+		border: 1px solid black;
     width: 100%;
-		padding-top: 3rem;
+		padding: 3rem;
 		justify-content: center;
 	}
 	header nav a:last-child {
 		border-bottom: 1px solid black;
-		padding-bottom: 3rem;
 	}
 	.cta h1 {
 		font-size: 8rem;
