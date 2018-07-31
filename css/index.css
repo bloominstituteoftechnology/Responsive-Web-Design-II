@@ -52,22 +52,31 @@ table {
 	box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
 	font-family: 'Titillium Web', sans-serif;
-	font-weight: 500;
+  font-weight: 500;
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Bangers', cursive;
 	letter-spacing: 1px;
 	margin-bottom: 15px;
-	font-weight: bold;
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 
 .container {
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
+}
+
+p, a {
+  font-size: 1.6rem;
 }
 
 /* Shared */
@@ -88,21 +97,22 @@ header {
 	top: 0;
   z-index: 5;
 	border-radius: 5px;
-	padding: 32px 0;
-	width: 880px;
-  height: 75px;
+  padding: 20px 0;
+  max-width: 880px;
+  width: 100%;
+  height: auto;
   background-color: dodgerblue;
 }
 
 header nav {
   display: flex;
 	justify-content: space-between;
-	padding-left: 13px;
+	padding-left: 1.5%;
 	width: 70%;
 }
 
 .logo {
-	padding-right: 20px;
+	padding-right: 2.27%;
 }
 
 .logo:hover {
@@ -119,11 +129,11 @@ header nav {
 	}
 }
 
-nav a {
+header nav a {
 	color: black;
 	text-decoration: none;
 	font-weight: bold;
-	padding: 17px 0;
+  padding: 17px 0;
 }
 
 nav a:hover {
@@ -152,25 +162,27 @@ nav a:active {
 
 /* Innovation */
 .innovation {
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	padding: 60px 3px;
-	margin-top: 42px;
+	padding: 60px 0.34%;
+	margin-top: 50px;
 }
 
 .innovation h1 {
 	text-align: center;
-  font-size: 86px;
+  font-size: 7.5rem;
   letter-spacing: 7px;
 }
 
 .title {
-	text-align: center;
+  text-align: center;
+  padding-right: 2%;
 }
 
 .title a {
-	margin: 0 100px;
-  padding: 11px 0;
+	margin: 10px auto;
+  padding: 11px;
+  width: 55%;
   display: block;
   text-decoration: none;
   color: inherit;
@@ -201,7 +213,8 @@ nav a:active {
 
 /* Information */
 .box {
-	align-items: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .top {
@@ -211,16 +224,11 @@ nav a:active {
 
 .bottom {
   padding: 40px 0;
-  width: 34%;
+  width: 33%;
 }
 
 .middle-img {
   width: 100%;
-}
-
-.product {
-	padding: 0 10px;
-	margin: 0 5px;
 }
 
 /* Footer */
@@ -328,7 +336,7 @@ nav a:active {
 /* Tablet version */
 @media (max-width: 800px) {
   .container {
-    max-width: 880px;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
   }
@@ -336,24 +344,19 @@ nav a:active {
   /* Header */
   header {
     flex-direction: column-reverse;
-    height: 150px;
-    width: 100%;
     border-radius: 0;
     padding: 20px 0;
-    justify-content: space-evenly;
-    overflow: hidden;
   }
 
   header nav {
     justify-content: space-around;
-    padding-left: 0px;
+    padding-left: 0;
     margin-top: 22px;
     width: 100%;
   }
 
   .logo {
-    width: 201px;
-    padding-right: 0; 
+    padding-right: 0;
     padding-top: 7px;
   }
 
@@ -369,14 +372,13 @@ nav a:active {
   }
 
   .innovation h1 {
-    font-size: 70px;
+    font-size: 7rem;
     letter-spacing: 4px;
   }
 
   .title a {
-    font-size: 16px;
     margin-top: 32px;
-    padding: 6px 42px;
+    padding: 6px 0;
 }
   
   /* Information */
@@ -385,16 +387,16 @@ nav a:active {
   }
 
   .top {
-    padding: 36px 19px;
+    padding: 36px 1.3%;
   }
 
   .bottom {
-    padding: 33px 16px;
+    padding: 33px 2%;
   }
 
   /* Footer */
   footer .contact {
-    padding: 24px 27px;
+    padding: 24px 3.37%;
     line-height: 35px;
   }
 
@@ -433,11 +435,10 @@ nav a:active {
 /* Mobile version */
 @media (max-width: 500px) {
   .container {
-    max-width: 470px;
+    max-width: 500px;
   }
 
   header {
-    height: 490px;
     position: static;
     align-items: center;
     border-bottom: 1px solid black;
@@ -451,14 +452,13 @@ nav a:active {
 
   header .logo {
     padding: 44px 0 18px 0;
-    width: 206px;
   }
 
   header nav a {
     width: 100%;
     border-top: 1px solid black;
     padding: 19px 0;
-    font-size: 21px; 
+    font-size: 2.1rem; 
     text-align: center;
   }
 
@@ -469,20 +469,19 @@ nav a:active {
   }
 
   .innovation .title h1 {
-    font-size: 72px;
+    font-size: 7.2rem;
     letter-spacing: 1px;
   }
 
   .innovation .title a {
     margin-top: 28px;
-    padding: 6px 41px;
     font-size: 17px;
   }
 
   /* Information */
   .information {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 2.35%;
+    padding-right: 2.35%;
   }
 
   .information, .box{
@@ -493,21 +492,20 @@ nav a:active {
 
   .top, .middle-img {
     width: 100%;
-    padding: 54px 10px 1px 10px;
-    font-size: 18px;
+    padding: 54px 0 0 0;
+    font-size: 1.8rem;
   }
 
   .bottom {
     width: 100%;
     padding: 21px 0 43px 0;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   /* Footer */
 
   footer .contact {
-    padding: 23px 5px;
-    font-size: 16px;
+    padding: 23px 1.17%;
     line-height: 1.8;
   }
 
