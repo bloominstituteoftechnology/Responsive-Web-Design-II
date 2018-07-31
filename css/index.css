@@ -428,5 +428,32 @@ li  {
 /* Services page phone CSS below */
 
 @media (max-width: 500px)   {
+    .services-header-img    {
+        display: none;
+    }
 
+    .services-main-content  {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .services-content-box   {
+        width: 96%;
+        margin: 20px 0px 0px;
+    }
+
+    .services-info-img  {
+        display: none;
+    }
+
+    .services-bottom-text   {
+        width: 96%;
+        margin: 0 2%
+    }
+
+    .services footer    {
+        margin-top: 20px;
+    }
 }
