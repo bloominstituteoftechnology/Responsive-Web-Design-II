@@ -61,6 +61,10 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -71,7 +75,8 @@ h1, h2, h3, h4, h5 {
 
 
 .container {
-  width: 880px;
+  max-width: 880px;
+	width: 100%;
   /* TB LR */
   margin: 0 auto;
 
