@@ -270,6 +270,31 @@ footer {
         margin: 30px auto 0;
     }
 
+    /*Another option for header
+     .container{
+      max-width: 800px;
+      width: 100%;
+    }
+  
+    header{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  
+    header .logo{
+      display: block;
+      margin: 30px auto 0;
+    }
+  
+  
+    header nav {
+      width: 96%;
+      padding: 0 3.75%;
+  }
+
+  */
     
     .cta {
         justify-content: center;
@@ -332,6 +357,12 @@ footer {
     .facts img {
     display: none;
     }
+
+     /* Services */
+     .services-header-img{
+      width: 100%;
+      padding: 2.5%;
+    }
 }
 
 
@@ -372,8 +403,9 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+      margin-bottom: 20px;
     }
+
 
     .cta {
         margin-top: 50px;
@@ -403,12 +435,6 @@ footer {
 
     .contact {
         margin: 4%;
-    }
-
-        /* Services */
-    .services-header-img{
-      width: 100%;
-      padding: 20px;
     }
 
 }
