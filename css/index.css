@@ -177,8 +177,14 @@ header .logo {
 
 /* Contact Styles */
 
+.contact{
+    width: 100%;
+    font-size: 1.4rem;
+}
+
 .contact p {
-    margin: 15px ;
+    margin: 15px 0px 10px ;
+    padding:5px 0px 0px;
     width:100%;
     font-size: 1.4rem;
 }
@@ -189,6 +195,7 @@ footer {
     text-align: center;
     margin: 40px 0 20px;
     width: 100%;
+    font-size: 1.4rem;
 }
 
 /* Tablet */ /*---------------------------------------------------------------------------->*/
