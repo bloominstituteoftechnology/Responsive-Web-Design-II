@@ -324,14 +324,14 @@ footer {
 		align-items: center;
 		margin: 0;
         margin-top: 25px;
-		/* border-top: 1px solid black; */
+		border-top: 1px solid black;
 	}
 
 	header nav a {
 		width: 100%;
-		height: 60px;
+		height: 12%;
 		text-align: center;
-		padding: 30px;
+		padding: 6%;
 		display: block;
 		border-bottom: 1px solid black; 
 	}
@@ -344,7 +344,7 @@ footer {
 
 	.cta .cta-text {
 		width: 100%;
-		margin: 80px auto;
+		margin: 0 auto;
 		margin-bottom: 0px;
 	}
 	
@@ -358,12 +358,12 @@ footer {
 		/* display: flex; */
 		flex-direction: column;
 		justify-content: space-around;
-        padding: 0 20px;
+        padding: 0 4%;
     }
 
     .main-content .top-content .text-content {
 		width: 100%;
-		margin-right: 44px;
+		margin-right: 8.8%;
 		margin-top: 20px;
 		margin-bottom: 15px;
 	}
@@ -372,8 +372,8 @@ footer {
 		width: 100%;
 		margin-top: 35px;
 		margin-bottom: 0px;
-		padding-left: 20px;
-        padding-right: 20px;
+		padding-left: 4%;
+        padding-right: 4%;
     }
 
     .main-content .bottom-content {
@@ -381,13 +381,13 @@ footer {
 		/* display: flex; */
 		flex-direction: column;
 		justify-content: space-around;
-        padding: 0 20px;
+        padding: 0 4%;
 		/* border: 1px solid black; */
 	}
 
 	.main-content .bottom-content .text-content {
 		width: 100%;
-		margin-right: 50px;
+		margin-right: 10%;
 		margin-top: 20px;
 		margin-bottom: 15px;
 		/* border: 1px solid black; */
