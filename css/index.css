@@ -266,11 +266,16 @@ footer .copyright {
 
 /* tablet */
 @media (max-width:800px) {
+
+    .container {
+        max-width: 800px;
+    }
+
 	nav {
-		max-width: 800px;
+		/* max-width: 800px; */
          width: 94%;
         /* height: 60px; */
-        margin: 90px 10px 0 20px;
+        margin: 100px 10px 0 20px;
         padding: 20px 1.5%;
         display: flex;
         justify-content: space-between;
@@ -281,7 +286,7 @@ footer .copyright {
 		position: absolute;
 		top: 20px;
     	right: 270px;
-		padding: 10px;
+		padding: 25px 0;
 
 	}
 	.circle {
@@ -312,14 +317,15 @@ footer .copyright {
 
 	.text1 {
 		border-top: 1px solid black;
-		margin: 90px 0 0 18px;
-		padding: 20px 0 20px 0px;
+		margin: 85px 0 0 18px;
+		padding: 20px 0;
 		display: flex;
-		width: 760px;
+        width: 95%;
+        font-size: 16px;
 	}
 
 	.middle-img {
-		width: 760px;
+		width: 95%;
     	margin-left: 20px;
     	top: 0px;
 	}
