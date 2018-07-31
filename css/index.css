@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5 {
 header {
   display: flex;
   flex-wrap: column;
-  margin-bottom: 70px;
+  margin-bottom: 0;
 }
 header nav {
   display: flex;
@@ -230,7 +230,7 @@ article.services p {
   line-height: 1.3;
 }
 
-section.service-descriptions {
+.service-descriptions {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -350,7 +350,12 @@ article.services h2 {
   .cta img {
     display:none;
   }
-  
+
+  .service-descriptions {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .main-content .middle-img {
     width: 100%;
   }
@@ -467,7 +472,7 @@ article.services h2 {
     margin-bottom: 20px;
   }
 
-  .cta, .main-content, .contact, footer {
+  .cta, .main-content, .contact, footer, .services article {
     width: 90%;
   }
   .contact {
@@ -482,13 +487,12 @@ article.services h2 {
   .services-header-img,{
     width: 100%
   }
-  article.services {
-    width: 90%
-  }
-  section.service-descriptions {
+
+  .service-descriptions {
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
   }
 
 }
-
 
