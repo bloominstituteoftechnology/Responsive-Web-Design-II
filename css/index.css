@@ -308,13 +308,24 @@ footer {
 
 .services-header-img	{
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .services-intro	{
-	padding: 30px 0px;
-	width: 80%;
-	margin-left: 5%;
+	padding: 32px 0px;
+	width: 100%;
+}
+
+.services-intro h4  {
+    font-size: 2.4rem;
+    letter-spacing: 1.8px;
+}
+
+.services-intro p   {
+    font-size: 1.6rem;
+    padding-top: 1px;
+    line-height: 1.25;
+    padding-bottom: 7px;
 }
 
 h5	{
