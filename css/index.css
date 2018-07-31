@@ -371,7 +371,6 @@ footer .copyright {
 
     .container {
         max-width: 500px;
-        border: 1px solid black;
     }
 
 	nav {
@@ -433,7 +432,7 @@ footer .copyright {
 		padding: 35px 0 15px 0px;
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+		width: 92%;
 	}
 
 	.text1 .features {
@@ -453,7 +452,7 @@ footer .copyright {
 	}
 
 	.middle-img {
-		width: 100%;
+		width: 92%;
     	margin-left: 20px;
     	top: 0px;
 	}
@@ -485,10 +484,10 @@ footer .copyright {
 	}
 
 	.padding {
-		width: 100%;
-		border-top: 1px solid black;
-		margin: 30px 0 0 20px;
-		padding: 33px 0 0 0;
+		width: 92%;
+		border-top: 2px solid black;
+		margin: 29px 4%;
+		padding: 20px 0;
 	}
 
 	footer .copyright {
