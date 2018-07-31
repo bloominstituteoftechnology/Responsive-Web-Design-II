@@ -63,7 +63,7 @@ html, body {
 	background-color:whitesmoke;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, input[type="submit"] {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
@@ -360,6 +360,11 @@ input[name="forms"] {
 	width: 100%;
 	display: none;
   }
+
+  .contact-form form {
+	  margin-top: 30px;
+  }
+
   input[name="forms"]:checked+section.contact-form {
 	display: block;
   }
@@ -375,18 +380,27 @@ input[name="forms"] {
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #EE5454;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+	width: 100%;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px 0;
+	display: block;
+	text-align: center;
+	background: whitesmoke;
+	color: #000;
+	text-decoration: none;
+	margin-top: 20px;
+	transition: background-color .2s, color .2s, 
+	box-shadow .2s, text-shadow .2s;
+	font-size: 1.6rem;
+	cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #d64a4a;
+	background-color: #000;
+	color: #FFF;
+	text-shadow:lightgreen 0 0 10px;
+	box-shadow:lightgreen 0 0 10px;
 }
 
 input[type=textarea] {
