@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5 {
 /* MOBILE FIRST @ WIDTH 400PX */
 .container {
     width: 90%;
+    max-width: 880px;
     margin: 0 auto;
 }
 
@@ -89,6 +90,12 @@ header .logo {
     display: block;
     padding: 20px 0px;
     border-bottom: 1px solid black;
+    transition: 300ms ease-in-out;
+}
+
+header .logo:hover{
+    transform: scale(1.15, 1.15);
+    opacity: 0.7;
 }
 
 header nav a {
@@ -154,6 +161,8 @@ header nav a:hover{
 
 .services-info ul {
     line-height: 3rem;
+    list-style-type: square;
+    margin-left: 20px;
 }
 
 .contact {
@@ -168,7 +177,7 @@ footer {
 
 
 /* TABLET VIEW */
-@media (min-width: 420px){
+@media (min-width: 500px){
     header nav {
         display: flex;
         flex-flow: row nowrap;
@@ -217,18 +226,21 @@ footer {
 
     .services-info-img {
         max-width: 45%;
-        background-size: cover;
+        background-size: cover !important;
         background: url('../../img/services-info.png') no-repeat;
+        background-position: right;
     }
 }
 
 @media (min-width: 768px){
     header {
+        max-width: 880px;
         position: absolute;
         top: 0;
         width: 90%;
         display: flex;
         justify-content: space-between;
+        margin-top: 10px;
     }
 
     header nav {
@@ -245,8 +257,11 @@ footer {
         text-align: right;
     }
 
-
     .services-content {
         margin-top: 80px;
+    }
+
+    .services-content .card {
+        max-width: 33%;
     }
 }
