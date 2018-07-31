@@ -245,48 +245,58 @@ footer {
 }
 	header .logo{
 		margin: 20px 0;
+		margin-left: 4.14%;
 	}
 	
-	header nav {
-        flex-direction: column;
-		margin: 0;  
+	header nav{ 
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		font-size: 2rem;
 	}
 	
-		/*how do i get the grey line for just the top without using border top*/
 	header nav a{
-		display: block;
 		text-align: center;
 		padding: 20px;
-		font-size: 20px;
+		margin-left: 4.14%;
 		border-bottom: 1px solid grey;  
+	}
+	
+	header nav a:first-child {
 		border-top: 1px solid grey;
 	}
 	
 	/*CTA*/
 	.cta {
-		margin: 45px 0 0 14px;
+		margin-top: 51px;
+		margin-left: 7.33%;
 	}
 	
 	/*Main Content*/
+	.main-content{
+		padding:0 0 32px 0;
+	}
 	
 	.main-content .top-content {
 		justify-content: space-around;
 		height: 304px;
 		flex-direction: column;
+		margin: 29px 0;
+	}
+	
+	.main-content .middle-img{
+		margin: 30px 4.08%;
 	}
 	
 	.main-content .bottom-content {
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: space-around;
-		height: 440px;
 	}
 	
 	  .text-content {
-        margin: 0;
+		margin: 0;
+		padding: 21px;
     }
 	
-	.contact {
-		margin:20px;
-	}
 	
 }
