@@ -23,10 +23,10 @@
   padding: 2% 8%;
 }
 #index-title-area #index-image {
-  width: 90%;
   margin: 0 auto;
 }
 #index-title-area #index-image img {
+  width: 80%;
   margin: 0 auto;
 }
 /* end title area */
