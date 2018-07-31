@@ -303,3 +303,65 @@ footer {
         margin: 20px 4%;
     }
 }
+
+/* Services page CSS specific styling start below*/
+
+.services-header-img	{
+	width: 100%;
+	margin-top: 30px;
+}
+
+.services-intro	{
+	padding: 30px 0px;
+	width: 80%;
+	margin-left: 5%;
+}
+
+h5	{
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.services-main-content	{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding-bottom: 30px;
+}
+
+.services-content-box	{
+	width: 40%;
+	border: 1px solid black;
+	background-color:whitesmoke;
+	justify-content: space-around;
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.services-main-content button	{
+	margin: 20px 0px;
+}
+
+.services-bottom-content {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 80px;
+}
+
+.services-bottom-text	{
+	width: 40%;
+}
+
+.services-info-img	{
+	width: 50%;
+}
+
+ul	{
+	margin-top: 30px;
+	list-style-type: disc;
+	line-height: 2;
+	margin-left: 20px;
+}
