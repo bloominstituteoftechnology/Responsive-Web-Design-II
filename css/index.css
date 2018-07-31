@@ -204,6 +204,7 @@ header .header-img {
 
   .container {
     max-width: 800px;
+    padding: 0 1.45%;
   }
 
   header {
@@ -212,7 +213,7 @@ header .header-img {
   }
 
   header .header-nav {
-    width: 98%;
+    width: 97.5%;
 
   }
 
@@ -253,7 +254,8 @@ header .header-img {
   }
 
   .articles .bottom-row .article{
-    padding: 0 2.5%;
+    padding: 0 4.5% 0 1%;
+
   }
 
   .articles .article {
@@ -262,19 +264,20 @@ header .header-img {
 }
 
   .articles .middle-img {
-    padding: 30px 0;
+    padding: 28.5px 0;
   }
 
   .footer address {
     padding-left: 1.5%;
-    line-height: 1.52rem;
+    line-height: 1.6rem;
   }
 
 
 
-@media (max-width: 520px){
+@media (max-width: 550px){
   .container {
     max-width: 500px;
+    padding: 0;
   }
 
   header {
@@ -282,21 +285,23 @@ header .header-img {
   }
 
   header .header-img {
-    padding: 4% 0;
+    padding: 19px 0;
     margin: 0;
   }
 
   header .header-nav {
     flex-direction: column;
+    width: 100%;
 
   }
 
   header .header-nav a{
     color: lightgray;
-    padding: 4.05% 0;
+    padding: 20px 0;
     font-size: 2rem;
     font-weight: bold;
     border-bottom: 1px solid gray;
+
   }
 
   header .header-nav a:first-child {
@@ -308,41 +313,39 @@ header .header-img {
   }
 
   .main {
-    width: 91%;
+    width: 95.5%;
     margin: auto;
   }
   .main .main-title {
   	font-size: 7.2rem;
   	/* width: 100%; */
-  	padding: 5% 0 13%;
+  	padding: 23px 0 63px;
   }
 
 .articles {
   margin: auto;
-  width: 90%;
-  padding: 0 0;
+  width: 95.5%;
+  padding: 0;
 }
 
   .articles .top-row,
   .articles .bottom-row{
-    padding: 6.8% 0;
+    padding: 58px 0 0 0;
     flex-direction: column;
-    /* background-color: orange; */
   }
 
   .articles .bottom-row{
-    padding: 5.4% 0 5.7% 0;
+    padding: 20px 0 26px;
   }
 
     /* .articles .top-row, */
 
   .articles .top-row .article {
-    padding: 6% 0 4% 0;
-    /* background-color: orange; */
+    padding: 0 0 45px 0;
   }
 
     .articles .bottom-row .article{
-    padding: 0 0 2% 0;
+    padding: 0 0 9px 0;
     /* background-color: red; */
     }
 
@@ -353,11 +356,11 @@ header .header-img {
 
 
   .articles .middle-img{
-    padding: 1% 0;
+    padding: 7px 0;
   }
 
 footer  {
-  width: 95%;
+  width: 98.5%;
   margin: auto;
 }
 
