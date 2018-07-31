@@ -400,6 +400,10 @@ li  {
     padding-top: 10px;
 }
 
+.services-mobile-buttons    {
+    display: none;
+}
+
 /* Services page tablet CSS below */
 
 @media (max-width: 800px)   {
@@ -455,5 +459,15 @@ li  {
 
     .services footer    {
         margin-top: 20px;
+    }
+
+    .services-mobile-buttons    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .services input     {
+        
     }
 }
