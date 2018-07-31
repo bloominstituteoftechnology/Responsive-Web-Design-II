@@ -65,7 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: auto;
 }
 
@@ -78,7 +79,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -176,21 +177,22 @@ footer {
 @media (max-width: 800px) {
 
     .container {
-        width: 100%;
+
+        max-width: 800px;
     }
 
     header {
         flex-wrap: wrap;
+
     }
   
     header nav {
-        width: 768px;
-        padding: 0 30px;
+        width: 96%;
+        padding: 0 3.75%;
     }
 
     header .logo {
         order: -1;
-        display: block;
         margin: 30px auto 0;
     }
 
@@ -211,20 +213,24 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 75px 2.5% 35px;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 1.25%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 0 3.75%;
     }
 }
 
 /* Phone */
 @media (max-width: 500px) {
+
+    .container {
+        max-width: 500px;
+    }
 
     header {
         justify-content: center;
