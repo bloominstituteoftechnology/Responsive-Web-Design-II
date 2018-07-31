@@ -228,6 +228,7 @@ footer {
 /* Tablet view */
 @media (max-width: 800px) {
   .container {
+		max-width: 800px;
 		width: 100%;
 	}
 	header {
@@ -241,7 +242,7 @@ footer {
 	}
 	header .logo {
 		display: flex;
-    width: 30%;
+    width: 25%;
 		justify-content: center;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
@@ -251,7 +252,7 @@ footer {
 		width: 100%;
 		justify-content: space-around;
 	}
-	section .cta {
+	.cta {
    display: flex;
 	 justify-content: center;
 	 margin-top: 2rem;
@@ -267,7 +268,8 @@ footer {
 		 padding-bottom: 3rem;
 	 }
 	 .main-content {
-		 margin: 2rem;
+		 margin: 2em;
+		 text-size: 2em;
 	 }
 	 .contact {
 		 margin: 2rem;
