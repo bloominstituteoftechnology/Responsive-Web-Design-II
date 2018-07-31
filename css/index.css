@@ -329,7 +329,7 @@ footer {
 }
 
 h5	{
-	font-size: 1.64rem;
+	font-size: 1.6rem;
     margin-bottom: 18px;
     margin-top: 2px;
 }
@@ -368,23 +368,34 @@ h5	{
 }
 
 .services-bottom-content {
-	margin-top: 30px;
+	margin-top: 40px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-bottom: 80px;
 }
 
 .services-bottom-text	{
-	width: 40%;
+	width: 47%;
 }
 
-.services-info-img	{
-	width: 50%;
+.services-bottom-text p {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    padding-bottom: 7px;
 }
 
 ul	{
-	margin-top: 30px;
-	list-style-type: disc;
-	line-height: 2;
-	margin-left: 20px;
+	margin-top: 12px;
+    list-style-type: square;
+    line-height: 1.9;
+    margin-left: 20px;
+    font-size: 1.59rem;
+}
+
+li  {
+    padding-left: 5px;
+}
+
+.services footer    {
+    padding-top: 10px;
 }
