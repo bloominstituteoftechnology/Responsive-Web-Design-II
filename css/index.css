@@ -404,7 +404,24 @@ li  {
 
 @media (max-width: 800px)   {
     .services-intro {
-        text-align: center;
+        width: 95%;
+        margin: 0 2.5%;
+    }
+
+
+
+    .services-main-content  {
+        width: 95%;
+        margin: 0 2.5%;
+    }
+
+    .services-bottom-content    {
+        width: 95%;
+        margin: 20px 2.5%;
+    }
+
+    .services-info-img  {
+        width: 47.5%;
     }
 }
 
