@@ -21,7 +21,7 @@ time, mark, audio, video {
 	border: 0;
 	font: inherit;
     vertical-align: baseline;
-    font-size: 62.5%;
+    font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -74,8 +75,8 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-between;
+
 }
 
 header nav {
@@ -83,11 +84,13 @@ header nav {
     width: 69.3%;
     justify-content: space-between;
     display: flex;
+    font-size: 1.6rem;
 }
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+
 }
 
 header nav a:hover {
@@ -108,7 +111,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -120,7 +123,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -140,12 +143,13 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
+    font-size: 1.6rem;
 }
 
 .main-content .middle-img {
@@ -167,6 +171,7 @@ header .logo {
 .contact p {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
@@ -240,23 +245,19 @@ footer {
     }
 
     header nav {
-        width: 100%;
         flex-direction: column;
-        margin: 0;
-        padding: 0;
+        border-top: 1px solid gray;
+        /* margin: 0;
+        padding: 0; */
     }
 
     header nav a {
         width: 100%;
-        display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 1rem;
         border-bottom: 1px solid gray;
-    }
-
-    header nav a:first-child {
-        border-top: 1px solid gray;
     }
 
     header nav a:hover {
@@ -264,7 +265,8 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .cta {
