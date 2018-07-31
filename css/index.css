@@ -329,30 +329,42 @@ footer {
 }
 
 h5	{
-	font-size: 25px;
-	margin-bottom: 20px;
+	font-size: 1.64rem;
+    margin-bottom: 18px;
+    margin-top: 2px;
 }
 
 .services-main-content	{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	border-bottom: 1px solid black;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
 	border-top: 1px solid black;
-	padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .services-content-box	{
-	width: 40%;
+	width: 47.7%;
 	border: 1px solid black;
 	background-color:whitesmoke;
-	justify-content: space-around;
-	margin-top: 30px;
+	justify-content: space-between;
+	margin-top: 40px;
 	padding: 20px;
 }
 
+.services-main-content .services-content-box p  {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    padding-bottom: 7px;
+}
+
 .services-main-content button	{
-	margin: 20px 0px;
+	height: 35px;
+    margin-top: 12px;
+    border-color: black;
+    width: 141px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .services-bottom-content {
