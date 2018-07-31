@@ -324,6 +324,24 @@ footer {
     margin-bottom: 1%;
   }
 
+/* animation testing */
+
+  @keyframes tablet {
+    0%   {background-color: white;}
+  25%  {background-color: lightblue;}
+  50%  {background-color: yellow;}
+  100% {background-color: lightgreen;}
+  }
+
+  header nav {
+
+  background-color: white;
+  animation-name: tablet;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  animation-timing-function: ease-in-out;
+  }
+
 }
 
 /* mobile view */
@@ -360,6 +378,25 @@ footer {
     border-top: 1px solid black;
     padding-top: 4%;
     padding-bottom: 4%;
+
+  }
+
+    /* testing animations for nav bar */
+
+    @keyframes mobile {
+      0%   {background-color: white;}
+    25%  {background-color: lightblue;}
+    50%  {background-color: yellow;}
+    100% {background-color: lightgreen;}
+    }
+
+   header nav a:hover {
+
+    background-color: white;
+    animation-name: mobile;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
   }
 
   header .logo {
@@ -408,5 +445,5 @@ footer {
   footer {
     margin-bottom: 1%;
   }
-  
+
 }
