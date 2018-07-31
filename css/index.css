@@ -60,12 +60,12 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 0.11%;
+    margin-bottom: 1.7%;
 }
 
 .container {
-    width: 880px;
+    width: 100%;
     margin: auto;
 }
 
@@ -77,8 +77,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px;
-    width: 610px;
+    margin-top: 4.5%;
+    width: 69.3%;
     justify-content: space-between;
     display: flex;
 }
@@ -86,6 +86,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -94,26 +95,26 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 3.1% 0% 0% 10.3%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 8.1%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .56%;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0% 9.3% 0% 0%;
 }
 
 .cta .cta-text button {
@@ -136,40 +137,49 @@ header .logo {
 .main-content {
    border-top: 2px solid black;
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
-   font-size: 16px;
+   margin: 8.52% 0% 3.97% 0%;
+   padding: 3.97% 0%;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
+    margin: 1.8%;
 }
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    width: 100%;
+    padding: 1.5%;
 }
 
 .main-content .bottom-content {
     display: flex;
+    margin: 1.8%;
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.2%;
 }
 
 /* Contact Styles */
 
 .contact p {
-    margin: 15px 0;
+    margin: 1.8%;
+    font-size: 1.6rem;
 }
 
+.contact h4 {
+  font-size: 1.8rem;
+  margin: 1.8%;
+}
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4.5% 0% 20%;
+    font-size: 1.6rem;
 }
 
 /* Services Styles */
@@ -257,7 +267,7 @@ footer {
 
   .container {
     width: 100%;
-    padding: 20px;
+    padding: 2.3%;
   }
 
   .cta img {
@@ -273,21 +283,25 @@ footer {
   header nav {
     display: flex;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
+    padding: 0% 3.5%;
+  }
+
+  header nav a {
+    font-size: 1.6rem;
   }
 
   header .logo {
     /* display: block; */
     order: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2% 37%;
     width: 25%;
   }
 
   .cta {
     display: flex;
     justify-content: center;
-    padding-left: 80px;
+    padding-left: 9.1%;
   }
 
   .main-content .top-content .text-content {
