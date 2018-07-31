@@ -75,7 +75,6 @@ html {
 
 .container {
     max-width: 880px;
-    border: 1px solid black;
 }
 
 nav {
@@ -354,14 +353,16 @@ footer .copyright {
 	}
 
 	.padding {
-		width: 749px;
-		border-top: 1px solid black;
-		margin: 25px 0 0 20px;
-		padding: 33px 0 0 10px;
+		width: 95%;
+		border-top: 2px solid black;
+		margin: 0 2.5%;
+        padding: 33px 1.5%;
+        font-size: 16px;
 	}
 
 	footer .copyright {
-		width: 799px;
+		padding: 0px;
+        font-size: 16px;
 	}
 }
 
