@@ -1,1 +1,362 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+	max-width: 880px;
+    margin: auto;
+    margin-top: -0.45%;
+	font-size: 1.5rem;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.6%;
+}
+
+.container header .main-nav {
+    width: 68.7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 1%;
+    padding-top: 0.75%;
+    justify-content: space-between;
+}
+
+.container header .main-nav a {
+    color: grey;
+    text-decoration: none;
+}
+
+.container header .logo-div {
+    display: flex;
+}
+
+.container .main-body .call-to-action {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+    align-items: center;
+    margin-top: 8%;
+    padding-bottom: 9%;
+	border-bottom: 2px solid black;
+}
+
+.container .main-body .call-to-action .call-to-action-div {
+    width: 50%;
+}
+
+.container .main-body .call-to-action .innovation-on-demand * {
+    margin-right: -26%;
+}
+
+.container .main-body .call-to-action .innovation-on-demand h1 {
+    font-size: 7rem;
+}
+
+.container .main-body .call-to-action .call-to-action-div .top-img {
+    float: right;
+}
+
+.container .main-body .call-to-action .innovation-on-demand .get-started {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 1.5% 9.5%;
+    margin-top: 4.75%;
+    margin-left: -1.75%;
+    font-size: 1.75rem;
+}
+
+.container .main-body .features-and-about-section {
+    display: flex;
+    margin-top: 4%;
+    font-size: 1.6rem;
+    margin-bottom: 4.25%;
+}
+
+.container .main-body .middle-img, .services-header-img {
+	display: block;
+	margin: auto;
+	width: 100%;
+	margin-bottom: 4%;
+}
+
+.container .main-body .services-product-vision-section, .services-section {
+    display: flex;
+    font-size: 1.6rem;
+    margin-top: -0.5%;
+    padding-bottom: 7.2%;
+	border-bottom: 2px solid black;
+}
+
+.container .main-body .contact-section {
+    margin-top: 4%;
+    margin-left: 0.2%;
+}
+
+.container .main-body .contact-section address {
+    font-size: 1.6rem;
+}
+
+.container .main-body .contact-section .copyright {
+	text-align: center;
+	margin-top: 4%;
+    margin-top: 4.75%;
+    margin-left: -1%;
+}
+
+
+/* CSS for services.html */
+.content-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-bottom: 40px;
+}
+
+.content-section-div {
+	border: 2px solid black;
+	background-color: rgb(235, 235, 235);
+	width: 48%;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+.learn-more {
+	display: inline-block;
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 6px;
+	padding: 8px 24px 8px 24px;
+	margin-top: 30px;
+}
+
+.facts-section {
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-between;
+}
+
+.facts-section-div {
+	width: 48%;
+}
+
+.services-info-img {
+	float: right;
+}
+
+ul {
+	list-style: square inside;
+}
+
+.facts-section-div ul {
+	margin-top: 25px;
+}
+
+.facts-section-div ul li {
+	margin-top: 10px;
+}
+
+.services-copyright {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+
+/* media queries for index.html */
+@media ( max-width: 800px ) {
+    .container header {
+        flex-wrap: wrap;
+        margin-top: 4.6%;
+    }
+
+    .container header .logo-div {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container header .main-nav {
+        width: 100%;
+        padding-top: 5.75%;
+        justify-content: space-between;
+    }
+
+    .container header .main-nav a {
+        margin-top: -1%;
+        margin-left: 1.75%;
+        margin-right: 6%;
+        font-size: 1.6rem;
+    }
+
+    .container .main-body .call-to-action {
+        padding-bottom: 9.5%;
+    }
+    
+    .container .main-body .call-to-action .top-img-div {
+        display: none;
+    }
+
+    .container .main-body .call-to-action .innovation-on-demand {
+        margin-left: -12%;
+        margin-top: 2%;    
+    }
+
+    .container .main-body .call-to-action .innovation-on-demand .get-started {
+        padding: 1.5% 10.5%;
+        margin-top: 3.75%;
+        margin-left: -1.75%;
+    }
+
+    .container .main-body .features-and-about-section {
+        margin-left: 2%;
+        margin-top: 6%;
+    }
+
+    .container .main-body .features-and-about-section div {
+        width: 50%;
+    }
+
+    .container .main-body .features-and-about-section div p {
+        width: 100%;
+        font-size: 1.67rem;
+    }
+
+    .container .main-body .services-product-vision-section {
+        margin-left: 1.75%;
+        margin-top: 5%;
+    }
+
+    .container .main-body .services-product-vision-section div p {
+        font-size: 1.67rem;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .container {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+    .container header .logo-div {
+        margin-left: 7%;
+        margin-bottom: -1.5%;
+    }
+
+    .container header .main-nav {
+        margin-top: 4%;
+        margin: 0;
+    }
+
+    .container header .main-nav a {
+        width: 100%;
+        border-top: 1px solid black;
+        padding: 5%;
+        text-align: center;
+        font-size: 1.9rem;
+        margin: auto;
+        padding-left: 12%;
+    }
+
+    .container header .main-nav .contact-link {
+        border-bottom: 1px solid black;
+    }
+
+    .container .main-body {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container .main-body .call-to-action {
+        padding-top: 20%;
+    }
+
+    .container .main-body .features-and-about-section {
+        flex-wrap: wrap;
+    }
+
+    .container .main-body .features-and-about-section div {
+        flex: 0 0 100%;
+        margin-top: 5%;
+    }
+
+    .container .main-body .services-product-vision-section {
+        flex-wrap: wrap;
+    }
+
+    .container .main-body .services-product-vision-section div {
+        margin-top: 5%;
+        flex: 0 0 100%;
+    }
+}
