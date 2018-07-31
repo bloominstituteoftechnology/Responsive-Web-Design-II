@@ -293,6 +293,15 @@ footer {
     display: none;
   }
 
+  @keyframes colorize {
+    0%  { font-size: 1rem; color: lightskyblue; background: white; }
+    100%{ font-size: 2rem; color: firebrick; background: lightskyblue; }
+  }
+
+  .cta .cta-text button {
+    animation: colorize 3s ease-in 0s infinite alternate both;
+  }
+
   .main-content {
     padding: 6% 0;
     margin: 11% 0 3.98% 0;
