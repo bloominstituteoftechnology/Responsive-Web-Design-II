@@ -394,9 +394,14 @@ footer {
     }
 
     /* Facts Styles */
-    
+    /* Facts Styles */
     .facts .facts-content {
-        padding-left: 1%;
+        width: 100%;
+        padding: 1%;
+    }
+    
+    .services-info-img {
+        display: none;
     }
 }
 
@@ -494,6 +499,8 @@ footer {
     }
 
     .services-main-content .middle-content .box-content {
+        display: flex;
+        /* justify-content: center; */
         width: 100%;
     }
 
