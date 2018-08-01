@@ -69,13 +69,18 @@ font-size:62.5%;
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom:15px;
+}
+
+p{
+    font-size: 1.6rem;
 }
 
 .container {
   width: 880px;
+  width:100%
   /* TB LR */
-  margin: 0 auto;
+  margin: auto;
   border: 1px solid red;
   }
 
@@ -83,13 +88,15 @@ h1, h2, h3, h4, h5 {
 header {
     width:100%;
     display: flex;
+    font-size: 1.6rem;
 }
 
 header nav { /* display: flex;*/
  /* width: 610px;*/
- width: 69.31%
+ width: 100%;
+ margin: 38px 15 0;
  justify-content:space-between;
-  margin-top: 40px;
+  display: flex;
 }
 
 
@@ -132,12 +139,16 @@ header .logo {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: /*170px*/ 19.31%;
+    width: 170px;
     height: 32px;
     margin-top:/* 10px*/1.13% ;
     cursor: pointer;
 }
-
+/* if I don't have this .cta img block here, get started button gets messy*/
+.cta img {
+    max-width: 100%;
+    margin-right: 1%;
+}
 .cta .cta-text button:hover {
     background: black;
     color: white;
@@ -148,23 +159,26 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin:/* 75px */ 8.52% 0 35px 0;
-   padding: /*35px*/3.97% 0. 0;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
    font-size: 1.6rem;
-   line-height: 18px;
+   line-height: 1.3rem;
 }
 
 .main-content .top-content {
     display: flex;
+  justify-content: space-around;  
 }
 
 .main-content .middle-img {
+    max-width:100%;
     display: block;
     margin:/* 30px*/3.4%  auto;
 }
 
 .main-content .bottom-content {
     display: flex;
+    justify-content: space-around;
 }
 
 .main-content .bottom-content p {
@@ -196,10 +210,11 @@ footer {
       flex-wrap: wrap;
   }
     header nav {
-        width: /*768px*/96% ;
-        padding: 0 /*30px*/ 3.75%;
+        width: 100%;
+        padding: 38px 3%;
            }
-    header .logo {
+   
+   header .logo {
   display: block;
   order: -1;
   margin: 30px auto 0;
@@ -207,18 +222,22 @@ footer {
         .cta img{
     display: none;
        }
+
        .cta {
            justify-content: center;
+           margin-top: 35px;
                }
-               .cta .cta-text {
-                   margin:0;
+               .cta .cta-text h1 {
+                   letter-spacing: 0;
+                   margin-bottom: 15px;
                                   }
   .main-content .middle-img {
        width: 100%;
+       margin: 10px auto 25px;
     }
 
     .main-content {
-       margin: 75px 20px /*35px*/4.37%;
+       margin: 75px 2% 35px;
     }
 
     .text-content {
@@ -226,7 +245,7 @@ footer {
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 20px 2%;
     }
                                 
 }
@@ -242,10 +261,9 @@ footer {
     header nav {
         flex-direction: column;
         margin: 0;
-        padding:0;
-        width: 100%;
-        
+              
         }
+
         header nav a {
             width: 100%;
             display: block;
@@ -262,6 +280,7 @@ footer {
     header nav a:hover {
         background: gray;
     }
+    
     header .logo {
     margin: 20px 0;
 }
