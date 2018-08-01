@@ -82,13 +82,14 @@ nav {
 	height: 20px;
 	margin: 5px;
 	padding: 20px;
+	font-size: 1.6rem;
 	display: flex;
     justify-content: space-evenly;
 }
 
 nav a {
 	color: gray;				
-	font-size: 15px;
+	/* font-size: 15px; */
 	text-decoration: none;		
 }
 
@@ -171,6 +172,7 @@ img1 {
 	margin-top: 130px;
 	margin-left: 75px;
 	padding: 20px;
+	font-size: 1.6rem;
 	display: flex;
 	width: 1100px;
 }
@@ -212,6 +214,7 @@ img1 {
 	display: flex;
 	width: 1900px;
 	padding-top: 25px;
+	font-size: 1.6rem;
 }
 
 		/* Section Begin */
@@ -252,6 +255,7 @@ img1 {
 	margin-top: 50px;
 	margin-left: 75px;
 	padding-top: 25px;
+	font-size: 1.6rem;
 }
 	/* Div End */
 
@@ -261,6 +265,7 @@ footer .copyright {
 	padding-top: 40px;	
 	display: flex;
 	justify-content: center;
+	font-size: 1.6rem;
 }
 
 /* tablet */
@@ -274,7 +279,7 @@ footer .copyright {
 		/* max-width: 800px; */
          width: 94%;
         /* height: 60px; */
-        margin: 90px 10px 0 20px;
+        margin: 85px 10px 0 20px;
         padding: 20px 1.5%;
         display: flex;
         justify-content: space-between;
@@ -284,7 +289,7 @@ footer .copyright {
 	.logo {
 		position: absolute;
 		top: 10px;
-    	right: 270px;
+    	left: 306px;
 		padding: 25px 0;
 
 	}
@@ -320,7 +325,6 @@ footer .copyright {
 		padding: 20px 0;
 		display: flex;
         width: 95%;
-        font-size: 1.6rem;
 	}
 
 	.middle-img {
@@ -333,7 +337,6 @@ footer .copyright {
 		margin: 10px 2%;
 		padding: 15px 0;
         width: 95%;
-        font-size: 1.6rem;
 	}
 
 	.text2 .services-on-homepage {
@@ -357,12 +360,10 @@ footer .copyright {
 		border-top: 2px solid black;
 		margin: 0 2.5%;
         padding: 33px 1.5%;
-        font-size: 1.6rem;
 	}
 
 	footer .copyright {
 		padding: 0px;
-        font-size: 1.6rem;
 	}
 }
 
@@ -374,7 +375,7 @@ footer .copyright {
     }
 
 	nav {
-		margin: 73px 0;
+		margin: 70px 0;
     	padding: 20px 0;
     /* border: 1px solid gray; */
     	height: auto;
@@ -436,24 +437,24 @@ footer .copyright {
 	}
 
 	.text1 .features {
-		height: 129px;
+		height: auto;
 		width: 100%;
-		margin: 16px 16px 16px 0;
+		margin: 16px 1%;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.text1 .about {
-		height: 129px;
+		height: auto;
 		width: 100%;
-		margin: 0 16px 16px 0;
+		margin: 39px 1%;
 		display: flex;
 		flex-direction: column;
 	}
 
 	.middle-img {
 		width: 92%;
-    	margin-left: 20px;
+    	margin: 8px 4%;
     	top: 0px;
 	}
 
@@ -486,8 +487,8 @@ footer .copyright {
 	.padding {
 		width: 92%;
 		border-top: 2px solid black;
-		margin: 29px 4%;
-		padding: 20px 0;
+		margin: 9px 4%;
+		padding: 35px 0;
 	}
 
 	footer .copyright {
