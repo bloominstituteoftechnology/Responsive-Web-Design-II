@@ -86,7 +86,8 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
   }
   .nav-li-a {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     color: rgba(0,0,0,0.5);
     margin: 20px 0;
     text-decoration: none;
@@ -115,7 +116,11 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
   }
   .hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 172px;
+    height: 32px;
     font-size: 1.6rem;
     margin: 20px 0 50px;
     border: 1px solid black;
@@ -146,13 +151,6 @@ h1,h2,h3,h4,h5,h6{
   .card-body {
     font-size: 1.6rem;
   }
-  /* .mid-img{
-    background: url("../img/mid-page-accent.jpg") no-repeat center;
-    background-size: cover;
-    height: 172px;
-    width: 100%;
-    margin: 10px 0;
-  } */
   .mid-img{
     width: 100%;
   }
@@ -181,7 +179,7 @@ h1,h2,h3,h4,h5,h6{
   .nav{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .nav-li{
     width: auto;
@@ -221,8 +219,18 @@ h1,h2,h3,h4,h5,h6{
   }
   .upper-top-section{
     flex-direction: row;
+  
+  }
+  .hero-section{
+    margin: 0 9%;
   }
   .upper-img {
     display: flex;
+    align-self: flex-end;
+    margin-bottom: 75px;
+  }
+
+  .upper-top-section {
+    padding: 0;
   }
 }
