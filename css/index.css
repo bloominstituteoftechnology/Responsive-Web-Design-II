@@ -77,11 +77,12 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    font-size: 1.6 rem
     }
 
 header nav {
-    margin-top: 40px; 
     width: 100%;
+    margin: 38 px 1% 0;
     justify-content: space-between;
     display: flex;
     }
@@ -97,6 +98,7 @@ header nav a:hover {
     }
 
 header .logo {
+    align-self: flex-end;
     margin: 28px 0 0 10.34%;
     }
 
@@ -199,7 +201,7 @@ padding: 0 3.41%;
 header .logo {
 order: -1;
 display: block;
-margin: 30px auto 0;
+margin: 30px 38.97% 0;
     }  
 
     /* CTA */
