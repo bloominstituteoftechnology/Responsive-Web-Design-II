@@ -197,6 +197,78 @@ header .logo {
 	margin: 20px 0;
 }
 
+.services-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-content h2 {
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+.services-content .text-muted {
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	margin-bottom: 25px;
+}
+
+.services-content .box {
+	border: 1px solid black;
+	margin: 20px 0;
+	padding: 15px;
+	width: 400px;
+}
+
+.services-content .box p {
+	line-height: 1.2;
+}
+
+.services-content .box button {
+	border: 1px solid black;
+	margin-top: 15px;
+	padding: 10px;
+	width: 100px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.services-content .box button:hover {
+	color: gray;
+}
+
+.services-content .services-info {
+	border-top: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.services-content .services-info .facts {
+	/* border: 1px solid black; */
+	width: 400px;
+	margin-top: 40px;
+}
+
+.services-content .services-info p {
+	line-height: 1.2;
+}
+
+.services-content .services-info ul {
+	margin: 18px;
+}
+
+.services-content .services-info ul li {
+	list-style: circle;
+	line-height: 1.5;
+}
+
+.services-content .services-info-img {
+	margin: 45px 0 0 30px;
+	width: 420px;
+}
+
 footer {
 	margin: 32px 0;
 	text-align: center;
@@ -317,7 +389,62 @@ footer {
 
     .contact p {
         font-size: 0.85rem;
-    }
+	}
+	
+	.services-content .services-header-img {
+		width: 100%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	.services-content h2 {
+		margin-left: 3%;
+		font-size: 1.5rem;
+	}
+
+	.services-content .text-muted {
+		margin-left: 3%;
+		margin-right: 5%;
+		font-size: 1rem;
+		text-align: justify;
+	}
+
+	.services-content .box {
+		margin-left: 3%;
+		margin-right: 3%;
+		width: 44%;
+	}
+
+	.services-content .box h3 {
+		font-size: 1rem;
+	}
+
+	.services-content .box p {
+		font-size: 1rem;
+	}
+
+	.services-content .services-info .facts {
+		width: 45%;
+		margin-top: 40px;
+		margin-left: 3%;
+	}
+
+	.services-content .services-info h3 {
+		font-size: 1rem;
+	}
+
+	.services-content .services-info p {
+		font-size: 1rem;
+	}
+
+	.services-content .services-info ul li {
+		font-size: 1rem;
+	}
+	
+	.services-content .services-info-img {
+		margin: 45px 0 0 3%;
+		width: 45%;
+	} 
 }
 
 @media (max-width: 500px) {
@@ -406,4 +533,22 @@ footer {
 		margin-bottom: 15px;
 		/* border: 1px solid black; */
 	}
+
+	.services-content .services-header-img {
+		width: 100%;
+		height: 100px;
+		margin-top: 20px;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	.services-content .services-info .facts {
+		width: 370px;
+		margin-top: 40px;
+		margin-left: 15px;
+	}
+
+	.services-content .services-info-img {
+		display: none;
+	} 
 }
