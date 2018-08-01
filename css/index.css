@@ -263,7 +263,7 @@ footer {
 }
 
 .services-main-content .middle-content .box-content {
-	width: 400px;
+	width: 45.45%;
 	background: #f4f3f4;
 	padding: 20px;
 	margin-top: 40px;
@@ -304,19 +304,19 @@ footer {
 }
 
 .facts .facts-content p {
-	padding-right: 10px;
+	padding-right: 1.27%;
 }
 
 .facts .facts-content ul {
 	list-style-type: square;
-	padding: 10px;
+	padding: 1.27%;
 	margin-top: 10px;
-	line-height: 2em;
+	line-height: 2rem;
 }
 
 .services-info-img {
 	margin-top: 40px;
-	margin-left: 20px;
+	margin-left: 2.27%;
 }
 
 /* ----------------------------- Tablet ----------------------------- */
@@ -386,79 +386,17 @@ footer {
 
     /* -------- Services Page Style -------- */
     /* Main Content */
-    .services-main-content {
-        margin-top: 40px;
-        font-size: 1.5rem;
-    }
-
-    .services-main-content .middle-content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        border-top: 1px solid black;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
 
     .services-main-content .middle-content .box-content {
         width: 45.45%;
-        background: #f4f3f4;
-        padding: 20px;
-        margin-top: 40px;
-        border: 1px solid black;
-        display: flex;
+        padding: 2.27%;
         flex-direction: column;
     }
 
-    .services-main-content .middle-content .box-content p{
-        margin-bottom: 20px;
-    }
-
-    .services-main-content .middle-content button {
-        background: white;
-        margin-top: 6px;
-        width: 200px;
-        height: 40px;
-        font-size: 2rem;
-        border: 1px solid black;
-        cursor: pointer;
-        align-self: center;
-    }
-
-    .services-main-content .middle-content button:hover {
-        background: black;
-        color: white;
-    }
-
     /* Facts Styles */
-    .facts {
-        display: flex;
-        flex-direction: row;
-        border-top: 1px solid black;
-        margin: 30px 0 100px 0;
-    }
     
     .facts .facts-content {
-        width: 50%;
-        margin-top: 40px;
-        padding: 1%;
-    }
-    
-    .facts .facts-content p {
-        padding-right: 2%;
-    }
-    
-    .facts .facts-content ul {
-        list-style-type: square;
-        padding: 5%;
-        margin-top: 10px;
-        line-height: 2em;
-    }
-    
-    .services-info-img {
-        margin-top: 40px;
-        margin-left: 20px;
+        padding-left: 1%;
     }
 }
 
@@ -545,6 +483,7 @@ footer {
     }
 
     /* -------- Services Page Style -------- */
+
     /* Main Content */
     .services-cta {
         margin-top: 0;
@@ -558,32 +497,9 @@ footer {
         width: 100%;
     }
 
-    .services-main-content .middle-content .box-content p{
-        margin-bottom: 20px;
-    }
-
     /* Facts Styles */
-    .facts {
-        /* flex-direction: row; */
-        justify-content: center;
-        border-top: 1px solid black;
-    }
-    
     .facts .facts-content {
         width: 100%;
-        margin-top: 40px;
-        padding: 1%;
-    }
-    
-    .facts .facts-content p {
-        padding-right: 2%;
-    }
-    
-    .facts .facts-content ul {
-        list-style-type: square;
-        padding: 5%;
-        margin-top: 10px;
-        line-height: 2em;
     }
     
     .services-info-img {
