@@ -1,1 +1,407 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/*box model (content, padding, margin, border) and `display:inline-block`*/
+
+nav {
+	display: flex;
+	justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 2.27%;
+  margin-left: 2.27%; 
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.service-banner {
+	width: 34.09%;
+}
+
+.header-container {
+	max-width: 880px;
+	width: 100%;
+  margin: 0 auto;
+}
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.big-title {
+  font-size: 5.8rem;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.title-button {
+	display: flex;
+	flex-direction: column;
+	display: inline-block;
+}
+
+.button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4.54%;
+  padding-right: 4.54%;
+  font-size: 1.3rem;
+  background-color: #fffdfd;
+  border: solid black 1px;
+  margin-left: 31.1136%;
+  margin-top: 5px;
+}
+
+.flex-box {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.flex-box p {
+	padding: .6818%;
+}
+
+.banner {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.center-me {
+	display: flex;
+	justify-content: center;
+}
+
+.col-service {
+	border: solid black 1px;
+	background-color: #ececec;
+	margin-right: 2.8409%;
+}
+
+.title-spacing {
+	margin: 1.1363%;
+}
+
+.p-spacing {
+	margin: 1.8181%;
+}
+
+.services-buttons {
+	margin-left: 1.8181%;
+  align-self: flex-start;
+  margin-bottom: 14px;
+  padding-left: 2.2727%;
+  padding-right: 2.2727%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: solid black 1px;
+  border-radius: 4px;
+}
+
+.extra-padding {
+	padding: 1.3636%;
+}
+
+
+#line-margin {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: solid black 1.5px;
+}
+
+.services-ul {
+  list-style-type: square;
+  margin-left: 2.15909%;
+}
+
+.move-pick {
+	margin-top: 16px;
+}
+
+.stack {
+	display: flex;
+}
+
+.web-award {
+	height: 32%;
+  width: 25%;
+}
+
+.cloud-award {
+	margin-top: 6px;
+	width: 23%;
+  height: 34%;
+}
+
+.service-award {
+	margin-top: 10px;
+  width: 14%;
+  height: 28%;
+  margin-bottom: 10px;
+}
+
+.product-spacing {
+	border: solid black 1px;
+  border-radius: 5%;
+  padding: 1.13636%;
+  margin-right: 1.13636%;
+}
+
+.main-pic-products {
+	width: 50%;
+  height: 50%;
+  border-radius: 7%;
+  border: solid #ff5730 5px;
+}
+
+.h1-product-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 6.8rem;
+  text-align: center;
+}
+
+.product-button {
+  margin: 0% 5.68181% 0% 5.68181%;
+  height: 35px;
+  font-size: 1.6rem;
+}
+
+.tablet {
+	display: none;
+}
+
+.services-info-img {
+	padding-bottom: 10px;
+}
+
+
+footer {
+	margin-bottom: 20px;
+}
+
+address {
+	margin-bottom: 20px
+}
+/*media queries below*/ 
+/*----------------------------------------*/
+
+/*tablet*/
+@media (max-width:800px) {
+	.div-img {
+		display: none;
+	}
+	.header-container {
+		margin: 0 auto;
+		max-width: 680px;
+		width: 100%;
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 680px;
+		width: 100%;
+	}
+	
+	.banner {
+		width: 100%;
+	}
+	.tablet {
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.logo {
+		display: none;
+	}
+	nav a {
+	  text-decoration: none;
+	  color: gray;
+	  margin-right: -2.794117%;
+    margin-left: 4.26470%;
+	}
+	.big-title {
+    font-size: 5.8rem;
+    text-align: center;
+    margin-top: 20px;
+	}
+	.web-award {
+		display:none;
+	}
+	.cloud-award{
+		display: none;
+	}
+	.service-award {
+		display: none;
+	}
+	.hide {
+		display: none;
+	}
+	.main-pic-products {
+		display: none;
+	}
+}
+
+/*moble*/
+@media (max-width:500px) {
+	nav {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 20px;
+		margin-top: 0px;
+	}
+	.container {
+		margin: 0 auto;
+		max-width: 400px;
+		width: 100%;
+	}
+	.banner {
+		margin-top: 0px;
+    margin-bottom: 10px;
+    width: 98.75%;
+	}
+	nav a {
+		border: solid grey 1px;
+		margin: 0%;
+		font-size: 2.5rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.flex-box {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		padding-top: 0px;
+		margin: 0%;
+	}
+	h2 {
+		padding-top: 10px
+	}
+	.button {
+		padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4.5454%;
+    padding-right: 4.5454%;
+    font-size: 1.3rem;
+    background-color: #fffdfd;
+    border: solid black 1px;
+    margin-left: 31.1136%;
+    margin-top: 5px;
+	}
+
+	.tablet {
+		display: none;
+		padding: 0%;
+		border: solid grey 1px;
+		margin-top: 0px;
+	}
+	.logo {
+		display: flex;
+	}
+	.switch {
+		order: -1;
+	}
+	.header-container {
+		width: 100%;
+	}
+
+	.hide {
+		display: block;
+	}
+	.col-service {
+		margin-right: 0%;
+		margin-bottom: 10px;
+	}
+	.product-margin {
+		margin: 0%;
+	}
+	.services-info-img {
+		padding-top: 10px;
+	}
+	.product-spacing {
+		margin-right: 0%;
+		margin-left: 0%;
+		margin-bottom: 10px;
+	}
+	.web-award {
+		display: block;
+	}
+	.cloud-award{
+		margin-top: 10px;
+		display: block;
+	}
+	.service-award {
+		display: block;
+	}
+}
+
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
