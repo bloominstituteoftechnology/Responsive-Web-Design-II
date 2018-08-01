@@ -302,7 +302,7 @@ footer {
 
 .services-header .services-header-img-class {
   width: 100%;
-  display: flex;
+  display: none;
 }
 
 .services-header .services-header-img {
@@ -349,6 +349,8 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   border-top: 5px solid black;
   margin: 20px 0 35px 0;
   padding-top: 40px;
@@ -361,11 +363,11 @@ footer {
 .services-header .services-information ul li {
   list-style: square;
   padding: 5px;
+  font-size: 1.4rem;
 }
 
 .services-header .services-information .services-facts {
-  width: 400px;
-  margin: 0 60px 10px 0;
+  width: 45.45%;
 }
 
 .services-facts h2 {
@@ -378,8 +380,8 @@ footer {
 }
 
 .services-header .services-information .services-information-img {
-  width: 420px;
-  height: 475px;
+  width: 47.73%;
+  height: 420px;
 }
 
 /* Ipad */
