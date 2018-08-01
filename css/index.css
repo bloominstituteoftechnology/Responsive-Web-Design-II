@@ -82,9 +82,9 @@ header {
 
 header nav {
     width: 100%;
-    margin: 38 px 1% 0;
-    justify-content: space-between;
+    margin: 38px 1% 0;
     display: flex;
+    justify-content: space-between;
     }
 
 header nav a {
@@ -252,7 +252,8 @@ margin: 30px 38.97% 0;
     }
 
 .main-content {
-    margin: 75px 20px 35px;
+    font-size: 1.4rem;
+    margin: 75px 2% 35px;
     }
 
  .text-content {
@@ -260,7 +261,7 @@ margin: 30px 38.97% 0;
     }
 
  .contact {
-     margin: 0 30px;
+     margin: 20px 2%;
     }
 }
 
@@ -278,7 +279,6 @@ margin: 30px 38.97% 0;
         width: 100%;
         flex-direction: column;
         margin: 0;
-        padding: 0;
     }
 
     header nav a {
@@ -286,7 +286,7 @@ margin: 30px 38.97% 0;
         display: block;
         text-align: center;
         padding: 20px 0;
-        font-size: 20px;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
@@ -300,6 +300,7 @@ margin: 30px 38.97% 0;
 
     header .logo {
         margin: 20px 0;
+        align-self: center;
     }
 
     .cta {
@@ -308,8 +309,8 @@ margin: 30px 38.97% 0;
         align-items: center;
     }
 
-    .cta img {
-        max-width: 80%;
+    .cta .cta-pic {
+        display: none;
     }
 
     .main-content .top-content {
