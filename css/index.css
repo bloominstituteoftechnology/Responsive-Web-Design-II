@@ -85,6 +85,7 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+	font-size: 1.5rem;
 }
 
 header nav a {
@@ -98,7 +99,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 28px -.34% 0 10.23%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -110,21 +111,21 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 8.52% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 58%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -140,9 +141,9 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 75px 0 35px 1.4%;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -160,20 +161,29 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 5.27%;
 }
 
 /* Contact Styles */
 
+.contact h4 {
+    font-size: 1.6px;
+    margin-left: 1.02%;
+}
+
 .contact p {
-    margin: 15px 0;
+    margin: 32px 0 0 1.02%;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 5px 0 20px 2.84%;
+    font-size: 1.5rem;
+}
+
 }
 
 
