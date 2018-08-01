@@ -274,7 +274,7 @@ footer .copyright {
 		/* max-width: 800px; */
          width: 94%;
         /* height: 60px; */
-        margin: 100px 10px 0 20px;
+        margin: 90px 10px 0 20px;
         padding: 20px 1.5%;
         display: flex;
         justify-content: space-between;
@@ -283,7 +283,7 @@ footer .copyright {
 
 	.logo {
 		position: absolute;
-		top: 20px;
+		top: 10px;
     	right: 270px;
 		padding: 25px 0;
 
@@ -320,7 +320,7 @@ footer .copyright {
 		padding: 20px 0;
 		display: flex;
         width: 95%;
-        font-size: 16px;
+        font-size: 1.6rem;
 	}
 
 	.middle-img {
@@ -333,7 +333,7 @@ footer .copyright {
 		margin: 10px 2%;
 		padding: 15px 0;
         width: 95%;
-        font-size: 16px;
+        font-size: 1.6rem;
 	}
 
 	.text2 .services-on-homepage {
@@ -357,12 +357,12 @@ footer .copyright {
 		border-top: 2px solid black;
 		margin: 0 2.5%;
         padding: 33px 1.5%;
-        font-size: 16px;
+        font-size: 1.6rem;
 	}
 
 	footer .copyright {
 		padding: 0px;
-        font-size: 16px;
+        font-size: 1.6rem;
 	}
 }
 
