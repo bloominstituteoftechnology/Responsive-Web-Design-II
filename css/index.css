@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
-    font-size: 1.6 rem
+    font-size: 1.6rem;
     }
 
 header nav {
@@ -99,7 +99,7 @@ header nav a:hover {
 
 header .logo {
     align-self: flex-end;
-    margin: 28px 0 0 10.34%;
+    margin: 28px 0 0 9%;
     }
 
 /* Call To Action (CTA) Styles */
@@ -111,7 +111,6 @@ header .logo {
     }
 
 .cta .cta-text {
-    font-size: 72px;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -121,9 +120,15 @@ header .logo {
     margin: 0 9.32% 0 0;
     }
 
+.cta .cta-text h1 {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    font-size: 7.2rem;
+}
+
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
