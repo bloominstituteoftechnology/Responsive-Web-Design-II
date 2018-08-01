@@ -52,22 +52,31 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-	font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+	font-size: 1.6rem;
+}
+
+p {
+	font-size: 1.6rem;
 }
 
 .container {
     max-width: 880px;
-	width: 100%
-    margin: auto;
+	width: 100%;
+	margin-left: 5.68%;
+	margin-right: 5.68%;
 }
 
 /* Header Styles */
@@ -75,6 +84,7 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+	font-size: 1.6rem;
 }
 
 header nav {
@@ -85,7 +95,6 @@ header nav {
 }
 
 header nav a {
-	font-size: 1rem;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -108,7 +117,6 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 4.5rem;
     text-align: center;
     letter-spacing: 0.57%;
     display: flex;
@@ -118,13 +126,20 @@ header .logo {
     margin: 0 9.32% 0 0;
 }
 
+.cta .cta-text h1 {
+	letter-spacing: 0.57%;
+	margin-bottom: 0.57%;
+	font-size: 7.2rem;
+}
+
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 1rem;
+    font-size: 1.6rem;
     background: white;
     width: 58.22%;
     height: 10.96%;
-    margin-top: 3.42%;
+    margin: 3.42%;
+	justify-content: center;
     cursor: pointer;
 }
 
@@ -140,31 +155,42 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 8.52% 0 3.98% 0;
    padding: 3.98% 0;
-   font-size: 1rem;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
 .main-content .top-content {
     display: flex;
+	justify-content: space-around;
 }
 
 .main-content .middle-img {
+	max-width: 100%;
     display: block;
     margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
     display: flex;
+	justify-content: space-around;
 }
 
 .main-content .bottom-content p {
     padding-right: 2.27%;
 }
 
+.main-content .bottom-content .text-content {
+	margin-top: 1.14%;
+}
+
+.main-content .text-content {
+	margin: 0 1%;
+}
+
 /* Contact Styles */
 
 .contact {
-	font-size: 1rem;
+	margin: 2.27% 1%;
 }
 
 .contact p {
@@ -174,7 +200,6 @@ header .logo {
 /* Footer Styles */
 
 footer {
-	font-size: 1rem;
     text-align: center;
     margin: 4.55% 0 2.27%;
 }
@@ -192,8 +217,8 @@ footer {
     }
   
     header nav {
-        width: 96%;
-        padding: 0 3.75%;
+        width: 100%;
+        margin: 4.75% 3%;
     }
 
     header .logo {
@@ -204,26 +229,36 @@ footer {
 
     .cta {
         justify-content: center;
+		margin-top: 4.38%;
     }
     
     .cta .cta-text {
         margin: 0;
     }
+	
+	.cta .cta-text h1 {
+		margin-bottom: 1.88%;
+	}
 
     .cta img {
         display: none;
     }
 
+	.cta .cta-text button {
+		width: 58.22%;
+		padding-top: 2.5%;
+		padding-bottom: 2.5%;
+		margin: 5%;
+	}
+	
     .main-content .middle-img {
        width: 100%;
+	   margin: 1.25% auto 3.13%;
     }
 
     .main-content {
+		font-size: 1.4rem;
        margin: 9.38% 2.5% 4.38%;
-    }
-
-    .text-content {
-        margin: 0 1.25%;
     }
 
     .contact {
@@ -244,10 +279,8 @@ footer {
     }
 
     header nav {
-        width: 100%;
         flex-direction: column;
         margin: 0;
-        padding: 0;
     }
 
     header nav a {
@@ -255,7 +288,7 @@ footer {
         display: block;
         text-align: center;
         padding: 4% 0;
-        font-size: 1.25rem;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
@@ -281,18 +314,29 @@ footer {
         max-width: 80%;
     }
 
+	.main-content {
+		padding-top: 11%;
+	}
+	
     .main-content .top-content {
-        justify-content: space-around;
-        flex-direction: column;
+        flex-flow: column wrap;
         height: 60%;
     }
 
+	.main-content .top-content .text-content {
+		margin-top: 7.5%;
+	}
+	
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
         height: 88%;
     }
 
+	.main-content .bottom-content .text-content {
+		margin-top: 7.5%;
+	}
+	
     .text-content {
         margin: 0;
     }
