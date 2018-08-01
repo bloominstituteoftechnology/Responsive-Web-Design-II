@@ -436,6 +436,11 @@ li  {
         display: none;
     }
 
+    .services-intro   {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
     .services-main-content  {
         flex-direction: column;
         width: 100%;
@@ -463,11 +468,25 @@ li  {
 
     .services-mobile-buttons    {
         display: flex;
-        flex-direction: column;
-        align-content: center;
+    }
+
+    .services-mobile-buttons form   {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     .services input     {
-        
+        border: none;
+        color: gray;
+        padding: 16px 0px;
+        width: 48%;
+        text-decoration: none;
+        margin: 0px 2px;
+        cursor: pointer;
+        border-top: 1px solid gray;
+        box-sizing: border-box;
     }
 }
