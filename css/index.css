@@ -51,16 +51,17 @@ table {
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Titillium Web', sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: 'Bangers', cursive;
 }
+
 
 /* ************** ---------- Mobile View First ---------- ************** */
 
@@ -145,12 +146,15 @@ h1,h2,h3,h4,h5,h6{
   .card-body {
     font-size: 1.6rem;
   }
-  .mid-img{
+  /* .mid-img{
     background: url("../img/mid-page-accent.jpg") no-repeat center;
     background-size: cover;
-    height: 100px;
+    height: 172px;
     width: 100%;
     margin: 10px 0;
+  } */
+  .mid-img{
+    width: 100%;
   }
   .contact{
     display: flex;
