@@ -53,31 +53,41 @@ table {
 /* Everything above is CSS reset */
 * {
     box-sizing: border-box ;
-    border: 1px solid black ;
+    border: 1px solid black !important ;
 }
 
-html {
+.html-font-size {
+
+    font-size: 62.5% ;
 
 }
 
 body {
-
+    display: flex ;
+    justify-content: center ;
 }
 .site-container {
 
+    width: 880px;
 }
 
 .header-flex {
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-around;
+    align-content: center ;
+    align-items: center ;
 
 }
 
 .nav-flex {
-
+    font-size: 1.6rem ;
+    display: flex ;
+    justify-content: space-around ;
+    width: 100% ;
+    max-width: 70rem;
 }
 
-.logo-div {
-
-}
 
 .visual-cta {
 
@@ -91,7 +101,7 @@ body {
 }
 
 .middle-img-div {
-    
+
 }
 .middle-text {
 
