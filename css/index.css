@@ -1,1 +1,256 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+html{
+    font-size:62.5%
+}
+
+main{
+	max-width:880px;
+	margin: 0 auto;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+	
+}
+nav{
+    width:79%;
+    display:flex;
+    justify-content:space-between;
+    font-size:1.6rem;
+    padding-top:15px;
+    padding-right:6%
+}
+.logo{
+	display:inline-block;
+	width:15.9%;
+	margin: 0px 1.7% 0px 1.7%;
+}
+
+nav a {
+	text-decoration:none;
+	text-align:center;
+	color:silver;
+}
+#main-title-section {
+    display: inline-flex;
+    flex-direction:column;
+    width:62%;
+    text-align:center;
+    margin-top:30px;
+	
+}
+#main-sec{
+    display:flex;
+    justify-content:space-around;
+    height:370px;
+    margin-top:50px;
+    margin-left:7%;
+    padding-bottom:70px;
+}
+
+h1{
+	font-size:5.8rem;
+}
+#gs{
+    width:100%;
+	
+}
+#circlepic{
+    width:36%;
+    margin-right:5%;
+   
+	
+}	
+h3{
+	width:12rem;
+	height:30px;
+	border:1px solid black;
+	display:inline-block;
+	text-align:center;
+	padding: 8px 0%;
+    font-family:verdana, monospace;
+    font-size:1.2rem;
+}
+
+h2{
+    font-size:2.2rem;
+}
+#row1{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    border-top:2px solid black;
+}
+#about, #features{
+    width:48%;
+    font-size:1.6rem;
+    margin: 30px 1.5%;
+}
+.middle-img{
+	width:100%;
+}
+#row2{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:2px solid black;
+}
+#services, #product, #vision{
+    width:32%;
+    font-size:1.6rem;
+    margin:30px 1.5%;
+} 
+
+address{
+    margin:30px 1.5%;
+    font-size:1.4rem;
+}
+h5{
+	margin:70px auto;
+	text-align:center;
+	font-family:verdana;
+	font-size:1.2rem;
+
+}
+
+@media (max-width:800px){
+ header{
+     display:flex;
+     flex-direction:column-reverse;
+     padding:0px 1.5%;
+
+ }   
+ .logo{
+    display:block;
+    width:29%;
+    margin:30px auto;
+    padding-left:6%;
+
+ }
+ nav{
+     display:flex;
+     width:100%;
+     justify-content:space-between;
+     padding-right:0%
+ }
+ #circlepic{
+     display:none;
+ }
+ #main-sec{
+    height:350px;
+ }
+ #main-title-section{
+     width:100%;
+}
+
+}
+@media (max-width:500px){
+    
+    nav{
+        flex-direction:column;
+        width:100%
+}
+    nav a{
+       width:100%;
+       border-top:1px solid black;
+       font-size:2rem;
+       margin:10px 1.1%;
+       padding-top:25px;
+       display:flex;
+       justify-content:center;
+       vertical-align:middle;
+    }
+  .logo{
+      width:42%;
+      margin-bottom:0px;
+     
+  } 
+  nav a:last-child{
+      border-bottom:1px solid black;
+      padding-bottom:20px;
+  }
+
+#row1, #row2{
+    flex-direction:column;
+}
+#features, #about, #services, #product, #vision{
+    width: 95%;
+    margin:40px 2.5%;
+}
+#about, #product, #vision{
+    margin-top:0px;
+}
+  
+
+}
+
