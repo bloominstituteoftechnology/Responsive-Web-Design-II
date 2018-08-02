@@ -1,4 +1,3 @@
-
 /*   start actual code here */
 /* start title area */
 #index-title-area {
@@ -49,9 +48,6 @@ footer {
 footer #contact {
   font-size: 1.5rem;
   padding: 2%;
-}
-footer #contact h3 {
-  font-size: 3.5rem;
 }
 footer #contact address {
   font-weight: bold;
