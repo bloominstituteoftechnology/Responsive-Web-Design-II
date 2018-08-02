@@ -66,8 +66,13 @@ h1, h2, h3, h4, h5 {
 
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* html {
+    font-size:62.5%;
+} */
+
 .container {
-	width:880px;
+    width:100%;
+	max-width:880px;
 	display:flex;
 	flex-direction: column;
 	margin:0px auto;
@@ -86,13 +91,13 @@ a:hover {
 .navbar {
 	color:white;
 	height:70px;
-	width:650px;
+	width:73.8%;
 	display: flex;
 	justify-content: center;
 }
 
 .logo {
-	padding: 15px;
+	padding: 1.7%;
 	display:flex;
 	justify-content: flex-end;
 }
@@ -100,11 +105,11 @@ a:hover {
 .topNav {
 	color:grey;
 	text-decoration:none;
-	padding:25px;
+	padding:2.8%;
 }
 
 .top-content {
-	width:880px;
+	width:100%;
 	height:524px;
 	display: flex;
 	justify-content: space-between;
@@ -117,7 +122,7 @@ a:hover {
 	flex-direction: column;
 	font-size: 70px;
 	text-align: center; 
-	padding: 0px 55px;
+	padding: 0px 6.25%;
 }
 
 .top-content .button {
