@@ -297,58 +297,50 @@ a{
 		align-self: flex-start;
 	}
 }
-/*
+
 @media(max-width: 500px){
 	.main{
-		width: 480px;
+		width: 100%;
 	}
 
 	#upper-nav{
 		justify-content: flex-end;
-		height: 480px;
 	}
 
 	#anchors{
 		display: flex;
 		flex-direction: column;
-		width: 480px;
+		width: 100%;
 		border-bottom: 1px solid black;
 	}
 
 	a{
-		font-size: 20px;
-		color: lightgrey;
-		font-weight: 600;
-		letter-spacing: .03em;
-		width: 480px;
+		font-size: 2.0rem;
 		text-align: center;
-		padding: 20px 0px 20px 0px;
+		padding: 20px 0% 20px 0%;
 		border-top: 1px solid black;
 	}
 
-	.header-text-div{
-		display: flex;
-		flex-direction: column;
-		width: 480px;
-		height: 420px;
-		padding-top: 45px;
+	#header{
+		width: 96%;
 	}
 
 	#upper-para{
 		display: flex;
-		flex-direction: column;
-		margin: 45px 0px 0px 20px;
+		flex-wrap: wrap;
+		width: 100%;
+		margin: 45px 0% 0px 5%;
 	}
 
 	#upper-para div{
+		width: 84%;
 		margin-bottom: 50px;
 	}
 
 	.middle-img{
-		width: 460px;
-		margin: 0px auto;
+		width: 97%;
 	}
-
+/* NOTE start here */
 	#lower-para{
 		flex-direction: column;
 		justify-content: space-between;
