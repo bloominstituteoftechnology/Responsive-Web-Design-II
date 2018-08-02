@@ -96,7 +96,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin: 20px 0 0 0;
+    margin: 25px 0 20px 0;
 }
 
 nav {
@@ -123,9 +123,43 @@ nav a.href {
     align-items: center;
 }
 
+.title {
+    width: 100%;
+    height: 510px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
 
+.title .text {
+    /* border: 1px solid blue; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.title .header-img {
+    /* border: 1px solid orange; */
+    width: 44%;
+    height: 380px;
+    margin: 50px 0 0 0;
+}
 
+.title .text h1 {
+    /* border: 1px solid greenyellow; */
+    font-size: 7.5rem;
+    text-align: center;
+    margin: 0 0 0 15%;
+}
+
+.title .text button {
+    border: 1px solid black;
+    width: 45%;
+    height: 30px;
+    font-size: 1.6rem;
+    margin: 0 0 30px 35%;
+}
 
 @media (max-width: 800px){
 
