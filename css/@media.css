@@ -32,7 +32,6 @@
   header .logo-area {
     border-bottom: 1px solid black;
     padding-bottom: 3%;
-    margin-bottom: 0;
   }
   header .logo-area a {
     margin: 0 auto;
@@ -95,6 +94,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 0 0 4% 0;
+    margin-right: 0;
     width: 100%;
   }
   /* end header and nav area */
