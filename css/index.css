@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5 {
 .container {
   max-width: 880;
   /* TB LR */
+  width:100%;
   margin: 0 auto;
 }
 
@@ -79,15 +80,15 @@ h1, h2, h3, h4, h5 {
 
 header nav {
   display: inline-block;
-  width: 691px;
+  width: 78.5%;
   vertical-align: top;
-  margin-top: 35px;
+  margin-top: 4%;
 }
 
 
 header nav a {
   display: inline-block;
-  margin-right: 65px;
+  margin-right: 7.4%;
   font-size: 14px;
   color: gray;
   text-decoration: none;
@@ -107,7 +108,7 @@ header nav a:last-child {
 
 header .logo {
   display: inline-block;
-  margin-top: 25px;
+  margin-top: 2.8%;
 }
 
 /* cta */
@@ -116,7 +117,7 @@ header .logo {
   display: inline-block;
   vertical-align: top;
   font-size: 77px;
-  margin-top: 120px;
+  margin-top: 13.6%;
   text-align: center;
   padding: 0px 75px;
 }
@@ -124,7 +125,7 @@ header .logo {
 .cta .cta-text button {
   background: white;
   vertical-align: top;
-  margin-top: 6px;
+  margin-top: .7%;
   padding: 8px 44px;
   font-size: 17px;
   border: 1px solid black;
@@ -138,12 +139,12 @@ header .logo {
 
 .cta img {
   display: inline-block;
-  margin-top: 69px;
+  margin-top: 7.8%;
 }
 
 .main-content {
   border-top: 1px solid black;
-  margin-top: 76px;
+  margin-top: 8.6%;
   padding-top: 39px;
 }
 
@@ -154,7 +155,7 @@ header .logo {
 .main-content .top-content .text-content {
   width: 410px;
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 3.9%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -162,18 +163,18 @@ header .logo {
 }
 
 .main-content .middle-img {
-  margin-top: 45px;
+  margin-top: 5.1%;
 }
 
 .main-content .bottom-content {
-  margin-top: 37px;
+  margin-top: 4.2%;
   padding: 0 10px;
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 31.25%;
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 1.4%;
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -181,17 +182,17 @@ header .logo {
 }
 
 .contact {
-  margin-top: 57px;
+  margin-top: 6.5%;
   border-top: 1px solid black;
   padding: 39px 10px 0;
 }
 
 .contact p {
-  margin: 20px 0;
+  margin: 2.3% 0;
 }
 
 footer {
-  margin: 32px 0;
+  margin: 3.6% 0;
   text-align: center;
   font-size: 14px;
 }
