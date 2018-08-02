@@ -86,7 +86,12 @@ h1, h2, h3, h4, h5 {
 	color: grey;
 	font-size: 0.8rem;
 }
-
+.navbar nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-right: 8%;
+}
 
 /*CTA SECTION*/
 
@@ -164,6 +169,48 @@ h1, h2, h3, h4, h5 {
 	font-size: 1rem;
 	margin-top: 40px;
 }
+
+/*MEDIA QUERIES*/
+
+/*TABLET*/
+
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.navbar nav {
+		width: 90%;
+		margin-right: 0;
+		margin-top: 40px;
+	}
+
+	.cta img {
+		display: none;
+	}
+	.cta {
+		justify-content: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
