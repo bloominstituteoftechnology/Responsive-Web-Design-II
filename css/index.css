@@ -303,6 +303,60 @@ h3 {
         width: 52%;
         margin: 5px 0 30px 30%;
     }
+
+    .main {
+        /* border: 1px solid red; */
+        height: 590px;
+    }
+
+    .main .top {
+        /* border: 1px solid blue; */
+        justify-content: space-between;
+    }
+
+
+    .top .features {
+        /* border: 1px solid green; */
+        padding: 20px 10px 10px 5;
+        width: 49%;
+    }
+
+    .top .about {
+        /* border: 1px solid green; */
+        padding: 20px 10px 10px 5;
+        width: 49%;
+    }
+
+
+    .main .bottom {
+        /* border: 1px solid green; */
+        justify-content: space-around;
+        padding: 10px 0 0 0;
+        margin: 0 0 50px 0;
+    }
+
+
+    .bottom .services {
+        /* border: 1px solid green; */
+        padding: 20px 30px 10px 5;
+        width: 33%;
+    }
+
+    .bottom .product {
+        /* border: 1px solid green; */
+        padding: 20px 30px 10px 5;
+        width: 33%;
+    }
+
+    .bottom .vision {
+        /* border: 1px solid green; */
+        padding: 20px 30px 10px 5;
+        width: 33%;
+    }
+
+
+
+
 }
 
 @media (max-width: 500px){
