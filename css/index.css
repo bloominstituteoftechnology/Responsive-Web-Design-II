@@ -154,7 +154,7 @@ body {
 }
 
 .site-container {
-    width: 880px;
+    width: 88rem;
 }
 
 .header-flex {
@@ -228,42 +228,54 @@ body {
     flex-wrap: wrap ;
     justify-content: space-around ;
 
-    border-top: 3px solid black ;
+    border-top: 0.3rem solid black ;
+    padding: 1rem 0 ;
+    width: 100% ;
 }
 
 .middle-text article {
     font-size: 1.6rem ;
     width: 49% ;
+    max-width: 400px;
    
 }
 
 .middle-text article h3 {
     font-size: 2.4rem ;
     font-family: Bangers ;
+    padding-bottom: 1rem ;
 }
 
 .bottom-text {
 
-    border-bottom: 3px solid black ;
+    border-bottom: 0.3rem solid black ;
     font-size: 1.6rem ;
     display: flex ;
     flex-direction: row ;
-    justify-content: space-around ;
+    justify-content: space-between ;
+    padding: 1rem ;
+    width: 100% ;
+    max-width: 87.6rem ;
    
 }
 
 .bottom-text article h3 {
     font-family: Bangers ;
+    font-size: 2.4rem ;
+    padding-bottom: 1rem ;
+
 }
 
 .footer-flex .contact-text {
     font-size: 1.6rem ;
+    margin-top: 1rem ;
 
 }
 
 .footer-flex .contact-text h3 {
     font-family: Bangers ;
-    font-size: 2rem ;
+    font-size: 2.4rem ;
+    padding-bottom: 0.5rem ;
 }
 
 .footer-flex p:last-child {
@@ -271,12 +283,27 @@ body {
     text-align: center ;
     font-size: 1.4rem ;
 }
-/*
+
 @media (max-width: 800px) {
 
+    .header-flex {
+		flex-direction: column-reverse ;
+		justify-content: space-evenly ;
+		align-content: center ;
+		align-items: center ;
+	}
+    
+    .header-img {
+        display:  none ;
+    }
 
+    .logo-div {
+        justify-content: center;
+        align-items: flex-start ;
+    }
 }
 
+/*
 @media (max-width: 500px) {
 
 
