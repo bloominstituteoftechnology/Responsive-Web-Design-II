@@ -10,7 +10,7 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 
 ## Task 2: Project Objectives
 
-* [ ] Review each [design file](design-files) and build your styles at each breakpoint.
+* [x] Review each [design file](design-files) and build your styles at each breakpoint.
 * [ ] Introduce `font-size: 62.5%;` into your `html` selector.
 * [ ] Constrain your container element with a `max-width` of 880px
 * [ ] Introduce max-width media queries into your project at 800px and 500px  
