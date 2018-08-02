@@ -7,3 +7,13 @@ html {
 .container {
     max-width: 880px; 
 }
+
+
+
+@media (max-width: 800px){
+
+}
+
+@media (max-width: 500px){
+    
+}
