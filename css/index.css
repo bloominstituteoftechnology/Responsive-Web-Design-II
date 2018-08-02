@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -61,6 +65,11 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
 }
 
 a {
@@ -79,7 +88,7 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
-	padding: 25px 0px;
+	padding: 25px 0%;
 }
 
 header nav{
@@ -96,7 +105,7 @@ header nav a {
 
 header .logo {
 	align-self: flex-end;
-	margin-left: 87px;
+	margin-left: 9.8%;
 }
 
 .cta {
@@ -111,16 +120,19 @@ header .logo {
 	flex-flow: column nowrap;
 	justify-content: center;
 	text-align: center;
-	margin-left: 87px;
-	font-size: 76px;
+	margin-left: 9.8%;
+}
+
+.cta-text h1 {
+    font-size: 7.6rem;
 }
 
 .cta-text button {
-	margin: 0px 78px;
-	padding: 6px 0px;
+	margin: 0px 8.8%;
+	padding: 6px 0%;
 	background: white;
 	border: 1px solid black;
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 
 .main-content {
@@ -129,13 +141,13 @@ header .logo {
 	display: flex;
 	flex-flow: column nowrap;
 	padding-top: 34px;
-	padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .main-content .top-content {
 	display: flex;
 	flex-flow: row nowrap;
-	padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .main-content .bottom-content {
@@ -145,7 +157,7 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-	padding-right: 10px;
+    padding-right: 1.1%;
 }
 
 .contact {
@@ -153,7 +165,7 @@ header .logo {
 }
 
 .contact p {
-	padding: 6px 0px;
+	padding: 6px 0%;
 }
 
 footer {
@@ -170,7 +182,7 @@ footer {
         display: flex;
         flex-flow: column-reverse nowrap;
         align-items: center;
-        padding: 30px 0px;
+        padding: 30px 0%;
     }
 
     header nav {
@@ -183,8 +195,8 @@ footer {
 
     header nav a {
         color: gray;
-        font-size: 14px;
-        padding-right: 33px;
+        font-size: 1.4rem;
+        padding-right: 4.1%;
     }
 
     header .logo {
@@ -205,8 +217,8 @@ footer {
         flex-flow: column nowrap;
         justify-content: center;
         text-align: center;
-        margin-left: 0px;
-        font-size: 76px;
+        margin-left: 0%;
+        font-size: 7.6rem;
     }
 
     .cta div img {
@@ -229,6 +241,10 @@ footer {
         padding-bottom: 30px;
         width: 96%;
     }
+
+    .main-content .middle-img {
+        width: 97%;
+    }
     
     .main-content .bottom-content {
         display: flex;
@@ -238,16 +254,16 @@ footer {
     }
     
     .main-content .bottom-content .text-content {
-        padding-right: 10px;
+        padding-right: 1.25%;
     }
 
     .contact {
         padding-top: 37px;
-        padding-left: 13px;
+        padding-left: 1.6%;
     }
     
     .contact p {
-        padding: 6px 0px;
+        padding: 6px 0%;
     }
     
     footer {
@@ -263,7 +279,6 @@ footer {
 @media (max-width: 500px) {
     .container {
         width: 100%;
-        max-width: 880px;
         margin: 0 auto;
         display: flex;
         flex-flow: column nowrap;
@@ -274,7 +289,7 @@ footer {
         display: flex;
         flex-flow: column-reverse nowrap;
         align-items: center;
-        padding: 21px 0px;
+        padding: 21px 0%;
     }
 
     header nav {
@@ -286,8 +301,8 @@ footer {
 
     header nav a {
         color: gray;
-        font-size: 19px;
-        padding: 20px 0px;
+        font-size: 1.9rem;
+        padding: 20px 0%;
         width: 100%;
         text-align: center;
         border-bottom: 1px solid black;
@@ -300,7 +315,7 @@ footer {
     header .logo {
         display: flex;
         align-self: center;
-        margin-left: 0px;
+        margin-left: 0%;
     }
 
     .cta {
@@ -331,7 +346,7 @@ footer {
 
     .main-content .top-content .text-content {
         padding-bottom: 59px;
-        padding-right: 0px;
+        padding-right: 0%;
     }
 
     .main-content .middle-img {
@@ -347,18 +362,18 @@ footer {
 
     .main-content .bottom-content .text-content {
         padding-bottom: 59px;
-        padding-right: 0px;
+        padding-right: 0%;
     }
 
     .contact {
         align-self: flex-start;
         padding-top: 37px;
-        padding-left: 13px;
+        padding-left: 2.6%;
         width: 100%;
     }
     
     .contact p {
-        padding: 6px 0px;
+        padding: 6px 0%;
     }
     
     footer {
