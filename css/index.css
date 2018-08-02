@@ -1,1 +1,428 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your CSS from RWD - I here.  IF you don't hav/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Precentages for Height and PX for Widths */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  -webkit-transition:font-size .5s ease-in-out;
+  -moz-transition:font-size .5s ease-in-out;
+  -o-transition:font-size .5s ease-in-out;
+  transition:font-size .5s ease-in-out;
+  }
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-main {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.9%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 6.5%;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+.top-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.top-img {
+  width: 10%;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 7.7rem;
+  margin: 7.5%;
+  text-align: center;
+}
+
+.btn {
+  background: white;
+  vertical-align: top;
+  padding: 6px 40px;
+  font-size: 1.6rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Gray */
+
+.default:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+.first-main {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5%;
+}
+
+.features,
+.about {
+  margin: 1%;
+  font-size: 1.6rem;
+}
+
+.middle-img {
+  margin: 4.5% 0;
+}
+
+.second-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services,
+.products,
+.vision {
+  width: 100%;
+  margin: 0 1.2%;
+  line-height: 2rem;
+  padding-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.contact {
+  border-top: 2px solid black;
+  padding: 25px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact a:hover {
+  color: orangered;
+}
+
+.contact a[href^="tel:"]:before {
+  content: "\260E ";
+  display: inline-block;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+footer h3::before {
+  content: "\00A9 ";
+}
+
+footer h3 {
+  align-self: center;
+}
+
+/* Desktop First 800px */
+
+/* Tablet  Width 800px */
+
+@media (max-width: 800px) {
+  .containter {
+    width: 100%;
+    padding: 20px;
+  }
+  .container-main {
+    display: flex;
+    width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  header nav a {
+    font-size: 18px;
+  }
+  header nav a:last-child {
+    margin-right: 0;
+  }
+  header .logo {
+    padding-bottom: 40px;
+  }
+  .top-img {
+    display: none;
+  }
+  .top-main {
+    justify-content: center;
+    width: 100%;
+  }
+  .top-text {
+    align-items: center;
+  }
+  .first-main {
+    padding-top: 8px;
+  }
+  .features,
+  .about {
+      margin: 5% 5%;
+    /* margin-left: 10px;
+    margin-top: 10px; */
+  }
+  .second-main {
+    width: 100%;
+    padding:10px;
+  }
+  .middle-img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1%;
+  }
+}
+
+/* Phone Width 500px */
+
+@media (max-width: 500px) {
+ 
+  .container-main {
+    display: flex;
+    width: 100%;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a {
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.2rem;
+    color: gray;
+    border-top: 1px solid gray;
+  }
+  header .logo {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  header nav a:last-child {
+    border-bottom: 1px solid gray;
+  }
+  .top-img {
+    display: none;
+  }
+  .top-text {
+    width: 100%;
+  }
+  .top-main {
+    width: 100%;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+  .first-main {
+    flex-direction: column;
+  }
+  
+  .second-main {
+flex-direction: column; 
+  }
+
+}
