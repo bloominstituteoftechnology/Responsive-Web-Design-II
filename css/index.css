@@ -67,6 +67,11 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* desktop view - default */
+
+html {
+    font-size: 62.5%;
+}
+
 body {
 	padding-top: 20px;
 }
@@ -79,6 +84,7 @@ a {
     max-width: 880px;
     width: 98%;
 	margin: 0px auto;
+    font-size: 1.6rem;
 }
 
 /* nav */
@@ -99,7 +105,7 @@ a {
 .navbar nav a {
 	color: darkgray;
 	margin-right: 10%;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .navbar nav a:last-child {
@@ -142,7 +148,7 @@ header .main-header a {
 
 /* main */
 main {
-	margin-top: 36px;
+    margin-top: 36px;
 	display: flex;
 	flex-direction: column;
 }
