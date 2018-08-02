@@ -1,1 +1,152 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS RESET */
+h2{
+font-size: 2rem;
+margin-bottom:20px;
+font-family:bangers;
+}
+p{
+font-size: 1.6rem;
+}
+
+html{
+font-size: 62.5%;
+}
+.container{
+width:880px;
+margin:0 auto;
+}
+.header{
+display:flex;
+justify-content:space-around;
+width:100%;
+margin-top:20px;
+}
+.header nav{
+display:flex;
+justify-content: space-around;
+width:100%;
+font-size: 1.6rem;
+align-items:center;
+}
+
+.header nav a {
+text-decoration:none;
+color:gray;
+}
+
+.header nav :last-child {
+margin-right:50px;
+}
+
+/* end nav bar  */
+
+.cta{
+display:flex;
+width:100%;
+justify-content: space-between;
+align-items: center;
+margin-top:50px;
+padding-bottom:50px;
+align-items: center;
+border-bottom:2px solid black;
+}
+
+.textbutton{
+display:flex;
+flex-direction: column;
+width:40%;
+padding-left: 3%;
+}
+
+.cta .textbutton p{
+font-size: 7.2rem;
+text-align: center;
+font-family:bangers;
+}
+
+.cta .textbutton button{
+width:170px;
+margin-top:4%;
+align-self: center;
+padding:1.5%;
+background-color:white;
+border-radius: 5%;
+}
+/* end cta section */
+.middlesection{
+width: 100%;
+display:row;
+flex-wrap: wrap;
+display:flex;
+padding-top:20px;
+border-bottom: 2px solid black;
+
+}
+.topelement{
+width:45%;
+margin:20px 1%;
+}
+.bottomelement{
+width:30%;
+margin:25px 1%;
+}
+.footer{
+margin-left:1%;
+display:flex;
+margin-top:30px;
+flex-direction:column;
+width: 100%;
+}
+.footer :last-child{
+align-self:center;
+}
+
