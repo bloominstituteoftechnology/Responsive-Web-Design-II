@@ -52,10 +52,14 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html {
+    font-size: 62.5%;
+}
+
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 62.5%;
+    font-size: 1.6rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -73,7 +77,6 @@ h1, h2, h3, h4, h5 {
     max-width: 880px;
 	margin: auto;
 	justify-content: center;
-
 }
 
 #navbar {
@@ -86,7 +89,7 @@ h1, h2, h3, h4, h5 {
 
 .navLink {
 	color: lightslategrey;
-	font-size: 14px;
+	font-size: 1.6rem;
 	text-decoration: none;
 }
 
@@ -109,14 +112,14 @@ h1, h2, h3, h4, h5 {
 }
 
 #tagline {
-	font-size: 60px;
+	font-size: 7.0rem;
 }
 
 #getStarted {
 	height: 20px;
 	width: 150px;
 	color: white;
-	font-size: 14px;
+	font-size: 1.4rem;
 	border: 1px solid black;
 	padding: 2px;
 	text-decoration: none;
@@ -149,5 +152,5 @@ h1, h2, h3, h4, h5 {
 #footer {
 	text-align: center;
 	margin: 28px 0px;
-	font-size: 14px;
+	font-size: 1.6rem;
 }
