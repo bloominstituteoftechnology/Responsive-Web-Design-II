@@ -1,1 +1,495 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family:  'Titillium Web', sans-serif; /*'Titillium Web', sans-serif; */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:  'Bangers', cursive; /*'Titillium Web', sans-serif;*/    
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to REFACTOR into flexbox */
+
+/********************** Index.html ***************************/
+
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;  /* how diifferent from 10px ? */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 1400px;
+    max-width: 880px; 
+    /* border: 1px solid grey; */
+}
+
+header {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 25px 0 20px 0;
+}
+
+nav {
+    /* border: 1px solid blue; */
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo {
+    width: 20%;
+    /* border: 1px solid red; */
+}
+
+nav a {
+    /* border: 1px solid green; */
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: flex;
+    color: gray;
+}
+
+nav a.href {
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    height: 510px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.title .text {
+    /* border: 1px solid blue; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title .header-img {
+    /* border: 1px solid orange; */
+    width: 44%;
+    height: 380px;
+    margin: 50px 0 0 0;
+}
+
+.title .text h1 {
+    /* border: 1px solid greenyellow; */
+    font-size: 7.5rem;
+    text-align: center;
+    margin: 0 0 0 15%;
+}
+
+.title .text button {
+    border: 1px solid black;
+    width: 45%;
+    height: 30px;
+    font-size: 1.6rem;
+    margin: 0 0 30px 35%;
+}
+
+.main {
+    /* border: 1px solid red; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.main .top {
+    /* border: 1px solid blue; */
+    height: 290px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.top .features {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 45%;
+}
+
+.top .about {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 45%;
+}
+
+.image {
+    width: 100%;
+    padding: 0 0 0 0;
+}
+
+
+.main .bottom {
+    /* border: 1px solid green; */
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 0 0;
+    margin: 0 0 60px 0;
+}
+
+.bottom .services {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 30%;
+}
+
+.bottom .product {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 30%;
+}
+
+.bottom .vision {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 30%;
+}
+
+.footer {
+    /* border: 1px solid red; */
+}
+
+.footer .contact {
+    /* border: 1px solid green; */
+    padding: 30px 0 20px 20px;
+}
+
+.footer .copyright {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+
+
+@media (max-width: 800px){
+    header {
+        /* border: 1px solid orange; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 100%;
+        margin: 25px 0 20px 0;
+        height: 95px;
+    }
+
+    nav {
+        /* border: 1px solid blue; */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header .logo {
+        width: 25%;
+        /* border: 1px solid red; */
+        align-self: center;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        width: 100%;
+        height: 405px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .title .text {
+        /* border: 1px solid blue; */
+        width: 50%;
+        padding: 0 50px 0 0;
+    }
+    
+    .title .header-img {
+        display: none;
+    }
+
+    .title .text button {
+        width: 52%;
+        margin: 5px 0 30px 30%;
+    }
+
+    .main {
+        /* border: 1px solid red; */
+        height: 590px;
+    }
+
+    .main .top {
+        /* border: 1px solid blue; */
+        justify-content: space-between;
+    }
+
+
+    .top .features {
+        /* border: 1px solid green; */
+        padding: 20px 10px 10px 5;
+        width: 49%;
+    }
+
+    .top .about {
+        /* border: 1px solid green; */
+        padding: 20px 10px 10px 5;
+        width: 49%;
+    }
+
+
+    .main .bottom {
+        /* border: 1px solid green; */
+        justify-content: space-around;
+        padding: 10px 0 0 0;
+        margin: 0 0 50px 0;
+    }
+
+
+    .bottom .services {
+        /* border: 1px solid green; */
+        padding: 20px 30px 10px 5;
+        width: 33%;
+    }
+
+    .bottom .product {
+        /* border: 1px solid green; */
+        padding: 20px 30px 10px 5;
+        width: 33%;
+    }
+
+    .bottom .vision {
+        /* border: 1px solid green; */
+        padding: 20px 30px 10px 5;
+        width: 33%;
+    }
+
+
+    .footer .contact {
+        /* border: 1px solid green; */
+        padding: 30px 0 20px 5px;
+    }
+    
+    .footer .copyright {
+        /* border: 1px solid blue; */
+        padding: 5px 0 0 0;
+    }
+
+
+}
+
+@media (max-width: 500px){
+    header {
+        /* border: 1px solid orange; */
+        height: 430px;
+    }
+
+
+    nav {
+        /* border: 1px solid blue; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 364px;
+    }
+
+    nav a {
+        font-size: 2rem;
+        /* align-self: center; */
+        justify-content: center;  /* why must add after width 100%*/
+        border-top: 1px solid grey;
+        width: 100%;    /* why align-self no longer works?*/
+        height: 100px;
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid grey;
+    }
+
+    header .logo {
+        width: 40%;
+        /* border: 1px solid red; */
+        align-self: center;
+        /* height: 68px; */
+    }
+
+    .title {
+        width: 100%;
+        height: 360px;
+        /* border: 1px solid red; */
+        margin: 0 0 20px 0;
+    }
+
+    .title .text {
+        /* border: 1px solid blue; */
+        width: 100%;
+        padding: 0 85px 0 0;
+    }
+
+    .title .text button {
+        width: 43%;
+        margin: 5px 0 30px 35%;
+    }
+
+    .main {
+        /* border: 1px solid red; */
+        height: 965px;
+        justify-content: space-around;
+    }
+
+
+    .main .top {
+        /* border: 1px solid blue; */
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .top .features {
+        /* border: 1px solid green; */
+        padding: 10px 10px 10px 0;
+        width: 100%;
+        height: 120px;
+    }
+
+    .top .about {
+        /* border: 1px solid green; */
+        padding: 20px 10px 10px 0;
+        width: 100%;
+        height: 120px;
+    }
+
+    .image {
+        width: 95%;
+        padding: 0 0 0 0;
+    }
+
+    .main .bottom {
+        /* border: 1px solid green; */
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        height: 450px;
+    }
+
+
+    .bottom .services {
+        /* border: 1px solid green; */
+        padding: 0 30px 10px 0;
+        width: 100%;
+    }
+
+    .bottom .product {
+        /* border: 1px solid green; */
+        padding: 0 30px 10px 0;
+        width: 100%;
+    }
+
+    .bottom .vision {
+        /* border: 1px solid green; */
+        padding: 0 30px 10px 0;
+        width: 100%;
+    }
+
+    .footer .contact {
+        /* border: 1px solid green; */
+        padding: 35px 0 20px 0;
+    }
+    
+    .footer .copyright {
+        /* border: 1px solid blue; */
+        padding: 10px 0 0 0;
+    }
+
+}
