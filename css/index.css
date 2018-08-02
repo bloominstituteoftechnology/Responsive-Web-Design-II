@@ -153,6 +153,12 @@ a:hover {
 	padding-top: 3.5%;
 	padding-bottom: 3.5%;
 }
+.about h3 {
+	font-size: 1.6rem;
+}
+.about p {
+	font-size: 1.4rem;
+}
 .aboutOne {
 	display: flex;
 	flex-direction: row;
@@ -209,6 +215,9 @@ a:hover {
 	justify-content: flex-end;
 	align-items: flex-start;
 	font-size: 1.5rem;
+}
+.footer h4 {
+	font-size: 1.6rem;
 }
 .footer #copyright {
 	align-self: center;
