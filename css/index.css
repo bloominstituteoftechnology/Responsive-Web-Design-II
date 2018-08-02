@@ -363,7 +363,8 @@ footer h3 {
   }
   .features,
   .about {
-      margin: 5% 5%;
+      margin:1.6%;
+      line-height: 1.9rem;
     /* margin-left: 10px;
     margin-top: 10px; */
   }
