@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .container {
     width: 100%;
   }
@@ -71,7 +71,7 @@
 }
 /* End of max-width: 480px */
 /* start of max-width: 768px */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   html .container {
     width: 100%;
     margin: 0 auto;
