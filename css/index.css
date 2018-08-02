@@ -48,11 +48,77 @@ table {
 }
 * { box-sizing: border-box; }
 
+html,body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
 html {
   font-size: 62.5%;
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
+  width: 100%;
   margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 880px;
+  width: 100%;
+  margin: 26px 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: gray;
+  align-self: center;
+}
+
+div.heading {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px 0px;
+}
+
+div.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 115px;
+}
+
+h1 {
+  font-size: 7.5rem;
+  text-align: center;
+}
+
+div.button {
+  border: 1px solid black;
+  font-size: 2rem;
+  height: 30px;
+  max-width: 165px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
