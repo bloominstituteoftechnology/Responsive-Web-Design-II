@@ -52,6 +52,10 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
@@ -69,7 +73,7 @@ body {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
 }
 
 header {
@@ -83,13 +87,13 @@ header nav {
   display: flex;
   justify-content: space-between;
   margin-top: 2px;
-  width: 690px;
+  width: 78.409%;
 }
 
 header nav a {
   color: silver;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -99,7 +103,7 @@ header nav a:hover {
 }
 
 header nav a:last-child {
-  margin-right: 84px;
+  margin-right: 9.545%;
 }
 
 header .logo {
@@ -124,9 +128,9 @@ header .logo {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 72px;
+  font-size: 7.2rem;
   height: 300px;
-  padding-left: 45px;
+  padding-left: 5.114%;
   padding-top: 10px;
   text-align: center;
   width: 100%;
@@ -135,9 +139,9 @@ header .logo {
 .top-content .top-text button {
   background-color: white;
   border: 1px solid black;
-  font-size: 16px;
+  font-size: 1.6rem;
   height: 30px;
-  width: 170px;
+  width: 38%;
 }
 
 .main-content {
@@ -145,6 +149,7 @@ header .logo {
   border-top: 2px solid black;
   display: flex;  
   flex-wrap: wrap;
+  font-size: 1.6rem;
   justify-content: center;
   line-height: 1.15;  
   padding: 35px 0 42px 0;  
@@ -156,12 +161,8 @@ header .logo {
 }
 
 .mid-content .text-box {
-  margin-right: 10px;
+  margin-right: 1.136%;
   width: 50%;  
-}
-
-.mid-content .text-box p {
-  font-weight: 600;
 }
 
 .middle-img {
@@ -173,7 +174,7 @@ header .logo {
 }
 
 .bottom-content .text-box {
-  padding-right: 20px;
+  padding-right: 2.273%;
   width: 33.33%;
 }
 
@@ -183,8 +184,9 @@ footer {
 }
 
 .contact {
+  font-size: 1.6rem;
   line-height: 1.09999;
-  padding: 34px 10px 0 0;  
+  padding: 34px 1.136% 0 0;  
 }
 
 .contact p {
@@ -193,6 +195,7 @@ footer {
 
 footer .copyright {
   align-self: center;
+  font-size: 1.6rem;
   margin: 24px 0;
 }
 
@@ -211,7 +214,7 @@ footer .copyright {
   }
 
   .container {
-    width: 760px;
+    max-width: 760px;
   }
 
   .header-img {
@@ -234,7 +237,7 @@ footer .copyright {
 
 @media (max-width: 500px) {
   .container {
-    width: 460px;
+    max-width: 460px;
   }
 
   .top-content {
@@ -264,7 +267,7 @@ footer .copyright {
   
   .bottom-content .text-box {
     margin: 30px 0 30px 0;
-    padding-right: 0px;    
+    padding-right: 0;    
     width: 100%;
   }
 
@@ -276,7 +279,7 @@ footer .copyright {
 
   header nav a {
     border-top: 1px solid black;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 20px 0;
     text-align: center;
     width: 100%;
