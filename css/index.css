@@ -84,21 +84,37 @@ header {
 nav {
 	display: flex;
 	flex-direction: row-reverse;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	width: 90%;
+	margin-top: 1%;
+	
 }
+
+nav .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    width: 24%;
+
+}
+
 nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	list-style-type: none;
+	width: 68%;
+    align-items: center;
+	
 }
 nav li {
 	display: flex;
 	color: gray;
 	align-items: center;
-	padding: 10px 32px;
 	font-size: 1.5rem;
+	
 	
 }
 
@@ -228,7 +244,18 @@ a:hover {
         max-width: 800px;
         width: 100%;
         flex-direction: column;
+        align-items: center;
     }
+    
+        nav .logoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 32%;
+        margin: 1%;
+    }
+
     
         nav ul{
         width: 100%;
@@ -307,6 +334,7 @@ a:hover {
         max-width: 500px;
         width: 100%;
         flex-direction: column;
+
     }
     
         nav ul{
@@ -320,6 +348,7 @@ a:hover {
         border-bottom: solid 1px black;
         width: 100%;
         justify-content: center;
+	    padding: 5% 3%;        
     }
     
     #topListButton {
