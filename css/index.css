@@ -1,12 +1,58 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+* {
+    box-sizing: border-box;
+}
+
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%;  /* how diifferent from 10px ? */
+}
+
+body {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
+    width: 100%;
     max-width: 880px; 
+    border: 1px solid grey;
 }
+
+header {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+nav {
+    /* border: 1px solid blue; */
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo {
+    width: 20%;
+    /* border: 1px solid red; */
+}
+
+nav a {
+    /* border: 1px solid green; */
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: flex;
+    color: gray;
+}
+
+nav a.href {
+    align-items: center;
+}
+
+
 
 
 
