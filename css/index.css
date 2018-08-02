@@ -28,6 +28,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+	font-size: 62.5%;
+}
 body {
 	line-height: 1;
 }
@@ -65,36 +68,39 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-body {
-	width: 880px;
+
+.container {
+	width: 90%;
+	max-width: 880px;
 	margin: auto;
+	font-size: 1.6rem;
 }
 
 h1 {
-	font-size: 72px;
+	font-size: 7.2rem;
 }
 
 h2 {
-	font-size: 27px;
+	font-size: 2.7rem;
 }
 
 h3 {
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 h4 {
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 25px 0px;
+	padding: 25px 0%;
 }
 
 nav {
 	display: flex;
-	width: 605px;
+	width: 68.7%;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -112,12 +118,17 @@ a {
 	margin-bottom: 76px;
 }
 
+#headingPic {
+	width: 43%;
+	height: auto;
+}
+
 #headingDiv {
 	display: flex;
-	width: 499px;
+	width: 56.7%;
 	height: 381px;
 	padding-top: 76px;
-	padding-left: 48px;
+	padding-left: 9.6%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -130,37 +141,42 @@ h1 {
 #startButton {
 	border: 1px solid rgb(58, 58, 58);
 	border-radius: 2px;
-	padding: 5px 45px;
-	width: 170px;
+	padding: 5px 9.0%;
+	width: 38%;
 	margin-top: 28px;
 	margin-bottom: 73px;
 }
 
 .divisionLine {
-	width: 880px;
-	margin: 35px 0px;
+	width: 100%;
+	margin: 35px 0%;
 	border: 1px solid black;
 }
 
 .articleSection {
 	display: flex;
-	margin: 38px 0px;
+	margin: 38px 0%;
 	justify-content: space-between;
 }
 
 #articleSection1 div {
-	width: 440px;
+	width: 50%;
 	line-height: 1.15;
 }
 
 #articleSection2 div {
-	width: 290px;
+	width: 33%;
 	line-height: 1.15;
 }
 
 #midPicDiv {
-	width: 880px;
-	margin: -10px 0px;
+	width: 100%;
+	margin: -10px 0%;
+}
+
+.middle-img {
+	width: 100%;
+	height: auto;
 }
 
 address {
@@ -179,63 +195,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	height: 50px;
-}
-
-/* here begins the unique CSS code for the Services page */
-
-.services-header-img {
-	margin: 0px 0px 25px 0px;
-}
-
-#centerSection {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-#centerSection div {
-	width: 420px;
-	display: flex;
-	height: 200px;
-	flex-direction: column;
-	background-color: rgb(211, 211, 211);
-	border: 1px solid black;
-	padding: 15px;
-	margin: 15px 0px;
-	align-content: space-between;
-}
-
-.learnMore {
-	font-size: 12px;
-	text-justify: center;
-	border: 1px solid black;
-	border-radius: 4px;
-	background-color: rgb(231, 231, 231);
-	padding: 5px 15px;
-	width: 110px;
-	margin-top: 10px;
-}
-
-#bottomSection {
-	display: flex;
-	justify-content: space-between;
-}
-
-#bottomSection div {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: space-around;
-	height: 250px;
-	width: 400px;
-}
-
-ul {
-	list-style: square inside;
-	display: flex;
-	flex-direction: column;
-	height: 100px;
-	justify-content: space-around;
 }
 
 @media (max-width: 800px) {
@@ -315,7 +274,7 @@ ul {
 	nav {
 		flex-direction: column;
 		height: 386px;
-		font-size: 20px;
+		font-size: 2rem;
 		padding-top: 18px;
 		padding-left: 40px;
 		border-bottom: 1px solid black;
@@ -361,3 +320,61 @@ ul {
 		margin-left: 22px;
 	}
 }
+
+/* here begins the unique CSS code for the Services page */
+
+.services-header-img {
+	margin: 0px 0px 25px 0px;
+}
+
+#centerSection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#centerSection div {
+	width: 420px;
+	display: flex;
+	height: 200px;
+	flex-direction: column;
+	background-color: rgb(211, 211, 211);
+	border: 1px solid black;
+	padding: 15px;
+	margin: 15px 0px;
+	align-content: space-between;
+}
+
+.learnMore {
+	font-size: 1.2rem;
+	text-justify: center;
+	border: 1px solid black;
+	border-radius: 4px;
+	background-color: rgb(231, 231, 231);
+	padding: 5px 15px;
+	width: 110px;
+	margin-top: 10px;
+}
+
+#bottomSection {
+	display: flex;
+	justify-content: space-between;
+}
+
+#bottomSection div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	height: 250px;
+	width: 400px;
+}
+
+ul {
+	list-style: square inside;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	justify-content: space-around;
+}
+
