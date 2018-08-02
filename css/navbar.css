@@ -1,7 +1,6 @@
 /* header and main navbar */
 header {
   align-items: center;
-  background-color: #10324f;
   display: flex;
   justify-content: space-around;
   padding: 2% 0 0 0;

@@ -12,7 +12,7 @@
     width: 100%;
   }
   header .navbar {
-    justify-content: center !important;
+    justify-content: center;
   }
   header .navbar #main-nav {
     width: 100%;
@@ -86,7 +86,6 @@
   header .navbar {
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 3%;
     width: 100%;
   }
   header .navbar .main-nav-button {
@@ -95,7 +94,7 @@
   header #logo-design {
     flex-direction: row;
     justify-content: center;
-    margin: 0 0 4% 0;
+    padding: 0 0 4% 0;
     width: 100%;
   }
   /* end header and nav area */
