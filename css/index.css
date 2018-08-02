@@ -86,6 +86,7 @@ body {
 
 .container {
     width: 100%;
+    height: 1400px;
     max-width: 880px; 
     border: 1px solid grey;
 }
@@ -159,6 +160,76 @@ nav a.href {
     height: 30px;
     font-size: 1.6rem;
     margin: 0 0 30px 35%;
+}
+
+.main {
+    /* border: 1px solid red; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.main .top {
+    /* border: 1px solid blue; */
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.top .features {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 45%;
+}
+
+.top .about {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 45%;
+}
+
+.image {
+    width: 98%;
+    padding: 0 0 0 20px;
+}
+
+
+.main .bottom {
+    /* border: 1px solid green; */
+    height: 170px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom .services {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 30%;
+}
+
+.bottom .product {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 30%;
+}
+
+.bottom .vision {
+    /* border: 1px solid green; */
+    padding: 20px 10px 10px 10px;
+    width: 30%;
 }
 
 @media (max-width: 800px){
