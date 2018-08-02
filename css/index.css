@@ -57,11 +57,24 @@ html {
     font-size: 62.5%;
 }
 
-body {
+
+
+
+body .container {
+    width: 100%;
+    
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 nav {
 	display: flex;
 	flex-direction: row-reverse;
@@ -119,7 +132,8 @@ nav li {
 	border-top: solid 2px black;
 	border-bottom: solid 2px black;
 	height: 550px;
-	width: 880px;
+	max-width: 880px;
+	width: 100%;
 	justify-content: space-around;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -174,102 +188,15 @@ nav li {
 	height: 200px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
+	
 }
 .footer #copyright {
 	align-self: center;
 }
 /*services below here 8*/
 
-.mainContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 880px;
-}
-.servicesHeadImg {
-	display: flex;
-	justify-content: center;
-}
-.servicesDescription {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-.services {
-	display: flex;
-	flex-direction: column;
-	height: 800px;
-	justify-content: space-around;
-	align-items: center;
-	border-top: solid 2px black;
-	border-bottom: solid 2px black;
-}
-.services h3 {
-	font-size: 20px;
-}
-.servicesDescription h2 {
-	font-size: 25px;
-}
-.servicesRows {
-	display: flex;
-	flex-direction: row;
-	width: 880px;
-}
-.servicesList {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	padding: 10px;
-	border: solid 1px black;
-	height: 200px;
-	width: 500px;
-	background-color: #F4F3F4;
-}
-.learnButton {
-	display: flex;
-	border: solid 1px black;
-	border-radius: 5px;
-	padding: 10px 20px;
-	align-self: flex-start;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	background-color: white;
-}
-.columnOne {
-	margin-right: 50px;
-}
-.additionalInfo {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	font-size: 16px;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-.facts h3 {
-	font-size: 20px;
-}
-.facts {
-	display: flex;
-	flex-direction: column;
-	height: 300px;
-	width: 400px;
-	justify-content: space-around;
-	
-}
-.unorderedList ul {
-	list-style-type: square;
-	list-style-position: inside;
-	padding: 15px
-}
-.copyright {
-	display: flex;
-	justify-content: center;
-}
+
 
 /* 800px max width */
 
