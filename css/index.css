@@ -286,8 +286,8 @@ header .logo {
   font-size: 1.9rem;
 }
 
+
 .contact {
-  display: flex;
   align-content: center;
   border-top: 2px solid black;
   padding: 25px;
@@ -365,12 +365,33 @@ footer h3 {
   .first-main {
     padding-top: 8px;
   }
+  .features,
+.about {
+  margin: 1%;
+  font-size: 1.6rem;
+}
 
+.services,
+.products,
+.vision {
+  font-size: 1.6rem;
+}
 
   .middle-img {
     width: 100%;
     height: 100%;
     margin-bottom: 1%;
+  }
+  .contact {
+    display: block; /* This will put the pseudo element on its own line. */
+    
+    width: 96.66%; /* Change this to whatever width you want. */
+     }
+ footer h3 {
+      font-family: "Montserrat";
+     }
+ footer address{
+    font-size: 1.6rem;
   }
 }
 
