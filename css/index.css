@@ -98,8 +98,17 @@ nav li {
 	color: gray;
 	align-items: center;
 	padding: 10px 32px;
+	font-size: 1.5rem;
+	
 }
 
+a {
+    text-decoration: none;
+    color: gray;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 .img-top {
 	display: flex;
@@ -166,33 +175,33 @@ nav li {
 	display: flex;
 	flex-direction: column;
 	padding-right: 20px;
-	font-size: 150%;
+	font-size: 1.5rem;
 }
 #aboutabout {
 	display: flex;
 	flex-direction: column;
-	font-size: 150%;
+	font-size: 1.5rem;
 }
 #services {
 	display: flex;
 	flex-direction: column;
-	font-size: 150%;
+	font-size: 1.5rem;
 	padding-right: 20px;
 }
 #product {
 	display: flex;
 	flex-direction: column;
-	font-size: 150%;
+	font-size: 1.5rem;
 	padding-right: 20px;
 }
 #vision {
 	display: flex;
 	flex-direction: column;
-	font-size: 150%;
+	font-size: 1.5rem;
 }
 .middle-img {
 	width: 100%;
-	margin: 1 0;
+	margin: 2.5% 0;
 }
 .footer {
 	height: auto;
@@ -202,7 +211,7 @@ nav li {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-start;
-	
+	font-size: 1.5rem;
 }
 .footer #copyright {
 	align-self: center;
@@ -216,6 +225,7 @@ nav li {
 @media (max-width: 800px){
 
     nav {
+        max-width: 800px;
         width: 100%;
         flex-direction: column;
     }
@@ -294,6 +304,7 @@ nav li {
     
 
     nav {
+        max-width: 500px;
         width: 100%;
         flex-direction: column;
     }
