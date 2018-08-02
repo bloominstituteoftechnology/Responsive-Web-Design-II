@@ -5,17 +5,19 @@
 .services-header {
 	padding-bottom: 45px;
   border-bottom: 1px solid black;
+  font-size: 1.6rem;
   line-height: 20px;
 }
 
 .services-header h2 {
-	font-size: 28px;
+	font-size: 2.8rem;
 }
 
 .service-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+  justify-content: space-between;
+  font-size: 1.6rem;
   padding: 35px 0px;
   line-height: 20px;
 	border-top: 1px solid black;
@@ -40,7 +42,8 @@
 
 
 .service-facts {
-	display: flex;
+  display: flex;
+  font-size: 1.6rem;
   padding-top: 40px;
 }
 
@@ -85,8 +88,8 @@
     }
 
     header .logo {
-        padding: 20px;
-        align-self: center;
+      padding: 20px;
+      align-self: center;
     }
 
     .services-header {
@@ -132,7 +135,7 @@
   header nav a {
     padding: 20px 0px;
     border-top: 1px solid #1d1d1d;
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   header nav a:last-child {

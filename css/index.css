@@ -55,6 +55,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -89,7 +90,7 @@ header nav {
 
 header nav a {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -119,7 +120,7 @@ header .logo {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-  font-size: 77px;
+  font-size: 7.7rem;
   text-align: center;
 }
 
@@ -127,7 +128,7 @@ header .logo {
   background: white;
   vertical-align: top;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -141,6 +142,7 @@ header .logo {
 .main-content {
 	border-top: 1px solid black;
   border-bottom: 1px solid black;
+  font-size: 1.6rem;
   line-height: 20px;
 	padding: 39px 0px;
 	display: flex;
@@ -155,9 +157,9 @@ header .logo {
 }
 
 .top-content .text-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 48%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
 }
 
 .middle-img {
@@ -172,13 +174,14 @@ header .logo {
 }
 
 .bottom-content .text-content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 32%;
 }
 
 .contact {
-  padding: 39px 10px 0;
+  font-size: 1.6rem;
+  padding: 39px 10px;
 }
 
 .contact p {
@@ -188,14 +191,14 @@ header .logo {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* Media queries */
 /* Tablet */
 @media (max-width:800px) {
     .container {
-      width: 100;
+      width: 100%;
       margin: auto;
     }
   
@@ -218,8 +221,8 @@ footer {
     }
 
     header .logo {
-        padding: 20px;
-        align-self: center;
+      padding: 20px;
+      align-self: center;
     }
 
     .cta {
@@ -229,7 +232,7 @@ footer {
     }
 
     .cta img {
-        display: none;
+      display: none;
     }
 
     .main-content {
@@ -297,7 +300,7 @@ footer {
   header nav a {
     padding: 20px 0px;
     border-top: 1px solid #1d1d1d;
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   header nav a:last-child {
