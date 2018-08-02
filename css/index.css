@@ -67,6 +67,18 @@ body {
 
 }
 
+.header-flex {
+
+}
+
+.nav-flex {
+
+}
+
+.logo-div {
+
+}
+
 .visual-cta {
 
 }
@@ -74,7 +86,13 @@ body {
 .btn-class {
 
 }
+.header-img {
 
+}
+
+.middle-img-div {
+    
+}
 .middle-text {
 
 }
@@ -88,7 +106,7 @@ body {
 }
 
 .contact-flex {
-    
+
 }
 /*
 @media (max-width: 800px) {
