@@ -58,39 +58,43 @@ h1, h2, h3, h4, h5 {
 }
 
 /* End of Reset */
+html{
+    font-size: 62.5%;
+}
+
 .main{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 880px;
+	max-width: 880px;
 	margin: 0px auto;
-}
-
-#anchors{
-    display: flex;
-    justify-content: space-between;
-    width: 606px;
 }
 
 #upper-nav{
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-	height: 52px;
+    padding: 10px 0%;
+}
+
+#anchors{
+    display: flex;
+    justify-content: space-between;
+    width: 68.8%;
 }
 
 a{
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 1.5rem;
     color: lightgrey;
     font-weight: 600;
-    letter-spacing: .03em;
+    letter-spacing: .03rem;
 }
-
+/*
 .logo{
 	padding: 4px 0px 6px 5px;
 }
-
+/*
 #header{
 	display: flex;
     align-items: center;
