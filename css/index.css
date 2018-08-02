@@ -92,7 +92,6 @@ h1, h2, h3, h4, h5 {
 #bannerSection {
 	height: 480px;
 	border-bottom: 1px solid black;
-	margin: 0px 0px 30px 0px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -127,44 +126,23 @@ h1, h2, h3, h4, h5 {
 	animation-direction: alternate;
 }
 
-#upperSection {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	margin: 0px 0px 30px 0px;
+.descriptiveSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
 }
 
-#features {
+.upperText {
 	width: 440px;
 }
 
-#about {
-	width: 440px;
-}
-
-#lowerSection {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	margin: 30px 0px 30px 0px;
-}
-
-#services {
-	width: 290px;
-}
-
-#product {
-	width: 290px;
-}
-
-#vision {
+.lowerText {
 	width: 290px;
 }
 
 #address {
 	border-top: 1px solid black;
-	width: 880px;
-	padding: 40px 0px 0px 0px;
+	padding-top: 40px;
 }
 
 #footer {
