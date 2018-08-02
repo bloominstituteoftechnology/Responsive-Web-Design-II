@@ -54,7 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', cursive;
-
+	font-size: 62.5%; /* font-size 1em = 10px on default browser settings */ 
 }
 
 h1, h2, h3, h4, h5 {
@@ -79,6 +79,17 @@ li {
     float: left;
 }*/
 
+#container {
+	max-width: 880px;
+/*	border: 4px yellow solid;
+*/	margin: 20px;
+}
+
+#container {
+	/*I have literally no idea why this one works and the one above doesn't*/
+/*	border: 4px yellow solid;*/
+}
+
 .nav-header {
 	width: 600px;
 	margin: 0 auto;
@@ -86,7 +97,7 @@ li {
 
 .nav-header nav {
 	display: flex;
-	margin: 20px;
+	margin: 3%;
 	justify-content: space-around;
 }
 
@@ -141,27 +152,35 @@ li {
 
 #button {
 	border: 1px solid black;
-    padding: 15px 32px;
+    padding: 1.5% 3%;
     text-align: center;
-    margin: 0 0 80px 60px;
+    margin: 0 0 10% 9%;
  	align-items: center; 
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
 
+#top_two_text_boxes {
+	display: flex;
+	justify-content: space-around;
+}
+
 #top_left_text {
+/* Container is 880px, so half is 440, let's say 400 to leave ample space */
+	max-width: 400px;
 	width: 49%;
-	display: inline-block;
+	display: inline-flex;
 }
 
 #top_right_text {
+	max-width: 400px;
 	width: 49%;
-	display: inline-block;
+	display: inline-flex;
 }
 
 #middle_img_div {
-	padding: 20px;
+	padding: 2.5%;
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -169,31 +188,36 @@ li {
 }
 
 #middle_img {
-	width: 95%;
+	max-width: 700px;
 	height:	auto;
-}
-
-#bottom_left_text {
-	width: 33%;
-	display: inline-block;
-	margin-bottom: 10px;
-}
-
-#bottom_center_text {
-	width: 33%;
-	display: inline-block;
-
 }
 
 #bottom_three_text_boxes {
 	display: flex;
+	justify-content: space-around;
+}
+
+#bottom_left_text {
+	/* 880 / 3 is ~290. Let's go with 280. */
+/*	max-width: 280px;
+*/	width: 30%;
+	display: inline-flex;
+}
+
+#bottom_center_text {
+/*	max-width: 280px;
+*/	width: 30%;
+	display: inline-flex;
 
 }
 
-#bottom_right_text {
-	width: 33%;
-	display: inline-block;
+#bottom_right_text { 
+	/*max-width: 280px;*/
+	width: 30%;
+	display: inline-flex;
 }
+
+
 
 #copyright {
 	margin: auto;
@@ -207,6 +231,12 @@ address {
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /*Desktop width*/
+
+#container {
+	font-size: 16px;
+	max-width: 800px;
+
+}
 
 @media only screen and (min-width: 805px) {
     body {
@@ -231,21 +261,39 @@ address {
     align-items: center;
     margin: 0 auto;
 }
+
+#center_top_logo {
+	border: 4px pink solid;
+	display: flex;
+
+}
+
+#center_top_logo a {
+	flex-direction: center;
+	align-content: center;
+}
+
+
   .nav-header nav a {
   	font-color: grey;
   	text-decoration: none;
-  	padding: 20px;
+  	padding: 3%;
     font-size: 14px;
-    width: 100%;
+    width: 80%;
     text-align: center;
 
 }
 
+#headline_div {
+	padding-left: 20%;
+	padding-top: 10%;
+}
+
 #logo1 {
 	display: block;
-	padding-bottom: 10px;
-	margin-left: 150px;
-}
+	padding-bottom: 1.5%;
+/*	margin-left: 1.7%;
+*/}
 
 #logo2 {
 	display: none;
@@ -276,35 +324,57 @@ address {
   .nav-header nav a {
   	font-color: grey;
   	text-decoration: none;
-  	padding: 10px;
+  	padding: 1.1%;
     border-top: solid 1px grey;
     font-size: 24px;
     width: 100%;
     text-align: center;
 }
 
+/*#logo1 {
+	flex-direction: center;
+	align-content: center;
+
+}
+*/
 #logo2 {
 	display: none;
 }
+
+#top_two_text_boxes {
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+}
+
+#bottom_three_text_boxes {
+	flex-direction: column;
+	margin: 2%;
+}
+
   #top_left_text {
-  	display: block;
+  	display: flex;
   	width: 100%;
   }
   #top_right_text {
-  	display: block;
+  	display: flex;
   	width: 100%;
   }
   #bottom_left_text {
-  	display: block;
+  	display: flex;
   	width: 100%;
   }
   #bottom_center_text {
-  	display: block;
+  	display: flex;
   	width: 100%;
   }
   #bottom_right_text {
-  	display: block;
+  	display: flex;
   	width: 100%;
+  }
+
+  address {
+  	margin: 2%;
   }
 }
 
