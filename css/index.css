@@ -64,8 +64,54 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ================================ */
+/* html {
+	font-size: 62.5%;
+} */
 
 body {
   display: flex;
   justify-content: center;
+}
+
+.container {
+	width: 100%;
+	max-width: 880px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 23px auto;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	width: 621px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: grey;
+}
+
+.cta {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid black;
+	padding-top: 45px;
+	padding-bottom: 60px;
+}
+
+.cta .title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cta .title h1 {
+	font-size: 55px;
+	text-align: center;
 }
