@@ -1,1 +1,380 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', cursive;
+	font-size: 62.5%; /* font-size 1em = 10px on default browser settings */ 
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/*nav {
+	display: inline-block;
+	width: 600px;
+	margin: 0 auto;
+	font-color: grey*/;
+}
+/*
+li {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}*/
+
+#container {
+	max-width: 880px;
+/*	border: 4px yellow solid;
+*/	margin: 20px;
+}
+
+#container {
+	/*I have literally no idea why this one works and the one above doesn't*/
+/*	border: 4px yellow solid;*/
+}
+
+.nav-header {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.nav-header nav {
+	display: flex;
+	margin: 3%;
+	justify-content: space-around;
+}
+
+
+/*.nav-header nav a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+   */
+
+
+
+
+#top_stuff {
+}
+
+#headline_div {
+	font-size: 70px;
+	padding: 1px 20px;
+	margin-right: 20px;
+	margin-bottom: 150px;
+	width: 40%;
+	display: inline-block;
+	position: relative;
+/*	top: -44px;
+   	left: 20px;
+   	bottom: 50px;*/
+
+}
+
+#headline_div h1 {
+	align-self: center;
+}
+
+#logo1 {
+	display: flex;
+}
+
+
+#header_img_div {	
+	height: auto;
+	width: 30%;
+	display: inline-block;
+	margin-top: -28px;
+	margin-bottom: 50px;
+	position: relative;
+	top: 129px;
+   	left: 20px;
+}
+
+
+#button {
+	border: 1px solid black;
+    padding: 1.5% 3%;
+    text-align: center;
+    margin: 0 0 10% 9%;
+ 	align-items: center; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#top_two_text_boxes {
+	display: flex;
+	justify-content: space-around;
+}
+
+#top_left_text {
+/* Container is 880px, so half is 440, let's say 400 to leave ample space */
+	max-width: 400px;
+	width: 49%;
+	display: inline-flex;
+}
+
+#top_right_text {
+	max-width: 400px;
+	width: 49%;
+	display: inline-flex;
+}
+
+#middle_img_div {
+	padding: 2.5%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#middle_img {
+	max-width: 700px;
+	height:	auto;
+}
+
+#bottom_three_text_boxes {
+	display: flex;
+	justify-content: space-around;
+}
+
+#bottom_left_text {
+	/* 880 / 3 is ~290. Let's go with 280. */
+/*	max-width: 280px;
+*/	width: 30%;
+	display: inline-flex;
+}
+
+#bottom_center_text {
+/*	max-width: 280px;
+*/	width: 30%;
+	display: inline-flex;
+
+}
+
+#bottom_right_text { 
+	/*max-width: 280px;*/
+	width: 30%;
+	display: inline-flex;
+}
+
+
+
+#copyright {
+	margin: auto;
+    width: 50%;
+}
+
+address {
+	margin-top: 10px;
+}
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/*Desktop width*/
+
+#container {
+	font-size: 16px;
+	max-width: 800px;
+
+}
+
+@media only screen and (min-width: 805px) {
+    body {
+    background-color: white;
+}
+
+#logo1 {
+	display: none;
+}
+}
+
+/* Tablet width */
+  @media (max-width:800px){
+
+ #header_img_div {
+  	display: none;
+}
+
+  .nav-header nav {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#center_top_logo {
+	border: 4px pink solid;
+	display: flex;
+
+}
+
+#center_top_logo a {
+	flex-direction: center;
+	align-content: center;
+}
+
+
+  .nav-header nav a {
+  	font-color: grey;
+  	text-decoration: none;
+  	padding: 3%;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+
+}
+
+#headline_div {
+	padding-left: 20%;
+	padding-top: 10%;
+}
+
+#logo1 {
+	display: block;
+	padding-bottom: 1.5%;
+/*	margin-left: 1.7%;
+*/}
+
+#logo2 {
+	display: none;
+}
+}
+
+
+/* Phone width */
+  
+@media (max-width:500px){
+  body {
+}
+  #header_img_div {
+  	display: none;
+}
+
+#
+  .nav-header {
+  	width: 100%;
+}
+
+  .nav-header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+  .nav-header nav a {
+  	font-color: grey;
+  	text-decoration: none;
+  	padding: 1.1%;
+    border-top: solid 1px grey;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+}
+
+/*#logo1 {
+	flex-direction: center;
+	align-content: center;
+
+}
+*/
+#logo2 {
+	display: none;
+}
+
+#top_two_text_boxes {
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+}
+
+#bottom_three_text_boxes {
+	flex-direction: column;
+	margin: 2%;
+}
+
+  #top_left_text {
+  	display: flex;
+  	width: 100%;
+  }
+  #top_right_text {
+  	display: flex;
+  	width: 100%;
+  }
+  #bottom_left_text {
+  	display: flex;
+  	width: 100%;
+  }
+  #bottom_center_text {
+  	display: flex;
+  	width: 100%;
+  }
+  #bottom_right_text {
+  	display: flex;
+  	width: 100%;
+  }
+
+  address {
+  	margin: 2%;
+  }
+}
+
