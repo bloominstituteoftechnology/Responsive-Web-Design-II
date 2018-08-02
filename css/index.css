@@ -63,6 +63,8 @@ html {
   font-size: 62.5%;
 }
 
+/* Responsive CSS Starts Here */
+
 .container {
   max-width: 880px;
   width: 100%;
@@ -148,7 +150,7 @@ div.top, div.bottom {
 }
 
 section {
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 .middle-img {
@@ -167,4 +169,45 @@ address {
 div.copyright {
   font-size: 1.6rem;
   text-align: center;
+}
+
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+    width: 95%;
+  }
+  
+  .logo {
+    flex-shrink: 1;
+  }
+  
+  nav {
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+  }
+
+  a {
+    font-size: 1.6rem;
+    color: gray;
+    width: 15%;
+    margin-top: 45px;
+    text-align: center;
+  }
+  
+  .headerImg {
+    display: none;
+  }
+  
+  div.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  section {
+    padding: 0px 1%;
+  }
 }
