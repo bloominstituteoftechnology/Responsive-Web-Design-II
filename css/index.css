@@ -144,7 +144,7 @@ a:hover {
 	justify-content: space-between;
 }
 .headline-text {
-	font-size: 70px;
+	font-size: 7.2rem;
 	display: flex;
 	vertical-align: middle;
 }
@@ -155,7 +155,8 @@ a:hover {
 .headline p {
 	display: flex;
 	border: solid 2px black;
-	padding: 10px 45px;
+	padding: 3.75% 20%;
+	font-size: 1.6rem;
 }
 .about {
 	display: flex;
