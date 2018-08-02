@@ -21,6 +21,7 @@ body {
     top: 0;
     width: 70%;
     max-width: 880px;
+    padding-top: 27px;
 }
 
 .header__nav {
@@ -43,7 +44,7 @@ body {
 .hero {
     display: flex;
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 90px;
     margin-bottom: 75px;
 }
 
@@ -153,4 +154,53 @@ h2 {
     .hero__img {
         display: none;
     }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    
+    .header {
+        position: static;
+    }
+
+    .header__nav {
+        width: 100%;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+
+    .header__img {
+        width: 37%;
+    }
+
+    .header a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid black;
+        padding: 20px;
+    }
+
+    .hero {
+        margin-top: 50px;
+    }
+
+    .hero p {
+        width: 50%  
+    }
+
+    .content, .contact {
+        margin: 0 10px;
+    }
+
+    .content__item--halfwidth {
+        width: 100%;
+    }
+
+    .content__item--thirdwidth {
+        width: 100%;
+    }
+
 }
