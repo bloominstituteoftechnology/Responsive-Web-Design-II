@@ -178,29 +178,29 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	padding-right: 3.5%;
-	font-size: 1.5rem;
+	
 }
 #aboutabout {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.5rem;
+	
 }
 #services {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.5rem;
+	
 	padding-right: 3.5%;
 }
 #product {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.5rem;
+	
 	padding-right: 3.5%;
 }
 #vision {
 	display: flex;
 	flex-direction: column;
-	font-size: 1.5rem;
+	
 }
 .middle-img {
 	width: 100%;
