@@ -149,6 +149,7 @@ nav li {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	
 }
 .imageAbout {
 	display: flex;
@@ -159,6 +160,7 @@ nav li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	
 }
 #features {
 	display: flex;
@@ -190,6 +192,7 @@ nav li {
 }
 .middle-img {
 	width: 100%;
+	margin: 1 0;
 }
 .footer {
 	height: auto;
