@@ -161,4 +161,10 @@ footer {
 
 address {
   font-size: 1.6rem;
+  padding-bottom: 40px;
+}
+
+div.copyright {
+  font-size: 1.6rem;
+  text-align: center;
 }
