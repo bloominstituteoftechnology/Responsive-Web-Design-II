@@ -19,7 +19,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -53,15 +52,16 @@ table {
 }
 
 html, body {
-   /* width: 800px; */  /* this messed up my responsive */
-   /* margin: 0 auto; */
+    /* width: 800px; */  /* this messed up my responsive */
+    /* margin: 0 auto; */
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 /********************************************************** */
 
 .container {
     border: 1px solid darkolivegreen;
-    width: 880px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -69,8 +69,8 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: .1rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -94,7 +94,7 @@ nav {
 header nav a {
     border: 1px solid honeydew;
     padding:  0 3%;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: gray;
     text-decoration: none;
     vertical-align: bottom;   /* only works for inline elements */
@@ -119,7 +119,7 @@ header nav a:last-child {
     border: 4px solid blueviolet;
     display: flex;
     justify-content: space-evenly;
-    font-size: 65px;
+    font-size: 6.5rem;
     margin-top: 5%;
 }
 
@@ -144,7 +144,7 @@ header nav a:last-child {
     width: 50%;
     background: white;
 
-    font-size: 17px;
+    font-size: 1.7rem;
     border: 1px solid black;
     cursor: pointer;
 }
@@ -211,7 +211,7 @@ header nav a:last-child {
 
 footer {
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 
@@ -245,7 +245,7 @@ footer {
 
     .tablet-size::after {
         content: 'tablet';
-        font-size: 40px;
+        font-size: 4rem;
     }
 }
 
@@ -253,7 +253,7 @@ footer {
 @media (max-width: 500px) {
     .container {
         background: lightblue;
-        max-width: 100%;
+        width: 100%;
     }
     .top-header {
         display: flex;
