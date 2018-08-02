@@ -105,11 +105,12 @@ p {
   }
 
 hr {
-  width: 86%; 
+  width: 99%; 
   text-align: center; 
   color: black; 
-  height: 4px; 
+  height: 3px; 
   background-color: black;  
+  font-weight: bold; 
    }
 
 	
@@ -153,7 +154,7 @@ nav a:hover {
  }
   
 .button1{
-  width: 180px; 
+  width: 170px; 
   border: 1px solid green; 
   margin-top: 9px; 
   padding: 8px;
@@ -170,6 +171,7 @@ nav a:hover {
 h3.button1{
   font: inherit; 
   font-weight: bold; 
+  font-size: 1.4rem; 
   }
 	
 /* Header and Banner------------------------------------------------------------------*/
@@ -178,20 +180,21 @@ h3.button1{
   display: flex; 
   flex-wrap: wrap; 
   flex-direction: column; 
-  width: 50%; 
+  width: 56%; 
   text-align: center; 
-  padding-top: 50px; 
+  padding-top: 40px; 
   padding-left: 7%; 
   align-items: center;
   justify-content: center; 
   }
 
 .bannerImage{
-  width: 50%; 
+  width: 44%; 
   display: flex; 
-  justify-content: center;
-  padding-right: 7%;   
+  justify-content: flex-end;    
 }
+
+
   
 header{
   width: 100%; 
@@ -199,7 +202,7 @@ header{
   padding-top: 50px; 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: flex-end; ;  
  }
 
  
