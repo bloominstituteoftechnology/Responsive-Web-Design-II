@@ -49,11 +49,47 @@ table {
 	border-spacing: 0;
 }
 
+
+/* Everything above is CSS reset */
 * {
     box-sizing: border-box ;
     border: 1px solid black ;
 }
 
+html {
+
+}
+
+body {
+
+}
+.site-container {
+
+}
+
+.visual-cta {
+
+}
+
+.btn-class {
+
+}
+
+.middle-text {
+
+}
+
+.bottom-text {
+
+}
+
+.footer-flex {
+
+}
+
+.contact-flex {
+    
+}
 /*
 @media (max-width: 800px) {
 
