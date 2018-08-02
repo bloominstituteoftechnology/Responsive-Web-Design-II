@@ -130,8 +130,8 @@ html{
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    /* letter-spacing:1rem; */
+    margin-bottom:1.5rem;
 }
 
 /* Your code starts here! */
@@ -139,27 +139,30 @@ h1, h2, h3, h4, h5 {
     display:flex;
     flex-direction: column;
     margin:0 auto;
-	width:880px;	
+	max-width: 880px;
+    width:100%;	
 }
 
 header{
     display:flex;
     flex-direction: row;
-    padding: 10px;
-    width: 880px;
+    padding:0.625rem;
+    max-width: 880px;
+    width:100%;
 }
 
 header nav {
-    width: 880px;
+    max-width: 880px;
+    width:100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-right: 73px;
+    margin-right:4.5rem;
     margin-top: 8px;
 }
 header nav a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: gray;
     position: relative;
 }
@@ -170,8 +173,9 @@ header .brand {
     left: 10px;
 }
 
-
 .hero{
+    max-width: 880px;
+    width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -179,15 +183,15 @@ header .brand {
 }
 
 .hero .first{
-	width: 300px;
+	width:37.5%;
 	position: relative;
-	top:60px;
-	margin:0 45px 0 60px;
+	top:30px;
+	margin:0 5.6% 0 7.5%;
 }
 
 .hero .first h1{
 	text-align: center;
-	font-size:72px;
+	font-size:6.8rem;
 	margin-bottom:15px;
 }
 
@@ -196,18 +200,27 @@ header .brand {
    font-family: Arial, Helvetica, sans-serif;
    width: 180px;
    margin: 0 auto;
-   font-size:18px;
+   font-size:1.8rem;
    border:1px solid #000;
-   padding:8px;
+   padding:8px 2.1%;
 }
 
+.hero .second{
+    width:37.5%;
+    margin:0 5.6% 0 7.5%;
+}
+
+.hero .second img{
+    width: 100%;
+}
 
 .main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 880px;
+    max-width: 880px;
+    width:100%;
     margin: 40px 0;
     padding: 40px 0;
     border-top: 1px solid #000;
@@ -215,37 +228,53 @@ header .brand {
 }
 
 .box-top{
-	width: 420px;
+	width:47.7%;
 	height:auto;
 	padding-bottom:25px;
 }
+.box-top h3{
+    font-size: 1.6rem;
+}
 .box-top p{
-	line-height: 20px;
+    font-size:1.4rem;
+	line-height: 2rem;
     text-align:justify;
 }
 
 .mid-hero{
-    width:880px;
+    max-width: 880px;
+    width:100%;
     display:flex;
 	margin-bottom:20px;
 }
 
 .box-bottom{
-	width: 280px;
+	width:31.81%;
 	height:auto;
 }
 
+.box-bottom h3{
+    font-size: 1.6rem;
+}
+
 .box-bottom p{
-	line-height: 20px;
+    font-size: 1.4rem;
+	line-height:2rem;
     text-align:justify;
 }
 
 footer address p{
+    font-size: 1.4rem;
 	text-align:left;
 	margin-top:0px;
 }
 
+footer h3{
+    font-size: 1.6rem;
+}
+
 footer p{
+    font-size: 1.6rem;
 	margin-top:25px;
 	text-align:center;
 }
@@ -307,7 +336,7 @@ footer p{
 
 .first p{
 	width:420px;
-	margin-bottom:15px;
+	margin-bottom:1.5rem;
 	line-height: 20px;
 	text-align: justify;
 }
@@ -324,20 +353,31 @@ footer p{
 
 /************************************** Media Queries ******************************/
 @media(max-width: 800px) {
+
+    * h3{
+        font-size: 1.6rem;
+    }
+
+    *p{
+        font-size: 1.4rem;
+    }
    
    .container{
-       width:800;
+       max-width:800px;
+       width:100%;
        padding:40px;
    }
 
    header{
-       width: 800px;
+       max-width:800px;
+       width: 100%;
        flex-direction:column-reverse;
        align-content: space-around;
    }
 
    header nav{
-       width: 800px;
+       max-width: 780px;
+       width: 100%;
    }
 
    header nav a{
@@ -350,7 +390,8 @@ footer p{
     }
 
    .hero{
-       width: 800px;
+       max-width: 800px;
+       width:100%;
    }
 
    .hero .first{
@@ -366,44 +407,62 @@ footer p{
       display: none;
    }
 
+   .hero .second img{
+      width: 100%;
+   }
+
    .main{
-       width:800px;
+       max-width:800px;
+       width:100%;
    }
 
    .mid-hero img{
-       width: 100%
+       max-width:800px;
+       width:100%;
    }
 
    .box-top{
-       width:380px;
+       width:47.5%;
    }
 
    .box-bottom{
-       width:240px;
+       width:30%;
    }
 
    footer{
-       width: 800px;
+       width:100%;
+       max-width:800px;
    }
 
 }
 
 @media(max-width: 500px){
+
+    * h3{
+        font-size: 1.6rem;
+    }
+
+    *p{
+        font-size: 1.4rem;
+    }
    .container{
-       width:500px;
+       max-width:500px;
+       width:100%;
        margin:0;
        padding:0;
    }
    header{
-       width: 500px;
-       flex-direction: column-reverse;
-       justify-content: center;
+        max-width:500px;
+        width:100%;
+        flex-direction: column-reverse;
+        justify-content: center;
    }
 
    header nav{
-    width: 500px;
-    flex-flow: column wrap;
-    padding:0;
+        max-width:500px;
+        width:100%;
+        flex-flow: column wrap;
+        padding:0;
    }
    
    header nav a{
@@ -420,30 +479,36 @@ footer p{
    }
    
    .hero{
-       width: 500px;
+        max-width:500px;
+        width:100%;
    }
    .main{
-        width:500px;
+        max-width:500px;
+        width:100%;
         padding:25px;
     }
 
     .mid-hero img{
+        max-width:500px;
         width: 100%;
         margin-bottom:40px;
     }
 
     .box-top{
-      width:500px;
-      margin-bottom:40px; 
+        max-width:500px;
+        width:100%;
+        margin-bottom:40px; 
     }
 
     .box-bottom{
-      width: 500px;
-      margin-bottom:40px;  
+        max-width:500px;
+        width:100%;
+        margin-bottom:40px;  
     }
 
     footer{
-        width: 500px;
+        max-width:500px;
+        width:100%;
         padding:25px
     }
 
