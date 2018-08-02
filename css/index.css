@@ -115,3 +115,58 @@ header nav a {
 	font-size: 55px;
 	text-align: center;
 }
+
+.main {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px auto;
+}
+
+.main .main-text {
+	width: 47%;
+}
+
+.main .main-text h2 {
+	font-size: 25px;
+}
+
+.middle-img {
+
+}
+
+.ctn {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 25px;
+	border-bottom: 2px solid black;
+	margin: 25px auto;
+}
+
+.ctn .ctn-text {
+	width: 30%;
+}
+
+.ctn .ctn-text h2 {
+	font-size: 25px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.contact h2 {
+	font-size: 25px;
+}
+
+.contact p {
+	margin-top: 10px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 25px auto;
+}
