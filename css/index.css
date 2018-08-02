@@ -81,7 +81,7 @@ a {
 	}
 	
 h1 {
-	font-size: 7.3rem; 
+	font-size: 6.6rem; 
 	}
 		
 h3 {
@@ -118,24 +118,23 @@ hr {
 .fixed {
   display: flex; 
   flex-wrap: wrap; 
-  justify-content: space-around; 
+  justify-content: space-between; 
   width: 100%; 
  }
 
 nav {
   display: flex; 
   flex-wrap: wrap; 
-  justify-content: center; 
-  width: 74%; 
-  text-align: center; 
+  justify-content: flex-start; 
+  width: 82%; 
   padding-top: 35px;   
  }
   
 nav a {  
   color: grey; 
   text-decoration: none; 
-  margin-left: 7%;  
-  font-size: 1.5rem; 
+  margin-right: 9%;  
+  font-size: 1.4rem; 
  }
   
 nav a:hover {
@@ -147,9 +146,9 @@ nav a:hover {
 	
 .navLogo {
   display: flex; 
-  margin-left: 10px; 
+  justify-content: flex-end;  
   flex-wrap: wrap; 
-  width: 24%; 
+  width: 18%; 
   padding: 25px 0px 30px 0px;
  }
   
