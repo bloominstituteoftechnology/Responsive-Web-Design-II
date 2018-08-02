@@ -1,1 +1,434 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+/* desktop first */
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* font size reset rem */
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: 'Merienda', cursive;
+    font-size: 1.5rem;
+}
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px 0px 20px;
+    background-color: black;
+    max-width: 650px;
+    width: 73.8%;
+    height: 30px;
+	z-index: 1;
+    border-radius: 15px;
+    font-size: 1.6rem;
+}
+
+a {
+	margin: 0px 4.6% 0px 3.8%;	
+}
+
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: green;
+	text-decoration: none;
+}
+
+a:hover {
+	color: hotpink;
+	text-decoration: none;
+}
+
+a:active {
+	color: blue;
+	text-decoration: none;
+}
+
+.logo {
+    float: right;
+    margin: 27px 2.2% 0px 0.1%;
+    position: relative;
+    top: -26px;
+}
+
+.great {
+    width: 100%;
+    height: 40px;
+    background: palegoldenrod;
+    position: relative;
+    top: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.innovation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 90px 0px;
+    align-items: center;
+    height: 388px;
+}
+
+h1 {
+    display: flex;
+    font-size: 7.2rem;
+    text-shadow: 2px 3px #632323;
+}
+
+.innovation-text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: -83px;
+    top: 7px;
+    width: 33.4%;
+    height: 285px;
+}
+
+button {
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(182, 33, 33);
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 5px rgb(104, 103, 103);
+    max-width: 171px;
+    width: 58.3%;
+    height: 34px;
+    position: relative;
+    top: 9px;
+    padding: 6px;
+}
+  
+button:hover {
+    background-color: #632323
+}
+  
+button:active {
+    background-color: #0a0404;
+    box-shadow: 2px 3px rgb(36, 33, 33);
+    transform: translateY(4px);
+}
+
+section{
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 40px 0px;
+    position: relative;
+    top: -18px;
+    margin: 0px 0.2%;
+}
+
+.upper-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 440px;
+    position: relative;
+    top: -4px;
+    left: -2px;
+}
+
+.code {
+	display: flex;
+}
+
+.middle-img {
+    margin-top: 31px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 182px;
+    position: relative;
+    top: -4px;
+    max-width:880px;
+    width: 100%;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+.lower-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 293px;
+    align-content: space-between;
+    position: relative;
+    margin-top: 15px;
+    width: 33.2%;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.space {
+    margin: 14px 0px;
+}
+
+h4 {
+    text-align: center;
+    margin: 43px 0px;
+}
+
+.foot {
+    position: relative;
+    top: -2px;
+}
+
+/* tablet */
+
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+
+    }
+    .great {
+        display: flex;
+        justify-content: center;
+        height: 110px;
+    }
+    .logo {
+        height: 35px;
+        max-width: 182px;
+        width: 22.75%;
+        right: -19px;
+        margin-top: 30px;
+    }
+    nav{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 99px;
+    }
+    .code {
+        display: none;
+    }
+    .innovation {
+        justify-content: space-evenly;
+        width: 100%
+    }
+    .innovation-text-button {
+        left: 8px;
+        top: -1px;
+        height: 342px;
+    }
+    section {
+        width: 97%;
+        top: -106px;
+        margin: 0px 20px;
+        justify-content: space-evenly;
+        height: auto;
+        padding-bottom: 71px;
+    }
+    .upper-text {
+        max-width: 360px;
+        width: 45%;
+        position: relative;
+        top: -4px;
+        height: 127px;
+        margin: 0px 8px;
+    }
+    .middle-img {
+        width: 100%;
+        height: 157px;
+        top: -13px;
+    }
+    .lower-text {
+        margin-top: 15px;
+        left: 10px;
+        max-width: 252px;
+        width: 31.5%;
+    }
+    .foot {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 0px 0px 30px;
+        top: -90px;
+    }
+    h4 {
+        margin: 44px 1.5% 0px 0px;
+    }
+}
+
+/* phone */
+
+@media screen and (max-width: 500px) {
+    .container{
+        max-width: 500px;
+    }
+    header{
+        width: 100%;
+        flex-direction: column-reverse;
+        height: 443px; 
+    }
+    nav {
+        flex-direction: column;
+        background: none;
+        height: 324px;
+        position: relative;
+        margin: 0 auto;
+    }
+    a {
+        border: 1px solid black;
+        border-radius: 10px;
+        background: black;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        padding: 3.9%;
+        position: relative;
+        top: -14px;
+        margin: 0 auto;
+   }
+   .great {
+        height: 61px;
+        position: relative;
+        top: -14px;
+        width: 100%;
+   }
+   .innovation {
+        margin: 28px 0px 89px 0px;
+   }
+
+   button {
+       height: 50px;
+       width: 50.2%;
+       min-width: 65.6px;
+   }
+   section {
+        margin: 0px;
+        height: 969px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+   }
+   .middle-img {
+        width: 100%;
+        height: 94px;
+        top: -29px;
+        margin: 0 auto;
+   }
+   .upper-text {
+        max-width: 498px;
+        width: 100%;
+        left: 7px;
+        top: -15px;
+   }
+    .lower-text {
+        max-width: 498px;
+        width: 100%;
+        
+    }
+    h2, h3, h4, {
+        margin: 0px;
+    }
+    p {
+        width: 97%;
+    }
+    foot {
+        padding: 0px 0px 0px 15px;
+    }
+}
