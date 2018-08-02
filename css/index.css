@@ -1,6 +1,6 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -54,33 +54,27 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
-
 body {
-    display: flex;
-    height: auto;
-    justify-content: center;
+	display: flex;
+	height: auto;
+	justify-content: center;
 }
-
-
 body .container {
 	max-width: 880px;
 	width: 100%;
-    height: auto;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
 }
-
 header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
-
 nav {
 	display: flex;
 	flex-direction: row-reverse;
@@ -88,44 +82,34 @@ nav {
 	align-items: center;
 	width: 90%;
 	margin-top: 1%;
-	
 }
-
 nav .logoContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    
-    width: 24%;
-
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 24%;
 }
-
 nav ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	list-style-type: none;
 	width: 68%;
-    align-items: center;
-	
+	align-items: center;
 }
 nav li {
 	display: flex;
 	color: gray;
 	align-items: center;
 	font-size: 1.5rem;
-	
-	
 }
-
 a {
-    text-decoration: none;
-    color: gray;
+	text-decoration: none;
+	color: gray;
 }
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
-
 .img-top {
 	display: flex;
 }
@@ -164,18 +148,15 @@ a:hover {
 	border-top: solid 2px black;
 	border-bottom: solid 2px black;
 	height: auto;
-    width: 90%;
-
+	width: 90%;
 	justify-content: space-around;
 	padding-top: 3.5%;
 	padding-bottom: 3.5%;
-
 }
 .aboutOne {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	
 }
 .imageAbout {
 	display: flex;
@@ -186,7 +167,6 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	
 }
 #features {
 	display: flex;
@@ -222,8 +202,8 @@ a:hover {
 }
 .footer {
 	height: auto;
-    width: 90%;
-    margin: 1% 0%;
+	width: 90%;
+	margin: 1% 0%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -235,183 +215,104 @@ a:hover {
 }
 /*services below here 8*/
 
-
-
 /* 800px max width */
 
-@media (max-width: 800px){
-
-    nav {
-        max-width: 800px;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-        nav .logoContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        width: 32%;
-        margin-bottom: 2.5%;
-    }
-
-    
-        nav ul{
-        width: 100%;
-        flex-direction: row;
-        align-items: center;
-        margin: 0;
-    }
-    
-    nav li {
-        
-        width: 100%;
-        justify-content: center;
-    }
-    
-
-    
-    .about {
-
-        height: auto;
-        
-    }
-    
-
-    .middle-img {
-        height: 100%;
-        width: 100%;
-    }
-        
-    
-    
-
-    .img-container {
-        display: none;
-    }
-    
-    #features {
-        width: 100%;
-        height: 100%;
-        margin: 1.75% 0%;
-    }
-    
-    #aboutabout {
-        width: 100%;
-        height: 100%;
-        margin: 3.5% 0%;        
-    }
-    
-    #services {
-        width: 100%;
-        height: 100%;
-        margin: 3.5% 0%;            
-    }
-    
-    #product {
-        width: 100%;
-        height: 100%;
-        margin: 3.5% 0%;            
-    }
-    #vision {
-        width: 100%;
-        height: 100%;
-        margin: 3.5% 0%;            
-    }
-    
-
-    
-
-
-
-/* 500px max width */
-
-@media (max-width: 500px){
-    
-
-    nav {
-        max-width: 500px;
-        width: 100%;
-        flex-direction: column;
-
-    }
-    
-        nav ul{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    
-    nav li {
-        border-bottom: solid 1px black;
-        width: 100%;
-        justify-content: center;
-	    padding: 5% 3%;        
-    }
-    
-    #topListButton {
-        border-top: solid 1px black;
-    }
-
-    
-    .about {
-
-
-        height: auto;
-        
-    }
-    
-
-    .middle-img {
-        height: 100%;
-        width: 100%;
-    }
-        
-    
-    
-    .aboutOne {
-        flex-direction: column;
-    }
-    .aboutTwo {
-        flex-direction: column;
-    }
-    
-    .img-container {
-        display: none;
-    }
-    
-    #features {
-        width: 100%;
-        height: 100%;
-        
-    }
-    
-    #aboutabout {
-        width: 100%;
-        height: 100%;
-               
-    }
-    
-    #services {
-        width: 100%;
-        height: 100%;
-                    
-    }
-    
-    #product {
-        width: 100%;
-        height: 100%;
-                    
-    }
-    #vision {
-        width: 100%;
-        height: 100%;
-                   
-    }
-    
-
-    
-}
+@media (max-width: 800px) {
+	nav {
+		max-width: 800px;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	nav .logoContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 32%;
+		margin-bottom: 2.5%;
+	}
+	nav ul {
+		width: 100%;
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+	}
+	nav li {
+		width: 100%;
+		justify-content: center;
+	}
+	.middle-img {
+		height: 100%;
+		width: 100%;
+	}
+	.img-container {
+		display: none;
+	}
+	#features {
+		width: 100%;
+		height: 100%;
+		margin: 1.75% 0%;
+	}
+	#aboutabout {
+		width: 100%;
+		height: 100%;
+		margin: 3.5% 0%;
+	}
+	#services {
+		width: 100%;
+		height: 100%;
+		margin: 3.5% 0%;
+	}
+	#product {
+		width: 100%;
+		height: 100%;
+		margin: 3.5% 0%;
+	}
+	#vision {
+		width: 100%;
+		height: 100%;
+		margin: 3.5% 0%;
+	}
+	/* 500px max width */
+	@media (max-width: 500px) {
+		nav {
+			max-width: 500px;
+			width: 100%;
+			flex-direction: column;
+		}
+		nav ul {
+			width: 100%;
+			flex-direction: column;
+			align-items: center;
+		}
+		nav li {
+			border-bottom: solid 1px black;
+			width: 100%;
+			justify-content: center;
+			padding: 5% 3%;
+		}
+		#topListButton {
+			border-top: solid 1px black;
+		}
+		.aboutOne {
+			flex-direction: column;
+		}
+		.aboutTwo {
+			flex-direction: column;
+		}
+		#features {
+			margin: 3.5% 0%;
+		}
+		#aboutabout {
+			margin: 3.5% 0%;
+		}
+		#services {
+			margin: 3.5% 0%;
+		}
+		#product {
+			margin: 3.5% 0%;
+		}
+		#vision {
+			margin: 3.5% 0%;
+		}
+	}
