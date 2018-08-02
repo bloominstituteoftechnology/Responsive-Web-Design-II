@@ -379,6 +379,11 @@ footer h3 {
     width: 100%;
     padding-top:10px;
   }
+    .services, .products, .vision
+  {
+    padding-top: 5%;
+    font-size: 1.9rem;
+  }
   .middle-img {
     width: 100%;
     height: 100%;
