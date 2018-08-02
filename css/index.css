@@ -137,11 +137,13 @@ nav li {
 	flex-direction: column;
 	border-top: solid 2px black;
 	border-bottom: solid 2px black;
-	height: 550px;
-    width: 100%;
+	height: auto;
+    width: 90%;
+
 	justify-content: space-around;
 	padding-top: 20px;
 	padding-bottom: 20px;
+
 }
 .aboutOne {
 	display: flex;
@@ -162,39 +164,41 @@ nav li {
 	display: flex;
 	flex-direction: column;
 	padding-right: 20px;
-	font-size: 17px;
+	font-size: 150%;
 }
 #aboutabout {
 	display: flex;
 	flex-direction: column;
-	font-size: 17px;
+	font-size: 150%;
 }
 #services {
 	display: flex;
 	flex-direction: column;
-	font-size: 17px;
+	font-size: 150%;
 	padding-right: 20px;
 }
 #product {
 	display: flex;
 	flex-direction: column;
-	font-size: 17px;
+	font-size: 150%;
 	padding-right: 20px;
 }
 #vision {
 	display: flex;
 	flex-direction: column;
-	font-size: 17px;
+	font-size: 150%;
 }
 .middle-img {
 	width: 100%;
 }
 .footer {
-	height: 200px;
-	width: 100%;
+	height: auto;
+    width: 90%;
+    margin: 1% 0%;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: flex-end;
+	align-items: flex-start;
 	
 }
 .footer #copyright {
@@ -207,9 +211,7 @@ nav li {
 /* 800px max width */
 
 @media (max-width: 800px){
-        .container {
-        width: 100%;
-    }
+
     nav {
         width: 100%;
         flex-direction: column;
@@ -231,7 +233,7 @@ nav li {
 
     
     .about {
-        width: 100%;
+
         height: auto;
         
     }
@@ -287,9 +289,7 @@ nav li {
 
 @media (max-width: 500px){
     
-        .container {
-        width: 100%;
-    }
+
     nav {
         width: 100%;
         flex-direction: column;
@@ -314,7 +314,8 @@ nav li {
 
     
     .about {
-        width: 100%;
+
+
         height: auto;
         
     }
