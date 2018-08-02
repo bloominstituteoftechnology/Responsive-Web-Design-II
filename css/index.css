@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-/* Use your CSS from RWD - I here.  IF you don't hav/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* Use your CSS from RWD - I here.  IF you don't hav/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -170,7 +169,12 @@ h5 {
 * {
   box-sizing: border-box;
 }
-
+body {
+  -webkit-transition:font-size .5s ease-in-out;
+  -moz-transition:font-size .5s ease-in-out;
+  -o-transition:font-size .5s ease-in-out;
+  transition:font-size .5s ease-in-out;
+  }
 .container {
   max-width: 880px;
   width: 100%;
@@ -230,7 +234,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 7.7rem;
+  font-size: 7rem;
   margin: 7.5%;
   text-align: center;
 }
@@ -260,13 +264,7 @@ header .logo {
 .features,
 .about {
   margin: 1%;
-  font-size: 1.6rem;
-    /* This portion sets up the CSS3 transition */
-  transition: font-size .25s linear; 
-  -o-transition: font-size .25s linear; 
-  -moz-transition: font-size .25s linear; 
-  -webkit-transition: font-size .25s 
-  
+  font-size: 1.9rem;
 }
 
 .middle-img {
@@ -285,10 +283,12 @@ header .logo {
   margin: 0 1.2%;
   line-height: 2rem;
   padding-bottom: 25px;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
 }
 
 .contact {
+  display: flex;
+  align-content: center;
   border-top: 2px solid black;
   padding: 25px;
 }
@@ -315,11 +315,9 @@ footer {
 
 footer h3::before {
   content: "\00A9 ";
-
 }
 
 footer h3 {
-     font-family:"Montserrat";
   align-self: center;
 }
 
@@ -367,23 +365,8 @@ footer h3 {
   .first-main {
     padding-top: 8px;
   }
-  .features,
-  .about {
-      margin:1.6%;
-      line-height: 1.9rem;
-        font-size: 1.9rem;
-    /* margin-left: 10px;
-    margin-top: 10px; */
-  }
-  .second-main {
-    width: 100%;
-    padding-top:10px;
-  }
-    .services, .products, .vision
-  {
-    padding-top: 5%;
-    font-size: 1.9rem;
-  }
+
+
   .middle-img {
     width: 100%;
     height: 100%;
@@ -423,28 +406,28 @@ footer h3 {
     display: none;
   }
   .top-text {
-    width: 100%;
+    font-size: 7.7rem;
   }
   .top-main {
-    width: 100%;
-    align-items: center;
-    border-bottom: 2px solid black;
+    width: 96.66%;
+   margin: 0 auto;
   }
   .first-main {
     flex-direction: column;
   }
-  .features, .about {
-    padding-top: 8%;
-  }
+  
   .second-main {
 flex-direction: column; 
   }
-  .services, .products, .vision
-  {
-    padding-top: 5%;
-    font-size: 1.9rem;
-  }
-  footer address{
+ .contact {
+    display: block; /* This will put the pseudo element on its own line. */
+    
+    width: 96.66%; /* Change this to whatever width you want. */
+     }
+ footer h3 {
+      font-family: "Montserrat";
+     }
+ footer address{
     font-size: 1.6rem;
   }
 
