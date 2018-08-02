@@ -77,7 +77,8 @@ body {
 
 	
 a {
-	text-decoration: none; 
+    text-decoration: none; 
+    font-size: 1.5rem; 
 	}
 	
 h1 {
@@ -89,8 +90,8 @@ h3 {
   text-align: center; 
    }
 		
-h4 {
-  font-weight: bold; 
+h4 { 
+  font-size: 1.5rem; 
    }
 		
 h6 {
@@ -101,11 +102,12 @@ h6 {
 		
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem; 
+  font-size: 1.5rem; 
+  line-height: 1.2; 
   }
 
 hr {
-  width: 99%; 
+  width: 100%; 
   text-align: center; 
   color: black; 
   height: 3px; 
@@ -191,14 +193,15 @@ h3.button1{
 .bannerImage{
   width: 44%; 
   display: flex; 
-  justify-content: flex-end;    
+  justify-content: flex-end;   
+  height: 375px;
 }
 
 
   
 header{
   width: 100%; 
-  padding-bottom: 70px; 
+  padding-bottom: 65px; 
   padding-top: 50px; 
   display: flex;
   flex-wrap: wrap;
@@ -210,7 +213,7 @@ header{
 /* first row of section --------------------------------------------------*/
 
 .container {
-  width: 90%; 
+  width: 100%; 
   margin: 15px auto 15px auto;  
   display: flex;
   flex-wrap: wrap; 
@@ -221,13 +224,13 @@ header{
   display: flex; 
   flex-wrap: wrap;   
   width: 50%; 
-  padding: 20px; 
+  padding: 10px 1.4% 10px 0%; 
  }
   
 .about{
   display: flex; 
   flex-wrap: wrap; 
-  padding: 20px; 
+  padding: 10px 1.4% 10px 0%;  
   width: 50%; 
   }
   
@@ -236,26 +239,26 @@ header{
 .middle-img{
   display: flex; 
   justify-content: center;  
-  width: 86%; 
+  width: 100%; 
   margin: 20px auto 15px auto;  
  }
   
 /*Second Row Of Section (Three Columns)---------------------------------------*/
 	
 .services {
-  width: 33%; 
-  padding: 12px;
+  width: 33.3%; 
+  padding: 12px 1.4% 12px 0%;
  }
   
 .product {
-  width: 33%; 
-  padding: 12px;
+  width: 33.3%; 
+  padding: 12px 1.4% 12px 0%;
  }
   
 .vision {
-  width: 33%; 
-  padding: 12px; 
-  margin-bottom: 20px; 
+  width: 33.3%; 
+  padding: 12px 1.4% 12px 0%; 
+  margin-bottom: 5px; 
  }
 	
 /*Address-----------------------------------------------------*/
@@ -263,15 +266,15 @@ header{
 .address {
   width: 100%;  
   padding-bottom: 50px; 
-  padding-top: 20px; 
+  padding-top: 15px; 
  }
 	
 address {
-  padding: 15px; 
+  padding: 15px 0%; 
   display: flex; 
   flex-direction: column; 
   margin: auto;  
-  width: 90%; 
+  width: 100%; 
   flex-wrap: wrap;
  }
 address a{
