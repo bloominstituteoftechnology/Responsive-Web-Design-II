@@ -167,8 +167,8 @@ a:hover {
     width: 90%;
 
 	justify-content: space-around;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 3.5%;
+	padding-bottom: 3.5%;
 
 }
 .aboutOne {
@@ -191,7 +191,7 @@ a:hover {
 #features {
 	display: flex;
 	flex-direction: column;
-	padding-right: 20px;
+	padding-right: 3.5%;
 	font-size: 1.5rem;
 }
 #aboutabout {
@@ -203,13 +203,13 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	font-size: 1.5rem;
-	padding-right: 20px;
+	padding-right: 3.5%;
 }
 #product {
 	display: flex;
 	flex-direction: column;
 	font-size: 1.5rem;
-	padding-right: 20px;
+	padding-right: 3.5%;
 }
 #vision {
 	display: flex;
@@ -254,7 +254,7 @@ a:hover {
         justify-content: center;
         
         width: 32%;
-        margin: 1%;
+        margin-bottom: 2.5%;
     }
 
     
@@ -295,30 +295,30 @@ a:hover {
     #features {
         width: 100%;
         height: 100%;
-        margin: 10px 0px;
+        margin: 1.75% 0%;
     }
     
     #aboutabout {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;        
+        margin: 3.5% 0%;        
     }
     
     #services {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;            
+        margin: 3.5% 0%;            
     }
     
     #product {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;            
+        margin: 3.5% 0%;            
     }
     #vision {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;            
+        margin: 3.5% 0%;            
     }
     
 
@@ -342,7 +342,7 @@ a:hover {
         width: 100%;
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        
     }
     
     nav li {
@@ -386,30 +386,30 @@ a:hover {
     #features {
         width: 100%;
         height: 100%;
-        margin: 10px 0px;
+        
     }
     
     #aboutabout {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;        
+               
     }
     
     #services {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;            
+                    
     }
     
     #product {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;            
+                    
     }
     #vision {
         width: 100%;
         height: 100%;
-        margin: 20px 0px;            
+                   
     }
     
 
