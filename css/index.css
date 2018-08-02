@@ -1,1 +1,199 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* RESET */
+
+.Main {
+    display: flex;
+    justify-content: center;
+}
+.Main2 {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    max-width: 880px;
+}
+
+header {
+    display:flex;
+    width:100%;
+    align-items: center;
+}
+
+nav {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Sec1 {
+    width: 880px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 60px 0px;
+}
+
+.Sec1s1 {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:column;
+    height: 200px;
+}
+
+.s1 {
+    display:flex;
+    flex-direction:column;
+    height: 155px;
+    justify-content: space-between;
+}
+
+.Sec2 {
+    display:flex;
+    flex-direction:column;
+    padding: 35px 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    align-items: center;
+
+}
+
+.Sec2s1 {
+    display:flex;
+    width: 800px;
+    justify-content: space-between;
+}
+
+
+.s2 {
+    display:flex;
+    flex-direction:column;
+    height: 225px;
+    justify-content: space-between;
+}
+
+footer {
+    width: 800px;
+    height: 240px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+nav a {
+    width: 14.2%;
+    font-size: 16pt;
+}
+
+header img {
+    width: 14.2%;
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+}
+
+.Sec1 a {
+    text-align: center;
+    font-size: 20pt;
+    padding: 10px 20px;
+    border: 3px solid gray;
+}
+
+.s1 p {
+    font-size: 14pt;
+    width: 375px;
+}
+
+.Sec2 img {
+    margin: 40px 0px;
+}
+
+.Sec2s2 {
+    width: 800px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.s2 p {
+    font-size: 14pt;
+    width: 225px;
+}
+
+address {
+    font-size: 14pt;
+    line-height: 1.25;
+}
+
+.Copyright {
+    font-size: 12pt;
+    align-self: center;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 18pt;
+    height: 10px;
+}
+
+p {
+    line-height: 1.25;
+}
