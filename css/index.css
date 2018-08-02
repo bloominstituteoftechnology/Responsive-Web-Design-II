@@ -139,10 +139,12 @@ header .main-header h1 {
 }
 
 header .main-header a {
+    max-width: 170px;
+    width: 90%;
 	text-align: center;
 	color: black;
 	border: 1px solid black;
-	padding: 7px 46px;
+	padding: 7px 0;
     font-weight: bold;
 }
 
@@ -230,7 +232,8 @@ footer p {
     }
 
     .navbar .home-link {
-        width: 173px;
+        max-width: 173px;
+        width: 90%;
     }
 
     /* header */
@@ -274,6 +277,10 @@ footer p {
 /* mobile view */
 @media (max-width: 500px) {
     /* default */
+    body {
+        padding: 0;
+    }
+
     .container {
         width: 100%;
         display: flex;
@@ -286,14 +293,13 @@ footer p {
         width: 100%;
         padding: 0px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .navbar nav {
         width: 100%;
         margin-top: 0px;
-        order: 2;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -315,9 +321,8 @@ footer p {
 
     .navbar .home-link {
         display: block;
-        width: 173px;
+        padding-top: 20px;
         padding-bottom: 18px;
-        order: 1;
     }
     
     /* header */
@@ -327,8 +332,10 @@ footer p {
     }
 
     header .main-header a {
+        max-width: 170px;
+        width: 90%;
         letter-spacing: 1px;
-        padding: 7px 40px;
+        padding: 7px 0;
         font-weight: bold;
     }
 
