@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5 {
 #main-container{
 	width:100%;
 	Max-width:880px;
-	margin:0px auto;
+    margin:0px auto;
+    
 }		
 html{
 	font-size:62.5%;
@@ -84,7 +85,7 @@ h2{
 	display:flex;
 	justify-content: space-between;
 	align-items: baseline;
-	margin-left:30px;
+        
 }#navigation{
 	width:100%;
 	display:flex;
@@ -102,15 +103,16 @@ a{
     font-size: 1.5rem;
 }
 #header{
-	width:100%;
+	width:91.25%;
 	display:flex;
 	justify-content: space-around;
 	margin-top:75px;
-	margin-left:70px;
-	margin-bottom:85px;
+	margin-left:8.75%;
+    margin-bottom:85px;
+    
 }
 #innovation{
-	width:45%;
+	width:40%;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -121,21 +123,21 @@ h1{
 	font-size: 7rem;
 }
 #header-img-container{
-	width:45%;
+	width:40%;
 	display:flex;
 	justify-content: flex-end;
-	align-items:baseline;
-	
+    align-items:baseline;
+    
 }
 #button-container{
-	width:300px;
+	width:88%;
 	display:flex;
 	justify-content: center;
 	
 }
 #button{
 	border: 1px solid black;
-	padding:5px 45px;
+	padding:5px 12.8%;
 	margin-top:20px;
 	text-align:center;
 }
@@ -168,7 +170,8 @@ h1{
 	margin-bottom:38px;
 }
 .middle-img{
-	margin-top:30px;
+    margin-top:30px;
+    width:100%;
 }
 #address{
 	margin-top:45px;
@@ -208,26 +211,27 @@ margin-top:35px;
 #innovation{
 	width:100%;
 	margin-top:70px;
-	margin-left:20px;
+	margin-left:2.5%;
 	margin-bottom: 80px;
 
 } .top-boxes{
-	width:380px;
+	width:48%;
 	margin-top:35px;
 }.btm-boxes{
 	width:30%;
 	margin-bottom:50px;
   }
 @media (max-width: 500px) {
-    body{
+    #main-container{
         width:100%;
         margin:0px;
-        border:1px solid red;
+        
 	}#nav-logo-container{
 		width:100%;
 		display:flex;
 		flex-direction:column-reverse;
-		flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin:0px;
 	 }
 	 #navigation{
       width:100%;
@@ -260,9 +264,10 @@ margin-top:35px;
 	width:100%;
 }#innovation{
 	margin-top:40px;
-    margin-left:20%;
-    width:100%;
-}.middle-img{
+    margin-left:15%;
+    width:80%;
+}
+.middle-img{
     height:100px;
     width:100%;
 }
