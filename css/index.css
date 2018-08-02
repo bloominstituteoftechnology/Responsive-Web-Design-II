@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .Container{
+	font-size:62.5%;
 	max-width:880px;
 	margin:auto;
 }
@@ -91,25 +92,25 @@ h1, h2, h3, h4, h5 {
 .HeaderContent{
 	display:flex;
 	fex-direction:row;
-	margin:85px;
+	text-align:center;
 }
 
 .BigText{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
-	font-size:92px;
+	font-size:6.2rem;
 	
 }
 
 .Button{
-	font-size:20px;
+	font-size:1.25rem;
 	display:flex;
 	border:2px solid black;
 	margin:10% auto;
-	height:60px;
-	width:150px;
-	padding:20px;
+	height:3.75rem;
+	width:9.375rem;
+	padding:1.25rem;
 	
 }
 
@@ -120,7 +121,7 @@ h1, h2, h3, h4, h5 {
 
 .filler{
 	display:flex;
-	width:300px;
+	width:18.75rem;
 }
 
 #Spacer{
@@ -132,12 +133,14 @@ h1, h2, h3, h4, h5 {
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
+	font-size:1rem;
 
 }
 
 
 .TopTitles{
 	display:flex;
+	font-size:1.5rem;
 	flex-wrap:wrap;
 }
 
@@ -158,36 +161,63 @@ h1, h2, h3, h4, h5 {
 	flex-wrap:wrap;
 	flex-direction:column;
 	margin:10%;
+	font-size:1rem;
 }
 
 .Copyright{
 	text-align:center;
-	margin:100px;
-}
-
-/* DESKTOP */
-@media (max-width:800px){
-	.Container{
-		max-width:800px;
-	}
+	margin:6.25rem;
+	font-size:1rem;
 }
 
 /* TABLET */
-@media (max-width:600px){
+@media (max-width:800px){
 	.Container{
-		max-width:600px;
+		max-width:800px;
+		margin:auto;
 	}
 
+	
 	.BigImg{
 		display:none;
 	}
+	
+	.HeaderContent{
+		justify-content:center;
+		top:50%;
+		left:50%;
+	}
 
+	.Button{
+		background:red;
+	}
 }
 
 /* MOBILE */
 @media (max-width:500px){
 	.Container{
 		max-width:500px;
+		margin:auto;
+	}
+
+	.Button{
+		background:blue;
+	}
+
+	.HeaderContent{
+		display:flex;
+		align-items:center;
+	}
+
+	.TopBar{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:column;
+	}
+
+	.TopText{
+		display:flex;
+		flex-direction:column;
 	}
 
 
