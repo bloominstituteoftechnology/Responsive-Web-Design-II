@@ -76,35 +76,34 @@ a {
 }
 
 .container {
-	width: 880px;
+    max-width: 880px;
+    width: 96%;
 	margin: 0px auto;
 }
 
 /* nav */
 .navbar {
+    width: 100%;
 	padding: 8px 0px;
-	display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar nav {
+    width: 68.8%;
 	display: flex;
-	order: 1;
-	flex-grow: 2;
 	justify-content: flex-start;
-    align-items: center;
 }
 
 .navbar nav a {
 	color: darkgray;
-	margin-right: 61px;
+	margin-right: 10%;
 	font-weight: bold;
 }
 
-.navbar .home-link {
-	width: 183px;
-	order: 2;
-	justify-content: flex-end;
-	align-items: center;
+.navbar nav a:last-child {
+	margin-right: 0px;
 }
 
 /* header */
