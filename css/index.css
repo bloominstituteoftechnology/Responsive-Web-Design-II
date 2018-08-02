@@ -369,5 +369,38 @@ h3 {
 }
 
 @media (max-width: 500px){
-    
+    header {
+        /* border: 1px solid orange; */
+        height: 430px;
+    }
+
+
+    nav {
+        /* border: 1px solid blue; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 364px;
+    }
+
+    nav a {
+        font-size: 2rem;
+        /* align-self: center; */
+        justify-content: center;  /* why must add after width 100%*/
+        border-top: 1px solid grey;
+        width: 100%;    /* why align-self no longer works?*/
+        height: 100px;
+    }
+
+    nav a:last-child {
+        border-bottom: 1px solid grey;
+    }
+
+    header .logo {
+        width: 40%;
+        /* border: 1px solid red; */
+        align-self: center;
+        /* height: 68px; */
+    }
+
 }
