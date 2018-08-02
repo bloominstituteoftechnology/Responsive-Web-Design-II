@@ -205,21 +205,20 @@ footer p {
 
     /* default */
     .container {
-        width: 760px;
+        width: 97%;
     }
 
     /* nav */
     .navbar {
         padding: 10px 0px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
     .navbar nav {
         width: 96%;
         margin-top: 39px;
-        order: 2;
         display: flex;
         justify-content: space-between;
     }
@@ -227,17 +226,17 @@ footer p {
     .navbar nav a {
         color: darkgray;
         font-weight: bold;
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .navbar .home-link {
         width: 173px;
-        order: 1;
     }
 
     /* header */
     header .main-header {
-        padding-right: 43px;
+        width: 100%;
+        padding-right: 3.9%;
     }
 
     header .main-header-img {
@@ -246,29 +245,29 @@ footer p {
 
     /* main */
     main .content-row {
-        padding: 0px 10px;
+        padding: 0px 1.6%;
     }
 
     main .content-row .content-medium {
-        width: 48.5%;
+        width: 49%;
+    }
+
+    main .content-row .content-medium p {
+        width: 98.5%;
     }
 
     main .content-row .content-small {
         width: 31%;
     }
 
-    main .content-row p {
-        width: 93%;
-    }
-
     main .middle-img {
         width: 100%;
         height: 80%;
-        margin: 30px 1px;
+        margin: 30px 0.5%;
     }
 
     main .contact-row {
-        padding-left: 10px;
+        padding-left: 1.6%;
     }
 }
 
@@ -304,10 +303,10 @@ footer p {
         width: 100%;
         color: darkgray;
         margin-right: 0px;
-        padding: 20px;
+        padding: 20px 0;
         border-bottom: 1px solid gray;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     .navbar nav a:first-child {
@@ -344,7 +343,6 @@ footer p {
         flex-direction: column;
         justify-content: spaced-evenly;
         align-items: flex-start;
-        padding: 0px 0px;
     }
 
     main .content-row p {
@@ -366,12 +364,8 @@ footer p {
     }
     
     main .middle-img {
-        width: 100%;
+        width: 98.4%;
         height: 100%;
-        margin: 10px 0px 30px 0px;
-    }
-    
-    main .contact-row {
-        padding-left: 0px;
+        margin: 10px 0 30px 1.6%;
     }
 }
