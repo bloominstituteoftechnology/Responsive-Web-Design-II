@@ -188,9 +188,6 @@ h1, h2, h3, h4, h5 {
 		left:50%;
 	}
 
-	.Button{
-		background:red;
-	}
 }
 
 /* MOBILE */
@@ -200,24 +197,31 @@ h1, h2, h3, h4, h5 {
 		margin:auto;
 	}
 
-	.Button{
-		background:blue;
-	}
-
 	.HeaderContent{
 		display:flex;
 		align-items:center;
 	}
 
-	.TopBar{
+	.Topbar{
 		display:flex;
-		flex-wrap:wrap;
 		flex-direction:column;
 	}
 
-	.TopText{
+	.Topbar a{
 		display:flex;
 		flex-direction:column;
+		border:1px solid grey;
+		font-size:2rem;
+		width:100%;
+		align-items:center;
+	}
+
+	.Toptext{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		align-items:center;
+		margin:5%;
 	}
 
 
