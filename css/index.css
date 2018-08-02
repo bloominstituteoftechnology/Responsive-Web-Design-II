@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5 {
 }
 .navbar a {
 	text-decoration: none;
-	color: grey;
+	color: lightgrey;
 	font-size: 0.8rem;
 }
 .navbar nav {
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .cta button {
-	padding: 10px 13.5%;
+	padding: 8px 13.5%;
 	border: 1px solid black;
 	font-size: 1rem;
 	margin-top: 30px;
@@ -175,6 +175,7 @@ h1, h2, h3, h4, h5 {
 /*TABLET*/
 
 @media (max-width: 800px) {
+	
 	.navbar {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -193,7 +194,42 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+/*MOBILE*/
 
+@media (max-width: 500px) {
+	.container {
+		width: 96%;
+		justify-content: center;
+	}
+	.navbar nav {
+		flex-direction: column;
+		width: 104%;
+	}
+	.navbar nav a {
+		border-top: 1px solid lightgrey;
+		text-align: center;
+		font-size: 1rem;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.navbar nav a:last-child {
+		border-bottom: 1px solid lightgrey;
+	}
+
+	.section1, .section2 {
+		flex-direction: column;
+	}
+
+	.product, .vision, .features, .about {
+		margin: 0px;
+		padding-top: 60px;
+	}
+
+	.services, .features {
+		padding-top: 30px;
+	}
+
+}
 
 
 
