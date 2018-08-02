@@ -142,6 +142,8 @@ h1 {
 	border: 1px solid rgb(58, 58, 58);
 	border-radius: 2px;
 	padding: 5px 9.0%;
+	text-align: center;
+	white-space: nowrap;
 	width: 38%;
 	margin-top: 28px;
 	margin-bottom: 73px;
