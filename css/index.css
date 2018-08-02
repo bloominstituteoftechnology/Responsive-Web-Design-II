@@ -81,7 +81,7 @@ nav {
   align-content: center;
   max-width: 880px;
   width: 100%;
-  margin: 26px 0;
+  margin: 26px 0 10px;
 }
 
 a {
@@ -96,7 +96,9 @@ div.heading {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 45px 0px;
+  margin: 65px 0px 35px;
+  padding-bottom: 73px;
+  border-bottom: 2px solid gray;
 }
 
 div.title {
@@ -104,7 +106,7 @@ div.title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 115px;
+  margin-left: 13.06%;
 }
 
 h1 {
@@ -121,4 +123,42 @@ div.button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  border-bottom: 2px solid gray;
+}
+
+div.top, div.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  border: 1px solid red;
+}
+
+.middle-img {
+  margin: 27px 0px;
+}
+
+footer {
+  margin: 35px 0px;
+}
+
+address {
+  font-size: 1.6rem;
 }
