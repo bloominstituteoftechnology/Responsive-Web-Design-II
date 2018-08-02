@@ -133,7 +133,7 @@ header .main-header {
 }
 
 header .main-header h1 {
-	font-size: 72px;
+	font-size: 7.2rem;
     text-align: center;
     margin-bottom: 25px;
 }
@@ -167,12 +167,20 @@ main .content-row .content-medium {
     width: 50%;
 }
 
+main .content-row .content-medium p {
+    width: 96.1%;
+}
+
 main .content-row .content-small {
     width: 33%;
 }
 
+main .content-row .content-small p {
+    width: 94.5%;
+}
+
 main .middle-img {
-    margin: 30px 1px;
+    margin: 30px 0;
 }
 
 main .contact-row {
