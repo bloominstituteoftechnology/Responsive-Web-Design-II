@@ -82,7 +82,7 @@ header {
 header nav {
 	display: flex;
 	justify-content: space-between;
-    width: 78.41;
+    width: 78.41%;
 }
 
 header nav a {
@@ -97,7 +97,7 @@ header nav a:hover {
 }
 
 header nav a:last-child {
-  margin-right: 7.39%;
+  margin-right: 9.42%;
 }
 
 header .logo {
@@ -141,7 +141,7 @@ header .logo {
 	border-bottom: 1px solid black;
 	padding: 39px 0%;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
 }
 
 .top-content {
@@ -151,6 +151,7 @@ header .logo {
 
 .top-content .text-content {
   width: 46.59%;
+  font-size: 1.6rem;
 }
 
 .middle-img {
@@ -163,12 +164,14 @@ header .logo {
 }
 
 .bottom-content .text-content {
-	width: 31.25%;
+    width: 31.25%;
+    font-size: 1.6rem;
 }
 
 
 .contact {
   padding: 39px 1.14%;
+  font-size: 1.6rem;
 }
 
 .contact p {
