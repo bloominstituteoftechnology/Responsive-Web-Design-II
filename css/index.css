@@ -174,7 +174,7 @@ header nav {
 
 header nav a {
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -204,7 +204,7 @@ header .logo {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 4.8rem;
+  font-size: 7.7rem;
   text-align: center;
 }
 
@@ -212,7 +212,7 @@ header .logo {
   background: white;
   vertical-align: top;
   padding: 8px 44px;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -264,7 +264,7 @@ header .logo {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 800px) {
@@ -308,7 +308,7 @@ footer {
     border: 2px solid grey;
     padding: 2.4%;
     width: 100%;
-    font-size: 1.875rem;
+    font-size: 3rem;
     text-align: center;
   }
   header nav a:last-child {
@@ -328,9 +328,11 @@ footer {
   }
   .bottom-content .text-content {
     width: 100%;
+    margin-bottom: 10px;
   }
   .top-content .text-content {
     width: 100%;
+    margin-bottom: 10px;
   }
   .middle-img {
     height: 80px;
