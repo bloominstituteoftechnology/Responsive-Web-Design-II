@@ -4,6 +4,10 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+html {
+    font-size: 62.5%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -39,7 +43,6 @@ body {
 }
 
 nav {
-    width: 1000px;
     margin-right: 10%;
 }
 
@@ -82,17 +85,19 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+.container {
+    max-width: 880px;
+    margin: 0 20px;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-section {
-    margin: 20px 100px;
-}
-
 button {
+    font-size: 1rem;
     margin-top: 5px;
     width: 170px;
     border: thin solid black;
@@ -111,8 +116,8 @@ button:hover {
 }
 
 article {
-    border-top: thin solid black;
-    border-bottom: thin solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 50px 20px;
     margin: 50px;
 }
@@ -134,18 +139,17 @@ footer div {
     background-position: center;
     width: 200px;
     height: 100px;
-    margin-right: 10px;
 }
 
 .title {
-    font-size: 5em;
-    width: 422px;
+    font-size: 5rem;
+    width: 100%;
     text-align: center;
     margin-top: 60px;
 }
 
 .title-sm {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .promo {
@@ -156,14 +160,14 @@ footer div {
     width: 30%;
 }
 
-.service {
+/*.service {
     width: 400px;
     height: 240px;
     padding: 20px;
     margin: 0 40px 40px 0;
     background: #F4F3F4;
     border: thin solid gray;
-}
+}*/
 
 .service button {
     margin-top: 20px;
@@ -196,7 +200,9 @@ footer div {
     height: 320px;
 }
 
-/* Your code starts here! */
+.copy-right {
+    margin-top: 38px;
+}
 
 /**************UTILS****************/
 .flex-row {
@@ -285,28 +291,27 @@ footer div {
     flex-grow: 6;
 }
 
-@media (max-width: 1300px) {
+/*@media (max-width: 1300px) {
     .logo-container {
         margin-right: 4%;
     }
-}
+}*/
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
     .nav-container {
         margin: 5px 0;
         flex-wrap: wrap-reverse;
-
+        transition: all 1s;
     }
 
     nav {
         margin: 0;
-        width: 85%
+        width: 85%;
     }
 
     section {
-        font-size: 15px;
-        margin: 1px 100px;
+        font-size: 1rem;
         justify-content: center;
     }
 
@@ -324,21 +329,22 @@ footer div {
 
     article {
         margin: 72px 0px 0 0;
-        padding: 19px 11px 43px 11px;
+        padding: 43px 11px 43px 11px;
+        transition: all 1s;
     }
 
     .promo {
-        margin: 20px;
-        width: 485px;
+        /*margin: 20px;*/
+        /*width: 485px;*/
     }
 
     .promo2 {
-        margin: 10px 20px;
-        width: 219px;
+        /*margin: 10px 20px;*/
+        /*width: 219px;*/
     }
 
     .middle-img {
-        margin: 21px 0px;
+        /*margin: 21px 0px;*/
         height: 156px;
         width: 98%;
     }
@@ -346,10 +352,6 @@ footer div {
     footer {
         padding: 36px 34px;
         margin: 0;
-    }
-
-    .copy-right {
-        margin-top: 38px;
     }
 }
 
@@ -366,10 +368,10 @@ footer div {
     nav a {
         width: 100%;
         padding: 20px;
-        font-size: 20px;
+        font-size: 1.2rem;
         border-bottom: thin solid lightgray;
         text-align: center;
-
+        transition: all 1s;
     }
 
     nav a:first-child {
@@ -378,11 +380,13 @@ footer div {
 
     .promo-container {
         flex-direction: column!important;
+        transition: all 1s;
     }
 
     .promo, .promo2 {
         width: 100%;
         margin-bottom: 60px;
+        transition: all 1s;
     }
 
     .promo2:last-child {
@@ -402,9 +406,5 @@ footer div {
     footer {
         padding: 36px 30px;
         margin: 0;
-    }
-
-    .copy-right {
-        margin-top: 38px;
     }
 }
