@@ -74,6 +74,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .content {
+    display: flex;
+    flex-flow: column nowrap;
     max-width: 880px;
 	margin: auto;
 	justify-content: center;
@@ -89,13 +91,13 @@ h1, h2, h3, h4, h5 {
     width: 100%;
 }
 
-
 #textLinks {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 70%;
 }
+
 .navLink {
 	color: lightslategrey;
 	font-size: 1.5rem;
@@ -117,7 +119,7 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     align-items: center;
     padding: 0px 0px 30px 45px;
-	width: 80%;
+	width: 57%;
 }
 
 #tagline {
@@ -138,7 +140,7 @@ h1, h2, h3, h4, h5 {
     animation-name: example;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;
+    animation-direction: alternate;
 }
 
 #headerImage {
@@ -171,4 +173,106 @@ h1, h2, h3, h4, h5 {
 #footer {
 	text-align: center;
 	margin: 70px 0px 10px 0px;
+}
+
+@media (max-width: 800px) {
+
+.content {
+    max-width: 96.2%;
+}
+
+#navBar {
+    flex-flow: column-reverse;
+}   
+
+#textLinks {
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 35px;
+}
+
+#bannerSection {
+	height: 417px;
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: center;
+}
+
+#taglineBox {
+    padding: 0px;
+}
+
+#headerImage {
+    display: none;
+}
+
+.upperText {
+    padding: 5px 15px;
+}
+
+.lowerText {
+    padding: 5px 15px;
+    width: 32%;
+}
+
+#address {
+	border-top: 2px solid black;
+	padding: 40px 15px
+}
+
+}
+
+@media (max-width: 500px) {
+
+.content {
+    max-width: 500px;
+}
+
+#navBar {
+    justify-content: flex-start;
+    margin: 16px 0px 0px 0px;
+}
+
+#textLinks {
+    flex-flow: column nowrap;
+    padding-top:15px;
+}
+
+.navLink {
+    text-align: center;
+    width: 100%;    
+    border-top: 1px solid grey;
+    font-size: 2.0rem;
+    padding: 20px 0px;
+}
+
+#bannerSection {
+    height: 405px;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+    border-bottom: 2px solid black;
+}
+
+.descriptiveSection {
+    flex-flow: column nowrap;
+    width: 96.2%;
+    margin-top: 0px;
+}
+
+.upperText {
+    width: 100%;
+    margin: 25px 0px; 
+}
+
+.lowerText {
+    width: 100%;
+    margin: 25px 0px; 
+}
+
+.middle-img {
+    margin: auto;
+    width: 96.2%;
 }
