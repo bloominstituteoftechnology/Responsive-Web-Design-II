@@ -64,13 +64,14 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ================================ */
-/* html {
+html {
 	font-size: 62.5%;
-} */
+}
 
 body {
   display: flex;
   justify-content: center;
+	font-size: 1.6rem;
 }
 
 .container {
@@ -88,12 +89,13 @@ header {
 header nav {
 	display: flex;
 	justify-content: space-between;
-	width: 621px;
+	width: 70.56%
 }
 
 header nav a {
 	text-decoration: none;
 	color: grey;
+	font-size: 1.6rem;
 }
 
 .cta {
@@ -109,17 +111,17 @@ header nav a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 60px;
+	/* margin-left: 6.81%; */
 }
 
 .cta .title h1 {
-	font-size: 55px;
+	font-size: 5.5rem;
 	text-align: center;
-	padding: 25px;
+	padding: 15%;
 }
 
 .cta .title button {
-	font-size: 16px;
+	font-size: 1.6rem;
 	border: 1px solid black;
 	padding: 6px 40px;
 }
@@ -135,11 +137,11 @@ header nav a {
 }
 
 .main .main-text h2 {
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 
 .middle-img {
-
+	width: 100%;
 }
 
 .ctn {
@@ -155,7 +157,7 @@ header nav a {
 }
 
 .ctn .ctn-text h2 {
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 
 .contact {
@@ -165,7 +167,7 @@ header nav a {
 }
 
 .contact h2 {
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 
 .contact p {
@@ -180,8 +182,16 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+	.container {
+		margin: 0 3%;
+	}
 	header {
 		flex-direction: column-reverse;
+	}
+
+	header nav {
+		width: 100%;
 	}
 
 	.logo {
@@ -195,8 +205,12 @@ footer {
 	.cta img {
 		display: none;
 	}
+
+	.middle-img {
+		width: 100%;
+	}
 }
 
-@@media (max-width: 500px) {
+@media (max-width: 500px) {
 
 }
