@@ -91,7 +91,8 @@ div.container {
   HEADER STYLES part -1
 *************************/
 hr {
-    margin: 25px  0%;
+    margin: 25px 0px;
+    height: 1px;
 }
 
 
