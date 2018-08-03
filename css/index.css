@@ -81,7 +81,6 @@ body {
 	display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
 }
 
 header {
@@ -367,6 +366,10 @@ footer {
 
     .about {
         width: 91.67%;
+    }
+
+    .article-top .features {
+        width: 90%;
     }
 
 
