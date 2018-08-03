@@ -134,13 +134,13 @@ header nav a {
 	justify-content: center;
 	align-items: center;
 	margin-left: 15.5%;
-	width: 40%;
+	width: 32%;
 } 
 
 #getSt {
 	display: flex;
 	justify-content: center;
-	width:175px;
+	width: 61.8%;
 	border: 1px solid grey;
 	padding: 5px;
 	font-size: 28px;
@@ -163,6 +163,8 @@ header nav a {
 */
 
 .index-main {
+	width: 100%;
+	max-width: 880px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	margin-top: 75px;
@@ -180,12 +182,15 @@ header nav a {
 .features {
 	display: flex;
 	flex-direction: column;
-	
+	width: 48%;
+	margin-right: 2%;
 }
 
 .about {
 	display: flex;
 	flex-direction: column;
+	width: 58%;
+	margin-left: 2%;
 }
 
 
