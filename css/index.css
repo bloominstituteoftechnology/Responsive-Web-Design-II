@@ -272,6 +272,12 @@ header .logo {
     }
 }
 
+@media (max-width: 342px) {
+    .tagline {
+        font-size: 4.2rem;
+    }
+}
+
 .tagline button {
     background: white;
     vertical-align: top;
