@@ -16,7 +16,7 @@
    .logo {
    	  display: flex;
    	  order:0;
-   	  margin-left:20px;
+   	  margin-left:2.5%;
 	  /*margin-bottom: 123px;*/
    }
    header nav {
@@ -25,10 +25,11 @@
    	 order:1;
    	 justify-content: space-between;
    	 /*margin-left: 20px;*/
+     margin-bottom: 20px;
    }
    section.header-main {
    	  margin-top:76px;
-   	  margin-left: 10px;
+   	  /*margin-left: 1.25%;*/
    }
    h1.innovation {
    	 letter-spacing: 0px;
@@ -42,7 +43,7 @@
    	/*text-align: center;
     margin-top: 6px;
     ma*//*rgin-left: 5px;*/
-    width:180px;
+    width:55%;
     /*background-color: white;
     border: 1px solid #000;
     border-radius: 2px;
@@ -73,7 +74,7 @@
    }
 
    footer {
-   	 margin-left:15px;
+   	 margin-left:1.87%;
    	 margin-bottom:15px;
    }
 
