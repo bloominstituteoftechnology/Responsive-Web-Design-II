@@ -155,7 +155,7 @@ html {
 
 .cta {
 	color: black;
-	width: 90%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
     padding-top: 60px;
@@ -198,7 +198,9 @@ a:link {
 	width: 51.85%; 
 	Height: 28px;
 	text-align: center;
-	text-decoration: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-top: 4px;
 }
 
 #topTextBox:hover {
@@ -236,18 +238,24 @@ footer {
 @media (max-width: 800px){
     #divPage {
         width: 800px;
-        padding-left: 0px;
+        padding-left: 20px;
     }
     
    #navFlex {
         width: 100%;
-   }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;  
+    }
     .navItemFlex {
         font-size: 1.6rem;
+        display: inline-block;
     }
 
     .header1 {
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
     }
@@ -294,23 +302,29 @@ footer {
         padding-right: 0px;
         margin-left: 0;
     }
+
     .cta {
         padding-top: 20px;
     }
+
     #contact {
         padding-left: 1.25%;
     }
+
     address {
         padding-left: 1.25%;
     }
+
     hr {
         margin-left: 1.25%;
         margin-right: 1.25%;
     }
+
     footer {
         padding-left: 1.25%;
         font-family: 'Abel', sans-serif;
     }
+
     .section2 {
         display: flex;
         padding-top: 10px;
@@ -342,7 +356,7 @@ footer {
         height: 30px;
         width: 100%;
         padding-top: 2px;
-        border: 2px solid gray;
+        border-top: 2px solid gray;
     }
     #navFlex {
         display: flex;
@@ -351,6 +365,11 @@ footer {
         width: 100%;
         justify-content: flex-start;
     }
+    
+    .header1 nav a:last-child {
+        border-bottom: 2px solid gray;
+    }
+
     #topText {
         top: 100px;
         text-align: center;
@@ -363,7 +382,7 @@ footer {
 
     #textFlexContainer {
         width: 50%;
-        padding-top: 10px;        
+        padding-top: 10px;     
     } 
 
     #sectionContainer {
@@ -371,8 +390,8 @@ footer {
         display: flex;
         flex-direction: column;
         flex-flow: column;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .section2 {
@@ -381,7 +400,6 @@ footer {
     }
 
     .header {
-    /*    width: 50%; */
         display: flex;
         flex-direction: row;
     }
@@ -395,27 +413,34 @@ footer {
     #topText {
         font-size: 4.0rem;   
     }
+
     #sectionContainer2 {
         width: 100%;
         display: flex;
         flex-direction: column;
         flex-flow: column;
-        padding-left: 10px;
+        padding-left: 2%;
     }
+
     .section3 {
         width: 100%;
         display: inline-block;
         padding-top: 10px;
     }
+
     #contact {
         padding-left: 0px;
+        font-size: 1.4rem;
     }
+
     address {
         padding-left: 0px;
+        font-size: 1.4rem;
     }
     
     footer {
         padding-left: 0px;
+        font-size: 1.4rem;
         font-family: 'Abel', sans-serif;
     }
 }
