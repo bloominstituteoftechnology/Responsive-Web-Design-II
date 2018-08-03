@@ -154,7 +154,8 @@ body {
 }
 
 .site-container {
-    width: 88rem;
+    width: 100% ;
+    max-width: 880px ;
 }
 
 .header-flex {
@@ -210,7 +211,7 @@ body {
 .visual-cta .cta-text .btn-class {
 
     background: white ;
-    width: 50% ;
+    width: 100% ;
     border: 1px solid black ;
 
 }
@@ -220,6 +221,12 @@ body {
 
 .middle-img-div {
     margin: 1rem 0;
+    
+}
+
+.middle-img-div img {
+    width: 100% ;
+    max-width: 878px;
 }
 
 .middle-text {
@@ -229,6 +236,7 @@ body {
     justify-content: space-around ;
 
     border-top: 0.3rem solid black ;
+    border-width: 100% ;
     padding: 1rem 0 ;
     width: 100% ;
 }
@@ -256,6 +264,7 @@ body {
     padding: 1rem ;
     width: 100% ;
     max-width: 87.6rem ;
+    border-width: 50% ;
    
 }
 
