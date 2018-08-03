@@ -46,12 +46,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* start of my css */
+/* end of reset stuff */
 * {
     box-sizing: border-box;
 }
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
 html, body {
     height: 100%;
@@ -59,205 +59,187 @@ html, body {
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-	margin-bottom: 15px;
-	font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
-body {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	max-width: 880px;
-	width: 100%;
-	margin: auto;
+p {
+    font-size: 1.5rem;
+}
+.box {
+    max-width: 880px;
+    width: 100%;
+    margin: auto;
 }
 header {
-	display: flex;
-	width: 100%;
-	align-content: flex-start;
-	align-items: center;
-	justify-content: flex-start;
-	font-size: 1.6rem;
+    width: 100%;
+    display: flex;
+    font-size: 1.6rem;
 }
 header nav {
-	display: flex;
-	width: 100%;
+  width: 100%;
+  margin: 38px 1% 0;
+  justify-content: space-between;
+  display: flex;
 }
 header nav a {
-	padding: 30px;
-	text-decoration: none;
-	color: silver;
+    text-decoration: none;
+    color: silver;
+}
+header .toplogo {
+    align-self: flex-end;
+    margin: 25px 0 0 10%;
 }
 .top {
-	display: flex;
+    display: flex;
+    margin-top: 70px;
+    justify-content: flex-end;
 }
-.top section {
-	display: flex;
-	align-self: center;
-	flex-direction: column;
-	align-items: center;
-	padding: 0 100px;
-	width: 100%;
-	max-width: 800px;
+.top .toptext {
+    
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 10% 0 0;
 }
-.top h1 {
-	display: flex;
-	font-size: 64px;
-	text-align: center;
+.top .toptext h1 {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+    font-size: 6.8rem;
 }
-.top aside {
-	display: flex;
-	align-self: center;
-	margin: 25px 0;
+.top .toptext button {
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    border: 1px double black;
+    font-size: 1.5rem;
+    background: white;
 }
-hr {
-	height: 1px;
-	width: 100%;
-	max-width: 800px;
-	border-bottom: solid black 1px;
-	display: inline-block;
-	margin: auto;
+.top img {
+    max-width: 100%;
+    margin-right: 1%;
 }
 .middle {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-end;
+   border-top: 1px solid black; 
+   border-bottom: 1px solid black;
+   margin: 70px 0 30px 0;
+   padding: 30px 0;
+   font-size: 1.6rem;
 }
-.features {
-	display: flex;
-	flex-direction: column;
-	height: 150px;
-	width: 40%;
-	max-width: 360px;
-	align-self: flex-start;
-	margin: 20px 2% auto;
+.middle .middletop {
+    display: flex;
+    justify-content: space-around;
 }
-.about {
-	display: flex;
-	flex-direction: column;
-	height: 150px;
-	width: 40%;
-	max-width: 360px;
-	align-self: flex-end;
-	margin: 20px 2% auto;
+.middle .middle-img {
+    max-width: 100%;
+    display: block;
+    margin: 30px auto;
 }
-.bottom {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: flex-end;
+.middle .middlebottom {
+    display: flex;
+    justify-content: space-around;
 }
-.services {
-	display: flex;
-	flex-direction: column;
-	height: 150px;
-	width: 30%;
-	max-width: 293px;
-	align-self: flex-end;
-	margin: 30px 0 auto;
-	padding: 0 auto;
+.middle .middlebottom p {
+    padding-right: 1%;
 }
-.product {
-	display: flex;
-	flex-direction: column;
-	height: 150px;
-	width: 30%;
-	max-width: 293px;
-	align-self: flex-end;
-	margin: 30px 0 auto;
-	padding: 0 auto;
+.middle .middlebottom .middletext {
+    margin-top: 10px;
 }
-.vision {
-	display: flex;
-	flex-direction: column;
-	height: 150px;
-	width: 30%;
-	max-width: 293px;
-	align-self: flex-end;
-	margin: 30px 0 auto;
-	padding: 0 auto;
+.middle .middletext {
+    margin: 0 1%;
 }
 .contact {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 200px;
-	max-width: 800px;
-}
-.contact h4 {
-	display: flex;
-	margin: 30px 0 0 0;
-}
-.contact address {
-	display: flex;
-	margin: 15px 0;
+    margin: 20px 1%;
 }
 .contact p {
-	display: flex;
-	margin-bottom: 10px; 
+    margin: 15px 0;
 }
 footer {
-	padding-bottom: 100px;
+    text-align: center;
+    margin: 40px 0 20px;
+}
+/*for tablet view*/
+@media (max-width: 800px) {
+  .box {
+      width: 100%;
+  }
+  header {
+      flex-wrap: wrap;
+  }
+  header nav {
+      width: 100%;
+      margin: 35px 2%;
+  }
+  header .toplogo {
+      order: -1;
+      display: block;
+      margin: 30px auto 0;
+  }
+  .top {
+      margin-top: 35px;
+      justify-content: center;
+  }
+  .top .toptext {
+      margin: 0;
+  }
+  .top .toptext h1 {
+      letter-spacing: 0;
+      margin-bottom: 15px;
+  }
+  .top img {
+      display: none;
+  }
+  .middle .middle-img {
+      width: 100%;
+      margin: 10px auto 25px;
+  }
+  .middle {
+      font-size: 1.4rem;
+      margin: 75px 2% 35px;
+  }
+  .contact {
+      margin: 20px 2%;
+  }
 }
 
-@media (max-width: 800px) {
-    .top aside img {
-        display: none;
-    }
-  }
-
+/*phone view*/
 @media (max-width: 500px) {
-    
-    header {
-        flex-direction: column-reverse;
-        margin: auto; 
-    }
-    header nav {
-		flex-direction: column;
-		margin: auto;
-		justify-content: center;
-		align-items: center;
-    }
-    header nav a {
-        border-bottom: solid 1px black;
-		text-align: center;
-		width: 80%;
-		max-width: 400px;
-    }
-    hr {
-		max-width: 400px;
-		width: 100%;
-		margin: auto;
-	}
-	.top section {
-		padding: 20px 0 auto;
-		width: 100%;
-		max-width: 400px;
-	}
-    .middle, .bottom {
-		flex-direction: column;
-		max-width: 400px;
-		width: 100%;
-		padding: 10px;
-	}
-	.middle-img {
-		width: 100%;
-		max-width: 400px;
-	}
-	.features, .about, .product, .services, .vision {
-		padding: 0;
-		margin: 0;
-		justify-content: center; 
-		height: auto;
-		width: 100%;
-		margin: auto;
-		max-width: 400px;
-    }
-    .contact {
-		margin: auto;
-	}
-    footer {
-        margin: auto;
-    }
-  }  
+  header {
+    justify-content: center;
+  }
+  header nav {
+    margin: 0;
+    flex-direction: column;
+  }
+  header nav a {
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 2rem;
+      border-bottom: 1px solid gray;
+  }
+  header nav:first-child {
+      border-top: 1px solid gray;
+  }
+  header .logo {
+      margin: 20px 0;
+  }
+  .top {
+      margin-top: 50px;
+  }
+  .middle {
+    padding-top: 55px;
+  }
+  .middle .middletop {
+      flex-wrap: wrap;
+      height: 300px;
+  }
+  .middle .middlebottom {
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 440px;
+  }
+}
