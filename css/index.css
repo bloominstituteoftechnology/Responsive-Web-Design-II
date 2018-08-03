@@ -132,7 +132,9 @@ table {
 * {
   box-sizing: border-box;
 }
-
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -182,7 +184,7 @@ header nav a:hover {
 }
 
 header nav a:last-child {
-  margin-right: 65px;
+  margin-right: 7.38%;
 }
 
 header .logo {
@@ -252,7 +254,7 @@ header .logo {
 }
 
 .contact {
-  padding: 39px 10px 0;
+  padding: 39px 10px;
 }
 
 .contact p {
@@ -267,7 +269,7 @@ footer {
 
 @media (max-width: 800px) {
   .container {
-    width: 75%;
+    width: 100%;
   }
   header {
     flex-direction: column-reverse;
@@ -289,11 +291,14 @@ footer {
   .middle-img {
     height: 150px;
   }
+  header nav a:last-child {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 500px) {
   .container {
-    width: 500px;
+    width: 100%;
   }
   header nav {
     width: 100%;
@@ -301,7 +306,7 @@ footer {
   }
   header nav a {
     border: 2px solid grey;
-    padding: 12px;
+    padding: 2.4%;
     width: 100%;
     font-size: 1.875rem;
     text-align: center;
@@ -322,11 +327,10 @@ footer {
     flex-direction: column;
   }
   .bottom-content .text-content {
-    /* width: 95%; */
+    width: 100%;
   }
-  .text-content {
-    width: 380px;
-    margin: 10px auto;
+  .top-content .text-content {
+    width: 100%;
   }
   .middle-img {
     height: 80px;
