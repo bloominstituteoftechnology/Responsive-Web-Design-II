@@ -133,6 +133,9 @@ nav{
 h3{
 	font-size: 1.8rem;
 }
+.middle-img{
+    width: 100%;
+}
 
 .middletext{
 	display: flex;
