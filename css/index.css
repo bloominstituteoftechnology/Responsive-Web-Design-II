@@ -69,9 +69,9 @@ box-sizing:border-box;
 
 .container{
 
-width:880px;
+max-width:880px;
 margin:0 auto;
-overflow-x:hidden;
+/* overflow-y:hidden; */
 
 
 }
@@ -106,7 +106,7 @@ margin-right:50px;
 
 .cta{
 display:flex;
-width:100%;
+width:95%;
 justify-content: space-between;
 align-items: center;
 margin-top:50px;

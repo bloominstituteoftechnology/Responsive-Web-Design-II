@@ -17,7 +17,6 @@
         display:flex;
         justify-content: space-around;
         width:100%;
-        font-size: 1.6rem;
         align-items:center;
         }
 
@@ -33,6 +32,8 @@
         text-decoration:none;
         color:gray;
         margin-top:25px;
+        font-size: 2rem;
+        
         }
         
        
