@@ -259,7 +259,7 @@ header .logo {
 }
 
 .top-content .text-content {
-    flex-basis: 46.5%;
+    flex-basis: 44.5%;
 }
 
 .middle-img {
@@ -293,51 +293,63 @@ footer {
 
 @media (max-width: 800px) {
     .container {
+        width: 800px;
         max-width: 100%;
     }
 
     .cta {
         height: 420px;
-        max-width: 100%;
+        width: 100%;
     }
 
     .cta-img {
         display: none;
     }
 
-    .cta-text {}
-
     header {
-        flex-direction: column-reverse;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        width: 100%;
+        flex-direction: column-reverse
     }
 
     header nav {
-        padding-top: 40px;
-        margin-right: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 78.4%;
+        padding: 25px 0;
     }
 
     header nav a {
-        padding-right: 80px;
-        font-size: 16px;
-
+        display: inline-block;
+        font-size: 1.6rem;
+        color: gray;
+        text-decoration: none;
     }
 
-    header img {
-        padding-top: 5px;
+    header nav a:hover {
+        text-decoration: underline;
+        color: dodgerblue;
+    }
 
+    header nav a:last-child {
+        margin-right: 0%;
+    }
+
+    header .logo {
+        display: inline-block;
     }
 
     .main-content {
-        max-width: 95%;
+        width: 97%;
         margin: 0 auto;
     }
 
-    .top-content {}
-
     .top-content .text-content {
-        margin-left: 5px;
-        flex-basis: 365px;
-        padding: 0px 3px;
+        flex-basis: 60%;
+        padding: 0px 0%;
     }
 
     .top-content .text-content p {
@@ -345,32 +357,39 @@ footer {
     }
 
     .middle-img {
-        max-width: 100%;
-        margin: 30px 0px
+        width: 100%;
+        margin: 30px 0px;
     }
 
 
 
     .bottom-content .text-content {
         margin-top: 5px;
-        flex-basis: 225px;
-        padding-left: 10px;
+        flex-basis: 28.1%;
+        padding-left: 1.25%;
     }
 
     .contact {
         margin: 12px 0px;
-        padding-left: 30px;
+        padding-left: 3.75%;
     }
 
     footer {
-        margin: 20px;
+        margin: 20px 2.5%;
     }
 
 }
 
 @media (max-width: 500px) {
+    .container {
+        max-width: 100%;
+        width: 500px;
+
+    }
     .head1 {
         margin-top: 0px;
+        font-size: 1.7rem;
+
     }
 
     .head1 nav {
@@ -382,26 +401,32 @@ footer {
     }
 
     .head1 div {
-        padding: 10px;
+        padding: 10px 2%;
         border-bottom: 1px solid gray;
-        width: 500px;
+        width: 100%;
         text-align: center;
     }
 
 
     .head1 nav a {
         padding: 10px 0px;
-        margin: 10px;
+        margin: 10px 2%;
         border-bottom: 1px solid gray;
-        width: 501px;
+        width: 100%;
         text-align: center;
     }
 
     header nav a:last-child {
         margin-right: 0px;
     }
+
+    .cta {
+        height: 325px;
+        margin-bottom: 50px;
+    }
     .main-content {
         padding-bottom: 0px;
+        font-size: 1.7rem;
     }
     .top-content {
         flex-direction: column;
@@ -409,12 +434,15 @@ footer {
     }
 
     .top-content .text-content {
-        width: 93%;
         padding: 0px;
     }
 
+    .text-content p {
+        padding: 10px 0%;
+    }
+
     .middle-img {
-        max-width: 100%;
+        width: 100%;
         margin-bottom: 20px;
         margin-top: 0px;
     }
@@ -422,16 +450,18 @@ footer {
     .bottom-content {
         flex-direction: column;
         height: 400px;
+        margin-bottom: 20px;
     }
 
     .bottom-content .text-content {
         padding-left: 0px;
-        width: 93%
+        width: 100%
     }
 
     .contact {
-        padding-left: 15px;
-        padding-top: 15px;
+        padding-left: 3%;
+        padding-top: 3%;
+        font-size: 1.7rem;
     }
 
 }
