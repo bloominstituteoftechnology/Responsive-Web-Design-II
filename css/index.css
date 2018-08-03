@@ -1,1 +1,298 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+@keyframes example {
+    from {background-color:lightskyblue;}
+    to {background-color:gold;}
+}
+#main-container{
+	width:100%;
+	Max-width:880px;
+    margin:0px auto;
+    
+}		
+html{
+	font-size:62.5%;
+}
+p{
+    font-size: 1.6rem;
+}
+h2{
+    font-size:1.8rem;
+}
+#nav-logo-container{
+	margin-top: 18px;
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	align-items: baseline;
+        
+}#navigation{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+}
+
+#nav-logo-container div{
+	width:35%;
+	display:flex;
+	justify-content: flex-end
+}
+a{
+	text-decoration: none;
+    color:grey;
+    font-size: 1.5rem;
+}
+#header{
+	width:91.25%;
+	display:flex;
+	justify-content: space-around;
+	margin-top:75px;
+	margin-left:8.75%;
+    margin-bottom:85px;
+    
+}
+#innovation{
+	width:40%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	text-align:center;
+}
+h1{
+	font-size: 7rem;
+}
+#header-img-container{
+	width:40%;
+	display:flex;
+	justify-content: flex-end;
+    align-items:baseline;
+    
+}
+#button-container{
+	width:88%;
+	display:flex;
+	justify-content: center;
+	
+}
+#button{
+	border: 1px solid black;
+	padding:7px 45px;
+	margin-top:20px;
+	text-align:center;
+	animation-name: example;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+#top-section{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	border-top:1px solid black;
+	
+}
+
+.top-boxes{
+	width:50%;
+	margin-top:30px;
+}
+.middle-container{
+	width:100%;
+	
+}
+#btm-section{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+	border-bottom:1px solid black;
+	margin-top:38px;
+	
+}
+.btm-boxes{
+	width:33%;
+	margin-bottom:38px;
+}
+.middle-img{
+    margin-top:30px;
+    width:100%;
+}
+#address{
+	margin-top:45px;
+}
+footer{
+display:flex;
+justify-content: center;
+align-items: baseline;
+margin-top:35px;
+}
+@media (max-width: 800px) {
+    body {
+	  width:100%;
+	  margin: 0px auto;
+	}
+	h1{
+		/* font-size:40px; */
+	}
+	#nav-logo-container{
+		width:100%;
+		display:flex;
+		flex-direction:column-reverse;
+		
+	}#nav-logo-container div{
+		width:100%;
+		display:flex;
+		justify-content: center;
+		margin-top:15px;
+		margin-bottom:30px;
+	}
+	#button-container{
+	width:88%;
+	display:flex;
+	justify-content: center;
+	
+}
+	#header-img{
+		display: none;
+} #header{
+	margin: 0px auto;
+	justify-content: center;
+	
+}
+#innovation{
+	width:100%;
+	margin-top:70px;
+	margin-left:20%;
+	margin-bottom: 80px;
+	justify-content: center;
+	align-items: center;
+	
+
+}#button-container{
+	width:88%;
+	display:flex;
+	justify-content: center;
+	
+}
+ .top-boxes{
+	width:48%;
+	margin-top:35px;
+}.btm-boxes{
+	width:30%;
+	margin-bottom:50px;
+  }
+@media (max-width: 500px) {
+    #main-container{
+        width:100%;
+        margin:0px;
+        
+	}#nav-logo-container{
+		width:100%;
+		display:flex;
+		flex-direction:column-reverse;
+        flex-wrap: wrap;
+        margin:0px;
+	 }
+	 #navigation{
+      width:100%;
+	  display: flex;
+	  flex-direction: column;
+	  ;
+  } nav a{
+	  border-top:1px solid gray;
+	  border-bottom: 1px solid gray;
+	  font-size: 2.2rem;
+	  padding-top:20px;
+	  padding-bottom:20px;
+      text-align: center;
+      width:100%;
+  } #nav-logo-container div{
+		margin-top:5px;
+        margin-bottom:10px;
+        width:100%;
+  }#top-section{
+	width:100%;
+	display:block;
+}.top-boxes{
+	width:100%;
+	margin-top:55px;
+	;
+}#btm-section{
+	width:100%;
+	display:block;
+}.btm-boxes{
+	width:100%;
+}#innovation{
+	margin-top:40px;
+    margin-left:15%;
+    width:80%;
+}
+.middle-img{
+    height:100px;
+    width:100%;
+}
+}
