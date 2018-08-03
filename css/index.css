@@ -68,16 +68,18 @@ html {
     font-size: 62.5%;
 }
 
-body {
+.main-container {
 	max-width: 880px;
-	margin: 0 auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 p {
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
 header {
+    display: flex;
     justify-content: space-between;
     padding: 28px 0;
 	max-width: 880px;
@@ -85,10 +87,11 @@ header {
 }
 
 nav {
+    display: flex;
     justify-content: space-between;
 	align-items: center;
 	flex: 1;
-	margin-right: 90px;
+	margin-right: 10.227%;
 }
 
 nav a {
@@ -107,25 +110,28 @@ header img:hover {
 }
 
 h1 {
-	font-size:  75px;
-	text-align: center;
+	font-size:  7.5rem;
+    text-align: center;
+    line-height: .98;
 }
 
 .top {
-	border-bottom: 1px solid black;
-	padding-bottom: 60px;
-	margin-bottom: 35px;
+    display: flex;
+	border-bottom: 2px solid black;
+	padding-bottom: 73px;
+	margin-bottom: 36px;
 	position: relative;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .top-text {
+    display: flex;
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
     flex: 1;
-    padding-left: 30px;
+    padding-left: 3.41%;
 }
 
 a {
@@ -133,8 +139,10 @@ a {
 }
 
 .btn {
-	border: 1px solid black;
-	padding: 5px 40px;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    margin-left: 14px;
+	padding: 5px 44px;
 	color: rgb(20, 20, 20);
 	transition: .15s;
 }
@@ -145,9 +153,12 @@ a {
 }
 
 .features, .about {
+    width: 50%;
 	margin-bottom: 35px;
-	max-height: 150px;
-	/* border: 1px solid blue; */
+}
+
+.features p, .about p {
+    width: 97%;
 }
 
 .f-a {
@@ -156,18 +167,23 @@ a {
 }
 
 .services, .products, .vision {
-	width: 32.8%;
-	margin: 35px 0;
+	width: 33.3%;
+    margin: 24px 0 37px 0;
 }
 
+.services p, .products p, .vision p {
+    width: 93.5%;
+} 
+
 .spv {
+    display: flex;
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
 }
 
 .contact {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	padding-top: 35px;
 	margin-bottom: 35px;
 }
@@ -178,13 +194,13 @@ footer {
 
 footer p {
 	text-align: center;
-	font-size: 14px;
+	font-size: 1.6rem;
 }
 
 @media (max-width: 800px){
 
-    body {
-        padding: 0 20px;
+    .main-container {
+        padding: 0 2.5%;
     }
 
     .top-img {
@@ -199,33 +215,82 @@ footer p {
 
     header nav {
         display: flex;
-        width: 100%;
+        width: 97%;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 38px;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         /* border: 1px solid red; */
     }
 
+    header img {
+        padding-left: 4.5%;
+        margin-top: 2px;
+    }
+
+    .top {
+        padding-bottom: 75px;
+        margin-bottom: 26px;
+    }
+
+    .top-text {
+        padding: 0;
+    }
+
+    .top h1 {
+        margin-bottom: 24px;
+        padding-left: 2%;
+        letter-spacing: 0px;
+    }
+
+    .btn {
+        /* margin-right: 3%; */
+        padding: 5px 44px 6px;
+    }
+
     .features, .about {
-        width: 380px;
-        padding: 10px;
-       
+        width: 49%;
+        padding: 10px 1.25%;
+        margin-bottom: 21px;
+    }
+
+    .features p, .about p {
+        width: 103%; 
     }
 
     .f-a {
         margin: 0 auto;
     }
+
+    .middle-img {
+        width: 102%;
+    }
+
+    .services, .products, .vision {
+        width: 30.65%;
+        margin: 29px 0 36px 1.25%;
+    }
+
+    .contact {
+        padding-left: 1.5%;
+    }
+
+    footer p {
+        padding-left: 2%;
+        padding-top: 2px;
+    }
 }
 
 @media (max-width: 500px){
 
-    body {
+    .main-container {
         /* background-color: blue; */
         padding: 0px;
+        width: 100%;
     }
 
     header {
+        padding-top: 14px;
         margin-bottom: 20px;
     }
 
@@ -233,8 +298,6 @@ footer p {
         /* display: flex; */
         flex-direction: column;
         margin-top: 20px;
-
-        
     }
 
     header nav a {
@@ -242,7 +305,7 @@ footer p {
         border-bottom: 1px solid black;
         width: 100%;
         text-align: center;
-        padding: 20px;
+        padding: 20px 7%;
         font-size: 20px;
         transition: .8s;
     }
@@ -252,7 +315,8 @@ footer p {
     }
 
     .logo {
-        padding: 0px;
+        margin-top: 4px;
+        padding-left: 4.5%;
     }
 
     .top {
@@ -260,20 +324,28 @@ footer p {
         width: 90%;
         margin: 0 auto;
         margin-bottom: 50px;
-        padding-bottom: 80px;
+        padding-bottom: 75px;
         border-bottom: 2px solid black;
     }
 
     .f-a {
         flex-direction: column;
-        width: 90%;
+        width: 91.5%;
         margin: 0 auto;
+        padding-top: 10px
+    }
+
+    .features, .about {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 46px;
     }
 
     .middle-img {
         display: flex;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
+        padding: 7px 1% 7px 4.2%;
     }
 
     .spv {
@@ -282,19 +354,24 @@ footer p {
     }
 
     .services, .products, .vision {
-        width: 90%;
-        margin: 20px:
+        width: 92%;
+        margin: 24px 0 40px;
+    }
+
+    .services p, .products p, .vision p {
+        width: 95.5%;
     }
 
     .contact {
         border-top: 2px solid black;
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         padding-top: 35px; 
         margin-bottom: 35px;
+        margin-top: -3px;
     }
 
     footer p {
-        font-size: 15px;
+        font-size: 1.6rem;
     }
 }
