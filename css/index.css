@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+html{
+    font-size: 62.5%;
+}
+
 .container {
     max-width: 880px;
     margin: 0 auto;
@@ -74,18 +78,19 @@ h1, h2, h3, h4, h5 {
 .menu {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
+    font-size: 1.6rem;
 }
 
 a {
 	color: inherit;
     text-decoration: none;
-    padding: 10px 20px;
+    margin: 10px 8%;
 	color: gray;	
 }
 .logo {
@@ -93,25 +98,42 @@ a {
     justify-content: flex-end;
 }
 
+h2{
+    font-size: 2.0rem;
+}
 
+h3{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+address{
+    font-size: 1.4rem;
+}
+footer{
+    font-size: 1.4rem;
+}
 .hero{
 	display: flex;
 	justify-content: space-around;
 
 }
 .head {
-	font-size: 70px;
+	font-size: 7.0rem;
 	float: left;
 	display: flex;
 	text-align: center;
-	margin: 100px 80px 0px 80px;
+	margin: 100px 10% 0px 10%;
 	flex-direction: column;
 }
 
 .headimg {
 	display: flex;
 	justify-content: flex-end;
-	padding: 50px 0px;
+    padding: 50px 0;
+    margin-right: 4%;
 
 }
 
@@ -119,8 +141,8 @@ a {
 	text-align: center;
 	border: 1px solid black;
 	background: white;
-	margin: 0px 50px;
-    padding: 5px;
+	margin: 0px 20%;
+    padding: 5px 10%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -130,7 +152,7 @@ a {
 
 .column {
 	display: flex;
-	padding: 8px 0px;
+	padding: 8px 0;
 	justify-content: space-around;
 }
 
@@ -144,16 +166,16 @@ a {
 
 }
 .middle-img{
-    padding: 25px 0px;
+    padding: 25px 0;
 }
 
 .contact {
-	padding: 10px 0px 0px 0px;
+	padding-top: 10px;
 }
 
 footer {
 	text-align: center;
-	margin: 40px;
+	margin: 40px 0;
 }
 
 /* Service page CSS */
@@ -164,7 +186,7 @@ footer {
 
 .title-ser {
 	padding-top: 20px;
-	font-size: 28px;
+	font-size: 2.8rem;
 }
 
 .blocks {
@@ -188,7 +210,7 @@ footer {
 
 .block-button {
 	padding: 5px 15px 5px 25px;
-	font-size: 10px;
+	font-size: 1.0rem;
 	border-radius: 3px;
 	border: 1px solid black;
 	width: 100px;
@@ -247,63 +269,93 @@ hr {
         width: 186px;
         height: 36px;
         margin: 30px auto;
-      
+
+    }
+    a {
+        margin: 10px 2%;
     }
 
-    body {
-        padding:20px;
+    .container {
+        padding:20px 2.5%;
     }
     
     .menu {
         padding: 0px;
     }
     .head {
-        margin: 75px 0px;
+        margin: 75px 0;
     }
   }
-
-
-
-  @media (max-width: 500px) {
-    .headimg {
+  
+@media (max-width: 800px)
+{
+    .headimg{
         display: none;
-}
+    }
+
     .menu {
         display: flex;
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
+    }
+    .logo {
+        display: block;
+
+        width: 186px;
+        height: 36px;
+        margin: 30px auto;
+    }
+    a {
+        margin: 10px 2%;
+    }
+
+    .container {
+        padding: 20px 2.5%;
+    }
+
+    .menu {
+        padding: 0;
+    }
+    .head {
+        margin: 75px 0;
+    }
+}
+
+
+
+@media (max-width: 500px)
+{
+    .menu {
         text-align: center;
     }
-    
+    .container {
+        padding: 0;
+    }
 
     .menu a {
-        padding: 20px 0px;
-        font-size: 20px;
+        font-size: 2.0rem;
+        padding: 20px 0;
     }
     .column {
         flex-wrap: wrap;
-
     }
     .column1-2 {
         width: 90%;
-        padding: 25px 0px;
+        padding: 25px 0;
     }
     .column1-3 {
         width: 90%;
-        padding: 40px 0px;
-    }
-    body{ 
-        padding: 0px;
+        padding: 40px 0;
     }
     nav {
         flex-direction: column;
-        
     }
-    a:first-child{
+    a:first-child {
         border-top: 1px solid gray;
     }
     a {
         border-bottom: 1px solid gray;
     }
-  }
-
- 
+    .foot {
+        padding: 0 5%;
+    }
+}
