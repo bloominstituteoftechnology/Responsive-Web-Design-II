@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 /*FULL PAGE STYLING*/
 
 .container {
-	margin:0 auto;
+	margin: 0 auto;
 	max-width: 880px;
 	width: 90%;
 	font-size: 62.5%;

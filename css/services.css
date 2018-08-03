@@ -63,16 +63,138 @@ h1, h2, h3, h4, h5, span {
 
 /* Your code starts here! */
 
+/*FULL PAGE STYLING*/
 
+.container {
+	margin: 0 auto;
+	max-width: 880px;
+	width: 100%;
+	font-size: 62.5%;
+}
+/*NAVBAR STYLING*/
 
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	align-items: flex-end;
+	padding-top: 30px;
+}
+.navbar a {
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 0.8rem;
+}
+.navbar nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-right: 8%;
+}
 
+/*HEADER IMAGE AND SERVICES SECTION*/
 
+.services-header-img {
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 
+.services {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 25px;
+}
 
+.services p:first-child {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
 
+/*MIDDLE SECTION*/
 
+.middle-top, .middle, .middle-bottom {
+	display: flex;
+	margin-bottom: 30px;
+}
 
+.right-boxes, .left-boxes {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid lightgrey;
+	background-color: whitesmoke;
+	padding: 15px 2.3%;
+	font-size: 1rem;
+	align-items: flex-start;
+}
 
+.middle-bottom {
+	border-bottom: 1px solid black;
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+}
+
+.right-boxes p:first-child, .left-boxes p:first-child {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.right-boxes {
+	margin-left: 1.7%;
+}
+
+.left-boxes {
+	margin-right: 1.7%;
+}
+
+.right-boxes button, .left-boxes button {
+	margin-top: 20px;
+	padding: 8px 10%;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+/*FACTS AND COPYRIGHT*/
+
+.fun-facts {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1rem;
+	margin-bottom: 60px;
+}
+
+.fun-facts .facts ul{
+	list-style-type: square;
+	margin-left: 5%;
+}
+
+.facts p:first-child {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.facts ul {
+	margin-top: 20px;
+}
+
+.facts {
+	margin-right: 5%;
+}
+
+.facts ul li {
+	margin-bottom: 15px;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 0.8rem;
+}
 
 
 
