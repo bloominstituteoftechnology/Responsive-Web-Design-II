@@ -252,7 +252,7 @@ header nav a {
 }
 
 @media (max-width:800px){
-   body {
+   .container {
 	   width: 100%;
 	   max-width: 800px;
    }
@@ -307,22 +307,25 @@ header nav a {
 }
 
 @media (max-width:500px){
-	body {
-		width: 500px;
+	.container {
+		width: 100%;
+		max-width: 500px;
 		flex-direction: column;
 		align-items: center;
 	}
 	
 	header {
 		display: flex;
-		width: 500px;
+		width: 100%;
+		max-width: 500px;
 	}
 	
 	header nav {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width:500px;
+		width: 100%;
+		max-width: 500px;
 	}
 
 	header nav a {
@@ -335,7 +338,8 @@ header nav a {
 	}
 
 	.index-main {
-		width: 500px;
+		width: 100%;
+		max-width: 500px;
 		padding: 41px 31px;
 		display: flex;
 		flex-direction: column;
@@ -346,7 +350,7 @@ header nav a {
 		}
 		
 	.middle-img {
-			width: 470px;
+			width: 94%;
 			height: 75px;
 		}
 
@@ -360,9 +364,14 @@ header nav a {
 		flex-direction: column;
 	}
 
+	.features {
+		width: 100%;
+		margin: 0;
+	}
+
 	.about {
-		margin-top: 30px;
-		
+		width: 100%;
+		margin: 30px 0 0 0;
 	}
 	
 
