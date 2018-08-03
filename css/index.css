@@ -89,7 +89,6 @@ header {
     align-items: center;
     height: 50px;
     background-color: darkcyan;
-    position: fixed;
 }
 
 nav {
@@ -113,7 +112,7 @@ a {
     height: 320px;
     justify-content: space-between;
     align-items: center;
-    margin:80px 0% 40px 0%;
+    margin:40px 0%;
 }
 h1 {
     font-size: 6.5rem;
@@ -143,13 +142,13 @@ h1 {
 .features-about {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 175px;
     border-top: 1px solid black;
 }
 
 .f-a-childs {
-    width: 50%;
+    width: 48.5%;
     margin: 20px 0%;
     padding:2% 0%;
 }
@@ -165,20 +164,19 @@ h3 {
 
 .middle-img {
     width: 100%;
-    height: 175px;
 }
 /*Styling Services, Product and Vision section*/
 .services-product-vision {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 175px;
     margin: 15px 0%;
     border-bottom: 1px solid black;
 }
 .spv-childs {
-    width: 33.33%;
+    width: 32.7%;
     padding-right: 5px; 
+    margin: 25px 0%;
 }
 /*Footer style*/
 address {
@@ -205,4 +203,101 @@ a:hover {
 	background-color: darkcyan;
 	color: antiquewhite;
 	border: 1px solid white;
+}
+/*Introducing media query for Tablet version*/
+@media (max-width: 800px) {
+
+.container {
+    max-width: 650px;
+}
+
+header {
+    flex-direction: column-reverse;
+    max-width: 650px; 
+    height: 90px;
+}
+
+.circle {
+    display: none;
+}
+
+.top-content {
+    justify-content: center;
+}
+
+a {
+    font-size: 2rem;
+}
+
+nav {
+    width: 100%;
+    margin: 5px 0%;
+}
+
+.logo {
+    margin-top: 15px;
+}
+
+}
+/*Introducing media query for Mobilr version*/
+@media (max-width: 500px) {
+.container {
+    width: 80%;
+    max-width: 450px;
+}
+
+header {
+    max-width: 450px;
+    height: 400px;
+}
+
+.top-content {
+    margin: 0%;
+}
+
+nav {
+    flex-direction: column;
+    padding: 0%;
+    margin: 10px 0% 0px 0%;        
+}
+
+a {
+    border: 1px solid lightgray;
+    font-size: 2.3rem;
+    align-self: stretch;
+    text-align: center;
+    flex-grow: 1;
+    margin:0%;
+    padding-top: 15px;
+}
+
+.features-about {
+    flex-direction: column; 
+}
+
+.f-a-childs {
+    width: 100%;
+    padding: 0%;
+    margin: 20px 0%;
+}
+
+.services-product-vision {
+    flex-direction: column;
+}
+
+.spv-childs {
+    width: 100%;
+    padding: 0%;
+    margin: 20px 0%;
+}
+.button {
+    padding: 5px 8%;
+}
+
+address {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
 }
