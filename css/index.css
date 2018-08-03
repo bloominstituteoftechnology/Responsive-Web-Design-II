@@ -104,6 +104,38 @@ color: gray;
     padding:5%;
 }
 
+main{
+    border-top:.3rem solid black;
+    border-bottom:.3rem solid black;
+    font-size:1.5rem;
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+    line-height:2.5rem;
+ }
+ .mainitem{
+     margin-left:3%;
+     width:30%;
+     margin-bottom:3%;
+     margin-top:3%;
+ }
+
+ .mainitemtop{
+    width: 47%;
+    margin-left: 3%;
+    margin-bottom:3%;
+ }
+ 
+ h3{
+     font-size:1.8rem;
+     font-family:bangers;
+     margin-bottom:2%;
+     margin-top:2%;
+
+ }
+ 
+ 
+
 /*tablet break point*/
 
 @media(max-width:800px){
@@ -118,6 +150,9 @@ nav{
     padding-right: 37%;
 }
 
+.circlepic{
+    display:none;
+}
 
 }
 /*mobile break point*/
@@ -162,8 +197,6 @@ order:2;
     position: relative;
     right: 2%;
 }
-    
-
 
 
 
