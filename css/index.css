@@ -1,1 +1,267 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS Reset Above */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+	@include transition: 0.4s;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* navbar */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	height: 40px;
+	@include transition: 0.4s;
+}
+
+.nav {
+	width: 80%;
+	padding: 1rem;
+	margin-bottom: 0.5rem;
+	@include transition: 0.4s;
+}
+
+.nav li {
+	display: inline-block;
+	color: gray;
+	padding: 0 20px;
+	margin: 5px;
+}
+
+/* .nav li:first-child {
+	padding: 0 -15px 0 0;
+	margin-left: -25px;
+}
+ */
+/* columns */
+
+.two-column {
+	display: flex;
+	overflow: hidden;
+	margin: 1rem 0;
+	align-items: center;
+}
+
+.three-column {
+	display: flex;
+	flex: 1;
+	border-bottom: 2px solid black;
+	padding-bottom: 25px;
+}
+
+.jumbo-left, .jumbo-right {
+	width: 50%;
+}
+
+.jumbo {
+	height: 375px;
+	border-bottom: 2px solid black;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.container img {
+	height: 340px;
+	width: auto;
+}
+
+.big {
+  font-size: 362.5%;
+  text-align: center;
+  margin-top: 65px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 0 25px 0;
+}
+
+span {
+  width: 125px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 5px;
+
+}
+
+.middle-img {
+	padding: 25px 0;
+}
+
+footer {
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+	body {
+		width: 100%;
+		max-width: 800px;
+	}
+
+	.header-img {
+		display: none;
+	}
+
+	.jumbo-left {
+		width: 100%;
+	}
+
+	.jumbo-right {
+		width: 0%;
+	}
+
+	.big {
+		width: 25%;
+		margin-top: 10px;
+	}
+
+	.header {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		align-items: center;
+		text-align: center;
+	}
+
+	.nav {
+		width: 100%;
+	}
+
+	.nav li {
+		padding: 5px 3%;
+	}
+
+	.center {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.middle-img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.two-column, .three-column {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 95%;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+
+	.container, .left, .right {
+		width: 100%;
+		max-width: 500px;
+		padding: 25px 0;
+	}
+
+	.middle-img {
+		padding: 0;
+	}
+
+	.nav {
+		flex: 1;
+	}
+
+	li {
+		display: flex;
+		flex-direction: row;
+		border-top: 1px solid gray;
+		text-align: center;
+		align-items: center;
+		height: 50px;
+		width: 100%;
+		list-style-type: none;
+	}
+
+	li:last-child {
+		border-bottom: 1px solid gray;
+	}
+}
