@@ -217,25 +217,27 @@ footer {
 
 /*MEDIA QUERY - TABLET*/
 @media (max-width: 800px){
+    .container {
+        max-width: 800px;
+        width: 100%;
 
+    }
 
     header {
         flex-direction: column-reverse;
         align-items: center;
+        margin-top: 10px;
+    }
+
+
+    header nav {
         margin-top: 30px;
     }
 
-    header .logo {
-        width: 183px;
-    }
-
     header nav a {
-        /* padding-right: 10px; */
         text-decoration: none;
-        font-size: 14px;
         font-weight: lighter;
         color: #000;
-        /* display: inline-block; */
         transition: transform 0.2s linear;
     }
 
@@ -248,7 +250,7 @@ footer {
         display: none;
     }
 
-    .innovation{
+    .innovation{  /********* width 732px*********/
         justify-content: center;
         margin-bottom: 30px;
         margin-top: 10px;
@@ -256,10 +258,15 @@ footer {
 
     .innovation-text {
         padding: 10px 0;
+        width: 100%;
     }
 
     .innovation-text h1 {
-        font-size: 65px;
+        padding: 80px 0 0 0;
+    }
+
+    .innovation-text button {
+        margin-left: 0;
     }
 
     .article-top{
@@ -268,6 +275,7 @@ footer {
 
     .middle-img {
         height: 158px;
+        width: 91.67%;  /* 732px / 800px */
     }
 
     .article-bottom {
@@ -275,18 +283,7 @@ footer {
         padding-bottom: 40px;
     }
 
-    .article-bottom .services, .product, .vision {
-        width: 30%;
-    }
 
-    address {
-        padding-left: 0;
-    }
-
-    footer {
-        padding: 0;
-    }
-}
 
 
 /*MEDIA QUERY - MOBILE*/
