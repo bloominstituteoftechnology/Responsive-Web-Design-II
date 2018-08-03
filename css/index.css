@@ -200,7 +200,7 @@ footer {
 
     .navbar {
         margin-right: 0;
-        margin-top: 40px;
+        margin-top: 5%;
     }
 
     .cta {
@@ -229,7 +229,7 @@ footer {
     .navbar a {
         border-top: 1px solid lightgrey;
         width: 100%;
-        padding: 20px;
+        padding: 4%;
         text-align: center;
     }
 
@@ -237,23 +237,23 @@ footer {
         /* display: flex; */
         flex-direction: column;
         padding: 0;
-        margin-bottom: 30px;
+        margin-bottom: 6%;
     }
 
     .top_section div {
         width: 100%;
-        padding-top: 30px;
+        padding-top: 6%;
     }
 
     .bottom_section {
         flex-direction: column;
         padding: 0;
-        margin-top: 30px;
+        margin-top: 6%;
     }
 
     .bottom_section div {
         width: 100%;
-        padding-bottom: 30px;
+        padding-bottom: 6%;
     }
 
 }
