@@ -141,7 +141,12 @@ table {
     box-sizing: border-box;
 }
 
-html,
+html {
+    font-size: 62.5%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
 body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -164,6 +169,7 @@ body {
 
 .container {
     width: 880px;
+    max-width: 100%;
 }
 
 /* header */
@@ -173,27 +179,29 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
+    width: 100%;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
-    width: 690px;
+    width: 78.4%;
 }
 
 header nav a {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: gray;
     text-decoration: none;
 }
 
 header nav a:hover {
     text-decoration: underline;
+    color: dodgerblue;
 }
 
 header nav a:last-child {
-    margin-right: 65px;
+    margin-right: 10%;
 }
 
 header .logo {
@@ -203,7 +211,7 @@ header .logo {
 /* cta */
 
 .cta {
-    width: 880px;
+    width: 100%;
     height: 524px;
     display: flex;
     justify-content: space-evenly;
@@ -215,21 +223,21 @@ header .logo {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 77px;
+    font-size: 7.4rem;
     text-align: center;
 }
 
 .cta-text button {
     background: white;
     vertical-align: top;
-    padding: 8px 44px;
-    font-size: 17px;
+    padding: 8px 15%;
+    font-size: 1.7rem;
     border: 1px solid black;
     cursor: pointer;
 }
 
 .cta .cta-text button:hover {
-    background: black;
+    background: dodgerblue;
     color: white;
 }
 
@@ -238,18 +246,20 @@ header .logo {
 .main-content {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 39px 0px;
+    padding: 39px 1.13%;
     display: flex;
     flex-direction: column;
+    font-size: 1.4rem;
 }
 
 .top-content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .top-content .text-content {
-    width: 410px;
+    flex-basis: 46.5%;
 }
 
 .middle-img {
@@ -262,12 +272,13 @@ header .logo {
 }
 
 .bottom-content .text-content {
-    width: 275px;
+    width: 31.25%;
 }
 
 
 .contact {
-    padding: 39px 10px 0;
+    padding: 39px 0.5% 0;
+    font-size: 1.4rem;
 }
 
 .contact p {
@@ -277,7 +288,7 @@ header .logo {
 footer {
     margin: 32px 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 @media (max-width: 800px) {
