@@ -53,6 +53,7 @@ table {
 /* RESET */
 
 .Main {
+    width: 880px;
     display: flex;
     justify-content: center;
 }
@@ -65,15 +66,18 @@ table {
 }
 
 header {
+    background-color: mediumturquoise;
     display:flex;
-    width:100%;
+    margin: 20px 0px;
+    width:800px;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav {
     display:flex;
-    width: 100%;
-    justify-content: space-around;
+    width: 600px;
+    justify-content: space-between;
 }
 
 .Sec1 {
@@ -95,7 +99,7 @@ nav {
 .s1 {
     display:flex;
     flex-direction:column;
-    height: 155px;
+    height: 140px;
     justify-content: space-between;
 }
 
@@ -124,6 +128,7 @@ nav {
 }
 
 footer {
+    
     width: 800px;
     height: 240px;
     display:flex;
@@ -138,12 +143,12 @@ a {
 }
 
 nav a {
-    width: 14.2%;
+    background-color: mediumspringgreen;
     font-size: 16pt;
 }
 
 header img {
-    width: 14.2%;
+    width:150px;
 }
 
 h1 {
@@ -159,11 +164,12 @@ h1 {
 }
 
 .s1 p {
-    font-size: 14pt;
-    width: 375px;
+    font-size: 13pt;
+    width: 355px;
 }
 
 .Sec2 img {
+    width: 880px;
     margin: 40px 0px;
 }
 
@@ -190,10 +196,101 @@ address {
 }
 
 h2 {
-    font-size: 18pt;
+    font-size: 16pt;
     height: 10px;
 }
 
 p {
     line-height: 1.25;
+}
+
+@media (max-width:800px) {
+
+    .Main {
+        width: 800px;
+    }
+
+    .Main2 {
+        background-color: yellow;
+
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .Sec1 {
+        width: 720px;
+    }
+
+    .Sec1 img {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav {
+        background-color: orange;
+        width: 720px;
+        order:1;
+    }
+    
+    header img {
+        order:0;
+        width: 200px;
+    }
+
+    .Sec2 img {
+        width: 800px;
+        margin: 40px 0px;
+    }
+
+    .Sec2s1 {
+        background-color: maroon;
+        width: 720px;
+        display:flex;
+        height:150px;
+        justify-content: space-between;
+    }
+
+    
+    .Sec2s2 {
+        width: 720px;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .s1 p {
+    font-size: 14pt;
+    width: 325px;
+}
+
+.s2 p {
+    font-size: 14pt;
+    width: 190px;
+}
+
+    .s1 {
+    display:flex;
+    flex-direction:column;
+    height: 150px;
+    align-items: space-between;
+    justify-content: space-between;
+    }
+
+    .s2 {
+        display:flex;
+        flex-direction:column;
+        height: 175px;
+        align-items: space-between;
+        justify-content: space-between;
+        }
+    
+
 }
