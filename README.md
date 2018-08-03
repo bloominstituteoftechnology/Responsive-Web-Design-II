@@ -11,10 +11,10 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 ## Task 2: Project Objectives
 
 * [ ]**COMPLETE** Review each [design file](design-files) and build your styles at each breakpoint.
-* [ ] Introduce `font-size: 62.5%;` into your `html` selector.
+* [ ]**COMPLETE** Introduce `font-size: 62.5%;` into your `html` selector.
 * [ ]**COMPLETE** Constrain your container element with a `max-width` of 880px
 * [ ]**COMPLETE** Introduce max-width media queries into your project at 800px and 500px  
-* [ ] Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.
+* [ ]**COMPLETE** Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.
 * [ ] Convert all `font-size` values into rem units
 * [ ] Do your best to make the breakpoints look pixel-close-enough 
 * [ ] Once you have completed all of the project objectives, push your commits and make a pull request against the original fork

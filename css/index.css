@@ -148,13 +148,13 @@ nav {
   }
   
   .mid {
-    width: 880px;
+    width: 100%;
     display: flex;
     flex-direction: row;
   }
   
   .midaccent {
-    width: 880px;
+    width: 100%;
   }
   
 p {
@@ -194,14 +194,14 @@ p {
     }
 
     .mid {
-        width: auto;
+        width: 100%;
         display: flex;
         flex-direction: row;
 
     }
 
     .midaccent {
-        width: auto;
+        width: 100%;
     }
 
 }
@@ -227,7 +227,7 @@ p {
     }
 
     a {
-        width: 550px;
+        width: 100%;
         border-bottom: 1px darkgrey solid;
         border-top: 1px darkgrey solid;
         text-align: center;
@@ -258,7 +258,7 @@ p {
     }
 
     .midaccent {
-        width: auto;
+        width: 100%;
         margin-top: 15px;
     }
 
