@@ -60,6 +60,10 @@ h1, h2, h3, h4, h5 {
 
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     width: 90%;
     max-width: 880px;
@@ -85,6 +89,15 @@ nav {
     align-items: center;
 }
 
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+    font-size: 1.6rem
+
+}
+
 a {
     color: grey;
 }
@@ -93,7 +106,7 @@ a {
     display: flex;
     justify-content: space-around;
     margin: 60px 0;
-    float: left;
+    margin-left: 80px;
 }
 
 .cta_title {
@@ -104,7 +117,7 @@ a {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 6.6rem;
 }
 
 .cta_title p {
@@ -112,15 +125,25 @@ h1 {
     width: 80%;
     margin: 0 auto;
     padding: 8px 25px;
+    font-size: 1.6rem
+}
+
+h2 {
+    font-size: 1.8rem
 }
 
 .top_section {
     display: flex;
     border-top: 2px solid black;
     padding: 30px 0;
+    font-size: 1.6rem
 }
 
-
+.middle-img {
+    width: 100%;
+    max-width: 880px;
+    border-radius: 15px;
+}
 
 .bottom_section {
     display: flex;
@@ -128,6 +151,7 @@ h1 {
     border-bottom: 2px solid black;
     padding: 30px 0;
     margin-bottom: 30px;
+    font-size: 1.6rem
 }
 
 .bottom_section div {
@@ -137,6 +161,7 @@ h1 {
 contact {
     display: flex;
     flex-direction: column;
+    font-size: 1.6rem
 }
 
 footer {
@@ -144,12 +169,27 @@ footer {
     justify-content: center;
     align-items: flex-end;
     padding: 60px 0 20px 0;
+    font-size: 1.6rem
 }
 
 @media (max-width: 800px) {
     body {
         width: 90%;
         max-width: 800px;
+        margin: 0 auto;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    .navbar {
+        margin-right: 0;
+        margin-top: 40px;
+    }
+
+    .cta {
+        margin-left: 0;
     }
 
     .topimg {
@@ -162,5 +202,42 @@ footer {
     body {
         width: 90%;
         max-width: 500px;
+        margin: 0 auto;
     }
+
+    .navbar {
+        border-bottom: 1px solid lightgrey;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        border-top: 1px solid lightgrey;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .top_section {
+        /* display: flex; */
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .top_section div {
+        padding-top: 30px;
+    }
+
+    .bottom_section {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .bottom_section div {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
 }
