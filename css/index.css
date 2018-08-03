@@ -79,23 +79,32 @@ h1, h2, h3, h4, h5 {
 	justify-content: center;
 }
 
-#navbar {
+#navBar {
 	display: flex;
-	height: 65px;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
+
+#textLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 70%;
+}
 .navLink {
 	color: lightslategrey;
-	font-size: 1.6rem;
-	text-decoration: none;
+	font-size: 1.5rem;
+    text-decoration: none;
 }
 
 #bannerSection {
-	height: 480px;
-	border-bottom: 1px solid black;
+	height: 515px;
+	border-bottom: 2px solid black;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -104,11 +113,11 @@ h1, h2, h3, h4, h5 {
 #taglineBox {
 	display: flex;
 	flex-flow: column wrap;
-	text-align: center;
-	justify-content: center;
-	align-items: center;	
-	width: 500px;
-	height: 480px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 30px 45px;
+	width: 80%;
 }
 
 #tagline {
@@ -116,12 +125,14 @@ h1, h2, h3, h4, h5 {
 }
 
 #getStarted {
-	height: 20px;
-	width: 150px;
+
+	height: 35px;
+	width: 165px;
 	color: white;
 	font-size: 1.4rem;
 	border: 1px solid black;
-	padding: 2px;
+    padding-top: 8px;
+    text-align: center;
 	text-decoration: none;
 	background-color: lightsteelblue;
     animation-name: example;
@@ -130,27 +141,34 @@ h1, h2, h3, h4, h5 {
 	animation-direction: alternate;
 }
 
+#headerImage {
+    width: 43%;
+}
+
 .descriptiveSection {
     display: flex;
     justify-content: space-between;
-    margin: 30px 0px;
+    margin: 35px 0px;
 }
 
 .upperText {
-	width: 440px;
+	width: 50%;
 }
 
 .lowerText {
-	width: 290px;
+	width: 33%;
+}
+
+.middle-img {
+    width: 100%;
 }
 
 #address {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	padding-top: 40px;
 }
 
 #footer {
 	text-align: center;
-	margin: 28px 0px;
-	font-size: 1.6rem;
+	margin: 70px 0px 10px 0px;
 }
