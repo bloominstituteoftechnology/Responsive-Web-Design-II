@@ -56,6 +56,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,141 +68,145 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
+	display: flex;
+	justify-content: center;
+}
+.container {
 	max-width: 880px;
-	margin: 0 auto;   
 }
 
 /*** Navigation Section***/
-
-nav .nav-logo {
+header {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 25px;
+}
+header nav {
 	display: flex;
-    
+    justify-content: space-between;
+    width: 86%;
 }
-
-nav .nav-logo:hover {
-    opacity: .5;
-    transition: .5s; 
-}
-
-nav {
-	display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: auto;    
-}
-
-nav a {
-    flex-grow: 1;
+header nav a {
+	display: inline-block;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 14px;
 	color: grey;
-    background: white;
-    padding: 15px;   
+    padding: 15px; 
 }
-
-nav a:hover {
-	color: lightgrey;
+header nav a:hover {
+	border-top: 1px solid grey;
+	color: darkgray;
     transition: .5s;
 }
+header nav a:last-child {
+	margin-right: 9.4%;
+}
+header .nav-logo {
+	display: inline-block;
+}
+header .nav-logo:hover {
+    opacity: .5;
+	transition: .5s; 	
+}
+
 
 /*** Call To Action ***/
-
-header {
-    margin-top: 25px;
-}
-
 .cta {
+	width: 90.9%;
     display:flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-around;
+	height: 394px;
+    align-content: center;
+    justify-content: space-evenly;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	
 }
-
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 77px;
+	align-items: center;
+	text-align: center;
+	margin-top: 90px	
+}
 .header-img {
-    display: flex
+    display: flex;
     flex-direction: row;
     justify-content: center;
     height: 350px;
-    width: 350px
-    margin: 25px 0 25px 200px;
+    width: 350px;
 }
 
-div {
-    margin-top: 50px;
-    font-size: 50px;
-}
 
 /*** Headings & Paragraphs ***/
-
-h1 {
-    font-size: 80px;
-    text-align: center;
-}
-
 h2 {
     font-size: 18px;
 }
-
 p {
 	line-height: 1.2;
     font-size: 18px;
 }
 
-hr {
-    border: 1px solid black;
-    width: auto;
-}
-
 /*** Buttons ***/
-
-button {
-	margin-bottom: 20px;
-    padding: 10px 60px;
-    border: 2px solid #212121;
-    border-radius: 2px;
-    background-color: white;
-    font-size: 20px;
+.cta button {
+	background: white;
+	padding: 10px 5.5%;;
+	font-size: 18px;
+	vertical-align: top;
+	cursor: pointer;
+	border: 1px solid black;
 }
-
-button:hover {
+.cta button:hover {
 	background-color: #212121;
     color:whitesmoke;
     transition: .5s;
-}
-		
+}		
 .learnmorebtn {
     margin: 20px 0 0 1px;
     width: 100px	
 }
 
 /*** Home Page Mid Section ***/
-
 .mid-section {
     display: flex;  
-    flex-direction: row;
-    width: 880px;
-    margin-bottom: 40px;
+    flex-direction: column;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	
 }
-
-.mid-box {
-    padding-right: 10px;
+.mid-box-top {
+    display: flex;
+	justify-content: space-between;
+}
+.mid-box-top .mid-box-text {
+	width: 48.9%;
+	margin-top: 40px;
+}
+.mid-box-bottom {
+    display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.mid-box-bottom .mid-box-text {
+	width: 30.8%;	
 }
 .mid-img {
-    width: 880px;
+    margin: 40px 0;
 }
 
 /*** Home Page Contact Section ***/
-
 .contact {
-    margin-top: 30px;
-    width: 200px;    
+	margin: 20px 0;
+	font-size: 18px;
 }
 
 /*** Footer ***/
-
 footer {
-    text-align: center;
-    margin-top: 50px;
+	margin: 32px 0;
+	text-align: center;
+	font-size: 14px;
 }
 
 
@@ -261,80 +266,115 @@ footer {
     margin-right: 50px;
 }
 
+
+
 /***** MEDIA QUERIES *****/
 
 /*** Tablet Version - 800px Width ***/
 
 @media (max-width: 800px){
-
-	body {
+	.container {
+		width: 100%;
     	max-width: 800px;
-		margin: 0 auto;
+		padding: 2.5%;
     }
-
-    .header-img {
-    	display: none;
+/* Navigation */
+	header {
+		flex-direction:column-reverse;
+		align-items: center;
+	}
+ 	header nav {
+        justify-content: space-around;
+		width: 100%;	
     }
-    
-    nav {
-        width: auto;
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: space-between;   
-    }
-    
+	header .nav-logo {
+		margin-bottom: 40px;
+		margin-left: 8%;
+	}
+	header nav a {
+		font-size: 18px;
+	}
+	header nav a:last-child {
+		margin-right: 0%;
+	}
+/* Call to Action */
     .cta {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
         justify-content: center;
+		width: 100%;
+		margin-top: 0px;
     }
-    
+	.header-img {
+		display: none;
+	} 
+/* Mid Section */
     .mid-section {
-       width: auto;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .mid-box {
-        padding-right: 20px;
-    }
-    
+       	width: 100%;
+    } 
+	  .mid-box-top {
+        padding-right: 2.5%;
+    } 
+	.mid-box-bottom {
+        padding-right: 2.5%
+    } 
     .mid-img {
-        width: auto;
+        width: 100%;
     }
  
-   /***  Mobile Version - 500px Width ***/
+/***  Mobile Version - 500px Width ***/
 
-    @media (max-width: 500px){
-    body {
+@media (max-width: 500px){
+    .container {
         max-width: 500px;
-        margin: 0 auto;
-        }
-        
-    nav {
-        display: flex;
-        flex-direction: column-reverse;
+        padding: 0px;
+    } 
+/* Navigation */
+	header .nav-logo {
+		margin-top: 20px;
+		margin-right: 8%;
+	}
+    header nav {
+        flex-direction: column;
         align-items: center;            
     }
-   
-    nav a  {
-        font-size: 32px;
-        padding-top: 10px;
+    header nav a  {
+        font-size: 24px;
         width: 100%;
         text-align: center; 
-        border-bottom: 1px solid black;
-        }
-        
-    nav a:hover {
+        border-top: 1px solid grey;
+	}
+  	header nav a:last-child {
+		border-bottom: 1px solid grey;
+	} 
+	header nav a:hover{
 	    background: #212121;
         color: white;
-}
-
+	}
+/* Call to Action */
+	.cta {
+		width: 100%;
+	}
+/* Mid Section */
     .mid-section {
-        width: auto;
-        display: flex;
-        flex-direction: column;    
-    }
-    
-        
+       	width: 100%;
+		margin-left: 5%;
+    } 
+	.mid-box-top {
+		flex-direction: column;
+	}
+	.mid-box-top .mid-box-text {
+		width: 90%
+	}
+	.mid-box-bottom {
+		flex-direction: column;
+	}
+	.mid-box-bottom .mid-box-text {
+		margin-bottom: 30px;
+		width: 90%
+	}
+	.mid-box-bottom .mid-box-text:last-child{
+		margin-bottom: 0px;
+	}
+/* Contact Section */
+	.contact {
+		margin-left: 5%;
+	}
