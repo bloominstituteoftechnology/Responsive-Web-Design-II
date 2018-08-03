@@ -140,7 +140,8 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
     margin:0 auto;
 	max-width: 880px;
-    width:100%;	
+    width:100%;
+    padding:20px 2.5% 0px 2.5%;
 }
 
 header{
@@ -248,6 +249,11 @@ header .brand {
 	margin-bottom:20px;
 }
 
+.mid-hero img{
+    width: 100%;
+    max-width:880px;
+}
+
 .box-bottom{
 	width:31.81%;
 	height:auto;
@@ -283,21 +289,23 @@ footer p{
 	padding-top:65px;
 }
 .services-header h2{
-	font-size:24px;
+	font-size:2.4rem;
 	margin-top:20px;
 }
 
 .services-header p.services-desc{
 	line-height: 20px;
-	text-align: justify;
-	width: 880px;
+    text-align: justify;
+    max-width:880px;
+	width:100%;
 
 }
 .services{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width:880px;
+    width:100%;
+    max-width:880px;
 	margin:20px 0 20px 0;
 	padding-top:20px;
 	border-top:1px solid #000;
@@ -306,7 +314,7 @@ footer p{
 
 .box-services{
 	height:auto;
-    width:420px;
+    width:47.72;
 	border:1px solid #000;
 	margin-bottom:40px;
 	padding:25px;
@@ -314,12 +322,14 @@ footer p{
 }
 
 .box-services p{
+    font-size:2rem;
 	margin-bottom:20px;
 	line-height:20px;
 	text-align: justify;
 }
 
 .box-services a{
+   font-size: 1.4rem;
    text-decoration:none;
    border:1px solid #000;
    padding:5px 20px 5px 20px;
@@ -328,14 +338,15 @@ footer p{
 }
 
 .facts{
-	width:880px;
+    max-width:880px;
+	width:100%;
 	display: flex;
 	flex-direction:row;
 	justify-content: space-between;
 }
 
 .first p{
-	width:420px;
+	width:42.72%;
 	margin-bottom:1.5rem;
 	line-height: 20px;
 	text-align: justify;
