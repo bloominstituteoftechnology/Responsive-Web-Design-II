@@ -111,9 +111,10 @@ header .toplogo {
 }
 .top .toptext button {
     width: 150px;
-    height: 25px;
-    margin-top: 10px;
-    border: 1px double black;
+    height: 40px;
+    margin: 15px 0;
+    padding: 10px 0 auto;
+    border: 1px solid black;
     font-size: 1.5rem;
     background: white;
 }
