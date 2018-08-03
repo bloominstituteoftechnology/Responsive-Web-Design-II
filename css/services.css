@@ -70,6 +70,8 @@ h1, h2, h3, h4, h5, span {
 	max-width: 880px;
 	width: 100%;
 	font-size: 62.5%;
+	padding-right: 1.1%;
+	padding-left: 1.1%;
 }
 /*NAVBAR STYLING*/
 
@@ -107,7 +109,6 @@ h1, h2, h3, h4, h5, span {
 	border-bottom: 1px solid black;
 	padding-bottom: 30px;
 	font-size: 1rem;
-	width: 100%;
 	margin-bottom: 25px;
 }
 
@@ -121,6 +122,7 @@ h1, h2, h3, h4, h5, span {
 .middle-top, .middle, .middle-bottom {
 	display: flex;
 	margin-bottom: 30px;
+/*	width: 100%;*/
 }
 
 .right-boxes, .left-boxes {
@@ -166,6 +168,7 @@ h1, h2, h3, h4, h5, span {
 	justify-content: space-between;
 	font-size: 1rem;
 	margin-bottom: 60px;
+/*	width: 100%;*/
 }
 
 .fun-facts .facts ul{
@@ -194,6 +197,53 @@ h1, h2, h3, h4, h5, span {
 .copyright {
 	text-align: center;
 	font-size: 0.8rem;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 800px) {
+	.navbar {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.navbar nav {
+		width: 90%;
+		margin-right: 0;
+		margin-top: 40px;
+	}
+	.fun-facts {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.services-info-img{
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		width: 96%;
+		justify-content: center;
+	}
+	.navbar nav {
+		flex-direction: column;
+		width: 104%;
+	}
+	.navbar nav a {
+		border-top: 1px solid lightgrey;
+		text-align: center;
+		font-size: 1rem;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.navbar nav a:last-child {
+		border-bottom: 1px solid lightgrey;
+	}
+	.services-info-img{
+		display: none;
+	}
 }
 
 
