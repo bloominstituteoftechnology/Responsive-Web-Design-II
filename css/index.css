@@ -67,27 +67,27 @@ h3 {
 .logoDiv {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
+
 .container {
     max-width: 880px;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
-    margin: 2% auto;
+    margin: 0% auto;
 }
 
 .navHeader {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 2% 0;
+    width: 95%;
+    margin: 2% 2%;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
     margin: 1.25% 10.25% 0 0;
 }
 
@@ -100,7 +100,7 @@ a.topNav {
 .contentHead {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
     justify-content: space-around;
     margin: 5% 0;
 }
@@ -127,7 +127,7 @@ a.topNav {
 .contentContainer {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 95%;
 }
 
 .topContainer {
@@ -158,8 +158,11 @@ footer {
     .headerImg {
         display: none;
     }
+    .logoDiv {
+        width: 100%;
+    }
     .logo {
-        max-width: 100%;
+        max-width: 95%;
         height: auto;
         align-self: center;
     }
@@ -179,7 +182,7 @@ footer {
         border-top: 1px solid grey;
         padding: 2% 0;
     }
-    .topNav:nth-last-child(0) {
+    .topNav:nth-last-child(1) {
         border-bottom: 1px solid grey;
     }
     .contentContainer {
