@@ -56,6 +56,7 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
     font-size: 62.5%;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,8 +70,10 @@ body {
 	justify-content: center;
 }
 
+
 .container {
-	max-width: 880px;
+    max-width: 880px;
+    /* border: 1px solid black; */
 }
 
 header {
@@ -92,7 +95,7 @@ header nav a {
   font-size: 1.6rem;
   color: gray;
   text-decoration: none;
-  width: 100%;
+  width: 92%;
 }
 
 header nav a:last-child {
@@ -100,7 +103,7 @@ header nav a:last-child {
   }
 
 
-.top-top {
+.title {
     height: 524px;
 	display: flex;
 	justify-content: space-evenly;
@@ -137,6 +140,7 @@ header nav a:last-child {
 .top-content {
 	display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .top-content .text {
@@ -151,11 +155,11 @@ header nav a:last-child {
 	display: flex;
     justify-content: space-between;
     width: 100%;
-}
+} 
 
 .bottom-content .text {
 	width: 31%;
-}
+} 
 
 .contact {
     padding: 39px 0;
@@ -165,13 +169,16 @@ header nav a:last-child {
 
 .contact p {
     margin: 20px 0;
-}
+} 
 
 footer {
     margin: 32px 0;
     text-align: center;
     font-size: 1.4rem;
+    width: 100%;
 }
+
+
 
 @media (max-width:800px) {
     .circle-img {
@@ -181,7 +188,7 @@ footer {
         width: 100%;
         padding: 0 2%;
     }
-    .top-top {
+    .title {
         width: 100%
     }
     header nav {
@@ -218,7 +225,7 @@ footer {
         padding-top: 20px;
         border-top: 1px solid black;
     }
-    .top-top {
+    .title {
         height: 350px;
     }
     .top-content {
