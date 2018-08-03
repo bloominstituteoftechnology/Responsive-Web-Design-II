@@ -1,1 +1,269 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+.whole{
+    margin:0 auto;
+    max-width: 880px;
+    width: 98%;
+  
+}
+.main{
+	display: flex;
+    justify-content: space-evenly;
+    margin-top: 55px;
+  
+    border-bottom: 1px solid black;
+    padding-bottom: 55px;
+}
+.main2{
+	align-self: center;
+}
+.titleh{
+	font-size: 3.875rem;
+    text-align: center;
+
+}
+.button{
+    border: 1px solid black;
+    margin-left: 55px;
+    width: 139px;
+    padding: 10px;
+    border-radius:15%;
+    height: 35px;
+   
+    padding-left: 55px;
+    margin-right: 91.9%;
+}
+.fa{
+	display: flex;
+	margin-top:35px;
+	margin-bottom:35px;
+}
+.spv{
+	display: flex;
+	margin-top:35px;
+	margin-bottom:35px;
+}
+
+footer{
+	text-align: center;
+}
+
+header{
+    width: 95%;
+    max-width: 880px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.top{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+        width: 95%;
+}
+.navt{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    max-width: 880px;
+    margin-top: 20px;
+}
+.ul{
+	list-style: none;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    width: 95%;
+    padding-left: 0px;
+
+
+}
+.topimg{
+	margin-right:20;
+}
+.img2{
+	margin-top:40px;
+}
+.services{
+	display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    border-bottom: solid 1px black;
+}
+.servicep{
+	margin-bottom:40px;
+}
+.t1{
+	font-size: 1.875rem;
+}
+.digitaldesign{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	margin-top:40px;
+	border-bottom:1px solid;
+
+}
+h2{
+	display:flex;
+	justify-content:flex-start;
+}
+p{
+	display:flex;
+	align-items: center;
+}
+.seperate{
+	width: 400;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    padding: 20;
+    margin-bottom: 35px;
+    background: #E3E5FB;
+}
+.lm{
+	    border: 1px solid black;
+    width: 150;
+    padding: 10;
+    margin-top: 20;
+    text-align: center;
+    background: white;
+    border-radius: 8%;
+}
+.somefacts{
+	display:flex;
+	margin-top:40px;
+}
+h1{
+	font-size:1.5625rem;
+}
+.split{
+	margin-right:60px;
+	width:400px;
+}
+li{
+	margin-top:20px;
+}
+.CR{
+	text-align:center;
+	font-weight:bold;
+	margin-top:40px;
+}
+@media(max-width:800px){
+    .top{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        margin-left: 25px;
+        width: 95%;
+        max-width: 800px;
+    }
+    .ul{
+        max-width: 800px;
+        width: 95%;
+        padding-left: 0;
+    }
+    .middle-img{
+        width: 95%;
+        margin: 10px;
+    }
+    .logo{
+        display:flex;
+        margin:0 auto;
+    }
+    .codesnippet{
+        display:none;
+    }
+    .spv{
+        justify-content: space-evenly;
+      
+        width: 95%;
+    }
+    .s{
+        width: 33.125%;
+    
+    padding-right: 10px;
+    }
+    .p{
+        width: 33.125%;
+    
+    padding-right: 10px;
+    }
+    .v{
+        width: 33.125%;
+    
+    padding-right: 10px;
+    }
+
+    ul{
+        width: 800px;
+    }
+    .fa{
+        margin-left: 20px;
+    margin-right: 20px;
+    
+    padding: 10px;
+    }
+    
+}
+@media(max-width:500px){
+    .navt{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        max-width: 500px;
+        width: 95%;
+    }
+    .top{
+        margin-left: 5px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    li{
+        margin-top: 15px;
+    border-bottom: 1px solid;
+    max-width: 450px;
+    width: 95%;
+    text-align: center;;
+}
+    .fa{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 90%;
+    }
+    .middle-img{
+        max-width: 500px;
+    display: flex;
+    justify-content: center;
+   
+    width: 95%;
+    }
+    .spv{
+           display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        width: 95%;
+    }
+    .s{
+        max-width: 500px;
+        width: 95%;
+        margin-left: 25px;
+    }
+    .p{
+        max-width: 500px;
+        width: 95%;
+        margin-left: 25px;
+    }
+    .v{
+        max-width: 500px;
+        width: 95%;
+        margin-left: 25px;
+    }
+   footer{
+       border-top:1px solid black;
+   }
+
+}
