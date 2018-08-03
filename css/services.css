@@ -1,0 +1,77 @@
+/* services header image */
+.header-img {
+  margin: 0 auto;
+  width: 90%;
+}
+.header-img .services-header-img {
+  margin: 5% auto;
+  width: 100%;
+}
+/* services section intro */
+#services {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 2%;
+}
+#services h2 {
+  font-size: 3rem;
+}
+#services p {
+  font-size: 2rem;
+  padding: 3% 1%;
+}
+/* start of two by three section */
+#twoBythree {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#twoBythree section {
+  border: 1px solid darkgray;
+  margin: 2% 2%;
+  padding: 3%;
+  width: 45%;
+}
+#twoBythree section * {
+  font-size: 2rem;
+}
+#twoBythree section h3 {
+  font-size: 2.7rem;
+}
+#twoBythree section button {
+  margin: 5% 0;
+}
+/* footer area */
+footer {
+  margin: 5% auto;
+}
+footer #listAndPic {
+  display: flex;
+}
+footer #listAndPic div {
+  margin: 1%;
+  width: 48%;
+}
+footer #listAndPic div h3 {
+  font-size: 3rem;
+}
+footer #listAndPic div p {
+  font-size: 2rem;
+}
+footer #listAndPic div #footerList {
+  list-style-type: square;
+  font-size: 1.5rem;
+  padding: 3% 0 0 5%;
+}
+footer #listAndPic div img {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+footer div .copyright {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  padding: 10% 0 0 0;
+  width: 100%;
+}

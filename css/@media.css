@@ -1,0 +1,132 @@
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  /* header starts here */
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  header div {
+    width: 100%;
+  }
+  header .navbar {
+    justify-content: center;
+  }
+  header .navbar #main-nav {
+    width: 100%;
+  }
+  header .navbar #main-nav #nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navbar #main-nav #nav li {
+    border-bottom: 1px solid black;
+    padding: 3% 0;
+    text-align: center;
+  }
+  header .navbar #main-nav #nav li .main-nav-button {
+    font-size: 3rem;
+  }
+  header .logo-area {
+    border-bottom: 1px solid black;
+    padding-bottom: 3%;
+  }
+  header .logo-area a {
+    margin: 0 auto;
+  }
+  /* header ends here */
+  /* title area starts here */
+  #index-title-area {
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  #index-title-area #index-image {
+    display: none;
+    height: 0;
+  }
+  /* title area ends here */
+  /* twoCol starts here */
+  .twoCol {
+    flex-direction: column;
+  }
+  /* twoCol ends here */
+  /* threeCol starts here */
+  .threeCol {
+    flex-direction: column;
+  }
+  /* threeCol ends here */
+  /* image banner starts here */
+  #mid-banner {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #mid-banner .middle-img {
+    width: 100%;
+  }
+  /* image banner ends here */
+}
+/* End of max-width: 480px */
+/* start of max-width: 768px */
+@media (max-width: 800px) {
+  html .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* start header and nav area */
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  header .navbar {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  header .navbar .main-nav-button {
+    font-size: 2rem;
+  }
+  header #logo-design {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 4% 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  /* end header and nav area */
+  /* start title area */
+  main #index-title-area {
+    margin: 0 auto;
+    width: 100%;
+  }
+  main #index-title-area #index-title {
+    margin: 10% auto;
+  }
+  main #index-title-area #index-title h1 {
+    font-size: 6rem;
+  }
+  main #index-title-area #index-image {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  /* end title area */
+  /* start image banner area */
+  #mid-banner {
+    justify-content: center;
+    width: 90%;
+  }
+  #mid-banner .middle-img {
+    width: 100%;
+  }
+  /* end image banner area */
+  .hr {
+    margin: 0 auto;
+    width: 95%;
+  }
+}
+/* End of max-width: 768px */

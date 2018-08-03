@@ -1,0 +1,42 @@
+
+@col1: #10324f;
+@col2: #40b299;
+@col3: #b1e1dd;
+/* header and main navbar */
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0 0 0;
+  div {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    margin: 0 auto;
+    #main-nav {
+      width: 100%;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        li {
+          font-size: 1.3rem;
+          .main-nav-button {
+            text-decoration: none;
+            color: @col2;
+          }
+        }
+      }
+
+    }
+  }
+  .logo-area {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 2%;
+  }
+}
+
+/* end header and navbar area */

@@ -1,1 +1,59 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/*   start actual code here */
+/* start title area */
+#index-title-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+}
+#index-title-area div {
+  width: 48%;
+}
+#index-title-area #index-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#index-title-area #index-title h1 {
+  font-size: 5rem;
+}
+#index-title-area #index-title #start {
+  margin: 1% auto;
+  padding: 2% 8%;
+}
+#index-title-area #index-image {
+  margin: 0 auto;
+}
+#index-title-area #index-image img {
+  width: 80%;
+  margin: 0 auto;
+}
+/* end title area */
+/* banner image */
+.imageBanner {
+  display: flex;
+  margin: 2% auto;
+  width: 100%;
+}
+.imageBanner .middle-img {
+  margin: 0 auto;
+  width: 100%;
+}
+/* start footer */
+footer {
+  margin: 0 auto;
+  width: 100%;
+}
+footer #contact {
+  font-size: 1.5rem;
+  padding: 2%;
+}
+footer #contact address {
+  font-weight: bold;
+}
+footer #contact #copyright {
+  margin: 5%;
+  text-align: center;
+}
+/* end footer */
