@@ -74,8 +74,6 @@ body {
     flex-wrap: wrap; 
   }
 
-
-	
 a {
     text-decoration: none; 
     font-size: 1.5rem; 
@@ -153,7 +151,7 @@ nav a:hover {
   justify-content: flex-end;  
   flex-wrap: wrap; 
   width: 18%; 
-  padding: 25px 0px 30px 0px;
+  padding: 25px 0% 30px 0%;
  }
   
 .button1{
@@ -197,8 +195,6 @@ h3.button1{
   justify-content: flex-end;   
   height: 375px;
 }
-
-
   
 header{
   width: 100%; 
@@ -282,6 +278,7 @@ address a{
   color: black; 
 }
 
+
  @media (max-width: 800px){
      .fixed{
          flex-direction: column-reverse;  
@@ -291,7 +288,7 @@ address a{
      .navLogo{
          width: 100%; 
          justify-content: center; 
-         padding: 30px 0px 5px 0px;  
+         padding: 30px 0% 5px 0%;  
      }
      nav{
          width: 100%;  
@@ -301,7 +298,7 @@ address a{
      nav a{
          margin-right: 0%; 
          font-weight: bold; 
-    }
+     }
      .bannerImage{
          display: none; 
      }
@@ -391,7 +388,7 @@ address a{
     }
     .features{
         width: 100%; 
-        padding: 30px 0px; 
+        padding: 30px 0%; 
     }
     .about{
         width: 100%; 
@@ -403,15 +400,15 @@ address a{
     }
     .services{
         width: 100%; 
-        padding: 3px 0px 20px 0px;  
+        padding: 3px 0% 20px 0%;  
     }
     .product{
         width: 100%; 
-        padding: 40px 0px 20px 0px; 
+        padding: 40px 0% 20px 0%; 
     }
     .vision{
         width: 100%; 
-        padding: 40px 0px 15px 0px; 
+        padding: 40px 0% 15px 0%; 
     }
     address{
         width: 95%; 
