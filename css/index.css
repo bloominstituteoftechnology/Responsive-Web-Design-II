@@ -64,6 +64,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+@keyframes example {
+    from {background-color:lightskyblue;}
+    to {background-color:gold;}
+}
 #main-container{
 	width:100%;
 	Max-width:880px;
@@ -137,9 +141,13 @@ h1{
 }
 #button{
 	border: 1px solid black;
-	padding:5px 12.8%;
+	padding:7px 45px;
 	margin-top:20px;
 	text-align:center;
+	animation-name: example;
+	animation-duration: 0.75s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 #top-section{
 	width:100%;
@@ -202,19 +210,35 @@ margin-top:35px;
 		margin-top:15px;
 		margin-bottom:30px;
 	}
+	#button-container{
+	width:88%;
+	display:flex;
+	justify-content: center;
 	
+}
 	#header-img{
 		display: none;
 } #header{
 	margin: 0px auto;
+	justify-content: center;
+	
 }
 #innovation{
 	width:100%;
 	margin-top:70px;
-	margin-left:2.5%;
+	margin-left:20%;
 	margin-bottom: 80px;
+	justify-content: center;
+	align-items: center;
+	
 
-} .top-boxes{
+}#button-container{
+	width:88%;
+	display:flex;
+	justify-content: center;
+	
+}
+ .top-boxes{
 	width:48%;
 	margin-top:35px;
 }.btm-boxes{
