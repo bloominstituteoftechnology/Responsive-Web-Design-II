@@ -244,4 +244,12 @@ div.copyright {
   section {
     padding: 0px 4% 40px;
   }
+  
+ .middle-img {
+   margin: 10px 0px 25px;
+   height: 100px;
+   max-width: 490px;
+   width: 90%;
+   align-self: center;
+  }
 }
