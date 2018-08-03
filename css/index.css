@@ -1,1 +1,469 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ Alex Ostrander
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 880px;
+    max-width: 100%;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 78.4%;
+}
+
+header nav a {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: gray;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+header nav a:last-child {
+    margin-right: 10%;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+/* cta */
+
+.cta {
+    width: 100%;
+    height: 524px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 7.4rem;
+    text-align: center;
+}
+
+.cta-text button {
+    background: white;
+    vertical-align: top;
+    padding: 8px 15%;
+    font-size: 1.7rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: dodgerblue;
+    color: white;
+}
+
+/* Main content */
+
+.main-content {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 39px 1.13%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top-content .text-content {
+    flex-basis: 44.5%;
+}
+
+.middle-img {
+    margin: 45px 0px;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-content .text-content {
+    width: 31.25%;
+}
+
+
+.contact {
+    padding: 39px 0.5% 0;
+    font-size: 1.4rem;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+        max-width: 100%;
+    }
+
+    .cta {
+        height: 420px;
+        width: 100%;
+    }
+
+    .cta-img {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        width: 100%;
+        flex-direction: column-reverse
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 78.4%;
+        padding: 25px 0;
+    }
+
+    header nav a {
+        display: inline-block;
+        font-size: 1.6rem;
+        color: gray;
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        text-decoration: underline;
+        color: dodgerblue;
+    }
+
+    header nav a:last-child {
+        margin-right: 0%;
+    }
+
+    header .logo {
+        display: inline-block;
+    }
+
+    .main-content {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .top-content .text-content {
+        flex-basis: 60%;
+        padding: 0px 0%;
+    }
+
+    .top-content .text-content p {
+        padding-top: 3px;
+    }
+
+    .middle-img {
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+
+
+    .bottom-content .text-content {
+        margin-top: 5px;
+        flex-basis: 28.1%;
+        padding-left: 1.25%;
+    }
+
+    .contact {
+        margin: 12px 0px;
+        padding-left: 3.75%;
+    }
+
+    footer {
+        margin: 20px 2.5%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 100%;
+        width: 500px;
+
+    }
+    .head1 {
+        margin-top: 0px;
+        font-size: 1.7rem;
+
+    }
+
+    .head1 nav {
+        padding-top: 10px;
+        margin: 0px;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .head1 div {
+        padding: 10px 2%;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .head1 nav a {
+        padding: 10px 0px;
+        margin: 10px 0%;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a:last-child {
+        margin-right: 0px;
+    }
+
+    .cta {
+        height: 325px;
+        margin-bottom: 50px;
+    }
+    .main-content {
+        padding-bottom: 0px;
+        font-size: 1.7rem;
+        width: 95%;
+    }
+    .top-content {
+        flex-direction: column;
+        height: 250px;
+    }
+
+    .top-content .text-content {
+        padding: 0px;
+    }
+
+    .text-content p {
+        padding: 10px 0%;
+    }
+
+    .middle-img {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content .text-content {
+        padding-left: 0px;
+        width: 100%
+    }
+
+    .contact {
+        padding-left: 3%;
+        padding-top: 3%;
+        font-size: 1.7rem;
+        width: 100%;
+    }
+
+}
