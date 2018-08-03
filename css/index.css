@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 /* Desktop First */
 
 main {
-    width: 880px;
+    max-width: 880px;
     margin: 0 auto;
 }
 
@@ -120,7 +120,7 @@ nav img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px;
+    margin: 50px 5.68%;
 }
 
 #wrapper section {
@@ -129,7 +129,7 @@ nav img {
 
 button {
     border: 2px solid black;
-    padding: 8px 50px;
+    padding: 8px 17.59%;
     text-align: center;
     text-decoration: none;
     background-color: white;
@@ -204,7 +204,7 @@ address {
         width: 100%;
         text-align: center;
         font-size: 2.0rem;
-        padding: 20px;
+        padding: 20px 4%;
         margin: 0;
         border-top: 2px solid black;
     }
