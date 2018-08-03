@@ -144,6 +144,10 @@ button {
     justify-content: space-between;
 }
 
+.box section p {
+    width: 95%;
+}
+
 /* Footer */
 
 address {
