@@ -128,7 +128,8 @@ a{
 	align-self: center;
 	text-align: center;
 	color: black;
-	width: 170px;
+	max-width: 170px;
+	width: 100%;
 	padding: 8px 0%;
 	margin-top: 25px;
 	border: 1px solid black;
