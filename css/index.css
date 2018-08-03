@@ -318,7 +318,7 @@ a:hover {
 
 @media (max-width: 500px) {
     .logo {
-        margin-right: 34px;
+        margin-right: 6.8%;
     }
 
     .top {
@@ -327,7 +327,7 @@ a:hover {
     }
 
     .innovation {
-        margin-left: 40px;
+        margin-left: 8%;
     }
 
     .topIMG {
@@ -339,8 +339,7 @@ a:hover {
         flex-wrap: wrap;
         width: 100%;
         align-items: center;
-        padding-left: 20px;
-        /* order: 10; */
+        padding-left: 4%;
     }
 
     .container {
@@ -353,7 +352,7 @@ a:hover {
 
     header nav a {
         border-bottom: 1px solid black;
-        font-size: 20px;
+        font-size: 2.0rem;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -372,14 +371,14 @@ a:hover {
         order: -1;
         margin: 0px;
         text-align: center; 
-        padding-left: 34px;
+        padding-left: 6.8%;
     }
 
     .MainContainer {
         width: 100%;
         margin: 0 auto;
-        margin-left: 20px;
-        margin-right: 20px;
+        padding-left: 4%;
+        padding-right: 4%;
     }
     .topMid {
         display: flex;
@@ -388,7 +387,7 @@ a:hover {
     }
 
     .topMid .TextBox {
-        width: 95%;
+        width: 100%;
         padding: 0px;
         margin: 23px 0px;
     }
@@ -397,6 +396,7 @@ a:hover {
         margin-top: 32px;
         margin-bottom: 0px;
         height: 95px;
+        width: 100%;
     }
 
     .bottomMid {
@@ -404,7 +404,7 @@ a:hover {
     }
 
     .bottomMid .TextBox {
-        width: 95%;
+        width: 100%;
         padding: 0px;
         margin: 31px 0px 33px 0px;
     }
@@ -414,6 +414,6 @@ a:hover {
     }
 
     address {
-        margin-left: 20px;
+        margin-left: 4%;
     }
 }
