@@ -89,7 +89,7 @@ header nav {
 header nav a {
   display: inline-block;
   margin-right: 7.4%;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -116,7 +116,7 @@ header .logo {
 .cta .cta-text {
   display: inline-block;
   vertical-align: top;
-  font-size: 77px;
+  font-size: 7.7rem;
   margin-top: 13.6%;
   text-align: center;
   padding: 0px 75px;
@@ -127,7 +127,7 @@ header .logo {
   vertical-align: top;
   margin-top: .7%;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -194,7 +194,7 @@ header .logo {
 footer {
   margin: 3.6% 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 /*this is tablet*/
 @media(max-width:800px){
@@ -214,7 +214,7 @@ footer {
   }
   
   header nav a {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   
   header nav a:last-child {
@@ -232,24 +232,28 @@ footer {
 }
 .main-content .middle-img {
   margin-top: 5.1%;
+  width:85%
 }
 }
 @media(max-width: 500px){
     .container{
-        width:500px;
+        width:100%;
         padding:0;
 
     }
     header nav{
         flex-direction: column;
         align-items: center;
+        
     }
     header nav a{
         font-size: 24px;
         padding:20px 0;
         border-top: 1px solid gray;
-        width:100%;
+        width:96%;
         text-align:center;
+        margin-right:2%;
+        margin-left:2%;
     }
     header nav a:last-child{
         border-bottom: 1px solid grey;
@@ -259,6 +263,48 @@ footer {
     }
     .main-content .middle-img {
       margin-top: 5.1%;
-      width:49%;
+      width:96%;
+      margin-left:2%;
+      margin-right:2%;
 }
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 8.6%;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 96%;
+  display: inline-block;
+  margin-right: 2%;
+  margin-left:2%;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .bottom-content {
+  margin-top: 4.2%;
+  padding: 0 10px;
+  
+}
+
+.main-content .bottom-content .text-content {
+  width: 96%;
+  display: flex;
+  margin-right: 2%;
+  margin-left:2%;
+  flex-direction: column;
+
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
 }
