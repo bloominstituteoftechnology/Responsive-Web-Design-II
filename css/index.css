@@ -1,1 +1,236 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body{
+	display: flex;
+	justify-content: center;
+}
+
+.container{
+    max-width: 880px;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:20px;
+    position: fixed;
+    z-index: 80;
+    width: 100%;
+    max-width: 880px;
+}
+
+nav{
+    display: flex;
+    background-color: #0101a3;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 750px;
+    width: 77%;
+}
+
+.navi {
+    padding: 20px 2.5%;
+    color: white;
+	font-size: 1.6rem;
+	text-decoration: none;
+}
+
+.navi:hover{
+    font-size: 1.7rem;
+    background: black;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px 5.2%;
+}
+
+.headerdiv{
+	display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.h1 {
+	display: flex;
+	font-size: 8.5rem;
+	flex-direction: column;
+	align-items: center;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+.middle-img{
+    width: 100%;
+}
+
+.middletext{
+	display: flex;
+    margin: 30px 0px;
+    justify-content: space-between;
+}
+
+.midtexttop{
+	display: flex;
+	flex-direction: column;
+    align-self: center;
+    width: 47%;
+}
+
+.midtextbottom{
+	display: flex;
+	flex-direction: column;
+    align-self: center;
+    width: 30%;
+}
+
+#contact{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+address {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    .logo{
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        background-color: white;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .navi{
+        color: grey;
+    }
+    header{
+        flex-direction: column-reverse;
+        position: static;
+    }
+    .headerdiv{
+        margin-top: 25px;
+    }
+    .logo2 {
+        display: none;
+    }
+    .middle-img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .container{
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        padding: 0px;
+        border-bottom: 2px solid grey;
+    }
+    nav a {
+        text-align: center;
+        border-top: 2px solid grey;
+        width: 100%;
+        max-width: 500px;
+    }
+    .navi {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+}
