@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5 {
   max-width: 880;
   /* TB LR */
   width:100%;
-  margin: 0 auto;
+
 }
 
 /* header */
@@ -250,10 +250,9 @@ footer {
         font-size: 24px;
         padding:20px 0;
         border-top: 1px solid gray;
-        width:96%;
+        width:100%;
         text-align:center;
-        margin-right:2%;
-        margin-left:2%;
+        
     }
     header nav a:last-child{
         border-bottom: 1px solid grey;
@@ -271,6 +270,7 @@ footer {
   border-top: 1px solid black;
   margin-top: 8.6%;
   padding-top: 39px;
+  width:100%;
 }
 
 .main-content .top-content {
