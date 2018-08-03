@@ -103,7 +103,7 @@ header nav a:hover {
 }
 
 header nav a:last-child {
-  margin-right: 9.545%;
+  margin-right: 12%;
 }
 
 header .logo {
@@ -140,8 +140,9 @@ header .logo {
   background-color: white;
   border: 1px solid black;
   font-size: 1.6rem;
-  height: 30px;
-  width: 38%;
+  text-align: center;
+  padding: 6px 43px;
+  margin-top: 28px;
 }
 
 .main-content {
@@ -167,6 +168,7 @@ header .logo {
 
 .middle-img {
   margin: 32px 0;
+  width: 100%;
 }
 
 .bottom-content {
