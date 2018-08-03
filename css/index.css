@@ -92,6 +92,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
     margin-top: 15px;
+    margin-bottom: 73px;
 
 }
 
@@ -99,16 +100,19 @@ header {
     header {
         flex-direction: column-reverse;
         align-items: center;
-        height: 107px;
-        padding-top: 10px;
+        /* height: 107px; */
+        padding-top: 40px;
+        margin-bottom: 72px;
     }
 }
 
 @media (max-width: 500px) {
     header {
-        margin-top: 16px;
+        margin-top: 10px;
         height: auto;
         width: 100%;
+        margin-bottom: 50px;
+        padding-top: 10px;
     }
 }
 header nav {
@@ -132,6 +136,7 @@ header nav {
         flex-direction: column;
         align-items: center;
         padding-right: 0%;
+        padding-top: 20px;
         
     }
 }
@@ -145,7 +150,7 @@ header nav a {
 
 @media (max-width: 500px) {
     header nav a {
-        font-size: 20px;
+        font-size: 2.0rem;
         padding: 20px 0% 20px 4%;
         border-bottom: 1px solid gray;
         width: 100%;
@@ -199,19 +204,19 @@ header .logo {
 
 .tandcimg {
 	width: 100%;
-	height: 524px;
+	/* height: 524px; */
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-    margin-bottom: -2px;
+    margin-bottom: 75px;
 }
 
 @media (max-width: 800px) {
     .tandcimg {
         width: 100%;
-        height: 415px;
+        /* height: 415px; */
         justify-content: center;
-        padding-right: 5.5%;
+        padding-right: 3%;
         margin-bottom: 0px;
     }
 }
@@ -219,16 +224,20 @@ header .logo {
 @media (max-width: 500px) {
     .tandcimg {
         width: 100%;
-        padding-bottom: 17px;
-        height: 393px;
+        /* height: 393px; */
         padding-right: 0%;
-        padding-left: 4%;
-        margin-bottom: 6px;
+        margin-bottom: 76px;
     }
 }
 
 .tandcimg .tagline h1 {
     margin-bottom: 12px;
+}
+
+@media (max-width: 800px) {
+    .tandcimg .tagline h1 {
+        margin-bottom: 13px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -238,18 +247,27 @@ header .logo {
 }
 .tagline {
     display: flex;
-    width: 47.727%;
+    width: 100%;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
     font-size: 7.2rem;
     text-align: center;
+    padding-left: 5.2%;
+}
+
+@media (max-width: 800px) {
+    .tagline {
+        margin-bottom: 71px;
+    }
 }
 
 @media (max-width: 500px) {
     .tagline {
         width: 100%;
         align-items: center;
+        padding-left: 4%;
+        margin-bottom: 0px;
         
     }
 }
@@ -257,28 +275,26 @@ header .logo {
 .tagline button {
     background: white;
     vertical-align: top;
-    padding: 5.5px 9.6%;
+    padding: 5.5px 9%;
     font-size: 1.65rem;
     border: 1px solid black;
     cursor: pointer;
     text-align: center;
-    margin-top: 14px;
-    margin-right: 14.69%;
-    letter-spacing: 0.25px;
+    margin-top: 13px;
 }
 
 @media (max-width: 800px) {
     .tagline button {
-        margin-right: 17.69%;
-        padding: 5.5px 11.5%;
+        padding: 5px 5.8%;
+        margin-top: 12px;
     }
 }
 
 @media (max-width: 500px) {
     .tagline button {
-            text-align: center;
-    margin-left: 17%;
-    padding: 5.5px 8% 5.5px 9%;
+        text-align: center;
+        padding: 5.5px 9% 5.5px 9%;
+        margin-top: 14px;
 }
 }
 
@@ -297,11 +313,11 @@ header .logo {
 .main {
 	border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 34px 0%;
+    padding: 35px 0%;
     display: flex;
     flex-direction: column;
     margin-top: 6px;
-    min-width: 595px;
+    /* min-width: 595px; */
     
 }
 
@@ -314,9 +330,9 @@ header .logo {
         flex-direction: column;
         margin-top: 5px;
         margin-left: 2.5%;
-        height: 592px;
+        /* height: 592px; */
         align-items: flex-start;
-        min-width: 546px;
+        /* min-width: 546px; */
         
     }
 }
@@ -325,22 +341,23 @@ header .logo {
     .main {
         width: 100%;
         flex-direction: column;
-        height: 970px;
+    /* height: 970px; */
         padding-top: 58px;
+        
     }
 }
 
 .topcontent {
 	display: flex;
     justify-content: space-between;
-    height: 118px;
+    /* height: 118px; */
     margin-bottom: 1px;
     
 }
 @media (max-width: 800px) {
     .topcontent {
         padding-left: 1.125%;
-        height: 136px;
+        /* height: 136px; */
         width: 100%;
         padding-right: 1.25%;
         
@@ -361,6 +378,17 @@ header .logo {
   font-size: 1.6rem;
 }
 
+.topcontent .text:first-child {
+    padding-left: 0.2%;
+}
+
+@media (max-width: 500px) {
+    .topcontent .text:first-child {
+        padding-left: 1.8%;
+        margin-right: 2.75%;
+    }
+}
+
 @media (max-width: 800px) {
     .topcontent .text {
         width: 50%;
@@ -378,10 +406,10 @@ header .logo {
 @media (max-width: 500px) {
     .topcontent .text {
         width: auto;
-        height: 151px;
-        padding-right: 10%;
-        padding-left: 1.4%;
+        /* height: 151px; */
+        padding-left: 1.8%;
         margin-right: 2.75%;
+        margin-bottom: 46px;
     }
 }
 
@@ -390,37 +418,38 @@ header .logo {
 }
 
 .middle-img {
-    margin: 17px 0.341% 30px 0.341%;
+    margin: 29px 0.341% 30px 0.341%;
 }
 
 @media (max-width: 800px) {
     .middle-img {
-        margin: 16px 0% 30px 0%;
+        margin: 29px 0% 30px 0%;
         width: 100%;
     }
 }
 
 @media (max-width: 500px) {
     .middle-img {
-        width: 84%;
+        width: 95%;
         height: 95px;
-        margin: 4px 0% 0px 1.5%;
+        margin: 4px 0% 31px 2%;
     }
 }
 
 .bottomcontent {
     display: flex;
     justify-content: space-between;
-    padding-right: 2.159%;
+    padding-right: 3%;
 }
 
 @media (max-width: 800px) {
     .bottomcontent {
         display: flex;
         justify-content: space-between;
-        padding-right: 3.75%;
-        height: 184px;
+        padding-right: 3.4%;
+        /* height: 184px; */
         width: 100%;
+        margin-bottom: 35px;
     }
 }
 
@@ -428,24 +457,26 @@ header .logo {
     .bottomcontent {
         width: auto;
         flex-direction: column;
-        padding-right: 10%;
-        padding-left: 1.4%;
-        margin-right: 2.75%;
-        margin-top: 31px;
+        padding-right: 0%;
     }
 }
 
 .bottomcontent .text {
-    width: 31.363%;
+    width: 33.363%;
     line-height: 18px;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    margin-left: 0.1%;
+}
+
+.bottomcontent .text {
+    padding-right: 6.5%
 }
 
 @media (max-width: 800px) {
     .bottomcontent .text {
         width: 31%;
         line-height: 18px;
-        padding-left: 1.5%;
+        padding-left: 1.4%;
         font-size: 1.6rem;
         padding-right: 0.25%;
     }
@@ -454,10 +485,22 @@ header .logo {
 @media (max-width: 500px) {
     .bottomcontent .text {
         width: auto;
-        padding-bottom: 61px;
-        padding-left: 0%;
+        /* height: 151px; */
+        padding-left: 1.8%;
+        margin-right: 2.75%;
+        margin-bottom: 62px;
+        
     }
 }
+
+@media (max-width: 500px) {
+    .bottomcontent .text:last-child {
+        margin-bottom: 1px;
+        
+    }
+}
+
+
 
 
 .contact {
@@ -469,7 +512,7 @@ header .logo {
 @media (max-width: 800px) {
     .contact {
         padding-top: 0px;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
         margin-top: 35px;
         width: 95%;
         padding-left: 3.82%;
@@ -478,10 +521,9 @@ header .logo {
 
 @media (max-width: 500px) {
     .contact {
-        width: 100%;
-        margin: 0px;
-        padding-left: 4%;
-        padding-top: 35px;
+        padding-top: 0px;
+        font-size: 1.6rem;
+        padding-left: 4.2%;
     }
 }
 .contact p {
@@ -491,10 +533,10 @@ header .logo {
 footer {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     text-align: center;
     font-size: 1.6rem;
-    height: 32px;
+    /* height: 32px; */
 }
 
 @media (max-width: 800px) {
@@ -504,14 +546,14 @@ footer {
         align-items: flex-end;
         text-align: center;
         font-size: 1.6rem;
-        height: 32px;
+        /* height: 32px; */
         padding-left: 2%;
     }
 }
 
 @media (max-width: 500px) {
     footer {
-        height: 41px;
+        /* height: 41px; */
         padding-left: 3%;
     }
 }
