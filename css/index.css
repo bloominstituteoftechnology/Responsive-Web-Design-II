@@ -1,1 +1,326 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    /* you don't want to use positioning tools or width on body */
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	max-width: 880px;
+}
+
+/* header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2.8%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+    width: 78.4%;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:last-child {
+  margin-right: 7.8%;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+/* cta */
+.cta {
+	width: 100%;
+	height: 524px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+    font-size: 7.7rem;
+    text-align: center;
+}
+
+.cta-text button {
+  background: white;
+  vertical-align: top;
+  padding: 0.9% 5%;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        max-width: 800px;
+        padding: 2.5%;
+    }
+
+    /* HEADER */
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    header nav a {
+        font-size: 1.8rem;
+        
+    }
+    header nav a:last-child {
+        margin-right: 0;
+    }
+
+    header .logo {
+        margin-bottom: 5%;
+    }
+
+    .cta {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .text-content {
+        margin-left: 1.8%;
+    }
+}
+
+
+/* (child width / parent width) * 100 
+to find the percent ( to the first 100th) of the child to parent.
+You can do the same for margins. */
+
+/* As a general rule: HEIGHT in pixels, WIDTH IN % */
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%; /* REAL responsive when you set the max-width also */
+        max-width: 500px;
+        padding: 0%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        width: 100%;
+        font-size: 2.4rem;
+        padding: 4% 0%;
+        border-top: 1px solid grey;
+        text-align: center;
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid grey;
+    }
+
+    .cta {
+        width: 100%;
+    }
+}
+
+/* Main content */
+.main-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 4.4% 0%;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-content .text-content {
+  width: 46.5%;
+}
+
+.middle-img {
+  margin: 5.1% 0%;
+}
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-content .text-content {
+	width: 31.2%;
+}
+
+.services-header-img {
+    margin: 3.9% 0%; 
+}
+  
+.services-header {
+    padding-bottom: 5.1%; 
+}
+  
+.services-header h2 {
+    font-size: 2.8rem;
+}
+  
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 4.5%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+  
+.service-block {
+    width: 47.7%;
+    border: 1px solid black;
+    margin-bottom: 4.5%;
+    background-color: whitesmoke;
+    padding: 1.7%;
+}
+  
+  .service-block button {
+    margin-top: 1.7%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.9% 3.9%;
+}
+  
+.service-facts {
+    display: flex;
+    padding-top: 4.5%;
+}
+  
+.facts-container {
+    padding-right: 4.5%;
+}
+
+.facts-container ul{
+    margin-top: 1.7%;
+}
+  
+.facts-container ul li {
+    margin: 1.1% 0%;
+    list-style: square inside;
+}
+
+.contact {
+  padding: 4.4% 1.1% 0%;
+}
+
+.contact p {
+  margin: 2.2% 0%;
+}
+
+footer {
+  margin: 3.6% 0%;
+  text-align: center;
+  font-size: 1.4rem;
+}
