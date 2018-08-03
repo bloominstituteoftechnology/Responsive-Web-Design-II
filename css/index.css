@@ -166,6 +166,10 @@ a {
 	justify-content: space-between;
 }
 
+.middle-img {
+    width: 100%;
+}
+
 .services, .products, .vision {
 	width: 33.3%;
     margin: 24px 0 37px 0;
