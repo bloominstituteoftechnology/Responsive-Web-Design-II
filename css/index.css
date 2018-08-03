@@ -177,6 +177,17 @@ footer{
     width: 95%;
     padding: 10px;
 }
+.servIntro h1{
+    font-size: 2.5rem;
+}
+.mainSec h2{
+    font-size: 2rem;
+}
+
+.servIntro p, .mainSec p{
+    font-size: 1.6rem;
+}
+
 .mainSec{
     display: flex;
     flex-wrap: wrap;
@@ -184,9 +195,10 @@ footer{
     border-top: 2px solid black;
 }
 
+
 .mainSec div{
-    width: 45%;
-    margin: 20px;
+    width: 48%;
+    margin: 20px 1%;
     padding: 10px;
     background-color: whitesmoke;
     border: 1px solid black;
