@@ -85,7 +85,7 @@ header {
 header nav {
 	display: flex;
 	justify-content: space-between;
-	width: 69.0rem;
+	width: 78.4%;
 }
 
 header nav a {
@@ -111,7 +111,7 @@ header .logo {
 /* cta */
 
 .cta {
-	width: 88.0rem;
+	width: 100%;
 	height: 52.4rem;
 	display: flex;
 	justify-content: space-evenly;
@@ -157,7 +157,8 @@ header .logo {
 }
 
 .top-content .text-content {
-	width: 41.0rem;
+	width: 46.5%;
+	font-size: 1.4rem;
 }
 
 .middle-img {
@@ -170,11 +171,13 @@ header .logo {
 }
 
 .bottom-content .text-content {
-	width: 275px;
+	width: 31.2%;
+	font-size: 1.4rem;
 }
 
 .contact {
 	padding: 39px 10px 0;
+	font-size: 1.4rem;
 }
 
 .contact p {
@@ -184,7 +187,7 @@ header .logo {
 footer {
 	margin: 32px 0;
 	text-align: center;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 /* END -- "Great Idea" CSS */
@@ -238,7 +241,7 @@ footer {
 		padding: 10px;
 		border-top: 1px solid lightgrey;
 		border-bottom: 1px solid lightgrey;
-		font-size: 20px;
+		font-size: 2rem;
 		width: 100%;
 		text-align: center;
 	}
