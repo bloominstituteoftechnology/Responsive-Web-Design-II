@@ -111,13 +111,12 @@ header nav a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* margin-left: 6.81%; */
 }
 
 .cta .title h1 {
-	font-size: 5.5rem;
+	font-size: 7.5rem;
 	text-align: center;
-	padding: 15%;
+	padding: 35px 0;
 }
 
 .cta .title button {
@@ -181,6 +180,7 @@ footer {
 	margin: 25px auto;
 }
 
+/* tablet viewport */
 @media (max-width: 800px) {
 
 	.container {
@@ -195,7 +195,7 @@ footer {
 	}
 
 	.logo {
-		padding: 35px;
+		padding: 15px 0;
 	}
 
 	.cta {
@@ -205,12 +205,41 @@ footer {
 	.cta img {
 		display: none;
 	}
-
-	.middle-img {
-		width: 100%;
-	}
 }
 
+/* mobile viewport */
 @media (max-width: 500px) {
+	header nav {
+		flex-direction: column;
+	}
 
+	header nav a {
+		font-size: 2.4rem;
+		padding: 20px 0;
+		border-top: 1px solid grey;
+		width: 100%;
+		text-align: center;
+	}
+
+	header nav a:last-child {
+		border-bottom: 1px solid grey;
+	}
+
+	.main {
+		flex-direction: column;
+	}
+
+	.main .main-text {
+		padding-top: 30px;
+		width: 100%;
+	}
+
+	.ctn {
+		flex-direction: column;
+	}
+
+	.ctn .ctn-text {
+		padding-top: 30px;
+		width: 100%;
+	}
 }
