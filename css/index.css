@@ -233,13 +233,14 @@ header nav a {
 */
 
 .contact {
-	width: 300px;
+	width: 34.1%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	margin-top: 20px;
 	margin-bottom: 35px;
 	font-style: italic;
+	border: 1px solid red;
 }
 
 .copyright {
