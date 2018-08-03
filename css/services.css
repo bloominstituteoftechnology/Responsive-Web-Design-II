@@ -31,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -52,31 +50,34 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html, body, button {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, span {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
+/* Your code starts here! */
 
 /*FULL PAGE STYLING*/
 
 .container {
 	margin: 0 auto;
 	max-width: 880px;
-	width: 90%;
+	width: 100%;
 	font-size: 62.5%;
+	padding-right: 1.1%;
+	padding-left: 1.1%;
 }
-
-
 /*NAVBAR STYLING*/
+
 .navbar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: 100%;
 	align-items: flex-end;
 	padding-top: 30px;
@@ -93,89 +94,116 @@ h1, h2, h3, h4, h5 {
 	margin-right: 8%;
 }
 
-/*CTA SECTION*/
+/*HEADER IMAGE AND SERVICES SECTION*/
 
-.cta {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	border-bottom: 2px solid black;
-	padding-bottom: 60px;
-	padding-top: 68px;
-}
-
-.cta p {
-	font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-	font-size: 4.8rem;
-
-}
-.cta-button {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.cta button {
-	padding: 8px 13.5%;
-	border: 1px solid black;
-	font-size: 1rem;
-	margin-top: 30px;
-}
-
-
-
-/*FEATURES AND ABOUT*/
-.section1 {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	font-size: 1rem;
-	padding-bottom: 30px;
-	padding-top: 38px;
-}
-
-.services, .product, .vision, .features, .about {
-	margin-right: 2.3%;
-}
-
-.middle-img {
+.services-header-img {
 	display: block;
 	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-/*BOTTOM CONTENT SECTION*/
+.services {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+	font-size: 1rem;
+	margin-bottom: 25px;
+}
 
-.section2 {
+.services p:first-child {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+/*MIDDLE SECTION*/
+
+.middle-top, .middle, .middle-bottom {
+	display: flex;
+	margin-bottom: 30px;
+/*	width: 100%;*/
+}
+
+.right-boxes, .left-boxes {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid lightgrey;
+	background-color: whitesmoke;
+	padding: 15px 2.3%;
+	font-size: 1rem;
+	align-items: flex-start;
+}
+
+.middle-bottom {
+	border-bottom: 1px solid black;
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+}
+
+.right-boxes p:first-child, .left-boxes p:first-child {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+}
+
+.right-boxes {
+	margin-left: 1.7%;
+}
+
+.left-boxes {
+	margin-right: 1.7%;
+}
+
+.right-boxes button, .left-boxes button {
+	margin-top: 20px;
+	padding: 8px 10%;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+/*FACTS AND COPYRIGHT*/
+
+.fun-facts {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 30px;
-	padding-bottom: 38px;
 	font-size: 1rem;
-	width: 100%;
-	border-bottom: 2px solid black;
+	margin-bottom: 60px;
+/*	width: 100%;*/
 }
 
-/*CONTACT*/
+.fun-facts .facts ul{
+	list-style-type: square;
+	margin-left: 5%;
+}
 
-.contact {
-	padding-top: 38px;
-	font-size: 1rem;
+.facts p:first-child {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.facts ul {
+	margin-top: 20px;
+}
+
+.facts {
+	margin-right: 5%;
+}
+
+.facts ul li {
+	margin-bottom: 15px;
 }
 
 .copyright {
 	text-align: center;
-	font-size: 1rem;
-	margin-top: 40px;
+	font-size: 0.8rem;
 }
+
+
 
 /*MEDIA QUERIES*/
 
-/*TABLET*/
-
 @media (max-width: 800px) {
-	
 	.navbar {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -185,16 +213,14 @@ h1, h2, h3, h4, h5 {
 		margin-right: 0;
 		margin-top: 40px;
 	}
-
-	.cta img {
-		display: none;
+	.fun-facts {
+		flex-direction: column-reverse;
+		align-items: center;
 	}
-	.cta {
-		justify-content: center;
+	.services-info-img{
+		margin-bottom: 40px;
 	}
 }
-
-/*MOBILE*/
 
 @media (max-width: 500px) {
 	.container {
@@ -215,31 +241,10 @@ h1, h2, h3, h4, h5 {
 	.navbar nav a:last-child {
 		border-bottom: 1px solid lightgrey;
 	}
-
-	.section1, .section2 {
-		flex-direction: column;
+	.services-info-img{
+		display: none;
 	}
-
-	.product, .vision, .features, .about {
-		margin: 0px;
-		padding-top: 60px;
-	}
-
-	.services, .features {
-		padding-top: 30px;
-	}
-
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
