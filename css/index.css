@@ -198,6 +198,11 @@ header nav a {
 ***TIER 4***
 */
 
+.middle-img {
+	width: 100%;
+	max-width: 880px;
+}
+
 .T4 {
 	display: flex;
 	justify-content: space-around;
