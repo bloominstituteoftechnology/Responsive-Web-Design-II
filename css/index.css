@@ -1,1 +1,208 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 90%;
+    max-width: 880px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    font-family: 'Gaegu', cursive;
+}
+/*Header style*/
+header {
+    display: flex;
+    width: 100%;
+    max-width: 880px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: darkcyan;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:75%;
+    height: 100%;
+    padding: 0px 2%
+}
+
+a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 1.6rem;
+}
+/*H1 and Image section styling*/
+.top-content {
+    display: flex;
+    width: 100%;
+    height: 320px;
+    justify-content: space-between;
+    align-items: center;
+    margin:80px 0% 40px 0%;
+}
+h1 {
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+.circle {
+    width: 35%;
+}
+
+.h1-container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.button {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px 4%;
+    background-color: lightgray;
+}
+/*Styling features and About section*/
+.features-about {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 175px;
+    border-top: 1px solid black;
+}
+
+.f-a-childs {
+    width: 50%;
+    margin: 20px 0%;
+    padding:2% 0%;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: start;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.middle-img {
+    width: 100%;
+    height: 175px;
+}
+/*Styling Services, Product and Vision section*/
+.services-product-vision {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 175px;
+    margin: 15px 0%;
+    border-bottom: 1px solid black;
+}
+.spv-childs {
+    width: 33.33%;
+    padding-right: 5px; 
+}
+/*Footer style*/
+address {
+    font-size: 1.4rem;
+    margin: 15px 0%;
+}
+strong {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.4rem;
+    text-align: center;
+}
+/*Some CSS Effects*/
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+a:hover {
+	color: black;
+	font-size: 1.8rem;
+}
+.button:hover {
+	background-color: darkcyan;
+	color: antiquewhite;
+	border: 1px solid white;
+}
