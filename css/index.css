@@ -80,15 +80,17 @@ h1, h2, h3, h4, h5 {
 
 header nav {
   display: inline-block;
-  width: 78.5%;
+  width: 691px;
   vertical-align: top;
   margin-top: 4%;
+  justify-content: space-around;
+  
 }
 
 
 header nav a {
   display: inline-block;
-  margin-right: 7.4%;
+  margin-right: 0%;
   font-size: 1.4rem;
   color: gray;
   text-decoration: none;
@@ -200,7 +202,7 @@ footer {
 @media(max-width:800px){
    .container{
        width:100%;
-       padding:20px;
+       
    }
    header{
        display:flex;
@@ -208,7 +210,7 @@ footer {
        align-items:center;
    }
    header nav {
-    display: inline-block;
+    display: flex;
     justify-content: space-around;
     width:100%;
   }
@@ -230,10 +232,36 @@ footer {
 .cta img{
     display: none;
 }
+.cta .cta-text h1{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 7.7rem;
+  margin-top: 13.6%;
+  text-align: center;
+ padding: 0px 75px;
+}
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 8.6%;
+  padding-top: 39px;
+}
+
+
+
+.main-content .top-content .text-content {
+  width: 330px;
+  display: inline-block;
+  
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
 .main-content .middle-img {
   margin-top: 5.1%;
-  width:85%
+  width:100%
 }
+
 }
 @media(max-width: 500px){
     .container{
@@ -302,9 +330,4 @@ footer {
   flex-direction: column;
 
 }
-
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
-}
-
 }
