@@ -29,12 +29,19 @@
 }
 
 .button{
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic";
     width: 100%;
     max-width: 130px;
     border-radius: 5px;
     margin-top: 20px;
     padding: 5px, 5%;
     background: white;
+}
+
+.button:hover{
+    background: black;
+    color: whitesmoke;
 }
 
 .bottom{

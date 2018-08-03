@@ -91,15 +91,20 @@ nav{
     background-color: #0101a3;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 2.5%;
     max-width: 750px;
     width: 77%;
 }
 
 .navi {
+    padding: 20px 2.5%;
     color: white;
 	font-size: 1.6rem;
 	text-decoration: none;
+}
+
+.navi:hover{
+    font-size: 1.7rem;
+    background: black;
 }
 
 .logo {
