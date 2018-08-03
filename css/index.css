@@ -36,6 +36,16 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -52,8 +62,12 @@ table {
 
 /* RESET */
 
+html {
+    font-size: 62.5%;
+}
 .Main {
-    width: 880px;
+    width: 100.00%;
+    max-width: 2000px;
     display: flex;
     justify-content: center;
 }
@@ -61,26 +75,29 @@ table {
     display:flex;
     flex-direction:column;
     align-items: center;
-    width: 100%;
+    width: 100.00%;
     max-width: 880px;
 }
 
 header {
     display:flex;
     margin: 20px 0px;
-    width:800px;
+    width: 90.91%;
+    max-width:800px;
     align-items: center;
     justify-content: space-between;
 }
 
 nav {
     display:flex;
-    width: 600px;
+    width: 75.00%;
+    max-width: 600px;
     justify-content: space-between;
 }
 
 .Sec1 {
-    width: 880px;
+    width:100%;
+    max-width: 880px;
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -98,38 +115,43 @@ nav {
 .s1 {
     display:flex;
     flex-direction:column;
+    width: 44.38%;
+    max-width: 355px;
     height: 140px;
     justify-content: space-between;
 }
 
 .Sec2 {
-    width:880px;
+    width: 100.00%;
+    max-width:880px;
     display:flex;
     flex-direction:column;
     padding: 35px 0px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     align-items: center;
-
 }
 
 .Sec2s1 {
     display:flex;
-    width: 800px;
+    width: 90.91%;
+    max-width: 800px;
     justify-content: space-between;
+    align-items: center;
 }
 
 
 .s2 {
     display:flex;
     flex-direction:column;
-    height: 225px;
+    max-width: 225px;
     justify-content: space-between;
 }
 
 footer {
-    width: 800px;
-    height: 240px;
+    width: 90.91%;
+    max-width: 800px;
+    height: 200px;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -142,7 +164,7 @@ a {
 }
 
 nav a {
-    font-size: 16pt;
+    font-size: 2.1rem;
 }
 
 header img {
@@ -150,51 +172,57 @@ header img {
 }
 
 h1 {
-    font-size: 30pt;
+    font-size: 4rem;
     text-align: center;
 }
 
 .Sec1 a {
     text-align: center;
-    font-size: 20pt;
-    padding: 10px 20px;
-    border: 3px solid gray;
+    font-size: 2.7rem;
+    padding: 10px 3%;
+    border: 2px solid gray;
 }
 
 .s1 p {
-    font-size: 13pt;
-    width: 355px;
+    font-size: 1.9rem;
+    max-width: 355px;
+    width: 100%;
 }
 
 .Sec2 img {
-    width: 880px;
-    margin: 40px 0px;
+    width: 100%;
+    max-width: 880px;
+    margin: 80px 0px 40px 0px;
 }
 
 .Sec2s2 {
-    width: 800px;
+    height: 225px;
+    width: 90.91%;
+    max-width: 800px;
     display:flex;
     justify-content: space-between;
 }
 
 .s2 p {
-    font-size: 14pt;
-    width: 225px;
+    font-size: 1.9rem;
+    width: 100%;
+    max-width: 225px;
 }
 
 address {
-    font-size: 14pt;
+    font-size: 1.9rem;
     line-height: 1.25;
 }
 
 .Copyright {
-    font-size: 12pt;
+    font-size: 1.6rem;
     align-self: center;
-    margin-top: 50px;
+    margin: 50px 0px 10px;
 }
 
 h2 {
-    font-size: 16pt;
+    margin-bottom:30px;
+    font-size: 3rem;
     height: 10px;
 }
 
@@ -205,6 +233,7 @@ p {
 @media (max-width:800px) {
 
     .Main {
+        max-width:100%;
         width: 800px;
     }
 
@@ -217,7 +246,8 @@ p {
     }
 
     .Sec1 {
-        width: 720px;
+        width: 90.00%;
+        max-width: 720px;
     }
 
     .Sec1 img {
@@ -225,6 +255,8 @@ p {
     }
 
     header {
+        width: 90%;
+        max-width:720px;
         flex-direction: column;
         height: 100px;
         justify-content: space-around;
@@ -232,7 +264,8 @@ p {
     }
 
     nav {
-        width: 720px;
+        width:100%;
+        max-width: 720px;
         order:1;
     }
     
@@ -242,48 +275,64 @@ p {
     }
 
     .Sec2 {
-        width: 800px;
+        padding:0px 0px;
+        width: 100%;
+        max-width: 800px;
+
     }
 
     .Sec2 img {
-        width: 800px;
-        margin: 40px 0px;
+        width: 100%;
+        max-width: 800px;
+        margin: 30px 0px;
     }
 
     .Sec2s1 {
-        width: 720px;
+        width: 90.00%;
+        max-width: 720px;
         display:flex;
-        height:150px;
+        height:250px;
+        align-items: flex-start;
         justify-content: space-between;
+        margin-top: 30px;
     }
 
     
     .Sec2s2 {
-        width: 720px;
+        width: 90.00%;
+        height: 480px;
+        max-width: 720px;
         display:flex;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     .s1 p {
-    font-size: 14pt;
-    width: 325px;
+    font-size: 1.9rem;
+    width: 100.00%;
+    max-width: 325px;
 }
 
 .s2 p {
-    font-size: 14pt;
-    width: 190px;
+    font-size: 1.9rem;
+    width: 100%;
+    max-width: 190px;
 }
 
     .s1 {
     display:flex;
+    width: 45.14%;
+    max-width: 325px;
     flex-direction:column;
-    height: 150px;
+    height: 180px;
     align-items: space-between;
     justify-content: space-between;
     }
 
     .s2 {
         display:flex;
+        width: 26.39%;
+        max-width: 190px;
         flex-direction:column;
         height: 250px;
         align-items: space-between;
@@ -291,7 +340,8 @@ p {
         }
     
         footer {
-            width: 720px;
+            width: 90.00%;
+            max-width: 720px;
         }
 }
 
@@ -301,7 +351,8 @@ p {
 @media (max-width:500px) {
 
     .Main {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
     }
 
     .Main2 {
@@ -316,7 +367,8 @@ p {
         justify-content: space-between;
         align-items: center;
         margin-top: 140px;
-        width: 420px;
+        width: 84%;
+        max-width: 420px;
         height: 300px;
     }
 
@@ -324,6 +376,8 @@ p {
         margin: 0px;
         flex-direction: column;
         height: 500px;
+        width: 100%;
+        max-width: 500px;
         justify-content: space-around;
         align-items: center;
     }
@@ -331,13 +385,14 @@ p {
     nav {
         text-align: center;
         flex-direction: column;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         order:1;
     }
 
     nav a {
-        font-size: 30pt;
-        padding: 20px;
+        font-size: 4rem;
+        padding: 20px 4%;
         border-top: 2px solid gray;
 
     }
@@ -348,78 +403,100 @@ p {
     header img {
         height: 100px;
         order:0;
-        width: 300px;
-        padding: 20px;
+        width: 100%;
+        max-width: 300px;
+        padding: 20px 4%;
         align-self: center;
     }
 
     h1 {
-        font-size: 50pt;
+        font-size: 5.4rem;
         text-align: center;
     }
 
     .Sec1s1 {
         display:flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction:column;
+        width: 100%;
+        max-width: 420px;
         height: 300px;
     }
 
     .Sec1 a {
         text-align: center;
-        font-size: 30pt;
-        padding: 10px 20px;
-        border: 3px solid gray;
+        font-size: 2.7rem;
+        padding: 10px 4.76%;
+        border: 2px solid gray;
     }
 
     .Sec2 {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
+        padding: 20px 0px 60px 0px;
     }
 
     .Sec2 img {
-        width: 500px;
-        margin: 40px 0px;
-    }
+        width: 100%;
+        max-width: 500px;
+        margin: 10px 0px 40px 0px;
+       }
 
     .Sec2s1 {
-        width: 420px;
+
+        width: 84%;
+        max-width: 420px;
         display:flex;
         flex-direction:column;
-        height:350px;
+        height:375px;
         justify-content: space-between;
     }
 
     
     .Sec2s2 {
         height: 525px;
-        width: 420px;
+        width: 84%;
+        max-width: 420px;
         display:flex;
         flex-direction:column;
         justify-content: space-between;
     }
 
+  
     .s1 p {
     font-size: 14pt;
-    width: 400px;
+    width: 100%;
+    height: 125px;
+    max-width: 400px;
+    padding-bottom: 100px;
+
+
 }
 
 .s2 p {
-    font-size: 14pt;
-    width: 400px;
+    font-size: 1.9rem;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 40px;
+
 }
 
     .s1 {
     display:flex;
+    width: 100%;
+    max-width: 400px;
     flex-direction:column;
-    height: 135px;
-    margin-top: 20px;
+    height: 120px;
     align-items: space-between;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 30px 0px;
     }
 
     .s2 {
         display:flex;
+        width: 100%;
+        max-width: 400px;
         flex-direction:column;
         height: 135px;
         align-items: space-between;
@@ -427,12 +504,10 @@ p {
         }
     
         h2 {
-            font-size: 20pt;
-            height: 40px;
+            font-size: 2.7rem;
         }
         
         footer {
-            width: 420px;
-        }
-
-}
+            width: 84%;
+            max-width: 420px;        }
+    }
