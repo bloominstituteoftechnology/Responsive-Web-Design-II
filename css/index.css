@@ -239,7 +239,7 @@ nav {
 }
 
 }
-/*Introducing media query for Mobilr version*/
+/*Introducing media query for Mobile version*/
 @media (max-width: 500px) {
 .container {
     width: 80%;
@@ -299,5 +299,7 @@ address {
     margin-bottom: 35px;
 }
 
-
+a:hover {
+    background-color: cyan;
+}
 }
