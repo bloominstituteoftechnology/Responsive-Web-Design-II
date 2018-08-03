@@ -5,67 +5,71 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,a,abbr,acronym,address,big,cite,code,del,
+dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,
+tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,
+label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,figure,figcaption,
+footer,header,hgroup,menu,nav,output,ruby,section,
+summary,time,mark,audio,video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,aside,details,figcaption,figure,footer,header,
+hgroup,menu,nav,section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,h2,h3,h4,h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 body {
     display: flex;
     justify-content: center;
@@ -75,11 +79,10 @@ html {
     font-size: 62.5%
 }
 
-#divPage {
-   /*  display: flex; */
+.divPage {
     width: 880px;
-	padding-left: 2.27%;
-	margin: auto;
+    padding-left: 2.27%;
+    margin: auto;
 }
 
 .header1 {
@@ -89,25 +92,25 @@ html {
     margin-top: 25px;
 }
 
-#navFlex {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
+.navFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .navItemFlex {
     display: inline-block;
     color: gray;
-	height: 40px;
-	text-align: center;
-	font-family: arial;
-	font-size: 1.2rem;
-	text-decoration: none;
-	top: 1px;
-    padding-top: 12px; 
+    height: 40px;
+    text-align: center;
+    font-family: arial;
+    font-size: 1.2rem;
+    text-decoration: none;
+    top: 1px;
+    padding-top: 12px;
 }
 
 .logo1 {
@@ -115,144 +118,139 @@ html {
 }
 
 .logo2 {
-   width: 40%;    
+    width: 40%;
 }
 
-#topImage {
-    width:100%;
+.topImage {
+    width: 100%;
 }
 
-#topText {
-	font-family: bangers;
-	font-size: 6.0rem;
-	top: 100px;
-	text-align: center;
+.topText {
+    font-family: bangers;
+    font-size: 6.0rem;
+    top: 100px;
+    text-align: center;
     height: 240px;
 }
 
-#sectionContainer {
+.sectionContainer {
     width: 100%;
-	display: block;
-	padding-left: 4.54%;
-    padding-right: 2.27%;
+    display: block;
 }
 
 .section2 {
-	width: 43.18%;
+    width: 48%;
     display: inline-block;
     font-size: 1.4rem;
+    padding-right: 1.42%;
+    padding-left: 1.42%;
 }
 
-#textFlexContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 50%;
+.textFlexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
     padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
-} 
+}
 
 .cta {
-	color: black;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     padding-top: 60px;
 }
 
 .middle-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 92%;
-	padding-right: 1.23%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#sectionContainer2 {
-	width: 100%;
-	display: block;
-	padding-left: 40px;
+.sectionContainer2 {
+    width: 100%;
+    display: block;
 }
 
 .section3 {
-	width: 30.68%;
+    width: 32.68%;
     display: inline-block;
     font-size: 1.4rem;
 }
 
-#contact {
-	padding-left: 4.54%;
-}
 a:link {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .button {
-	text-decoration: none;
+    text-decoration: none;
 }
 
-#topTextBox {
-	border: 2px solid black;
-	color: black;
-	width: 51.85%; 
-	Height: 28px;
-	text-align: center;
+.topTextBox {
+    border: 2px solid black;
+    color: black;
+    width: 51.85%;
+    Height: 28px;
+    text-align: center;
     text-decoration: none;
     font-size: 1.4rem;
     padding-top: 4px;
 }
 
-#topTextBox:hover {
-	animation: moveIt 3s infinite;
+.topTextBox:hover {
+    animation: moveIt 3s infinite;
 }
 
 @keyframes moveIt {
-	0% {margin-top: 0px;}
-	25% {margin-top: 10px;}
-	50% {margin-top: -5px;}
-	100% {margin-top: 0px;}
+    0% {background-color: white;font-size: 1.4rem;}
+    25% {background-color: purple;font-size: 2.0rem;}
+    50% {background-color: orange;font-size: 2.0rem;}
+    100% {background-color: white;font-size: 1.4rem;}
 }
 
 hr {
-	margin-left: 4.54%;
-	margin-right: 4.54%;
+    margin-left: 4.54%;
+    margin-right: 4.54%;
 }
 
 .h3 {
-	text-align: center;
-	font-size: 1.4rem;
+    text-align: center;
+    font-size: 1.4rem;
 }
 
+.contact {
+    font-size: 1.4rem;
+    padding-left: 1%;
+}
 address {
-	padding-left: 4.54%;
+    padding-left: 1%;
+    font-size: 1.4rem;
 }
 
 footer {
-	padding-left: 4.54%;
-	font-family: 'Abel', sans-serif;
+    padding-left: 1%;
+    font-family: 'Abel', sans-serif;
 }
 
-
-
-@media (max-width: 800px){
-    #divPage {
+@media (max-width: 800px) {
+    .divPage {
         width: 800px;
-        padding-left: 20px;
+        padding-left: 1.25%;
     }
-    
-   #navFlex {
+    .navFlex {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;  
+        align-items: center;
     }
     .navItemFlex {
         font-size: 1.6rem;
         display: inline-block;
     }
-
     .header1 {
         display: flex;
         flex-direction: column-reverse;
@@ -268,21 +266,21 @@ footer {
         margin-right: 0px;
     }
 
-    #sectionContainer {
+    .sectionContainer {
         width: 100%;
         display: flex;
         padding-left: 1.25%;
         padding-right: 1.25%;
     }
 
-    #sectionContainer2 {
+    .sectionContainer2 {
         width: 100%;
         display: flex;
         padding-left: 1.25%;
         padding-right: 1.25%;
     }
 
-    #topText {
+    .topText {
         top: 100px;
         text-align: center;
         height: 240px;
@@ -291,14 +289,15 @@ footer {
     .logo2 {
         display: none;
     }
-    #textFlexContainer {
+
+    .textFlexContainer {
         width: 50%;
-        padding-top: 20px;        
-    } 
-   
+        padding-top: 20px;
+    }
+
     .middle-img {
         display: flex;
-	    width: 100%;
+        width: 100%;
         padding-right: 0px;
         margin-left: 0;
     }
@@ -307,8 +306,9 @@ footer {
         padding-top: 20px;
     }
 
-    #contact {
+    .contact {
         padding-left: 1.25%;
+        font-size: 1.6rem;
     }
 
     address {
@@ -327,21 +327,26 @@ footer {
 
     .section2 {
         display: flex;
+        flex-direction: column;
         padding-top: 10px;
     }
 
     .section3 {
         display: flex;
+        flex-direction: column;
         padding-top: 10px;
+    }
+    .topTextBox:hover {
+        animation: moveIt;
     }
 }
 
 @media screen and (max-width: 500px) {
-    #divPage {
+    .divPage {
         padding-left: 0px;
         width: 500px;
     }
-    
+
     hr {
         margin-left: 0px;
         margin-right: 0px;
@@ -358,19 +363,20 @@ footer {
         padding-top: 2px;
         border-top: 2px solid gray;
     }
-    #navFlex {
+
+    .navFlex {
         display: flex;
         flex-direction: column;
-        flex-flow: wrap; 
+        flex-flow: wrap;
         width: 100%;
         justify-content: flex-start;
     }
-    
+
     .header1 nav a:last-child {
         border-bottom: 2px solid gray;
     }
 
-    #topText {
+    .topText {
         top: 100px;
         text-align: center;
         height: 160px;
@@ -380,12 +386,12 @@ footer {
         padding-top: 20px;
     }
 
-    #textFlexContainer {
+    .textFlexContainer {
         width: 50%;
-        padding-top: 10px;     
-    } 
+        padding-top: 10px;
+    }
 
-    #sectionContainer {
+    .sectionContainer {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -410,11 +416,11 @@ footer {
         margin-left: 0;
     }
 
-    #topText {
-        font-size: 4.0rem;   
+    .topText {
+        font-size: 4.0rem;
     }
 
-    #sectionContainer2 {
+    .sectionContainer2 {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -428,19 +434,22 @@ footer {
         padding-top: 10px;
     }
 
-    #contact {
-        padding-left: 0px;
-        font-size: 1.4rem;
+    .contact {
+        padding-left: 2%;
+        font-size: 1.6rem;
     }
 
     address {
-        padding-left: 0px;
+        padding-left: 2%;
         font-size: 1.4rem;
     }
-    
+
     footer {
-        padding-left: 0px;
+        padding-left: 2%;
         font-size: 1.4rem;
         font-family: 'Abel', sans-serif;
+    }
+    .topTextBox:hover {
+        animation: moveIt;
     }
 }
