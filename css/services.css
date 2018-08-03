@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html,
 body,
@@ -145,6 +146,7 @@ html,
 body {
     height: 100%;
     font-family: "Titillium Web", sans-serif;
+    font-size:62.5%
 }
 
 h1,
@@ -158,109 +160,106 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-    max-width: 880px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container-main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
-p {
-    line-height: 1.2;
-}
-
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
+  display: flex;
+  align-items: center;
+  margin-top: 2.9%;
 }
-
 header nav {
-    display: flex;
-    justify-content: space-between;
-    width: 680px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 header nav a {
-    display: inline-block;
-    font-size: 16px;
-    color: gray;
-    text-decoration: none;
+  display: inline-block;
+  font-size: 1.9rem;
+  color:black;
+  text-decoration: none;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 header nav a:last-child {
-    margin-right: 65px;
+  margin-right: 6.5%;
 }
 
 header .logo {
-    display: inline-block;
+  display: inline-block;
 }
 
+.header__service--imgs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .header-img {
-    display: flex;
-    align-items: center;
     width: 100%;
     padding: 30px 0 30px;
-    border-bottom: 1px solid gray;
+
 }
 
 .section-header {
     padding: 12px;
+    font-size: 1.6rem;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 /*Boxes Color and Text*/
 
 .box {
     color: black;
-    font-size: 15px;
+    font-size:1.6rem;
     padding: 10px;
     width: 100%;
 }
 
 .box1 {
-    background: #e4e7e9;
+    background:whitesmoke;
 }
 
 .box2 {
-    background: #e4e7e9;
+    background:whitesmoke;
 }
 
 .box3 {
-    background: #e4e7e9;
+    background:whitesmoke;
 }
 
 .box4 {
-    background: #e4e7e9;
+    background:whitesmoke;
 }
 
 .box5 {
-    background: #e4e7e9;
+    background:whitesmoke;
 }
 
 .box6 {
-    background: #e4e7e9;
+    background:whitesmoke;
 }
 
 .box7 {
-    background: #e4e7e9;
+    background:whitesmoke;
 }
 
 /*learn more button color*/
@@ -291,9 +290,10 @@ h1 {
 
 /* Box Container and Learn More Flexedboxed */
 
-.container {
+.container__Boxes {
     display: flex;
     flex-wrap: wrap;
+   border-bottom: 1px solid gray;
 }
 
 .more {
@@ -360,6 +360,9 @@ ul li {
 .fact {
     width: 46.333%;
     margin: 6px;
+    font-size: 1.6rem;
+    padding-top: 5%;
+    
 }
 
 .contact a {
@@ -380,11 +383,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-footer p {
-    font-size: 14px;
+footer p, h3 {
+    font-size: 1.4rem;
     line-height: 1.2px;
+    font-family: 'Montserrat';
+    )
 }
 
 footer h3::before {
@@ -392,117 +398,103 @@ footer h3::before {
 }
 
 @media screen and (max-width: 800px) {
-    .containter {
-        max-width: 768px;
-        width: 100%;
-        margin: 0 auto;
+    body {
+    background: linear-gradient(90deg, #0fb8ad 25%, #1fc8db 51%, #2cb5e8 75%);
     }
-    .container-main {
-        display: flex;
-        width: 100%;
-    }
-    header {
-      
-        flex-direction: column-reverse;
-        width: 100%;
-        justify-content: center;
-        margin: 0;
-    }
-    header nav {
-        width: 100%
-        align-items: flex-end;
-        height: 30px;
-    }
-    header nav a {
-        font-size: 16px;
-        color: gray;
-        text-decoration: none;
-    }
-    header nav a:last-child {
-        margin-right: 40px;
-    }
-    header .logo {
-        display: flex;
-        align-content: flex-start;
-        padding-bottom: 20px;
-    }
-    .header-img {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 30px 0 30px;
-        border-bottom: 1px solid gray;
-    }
-    .box {
-        width: 100%;
-        margin: 23.33px;
-        box-shadow: 0px 0px 1px 0px;
-    }
-    .bottom {
-        border-top: 2px solid gray;
-        width: 100%;
-    }
-    .fact3 img {
-        width: 100%;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+ .containter {
+    width: 100%;
+    padding: 20px;
+  }
+  .container-main {
+    display: flex;
+    width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  header nav a {
+    font-size: 18px;
+  }
+  header nav a:last-child {
+    margin-right: 0;
+  }
+  header .logo {
+    padding-bottom: 40px;
+  }
+  .box {
+      width:96.6%;
+  }
+  .container__Boxes {
+    display: flex;
+    flex-direction: column;
+   border-bottom: 1px solid gray;
+}
+.bottom {
+    height: 50%;
+    background-color: hsla(120, 60%, 70%, 0.3);}
+.services-info-img {
+    width: 100%;
 }
 
 @media screen and (max-width: 500px) {
-    .containter {
-        width: 100%;
-        margin: 0 auto;
+    body {
+    background: linear-gradient(90deg, #0fadb8 25%, #1fa0db 51%, #2c8de8 75%);
     }
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav {
-        width: 680px;
-        align-items: flex-end;
-        height: 30px;
-    }
-    header nav a {
-        font-size: 16px;
-        color: gray;
-        text-decoration: none;
-    }
-    header nav a:last-child {
-        margin-right: 40px;
-    }
-    header .logo {
-        display: flex;
-        align-content: flex-start;
-        padding-bottom: 20px;
-    }
-    .header-img {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 30px 0 30px;
-        border-bottom: 1px solid gray;
-    }
+  .container-main {
+    display: flex;
+    width: 100%;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a {
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.2rem;
+    color: black;
+    border-top: 1px solid black;
+  }
+  header .logo {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  header nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+  .header-img {
+    display: none;
+  }
+  .top-text {
+    font-size: 5rem;
+  }
     .box {
-        width: 100%;
-        margin: 23.33px;
-        box-shadow: 0px 0px 1px 0px;
-    }
-    .bottom {
-        border-top: 2px solid gray;
-        width: 100%;
-    }
-    .fact3 img {
-        width: 100%;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+      width:89.9%;
+  }
+  .first-main {
+    flex-direction: column;
+  }
+
+  .second-main {
+    flex-direction: column;
+  }
+  .contact {
+    display: block; /* This will put the pseudo element on its own line. */
+
+    width: 96.66%; /* Change this to whatever width you want. */
+  }
+  footer h3 {
+    font-family: "Montserrat";
+  }
+  footer address {
+    font-size: 1.6rem;
+  }
 }
