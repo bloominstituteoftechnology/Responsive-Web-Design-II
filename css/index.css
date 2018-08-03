@@ -15,6 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 2.27%;
+    width: 100%;
 }
 
 header nav {
@@ -65,8 +66,11 @@ header nav a:last-child {
 .section-one div {
     width: 48%;
 }
+.image .middle-img {
+    width: 100%;
+}
 .section-two div {
-    width: 32%;
+    width: 31%;
 }
 footer {
     display: flex;
@@ -78,4 +82,29 @@ footer a {
 footer .copyright {
 display: flex;
 justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+        padding: 0 2.5%;
+    }
+    header {
+        flex-direction: column-reverse;
+    }
+    header img {
+        margin-bottom: 20px; 
+    }
+    .cta {
+        justify-content: center;
+    }
+    .cta img {
+        display: none;
+    }
+    .cta-text {
+        width: 100px;
+    }
+    .section-one div {
+        /* width: 49%; */
+    }
 }
