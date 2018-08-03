@@ -19,6 +19,7 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -52,29 +53,31 @@ table {
 }
 
 html, body {
-    /* width: 800px; */  /* this messed up my responsive */
-    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Titillium Web', sans-serif;
     max-width: 880px;
     margin: 0 auto;
-    font-family: 'Titillium Web', sans-serif;
     font-size: 62.5%;
 }
-/********************************************************** */
 
-.container {
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
     border: 1px solid darkolivegreen;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-}
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: .1rem;
-    margin-bottom: 1.5rem;
 }
-
 
 /* header */
 .top-header {
@@ -116,115 +119,79 @@ header nav a:last-child {
     margin-right: 0;
 }
 
-
-/* cta */
-
-.cta  {
-    width: 100%;
-    border: 4px solid blueviolet;
-    display: flex;
-    font-size: 6.5rem;
-    justify-content: center; /* DOES NOT CENTER */
-
+#main {
+    margin-bottom: 30px;
 }
 
-.cta .cta-text {
-    border: 4px solid yellow;
+.info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-content: space-between;
+    border: 10px solid green;
+    flex-basis: auto;
+    justify-content: space-between;
 }
 
-.cta .cta-text h1 {
-    border: 1px solid green;
-    box-sizing: border-box;
-    width: 45%;
-    text-align: center;
-    font-size: 5.5rem;
+h2{
+    font-size: 3rem;
 }
-
-
-
-.cta .cta-text button {
-    width: 50%;
-    background: white;
-
-    font-size: 1.7rem;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-.cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-.cta img {
-    border: 1px solid blue;
-
-}
-
-.main-content {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    background-color: lightblue;
-    padding: 2% 0;
-}
-
-.main-content .top-content {
-    border: 6px solid firebrick;
+.content {
+    border: 1px solid pink;
     display: flex;
-}
-
-.main-content .top-content .text-content {
-    border: 1px solid darkblue;
-    width: 80%;
-    font-size: 2rem;
-}
-
-.main-content .top-content .text-content:first-child {
-     margin-right: 1%;
-}
-
-.main-content .middle-img {
+    flex-direction: column;
     width: 100%;
-    padding: 2% 0;
+
+    justify-content: space-evenly;
 }
 
-.main-content .bottom-content {
-    border: 6px solid firebrick;
-    display: flex;
-}
-
-.main-content .bottom-content .text-content {
-    border: 1px solid darkblue;
-    width: 30%;
-    font-size: 2rem;
-}
-
-.main-content .bottom-content .text-content:nth-child(1), .main-content .bottom-content .text-content:nth-child(2) {
-    margin-right: 5%;
-}
-
-/*
-.main-content .top-content .text-content:first-child {
-    margin-right: 5%;
-}
-*/
-.contact {
-    padding: 5% 0 2% 0;
-}
-
-.contact p {
-    margin: 2% 0;
-}
-
-footer {
+.learnMore{
+    width: 10rem;
+    border: 1px solid black;
     text-align: center;
-    font-size: 1.4rem;
+    padding: .5rem 0;
+    margin: 4rem 0;
+    flex-basis: auto;
 }
 
+#footer_Services{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.footer_text {
+    width: 20rem;
+}
+
+#services-info-img {
+    width: 100%;
+}
+
+.footer_content {
+    height: 30rem;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+.footer_content {
+    width: 30%;
+    height: 30rem;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+h4{
+    padding-top: 10rem;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 4rem;
+}
 
 @media  (max-width: 800px) {
     .container {
@@ -232,7 +199,6 @@ footer {
         width: 100%;
         padding: 0 2rem;
     }
-
     .top-header {
         border: 1px solid green;
         display: flex;
@@ -247,18 +213,19 @@ footer {
         order:2;
     }
 
-    .cta {
+    .info {
         display: flex;
-    }
-
-    .cta-text {
-        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        border: 10px solid green;
+        justify-content: space-between;
     }
 
     .tablet-size::after {
         font-size: 4rem;
     }
 }
+
 
 
 @media (max-width: 500px) {
@@ -273,12 +240,6 @@ footer {
         justify-content: space-evenly;
         width: 100%;
     }
-    .cta{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-evenly;
-        width: 100%;
-    }
     nav {
         display: flex;
         flex-direction: column;
@@ -288,31 +249,14 @@ footer {
     .headerIMG {
         display: none;
     }
-    .top-content, .bottom-content {
+
+    .info {
+        width: 50%;
         display: flex;
-        flex-direction: column;
     }
 
-    .main-content .top-content, .bottom-content {
-        border: 6px solid firebrick;
-        display: flex;
-        width: 100%;
-    }
-
-    .middle-img{
-        width: 100%;
-    }
-
-    .main-content .bottom-content .text-content {
-        border: 1px solid darkblue;
-        width: 100%;
-        padding: 0;
-    }
-
-    .main-content .top-content .text-content {
-        border: 1px solid darkblue;
-        width: 100%;
-        padding: 0;
+    .services-header-img , .services-info-img {
+        display: none;
     }
 
 }
