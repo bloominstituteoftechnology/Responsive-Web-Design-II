@@ -68,8 +68,11 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+html{
+    font-size: 62.5%
+}
 .container{
-	width: 880px;
+	max-width: 880px;
 	margin: 20px auto;
 }
 header{
@@ -87,23 +90,26 @@ nav{
 nav a{
     text-decoration: none;
     color: lightgray;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .taglineSec{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    margin: 40px 0px;
+    margin: 65px 0px;
 }
 
 .tagline{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 100px;
 }
 
 .tagline p{
-    font-size: 60px;
+    font-size: 75px;
     font-family: 'Bangers', cursive;
     padding-bottom: 5px;
 }
@@ -120,6 +126,13 @@ nav a{
     justify-content: space-evenly;
     border-top: 2px solid black;
     padding: 20px 0px;
+}
+.aboveimg h2, .bellowimg h2{
+    font-size: 20px;
+}
+
+.aboveimg p, .bellowimg p{
+    font-size: 18px;
 }
 
 .aboveimg div{
@@ -140,10 +153,12 @@ nav a{
 
 address{
     margin: 20px 0px;
+    font-size: 15px;
 }
 
 footer{
     text-align: center;
+    font-size: 15px;
 }
 /* Services specific css below */
 .services-header-img{
