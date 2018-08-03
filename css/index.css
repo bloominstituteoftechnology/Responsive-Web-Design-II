@@ -59,17 +59,30 @@ font-size: 1.6rem;
 
 html{
 font-size: 62.5%;
+
 }
+*{
+box-sizing:border-box;
+}
+
+
+
 .container{
+
 width:880px;
 margin:0 auto;
+overflow-x:hidden;
+
+
 }
 .header{
 display:flex;
 justify-content:space-around;
 width:100%;
 margin-top:20px;
+flex-direction:row-reverse;
 }
+
 .header nav{
 display:flex;
 justify-content: space-around;
@@ -77,6 +90,8 @@ width:100%;
 font-size: 1.6rem;
 align-items:center;
 }
+
+
 
 .header nav a {
 text-decoration:none;
@@ -130,6 +145,10 @@ display:flex;
 padding-top:20px;
 border-bottom: 2px solid black;
 
+}
+
+.middlesection img {
+width:100%;
 }
 .topelement{
 width:45%;
