@@ -86,15 +86,15 @@ div.container {
 	/*border: 2px solid red;*/
 }
 
-hr {
-	width:96%;
-	margin: 25px 2%;
-	
-}
 
 /*************************
   HEADER STYLES part -1
 *************************/
+hr {
+    margin: 25px  0%;
+}
+
+
 header {
 	position: fixed;
 	padding-top: 10px;
@@ -200,6 +200,7 @@ a.button {
     padding: 5px 4.5%;
     text-decoration: none;
     font-size: 1.6rem;
+    margin-top: 28px;
 }
 a.button:focus,
 a.button:hover {
