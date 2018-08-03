@@ -217,7 +217,7 @@ footer {
 
 /*MEDIA QUERY - TABLET*/
 @media (max-width: 800px){
-    .container {
+    #container {
         max-width: 800px;
         width: 100%;
 
@@ -263,6 +263,7 @@ footer {
 
     .innovation-text h1 {
         padding: 80px 0 0 0;
+        font-size: 5.5rem;
     }
 
     .innovation-text button {
@@ -283,41 +284,40 @@ footer {
         padding-bottom: 40px;
     }
 
-
+}
 
 
 /*MEDIA QUERY - MOBILE*/
 @media (max-width: 500px){
     #container {
+        max-width: 500px;
         width: 100%;
         padding: 0;
     }
 
     header {
         width: 100%;
+        margin-top: 15px;
     }
 
     header nav {
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
-        padding-top: 20px;
         width: 100%;
     }
 
-    header nav div {
-        margin-bottom: 0;
-        border-bottom: 1px solid black;
-        width: 100%;
-        padding-bottom: 15px;
-    }
 
     header nav a {
         border-bottom: 1px solid black;
         width: 100%;
         text-align: center;
         padding: 20px 0;
-        font-size: 20px;
+        font-size: 1.8rem;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid black;
     }
 
     header nav a:hover {
@@ -332,18 +332,19 @@ footer {
 
     .innovation, .article-top, .article-bottom,
         .middle-img, address, footer {
-            margin-right: 20px;
-            margin-left: 20px;
+            margin-right: 4%;
+            margin-left: 4%;
         }
 
     .innovation-text h1 {
-        font-size: 55px;
+        font-size: 5.0rem;
         padding: 80px 0 0;
     }
 
     .innovation-text button {
         padding-bottom: 0   ;
         margin-left: 0;
+        font-size: 1.2rem;
     }
 
     .article-top, .article-bottom {
@@ -363,6 +364,12 @@ footer {
     .article-top p {
         margin-bottom: 30px;
     }
+
+    .about {
+        width: 91.67%;
+    }
+
+
 
     .article-bottom p {
         margin-bottom: 30px;
