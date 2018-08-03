@@ -98,10 +98,10 @@ header nav a {
 
 .cta {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-bottom: 2px solid black;
 	padding-top: 45px;
-	padding-bottom: 60px;
+	padding-bottom: 80px;
 }
 
 .cta .title {
@@ -109,11 +109,19 @@ header nav a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-left: 60px;
 }
 
 .cta .title h1 {
 	font-size: 55px;
 	text-align: center;
+	padding: 25px;
+}
+
+.cta .title button {
+	font-size: 16px;
+	border: 1px solid black;
+	padding: 6px 40px;
 }
 
 .main {
@@ -169,4 +177,8 @@ footer {
 	justify-content: center;
 	align-items: center;
 	margin: 25px auto;
+}
+
+@@media (max-width: 800px) {
+
 }
