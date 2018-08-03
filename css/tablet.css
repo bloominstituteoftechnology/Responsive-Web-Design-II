@@ -69,8 +69,10 @@
    	 width:100%;
    	 padding:0;
    }
-   section.content-2 {
+   section.content-2, section.content-3 {
    	 margin-top:12px;
+     width:96%;
+     margin: 0 2%;
    }
 
    footer {

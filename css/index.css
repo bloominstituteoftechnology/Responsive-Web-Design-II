@@ -87,7 +87,9 @@ div.container {
 }
 
 hr {
-	margin: 25px 0;
+	width:96%;
+	margin: 25px 2%;
+	
 }
 
 /*************************
@@ -234,6 +236,7 @@ section.content-2 {
 
 	display:flex;
 	justify-content: center;
+	margin:0 auto ;
 }
 /*********************
   Middle part
@@ -241,10 +244,13 @@ section.content-2 {
  
 .middle-img {
 	margin: 15px 0;
+	width:100%;
+
  }
 
  .services, .product, .vision {
  	 width: 33%;
+ 	 margin-right:0.5%;
 
  }
 
@@ -272,7 +278,7 @@ address {
 }
 
 /**************************
-  Setting font-sizes
+  Setting font-sizes && text margins
   *************************/
  html p {
 	font-size:1.6rem;
@@ -288,3 +294,11 @@ html h2 {
 address {
 	font-size: 1.6rem;
 }
+
+/*aside.text {
+	margin-right:0.5%;
+}
+
+aside.text:last-child {
+	margin-right:0px;
+}*/
