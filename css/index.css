@@ -140,7 +140,7 @@ html {
 .section2 {
 	width: 43.18%;
     display: inline-block;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
 }
 
 #textFlexContainer {
@@ -177,7 +177,8 @@ html {
 
 .section3 {
 	width: 30.68%;
-	display: inline-block;
+    display: inline-block;
+    font-size: 1.4rem;
 }
 
 #contact {
@@ -366,14 +367,17 @@ footer {
     } 
 
     #sectionContainer {
-        width: 40%;
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        flex-flow: column;
         padding-left: 10px;
         padding-right: 10px;
     }
 
     .section2 {
-        padding-top: 10px;
+        width: 100%;
+        display: inline-block;
     }
 
     .header {
@@ -399,7 +403,7 @@ footer {
         padding-left: 10px;
     }
     .section3 {
-        width: 400px;
+        width: 100%;
         display: inline-block;
         padding-top: 10px;
     }
