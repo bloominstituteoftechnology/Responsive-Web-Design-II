@@ -252,4 +252,9 @@ div.copyright {
    width: 90%;
    align-self: center;
   }
+  footer {
+    width: 90%;
+    margin: 3%;
+  }
+
 }
