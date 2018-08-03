@@ -49,6 +49,7 @@ table {
 html, body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -78,12 +79,12 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  width: 690px;
+  width: 100%;
 }
 
 header nav a {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -115,7 +116,7 @@ header .logo {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 77px;
+  font-size: 7.7rem;
   text-align: center;
 }
 
@@ -123,7 +124,7 @@ header .logo {
   background: white;
   vertical-align: top;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -142,7 +143,13 @@ header .logo {
   display: flex;
   flex-direction: column;
 }
+h4{
+  font-size: 1.8rem;
+}
 
+.text-content p {
+  font-size: 1.8rem;
+}
 .top-content {
   display: flex;
   justify-content: space-between;
@@ -171,6 +178,7 @@ header .logo {
 
 .contact p {
   margin: 20px 0;
+  font-size: 1.6rem;
 }
 
 footer {
