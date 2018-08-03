@@ -51,7 +51,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -67,7 +69,7 @@ body {
 	justify-content: center;
 }
 .container {
-	width: 880px;
+	max-width: 880px;
 }
 
 /* header */
@@ -80,12 +82,12 @@ header {
 header nav {
 	display: flex;
 	justify-content: space-between;
-    width: 690px;
+    width: 78.41;
 }
 
 header nav a {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -95,7 +97,7 @@ header nav a:hover {
 }
 
 header nav a:last-child {
-  margin-right: 65px;
+  margin-right: 7.39%;
 }
 
 header .logo {
@@ -104,7 +106,7 @@ header .logo {
 
 /* cta */
 .cta {
-	width: 880px;
+	width: 100%;
 	height: 524px;
 	display: flex;
 	justify-content: space-evenly;
@@ -115,15 +117,15 @@ header .logo {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-  font-size: 77px;
+  font-size: 7.7rem;
   text-align: center;
 }
 
 .cta-text button {
   background: white;
   vertical-align: top;
-  padding: 8px 44px;
-  font-size: 17px;
+  padding: 8px 5%;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -137,7 +139,7 @@ header .logo {
 .main-content {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	padding: 39px 0px;
+	padding: 39px 0%;
 	display: flex;
 	flex-direction: column;
 }
@@ -148,11 +150,11 @@ header .logo {
 }
 
 .top-content .text-content {
-  width: 410px;
+  width: 46.59%;
 }
 
 .middle-img {
-  margin: 45px 0px;
+  margin: 45px 0%;
 }
 
 .bottom-content {
@@ -161,24 +163,23 @@ header .logo {
 }
 
 .bottom-content .text-content {
-	width: 275px;
+	width: 31.25%;
 }
 
 
 .contact {
-  padding: 39px 10px 0;
+  padding: 39px 1.14%;
 }
 
 .contact p {
-  margin: 20px 0;
+  margin: 20px 0%;
 }
 
 footer {
-  margin: 32px 0;
+  margin: 32px 0%;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
-/*Adaptive Design*/
 /*At 800px and below do the following*/
 @media (max-width: 800px){
     .cta img {
@@ -191,16 +192,16 @@ footer {
         margin-bottom: 40px;
     }
     .main-content {
-        margin: 0px 65px 0px 65px;
+        margin: 0px 8.125% 0px 8.125%;
     }
     .contact {
-        margin: 0px 65px 0px 65px;
+        margin: 0px 8.125% 0px 8.125%;
     }
     .top-content .text-content {
-        width: 355px;
+        width: 44.375%;
     }
     .bottom-content .text-content {
-        width: 210px;  
+        width: 26.25%;  
     }  
 }
 @media (max-width: 500px) {
@@ -216,7 +217,7 @@ footer {
         border-bottom: 1px solid black;
     }
     header nav a:last-child {
-        margin-right: 0px;
+        margin-right: 0%;
       }
       .logo {
         margin-bottom: 20px;
@@ -233,19 +234,19 @@ footer {
         flex-direction: column;
     }
     .top-content .text-content {
-        width: 450px;
-        margin: 35px 0px 35px 150px;
+        width: 90%;
+        margin: 35px 0px 35px 30%;
     }
     .bottom-content .text-content {
-        width: 450px;
-        margin: 35px 0px 35px 150px;
+        width: 90%;
+        margin: 35px 0px 35px 30%;
     }
     .contact {
-        width: 450px;
-        margin: 10px 0px 35px 205px; 
+        width: 90%;
+        margin: 10px 0px 35px 41%; 
     }
     .middle-img {
-        width: 450px;
-        margin-left: 150px; 
+        width: 90%;
+        margin-left: 30%; 
     }
 }
