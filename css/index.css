@@ -58,20 +58,26 @@ html {
 h3 {
     font-family: 'Bangers';
     font-size: 1.2rem;
+    margin: 3% 0;
+}
+
+.logoDiv {
+    display: flex;
+    /*justify-content: center;*/
+    /*max-width: 100%;*/
+    width: 100%;
+    height: auto;
 }
 
 .logo {
     max-width: 100%;
     height: auto;
 }
-.logoDiv {
-    display: flex;
-    justify-content: center;
-}
+
 
 .container {
     max-width: 880px;
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0% auto;
@@ -87,8 +93,9 @@ h3 {
 .navigation {
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    margin: 1.25% 10.25% 0 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 1.25% 1.25% 0 0;
 }
 
 a.topNav {
@@ -139,8 +146,15 @@ a.topNav {
 
 .content {
     margin: 5% 0;
+    padding: 0 2%;
     display: flex;
     flex-direction: column;
+}
+.content:nth-child(1) {
+    padding: 0 2% 0 0;
+}
+.content:nth-child(2) {
+    padding: 0 0 0 2%;
 }
 
 .compAddress {
@@ -160,6 +174,8 @@ footer {
     }
     .logoDiv {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .logo {
         max-width: 95%;
@@ -180,7 +196,7 @@ footer {
     }
     .topNav {
         border-top: 1px solid grey;
-        padding: 2% 0;
+        padding: 5%;
     }
     .topNav:nth-last-child(1) {
         border-bottom: 1px solid grey;
