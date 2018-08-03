@@ -1,1 +1,142 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*MY CODE!!!!!*/
+html{
+    font-size:62.5%;
+}
+container{
+    width:100%;
+    max-width:880px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+font-size:1.6rem;
+width:90%;
+}
+
+.navitem{
+padding-top:2%;
+color: gray;
+}
+
+.logo{
+   float:right;
+}
+
+/*tablet break point*/
+
+@media(max-width:800px){
+
+nav{
+    justify-content:row-reverse;
+    flex-wrap:wrap-reverse;
+}
+
+.logo{
+    padding-left: 37%;
+    padding-right: 37%;
+}
+}
+/*mobile break point*/
+@media(max-width:500px){
+
+   nav{
+       flex-direction:column-reverse;
+   }
+
+   .navitem{
+       width:100%;
+       text-align:center;
+       padding-top:3%;
+       padding-bottom:3%;
+       border-bottom:.1rem solid gray;
+
+   }
+
+   .navitem:nth-child(1){
+order:7;
+   }
+   .navitem:nth-child(2){
+order:6;
+   }
+   .navitem:nth-child(3){
+order:5;
+   }
+   .navitem:nth-child(4){
+order:4;
+   }
+   .navitem:nth-child(5){
+order:3;
+   }
+   .navitem:nth-child(6){
+order:2;
+   }
+.logo{
+    order:8;
+    padding:none;
+    width:35%;
+    margin:auto;
+    position: relative;
+    right: 2%;
+}
+    
+
+
+
+
+}
+
+
