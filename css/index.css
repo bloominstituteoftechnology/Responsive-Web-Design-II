@@ -211,3 +211,37 @@ div.copyright {
     padding: 0px 1%;
   }
 }
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  nav {
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .logo {
+    order: -1;
+    max-width: 183px;
+    max-height: 36px;
+    align-self: center;
+  }
+  
+  a {
+    font-size: 2rem;
+    margin-top: 15px;
+    padding: 20px 0px 5px;
+   border-top: 1px solid gray;
+    width: 100%;
+  }
+  div.top, div.bottom {
+    flex-direction: column;
+  }
+  section {
+    padding: 0px 4% 40px;
+  }
+}
