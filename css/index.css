@@ -70,6 +70,13 @@ html {
 	font-size: 62.5%;
 }
 
+*{
+    -webkit-transition:all 1s ease;
+         -moz-transition:all 1s ease;
+               -o-transition:all 1s ease;
+                     transition:all 1s ease;
+}
+
 .container {
 	width: 100%;
 	max-width: 880px;
@@ -84,7 +91,8 @@ html {
 header {
 	width: 100%;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	margin-top: 20px;
 	
 }
 
@@ -265,7 +273,7 @@ header nav a:hover {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-between;
-        margin-top: 31px;
+        /* margin-top: 31px; */
         }
     
     header nav {
