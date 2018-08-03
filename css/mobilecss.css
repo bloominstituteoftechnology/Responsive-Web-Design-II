@@ -58,9 +58,10 @@
         }
         
         .cta .textbutton p{
-        font-size: 6rem;
+        font-size: 5rem;
         text-align: center;
         font-family:bangers;
+        padding-right:5px;
         }
         
         .cta .textbutton button{
