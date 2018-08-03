@@ -1,1 +1,259 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+/* container {
+    border: 1px solid blue;
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto;
+} */
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.2%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6.8%;
+    font-size: 1.6rem
+
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+    transition: color .5s;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-around;
+    margin: 6.8% 0;
+    margin-left: 9%;
+}
+
+.cta_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6.6rem;
+}
+
+.cta_title button {
+    /* border: 1px solid black; */
+    width: 55%;
+    margin: 0 auto;
+    padding: 1.9%;
+    font-size: 1.6rem
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+h2 {
+    font-size: 1.8rem
+}
+
+.top_section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 3.4% 0;
+    font-size: 1.6rem
+}
+
+.top_section div {
+    width: 49%
+}
+
+.middle-img {
+    width: 100%;
+    max-width: 880px;
+    border-radius: 15px;
+}
+
+.bottom_section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 3.4% 0;
+    margin-bottom: 3.4%;
+    font-size: 1.6rem
+}
+
+.bottom_section div {
+    width: 32%;
+}
+
+contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 6.8% 0 2.2% 0;
+    font-size: 1.6rem
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    .navbar {
+        margin-right: 0;
+        margin-top: 5%;
+    }
+
+    .cta {
+        margin-left: 0;
+    }
+
+    .topimg {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        border-bottom: 1px solid lightgrey;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        border-top: 1px solid lightgrey;
+        width: 100%;
+        padding: 4%;
+        text-align: center;
+    }
+
+    .top_section {
+        /* display: flex; */
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 6%;
+    }
+
+    .top_section div {
+        width: 100%;
+        padding-top: 6%;
+    }
+
+    .bottom_section {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 6%;
+    }
+
+    .bottom_section div {
+        width: 100%;
+        padding-bottom: 6%;
+    }
+
+}
