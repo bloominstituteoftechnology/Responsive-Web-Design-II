@@ -80,7 +80,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 2.2%;
 }
 
 nav {
@@ -93,20 +93,26 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-right: 60px;
+    margin-right: 6.8%;
     font-size: 1.6rem
 
 }
 
 a {
     color: grey;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+    transition: color .5s;
 }
 
 .cta {
     display: flex;
     justify-content: space-around;
-    margin: 60px 0;
-    margin-left: 80px;
+    margin: 6.8% 0;
+    margin-left: 9%;
 }
 
 .cta_title {
@@ -120,12 +126,16 @@ h1 {
     font-size: 6.6rem;
 }
 
-.cta_title p {
-    border: 1px solid black;
-    width: 80%;
+.cta_title button {
+    /* border: 1px solid black; */
+    width: 55%;
     margin: 0 auto;
-    padding: 8px 25px;
+    padding: 1.9%;
     font-size: 1.6rem
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 h2 {
@@ -134,9 +144,14 @@ h2 {
 
 .top_section {
     display: flex;
+    justify-content: space-between;
     border-top: 2px solid black;
-    padding: 30px 0;
+    padding: 3.4% 0;
     font-size: 1.6rem
+}
+
+.top_section div {
+    width: 49%
 }
 
 .middle-img {
@@ -149,13 +164,13 @@ h2 {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid black;
-    padding: 30px 0;
-    margin-bottom: 30px;
+    padding: 3.4% 0;
+    margin-bottom: 3.4%;
     font-size: 1.6rem
 }
 
 .bottom_section div {
-    width: 33%;
+    width: 32%;
 }
 
 contact {
@@ -168,7 +183,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding: 60px 0 20px 0;
+    padding: 6.8% 0 2.2% 0;
     font-size: 1.6rem
 }
 
@@ -226,6 +241,7 @@ footer {
     }
 
     .top_section div {
+        width: 100%;
         padding-top: 30px;
     }
 
