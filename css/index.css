@@ -65,19 +65,23 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+    font-size: 62.5%;
+}
 body {
-	background-color: 	#bebebe;
+    background-color: 	#bebebe;
+    font-size: 1.6rem;
 }
 
 #container {
-	padding: 8px 40px;
     max-width: 960px;
     width: 100%;
 	margin: 0 auto;
 	background-color: #ffffff;
 	display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
 }
 
 header {
@@ -85,8 +89,7 @@ header {
 	justify-content: center;
 	/* background-color: #3fd9a5; */
 	background-color: #fff;
-    width: 100%;
-    max-width: 880px;
+    width: 91.67%;  /*880px / 960px * 100*/
 	height: 55px;
     padding-top: 10px;
 
@@ -96,19 +99,17 @@ header nav {
     display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 36px 0;
-	width: 100%;
+    width: 100%;
 }
 
 
 
 header nav a {
-	padding-right: 10px;
+	padding-right: 1.1%;  /*10 / 880*/
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-weight: lighter;
 	color: #000;
-	display: inline-block;
 	transition: transform 0.2s linear;
 }
 
@@ -122,11 +123,12 @@ header nav a:last-child {
 }
 
 header .logo {
-    padding-left: 23px;
-    padding-top: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .innovation {
+    width: 91.67%;
 	display: flex;
 	justify-content: space-between;
     margin: 50px 0 30px;
