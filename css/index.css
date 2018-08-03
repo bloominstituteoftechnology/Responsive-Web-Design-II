@@ -222,17 +222,18 @@ a:hover {
 	margin-bottom:11.4%;
 }
 
-/* below css is service page specific
+/* below css is service page specific */
 
 .services-header-img {
-	margin: 30px 0px;
+	margin: 30px 0%;
 }
 
 .service-top h2 {
-	font-size:25px;
+	font-size:2.5rem;
 }
 .service-top {
-	padding-bottom:25px;
+	padding-bottom:2.9%;
+	font-size:1.6rem;
 	border-bottom: 1px solid black;
 }
 
@@ -240,47 +241,50 @@ a:hover {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
-	padding-top:30px;
+	padding-top:3.4%;
 	border-bottom: 1px solid black;
 }
 
 .middle-blocks {
 	border: 1px solid black;
-	margin-bottom:35px;
-	width:425px;
+	margin-bottom:4%;
+	font-size:1.6rem;
+	width:48.3%;
 	background-color:whitesmoke;
-	padding:20px;
+	padding:2.3%;
 }
 
 .middle-blocks button {
 	border:1px solid black;
-	padding: 6px 40px;
-	margin-top:20px;
+	padding: 6px 4.5%;
+	margin-top:2.3%;
 	background-color:white;
 	border-radius:10%;
 }
 
 .footer-container {
-	padding: 30px 0px;
+	padding: 30px 0%;
 	display: flex;
 
 }
 
 .service-info-img {
-	margin-bottom:25px;
+	margin-bottom:2.8%;
 }
 .bottom-fact-block {
-	padding-right:30px;
+	padding-right:3.4%;
+	font-size:1.6rem;
 }
 .bottom-fact-block ul {
-	margin-top:25px;
+	margin-top:2.8%;
 }
 
 .bottom-fact-block ul li {
-	margin-top:15px;
+	margin-top:1.7%;
+	font-size:1.6rem;
 	list-style-type: square;
-	margin-left:20px;
-} */
+	margin-left:2.3%;
+}
 
 @media (max-width:800px) {
     .container {
@@ -364,6 +368,9 @@ a:hover {
 		width:auto;
 	}
 
+	.service-top p {
+		margin-left:1%;
+	}
 	.footer-container img {
 		display:none;
 	}
@@ -376,6 +383,11 @@ a:hover {
 		text-align: center;
 	}
 
+	.bottom-fact-block ul li {
+		list-style-type: square;
+		margin-left:7%;
+	}
+	
 	.bottom-fact-block p {
 		text-align:center;
 	}
