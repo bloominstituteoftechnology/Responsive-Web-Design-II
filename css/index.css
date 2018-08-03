@@ -66,7 +66,6 @@ table {
 }
 
 header {
-    background-color: mediumturquoise;
     display:flex;
     margin: 20px 0px;
     width:800px;
@@ -104,6 +103,7 @@ nav {
 }
 
 .Sec2 {
+    width:880px;
     display:flex;
     flex-direction:column;
     padding: 35px 0px;
@@ -128,7 +128,6 @@ nav {
 }
 
 footer {
-    
     width: 800px;
     height: 240px;
     display:flex;
@@ -143,7 +142,6 @@ a {
 }
 
 nav a {
-    background-color: mediumspringgreen;
     font-size: 16pt;
 }
 
@@ -211,8 +209,6 @@ p {
     }
 
     .Main2 {
-        background-color: yellow;
-
         display:flex;
         flex-direction:column;
         align-items: center;
@@ -236,7 +232,6 @@ p {
     }
 
     nav {
-        background-color: orange;
         width: 720px;
         order:1;
     }
@@ -246,13 +241,16 @@ p {
         width: 200px;
     }
 
+    .Sec2 {
+        width: 800px;
+    }
+
     .Sec2 img {
         width: 800px;
         margin: 40px 0px;
     }
 
     .Sec2s1 {
-        background-color: maroon;
         width: 720px;
         display:flex;
         height:150px;
@@ -287,10 +285,154 @@ p {
     .s2 {
         display:flex;
         flex-direction:column;
-        height: 175px;
+        height: 250px;
         align-items: space-between;
         justify-content: space-between;
         }
     
+        footer {
+            width: 720px;
+        }
+}
+
+/* New Media Query */
+
+
+@media (max-width:500px) {
+
+    .Main {
+        width: 500px;
+    }
+
+    .Main2 {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .Sec1 {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 140px;
+        width: 420px;
+        height: 300px;
+    }
+
+    header {
+        margin: 0px;
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav {
+        text-align: center;
+        flex-direction: column;
+        width: 500px;
+        order:1;
+    }
+
+    nav a {
+        font-size: 30pt;
+        padding: 20px;
+        border-top: 2px solid gray;
+
+    }
+    .Connect {
+        border-bottom: 2px solid gray;
+    }
+    
+    header img {
+        height: 100px;
+        order:0;
+        width: 300px;
+        padding: 20px;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 50pt;
+        text-align: center;
+    }
+
+    .Sec1s1 {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction:column;
+        height: 300px;
+    }
+
+    .Sec1 a {
+        text-align: center;
+        font-size: 30pt;
+        padding: 10px 20px;
+        border: 3px solid gray;
+    }
+
+    .Sec2 {
+        width: 500px;
+    }
+
+    .Sec2 img {
+        width: 500px;
+        margin: 40px 0px;
+    }
+
+    .Sec2s1 {
+        width: 420px;
+        display:flex;
+        flex-direction:column;
+        height:350px;
+        justify-content: space-between;
+    }
+
+    
+    .Sec2s2 {
+        height: 525px;
+        width: 420px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+
+    .s1 p {
+    font-size: 14pt;
+    width: 400px;
+}
+
+.s2 p {
+    font-size: 14pt;
+    width: 400px;
+}
+
+    .s1 {
+    display:flex;
+    flex-direction:column;
+    height: 135px;
+    margin-top: 20px;
+    align-items: space-between;
+    justify-content: space-between;
+    }
+
+    .s2 {
+        display:flex;
+        flex-direction:column;
+        height: 135px;
+        align-items: space-between;
+        justify-content: space-between;
+        }
+    
+        h2 {
+            font-size: 20pt;
+            height: 40px;
+        }
+        
+        footer {
+            width: 420px;
+        }
 
 }
