@@ -234,7 +234,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: 7rem;
+  font-size: 5.7rem;
   margin: 7.5%;
   text-align: center;
 }
@@ -427,7 +427,7 @@ footer h3 {
     display: none;
   }
   .top-text {
-    font-size: 7.7rem;
+    font-size: 6.5rem;
   }
   .top-main {
     width: 96.66%;
