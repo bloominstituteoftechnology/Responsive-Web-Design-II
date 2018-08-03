@@ -72,18 +72,22 @@ body {
 	justify-content: center;
 }
 .main-container{
-	width: 65.428%;
+    width: 65.428%;
+    
 }
+
 
 @media (max-width: 800px) {
     .main-container {
         width:100%;
+        
     }
 }
 
 @media (max-width: 500px) {
     .main-container {
         width: 100%;
+    
     }
 }
 
@@ -307,6 +311,14 @@ header .logo {
 .tandcimg .tagline button:hover {
   background: black;
   color: white;
+}
+
+@media (max-width: 880px) {
+    .tagImg {
+       display: none;
+       height: auto;
+   }
+   
 }
 
 @media (max-width: 800px) {
