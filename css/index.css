@@ -275,7 +275,7 @@ footer {
         
     }
     header nav a{
-        font-size: 24px;
+        font-size: 2.4rem;
         padding:20px 0;
         border-top: 1px solid gray;
         width:100%;
@@ -310,6 +310,7 @@ footer {
   display: inline-block;
   margin-right: 2%;
   margin-left:2%;
+  margin-bottom:10px;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -328,6 +329,7 @@ footer {
   margin-right: 2%;
   margin-left:2%;
   flex-direction: column;
+  margin-bottom: 10px;
 
 }
 }
