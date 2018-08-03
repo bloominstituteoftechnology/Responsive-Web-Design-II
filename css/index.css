@@ -1,1 +1,335 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+.container {
+  max-width: 880;
+  /* TB LR */
+  width:100%;
+
+}
+
+/* header */
+
+header nav {
+  display: inline-block;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 4%;
+  justify-content: space-around;
+  
+}
+
+
+header nav a {
+  display: inline-block;
+  margin-right: 0%;
+  font-size: 1.4rem;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  display: inline-block;
+  margin-top: 2.8%;
+}
+
+/* cta */
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 7.7rem;
+  margin-top: 13.6%;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: .7%;
+  padding: 8px 44px;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 7.8%;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 8.6%;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  display: inline-block;
+  margin-right: 3.9%;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 5.1%;
+}
+
+.main-content .bottom-content {
+  margin-top: 4.2%;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 31.25%;
+  display: inline-block;
+  margin-right: 1.4%;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 6.5%;
+  border-top: 1px solid black;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 2.3% 0;
+}
+
+footer {
+  margin: 3.6% 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+/*this is tablet*/
+@media(max-width:800px){
+   .container{
+       width:100%;
+       
+   }
+   header{
+       display:flex;
+       flex-direction: column-reverse;
+       align-items:center;
+   }
+   header nav {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+  }
+  
+  header nav a {
+    font-size: 1.8rem;
+  }
+  
+  header nav a:last-child {
+    margin-right:0;
+  }
+    header .logo {
+   margin-bottom: 4.5%;
+  }
+.cta{
+    justify-content: center;
+    width:800px;
+}
+.cta img{
+    display: none;
+}
+.cta .cta-text h1{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 7.7rem;
+  margin-top: 13.6%;
+  text-align: center;
+ padding: 0px 75px;
+}
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 8.6%;
+  padding-top: 39px;
+}
+
+
+
+.main-content .top-content .text-content {
+  width: 330px;
+  display: inline-block;
+  
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+.main-content .middle-img {
+  margin-top: 5.1%;
+  width:100%
+}
+
+}
+@media(max-width: 500px){
+    .container{
+        width:100%;
+        padding:0;
+
+    }
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    header nav a{
+        font-size: 2.4rem;
+        padding:20px 0;
+        border-top: 1px solid gray;
+        width:100%;
+        text-align:center;
+        
+    }
+    header nav a:last-child{
+        border-bottom: 1px solid grey;
+    }
+    .cta{
+        width: 500px;
+    }
+    .main-content .middle-img {
+      margin-top: 5.1%;
+      width:96%;
+      margin-left:2%;
+      margin-right:2%;
+}
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 8.6%;
+  padding-top: 39px;
+  width:100%;
+}
+
+.main-content .top-content {
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 96%;
+  display: inline-block;
+  margin-right: 2%;
+  margin-left:2%;
+  margin-bottom:10px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .bottom-content {
+  margin-top: 4.2%;
+  padding: 0 10px;
+  
+}
+
+.main-content .bottom-content .text-content {
+  width: 96%;
+  display: flex;
+  margin-right: 2%;
+  margin-left:2%;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+}
+}
