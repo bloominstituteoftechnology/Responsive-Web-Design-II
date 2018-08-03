@@ -212,8 +212,11 @@ footer p{
     padding:25px;
     background-color:#EEEEEE;
 }
+.box-services h3{
+    font-size:1.8rem;
+}
 .box-services p{
-    font-size:2rem;
+    font-size:1.6rem;
     margin-bottom:20px;
     line-height:20px;
     text-align: justify;
