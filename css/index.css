@@ -97,14 +97,9 @@ nav{
 
 .navi {
     padding: 20px 2.5%;
-    color: black;
-	font-size: 1.6rem;
-	text-decoration: none;
-}
+	  font-size: 1.6rem;
+	  text-decoration: none;
 
-.navi:hover{
-    font-size: 1.7rem;
-    background: black;
 }
 
 .logo {
