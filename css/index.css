@@ -73,7 +73,7 @@ html{
 }
 .container{
 	max-width: 880px;
-	margin: 20px auto;
+	margin: 10px auto;
 }
 header{
     display: flex;
@@ -90,26 +90,26 @@ nav{
 nav a{
     text-decoration: none;
     color: lightgray;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
 .taglineSec{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 65px 0px;
+    margin: 60px 0px;
 }
 
 .tagline{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 100px;
+    
 }
 
 .tagline p{
-    font-size: 75px;
+    font-size: 7.5rem;
     font-family: 'Bangers', cursive;
     padding-bottom: 5px;
 }
@@ -117,8 +117,8 @@ nav a{
 #tiny{
     border: 1px solid black;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 15px;
-    padding: 5px 20px; 
+    font-size: 1.5rem;
+    padding: 5px 17%; 
 }
 
 .aboveimg{
@@ -128,16 +128,22 @@ nav a{
     padding: 20px 0px;
 }
 .aboveimg h2, .bellowimg h2{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .aboveimg p, .bellowimg p{
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .aboveimg div{
     width: 49%;
 
+}
+
+.middle-img{
+    width: 100%;
+    margin: 10px auto;
+    display: block;
 }
 
 .bellowimg{
@@ -153,12 +159,12 @@ nav a{
 
 address{
     margin: 20px 0px;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 footer{
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 /* Services specific css below */
 .services-header-img{
@@ -208,8 +214,8 @@ footer{
 
 /* responsive css below */
 @media (max-width: 800px) {
-    body{
-        width:780px;
+    .container{
+        max-width:800px;
     }
     nav{
         width:100%;
@@ -217,12 +223,11 @@ footer{
     header{
         flex-direction: column-reverse;
     }
+    .taglineSec{
+        justify-content: center;
+    }
     img.tagline{
         display: none;
-    }
-    .middle-img{
-        width: 760px;
-        text-align: center;
     }
     .logo{
         margin-bottom: 20px;
@@ -244,8 +249,8 @@ footer{
 }   
 
 @media (max-width: 500px) {
-    body{
-        width:480px;
+    .container{
+        max-width:500px;
     }  
     nav{
         flex-direction: column;
