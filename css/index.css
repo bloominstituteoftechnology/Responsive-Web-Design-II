@@ -1,1 +1,190 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS */
+
+html {
+    font-size: 62.5%;
+    font-family: 'Titillium Web';
+    font-size: 1rem;
+    font-size: 1rem;
+}
+
+h3 {
+    font-family: 'Bangers';
+    font-size: 1.2rem;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.logoDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 880px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0% auto;
+}
+
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2% 2%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 1.25% 10.25% 0 0;
+}
+
+a.topNav {
+    color: lightslategray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contentHead {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+
+.contentHeadText {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Bangers';
+}
+
+.contentHeadText .getStartedBtn {
+    font-size: 1.3rem;
+    font-family: 'Titillium Web';
+    border: 1px solid black;
+    padding: 2%;
+    margin: 2% 0;
+    width: 50%;
+    align-self: center;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.topContainer {
+    border-top: 2px solid black;
+}
+.bottomContainer {
+    border-bottom: 2px solid black;
+}
+
+.content {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.compAddress {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0;
+}
+
+footer {
+    text-align: center;
+    margin: 2%;
+}
+
+@media (max-width: 800px) {
+    .headerImg {
+        display: none;
+    }
+    .logoDiv {
+        width: 100%;
+    }
+    .logo {
+        max-width: 95%;
+        height: auto;
+        align-self: center;
+    }
+    .navHeader {
+        display: flex; 
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .topNav {
+        border-top: 1px solid grey;
+        padding: 2% 0;
+    }
+    .topNav:nth-last-child(1) {
+        border-bottom: 1px solid grey;
+    }
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}   
