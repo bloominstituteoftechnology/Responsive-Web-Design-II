@@ -81,6 +81,7 @@ a {
 ul {
 	font-size: 1.6rem;
 }
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
@@ -126,12 +127,11 @@ header .logo {
 }
 
 .cta .cta-text h1 {
-	font-size: 25px;
+	font-size: 2.5rem;
 }
 
 .cta .cta-text p {
-	font-size: 16px;
-
+	font-size: 1.6rem;
 }
 
 .main-content {
@@ -160,6 +160,8 @@ header .logo {
 	background-color: white;
 	padding: 6px 8.6%;
 	margin-top: 18px;
+	text-align: center;
+	font-size: 1.3rem;
 }
 
 .service-bottom-content {
@@ -212,6 +214,14 @@ footer {
 	
 	header .logo {
 		padding-left: 0%;
+	}
+
+	.main-content .text-content button {
+		border: 1px solid black;
+		background-color: white;
+		padding: 6px 8.6%;
+		margin-top: 18px;
+		text-align: center;
 	}
 
 	.cta .services-header-img {
