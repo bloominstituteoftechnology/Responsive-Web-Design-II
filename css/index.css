@@ -123,8 +123,9 @@ header nav a:last-child {
     width: 88%;
     border: 4px solid blueviolet;
     display: flex;
-    justify-content: space-around;
     font-size: 6.5rem;
+    margin: 0 auto;
+   /* justify-content: center; /* DOES NOT CENTER */
 
 }
 
