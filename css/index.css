@@ -188,6 +188,7 @@ strong {
     margin: 10px auto;
     font-size: 1.4rem;
     text-align: center;
+    font-family: 'Titillium Web', sans-serif;
 }
 /*Some CSS Effects*/
 
@@ -207,99 +208,231 @@ a:hover {
 /*Introducing media query for Tablet version*/
 @media (max-width: 800px) {
 
-.container {
-    max-width: 650px;
-}
+    .container {
+        max-width: 650px;
+    }
 
-header {
-    flex-direction: column-reverse;
-    max-width: 650px; 
-    height: 90px;
-}
+    header {
+        flex-direction: column-reverse;
+        max-width: 650px; 
+        height: 90px;
+    }
 
-.circle {
-    display: none;
-}
+    .circle {
+        display: none;
+    }
 
-.top-content {
-    justify-content: center;
-}
+    .top-content {
+        justify-content: center;
+    }
 
-a {
-    font-size: 2rem;
-}
+    a {
+        font-size: 2rem;
+    }
 
-nav {
-    width: 100%;
-    margin: 5px 0%;
-}
+    nav {
+        width: 100%;
+        margin: 5px 0%;
+    }
 
-.logo {
-    margin-top: 15px;
-}
+    .logo {
+        margin-top: 15px;
+    }
 
 }
 /*Introducing media query for Mobile version*/
 @media (max-width: 500px) {
-.container {
-    width: 80%;
-    max-width: 450px;
+    .container {
+        width: 80%;
+        max-width: 450px;
+    }
+
+    header {
+        max-width: 450px;
+        height: 400px;
+    }   
+
+    .top-content {
+        margin: 0%;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 0%;
+        margin: 10px 0% 0px 0%;        
+    }
+
+    a {
+        border: 1px solid lightgray;
+        font-size: 2.3rem;
+        align-self: stretch;
+        text-align: center;
+        flex-grow: 1;
+        margin:0%;
+        padding-top: 15px;
+    }
+
+    .features-about {
+        flex-direction: column; 
+    }
+
+    .f-a-childs {
+        width: 100%;
+        padding: 0%;
+        margin: 20px 0%;
+    }
+
+    .services-product-vision {
+        flex-direction: column;
+    }
+
+    .spv-childs {
+        width: 100%;
+        padding: 0%;
+        margin: 20px 0%;
+    }
+    .button {
+        padding: 5px 8%;
+    }
+
+    address {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    a:hover {
+        background-color: cyan;
+    }
+
 }
 
-header {
-    max-width: 450px;
-    height: 400px;
+/*Styling Services Page*/
+
+h2 {
+    font-size: 2.2rem;
 }
 
-.top-content {
-    margin: 0%;
+h4 {
+    font-size: 1.8rem;
 }
 
-nav {
-    flex-direction: column;
-    padding: 0%;
-    margin: 10px 0% 0px 0%;        
-}
-
-a {
-    border: 1px solid lightgray;
-    font-size: 2.3rem;
-    align-self: stretch;
-    text-align: center;
-    flex-grow: 1;
-    margin:0%;
-    padding-top: 15px;
-}
-
-.features-about {
-    flex-direction: column; 
-}
-
-.f-a-childs {
+.services-header-img {
     width: 100%;
-    padding: 0%;
-    margin: 20px 0%;
+    margin: 25px 0%;
 }
-
-.services-product-vision {
-    flex-direction: column;
-}
-
-.spv-childs {
+/*Styling page's center divs*/
+.middle-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 0%;
-    margin: 20px 0%;
-}
-.button {
-    padding: 5px 8%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 35px 0%;
+    padding: 15px 0%;
 }
 
-address {
+.middle-divs {    
+    width: 49%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin: 10px 0%;
+    padding: 2%;
+}
+
+.button-s {
+    display: inline-block;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    background-color: white;
+    width: 30%;
+    height: 30px;
+    margin-top: 10px;
+    padding-top: 7px;
     text-align: center;
-    margin-bottom: 35px;
+    font-family: 'Titillium Web', sans-serif;
+}
+/*Styling bottom*/
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0%;
+    font-size: 1.8rem;
 }
 
-a:hover {
-    background-color: cyan;
+.bottom-child {
+    width: 48%;
 }
+
+.services-info-img {
+    width: 49%;
 }
+
+ul {
+    margin-top: 15px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+li {
+    margin: 8px 0%;
+}
+
+.footer-services {
+    margin: 30px 0%;
+}
+/*Introducing media query for Service's Tablet version*/
+@media (max-width: 800px) {
+    .services {
+        text-align: center;
+    }
+
+    .logo-services {
+        margin-top: 15px;
+    }
+
+}
+/*Introducing media query for Service's Mobile version*/
+@media (max-width: 500px) {
+    .services-header-img {
+        display: none;
+    }
+
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .middle-divs {
+        width: 100%;
+    }
+
+    .services-nav {
+        margin-top: 0%;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .bottom-child {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .services-info-img {
+        width: 100%;
+    }
+
+    .services {
+        margin-top: 20px;
+    }
+
+    .logo-services {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
