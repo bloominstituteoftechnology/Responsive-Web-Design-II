@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-    border: 1px solid darkolivegreen;
+    border: 7px solid darkolivegreen;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -119,13 +119,25 @@ header nav a:last-child {
     margin-right: 0;
 }
 
+.services-header-img {
+    width: 100%;
+}
+
 #main {
-    margin-bottom: 30px;
+    margin: 3rem;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+#Services {
+    font-size: 2rem;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
+
     align-content: space-between;
     border: 10px solid green;
     flex-basis: auto;
@@ -135,14 +147,29 @@ header nav a:last-child {
 h2{
     font-size: 3rem;
 }
-.content {
-    border: 1px solid pink;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 
-    justify-content: space-evenly;
+.TOP, .MIDDLE, .BOTTOM {
+     display: flex;
+ }
+.content {
+    border: 2px solid mediumvioletred;
+    display: flex;
+    width: 50%;
+    padding: 1em;
+    flex-wrap: wrap;
 }
+
+
+
+.Digital_Content, .Digital_Marketing, .iOS{
+    order: 1;
+}
+
+.UX, .Web_Development, .Android {
+    order: 2;
+}
+
+
 
 .learnMore{
     width: 10rem;
@@ -150,7 +177,8 @@ h2{
     text-align: center;
     padding: .5rem 0;
     margin: 4rem 0;
-    flex-basis: auto;
+    border-radius: 2rem;
+
 }
 
 #footer_Services{
@@ -237,22 +265,42 @@ ul {
     .top-header {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         width: 100%;
+        font-size: 5rem;
     }
     nav {
+        border: 3px solid darkblue;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        font-size: 10rem;
     }
+
+    nav a {
+        font-size: 100rem;
+    }
+
     .headerIMG {
         display: none;
     }
 
     .info {
-        width: 50%;
         display: flex;
+        align-content: space-between;
+        border: 10px solid green;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+
+    .Digital_Content, .UX, .Digital_Marketing, .Web_Development, .iOS, .Android {
+        width: 100%
+    }
+
+    .TOP, .MIDDLE, .BOTTOM {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .services-header-img , .services-info-img {
