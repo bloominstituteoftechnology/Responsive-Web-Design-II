@@ -1,1 +1,249 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*MY CODE!!!!!*/
+html{
+    font-size:62.5%;
+}
+container{
+    width:100%;
+    max-width:880px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+font-size:1.6rem;
+width:90%;
+}
+
+
+.navitem{
+padding-top:2%;
+color: gray;
+}
+
+.logo{
+   float:right;
+}
+
+.topsplash{
+    margin-top:5%;
+    margin-bottom:5%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.title{
+    font-family:bangers;
+    font-size:6rem;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.titlebutton{
+    font-family:arial;
+    font-size:2rem;
+    margin-top:8%;
+    border:.1rem solid black;
+    width:70%;
+    padding:5%;
+}
+
+main{
+    border-top:.3rem solid black;
+    border-bottom:.3rem solid black;
+    font-size:1.5rem;
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+    line-height:2.5rem;
+    width:99%;
+ }
+ .mainitem{
+     margin-left:3%;
+     width:30%;
+     margin-bottom:3%;
+     margin-top:3%;
+ }
+
+ .mainitemtop{
+    width: 47%;
+    margin-left: 3%;
+    margin-bottom:3%;
+ }
+ 
+ h3{
+     font-size:1.8rem;
+     font-family:bangers;
+     margin-bottom:2%;
+     margin-top:2%;
+
+ }
+
+ .middle-img{
+     width:98%;
+     margin:auto;
+ }
+
+ footer{
+     width:98%;
+     font-size:1.5rem;
+     display:flex;
+     flex-direction:column;
+     justify-content:space-between;
+     align-items:flex-start;
+     margin-left:4%;
+ }
+ address{
+     width:100%;
+ }
+
+ .copyright{
+     width:100%;
+     text-align:center;
+     margin-top:3%;
+ }
+ 
+ 
+
+/*tablet break point*/
+
+@media(max-width:800px){
+
+nav{
+    justify-content:row-reverse;
+    flex-wrap:wrap-reverse;
+}
+
+.logo{
+    padding-left: 37%;
+    padding-right: 37%;
+}
+
+.circlepic{
+    display:none;
+}
+p{margin-right:1%;}
+
+}
+/*mobile break point*/
+@media(max-width:500px){
+
+   nav{
+       flex-direction:column-reverse;
+   }
+
+   .navitem{
+       width:100%;
+       text-align:center;
+       padding-top:3%;
+       padding-bottom:3%;
+       border-bottom:.1rem solid gray;
+
+   }
+
+   .navitem:nth-child(1){
+order:7;
+   }
+   .navitem:nth-child(2){
+order:6;
+   }
+   .navitem:nth-child(3){
+order:5;
+   }
+   .navitem:nth-child(4){
+order:4;
+   }
+   .navitem:nth-child(5){
+order:3;
+   }
+   .navitem:nth-child(6){
+order:2;
+   }
+.logo{
+    order:8;
+    padding:none;
+    width:35%;
+    margin:auto;
+    position: relative;
+    right: 2%;
+}
+
+main{flex-direction:column;
+
+}
+.mainitem{
+    width:98%;
+    margin-left:4%;
+    margin-right:4%;
+}
+.mainitemtop{
+    width:98%;
+    margin-left:4%;
+    margin-right:4%;
+}
+h3{margin-left:1%;}
+
+}
+address{
+    margin-left:2%;
+}
+
+address h3{margin-left:0%;}
+
