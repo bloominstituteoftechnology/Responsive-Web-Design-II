@@ -71,6 +71,17 @@ button {
 	height: 250px;
     width: 435px;
     margin-top: 15px;
+    background-color: whitesmoke;
+}
+
+.childbox:hover {
+    background-color: lightgreen;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    color: limegreen;
 }
 
 .contact {
@@ -110,6 +121,10 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
     font-size: 2rem;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 .h1content {
@@ -159,17 +174,21 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 25px;
  }
   
 .midaccent {
     width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: auto;    
+    width: auto;
+    margin-top: 25px;    
 }
 
 ol, ul {
@@ -235,7 +254,23 @@ table {
 /* TABLET VERSION */
 
 @media (max-width: 800px) { /* Repositions company logo to top and displays a centered nav */
-    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .header-img {
         display: none;
     }
@@ -255,13 +290,7 @@ table {
 
     }
 
-
-    nav {
-        width: auto;
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: space-between;   
-    }
+     
 
     .midaccent {
         width: 100%;
