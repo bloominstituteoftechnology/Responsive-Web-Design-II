@@ -66,6 +66,7 @@ justify-content:space-between;
 font-size:1.6rem;
 width:90%;
 }
+p{margin-left:1%;}
 
 .navitem{
 padding-top:2%;
@@ -112,6 +113,7 @@ main{
     flex-wrap:wrap;
     margin:auto;
     line-height:2.5rem;
+    width:100%;
  }
  .mainitem{
      margin-left:3%;
@@ -132,6 +134,11 @@ main{
      margin-bottom:2%;
      margin-top:2%;
 
+ }
+
+ .middle-img{
+     width:98%;
+     margin:auto;
  }
  
  
@@ -198,7 +205,15 @@ order:2;
     right: 2%;
 }
 
+main{flex-direction:column;
 
+}
+.mainitem{
+    width:100%;
+}
+.mainitemtop{
+    width:100%;
+}
 
 }
 
