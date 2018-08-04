@@ -3,87 +3,7 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,17 +12,7 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
   display: block;
 }
 html {
@@ -119,10 +29,7 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before,blockquote:after,q:before,q:after {
   content: "";
   content: none;
 }
@@ -136,17 +43,12 @@ table {
   box-sizing: border-box;
 }
 
-html,
-body {
+html,body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1,h2,h3,h4,h5 {
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -427,59 +329,3 @@ footer {
   }
 }
 
-/* here begins the unique CSS code for the Services page */
-
-.services-header-img {
-  margin: 0px 0px 25px 0px;
-}
-
-#centerSection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#centerSection div {
-  width: 420px;
-  display: flex;
-  height: 200px;
-  flex-direction: column;
-  background-color: rgb(211, 211, 211);
-  border: 1px solid black;
-  padding: 15px;
-  margin: 15px 0px;
-  align-content: space-between;
-}
-
-.learnMore {
-  font-size: 1.2rem;
-  text-justify: center;
-  border: 1px solid black;
-  border-radius: 4px;
-  background-color: rgb(231, 231, 231);
-  padding: 5px 15px;
-  width: 110px;
-  margin-top: 10px;
-}
-
-#bottomSection {
-  display: flex;
-  justify-content: space-between;
-}
-
-#bottomSection div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  height: 250px;
-  width: 400px;
-}
-
-ul {
-  list-style: square inside;
-  display: flex;
-  flex-direction: column;
-  height: 100px;
-  justify-content: space-around;
-}
