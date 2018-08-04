@@ -50,6 +50,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    transition: all .5s linear;
 }
 
 html, body {
@@ -236,6 +237,7 @@ ul {
 
     .headerIMG, .services-header-img , .services-info-img {
         display: none;
+        transition: all 1s ease;
     }
 
     nav {
