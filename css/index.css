@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5 {
 
 .Toptext a{
 	color:grey;
+	font-size:0.9rem;
 }
 
 .HeaderContent{
@@ -177,17 +178,22 @@ h1, h2, h3, h4, h5 {
 		margin:auto;
 	}
 
-	
+	.Topbar{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:column;
+		margin-bottom:5%;
+	}	
+
 	.BigImg{
 		display:none;
+		margin: 0 auto;
 	}
 	
-	.HeaderContent{
-		justify-content:center;
-		top:50%;
-		left:50%;
+	.BigText{
+		width:100%;
+		text-align:center;
 	}
-
 }
 
 /* MOBILE */
@@ -221,7 +227,26 @@ h1, h2, h3, h4, h5 {
 		flex-direction:column;
 		width:100%;
 		align-items:center;
-		margin:5%;
+	}
+
+	.BodyContent{
+		flex-direction:row;
+	}
+
+	.BigText{
+		display:flex;
+		width:100%;
+	}
+
+	.BodyBottom{
+		flex-direction:column;
+		border:1px solid grey;
+		width:100%;
+		text-align:center;
+	}
+
+	.Contact{
+		text-align:center;
 	}
 
 
