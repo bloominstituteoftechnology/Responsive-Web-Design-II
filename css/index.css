@@ -360,6 +360,7 @@ footer h3 {
   }
   .top-text {
     align-items: center;
+    font-size: 5rem;
   }
   .first-main {
     padding-top: 8px;
@@ -367,13 +368,21 @@ footer h3 {
   .features,
   .about {
     margin: 1%;
+    font-size: 1.1rem;
+  }
+  .features p { line-height: 21px;
+    font-size: 1.6rem;}
+  .about p {
+    line-height: 21px;
     font-size: 1.6rem;
   }
-
+ .second-main p{
+    font-size: 1.6rem;
+  }
   .services,
   .products,
   .vision {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
   }
 
   .middle-img {
