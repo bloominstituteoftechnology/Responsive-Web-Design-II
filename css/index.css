@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-
-* Use your CSS from RWD - I here.  IF you don't hav/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* Use your CSS from RWD - I here. IF you don't hav/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -169,17 +168,25 @@ h5 {
 * {
   box-sizing: border-box;
 }
+
+/* This is body font transitions */
+
 body {
   -webkit-transition: font-size 0.5s ease-in-out;
   -moz-transition: font-size 0.5s ease-in-out;
   -o-transition: font-size 0.5s ease-in-out;
   transition: font-size 0.5s ease-in-out;
 }
+
+/* Main Body Container */
+
 .container {
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
 }
+
+/* Top Navigation Container */
 
 .container-main {
   display: flex;
@@ -188,7 +195,6 @@ body {
 
 header {
   display: flex;
-
   align-items: center;
   margin-top: 2.9%;
 }
@@ -248,12 +254,14 @@ header .logo {
   cursor: pointer;
 }
 
-/* Gray */
-
 .default:hover {
   background: #ddd;
   cursor: pointer;
 }
+
+/* Top Navigation and Header Container End */
+
+/* Main Content middle Starts */
 
 .first-main {
   display: flex;
@@ -286,6 +294,10 @@ header .logo {
   font-size: 1.9rem;
 }
 
+/* Second and Firt Middle content end */
+
+/* Contact and Footer Starts here */
+
 .contact {
   align-content: center;
   border-top: 2px solid black;
@@ -306,6 +318,10 @@ header .logo {
   display: inline-block;
 }
 
+/* Contact Info ends */
+
+/* Footer Starts Here */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -320,7 +336,9 @@ footer h3 {
   align-self: center;
 }
 
-/* Desktop First 800px */
+/* Footer Ends here */
+
+/* Desktop First 800px, 500px  Media Starts*/
 
 /* Tablet  Width 800px */
 
@@ -370,13 +388,15 @@ footer h3 {
     margin: 1%;
     font-size: 1.1rem;
   }
-  .features p { line-height: 21px;
-    font-size: 1.6rem;}
+  .features p {
+    line-height: 21px;
+    font-size: 1.6rem;
+  }
   .about p {
     line-height: 21px;
     font-size: 1.6rem;
   }
- .second-main p{
+  .second-main p {
     font-size: 1.6rem;
   }
   .services,
@@ -384,16 +404,16 @@ footer h3 {
   .vision {
     font-size: 1.1rem;
   }
-
   .middle-img {
     width: 100%;
     height: 100%;
     margin-bottom: 1%;
   }
   .contact {
-    display: block; /* This will put the pseudo element on its own line. */
-
-    width: 96.66%; /* Change this to whatever width you want. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 96.66%;
+    /* Change this to whatever width you want. */
   }
   footer h3 {
     font-family: "Montserrat";
@@ -443,14 +463,14 @@ footer h3 {
   .first-main {
     flex-direction: column;
   }
-
   .second-main {
     flex-direction: column;
   }
   .contact {
-    display: block; /* This will put the pseudo element on its own line. */
-
-    width: 96.66%; /* Change this to whatever width you want. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    width: 96.66%;
+    /* Change this to whatever width you want. */
   }
   footer h3 {
     font-family: "Montserrat";
