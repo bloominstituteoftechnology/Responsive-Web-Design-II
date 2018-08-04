@@ -397,7 +397,7 @@ footer h3::before {
     content: "\00A9 ";
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     body {
     background: linear-gradient(90deg, #0fb8ad 25%, #1fc8db 51%, #2cb5e8 75%);
     }
@@ -427,8 +427,15 @@ footer h3::before {
   header .logo {
     padding-bottom: 40px;
   }
+  .services-header-img {
+      width: 100%;
+    
+  }
   .box {
-      width:96.6%;
+     
+    margin-left: 7.5%;
+    
+      width:85.6%;
   }
   .container__Boxes {
     display: flex;
@@ -442,7 +449,7 @@ footer h3::before {
     width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media(max-width: 500px) {
     body {
     background: linear-gradient(90deg, #0fadb8 25%, #1fa0db 51%, #2c8de8 75%);
     }
@@ -477,7 +484,7 @@ footer h3::before {
     font-size: 5rem;
   }
     .box {
-      width:89.9%;
+      width:85.6%;
   }
   .first-main {
     flex-direction: column;
