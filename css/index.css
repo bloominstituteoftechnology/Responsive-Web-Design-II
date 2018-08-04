@@ -81,32 +81,33 @@ html{
     padding: 20px 0;
 }
 
-nav{
+.menu nav{
     display: flex;
     justify-content: space-between;
     font-size: 1.6rem;
 }
 
-a {
+.menu nav a {
 	color: inherit;
     text-decoration: none;
     margin: 10px 8%;
 	color: gray;	
 }
-.logo {
+.menu .logo {
     display: flex;
     justify-content: flex-end;
 }
 
-h2{
+/* Font Size */
+h2 {
     font-size: 2.0rem;
 }
 
-h3{
+h3 {
     font-size: 1.8rem;
 }
 
-p{
+p {
     font-size: 1.6rem;
 }
 address{
@@ -115,12 +116,14 @@ address{
 footer{
     font-size: 1.4rem;
 }
+/* End Font Size */
+
 .hero{
 	display: flex;
 	justify-content: space-around;
 
 }
-.head {
+.hero .head {
 	font-size: 7.0rem;
 	float: left;
 	display: flex;
@@ -129,7 +132,7 @@ footer{
 	flex-direction: column;
 }
 
-.headimg {
+.hero .headimg {
 	display: flex;
 	justify-content: flex-end;
     padding: 50px 0;
@@ -137,7 +140,7 @@ footer{
 
 }
 
-.top-button {
+.hero .head .top-button {
 	text-align: center;
 	border: 1px solid black;
 	background: white;
@@ -156,12 +159,12 @@ footer{
 	justify-content: space-around;
 }
 
-.column1-2 {
+.column .column1-2 {
 	width: 48%;
 }
 
 
-.column1-3 {
+.column .column1-3 {
 	width: 33%;
 
 }
@@ -169,7 +172,7 @@ footer{
     padding: 25px 0;
 }
 
-.contact {
+.foot .contact {
 	padding-top: 10px;
 }
 
@@ -253,58 +256,53 @@ hr {
 	display: flex;
  	justify-content: center;
 }
+/* End Service Page CSS */
 
 @media (max-width: 800px) {
-    .headimg {
+    .hero .headimg {
         display: none;
     }
    
     .menu {
         display: flex;
         flex-direction: column-reverse; 
-        
+        padding: 0px; 
     }
-    .logo {
+    .menu .logo {
         display: block;
         width: 186px;
         height: 36px;
         margin: 30px auto;
 
     }
-    a {
+    .menu nav a {
         margin: 10px 2%;
     }
 
     .container {
         padding:20px 2.5%;
     }
-    
-    .menu {
-        padding: 0px;
-    }
-    .head {
+
+    .hero .head {
         margin: 75px 0;
     }
   }
   
 @media (max-width: 800px)
 {
-    .headimg{
-        display: none;
-    }
 
     .menu {
         display: flex;
         flex-direction: column-reverse;
     }
-    .logo {
+    .menu .logo {
         display: block;
 
         width: 186px;
         height: 36px;
         margin: 30px auto;
     }
-    a {
+    .menu nav a {
         margin: 10px 2%;
     }
 
@@ -315,7 +313,7 @@ hr {
     .menu {
         padding: 0;
     }
-    .head {
+    .hero .head {
         margin: 75px 0;
     }
 }
@@ -338,21 +336,21 @@ hr {
     .column {
         flex-wrap: wrap;
     }
-    .column1-2 {
+    .column .column1-2 {
         width: 90%;
         padding: 25px 0;
     }
-    .column1-3 {
+    .column .column1-3 {
         width: 90%;
         padding: 40px 0;
     }
     nav {
         flex-direction: column;
     }
-    a:first-child {
+    .menu nav a:first-child {
         border-top: 1px solid gray;
     }
-    a {
+    .menu nav a {
         border-bottom: 1px solid gray;
     }
     .foot {
