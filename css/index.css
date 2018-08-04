@@ -139,7 +139,7 @@ body {
 		color: white;
 	}
 .main-content {
-	width: 100%;
+	min-width: 100%;
 }
 .main-content .top-content {
 	display: flex;
@@ -213,7 +213,7 @@ footer {
 	}
 	section .middle-img {
 		display: block;
-		max-width: 100%;
+		min-width: 100%;
     }
     .bottom-content .text-content {
 		padding: 20px;
@@ -237,7 +237,10 @@ footer {
 
 @media (max-width: 500px) and (min-width: 320px) {
 	.container {
-		max-width: 400px;
+		min-width: 400px;
+		width: 100%;
+	}
+	.middle-img {
 		width: 100%;
 	}
 	 nav {
@@ -249,6 +252,10 @@ footer {
 	.main-content .top-content {
 		display: flex;
 		flex-direction: column;
+	}
+	.main-content .top-content .text-content {
+		padding: 20px;
+		width: 100%;
 	}
 
 	.bottom-content {
@@ -273,26 +280,26 @@ footer {
 	}
 
 	.main-content .top-content .text-content h4 {
-		font-size: .99em;
+		font-size: 2em;
 	}
 
 	.main-content .top-content .text-content p {
-		font-size: .988em;
+		font-size: 1.2em;
 	}
 	.bottom-content .text-content h4{
-		font-size: .99em;
+		font-size: 2em;
 	}
 	.bottom-content .text-content p {
-		font-size: .988em;
+		font-size: 1.2em;
 	}
 	.contact {
 		height: auto;
 	}
 	.contact h4 {
-		font-size: 1em;
+		font-size: 2em;
 	}
 	.contact p {
-		font-size: .988em;
+		font-size: 1.2em;
 	}
 	footer p {
 		height: 400px;
