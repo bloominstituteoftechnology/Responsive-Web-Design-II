@@ -348,7 +348,7 @@ h4 {
     width: 30%;
     height: 30px;
     margin-top: 10px;
-    padding-top: 7px;
+    padding-top: 2.5%;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -392,11 +392,31 @@ li {
         margin-top: 15px;
     }
 
+    .button-s {
+        min-width: 80px;
+    }
+
+    .button-s:hover {
+        background-color: darkcyan;
+        color: white;
+        padding-top: 7px;        
+    }
+
+    .middle-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 /*Introducing media query for Service's Mobile version*/
 @media (max-width: 500px) {
     .services-header-img {
         display: none;
+    }
+
+    .button-s: {
+        padding-top: 0px;
     }
 
     .middle-section {
