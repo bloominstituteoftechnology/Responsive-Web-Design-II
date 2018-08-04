@@ -195,7 +195,7 @@ footer {
 
 
 /*Services CSS*/
-.serv-header-img {
+/*.serv-header-img {
   margin: 35px 0px; 
 }
 
@@ -247,7 +247,7 @@ footer {
 .facts-container ul li {
   margin: 10px 0;
   list-style: square inside;
-}
+}*/
 
 
 /* Desktop First */
@@ -255,7 +255,7 @@ footer {
 @media (max-width: 800px){
 	.container {
 		width: 100%;
-		margin: 20px;
+		margin: 20px 2.5%;
 	}
 
 	header {
@@ -264,14 +264,14 @@ footer {
 	}
 
 	header nav {
-		width: 800px
+		width: 100%;
 		justify-content: space-between;
-		margin-left: 0px;
+		margin-left: 0%;
 	}
 
 	header .logo {
 		margin-bottom: 40px;
-		margin-right: 2px;
+		margin-right: 1.05%;
 	}
 
 	.header {
@@ -279,50 +279,52 @@ footer {
 	}
 
 	.billboard {
-	width: 800px;
-	height: 400px;
+	width: 100%;
+	height: 200px;
 	}
 
 	.billboard-text{
-	width: 400px;
+	width: 50%;
 	justify-content: center;
-	margin-left: 0px;
+	margin-left: 0%;
 	margin-top: 20px;
 
 	}
 
 	.column-content {
-		width: 800px;
-		margin: 20px;
+		width: 100%;
+		margin: 20px 2.5%;
 	}
 
 	.two-columns {
-		width: 750px;
+		width: 100%;
 		justify-content: space-around;
-		margin-left: 20px;
+		margin-left: 2.5%;
 	}
 
 	.two-columns .content {
-		width: 370px;
+		width: 47.4%;
+		margin-right: 2.5%;
 	}
 
 	.middle-img {
-		width: 800px;
+		width: 100%;
 		margin-bottom: 29px;
 	}
 	.three-columns {
-		width: 750px;
-		margin-left: 20px;
+		width: 100%;
+		margin-left: 2.5%;
 		height: 171px;
 	}
 
 	.three-columns .content {
-		width: 175px;
+		width: 31.5%;
+		margin-right: 2.5%;
 	}
 
 	.contact {
-		margin-left: 20px;
-		padding: 15px 10px 5px;
+		margin-left: 2.5%;
+		padding: 15px 1.25% 5px;
 	}
 
 	.contact p {
@@ -330,7 +332,9 @@ footer {
 	}
 
 	footer {
-		margin: 20px 0px 0px 20px;
+		margin-top: 20px;
+		margin-left: 2.5%;
+		margin-bottom: 0%;
 		text-align: center;
 		font-size: 16px;
 	}
@@ -343,8 +347,8 @@ footer {
 
 	header {
 		flex-direction: column-reverse;
-		padding-top: 0px;
-		margin: 0px 0px 0px 20px;
+		padding-top: 0%;
+		margin: 0%;
 	}
 
 	header nav {
@@ -353,9 +357,9 @@ footer {
 	}
 
 	header nav a {
-		width: 500px;
+		width: 100%;
 		text-align: center;
-		padding: 20px;
+		padding: 20px 4%;
 		font-size: 20px;
 		border-top: 1px solid gray;
 	}
@@ -365,60 +369,62 @@ footer {
 	}
 
 	header nav a:last-child {
-  		margin-right: 0px;
+  		margin-right: 0%;
   		border-bottom: 1px solid gray;
 	}
 
 	.billboard {
-		width: 500px;
+		width: 100%;
 		height: 375px;
 	}
 
 	.billboard-text{
-		width: 250px;
+		width: 50%;
 		justify-content: center;
-		margin-left: 15px;
+		margin-left: 6%;
 		margin-top: 0px;
 
 	}
 
 	.column-content {
-		width: 500px;
-		margin: 20px;
+		width: 100%;
+		margin: 0px 2.5%;
 	}
 
 	.two-columns {
-		width: 500px;
+		width: 100%;
 		flex-wrap: wrap;
-		margin-left: 10px;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 
 	.two-columns .content {
-		width: 500px;
+		width: 100%;
 		padding-top: 20px;
 		padding-bottom: 50px;
+
 	}
 
 	.middle-img {
-		width: 500px;
-		margin: 25px 10px;
+		width: 100%;
+		margin: 25px 2%;
 	}
 
 	.three-columns {
-		width: 750px;
-		margin-left: 10px;
+		width: 100%;
+		margin-left: 2%;
 		height: 437px;
 		flex-wrap: wrap;
 	}
 
 	.three-columns .content {
-		width: 500px;
+		width: 100%;
 		padding-bottom: 90px;
 	}
 
 	.contact {
-		margin-left: 20px;
-		padding: 15px 10px 5px;
+		margin-left: 4%;
+		padding: 15px 1.25% 5px;
 	}
 
 	.contact p {
