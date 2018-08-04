@@ -63,6 +63,7 @@ h3 {
 }
 
 .header-container {
+    margin-top: 8%;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
