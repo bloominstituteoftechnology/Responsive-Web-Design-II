@@ -189,10 +189,9 @@ h1, h2, h3, h4, h5 {
 		display:none;
 		margin: 0 auto;
 	}
-	
-	.BigText{
-		width:100%;
-		text-align:center;
+
+	.HeaderContent{
+		padding:15%;
 	}
 }
 
@@ -236,6 +235,7 @@ h1, h2, h3, h4, h5 {
 	.BigText{
 		display:flex;
 		width:100%;
+		margin: 0 auto;
 	}
 
 	.BodyBottom{
