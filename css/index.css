@@ -74,7 +74,8 @@ body {
 }
 
 .container {
-	max-width: 880px;
+    max-width: 1000px;
+    width: 90%;
 }
 
 /* header */
@@ -243,6 +244,13 @@ You can do the same for margins. */
   width: 46.5%;
 }
 
+.text-content h4 {
+    font-size: 1.8rem;
+}
+
+.text-content p {
+    font-size: 1.6rem;
+}
 .middle-img {
   margin: 5.1% 0%;
 }
