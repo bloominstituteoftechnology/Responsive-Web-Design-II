@@ -1,1 +1,257 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.Container{
+	font-size:62.5%;
+	max-width:880px;
+	margin:auto;
+}
+
+.Topbar{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+}
+
+.Toptext {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	width:60%;
+
+}
+
+.Toptext a{
+	color:grey;
+	font-size:0.9rem;
+}
+
+.HeaderContent{
+	display:flex;
+	fex-direction:row;
+	text-align:center;
+}
+
+.BigText{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	font-size:6.2rem;
+	
+}
+
+.Button{
+	font-size:1.25rem;
+	display:flex;
+	border:2px solid black;
+	margin:10% auto;
+	height:3.75rem;
+	width:9.375rem;
+	padding:1.25rem;
+	
+}
+
+.Button:hover{
+	background:black;
+	color:white;
+}
+
+.filler{
+	display:flex;
+	width:18.75rem;
+}
+
+#Spacer{
+	border:2px solid grey;
+	width:100%;
+}
+
+.BodyContent{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	font-size:1rem;
+
+}
+
+
+.TopTitles{
+	display:flex;
+	font-size:1.5rem;
+	flex-wrap:wrap;
+}
+
+.BodyTop{
+	display:flex;
+	padding:1%;
+}
+
+
+.BodyBottom{
+	display:flex;
+	flex-direction:row;
+	padding:1%;
+}
+
+.Contact{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	margin:10%;
+	font-size:1rem;
+}
+
+.Copyright{
+	text-align:center;
+	margin:6.25rem;
+	font-size:1rem;
+}
+
+/* TABLET */
+@media (max-width:800px){
+	.Container{
+		max-width:800px;
+		margin:auto;
+	}
+
+	.Topbar{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:column;
+		margin-bottom:5%;
+	}	
+
+	.BigImg{
+		display:none;
+		margin: 0 auto;
+	}
+
+	.HeaderContent{
+		padding:15%;
+	}
+}
+
+/* MOBILE */
+@media (max-width:500px){
+	.Container{
+		max-width:500px;
+		margin:auto;
+	}
+
+	.HeaderContent{
+		display:flex;
+		align-items:center;
+	}
+
+	.Topbar{
+		display:flex;
+		flex-direction:column;
+	}
+
+	.Topbar a{
+		display:flex;
+		flex-direction:column;
+		border:1px solid grey;
+		font-size:2rem;
+		width:100%;
+		align-items:center;
+	}
+
+	.Toptext{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+		align-items:center;
+	}
+
+	.BodyContent{
+		flex-direction:row;
+	}
+
+	.BigText{
+		display:flex;
+		width:100%;
+		margin: 0 auto;
+	}
+
+	.BodyBottom{
+		flex-direction:column;
+		border:1px solid grey;
+		width:100%;
+		text-align:center;
+	}
+
+	.Contact{
+		text-align:center;
+	}
+
+
+}
+
+
+
+
