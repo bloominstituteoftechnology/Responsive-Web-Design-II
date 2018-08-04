@@ -1,1 +1,214 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/*child/parent * 100 */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-family: 'Bangers', cursive;
+    font-weight: normal;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Bangers', cursive;
+    font-weight: normal;
+    margin: 0;
+}
+
+.container {
+    max-width: 880px;
+    width: 62.5%;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0;
+}
+
+#links {
+    width: 79%;
+}
+
+.nav-child a {
+    text-decoration: none;
+    margin-right: 9%;
+    color: grey;
+}
+
+.nav-child a:hover {
+    text-decoration: underline;
+}
+
+#last-link {
+    margin: 0;
+}
+
+.header-container {
+    margin-top: 8%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 7%;
+}
+
+.header-child a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 2% 15%;
+}
+
+.header-child a:hover {
+    background: black;
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+    width: 100%;
+}
+
+.main-child {
+    width: 49%;
+}
+
+.second-set {
+    width: 32%;
+}
+
+#main-img {
+    width: 100%;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 4% 0;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 1250px) {
+    
+    .header-container img {
+        display: none;
+    }
+
+    .header-container {
+        margin: 6% 0 0 0;
+        padding: 0 0 9% 0
+    }
+    
+    .nav-container {
+        flex-direction: column-reverse;
+    }
+
+    #links {
+        width: 100%;
+    }
+
+    .nav-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2%;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .container {
+        width: 70%;
+    }
+    
+    .nav-container {
+        flex-direction: column-reverse;
+    }
+
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .nav-child {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 2%;
+    }
+
+    .nav-child a {
+        margin: 0;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 4% 0;
+    }
+
+    #links {
+        width: 100%;
+    }
+
+    #first-link {
+        border-top: 1px solid black;
+    }
+
+    .nav-child a:hover {
+        text-decoration: none;
+        background: black;
+        color: white;
+    }
+
+    .header-container img {
+        display: none;
+    }
+
+    .header-container {
+        margin: 10% 0;
+        padding: 0 0 20% 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-child {
+        width: 100%;
+        margin: 6% 0;
+    }
+
+    .main-child p {
+        line-height: 115%;
+    }
+
+    footer {
+        padding-top: 8%;
+    }
+}
