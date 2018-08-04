@@ -18,7 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -42,7 +42,6 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
@@ -58,7 +57,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 html {
 	font-size: 62.5%;
 }
@@ -174,76 +172,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	margin: 20px;
-}
-
-/* Services page */
-
-.services-header-img {
-	margin: 25px 0px;
-}
-
-.intro {
-	margin-bottom: 45px;
-	padding-bottom: 25px;
-	border-bottom: 1px solid black;
-}
-
-h2 {
-	font-size: 24px;
-}
-
-h3 {
-	font-size: 16px;
-}
-
-.areas {
-	border-bottom: 1px solid black;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-bottom: 19px;
-}
-
-.area {
-	border: 1px solid black;
-	margin: 19px 0px;
-	padding: 15px;
-	width: 420px;
-	height: 205px;
-	background-color: whitesmoke;
-}
-
-.learn {
-	display: flex;
-	border: 1px solid black;
-	font-size: 12px;
-	padding: 5px 40px;
-	margin: 15px 0px;
-	width: 140px;
-	justify-content: center;
-	background-color: white;
-	border-radius: 5px;
-}
-
-.outro {
-	display: flex;
-	justify-content: space-between;
-	margin: 50px 0px;
-	padding: 10px;
-}
-
-.outroLeft {
-	display: flex;
-	flex-direction: column;
-	justify-content: left;
-	margin: 15px;
-}
-
-.facts {
-	flex-direction: column;
-	list-style-type: square;
-	margin: 15px;
-	font-size: 12px;
 }
 
 @media (max-width: 800px){
