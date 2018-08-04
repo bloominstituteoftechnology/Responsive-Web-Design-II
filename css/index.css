@@ -226,7 +226,7 @@ section{
 }
 
 .middle-img {
-    margin-top: 31px;
+    margin: 30px 0px 30px 0px;
     border: 1px solid black;
     border-radius: 15px;
     height: 182px;
@@ -268,6 +268,45 @@ h4 {
 .foot {
     position: relative;
     top: -2px;
+    font-size: 1.6rem;
+}
+
+/* compenating for fixed nav bar, overlapping the logo */
+
+@media screen and (max-width:869px) {
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+
+    }
+
+    .great {
+        display: flex;
+        justify-content: center;
+        height: 110px;
+    }
+
+    .logo {
+        height: 35px;
+        max-width: 182px;
+        width: 22.75%;
+        right: -7px;
+        margin-top: 30px;
+    }
+
+    nav{
+        width: 96%;
+        margin: 0 auto;
+        margin-top: 99px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        height: 35px;
+        max-width: none;
+        top: -18px;
+    }
 }
 
 /* tablet */
@@ -277,50 +316,30 @@ h4 {
         max-width: 800px;
     }
 
-    header {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 80px;
-
-    }
-    .great {
-        display: flex;
-        justify-content: center;
-        height: 110px;
-    }
-    .logo {
-        height: 35px;
-        max-width: 182px;
-        width: 22.75%;
-        right: -19px;
-        margin-top: 30px;
-    }
-    nav{
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 99px;
-    }
     .code {
         display: none;
     }
+
     .innovation {
         justify-content: space-evenly;
         width: 100%
     }
+
     .innovation-text-button {
         left: 8px;
         top: -1px;
         height: 342px;
     }
+
     section {
-        width: 97%;
+        width: 94%;
         top: -106px;
         margin: 0px 20px;
         justify-content: space-evenly;
         height: auto;
         padding-bottom: 71px;
     }
+
     .upper-text {
         max-width: 360px;
         width: 45%;
@@ -329,17 +348,19 @@ h4 {
         height: 127px;
         margin: 0px 8px;
     }
+
     .middle-img {
         width: 100%;
         height: 157px;
-        top: -13px;
     }
+
     .lower-text {
         margin-top: 15px;
         left: 10px;
         max-width: 252px;
         width: 31.5%;
     }
+
     .foot {
         position: relative;
         display: flex;
@@ -348,6 +369,7 @@ h4 {
         padding: 0px 0px 0px 30px;
         top: -90px;
     }
+
     h4 {
         margin: 44px 1.5% 0px 0px;
     }
@@ -358,19 +380,33 @@ h4 {
 @media screen and (max-width: 500px) {
     .container{
         max-width: 500px;
+        min-width: 212px;
     }
+
+    .innovation-text-button {
+        width: 100%;
+    }
+
     header{
         width: 100%;
         flex-direction: column-reverse;
-        height: 443px; 
+        height: auto;
+        top: 15px;
+        position: relative;
     }
+
     nav {
         flex-direction: column;
         background: none;
-        height: 324px;
         position: relative;
         margin: 0 auto;
+        flex-wrap: nowrap;
+        top: 0px;
+        width: 100%;
+        padding: -3px;
+        height: auto;
     }
+
     a {
         border: 1px solid black;
         border-radius: 10px;
@@ -383,12 +419,14 @@ h4 {
         top: -14px;
         margin: 0 auto;
    }
+
    .great {
         height: 61px;
         position: relative;
         top: -14px;
         width: 100%;
    }
+
    .innovation {
         margin: 28px 0px 89px 0px;
    }
@@ -398,6 +436,7 @@ h4 {
        width: 50.2%;
        min-width: 65.6px;
    }
+
    section {
         margin: 0px;
         height: 969px;
@@ -405,29 +444,35 @@ h4 {
         align-items: center;
         width: 100%;
    }
+
    .middle-img {
         width: 100%;
-        height: 94px;
-        top: -29px;
+        height: auto;
         margin: 0 auto;
    }
+
    .upper-text {
         max-width: 498px;
         width: 100%;
         left: 7px;
         top: -15px;
+        height: auto;
    }
+
     .lower-text {
         max-width: 498px;
         width: 100%;
-        
+        height: auto;
     }
+
     h2, h3, h4, {
         margin: 0px;
     }
+
     p {
         width: 97%;
     }
+
     foot {
         padding: 0px 0px 0px 15px;
     }
