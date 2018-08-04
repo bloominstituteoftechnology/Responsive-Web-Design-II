@@ -141,17 +141,17 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid black !important;
+    /* border: 1px solid black !important; */
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
 body {
     display: flex;
     justify-content: center;
-    font-size: 1.6rem ;
+    font-size: 1.6rem;
 }
 
 .site-container {
@@ -159,57 +159,86 @@ body {
     max-width: 950px;
 }
 
+
+.site-container header {
+
+    display: flex ;
+    flex-direction: column-reverse ;
+    justify-content: space-between ;
+    padding-top: 0.5rem ;
+}
 .flex-bar {
-    display: flex ;
-    justify-content: space-around;
-    align-content: space-between ;
-    width: 100% ;
-    max-width: 950;
-}
-
-.flex-bar a:link {
-    color: black ;
-}
-
-.flex-bar a:visited {
-    color: black ;
-}
-
-.first-articles {
-    display: flex ;
+    display: flex;
     flex-direction: row ;
-    width: 100% ;
-    max-width: 900px ;
-    flex-wrap: wrap ;
     justify-content: space-around;
+    width: 100%;
+    max-width: 950;
+    margin: 2% 0;
+    box-shadow: 10px 10px 5px grey;
+    border: 1px solid black ;
+    background: -webkit-linear-gradient(rgba(140, 108, 108, 0.672), rgba(51, 51, 51, 0.111), rgb(64, 64, 68));
+    -webkit-background-clip: text;
+    background-clip: border-box ;
+}
+.flex-bar a button {
+
+    display: flex ;
+    align-items: center ;
+
+}
+
+.flex-bar a {
+    text-decoration: none ;
+}
+
+
+
+.banner-div img {
+    width: 100% ;
+    max-width: 950px;
+
+}
+.flex-bar img {
+    width: 100% ;
+    max-width: 150px ;
+    height: 100% ;
+    max-height: 150px ;
+}
+
+.top-text p img {
+    width: 100% ;
+    max-width: 300px;
+}
+
+
+
+
+.top-text {
+    border-left: 2px solid black ;
+    border-right: 2px solid black ;
+}
+.flex-bar a button {
+    font-size: 2.0rem;
+    font-family: 'Kreon';
+    background: transparent ;
+    width: 100% ;
+    border: none ;
+  
+
+
+}
+
+.top-text p {
+    width: 100%;
+    max-width: 300px;
+
+    border: 1px solid black ;
 }
 
 
 .first-articles .top-text {
-    
     display: flex ;
     flex-direction: row ;
-
-}
-.first-articles .top-text  p {
-
-    display: flex ;
-    flex-direction: row ;
-    justify-content: space-between;
-    width: 100% ;
-    max-width: 300px ;
-}
-
-.first-articles .bottom-text {
-    display: flex ;
-    flex-direction: row ;
-}
-
-.first-articles .bottom-text p {
-
-    display: flex ;
-    flex-direction: row ;
-    justify-content: space-between;
-    width: 100% ;
-    max-width: 300px ;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
 }
