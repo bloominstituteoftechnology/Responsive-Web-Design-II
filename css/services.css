@@ -205,6 +205,7 @@ header nav a:last-child {
 
 header .logo {
     display: inline-block;
+   
 }
 
 .header__service--imgs {
@@ -472,6 +473,7 @@ footer h3::before {
         }
         header .logo {
             display: flex;
+            width: 100%;
             padding-bottom: 10px;
         }
         header nav a:last-child {
