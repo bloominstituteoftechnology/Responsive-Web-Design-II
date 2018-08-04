@@ -1,1 +1,522 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	display: flex;
+	justify-content: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	max-width: 880px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+/*** Navigation Section***/
+header {
+	align-items: center;
+    display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+header nav {
+	display: flex;
+    justify-content: space-between;
+    width: 86%;
+}
+header nav a {
+	color: grey;
+	display: inline-block;
+	font-size: 1.4rem;
+	min-width: 9.1%;
+    padding: 15px;
+	text-decoration: none;	
+}
+header nav a:hover {
+	border-top: 1px solid grey;
+	color: darkgray;
+    transition: .5s;
+}
+header nav a:last-child {
+	margin-right: 9.4%;
+}
+header .nav-logo {
+	display: inline-block;
+}
+header .nav-logo:hover {
+    opacity: .5;
+	transition: .5s; 	
+}
+
+/*** Call To Action ***/
+.cta {
+    align-content: center;
+	display:flex;
+	height: 394px;
+    justify-content: space-evenly;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	width: 90.9%;
+}
+.cta-text {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 7.7rem;
+	justify-content: space-between;
+	margin-top: 90px;
+	text-align: center;		
+}
+.header-img {
+    display: flex;
+    flex-direction: row;
+	height: 350px;
+    justify-content: center;
+    width: 350px;
+}
+
+/*** Headings & Paragraphs ***/
+h2 {
+    font-size: 1.8rem;
+}
+p {
+	font-size: 1.8rem;
+	line-height: 1.2;   
+}
+
+/*** Buttons ***/
+.cta button {
+	background: white;
+	border: 1px solid black;
+	cursor: pointer;
+	font-size: 1.8rem;
+	padding: 10px 5.5%;
+	vertical-align: top;		
+}
+.cta button:hover {
+	background-color: #212121;
+    color:whitesmoke;
+    transition: .5s;
+}		
+.btn-services {
+	background: white;
+	border: 1px solid black;
+	cursor: pointer;
+	font-size: 18px;
+    margin: 20px 0 0 1px;
+	padding: 5px 0;
+	vertical-align: top;
+    width: 150px;	
+}
+.btn-services:hover {
+	background-color: #212121;
+    color:whitesmoke;
+    transition: .5s;
+}
+
+/*** Home Page Mid Section ***/
+.mid-section {
+	border-bottom: 1px solid black;
+    border-top: 1px solid black;
+	display: flex;  
+    flex-direction: column;
+}
+.mid-box-top {
+    display: flex;
+	justify-content: space-between;
+}
+.mid-box-top .mid-box-text {
+	margin-top: 40px;
+	width: 48.9%;
+}
+.mid-box-bottom {
+    display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.mid-box-bottom .mid-box-text {
+	width: 30.8%;	
+}
+.mid-img {
+    margin: 40px 0;
+	width: 100%;
+	
+}
+
+/*** Services Page ***/
+			
+/*** Services Header ***/
+
+.services-header-img {
+    margin-top: 40px;
+	width: 100%;     
+}
+
+/*** Services Content ***/
+
+.services-content {
+    border-bottom: 1px solid black;
+	margin-top: 40px;
+    padding: 0 0 4.5% 0;  
+}
+.services-text {
+    font-size: 2.8rem;
+}
+.services-container {
+	align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	margin-top: 3px;     
+}
+.service-box {
+    background-color: lightgray;
+	border: 1px solid black;
+	height: auto;
+    margin-left: 0 2.5% 0 0;
+    margin-top: 35px;
+    padding: 15px 3.6% 15px 3.6%;
+    width: 47.7%;	
+}
+
+/* Services Page Fact Section */
+
+.facts .facts-text .facts-list {
+    font-size: 1.8rem;
+	line-height: 2;
+	list-style-type: square;
+    padding-left: 2.3%;
+}
+.facts {
+    border-top: 2px solid black;
+	display: flex;
+    margin-bottom: 50px;
+	margin-top: 40px;
+    padding-top: 40px;
+}
+.facts .facts-text {
+    margin-right: 5.7%;
+}
+
+/*** Contact ***/
+.contact {
+	font-size: 1.8rem;
+	margin: 20px 0;
+}
+/*** Contact Form ***/
+.h1-contact {
+	font-size: 4.2rem;
+	text-align: center;
+}
+
+.contact-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 80px;
+	padding-left: 4.5%
+}
+form {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	transition: all 4s ease-in-out;	
+}
+.form-control {
+	background: lightgrey;
+	border: 1px solid darkgrey;
+	border-radius: 4px;
+	font-size: 1.8rem;
+	margin-bottom: 16px;
+	outline: none;
+	width: 68.2%;
+}
+input {
+	height: 45px;
+	padding-left: .6%;
+}
+textarea{
+	padding-left: .6%
+}
+form .submit {
+	background: #212121;
+	color: white;
+	font-size: 2rem;
+	font-weight: bold;
+	height: 50px;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	width: 34.1%;
+}
+form .submit:hover {
+	background: #303030;
+	color: white;
+	cursor: pointer;
+}
+
+/*** Footer ***/
+footer {
+	margin: 32px 0;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+
+/***** MEDIA QUERIES *****/
+
+/*** Tablet Version - 800px Width ***/
+
+@media (max-width: 800px){
+	.container {
+    	padding: 2.5%;
+		width: 100%;
+    }
+/* Navigation */
+	header {
+		align-items: center;
+		animation-duration: 6s;
+		animation-fill-mode:none;
+		animation-name: nav-animate-tablet;
+		flex-direction:column-reverse;
+		position: relative;	
+	}
+	@keyframes nav-animate-tablet {
+		0% {opacity: 0}
+		100% {opacity: 100}
+	}
+ 	header nav {
+        justify-content: space-around;
+		width: 100%;	
+    }
+	header .nav-logo {
+		margin-bottom: 40px;
+		margin-left: 8%;
+	}
+	header nav a {
+		font-size: 1.8rem;;
+	}
+	header nav a:last-child {
+		margin-right: 0%;
+	}
+/* Call to Action */
+    .cta {
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		animation-name: cta-animate-tablet;
+        justify-content: center;
+		margin-top: 0px;
+		position: relative;
+		width: 100%;	
+    }
+	@keyframes cta-animate-tablet {
+		0% {top: -20%;}
+		100% {top: 0}
+	}
+	.header-img {
+		display: none;
+	} 
+/* Mid Section */
+    .mid-section {
+       	width: 100%;
+    } 
+	  .mid-box-top {
+        padding-right: 2.5%;
+    } 
+	.mid-box-bottom {
+        padding-right: 2.5%
+    } 
+    .mid-img {
+        width: 100%;
+    }
+/* Services Page*/
+	.facts .facts-text {
+		margin-top: 30px;
+	}
+	.facts {
+		flex-direction: column-reverse;
+	}
+ form .submit {
+	background: #212121;
+	color: white;
+	font-size: 180%;
+	font-weight: bold;
+	height: 50px;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	width: 25.1%;
+}
+/***  Mobile Version - 500px Width ***/
+
+@media (max-width: 500px){
+    .container {
+		padding: 0px;
+        width: 100%;   
+    } 
+/* Navigation */
+	header .nav-logo {
+		margin-right: 8%;
+		margin-top: 20px;
+	}
+    header nav {
+		align-items: center;
+        flex-direction: column;             
+    }
+    header nav a  {
+		border-top: 1px solid grey;
+        font-size: 2.4rem;
+        text-align: center; 
+		width: 100%;
+	}
+  	header nav a:last-child {
+		border-bottom: 1px solid grey;
+	} 
+	header nav a:hover{
+	    background: #212121;
+        color: white;
+	}
+/* Call to Action */
+	.cta-text{
+		font-size: 6.5rem;
+	}
+	.cta {
+		animation-name: cta-animate;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		position: relative;
+		width: 100%;
+	}
+	@keyframes cta-animate {
+		0% {left: -95%;}
+		100% {left: 0}
+	}
+	
+/* Mid Section */
+    .mid-section {
+       	width: 100%;
+    } 
+	.mid-box-top {
+		flex-direction: column;
+	}
+	.mid-box-top .mid-box-text {
+		width: 90%
+	}
+	.mid-box-bottom {
+		flex-direction: column;
+	}
+	.mid-box-bottom .mid-box-text {
+		margin-bottom: 30px;
+		width: 90%
+	}
+	.mid-box-bottom .mid-box-text:last-child{
+		margin-bottom: 0px;
+	}
+	
+/* Services Page */
+	
+	.services-content {
+		margin-left: 2%;
+		margin-right: 2%;	
+}
+	.services-text {
+    	font-size: 2.8rem;
+}
+	.services-container {
+		flex-direction: column;
+		margin-left: 2%;
+		margin-right: 2%;
+}
+	.service-box {
+    	width: 100%;
+}
+	.facts .facts-text .facts-list {
+		font-size: 18px;
+		line-height: 2;
+    	list-style-type: square;
+    	padding-left: 12.3%;	
+}
+	.facts {
+		margin-left: 2%;
+		margin-right: 2%;
+}
+	.facts .facts-text {
+    	margin-right: 5.7%;
+}
+	
+/* Contact Section */
+	.contact {
+		margin-left: 5%;
+	}
+	 form .submit {
+	background: #212121;
+	color: white;
+	font-size: 130%;
+	font-weight: bold;
+	height: 50px;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	width: 25.1%;
+}
