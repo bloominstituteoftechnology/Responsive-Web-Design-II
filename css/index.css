@@ -57,27 +57,19 @@ html {
 
 h3 {
     font-family: 'Bangers';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 3% 0;
-}
-
-.logoDiv {
-    display: flex;
-    /*justify-content: center;*/
-    /*max-width: 100%;*/
-    width: 100%;
-    height: auto;
 }
 
 .logo {
     max-width: 100%;
     height: auto;
+    margin: 0 0 0 4%;
 }
 
 
 .container {
     max-width: 880px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0% auto;
@@ -86,14 +78,13 @@ h3 {
 .navHeader {
     display: flex;
     justify-content: space-between;
-    width: 95%;
-    margin: 2% 2%;
+    width: 100%;
+    margin: 2%;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
     width: 100%;
     margin: 1.25% 1.25% 0 0;
 }
@@ -107,7 +98,7 @@ a.topNav {
 .contentHead {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    width: 100%;
     justify-content: space-around;
     margin: 5% 0;
 }
@@ -134,7 +125,7 @@ a.topNav {
 .contentContainer {
     display: flex;
     flex-direction: row;
-    width: 95%;
+    justify-content: space-between;
 }
 
 .topContainer {
@@ -145,17 +136,11 @@ a.topNav {
 }
 
 .content {
-    margin: 5% 0;
-    padding: 0 2%;
     display: flex;
     flex-direction: column;
+    margin: 3% 0;
 }
-.content:nth-child(1) {
-    padding: 0 2% 0 0;
-}
-.content:nth-child(2) {
-    padding: 0 0 0 2%;
-}
+
 
 .compAddress {
     display: flex;
@@ -169,16 +154,13 @@ footer {
 }
 
 @media (max-width: 800px) {
+    .container {
+        max-width: 95%;
+    }
     .headerImg {
         display: none;
     }
-    .logoDiv {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
     .logo {
-        max-width: 95%;
         height: auto;
         align-self: center;
     }
