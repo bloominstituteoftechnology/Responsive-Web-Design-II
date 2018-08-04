@@ -1,1 +1,372 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* End of Reset */
+html{
+    font-size: 62.5%;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	max-width: 880px;
+	margin: 0px auto;
+}
+
+#upper-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+    padding: 15px 0%;
+}
+
+#anchors{
+    display: flex;
+    justify-content: space-between;
+    width: 68.8%;
+}
+
+a{
+	text-decoration: none;
+	font-size: 1.5rem;
+    color: lightgrey;
+    font-weight: 600;
+    letter-spacing: .03rem;
+}
+
+.logo{
+	padding: 0px 1% 0px 0%;
+}
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	/* NOTE: Effects header vertical position */
+	padding: 50px 0% 60px 0%;
+	border-bottom: 2px solid black;
+}
+
+.header-text-div{
+	display: flex;
+	flex-direction: column;
+	/* NOTE: Effects header horizontal position */
+	padding: 0px 0% 0px 12%;
+}
+
+.header-text{
+	font-family: 'Bangers', cursive;
+    font-size: 7.2rem;
+    text-align: center;
+}
+
+#header img{
+	width: 43.2%;
+}
+
+.get-started{
+	align-self: center;
+	text-align: center;
+	color: black;
+	max-width: 170px;
+	width: 100%;
+	padding: 8px 0%;
+	margin-top: 25px;
+	border: 1px solid black;
+    font-size: 1.6rem;
+}
+
+#upper-para h2, #lower-para h2, .contact h2{
+	font-size: 1.8rem;
+}
+
+#upper-para p, #lower-para p, .contact p{
+	font-size: 1.5rem;
+	letter-spacing: .015rem;
+	line-height: 1.17em;
+}
+
+#upper-para{
+	display: flex;
+	justify-content: space-between;
+	margin: 36px 0% 35px 0%;
+}
+
+#upper-para div{
+    width: 48.8%;
+}
+
+.middle-img{
+    width: 99.6%;
+    margin: 0 auto;
+}
+
+#lower-para{
+	display: flex;
+	justify-content: space-between;
+	/* NOTE: Effects lower paragraphs vertical position */
+	padding: 40px 0% 40px 0%;
+	border-bottom: 2px solid black;
+}
+
+#lower-para div{
+	width: 30.1%;
+	margin-right: 2%;
+}
+
+.contact{
+	align-self: flex-start;
+}
+
+.contact h2{
+	margin: 40px 0% 20px 0%;
+}
+
+.contact p{
+	padding-bottom: 15px;
+}
+
+#copyright{
+	text-align: center;
+	font-size: 1.5rem;
+	letter-spacing: .015rem;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+/* NOTE services page
+#services-about{
+	margin: 20px 0px;
+}
+
+.services-content-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.services-content{
+	width: 48%;
+	border: 1px solid black;
+	padding: 25px;
+	margin: 20px 0px;
+	background-color: #f4f3f4;
+}
+
+.services-content p{
+	margin-bottom: 30px;
+}
+
+.services-content a{
+	padding: 8px 40px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+}
+
+#services-facts{
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0px;
+}
+
+#services-facts p{
+	padding-right: 50px;
+	margin-bottom: 25px;
+	line-height: 1.2;
+}
+
+#services-facts li{
+	list-style-type: square;
+	list-style-position: inside;
+	margin-bottom: 10px;
+}*/
+
+@media(max-width: 800px){
+	.main{
+		width: 95%;
+	}
+
+	#upper-nav{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.logo{
+		width: 100%;
+		margin: 20px auto 40px auto;
+		padding: 0;
+	}
+
+	#anchors{
+		width: 87.5%;
+	}
+
+	#header{
+		justify-content: center;
+		width: 100%;
+		border-bottom: 2px solid black;
+	}
+	
+	.header-text-div{
+		margin: 0;
+		padding: 0;
+	}
+
+	.header-text{
+		padding: 0;
+	}
+
+	.get-started{
+		margin: 20px auto;
+	}
+
+	#header img{
+		display: none;
+	}
+
+	#upper-para{
+		margin: 36px 3% 35px 3%;
+	}
+
+	.middle-img{
+		width: 100%;
+	}
+
+	#lower-para div{
+		width: 30.1%;
+		margin: 0px 3% 0px 3%;
+	}
+
+	.contact{
+		margin-left: 3%;
+	}
+}
+
+@media(max-width: 500px){
+	.main{
+		max-width: 498px;
+		width: 96%;
+	}
+
+	#upper-nav{
+		justify-content: flex-end;
+	}
+
+	#anchors{
+		display: flex;
+		flex-direction: column;
+		width: 99%;
+		border-bottom: 1px solid black;
+	}
+
+	.logo{
+		margin: 10px auto 15px auto;
+	}
+
+	a{
+		font-size: 2.0rem;
+		text-align: center;
+		padding: 20px 0% 20px 0%;
+		border-top: 1px solid black;
+	}
+
+	#header{
+		width: 96%;
+	}
+
+	#upper-para{
+		flex-wrap: wrap;
+		width: 99%;
+		margin: 45px 0% 0px 5%;
+	}
+
+	#upper-para div{
+		width: 84%;
+		margin-bottom: 50px;
+	}
+
+	.middle-img{
+		width: 94%;
+	}
+
+	#lower-para{
+		flex-wrap: wrap;
+		width: 99%;
+		padding: 0;
+		border-bottom: 2px solid black;
+	}
+
+	#lower-para div{
+		width: 84%;
+		padding: 25px 0% 25px 0%;
+	}
+
+	.contact{
+		margin-top: 0px;
+	}
+
+	#copyright{
+		font-size: 1.6rem;
+	}
+}
