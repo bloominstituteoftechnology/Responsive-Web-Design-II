@@ -1,0 +1,136 @@
+.services-header-img {
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+.service-header {
+	display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.service-header h2 {
+  font-size: 2.8rem;
+}
+.service-header p {
+  font-size: 1.4rem;
+}
+
+.service-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+  margin: 20px 0px;
+}
+
+.service-block {
+	display: flex;
+	flex-direction: column;
+	border: solid 1px;
+  background:whitesmoke;
+  width: 45%;
+  margin: 20px 0;
+  padding: 20px 2.27%;
+  justify-content: space-between;
+}
+
+.service-block h3 {
+  font-size: 2.2rem;
+}
+
+.service-block p {
+  font-size: 1.4rem;
+}
+
+.button {
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic";
+  width: 100%;
+  max-width: 130px;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 5px, 5%;
+  background: white;
+}
+
+.button:hover {
+  background: black;
+  color: whitesmoke;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.bottom-text {
+	display: flex;
+	flex-direction: column;
+  width: 47%;
+  justify-content: space-between;
+}
+
+.bottom-text p {
+  font-size: 1.4rem;
+}
+
+.list {
+	list-style: square inside;
+}
+
+li {
+    padding: 5px 0px;
+    padding-left: 9.67%;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 800px){
+    .services-header-img {
+      margin-top: 30px;
+    }
+
+    .service-container {
+      justify-content: space-around;
+    }
+
+    .services-info-img {
+      display: none;
+    }
+
+    .bottom-text {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .list {
+      display: inline-flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      width: 65%;
+    }
+
+    li {
+      padding-left: 2%;
+      padding-right: 2%;
+      list-style-type: disc;
+      min-width: 106px;
+    }
+
+    .bottom-text p {
+      width: 50%;
+    }
+}
+
+@media (max-width: 500px){
+    .services-header-img{
+      display: none;
+    }
+
+    .service-header {
+      margin-top: 20px;
+    }
+  }
+}
