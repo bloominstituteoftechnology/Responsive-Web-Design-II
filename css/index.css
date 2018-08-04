@@ -79,7 +79,7 @@ html {
     font-size: 62.5%
 }
 
-.divPage {
+.pageContainer {
     width: 880px;
     padding-left: 2.27%;
     margin: auto;
@@ -114,15 +114,16 @@ html {
 }
 
 .logo1 {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
     display: inline-block;
 }
 
-.logo2 {
-    width: 40%;
-}
-
 .topImage {
-    width: 100%;
+    max-width: 100%;
+    width: 40%;
+    height: auto;
 }
 
 .topText {
@@ -130,20 +131,7 @@ html {
     font-size: 6.0rem;
     top: 100px;
     text-align: center;
-    height: 240px;
-}
-
-.sectionContainer {
-    width: 100%;
-    display: block;
-}
-
-.section2 {
-    width: 48%;
-    display: inline-block;
-    font-size: 1.4rem;
-    padding-right: 1.42%;
-    padding-left: 1.42%;
+    height: 200px;
 }
 
 .textFlexContainer {
@@ -151,9 +139,22 @@ html {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    padding-top: 50px;
+    padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.section1Container {
+    width: 100%;
+    display: block;
+}
+
+.section1 {
+    width: 48%;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-right: 1.42%;
+    padding-left: 1.42%;
 }
 
 .cta {
@@ -166,16 +167,19 @@ html {
 
 .middle-img {
     max-width: 100%;
+    width: 96%;
+    height: auto;
+    padding-left: 1.42%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.sectionContainer2 {
+.section2Container {
     width: 100%;
     display: block;
 }
 
-.section3 {
+.section2 {
     width: 32.68%;
     display: inline-block;
     font-size: 1.4rem;
@@ -189,10 +193,10 @@ a:link {
     text-decoration: none;
 }
 
-.topTextBox {
+.topTextButton {
     border: 2px solid black;
     color: black;
-    width: 51.85%;
+    width: 40%;
     Height: 28px;
     text-align: center;
     text-decoration: none;
@@ -200,7 +204,7 @@ a:link {
     padding-top: 4px;
 }
 
-.topTextBox:hover {
+.topTextButton:hover {
     animation: moveIt 3s infinite;
 }
 
@@ -236,7 +240,7 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .divPage {
+    .pageContainer {
         width: 800px;
         padding-left: 1.25%;
     }
@@ -248,8 +252,12 @@ footer {
         align-items: center;
     }
     .navItemFlex {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         display: inline-block;
+    }
+
+    .logo1 {
+       padding-left: 10%;
     }
     .header1 {
         display: flex;
@@ -266,14 +274,14 @@ footer {
         margin-right: 0px;
     }
 
-    .sectionContainer {
+    .section1Container {
         width: 100%;
         display: flex;
         padding-left: 1.25%;
         padding-right: 1.25%;
     }
 
-    .sectionContainer2 {
+    .section2Container {
         width: 100%;
         display: flex;
         padding-left: 1.25%;
@@ -283,10 +291,10 @@ footer {
     .topText {
         top: 100px;
         text-align: center;
-        height: 240px;
+        height: 200px;
     }
 
-    .logo2 {
+    .topImage {
         display: none;
     }
 
@@ -296,8 +304,6 @@ footer {
     }
 
     .middle-img {
-        display: flex;
-        width: 100%;
         padding-right: 0px;
         margin-left: 0;
     }
@@ -325,24 +331,24 @@ footer {
         font-family: 'Abel', sans-serif;
     }
 
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
     .section2 {
         display: flex;
         flex-direction: column;
         padding-top: 10px;
     }
-
-    .section3 {
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-    .topTextBox:hover {
+    .topTextButton:hover {
         animation: moveIt;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .divPage {
+    .pageContainer {
         padding-left: 0px;
         width: 500px;
     }
@@ -352,7 +358,7 @@ footer {
         margin-right: 0px;
     }
 
-    .logo2 {
+    .topImage {
         display: none;
     }
 
@@ -391,7 +397,7 @@ footer {
         padding-top: 10px;
     }
 
-    .sectionContainer {
+    .section1Container {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -400,7 +406,7 @@ footer {
         padding-right: 2%;
     }
 
-    .section2 {
+    .section1 {
         width: 100%;
         display: inline-block;
     }
@@ -420,7 +426,7 @@ footer {
         font-size: 4.0rem;
     }
 
-    .sectionContainer2 {
+    .section2Container {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -428,7 +434,7 @@ footer {
         padding-left: 2%;
     }
 
-    .section3 {
+    .section2 {
         width: 100%;
         display: inline-block;
         padding-top: 10px;
@@ -449,7 +455,7 @@ footer {
         font-size: 1.4rem;
         font-family: 'Abel', sans-serif;
     }
-    .topTextBox:hover {
+    .topTextButton:hover {
         animation: moveIt;
     }
 }
