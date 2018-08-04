@@ -253,26 +253,40 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     justify-content: center;
     border-top: 1px solid grey;
-    border-bottom: 2px solid black;
+    border-bottom: 0px;
 }
 
 .descriptiveSection {
     flex-flow: column nowrap;
     width: 96.2%;
-    margin-top: 0px;
+    margin: 0 auto;
+}
+
+.upperSection {
+    border-top: 2px solid black;
+}
+
+.lowerSection {
+    border-bottom: 2px solid black;
 }
 
 .upperText {
     width: 100%;
-    margin: 25px 0px; 
+    margin-top: 25px 0px;
+    padding-left: 0px; 
 }
 
 .lowerText {
     width: 100%;
     margin: 25px 0px; 
+    padding-left: 0px; 
 }
 
 .middle-img {
     margin: auto;
     width: 96.2%;
+}
+
+#address {
+    border-top: 0px;
 }
