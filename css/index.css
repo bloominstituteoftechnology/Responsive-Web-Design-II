@@ -1,1 +1,461 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 90%;
+    max-width: 880px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    font-family: 'Gaegu', cursive;
+}
+/*Header style*/
+header {
+    display: flex;
+    width: 100%;
+    max-width: 880px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: darkcyan;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:75%;
+    height: 100%;
+    padding: 0px 2%
+}
+
+a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 1.6rem;
+}
+/*H1 and Image section styling*/
+.top-content {
+    display: flex;
+    width: 100%;
+    height: 320px;
+    justify-content: space-between;
+    align-items: center;
+    margin:40px 0%;
+}
+h1 {
+    font-size: 6.5rem;
+    text-align: center;
+}
+
+.circle {
+    width: 35%;
+}
+
+.h1-container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.button {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px 4%;
+    background-color: lightgray;
+}
+/*Styling features and About section*/
+.features-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.f-a-childs {
+    width: 48.5%;
+    margin: 20px 0%;
+    padding:2% 0%;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: start;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.middle-img {
+    width: 100%;
+}
+/*Styling Services, Product and Vision section*/
+.services-product-vision {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0%;
+    border-bottom: 1px solid black;
+}
+.spv-childs {
+    width: 32.7%;
+    padding-right: 5px; 
+    margin: 25px 0%;
+}
+/*Footer style*/
+address {
+    font-size: 1.4rem;
+    margin: 15px 0%;
+}
+strong {
+    display: block;
+    margin: 10px auto;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+/*Some CSS Effects*/
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+a:hover {
+	color: black;
+	font-size: 1.8rem;
+}
+.button:hover {
+	background-color: darkcyan;
+	color: antiquewhite;
+	border: 1px solid white;
+}
+/*Introducing media query for Tablet version*/
+@media (max-width: 800px) {
+
+    .container {
+        max-width: 650px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        max-width: 650px; 
+        height: 90px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .top-content {
+        justify-content: center;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    nav {
+        width: 100%;
+        margin: 5px 0%;
+    }
+
+    .logo {
+        margin-top: 15px;
+    }
+
+}
+/*Introducing media query for Mobile version*/
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+        max-width: 450px;
+    }
+
+    header {
+        max-width: 450px;
+        height: 400px;
+    }   
+
+    .top-content {
+        margin: 0%;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 0%;
+        margin: 10px 0% 0px 0%;        
+    }
+
+    a {
+        border: 1px solid lightgray;
+        font-size: 2.3rem;
+        align-self: stretch;
+        text-align: center;
+        flex-grow: 1;
+        margin:0%;
+        padding-top: 15px;
+    }
+
+    .features-about {
+        flex-direction: column; 
+    }
+
+    .f-a-childs {
+        width: 100%;
+        padding: 0%;
+        margin: 20px 0%;
+    }
+
+    .services-product-vision {
+        flex-direction: column;
+    }
+
+    .spv-childs {
+        width: 100%;
+        padding: 0%;
+        margin: 20px 0%;
+    }
+    .button {
+        padding: 5px 8%;
+    }
+
+    address {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    a:hover {
+        background-color: cyan;
+    }
+
+}
+
+/*Styling Services Page*/
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+.services-header-img {
+    width: 100%;
+    margin: 25px 0%;
+}
+/*Styling page's center divs*/
+.middle-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 35px 0%;
+    padding: 15px 0%;
+}
+
+.middle-divs {    
+    width: 49%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin: 10px 0%;
+    padding: 2%;
+}
+
+.button-s {
+    display: inline-block;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    background-color: white;
+    width: 30%;
+    height: 30px;
+    margin-top: 10px;
+    padding-top: 2.5%;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+/*Styling bottom*/
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0%;
+    font-size: 1.8rem;
+}
+
+.bottom-child {
+    width: 48%;
+}
+
+.services-info-img {
+    width: 49%;
+}
+
+ul {
+    margin-top: 15px;
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+li {
+    margin: 8px 0%;
+}
+
+.footer-services {
+    margin: 30px 0%;
+}
+/*Introducing media query for Service's Tablet version*/
+@media (max-width: 800px) {
+    .services {
+        text-align: center;
+    }
+
+    .logo-services {
+        margin-top: 15px;
+    }
+
+    .button-s {
+        min-width: 80px;
+    }
+
+    .button-s:hover {
+        background-color: darkcyan;
+        color: white;
+        padding-top: 7px;        
+    }
+
+    .middle-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+/*Introducing media query for Service's Mobile version*/
+@media (max-width: 500px) {
+    .services-header-img {
+        display: none;
+    }
+
+    .button-s: {
+        padding-top: 0px;
+    }
+
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .middle-divs {
+        width: 100%;
+    }
+
+    .services-nav {
+        margin-top: 0%;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .bottom-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .services-info-img {
+        width: 100%;
+    }
+
+    .services {
+        margin-top: 20px;
+    }
+
+    .logo-services {
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
