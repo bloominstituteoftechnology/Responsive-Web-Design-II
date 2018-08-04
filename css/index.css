@@ -115,7 +115,7 @@ html {
 
 .logo1 {
     max-width: 100%;
-    width: 80%;
+    width: 60%;
     height: auto;
     display: inline-block;
 }
@@ -124,6 +124,7 @@ html {
     max-width: 100%;
     width: 40%;
     height: auto;
+    padding-right: 10%;
 }
 
 .topText {
