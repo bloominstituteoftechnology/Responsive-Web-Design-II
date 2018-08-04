@@ -54,6 +54,9 @@ table {
 html {
     font-size: 62.5%;
 }
+body {
+    overflow-y: hidden;
+}
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
