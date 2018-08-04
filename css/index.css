@@ -1,1 +1,318 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* width: 800px; */  /* this messed up my responsive */
+    /* margin: 0 auto; */
+    max-width: 880px;
+    margin: 0 auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+/********************************************************** */
+
+.container {
+    border: 1px solid darkolivegreen;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: .1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* header */
+.top-header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    align-items: center;   /* align-content does NOT work with single row of elements */
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 2px solid royalblue;
+}
+
+.logo {
+    border: 1px solid fuchsia;
+}
+
+header nav a {
+    border: 1px solid honeydew;
+    padding:  0 3%;
+    font-size: 1.4rem;
+    color: gray;
+    text-decoration: none;
+    vertical-align: bottom;   /* only works for inline elements */
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 0;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+
+/* cta */
+
+.cta  {
+    width: 100%;
+    border: 4px solid blueviolet;
+    display: flex;
+    font-size: 6.5rem;
+    justify-content: center; /* DOES NOT CENTER */
+
+}
+
+.cta .cta-text {
+    border: 4px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta .cta-text h1 {
+    border: 1px solid green;
+    box-sizing: border-box;
+    width: 45%;
+    text-align: center;
+    font-size: 5.5rem;
+}
+
+
+
+.cta .cta-text button {
+    width: 50%;
+    background: white;
+
+    font-size: 1.7rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.cta img {
+    border: 1px solid blue;
+
+}
+
+.main-content {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: lightblue;
+    padding: 2% 0;
+}
+
+.main-content .top-content {
+    border: 6px solid firebrick;
+    display: flex;
+}
+
+.main-content .top-content .text-content {
+    border: 1px solid darkblue;
+    width: 80%;
+    font-size: 2rem;
+}
+
+.main-content .top-content .text-content:first-child {
+     margin-right: 1%;
+}
+
+.main-content .middle-img {
+    width: 100%;
+    padding: 2% 0;
+}
+
+.main-content .bottom-content {
+    border: 6px solid firebrick;
+    display: flex;
+}
+
+.main-content .bottom-content .text-content {
+    border: 1px solid darkblue;
+    width: 30%;
+    font-size: 2rem;
+}
+
+.main-content .bottom-content .text-content:nth-child(1), .main-content .bottom-content .text-content:nth-child(2) {
+    margin-right: 5%;
+}
+
+/*
+.main-content .top-content .text-content:first-child {
+    margin-right: 5%;
+}
+*/
+.contact {
+    padding: 5% 0 2% 0;
+}
+
+.contact p {
+    margin: 2% 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+@media  (max-width: 800px) {
+    .container {
+        background-color: pink;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .top-header {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerIMG, .services-header-img , .services-info-img {
+        display: none;
+    }
+
+    nav {
+        order:2;
+    }
+
+    .cta {
+        display: flex;
+    }
+
+    .cta-text {
+        display: flex;
+    }
+
+    .tablet-size::after {
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        background: lightblue;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .top-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .cta{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .headerIMG {
+        display: none;
+    }
+    .top-content, .bottom-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content .top-content, .bottom-content {
+        border: 6px solid firebrick;
+        display: flex;
+        width: 100%;
+    }
+
+    .middle-img{
+        width: 100%;
+    }
+
+    .main-content .bottom-content .text-content {
+        border: 1px solid darkblue;
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-content .top-content .text-content {
+        border: 1px solid darkblue;
+        width: 100%;
+        padding: 0;
+    }
+
+}

@@ -1,0 +1,384 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    transition: all .5s linear;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 880px;
+    margin: 0 auto;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+    border: 7px solid darkolivegreen;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+/* header */
+.top-header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    align-items: center;   /* align-content does NOT work with single row of elements */
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 2px solid royalblue;
+}
+
+.logo {
+    border: 1px solid fuchsia;
+}
+
+header nav a {
+    border: 1px solid honeydew;
+    padding:  0 3%;
+    font-size: 1.4rem;
+    color: gray;
+    text-decoration: none;
+    vertical-align: bottom;   /* only works for inline elements */
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 0;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+.services-header-img {
+    width: 100%;
+}
+
+#main {
+    margin: 3rem;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+#Services {
+    font-size: 2rem;
+}
+
+.info {
+
+    align-content: space-between;
+    border: 10px solid green;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.TOP, .MIDDLE, .BOTTOM {
+     display: flex;
+ }
+.content {
+    border: 2px solid mediumvioletred;
+    display: flex;
+    width: 50%;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+
+
+.Digital_Content, .Digital_Marketing, .iOS{
+    order: 1;
+}
+
+.UX, .Web_Development, .Android {
+    order: 2;
+}
+
+
+
+.learnMore{
+    width: 10rem;
+    border: 1px solid black;
+    text-align: center;
+    padding: .5rem 0;
+    margin: 4rem 0;
+    border-radius: 2rem;
+
+}
+
+#footer_Services{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.footer_text {
+    width: 20rem;
+}
+
+#services-info-img {
+    width: 100%;
+}
+
+.footer_content {
+    height: 30rem;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+.footer_content {
+    width: 30%;
+    height: 30rem;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+footer{
+    border: 1px solid slateblue;
+    padding: 2rem .5rem;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 4rem;
+}
+
+@media  (max-width: 800px) {
+    .container {
+        background-color: pink;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .top-header {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerIMG, .services-header-img , .services-info-img {
+        display: none;
+        transition: all 1s ease;
+    }
+
+    nav {
+        order:2;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        border: 10px solid green;
+        justify-content: space-between;
+    }
+
+    .tablet-size::after {
+        font-size: 4rem;
+    }
+
+    .footer_content {
+        width: 100%;
+        border: 2px solid darkmagenta;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+
+    .footer_content h2 {
+        border: 1px solid cornflowerblue;
+        width: 40%;
+    }
+
+    #footer_text{
+        border: 3px solid indigo;
+        width: 50%;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+        list-style-type: none;
+    }
+
+    #footer_list{
+        width: 100%;
+        display: flex;
+        border: 2px solid lightcoral;
+        font-size: .5rem;
+        justify-content: space-evenly;
+        height: 10%;
+        list-style-type: none;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .container {
+        background: lightblue;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .top-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav {
+        border: 3px solid darkblue;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .top-header nav a {
+        font-size: 2rem;
+    }
+
+    .headerIMG {
+        display: none;
+    }
+
+    .info {
+        display: flex;
+        align-content: space-between;
+        border: 10px solid green;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+
+    .Digital_Content, .UX, .Digital_Marketing, .Web_Development, .iOS, .Android {
+        width: 100%
+    }
+
+    .TOP, .MIDDLE, .BOTTOM {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .services-header-img , .services-info-img {
+        display: none;
+    }
+
+    .footer_content {
+        width: 100%;
+        border: 2px solid darkmagenta;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+
+    .footer_content h2 {
+        border: 1px solid cornflowerblue;
+        width: 30%;
+    }
+
+    #footer_text{
+        border: 3px solid indigo;
+        width: 50%;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer_list{
+        width: 100%;
+        display: flex;
+        border: 2px solid lightcoral;
+        font-size: .5rem;
+        justify-content: space-evenly;
+        height: 10%;
+        list-style-type: none;
+    }
+
+    #footer_list li{
+        padding: 0 1rem;
+        border: 1px solid purple;
+    }
+
+    #copyright {
+        border: 4px solid fuchsia;
+    }
+
+}
