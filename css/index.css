@@ -1,1 +1,332 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
+	
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+header{
+    max-width: 559px;
+    width: 100%;
+    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+header nav{
+	display: flex;
+	flex-direction: column-reverse;	
+}
+
+header nav ul {
+	
+	display: flex;
+	flex-direction: column;
+}
+nav ul li{
+	
+	display: block;
+	flex-direction: column-reverse;
+	align-items: center;
+	list-style: none;
+	text-align: center;
+	
+}
+
+header nav ul li a{
+    width: 100%;
+	font-size: 1.6rem;
+	padding: 10px 5%;
+	display: block;
+	text-decoration: none;
+	border-top: 2px solid rgb(173, 173, 173);
+	color: #555;
+}
+
+header nav ul li:last-of-type a{
+	border-bottom: 2px solid rgb(173, 173, 173);
+}
+
+header nav ul li a:hover{
+	color: #555;
+	background: rgba(173, 173, 173, 0.644);	
+}
+
+header img{
+	align-self: center;
+	margin: 20px 0;
+}
+
+section,footer{
+    width: 87%;
+	margin: 20px auto;
+}
+
+.hero{
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.hero img{
+	display: none;
+}
+
+.hero-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.hero-text h1{
+	font-size:6.5rem;
+	margin: 30px 0;
+	text-transform: uppercase;
+}
+
+.hero-text a{
+    font-size: 2rem;
+	text-decoration: none;
+	padding: 10px 5%;
+	color: #fff;
+	background: #111;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	transition: background 1s ease;
+	
+}
+.hero-text a:hover{
+	background: rgb(75, 73, 73);
+}
+
+h2{
+	font-size: 2.3rem;
+	margin: 10px 0;
+}
+
+p{
+	font-size: 1.8rem;
+	margin: 10px 0;	
+}
+
+.article-content{
+	margin-bottom: 40px;
+}
+
+address{
+	font-size: 1.4rem;
+	margin: 10px 0;	
+}
+h4{
+	font-size: 1.4rem;
+	margin: 10px 0;
+	text-align: center;	
+}
+
+.hero2{
+	display: flex;
+	flex-direction: column;
+}
+.hero2 img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.hero2-box1{
+	display: flex;
+	flex-direction: column;
+	border-top: 2px solid #111;
+}
+
+
+@media all and (min-width: 560px) and (max-width: 768px) {
+    
+    header{
+        max-width: 768px;
+        width: 100%;
+    }
+	.hero2-box1{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.article-content {
+		width: 48%;
+	}
+
+	.hero2-box2{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-bottom: 2px solid #111;
+		
+	}
+
+	.article-content2 {
+		width: 30%;
+	}
+} 
+@media screen and (min-width: 769px) {
+	header{
+        max-width: 1800px;
+        width: 100%;
+		display: flex;
+        flex-direction: column;	
+         
+        }
+	
+	
+	header nav{
+        flex-direction: row;
+        margin-right: 2%;	
+	}
+	
+	header nav ul {
+		flex: 1 0 0;
+		flex-direction: row;
+        justify-content: space-between;
+        margin-right: 2%;
+	}
+	nav ul li{
+		
+		display: inline-block;
+		flex-direction: row;
+		padding: 30px 1%;
+	}
+	
+	header nav ul li a{
+		width: 100%;
+		border-radius: 4px;
+		font-size: 1.8rem;
+		padding: 10px 10px;
+		display: inline-block;
+        border: 0px ;
+        text-align: center'
+        
+	}
+	
+	header nav ul li:last-of-type a{
+		border-bottom: 0;
+	}
+	
+	.hero{
+		height: 80vh;;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+	}
+	
+	.hero img{
+		display: block;
+		margin-left: 10%;
+		height: 360px;;
+	}
+	
+	.hero-text h1{
+		font-size: 7.2rem;
+	}
+	
+	h2{
+		font-size: 2.8rem;
+		margin-top: 50px;
+	}
+	
+	p{
+		font-size: 1.8rem;
+		margin: 10px 0;	
+	}
+	.hero2-box1{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.article-content {
+		width: 48%;
+	}
+
+	.hero2-box2{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border-bottom: 2px solid #111;
+		padding-bottom:  50px;;
+		
+	}
+
+	.article-content2 {
+		width: 30%;
+	}
+	
+}
+
