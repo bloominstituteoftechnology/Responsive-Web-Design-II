@@ -266,9 +266,11 @@ h4{
 		width: 100%;
 		border-radius: 4px;
 		font-size: 1.8rem;
-		padding: 10px 10%;
+		padding: 10px 10px;
 		display: inline-block;
-		border: 0px 
+        border: 0px ;
+        text-align: center'
+        
 	}
 	
 	header nav ul li:last-of-type a{
