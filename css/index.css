@@ -87,9 +87,9 @@ html {
 
 .header1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .navFlex {
@@ -99,6 +99,7 @@ html {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding-top: 10px;
 }
 
 .navItemFlex {
@@ -107,7 +108,7 @@ html {
     height: 40px;
     text-align: center;
     font-family: arial;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-decoration: none;
     top: 1px;
     padding-top: 12px;
@@ -115,19 +116,20 @@ html {
 
 .logo1 {
     max-width: 100%;
-    width: 80%;
+    width: 90%;
     height: auto;
     display: inline-block;
 }
 
 .topImage {
     max-width: 100%;
-    width: 40%;
+    width: 60%;
     height: auto;
-    padding-right: 10%;
+     padding-right: 6%; 
 }
 
 .topText {
+    width: 70%;
     font-family: bangers;
     font-size: 6.0rem;
     top: 100px;
@@ -138,6 +140,7 @@ html {
 .textFlexContainer {
     display: flex;
     flex-direction: column;
+    /* align-items: flex-start; */
     align-items: center;
     width: 50%;
     padding-top: 30px;
@@ -147,15 +150,16 @@ html {
 
 .section1Container {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .section1 {
     width: 48%;
     display: inline-block;
     font-size: 1.4rem;
-    padding-right: 1.42%;
-    padding-left: 1.42%;
+    padding-right: 1.00%;
 }
 
 .cta {
@@ -168,16 +172,18 @@ html {
 
 .middle-img {
     max-width: 100%;
-    width: 96%;
+    width: 98%;
     height: auto;
-    padding-left: 1.42%;
+    /* padding-left: 1.42%; */
     margin-left: auto;
     margin-right: auto;
 }
 
 .section2Container {
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .section2 {
@@ -190,14 +196,10 @@ a:link {
     text-decoration: none;
 }
 
-.button {
-    text-decoration: none;
-}
-
 .topTextButton {
-    border: 2px solid black;
+    border: 1px solid black;
     color: black;
-    width: 40%;
+    width: 36%;
     Height: 28px;
     text-align: center;
     text-decoration: none;
@@ -205,21 +207,10 @@ a:link {
     padding-top: 4px;
 }
 
-.topTextButton:hover {
-    animation: moveIt 3s infinite;
-}
-
-@keyframes moveIt {
-    0% {background-color: white;font-size: 1.4rem;}
-    25% {background-color: purple;font-size: 2.0rem;}
-    50% {background-color: orange;font-size: 2.0rem;}
-    100% {background-color: white;font-size: 1.4rem;}
-}
-
 hr {
-    margin-left: 4.54%;
-    margin-right: 4.54%;
-}
+    padding-left: 0px; 
+    margin-right: 2.54%;
+    }
 
 .h3 {
     text-align: center;
@@ -228,10 +219,9 @@ hr {
 
 .contact {
     font-size: 1.4rem;
-    padding-left: 1%;
 }
+
 address {
-    padding-left: 1%;
     font-size: 1.4rem;
 }
 
@@ -240,31 +230,48 @@ footer {
     font-family: 'Abel', sans-serif;
 }
 
+.topTextButton:hover {
+    animation: moveIt 3s infinite;
+}
+
+@keyframes moveIt {
+    0% {background-color: white;font-size: 1.4rem;}
+    25% {background-color: mediumslateblue;font-size: 2.0rem;}
+    50% {background-color: lightslategray;font-size: 2.0rem;}
+    100% {background-color: white;font-size: 1.4rem;}
+}
+/****************************************/
+/******** SCREEN Max 800 PIXELS *********/
+/****************************************/
 @media (max-width: 800px) {
     .pageContainer {
         width: 800px;
-        padding-left: 1.25%;
+        padding-left: 1%;
     }
     .navFlex {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        padding-top: 20px;
     }
+
     .navItemFlex {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         display: inline-block;
     }
 
     .logo1 {
        padding-left: 10%;
     }
+
     .header1 {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
+        margin-top: 36px;
     }
 
     .header1 nav a {
@@ -278,6 +285,7 @@ footer {
     .section1Container {
         width: 100%;
         display: flex;
+
         padding-left: 1.25%;
         padding-right: 1.25%;
     }
@@ -287,12 +295,14 @@ footer {
         display: flex;
         padding-left: 1.25%;
         padding-right: 1.25%;
+        height: 200px;
     }
 
     .topText {
-        top: 100px;
+        top: 180px;
         text-align: center;
-        height: 200px;
+        height: 260px;
+        font-size: 7.4rem;
     }
 
     .topImage {
@@ -307,6 +317,8 @@ footer {
     .middle-img {
         padding-right: 0px;
         margin-left: 0;
+        width: 100%;
+        padding-left: 1.25%;
     }
 
     .cta {
@@ -315,16 +327,22 @@ footer {
 
     .contact {
         padding-left: 1.25%;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     address {
         padding-left: 1.25%;
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
     }
 
     hr {
+        width: 100%;
         margin-left: 1.25%;
-        margin-right: 1.25%;
+        border-top: 2px solid black;
     }
 
     footer {
@@ -336,18 +354,25 @@ footer {
         display: flex;
         flex-direction: column;
         padding-top: 10px;
+        font-size: 1.6rem;
     }
 
     .section2 {
         display: flex;
         flex-direction: column;
         padding-top: 10px;
+        font-size: 1.8rem;
     }
+
+/*  Notepads dont use button hovers     */
+/*  so this step disables it here.      */
     .topTextButton:hover {
         animation: moveIt;
     }
 }
-
+/******************************************/
+/******** SCREEN Max 500 PIXELS ***********/
+/******************************************/
 @media screen and (max-width: 500px) {
     .pageContainer {
         padding-left: 0px;
@@ -355,8 +380,8 @@ footer {
     }
 
     hr {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 
     .topImage {
@@ -365,10 +390,10 @@ footer {
 
     .navItemFlex {
         font-size: 2.0rem;
-        height: 30px;
+        height: 52px;
         width: 100%;
-        padding-top: 2px;
-        border-top: 2px solid gray;
+        padding-top: 16px;
+        border-top: 1px solid gray;
     }
 
     .navFlex {
@@ -386,7 +411,7 @@ footer {
     .topText {
         top: 100px;
         text-align: center;
-        height: 160px;
+        font-size: 7.4rem;
     }
 
     .header {
@@ -394,8 +419,8 @@ footer {
     }
 
     .textFlexContainer {
-        width: 50%;
-        padding-top: 10px;
+        width: 100%;
+        padding-top: 60px;
     }
 
     .section1Container {
@@ -405,11 +430,13 @@ footer {
         flex-flow: column;
         padding-left: 2%;
         padding-right: 2%;
+        padding-top: 20px;
     }
 
     .section1 {
         width: 100%;
         display: inline-block;
+        padding-bottom: 30px;
     }
 
     .header {
@@ -421,10 +448,7 @@ footer {
         width: 100%;
         padding-right: 0px;
         margin-left: 0;
-    }
-
-    .topText {
-        font-size: 4.0rem;
+        padding-left: 4%;
     }
 
     .section2Container {
@@ -433,30 +457,39 @@ footer {
         flex-direction: column;
         flex-flow: column;
         padding-left: 2%;
+        height: 480px;
     }
 
     .section2 {
         width: 100%;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;     
         padding-top: 10px;
+        padding-bottom: 30px;
     }
 
     .contact {
-        padding-left: 2%;
-        font-size: 1.6rem;
+        padding-left: 2.2%;
+        font-size: 1.8rem;
     }
 
     address {
-        padding-left: 2%;
-        font-size: 1.4rem;
+        padding-left: 2.2%;
+        font-size: 1.6rem;
     }
 
     footer {
         padding-left: 2%;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-family: 'Abel', sans-serif;
     }
+
+/*  Phones dont use button hovers     */
+/*  so this step disables it here.     */
     .topTextButton:hover {
         animation: moveIt;
     }
 }
+
+
