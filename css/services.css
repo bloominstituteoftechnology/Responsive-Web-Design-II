@@ -134,7 +134,7 @@ h1 {
 #centerSection div {
     width: 47.7%;
     display: flex;
-    height: 250px;
+    height: auto;
     flex-direction: column;
     background-color: rgb(211, 211, 211);
     border: 1px solid black;
@@ -192,7 +192,6 @@ ul {
     height: 40%;
     justify-content: space-between;
 }
-
 
 footer {
     display: flex;
@@ -268,7 +267,11 @@ footer {
     .divisionLine {
         width: 92%;
     }
+    #bottomSection div {
+        height: auto;
+    }
     #bottomSection div ul {
         text-align: center;
+        line-height: 1.3;
     }
 }
