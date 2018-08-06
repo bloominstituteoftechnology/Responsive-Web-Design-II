@@ -45,6 +45,7 @@ footer, header, hgroup, menu, nav, section {
 a {
     text-decoration: none;
     color: black;
+    margin: 25px;
 }
 
 blockquote, q {
@@ -164,11 +165,12 @@ hr {
     display: flex;
     flex-direction: row;    
     justify-content: space-around;   
-  } 
-
-.logo {
-    display: flex;    
-}
+  }
+  
+  .links a:hover {
+    color: limegreen;
+  }
+  
 
 .mid {
     width: 100%;
@@ -186,8 +188,7 @@ hr {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: auto;
+    justify-content: center;
     margin-top: 25px;    
 }
 
@@ -254,29 +255,36 @@ table {
 /* TABLET VERSION */
 
 @media (max-width: 800px) { /* Repositions company logo to top and displays a centered nav */
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 15px;
-    }
     nav {
         display: flex;
         flex-direction: column-reverse;
-    }
+        font-size: 2rem
+      }
+      
+      .links {
+      align-self: center;
+      }
 
-    .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      .links a:hover {
+        color: limegreen;
     }
+      
+      
+      a {
+        margin: 25px;
+      }
+
+      .logo {
+          align-self: center;
+          margin-bottom: 25px;
+      }
 
     .header-img {
         display: none;
     }
 
     .IOD {
-        font-size: 40px;
+        font-size: 3rem;
         text-align: center;
         display: flex;
         flex-direction: row;    
@@ -288,9 +296,7 @@ table {
         display: flex;
         flex-direction: row;
 
-    }
-
-     
+    } 
 
     .midaccent {
         width: 100%;
@@ -306,31 +312,23 @@ table {
 /* MOBILE VERSION */
 
 @media (max-width: 500px) { /* Repositions company logo to top and displays centered */
-   
-    nav { 
+   nav {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        font-size: 25px;
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    img {
-        margin-bottom: 25px;
-    }
-
-    a {
-        width: 100%;
-        border-bottom: 1px darkgrey solid;
-        border-top: 1px darkgrey solid;
         text-align: center;
-        padding: 5px 5px;
-        color: darkgrey;        
-    }
+        }
+      
+      .links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .links a:hover {
+          color: limegreen;
+      }
+
+    
 
     .IOD {
         display: flex;
