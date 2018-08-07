@@ -1,1 +1,260 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* { box-sizing: border-box; }
+
+html,body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Responsive CSS Starts Here */
+
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 880px;
+  width: 100%;
+  margin: 26px 0 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: gray;
+  align-self: center;
+}
+
+div.heading {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 65px 0px 35px;
+  padding-bottom: 73px;
+  border-bottom: 2px solid gray;
+}
+
+div.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 13.06%;
+}
+
+h1 {
+  font-size: 7.5rem;
+  text-align: center;
+}
+
+div.button {
+  border: 1px solid black;
+  font-size: 2rem;
+  height: 30px;
+  max-width: 165px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  border-bottom: 2px solid gray;
+}
+
+div.top, div.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  border: 1px solid white;
+}
+
+.middle-img {
+  margin: 27px 0px;
+}
+
+footer {
+  margin: 35px 0px;
+}
+
+address {
+  font-size: 1.6rem;
+  padding-bottom: 40px;
+}
+
+div.copyright {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+    width: 95%;
+  }
+  
+  .logo {
+    flex-shrink: 1;
+  }
+  
+  nav {
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+  }
+
+  a {
+    font-size: 1.6rem;
+    color: gray;
+    width: 15%;
+    margin-top: 45px;
+    text-align: center;
+  }
+  
+  .headerImg {
+    display: none;
+  }
+  
+  div.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  section {
+    padding: 0px 1%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  nav {
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .logo {
+    order: -1;
+    max-width: 183px;
+    max-height: 36px;
+    align-self: center;
+  }
+  
+  a {
+    font-size: 2rem;
+    margin-top: 15px;
+    padding: 20px 0px 5px;
+   border-top: 1px solid gray;
+    width: 100%;
+  }
+  div.top, div.bottom {
+    flex-direction: column;
+  }
+  section {
+    padding: 0px 4% 40px;
+  }
+  
+ .middle-img {
+   margin: 10px 0px 25px;
+   height: 100px;
+   max-width: 490px;
+   width: 90%;
+   align-self: center;
+  }
+  footer {
+    width: 90%;
+    margin: 3%;
+  }
+
+}
