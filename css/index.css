@@ -1,1 +1,292 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+@keyframes example {
+    from {background-color: lightsteelblue;}
+    to {background-color: steelblue;}
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 880px;
+	margin: auto;
+	justify-content: center;
+}
+
+#navBar {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#textLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 70%;
+}
+
+.navLink {
+	color: lightslategrey;
+	font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#bannerSection {
+	height: 515px;
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#taglineBox {
+	display: flex;
+	flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 30px 45px;
+	width: 57%;
+}
+
+#tagline {
+	font-size: 7.0rem;
+}
+
+#getStarted {
+
+	height: 35px;
+	width: 165px;
+	color: white;
+	font-size: 1.4rem;
+	border: 1px solid black;
+    padding-top: 8px;
+    text-align: center;
+	text-decoration: none;
+	background-color: lightsteelblue;
+    animation-name: example;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#headerImage {
+    width: 43%;
+}
+
+.descriptiveSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0px;
+}
+
+.upperText {
+	width: 50%;
+}
+
+.lowerText {
+	width: 33%;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+#address {
+	border-top: 2px solid black;
+	padding-top: 40px;
+}
+
+#footer {
+	text-align: center;
+	margin: 70px 0px 10px 0px;
+}
+
+@media (max-width: 800px) {
+
+.content {
+    max-width: 96.2%;
+}
+
+#navBar {
+    flex-flow: column-reverse;
+}   
+
+#textLinks {
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 35px;
+}
+
+#bannerSection {
+	height: 417px;
+	border-bottom: 2px solid black;
+	display: flex;
+	justify-content: center;
+}
+
+#taglineBox {
+    padding: 0px;
+}
+
+#headerImage {
+    display: none;
+}
+
+.upperText {
+    padding: 5px 15px;
+}
+
+.lowerText {
+    padding: 5px 15px;
+    width: 32%;
+}
+
+#address {
+	border-top: 2px solid black;
+	padding: 40px 15px
+}
+
+}
+
+@media (max-width: 500px) {
+
+.content {
+    max-width: 500px;
+}
+
+#navBar {
+    justify-content: flex-start;
+    margin: 16px 0px 0px 0px;
+}
+
+#textLinks {
+    flex-flow: column nowrap;
+    padding-top:15px;
+}
+
+.navLink {
+    text-align: center;
+    width: 100%;    
+    border-top: 1px solid grey;
+    font-size: 2.0rem;
+    padding: 20px 0px;
+}
+
+#bannerSection {
+    height: 405px;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid grey;
+    border-bottom: 0px;
+}
+
+.descriptiveSection {
+    flex-flow: column nowrap;
+    width: 96.2%;
+    margin: 0 auto;
+}
+
+.upperSection {
+    border-top: 2px solid black;
+}
+
+.lowerSection {
+    border-bottom: 2px solid black;
+}
+
+.upperText {
+    width: 100%;
+    margin-top: 25px 0px;
+    padding-left: 0px; 
+}
+
+.lowerText {
+    width: 100%;
+    margin: 25px 0px; 
+    padding-left: 0px; 
+}
+
+.middle-img {
+    margin: auto;
+    width: 96.2%;
+}
+
+#address {
+    border-top: 0px;
+}
