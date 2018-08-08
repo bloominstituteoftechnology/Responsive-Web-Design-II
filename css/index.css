@@ -1,1 +1,244 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+
+.container {
+    max-width: 880px;
+    /* border: 1px solid black; */
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	width: 78%;
+}
+
+
+header nav a {
+  font-size: 1.6rem;
+  color: gray;
+  text-decoration: none;
+  width: 92%;
+}
+
+header nav a:last-child {
+	margin-right: 8%;
+  }
+
+
+.title {
+    height: 524px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.iod {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  	font-size: 7.7rem;
+  	text-align: center;
+}
+
+.iod button {
+    background: white;
+    vertical-align: top;
+    padding: 4% 10%;
+    font-size: 1.7rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.main {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 29px 0;
+	display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.top-content {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top-content .text {
+    width: 45%;
+}
+
+.middle-img {
+    margin: 45px 0;
+}
+
+.bottom-content {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+} 
+
+.bottom-content .text {
+	width: 31%;
+} 
+
+.contact {
+    padding: 39px 0;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.contact p {
+    margin: 20px 0;
+} 
+
+footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+
+
+@media (max-width:800px) {
+    .circle-img {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .title {
+        width: 100%
+    }
+    header nav {
+        width: 100%;
+        padding: 2%;
+    }
+
+    header nav a:last-child {
+        margin-right: 0;
+    }
+
+    .top-content {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width:500px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a {
+        border-bottom: 1px solid black;
+        width:100%;
+        margin-top: 10px;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    header nav a:first-child {
+        padding-top: 20px;
+        border-top: 1px solid black;
+    }
+    .title {
+        height: 350px;
+    }
+    .top-content {
+        flex-direction: column;
+    }
+    .bottom-content {
+        flex-direction: column;
+    }
+    .text {
+        margin-bottom: 15px;
+    }
+    .middle-img {
+        height: 65px;
+        margin-top: 20px;
+    }
+}
