@@ -1,1 +1,654 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+/* ELEMENT SELECTORS */
+
+html {
+	font-size: 62.5%;
+}
+
+nav {
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+body {
+	margin: 0 auto;
+}
+
+#container {
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	font-family: open-sans;
+	font-size: 1.5rem ;
+	margin: 10%;
+	text-align: center;
+}
+
+button {
+	border: 1px solid black;
+	background-color: white;
+	font-size: 1em;
+	font-weight: 500;
+	justify-content: center;
+	width: 17rem;
+	height: 25px;
+	margin: 3rem auto;
+}
+
+/* CLASS SELECTORS */
+
+.navbar {
+	order: 1;
+	margin: 0 30px 0 30px;
+	font-size: 1.7rem;
+	color: rgb(151, 151, 151);
+}
+
+.logo {
+	order: 2;
+	margin: 0px 0px px 0px;
+}
+
+.topSection {
+	width: 100%;
+	margin: 0;
+	border-top: 1px solid black;
+	padding: 5% 2% 2% 0;
+	font-size: 1.5rem;
+}
+
+.middle-img {
+	margin: 0, auto;
+}
+
+.bottomSection {
+	height: 150px;
+	padding: 5% 5% 0 0;
+	margin: 2% ;
+	border-bottom: 1px solid black;
+}
+
+/* ID SELECTORS */
+
+#container {
+	width: 880px;
+}
+
+#ideaHeader {
+	margin: 10px 0;
+	display: flex;
+}
+
+
+#codeSnippet {
+	order: 2;
+}
+
+#navwrap {
+	display: flex;
+	padding-top: 10px;
+}
+
+#articleHeader {
+	padding: 0 7%;
+	margin-top: 10%;
+	display: flex;
+	justify-content: space-between;
+	height: 450px;
+}
+
+#innovation {
+	order: 1;
+	margin: 0px;
+	text-align: center;
+	width: 100%;
+	font-size: 5em;
+}
+
+#innovationWrap {
+	height: 350px;
+	display: flex;
+	flex-direction: column-reverse;
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+#codeSnippet {
+	height: 379px;
+	width: 379px;
+}
+
+#firstSection {
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+#imgWrapper {
+	text-align: center;
+}
+
+#secondSection {
+	font-size: 1.5rem;
+	width: 100%;
+	display: inline-flex;
+}
+
+#serviceSection {
+	width: 100%;
+	margin: 2% 0 0 0;
+	padding: 0 0 0 0;
+}
+
+#productSection {
+	width: 100%;
+	padding: 0 0 0 0;
+	margin: 2% 0 0 0;
+}
+
+#visionSection {
+	width: 100%;
+	padding: 0;
+	margin: 2% 0 0 0;
+	margin-right: 0;
+}
+
+#contactWrap {
+	display: flex;
+	width:  100% ;
+	margin: 4% 0;
+	font-size: 1.7rem;
+}
+
+#contactInfo {
+	display: block;
+	width: 100% ;
+	margin: auto;
+}
+
+/* PUESUDO SELECTORS */
+
+h2:last-child {
+	text-align: center;
+	width: 150px;
+	padding: 5px 0;
+	margin: 20px auto;
+	text-align: center;
+	color: black;
+	font-family: sans-;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+	#container {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	#ideaHeader {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
+	#navwrap {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		padding-top: 10px;
+	}
+	nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.navbar {
+		font-size: 1.5rem;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		color: rgb(151, 151, 151);
+	}
+	#logoWrap {
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.logo {
+		justify-content: center;
+		width: 23%;
+		margin: 0, auto;
+		padding: 3.6% 0;
+	}
+	#articleHeader {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		height: 350px;
+	}
+	#innovationWrap {
+		width: 90%;
+		height: 355px;
+		display: flex;
+		flex-direction: column-reverse;
+		margin: 3.2% 5% 0 5%;
+		padding: 0 0 0 0;
+	}
+	#innovation {
+		order: 1;
+		margin: 0% 0 0 0;
+		padding: 0% 0 0 0;
+		text-align: center;
+		width: 100%;
+		font-size: 7rem;
+	}
+	button {
+		border: 1px solid black;
+		background-color: white;
+		font-size: 1.5rem;
+		font-weight: 800;
+		justify-content: center;
+		width: 17rem;
+		height: 3rem;
+		margin: 3rem auto;
+	}
+	#codeSnippet {
+		display: none;
+	}
+	#firstSection {
+		margin: 11.0% 3% 0 3%;
+		padding: 0;
+		width: 94%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.topSection {
+		width: 100%;
+		margin: 0% 0 0 0;
+		padding: 2.5% 0% 0% 1.5%;
+		font-size: 1.7rem;
+		border-top: 2px solid black;
+	}
+	.middle-img {
+		margin: 2% 0 0 0;
+		padding: 3%;
+		width: 100%;
+	}
+	#secondSection {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.bottomSection {
+		height: 220px;
+		font-size: 1.65rem;
+		margin-bottom: 10%;
+		padding: 0;
+		margin: 0 5%;
+		width: 90%;
+	}
+	#serviceSection {
+		width: 35%;
+		margin: 0 0 0 2%;
+		padding: 1% 4% 5.9% 2%;
+	}
+	#visionSection {
+		width: 35%;
+		margin: 0 2% 0 0%;
+		padding: 1% 4% 5.9% 2%;
+	}
+	#productSection {
+		width: 35%;
+		margin: 0 0 0 0%;
+		padding: 1% 4% 5.9% 2%;
+	}
+	#information {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	#contactWrap {
+		font-size: 1.7rem;
+		margin: 4% 5% 4.5% 3%;
+		padding: 0;
+		width: 90%;
+	}
+	footer {
+		margin: 0 0 0 0;
+		padding: 0;
+		font-size: 1.4rem;
+	}
+}
+
+@media(max-width: 500px) {
+	#container {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	#ideaHeader {
+		width: 100%;
+		margin: 10px 0;
+		display: flex;
+	}
+	#navwrap {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10px;
+	}
+	nav {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.navbar {
+		font-size: 1.5rem;
+		text-align: center;
+		border-top: 0.5px solid gray;
+		border-bottom: 0.5px solid gray;
+		padding: 4% 0 4% 0;
+		margin: 0;
+		width: 100%;
+		color: rgb(151, 151, 151);
+	}
+	#logoWrap {
+		margin: 0 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.logo {
+		justify-content: center;
+		margin: 0, auto;
+	}
+	#articleHeader {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		height: 320px;
+	}
+	#innovationWrap {
+		width: 100%;
+		height: 320px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#innovation {
+		order: 1;
+		margin: 0px;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+		font-size: 6rem;
+	}
+	button {
+		border: 1px solid black;
+		background-color: white;
+		font-size: 1.3rem;
+		font-weight: 800;
+		justify-content: center;
+		width: 12rem;
+		height: 3rem;
+		margin: 3rem auto;
+	}
+	#codeSnippet {
+		display: none;
+	}
+	#firstSection {
+		margin: 0;
+		padding: 5% 5%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border: none;
+	}
+	#features {
+		padding-top: 15%;
+		border-top: 2px solid black;
+	}
+	.topSection {
+		font-size: 1.5rem;
+		width: 100%;
+		margin: 5% 0%;
+	}
+	.middle-img {
+		padding: 5% 5%;
+		width: 100%;
+	}
+	#secondSection {
+		font-size: 1.5rem;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.bottomSection {
+		height: 170px;
+		padding: 0;
+		margin: 5% 0;
+		border: none;
+	}
+	#serviceSection {
+		padding: 5% 0;
+		margin: 5% 5%;
+		width: 90%;
+	}
+	#productSection {
+		padding: 5% 0;
+		margin: 5% 5%;
+		width: 90%;
+	}
+	#visionSection {
+		padding: 5% 0;
+		margin: 5% 5%;
+		width: 90%;
+		border-bottom: 1px solid black;
+	}
+	#visionSection p {
+		margin: 5% 0;
+	}
+	#information {
+		margin: 0;
+		width: 100%;
+	}
+	#contactWrap {
+		font-size: 1.5rem;
+		margin: 10% 0;
+		padding: 0 5%;
+		width: 100%;
+	}
+	#contactInfo {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	footer {
+		font-size: 1.2rem;
+		padding: 0;
+		margin: 20% 0 10% 0;
+		width: 100%;
+	}
+}
+
+/* <----- @meadia 500px -----> */
