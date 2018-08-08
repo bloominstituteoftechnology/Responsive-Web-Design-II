@@ -1,0 +1,105 @@
+@media(max-width:500px){
+    .container{
+        width:90%;
+        margin:0 auto;
+        }
+        .header{
+        display:flex;
+        justify-content:space-around;
+        width:100%;
+        margin-top:20px;
+        flex-wrap:wrap;
+        
+        }
+        .header nav{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        width:100%;
+        font-size: 1.6rem;
+        align-items:center;
+        }
+
+        .cta img{
+        display:none;
+        }
+
+       .header nav a {
+        text-decoration:none;
+        color:gray;
+        margin-top:25px;
+        display:block;
+        width:100%;
+        text-align:center;
+        border-bottom: 2px solid lightgray;
+        padding-bottom: 20px;
+        font-size:2rem;
+        }
+        
+       
+        /* end nav bar  */
+        
+        .cta{
+        display:flex;
+        width:100%;
+        align-items: center;
+        justify-content:space-evenly;
+        align-items: flex-start;
+        margin-top:50px;
+        padding-bottom:50px;
+        align-items: center;
+        border-bottom:2px solid black;
+        }
+        
+        .textbutton{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        padding-left: 3%;
+        }
+        
+        .cta .textbutton p{
+        font-size: 5rem;
+        text-align: center;
+        font-family:bangers;
+        padding-right:5px;
+        }
+        
+        .cta .textbutton button{
+        width:170px;
+        margin-top:4%;
+        align-self: center;
+        padding:1.5%;
+        background-color:white;
+        border-radius: 5%;
+        }
+        /* end cta section */
+        .middlesection{
+        width: 100%;
+        display:column;
+        flex-wrap: wrap;
+        display:flex;
+        padding-top:20px;
+        border-bottom: 2px solid black;
+        
+        }
+        .topelement{
+        width:90%;
+        margin:20px 1%;
+        }
+        .bottomelement{
+        width:90%;
+        margin:25px 1%;
+        }
+        .footer{
+        margin-left:1%;
+        display:flex;
+        margin-top:30px;
+        flex-direction:column;
+        width: 100%;
+        }
+
+
+
+
+}

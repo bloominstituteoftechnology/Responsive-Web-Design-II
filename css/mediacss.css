@@ -1,0 +1,103 @@
+@media(max-width:800px){
+        
+       .container{
+        width:90%;
+        margin:0 auto;
+        
+        }
+        .header{
+        display:flex;
+        justify-content:space-around;
+        width:100%;
+        margin-top:20px;
+        flex-wrap:wrap;
+        flex-direction: row-reverse;
+        }
+        .header nav{
+        display:flex;
+        justify-content: space-around;
+        width:100%;
+        align-items:center;
+        }
+
+        .header nav :last-child {
+        margin-right:0px;
+            }
+
+        .cta img{
+        display:none;
+        }
+
+       .header nav a {
+        text-decoration:none;
+        color:gray;
+        margin-top:25px;
+        font-size: 1.6rem;
+        
+        }
+        
+       
+        /* end nav bar  */
+        
+        .cta{
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        margin-top:50px;
+        padding-bottom:50px;
+        align-items: center;
+        border-bottom:2px solid black;
+        }
+
+        .cta p{
+        text-align:center;
+        }
+        
+        .textbutton{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        padding-left: 0%;
+        }
+        
+        .cta .textbutton p{
+        font-size: 7.2rem;
+        text-align: center;
+        font-family:bangers;
+        }
+        
+        .cta .textbutton button{
+        width:170px;
+        margin-top:4%;
+        align-self: center;
+        padding:1.5%;
+        background-color:white;
+        border-radius: 5%;
+        }
+        /* end cta section */
+        .middlesection{
+        width: 100%;
+        display:row;
+        flex-wrap: wrap;
+        display:flex;
+        padding-top:20px;
+        border-bottom: 2px solid black;
+        
+        }
+        .topelement{
+        width:45%;
+        margin:20px 1%;
+        }
+        .bottomelement{
+        width:30%;
+        margin:25px 1%;
+        }
+        .footer{
+        margin-left:1%;
+        display:flex;
+        margin-top:30px;
+        flex-direction:column;
+        width: 100%;
+        }
+    }
