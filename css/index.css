@@ -1,1 +1,236 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  /* border: 1px solid red; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Bangers', cursive;
+}
+
+
+/* ************** ---------- Mobile View First ---------- ************** */
+
+@media(min-width: 0px){
+  .container{
+    max-width: 880px;
+    width: 100%;
+    margin: 1%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-li {
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-li-a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+    margin: 20px 0;
+    text-decoration: none;
+  }
+  .nav-li:nth-of-type(7){
+    order: -1;
+  }
+  .upper-top-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+    margin: 1%;
+  }
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .hero-text{
+    font-size: 7.2rem;
+    text-align: center;
+  }
+  .hero-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 172px;
+    height: 32px;
+    font-size: 1.6rem;
+    margin: 20px 0 50px;
+    border: 1px solid black;
+    background: #fff;
+  }
+  .upper-img {
+    display: none;
+  }
+  .middle-section{
+    margin: 20px 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+  }
+  .card {
+    margin: 20px 0.5rem;
+  }
+  .card:last-of-type {
+    margin: 10px 0;
+  }
+  .card-title {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  .card-body {
+    font-size: 1.6rem;
+  }
+  .mid-img{
+    width: 100%;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 1%;
+  }
+  .contact-header {
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+  .contact-text {
+    font-size: 1.6rem;
+    margin: 10px 0;
+  }
+  .copyright{
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+/* ************** ---------- Tablet View ---------- ************** */
+
+@media(min-width: 501px){
+  .nav{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .nav-li{
+    width: auto;
+    border-bottom: none;
+  }
+  .nav-li:nth-of-type(7){
+    margin: 0 50%;
+  }
+  .middle-section{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-title{
+    margin: 0 0 20px;
+  }
+  .features, .about{
+    width: 48%;
+  }
+  .services, .product, .vision {
+    width: 32%;
+    padding: 0 5px 0 0;
+  }
+  .address{
+    margin: 1%;
+  }
+}
+
+/* Desktop View */
+
+@media(min-width: 800px){
+  .container{
+    margin: 0 auto;
+  }
+  .nav-li:nth-of-type(7){
+    margin: 0;
+    order: 0;
+  }
+  .upper-top-section{
+    flex-direction: row;
+  
+  }
+  .hero-section{
+    margin: 0 9%;
+  }
+  .upper-img {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 75px;
+  }
+
+  .upper-top-section {
+    padding: 0;
+  }
+}
