@@ -1,1 +1,492 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,a,abbr,acronym,address,big,cite,code,del,
+dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,
+tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,
+label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,figure,figcaption,
+footer,header,hgroup,menu,nav,output,ruby,section,
+summary,time,mark,audio,video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,aside,details,figcaption,figure,footer,header,
+hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    font-size: 62.5%
+}
+
+.pageContainer {
+    width: 880px;
+    padding-left: 2.27%;
+    margin: auto;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.navFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.navItemFlex {
+    display: inline-block;
+    color: gray;
+    height: 40px;
+    text-align: center;
+    font-family: arial;
+    font-size: 1.4rem;
+    text-decoration: none;
+    top: 1px;
+    padding-top: 12px;
+}
+
+.logo1 {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    display: inline-block;
+}
+
+.topImage {
+    max-width: 100%;
+    width: 60%;
+    height: auto;
+    padding-right: 6%; 
+}
+
+.topText {
+    width: 70%;
+    font-family: bangers;
+    font-size: 6.0rem;
+    top: 100px;
+    text-align: center;
+    height: 200px;
+}
+
+.textFlexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section1Container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section1 {
+    width: 48%;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-right: 1.00%;
+}
+
+.cta {
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
+
+.middle-img {
+    max-width: 100%;
+    width: 98%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section2Container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section2 {
+    width: 32.68%;
+    display: inline-block;
+    font-size: 1.4rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.topTextButton {
+    border: 1px solid black;
+    color: black;
+    width: 36%;
+    Height: 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-top: 4px;
+}
+
+hr {
+    padding-left: 0px; 
+    margin-right: 2.54%;
+    }
+
+.h3 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.contact {
+    font-size: 1.4rem;
+}
+
+address {
+    font-size: 1.4rem;
+}
+
+footer {
+    padding-left: 1%;
+    font-family: 'Abel', sans-serif;
+}
+
+.topTextButton:hover {
+    animation: moveIt 3s infinite;
+}
+
+@keyframes moveIt {
+    0% {background-color: white;font-size: 1.4rem;}
+    25% {background-color: mediumslateblue;font-size: 2.0rem;}
+    50% {background-color: lightslategray;font-size: 2.0rem;}
+    100% {background-color: white;font-size: 1.4rem;}
+}
+/****************************************/
+/******** SCREEN Max 800 PIXELS *********/
+/****************************************/
+@media (max-width: 800px) {
+    .pageContainer {
+        width: 800px;
+        padding-left: 1%;
+    }
+    .navFlex {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .navItemFlex {
+        font-size: 1.4rem;
+        display: inline-block;
+    }
+
+    .logo1 {
+       padding-left: 10%;
+    }
+
+    .header1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 36px;
+    }
+
+    .header1 nav a {
+        display: inline-block;
+    }
+
+    .header1 nav a:last-child {
+        margin-right: 0px;
+    }
+
+    .section1Container {
+        width: 100%;
+        display: flex;
+        padding-left: 1.25%;
+        padding-right: 1.25%;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        font-size: 1.6rem;
+    }
+
+    .section2Container {
+        width: 100%;
+        display: flex;
+        padding-left: 1.25%;
+        padding-right: 1.25%;
+        height: 200px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        font-size: 1.8rem;
+    }
+
+    .topText {
+        top: 180px;
+        text-align: center;
+        height: 260px;
+        font-size: 7.4rem;
+    }
+
+    .topImage {
+        display: none;
+    }
+
+    .textFlexContainer {
+        width: 50%;
+        padding-top: 20px;
+    }
+
+    .middle-img {
+        padding-right: 0px;
+        margin-left: 0;
+        width: 100%;
+        padding-left: 1.25%;
+    }
+
+    .cta {
+        padding-top: 20px;
+    }
+
+    .contact {
+        padding-left: 1.25%;
+        font-size: 1.8rem;
+    }
+
+    address {
+        padding-left: 1.25%;
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    hr {
+        width: 100%;
+        margin-left: 1.25%;
+        border-top: 2px solid black;
+    }
+
+    footer {
+        padding-left: 1.25%;
+        font-family: 'Abel', sans-serif;
+    }
+
+/*  Tablets dont use button hovers     */
+/*  so this step disables it here.      */
+    .topTextButton:hover {
+        animation: moveIt;
+    }
+}
+/******************************************/
+/******** SCREEN Max 500 PIXELS ***********/
+/******************************************/
+@media screen and (max-width: 500px) {
+    .pageContainer {
+        padding-left: 0px;
+        width: 500px;
+    }
+
+    hr {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .topImage {
+        display: none;
+    }
+
+    .navItemFlex {
+        font-size: 2.0rem;
+        height: 52px;
+        width: 100%;
+        padding-top: 16px;
+        border-top: 1px solid gray;
+    }
+
+    .navFlex {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .header1 nav a:last-child {
+        border-bottom: 2px solid gray;
+    }
+
+    .topText {
+        top: 100px;
+        text-align: center;
+        font-size: 7.4rem;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .textFlexContainer {
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .section1Container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 20px;
+    }
+
+    .section1 {
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 30px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .middle-img {
+        width: 100%;
+        padding-right: 0px;
+        margin-left: 0;
+        padding-left: 4%;
+    }
+
+    .section2Container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        padding-left: 2%;
+        height: 480px;
+    }
+
+    .section2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;     
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .contact {
+        padding-left: 2.2%;
+        font-size: 1.8rem;
+    }
+
+    address {
+        padding-left: 2.2%;
+        font-size: 1.6rem;
+    }
+
+    footer {
+        padding-left: 2%;
+        font-size: 1.6rem;
+        font-family: 'Abel', sans-serif;
+    }
+
+/*  Phones dont use button hovers     */
+/*  so this step disables it here.     */
+    .topTextButton:hover {
+        animation: moveIt;
+    }
+}
+
+
