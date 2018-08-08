@@ -1,0 +1,107 @@
+/* Your code starts here! */
+
+* {
+    box-sizing: border-box;
+}
+
+.great-header {
+    position: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 880px;
+    margin: 1% 17%;
+    z-index: 1000;
+    padding: 1% 0;
+    color: black;
+    background: rgba(255,255,255,0.6);
+}
+
+nav {
+    width: 70%;
+    float: left;
+    padding: 1% 1%;
+}
+
+a {
+	text-decoration: none;
+    padding: 3%;
+    color: black;
+}
+
+a:hover {
+    color:#8668B0;
+}
+
+.logo {
+    margin-right: 3%;
+}
+
+@media(max-width:780px) {
+    
+
+    .great-header {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        max-width: 780px;
+        height:100px;
+    }
+
+    .great-header .logo {
+        margin: 0 auto;
+        order: -1;
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav a {
+        width:100%;
+        padding: 1% 0;
+    }
+}
+
+/* Max-Width 400px */
+@media(max-width:405px){
+
+    * {
+        box-sizing: border-box;
+    }
+    .great-header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .great-header .logo {
+        order: -1;
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .great-header nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 1% 0;
+        max-width: 400px;
+        text-align: center;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+    }
+}
