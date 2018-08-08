@@ -1,1 +1,315 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+html, body {
+    height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+}
+/* header */
+header {
+	display: flex;
+/* 	justify-content: space-evenly; */
+	width: 100%;
+	padding: 10px;
+	justify-content: space-evenly;
+}
+.container header .logo {
+	display: block;
+	/* flex: 1 1 0; */
+	max-width: 100%;
+}
+/* nav */
+nav {
+	/* width: 100%; */
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+}
+nav a {
+	flex: 1 1 0;
+	display: block;
+	padding: 10px;
+	color: #555;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	max-width: 100%;
+}
+/* section */
+.cta {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5%;
+}
+.cta .cta-text {
+	text-align: center;
+	font-size: 77px;
+	width: auto;
+	margin: 0 auto;
+}
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  /* margin-top: 6px; */
+  margin-top: .68%;
+  padding: 8px 44px;
+  width:auto;
+   font-size: 1.0625rem;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 35px;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+		background-color: #555;
+		color: white;
+	}
+.main-content {
+	min-width: 100%;
+}
+.main-content .top-content {
+	display: flex;
+}
+.main-content .top-content .text-content {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	flex: 1 1 40%;
+}
+
+section .middle-img {
+	display: block;
+	width: 100%;
+}
+/* bottom content */
+.bottom-content {
+	display: flex;
+}
+.bottom-content .text-content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 33.32%;
+	margin: 10px 0px;
+}
+
+div .bottom-content .text-content:nth-child(1) {
+	padding-right: 10px;
+}
+div .bottom-content .text-content:nth-child(2) {
+	padding-right: 10px;
+}
+/* contact */
+.contact {
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	margin-top: 20px;
+}
+.contact h4 {
+	flex: 1 1 0;
+}
+.contact p {
+	flex: 1 1 0;
+}
+.contact p:nth-of-type(1) {
+	margin-bottom: 20px;
+}
+.contact p:nth-of-type(2) {
+	margin-bottom: 20px;
+}
+/* footer */
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100px;
+	margin-top: 20px
+}
+
+
+/****************************/
+/* Media Queries */
+@media screen and (max-width: 900px) {
+	.cta img {
+		display: none;
+	}
+	.main-content .top-content .text-content {
+		padding: 20px;
+	}
+	section .middle-img {
+		display: block;
+		min-width: 100%;
+    }
+    .bottom-content .text-content {
+		padding: 20px;
+	}
+	.contact {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container header .logo {
+		width: 39%;
+	}
+}
+
+@media (max-width: 500px) and (min-width: 320px) {
+	.container {
+		min-width: 400px;
+		width: 100%;
+	}
+	.middle-img {
+		width: 100%;
+	}
+	 nav {
+		width: 120%;
+		display: block;
+		display: flex;
+		flex-direction: column;	
+	}
+	.main-content .top-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.main-content .top-content .text-content {
+		padding: 20px;
+		width: 100%;
+	}
+
+	.bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+	nav a {
+		flex: 1 1 0;
+		min-width: 120%;
+		display: block;
+	/* 	padding: 0; */
+		font-size: 1.5em;
+		border-bottom: 1px solid grey;
+		text-align: center;
+	}
+
+	.container header .logo {
+		display: none;
+	}
+	.cta .cta-text h1 {
+		font-size: .99em;
+	}
+
+	.main-content .top-content .text-content h4 {
+		font-size: 2em;
+	}
+
+	.main-content .top-content .text-content p {
+		font-size: 1.2em;
+	}
+	.bottom-content .text-content h4{
+		font-size: 2em;
+	}
+	.bottom-content .text-content p {
+		font-size: 1.2em;
+	}
+	.contact {
+		height: auto;
+	}
+	.contact h4 {
+		font-size: 2em;
+	}
+	.contact p {
+		font-size: 1.2em;
+	}
+	footer p {
+		height: 400px;
+		font-size: .988em;
+		margin-top: 40px;
+		flex-direction: row;
+	}
+
+	nav a:hover {
+		background-color: #555;
+		color: white;
+	}
+}
