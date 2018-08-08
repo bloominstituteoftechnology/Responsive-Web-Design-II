@@ -1,1 +1,312 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/*My code starts here------------------------------------------------------------------------------------------------------------- */
+.container {
+    max-width: 880px;
+	width:100%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 40px; 
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+	font-size: 1.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin: 28px -.34% 0 10.23%;
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 8.52% 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 1.6rem;
+    background: white;
+    width: 58%;
+    height: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 1.4%;
+   padding: 35px 0;
+   font-size: 1.6rem;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+}
+
+.main-content .bottom-content {
+    display: flex;
+}
+
+.main-content .bottom-content p {
+    padding-right: 5.27%;
+}
+
+/* Contact Styles */
+
+.contact h4 {
+    font-size: 1.6px;
+    margin-left: 1.02%;
+}
+
+.contact p {
+    margin: 32px 0 0 1.02%;
+    font-size: 1.6rem;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 5px 0 20px 2.84%;
+    font-size: 1.5rem;
+}
+
+}
+
+
+/*Tablet Version-----------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 800px) {
+	/*Header*/
+	header {
+		flex-wrap: wrap-reverse;
+	}
+	
+	header .logo{
+        display: block;
+        margin: 30px 39.75%;
+	}
+	
+	header nav {
+		width:100%;
+		padding:0 3.9%;
+		font-size: 1.57rem;
+		margin-top:10px;
+	}
+	
+	
+	/*CTA*/
+	.cta{
+		justify-content: center;
+	}
+	
+	.cta img{
+		display:none;
+	}
+	
+	.cta .cta-text{
+		margin-left: 14.43%;
+	}
+	
+	
+	/*Main Content*/
+	.text-content{
+		margin:0 3.25%;
+	}
+	
+	.main-content .middle-img{
+		width:100%;
+		margin: 30px 2.08%;
+	}
+	
+	
+	/*Contact*/
+	.contact {
+		margin: 0 3.9%;
+		font-size: 1.6rem;
+	}
+	
+	/*Footer*/
+	footer{
+		font-size: 1.6rem;
+		margin-left: 4.29%;
+	}
+}
+
+
+
+/*Phone Version ---------------------------------------------------------------------------------------------------------------------------------------*/  
+@media (max-width: 500px) {
+	/*Header*/
+	header {
+		justify-content:center;
+}
+	header .logo{
+		margin: 20px 0;
+		margin-left: 4.14%;
+	}
+	
+	header nav{ 
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		font-size: 2rem;
+	}
+	
+	header nav a{
+		text-align: center;
+		padding: 20px;
+		margin-left: 4.14%;
+		border-bottom: 1px solid grey;  
+	}
+	
+	header nav a:first-child {
+		border-top: 1px solid grey;
+	}
+	
+	/*CTA*/
+	.cta {
+		margin-top: 51px;
+		margin-left: 7.33%;
+	}
+	
+	/*Main Content*/
+	.main-content{
+		padding:0 0 32px 0;
+	}
+	
+	.main-content .top-content {
+		justify-content: space-around;
+		height: 304px;
+		flex-direction: column;
+		margin: 29px 0;
+	}
+	
+	.main-content .middle-img{
+		margin: 30px 4.08%;
+	}
+	
+	.main-content .bottom-content {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	
+	  .text-content {
+		margin: 0;
+		padding: 21px;
+    }
+	
+	
+}
