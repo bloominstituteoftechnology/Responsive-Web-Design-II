@@ -1,0 +1,244 @@
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Everything above is CSS reset */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black !important; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.site-container {
+    width: 100%;
+    max-width: 950px;
+}
+
+
+.site-container header {
+
+    display: flex ;
+    flex-direction: column-reverse ;
+    justify-content: space-between ;
+    padding-top: 0.5rem ;
+}
+.flex-bar {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 950;
+    margin: 2% 0;
+    box-shadow: 10px 10px 5px grey;
+    border: 1px solid black ;
+    background: -webkit-linear-gradient(rgba(140, 108, 108, 0.672), rgba(51, 51, 51, 0.111), rgb(64, 64, 68));
+    -webkit-background-clip: text;
+    background-clip: border-box ;
+}
+.flex-bar a button {
+
+    display: flex ;
+    align-items: center ;
+
+}
+
+.flex-bar a {
+    text-decoration: none ;
+}
+
+
+
+.banner-div img {
+    width: 100% ;
+    max-width: 950px;
+
+}
+.flex-bar img {
+    width: 100% ;
+    max-width: 150px ;
+    height: 100% ;
+    max-height: 150px ;
+}
+
+.top-text p img {
+    width: 100% ;
+    max-width: 300px;
+}
+
+
+
+
+.top-text {
+    border-left: 2px solid black ;
+    border-right: 2px solid black ;
+}
+.flex-bar a button {
+    font-size: 2.0rem;
+    font-family: 'Kreon';
+    background: transparent ;
+    width: 100% ;
+    border: none ;
+  
+
+
+}
+
+.top-text p {
+    width: 100%;
+    max-width: 300px;
+
+    border: 1px solid black ;
+}
+
+
+.first-articles .top-text {
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+}

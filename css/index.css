@@ -1,1 +1,368 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Everything above is CSS reset */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black !important; */
+}
+
+.html-font-size {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.site-container {
+    width: 100%;
+    max-width: 880px;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-flex {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 70rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-flex a:last-child {
+    margin-right: 0.5rem;
+}
+
+.nav-flex a:link {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+.nav-flex a:visited {
+    color: darkslategray;
+}
+
+.visual-cta {
+    font-size: 4.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.visual-cta section {
+    font-family: Bangers;
+}
+
+.visual-cta .cta-text {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 22.4%;
+}
+
+.visual-cta .cta-text .btn-class {
+    background: white;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.middle-img-div {
+    margin: 1rem 0;
+}
+
+.middle-img-div img {
+    width: 100%;
+    max-width: 878px;
+}
+
+.middle-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 0.3rem solid black;
+    border-width: 100%;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.middle-text article {
+    font-size: 1.6rem;
+    width: 49%;
+    max-width: 400px;
+}
+
+.middle-text article h3 {
+    font-size: 2.4rem;
+    font-family: Bangers;
+    padding-bottom: 1rem;
+}
+
+.bottom-text {
+    border-bottom: 0.3rem solid black;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%;
+    border-width: 100%;
+}
+
+.bottom-text article {
+    width: 100% ;
+    max-width: 400px;
+}
+
+.bottom-text article h3 {
+    font-family: Bangers;
+    font-size: 2.4rem;
+    padding-bottom: 1rem ;
+}
+
+.footer-flex .contact-text {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.footer-flex .contact-text h3 {
+    font-family: Bangers;
+    font-size: 2.4rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer-flex p:last-child {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 800px) {
+    .header-flex {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .header-img {
+        display: none;
+    }
+    .logo-div {
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+    }
+    .visual-cta .cta-text .btn-class {
+        margin: 1.5rem 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    .site-container {
+        width: 100% ;
+        max-width: 450px;
+    }
+    .header-flex {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .nav-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        border-top: 2px solid gray ;
+        border-bottom: 1px solid gray ;
+    }
+
+    .visual-cta .cta-text {
+        margin-top: 0.5rem ;    
+    }
+
+    .nav-flex a:first-child {
+        border-top: none ;
+    }
+    
+    .nav-flex a {
+        border: 1px solid gray ;
+        width: 100% ;
+        max-width: 500px ;
+        padding: 1rem 1rem ;
+    }
+    .middle-text article {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 500px;
+        justify-content: center ;
+    }
+    
+    
+    .bottom-text  {
+        flex-direction: column ;
+        justify-content: center ;
+        
+    }
+
+    .bottom-text article {
+
+        width: 100% ;
+        max-width: 500px;
+    }
+    .bottom-text h3 {
+        margin-top: 0.5rem ;
+    }
+}
