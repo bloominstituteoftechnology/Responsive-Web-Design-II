@@ -1,1 +1,477 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	font-size: 62.5%;
+}
+
+.container {
+	width: 100%;
+	max-width: 880px;
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.6rem;
+	margin-top: 1%;
+}
+
+a:hover {
+	color: black;
+}
+
+.navbar {
+	color: white;
+	height: 70px;
+	width: 73.8%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo {
+	padding: 1.7%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.topNav {
+	color: grey;
+	text-decoration: none;
+	padding: 2.8%;
+}
+
+.top-content {
+	width: 100%;
+	height: 524px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-content .topTitleText {
+	display: flex;
+	flex-direction: column;
+	font-size: 7rem;
+	text-align: center;
+	padding: 0px 6.25%;
+}
+
+.top-content .button {
+	margin-bottom: 1.7%;
+	font-size: 1.7rem;
+	text-align: center;
+	border: 2px solid black;
+	padding: 5px 16.7%;
+	margin-top: .6%;
+	background-color: white;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: pink;
+}
+
+.button:active {
+	background-color: black;
+	color: white;
+	box-shadow: 0 6px #FFA500;
+	transform: transformY(4px);
+}
+
+.middleContent h3 {
+	margin-top: 6%;
+	margin-left: 1.7%;
+	font-size: 2rem;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.middleContent {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: 1.6rem;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.topMiddle-text {
+	display: flex;
+	margin-bottom: 2.9%;
+}
+
+.sectionText {
+	display: flex;
+	text-align: left;
+	padding-left: 1.7%;
+}
+
+.features {
+	flex: 1;
+}
+
+.about {
+	flex: 1;
+}
+
+.bottom-text {
+	display: flex;
+	margin-top: 1.1%;
+	margin-bottom: 1.7%;
+	padding-bottom: 1.7%;
+}
+
+.services {
+	flex: 1;
+}
+
+.product {
+	flex: 1;
+}
+
+.vision {
+	flex: 1;
+}
+
+.ftr-info {
+	display: flex;
+	font-size: 1.6rem;
+	flex-direction: column;
+}
+
+.ftr-info h3 {
+	margin-top: 6%;
+	margin-left: 1.7%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.ftr-text {
+	padding-left: 1.7%;
+}
+
+.copyright-bottom {
+	text-align: center;
+	font-size: 1.6rem;
+	margin-bottom: 11.4%;
+}
+
+/* below css is service page specific */
+
+.services-header-img {
+	margin: 30px 0%;
+}
+
+.service-top h2 {
+	font-size: 2.5rem;
+}
+
+.service-top {
+	padding-bottom: 2.9%;
+	font-size: 1.6rem;
+	border-bottom: 1px solid black;
+}
+
+.middle-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 3.4%;
+	border-bottom: 1px solid black;
+}
+
+.middle-blocks {
+	border: 1px solid black;
+	margin-bottom: 4%;
+	font-size: 1.6rem;
+	width: 48.3%;
+	background-color: whitesmoke;
+	padding: 2.3%;
+}
+
+.middle-blocks button {
+	border: 1px solid black;
+	padding: 6px 4.5%;
+	margin-top: 2.3%;
+	background-color: white;
+	border-radius: 10%;
+}
+
+.footer-container {
+	padding: 30px 0%;
+	display: flex;
+}
+
+.service-info-img {
+	margin-bottom: 2.8%;
+}
+
+.bottom-fact-block {
+	padding-right: 3.4%;
+	font-size: 1.6rem;
+}
+
+.bottom-fact-block ul {
+	margin-top: 2.8%;
+}
+
+.bottom-fact-block ul li {
+	margin-top: 1.7%;
+	font-size: 1.6rem;
+	list-style-type: square;
+	margin-left: 2.3%;
+}
+
+@media (max-width:800px) {
+	.container {
+		width: 100%;
+	}
+	.container header {
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 100%;
+	}
+	.container .navbar {
+		width: 100%;
+		text-align: center;
+	}
+	.container .logo {
+		display: block;
+	}
+	.navbar .topNav {
+		margin: 0px 1.9%;
+	}
+	.top-img {
+		display: none;
+	}
+	.top-content {
+		height: auto;
+		width: 100%;
+		justify-content: center;
+		margin: 45px 0%;
+	}
+	.top-content .button {
+		margin-bottom: .6%;
+		padding: 7px 14%;
+		font-size: 17px;
+	}
+	.middleContent .middle-img {
+		width: 100%;
+	}
+	.middle-blocks {
+		width: 30%;
+	}
+}
+
+@media(max-width:500px) {
+	.container .navbar {
+		height: auto;
+		flex-direction: column;
+		align-items: center;
+		border-bottom: 1px solid lightgray;
+	}
+	.topNav {
+		border-top: 1px solid lightgray;
+		width: 99%;
+		font-size: 2.2rem;
+	}
+	.container .logo {
+		width: auto;
+	}
+	.middleContent .topMiddle-text {
+		flex-direction: column;
+		margin-bottom: 7%;
+	}
+	.middleContent .bottom-text {
+		flex-direction: column;
+	}
+	.middle-blocks {
+		width: auto;
+	}
+	.service-top p {
+		margin-left: 1%;
+	}
+	.footer-container img {
+		display: none;
+	}
+	.footer-container {
+		width: 100%;
+	}
+	.bottom-fact-block h3 {
+		text-align: center;
+	}
+	.bottom-fact-block ul li {
+		list-style-type: square;
+		margin-left: 7%;
+	}
+	.bottom-fact-block p {
+		text-align: center;
+	}
+	footer .copyright-bottom {
+		margin: 35px 0%;
+	}
+}
