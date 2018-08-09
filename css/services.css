@@ -165,11 +165,15 @@ h5 {
     box-sizing: border-box;
 }
 
+/* Body Container starts here */
+
 .container {
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
 }
+
+/* Navigation  & Header Container starts here */
 
 .container-main {
     display: flex;
@@ -205,7 +209,6 @@ header nav a:last-child {
 
 header .logo {
     display: inline-block;
-   
 }
 
 .header__service--imgs {
@@ -228,6 +231,8 @@ header .logo {
 h1 {
     font-size: 4rem;
 }
+
+/* Header & Navigation End Here */
 
 /*Boxes Color and Text*/
 
@@ -342,6 +347,8 @@ h1 {
     justify-content: space-between;
 }
 
+/* Bottom Section Facts */
+
 .fact1 {
     justify-content: space-between;
 }
@@ -368,6 +375,10 @@ ul li {
     padding-top: 5%;
 }
 
+/* Bottom Section Facts end here */
+
+/* Contact Section Starts */
+
 .contact a {
     text-decoration: none;
     color: black;
@@ -382,6 +393,10 @@ ul li {
     display: inline-block;
 }
 
+/* Contacts End */
+
+/* Footer Starts Here */
+
 footer {
     display: flex;
     flex-direction: column;
@@ -393,12 +408,17 @@ h3 {
     font-size: 1.4rem;
     line-height: 1.2px;
     font-family: 'Montserrat';
-    
 }
 
 footer h3::before {
     content: "\00A9 ";
 }
+
+/* Footer Ends here */
+
+/* Desktop First 800px, 500px Starts */
+
+/* Tablet View 800px */
 
 @media (max-width: 800px) {
     body {
@@ -450,60 +470,63 @@ footer h3::before {
         width: 100%;
     }
 }
-    @media(max-width: 500px) {
-        body {
-            background: linear-gradient(90deg, #0fadb8 25%, #1fa0db 51%, #2c8de8 75%);
-        }
-        .container-main {
-            display: flex;
-            width: 100%;
-        }
-        header nav {
-            flex-direction: column;
-            align-items: center;
-        }
-        header nav a {
-            padding: 20px 0;
-            text-align: center;
-            justify-content: center;
-            width: 100%;
-            font-size: 2.2rem;
-            color: black;
-            border-top: 1px solid black;
-        }
-        header .logo {
-            display: flex;
-            width: 100%;
-            padding-bottom: 10px;
-        }
-        header nav a:last-child {
-            border-bottom: 1px solid black;
-        }
-        .header-img {
-            display: none;
-        }
-        .top-text {
-            font-size: 5rem;
-        }
-        .box {
-            width: 85.6%;
-        }
-        .first-main {
-            flex-direction: column;
-        }
-        .second-main {
-            flex-direction: column;
-        }
-        .contact {
-            display: block;
-            /* This will put the pseudo element on its own line. */
-            width: 96.66%;
-            /* Change this to whatever width you want. */
-        }
-        footer h3 {
-            font-family: "Montserrat";
-        }
-        footer address {
-            font-size: 1.6rem;
-        }
+
+/* Phone View 500px */
+
+@media(max-width: 500px) {
+    body {
+        background: linear-gradient(90deg, #0fadb8 25%, #1fa0db 51%, #2c8de8 75%);
     }
+    .container-main {
+        display: flex;
+        width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a {
+        padding: 20px 0;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 2.2rem;
+        color: black;
+        border-top: 1px solid black;
+    }
+    header .logo {
+        display: flex;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    header nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+    .header-img {
+        display: none;
+    }
+    .top-text {
+        font-size: 5rem;
+    }
+    .box {
+        width: 85.6%;
+    }
+    .first-main {
+        flex-direction: column;
+    }
+    .second-main {
+        flex-direction: column;
+    }
+    .contact {
+        display: block;
+        /* This will put the pseudo element on its own line. */
+        width: 96.66%;
+        /* Change this to whatever width you want. */
+    }
+    footer h3 {
+        font-family: "Montserrat";
+    }
+    footer address {
+        font-size: 1.6rem;
+    }
+}
