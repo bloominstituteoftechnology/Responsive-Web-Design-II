@@ -1,0 +1,532 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 62.5%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Bangers", cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Body Container starts here */
+
+.container {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation  & Header Container starts here */
+
+.container-main {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 2.9%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav a {
+    display: inline-block;
+    font-size: 1.9rem;
+    color: black;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:last-child {
+    margin-right: 6.5%;
+}
+
+header .logo {
+    display: inline-block;
+}
+
+.header__service--imgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-img {
+    width: 100%;
+    padding: 30px 0 30px;
+}
+
+.section-header {
+    padding: 12px;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+/* Header & Navigation End Here */
+
+/*Boxes Color and Text*/
+
+.box {
+    color: black;
+    font-size: 1.6rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.box1 {
+    background: whitesmoke;
+}
+
+.box2 {
+    background: whitesmoke;
+}
+
+.box3 {
+    background: whitesmoke;
+}
+
+.box4 {
+    background: whitesmoke;
+}
+
+.box5 {
+    background: whitesmoke;
+}
+
+.box6 {
+    background: whitesmoke;
+}
+
+.box7 {
+    background: whitesmoke;
+}
+
+/*learn more button color*/
+
+.more1__Learn--More {
+    background: white;
+}
+
+.more2__Learn--More {
+    background: white;
+}
+
+.more3__Learn--More {
+    background: white;
+}
+
+.more4__Learn--More {
+    background: white;
+}
+
+.more5__Learn--More {
+    background: white;
+}
+
+.more6__Learn--More {
+    background: white;
+}
+
+/* Box Container and Learn More Flexedboxed */
+
+.container__Boxes {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+}
+
+.more {
+    justify-content: center;
+    text-align: center;
+    width: 42%;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 30px 0 10px 0;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 1px 0px;
+    cursor: pointer;
+}
+
+.box {
+    width: 44.2%;
+    margin: 23.33px;
+    box-shadow: 0px 0px 1px 0px;
+}
+
+.box1 {
+    justify-content: space-between;
+}
+
+.box2 {
+    justify-content: space-between;
+}
+
+.box3 {
+    justify-content: space-between;
+}
+
+.box4 {
+    justify-content: space-between;
+}
+
+.box5 {
+    justify-content: space-between;
+}
+
+.box6 {
+    justify-content: space-between;
+}
+
+/* Bottom Section Facts */
+
+.fact1 {
+    justify-content: space-between;
+}
+
+ul li {
+    margin: 20px;
+    list-style-type: disc;
+}
+
+.fact3 img {
+    align-content: center;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.fact {
+    width: 46.333%;
+    margin: 6px;
+    font-size: 1.6rem;
+    padding-top: 5%;
+}
+
+/* Bottom Section Facts end here */
+
+/* Contact Section Starts */
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    color: orangered;
+}
+
+.contact a[href^="tel:"]:before {
+    content: "\260E ";
+    display: inline-block;
+}
+
+/* Contacts End */
+
+/* Footer Starts Here */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p,
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.2px;
+    font-family: 'Montserrat';
+}
+
+footer h3::before {
+    content: "\00A9 ";
+}
+
+/* Footer Ends here */
+
+/* Desktop First 800px, 500px Starts */
+
+/* Tablet View 800px */
+
+@media (max-width: 800px) {
+    body {
+        background: linear-gradient(90deg, #0fb8ad 25%, #1fc8db 51%, #2cb5e8 75%);
+    }
+    .containter {
+        width: 100%;
+        padding: 20px;
+    }
+    .container-main {
+        display: flex;
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    header nav a {
+        font-size: 18px;
+    }
+    header nav a:last-child {
+        margin-right: 0;
+    }
+    header .logo {
+        padding-bottom: 40px;
+    }
+    .services-header-img {
+        width: 100%;
+    }
+    .box {
+        margin-left: 7.5%;
+        width: 85.6%;
+    }
+    .container__Boxes {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid gray;
+    }
+    .bottom {
+        height: 50%;
+        background-color: hsla(120, 60%, 70%, 0.3);
+    }
+    .services-info-img {
+        width: 100%;
+    }
+}
+
+/* Phone View 500px */
+
+@media(max-width: 500px) {
+    body {
+        background: linear-gradient(90deg, #0fadb8 25%, #1fa0db 51%, #2c8de8 75%);
+    }
+    .container-main {
+        display: flex;
+        width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav a {
+        padding: 20px 0;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 2.2rem;
+        color: black;
+        border-top: 1px solid black;
+    }
+    header .logo {
+        display: flex;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    header nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+    .header-img {
+        display: none;
+    }
+    .top-text {
+        font-size: 5rem;
+    }
+    .box {
+        width: 85.6%;
+    }
+    .first-main {
+        flex-direction: column;
+    }
+    .second-main {
+        flex-direction: column;
+    }
+    .contact {
+        display: block;
+        /* This will put the pseudo element on its own line. */
+        width: 96.66%;
+        /* Change this to whatever width you want. */
+    }
+    footer h3 {
+        font-family: "Montserrat";
+    }
+    footer address {
+        font-size: 1.6rem;
+    }
+}
