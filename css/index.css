@@ -56,7 +56,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
-    font-siz:62.5%;
+    font-size:62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -130,10 +130,14 @@ header .logo {
 /* cta */
 .cta {
     display:flex;
+    margin:0 0 ;
+    padding:0 0;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;  
-    height: 30rem;
+    width:100%;
+    /* height: 100rem; */
+    padding: 3rem 0;
     border-bottom: .1rem solid black;
 }
 
@@ -147,7 +151,7 @@ header .logo {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width:50%;
+  width:48%;
   /* height: 100%; */
   padding: 0 0 ;
 }
@@ -171,12 +175,15 @@ header .logo {
 
 .cta img {
   display: flex;
+  width:48%;
+  /* height:65%; */
   /* margin-top: 69px; */
 }
 
 .main-content {
 /*  border-top: 1px solid black;*/
   margin-top: 3rem;
+  font-size: 2rem;
   /* padding-top: 39px; */
 }
 
@@ -230,6 +237,7 @@ header .logo {
   margin-top: 3rem;
   border-top: .1rem solid black;
   padding: 3rem 0;
+  font-size: 2rem;
 }
 
 .contact p {
@@ -238,7 +246,7 @@ header .logo {
 
 footer {
   text-align: center;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 .services-header-img {
     /* margin: 2rem 0 0 0; */
@@ -455,7 +463,7 @@ button {
         justify-content: center;
         margin: 0 0;
         padding:0 0;
-        height: 25rem;
+        height: 65%;
         /* background:gray; */
     }
     .container .cta .cta-text{
@@ -472,6 +480,8 @@ button {
     }
     .container .cta img{
         display:none;
+        width:25%;
+
     }
     .container .main-content {
         margin: 0 0;
