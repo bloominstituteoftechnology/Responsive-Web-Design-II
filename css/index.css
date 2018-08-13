@@ -101,6 +101,7 @@ nav {
     margin-right: 61px;
     margin-top: 10px;
     color: #b0b0b0;
+    font-size: 1.6rem;
 }
 
 .navigation img {
@@ -130,7 +131,7 @@ nav {
 
 .header .header-content h2 {
     text-align: center;
-    font-size: 72px;
+    font-size: 7.2rem;
 }
 
 .header .header-content a {
@@ -167,7 +168,11 @@ nav {
     padding-top: 16px;
 }
 
+.content-item h3 {
+    font-size: 1.6rem;
+}
 .content-item p {
+    font-size: 1.6rem;
     padding-top: 2px;
     line-height: 18px;
 }
@@ -193,7 +198,12 @@ nav {
     padding-bottom: 20px;
 }
 
+.contact h3 {
+    font-size: 1.6rem;
+}
+
 .contact p {
+    font-size: 1.6rem;
     line-height: 25px;
 }
 
@@ -203,6 +213,10 @@ footer {
     padding-top: 15px;
     background: white;
     padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 1.6rem;
 }
 
 /* Media Queries */
