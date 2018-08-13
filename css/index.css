@@ -69,12 +69,12 @@ html {
     font-size: 62.5%;
 }
 
-
 .container {
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 880px;
+    width: 100%;
+    max-width: 880px;
     margin: 0 auto;
     background: white;
 }
@@ -211,7 +211,8 @@ footer {
 @media (max-width: 800px) {
 
     .container {
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
         background: white;
         padding-left: 20px;
         padding-right: 20px;
@@ -284,7 +285,8 @@ footer {
 @media (max-width: 500px) {
 
     .container {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         background: white;
         padding-left: 0px;
         padding-right: 0px;
