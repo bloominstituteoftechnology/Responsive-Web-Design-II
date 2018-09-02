@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ---------------------------------------------------------- */
-/* DO NOT EDIT ABOVE THIS LINE */
+/* DO NOT EDIT THE RESET ABOVE THIS LINE */
 
 .container {
   max-width: 880px;
@@ -306,7 +306,7 @@ footer {
      margin: 0 0;
    }
 
-   header nav a:last-child {
+  header nav a:last-child {
     border-bottom: 1px solid lightgrey;
   }
 
@@ -377,18 +377,28 @@ footer {
   }  
 }
 
-   /* Service Page CSS */
+/* -------------------- Service Page CSS ------------------- */
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
 
 .hero {
   margin-bottom: 40px;
 }
 
 .hero h2 {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .hero .services-header-img {
   margin: 20px 0 30px;
+  width: 100%;
+  height: auto;
 }
 
 .box-container {
@@ -404,7 +414,7 @@ footer {
 
 .box {
   height: 220px;
-  width: 420px;
+  width: 48%;
   padding: 20px;
   border: 1px solid black;
   background: whitesmoke;
@@ -416,8 +426,8 @@ footer {
   background: white;
   color: black;
   text-decoration: none;
-  font-size: 12px;
-  padding: 7.5px 50px
+  font-size: 1.2rem;
+  padding: 7.5px 50px;
 }
 
 .box a:hover {
@@ -451,7 +461,8 @@ footer {
 
 .facts-flex li {
   margin-bottom: 12px;
-  margin-left: 16px;
+  margin-left: 15px;
+  font-size: 1.6rem;
 }
 
 .facts-flex img {
@@ -483,7 +494,7 @@ footer {
 
    header nav a {
      font-weight: bold;
-     font-size: 16px;
+     font-size: 1.6rem;
    }
 
   header a {
@@ -511,7 +522,8 @@ footer {
 
   .box {
     width: 100%;
-    height: 170px;
+    height: 100%;
+    padding-bottom: 30px;
     margin-bottom: 20px;
   }
 
@@ -536,52 +548,11 @@ footer {
 /* Service page CSS for screens 500px and below */
 @media (max-width: 500px) {
 
-  .container {
-    width: 92%;
-    margin: 0 auto;
-  }
+    .hero {
+        margin-top: 30px;
+    }
 
-  header {
-    display: flex;
-    flex-flow: column wrap;
-  }
-
-  header nav {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-   header nav a {
-     font-weight: bold;
-     font-size: 20px;
-     color: lightgrey;
-     width: 107%;
-     text-align: center;
-     border-top: 1px solid lightgrey;
-     padding: 20px 0;
-     margin: 0 0;
-   }
-
-   header nav a:last-child {
-    border-bottom: 1px solid lightgrey;
-  }
-
-  header nav a:hover {
-    color: white;
-    background: lightgrey;
-    text-decoration: none;
-  }
-
-  header a {
-    order: -1;
-    align-self: center
-  }
-
-  .box {
-    width: 100%;
-    height: 220px;
-    margin-bottom: 20px;
-  }
+    .services-header-img {
+        display: none;
+    }
 }
