@@ -574,3 +574,13 @@ p {
         display: none;
     }
 }
+
+/* About page CSS */
+
+.cta-img {
+  right: 0px;
+  width: 50%;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 50px;
+}
