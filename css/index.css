@@ -151,6 +151,11 @@ header nav a:hover {
   margin-bottom: 50px;
 }
 
+.cta img:hover {
+  transform: rotate(360deg);
+  transition: 1.2s;
+}
+
 /* Main Content */
 
 .main-content {
@@ -175,6 +180,12 @@ header nav a:hover {
   margin-top: 30px;
   width: 100%;
   height: auto;
+  transition: .3s;
+}
+
+.main-content .middle-img:hover {
+  transform: scale(1.1);
+  transition: .3s;
 }
 
 .main-content .bottom-content {
@@ -270,6 +281,11 @@ footer {
   .main-content .middle-img {
     width: 100%;
   }
+  
+  .main-content .middle-img:hover {
+    transform: scale(0.9);
+    transition: .3s;
+  }
 
   .main-content .bottom-content .text-content {
     width: 30%;
@@ -314,6 +330,8 @@ footer {
     color: white;
     background: lightgrey;
     text-decoration: none;
+    box-shadow: 0 8px 6px -6px black;
+    transition: .3s;
   }
 
   header a {
