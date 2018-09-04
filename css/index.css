@@ -175,8 +175,6 @@ p {
 	width:100%;
 }
 
-/* ==========services page============ */
-
 
 .services-product{
 	margin: 30px 0 0 0;
@@ -186,11 +184,11 @@ p {
 	justify-content: space-between;
 }
 
-.services-product h2
+ .services-product h2
 .services-product .services {
 	padding-right: 5px;
 
-}
+} 
 
 .services-product  .product {
 	padding: 0 5px 0 5px;
@@ -215,6 +213,9 @@ p {
 footer {
 	text-align: center;
 }
+
+
+/* ==========services page============ */
 
 .service-content{
 	max-width: 880px;
@@ -241,109 +242,53 @@ footer {
 .service-content .digital-ux {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .digital-design {
-	margin-right: 5px;
 	flex-direction: column;
 	padding: 20px;
 	border: 1px solid black;
-	margin-right: 20px;
 	background-color: lightgray;
-	width: 480px;
+    width: 48%;
+    margin-bottom: 20px;
 
 }
 
-.digital-ui {
-	
-	margin-left: 5px;
-	flex-direction: column;
-	padding: 20px;
-	border: 1px solid black;
-	margin-left: 20px;
-	background-color: lightgray;
-	width: 480px;
+.digital-ux .digital-design button {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.digital-ux .digital-design button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
 
 }
 
-.service-content .marketing-web{
-	display: flex;
-	justify-content: space-between;
-}
-
-.dmarketing {
-	
-	margin-right: 5px;
-	flex-direction: column;
-	padding: 20px;
-	border: 1px solid black;
-	margin: 20px 20px 20px 0;
-	background-color: lightgray;
-	width: 480px;
-
-}
-
-.web-develop {
-	
-	margin-left: 5px;
-	flex-direction: column;
-	padding: 20px;
-	border: 1px solid black;
-	margin-left: 20px;
-	background-color: lightgray;
-	width: 480px;
-	margin: 20px 0 20px 20px;
-
-}
-
-.service-content .ios-roid {
-	display: flex;
-	justify-content: space-between;
-}
-
-.ios-develop {
-	
-	margin-right: 5px;
-	flex-direction: column;
-	padding: 20px;
-	border: 1px solid black;
-	margin: 0 20px 20px 0;
-	background-color: lightgray;
-	width: 480px;
-
-}
-
-.android-devel {
-	
-	margin-left: 5px;
-	flex-direction: column;
-	padding: 20px;
-	border: 1px solid black;
-	margin-left: 20px;
-	background-color: lightgray;
-	width: 480px;
-	margin: 0 0 20px 20px;
-
-}
 
 .facts {
 	display:flex;
 	border-top: 1px solid black;
 	justify-content: space-between;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    font-size: 1.6rem;
 
 
 }
 
 .facts-service{
-	width: 480px;
-	margin: 20px 0 20px 0;
+	width: 48%;
 }
 
 .services-info-img {
-	width: 480px;
-	margin: 20px 0 20px 0;
+	width: 48%;
 
 }
 
@@ -370,8 +315,9 @@ ul {
     }
 
     .nav-header .logo1 {
-         width: 25%;
+         width: 100%;
         margin-bottom: 35px;
+        border: 2px spolid green;
     }
     
  
@@ -412,6 +358,14 @@ ul {
         margin: 36px 0 61px 0;
     }
     
+    /* =======Services======= */
+
+
+    .services-dis {
+        display: flex;
+        justify-content: center;
+    }
+
 
 }
 
@@ -515,6 +469,31 @@ ul {
         margin-bottom: 20px;
     }
 
+     /* =======Services======= */
+
+    .services-dis p{
+         margin-left: 2%;
+    }
+
+    .services-dis {
+        padding: 15px 0;
+        border-bottom: none;
+     
+    }
+
+    .services-dis .h1-service{
+        padding-bottom: 20px;
+    }
+
+    .digital-ux {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .digital-design {
+        width: 100%;
+        text-align: center;
+    }
 
 
 }
