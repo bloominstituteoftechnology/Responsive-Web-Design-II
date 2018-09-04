@@ -247,3 +247,21 @@ h1, h2, h3, h4, h5 {
 
  
 }
+/* button hover stretch goal */
+.container .header-main nav a {
+    background-color:white;
+    border: none;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+}
+.container .header-main nav a {
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.container .header-main nav a:hover {
+    background-color: lightgray; 
+    color: white;
+}
