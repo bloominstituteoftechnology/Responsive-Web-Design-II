@@ -200,12 +200,13 @@ font-size: 1.6rem;
   }
 
   header .logo {
-    width: 20%;
-    margin: 20px;
+    width: 26%;
+    margin: 8.5% 0 0;
   }
   header nav {
-    justify-content: space-around;
-    margin: 10px;
+    justify-content: space-between;
+    margin-top: 5%;
+    width: 102%;
     display: flex;
   }
   .cta {
@@ -215,33 +216,42 @@ font-size: 1.6rem;
   }
   
   .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 20px;
+    margin: 1%;
   }
   
   .cta .cta-text button {
-    border: 1px double black;
-    font-size: 16px;
+    border: .1rem double black;
+    font-size: 1.6rem;
     background: white;
-    width: 170px;
+    width: 25%;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 7px;
     cursor: pointer;
   }
   .cta img {
     display: none;
   }
-}
+
+  .main-content {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 67px 0 38px 0;
+    padding: 49px 0;
+    font-size: 1.6rem;
+    line-height: 18px;
+  }
+
   .main-content .middle-img {
     display: block;
     width: 100%;
-    margin: 30px auto;
+    margin: 3.75%px auto;
   }
 
   @media (max-width: 500px) {
