@@ -202,53 +202,68 @@ html{
       }
     /* change the width of the nav bar to 800 px, spread the content accross the new bar */
     header nav{
-        width: 800px;
+        width: 100%;
         justify-content: space-around;
+        margin-left:0;
+        margin-right:0;
+        border: solid 1px red;
     
     }
     /* change header width to 800, change flex to column to reposition the logo */
     header{
         display: flex;
-        flex-direction: column;
-        width: 800px;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        border: solid 1px red;
     }
     /* change logo order so it goes on top of the nav bar, reposition it to the center of the page */
     header .logo{
         order: -1;
         align-self: center;
+        border: red solid 1px;
     }
     .main-content .top-content .text-content {
-        width: 360px;
+        width: 41%;
     
       }
     .main-content{
-        width: 800px;
+        width: 100%;
+        border: red solid 1px;
     }
     .main-content .top-content{
         justify-content: space-around;
-        width: 800px;
+        width: 100%;
     }
     /* change middle image width to fit tablet view */
     .middle-img{
-        width: 760px;
+        width: 86%;
         height: auto;
-        margin-right: 20px;
-        margin-left:20px;
+        padding-right: 20px;
+        padding-left:20px;
+        border: red solid 1px;
     }
     .container{
-        width: 800px;
+        width: 100%;
+        border: red solid 1px;
     }
     .main-content .bottom-content .text-content {
-        width: 210px;
+        width: 24%;
+        border: red solid 1px;
        
     }
     .main-content .bottom-content{
-        width: 800px;
+        width: 100%;
         justify-content: space-around;
+        border: red solid 1px;
     }
     .contact{
-        width: 800px;
+        width: 100%;
         padding-left: 20px;
+        border: red solid 1px;
+    }
+    .cta{
+        border: red solid 1px;
     }
 }
 /* mobile view start here */
