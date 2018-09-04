@@ -136,6 +136,7 @@ footer {
 .page-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 880px;
     margin: 0 auto;
     padding-top: 13.5rem;
@@ -160,7 +161,7 @@ footer {
 .page-container .page-content-img {
     width: 100%;
     height: auto;
-    padding: 3.1rem 0 3.1rem;
+    padding: 3.1rem 0;
 }
 
 .page-container .page-content {
@@ -188,4 +189,68 @@ footer {
 .page-container .page-content.img {
     width: 100%;
     height: auto;
+}
+
+/* ---------- 800px TO 501 px ---------- */
+
+@media (max-width: 800px) {
+
+    .top-header-container .top-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .top-header-container .top-header .top-header-logo {
+        order: 0;
+    }
+
+    .top-header-container .top-header .top-header-nav {
+        width: 100%;
+        justify-content: space-around;
+        padding-top: 4.1rem;
+    }
+
+    .page-container {
+        padding: 15.0rem 2rem 0;
+    }
+
+    .page-container .page-header {
+        justify-content: center;
+        padding-top: 4.5rem;
+    }
+
+    .page-container .page-header .page-header-img {
+        display: none;
+    }
+
+    .page-container .page-header .page-header-content {
+        padding: 0;
+    }
+
+    .page-container .page-header .page-header-content .get-started-button {
+        margin-top: 2.5rem;
+    }
+
+    .page-container .page-content-section {
+        padding: 0 1rem;
+    }
+
+    .page-container .page-content .two-column {
+        width: 49%;
+    }
+
+    .page-container .page-content .three-column {
+        width: 32%;
+    }
+
+    .contact {
+        align-self: flex-start;
+        padding-left: 1rem;
+    }
+}
+
+/* ---------- 500px AND DOWN ---------- */
+
+@media (max-width: 500px) {
+
 }
