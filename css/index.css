@@ -100,10 +100,8 @@ button {
 	border: 2px solid #999;
 	background: white;
 	padding: 3px 10%;
-	/* position: relative; */
-	/* bottom: 70px;
-	left: 165px; */
-	width: 55%;
+    width: 55%;
+    min-width: 40%;
 	font-family: 'Titillium Web';
 	font-size: 1.5rem;
 	cursor: pointer;
@@ -218,6 +216,10 @@ section.services-facts {
 	line-height: 1.25;
 }
 
+.services-content__card button {
+    width: 45%;
+}
+
 section.services-header {
 	/* border: 1px solid red; */
 	display: flex;
@@ -318,6 +320,7 @@ section.services-facts .footer-text li {
 
 /* Media Query - Tablet View */
 @media (max-width: 800px){
+
     .container {
         width: 95%;
     }
@@ -331,6 +334,7 @@ section.services-facts .footer-text li {
         flex-direction: column-reverse;
         justify-content: center;
     }
+
 
     header nav {
         width: 100%;
