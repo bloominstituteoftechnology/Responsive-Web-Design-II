@@ -155,9 +155,9 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 46.59%;
   justify-content: flex-start;
-  margin-right: 34px;
+  margin-right: 3.86%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -176,9 +176,9 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 31.25%;
   justify-content: flex-start;
-  margin-right: 12px;
+  margin-right: 1.36%;
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -188,7 +188,7 @@ header .logo {
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
-  padding: 39px 10px 0;
+  padding: 39px 1.136% 0;
 }
 
 .contact p {
@@ -337,7 +337,7 @@ footer {
         justify-content: space-between;
         width: 100%;
         max-width: 100%;
-        margin: 35px 5% 0;
+        margin: 35px 5% 0 5%;
     }
 
     header .logo {
@@ -369,11 +369,8 @@ footer {
         margin: 80px 5% 0;
     }
 
-    .main-content .middle-img {
-        width: 100%;
-    }
-
-    .main-content .bottom-content {}
+    .contact {
+        margin: 39px 5% 0;
 }
 
 
@@ -384,36 +381,6 @@ footer {
 /* MOBILE VIEW */
 /* MOBILE VIEW */
 @media (max-width:500px) {
-
-    .container {
-        width: 100%;
-      }
-
-    .container:first-child {
-        max-width: 490px;
-        margin: 0 auto;
-    }
-
-    .container .cta {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
-    .container .main-content {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
-    .container .contact {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
-    .container .footer {
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
     .container header {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -436,15 +403,19 @@ footer {
     header nav {
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin: 20px 0 0;
     }
 
     .cta .cta-text {
-        margin: 50px 0 100px 0;
+        margin: 50px 0;
     }
 
     .cta .cta-text button {
         margin-top: 15px;
+    }
+
+    .main-content {
+        margin-top: 10px;
     }
 
     .main-content .top-content {
@@ -474,7 +445,7 @@ footer {
     .contact {
         margin-top: 57px;
         border-top: 1px solid black;
-        padding: 39px 10px 0;
+        padding: 39px 5% 0;
       }
     
 }
