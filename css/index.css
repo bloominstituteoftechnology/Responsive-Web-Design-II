@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   box-sizing: border-box;
   color: red;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 html {
@@ -74,35 +74,35 @@ html {
 
 .container-home {
  margin: 0 auto;
- padding: 30px 3.4%;
+ padding: 20px 7% 20px 7%;
  max-width: 880px;
  font-size: 1.6rem;
 }
 
 .container-home .navigation-bar {
  display: flex;
- flex-direction: row;
  justify-content: space-between;
  align-items: center;
- margin: 0px 0px 55px 0px;
+ margin-top: 5px;
+ border: 1px solid red;
 }
 
 .container-home .navigation-bar nav {
  display: flex;
- justify-content: space-around;
- width: 73%;
- padding: 0px 0px 0px 10px;
+ justify-content: flex-start;
+ border: 1px solid red;
 }
 
 .container-home .navigation-bar a {
- margin: 0 10px;
+ margin: 0;
  color: red;
  font-weight: bold;
  text-decoration: none;
- letter-spacing: 1px;
- /* padding: 5px 60.5px 0px 0px; */
-
+ padding: 0 2%;
+ /* letter-spacing: 1px; */
 }
+
+
 
 .container-home .navigation-bar a:hover {
  color: mediumseagreen;
@@ -110,13 +110,13 @@ html {
 }
 
 .container-home .navigation-bar img { 
- width: 180px;
+ width: 21%;
  height: auto;
- margin: 0px 12px 0px 0px;
+ border: 1px solid red;
 }
 
 .container-home .navigation-bar img:hover { 
- width: 20%;
+ width: 22%;
  height: auto;
  background-image: linear-gradient(to right, white 90%, yellow 10%);
 }
@@ -125,58 +125,65 @@ html {
 .container-home .headline {
  display: flex;
  justify-content: space-between;
- margin: 70px 0px 0px 0px;
  width: 100%;
+ padding-top: 60px;
 }
 
 .container-home .headline .h1-and-button {
  display: flex;
  flex-direction: column;
- justify-content: center;
- margin-top: 0px;
- padding-left: 170px;  
+ justify-content: flex-start;
+ width: 53.5%;
+ margin-top: 42px;
 }
 
 .container-home .headline .h1-and-button h1 {
- font-size: 7rem;
+ font-size: 6rem;
  text-align: center;
- margin-bottom: 25px;
+ /* margin-bottom: 25px; */
 }
 
 .get-started {
- margin: 0px 61px 5px 60px;
- padding: 5px 0px 6px 0px;
+ /* margin: 0px 61px 5px 60px;
+ padding: 5px 0px 6px 0px; */
  border-radius: 3%;
  border: 2px solid black;
+ margin: 0 30%;
+ padding: 6px 2%;
 }
 
 .get-started:hover {
- border: 1px solid mediumseagreen;
+ border: 2px solid mediumseagreen;
  color: white;
  background-color: mediumseagreen;
 }
 
 
-.circle-img { 
- max-width: 100%;
- max-height: auto;
+.header-img {
+  width: 45.5%;
+  height: 45.5%;
 }
 
 
 .columns-2 {
- border-top: 1px solid black;
- margin: 76px 20px 20px 42px;
- padding: 35px 0px 5px 0px;
- line-height: 1.15rem;
+ border: 1px solid red;
+ margin-top: 65px;
+ /* line-height: 1.15rem; */
  display: flex;
- justify-content: space-around;
+ justify-content: space-between;
+ width: 100%;
+ padding-top: 32px;
+}
+
+.columns-2 h2 {
+
 }
 
 .topic-features {
 }
 
 .topic-about {
- margin-left: 12px;
+
 }
 
 .middle-img {    
@@ -280,7 +287,7 @@ footer {
    padding: 0px 0px 0px 0px;
  }
 
- .circle-img {
+ .header-img {
    display: none;
  }
 
@@ -424,7 +431,7 @@ footer {
      text-align: center;
    }
  
-   .circle-img {
+   .header-img {
      display: none;
    }
  
@@ -520,107 +527,3 @@ footer {
      margin-top: 20px;
    }
 } 
-
-
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Great Idea! - Fully Responsive!</title>
-
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-<!-- Use your own code or past solution here! -->
-<div class="container-home">
-  <header class="navigation-bar">
-    <nav>
-      <a href="services.html">Services</a>
-      <a href="#product">Product</a>
-      <a href="#vision">Vision</a>
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <a href="#contact-us">Contact</a>
-    </nav>
-
-    <img class="logo" src="img/logo.png" alt="Great Idea! Company logo.">
-  </header>
-
-  <section class="headline">
-    <div class="h1-and-button">
-      <h1>Innovation</br>
-        On</br>
-        Demand</h1>
-
-      <button class="get-started">Get Started</button>
-    </div>
-
-    <img class="header-img" src="img/header-img.png" alt="Image of a code snippet.">
-  </section>
-
-  <section class="columns-2">
-    <div class="topic-features">
-      <h2>Features</h2>
-      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-    </div>
-
-    <div class="topic-about">
-      <h2>About</h2>
-      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-    </div>
-  </section>
-
-
-  <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen">
-
-
-  <section class="columns-3">
-    <div class="topic-services">
-      <h2>Services</h2>
-      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-    </div>
-
-    <div class="topic-product">
-      <h2>Product</h2>
-      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-    </div>
-
-    <div class="topic-vision">
-      <h2>Vision</h2>
-      <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.</p>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <address>
-      123 Way 456 Street </br>
-      Somewhere, USA</br>
-      </br>
-      <div class="after-break">
-      1 (888) 888-8888</br>
-    </div>
-      </br>
-      <div class="after-break">
-      sales@greatidea.io
-      </div>
-    </address>
-  </section>
-
-
-  <footer>
-    <p class="copyright">&copy; Great Idea! 2018</p>
-  </footer>
-
-</div>
-</body>
-</html>
