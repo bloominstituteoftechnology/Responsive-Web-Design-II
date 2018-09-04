@@ -174,8 +174,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px;
-    width: 100%;
+    margin-top: 40px; 
+    width: 610px;
     justify-content: space-between;
     display: flex;
 }
@@ -190,35 +190,37 @@ header nav a:hover {
     color: black;
 }
 
-header img {
+header .logo {
     margin: 28px 0 0 91px;
 }
 
 /* cta */
 
-.cta .cta-text {
+
+.cta {
     display: flex;
-    flex-flow: row;
-    align-content: center;
-    justify-content: space-evenly;
+    margin-top: 72px;
+    justify-content: flex-end;
 }
 
-.cta .cta-text section {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    font-size: 7.7rem;
-    margin-top: 120px;
+.cta .cta-text {
+    font-size: 7.2rem;
     text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 10% 0 0;
 }
 
 .cta .cta-text button {
-    align-self: center;
+    border: 1px double black;
+    font-size: 1.6rem;
     background: white;
-    margin-top: 6px;
-    padding: 8px 44px;
-    font-size: 1.7rem;
-    border: 1px solid black;
+    width: 170px;
+    height: 32px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -227,20 +229,14 @@ header img {
     color: white;
 }
 
-.cta .ctatext img {
-    align-self: flex-end; 
-    margin-top: 69px;
-}
-
 .main-content {
     border-top: 1px solid black;
-    margin-top: 76px;
-    padding-top: 39px;
+    margin: 75px 0 35px 0;
+    padding: 35px 0;
+    line-height: 18px;
     width: 100%;
-}
-
-.main-content .top-content {
-    padding: 0 1%;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black;
 }
 
 .main-content .top-content .text-content {
@@ -249,13 +245,8 @@ header img {
 }
 
 .main-content .middle-img {
-    margin-top: 45px;
+    margin: 30px 0;
     width: 100%;
-}
-
-.main-content .bottom-content {
-    margin-top: 37px;
-    padding: 0 10px;
 }
 
 .main-content .bottom-content .text-content2 {
@@ -264,18 +255,12 @@ header img {
     justify-content: space-between;
 }
 
-.contact {
-    margin-top: 57px;
-    border-top: 1px solid black;
-    padding: 39px 10px 0;
-}
-
 .contact p {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 footer {
-    margin: 32px 0;
+    margin: 40px 0 20px;
     text-align: center;
     font-size: 1.4rem;
 }
