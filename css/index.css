@@ -292,4 +292,27 @@ div#page-container {
         margin: 18px 0 0;
     }
 
+    .homepage #main {
+        padding: 15px 1%;
+    }
+
+    .homepage #main .middle-img {
+        margin: 11px 0 8px;
+        width: 99.3%;
+    }
+
+    .homepage .main-block .two-column {
+        margin: 24px 0;
+        width: 100%;
+    }
+
+    .homepage .main-block .three-column {
+        width: 100%;
+        margin-bottom: 6.2rem;
+    }
+
+    .homepage .main-block .three-column:last-child {
+        margin-bottom: 2rem;
+    }
+
 }
