@@ -223,35 +223,10 @@ footer {
 
 /* media queries */
 
-@media (max-width: 600px) {
-
-  .page-container {
-    padding: 0 10px;
-  }
-
-  .main-nav {
-    padding: 20px 10px;
-  }
-
-  .services-page .sections section {
-    width: auto;
-  }
-
-  .services-page .sections, .services-page .addendum {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .services-page .subheader img, .page-container, .main-nav {
-    width: 100%;
-  }
-
-}
-
 @media (max-width: 800px) {
   .page-container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 2%;
   }
 
   .main-nav {
@@ -280,7 +255,7 @@ footer {
 
   nav a {
     margin-right: 0;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .content {
@@ -298,14 +273,10 @@ footer {
     margin: 0;
   }
 
-  .index-page .section-item-top .section-with-right-margin {
-      margin-left: 30px;
-      margin-right: 25px;
+  .index-page .section-item-top, .index-page .section-item-bottom {
+      width: auto;
   }
 
-  .index-page .section-item-top {
-      width: 356px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -339,11 +310,11 @@ footer {
   }
 
   nav button a {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .index-page, footer {
-    padding: 0 10px;
+    padding: 0 2%;
   }
 
   .index-page .sections section {
