@@ -87,7 +87,7 @@ html {
   
   header nav a {
 	margin-right: 9%;
-	font-size: 1.4rem;
+	font-size: 2rem;
 	color: gray;
 	text-decoration: none;
   }
@@ -124,7 +124,9 @@ html {
   }
   
   .cta .cta-text button {
-	background: white;
+    background: white;
+    width: 60%;
+    height: 10%;
 	margin-top: 0.68%;
 	padding: 0.91% 5%;
 	font-size: 1.7rem;
@@ -293,7 +295,7 @@ html {
     header nav a {
       text-align: center;
       margin: 0;
-      padding: 3% 0;
+      padding: 5% 0;
       border-top: 1px solid black;
     }
 
@@ -301,6 +303,7 @@ html {
       flex-flow: column;
       align-items: center;
       margin-right: 0;
+      padding: 10% 0;
     }
 
     .main-content .top-content {
