@@ -1,69 +1,4 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*//* Use your own code or past solution for Great Idea Web Page CSS here! */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -272,6 +207,10 @@ h1, h2, h3, h4, h5 {
   * {
       box-sizing: border-box;
   }
+  html {
+    font-size: 62.5%;
+  }
+  
   
   html, body {
       height: 100%;
@@ -281,17 +220,14 @@ h1, h2, h3, h4, h5 {
   h1, h2, h3, h4, h5 {
       font-family: 'Bangers', cursive;
       letter-spacing: 1px;
-      margin-bottom: 15px;
+      margin-bottom: 1.7%;
   }
   
   .container {
      max-width:880px;
       margin: auto;
   }
-  html {
-    font-size: 62.5%;
-  }
-  
+ 
   
   /* Header Styles */
   
@@ -302,7 +238,7 @@ h1, h2, h3, h4, h5 {
   }
   
   header nav {
-      margin-top: 40px; 
+      margin-top: 4.5%; 
       width: 69%;
       justify-content: space-between;
       display: flex;
@@ -321,14 +257,14 @@ h1, h2, h3, h4, h5 {
   }
   
   header .logo {
-      margin: 28px 0 0 91px;
+      margin: 3% 0 0 10.3%;
   }
   
   /* Call To Action (CTA) Styles */
   
   .cta {
       display: flex;
-      margin-top: 72px;
+      margin-top: 8%;
       justify-content: flex-end;
   }
   
@@ -340,7 +276,7 @@ h1, h2, h3, h4, h5 {
       justify-content: center;
       flex-flow: column;
       align-items: center;
-      margin: 0 82px 0 0;
+      margin: 0 9.3% 0 0;
   }
   
   .cta .cta-text button {
@@ -348,8 +284,8 @@ h1, h2, h3, h4, h5 {
       font-size: 1.6rem;
       background: white;
       width: 19%;
-      height: 32px;
-      margin-top: 10px;
+      height: 4%;
+      margin-top: 1%;
       cursor: pointer;
   }
   
@@ -363,9 +299,9 @@ h1, h2, h3, h4, h5 {
   .main-content {
      border-top: 2px solid black; 
      border-bottom: 2px solid black;
-     margin: 75px 0 35px 0;
-     padding: 35px 0;
-     font-size: 16px;
+     margin: 9% 0 4% 0;
+     padding: 4% 0;
+     font-size: 1.6rem;
      line-height: 18px;
      display:flex;
      flex-wrap: wrap;
@@ -378,7 +314,7 @@ h1, h2, h3, h4, h5 {
   
   .main-content .middle-img {
       display: block;
-      margin: 30px auto;
+      margin: 4% auto;
   }
   
   .main-content .bottom-content {
@@ -386,27 +322,27 @@ h1, h2, h3, h4, h5 {
   }
   
   .main-content .bottom-content p {
-      padding-right: 20px;
+      padding-right: 2%;
   }
   
   /* Contact Styles */
   
   .contact p {
-      margin: 15px 0;
+      margin: 2% 0;
   }
   
   /* Footer Styles */
   
   footer {
       text-align: center;
-      margin: 40px 0 20px;
+      margin: 5% 0 3%;
   }
 /* Tablet View */
   @media (max-width:800px){
       
     header nav {
         width: 100%;
-        margin: 25px 25px 0px -10px;
+        margin: 3% 3% 0px -1%;
         justify-content: space-around;
     }
 
@@ -417,7 +353,7 @@ h1, h2, h3, h4, h5 {
 
     header .logocon {
         align-self: center; 
-        margin: 25px 0px 0px 0px;
+        margin: 3% 0px 0px 0px;
     }
     .ctaimage {
         display: none;
@@ -468,7 +404,7 @@ header .main-nav {
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
     align-self: center;
-    padding: 20px 0 20px 48%;
+    padding: 4% 0 4% 48%;
     width: 100%;
   
  }
@@ -477,7 +413,7 @@ header .main-nav {
 
     border-bottom: 2px solid lightgray;
     align-self: center;
-    padding: 20px 0 20px 49%;
+    padding: 4% 0 4% 49%;
     width: 100%;
     
  }
@@ -485,7 +421,7 @@ header .main-nav {
 
     border-bottom: 2px solid lightgray;
     align-self: center;
-    padding: 20px 0 20px 49%;
+    padding: 4% 0 4% 49%;
     width: 100%;
 
  }
@@ -494,7 +430,7 @@ header .main-nav {
 
     border-bottom: 2px solid lightgray;
     align-self: center;
-    padding: 20px 0 20px 48%;
+    padding: 4% 0 4% 48%;
     width: 100%;
 
  }
@@ -503,7 +439,7 @@ header .main-nav {
 
     border-bottom: 2px solid lightgray;
     align-self: center;
-    padding: 20px 0 20px 50%;
+    padding: 4% 0 4% 50%;
    width: 100%;
 
  }
@@ -512,7 +448,7 @@ header .main-nav {
 
     border-bottom: 2px solid lightgray;
     align-self: center;
-    padding: 20px 0 20px 49%;
+    padding: 4% 0 4% 49%;
    width: 100%;
 
  }
@@ -550,26 +486,26 @@ header .main-nav {
 
 }
 .main-content .text-content{
-    margin: 0px 12px 50px 0px;
+    margin: 0px 2% 1% 0px;
 }
 .cta {
 
     justify-content: center;
-    margin: 49px -109px 0 0;
+    margin: 3% 2%  0 0;
 
 }
 .contact {
-    margin-top: 14px;
+    margin-top: 1.4rem;
     border-top: none;
-    padding: 39px 10px 0;
+    padding: 8% 2% 0;
 }
 .main-content {
     border-top: 2px solid black; 
     border-bottom: 2px solid black;
-    margin: 75px 0 35px 0;
-    padding: 35px 0px 67px 0px;
-    font-size: 16px;
-    line-height: 18px;
+    margin: 15% 0 7% 0;
+    padding: 7% 0px 13.4% 0px;
+    font-size: 1.6rem;
+    line-height: 3.6%;
     display:flex;
     flex-wrap: wrap;
 
