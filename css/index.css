@@ -412,26 +412,27 @@ h1, h2, h3, h4, h5 {
         justify-content: center;
         margin-bottom: 16px;
         border-bottom: 1px solid black;
-        margin-top: 6%;
+        margin-top: 5%;
     }
 
     .container-home nav {
         flex-direction: column;
     }
 
+
     .container-home .logo {
-        margin-bottom: 10px;
+        margin-bottom:8%;
         width: 80%;
         height: 90%;
     }
 
     .container-home nav a {
         justify-content: center;
-        padding: 16px 0px;
+        padding: 15.6px 0px;
         border-top: 1px solid black;
         margin-right: 0;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .container-home .features, .about, .services, .product, .vision {
@@ -456,8 +457,12 @@ h1, h2, h3, h4, h5 {
         padding-top: 30px;
     }
 
+    .container-home .header h1 {
+        padding-bottom: 5px;
+    }
+
     .container-home .header {
-        padding: 45px 0px 80px 0px;
+        padding: 20px 0px 80px 0px;
     }
 
 }
