@@ -427,21 +427,21 @@ h1, h2, h3, h4, h5 {
         display: flex;
         flex-direction: column-reverse;
         height: 8rem;
+        width: 100%;
     }
     .container header .logo {
-        margin-left: 24.5rem;
+        align-self: center;
         margin-top: .3rem;
-        width: 17%;
     }
     .container header nav {
         font-size: 1.25rem;
         display: flex;
-        align-self: flex-start;
+        width: 100%;
     }
     .container header nav a {
-        margin-left: 2.05em;
         padding-bottom: .2em;
-        padding-right: 3.2em;
+        margin-left: 0px;
+        width: 100%;
     }
     .container .cta .main-img {
         display: none;
@@ -449,20 +449,23 @@ h1, h2, h3, h4, h5 {
     .container .cta {
         height: 29.5rem;
         margin-bottom: 0px;
+        margin-left: 0xp;
         padding-bottom: 0px;
+        width: 100%;
     }
     .container .cta .cta-text {
         display: flex;
+        align-items: center;
         margin-top: 1.7rem;
         margin-bottom: 15rem;
-        margin-left: 19.9rem;
+        /* margin-left: 19.9rem; */
         font-size: 59px;
         height: 27rem;
+        width: 100%;
     }
     .container .cta .cta-text button {
         font-size: 1.3rem;
         width: 13.5rem;
-        margin-left: 5.3rem;
         margin-top: 1.7rem;
         height: 2.6rem;
     }
@@ -480,15 +483,11 @@ h1, h2, h3, h4, h5 {
         margin-top: 3.6rem;
         margin-bottom: 0rem;
     }
-    .container .main-content .top-content {
-        margin-right: 1.4rem;
-    }
     .container .main-content h4 {
         padding-bottom: 1.5rem;
         font-size: 1.3rem;
     }
     .container .main-content .bottom-content {
-        margin-right: 1.4rem;
         margin-top: 1.9rem;
     }
     .container .contact {
