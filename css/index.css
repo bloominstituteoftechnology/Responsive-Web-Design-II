@@ -143,7 +143,7 @@ html {
 .container-top .top-nav {
   display: flex;
 	justify-content: space-evenly;
-	width: 68%;
+	width: 58%;
 }
 
 /* tablet view */
@@ -168,8 +168,8 @@ html {
 .container-top .top-nav a {
 	color: gray;
 	text-decoration: none;
-  font-size: 1.6rem;
-  padding: 2% 8%;
+  font-size: 1.5rem;
+  padding: 0 9%;
 }
 
 /* tablet view */
@@ -197,8 +197,8 @@ html {
 
 .container-two {
 	display: flex;
-	padding: 10% 14% 2%;
-	justify-content: space-evenly;
+	padding: 5%;
+	justify-content: space-between;
 }
 
 @media (max-width: 800px) {
@@ -220,9 +220,9 @@ html {
 
 .container-two .top-left {
 	text-align: center;
-  flex-grow: 2;
   font-size: 1.7rem;
   line-height: .5;
+  padding: 7% 5% 10% 12%;
 }
 
 
@@ -257,7 +257,7 @@ html {
 
 
 .container-two .top-right {
-  padding: 0 12% 0;
+  padding: 0 5% 0;
   align-self: flex-start;
 }
 
