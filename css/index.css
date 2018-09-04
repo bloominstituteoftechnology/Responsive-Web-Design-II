@@ -141,55 +141,56 @@ header.home-page {
 
 /* section and section classes */
 section {
-    width: 85%;
+    width: 100%;
 	margin: 0 auto;
     text-align: center;
+    padding-top: 0.5rem;
 }
 .multi-column {
-	display: flex;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 2.5rem;
 }
 
 /* this is the start of the home page content section */
 .home-content {
-  width: 98%;
-	padding: 35px 0 40px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+    width: 100%;
+}
+.home-content h3 {
+    padding-top: 3.5rem;
 }
 .home-content p {
-  text-align: left;
-  padding-top: 5px;
-  padding-right: 20px;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    text-align: left;
+    padding-right: 1.7rem;
 }
 .middle-img {
-  width: 100%;
-  height: auto;
-  padding-top: 5px;
-  padding-right: 5px;
-	margin: 30px auto;
-	display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* start of the contact section */
 .contact {
-  width: 98%;
-  text-align: left;
+    width: 100%;
+    text-align: left;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-around;
 }
 .contact h3 {
-  padding-top: 35px;
+  padding-top: 1.8rem;
 }
 .contact p {
-  padding-top: 15px;
+    font-size: 1.6rem;
 }
-.contact p:nth-child(2) {
-  padding-top: 0;
+.contact p:nth-child(3) {
+    padding-top: 1.5rem;
 }
-.contact p:last-child {
-  padding-bottom: 20px;
+.contact p:nth-child(4) {
+    padding-top: 1.5rem;
 }
 
 /* start of the footer section */
