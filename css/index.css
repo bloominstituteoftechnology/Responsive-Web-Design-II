@@ -181,3 +181,50 @@ div#page-container {
     text-align: center;
     font-size: 1.6rem;
 }
+
+@media (max-width: 800px) {
+
+    body > header {
+        max-width: 760px;
+        height: 9.2rem;
+        margin: 3rem auto;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    body > header > nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    body > header > nav > a {
+        margin-right: 11%;
+    }
+
+    div#page-container {
+        max-width: 760px;
+    }
+
+    .homepage > header {
+        justify-content: center;
+    }
+
+    .homepage > header > .title-and-button {
+        padding: 8.2px 0 0;
+    }
+
+    .homepage > header h1 {
+        letter-spacing: 0.15rem;
+        line-height: 0.81;
+    }
+
+    .homepage > header .button {
+        margin: 20px 0 0;
+        padding: 0.7rem 0;
+    }
+
+    .homepage > header img {
+        display: none;
+    }
+
+}
