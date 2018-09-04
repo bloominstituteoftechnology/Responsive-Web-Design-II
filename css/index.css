@@ -148,6 +148,7 @@ button:hover {
     border-bottom: 1px solid black;
     height: 200px;
     padding-top: 6%;
+    padding-bottom: 22%;
     display: flex;
     justify-content: space-between;
 }
@@ -155,7 +156,9 @@ button:hover {
 address {
     padding-top: 6%;
 }
-
+address h2{
+    margin-bottom: 2%;
+}
 footer {
     text-align: center;
     padding-top: 6%;
@@ -355,13 +358,14 @@ header {
         padding: 50px 5px;
     }
     .middle-img {
-        margin-top: 10;
+        margin: 2.5% 5%;
+    
     }
     .bottomSection {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 0 20px;
+        margin: 0 5%;
         height:auto;
         width: 100%;
     }
@@ -381,11 +385,13 @@ header {
    
    .address-section{
        display: flex;
-       margin-top:20px;
+       margin: 5%;
        height: auto;
    }
     .fixed-nav .logo {
         margin-top: 20px;
     }
-  
+  footer {
+      margin: 0 20px;
+  }
 }
