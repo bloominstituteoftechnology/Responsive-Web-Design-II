@@ -75,21 +75,22 @@ h1, h2, h3, h4, h5 {
   max-width: 880px;
   /* TB LR */
   margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 /* header */
 
 header nav {
   display: inline-block;
-  width: 691px;
+  width: 78.5%;
   vertical-align: top;
   margin-top: 35px;
 }
 
 header nav a {
   display: inline-block;
-  margin-right: 65px;
-  font-size: 14px;
+  margin-right: 7.386%;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -116,18 +117,18 @@ header .logo {
 .cta .cta-text {
   display: inline-block;
   vertical-align: top;
-  font-size: 77px;
+  font-size: 7.7rem;
   margin-top: 120px;
   text-align: center;
-  padding: 0px 75px;
+  padding: 0px 8.522%;
 }
 
 .cta .cta-text button {
   background: white;
   vertical-align: top;
   margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
+  padding: 8px 5%;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -149,13 +150,13 @@ header .logo {
 }
 
 .main-content .top-content {
-  padding: 0 10px;
+  padding: 0 1.13%;
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 46.59%;
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 3.86%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -168,11 +169,11 @@ header .logo {
 
 .main-content .bottom-content {
   margin-top: 37px;
-  padding: 0 10px;
+  padding: 0 1.13%;
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 31.25%;
   display: inline-block;
   margin-right: 12px;
 }
@@ -184,7 +185,7 @@ header .logo {
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
-  padding: 39px 10px 0;
+  padding: 39px 1.14% 0;
 }
 
 .contact p {
@@ -194,7 +195,7 @@ header .logo {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* tablet view */
@@ -202,6 +203,7 @@ footer {
   .container {
     width: 100%;
     padding: 1.875%;
+    font-size: 1.6rem;
   }
 
   .container header{
@@ -209,10 +211,6 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
 
-  }
-
-  .container header nav a {
-    
   }
 
   .cta .cta-text {
@@ -231,8 +229,8 @@ footer {
   }
 
   .main-content .top-content .text-content {
-    width: 41.25%;
-    margin-right: 1.25%;
+    width: 50%;
+    /* margin-right: 1.25%; */
   }
 
   .main-content .middle-img {
@@ -241,16 +239,16 @@ footer {
 
   .main-content .top-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .main-content .bottom-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .main-content .bottom-content .text-content {
-    width: 28.125%;
+    width: 30%;
     margin-right: 1.25%;
   }
 }
