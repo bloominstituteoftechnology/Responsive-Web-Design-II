@@ -139,12 +139,13 @@ html{
   }
   
   .main-content {
-	border-top: 1px solid black;
 	margin-top: 76px;
 	padding-top: 39px;
   }
   
   .main-content .top-content {
+    padding-top: 40px;
+    border-top: 1px solid black;
 	display:flex;
 	justify-content: space-between;
   }
@@ -168,7 +169,7 @@ html{
   .main-content .bottom-content {
 	margin-top: 37px;
 	display:flex;
-	justify-content: space-between;
+    justify-content: space-between;
   }
   
   .main-content .bottom-content .text-content {
@@ -205,9 +206,7 @@ html{
         width: 100%;
         justify-content: space-around;
         margin-left:0;
-        margin-right:0;
-        border: solid 1px red;
-    
+        margin-right:0;  
     }
     /* change header width to 800, change flex to column to reposition the logo */
     header{
@@ -215,13 +214,13 @@ html{
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
-        border: solid 1px red;
+
     }
     /* change logo order so it goes on top of the nav bar, reposition it to the center of the page */
     header .logo{
         order: -1;
         align-self: center;
-        border: red solid 1px;
+
     }
     .main-content .top-content .text-content {
         width: 41%;
@@ -229,61 +228,62 @@ html{
       }
     .main-content{
         width: 100%;
-        border: red solid 1px;
+
     }
     .main-content .top-content{
         justify-content: space-around;
-        width: 100%;
+        max-width: 95%;
+        margin-right: 2.5%;
+        margin-left:2.5%;
     }
     /* change middle image width to fit tablet view */
     .middle-img{
         width: 86%;
         height: auto;
-        padding-right: 20px;
-        padding-left:20px;
-        border: red solid 1px;
+        padding-right: 2.5%;
+        padding-left:2.5%;
+
     }
     .container{
         width: 100%;
-        border: red solid 1px;
+
     }
     .main-content .bottom-content .text-content {
         width: 24%;
-        border: red solid 1px;
+
        
     }
     .main-content .bottom-content{
         width: 100%;
         justify-content: space-around;
-        border: red solid 1px;
+
     }
     .contact{
-        width: 100%;
-        padding-left: 20px;
-        border: red solid 1px;
-    }
-    .cta{
-        border: red solid 1px;
+        max-width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 0%;
+
     }
 }
 /* mobile view start here */
 @media only screen and (max-width: 500px) {  
     /* change flex to colum so the nav organzie by column */
         header nav{
-            max-width: 500;
+            max-width: 100%;
             flex-direction: column;
         }
         header{
             display: flex;
             flex-direction: column;
-            max-width: 500px;
+            max-width: 100%;
         }
         /* added bottom and top border, position to the middle of the page */
         header nav a{
             border-top: solid 1px;
-            max-width: 500px;
-            font-size: 24pt;
-            padding-left: 200px;
+            max-width: 100%;
+            font-size: 2.4rem;
+            text-align: center;
             padding-top: 20px;
             padding-bottom: 20px;
         }
@@ -295,53 +295,60 @@ html{
             border-bottom: 1px solid;
         }
         .cta{
-            max-width: 500px;
+            max-width: 100%;
         }
         .container{
-           max-width: 500px;
+           max-width: 100%;
             margin: 0 auto;
         }
         .main-content{
-            max-width: 500px;
+            max-width: 100%;
             display: flex;
             flex-direction: column;
         }
         .contact{
-            max-width: 500px;
+            max-width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 0%;
         }
         footer{
-            max-width: 500px;
+            max-width: 100%;
         }
         .middle-img{
-            max-width: 450px;
+            width: 80%;
             height: auto;
-            margin-right: 10px;
-            margin-left:10px;
+            padding-right: 4%;
+
+            margin-left: 0%;
         }
 
         .main-content .top-content{
             display: flex;
             flex-direction: column;
-            max-width: 500px;
+            max-width: 90%;
+            margin-right: 5%;
+            margin-left:5%;
         }
         .main-content .top-content .text-content{
-            max-width: 450px;
+            width: 90%;
             margin-bottom: 20px;
-            padding-left: 10px;
+
 
         }
         .main-content .bottom-content{
             display: flex;
             flex-direction: column;
-            max-width: 500px;
+            max-width: 90%;
+            margin-right: 5%;
+            margin-left:5%;
         }
         .main-content .bottom-content .text-content{
-            max-width: 450px;
+            width: 90%;
             margin-bottom: 20px;
-            padding-left: 10px;
 
         }
         .cta{
-            max-width:500px;
+            max-width:100%;
         }
 }
