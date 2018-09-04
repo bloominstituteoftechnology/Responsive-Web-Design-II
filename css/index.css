@@ -63,6 +63,13 @@ h1 {
     font-size: 7.2rem;
 }
 
+h2 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1rem;
+    font-size: 2.4rem;
+    padding-bottom: 1.6rem;
+}
+
 h3 {
     font-family: 'Bangers', cursive;
     letter-spacing: 0.1rem;
@@ -81,6 +88,23 @@ hr {
 	display: block;
     width: 100%;
     margin: 3.5rem 0;
+}
+
+ul {
+	list-style-type: square;
+	margin: 0;
+	padding: 0;
+    list-style-position: inside;
+    font-size: 1.6rem;
+	margin-top: 1.5rem;
+}
+
+li {
+	padding-bottom: 1.5rem;
+}
+
+li:last-child {
+	padding-bottom: 0;
 }
 
 address {
@@ -129,6 +153,11 @@ footer {
     text-decoration: none;
     font-size: 1.6rem;
     color: #B0B0B0;
+    -webkit-transition: background 0.5s ease;
+}
+
+.top-header-container .top-header .top-header-nav a:hover {
+    color: black;
 }
 
 /* page container */
@@ -145,7 +174,7 @@ footer {
 .page-container .page-header {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     margin-bottom: 4.2rem;
@@ -155,7 +184,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 12.7rem;
+    /* padding-left: 12.7rem; */
+}
+
+.page-container .page-header .page-header-img{
+    max-width: 50%;
 }
 
 .page-container .page-content-img {
@@ -170,6 +203,10 @@ footer {
     justify-content: space-between;
 }
 
+.page-container .services-wrap {
+	flex-wrap: wrap;
+}
+
 .page-container .page-content .two-column {
     width: 48.5%;
 }
@@ -178,15 +215,43 @@ footer {
     width: 32%;
 }
 
+.page-content .services-content {
+    border: 1px solid black;
+    background: #f4f3f4;
+    padding: 4% 4%;
+    margin-bottom: 3rem;
+}
+
+.page-content .page-content-section .learn-more-button {
+	margin-top: 1.5vh;
+	border: 1px solid black;
+	background: white;
+	padding: 2% 5%;
+	border-radius: 5px;
+}
+
 .page-container .page-header .page-header-content .get-started-button {
     border: 1px solid black;
     background: white;
     font-size: 1.6rem;
-    padding: 0.6rem 4.2rem;
+    padding: 0.6rem 15%;
     margin-top: 2.8rem;
 }
 
-.page-container .page-content.img {
+.page-container .page-content-img {
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    align-self: flex-start;
+}
+
+.page-container .services-content-header-img {
+    padding: 0 0 3rem;
+}
+
+.page-container .services-content-img {
     width: 100%;
     height: auto;
 }
@@ -211,7 +276,7 @@ footer {
     }
 
     .page-container {
-        padding: 15.0rem 2rem 0;
+        padding: 15.0rem 3% 0;
     }
 
     .page-container .page-header {
@@ -232,7 +297,12 @@ footer {
     }
 
     .page-container .page-content-section {
-        padding: 0 1rem;
+        padding: 0 1%;
+    }
+
+    .page-content .services-content {
+        padding: 4% 4%;
+        margin-bottom: 5%;
     }
 
     .page-container .page-content .two-column {
@@ -244,13 +314,84 @@ footer {
     }
 
     .contact {
-        align-self: flex-start;
-        padding-left: 1rem;
+        padding-left: 1%;
     }
 }
 
 /* ---------- 500px AND DOWN ---------- */
 
 @media (max-width: 500px) {
+    .top-header-container {
+        position: static;
+        background: white;
+        width: 100%;
+    }
 
+    .top-header-container .top-header {
+        padding: 0;
+    }
+
+    .top-header-container .top-header .top-header-logo {
+        padding: 2rem 0;
+    }
+
+    .top-header-container .top-header .top-header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .top-header-container .top-header .top-header-nav a {
+        width: 100%;
+        border-bottom: 1px solid #808080;
+        font-size: 2.0rem;
+        height: 6.1rem;
+        padding-top: 2rem;
+
+    }
+
+    .top-header-container .top-header .top-header-nav a:first-child {
+        border-top: 1px solid #808080;
+    }
+
+    .top-header-container .top-header .top-header-nav a:hover {
+        background: #b0b0b0;
+        color: white;
+    }
+
+    .page-container {
+        padding-top: 0.5rem;
+    }
+    
+    .page-container .page-content {
+        flex-wrap: wrap;
+        padding-top: 1rem;
+    }
+
+    .page-container .page-content-section {
+        padding: 1.5rem 0 2.5rem 0;
+    }
+
+    .page-content .services-content {
+        padding: 4% 4%;
+        margin-bottom: 5%;
+    }
+
+    .page-container .page-content .two-column {
+        width: 100%;
+    }
+
+    .page-container .page-content .three-column {
+        width: 100%;
+    }
+
+    .page-container .page-content .page-content-img {
+        padding: 0;
+    }
+
+    .contact {
+        padding-left: 0;
+    }
 }
