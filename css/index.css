@@ -96,7 +96,7 @@ header nav {
 .container nav a {
 	text-decoration: none;
 	color: gray;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 
@@ -111,7 +111,7 @@ header nav {
 
 .container .hero .hero-text {
 	width: 410px;
-	font-size: 70px;
+	font-size: 7rem;
 	text-align: center;
     margin: 95px 0 0 75px;
     line-height: 1;
@@ -120,7 +120,7 @@ header nav {
 .container .hero button {
 	border: 1px solid black;
 	padding: 5px 40px;
-	font-size: 16px;
+	font-size: 1.6rem;
     background:white;
     
 }
@@ -316,7 +316,7 @@ footer {
     }
 
     .container nav a {    
-        font-size: 20px;
+        font-size: 2rem;
         padding: 20px;
         margin: 0px;
         border-bottom: 1px solid gray;
