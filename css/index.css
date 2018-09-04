@@ -1,1 +1,317 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	width:880px;
+	margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+	padding-top:2rem;
+    font-size: 1.4rem;
+    margin-top: 12%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+	width: 70%;
+    margin-top:1rem;
+
+}	
+.main-nav a {
+	color:gray;
+    text-decoration: none;
+}
+.demand {
+    margin-top:6%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.start {
+	border: 1px solid black;
+    padding: 2.5% 12%;
+    font-size:1.8rem;
+}
+
+.demand .demand1 {
+	display: flex;
+	flex-direction:column;
+    align-items:center;
+}
+.demand-title h1 {
+	align-self: center;
+	font-size: 7.5rem;
+    text-align: center;
+}
+
+
+.first-section {
+	display: flex;
+	justify-content: space-between;
+	padding:5% 0px;
+	border-top: 1px solid black;
+}
+.para {
+    width: 48%;
+}
+.para2 {
+	width: 30%;
+}
+p {
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+.middle-img {
+	width: 100%;
+	height: auto;
+}
+
+.second {
+	display: flex;
+	justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+.contact {
+	align-content: flex-end;
+	padding-top: 5%;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+}
+
+
+/* SERVICES HTML START*/
+
+
+.services-header-img {
+	height: auto;
+	width:100%;
+}
+
+.services-head {
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+.services-head h2 {
+	font-size: 25px;
+	height: 35px;
+	display: flex;
+	align-items: flex-end;
+
+}
+
+.block {
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+	height: 700px;
+}
+
+.block p {
+	margin-bottom: 10px;
+}
+
+.boxes {
+	border: 1px solid black;
+	width: 455px;
+	padding: 15px;
+	background-color: lightgray;
+	border-radius: 15px;
+	height:50;
+}
+
+
+.learn-more {
+	border: 1px solid black;
+	display: flex;
+	width: 150px;
+	justify-content: center;
+	border-radius: 15px;
+	background-color: white;
+	padding: 10px;
+}
+
+.facts {
+	display: flex;
+	justify-content: space-between;
+	height:400px;
+	align-items: center;
+}
+.fact {
+	width: 455px;
+}
+
+.services-info-img {
+	width: 455px;
+	height: auto;
+}
+
+@media (max-width:800px){
+	.container {
+        width: 100%;
+    }
+    .top {
+        margin-top:5%;
+		flex-direction: column-reverse;
+        text-align:center;
+        padding:0;
+    }
+	.top .main-nav {
+        width:100%;
+        justify-content: space-around;
+
+    }
+    .top .main-nav a {
+        padding:2%;
+    }
+    
+    .demand img {
+        display: none;
+    }
+
+    .demand {
+		display: flex;
+		justify-content: center;
+    }
+	.middle-img {
+		width:100%;
+	}
+	.contact {
+		padding-top: 5%;
+	}
+	
+}
+
+@media (max-width:600px){
+	.container {
+		width:100%;
+	}
+	.top .main-nav {
+		flex-direction: column;
+		border-bottom: 1px solid black;
+	}
+	.top .main-nav a {
+		padding:5% 0 0 0;
+        border-top: 1px solid black;
+        font-size: 2.8rem;
+	}
+	.index-page .first-section {
+		flex-direction: column;
+		padding:1%;
+	}
+	.index-page .para {
+		padding-bottom:2%;
+		width:90%;
+	}
+	.index-page h3 {
+		font-size: 28px;
+	}
+	.index-page p {
+		font-size: 20px;
+	}
+	.middle-img {
+		padding: 1%;
+	}
+	.index-page .second {
+		flex-direction: column;
+		padding:1%;
+	}
+	.index-page .second .para2 {
+		width: 90%;
+		margin-bottom: 5%;
+	}
+	.contact {
+        padding:0 1%;
+	}
+
+}
+
+
+
