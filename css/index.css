@@ -330,6 +330,17 @@ footer {
   margin-right: 25px;
 }
 
+/* css for contact page */
+.contact {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact a {
+  flex-direction: column;
+}
+
 /* tablet */
 @media (max-width:800px) {
   .container {
