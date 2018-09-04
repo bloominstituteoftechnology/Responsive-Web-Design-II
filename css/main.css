@@ -158,6 +158,9 @@ body {
   width: 100%;
   height: 18.2rem;
 }
+.services-img {
+  margin-bottom: 2rem;
+}
 /* MAIN */
 .main--index,
 .main--page {
@@ -257,7 +260,7 @@ p a:hover {
 .nav {
   width: 100%;
   margin: 0 auto;
-  height: 7.5rem;
+  height: 9.5rem;
   margin-bottom: 20px;
   background: #cbecff;
   position: fixed;
@@ -357,13 +360,16 @@ p a:hover {
 }
 /* HEADER */
 .header {
-  padding: 14rem 0 5rem;
+  padding: 12rem 0 7rem;
   border-bottom: 1px solid #000;
 }
 @media (max-width: 500px) {
   .header {
     padding: 4rem 0 5rem;
   }
+}
+.header__row {
+  margin-bottom: 2rem;
 }
 @media (max-width: 800px) {
   .header__row {
@@ -449,6 +455,12 @@ p a:hover {
   padding-bottom: 2rem;
   border-bottom: 1px solid black;
 }
+@media (max-width: 800px) {
+  .page--services .header {
+    padding-bottom: 3rem;
+    padding-top: 18rem;
+  }
+}
 .page--services .row {
   justify-content: space-between;
 }
@@ -460,9 +472,9 @@ p a:hover {
 }
 .page--services .list {
   margin-top: 2rem;
-  padding-left: 2.27%;
+  padding-left: 5.27%;
 }
-.page--services .list .list-item {
+.page--services .list .list__item {
   margin-bottom: 1rem;
 }
 .card {
@@ -473,6 +485,7 @@ p a:hover {
   border: 1px solid black;
 }
 .card__paragraph {
+  font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 .btn--cta {

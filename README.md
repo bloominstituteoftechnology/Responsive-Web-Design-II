@@ -10,18 +10,18 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 
 ## Task 2: Project Objectives
 
-- [ ] Review each [design file](design-files) and build your styles at each breakpoint.
+- [x] Review each [design file](design-files) and build your styles at each breakpoint.
 - [x] Introduce `font-size: 62.5%;` into your `html` selector.
 - [x] Constrain your container element with a `max-width` of 880px
 - [x] Introduce max-width media queries into your project at 800px and 500px
 - [x] Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.
 - [x] Convert all `font-size` values into rem units
 - [x] Do your best to make the breakpoints look pixel-close-enough
-- [ ] Once you have completed all of the project objectives, push your commits and make a pull request against the original fork
+- [x] Once you have completed all of the project objectives, push your commits and make a pull request against the original fork
 
 ## Stretch Goals:
 
-- [ ] Build the services page from earlier assignments into a responsive design using your own creativity
-- [ ] [Look at BEM](http://getbem.com/) and convert your existing CSS into the appropriate selectors.
-- [ ] Introduce CSS animations at different break points across your site
+- [x] Build the services page from earlier assignments into a responsive design using your own creativity
+- [x] [Look at BEM](http://getbem.com/) and convert your existing CSS into the appropriate selectors.
+- [x] Introduce CSS animations at different break points across your site
 - [ ] Build another page based on one of the navigation items and use your creativity on how it looks.
