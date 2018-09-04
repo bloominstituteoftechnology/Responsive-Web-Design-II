@@ -206,6 +206,7 @@ header .logo {
 
     .cta .cta-text {
         width: 100%;
+        margin: 0 auto;
     }
 
     .cta img {
@@ -258,7 +259,7 @@ header .logo {
 /* main content tablet styles */
 @media (max-width: 800px) {
     .main-content {
-        padding: 35px 7px 50px;
+        padding: 35px .5% 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -267,20 +268,33 @@ header .logo {
 
     .main-content .top-content .text-content {
         width: 49%;
-        padding-left: 25px;
+        padding-left: 3%;
+    }
+
+    .main-content .middle-img {
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+        padding-left: 2%;
     }
 
     .main-content .bottom-content {
-        padding-left: 25px;
-        margin-top: -5px;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 30%;
     }
 }
 
 @media (max-width: 500px) {
     .main-content {
-        padding: 60px;
+        padding: 60px 12% 0 0;
+        /*padding-right: 12%;
         padding-left: 0;
-        padding-bottom: 0;
+        padding-bottom: 0;*/
 
     }
 
@@ -303,7 +317,7 @@ header .logo {
 
     .main-content .bottom-content {
         margin-top: 25px;
-        padding-left: 20px;
+        padding-left: 1%;
         display: flex;
         flex-direction: column;
     }
@@ -325,13 +339,13 @@ header .logo {
 
 @media (max-width: 800px) {
     .contact {
-        margin-left: 28px;
+        margin-left: 3.5%;
     }
 }
 
 @media (max-width: 500px) {
     .contact {
-        margin-left: 20px;
+        margin-left: 1%;
     }
 
 }
@@ -364,7 +378,7 @@ footer {
 }
 
 .services-content h1 {
-    font-size: 26px;
+    font-size: 2.6px;
     margin: 10px 0;
 }
 
