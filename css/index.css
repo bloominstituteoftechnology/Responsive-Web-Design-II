@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5 {
   .container {
      max-width:880px;
       margin: auto;
+      background-color: grey;
   }
  html{
      font-size: 62.5%;
@@ -136,7 +137,7 @@ h1, h2, h3, h4, h5 {
       color: black;
   }
   
-  header .logo {
+  header .logocon {
       margin: 3% 0 0 10.3%;
   }
   
@@ -145,7 +146,13 @@ h1, h2, h3, h4, h5 {
   .cta {
       display: flex;
       margin-top: 8%;
-      justify-content: flex-end;
+      
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+  .ctaimage {
+     justify-content: flex-end;
+
   }
   
   .cta .cta-text {
@@ -153,24 +160,31 @@ h1, h2, h3, h4, h5 {
       text-align: center;
       letter-spacing: .5rem;
       display: flex;
-      justify-content: center;
-      flex-flow: column;
-      align-items: center;
+      width :25%;
+      flex-direction: column;
+    
+      /* flex-flow: column; */
+      align-items: flex-start;
       margin: 0 9.3% 0 0;
   }
   
-  .cta .cta-text button {
+  .cta  button {
+    justify-content: flex-start;
       border: 1px double black;
       font-size: 1.6rem;
       background: white;
-      width: 60%;
+      width: 20%;
       height:10%;
       margin-top: 1%;
       cursor: pointer;
+      order:3;
+      flex-wrap: wrap;
+
+      
       /* margin-right: 100% */
   }
   
-  .cta .cta-text button:hover {
+  .cta button:hover {
       background: black;
       color: white;
   }
@@ -227,7 +241,7 @@ h1, h2, h3, h4, h5 {
       
     header nav {
         width: 100%;
-        margin: 3% 3% 0px -1%;
+        margin: 3% 3% 0px -2%;
         justify-content: space-around;
     }
 
@@ -238,7 +252,7 @@ h1, h2, h3, h4, h5 {
 
     header .logocon {
         align-self: center; 
-        margin: 3% 0px 0px 0px;
+        margin: 3% 0px 21px 0px;
     }
     .ctaimage {
         display: none;
@@ -247,8 +261,36 @@ h1, h2, h3, h4, h5 {
     .cta {
         justify-content: center;
         margin-left:25%;
+        flex-wrap:wrap;
+
     }
+    .cta .cta-text{
+            margin: 1% 33.3% 0 0;
+
+    }
+  .cta button {
+    margin: 3% 34% 1% 0%;
+    width: 28%;
+    height: 10%;
 }
+.main-content {
+    margin: 10% 0 1% 0;
+    padding: 4% 2% 10% 2%;
+}
+.main-content .text-content h4 {
+    margin: 0% 0% 4% 3%;
+}
+.main-content .text-content p {
+    margin: 0% 0% 4% 3%;
+}
+.contact{
+margin: 2% 0% 0% 4%;
+}
+.main-content .bottom-content {
+    margin: -2% 0% 0% 0%;
+}
+
+  }
 
 /* Phone view 500 px*/
 
