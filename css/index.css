@@ -110,7 +110,7 @@ header {
 
 header h1 {
     font-family: Bangers;
-    font-size: 423%;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -287,10 +287,15 @@ footer {
 
 @media (max-width:500px) {
     .container {
-        width: 100%;
+        max-width: 100%;
+    }
+    .container h2 {
+        margin-bottom:2%
+
     }
 .container p{
-    margin-bottom: 2rem;
+    margin-bottom: 9%;
+    margin-right: 2%;
 }
     nav {
         height: auto;
@@ -335,7 +340,7 @@ header {
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 
+    font-size: 5rem;
 }
     .topSection {
         display: flex;
