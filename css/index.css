@@ -95,6 +95,13 @@ header .main-nav a{
 
 }
 
+header .main-nav a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+
+}
+
 
 .container {
 	max-width: 880px;
