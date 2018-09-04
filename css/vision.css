@@ -135,60 +135,20 @@ nav a {
     font-weight: normal;
 }
 
-#services {
+
+.nav__item {
     background: rgb(138, 168, 4);
 }
 
-#services:hover {
-    padding-top: 43px;
+.nav__item:hover {
+    padding-top: 41px;
+    /* border-bottom: 3px solid red; */
     transition: .3s;
 }
 
-#product{
-    background: rgb(138, 168, 4);
-}
-
-#product:hover {
-    padding-top: 43px;
-    transition: .3s;
-}
-
-#vision {
-    background: rgb(138, 168, 4);
-}
-
-#vision:hover {
-    padding-top: 43px;
-    transition: .3s;
-}
-
-#features {
-    background: rgb(138, 168, 4);
-}
-
-#features:hover {
-    padding-top: 43px;
-    transition: .3s;
-}
-
-#about {
-    background: rgb(138, 168, 4);
-}
-
-#about:hover {
-    padding-top: 43px;
-    transition: .3s;
-}
-
-#contact {
-    background: rgb(138, 168, 4);
-}
-
-#contact:hover {
-    padding-top: 43px;
-    transition: .3s;
-}
 
 @media (max-width: 800px) {
-    
+    header {
+        flex-direction: column;
+    }
 }
