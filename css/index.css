@@ -393,4 +393,13 @@ footer {
     .services-container .box-container .box {
         width: 80%;
     }
+
+    .services-container .facts {
+      flex-direction: column-reverse;
+      margin: 0 2%;
+    }
+
+    .services-container .facts .services-info-img {
+      margin-bottom: 20px;
+    }
 }
