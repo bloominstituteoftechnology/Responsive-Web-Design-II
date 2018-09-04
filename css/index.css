@@ -256,7 +256,6 @@ font-size: 1.6rem;
 
   @media (max-width: 500px) {
     .container {
-      width: device-width;
       margin: 0 auto;
     }
     
@@ -267,41 +266,72 @@ font-size: 1.6rem;
     }
   
     header .logo {
-      width: 40%;
-      margin: 12px;
+        width: 44%;
+        margin: 2%;
     }
     header nav {
       border: 1px black;
       display: flex;
       flex-flow: column;
-      width: device-width;
+      margin-top: 3%;
+      width: 100%;
       justify-content: space-evenly;
     }
     header nav a {
-      font-size: 20px;
-      padding-left: 45%;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 1px solid black;
-    }
+        font-size: 20px;
+        padding-left: 41%;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        border: 1px solid black;
+        width: 100%;
+    }    
     .cta {
       display: flex;
       margin-top: 35px;
       flex-flow: column;
     }
+
+    .cta .cta-text {
+        font-size: 7.2rem;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        margin: 4%;
+      }
+
+      .cta .cta-text button {
+        border: .1rem double black;
+        font-size: 1.6rem;
+        background: white;
+        width: 42%;
+        height: 32px;
+        margin-top: 12px;
+        cursor: pointer;
+      }
+
     .main-content .top-content {
       display: flex;
       flex-flow: column;
-      padding: 10px;
+      align-content: space-between;
+      padding: 0%;
     }
     .main-content .top-content .text-content {
-      padding: 10px;
+      padding: 3% 0;
+    }
+
+    .main-content .middle-img {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
     }
     .main-content .bottom-content {
       display: flex;
       flex-flow: column;
     }
     .main-content .bottom-content .text-content {
-      padding: 10px;
+      padding: 3% 0;
     }
   }
