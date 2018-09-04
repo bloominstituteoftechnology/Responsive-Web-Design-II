@@ -272,7 +272,8 @@ footer {
   margin-bottom: 50px;
 }
 
-/* CSS for services.html */
+/* CSS for services.html  */
+
 .services-header-img {
   margin: 20px 0;
 }
@@ -299,7 +300,6 @@ footer {
   background-color: rgb(233, 229, 229);
   border: 1px solid black;
   width: 420px;
-  /* height: 200px; */
   padding: 20px;
   margin-bottom: 40px;
 }
@@ -331,14 +331,28 @@ footer {
 }
 
 /* css for contact page */
-.contact {
-  width: 80%;
+
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container .inputs {
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.contact a {
-  flex-direction: column;
+.container .inputs input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.container .inputs button {
+  margin-top: 20px;
 }
 
 /* tablet */
