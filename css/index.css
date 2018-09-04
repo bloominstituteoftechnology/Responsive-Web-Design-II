@@ -458,16 +458,17 @@ h1, h2, h3, h4, h5 {
         align-items: center;
         margin-top: 1.7rem;
         margin-bottom: 15rem;
-        /* margin-left: 19.9rem; */
         font-size: 59px;
         height: 27rem;
         width: 100%;
+        margin-left: 0px;
     }
     .container .cta .cta-text button {
         font-size: 1.3rem;
         width: 13.5rem;
         margin-top: 1.7rem;
         height: 2.6rem;
+        margin-left: 0px;
     }
     .container .main-content {
         border-top: 1px solid black;
