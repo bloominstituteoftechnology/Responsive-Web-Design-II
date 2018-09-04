@@ -1,1 +1,379 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: square inside;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media (max-width: 800px) {
+	.slogan-section img {
+		display: none;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	header .logo {
+		align-self: center;
+	}
+	header nav  {
+		display: flex;
+		justify-content: space-around;
+	
+	}
+}
+
+@media (max-width: 500px) {
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
+		border-top: 1px gray solid;
+		
+
+	}
+	header nav {
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+		/*margin: 10px 0; */
+		border-top: 1px gray solid;
+		padding: 15px 0;
+		padding-top: 0;
+		margin-top: 0;
+		
+	}
+	header nav a {
+		width: 100%;
+		border-bottom: 1px gray solid;
+		align-self: center;
+		justify-items: center;
+		text-align: center;
+		padding: 1.5rem 0px;
+		
+		
+	}
+	header .logo {
+		padding: 5px 0;
+		
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	body .inner-body {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+body {
+	background: rgba(5, 159, 255, .6);
+	margin: auto;
+	overflow: hidden;
+
+
+}
+.body-container {
+	max-width: 880px;
+	margin: 0 auto;
+	background: white;
+}
+.services .body-container {
+	width: 60%;
+	margin: 0 auto;
+	background: white;
+}
+header {
+	width: 100%;
+	display: flex;
+	height: auto;
+	position: relative;
+	margin-bottom: 15px;
+	justify-content: space-between;
+}
+
+header hr {
+	display: none;
+}
+nav { 	
+	background: white;
+	display: flex;
+	position: relative;
+	justify-content: space-around; 
+	margin: 0 auto;
+	width: 100%;
+	padding: 15px 1.5rem;
+	
+
+}
+
+nav a {
+	text-decoration: none;
+	color: gray;
+	font-size: 1.6rem;
+	width: 16%;
+}
+
+header nav .logo {
+	height: auto;
+	display: inline-block;	
+}
+
+header nav .logo img {
+	height: auto;
+	width: 100%;
+	align-items: baseline;
+}
+
+
+
+.services-header-img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.services-header {
+	margin: 20px auto;
+}
+
+.contact-header {
+	background-image: url('img/services-header.jpg');
+	width: 100%;
+	height: 200px;
+	display: flex;
+
+}
+
+.contact-header h1 {
+	justify-content: center;
+	font-size: 10rem;
+	text-align: center;
+	margin: 5px auto;
+}
+.slogan-section {
+	
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	height: 20%;	
+	align-items: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.slogan-section .box {
+	height: 100%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 48%;
+	justify-items: center;
+
+}
+
+.slogan-section img {
+	width: 40%;
+	height: auto;
+	justify-items: center;
+}
+
+.box .home-button {
+	border: 2px solid black;
+	background: white;
+	font-size: 1.6rem;
+	padding: 10px 1rem;
+	width: 75%;
+}
+
+
+.inner-body {
+display: flex;
+flex-direction: row;
+margin: 10px 1rem;
+} 
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+	margin: auto; 
+	align-items: center;
+}
+
+.inner-body .contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	width: 100%;
+}
+
+.topic {
+	display: flex; 
+	flex-direction: column;
+	margin: 5px .5rem;
+}
+
+.services .topic {
+	background: lightgray;
+	border: black 1px solid; 
+}
+
+.topic h2 {
+	padding: 5px 0;
+	font-size: 2.4rem;
+}
+
+.topic p {
+	padding: 5px 0;
+	margin: 5px 0;
+	font-size: 1.6rem;
+}
+
+.topic button {
+	width: 30%; 
+	height: auto;
+	background: white; 
+	border-radius: 5px;
+	margin: 10px 1rem;
+	padding: 10px 1rem;
+}
+
+box {
+	display: flex;
+	flex-direction: column;
+}
+
+.box p {
+	text-align: center;
+	font-family: 'Bangers', cursive;
+	height: 50%;
+	font-size: 5rem;	
+}
+
+p.button {
+	border: black solid 1px;
+	font-size: 1.2rem;
+}
+
+
+
+.middle-img {
+	width: 100%;
+}
+
+
+
+
+.index footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: 5px .5rem;
+
+}
+
+.services footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 5px;
+	padding: 10px 1rem;
+
+}
+
+.services footer div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	
+}
+
+
+
+div .copyright {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.contact footer {
+	height: 50%
+}
+
+
+
