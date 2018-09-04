@@ -265,9 +265,9 @@ html {
 
 .main-content2 h2 {
 	margin-bottom: 20px;
+	flex-direction: row;
     display: flex;
     font-size: 2rem;
-	flex-direction: row;
 	justify-content: flex-start;
 }
 
@@ -387,7 +387,7 @@ html {
 @media (max-width: 500px) {
 
     .container {
-        width: 105%;
+        width: 99%;
     }
 
     .mobile-container {
@@ -401,20 +401,23 @@ html {
     }
 
     .logo-container {
-        height: 25px;
+		height: 25px;
+		margin-top: 25px;
     }
 
     .nav {
         display: flex; 
         flex-direction: column;
-        margin: 0;
+		margin: 0;
+		width: 100%;
         justify-content: space-between;
         align-items: center;
     }
     
     .nav a {
         padding: 16px 0;
-        width: 100%;
+		width: 100%;
+		font-size: 2em;
         text-align: center;
         border: 1px solid gray;
     }
@@ -429,7 +432,8 @@ html {
     }
     
     .main-content2 {
-        display: flex;
+		display: flex;
+		width: 100%;
         flex-direction: column;
         height: auto;
     }
