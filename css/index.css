@@ -420,6 +420,8 @@ h1, h2, h3, h4, h5 {
     }
     .container {
         max-width: 880px;
+        margin: 0 auto;
+        width: 90%;
     }
     .container header {
         display: flex;
@@ -445,13 +447,13 @@ h1, h2, h3, h4, h5 {
         display: none;
     }
     .container .cta {
-        height: 30.32rem;
+        height: 29.5rem;
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
     .container .cta .cta-text {
         display: flex;
-        margin-top: -.6rem;
+        margin-top: 1.7rem;
         margin-bottom: 15rem;
         margin-left: 19.9rem;
         font-size: 59px;
@@ -461,14 +463,37 @@ h1, h2, h3, h4, h5 {
         font-size: 1.3rem;
         width: 13.5rem;
         margin-left: 5.3rem;
-        margin-top: 1.9rem;
+        margin-top: 1.7rem;
         height: 2.6rem;
     }
     .container .main-content {
-        border: 1px solid red;
+        border-top: 1px solid black;
         display: flex;
         flex-direction: column;
-        width: 71%;
+        width: 100%;
+        margin-top: 0rem;
+        font-size: 1.3rem;
+        padding-top: 2.8rem;
+    }
+    .container .main-content .middle-img {
+        width: 100%;
+        margin-top: 3.6rem;
+        margin-bottom: 0rem;
+    }
+    .container .main-content .top-content {
+        margin-right: 1.4rem;
+    }
+    .container .main-content h4 {
+        padding-bottom: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .container .main-content .bottom-content {
+        margin-right: 1.4rem;
+        margin-top: 1.9rem;
+    }
+    .container .contact {
+        width: 100%;
+        margin-bottom: 0rem;
     }
 }
 @media (max-width: 500px) {
