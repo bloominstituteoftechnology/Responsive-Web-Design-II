@@ -9,7 +9,7 @@
   <title>Great Idea! - Fully Responsive!</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web|Montserrat:300,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -20,6 +20,7 @@
 
   <!-- Use your own code or past solution here! -->
   <nav class="nav">
+    <!-- CONTAINER SURROUNDING CONTENT -->
     <div class="container nav__container">
       <div class="nav__links">
         <a class="nav__link" href="services.html">Services</a>
@@ -33,14 +34,16 @@
         <img class="nav__logo-img" src="img/logo.png" alt="Great Idea! Company logo.">
       </a>
     </div>
-
   </nav>
+
+  <!-- CONTAINER SURROUNDING CONTENT -->
   <div class="container">
-    <header class="header row">
-      <div class="header--col-50 col-50">
-        <div class="cta">
+    <!-- HEADER -->
+    <header class="header header__row row">
+      <div class="header__col-50 col-50">
+        <div class="header__cta">
           <h1 class="heading-primary">Innovation<br> On<br> Demand</h1>
-          <button class="cta__button">Get Started</button>
+          <button class="btn btn--cta">Get Started</button>
         </div>
       </div>
       <div class="col-50">
@@ -49,8 +52,7 @@
         </div>
       </div>
     </header>
-
-
+    <!-- MAIN CONTENT -->
     <main class="main main--index">
       <section class="row">
         <div class="col-50">
@@ -69,7 +71,7 @@
       <div class="middle-img-container">
         <!-- <img class="middle-img" src="img/mid-page-accent.jpg" alt="Image of code snippets across the screen"> -->
       </div>
-      <section class="row bottom-content">
+      <section class="row row--bottom-content">
         <div class="col-33">
           <h2 class="heading-secondary">Services</h2>
           <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse
@@ -89,7 +91,7 @@
           </p>
         </div>
       </section>
-      <section class="contact row">
+      <section class="contact contact--row row">
         <h2 class="heading-secondary">Contact</h2> 123 Way 456 Street <br> Somewhere, USA <br>
         <br> 1 (888) 888-8888 <br>
         <br> <a href="#">sales@greatidea.io</a>

@@ -4,7 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/*
 html,
 body,
 div,
@@ -188,6 +188,12 @@ p a:hover {
   margin: 0 auto;
 }
 
+/* TYPOGRAPHY */
+.heading-primary {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 7rem;
+}
+
 /* GRID */
 .row {
   display: flex;
@@ -254,12 +260,12 @@ p a:hover {
 }
 
 /* HEADER */
-.header {
+.row--header {
   padding: 14rem 0 5rem;
   border-bottom: 1px solid #000;
 }
 
-.header--col-50 {
+.col-50--header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,11 +279,6 @@ p a:hover {
   width: 65%;
   margin: 0 auto;
   animation: fromleft 500ms ease-in-out;
-}
-
-.heading-primary {
-  /* font-family: 'Montserrat', sans-serif; */
-  font-size: 7rem;
 }
 
 .header__image-container {
@@ -315,7 +316,7 @@ p a:hover {
 }
 
 /* BOTTOM CONTENT */
-.bottom-content {
+.bottom-content--row {
   padding-bottom: 50px;
   border-bottom: 1px solid black;
 }
@@ -346,24 +347,26 @@ p a:hover {
 
 /* PAGE STYLES */
 
-.page-container,
-.main-index {
+.page,
+.main--index {
   opacity: 0;
   animation: fadein 500ms ease-in 200ms forwards;
 }
-.page-container .header {
+
+/* PAGE HEADER */
+.header--page {
   padding-top: 10rem;
   flex-direction: column;
   margin-bottom: 3rem;
 }
 
-.page-container .header h1 {
+.heading-primary--page {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.6rem;
   text-transform: uppercase;
 }
 
-.page-container .header p {
+.paragraph--page {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   line-height: 1.7;
@@ -451,12 +454,12 @@ p a:hover {
   border: 1px solid black;
 }
 
-.card p {
+.card__p {
   margin-bottom: 2rem;
 }
 
-.card button,
-.product button {
+.btn--card,
+.button--product {
   border: 1px solid black;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
@@ -466,8 +469,8 @@ p a:hover {
   transition: all 200ms;
 }
 
-.card button:hover,
-.product button:hover {
+.btn--card:hover,
+.btn--product:hover {
   background-color: #cbecff;
 }
 
@@ -476,16 +479,16 @@ p a:hover {
   text-align: center;
 }
 
-.link-list {
+.links__list {
   display: flex;
   flex-wrap: wrap;
   line-height: 1.7;
 }
 
-.link-list a,
-.link-list a:visited,
-.social-list a,
-.social-list a:visited {
+.links__list a,
+.links__list a:visited,
+.links__social-list a,
+.links__social-list a:visited {
   color: #999;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
@@ -493,7 +496,7 @@ p a:hover {
   transition: all 0.2s;
 }
 
-.link-list a:hover,
+.links__list a:hover,
 .social-list a:hover {
   color: #cbecff;
 }
@@ -508,10 +511,10 @@ p a:hover {
   }
 
   /* NAVIGATION */
-  .navigation {
+  .nav {
     height: 18rem;
   }
-  .nav-container {
+  .nav__container {
     flex-direction: column;
     justify-content: space-between;
     padding: 3rem 0;
@@ -520,20 +523,20 @@ p a:hover {
   .nav-links {
     flex-direction: column;
   } */
-  .nav-links {
+  .nav__links {
     width: 100%;
     align-items: center;
     justify-content: space-around;
   }
-  .nav-links a {
+  .nav__link {
     font-size: 1.4rem;
   }
-  .logo {
+  .nav__logo {
     margin-left: 0;
     order: -1;
   }
   /* HEADER */
-  .header {
+  .row--header {
     padding: 18.8rem 0 6.7rem;
   }
 
@@ -551,13 +554,13 @@ p a:hover {
     align-items: center;
   }
 
-  .cta-button {
+  .btn--cta {
     font-size: 1.8rem;
     padding: 0.5rem 1.5rem;
     width: 60%;
   }
 
-  .header .col-50 {
+  .col-50--header {
     width: 100%;
   }
 
@@ -565,7 +568,7 @@ p a:hover {
     display: none;
   }
 
-  .main-index,
+  .main--index,
   .main-page {
     width: 95%;
     margin: 0 auto;
