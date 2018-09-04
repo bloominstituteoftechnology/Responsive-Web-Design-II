@@ -87,7 +87,7 @@ html {
   
   header nav a {
 	margin-right: 9%;
-	font-size: 2rem;
+	font-size: 1.4rem;
 	color: gray;
 	text-decoration: none;
   }
@@ -208,6 +208,7 @@ html {
 
 
   @media ( max-width: 800px) {
+      
     .container {
         width: 100%;
     }
@@ -271,6 +272,10 @@ html {
   }
 
   @media ( max-width: 500px) {
+
+    html {
+        font-size: 62.5%
+    }
     
     .container {
       width: 100%;
@@ -294,6 +299,7 @@ html {
 
     header nav a {
       text-align: center;
+      font-size: 2rem;
       margin: 0;
       padding: 5% 0;
       border-top: 1px solid black;
