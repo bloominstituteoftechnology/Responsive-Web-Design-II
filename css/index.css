@@ -113,13 +113,14 @@ h1, h2, h3, h4, h5 {
   
   /* cta */
   .cta {
-		display: flex;
+        display: flex;
+        border: 1px solid red;
 	}
   .cta .cta-text {
 	font-size: 77px;
 	margin-top: 120px;
 	text-align: center;
-	padding: 0px 75px;
+    padding: 0px 9%;
   }
   
   .cta .cta-text button {
