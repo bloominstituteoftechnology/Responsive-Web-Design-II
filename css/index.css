@@ -485,9 +485,10 @@ ul {
         padding-bottom: 20px;
     }
 
-    .digital-ux {
+    .service-content .digital-ux {
         flex-direction: column;
         display: flex;
+        padding-bottom: 10px;
     }
 
     .digital-design {
@@ -495,5 +496,17 @@ ul {
         text-align: center;
     }
 
+    .facts {
+        border-top: none;
+    }
+
+    .facts img{
+        display: none;
+    }
+
+    .facts-service {
+        width: 100%;
+        text-align: center;
+    }
 
 }
