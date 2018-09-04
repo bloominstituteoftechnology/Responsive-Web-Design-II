@@ -86,15 +86,16 @@ a {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 95%;
-    margin-left: 250px;
+	width: 100%;
+    margin-left: 15%;
     
 }
 
 #navBar nav {
-    width: 64%;
+    width: 66%;
 	display: flex;
     flex-direction:row;
+   
 
 }
 
@@ -102,18 +103,20 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: 20px;
-  	padding:7px;
+	margin: 5%;
   	color: lightgrey;
   	text-decoration: none;
     font-weight: lighter;
-    width: 1%;
+    width: 11%;
+}
+#navBar nav a:first-child {
+    margin-left: 0%;
 }
 
 h1 {
 	font-size: 7rem;
 	text-align: center;
-	margin-right: 25px;
+	
 
 }
 
@@ -127,19 +130,23 @@ h2 {
 	flex-direction: row;
 	justify-content: space-evenly;
     align-items: center;
-    width:90%;
-	margin: 30px;
-    margin-top: 60px;
-    margin-left: 250px;
+    width:100%;
+	margin: 7%;
+    margin-top: 6%;
+    margin-left: 20%;
 
 }
 #slide h1 {
     width:34%;
+    margin-right: 3%;
+    margin-left:5%;
+    margin-top: 1%;
+
 }
 
 #slideImg {
-    width:41%;
-	margin-left: 25px;
+    width:43%;
+	margin-left: 2%;
 }
 
 .cta {
@@ -147,15 +154,17 @@ h2 {
 	background: white;
 	font-family:Arial, Helvetica, sans-serif;
 	font-weight: 100;
-	font-size: 1.5rem;
-	padding: 5px;
-	margin: 10px;
+	font-size: 1.2rem;
+	padding: 4%;
+	margin: 2%;
 	width: 20%;
 }
 #started {
 	font-weight: 100;
-	font-size: 3rem;
-	padding: 8px;
+	font-size: 1.5rem;
+    padding: 3%;
+    padding-left: 13%;
+    padding-right: 13%;
 }
 
 #features {
@@ -163,10 +172,11 @@ h2 {
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	padding-top: 25px;
+	padding-top: 3%;
 	border-top: 2px solid black;
-	width: 875px;
-    margin-left: 250px;
+	width: 100%;
+    margin-left: 15%;
+    margin-top: 1%;
   
 }
 
@@ -182,28 +192,37 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	align-items: flex-start;
-	width: 430px;
+    align-items: flex-start;
+    margin-top: 1%;
+	width: 100%;
+}
+#features div p {
+    width: 100%;
+    margin-top: 1%;
 }
 #image {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 150px;
-    width:90%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    width:100%;
    
+}
+
+.middle-img {
+    width: 100%;
 }
 #services {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-	padding-bottom: 25px;
+	padding-bottom: 2%;
 	border-bottom: 2px solid black;
-	width: 90%;
-    margin-left: 250px;
+	width: 100%;
+    margin-left: 15%;
 }
 
 #services div {
@@ -211,36 +230,49 @@ h2 {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 31%;
+	width: 32%;
 }
 #services div h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
-	width: 270px;
+	width: 100%;
+}
+
+#services div p {
+    width: 100%;
+    margin-top: 1%;
 }
 
 #bottomAddress {
-    width: 90%;
+    width: 100%;
 }
 
 #bottomAddress div {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 16%;
-    margin-top: 25px;
-    margin-left: 250px;
+	width: 20%;
+    margin-top: 2%;
+    margin-left: 0%;
+}
+#bottomAddress h2 {
+    margin-bottom: 1%;
+}
+footer {
+    width:100%;
+    margin-left:15%;
+
 }
 #copyright {
 	text-align: center;
-	margin: 25px;
-	margin-left: 150px;
-    width: 875px;
+    margin: 1%;
+  
 }
 
-/* Service Page Classes */
+
+/* Service Page Classes 
 
 
 #copyright {
