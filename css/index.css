@@ -210,6 +210,29 @@ footer {
     margin: 20px auto;
   }
 
+  @keyframes ctachange {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(-40deg);
+    }
+
+    75% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+  }
+
+  .cta .cta-text h1 {
+      animation-name: ctachange;
+      animation-duration: 4s;
+  }
+
   .cta img {
     display: none;
   }
@@ -238,6 +261,29 @@ footer {
 @media (max-width: 500px) {
   .container {
     max-width: 500px;
+  }
+
+  @keyframes logochange {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    25% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+  .logo {
+      animation-name: logochange;
+      animation-duration: 3s;
   }
 
   .container header {
@@ -464,10 +510,18 @@ footer {
   .services .main-info .mid-content {
     justify-content: center;
   }
+  @keyframes learnmorechange {
+      0% {
+        width: 25%;
+        margin: 10%;
+      }
+  }
 
   .services .main-info .mid-content .learn-more-box {
     width: 70%;
     height: auto;
+    animation-name: learnmorechange;
+    animation-duration: 2s;
   }
 
   .services .bottom-content .bottom-content-left {
