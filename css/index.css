@@ -179,14 +179,14 @@ p {
 @media (max-width: 800px) {
 
     .container {
-        margin-left: 0;
-        width: 100%;
+        margin: 30px 3%;
+        max-width: 800px;
     }
 
     nav {
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 0 20px 0;
+        margin: 0 0 75px 0;
     }
 
     nav .logo-container {
@@ -194,12 +194,12 @@ p {
         justify-content: center;
         order: -1;
         width: 100%;
-        margin: 0 0 44px;
+        margin: 0 0 44px 0;
     }
 
     .banner {
-        padding: 0;
-        margin: 0 0 33px 0;
+        margin: 0 0 39px 0;
+        padding: 0 0 50px 0;
     } 
 
     .banner img {
@@ -208,10 +208,11 @@ p {
 
     .banner div {
         text-align: center;
+        padding: 0;
     }
 
     .banner h1 {
-        font-size: 70px;
+        font-size: 7rem;
         margin: 0 0 28px 0;
     }
 
@@ -224,7 +225,7 @@ p {
     }
 
     .middle-img {
-        margin-bottom: 51px;
+        margin-bottom: 32px;
     }
 
     .bottom-content {
