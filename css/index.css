@@ -20,12 +20,13 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -138,6 +139,8 @@ h1, h2, h3, h4, h5 {
 .container {
   max-width: 880px;
   margin: 0 auto;
+  padding: 20px;
+  font-size: 1.1rem;
 }
 
 .container header{
@@ -186,13 +189,18 @@ header {
 
 .cta{
 	display:flex;
-	
+	margin: 23px;
+}
+
+.cta .cta-text h1{
+    font-size: 4.9rem;
+    margin-top: 35px;
 }
 
 .cta .cta-text {
   vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
+  font-size: 7.7rem;
+  margin-top: 12.0px;
   text-align: center;
   padding: 0px 75px;
 }
@@ -202,7 +210,7 @@ header {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -214,7 +222,7 @@ header {
 
 .cta img {
   
-  margin-top: 69px;
+  margin: auto;
 }
 
 .main-content {
@@ -230,8 +238,8 @@ header {
 
 .main-content .top-content .text-content {
   width: 410px;
- display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin-right: 34px;
  
 }
@@ -247,7 +255,7 @@ flex-direction: column;
 .main-content .bottom-content {
   margin-top: 37px;
   padding: 0 10px;
-display: flex;
+  display: flex;
 
 }
 
@@ -273,7 +281,7 @@ display: flex;
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 
@@ -353,6 +361,24 @@ header{
   flex-direction: column-reverse;
   align-items: center;
 } 
+
+.cta .cta-text h1{
+    font-size: 4.9rem;
+    margin-top: 35px;
+}
+
+.main-content{
+    margin-top: -21px;
+}
+
+.text-content{
+    font-size: 1rem;
+}
+
+.contact{
+    font-size: 1rem;
+}
+
 }
 
 
@@ -381,11 +407,14 @@ header{
     justify-content: center;
     border-bottom: 1px solid gray;
     align-items: center;
+    padding-top: -20px;
   
   }
 
   header nav a{
     border-top: 1px solid gray;
+    font-size: 1.3rem;
+    
   
   }
   .main-content .top-content{
@@ -414,7 +443,8 @@ header{
     margin-right: 0;
     width: 100%;
     text-align: center;
-    padding-top: 12px;
+    padding: 30px;
+    align-items: center;
   
   }
 
