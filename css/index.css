@@ -79,13 +79,15 @@ h1, h2, h3, h4, h5 {
   header nav {
     display: flex;
     border: 1px solid blue;
-    width: 691px;
+    /* width: 691px; */
     width: 79%;
     margin-top: 35px;
   }
   
   header nav a {
-	margin-right: 65px;
+    /* margin-right: 65px; */
+    margin-right: 9%;
+    border: 1px solid blue;
 	font-size: 14px;
 	color: gray;
 	text-decoration: none;
