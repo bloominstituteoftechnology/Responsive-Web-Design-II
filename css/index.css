@@ -293,7 +293,8 @@ div#page-container {
     }
 
     .homepage #main {
-        padding: 15px 1%;
+        padding: 15px 0;
+        margin: 35px 1%;
     }
 
     .homepage #main .middle-img {
@@ -312,7 +313,11 @@ div#page-container {
     }
 
     .homepage .main-block .three-column:last-child {
-        margin-bottom: 2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .homepage #contact {
+        margin: 0 1%;
     }
 
 }
