@@ -172,14 +172,19 @@ header .logo {
 /* Contact Styles */
 
 .contact p {
+    font-size: 1.6rem;
     margin: 15px 0;
+}
+
+.contact h4 {
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
+    font-size: 1.6rem;
     text-align: center;
-    margin: 40px 0 20px;
 }
 
 /* Services Styles */
