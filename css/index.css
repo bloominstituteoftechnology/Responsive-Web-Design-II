@@ -175,6 +175,9 @@ p {
 	width:100%;
 }
 
+/* ==========services page============ */
+
+
 .services-product{
 	margin: 30px 0 0 0;
 	padding-bottom: 46px;
@@ -214,12 +217,12 @@ footer {
 }
 
 .service-content{
-	width: 1000px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
 .services-header-img {
-	width: 1000px;
+	width: 100%;
 	padding-top: 20px;
 }
 
