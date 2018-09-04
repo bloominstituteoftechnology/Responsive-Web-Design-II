@@ -323,6 +323,7 @@ section.services-facts .footer-text li {
 
     .container {
         width: 95%;
+        /* transition: 5s; */
     }
 
     .header-img {
@@ -339,6 +340,7 @@ section.services-facts .footer-text li {
     header nav {
         width: 100%;
         justify-content: space-between;
+        transition: bottom 4s;
     }
 
     header nav a {
@@ -349,6 +351,7 @@ section.services-facts .footer-text li {
         margin: 0 auto;
         /* margin: 20px 0; */
         padding: 30px 0;
+        transition: 3s;
     }
 
     .hero {
@@ -412,6 +415,7 @@ section.services-facts .footer-text li {
         text-align: center;
         width: 100%;
         border-bottom: 1px solid #555;
+        transition: bottom 3s;
     }
 
 	header nav a {
@@ -419,6 +423,7 @@ section.services-facts .footer-text li {
         padding: 20px;
         font-size: 2rem;
         border-top: 1px solid #555;
+        transition: 1s;
     }
     
     header .logo {
