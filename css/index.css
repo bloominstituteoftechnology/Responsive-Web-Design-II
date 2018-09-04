@@ -66,12 +66,11 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.allSections {
-	margin: 0 auto;
-}
 .container {
     max-width: 880px;
     margin: 0 auto;
+    width: 100%;
+    
 }
 
 
@@ -80,19 +79,23 @@ h1, h2, h3, h4, h5 {
 .navigation a { 
 	
 	margin: 10px;
-	padding: 20px 65px 20px 15px;
+    /* padding-right: 5%; */
+    padding-left: 10%;
 	color: rgba(0, 0, 0, 0.644);
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 1.4rem;
-	text-decoration: none;
+	font-size: 1.6rem;
+    text-decoration: none;
+    width: 10%;
+  
 }
 .navBar {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content:flex-start;
 	align-items: center;
 	width: 100%;
-	padding: 10px;
+    padding: 10px;
+    padding-right: 0%;
 	background-color: white;
 	overflow: hidden;
     position: fixed; 
@@ -101,7 +104,7 @@ h1, h2, h3, h4, h5 {
 
 .navigation{
 	display:flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
     flex-wrap: wrap;
   
@@ -112,7 +115,8 @@ h1, h2, h3, h4, h5 {
 .logo {
 	width: 200px;
 	height: 40px;
-	display: flex;
+    display: flex;
+    /* padding-right: 30%; */
 	/* align-self: flex-end; */
 	
 
@@ -196,12 +200,14 @@ h1, h2, h3, h4, h5 {
 }
 .contact{
 	margin: 20px;
-	line-height: 30px;
+    line-height: 30px;
+    font-size: 1.6rem;
 
 }
 
 footer {
-	margin: 50px;
+    margin: 50px;
+    font-size: 1.6rem;
 	text-align: center
 }
 /*tablet view*/
@@ -230,7 +236,7 @@ footer {
         display:flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
     }   
     .navigation a { 
@@ -239,7 +245,7 @@ footer {
         padding: 20px 45px 20px 15px;
         color: rgba(0, 0, 0, 0.644);
         font-family: 'Titillium Web', sans-serif;
-        font-size: 14px;
+        font-size: 1.6rem;
         text-decoration: none;
     }
     .codeCircle {
@@ -256,17 +262,20 @@ footer {
 @media all and (max-width: 500px) {
     
 .navigation a { 
-	
-    margin:5px;
+	width: 100%;
+    margin:0px;
     padding: 10px;
 	color: rgba(0, 0, 0, 0.644);
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 14px;
+	font-size: 1.6rem;
     text-decoration: none;
     border-top: .5px solid black;
+    border-right: .5px solid black;
+    border-left: .5px solid black;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    text-align: center;
     
 }
 .navBar {
@@ -287,7 +296,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    align-items: stretch;
+    align-items: center;
     border-bottom: .5px solid black;
 
 }
@@ -300,7 +309,7 @@ footer {
     margin: 10px;
 }
 .attnCatcher{
-	font-size: 58px;
+	font-size: 5.8 rem;
 	text-align: center;
 }
 
