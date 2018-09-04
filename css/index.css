@@ -265,8 +265,8 @@ footer {
     }
 
     .main-content .top-content .one-half {
-        margin-left: 20px;
-        padding-right: 5px;
+        margin-left: 2%;
+        padding-right: 3%;
     }
 
     .main-content .middle-img img{
@@ -280,12 +280,12 @@ footer {
     }
 
     .bottom-content .one-third {
-        margin-left: 25px;
+        margin-left: 2%;
     }
 
     .contact {
         width: 97%;
-	    margin: 50px 0px 0px 25px;	
+	    margin: 50px 0px 0px 4%;	
     }
 
     .contact h2 {
@@ -297,7 +297,7 @@ footer {
     }
 
     footer {
-	    margin: 25px 0px 0px 15px;
+	    margin: 25px 0px 0px 2%;
     } 
 }
 
