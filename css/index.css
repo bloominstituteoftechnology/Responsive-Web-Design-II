@@ -150,9 +150,11 @@ h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
+
 .container {
     max-width: 880px;
     /* TB LR */
@@ -224,18 +226,18 @@ header .logo {
 
 .main-content {
     border-top: 1px solid black;
-    margin-top: 76px;
-    padding-top: 39px;
+    margin-top: 10%;
+    padding-top: 3%;
 }
 
 .main-content .top-content {
-    padding: 0 10px;
+    padding: 0 1%;
 }
 
 .main-content .top-content .text-content {
-    width: 410px;
+    width: 47%;
     display: inline-block;
-    margin-right: 34px;
+    margin-right: 4%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -243,18 +245,18 @@ header .logo {
 }
 
 .main-content .middle-img {
-    margin-top: 45px;
+    margin-top: 2%;
 }
 
 .main-content .bottom-content {
-    margin-top: 37px;
-    padding: 0 10px;
+    margin-top: 2%;
+    padding: 0 1%;
 }
 
 .main-content .bottom-content .text-content {
-    width: 275px;
+    width: 32%;
     display: inline-block;
-    margin-right: 12px;
+    margin-right: 1%;
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -262,17 +264,17 @@ header .logo {
 }
 
 .contact {
-    margin-top: 57px;
+    margin-top: 2%;
     border-top: 1px solid black;
-    padding: 39px 10px 0;
+    padding: 3% 2% 0;
 }
 
 .contact p {
-    margin: 20px 0;
+    margin: 2% 0;
 }
 
 footer {
-    margin: 32px 0;
+    margin: 3% 0;
     text-align: center;
     font-size: 1.4rem;
 }
@@ -286,13 +288,13 @@ footer {
 
     .logo {
         order: -1;
-        margin-left: 320px
+        margin-left: 39%;
     }
 
     .container header nav {
         display: flex;
         justify-content: space-between;
-        margin-left: 50px
+        margin-left: 6%;
     }
 
     .cta {
@@ -301,7 +303,7 @@ footer {
     }
 
     .cta img {
-        display: none
+        display: none;
     }
 
     .main-content {
@@ -312,9 +314,14 @@ footer {
 
     .main-content .top-content .text-content {
         justify-content: space-between;
-        width: 385px;
+        width: 49%;
         margin-right: 0;
         margin-left:
+    }
+
+    .container .main-content img {
+        max-width: 100%;
+        height: auto;
     }
 
     .bottom-content {
@@ -359,9 +366,9 @@ footer {
 
     .bottom-content .text-content {
         margin-right: 0;
-}
+    }
 
-.main-content h4{
-    margin-top: 15px
-}
+    .main-content h4 {
+        margin-top: 15px
+    }
 }
