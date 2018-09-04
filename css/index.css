@@ -57,6 +57,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -68,9 +69,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	margin-left: 20%;
-	padding: 30px 50px;
-	width: 60%;
+    margin: 0 10%;
+    max-width: 880px;
 }
 
 nav {
@@ -78,12 +78,12 @@ nav {
 	align-items: center;
 	display: flex;
 	justify-content: space-around;
-	margin: 60px;
+	margin: 30px 0 60px 0;
 }
 
 nav a {
 	color: lightgray;
-	font-size: 10px;
+	font-size: 1.6rem;
 	text-decoration: none;
 }
 
@@ -92,35 +92,46 @@ nav a {
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 20px;
-	padding: 0 0 30px 0;
 }
 
 .banner div {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	padding: 60px;
-	/* justify-content: space-evenly; */
+	padding: 64px 0px 110px 11%;
 }
 
 .banner h1 {
-	font-size: 50px;
+    font-size: 7rem;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .banner h4 {
-	border: 1px solid darkgray;
-	padding: 3px 8px;
+    border: 1px solid darkgray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+	padding: 3px 5%;
 }
 
 .banner img {
-	height: 300px;
-	width: auto;
+	height: 385px;
+    margin: 0px 0 0 3%;
+    width: auto;
 }
 
 .top-content {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 30px;
+	margin: 44px 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
 }
 
 .middle-img {
@@ -132,7 +143,7 @@ nav a {
 	border-bottom: 1px solid darkgray;
 	display: flex;
 	justify-content: space-evenly;
-	padding-bottom: 30px;
+	padding-bottom: 56px;
 	margin-bottom: 30px;
 }
 
@@ -142,7 +153,8 @@ nav a {
 
 .contact {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+    font-size: 1.6rem;
 	justify-content: flex-start;
 	margin-bottom: 40px;
 }
@@ -156,153 +168,11 @@ nav a {
 }
 
 .copyright {
-	width: 200px;
+    font-size: 1.6rem;
 	margin: 0 auto;
+	width: 27%;
 }
 
-/* Services page */
-
-.services {
-	width: 70%;
-}
-
-.services header {
-	align-items: center;
-	display: flex;
-	justify-content: space-around;
-}
-
-.services header nav {
-	display: flex;
-	justify-content: space-around;
-	margin: 15px;
-}
-
-.services header nav a {
-	margin: 15px;
-}
-
-.services .services-content .services-header-img {
-	margin-bottom: 25px;
-	width: 100%;
-}
-
-.services p {
-	font-size: 10px;
-}
-
-.services .services-text {
-	border-bottom: 1px solid darkgray;
-	padding-bottom: 25px;
-}
-
-.services .cards {
-	border-bottom: 1px solid darkgray;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin: 25px 0;
-}
-
-.services .card {
-	background: whitesmoke;
-	border: 1px solid darkgray;
-	margin-bottom: 25px;
-	padding: 10px;
-	width: 48%;
-}
-
-.services .card button {
-	border-radius: 5px;
-	margin-top: 10px;
-}
-
-.services .services-info {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 25px;
-}
-
-.services .facts {
-	width: 48%;
-}
-
-.services .facts ul {
-	list-style-type: disc;
-	list-style-position: inside;
-	margin-top: 10px;
-}
-
-.services .facts ul li {
-	margin: 5px;
-}
-
-.services .services-info-img {
-	height: auto;
-	width: 48%;
-}
-
-/* Vision page */
-
-.vision {
-	width: 70%;
-}
-
-.vision p {
-	font-size: 10px;
-}
-
-.vision header {
-	align-items: center;
-	display: flex;
-	justify-content: space-around;
-	margin: 20px 0;
-}
-
-.vision header nav {
-	display: flex;
-	justify-content: space-around;
-	margin: 15px;
-}
-
-.vision header nav a {
-	margin: 15px;
-}
-
-.vision header .logo {
-	height: 50px;
-	width: auto;
-}
-
-.vision .left {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	border-right: 1px solid darkgray;
-	padding: 20px;
-	margin: 20px;
-	width: 50%;
-}
-
-.vision .vision-content {
-	display: flex;
-}
-
-.vision .right {
-	width: 50%;
-}
-
-.vision .right-imgs img {
-	border-radius: 2px;
-	height: auto;
-	margin: 15px 0;
-	width: 100%;
-}
-
-.vision .right .right-head {
-	border-bottom: 1px solid darkgray;
-	padding-bottom: 15px;
-}
 
 /* tablet css */
 
