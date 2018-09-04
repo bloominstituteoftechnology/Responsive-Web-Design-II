@@ -61,7 +61,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 5%;
 }
 
 .container {
@@ -83,12 +83,12 @@ h1, h2, h3, h4, h5 {
   justify-content: space-around;
   max-width: 691px;
   vertical-align: top;
-  margin-top: 35px;
+  margin-top: 10%;
 }
 
 .container header nav a {
-  margin-right: 65px;
-  font-size: 14px;
+  margin-right: 7%;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -106,16 +106,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .container header .logo {
-  margin-top: 25px;
+  margin-top: 5%;
   max-width: 100%;
   height: auto;
 }
 
 /* cta */
 
+.cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .cta .cta-text {
-  display: inline-block;
-  vertical-align: top;
+    display: flex;
   font-size: 6.5rem;
   margin-top: 5%;
   text-align: center;
@@ -124,10 +130,9 @@ h1, h2, h3, h4, h5 {
 
 .cta .cta-text button {
   background: white;
-  vertical-align: top;
   margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
+  padding: 5%;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -138,8 +143,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .cta img {
-  display: inline-block;
-  margin-top: 69px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-content {
@@ -149,7 +154,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-content .top-content {
-  padding: 0 10px;
+  padding: 0% 1%;
   display: flex;
   
 }
@@ -187,7 +192,9 @@ h1, h2, h3, h4, h5 {
 .contact {
   margin-top: 57px;
   border-top: 1px solid black;
-  padding: 39px 10px 0;
+  padding-top: 39px;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .contact p {
