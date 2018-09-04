@@ -421,6 +421,55 @@ h1, h2, h3, h4, h5 {
     .container {
         max-width: 880px;
     }
+    .container header {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 8rem;
+    }
+    .container header .logo {
+        margin-left: 24.5rem;
+        margin-top: .3rem;
+        width: 17%;
+    }
+    .container header nav {
+        font-size: 1.25rem;
+        display: flex;
+        align-self: flex-start;
+    }
+    .container header nav a {
+        margin-left: 2.05em;
+        padding-bottom: .2em;
+        padding-right: 3.2em;
+    }
+    .container .cta .main-img {
+        display: none;
+    }
+    .container .cta {
+        height: 30.32rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .container .cta .cta-text {
+        display: flex;
+        margin-top: -.6rem;
+        margin-bottom: 15rem;
+        margin-left: 19.9rem;
+        font-size: 59px;
+        height: 27rem;
+    }
+    .container .cta .cta-text button {
+        font-size: 1.3rem;
+        width: 13.5rem;
+        margin-left: 5.3rem;
+        margin-top: 1.9rem;
+        height: 2.6rem;
+    }
+    .container .main-content {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        width: 71%;
+    }
 }
 @media (max-width: 500px) {
     html {
