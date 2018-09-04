@@ -87,9 +87,19 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 /* header */
@@ -102,12 +112,12 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  width: 600px;
+  width: 68%;
   align-items: flex-end;
 }
 
 header nav a {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -128,7 +138,7 @@ header nav a:hover {
 
 .cta .cta-text {
   padding-top: 50px;
-  font-size: 77px;
+  font-size: 7.7rem;
   text-align: center;
 }
 
@@ -137,7 +147,7 @@ header nav a:hover {
   vertical-align: top;
   border: 1px solid black;
   cursor: pointer;
-  padding: 5px 32px;
+  padding: 5px 10.25%;
   text-align: center;
   text-decoration: none;
 }
@@ -165,7 +175,7 @@ header nav a:hover {
 }
 
 .main-content .bottom-content .text-content {
-  margin-right: 5px;
+  margin-right: 2%;
 }
 
 .contact {
@@ -176,13 +186,13 @@ header nav a:hover {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* index.html media queries */
 @media (max-width: 800px) {
   .container {
-    width: 750px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -192,7 +202,7 @@ footer {
   }
 
   header nav {
-    width: 750px;
+    width: 93.75%;
   }
 
   header a {
@@ -204,30 +214,30 @@ footer {
     display: none;
   }
 
-  .container .middle-img {
+  /* .container .middle-img {
     width: 750px;
-  }
+  } */
 
   .container .top-content .text-content:first-child {
-    padding-right: 30px;
+    padding-right: 7.5%;
   }
 
   .container .bottom-content .text-content:first-child {
-    padding-right: 40px;
+    padding-right: 4.5%;
   }
 
   .container .bottom-content .text-content:nth-child(2) {
-    padding-right: 40px;
+    padding-right: 4.5%;
   }
 
   .container .bottom-content .text-content:nth-child(3) {
-    padding-right: 10px;
+    padding-right: 1%;
   }
 }
 
 @media (max-width: 500px) {
   .container {
-    width: 450px;
+    max-width: 500px;
   }
 
   .container header {
@@ -237,14 +247,14 @@ footer {
   header nav {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 100%;
   }
 
   header nav a {
     border-top: 1px solid black;
-    width: 458px;
+    width: 100%;
     padding: 20px 0;
-    font-size: 24px;
+    font-size: 2.4rem;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -255,15 +265,11 @@ footer {
   }
 
   .container .cta {
-    padding: 0px;
+    padding: 0px 0;
   }
 
   .container .cta .cta-text {
-    padding: 0px;
-  }
-
-  .container .middle-img {
-    width: 450px;
+    padding: 0px 0;
   }
 
   .container .main-content .top-content {
