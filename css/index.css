@@ -306,11 +306,16 @@ footer {
     border-bottom: 1px solid #a5a5a5;
     margin-right: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 18px 0;
   }
 
   nav button a {
     font-size: 2rem;
+  }
+
+  .index-page .subheader-section {
+    padding-top: 35px;
+    padding-bottom: 25px;
   }
 
   .index-page, footer {
@@ -323,6 +328,22 @@ footer {
   }
 
   .index-page .section-item-top, .index-page .section-item-bottom {
+    line-height: 1.8rem;
+    margin-top: 38px;
+    margin-bottom: 8px;
     width: 100%;
+  }
+
+  .index-page .section-item-bottom {
+    margin-bottom: 23px;
+  }
+
+  .index-page .middle-img {
+    width: 100%;
+    margin: 41px 0 0;
+  }
+
+  .index-page .section-item-top, .index-page .section-item-bottom h2 {
+    font-size: 1.6rem;
   }
 }
