@@ -169,28 +169,27 @@ nav {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 150px;
   height: 100px;
-  padding: 28px 20px;
+  padding: 28px 0;
 }
 
 nav .link {
   color: black;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
 }
 
 nav .logo {
-  padding-left: 30px;
-  width: 200px;
+  padding-left: 18%;
+  width: 100%;
 }
 
 header {
   display: flex;
   width: auto;
   text-align: center;
-  margin-bottom: 145px;
-  height: 200px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   padding-bottom: 50px;
   justify-content: space-between;
   align-items: center;
@@ -198,7 +197,7 @@ header {
 
 header div {
   text-align: center;
-  padding-left: 150px;
+  padding-left: 15%;
 }
 
 header img {
@@ -206,20 +205,20 @@ header img {
 }
 
 header h1 {
-  font-size: 72px;
+  font-size: 7.2rem;
 }
 
 header button {
-  font-size: 18px;
+  font-size: 1.7rem;
   border: 1px solid black;
-  width: 170px;
+  width: 55%;
   line-height: 1.5;
   background-color: white;
 }
 
 .top-content .box {
-  font-size: 16px;
-  padding: 0 10px;
+  font-size: 1.6rem;
+  padding: 0 1.13%;
 }
 
 .top-content {
@@ -232,26 +231,24 @@ header button {
 .middle-img {
   width: 100%;
   margin: 40px 0 0;
-  height: 180px;
-  padding: 0 15px;
 }
 
 .bottom-content {
   border-bottom: 1px solid black;
   display: flex;
-  margin: 30px 0;
-  padding: 0 20px 50px;
+  margin: 25px 0 0px;
+  padding: 0 0px 45px;
   justify-content: space-between;
 }
 
 .bottom-content .box {
-  font-size: 16px;
-  width: 30%;
+  font-size: 1.6rem;
+  width: 33%;
 }
 
 .contact {
-  font-size: 16px;
-  margin: 32px 20px;
+  font-size: 1.6rem;
+  margin: 38px 0.57%;
 }
 
 .contact p {
@@ -262,7 +259,8 @@ header button {
 footer {
   text-align: center;
   margin: 40px 0 100px;
-  font-size: 16px;
+  font-size: 1.6rem;
+  padding-left: 1.35%;
 }
 /*tablet version once we go below 800px*/
 @media (max-width: 800px) {
