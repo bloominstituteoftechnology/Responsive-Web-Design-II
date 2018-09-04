@@ -266,10 +266,10 @@ footer {
         align-items: center;
         /* height: 100%; */
         width: 100%;
-        margin-top: 80%;
+        margin-top: 2%;
     }
     header .headerText {
-        margin-top: 30%;
+        margin-top: 5%;
     }
     header img {
         display: none;
@@ -287,7 +287,7 @@ footer {
 
 @media (max-width:500px) {
     .container {
-        width: 95%;
+        width: 100%;
     }
 .container p{
     margin-bottom: 2rem;
