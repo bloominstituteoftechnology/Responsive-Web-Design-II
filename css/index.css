@@ -54,8 +54,8 @@ table {
 
 html, body {
     height: 100%;
+    font-size: 62.25%;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,12 +67,8 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 
 .container {
+    margin: 0 auto;
     max-width: 880px;
-}
-
-body {
-	width: 1000px;
-	margin: 0 auto;
 }
 
 /*Navigation*/
@@ -278,8 +274,8 @@ li {
 /* start 800px */
 
 @media screen and (max-width: 800px) {
-	body {
-		width: 800px;
+	.container {
+        max-width: 800px;
 	}
 	
 	.circle-img {
@@ -289,7 +285,10 @@ li {
 	/*Navigation*/
 
 	.links {
-		flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        font-size: 1.6rem;
+        width: 100%;
+        margin-left: -6%;
 	}
 
 	.links img {
@@ -299,9 +298,7 @@ li {
 
 	.links .a-links {
 		display: flex;
-		justify-content: space-between;
-		padding: 18px 0px 0px 30px;
-		width: 800px
+		justify-content: space-around;
 	}
 
 	.row-two {
@@ -317,22 +314,28 @@ li {
 	.row-three {
 		justify-content: center;
 		padding: 22px;
-		margin-bottom: 2px;
+        margin-bottom: 2px;
+    }
+
+    footer {
+        padding-left: 25%;
     }
     
+}    
     
 /* Screen at 500px */
 
 @media screen and (max-width: 500px){
-	body {
-		margin: 0 auto;
+	.container {
+		max-width: 500px;
 	}
 
 	.links .a-links {
 		flex-direction: column;
 		align-items: center;
-		padding: 16px 0px 0px 160px;
-		font-size: 20px
+		padding: 15px 0px 0px 20%;
+        font-size: 2.0rem;
+        max-width: 100%;
 	}
 
 	.a-links a {
@@ -347,11 +350,11 @@ li {
 	}
 
 	.links img {
-		padding: 0px 0px 4px 100px;
+		padding-left: 10%
 	}
 
 	.row-two {
-		width: 100%;
+        max-width: 100%;
 	}
 
 	.row-three {
@@ -362,7 +365,7 @@ li {
 		padding-right: 100px;
 		padding-bottom: 30px;
 		font-weight: 600;
-		font-size: 15px
+		font-size: 1.5rem;
 	}
 
 	.middle-img {
@@ -377,7 +380,7 @@ li {
 	.row-bottom p {
 		padding: 5px 80px 39px 0px;
 		font-weight: 600;
-		font-size: 16px
+		font-size: 1.6rem;
 	}
 
 	.contact {
@@ -391,16 +394,16 @@ li {
 
 	.col3 {
 		padding: 0px 0px;
-		font-size: 17px;
+		font-size: 1.7rem;
 	}
 
 	.col3 h3 {
 		padding: 4px 7px;
-		font-size: 17px;
+		font-size: 1.7rem;
 	}
 
 	.col3 p {
-		font-size: 15px;
+		font-size: 1.5rem;
 		padding: 0px 0px 6px 6px;
 	}
 
@@ -410,7 +413,8 @@ li {
 	}
 
 	.row-bottom {
-		padding: 0px 10px 43px;
+        max-width: 100%;
+        padding: 0px 10px 43px;
 		border-bottom: 2px solid black;
 		margin: 0px 20px;
 	}
@@ -421,10 +425,12 @@ li {
 
 	.contact {
 		padding: 35px 29px;
-		margin-bottom: -10px;
+        margin-bottom: -10px;
+        font-size: 1.5rem;
 	}
 
 	footer {
-
+        max-width: 75%;
+        font-size: 1.5rem;
 	}
 }
