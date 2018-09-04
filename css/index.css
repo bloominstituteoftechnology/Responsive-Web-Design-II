@@ -235,7 +235,7 @@ h3 {
 
 @media (max-width:800px){
 	.container {
-        width: 800px;
+        width: 100%;
     }
     .top {
 		flex-direction: column-reverse;
@@ -270,7 +270,7 @@ h3 {
 
 @media (max-width:600px){
 	.container {
-		width:600px;
+		width:100%;
 	}
 	.top .main-nav {
 		flex-direction: column;
