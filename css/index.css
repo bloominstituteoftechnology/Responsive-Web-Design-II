@@ -72,6 +72,13 @@ html {
     font-size: 62.5%;
 }
 
+body, img { 
+    transition:all .2s linear; 
+    -o-transition:all .2s linear; 
+    -moz-transition:all .2s linear; 
+    -webkit-transition:all .2s linear;
+}
+
 .container-for-all {
     width: 1000px;
     height: 1844px;
@@ -80,7 +87,7 @@ html {
 
 .master-nav {
     display: flex;
-    max-width: 880px;
+    width: 880px;
     justify-content: center;
     flex-direction: row;
     /* flex-wrap: wrap; */
@@ -122,9 +129,14 @@ animation-duration: 0.30s;
     
     width: 880px;
     justify-content: space-between;
-    padding-right: 10%;
+    /* padding-right: 10%; */
     align-items: center;
     transition: 0.3s;
+}
+
+.logo-container {
+    display: flex;
+    padding-left: 10%;
 }
 
 .logo {
@@ -759,6 +771,26 @@ h2 {
     font-size: 22px;
 }
 
+@media (max-width: 900px) {
+    .main-nav {
+        display: flex;
+        /* padding: 20px; */
+        margin: 0%; /*Change to Percent*/
+        
+        width: 880px;
+        justify-content: space-between;
+        /* padding-right: 10%; */
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .logo-container {
+        display: flex;
+        padding-left: 5%;
+        margin-right: 10%;
+    }
+}
+
 
 /*Tablet View*/
 @media (max-width: 800px) {
@@ -858,6 +890,7 @@ h2 {
        display: flex;
        height: 350px;
        width: 100%;
+       padding: 5px;
        }
        
        .demand-text-container .demand-text {
@@ -1302,6 +1335,7 @@ h2 {
        height: 350px;
        width: 100%;
        font-size: 100%;
+       padding: 5px;
        }
        
        .demand-text-container .demand-text {
