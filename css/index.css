@@ -6,6 +6,17 @@
 html {
   font-size: 62.5%;
 }
+body {
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 p {
   font-size: 1.6rem;
 }
