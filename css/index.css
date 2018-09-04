@@ -1,1 +1,349 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Header Styles */ 
+
+.page-container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+  max-width: 880px;
+  margin: 0 auto;
+  background: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 69%;
+}
+
+nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #a5a5a5;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background-color: transparent;
+  transition: all .1s ease-out;
+}
+
+nav button:hover {
+  transform: scale(1.1);
+}
+
+/* Page Styles */
+
+.content {
+  padding-top: 70px;
+}
+
+.index-page h2 {
+  font-size: 1.5rem;
+}
+
+.index-page .subheader {
+  margin: 60px 0 75px 14%;
+  display: flex;
+}
+
+.index-page .subheader-section {
+  padding-top: 50px;
+}
+
+.index-page .subheader h1 {
+  font-size: 7.1rem;
+  text-align: center;
+}
+
+.index-page .subheader-img {
+  background-image: url("../img/header-img.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 10%;
+  width: 50%;
+  /* if no height background image will get clipped */
+  height: 380px;
+}
+
+.index-page .subheader button {
+  display: block;
+  margin: 30px auto;
+  font-size: 1.6rem;
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 2% 14%;
+  transition: all .1s ease-out;
+}
+
+.index-page .subheader button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 3px grey;
+}
+
+.index-page .sections {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 20px 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+section {
+  display: flex;
+}
+
+.index-page .section-item-top, .section-item-bottom {
+  margin: 20px 0;  
+}
+
+.index-page .section-item-top {
+  width: 48%;
+}
+
+.index-page .section-item-bottom {
+  width: 32%;
+}
+
+.index-page .section-with-right-margin {
+  margin-right: 1.5%;
+}
+
+.index-page .middle-img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+footer .text-group {
+  display: block;
+  margin: 10px 0;
+  padding-bottom: 5px;
+}
+
+footer {
+  font-size: 1.6em;
+  margin: 40px 0 40px;
+}
+
+.copyright {
+  margin: 35px 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+  .page-container {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .main-nav {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  nav a {
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .index-page .subheader-img {
+    display: none;
+  }
+
+  .index-page .subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .index-page .section-item-top, .index-page .section-item-bottom {
+      width: auto;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .page-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    border-top: 1px solid #a5a5a5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  nav button {
+    border-bottom: 1px solid #a5a5a5;
+    margin-right: 0;
+    width: 100%;
+    padding: 18px 0;
+  }
+
+  nav button a {
+    font-size: 2rem;
+  }
+
+  .index-page .subheader-section {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .index-page, footer {
+    padding: 0 2%;
+  }
+
+  .index-page .sections section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .index-page .section-item-top, .index-page .section-item-bottom {
+    line-height: 1.8rem;
+    margin-top: 38px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .index-page .section-item-bottom {
+    margin-bottom: 23px;
+  }
+
+  .index-page .middle-img {
+    width: 100%;
+    margin: 41px 0 0;
+  }
+
+  .index-page .section-item-top, .index-page .section-item-bottom h2 {
+    font-size: 1.6rem;
+  }
+}
