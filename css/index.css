@@ -63,12 +63,14 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+  font-size: 62.5%;
+}
 
 /* Header Styles */ 
 
 .page-container {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -77,7 +79,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   padding: 20px 0;
   z-index: 100;
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
   background: white;
 }
@@ -88,10 +90,16 @@ header {
   align-items: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 69%;
+}
+
 nav a {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #a5a5a5;
-  margin-right: 62px;
 }
 
 nav a:hover {
@@ -99,7 +107,7 @@ nav a:hover {
 }
 
 nav button {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   border: 1px solid transparent;
   border-radius: 0;
@@ -117,8 +125,12 @@ nav button:hover {
   padding-top: 70px;
 }
 
+.index-page h2 {
+  font-size: 1.5rem;
+}
+
 .index-page .subheader {
-  margin: 60px 0 75px 125px;
+  margin: 60px 0 75px 14%;
   display: flex;
 }
 
@@ -127,32 +139,28 @@ nav button:hover {
 }
 
 .index-page .subheader h1 {
-  font-size: 71px;
+  font-size: 7.1rem;
   text-align: center;
-}
-
-.index-page .subheader img {
-  margin-left: 30px;
-  width: 250px;
 }
 
 .index-page .subheader-img {
   background-image: url("../img/header-img.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  margin-left: 70px;
-  width: 375px;
-  height: 375px;
+  margin-left: 10%;
+  width: 50%;
+  /* if no height background image will get clipped */
+  height: 380px;
 }
 
 .index-page .subheader button {
   display: block;
   margin: 30px auto;
-  font-size: 16px;
+  font-size: 1.6rem;
   border: 1px solid black;
   border-radius: 0;
   background-color: transparent;
-  padding: 5px 43px;
+  padding: 2% 14%;
   transition: all .1s ease-out;
 }
 
@@ -168,6 +176,7 @@ nav button:hover {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
+  font-size: 1.6rem;
 }
 
 section {
@@ -179,15 +188,15 @@ section {
 }
 
 .index-page .section-item-top {
-  width: 421px;
+  width: 48%;
 }
 
 .index-page .section-item-bottom {
-  width: 273px;
+  width: 32%;
 }
 
 .index-page .section-with-right-margin {
-  margin-right: 20px;
+  margin-right: 1.5%;
 }
 
 .index-page .middle-img {
@@ -202,88 +211,14 @@ footer .text-group {
 }
 
 footer {
+  font-size: 1.6em;
   margin: 40px 0 40px;
 }
 
 .copyright {
   margin: 35px 0;
   text-align: center;
-  font-size: 16px;
-}
-
-/* Styles specific to services page */
-
-.services-page .subheader {
-  display: flex;
-  flex-direction: column;
-}
-
-.services-page .subheader h1 {
-  margin-top: 20px;
-  font-size: 28px;
-}
-
-.services-page .subheader img {
-  align-self: flex-start;
-  width: 600px;
-}
-
-.services-page .sections {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 40px 0 10px;
-  margin: 40px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.services-page .sections section {
-  display: flex;
-  flex-direction: column;
-  width: 287px;
-  border: 1px solid black;
-  background: #f2f2f2;
-  padding: 20px;
-  margin-bottom: 30px;
-}
-
-.services-page .sections section button {
-  margin-top: 20px;
-  width: 150px;
-  border: 1px solid black;
-  border-radius: 2px;
-  background-color: white;
-  padding: 5px 15px;
-  transition: all .1s ease-out;
-}
-
-.services-page .sections section button:hover {
-  transform: scale(1.05);
-  box-shadow: 3px 3px 3px grey;
-}
-
-.services-page .addendum-text-container {
-  margin-right: 30px;
-}
-
-.services-page .addendum {
-  display: flex;
-}
-
-.services-page .addendum p {
-  margin-bottom: 15px;
-}
-
-.services-page .addendum li {
-  margin: 10px;
-  list-style: inside;
-}
-
-.services-page .addendum img {
-  width: 287px;
-  align-self: flex-start;
+  font-size: 1.6rem;
 }
 
 /* media queries */
