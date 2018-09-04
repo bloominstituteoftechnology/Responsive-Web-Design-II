@@ -291,11 +291,7 @@ header .logo {
 
 @media (max-width: 500px) {
     .main-content {
-        padding: 60px 12% 0 0;
-        /*padding-right: 12%;
-        padding-left: 0;
-        padding-bottom: 0;*/
-
+        padding: 60px 2% 0 0;
     }
 
     .main-content .top-content {
@@ -324,6 +320,7 @@ header .logo {
 
     .main-content .bottom-content .text-content {
         margin-bottom: 62px;
+        width: 100%;
     }
 
     .main-content .bottom-content div:last-of-type {
