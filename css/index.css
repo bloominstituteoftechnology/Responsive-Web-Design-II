@@ -58,6 +58,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,6 +68,14 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ------- index.html-Desktop ------- */ 
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    font-size: 1.6rem;
+}
+
 .index#container {
 	width: 1200px;
 	height: auto;
@@ -100,13 +109,14 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 7rem;
 	text-align: center;
 	margin-right: 25px;
 
 }
 
 h2 {
+    font-size: 1.6rem;
 	text-align: left;
 }
 
@@ -130,14 +140,14 @@ h2 {
 	background: white;
 	font-family:Arial, Helvetica, sans-serif;
 	font-weight: 100;
-	font-size: 15px;
+	font-size: 1.5rem;
 	padding: 5px;
 	margin: 10px;
 	width: 100px;
 }
 #started {
 	font-weight: 100;
-	font-size: 30px;
+	font-size: 3rem;
 	padding: 8px;
 }
 
@@ -262,7 +272,7 @@ h2 {
 	background: white;
 	font-family:Arial, Helvetica, sans-serif;
 	font-weight: 100;
-	font-size: 15px;
+	font-size: 1.5rem;
 	padding: 5px;
 	margin: 10px;
 	width: 100px;
@@ -277,7 +287,7 @@ h2 {
 
 
 .services .marketingBlurb {
-	font-size: 20px;
+	font-size: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -288,7 +298,7 @@ h2 {
 }
 
 .services #servicesFacts {
-	font-size: 20px;
+	font-size: 2rem;
 	margin: 30px;
 	display: flex;
 	flex-direction: row;
@@ -299,7 +309,7 @@ h2 {
 
 .services #servicesIntro p {
 	width: 1000px;
-	font-size:16px;
+	font-size: 1.6rem;
 	
 }
 
@@ -309,14 +319,14 @@ h2 {
 }
 
 .services #servicesFactsPara {
-	font-size: 16px;
+	font-size: 1.6rem;
 	width: 400px;
 	margin-right: 25px;
 }
 
 .services .unorderedLists {
 	list-style-type: square;
-	font-size: 16px;
+	font-size: 1.6rem;
 	margin-left: 20px;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -360,7 +370,7 @@ h2 {
         flex-direction: column;
         justify-content: space-between;
         padding:15px;
-        font-size: 18px;
+        font-size: 1.8rem;
         color: lightgrey;
         text-decoration: none;
         font-weight: lighter;
@@ -371,7 +381,7 @@ h2 {
         margin: 20px;
     }
     h1 {
-        font-size: 70px;
+        font-size: 7rem;
         text-align: center;
         margin-right: 25px;
     
@@ -405,14 +415,14 @@ h2 {
         background: white;
         font-family:Arial, Helvetica, sans-serif;
         font-weight: 100;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding: 5px;
         margin: 10px;
         width: 100px;
     }
     #started {
         font-weight: 100;
-        font-size: 30px;
+        font-size: 3rem;
         padding: 8px;
     }
     
@@ -569,7 +579,7 @@ h2 {
         justify-content: space-between;
         width: 500px;
         padding:15px;
-        font-size: 18px;
+        font-size: 1.8rem;
         color: lightgrey;
         text-decoration: none;
         font-weight: lighter;
@@ -582,7 +592,7 @@ h2 {
         margin: 20px;
     }
     h1 {
-        font-size: 70px;
+        font-size: 7rem;
         text-align: center;
         margin-right: 25px;
     }
@@ -615,14 +625,14 @@ h2 {
         background: white;
         font-family:Arial, Helvetica, sans-serif;
         font-weight: 100;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding: 5px;
         margin: 10px;
         width: 100px;
     }
     #started {
         font-weight: 100;
-        font-size: 30px;
+        font-size: 3rem;
         padding: 8px;
     }
     
