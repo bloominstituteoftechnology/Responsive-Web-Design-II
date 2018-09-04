@@ -189,6 +189,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 57px;
 	border-top: 1px solid black;
     padding: 39px 1.13% 0;
+    font-size: 1.6rem;
   }
   
   .contact p {
