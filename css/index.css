@@ -114,13 +114,15 @@ h1, h2, h3, h4, h5 {
   /* cta */
   .cta {
         display: flex;
-        border: 1px solid red;
+        /* border: 1px solid red; */
 	}
   .cta .cta-text {
 	font-size: 77px;
 	margin-top: 120px;
 	text-align: center;
     padding: 0px 9%;
+    width: 48%;
+    border: 1px solid black;
   }
   
   .cta .cta-text button {
@@ -139,7 +141,7 @@ h1, h2, h3, h4, h5 {
   }
   
   .cta img {
-	margin-top: 69px;
+    margin-top: 69px;
   }
   
   .main-content {
@@ -163,18 +165,19 @@ h1, h2, h3, h4, h5 {
   }
   
   .main-content .middle-img {
-	margin-top: 45px;
+    margin-top: 45px;
+    width: 100%;
   }
   
   .main-content .bottom-content {
 	margin-top: 37px;
-	padding: 0 10px;
+	padding: 0 1.1%;
 	display: flex;
   }
   
   .main-content .bottom-content .text-content {
-	width: 275px;
-	margin-right: 12px;
+    width: 31%;
+    margin-right: 12px;
   }
   
   .main-content .bottom-content .text-content:last-child {
@@ -184,7 +187,7 @@ h1, h2, h3, h4, h5 {
   .contact {
 	margin-top: 57px;
 	border-top: 1px solid black;
-	padding: 39px 10px 0;
+    padding: 39px 1.13% 0;
   }
   
   .contact p {
