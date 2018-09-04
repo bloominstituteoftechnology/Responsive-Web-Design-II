@@ -143,7 +143,8 @@ button {
 button:hover {
 	color: lightgrey;
 	background-color: black;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
 }
 
 hr {
@@ -182,6 +183,381 @@ footer {
 	justify-content: center;
 	margin: 100px;
 }
+
+/* Services starts HERE */
+
+/* body{
+	width: 880px;
+	margin: 0px auto;
+    padding: 25px;
+    font-size: 18px;
+} */
+
+.services {
+    max-width: 880px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+/* .services nav {
+    max-width: 880px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 0px 20px 0px;
+	
+} */
+
+/* a {
+	text-decoration: none;
+	color: grey;
+	transition-duration: 0.4s;
+} */
+
+/* a:hover {
+	color: black;
+
+} */
+
+.services h1 {
+    font-size: 30px;
+}
+
+.services h2 {
+    font-size: 20px;
+}
+
+.services button {
+    background-color: white;
+    border: solid grey 1px;
+    color: grey;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+	font-size: 1.6rem;
+	transition-duration: 0.4s;
+	width: 50%;
+    margin: 20px 0px 0px 0px;
+    border-radius: 10px;
+}
+
+.services button:hover {
+	color: lightgrey;
+	background-color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+.services hr {
+    max-width: 880px;
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+}
+
+.services .services-header-img {
+    margin: 0px 0px 20px 0px;
+	max-width: 880px;
+	width: 100%;
+}
+
+.services .serv {
+    max-width: 880px;
+	width: 100%;
+    margin: 0px 0px 40px 0px;
+    /* border: solid black 1px; */
+}
+
+.services .digital {
+	border: solid black 1px;
+	/* display: flex;
+	align-items: flex-start;
+	flex-direction: column; */
+    padding: 20px;
+    width: 45%;
+	height: 250px;
+	background-color: lightgrey;
+}
+
+.services .ux {
+    border: solid black 1px;
+    padding: 20px;
+    width: 45%;
+	height: 250px;
+	background-color: lightgrey;
+}
+
+.services .digux {
+    max-width: 880px;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+	margin: 0px 0px 40px 0px;
+	/* background-color: lightgrey; */
+}
+
+.services .marketing {
+    border: solid black 1px;
+    padding: 20px;
+    width: 45%;
+	height: 250px;
+	background-color: lightgrey;
+}
+
+.services .web {
+    border: solid black 1px;
+    padding: 20px;
+    width: 45%;
+	height: 250px;
+	background-color: lightgrey;
+}
+
+.services .marketweb {
+    max-width: 880px;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+	margin: 0px 0px 40px 0px;
+	/* background-color: lightgrey; */
+}
+
+.services .ios {
+    border: solid black 1px;
+    padding: 20px;
+    width: 45%;
+	height: 250px;
+	background-color: lightgrey;
+}
+
+.services .android {
+    border: solid black 1px;
+    padding: 20px;
+    width: 45%;
+	height: 250px;
+	background-color: lightgrey;
+}
+
+.services .iosandroid{
+    max-width: 880px;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+	margin: 0px 0px 40px 0px;
+	/* background-color: lightgrey; */
+}
+
+.services .bottom {
+    max-width: 880px;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.services .facts {
+    /* border: solid black 1px; */
+    height: 280px;
+    width: 50%;
+}
+
+.services ul {
+	max-width: 880px;
+	width: 100%;
+    list-style-type: square;
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
+
+
+.services .hr {
+    border: solid black 1px;
+}
+
+.services-info-img {
+    width: 100%;
+    height: auto;
+}
+
+/* footer {
+    display: flex;
+	justify-content: center;
+	margin: 100px;
+} */
+
+
+
+/* _____CONTACT START HERE_____________________________________________ */
+
+.contact .container {
+    max-width: 880px;
+    width: 100%;
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+.contact .mission {
+	width: 50%;
+	margin: 25px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;   
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+
+input[type=submit] {
+    background-color: white;
+    border: solid grey 1px;
+    color: grey;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	width: 50%;
+	margin: 20px 0px 0px 0px;
+}
+
+
+input[type=submit]:hover {
+    color: lightgrey;
+	background-color: black;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
+}
+
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+	padding: 20px 0px 40px 0px;
+}
+
+.contact footer {
+    display: flex;
+	justify-content: center;
+	/* margin: 80px; */
+}
+
+@media (max-width: 800px) {
+    .services {
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+    } 
+
+    .services nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        /* margin: 0px 0px 60px 0px; */
+        
+    }
+    
+     .services .navigation {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* border: solid black 1px; */
+    }
+
+    .services .logo {
+        margin-bottom: 35px;
+    }
+
+    .services button {
+        padding: 5px 5px;
+        margin-top: 5%;
+    }
+
+    /* .digital {
+        margin-right: 300px;
+        margin-bottom: 40px;
+    }
+
+    .ux {
+        margin-left: 250px;
+        margin-bottom: 40px;
+    }
+
+    .marketweb {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .digux {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iosandroid {
+        flex-direction: column;
+        align-items: center;
+    } */
+
+}
+
+/* @media (max-width: 500px) {
+	
+	.services {
+		max-width: 500px;
+		width: 100%;
+	} */
+
+    /* .navigation .nav a {
+        font-size: 2.4rem;
+        padding: 20px 0;
+        border-top: 1px solid grey;
+        width: 100%;
+        text-align: center;
+    } */
+
+	/* .services a {
+		margin-top: 25px;
+	}
+
+	.services-header-img {
+		width: 100%;
+	}
+
+	.services .digux {
+		flex-direction: column;
+	}
+
+	.services .marketweb {
+		flex-direction: column;
+	}
+
+	.services .iosandroid {
+		flex-direction: column;
+	}
+
+	.digital {
+		margin-bottom: 40px;
+	}
+
+	.marketing {
+		margin-bottom: 40px;
+	}
+
+	.ios {
+		margin-bottom: 40px;
+	}
+
+	.services .bottom {
+		flex-direction: column;
+	}
+
+} */
 
 /* Media Queries */
 
@@ -243,6 +619,7 @@ footer {
         color: lightgrey;
         background-color: black;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        
     }
 
     header {
@@ -292,7 +669,7 @@ footer {
     }
 
     .navigation .nav a {
-        font-size: 24px;
+        font-size: 2.4rem;
         padding: 20px 0;
         border-top: 1px solid grey;
         width: 100%;
