@@ -238,7 +238,7 @@ footer {
 	font-size: 1.6rem;
 	transition-duration: 0.4s;
 	width: 50%;
-    margin: 20px 0px 0px 0px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
@@ -446,6 +446,8 @@ input[type=submit]:hover {
 	/* margin: 80px; */
 }
 
+/* ____________________SERVICES MEDIA_________________________________ */
+
 @media (max-width: 800px) {
     .services {
         width: 100%;
@@ -479,14 +481,13 @@ input[type=submit]:hover {
         margin-top: 5%;
     }
 
-    /* .digital {
-        margin-right: 300px;
-        margin-bottom: 40px;
-    }
+}
 
-    .ux {
-        margin-left: 250px;
-        margin-bottom: 40px;
+@media (max-width: 500px){
+
+    .services .digux {
+        flex-direction: column;
+        align-items: center;
     }
 
     .marketweb {
@@ -494,70 +495,55 @@ input[type=submit]:hover {
         align-items: center;
     }
 
-    .digux {
+    .iosandroid {
         flex-direction: column;
         align-items: center;
     }
 
-    .iosandroid {
-        flex-direction: column;
-        align-items: center;
-    } */
-
-}
-
-/* @media (max-width: 500px) {
-	
-	.services {
-		max-width: 500px;
-		width: 100%;
-	} */
-
-    /* .navigation .nav a {
-        font-size: 2.4rem;
-        padding: 20px 0;
-        border-top: 1px solid grey;
+    .services .digital {
         width: 100%;
-        text-align: center;
-    } */
+        margin-bottom: 40px;
+    }
 
-	/* .services a {
-		margin-top: 25px;
-	}
+    .services .ux {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    
+    .services .marketing {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-	.services-header-img {
-		width: 100%;
-	}
+    .services .web {
+        width: 100%;
+        margin-bottom: 0px;
+    }
 
-	.services .digux {
-		flex-direction: column;
-	}
+    .services .ios {
+        width: 100%;
+        margin-bottom: 40px;
+    }
 
-	.services .marketweb {
-		flex-direction: column;
-	}
+    .services .android {
+        width: 100%;
+        margin-bottom: 0px;
+    }
 
-	.services .iosandroid {
-		flex-direction: column;
-	}
+    .services button {
+        padding: 15px 15px;
+        margin-top: 5%;
+    }
 
-	.digital {
-		margin-bottom: 40px;
-	}
+    .services .bottom {
+        flex-direction: column-reverse;
+    }
 
-	.marketing {
-		margin-bottom: 40px;
-	}
-
-	.ios {
-		margin-bottom: 40px;
-	}
-
-	.services .bottom {
-		flex-direction: column;
-	}
-
-} */
+    .services .facts {
+        margin-top: 40px;
+        width: 100%;
+    }
+}
 
 /* Media Queries */
 
