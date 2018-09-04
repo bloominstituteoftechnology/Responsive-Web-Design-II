@@ -67,17 +67,19 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+  font-size: 62.5%;
+}
 
 .main-container {
-	max-width: 880px;
+  width: 880px;
 	margin: 0 auto;
 }
 
 /* tablet view */
 @media (max-width: 800px){
   .main-container {
-    max-width: 800px;
+    max-width: 780px;
   }
 }
 
@@ -89,7 +91,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-two h1 {
-	font-size: 40px;
+	font-size: 7rem;
+  line-height: .9;
 }
 
 /* tablet view */
@@ -109,8 +112,9 @@ h1, h2, h3, h4, h5 {
 .container-top {
 	display: flex;
 	align-items: center;
+  width: 100%;
 	justify-content: space-between;
-	padding: 20px;
+	padding: 30px 0;
 }
 
 /* tablet view */
@@ -136,8 +140,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-top .top-nav {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+	justify-content: space-evenly;
 	width: 68%;
 }
 
@@ -146,7 +150,7 @@ h1, h2, h3, h4, h5 {
   .container-top .top-nav {
   	display: flex;
   	justify-content: space-between;
-    width: 100%;
+    width: 60%;
 		margin-top: 20px;
   }
 }
@@ -163,6 +167,8 @@ h1, h2, h3, h4, h5 {
 .container-top .top-nav a {
 	color: gray;
 	text-decoration: none;
+  font-size: 1.6rem;
+  padding: 5px 30px;
 }
 
 /* mobile view */
@@ -176,24 +182,28 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+
 .container-two {
 	display: flex;
 	padding: 10px;
-	justify-content: space-around;
-  margin: 30px;
+	justify-content: space-between;
+  margin: 35px;
 }
 
 .container-two .top-left {
 	text-align: center;
-	padding: 50px;
-	width: 60%;
+	padding-top: 55px;
+	width: 65%;
+  font-size: 1.7rem;
+  line-height: .5;
 }
 
 
 .top-left button {
 	background: white;
 	border: solid black;
-	padding: 10px 40px;
+	padding: 10px 50px;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 800px){
@@ -220,8 +230,9 @@ h1, h2, h3, h4, h5 {
 
 .container-row-one {
 	display: flex;
-	padding: 10px;
+	padding: 20px 0;
   border-top: 3px solid black;
+  font-size: 1.6rem;
 }
 
 /* mobile view */
@@ -248,7 +259,6 @@ h1, h2, h3, h4, h5 {
 
 .container-middle-img {
 	padding: 10px 0;
-	width: 876px;
 }
 
 /* tablet view */
@@ -284,9 +294,11 @@ h1, h2, h3, h4, h5 {
 
 .container-row-two {
 	display: flex;
-	padding: 10px;
 	justify-conent: space-around;
   border-bottom: 3px solid black;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 
@@ -303,9 +315,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-row-two .row-two-left {
-	flex-basis: 1;
-	width: 300px;
-	padding:20px 10px;
+	width: 33%;
+	padding: 15px 10px;
 }
 
 /* tablet view */
@@ -325,8 +336,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-row-two .row-two-center {
-	width: 300px;
-	padding:20px 10px;
+  width: 33%;
+	padding: 15px 10px;
 }
 
 /* tablet view */
@@ -346,8 +357,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container-row-two .row-two-right {
-	width: 300px;
-	padding:20px 10px;
+  width: 33%;
+	padding: 15px 10px;
 }
 
 /* tablet view */
@@ -367,11 +378,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .contact {
-	height: 160px;
-	/* width: 900px;
-	margin: 0 auto; */
-	padding: 10px;
-	line-height: 1.6;
+  font-size: 1.6rem;
+	padding: 20px 0;
+	line-height: 1.4;
 }
 
 /* mobile view */
@@ -386,8 +395,9 @@ h1, h2, h3, h4, h5 {
 .contact-info {
 	line-height:2.0;
 }
+
 .copyright {
-	height: 50px;
+  font-size: 1.6rem; 
 	padding-top: 10px;
 	text-align: center;
 }
