@@ -83,7 +83,7 @@ body {
 	max-width: 880px;
 }
 
-/* header */
+/* header START */
 
 header {
 	display: flex;
@@ -108,8 +108,9 @@ header nav a {
 header nav a:hover {
 	text-decoration: underline;
 }
+/* header Finish */
 
-/* call to action */
+/* CTA Start */
 
 .cta {
 	display: flex;
@@ -146,6 +147,7 @@ header nav a:hover {
 	background: black;
 	color: white;
 }
+/* CTA Finish */
 
 /* middle content START */
 
