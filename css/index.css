@@ -195,17 +195,20 @@ footer {
   line-height: 1.3;
 }
 
-.services-content .services-header-img {
+.services-content .services-header-img,
+.contact-content .contact-header-img {
   width: 100%;
   margin: 20px 0;
 }
 
-.services-content h1 {
+.services-content h1,
+.contact-content h1 {
   margin: 10px 0;
   font-size: 2.6rem;
 }
 
-.services-content .services-text {
+.services-content .services-text,
+.contact-content .contact-text {
   margin-bottom: 20px;
   border-bottom: 1px solid #000;
   padding-bottom: 40px;
@@ -257,6 +260,72 @@ footer {
   padding: 5px;
   list-style: square;
 }
+/* end of Services page */
+
+/* Contact page */
+.contact-content {
+  line-height: 1.3;
+}
+.contact-content address {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.contact-content address div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 22%;
+}
+
+.contact-content address div p {
+	padding-top: 10px;
+	text-align: center;
+  line-height: 1.5em;
+}
+
+.contact-content form {
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contact-content form input,
+.contact-content form textarea,
+.contact-content form button {
+  width: 56.8%;
+	margin: 10px 0;
+	border: 1px solid #d0d0d0;
+	border-radius: 5px;
+	padding: 15px;
+	font-size: 1.6rem;
+}
+
+.contact-content form textarea {
+	height: 200px;
+}
+
+.contact-content form button {
+	border: none;
+  background-color: #e8e8e8;
+  cursor: pointer;
+}
+
+.contact-content form button:hover {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.contact-content form input::placeholder,
+.contact-content form textarea::placeholder {
+  color: #555;
+}
+/* end of Contact page */
 
 /* Tablet */
 @media (max-width: 800px) {
@@ -406,5 +475,12 @@ footer {
   .services-content .services-info .services-info-img {
     width: 100%;
     height: auto;
+  }
+
+  /* Contact page */
+  .contact-content form input,
+  .contact-content form textarea,
+  .contact-content form button {
+    width: 80%;
   }
 }
