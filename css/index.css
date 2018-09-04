@@ -202,7 +202,7 @@ footer {
     padding-top: 4rem;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   /* core page properties */
   .page-container {
     width: 100%;
@@ -210,21 +210,21 @@ footer {
   
   /* tablet nav display */
   nav {
-    margin-top: 35px;
+    height: 100%;
+    /* margin-top: 35px; */
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
   }
   .nav-menu {
     width: 100%;
   }
   .nav-menu a {
-    padding-top: 22px;
-    padding-left: 16px;
+    /* padding-top: 22px;
+    padding-left: 16px; */
   }
   nav .nav-logo {
+    width: 100%;
     order: -1;
-    padding-right: 25px;
-    padding-bottom: 15px;
   }
   
   /* tablet header section */
