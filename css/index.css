@@ -332,7 +332,6 @@ header .logo {
 }
 
 .cta {
-  border: solid blue;
 	display: flex;
   vertical-align:top;
   justify-content:center;
