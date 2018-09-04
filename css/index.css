@@ -465,12 +465,15 @@ footer {
         justify-content: center;
     }
     header nav {
+        width: 100%;
         display: flex;
+        padding: 0;
         flex-direction: column;
         border-bottom: 1px solid black;
     }
     header nav a {
-        padding: 5% 0px;
+        width: 100%;
+        padding: 5% 0;
         border-top: 1px solid black;
         text-align: center;
     }
