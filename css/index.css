@@ -87,7 +87,7 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     display: flex;
 }
@@ -362,32 +362,31 @@ footer {
         font-size: 2rem;
     }
 
-    header nav {
-        margin: 30px; 
-        max-width: 80%;
-    }
-
     header .logo {
         max-width: 100%;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 30px;
+    }
+
+    header nav {
+        padding: 0 9% 0 9%;
     }
 
     .cta {
-        margin: 0px;
-        margin-top: 30px;
+        margin-top: 70px;
+        margin-left: 5%;
         justify-content: center;
     }
 
     .cta .cta-text {
-        font-size: 6rem;
+        font-size: 7.5rem;
         margin: 0px;
     }
     
     .cta .cta-text button {
-        font-size: 1.4rem;
-        width: 130px;
-        height: 25px;
+        font-size: 2rem;
+        width: 160px;
+        height: 30px;
     }
   
     .cta img {
@@ -395,13 +394,20 @@ footer {
     }
 
     .main-content {
-        margin: 75px 10 35px 0;
+        margin: 75px 0 35px 0;
         padding: 15px;
      }
 
-     .main-content .middle-img {
-        width: 95%;
-        margin: 0px;
+     .main-content .top-content {
+         margin-top: 12px;
+     }
+
+     .main-content .bottom-content {
+         margin-top: 51px;
+         margin-bottom: 40px;
+     }
+
+    .main-content .middle-img {
         margin-top: 35px;
         margin-bottom: 35px;
     }
