@@ -343,14 +343,18 @@ footer {
     width: 100%;
     flex-direction: column;
     border-top: 1px solid black;
-    margin-top: 15px;
+    margin-top: 17px;
   }
   header nav a {
     width: 100%;
     justify-content: center;
     display: flex;
-    padding: 15px;
+    padding: 22.5px;
     border-bottom: 1px solid black;
+    font-size: 1.6rem;
+  }
+  .cta .cta-text {
+    margin: 51px 5% 70px 5%;
   }
   section.main-content {
     margin-top: 50px;
@@ -358,24 +362,37 @@ footer {
   .main-content .top-content {
     display: inline-block;
   }
-  .main-content .top-content .text-content:first-child {
-    margin-bottom: 30px;
+  .main-content .top-content .text-content {
+    display: block;
+    width: 97%;
+    margin: 0 auto;
+    padding-top: 22px;
   }
+  .main-content .top-content .text-content:last-child {
+    padding-top: 55px;
+    margin-bottom: 24px;
+  }
+    .main-content .top-content .text-content p{
+      width: 450px;
+    }
   .main-content .middle-img {
     width: 100%;
-    padding: 10px;
+    padding: 0 4% 10px 4%;
     margin-top: 35px;
   }
   .main-content .bottom-content {
     display: block;
+    margin-bottom: -23px;
   }
   .main-content .bottom-content .text-content {
-    width: 100%;
-    margin-bottom: 40px;
+    width: 90%;
+    padding-left: 3%;
+    margin-bottom: 68px;
   }
   section.contact {
     padding: 0 1%;
     margin-top: 0;
-    padding-top: 25px;
+    padding-top: 33px;
+    padding-left: 4%;
   }
 }
