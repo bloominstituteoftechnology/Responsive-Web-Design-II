@@ -435,6 +435,8 @@ footer {
 .foot-stink {
     display: flex;
     margin-bottom: 50px;
+    width: 880px;
+    justify-content: center;
 }
 
 .foot-container {
@@ -709,6 +711,7 @@ ul {
     flex-direction: column;
     padding: 20px 0 0 0;
     margin: 0px 12.5px 0px 12.5px;
+    font-size: 1.6rem;
 }
 
 li{
