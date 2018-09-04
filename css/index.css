@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
-    front-size: 1.6rem;
+    font-size: 1.6rem;
 	
 }
 
@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5 {
     .container {
         max-width: 500px;
         width: 100%;
+        font-size: 1.6rem;
     }
 }
 
@@ -159,7 +160,7 @@ header .logo {
     }
 
     header .navigation a {
-        margin: 38px 6% 5px 4%;
+        margin: 38px 5% 5px 2%;
         justify-content: space-evenly;
 
     }
@@ -168,11 +169,15 @@ header .logo {
 @media (max-width: 500px) {
 
     header {
-        margin-top: 21px;
+        margin-top: 0px;
+        width: 100%;
     }
 
     header .logo {
-        padding-right: 19px;
+        padding-right: 10%;
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 20px;
     
     }
 
@@ -187,11 +192,12 @@ header .logo {
         
         border-bottom: 1px solid grey;
         margin: 0px 0px;
-        font-size: 20px;
-        padding: 21px 0px 19px 214px;
+        font-size: 2rem;
+        padding: 22px 0% 19px 2%;
         justify-content: center;
         align-items: center;
         width: 100%;
+        text-align: center;
     }
 
 
@@ -343,7 +349,7 @@ header .logo {
 
     .cont1 {
         flex-wrap: wrap;
-        padding: 0px;
+        padding-top: 10px;
     }
     
     .text-content {
@@ -351,7 +357,7 @@ header .logo {
     }
 
     .text-content1 {
-        padding-left: 6px;
+        padding-left: 1%;
         padding-top: 21px;
     }
 
@@ -360,8 +366,9 @@ header .logo {
     }
 
    .cont1 .text-content2 {
-        padding-top: 13px;
-        padding-left: 10px;
+        padding-top: 27px;
+        padding-left: 4.3%;
+        margin: 0px;
     }
 
     .cont1 .text-content2 h1 {
@@ -396,8 +403,9 @@ header .logo {
 @media (max-width: 500px) {
 
     .middle-img {
-        padding-top: 13px;
-        width: 100%;
+        padding-top: 15px;
+        width: 99.3%;
+        padding-left: 2%;
     }
 }
 
@@ -446,9 +454,6 @@ header .logo {
         
     }
 
-    
-
-
 
 }
 
@@ -462,16 +467,19 @@ header .logo {
     }
 
     .cont2 .text-content2 {
-        margin-bottom: 28px;
-        padding-left: 2px;
+        margin-bottom: 16px;
+        padding-left: 1%;
+        padding-top: 4px;
     }
 
     .cont2 .text-content2 .infobox1 {
         padding-top: 23px;
+        padding-left: 0px;
     }
 
     .cont2 .text-content2 .infobox2 {
-        padding-top: 25px;
+        padding-top: 13px;
+        margin-bottom: 8px;
     }
 
 
@@ -515,7 +523,13 @@ footer {
 
     .contact {
         padding-top: 24px;
-        padding-left: 20px;
+        padding-left: 4%;
+    }
+
+    footer {
+        text-align: center;
+        padding-bottom: 50px;
+        padding-left: 4%;
     }
 
 }
