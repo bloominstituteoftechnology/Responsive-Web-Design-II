@@ -195,10 +195,11 @@ section {
 
 /* start of the footer section */
 footer {
-  width: 100%;
+    font-size: 1.6rem;
+    width: 100%;
 	display: flex;
-	justify-content: center;
-	padding: 20px 0 35px;
+    justify-content: center;
+    padding-top: 4rem;
 }
 
 @media (max-width: 800px) {
