@@ -60,10 +60,12 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+    font-size: 62.5%;
+}
 
 .container {
-	width: 880px;
+	max-width: 880px;
 	/* TB LR */
 	margin: 0 auto;
   }
@@ -85,7 +87,7 @@ h1, h2, h3, h4, h5 {
   
   header nav a {
 	margin-right: 65px;
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: gray;
 	text-decoration: none;
   }
@@ -115,7 +117,7 @@ h1, h2, h3, h4, h5 {
 
   }
   .cta .cta-text {
-	font-size: 77px;
+	font-size: 7.7rem;
 	margin-top: 120px;
 	text-align: center;
 	padding: 0px 75px;
@@ -125,7 +127,7 @@ h1, h2, h3, h4, h5 {
 	background: white;
 	margin-top: 6px;
 	padding: 8px 44px;
-	font-size: 17px;
+	font-size: 1.7rem;
 	border: 1px solid black;
 	cursor: pointer;
   }
@@ -144,7 +146,8 @@ h1, h2, h3, h4, h5 {
 	flex-flow: row wrap;
 	border-top: 1px solid black;
 	margin-top: 76px;
-	padding-top: 39px;
+    padding-top: 39px;
+    font-size: 1.6rem;
   }
   
   .main-content .top-content {
@@ -186,7 +189,8 @@ h1, h2, h3, h4, h5 {
 	justify-content: space-evenly;
 	margin-top: 57px;
 	border-top: 1px solid black;
-	padding: 39px 10px 0;
+    padding: 39px 10px 0;
+    font-size: 1.6rem;
   }
   
   .contact p {
@@ -197,7 +201,7 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	justify-content: center;
 	margin: 32px 0;
-	font-size: 14px;
+	font-size: 1.4rem;
   }
 
 
@@ -212,10 +216,11 @@ h1, h2, h3, h4, h5 {
     }
     
     header nav {
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 35px;
     }
 
+   
     header .logo {
         flex-flow: column;
         align-items: center;
