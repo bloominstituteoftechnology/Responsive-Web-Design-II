@@ -85,12 +85,14 @@ header nav {
   margin-top: 35px;
 }
 
-header .nav-logo {
-  padding: 0 2%;
+header nav .nav-logo {
+  max-width: 20%;
+  height: auto;
+  /* padding: 0 2%; */
 }
 
 header nav a {
-  padding: 0 7%;
+  padding: 0 5%;
   font-size: 1.5rem;
   color: gray;
   text-decoration: none;
@@ -100,16 +102,17 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-.nav-links {
-    max-width: 100%;
+header nav .nav-links {
+    max-width: 80%;
 	display: flex;
 	align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.nav-links a {
-    max-width: 100%;
+header nav .nav-links a {
+    width: 100%;
 }
+
 /* cta */
 
 .cta {
@@ -129,8 +132,9 @@ header nav a:hover {
 }
 
 .cta .cta-text .get-started {
+  width: 190px;
   background: white;
-  margin-top: 6px;
+  margin-top: 8px;
   padding: 8px 44px;
   font-size: 17px;
   border: 1px solid black;
@@ -344,21 +348,30 @@ ul {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        max-width: 100%;
+        width: 100%;
     }
 
-    .nav-links {
-        width: 100%;
+    header nav .nav-links {
+        max-width: 100%;
         display: flex;
         justify-content: space-evenly;
     }
 
-    .nav-links a {
+    header nav .nav-links a {
         max-width: 100%;
         padding: 0 2%;
     }
-    .nav-logo {
-        margin-bottom: 30px;
+
+    header nav .nav-logo {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header nav .nav-logo .logo {
+        width: 100%;
+        margin: 0 0 30px 0;  
     }
 
     .cta img {
@@ -377,16 +390,16 @@ ul {
 
     .cta-text h1 {
         padding: 0 20px;
+        font-size: 7rem;
     }
 }
-
 
 /* Mobile View */
 
 @media (max-width: 500px) {
 
     .container {
-        width: 460px;
+        max-width: 460px;
         margin: 20px;
     }
 
@@ -394,38 +407,36 @@ ul {
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 390px;
         align-items: center;
-        width: 460px;
+        width: 100%;
     }
 
     header nav .nav-links {
         display: flex;
         flex-direction: column;
-        margin: 10px 0;
-        height: 400px;
-        width: 500px;
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
 
-    .nav-logo {
+    header nav .nav-logo {
         text-align: center;
-        width: 500px;
+        width: 100%;
+        height: auto;
         border-bottom: 1px solid lightgrey;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
+        margin: 0
     }
 
     header nav .nav-links a {
-        width: 500px;
+        width: 100%;
         text-align: center;
         border-bottom: 1px solid lightgrey;
-        padding: 20px;
+        padding: 20px 4%;
     }
 
     .cta {
-        margin: 20px;
+        margin: 4%;
     }
 
     .cta img {
@@ -438,40 +449,47 @@ ul {
         justify-content: center;
         align-items: center;
         margin: 40px auto 0;
-        padding: 0 100px;
+        padding: 0 22%;
     }
 
     .cta-text h1 {
-        padding: 0 20px;
-    }
-
-    .main-content {
-        width: 460px;
+        padding: 0 4%;
+        font-size: 7rem;
     }
 
     .main-content .top-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 275px;
+        width: 100%;
     }
 
-    .middle-img {
-        width: 460px;
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .main-content .top-content .text-content:last-child {
+        margin-bottom: 0;
     }
 
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 440px;
-    }
-
-    .main-content .bottom-content .text-content {
-        width: 410px;
+        width: 100%;
     }
     
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .main-content .bottom-content .text-content:last-child {
+        margin-bottom: 0;
+    }
+
     .contact {
-        width: 460px
+        margin-top: 30px;
     }
 }
