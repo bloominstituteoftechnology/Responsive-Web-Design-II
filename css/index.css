@@ -77,7 +77,7 @@ a {
 }
 
 .index#container {
-	width: 1200px;
+	width: 880px;
 	height: auto;
     }
 
@@ -86,12 +86,13 @@ a {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 875px;
+	width: 95%;
     margin-left: 250px;
     
 }
 
 #navBar nav {
+    width: 64%;
 	display: flex;
     flex-direction:row;
 
@@ -105,7 +106,8 @@ a {
   	padding:7px;
   	color: lightgrey;
   	text-decoration: none;
-  	font-weight: lighter;
+    font-weight: lighter;
+    width: 1%;
 }
 
 h1 {
@@ -124,14 +126,19 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	align-items: center;
+    align-items: center;
+    width:90%;
 	margin: 30px;
     margin-top: 60px;
     margin-left: 250px;
 
 }
+#slide h1 {
+    width:34%;
+}
 
 #slideImg {
+    width:41%;
 	margin-left: 25px;
 }
 
@@ -143,7 +150,7 @@ h2 {
 	font-size: 1.5rem;
 	padding: 5px;
 	margin: 10px;
-	width: 100px;
+	width: 20%;
 }
 #started {
 	font-weight: 100;
@@ -168,7 +175,7 @@ h2 {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-    width: 430px;
+    width: 48%;
     
 }
 #features div h2 {
@@ -185,6 +192,7 @@ h2 {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 150px;
+    width:90%;
    
 }
 #services {
@@ -194,7 +202,7 @@ h2 {
 	align-items: center;
 	padding-bottom: 25px;
 	border-bottom: 2px solid black;
-	width: 875px;
+	width: 90%;
     margin-left: 250px;
 }
 
@@ -203,7 +211,7 @@ h2 {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 270px;
+	width: 31%;
 }
 #services div h2 {
 	display: flex;
@@ -212,11 +220,16 @@ h2 {
 	align-items: flex-start;
 	width: 270px;
 }
+
+#bottomAddress {
+    width: 90%;
+}
+
 #bottomAddress div {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 875px;
+	width: 16%;
     margin-top: 25px;
     margin-left: 250px;
 }
