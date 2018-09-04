@@ -120,7 +120,7 @@ header nav {
 
 .container .hero button {
 	border: 1px solid black;
-	padding: 5px 10%;
+	padding: 5px 9%;
 	font-size: 1.6rem;
     background:white;
     
@@ -158,29 +158,23 @@ header nav {
 
 
 
-/*Middle img*/
-
-
-.main-content .middle-img {
-    margin-top: 25px;
-    width: 100%;
-}
-
-
-
-
-
 /*bottom Content section*/
 
+.main-content .middle-img {
+        width: 100%;
+        margin: 0 auto; 
+    }
 
 .main-content .bottom-content {
-	display: flex;
+    display: flex;
+    flex-wrap: wrap;
 	margin-top: 30px;
 	justify-content: space-between;
 }
 
 .main-content .bottom-content .one-third {
-	width: 33%;
+    width: 33%;
+    margin-top: 30px;
 }
 
 .main-content .bottom-content .one-third p {
@@ -237,7 +231,8 @@ footer {
     } 
 
     .container header nav {
-          margin-right: 0px;
+        margin-right: 0px;
+
     }
 
     .container .hero img {
@@ -253,8 +248,7 @@ footer {
     .main-content {
         width: 100%;
         border: none;
-        margin-top: 15px; 
-         
+        margin-top: 15px;   
     }
 
     .main-content .top-content {
@@ -269,18 +263,15 @@ footer {
         padding-right: 3%;
     }
 
-    .main-content .middle-img img{
-        margin-top: 30px;
-        width: 100%;
-        
-    }
+    .main-content .middle-img {    
+        width: 97%;
+        height: 10%;
+    } 
 
-     .main-content .bottom-content {
-	    margin-top: 25px;
-    }
-
-    .bottom-content .one-third {
-        margin-left: 2%;
+    .main-content .bottom-content .one-third {
+        width: 30%;
+        margin-left: 3%;
+        margin-top: 25px;
     }
 
     .contact {
@@ -302,7 +293,9 @@ footer {
 }
 
 @media (max-width: 500px){
-    
+    .container{
+        width: 100%;
+    }
     .container header {
 	    margin-top: 20px;
     }
@@ -314,6 +307,7 @@ footer {
     header nav {
         flex-direction: column;
         border-top: 1px solid gray;
+        width: 100%;
     }
 
     .container nav a {    
@@ -329,7 +323,6 @@ footer {
 	    margin-top: 50px;
     }
 
-
     .main-content .top-content, .main-content .bottom-content {
         flex-direction: column;
     }
@@ -342,23 +335,23 @@ footer {
     }
 
     .main-content .top-content .one-half {
-        margin-left: 10px;
+        margin-left: 2%;
         padding-left: 0px;
+        width: 100%;
     }
 
-    .main-content .middle-img {
-	    margin-top: 30px;
+    .main-content .bottom-content {
+        width: 97%;
     }
 
     .main-content .bottom-content .one-third {
-	    width: 100%;
+        width: 100%;
+        margin-left: 4%; 
     }
-    .bottom-content .one-third h2 {
-        margin: 0px 0px 10px 0px;
-    }
+
     .bottom-content .one-third p{
-        margin: 0px 0px 55px 0px; 
-        padding-right: 25px;
+        margin: 0px 0px 37px 0px; 
+        padding-right: 5%;
     }
     
     .contact {
