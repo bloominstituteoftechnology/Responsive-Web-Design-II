@@ -344,26 +344,27 @@ footer {
     width: 100%;
     order: 1;
     font-size: 20px;
-    height: 63px;
     padding: 5px 0;
     margin: 0px;
-    line-height: 2;
+    line-height: 2.5;
   }
 
   nav .logo {
     margin: 20px 0;
+    width: 100%;
+    padding: 0;
   }
 
   header {
     border-top: 1px solid gray;
     margin: 0;
-    padding: 175px 0 145px;
+    padding: 50px 0 0;
   }
 
   .top-content {
     display: flex;
     flex-direction: column;
-    padding: 0 10px;
+    padding: 20px 0 0;
     margin-top: 100px;
     margin-bottom: 0;
   }
@@ -373,14 +374,9 @@ footer {
     line-height: 1.2;
   }
 
-  .middle-img {
-    height: 100px;
-  }
-
   .bottom-content {
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -388,12 +384,13 @@ footer {
   .bottom-content .box {
     width: 100%;
     line-height: 1.2;
-    margin: 15px 0;
-    padding: 10px 0;
+    margin: 20px 0;
+    padding: 5px 1%;
+    border: 1px solid red;
   }
 
   .contact {
-    margin: 38px 15px 0;
+    margin: 45px 4% 0;
     padding: 0;
   }
 }
