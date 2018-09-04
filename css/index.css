@@ -254,7 +254,7 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-    width: 32%;
+    width: 100%;
     display: inline-block;
     margin-right: 1%;
 }
@@ -336,7 +336,7 @@ footer {
     }
 
     .container header nav a {
-        padding: 10px 0;
+        padding: 4% 0;
         width: 100%;
         text-align: center;
         margin: 0;
@@ -344,24 +344,21 @@ footer {
     }
 
     .container .logo {
-        margin-left: 187px
+        margin-left: 34%;
     }
 
     .main-content .top-content .text-content {
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-left: 75px;
+        width: 100%;
+        padding-left: 4%;
     }
 
-    .container .main-content img {
-        max-width: 100%;
-        height: auto;
-    }
+    .container .main-content img {}
 
     .main-content .bottom-content {
         flex-direction: column;
-        padding-left: 75px
+        padding-left: 5%;
+        width: 100%
     }
 
     .bottom-content .text-content {
@@ -369,6 +366,6 @@ footer {
     }
 
     .main-content h4 {
-        margin-top: 15px
+        margin-top: 2%
     }
 }
