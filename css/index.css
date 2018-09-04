@@ -1,1 +1,565 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+html {
+    font-size: 62.5%
+}
+
+.container {
+    max-width: 880px;
+    /* TB LR */
+    margin: 0 auto;
+    font-size: 1.6rem
+}
+
+/* header */
+.container .main-head {
+    display: flex;
+}
+
+header nav {
+    width: 78.52%;
+    vertical-align: top;
+    margin-top: 35px;
+}
+
+header nav a {
+    margin-right: 7.38%;
+    font-size: 1.4rem;
+    color: gray;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 0;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+header .logo {
+    margin-top: 25px;
+}
+
+/* cta */
+.cta {
+    display: flex;
+}
+
+.cta .cta-text {
+    vertical-align: top;
+    font-size: 77px;
+    margin-top: 120px;
+    text-align: center;
+    padding: 0px 8.52%;
+}
+
+.cta .cta-text button {
+    background: white;
+    vertical-align: top;
+    margin-top: 6px;
+    padding: 8px 5%;
+    font-size: 17px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.cta img {
+    margin-top: 69px;
+}
+.cta img:hover {
+    transform: scaleX(-1);
+    filter: drop-shadow(11px 8px 8px orange);
+}
+
+.main-content {
+    border-top: 1px solid black;
+    margin-top: 76px;
+    padding-top: 39px;
+}
+
+.main-content .top-content {
+    display: flex;
+    padding: 0 1.13%;
+}
+
+.main-content .top-content .text-content {
+    width: 46.59%;
+    margin-right: 3.86%;
+}
+
+.main-content .top-content .text-content:last-child {
+    margin-right: 0;
+}
+
+.main-content .middle-img {
+    margin-top: 45px;
+}
+
+.main-content .bottom-content {
+    display: flex;
+    margin-top: 37px;
+    padding: 0 1.13%;
+}
+
+.main-content .bottom-content .text-content {
+    width: 275px;
+    margin-right: 1.36%;
+}
+
+.main-content .bottom-content .text-content:last-child {
+    margin-right: 0;
+}
+
+.contact {
+    margin-top: 57px;
+    border-top: 1px solid black;
+    padding: 39px 1.13% 0;
+}
+
+.contact p {
+    margin: 20px 0;
+}
+
+footer {
+    margin: 32px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.services-container {
+    width: 880px;
+    /* TB LR */
+    margin: 0 auto;
+}
+
+.main-head2 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+}
+
+.main-head2 nav {
+    width: 691px;
+    vertical-align: top;
+    margin-top: 35px;
+}
+
+.main-head2 nav a {
+    margin-right: 65px;
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav a:first-child {
+    margin-left: 0;
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+header .logo {
+    margin-top: 25px;
+}
+
+.services-header-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subheader h1 {
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.3;
+}
+
+/* service page buttons */
+.learn-more {
+    width: 40%;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.services-container .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.services-container .main-content .digital-design {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 275px;
+    width: 375px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.services-container .main-content .ux-ui {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 275px;
+    width: 375px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.services-container .main-content .digital-marketing {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 275px;
+    width: 375px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.services-container .main-content .web-development {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 275px;
+    width: 375px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.services-container .main-content .ios-development {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 275px;
+    width: 375px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.services-container .main-content .android-development {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    height: 275px;
+    width: 375px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 35px;
+    padding-left: 20px;
+    height: 400px;
+}
+
+.bottom-section h2 {
+    width: 375px;
+    height: 20px;
+}
+
+.bottom-section p {
+    width: 375px;
+}
+
+.bottom-section ol {
+    width: 375px;
+    height: 100px;
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.bottom-section .services-info-img {
+    width: 375px;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-head {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-head nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 38.62%;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta-text h1 {
+        font-size: 7rem;
+    }
+
+    .middle-img {
+        display: flex;
+        justify-content: center;
+        width: 96.25%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        width: 100%;
+    }
+   
+
+    .main-head nav {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+        border-top: 1px solid grey;
+    }
+
+    .main-head nav a {
+        display: flex;
+        font-size: 2.2rem;
+        color: lightgrey;
+        border-bottom: 1px solid grey;
+        width: 100%;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+    }
+    @keyframes example {
+        0%   {background-color:pink; left:0px; top:0px;}
+        25%  {background-color:magenta; left:200px; top:0px;}
+        50%  {background-color:hotpink; left:200px; top:200px;}
+        75%  {background-color:lightpink; left:0px; top:200px;}
+        100% {background-color:lightcoral; left:0px; top:0px;}
+    }
+    .main-head nav a {
+        background-color: pink;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 47;
+    }
+
+    .main-content .top-content {
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin-right: 3.86%;
+    }
+
+    .main-content .bottom-content {
+        flex-flow: wrap;
+        width: 100%;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+    }
+
+    .middle-img {
+        width: 98%;
+    }
+
+    .container .text-content {
+        margin-top: 20px;
+    }
+}
