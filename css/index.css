@@ -1,1 +1,298 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+.container {
+
+	max-width: 880px;
+	margin: 0 auto;
+	
+
+	
+}
+
+header {
+
+	display: flex;
+	
+	
+	margin-top: 20px;
+	flex-flow: wrap;
+	margin: 20px;
+	justify-content: center;
+	
+}
+
+header nav {
+
+	display: flex;
+	justify-content: space-around;
+	max-width: 100%;
+	height: 60px;
+	align-content: center;
+	
+}
+
+
+header nav a {
+	display: flex;
+	justify-items: space-between;
+	margin: 0 10px;
+}
+
+
+
+.container .motto-button {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 8rem;
+	justify-content: flex-end;
+	margin: 60px;
+	
+
+	
+}
+
+header .main-logo {
+
+	
+	margin-top: 50px;
+	margin-right: 10px;
+	width: 300px;
+}
+
+.top-content {
+	display: flex;
+	
+	height: 200px;
+	align-items: flex-end;
+	margin-bottom: 20px;
+	margin-top: 20px;
+  }
+
+  .bottom-content {
+	display: flex;
+	margin-right: 20px;
+	margin-top: 20px;
+  }
+
+  h2 {
+	  display: flex;
+	  
+	  margin-top: 20px;
+	  
+
+  }
+
+  .middle-img {
+	  display: flex;
+	  height: 150px;
+	  width: 100%;
+  }
+
+  footer {
+	  display: flex;
+	  justify-content: center;
+  }
+
+  address {
+	  display: flex;
+	  flex-direction: column;
+	  width: 23%;
+	  height: 100px;
+	  margin: 5px;
+	  justify-content: space-around;
+	  line-height: 150%;
+  }
+
+  .container nav {
+
+	 
+      width: 100%;
+      justify-content: space-between;
+      height: 100%;
+	  align-items: flex-end;
+      
+  }
+
+  .container nav a {
+	  line-height: 30px;
+	  text-decoration: none;
+	 
+  }
+
+  .img-div {
+	display:flex;
+	justify-content: center;
+
+	
+}
+
+.top-content {
+	font-size: 1.6rem;
+}
+
+.bottom-content {
+	font-size: 1.6rem;
+}
+
+header nav a {
+	font-size: 1.6rem;
+}
+
+.logo {
+	
+	max-width: 100%;
+}
+
+
+h2 {
+	font-size: 1.6rem;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+  @media (max-width:800px) {
+	  .main-logo {
+		  display: none;
+	  }
+
+	  div .img-div {
+		  order: -1;
+	  }
+	  
+	  .container header nav {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  width: 100%;
+		  
+	  }
+
+	  header .motto-button {
+		  justify-content: center;
+		  margin-top: 300px;
+	  }
+
+	  .container header .logo {
+
+		margin: 20px 0 40px;
+	  }
+	  .img-div {
+		display:flex;
+		width: 100%;
+		justify-content: center;
+	}
+  }
+
+
+  @media (max-width: 500px) {
+
+	header nav {
+
+		display: flex;
+		
+		max-width: 100%;
+		
+	}
+
+	.container header nav a {
+		
+		
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		border-top: 1px solid lightgray;
+		
+		
+	}
+	
+
+	
+	.middle-img {
+		display: flex;
+		max-width: 100%;
+
+	}
+
+
+	  .main-content .top-content {
+		  display: flex;
+		  flex-direction: column;
+	  }
+
+	  .main-content .bottom-content {
+		  display: flex;
+		  flex-direction: column;
+	  }
+  }
