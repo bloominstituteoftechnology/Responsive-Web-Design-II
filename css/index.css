@@ -484,3 +484,18 @@ footer {
     width: 80%;
   }
 }
+
+/* Animation */
+.cta,
+a:hover {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
