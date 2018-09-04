@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5 {
 	background: white;
 	vertical-align: top;
 	margin-top: 6px;
-	padding: 8px 44px;
+    padding: 8px 44px;
 	font-size: 17px;
 	border: 1px solid black;
 	cursor: pointer;
@@ -149,12 +149,12 @@ h1, h2, h3, h4, h5 {
   }
   
   .main-content .top-content {
-	padding: 0 10px;
+    padding: 0 1.1%;
 	display: flex;
   }
   
   .main-content .top-content .text-content {
-	width: 410px;
+    width: 47%;
 	margin-right: 34px;
   }
   
