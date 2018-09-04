@@ -230,6 +230,10 @@ header .logo {
 .cta img {
     margin-top: 69px;
 }
+.cta img:hover {
+    transform: scaleX(-1);
+    filter: drop-shadow(11px 8px 8px orange);
+}
 
 .main-content {
     border-top: 1px solid black;
@@ -498,6 +502,7 @@ p {
     .container {
         width: 100%;
     }
+   
 
     .main-head nav {
         display: flex;
@@ -516,6 +521,19 @@ p {
         justify-content: center;
         height: 70px;
         align-items: center;
+    }
+    @keyframes example {
+        0%   {background-color:pink; left:0px; top:0px;}
+        25%  {background-color:magenta; left:200px; top:0px;}
+        50%  {background-color:hotpink; left:200px; top:200px;}
+        75%  {background-color:lightpink; left:0px; top:200px;}
+        100% {background-color:lightcoral; left:0px; top:0px;}
+    }
+    .main-head nav a {
+        background-color: pink;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 47;
     }
 
     .main-content .top-content {
