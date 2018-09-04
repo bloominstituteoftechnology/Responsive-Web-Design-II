@@ -141,8 +141,15 @@ div#page-container {
 }
 
 .homepage #main p {
+    margin-top: 3px;
     font-size: 1.6rem;
-    line-height: 1.2;
+    line-height: 1.15;
+}
+
+.homepage #main .middle-img {
+    width: 99.5%;
+    height: auto;
+    margin: 13px 0.25% 12px;
 }
 
 .homepage .main-block {
@@ -153,4 +160,24 @@ div#page-container {
 
 .homepage .main-block .two-column {
     width: 50%;
+}
+
+.homepage .main-block .three-column {
+    width: 31.1%;
+    margin-right: 2.2%;
+}
+
+.homepage #contact address {
+    font-size: 1.6rem;
+}
+
+.homepage #contact p {
+    margin: 1.4rem 0;
+    font-size: 1.6rem;
+}
+
+.homepage > footer {
+    margin: 4rem 0 2.6rem;
+    text-align: center;
+    font-size: 1.6rem;
 }
