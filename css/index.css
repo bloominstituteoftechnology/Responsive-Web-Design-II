@@ -184,7 +184,7 @@ footer {
 }
 
 .services-content div h1 {
-  font-size: 1.2rem;
+  font-size: 1.9rem;
 }
 .services-content div a {
   background: white;
@@ -196,6 +196,7 @@ footer {
   color: black;
   text-decoration: none;
   border: 1px solid black;
+  font-size: 1.6rem;
 }
 .services-content div {
   background: lightgray;
@@ -207,24 +208,26 @@ footer {
 
 /* services facts */
 .facts-wrapper {
-  width: 80%;
+  width: 100%;
   margin: 50px auto;
   display: flex;
   align-items: flex-start;
 }
+
 .facts-wrapper h1 {
-  font-size: 1.3rem;
+  font-size: 2.1rem;
 }
 .facts-wrapper ul {
   margin-top: 40px;
   list-style: square;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 .facts-wrapper li {
   margin: 20px 0;
+  font-size: 1.6rem;
 }
 .facts-wrapper img {
-  margin-left: 20px;
+  margin-left: 2rem;
 }
 
 /* services.html media queries */
