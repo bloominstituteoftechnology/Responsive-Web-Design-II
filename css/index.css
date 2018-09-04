@@ -1,1 +1,156 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+* {
+    box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer Reset */
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+}
+
+body > header {
+    width: 100%;
+    max-width: 880px;
+    margin: 2.9rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body > header nav {
+    width: 68.8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+body > header nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: gray;
+}
+
+div#page-container {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.homepage > header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.homepage > header .title-and-button {
+    padding: 4.2px 0 0;
+    margin: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage > header h1 {
+    font-size: 7.1rem;
+    letter-spacing: 0.18rem;
+    line-height: 0.82;
+}
+
+.homepage > header .title-and-button .button {
+    width: 17rem;
+    padding: 0.6rem 0;
+    border: 1px solid black;
+    margin: 18px 0 0;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+.homepage #main {
+    padding: 18px 0;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: black;
+    margin: 35px 0;
+}
+
+.homepage h2 {
+    font-size: 1.6rem;
+}
+
+.homepage #main p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.homepage .main-block {
+    margin: 18px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homepage .main-block .two-column {
+    width: 50%;
+}
