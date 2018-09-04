@@ -297,8 +297,9 @@ footer {
 
 /* .services styles only */
 .services {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 .services header {
@@ -310,12 +311,12 @@ footer {
 .services header nav {
   display: flex;
   justify-content: space-between;
-  width: 600px;
+  width: 68%;
   align-items: flex-end;
 }
 
 .services header nav a {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -360,9 +361,9 @@ footer {
 .services .main-info .mid-content .learn-more-box {
   border: 1px solid black;
   background-color: rgb(230, 230, 230);
-  width: 400px;
+  width: 45%;
   height: 190px;
-  margin: 10px 0px;
+  margin: 10px 0;
   padding: 10px;
 }
 
@@ -370,7 +371,7 @@ footer {
   margin-top: 20px;
   background: white;
   border: 1px solid black;
-  padding: 5px 32px;
+  padding: 5px 9%;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -383,7 +384,8 @@ footer {
 }
 
 .services .bottom-content .bottom-content-left {
-  margin-right: 50px;
+  margin-right: 4.5%;
+  width: 48%;
 }
 
 .services .bottom-content .bottom-content-left ul {
@@ -397,7 +399,7 @@ footer {
 /* services.html media queries */
 @media (max-width: 800px) {
   .services {
-    width: 750px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -407,7 +409,7 @@ footer {
   }
 
   .services header nav {
-    width: 750px;
+    width: 93.75%;
   }
 
   .services header a {
@@ -415,13 +417,9 @@ footer {
     margin: 20px auto;
   }
 
-  .services .services-header-img {
-    width: 750px;
-  }
-
   .services .main-info .mid-content .learn-more-box {
-    width: 350px;
-    height: 200px;
+    width: 43.75%;
+    height: auto;
   }
 
   .services .main-info .mid-content .learn-more-box button {
@@ -431,7 +429,7 @@ footer {
 
 @media (max-width: 500px) {
   .services {
-    width: 450px;
+    max-width: 500px;
   }
 
   .services header {
@@ -441,15 +439,15 @@ footer {
   .services header nav {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
   .services header nav a {
     border-top: 1px solid black;
-    width: 458px;
+    width: 100%;
     padding: 20px 0;
-    font-size: 24px;
+    font-size: 2.4rem;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -465,6 +463,15 @@ footer {
 
   .services .main-info .mid-content {
     justify-content: center;
+  }
+
+  .services .main-info .mid-content .learn-more-box {
+    width: 70%;
+    height: auto;
+  }
+
+  .services .bottom-content .bottom-content-left {
+    width: 100%;
   }
 
   .services .bottom-content .bottom-content-right {
