@@ -256,7 +256,6 @@ button:hover {
 
 .bottomSection {
   border-bottom: 1px solid black;
-  /* height: 200px; */
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -300,7 +299,7 @@ footer {
   background-color: rgb(233, 229, 229);
   border: 1px solid black;
   width: 420px;
-  height: 200px;
+  /* height: 200px; */
   padding: 20px;
   margin-bottom: 40px;
 }
@@ -339,20 +338,27 @@ footer {
     margin: 0 auto;
   }
 
+  .container nav a {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+    MARGIN-TOP: 3%;
+    MARGIN-BOTTOM: -3%;
+  }
+
   nav {
     display: flex;
     flex-direction: column-reverse;
     align-content: center;
+    margin-left: 3%;
   }
 
   .great-idea {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-  }
-
-  .tablet-logo {
-    display: flex;
   }
 
   .link-container {
@@ -379,7 +385,7 @@ footer {
     width: 95%;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 4%;
   }
 
   .mid-image-container {
@@ -388,9 +394,17 @@ footer {
   }
 
   .middle-img {
-    width: 95%;
-    height: 95%;
+    width: 92%;
+    height: 92%;
   }
+
+  .bottomSection {
+    margin: 0 4%;
+  }
+}
+
+address {
+  margin: 0 4%;
 }
 
 /* phone */
@@ -404,6 +418,10 @@ footer {
     text-align: center;
     flex-direction: column-reverse;
     width: 100%;
+  }
+
+  #border {
+    border-top: 1px solid gray;
   }
 
   .container nav a {
@@ -440,9 +458,8 @@ footer {
 
   .middle-img {
     display: flex;
-    width: 90%;
-    justify-content: center;
-    margin: 0 4%;
+    width: 93%;
+    /* justify-content: center; */
   }
 
   .bottomSection {
@@ -453,7 +470,7 @@ footer {
     width: 90%;
   }
 
-  . .bottomSection p {
+  .bottomSection p {
     margin-bottom: 20px;
   }
 
