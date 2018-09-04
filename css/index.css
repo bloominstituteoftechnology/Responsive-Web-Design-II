@@ -156,11 +156,14 @@ h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
+ html {
+    font-size: 62.5%
+}
 .container {
-    width: 880px;
-    /* TB LR */
+    max-width: 880px;
+    width: 100%;
     margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 /* header */
@@ -204,7 +207,7 @@ header img {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    font-size: 77px;
+    font-size: 7.7rem;
     margin-top: 120px;
     text-align: center;
 }
@@ -214,7 +217,7 @@ header img {
     background: white;
     margin-top: 6px;
     padding: 8px 44px;
-    font-size: 17px;
+    font-size: 1.7rem;
     border: 1px solid black;
     cursor: pointer;
 }
@@ -225,32 +228,29 @@ header img {
 }
 
 .cta .ctatext img {
-    align-self: flex-end margin-top: 69px;
+    align-self: flex-end; 
+    margin-top: 69px;
 }
 
 .main-content {
     border-top: 1px solid black;
     margin-top: 76px;
     padding-top: 39px;
+    width: 100%;
 }
 
 .main-content .top-content {
-    padding: 0 10px;
+    padding: 0 1%;
 }
 
 .main-content .top-content .text-content {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-right: 34px;
-}
-
-.main-content .top-content .text-content:last-child {
-    margin-right: 0;
 }
 
 .main-content .middle-img {
     margin-top: 45px;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -262,11 +262,6 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 12px;
-}
-
-.main-content .bottom-content .text-content2:last-child {
-    margin-right: 0;
 }
 
 .contact {
@@ -282,7 +277,7 @@ header img {
 footer {
     margin: 32px 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 /* Services Page */
@@ -302,7 +297,7 @@ footer {
     background: white;
     margin-top: 12px;
     padding: 8px 22px;
-    font-size: 12px;
+    font-size: 1.2rem;
     border: 1px solid black;
     cursor: pointer;
 }
