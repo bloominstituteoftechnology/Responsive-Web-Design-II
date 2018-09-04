@@ -384,68 +384,6 @@ footer {
 	margin: 100px;
 } */
 
-
-
-/* _____CONTACT START HERE_____________________________________________ */
-
-.contact .container {
-    max-width: 880px;
-    width: 100%;
-	display: flex;
-	/* justify-content: space-between; */
-}
-
-.contact .mission {
-	width: 50%;
-	margin: 25px;
-}
-
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px;   
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
-}
-
-
-input[type=submit] {
-    background-color: white;
-    border: solid grey 1px;
-    color: grey;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-	font-size: 16px;
-	transition-duration: 0.4s;
-	width: 50%;
-	margin: 20px 0px 0px 0px;
-}
-
-
-input[type=submit]:hover {
-    color: lightgrey;
-	background-color: black;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-	cursor: pointer;
-}
-
-
-.form {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-	padding: 20px 0px 40px 0px;
-}
-
-.contact footer {
-    display: flex;
-	justify-content: center;
-	/* margin: 80px; */
-}
-
 /* ____________________SERVICES MEDIA_________________________________ */
 
 @media (max-width: 800px) {
