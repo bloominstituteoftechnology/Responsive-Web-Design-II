@@ -75,19 +75,15 @@ h1, h2, h3, h4, h5 {
 
 
 .container { 
-	width: 800px;
+    width: 100%;
+	max-width: 880px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     font-size: 1.6rem;
-}
-
-@media screen and (max-width: 800px) {
-	.container{
-        width: 95%;
-	}
+    padding: 0px 20px;
 }
 
 /* Navigation  header */
