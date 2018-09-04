@@ -81,12 +81,12 @@ html {
 	display: flex;
 	width: 79%;
 	justify-content: flex-start;
-	margin-top: 35px;
+	margin-top: 4%;
 	
   }
   
   header nav a {
-	margin-right: 65px;
+	margin-right: 9%;
 	font-size: 1.4rem;
 	color: gray;
 	text-decoration: none;
@@ -106,7 +106,7 @@ html {
   
   header .logo {
 	display: flex;
-	margin-top: 25px;
+	margin-top: 4%;
 	align-items: flex-start;
   }
   
@@ -118,15 +118,15 @@ html {
   }
   .cta .cta-text {
 	font-size: 7.7rem;
-	margin-top: 120px;
+	margin-top: 14%;
 	text-align: center;
-	padding: 0px 75px;
+	padding: 0 9%;
   }
   
   .cta .cta-text button {
 	background: white;
-	margin-top: 6px;
-	padding: 8px 44px;
+	margin-top: 0.68%;
+	padding: 0.91% 5%;
 	font-size: 1.7rem;
 	border: 1px solid black;
 	cursor: pointer;
@@ -138,26 +138,26 @@ html {
   }
   
   .cta img {
-	margin-top: 69px;
+	margin-top: 8%;
   }
   
   .main-content {
 	display: flex;
 	flex-flow: row wrap;
 	border-top: 1px solid black;
-	margin-top: 76px;
-    padding-top: 39px;
+	margin-top: 9%;
+    padding-top: 4%;
     font-size: 1.6rem;
   }
   
   .main-content .top-content {
 	display: flex;
-	padding: 0 10px;
+	padding: 0 1%;
   }
   
   .main-content .top-content .text-content {
 	width: 47%;
-	margin-right: 34px;
+	margin-right: 8%;
   }
   
   .main-content .top-content .text-content:last-child {
@@ -165,18 +165,18 @@ html {
   }
   
   .main-content .middle-img {
-	margin-top: 45px;
+	margin-top: 5%;
   }
   
   .main-content .bottom-content {
 	display: flex;
-	margin-top: 37px;
-	padding: 0 10px;
+	margin-top: 4%;
+	padding: 0 1%;
   }
   
   .main-content .bottom-content .text-content {
 	width: 31%;
-	margin-right: 12px;
+	margin-right: 4%;
   }
   
   .main-content .bottom-content .text-content:last-child {
@@ -187,20 +187,20 @@ html {
 	display: flex;
 	flex-flow: column;
 	justify-content: space-evenly;
-	margin-top: 57px;
+	margin-top: 6%;
 	border-top: 1px solid black;
-    padding: 39px 10px 0;
+    padding: 4% 1% 0;
     font-size: 1.6rem;
   }
   
   .contact p {
-	margin: 20px 0;
+	margin: 2% 0;
   }
   
   footer {
 	display: flex;
 	justify-content: center;
-	margin: 32px 0;
+	margin: 4% 0;
 	font-size: 1.4rem;
   }
 
@@ -217,7 +217,7 @@ html {
     
     header nav {
         justify-content: center;
-        margin-top: 35px;
+        margin-top: 4%;
     }
 
    
@@ -238,32 +238,32 @@ html {
     }
 
     .main-content {
-        margin-left: 10px;
+        margin-left: 1%;
     }
 
     .main-content .top-content {
-        margin-left: 5px;
+        margin-left: 0.57%;
     }
 
     .main-content .top-content .text-content {
         width: 47%;
-        margin-right: 30px;
+        margin-right: 8%;
     }
 
     .middle-img {
         width: 97%;
-        margin-left: 10px;
+        margin-left: 1%;
 
     }
     
     .main-content .bottom-content .text-content {
         width: 32%;
-        margin-left: 5px;
-        margin-right: 10px;
+        margin-left: 2%;
+        margin-right: 4%;
     }
 
     .contact {
-        margin-left: 5px;
+        margin-left: 0.63%;
     }
 
   }
@@ -285,7 +285,7 @@ html {
     header nav {
       width: 99%;
       flex-flow: column;
-      margin-top: 35px 0;
+      margin-top: 7% 0;
       border-bottom: 1px solid black;
       border-bottom: 1px solid black;
     }
@@ -293,7 +293,7 @@ html {
     header nav a {
       text-align: center;
       margin: 0;
-      padding: 15px 0;
+      padding: 3% 0;
       border-top: 1px solid black;
     }
 
@@ -303,19 +303,14 @@ html {
       margin-right: 0;
     }
 
-    .cta {
-      margin-right: 0;
-    }
-    
     .main-content .top-content {
       flex-flow: column;
       align-items: center;
-      margin-bottom: 0; 
     }
 
     .main-content .top-content .text-content {
       width: 95%;
-      padding-bottom: 30px;
+      padding-bottom: 6%;
       margin-right: 0;
     }
 
@@ -330,7 +325,7 @@ html {
 
     .main-content .bottom-content .text-content {
       width: 95%;
-      padding-bottom: 30px;
+      padding-bottom: 6%;
     }
     }
   
