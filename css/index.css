@@ -182,13 +182,13 @@ header nav a:hover {
 	flex-flow: row wrap; */
 }
 
-#features, #about {
+.top-content__info {
 	/* border: 1px solid blue; */
     margin: 35px 0;
     line-height: 1.15;
 }
 
-#services, #product, #vision {
+.bottom-content_info {
     margin: 25px 0 30px;
     padding-right: 4%;
     line-height: 1.15;
@@ -241,7 +241,7 @@ section.services-content {
 	padding: 30px 0;
 }
 
-section.services-content article {
+section.services-content .services-content__card {
 	width: 48.5%;
 	margin: 15px 0;
 	padding: 20px;
@@ -352,8 +352,8 @@ section.services-facts .footer-text li {
         padding-bottom: 75px;
     }
 
-    .top-content #features, 
-    .top-content #about {
+    .top-content .top-content__info, 
+    .top-content .top-content__info {
         padding-left: 1%; 
         padding-right: 1%; 
     }
@@ -366,9 +366,9 @@ section.services-facts .footer-text li {
         width: 100%;
     }
 
-    .bottom-content #services,
-    .bottom-content #product,
-    .bottom-content #vision {
+    .bottom-content .bottom-content_info,
+    .bottom-content .bottom-content_info,
+    .bottom-content .bottom-content_info {
         padding: 1%;
     }
 
@@ -383,7 +383,7 @@ section.services-facts .footer-text li {
 
     .contact {
         width: 100%;
-        
+
     }
 }
 
@@ -429,8 +429,8 @@ section.services-facts .footer-text li {
         padding: 0;
     }
 
-    .top-content #features, 
-    .top-content #about {
+    .top-content .top-content__info, 
+    .top-content .top-content__info {
         margin: 50px 0 0 0;
     }
 
@@ -466,7 +466,7 @@ section.services-facts .footer-text li {
         justify-content: center;
     }
 
-    
+    /* SERVICES PAGE - MOBILE */
 
 	section.services-content,
 	section.services-facts,
@@ -482,7 +482,7 @@ section.services-facts .footer-text li {
 		width: 100%;
 	}
 
-	section.services-content article,
+	section.services-content .services-content__card,
 	section.services-facts .footer-text {
 		width: 100%;
 		padding: 30px 15px;
