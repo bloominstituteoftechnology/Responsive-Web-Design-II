@@ -81,7 +81,7 @@ header {
 
 header nav {
   margin-top: 40px; 
-  width: 610px;
+  width: 69%;
   justify-content: space-between;
   display: flex;
 }
@@ -89,6 +89,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 2rem;
 }
 
 header nav a:hover {
@@ -97,7 +98,7 @@ header nav a:hover {
 }
 
 header .logo {
-  margin: 28px 0 0 91px;
+  margin: 3% 0% 0% 10%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -164,8 +165,13 @@ header .logo {
 
 /* Contact Styles */
 
+.contact h4 {
+    font-size: 1.6rem;
+}
+
 .contact p {
-  margin: 15px 0;
+    font-size: 1.6rem;
+    margin: 15px 0;
 }
 
 /* Footer Styles */
