@@ -77,7 +77,8 @@ html {
 .container {
     max-width: 880px;
 	width: 100%;
-	margin: 0 auto;
+    margin: 0 auto;
+    font-size: 1.6rem;
 }
 
 .container header {
@@ -86,11 +87,11 @@ html {
 }
 
 header nav {
-	width: 691px;
+	width: 80%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-right: 95px;	
+	margin-right: 10%;	
 }
 
 .container nav a {
@@ -110,16 +111,16 @@ header nav {
 }
 
 .container .hero .hero-text {
-	width: 410px;
+	width: 49%;
 	font-size: 7rem;
 	text-align: center;
-    margin: 95px 0 0 75px;
+    margin: 95px 0 0 7%;
     line-height: 1;
 }
 
 .container .hero button {
 	border: 1px solid black;
-	padding: 5px 40px;
+	padding: 5px 10%;
 	font-size: 1.6rem;
     background:white;
     
@@ -147,7 +148,7 @@ header nav {
 }
 
 .main-content .top-content .one-half {
-	width: 440px;
+	width: 50%;
 }
 
 .main-content .top-content .one-half p {
@@ -179,7 +180,7 @@ header nav {
 }
 
 .main-content .bottom-content .one-third {
-	width: 290px;
+	width: 33%;
 }
 
 .main-content .bottom-content .one-third p {
