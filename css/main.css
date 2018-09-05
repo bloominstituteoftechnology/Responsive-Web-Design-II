@@ -196,6 +196,7 @@ p a:hover {
 .heading-primary {
   /* font-family: 'Montserrat', sans-serif; */
   font-size: 7rem;
+  margin-bottom: 4.1rem;
 }
 .heading-primary--page {
   font-family: 'Montserrat', sans-serif;
@@ -461,11 +462,22 @@ p a:hover {
     padding-top: 18rem;
   }
 }
+@media (max-width: 500px) {
+  .page--services .header {
+    padding-bottom: 3rem;
+    padding-top: 0;
+  }
+}
 .page--services .row {
   justify-content: space-between;
 }
 .page--services .col-50 {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .page--services .col-50 {
+    width: 100%;
+  }
 }
 .page--services .services-bottom-img {
   width: 100%;
