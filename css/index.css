@@ -250,7 +250,7 @@ footer{
     }
     
     .navigation a{
-        margin: 0 3.4%;
+        margin: 0 2.5%;
     }
     
     .navigation a:hover{
@@ -324,14 +324,13 @@ footer{
     }
 
     .contact address{
-        width: 200px;
         margin: 10px 0;
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 1.3;
     }
 
     .contact p{
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     /** Footer ***/
@@ -345,7 +344,7 @@ footer{
         margin: 0px auto;
         padding: 2%;
         text-align: center;
-        font-size: 12px;
+        font-size: 1.2rem;
     }
     
 
@@ -366,7 +365,7 @@ footer{
 
     .navigation a{
         max-width: 100%;
-        padding: 5% 44%;
+        padding: 3% 44%;
         border-top: 1px solid #666;
         align-self: center;
     }
@@ -383,24 +382,22 @@ footer{
     }
 
     .header{
-        margin: 540px auto 60px auto;
+        margin: 400px auto 60px auto;
         width: 90%; 
         display: flex;
         justify-content: center;
     }
 
     .header .cta h1{
-    
         width: 80%;
-        margin-bottom: -50px;
         padding: 5% 5%;
-        font-size: 70px;
+        font-size: 7.5rem;
         align-items: center;
     }
 
     .header button{
-        width: 180px;
-	    padding: 10px;
+        width: 100%;
+	    padding: 3%;
     }
 
     .content-container{
@@ -413,11 +410,11 @@ footer{
     }
     
     .content-container h2{
-        font-size: 20px;
+        font-size: 2rem;
     }
     
     .content-container p{
-        font-size: 16px;
+        font-size: 1.6rem;
         line-height: 1.5;
     }
     
@@ -458,12 +455,13 @@ footer{
     }
 
     .contact h2{
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     .contact address{
+        width: 35%;
         margin: 10px 0;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         line-height: 1.3;
     }
 
