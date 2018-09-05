@@ -247,9 +247,13 @@ header .logo {
 
 .main-content .bottom-content p {
     padding-right: 20px;
+    font-size: 1.6rem;
 }
 
 /* Contact Styles */
+.contact{
+    font-size: 1.6rem;
+}
 .contact p {
     margin: 15px 0;
     font-size: 1.6rem;
