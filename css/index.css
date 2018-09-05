@@ -199,7 +199,8 @@ h1, h2, h3, h4, h5 {
 
 .container-home footer {
 	text-align: center;
-	margin-bottom: 125px;
+    margin-bottom: 125px;
+    font-size: 1.3rem;
 }
 
 /* Services ONLY */
@@ -310,7 +311,8 @@ h1, h2, h3, h4, h5 {
 
 .container-services footer {
 	text-align: center; 
-	margin: 95px 0px 15px 0px;
+    margin: 95px 0px 15px 0px;
+    font-size: 1.8rem;
 }
 
 @media (max-width: 800px) {
@@ -400,11 +402,12 @@ h1, h2, h3, h4, h5 {
     .container-margin-all {
         margin-left: 0px;
         margin-right: 0px;
+        
     }
 
     .container-no-nav-margin {
-        margin-left: 11.7%;
-        margin-right: 11.7%;
+        margin-left: 11.3%;
+        margin-right: 11.3%;
     }
 
     .container-home .navigation {
@@ -412,8 +415,15 @@ h1, h2, h3, h4, h5 {
         justify-content: center;
         margin-bottom: 16px;
         border-bottom: 1px solid black;
-        margin-top: 5%;
+        margin-top: 8px;
     }
+
+    .container-home .spv, .fa, .contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
 
     .container-home nav {
         flex-direction: column;
@@ -421,7 +431,7 @@ h1, h2, h3, h4, h5 {
 
 
     .container-home .logo {
-        margin-bottom:8%;
+        margin-bottom:10%;
         width: 80%;
         height: 90%;
     }
@@ -440,7 +450,7 @@ h1, h2, h3, h4, h5 {
         padding: 25px 0px;
     }
 
-    .container-home .spv {
+    .container-home .spv, .product, .vision {
         margin-top: 0px;
     }
 
@@ -452,17 +462,46 @@ h1, h2, h3, h4, h5 {
         margin-right: 0px;
     }
 
+    .container-home .services, .vision., .contact p {
+        margin-top: -10px;
+    }
+
+    .container-home .product {
+        margin-top: -5px;
+    }
+
     .container-home .contact-container {
         margin-top: 0px;
         padding-top: 30px;
+    }
+
+    .container-home .about {
+        margin-top: -5px;
     }
 
     .container-home .header h1 {
         padding-bottom: 5px;
     }
 
+    .container-home .fa {
+        margin-top: 20px;
+    }
+
+    .container-home .fa .about header{
+        padding-bottom: 10px;
+    }
+
+    .container-home .about {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .container-home .fa .features, .about {
+        margin-bottom: 15px;
+        padding-bottom: 3px;
+    }
+
     .container-home .header {
-        padding: 20px 0px 80px 0px;
+        padding: 20px 0px 60px 0px;
     }
 
 }
