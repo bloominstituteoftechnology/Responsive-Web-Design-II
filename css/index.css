@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
   padding: 0;
   box-sizing: border-box;
   font-size: 1.35rem;
-  color: red;
+  color: black;
 }
 
 html {
@@ -279,7 +279,7 @@ footer {
  }
 
  .container-home .navigation-bar nav a {
-  color: red;
+  color: grey;
   font-size: 1.6rem;
   padding: 0px 9.3% 0 1.4%;
  }
@@ -290,7 +290,7 @@ footer {
 
  .container-home .headline {
    margin: 0;
-   padding: 30px 0% 55px 0%;
+   padding: 30px 0% 0px 0%;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
@@ -321,16 +321,13 @@ footer {
  }
 
  .columns-2 {
-   border-top: 2px solid red;
+   border-top: 2px solid black;
    /* margin: 50px -5px 0px 0px;
    padding: 32px 0px 0px 0px; */
    display: flex;
    justify-content: space-between;
-   margin: 0px;
-   padding: 0px;
-   margin-top: 0px;
-   padding: 36px 0 0% 1.4%;
-   border: 1px solid red;
+   margin-top: 55px;
+   padding: 36px 0 0px 1.4%;
  }
 
  .columns-2 h2 {
@@ -444,7 +441,7 @@ footer {
    .container-home .navigation-bar nav a {
      width: 100%;
      margin: 0;
-     padding: 14.5px 0px 14.5px 0px;
+     padding: 14.5px 0 14.5px 0;
      border-top: 1px solid black;
      text-align: center;
      font-size: 2rem;
@@ -455,33 +452,36 @@ footer {
    }
  
    .container-home .headline {
-     margin: 50px 0px 54px 0px;
-     padding: 0;
+     width: 92%;
+     margin: 50px 0 54px 0%;
+     padding: 0px 0 0 7%;
    }
  
    .container-home .headline .h1-and-button {
+     width: 100%;
      margin: 0px;
      padding: 0px;
  
    }
  
    .container-home .headline .h1-and-button h1 {
-     margin: 0px;
-     margin: 0px;
-     padding: 0px;
+     width: 100%;
+     margin: 0;
+     padding: 0;
      line-height: 7.3rem;
    }
  
    .get-started {
-     margin: 20px 18%;
+     width: 100%%;
+     margin: 21px 30% 20px 30%;
      padding: 6px 0;
    }
  
    .columns-2 {
-     width: 100%;
-     border-top: 2px solid red;
-     margin: 0px 0% 0px 4%;
-     padding: 50px 0px 0px 0px;
+     width: 92%;
+     border-top: 2px solid black;
+     margin: 0px 20% 0px 4%;
+     padding: 60px 0 0px 0;
      display: block;
    }
 
@@ -491,61 +491,81 @@ footer {
    }
  
    .columns-2 p {
-     padding: 0;
-     line-height: 1.15rem;
+     margin: 0;
+     padding: 17px 0 44px 0;
+     line-height: 1.85rem;
+   }
+
+   .topic-features {
+    margin: 0;
+    padding: 0;
    }
 
    .topic-about {
-     margin-left: -2px;
-   }
+    margin: 0;
+    padding: 0;
+  }
  
    .middle-img {              
-     width: 95%;
-     margin: 7px 0px 0px 20px;
-     padding: 0px 14px 0px 0px;
+     width: 92%;
+     margin: 5.5px 20% 0px 4%;
+     /* margin: 7px 0px 0px 20px;
+     padding: 0px 14px 0px 0px; */
    }
  
    .columns-3 {
-     margin: 20px 0px 0px 0px;
-     padding: 20px 0px 0px 0px;
-     line-height: 1.15;
-     display: block;
+    width: 92%;
+    border-bottom: 2px solid black;
+    margin: 0px 20% 0px 4%;
+    padding: 26px 0 0px 0;
+    display: block;
    }
+
+   .columns-3 h2 {
+    margin: 0;
+    padding: 0 0 16px 0;
+ }
    
    .columns-3 p {
-     padding-bottom: 60px;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 63px;
    }
 
    .topic-services {
-     margin: -2px 0px 0px 0px;
+      margin: 0;
+      padding: 0;
    }
 
    .topic-product {
-     margin: 2px 0px 0px 0px;
+      margin: 0;
+      padding: 0;
    }
 
-   .topic-vision {
-     margin: -1px 0px 0px -0.5px;
-     padding: 4px 0px 0px 0px;
+   .topic-vision p {
+      margin: 0;
+      padding-bottom: 35px;
    }
  
    .contact {
-     margin: -25px 20px 0px 0px;
-     padding: 0px;
-     border-top: 1px solid black;
+    width: 92%;
+    margin: 0px 0% 0px 3%;
+    padding: 0px 0 0px 0;
+     border: none;
    }
    
    .contact address {
      margin: 0px;
-     padding: 0px 0px;
+     padding: 5px 0px;
+     text-decoration: none;
    }
 
    .contact h2 {
-     padding-top: 35px;
-     margin-left: 0px;
+     margin: 0;
+     padding-top: 34px;
    }
 
    footer {
-     margin-top: 20px;
+     margin-top: 5px;
    }
 } 
