@@ -1,0 +1,535 @@
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  /* list-style: none; */
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+/* IMAGES */
+.middle-img-container {
+  margin-bottom: 50px;
+  background-image: url('../img/mid-page-accent.jpg');
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 18.2rem;
+}
+.services-img {
+  margin-bottom: 2rem;
+}
+/* MAIN */
+.main--index,
+.main--page {
+  width: 95%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+h2,
+p {
+  line-height: 1.4;
+}
+p a,
+p a:visited {
+  color: #8ad4ff;
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+.heading-primary {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 7rem;
+  margin-bottom: 4.1rem;
+}
+.heading-primary--page {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  .heading-primary--page {
+    padding: 1rem;
+  }
+}
+.heading-secondary--page {
+  margin-top: 2rem;
+}
+.paragraph--page {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .paragraph--page {
+    padding: 1rem;
+  }
+}
+/* GRID */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5.68%;
+  /* border: 1px solid red; */
+}
+.row--bottom-content {
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 800px) {
+  .row:first-of-type {
+    margin-bottom: 0.8rem;
+  }
+}
+.row .col-50 {
+  width: 50%;
+  /* border: 1px solid #000; */
+}
+.row .col-33 {
+  width: 33.3%;
+  /* border: 1px solid #000; */
+}
+.row .col-50,
+.row .col-33 {
+  padding: 1.14%;
+}
+@media (max-width: 500px) {
+  .row .col-50,
+  .row .col-33 {
+    width: 100%;
+  }
+}
+/* NAVIGATION */
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  height: 9.5rem;
+  margin-bottom: 20px;
+  background: #cbecff;
+  position: fixed;
+  z-index: 1000;
+  /* border: 3px solid #000; */
+}
+@media (max-width: 800px) {
+  .nav {
+    height: 18rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav {
+    position: relative;
+    height: auto;
+  }
+}
+.nav__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid orange; */
+}
+@media (max-width: 800px) {
+  .nav__container {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .nav__container {
+    padding: 3rem 0 0;
+  }
+}
+.nav__links {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .nav__links {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  .nav__links {
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+.nav__logo {
+  margin-left: auto;
+}
+@media (max-width: 800px) {
+  .nav__logo {
+    margin-left: 0;
+    order: -1;
+  }
+}
+.nav__link,
+.nav__link:visited {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  transition: all 300ms;
+}
+@media (max-width: 800px) {
+  .nav__link,
+  .nav__link:visited {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav__link,
+  .nav__link:visited {
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid #000;
+  }
+}
+.nav__link:hover {
+  color: #999;
+  /* border-bottom: 1px solid #999; */
+  /* backface-visibility: hidden; */
+}
+@media (max-width: 500px) {
+  .nav__link:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
+/* HEADER */
+.header {
+  padding: 12rem 0 7rem;
+  border-bottom: 1px solid #000;
+}
+@media (max-width: 500px) {
+  .header {
+    padding: 4rem 0 5rem;
+  }
+}
+.header__row {
+  margin-bottom: 2rem;
+}
+@media (max-width: 800px) {
+  .header__row {
+    padding: 18.8rem 0 6.7rem;
+  }
+}
+@media (max-width: 500px) {
+  .header__row {
+    padding: 4rem 0 5rem;
+  }
+}
+.header__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  animation: fromleft 500ms ease-in-out;
+}
+@media (max-width: 800px) {
+  .header__cta {
+    width: 35%;
+    animation: none;
+    align-items: center;
+  }
+}
+.header__image-container {
+  text-align: center;
+  animation: fromright 500ms ease-in-out;
+}
+.header--page {
+  padding-top: 10rem;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+@media (max-width: 800px) {
+  .header--page {
+    padding-top: 18rem;
+  }
+}
+@media (max-width: 500px) {
+  .header--page {
+    padding-top: 0;
+  }
+}
+.row .header__col-50 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .row .header__col-50 {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .row .header__col-50:nth-child(2) {
+    display: none;
+  }
+}
+/* CONTACT */
+.contact {
+  font-size: 1.6rem;
+  flex-direction: column;
+}
+.contact a,
+.contact a:visited {
+  color: #000;
+  text-decoration: none;
+  transition: all 300ms;
+}
+.contact a:hover {
+  color: #ccc;
+}
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 2rem;
+}
+.page--services .row:first-of-type {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 800px) {
+  .page--services .header {
+    padding-bottom: 3rem;
+    padding-top: 18rem;
+  }
+}
+@media (max-width: 500px) {
+  .page--services .header {
+    padding-bottom: 3rem;
+    padding-top: 0;
+  }
+}
+.page--services .row {
+  justify-content: space-between;
+}
+.page--services .col-50 {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .page--services .col-50 {
+    width: 100%;
+  }
+}
+.page--services .services-bottom-img {
+  width: 100%;
+}
+.page--services .list {
+  margin-top: 2rem;
+  padding-left: 5.27%;
+}
+.page--services .list .list__item {
+  margin-bottom: 1rem;
+}
+.card {
+  background-color: #f4f3f4;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+  border: 1px solid black;
+}
+.card__paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.btn--cta {
+  border: 1px solid black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: all 200ms;
+  width: 60%;
+}
+.btn--cta:hover {
+  color: #000;
+  background: #dcf2fd;
+}
+@media (max-width: 800px) {
+  .btn--cta {
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+  }
+}
+.btn--card,
+.btn--product {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.btn--card:hover,
+.btn--product:hover {
+  background-color: #cbecff;
+}

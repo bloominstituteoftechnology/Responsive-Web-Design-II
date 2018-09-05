@@ -1,0 +1,48 @@
+.page {
+  &--services {
+    .row:first-of-type {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid black;
+
+      // @media (max-width: 800px) {
+      //   margin-top: 5rem;
+      // }
+    }
+
+    .header {
+      @media (max-width: 800px) {
+        padding-bottom: 3rem;
+        padding-top: 18rem;
+      }
+
+      @media (max-width: 500px) {
+        padding-bottom: 3rem;
+        padding-top: 0;
+      }
+    }
+
+    .row {
+      justify-content: space-between;
+    }
+
+    .col-50 {
+      width: 48%;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+
+    .services-bottom-img {
+      width: 100%;
+    }
+
+    .list {
+      margin-top: 2rem;
+      padding-left: 5.27%;
+    }
+
+    .list .list__item {
+      margin-bottom: 1rem;
+    }
+  }
+}

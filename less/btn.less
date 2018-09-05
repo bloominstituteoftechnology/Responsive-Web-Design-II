@@ -1,0 +1,38 @@
+.btn {
+  &--cta {
+    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 200ms;
+    width: 60%;
+
+    &:hover {
+      color: #000;
+      background: #dcf2fd;
+    }
+
+    @media (max-width: 800px) {
+      // font-size: 1.8rem;
+      padding: 0.5rem 1.5rem;
+      width: 100%;
+    }
+  }
+
+  &--card,
+  &--product {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+
+  &--card:hover,
+  &--product:hover {
+    background-color: #cbecff;
+  }
+}

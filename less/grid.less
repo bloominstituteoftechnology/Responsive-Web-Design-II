@@ -1,0 +1,38 @@
+/* GRID */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5.68%;
+  /* border: 1px solid red; */
+
+  &--bottom-content {
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+  }
+
+  &:first-of-type {
+    @media (max-width: 800px) {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .col-50 {
+    width: 50%;
+    /* border: 1px solid #000; */
+  }
+
+  .col-33 {
+    width: 33.3%;
+    /* border: 1px solid #000; */
+  }
+
+  .col-50,
+  .col-33 {
+    padding: 1.14%;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+}
