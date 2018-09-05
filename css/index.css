@@ -1,1 +1,674 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* container div */
+.container {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+	
+}
+
+/* //// CONTAINER MQ //// */
+
+
+@media (max-width: 800px) {
+    
+    .container {
+        max-width: 800px; 
+        width: 100%;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .container {
+        max-width: 500px;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+}
+
+/* /////  generic ///// */
+
+
+p {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+/* ///// nav bar ///// */
+
+header {
+    
+    display: flex;
+    margin: auto 10%;
+}
+
+.navigation {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo {
+    margin-left: 30%;
+    
+}
+.navigation a {
+	
+	text-decoration: none;
+    color: grey;
+    font-size: 1.6rem;
+}
+
+.navigation a:hover {
+ text-decoration: underline;
+}
+
+/* //// Navigation Media Query Section //// */
+
+@media (max-width: 800px) {
+    
+    header {
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 28px;
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    header .logo {
+        padding-right: 19px;
+        padding-bottom: 1px;
+        width: 100%;
+        margin-left: 10%;
+        margin-top: 30px;
+
+    }
+
+    header .navigation a {
+        margin: 38px 5% 5px 2%;
+        justify-content: space-evenly;
+
+    }
+}
+
+@media (max-width: 500px) {
+
+    header {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    header .logo {
+        padding-right: 10%;
+        padding: 0;
+        margin-left: 5%;
+        margin-top: 20px;
+    
+    }
+
+    header .navigation {
+        border-top: 1px solid grey;
+        flex-direction: column;
+        margin-top: 15px;
+
+    }
+
+    header .navigation a {
+        
+        border-bottom: 1px solid grey;
+        margin: 0px 0px;
+        font-size: 2rem;
+        padding: 22px 0% 19px 2%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+
+/* //// Header Section //// */
+
+.IOD {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid grey;
+}
+
+.IOD h6 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	font-size: 8rem;
+	text-align: center;
+}
+
+.IOD button {
+	border: 1px solid black;
+	background: white;
+	margin-top: 6px;
+	margin-left: 100px;
+	padding: 8px 10px;
+	width: 120px;
+}
+
+.IOD button:hover {
+	background: black;
+	color: white;
+}
+
+
+.IOD .header-img {
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: top;
+	width: 300px;
+}
+
+
+/* //// IOD MQ SECTION (Get STARTED BANNER) //// */
+
+
+@media (max-width: 800px) {
+
+
+    .IOD {
+        border-bottom: 2px solid black;
+        margin-bottom: 23px;
+        margin-top: 56px;
+        width: 100%;
+    }
+
+    .IOD .header-img {
+         display: none;
+ }
+ 
+     .IOD h6 {
+         font-size: 7.1rem;
+         padding-top: 10px;
+         margin-bottom: 10px;
+         padding-left: 5%;
+
+     }
+      
+     .IOD h6 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+         /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+
+          }
+          
+          /* The typing effect */
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+          
+        
+    .IOD button {
+        border: 1px solid black;
+        padding: 2% 3% 2% 0%;
+        font-size: 1.6rem;
+        width: 43%;
+        margin-bottom: 25px;
+        margin-top: 18px;
+        margin-right: 0%;
+    }
+ 
+ }
+
+ @media (max-width: 500px) {
+     
+    .IOD {
+        margin-top: 34px;
+    }
+
+    .IOD h6 {
+        overflow: hidden;
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: .15em; 
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+
+          }
+          
+          /* The typing effect */
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+          
+
+
+ }
+
+/* ///// CONTENT SECTION 1 ///// */
+
+
+.cont1 {
+	padding: 0 10px;
+    display: flex;
+    font-size: 1.6rem;
+
+	
+}
+
+.text-content {
+ flex-direction: column;
+ margin: 10px;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+
+/* //// CONTENT SECTION 1 MQ //// */
+
+@media (max-width: 800px) {
+
+.cont1 {
+    
+    margin-bottom: 9px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 0px;
+    word-spacing: 2px;
+}
+
+
+.text-content1 {
+    
+    padding-left: 1%;
+    margin: 1% 1% 0px 3%;
+}
+
+
+.text-content2 {
+    
+    padding-left: 1%;
+}
+
+.text-content p {
+    padding-top: 1px;
+}
+
+
+}
+
+
+@media (max-width: 500px) {
+
+    .cont1 {
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+    
+    .text-content {
+        padding: 0px;
+    }
+
+    .text-content1 {
+        padding-left: 1%;
+        padding-top: 21px;
+    }
+
+    .text-content1 h1 {
+        padding-bottom: 2px;
+    }
+
+   .cont1 .text-content2 {
+        padding-top: 27px;
+        padding-left: 4.3%;
+        margin: 0px;
+    }
+
+    .cont1 .text-content2 h1 {
+        padding-bottom: 2px;
+    }
+}
+
+
+
+
+/* //// middle image //// */
+
+.middle-img {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/* //// middle image MQ //// */
+
+@media (max-width: 800px) {
+
+.middle-img {
+    width: 99.8%;
+    margin-bottom: 5px;
+    padding-left: 1.2%;
+    margin-top: -2px;
+}
+
+}
+
+
+@media (max-width: 500px) {
+
+    .middle-img {
+        padding-top: 15px;
+        width: 99.3%;
+        padding-left: 2%;
+    }
+}
+
+
+/* //// CONTENT SECTION 2 //// */
+
+
+.cont2 {
+	display: flex;
+	padding: 0 10px;
+	border-bottom: 1px solid grey;
+	padding-bottom: 50px;
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+}
+
+.text-content2 {
+	flex-direction: column;
+	margin: 10px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+/* //// CONTENT SECTION 2 MQ //// */
+
+@media (max-width: 800px) {
+
+    .cont2 {
+        display: flex;
+        padding-bottom: 29px;
+        margin-bottom: 33px;
+        border-bottom: 2px solid black;
+        font-weight: bold;
+        line-height: 1.1;
+        padding: 1%;
+        word-spacing: 3px;
+    }
+
+    .text-content2 .infobox1 {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-left: 1%;
+        margin-bottom: 12px;
+        
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    .cont2 {
+        flex-wrap: wrap;
+        border-bottom: 2px solid grey;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cont2 .text-content2 {
+        margin-bottom: 16px;
+        padding-left: 1%;
+        padding-top: 4px;
+    }
+
+    .cont2 .text-content2 .infobox1 {
+        padding-top: 23px;
+        padding-left: 0px;
+    }
+
+    .cont2 .text-content2 .infobox2 {
+        padding-top: 13px;
+        margin-bottom: 8px;
+    }
+
+
+}
+
+    
+
+
+
+/* //// CONTACT SECTION //// */
+
+.contact {
+	margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.6rem;
+	
+}
+
+footer {
+	text-align: center;
+    padding-bottom: 50px;
+    font-size: 1.6rem;
+}
+
+/* //// CONTACT SECTION 2 MQ //// */
+
+@media (max-width: 800px) {
+
+    .contact {
+        margin-top: 10px;
+        padding-left: 4%;
+    }
+
+    .container footer {
+        margin-top: 38px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact {
+        padding-top: 24px;
+        padding-left: 4%;
+    }
+
+    footer {
+        text-align: center;
+        padding-bottom: 50px;
+        padding-left: 4%;
+    }
+
+}
+
+
+
+
+
+/* //// SERVICES PAGE ONLY //// */
+
+
+.services {
+	width: 880px;
+}
+
+.services .services-header-img {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+/* //// HEADER SECTION //// */
+
+
+.services .serv-header {
+	padding-bottom: 50px;
+	border-bottom: 1px solid black;
+}
+.services .serv-header h1 {
+	font-size: 20px;
+}
+
+
+/* //// SERVICES CONTENT SECTION //// */
+
+
+.services .serv-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	padding-bottom: 30px;
+	padding-top: 30px;
+
+}
+
+.services .serv-design1 {
+	background: #f4f7fc;
+	width: 415px;
+	margin: 20px 0px 20px 0px;
+	padding: 25px;
+	border: 1px solid black;
+}
+
+
+.serv-content button {
+	border: 1px solid black;
+	padding: 5px 20px;
+	background: white;
+	border-radius: 5%;
+	margin-top: 10px;
+}
+
+.serv-content button:hover {
+	border: 1px solid black;
+	padding: 5px 20px;
+	background: black;
+	color: white;
+	border-radius: 5%;
+}
+
+
+/* //// SERVICES - FACT //// */
+
+
+.serv-facts {
+	display: flex;
+	border-top: 1px solid black;
+	padding-top: 50px;
+	
+}
+
+.serv-facts .facts-design {
+	display: flex;
+	flex-direction: column;
+	width: 1191px;
+	margin-right: 48px;
+}
+
+.serv-facts .services-info-img {
+	width: 1200px;
+}
+
+.serv-facts .facts-design ul li {
+	list-style-type: square;
+	margin: 20px;
+}
+
+footer {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
