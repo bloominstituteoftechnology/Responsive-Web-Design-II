@@ -154,14 +154,14 @@ p, a, button{
 
 /*** MAIN CSS ***/
 .content-container{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
 	max-width: 880px;
 	margin: 0 auto;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	align-content: center;
 }
 
@@ -175,23 +175,20 @@ p, a, button{
 }
 
 .top-content{
-	margin: 70px 0;
+	margin: 30px 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
 .top-item{
-	width:470px;
+	width: 48.8%;
 	padding: 0;
 }
 
-.top-item-left{
-	margin-right: 20px;
-}
 
 .middle-img{
-	width: 1000px;
+	width: 100%;
 	align-items: center;
 }
 
@@ -203,14 +200,11 @@ p, a, button{
 }
 
 .bottom-item{
-	width: 300px;
+	width: 31.5%;
 }
-
-
 
 /*** Contact ***/
 .contact{
-    border: 1px solid purple;
     width: 100%;
 	max-width: 880px;
 	margin: 50px  auto;
@@ -220,28 +214,28 @@ p, a, button{
 }
 
 .contact h2{
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 .contact address{
-	width: 200px;
-	margin: 30px 0;
-	font-size: 20px;
+	width: 22.7%;
+	margin: 20px 0;
+	font-size: 2rem;
 	line-height: 1.5;
 }
 
 .contact p{
 	margin: 25px 0;
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 /** Footer ***/
 footer{
-    border: 1px solid burlywood;
     width: 100%;
-	max-width: 880px;
+    max-width: 880px;
+    font-size: 1.9em;
 	margin: 100px auto 0 auto;
-	padding: 50px;
+	padding: 50px 5%;
 	text-align: center;
 }
 
