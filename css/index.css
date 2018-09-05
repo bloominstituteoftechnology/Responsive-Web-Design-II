@@ -809,6 +809,7 @@ h2 {
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0 auto;
+        transition: right 1s;
         
     }
     
@@ -893,17 +894,31 @@ h2 {
        padding: 5px;
        }
        
-       .demand-text-container .demand-text {
-           display: flex;
-           
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           height: 100%;
-           width: 100%;
-           font-size: 80px;
-           padding-right: 0px;
+
+       @keyframes heading {
+           0% {position: relative;top: -50px}
+           100% {position: relative ;top: 000px}
        }
+
+       @keyframes btn {
+        0% {position: relative ;border-radius: 18px; background-color: blue;bottom: -100px}
+        100% {position: relative ;transform: rotateX(360deg);border-radius: 0px;background-color:white;bottom: 000px}
+       }
+
+       .demand-text-container .demand-text {
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        font-size: 80px;
+        padding-right: 0px;
+        animation: heading;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
        
        .snippet-image-container {
            display: none;
@@ -928,6 +943,9 @@ h2 {
            
            margin-top: 35px;
            box-shadow: 0 0 3px black;
+           animation: btn;
+           animation-duration: 3s;
+           animation-fill-mode: forwards;
        }
        
        button:hover {
