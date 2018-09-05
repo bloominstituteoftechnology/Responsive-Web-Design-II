@@ -209,9 +209,6 @@ footer {
   }
   
   /* tablet nav display */
-  .multi-column {
-
-  }
   nav {
     height: 100%;
     flex-direction: column;
@@ -243,25 +240,25 @@ footer {
   /* home page tablet styles */
   .home-content {
     width: 95%;
-    margin-top: 50px;
+    margin-top: 5rem;
   }
   .home-card-wrappers {
     padding-left: 1rem;
-    padding-bottom: 1.rem;
   }
 
   /* tablet styles for the contact section */
   .contact {
-    padding-left: 20px;
+      padding-top: 1rem;
+    padding-left: 3rem;
   }
 
   /* footer tablet styling */
   footer {
-    padding-left: 15px;
+    padding-left: 0;
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   /* mobile nav display */
   nav {
     height: 100%;
