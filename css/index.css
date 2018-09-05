@@ -62,9 +62,20 @@ h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
-    text-size: 1rem;
+    text-size: 1.6rem;
 }
 
+div {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 div.container {
@@ -151,7 +162,11 @@ section.info {
 }
 
 .blerb h3 {
-  font-size: 2rem;
+  font-size: 5rem;
+}
+
+.blerb p {
+  font-size: 1rem;
 }
 
 .info-top {
@@ -171,7 +186,6 @@ section.info {
 .info-bottom .blerbs {
 	max-width: 33%;
 }
-
 
 .middle-img {
 	display: block;
