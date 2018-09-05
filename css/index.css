@@ -265,6 +265,7 @@ footer {
     margin-top: 20px;
   }
   .nav-menu a {
+      width: 100%;
     padding-top: 0;
     padding-left: 0;
   }
@@ -273,10 +274,10 @@ footer {
     padding-bottom: 5px;
   }
   .nav-logo .logo {
-    padding-right: 25px;
-    padding-bottom: 15px; 
+    /* padding-right: 25px; */
+    /* padding-bottom: 15px;  */
   }
-  .nav-menu {
+  nav .nav-menu {
     flex-direction: column;
   }
   .nav-menu a {
