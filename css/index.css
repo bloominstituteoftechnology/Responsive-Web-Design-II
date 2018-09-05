@@ -252,7 +252,7 @@ footer address {
 
 @media (max-width: 800px) {
   div.container {
-    width: 760px;
+    width: 100%;
   }
 
   header {
