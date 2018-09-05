@@ -1,1 +1,809 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*** UNIVERSAL CSS ****/
+
+/*** NAV BAR ***/
+.navigation {
+	position: fixed;
+	top: 0;
+    width: 100%;
+    padding: 25px;
+    font-size: 1.9rem;
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px .2px 10px #aaa;
+	z-index: 9999;
+}
+
+.navigation a{
+	margin: 0 2%;
+	text-decoration: none;
+	color: #999;
+}
+
+.navigation a:hover{
+	color: #428bca;
+}
+
+.navigation .logo{
+	margin-left: 0px;	
+}
+
+/**************** INDEX PAGE CSS *********************/
+p, a, button{
+	font-family: 'Raleway', sans-serif;
+}
+
+/*** HEADER CSS ***/
+.header{
+    margin: 150px auto 100px auto;
+    width: 100%;
+	max-width: 880px; 
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.header .cta{ 
+    width: 100%; /*400px*/
+    max-width: 400px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	align-content: center;
+	align-items: center;
+}
+
+.header .cta h1{
+	width: 75%;/*300px*/
+	font-size: 9rem;
+	align-items: center;
+}
+
+.header button{
+	width: 62.5%;
+	margin-top: 10%;
+	padding: 2% 10%;
+	font-size: 2rem;
+	border: 2px solid black;
+	align-items: center;
+}
+
+.header button:hover{
+	background-color: #428bca;
+	color: #fff;
+}
+
+.header img{
+	margin-left: 10%;
+	width: 40%; /*500px*/
+	align-self: center;
+}
+
+
+/*** MAIN CSS ***/
+.content-container{
+    /* border: 1px solid green; */
+    width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+}
+
+.content-container h2{
+	font-size: 3rem;
+}
+
+.content-container p{
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+
+.top-content{
+	margin: 30px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.top-item{
+	width: 48.8%;
+	padding: 0;
+}
+
+
+.middle-img{
+	width: 100%;
+	align-items: center;
+}
+
+.bottom-content{
+	margin: 70px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.bottom-item{
+	width: 31.5%;
+}
+
+/*** Contact ***/
+.contact{
+    width: 100%;
+	max-width: 880px;
+	margin: 50px  auto;
+	display:flex;
+	flex-direction: column;
+	align-content: flex-start ;
+}
+
+.contact h2{
+	font-size: 3rem;
+}
+
+.contact address{
+	width: 22.7%;
+	margin: 20px 0;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+.contact p{
+	margin: 25px 0;
+	font-size: 2rem;
+}
+
+/** Footer ***/
+footer{
+    width: 100%;
+    max-width: 880px;
+    font-size: 1.9em;
+	margin: 100px auto 0 auto;
+	padding: 50px 5%;
+	text-align: center;
+}
+
+/************SERVICES PAGE CSS BEGINS ************/
+
+
+/*** Services CTA HEADER ***/
+.services-header{
+	margin: 90px auto 50px auto;
+    width: 100%;
+    max-width: 880px;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.services-header .services-header-img{
+    width: 100%;
+    max-width: 880px;;
+	align-self: center;
+}
+
+.services-header h2{
+	margin-top: 50px ;
+	font-size: 2.5rem;
+}
+.services-header p{
+	padding: 0;
+	font-size: 1.9rem;
+	line-height: 1.5;
+}
+
+
+/*** SERVICES CONTENT ***/
+.services-container{
+    width: 100%;
+    max-width: 880px;
+	margin: 0 auto;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.services-content{
+	width: 49%;
+	padding: 3%;
+	margin: 20px 0;
+	border: 1px solid black;
+	background-color: #eee;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+}
+
+.services-content h2{
+	margin: 25px 0;
+	font-size:2.5rem;
+}
+.services-content p {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	line-height: 1.8;
+}
+
+.services-content button{
+	width: 50%;
+	margin: 20px 0;
+	padding: 2% 10%;
+	font-size: 1.5rem;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.services-content button:hover{
+	background-color: #5cb85c;
+	color: #fff;
+}
+
+/******** SERVICE INFO CSS ******/
+
+.services-info{
+    width: 100%;
+	max-width: 880px;
+	margin: 40px auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.services-facts{
+	width: 48%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: flex-start;
+}
+
+.services-facts h2{
+	font-size: 2.5rem;
+}
+
+.services-facts p{
+	margin-bottom: 20px;
+	font-size: 1.6rem;
+	line-height: 1.4;
+}
+
+.services-facts ul{
+    margin-left: 5%;
+    font-size: 1.7rem;
+	list-style: square;
+	line-height: 1.5;
+}
+
+.services-info-img{
+	width: 48%;
+}
+
+/****************FEATURES CSS ************/
+
+/*** Featuress CTA HEADER ***/
+.features-header{
+	margin: 80px auto 50px auto;
+	width: 1000px; 
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	border-bottom: 1px solid black;
+}
+
+.features-header .features-header-img{
+	width: 1000px;
+	height: 300px;
+	align-self: center;
+}
+
+.features-header h2{
+	margin-top: 50px ;
+	font-size: 40px;
+}
+.features-header p{
+	margin-bottom: 50px;
+	padding: 0;
+	font-size: 19px;
+	line-height: 1.5;
+}
+
+.features-container{
+	width: 1000px;
+	margin: 50px auto;
+	/* border-top: 1px solid black;
+	border-bottom: 1px solid black; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.feature-content{
+	width: 300px;
+	margin: 25px 0;
+	padding: 20px;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: center;
+	align-items: center;
+	background-color:#eee;
+	border: 0px solid #333;
+	border-radius: 10px;
+}
+
+.feature-content h2{
+	margin: 30px 0;
+	font-family: 'Righteous', cursive; 
+	font-size: 35px;
+}
+
+.feature-content p{
+	width: 230px;
+	font-size: 15px;
+	line-height: 1.7;
+	padding: 0;
+	align-self: center;
+	text-align: center;
+}
+
+.feature-content button{
+	margin: 25px 0;
+	width: 230px;
+	padding: 10px;
+	font-size: 20px;
+	background-color: #5cb85c;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+}
+.feature-content button:hover{
+	background-color: #428bca;
+}
+
+.features-img{
+	width: 150px;
+	align-self: center;
+}
+
+
+.feature-cta{
+	width: 1000px;
+	margin: 150px auto 0  auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+}
+
+.feature-cta-img{
+	width: 290px;
+	align-self: flex-start;
+	order: 0;
+}
+
+.feature-cta h2{
+	height: 50px;
+	margin-left: 30px;
+	padding: 0;
+	font-size: 60px;
+	align-self: center;
+}
+
+.feature-cta p{
+ margin-top: 50px;
+ font-size: 20px;
+ line-height: 1.5; 
+}
+
+
+@media(max-width: 880px){
+    .navigation {
+        max-width: 100%;
+        padding: 2%;
+        display: flex;
+        flex-flow: wrap-reverse;
+        justify-content: center;
+    }
+    
+    .navigation a{
+        margin: 0 2.5%;
+    }
+    
+    .navigation a:hover{
+        color: #428bca;
+    }
+    
+    .navigation .logo{
+        margin: 5px 0 20px 0;
+    }
+
+    .header{
+        margin: 150px auto 50px auto;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .header img{
+        display: none;
+    }
+
+    .content-container{
+
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+    
+    .content-container h2{
+        font-size: 2rem;
+    }
+    
+    .content-container p{
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    
+    .top-content{
+        max-width: 100%;
+        margin: 30px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .top-item{
+
+        width: 48%;
+        padding: 0;
+    }
+
+    .middle-img{
+        width: 100%;
+        align-items: center;
+    }
+    
+    
+    .bottom-item{
+        width: 30%;
+    }
+
+    /*** Contact ***/
+    .contact{
+        width: 95%;
+    }
+
+    .contact h2{
+        font-size: 2rem;
+    }
+
+    .contact address{
+        margin: 10px 0;
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .contact p{
+        font-size: 1.6rem;
+    }
+
+    /** Footer ***/
+    footer{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    footer{
+        width: 95%;
+        margin: 0px auto;
+        padding: 2%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    /*** Services CTA HEADER ***/
+    .services-header{
+        margin: 119px auto 50px auto;
+        width: 95%;
+        max-width: 880px;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .services-header .services-header-img{
+        width: 100%;
+        max-width: 880px;;
+        align-self: center;
+    }
+
+    .services-header h2{
+        margin-top: 50px ;
+        font-size: 2.5rem;
+    }
+    .services-header p{
+        padding: 0;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    
+        /*** SERVICES CONTENT ***/
+    .services-container{
+        width: 95%;
+        max-width: 880px;
+    }
+
+    .services-content{
+        width: 48%;
+    }
+
+    /******** SERVICE INFO CSS ******/
+
+    .services-info{
+        width: 95%;
+        max-width: 880px;
+    }
+
+}
+
+@media(max-width: 500px){   
+
+    .navigation {
+        position: absolute;
+        padding: 0px;  
+        box-shadow: 0px 0px 0px;
+        border-bottom: 1px solid #666;
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-items: center;
+	    
+    }
+
+    .navigation a{
+        max-width: 100%;
+        padding: 3% 44%;
+        border-top: 1px solid #666;
+        align-self: center;
+    }
+    
+   
+    .navigation a:hover{
+        background-color: #428bca;
+        color: #fff;
+    }
+    
+    .navigation .logo{
+        margin: 20px 0;
+        order: 0;
+    }
+
+    .header{
+        margin: 400px auto 60px auto;
+        width: 90%; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .cta h1{
+        width: 80%;
+        padding: 5% 5%;
+        font-size: 7.5rem;
+        align-items: center;
+    }
+
+    .header button{
+        width: 100%;
+	    padding: 3%;
+    }
+
+    .content-container{
+
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: flex-start;
+    }
+    
+    .content-container h2{
+        font-size: 2rem;
+    }
+    
+    .content-container p{
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    
+    .top-content{
+        max-width: 100%;
+        margin-bottom: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+    
+    .top-item{
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .middle-img{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .bottom-content{
+        margin: 30px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    
+    .bottom-item{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /*** Contact ***/
+    .contact{
+        width: 90%;
+    }
+
+    .contact h2{
+        font-size: 2rem;
+    }
+
+    .contact address{
+        width: 35%;
+        margin: 10px 0;
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .contact p{
+        margin: 5px 0;
+        font-size: 1.6rem;
+    }
+
+    footer{
+        width: 90%;
+        margin: 0px auto;
+        padding: 5%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    /*** Services CTA HEADER ***/
+    .services-header{
+        margin: 425px auto 50px auto;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .services-header .services-header-img{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .services-header h2{
+        margin-top: 30px ;
+        font-size: 2.3rem;
+    }
+    .services-header p{
+        font-size: 1.6rem;
+    }
+
+
+    /*** SERVICES CONTENT ***/
+    .services-container{
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .services-content{
+        width: 100%;
+        max-width: 500px;
+
+    }
+
+    /******** SERVICE INFO CSS ******/
+
+    .services-info{
+        width: 90%;
+        max-width: 500px;
+        flex-flow: row wrap-reverse;
+        
+    }
+
+    .services-facts{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .services-info-img{
+        width: 100%;
+    }
+
+}
