@@ -174,7 +174,7 @@ header nav {
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 header nav a:hover {
@@ -368,13 +368,13 @@ footer {
     .container header nav a {
         text-decoration: none;
         color: darkgray;
-        padding: 3rem;
-        border-top: 1px solid lightgray;
-        border-bottom: 1px solid lightgray;
+        padding: 2.2rem;
+        border-top: .5px solid darkgray;
+        border-bottom: .5px solid darkgray;
     }
 
     .cta .cta-text{
-        margin-top: 45.125rem;
+        margin-top: 28.125rem;
     }
 
     .main-content .top-content {
