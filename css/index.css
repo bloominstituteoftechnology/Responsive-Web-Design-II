@@ -209,28 +209,32 @@ footer {
   }
   
   /* tablet nav display */
+  .multi-column {
+
+  }
   nav {
     height: 100%;
-    /* margin-top: 35px; */
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
   }
   .nav-menu {
     width: 100%;
   }
   .nav-menu a {
-    /* padding-top: 22px;
-    padding-left: 16px; */
+    padding-top: 4rem;
+    padding-left: 3rem;
   }
   nav .nav-logo {
     width: 100%;
+    display: flex;
+    justify-content: center;
     order: -1;
   }
   
   /* tablet header section */
   .home-page .header-left {
-    margin-top: 90px;
-    margin-right: 55px;
+    margin-top: 5rem;
+    margin-right: 7.5rem;
   }
   .home-page .header-right {
     display: none;
@@ -239,11 +243,11 @@ footer {
   /* home page tablet styles */
   .home-content {
     width: 95%;
-    padding: 35px 0 50px;
     margin-top: 50px;
   }
   .home-card-wrappers {
-    padding-left: 15px;
+    padding-left: 1rem;
+    padding-bottom: 1.rem;
   }
 
   /* tablet styles for the contact section */
