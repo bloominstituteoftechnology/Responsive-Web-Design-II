@@ -1,1 +1,292 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/*== Theme ===================================================================*/
+
+/*-- Global -----------------------------------*/
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 160%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*-- Header -----------------------------------*/
+.main-nav__link{
+	font-size: 1.6rem;
+    color: #bbb;
+    font-weight: bold;
+}
+
+/*-- Splash -----------------------------------*/
+.splash__title {
+	font-size: 7.5rem;
+}
+.button {
+    font-size: 1.8rem;
+	display: inline-block;
+	border: 1px solid black;
+	padding: 0.5rem 4rem;
+	background: white;
+}
+
+/*-- Features ---------------------------------*/
+.features {
+    margin-top: 5rem;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px 0px;
+}
+.features__blurb {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/*== Layout ==================================================================*/
+
+/*-- Global -----------------------------------*/
+
+/*-- Container --------------------------------*/
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.main-nav,
+.splash,
+.main-foot {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/*-- Header -----------------------------------*/
+.main-nav {
+    width: 100%;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.4rem;
+}
+.main-nav__logo {
+    order: 1;
+}
+.main-nav__nav {
+    display: flex;
+	justify-content: space-between;
+}
+
+/*-- Splash -----------------------------------*/
+.splash {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.splash__cta{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.splash__title {
+	text-align: center;
+}
+.splash__word {
+	display: block;
+}
+
+/*-- Main Content -----------------------------*/
+.features {
+    line-height: 1.1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.features__img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*-- Footer -----------------------------------*/
+.main-foot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.main-foot__copyright{
+    display: block;
+    align-self: center;
+    margin: 1rem;
+}
+
+
+/*== Media Queries (Responsive Design) ======================================*/
+
+/*-- Desktop ----------------------------------*/
+.main-nav__nav {
+    width: 68%;
+}
+.features {
+    justify-content: space-between;
+}
+.features__blurb--top {
+    width: 48%;
+}
+.features__blurb--bottom {
+    width: 31%;
+}
+
+/*-- Tablet -----------------------------------*/
+@media only screen and (max-width: 800px) {
+    .container {
+        max-width: 760px;
+    }
+    .main-nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 15rem;
+        justify-content: space-between;
+    }
+    .main-nav__logo{
+        order: -1;
+    }
+    .main-nav__nav {
+        width: 100%;
+    }
+    .splash__img {
+        display: none;
+    }
+    .features {
+        justify-content: space-around;
+    }
+    .features__blurb--top {
+        width: 46%;
+    }
+    .features__blurb--bottom {
+        width: 30%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/*-- Phone ------------------------------------*/
+@media only screen and (max-width: 500px){
+    .container {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    .main-nav {
+        height: unset;
+        padding: unset;
+    }
+    .main-nav__logo {
+        margin: 2rem;
+    }
+    .main-nav__nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav__link {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1.21rem 0;
+    }
+    .main-nav__link:first-child {
+        border-top: 1px solid black;
+    }
+    .container > main {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .features {
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+    }
+    .features__blurb--top,
+    .features__blurb--bottom {
+        width: unset;
+        margin: 1rem 0;
+    }
+}
