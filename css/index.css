@@ -187,6 +187,7 @@ nav {
   align-items: center;
   flex-direction: row;
   width: 100%;
+  margin-right: 5%
 }
 
 .container nav a {
@@ -194,11 +195,7 @@ nav {
   text-decoration: none;
   display: flex;
   justify-content: space-between;
-  padding-right: 70px;
-}
-
-.computer-logo {
-  padding-right: 20px;
+  padding-right: 7%;
 }
 
 .container nav a:hover {
@@ -206,22 +203,23 @@ nav {
 }
 
 header {
-  height: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 35px;
+  margin-bottom: 37px
 }
 
 .headerText {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 100px;
+  margin: 11%;
 }
 
 header h1 {
   font-family: Bangers;
-  font-size: 70px;
+  font-size: 7rem;
   text-align: center;
 }
 
@@ -234,10 +232,9 @@ button {
   width: 170px;
   height: 35px;
   border: 1px solid black;
-  left: 75px;
-  font-size: 15px;
   margin: 0 auto;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 button:hover {
@@ -247,23 +244,42 @@ button:hover {
 
 .topSection {
   border-top: 1px solid black;
-  height: 170px;
-  padding-top: 30px;
+  padding-top: 34px;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+.topSection p {
+  line-height: 2rem;
+}
+
+.middle-img {
+  margin: 20px 0;
+}
+
 .bottomSection {
   border-bottom: 1px solid black;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 17px;
   display: flex;
   justify-content: space-between;
 }
 
+.bottomSection p {
+  line-height: 2rem;
+}
+
+.bottomSection .product {
+  margin: 0 1%;
+}
+
 address {
   padding-top: 30px;
+}
+
+address h2 {
+  margin-bottom: 10px;
 }
 
 footer {
@@ -273,7 +289,6 @@ footer {
 }
 
 /* CSS for services.html  */
-
 .services-header-img {
   margin: 20px 0;
 }
@@ -331,8 +346,6 @@ footer {
 }
 
 /* css for contact page */
-
-
 form {
   display: flex;
   justify-content: center;
@@ -395,11 +408,16 @@ form {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 80;
+    margin-top: 20px;
   }
 
   header .headerText {
     margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  header button {
+    margin-top: 12px
   }
 
   header img {
@@ -421,15 +439,18 @@ form {
   .middle-img {
     width: 92%;
     height: 92%;
+    margin-top: 40px;
+    margin-bottom: 17px;
   }
 
   .bottomSection {
     margin: 0 4%;
+    padding-bottom: 42px;
   }
-}
 
-address {
-  margin: 0 4%;
+  address {
+    margin: 0 4%;
+  }
 }
 
 /* phone */
@@ -443,6 +464,8 @@ address {
     text-align: center;
     flex-direction: column-reverse;
     width: 100%;
+    margin-top: 15px;
+    margin-left: 0;
   }
 
   #border {
@@ -458,8 +481,20 @@ address {
     /* border: 2px solid red; */
   }
 
-  .headerText {
-    margin: 0;
+  header {
+    margin-top: 20px;
+  }
+
+  header .headerText {
+    margin-top: 12px;
+  }
+
+  .features {
+    margin-top: 22px;
+  }
+
+  .about {
+    margin-top: 20px;
   }
 
   .link-container {
@@ -484,7 +519,8 @@ address {
   .middle-img {
     display: flex;
     width: 93%;
-    /* justify-content: center; */
+    margin-top: 25px;
+    margin-bottom: 5px;
   }
 
   .bottomSection {
@@ -493,6 +529,19 @@ address {
     margin: 0 4%;
     flex-grow: 1;
     width: 90%;
+    padding-bottom: 10px;
+  }
+
+  .bottomSection .services {
+    margin-top: 5px;
+  }
+
+  .bottomSection .product {
+    margin-top: 36px;
+  }
+
+  .bottomSection .vision {
+    margin-top: 37px;
   }
 
   .bottomSection p {
@@ -503,6 +552,15 @@ address {
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin: 0 4%;
+    margin-top: 5px;
+  }
+
+  address p {
+    margin-top: 5px;
+  }
+
+  footer {
+    margin-top: 8px;
+    ;
   }
 }
