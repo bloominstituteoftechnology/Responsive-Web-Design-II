@@ -55,27 +55,29 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+    text-size: 1rem;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 div.container {
-	max-width: 876px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
 header {
-	padding: 10px 0px 20px 0;
+	padding: 10px 0% 20px 0%;
 	width: 100%;
 	background-color: white;
   align-items: center;
-  margin: 19px 0px;
+  margin: 19px 0%;
   display: flex;
   justify-content: space-between;
 	/* position: fixed; */
@@ -90,8 +92,8 @@ header nav {
 
 header nav a {
 	color: lightgrey;
-	/* margin: 0px 55px 0px 4px; */
-	text-decoration: none;
+  text-decoration: none;
+  font-size: 1.6rem;
 }
 
 .logo {
@@ -99,14 +101,16 @@ header nav a {
 }
 
 .jumbotron {
-	padding: 29px;
-	display: flex;
+	padding: 29px 0 29px 4%;
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .jumbotron .heading {
-	vertical-align: top;
+	/* vertical-align: top; */
 	text-align: center;
-	padding: 55px 84px 100px 98px;
+	padding: 55px 0% 100px 0%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -114,23 +118,26 @@ header nav a {
 }
 
 .jumbotron .heading h1 {
-	font-size: 71px;
+	font-size: 7.2rem;
 }
 
 .jumbotron img {
   height: 379px;
-  width: 379px;
+  margin-left: 10%;
+  max-width: 100%;
 }
 
 .jumbotron .get-started {
   border: 1px solid black;
-  margin-top: 11px;
-  padding: 7px 45px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  padding: 7px 22%;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 2rem;
 }
+
 section.info {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -141,6 +148,10 @@ section.info {
 	text-align: left;
   padding: 20px 0;
   line-height: 1.15;
+}
+
+.blerb h3 {
+  font-size: 2rem;
 }
 
 .info-top {
@@ -165,7 +176,7 @@ section.info {
 .middle-img {
 	display: block;
 	margin: 9px auto;
-	max-width: 876px;
+	width: 100%;
 }
 
 footer {
@@ -193,7 +204,7 @@ footer address {
 	width: 876px;
 }
 
-.card-container {
+/* .card-container {
 	margin: 20px 0px;
 	display: flex;
 	flex-wrap: wrap;
@@ -206,7 +217,7 @@ footer address {
 	padding: 20px 30px 20px 20px;
 	margin: 20px 0px;
 	width: 418px;
-}
+} */
 
 .learn-more {
 	border: 1px solid black;
@@ -219,7 +230,7 @@ footer address {
 	margin-top: -20px;
 }
 
-.fact-list {
+/* .fact-list {
 	list-style-type: square;
 	padding: 20px 0px 0px 17px;
 }
@@ -227,7 +238,7 @@ footer address {
 .fact-list li {
 	line-height: 1.5em;
 	padding-left: 20px;
-}
+} */
 
 .services-info-img {
 	width: 50%;
