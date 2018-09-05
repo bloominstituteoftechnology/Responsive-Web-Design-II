@@ -80,12 +80,17 @@ html {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px 0 50px 0;
+    margin: 2.3% 0 5.7%;
     
+}
+.container .wrapper nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 nav a {
-    padding: 0 20px;
+    padding: 0 5.45%;
 
 }
 
@@ -100,32 +105,32 @@ nav a:link {
 }
 
 .ttb h1 {
-    font-size: 5em;
+    font-size: 8rem;
     text-align: center;
 }
 
 .ttb button {
-  width: 150px;
-  height: 35px; 
-  border: 2px solid black;
-  font-size: 14px; 
-  margin-bottom: 20px;
+  width: 40%;
+  height: 10%; 
+  border: 0.2% solid black;
+  font-size: 1.4rem; 
+  margin-bottom: 5%;
   
 }
 
 .top-content {
     display: flex;
-    border-top: 2px solid black;
+    border-top: 0.2% solid black;
 }
 
 .bottom-content {
     display: flex;
-    border-bottom: 2px solid black;
+    border-bottom: 0.2% solid black;
 }
 
 .text-content {
-    padding: 40px 20px;
-    margin: 0 20px;
+    padding: 4.5% 2.25%;
+    margin: 0 2.25%;
 }
 
 .imgg {
@@ -140,7 +145,7 @@ nav a:link {
 
 footer p {
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 /*Media Queries*/
@@ -148,16 +153,18 @@ footer p {
 @media screen and (max-width: 800px) {
     .wrapper {
         flex-flow: column-reverse nowrap;
+        align-items: center;
     
         
     }
 
     nav {
-        margin: 30px 0;
+        margin: 5% 5%;
+        width: 100%;
     }
 
     nav a {
-        padding: 0 10px;
+        padding: 0 5%;
     }
 
     .lg-header-img {
@@ -169,19 +176,19 @@ footer p {
     nav {
         display: flex;
         flex-direction: column;
-        height: 400px;
+        height: 45.5%;
         width: 100%;
         justify-content: space-between;
         align-items: center;
     }
 
     nav a:first-child {
-        border-top: 1px solid gray;
+        border-top: 0.01% solid gray;
     }
 
     nav a {
-        border-bottom: 1px solid gray;
-        padding: 20px 0;
+        border-bottom: 0.01% solid gray;
+        padding: 3.8% 0;
         width: 100%;
         text-align: center;
     }
