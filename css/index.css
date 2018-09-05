@@ -224,8 +224,8 @@ header {
   .cta .cta-text {
     display:flex;
     flex-direction: column;
-    margin-left:47px;
-    margin-top:72px;
+    margin-left:6%;
+    margin-top:9%;
   }
 
   .cta .cta-text h1 {
@@ -235,8 +235,8 @@ header {
 
   .cta .cta-text button {
     display:flex;
-    width:185px;
-    margin-left:40px;
+    width:60%;
+    margin-left:5%;
   }
 
   .top-content {
@@ -247,8 +247,8 @@ header {
   }
 
   .middle-img {
-    width:750px;
-    margin-left:25px;
+    width:94%;
+    margin-left:3%;
   }
 
   .bottom-content {
@@ -279,19 +279,19 @@ header {
   .container header nav {
     display:flex;
     flex-direction: column;
-    margin-top:20px;
+    margin-top:4%;
     border-top:solid black 1px;
   }
 
   .container header nav a {
     justify-content:center;
-    padding:20px 0px;
-    font-size:20px;
+    padding:4% 0%;
+    font-size:1.25rem;
     border-bottom:solid black 1px;
   }
 
   header .logo {
-    margin-top:25px;
+    margin-top:5%;
   }
 
 
@@ -300,13 +300,12 @@ header {
     flex-direction: column;
     align-items:center;
     width:100%;
-    margin-left:47px;
-    margin-top:40px;
+    margin-left:9%;
+    margin-top:8%;
   }
 
 
   .top-content {
-    border:solid red 1px;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -316,8 +315,8 @@ header {
   
   .middle-img {
     width:100%;
-    margin-left:20px;
-    margin-top:30px;
+    margin-left:4%;
+    margin-top:6%;
   }
 
   .main-content .bottom-content {
@@ -326,7 +325,7 @@ header {
     justify-content: space-around;
     width:100%;
     height:475px;
-    margin-top:3px;
+    margin-top:1%;
   }
 
 
@@ -339,16 +338,14 @@ header {
 
 
   .contact {
-    border: solid red 1px;
     display:flex;
     justify-content: space-between;
     width:100%;
     height:200px;
-    margin-top:7px;
+    margin-top:1.5%;
   }
 
   .contact p {
-    border: solid blue 1px;
     margin:0px;
   }
 
