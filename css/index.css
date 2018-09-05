@@ -57,6 +57,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -72,9 +73,9 @@ h1, h2, h3, h4, h5 {
 .navigation {
 	position: fixed;
 	top: 0;
-	width: 100%;
-	margin-left: 0px;
-	padding: 25px;
+    width: 100%;
+    padding: 25px;
+    font-size: 1.9rem;
 	background-color: #eee;
 	display: flex;
 	justify-content: center;
@@ -84,7 +85,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navigation a{
-	margin: 0 30px;
+	margin: 0 2%;
 	text-decoration: none;
 	color: #999;
 }
@@ -94,7 +95,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navigation .logo{
-	margin-left: 110px;	
+	margin-left: 0px;	
 }
 
 /**************** INDEX PAGE CSS *********************/
@@ -104,8 +105,8 @@ p, a, button{
 
 /*** HEADER CSS ***/
 .header{
-
-	margin: 150px auto 100px auto;
+    margin: 150px auto 100px auto;
+    width: 100%;
 	max-width: 880px; 
 	height: auto;
 	display: flex;
@@ -114,7 +115,8 @@ p, a, button{
 }
 
 .header .cta{ 
-	width: 400px;
+    width: 100%; /*400px*/
+    max-width: 400px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -124,16 +126,16 @@ p, a, button{
 }
 
 .header .cta h1{
-	width: 350px;
-	font-size: 90px;
+	width: 75%;/*300px*/
+	font-size: 9rem;
 	align-items: center;
 }
 
 .header button{
-	width: 250px;
-	margin-top: 50px;
-	padding: 10px;
-	font-size: 20px;
+	width: 62.5%;
+	margin-top: 10%;
+	padding: 2% 10%;
+	font-size: 2rem;
 	border: 2px solid black;
 	align-items: center;
 }
@@ -144,15 +146,16 @@ p, a, button{
 }
 
 .header img{
-	margin-left: 60px;
-	width: 500px;
+	margin-left: 10%;
+	width: 40%; /*500px*/
 	align-self: center;
 }
 
 
 /*** MAIN CSS ***/
 .content-container{
-
+    border: 1px solid green;
+    width: 100%;
 	max-width: 880px;
 	margin: 0 auto;
 	border-top: 2px solid black;
@@ -163,11 +166,11 @@ p, a, button{
 }
 
 .content-container h2{
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 .content-container p{
-	font-size: 18px;
+	font-size: 1.8rem;
 	line-height: 1.5;
 }
 
@@ -207,6 +210,8 @@ p, a, button{
 
 /*** Contact ***/
 .contact{
+    border: 1px solid purple;
+    width: 100%;
 	max-width: 880px;
 	margin: 50px  auto;
 	display:flex;
@@ -232,6 +237,8 @@ p, a, button{
 
 /** Footer ***/
 footer{
+    border: 1px solid burlywood;
+    width: 100%;
 	max-width: 880px;
 	margin: 100px auto 0 auto;
 	padding: 50px;
