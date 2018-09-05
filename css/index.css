@@ -307,7 +307,7 @@ footer{
 	width: 50%;
 	margin: 20px 0;
 	padding: 2% 10%;
-	font-size: 15px;
+	font-size: 1.5rem;
 	border: 1px solid black;
 	border-radius: 5px;
 }
@@ -580,7 +580,50 @@ footer{
         text-align: center;
         font-size: 1.2rem;
     }
+
+    /*** Services CTA HEADER ***/
+    .services-header{
+        margin: 119px auto 50px auto;
+        width: 95%;
+        max-width: 880px;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .services-header .services-header-img{
+        width: 100%;
+        max-width: 880px;;
+        align-self: center;
+    }
+
+    .services-header h2{
+        margin-top: 50px ;
+        font-size: 2.5rem;
+    }
+    .services-header p{
+        padding: 0;
+        font-size: 1.9rem;
+        line-height: 1.5;
+    }
     
+        /*** SERVICES CONTENT ***/
+    .services-container{
+        width: 95%;
+        max-width: 880px;
+    }
+
+    .services-content{
+        width: 48%;
+    }
+
+    /******** SERVICE INFO CSS ******/
+
+    .services-info{
+        width: 95%;
+        max-width: 880px;
+    }
 
 }
 
