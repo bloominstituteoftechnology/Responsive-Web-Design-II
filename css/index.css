@@ -323,7 +323,7 @@ footer {
 
 @media (max-width:800px) {
     .container {
-        max-width: 800px;
+        /* max-width: 800px; */
         width: 100%;
     }
 
@@ -336,7 +336,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        max-width: 100%;
+        /* max-width: 100%; */
         margin: 35px 5% 0 5%;
     }
 
