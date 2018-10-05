@@ -1,1 +1,60 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* ------ */
+/* BANNER */
+/*------- */
+.banner {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+  .banner_text {
+    width: 49%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 10%;
+  }
+
+    .banner_text h1 {
+      font-size: 5rem;
+      line-height: 50px;
+    }
+
+    .banner_text a {
+      border: 1px solid grey;
+      padding: 5px 30px;
+      text-decoration: none;
+      color: grey;
+      transition: 0.3s;
+    }
+
+    .banner_text a:hover {
+      background-color: grey;
+      color: white;
+    }
+
+  .banner_img {
+    padding: 5% 0;
+    width: 50%;
+    text-align: center;
+  }
+
+    .banner_img img {width: 310px;}
+
+/* ----------- */
+/* SECTION  */
+/*------------ */
+.section{
+  display: flex;
+  justify-content: space-between;
+}
+
+  .s1 {
+    width: 48%;
+    padding: 5% 0px;
+  }
+
+  .middle-img{width: 100%;}
+
+  .s2 {
+    width: 30%;
+    padding: 5% 0px;
+  }
