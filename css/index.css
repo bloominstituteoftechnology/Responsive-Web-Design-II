@@ -226,6 +226,11 @@ Tablet style
 	}
 
 	.main-content img {
-		
+		width: 97.5%;
+		margin: 10px auto;
+	}
+
+	.bottom-content .content-block {
+		margin-bottom: 0;
 	}
 }
