@@ -180,6 +180,10 @@ Tablet style
 */
 
 @media (max-width: 800px) {
+	.container {
+		max-width: 800px;
+	}
+
 	.nav-header {
 		flex-direction: column-reverse;
 		align-items: center;
@@ -232,5 +236,15 @@ Tablet style
 
 	.bottom-content .content-block {
 		margin-bottom: 0;
+	}
+
+	address {
+		margin-bottom: 25px;
+		margin-left: 27.25px;
+	}
+
+	#copyright {
+		margin-top: 0;
+		padding-top: 0;
 	}
 }
