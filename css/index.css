@@ -216,4 +216,16 @@ Tablet style
 		display: none;
 	}
 
+	.main-content {
+		width: 98%;
+		margin: 70px auto 38px auto;
+	}
+
+	.content-block {
+		padding-left: 3.35%;
+	}
+
+	.main-content img {
+		
+	}
 }
