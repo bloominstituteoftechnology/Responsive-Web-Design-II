@@ -411,11 +411,13 @@ input[type=submit]:hover {
     
     .cta {
         display: flex;
-        flex-direction: row;
+
+        flex-direction: column;
         margin-top: 72px;
         justify-content: space-around;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0
+        /* margin: 0 0 0 0; */
+        padding: 0 28.5% 0 0;
+        width: 100%;
     }
     .cta .ctaimage {
         margin-left: 9%;
@@ -424,19 +426,22 @@ input[type=submit]:hover {
     }
     
     .cta .cta-text {
+        display: flex;
+        flex-direction: column;
         font-size: 72px;
         text-align: center;
         letter-spacing: 5px;
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         /* flex-flow: column; */
-        flex-wrap: wrap;
-        /* align-items: center; */
+        /* flex-wrap: wrap; */
+        align-items: center;
         /* justify-content: space-evenly; */
-        margin:40px 0px 76px -31.25%;
+        /* margin:40px 0px 76px -31.25%; */
+        width: 100%;
     }
     .cta .cta-text h1 {
-        margin: 5% 0% 0% 57%;
+        /* margin: 5% 0% 0% 82%; */
     }
     
     
@@ -447,7 +452,8 @@ input[type=submit]:hover {
         width: 170px;
         height: 32px;
         padding: 0 0 0 0;
-        margin: 28px -109px -61px 196px;
+        margin: 8% 0% 0% 19%;
+        /* margin: 28px -13.625% -61px 67.5%; */
         cursor: pointer;
     }
     
@@ -465,8 +471,8 @@ input[type=submit]:hover {
     .main-content {
      border-top: 2px solid black; 
      border-bottom: 2px solid black;
-     margin: 59px 0px 0px 20px;
-     padding: 4% 0% 0% 1%;
+     margin: 59px 0px 0px 2.5%;
+     padding: 4% 0% 14% 1%;
      font-size: 16px;
      line-height: 18px;
      display:flex;
@@ -476,7 +482,7 @@ input[type=submit]:hover {
     
     .main-content .top-content {
         display: flex;
-        margin: 0px 110px 0 0px;
+        margin: 0px 13.75% 0 0px;
         padding: 0 0 0 0;
 
        
@@ -487,7 +493,7 @@ input[type=submit]:hover {
     
     .main-content .middle-img {
         display: block;
-        margin: 27px 0px 22px -9px;
+        margin: 27px 0px 22px -1.125%;
         width: 100%;
         height: 27%;
     }
@@ -498,13 +504,13 @@ input[type=submit]:hover {
         display: flex;
         justify-content: space-between;
         width:89%;
-        margin: 5px 0px 29px -1px;
+        margin: 5px 0px 29px -.125%;
         padding: 0 0 0 0;
 
     }
     
     .main-content .bottom-content p {
-        margin: 0px 38px 0 0;
+        margin: 0px 4.75% 0 0;
         padding: 0 0 0 0;
         /* width:50%; */
     }
@@ -517,11 +523,11 @@ input[type=submit]:hover {
     
     /* Contact Styles */
     .contact h4 {
-        margin:33px 0px 6px 25px;
+        margin:33px 0px 6px 3.125%;
         padding: 0px 0 0px 0;
     }
     .contact p {
-        margin: 11px 0px 0 28px;
+        margin: 11px 0px 0 3.5%;
         padding: 0px 0 0px 0;
     }
     
@@ -536,7 +542,7 @@ input[type=submit]:hover {
     }
     
     .contact .email{
-        margin: 19px 0 0 29px;
+        margin: 19px 0 0 3.63%;
         padding: 0px 0 0px 0;
     }
     
@@ -544,7 +550,7 @@ input[type=submit]:hover {
     .foot {
         align-self: flex-end;
         margin: -10px 0px 0px 0px;
-        padding: 50px 0px 0px 111px;
+        padding: 50px 0px 0px 13.75%;
         display:flex;
         justify-content: center;
         height: 70px;
@@ -585,7 +591,7 @@ input[type=submit]:hover {
         }
         
         header nav a {
-            padding: 20px 0px 20px 216px;
+            padding: 20px 0px 20px 43.2%;
             margin: 0px 0 0px 0;
             text-decoration: none;
             color: #b0b0b0;
@@ -640,7 +646,7 @@ input[type=submit]:hover {
             flex-wrap: nowrap;
             /* align-items: center; */
             /* justify-content: space-evenly; */
-            margin:40px 0px 76px -26px;
+            margin:40px 0px 76px -6.5%;
         }
         .cta .cta-text h1 {
             margin: 5% 0% 0% 8%;
@@ -654,7 +660,7 @@ input[type=submit]:hover {
             width: 170px;
             height: 42px;
             padding: 0 0 0 0;
-            margin: 13px 0px -62px 187px;
+            margin: 13px 0px -62px 9.4%;
             cursor: pointer;
         }
         
@@ -672,19 +678,20 @@ input[type=submit]:hover {
         .main-content {
          border-top: 2px solid black; 
          border-bottom: 2px solid black;
-         margin: 59px 0px 0px 20px;
-         padding: 4% 0% 0% 1%;
+         margin: 59px 0px 0px 6%;
+         padding: 4% 0% 10% 1%;
          font-size: 16px;
          line-height: 18px;
          display:flex;
          flex-wrap: wrap;
+         width:94%;
          
         
         }
         
         .main-content .top-content {
             display: flex;
-            margin: 0px 70px 0 0px;
+            margin: 0px 17.5% 0 0px;
             padding: 0 0 0 0;
             flex-direction: column;
     
@@ -701,7 +708,7 @@ input[type=submit]:hover {
         
         .main-content .middle-img {
             display: block;
-            margin: 27px 0px 22px -9px;
+            margin: 27px 0px 22px -4.8%;
             width: 100%;
             height: 27%;
         }
@@ -712,14 +719,14 @@ input[type=submit]:hover {
             display: flex;
             justify-content: space-between;
             width:89%;
-            margin: 5px 0px -11px -1px;
+            margin: 5px 0px -11px -.2%;
             padding: 0 0 0 0;
             flex-direction: column;
     
         }
         
         .main-content .bottom-content p {
-            margin: 0px 38px 0 0;
+            margin: 0px 7.6% 0 0;
             padding: 0 0 0 0;
             /* width:50%; */
         }
@@ -734,11 +741,11 @@ input[type=submit]:hover {
         }
         /* Contact Styles */
         .contact h4 {
-            margin:33px 0px 6px 25px;
+            margin:33px 0px 6px 5%;
             padding: 0px 0 0px 0;
         }
         .contact p {
-            margin: 11px 0px 0 28px;
+            margin: 11px 0px 0 5.6%;
             padding: 0px 0 0px 0;
         }
         
@@ -753,14 +760,14 @@ input[type=submit]:hover {
         }
         
         .contact .email{
-            margin: 19px 0 0 29px;
+            margin: 19px 0 0 5.8%;
             padding: 0px 0 0px 0;
         }
         
         /* Footer Styles */
         .foot {
             align-self: flex-end;
-            margin: 0px 135px 0px 0px;
+            margin: 0px 27% 0px 0px;
             padding: 0px 0 0px 0;
             display:flex;
             justify-content: center;
