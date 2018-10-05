@@ -132,7 +132,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 img {
@@ -151,8 +151,17 @@ img {
 .main-content .top-content {
   display: flex;
   flex-flow: row nowrap;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
   
 }
+.main-content .top-content:hover{
+transform: scale(1.1, 1.1);
+}
+
+.main-content .bottom-content:hover{
+    transform: scale(1.1, 1.1);
+    }
 
 .main-content .middle-img {
   margin-top: 40px;
@@ -162,6 +171,8 @@ img {
   display: flex;
   flex-flow: row nowrap;
   margin-top: 40px;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
 }
 
 .bottom-content {
@@ -172,6 +183,7 @@ img {
 .main-content .top-content .text-content {
     margin-top: 15px;
     padding:2% 2%;
+    
   }
   
 
@@ -250,6 +262,16 @@ position: relative;
   padding-left:15px;
   padding-right: 15px;
   }
+
+  .main-content .bottom-content:hover {
+      transform: none;
+  }
+
+  .main-content .top-content:hover {
+    transform: none;
+}
+
+
   /* 500 - 0 */
 @media (max-width: 500px) {
   .container {
@@ -270,8 +292,15 @@ position: relative;
     padding-right: 0px;
     margin: 0px;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
+    transform: perspective(1) scaleZ(1) rotateY(0deg);
+  transition: transform 0.5s ease; 
   }
+
+  header nav a:hover{
+      transform: perspective(500px) scaleZ(2) rotateY(45deg);
+  }
+
 
   header nav {
    margin:0px;
