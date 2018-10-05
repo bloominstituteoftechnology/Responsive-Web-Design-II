@@ -292,8 +292,8 @@ footer p {
   text-align: center;
 }
 
-.services-list ul {
-  list-style-type: square;
+.services-facts-left ul  {
+  list-style: square inside;
 }
 
 @media (min-width: 500px) {
@@ -365,3 +365,4 @@ footer p {
   }
 
 }
+
