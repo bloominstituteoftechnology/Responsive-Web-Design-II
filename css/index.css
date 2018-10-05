@@ -94,6 +94,7 @@ html {
 a {
     text-decoration: none;
     font-size:2rem;
+    transition: font-size 1s;
 }
 nav {
     display:flex;
@@ -113,7 +114,7 @@ nav {
     justify-content: center;
     display:flex;
     flex-grow: 5;
-
+    transition:margin-top 1s linear;
 }
 
 #logo_section {
@@ -171,7 +172,7 @@ h1 {
 /*CONTENT SECTION*/
 
 h3 {
-    font-size:1.5rem;
+    font-size:1.5rem;  
 }
 
 p {
@@ -193,6 +194,10 @@ p {
     justify-content: space-between;
 }
 
+
+#about, #product, #vision {
+    transition: padding-top 1s linear;
+}
 
 /* CONTACT INFO */
 
@@ -235,7 +240,7 @@ p {
 @media (max-width: 500px) {
     
     a {
-        font-size:2.5rem;
+        font-size: 2.5rem;
     }
     
     #links_section {
@@ -258,6 +263,17 @@ p {
         padding-top:20px;
     }
     
-    
+}
 
+
+/* ANIMATIONS -------------------------------------------------------------*/
+
+@keyframes font-size-changer{
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity:0;
+    }
 }
