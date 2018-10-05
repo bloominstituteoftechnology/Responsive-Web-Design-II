@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -60,7 +60,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .container { 
@@ -91,14 +91,17 @@ header nav {
 
 header nav a {
   display: inline-block;
-  font-size: 14px;
+  font-size: 1rem;
   color: gray;
   text-decoration: none;
+  text-align: center;
   width:15%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 a:hover {
-  background-color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
  }
 
 .cta {
@@ -112,7 +115,7 @@ a:hover {
 .cta-text {
   vertical-align: top;
   text-align: center;
-  font-size: 77px;
+  font-size: 4.5rem;
   width: 50%;
 }
 
@@ -121,9 +124,15 @@ button {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1rem;
   border: 1px solid black;
   cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 img {
@@ -161,14 +170,13 @@ img {
 }
 
 .main-content .top-content .text-content {
-    margin: 15px;
+    margin-top: 15px;
+    padding:2% 2%;
   }
   
 
 .main-content .bottom-content .text-content {
-
-  margin: 15px;
-  width:100%;
+  margin-top: 15px;
 }
 
 .serv-content{
@@ -180,7 +188,6 @@ img {
 .serv-content .text-content{
   width:220px;
   margin-left: 10px;
-  margin-right: 10px;
   margin-top: 10px;
 
 }
@@ -204,14 +211,14 @@ margin-top: 20px;
 }
 
 .contact p {
-  
-  margin: 10px 0;
+  margin: 1%;
 }
 
 footer{
 display: inline-block;
-margin-top: 20px;
+margin-top: 2%;
 }
+
 /* 800 - 0 */
 @media (max-width: 800px) {
   .container {
@@ -280,9 +287,11 @@ position: relative;
   }
 
   .cta-text{
-    font-size: 45px;
+
     padding-top:40px;
      }
+
+
      .main-content {
       display:flex;
       flex-wrap: wrap;
