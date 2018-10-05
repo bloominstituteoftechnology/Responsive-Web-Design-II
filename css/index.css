@@ -248,7 +248,11 @@ Tablet style
 		padding-top: 0;
 	}
 }
+/*
 
+Mobile Design Style
+
+*/
 @media (max-width: 500px) {
 	.nav-header img {
 		margin: 0 auto;
@@ -269,5 +273,22 @@ Tablet style
 
 	.nav-header nav a:last-of-type {
 		border-bottom: 1px solid grey;
+	}
+
+.page-head {
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+}
+
+	.get-started {
+		margin: 0;
+		padding: 0;
+	}
+
+	.get-started h1 {
+		margin: 0;
+		font-size: 7rem;
+		margin-bottom: 34px;
 	}
 }
