@@ -1,0 +1,30 @@
+.inner-banner img {
+  width: 100%;
+}
+
+.inner-header-text {
+  margin: 50px 0;
+}
+
+section.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-description {
+  width: 30%;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: #E6F2FF;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.services-description h2 { 
+  margin-top: 30px;
+}
+.services-description button {
+  width: 150px;
+  margin: 20px 0;
+}
