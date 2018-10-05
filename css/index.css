@@ -196,6 +196,22 @@ Tablet style
 
 		padding: 0 1.875% 3px 0;
 	}
+
+	.page-head {
+		justify-content: center;
+	}
+
+	.get-started {
+		margin: 6px 0 0 11.25%;
+	}
+
+	.get-started h1 {
+		margin-left: 2.2%;
+	}
+
+	.get-started a {
+		margin-left: 22.8%;
+	}
 	.page-head img {
 		display: none;
 	}
