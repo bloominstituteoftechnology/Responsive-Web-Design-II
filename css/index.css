@@ -63,12 +63,20 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+.html {
+    font-size: 62.5%;
+}
 
 .container {
-	width: 1010px;
+	/* width: 1010px; */
+	/* new constrained width is 12.87% less than original*/
+    max-width: 880px;
+    width: 100%;
 	margin: 0 auto;
-	padding-left: 60px;
-	padding-right: 60px;
+	/* padding-left: 60px; */
+	/* padding-right: 60px; */
+    padding-left: 6.81%;
+    padding-right: 6.81%;
 }
 
 /* equal space between two items: nav-menu & Great Idea logo */
@@ -94,13 +102,13 @@ h1, h2, h3, h4, h5 {
 
 /* spaces Innovation header and code snipped logo */
 header {
-	padding-top: 75px;
+	padding-top: 72px;
 	padding-bottom: 75px;
-	padding-left: 60px;
+    /* padding-left: 60px; */
+    padding-left: 8.24%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/*try padding %*/
 }
 
 /* aligns vertically Innovation header and Get Started buttom */
@@ -112,18 +120,32 @@ header {
 
 /* aligns Innovation on Demand in the center */
 .get-started h1 {
-	font-size: 75px;
+	/* font-size: 75px; */
+	/* 75px-12.87% = 65.35px = 4.08437rem	*/
+    font-size: 4.08437rem; 
 	text-align: center;
 	letter-spacing: 2px;
+	letter-spacing: 0.125rem;
 }
 
 /* stylying of Get Started button */
 button {
+	/* width: 170px; */
+	width: 54.67%;
 	border: 1px solid black; 
-    padding: 5px 32px;
-    width: 170px;
+    /* padding: 5px 32px; */
+    padding: 5px 1.9%;
     text-align: center;
-    font-size: 17px;
+    /* font-size: 17px; */
+    font-size: 1.0625rem;
+}
+
+/*	giving a % to the images, allows it to be responsive
+	it shrinks as the page gets smaller	*/
+.code-snippet {
+	/* width: 50% of the header*/
+	width: 50%;
+	height: auto;
 }
 
 /* alignment of first two paragraphs */
@@ -166,7 +188,8 @@ footer {
 	text-align: center;
 	margin-top: 40px;
 	margin-bottom: 80px;
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: 0.875rem;
 }
 
 /* Tablet view */
@@ -208,20 +231,34 @@ footer {
 	   padding: 75px 0;
    }
 
+   button {
+	   /*	In Desktop, header = 284.81px + "code-snippet" + 60px left-padding = 740px	
+			button was also 54.67% at this scale. Since img dissapear, the tablet-view
+			buttom will now be -50% (width that img occupied) - 8.11% of left-padding (60px/740px),
+			so, 54.67%/2 = 27.335%, and 27.335 - 8.11% = 19.23%
+	   */
+
+		width: 19.23%;
+   }
+
    .code-snippet {
        display: none;
    }
 
    .top-content {
-	   margin: 0 20px 0 20px;  
+	   /* margin: 0 20px 0 20px;   */
+	   /*	2.5% of 800px = 20px	*/
+	   margin: 0 2.5% 0 2.5%;
    }
 
    .top-paragraphs {
-		padding: 5px 10px;
+		/* padding: 5px 10px; */
+		padding: 5px 1.6%;
 	}
 
 	.bottom-paragraphs {
-		padding: 5px 30px 5px 10px; 
+		/* padding: 5px 30px 5px 10px;  */
+		padding: 5px 4.51% 5px 1.9%;
 	}
 
 	/* To make the image responsive, adjust the max-width
@@ -239,17 +276,20 @@ footer {
    }
 
    .bottom-content {
-	margin: 0 20px 0 20px;
+	/* margin: 0 20px 0 20px; */
+		margin: 0 2.2% 0 2.2%;
    }
 
    .contact {
-	padding: 0px 0px 5px 30px; /*TRBL*/
+	/* padding: 0px 0px 5px 30px;  */
+	padding: 0px 0px 5px 3.75%;
    }
 
    footer {
 	   margin-bottom: 20px;
 	   margin-top: 33px;
-	   font-size: 15px;
+	   /* font-size: 15px; */
+	   font-size: 0.9375rem;
    }
 }
 
@@ -277,9 +317,11 @@ footer {
 	.navigation a {
 		width: 100%;
 		border-top: 1px solid black;
-		padding: 20px;
+		/* padding: 20px; */
+		padding: 4%;
 		text-align: center;
-		font-size: 20px;
+		/* font-size: 20px; */
+		font-size: 1.25rem;
 	}
 
 	.get-started {
@@ -287,7 +329,12 @@ footer {
 	}
 
 	.get-started h1 {
-		font-size: 70px;
+		/* font-size: 70px; */
+		font-size: 4.375rem;
+	}
+
+	button{
+		 width: 32.335%;
 	}
 
 	/*	Wrap around Features and About paragraphs */
@@ -297,13 +344,13 @@ footer {
 
 	/*	percentages work the same way*/
 	.top-paragraphs{
-		padding: 20px 0 30px 0;
-		/* padding: 4% 0 5% 0; */
+		/* padding: 20px 0 30px 0; */
+		padding: 20px 0 5% 0;
 	}
 
 	.middle-img {
-		padding-left: 4%;
-		padding-right: 4%;
+		padding-left: 3.3%;
+		padding-right: 3.3%;
 	}
 
 	.bottom-content{
@@ -321,7 +368,8 @@ footer {
 	}
 
 	.contact {
-		padding-left: 20px;	
+		/* padding-left: 20px;	 */
+		padding-left: 4%;
 	}
 }
 
