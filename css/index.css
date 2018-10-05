@@ -36,6 +36,12 @@ table {
   box-sizing: border-box;
 }
 
+/*
+
+Desktop (Default) style
+
+*/
+
 html {
   font-size: 62.5%;
 }
@@ -116,6 +122,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 20.5%;
 }
 
+.get-started a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
 .main-content {
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
@@ -162,4 +172,32 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.6rem;
 
 	padding-top: 7px;
+}
+
+/*
+
+Tablet style
+*/
+
+@media (max-width: 800px) {
+	.nav-header {
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-top: 50px;
+	}
+
+	.nav-header img {
+		padding: 0 0 19px 20px;
+	}
+
+	.nav-header nav {
+		width: 100%;
+		justify-content: space-around;
+
+		padding: 0 1.875% 3px 0;
+	}
+	.page-head img {
+		display: none;
+	}
+
 }
