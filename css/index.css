@@ -63,6 +63,9 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+html{
+    font-size: 62.5%;
+}
 body{
     /* background-color: grey; */
 }
@@ -73,6 +76,7 @@ body{
 	margin: auto;
 	display:flex;
     flex-wrap: wrap;
+    font-size: 1.6rem;
     
 }
 
@@ -102,7 +106,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 3.18% 2.27% 0 -3%;
+    margin: 13.18% 2.27% 0 -3%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -121,7 +125,7 @@ header .logo {
 }
 
 .cta .cta-text {
-	font-size: 72px;
+	font-size: 7.2rem;
 	text-align: center;
 	letter-spacing: 5px;
 	display: flex;
@@ -139,7 +143,7 @@ header .logo {
 
 .cta .cta-text button {
 	border: 1px double black;
-	font-size: 16px;
+	font-size: 1.6rem;
 	background: white;
 	width: 170px;
 	height: 32px;
@@ -164,7 +168,7 @@ header .logo {
  border-bottom: 2px solid black;
  margin: 53px 0 35px 0;
  padding: 35px 0;
- font-size: 16px;
+ font-size: 1.6rem;
  line-height: 18px;
  display:flex;
  flex-wrap: wrap;
@@ -428,7 +432,7 @@ input[type=submit]:hover {
     .cta .cta-text {
         display: flex;
         flex-direction: column;
-        font-size: 72px;
+        font-size: 7.2rem;
         text-align: center;
         letter-spacing: 5px;
         /* display: flex; */
@@ -447,7 +451,7 @@ input[type=submit]:hover {
     
     .cta .cta-text button {
         border: 1px double black;
-        font-size: 16px;
+        font-size: 1.6rem;
         background: white;
         width: 170px;
         height: 32px;
@@ -473,7 +477,7 @@ input[type=submit]:hover {
      border-bottom: 2px solid black;
      margin: 59px 0px 0px 2.5%;
      padding: 4% 0% 14% 1%;
-     font-size: 16px;
+     font-size: 1.6rem;
      line-height: 18px;
      display:flex;
      flex-wrap: wrap;
@@ -598,7 +602,7 @@ input[type=submit]:hover {
             border-bottom: 1px solid black;
             width: 100%;
             align-self: center;
-            font-size: 123%;
+            font-size: 2.0rem;
             justify-content: space-between;
             
 
@@ -636,7 +640,7 @@ input[type=submit]:hover {
         }
         
         .cta .cta-text {
-            font-size: 72px;
+            font-size: 7.2rem;
             text-align: center;
             letter-spacing: 5px;
             display: flex;
@@ -655,7 +659,7 @@ input[type=submit]:hover {
         
         .cta .cta-text button {
             border: 1px double black;
-            font-size: 16px;
+            font-size: 1.6rem;
             background: white;
             width: 170px;
             height: 42px;
@@ -680,7 +684,7 @@ input[type=submit]:hover {
          border-bottom: 2px solid black;
          margin: 59px 0px 0px 6%;
          padding: 4% 0% 10% 1%;
-         font-size: 16px;
+         font-size: 1.6rem;
          line-height: 18px;
          display:flex;
          flex-wrap: wrap;
