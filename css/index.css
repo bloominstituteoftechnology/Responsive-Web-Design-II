@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-end;
 
   width: 100%;
-  height: 60px;
+  height: 6.81%;
 }
 
 .nav-header nav {
@@ -246,5 +246,28 @@ Tablet style
 	#copyright {
 		margin-top: 0;
 		padding-top: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.nav-header img {
+		margin: 0 auto;
+		padding-bottom: 0;
+
+	}
+	.nav-header nav {
+		flex-direction: column;
+	}
+
+	.nav-header nav a {
+		border-top: 1px solid grey;
+		width: 100%;
+		text-align: center;
+		padding: 21px 0;
+		font-size: 1.8rem
+	}
+
+	.nav-header nav a:last-of-type {
+		border-bottom: 1px solid grey;
 	}
 }
