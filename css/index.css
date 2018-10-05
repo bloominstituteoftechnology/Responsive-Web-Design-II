@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
-	margin: 78px 0;
+	margin: 78px 0 38px 0;
 
 	display: flex;
 	flex-direction: column;
@@ -145,4 +145,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .content-block p {
 	font-size: 1.6rem;
+}
+
+.contact-block h3 {
+	font-size: 1.7rem;
+	margin: 0px;
+}
+
+.contact-block p {
+	font-size: 1.7rem;
+	width: 19.5%;
+}
+
+#copyright {
+	text-align: center;
+	font-size: 1.6rem;
+
+	padding-top: 7px;
 }
