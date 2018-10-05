@@ -433,7 +433,7 @@ input[type=submit]:hover {
         flex-wrap: wrap;
         /* align-items: center; */
         /* justify-content: space-evenly; */
-        margin:40px 0px 76px -26px;
+        margin:40px 0px 76px -31.25%;
     }
     .cta .cta-text h1 {
         margin: 5% 0% 0% 57%;
