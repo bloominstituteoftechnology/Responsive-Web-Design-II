@@ -115,3 +115,34 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6px 0;
   margin: 0 20.5%;
 }
+
+.main-content {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 78px 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.top-content {
+	display: flex;
+}
+
+.bottom-content {
+	display: flex;
+	padding-bottom: 14px;
+}
+
+.main-content img {
+	margin-top: 8px;
+}
+
+.content-block h2 {
+	font-size: 1.8rem;
+	padding-top: 16px;
+}
+
+.content-block p {
+	font-size: 1.6rem;
+}
