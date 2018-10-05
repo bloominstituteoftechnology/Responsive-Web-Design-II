@@ -291,4 +291,37 @@ Mobile Design Style
 		font-size: 7rem;
 		margin-bottom: 34px;
 	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.top-content h2 {
+		padding-top: 25px;
+	}
+
+		.bottom-content h2 {
+			padding-top: 20px;
+		}
+
+	.main-content img {
+		margin-top: 30px;
+		margin-bottom: 0;
+	}
+
+	.contact-block p {
+		margin: 0;
+		padding: 0;
+		padding-top: 10px;
+		font-size: 1.4rem;
+		width: 36%;
+	}
+
+	#copyright {
+		margin-top: 57px;
+	}
 }
