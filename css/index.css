@@ -286,7 +286,7 @@ section.websites div{
 }
 
 hr.seperate{
-	border-color:black;
+	border:2px solid black;
 	margin: 40px 0px;
 	
 }
@@ -350,7 +350,7 @@ footer address{
 	.container:first-of-type{
 		margin-top: 0px;
 	}
-	.container section div.right{
+	.container div div.right{
 		display: none;
 	}
 	
@@ -464,10 +464,10 @@ footer address{
 
 	header nav a{
 		margin:0;
-		padding:20px;
+		padding:4%;
 		border-bottom: solid 2px lightgray;
 		width: 100%;
-		font-size: 28px;
+		font-size: 2.8rem;
 	}
 
 	header nav a:last-of-type{
@@ -481,8 +481,9 @@ footer address{
 	}
 
 	a.button{
-		font-size:30px;
-		width: 200px;
+		font-size:3rem;
+		max-width: 200px;
+		width: 100%;
 		text-align: center;
 	}
 
