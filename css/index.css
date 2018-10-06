@@ -149,7 +149,6 @@ html {
 
 
 
-
 ul {
 	list-style-type: none;
 	margin-top: 0;
@@ -207,6 +206,7 @@ a.navigation-link {
 .btn:active{
 	box-shadow: 0 5px #666;
 	transfor: translateY(4px);
+  overflow-x: hidden;
 	 }
 
 
