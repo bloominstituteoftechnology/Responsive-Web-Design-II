@@ -20,7 +20,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -64,8 +63,8 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: .125%;
+    margin-bottom: 1.875%;
 }
 
 a {
@@ -79,18 +78,27 @@ a {
 
 /*--------------------------------------Fonts, Colors and Styles*/
 h1 {
-	font-size: 4.5rem;
+	font-size: 7.5rem;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 1.7rem;
+}
+
+p, a, address {
+    font-size: 1.5rem;
 }
 
 .wrapper {
 	width: 800px;
-	margin: 0 auto;	
+    margin: 0 auto;	
+    max-width: 880px;
 }
 
 /*---------------------------------------NAV POSITIONING*/
 nav {
-    width: 800px;
-    margin-bottom: 60px;
+    width: 100%;
+    margin-bottom: 7.5%;
 }
 
 .nav-container {
@@ -108,28 +116,34 @@ nav {
 .tagline {
     width: 100%;
     display: flex;
-    justify-content: center;
-    border-bottom: 1px solid black;
-    padding-bottom: 100px;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 3.6%;
+    margin: 0;
 }
 
 .tagline-right {
-    margin-right: 15%;
+    /* margin-right: 15%; */
     text-align: center;
     align-self: center;   
 }
 
 .button {
     border: 1px solid black;
-    padding: 5px;
-    width: 40%;
+    padding: 2%;
+    width: 60%;
     margin: 0 auto;
+    font-size: 1.5rem
+}
+
+.tagline-image {
+    width: 40rem;
 }
 
 /*------------------------------------------Positioning top section of main content*/
 
 .top-section {
-	padding: 40px 0;
+	padding: 3% 0;
 	/* border: 1px solid black; */
 	display: flex;
 	flex-direction: row;
@@ -139,17 +153,21 @@ nav {
 }
 
 .top-section p {
-	margin-right: 15px;
+	margin-right: 1.875%;
+}
+
+.top-section p:last-child {
+	margin-right: 0;
 }
 
 .middle-image {
 	width: 100%;
-	padding-bottom: 40px;
+	padding-bottom: 5%;
 }
 
 .bottom-section {
-	padding-bottom: 40px;
-	border-bottom: 1px solid black;
+	padding-bottom: 5%;
+	border-bottom: 2px solid black;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -159,21 +177,25 @@ nav {
 }
 
 .bottom-section p {
-	margin-right: 15px;
+	margin-right: 1.875%;
+}
+
+.bottom-section p:last-child {
+	margin-right: 0;
 }
 
 /*------------------------------------------FOOTER POSITIONING*/
 footer {
-	width: 800px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 address {
-	padding: 20px 0;
+	padding: 2.5% 0;
 }
 
 .cr-container {
-	height: 60px;
+	height: 7.5%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -196,7 +218,7 @@ address {
 
 	nav {
 		width: 100%;
-		padding: 10px 20px;
+		padding: 1.25% 2.5%;
 	}
 
 	.nav-container {
@@ -206,7 +228,7 @@ address {
 
 	.nav-image {
 		order: -1;
-		padding: 20px 0 30px;
+		padding: 2.5% 0 3.75%;
 	}
 
 	.links {
@@ -224,17 +246,17 @@ address {
 		justify-content: center;
 		align-content: center;
 		margin: 0 auto;
-		padding-bottom: 50px;
+		padding-bottom: 6.25%;
 		border-bottom: 2px solid black;
 	}
 
 	.tagline-right {
 		margin: 0;
-		padding-bottom: 10px;
+		padding-bottom: 1.25%;
 	}
 
 	footer {
-		width: 95%;
+		width: 100%;
 	}
 }
 /*---------------------------------------MOBILE DISPLAYS*/
@@ -265,7 +287,7 @@ address {
 	}
 
 	.links a {
-		padding: 20px;
+		padding: 2.5%;
 		border-top: 2px solid lightgrey;
 		color: lightgrey;
 	}
@@ -302,7 +324,7 @@ address {
 
 	.top-section section,
 	.bottom-section section {
-		padding-bottom: 30px;
+		padding-bottom: 3.75%;
 	}
 
 	.bottom-section {
