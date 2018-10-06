@@ -78,7 +78,7 @@ body {
 }
 
 /* ------------------ Header ------------------*/
-.nav-container {
+.container__nav {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 2.5%;
@@ -95,16 +95,16 @@ nav > * {
 	font-size: 1.6rem;
 }
 
-.logo {
+.banner__logo {
 	padding-top: 5.5%;
 }
 
-img.logo  {
+img.banner__logo  {
 	max-height: 100%;
     width: auto;
 }
 
-.header-title-container {
+.banner {
 	display: flex;
     justify-content: space-between;
 	align-items: center;
@@ -112,11 +112,11 @@ img.logo  {
 	width: 100%;
 }
 
-.header-title-container img {
+.banner img {
 	width: 47%;
 }
 
-.header-title-text {
+.banner-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -133,7 +133,7 @@ button {
 	width: 40%;
 }
 
-.header-title {
+.banner {
 	font-size: 7.5rem;
     text-align: center;
 }
@@ -148,13 +148,13 @@ button {
 	padding-top: 6.25%;
 }
 
-.main-top-container:first-child,
-.main-bottom-container:first-child {
+.main-top__container:first-child,
+.main-bottom__container:first-child {
 	padding-right: 1.25%;
 }
 
-.main-top-container:last-child,
-.main-bottom-container:last-child  {
+.main-top__container:last-child,
+.main-bottom__container:last-child  {
 	padding-left: 1.25%;
 	float: right;
 }
@@ -173,11 +173,11 @@ button {
 	padding: 6.25% 0;
 }
 
-.middle-img-container {
+.middle-img {
     width: 100%;
 }
 
-.middle-img-container img {
+.middle-img img {
     width: 100%;
 }
 /* ------------------ Footer ------------------*/
@@ -203,7 +203,7 @@ footer h2 {
 /* ------------------ Media Queries ------------------*/
 
 @media (max-width: 800px) {
-    .nav-container {
+    .container__nav {
         flex-direction: column-reverse;
         align-items: center;
     }
@@ -213,11 +213,11 @@ footer h2 {
 		width: 100%;
     }
 
-    .header-title-container .logo {
+    .banner__logo {
         display: none;
     }
 
-    .header-title-text {
+    .banner-text {
         width: 100%;
         padding: 0;
     }
@@ -254,13 +254,13 @@ footer h2 {
         flex-direction: column;
     }
 
-	.main-top-container:last-child, 
-	.main-bottom-container:last-child {
+	.main-top__container:last-child, 
+	.main-bottom__container:last-child {
 		float: none;
 	}
 
-    .main-top .main-top-container,
-    .main-bottom .main-bottom-container {
+    .main-top .main-top__container,
+    .main-bottom .main-bottom__container {
         padding: 10px 0 20px 0;
 	}
 	
