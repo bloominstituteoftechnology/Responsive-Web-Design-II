@@ -17,7 +17,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 62.5%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -83,6 +83,7 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
+
 }
 
 .container {
@@ -114,7 +115,7 @@ nav a {
     display: flex;
     height: 350px;
     width: 45%/*438px*/;
-    font-size: 7.4rem;
+    font-size: 74px;
     font-family: 'Bangers', cursive;
     text-align: center;
     justify-content: center;
@@ -124,7 +125,7 @@ nav a {
 a.button {
     display: flex;
     width: 140px;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
     color: black;
@@ -217,7 +218,7 @@ footer {
     .left {
         display: flex;
         width: 100%;
-        font-size: 7.4px;
+        font-size: 74px;
         font-family: 'Bangers', cursive;
         text-align: center;
         justify-content: center;
@@ -239,7 +240,15 @@ footer {
     /* 600 - 0 */
     header {
         width: 300px;
-        border: 1px solid black;
+    }
+
+    .logo {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .first-nav {
+        border-top: 1px solid gray;
     }
 
     nav a {
@@ -248,9 +257,9 @@ footer {
         width: 100%;
         margin-top: 10px;
         text-align: center;
-        border: 1px solid gray;
+        border-bottom: 1px solid gray;
         padding: 15px 30px;
-        justify-content: ;
+        justify-content: center;
         margin: 0px;
 =    }
 
@@ -265,7 +274,7 @@ footer {
         text-align: left;
         align-items: left;
         flex-direction: column;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     section.services-product-vision div{
@@ -283,5 +292,9 @@ footer {
         flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
+    }
+
+    address {
+        margin-bottom: 10px;
     }
 }
