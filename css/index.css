@@ -5,76 +5,168 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 62.5%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
-.container { 
-  max-width:880px;
-  margin:0 auto;
-  display:flex;
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-header{
+header {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -83,7 +175,7 @@ header{
   padding-bottom: 70px;
 }
 
-header nav { 
+header nav {
   width: 70%;
   display: flex;
   flex-flow: row wrap;
@@ -99,7 +191,7 @@ header nav a {
 
 a:hover {
   background-color: black;
- }
+}
 
 .call-to-action {
   display: flex;
@@ -127,7 +219,7 @@ button {
 }
 
 .call-to-action img {
-  width: 50%; 
+  width: 50%;
 }
 
 .main-content {
@@ -143,6 +235,10 @@ button {
 
 .main-content .middle-img {
   margin-top: 40px;
+}
+
+.middle-img {
+  max-width: 100%;
 }
 
 .main-content .bottom-content {
@@ -161,95 +257,101 @@ button {
 }
 
 .contact {
-  display:flex;
+  display: flex;
   flex-direction: column;
   margin-top: 20px;
-  width:100%;
-  
+  width: 100%;
+
 }
 
 .contact p {
   margin: 10px 0;
 }
 
-footer{
-display: inline-block;
-margin-top: 20px;
+footer {
+  display: inline-block;
+  margin-top: 20px;
 }
 
 
-/* Max Width 800px Media Query */ 
+/* Max Width 800px Media Query */
 @media (max-width: 800px) {
   .container {
-    width: 700px;
+    max-width: 700px;
+    padding: 0 2%;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
   }
 
- .call-to-action-text{
-width:100%;
-position: relative;
- }
+  .call-to-action-text {
+    width: 100%;
+    position: relative;
+  }
 
   .call-to-action img {
-    display:none;
+    display: none;
   }
-  header{
+
+  header {
     display: flex;
-   flex-direction: column-reverse;
+    flex-direction: column-reverse;
     justify-content: space-evenly;
+    flex-wrap:nowrap;
   }
-  header nav{
+
+  header nav {
     margin-bottom: 20px;
     margin-top: 40px;
   }
 
   header nav a {
-  padding-left:1.70%;
-  padding-right: 1.70%;
+    padding-left: 1.70%;
+    padding-right: 1.70%;
   }
+
   /* Max Width 500px Media Query */
-@media (max-width: 500px) {
-  .container {
-    width: 350px;
-  }
-
-  .logo{
-    width:45%;
-  }
-
-  header nav a{
-    display: flex;
-    flex-flow: column;
-    height: 40px;
-    width:100%;
-    border-bottom:1px solid lightgrey;
-    padding-left:0;
-    padding-right: 0;
-    margin: 0;
-    justify-content: space-around;
-    align-items: center
-  }
-
-  header nav {
-   margin:0;
-   display:flex;
-   width:100%;
-   border-top:1px solid lightgrey;
+  @media (max-width: 500px) {
+    .container {
+      max-width: 350px;
     }
 
-  header{
-    display: flex;
-    padding-bottom:0px;
-  }
+    .logo {
+      width: 45%;
+    }
 
-  .call-to-action-text{
-    font-size: 4.5rem;
-    padding-top:40px;
-     }
-     .main-content {
-      display:flex;
+    header nav a {
+      display: flex;
+      flex-flow: column;
+      height: 40px;
+      width: 100%;
+      border-bottom: 1px solid lightgrey;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0;
+      justify-content: space-around;
+      align-items: center
+    }
+
+    header nav {
+      margin: 0;
+      display: flex;
+      width: 100%;
+      border-top: 1px solid lightgrey;
+    }
+
+    header {
+      display: flex;
+      padding-bottom: 0px;
+    }
+
+    .call-to-action-text {
+      font-size: 4.5rem;
+      padding-top: 40px;
+    }
+
+    .main-content {
+      display: flex;
       flex-wrap: wrap;
       border-top: 1px solid black;
       margin-top: 40px;
@@ -257,10 +359,10 @@ position: relative;
       justify-content: space-between;
     }
 
-    .main-content .top-content{
+    .main-content .top-content {
       display: flex;
       flex-flow: row wrap;
-      
+
     }
 
     .main-content .bottom-content {
@@ -272,9 +374,6 @@ position: relative;
     .main-content .top-content .text-content {
       margin: 3%;
     }
-    .middle-img{
-      width:100%;
-    }
 
     button {
       background: white;
@@ -285,3 +384,10 @@ position: relative;
       border: 1px solid black;
       cursor: pointer;
     }
+
+/* 
+
+    change width to max-width
+    add max-width to middle image  
+    
+*/
