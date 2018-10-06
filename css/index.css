@@ -1,1 +1,267 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: .1rem;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	font-size: 1.6rem;
+}
+.container {
+	max-width: 800px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* ------------------ Header ------------------*/
+.container__nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2.5%;
+}
+
+nav {
+	display: flex;
+    flex-direction: row;
+}
+
+nav > * {
+	padding: 4%;
+	color: #9ba6b1;
+	font-size: 1.6rem;
+}
+
+.banner__logo {
+	padding-top: 5.5%;
+}
+
+img.banner__logo  {
+	max-height: 100%;
+    width: auto;
+}
+
+.banner {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.banner img {
+	width: 47%;
+}
+
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 6.3%;
+}
+
+
+button {
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5px 7%;
+    background: none;
+	border: .1rem solid black;
+	width: 40%;
+}
+
+.banner {
+	font-size: 7.5rem;
+    text-align: center;
+}
+
+
+/* ------------------ Main Section ------------------*/
+
+.main {
+	width: 100%;
+	border-top: 1px solid slategray;
+	border-bottom: 1px solid slategray;
+	padding-top: 6.25%;
+}
+
+.main-top__container:first-child,
+.main-bottom__container:first-child {
+	padding-right: 1.25%;
+}
+
+.main-top__container:last-child,
+.main-bottom__container:last-child  {
+	padding-left: 1.25%;
+	float: right;
+}
+
+.main-top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 6.25%;
+}
+
+.main-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 6.25% 0;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.middle-img img {
+    width: 100%;
+}
+/* ------------------ Footer ------------------*/
+footer {
+	padding: 50px 0;
+}
+
+footer > * {
+	padding-bottom: 2.5%;
+}
+
+footer h2 {
+	margin: 0;
+}
+
+.footer-copyright {
+	text-align: center;
+	padding: 20px 0;
+}	
+
+
+
+/* ------------------ Media Queries ------------------*/
+
+@media (max-width: 800px) {
+    .container__nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    nav {
+		justify-content: space-between;
+		width: 100%;
+    }
+
+    .banner__logo {
+        display: none;
+    }
+
+    .banner-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container {
+        width: 96%;
+    }
+
+   
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav > * {
+        border-top: 1px solid slategray;
+        width: 100%;
+    }
+    nav span:last-child {
+        border-bottom: 1px solid slategray;
+    }
+    .main,
+    footer {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .main-top,
+    .main-bottom {
+        flex-direction: column;
+    }
+
+	.main-top__container:last-child, 
+	.main-bottom__container:last-child {
+		float: none;
+	}
+
+    .main-top .main-top__container,
+    .main-bottom .main-bottom__container {
+        padding: 10px 0 20px 0;
+	}
+	
+}
