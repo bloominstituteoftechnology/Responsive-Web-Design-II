@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5 {
 body {
 	max-width: 880px;
 	width: 100%;
+	padding-right: 2%;
 	
 }
 
@@ -77,27 +78,24 @@ body {
     display: none;
 }
 
-.biggest {
+/* .biggest {
 	display: flex;
 	flex-direction: column;
 	margin: 0px auto;
-}
+} */
 
 
 nav {
 	display: flex;
 	width: 100%;
 	margin-top: 12px;
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 45px;
 	justify-content: space-between;
 	align-items: center;
 	color: grey;
 	/* background-color: yellow; */
-}
-
-.half-page-tablet {
-    display: none;
 }
 
 header {
@@ -136,6 +134,11 @@ header img {
 	align-items: center;
 	width: 100%;
 	margin: 0px 2%;
+}
+
+#middle-img-container {
+	margin-top: 20px;
+	padding-right: 1%;
 }
 
 .tablet-logo-container {
@@ -180,6 +183,11 @@ footer {
 	text-align: center;
 	margin: 25px 0px;
 }
+
+.half-page-tablet {
+    display: none;
+}
+
 
 .services {
 	display: flex;
