@@ -86,18 +86,19 @@ h1, h2, h3, h4, h5, h6 {
   color: grey;
 }
 
-.nav__link:after
+/*.nav__link:after
 {
     opacity: 0;
-    top: 0px;
+
     transition: all 0.3s;
-}
+}*/
 
 .nav__link:before
 {
 		opacity: 0;
 		content: '(';
     left: 0px;
+		font-size: 2rem;
     transform: translateX(0px);
 }
 
@@ -105,7 +106,10 @@ h1, h2, h3, h4, h5, h6 {
 {
 		opacity: 0;
     content: ')';
+		top: 0px;
     right: 0px;
+		font-size: 2rem;
+		transition: all 0.3s;
     transform: translateX(0px);
 }
 
@@ -360,9 +364,7 @@ Mobile Design Style
 
 @media (min-width: 500px) {
 	.nav__link:hover {
-		background-color: rgba(0, 0, 0, 0.05);
-		padding: 2px;
-		border-radius: 5px;
 		color: black;
+		font-weight: bold;
 	}
 }
