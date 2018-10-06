@@ -164,9 +164,10 @@ h5 {
 
 .menu-header {
 	display: flex;
-    justify-content: space-evenly;
+	justify-content: space-evenly;
+	/* margin 18 */
     margin: 0 2%;
-    /* width 872 px */
+    /* width 854 px */
     width: 97%;
 }
 
@@ -183,7 +184,7 @@ h5 {
 
 .menu {
     padding-top: 20px;
-	padding-right: 20px;
+	/*padding-right: 20px;*/
 	font-size: 2rem;
 	color: darkgray;
 	text-decoration: none;
@@ -311,11 +312,6 @@ footer {
 
 @media (max-width: 800px) {
 	/* 800 - 0 */
-	.main-container {
-        /*width: 800px;*/
-       width: 800px;
-	}
-
 	.menu-header {
 		margin-top: 3%;
         flex-wrap: wrap-reverse;
@@ -339,8 +335,7 @@ footer {
 @media (max-width: 500px) {
 	/* 500 - 0 */
 	.main-container {
-        /*width: 500px;*/
-        width: 500px;
+        max-width: 500px;
 	}
 
 	.logo {
@@ -358,17 +353,17 @@ footer {
 		width: 99%;
 		border-bottom: 1px solid grey;
 		text-align: center;
-		padding: 20px;
+		padding: 20px 20%;
 	}
 
 	.h1-splash {
-		margin: 30px;
+		margin: 6%;
 }
 
 .top-content {
-	width: 100%;
+	width: 97%;
 	flex-direction: column;
-	margin: 30px;
+	margin: 2%;
 }
 
 .top-block {
@@ -381,9 +376,9 @@ footer {
 }
 
 .bottom-content {
-	width: 100%;
+	width: 97%;
 	flex-direction: column;
-	margin: 30px;
+	margin: 2%;
 }
 
 .bottom-block {
