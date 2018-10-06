@@ -1,1 +1,368 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html {
+  font-size: 62.5%;
+}
+
+/********************/
+/* CSS for homepage */
+/********************/
+
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+nav .links {
+  width: 69%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .links a {
+  font-size: 1.5rem;
+}
+
+header .header {
+  display: flex;
+  justify-content:space-around;
+  margin: 70px 0 76px 13.5%;
+}
+
+header .header .headerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 52px 12% 0 5%;
+  width: 28%;
+}
+
+h1 {
+  font-size: 7.3rem;
+}
+
+header .header .headerTitle button {
+  margin-top: 25px;
+  padding: 5px 19.5%;
+  font-size: 1.6rem;
+}
+
+header .header img {
+  width: 50%;
+}
+
+.container .bigSec1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  margin: 30px 0;
+}
+
+section p {
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.container>img {
+  width: 100%;
+}
+
+.container .bigSec2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.container .bigSec2 section {
+  margin: 27px 2.3% 0 0;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer address p {
+  font-size: 1.6rem;
+}
+
+.copyright {
+  text-align: center;
+  margin: 40px;
+  font-size: 1.6rem;
+}
+
+
+
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Tablet View */
+
+@media (max-width: 800px) {
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: slideInDown 1s linear;
+  }
+
+  nav .links {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav .links a {
+    margin-right: 6%;
+  }
+
+  nav img {
+    margin-right: 2%;
+  }
+
+  nav .logo {
+    order: -1;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 3.5%;
+  }
+
+  header .header img {
+    display: none;
+  }
+
+  header .header .headerTitle {
+    margin: 6px 18% 0 0;
+    animation: bounce 1s linear;
+  } 
+
+  header .header .headerTitle button {
+    padding: 5px 23%;
+  }
+
+  header .header .headerTitle h1 {
+    font-size: 7rem;
+  }
+
+  header .header .headerTitle button {
+    margin-top: 30px;
+  }
+
+  .container .bigSec1 section{
+    width: 47.65%;
+    margin-top: 28px;
+    margin-bottom: 24px;
+  }
+
+  .container>img {
+    width: 100%;
+  }
+
+  .container .bigSec2 section {
+    width: 28%;
+    margin-top: 35px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+
+  .container {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav .logo {
+    padding-bottom: 20px;
+  }
+
+  nav .links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav .links a {
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 20px 0 20px 7%;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  nav .logo {
+    padding-left: 3%;
+  }
+
+  nav .links a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  header .header {
+    margin: 45px 0 76px 15.5%;
+  }
+
+  header .header .headerTitle {
+    width: 100%;
+    animation: wobble 1s linear;
+  }
+
+  header .header .headerTitle button {
+    padding: 5px 13.5%;
+  }
+
+  .container .bigSec1, .container .bigSec2 {
+    flex-direction: column;
+    width: 99%;
+  }
+
+  .container .bigSec1 {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .container .bigSec1 section {
+    margin-bottom: 10px;
+    margin-left: 1%;
+  }
+
+  .container .bigSec2 {
+    margin-bottom: 25px;
+  }
+
+  .container .bigSec2 section {
+    margin-top: 28px;
+    margin-bottom: 30px;
+    margin-left: 1%;
+  }
+
+  .container .bigSec2 section:last-child {
+    margin-bottom: 0;
+  }
+
+  .container .bigSec1 section,
+  .container .bigSec2 section {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  footer {
+    margin-top: 35px;
+  }
+
+}
+
+/* Animations */
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounce {
+
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes wobble {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
