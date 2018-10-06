@@ -197,7 +197,7 @@ p {
 footer {
 	width: 100%;
 	text-align: center;
-	margin: 25px 0px;
+	margin: 25px 0%;
 	font-size: 1.6rem;
 }
 
@@ -304,7 +304,7 @@ footer {
 
 .nest-vert ul {
 	list-style-type: square;
-	margin-left: 20px;
+	margin-left: 20%;
 }
 
 .nest-vert li {
@@ -371,11 +371,13 @@ hr {
 		margin-bottom: 27px;
 	}
 
-	.half-page-tablet .button {
+	/* .half-page-tablet .button {
 		font-size: 1.6rem;
-		width: 175px;
+		width: 150px;
 		height: 31px;
-	}
+		
+
+	} */
 
     .half-page {
         display: none;
