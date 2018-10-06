@@ -1,1 +1,388 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'helvetica', sans-serif;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-family: 'impact', sans-serif;
+}
+
+.container {
+	width:1100px;
+	margin: 20px auto;
+}
+
+h2 {
+	font-size:2rem;
+}
+
+nav {
+	display:flex;
+	justify-content: space-around;
+	width: 81.81%;
+}
+
+nav a {
+	display:flex;
+	color:grey;
+	text-decoration:none;
+	
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.logo {
+	float:right;
+	position: relative;
+	bottom: 25px;	
+	
+}
+
+headimg {
+	position:relative;
+	top: 40px;
+	left: 18.18%;
+}
+
+h1 {
+	font-size: 5rem;
+	display: inline-block;
+	width: 27.27%;
+	position: relative;
+	left: 18.18%;
+	bottom: 60px;
+	text-align: center;	
+	
+}
+
+button {
+	position:relative;
+	right: 1.81%;
+	padding: 0.909%;
+	width: 14.54%;
+	border: 2px solid black;
+}
+
+.section1 {
+	display:flex;
+	justify-content: center;
+
+}
+
+article.features {
+
+}
+
+article.about {
+
+}
+
+.section2 {
+	display:flex;
+	justify-content: center;
+	
+}
+
+article.services {
+	
+
+}
+
+article.product {
+
+}
+
+article.vision {
+
+}
+
+.middle-img {
+	position: relative;
+	left: 10%;
+	top:0%;
+}
+
+contactinfo{
+	position: relative;
+	left: 3.63%;
+	display:block;
+	height: 14.54%;
+	margin: 5.45% 0% 1.81% 0%;
+
+}
+
+.home {
+	display:block;
+	text-align:center;
+	top: 7.27%;
+	height: 5.45%;
+}
+
+/* services page */
+
+.services-header-img {
+	display:flex;
+	justify-content: center;
+	position:relative;
+	width: 1100px;
+}
+
+.service {
+	display: flex;
+	position: relative;
+	top: 1.63%;
+	left: 0%;
+	font-size: 4rem;
+	padding: 1.81% 0%;
+}
+
+.body {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.body article {
+	width: 45.45%;
+	padding: 1.81%;
+	margin: 1.81%;
+	border: 1px solid black;
+}
+
+.body a {
+	display: flex;
+	width: 14.54%;
+	margin: 1.81% 0%;
+	padding: .909% 0%;
+	font-size: 1.6rem;
+	color: black;
+	text-decoration: none;
+	justify-content: center;
+	border: 1px solid black;
+	border-radius: 15%;
+}
+
+.fact h2 {
+	padding: 0%;
+}
+
+.fact p {
+	display: flex;
+	padding: 0%;
+	width: 45.45%;
+}
+
+.services-info-img {
+	position: flex;
+	width: 45.45%;
+}
+
+ul {
+	width: 45.45%;
+	padding: 0% 1.09%;
+	list-style-type: square;
+}
+
+li {
+	padding: 1.81% 0% 0% 0%;
+	width: 45.45%;
+
+}
+
+.facts {
+	height: 40.91%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+/*90.9%*/
+@media (max-width: 800px) {
+
+	.container {
+		width: 100%;
+		max-width: 700px;
+		margin: 1.81%;
+	}
+
+	.logo {
+		order: -4;
+		position: relative;
+		top: 0%;
+	}
+
+	.header {
+		display:flex;
+		justify-content: center;
+		flex-wrap:wrap;
+	}
+
+	nav {
+		margin: .909% 0% .909% 0%;
+		padding: 1.81%;
+	}
+
+	h1 {
+		margin: 60px 0% 0%;
+	}
+
+
+	headimg {
+		display:none;
+	}
+
+	.section1 {
+		display:flex;
+		justify-content:flex-start;
+	}
+
+	.section2 {
+		justify-content: space-between;
+		width:100%;
+	}
+
+	.section2 article {
+		width: 25%;
+	}
+
+	article {
+		width:43.75%;
+	}
+
+	.middle-img {
+		width: 87.5%;
+		position: relative;
+		left: 0%;
+	}
+
+}
+/*56.81px*/
+@media (max-width: 500px) {
+	.container {
+		width: 100%;
+		max-width: 400px;
+        margin: 0 auto;
+	}
+
+	nav {
+		flex-wrap:wrap;
+		width:100%;
+	}
+
+	nav a {
+		display:flex;
+		justify-content: center;
+		width:100%;
+		border: solid grey 1px;
+		padding: .909% 0% .909% 0%;
+	}
+
+	h1 {
+		display:flex;
+		justify-content: center;
+		width:100%;
+		position:relative;
+		left:0%;
+		text-align: center;
+	}
+
+	button {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		left: 10.9%;
+	}
+
+	.section1 {
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	.section2 {
+		display:flex;
+		flex-wrap:wrap;
+	}
+
+	article {
+		display:flex;
+		flex-wrap:wrap;
+		width: 10%;
+		margin:1.81% 0% 1.81% 0%;
+	}
+
+	.middle-img {
+		width: 80%;
+		position: relative;
+		left:0%;
+	}
+
+	footer {
+		margin: 0.45% 0% 0% 0%;
+	}
+}
