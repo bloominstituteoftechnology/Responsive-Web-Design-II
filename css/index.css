@@ -249,9 +249,9 @@ section.beginning.container img {
 button {
     background: white;
     margin-top: 5px;
-    margin-left: 55px;
-    padding: 5px 50px;
-    font-size: 17px;
+    margin-left: 15.25%;
+    padding: 5px 20.6%;
+    font-size: 1.7rem;
     border: 1px solid black;
 
 }
@@ -289,7 +289,8 @@ article section.section-top section {
 }
 
 .middle-img {
-    margin: 5% auto 0;
+    width: 100%;
+    margin: 20px auto 0;
 }
 
 article section.section-top,
@@ -314,7 +315,7 @@ article section.section-bottom section {
 }
 
 .contact {
-    padding: 0 10px 0;
+    padding: 0 5% 0;
 }
 
 .contact p {
@@ -374,7 +375,7 @@ footer {
     }
 
     button {
-        padding: 4px 50px;
+        padding: 4px 5%;
     }
 
     section.beginning.container img {
