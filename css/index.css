@@ -54,6 +54,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -148,6 +152,7 @@ h1, h2, h3, h4, h5 {
 	text-decoration: none;
 	color: black;
 	padding: 5px 35px;
+  font-size: 1rem;
 }
 
 .contact-section {
@@ -158,21 +163,29 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 15px;
 }
 
+p {
+  font-size: 1.6rem;
+}
+
 h1 {
-	font-size: 65px;
+	font-size: 6.5rem; /*65px*/
 	text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
 }
 
 header nav a {
 	text-decoration: none;
 	color: grey;
-	font-size: 14px;
+	font-size: 1.4rem;/*14px*/
 }
 
 footer {
 	display: flex;
 	justify-content: center;
-	font-size: 14px;
+	font-size: 1.4rem;/*14px*/
 }
 
 @media (max-width: 800px){
