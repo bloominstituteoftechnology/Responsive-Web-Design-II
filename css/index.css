@@ -276,7 +276,7 @@ footer {
 
 
 /* Max Width 800px Media Query */
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   .container {
     max-width: 700px;
     padding: 0 2%;
@@ -309,10 +309,10 @@ footer {
   header nav a {
     padding-left: 1.70%;
     padding-right: 1.70%;
-  } */
+  }
 
   /* Max Width 500px Media Query */
-  /* @media (max-width: 500px) {
+  @media (max-width: 500px) {
     .container {
       max-width: 350px;
     }
@@ -384,5 +384,5 @@ footer {
       font-size: 1.2rem;
       border: 1px solid black;
       cursor: pointer;
-    } */
+    }
 
