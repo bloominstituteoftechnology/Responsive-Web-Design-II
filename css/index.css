@@ -213,6 +213,10 @@ footer address p {
     animation: wobble 1s linear;
   }
 
+  header .header .headerTitle button {
+    padding: 5px 12%;
+  }
+
   .container .bigSec1, .container .bigSec2 {
     flex-direction: column;
     width: 99%;
