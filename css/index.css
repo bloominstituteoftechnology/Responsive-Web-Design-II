@@ -305,7 +305,7 @@ h5 {
 footer {
     text-align: center;
     font-size: 1.5rem;
-    width: 25%;
+    width: 35%;
     margin: 0 auto;
 }
 
@@ -313,13 +313,12 @@ footer {
 	/* 800 - 0 */
 	.main-container {
         /*width: 800px;*/
-        width: 800px;
+       width: 800px;
 	}
 
 	.menu-header {
 		margin-top: 3%;
         flex-wrap: wrap-reverse;
-        width: 99%;
     }
     
     .main-nav {
@@ -335,11 +334,7 @@ footer {
 		justify-content: center;
         align-items: center;
     }
-    
-    .middle-img {
-        width: 99%;
-    }
-}
+   }
 
 @media (max-width: 500px) {
 	/* 500 - 0 */
@@ -401,7 +396,7 @@ hr {
 }
 
 .contact {
-	width: 40%;
-	margin-left: 30px;
+	width: 33%;
+	margin-left: 5%;
 }
 }
