@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+/* Body */
 
 .wrapper {
     max-width: 880px;
@@ -74,13 +75,29 @@ h1, h2, h3, h4, h5 {
     margin-left: auto;
     margin-right: auto;
 }
+
+p, h2 {
+    font-size: 1.6rem;
+}
+
 nav, header, section {
     display: flex;
     padding: 34px 0px 0px;
 }
+
+/* Disabled links */
+
 nav a, header a, section a {
     text-decoration: none;
 }
+
+header a, section a {
+    color: black;
+}
+
+
+/*Navigation */
+
 nav {
     justify-content: space-between;
     
@@ -106,9 +123,7 @@ nav a:hover {
     padding: 0px;
 }
 
-header a, section a {
-    color: black;
-}
+/* Header */
 
 header {
     border-bottom: 1.5px solid black;
@@ -129,7 +144,30 @@ header a:hover {
     background-color: black;
     color: #fff;
 }
-.main h1 {
+
+/* Content */
+
+section img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+section a {
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+
+/* Main Page CSS */
+
+.main header h1 {
     font-size: 7.6rem;
     text-align: center;
     margin-top: 128px;
@@ -137,7 +175,7 @@ header a:hover {
     margin-left: 65px;
     padding: 0px 17px;
 }
-.intro-image {
+.main header .intro-image {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -147,46 +185,36 @@ header a:hover {
     margin-top: 50px;
     align-self: flex-end;
 }
-p, h2 {
-    font-size: 1.6rem;
-}
-section img {
-    width: 100%;
-    padding-bottom: 30px;
-}
-section a {
-    padding-bottom: 5px;
-    display: inline-block;
-}
-.half {
+
+.main header .half {
     width: 50%;
 }
-#top-section .half:first-child {
+.main #top-section .half:first-child {
     padding-right: 20px;
 }
-.three {
+.main .three {
     width: 33%;
     padding: 0px 5px 50px;
 
 }
-#contact {
+.main #contact {
     border-top: 1.5px black solid;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-#contact a, address {
+.main #contact a, address {
     padding-bottom: 15px;
     font-size: 1.6rem;
 }
-footer {
-    text-align: center;
-    padding-bottom: 30px;
-    font-size: 1.6rem;
+.main #contact a, .main address {
+    padding-bottom: 15px;
 }
 
+/* Section CSS */
+
 .services section {
-    flex-flow: wrap;
+    flex-wrap: wrap;
 }
 .services header {
     flex-direction: column;
@@ -236,6 +264,14 @@ footer {
 .box {
     width: 48%;
 }
+.facts {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.facts img {
+    width: 100%;
+}
 .services section .box {
     border: 1.5px solid black;
     margin-bottom: 30px;
@@ -255,15 +291,13 @@ footer {
 .services section .btn:hover {
     background-color: aquamarine;
 }
-ul {
+.services ul {
     padding: 15px 0px 22px 20px;
 }
-ul li {
+.services ul li {
     list-style: square;
     padding: 4px 0px;
-}
-#contact a, address {
-    padding-bottom: 15px;
+    font-size: 1.6rem;
 }
 
 
@@ -327,6 +361,9 @@ ul li {
     .section {
         padding: 0px 15px;
     }
+    .facts {
+        padding: 25px 15px;
+    }
     #middle-section img {
         padding-bottom: 0px;
     }
@@ -387,8 +424,8 @@ ul li {
         flex-direction: column;
         padding-top: 25px;
     }
-    section p {
-        padding-bottom: 25px;
+    .main section p {
+        padding-bottom: 20px;
     }
     section .three {
         width: 100%;
@@ -399,13 +436,20 @@ ul li {
         margin: auto;
         width: 100%;
     }
-    .services h1 {
-        padding: 0px;
 
+    .services header h1, .services header p {
+        padding: 15px;
+    }
+    .services header h1 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
     .services .box {
         width: 90%;
         margin-right: auto;
         margin-left: auto;
+    }
+    .facts {
+        flex-direction: column;
     }
 }
