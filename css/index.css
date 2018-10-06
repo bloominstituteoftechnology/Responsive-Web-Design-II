@@ -117,6 +117,11 @@ a:hover {
 	justify-content: center;
 }
 
+.middle-img {
+  max-width: 876px;
+  width: 100%;
+}
+
 .inOnDeStart {
 	height: 379px;
     max-width: 379px;
