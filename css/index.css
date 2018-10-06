@@ -306,7 +306,7 @@ h5 {
 footer {
     text-align: center;
     font-size: 1.5rem;
-    width: 35%;
+    /*width: 35%;*/
     margin: 0 auto;
 }
 
