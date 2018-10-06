@@ -12,7 +12,7 @@ html {
 }
 
 .nav-container section {
-  margin-top: 120px;
+  margin-top: 50px;
   padding-bottom: 40px;
   border-bottom: 1px solid black;
   margin-bottom: 40px;
@@ -68,6 +68,10 @@ html {
 } 
 
 @media (max-width: 800px) {
+
+  .nav-container section {
+    margin-top: 100px;
+  }
   .mid-container section img {
     height: 33vw;
     width: 40%;
@@ -76,7 +80,7 @@ html {
 
 @media (max-width: 500px) {
   .nav-container section {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .mid-container section {
