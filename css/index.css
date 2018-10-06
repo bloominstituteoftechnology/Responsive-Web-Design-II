@@ -77,13 +77,50 @@ h1, h2, h3, h4, h5, h6 {
   align-self: center;
 
   width: 69.5%;
-
+ 	position: relative;
   font-size: 1.5rem;
 }
 
 .nav-header nav a {
   text-decoration: none;
   color: grey;
+}
+
+.nav-header nav a:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: 2px;
+	border-radius: 5px;
+	color: black;
+}
+
+nav .brackets:before, .brackets:after
+{
+    position: absolute;
+    opacity: 0;
+    font-size: 35px;
+    top: 0px;
+    transition: all 0.3s;
+		margin: 0 -15px;
+}
+
+nav .brackets:before
+{
+    content: '(';
+    left: 0px;
+    transform: translateX(0px);
+}
+
+nav .brackets:after
+{
+    content: ')';
+    right: 0px;
+    transform: translateX(0px);
+}
+
+nav .brackets:hover:before, .brackets:hover:after
+{
+    opacity: 1;
+    transform: translateY(-12px);
 }
 
 .page-head {
