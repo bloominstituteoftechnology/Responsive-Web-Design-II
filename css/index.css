@@ -108,7 +108,7 @@ img.logo  {
 	display: flex;
     justify-content: space-between;
 	align-items: center;
-	padding: 6.3% 0;
+	padding: 50px 0;
 	width: 100%;
 }
 
@@ -127,7 +127,7 @@ img.logo  {
 
 button {
     font-family: 'Titillium Web', sans-serif;
-    padding: 1.4% 7%;
+    padding: 5px 7%;
     background: none;
 	border: .1rem solid black;
 	width: 40%;
@@ -182,7 +182,7 @@ button {
 }
 /* ------------------ Footer ------------------*/
 footer {
-	padding: 6.25% 0;
+	padding: 50px 0;
 }
 
 footer > * {
@@ -195,7 +195,7 @@ footer h2 {
 
 .footer-copyright {
 	text-align: center;
-	padding: 2.5% 0;
+	padding: 20px 0;
 }	
 
 
@@ -261,7 +261,7 @@ footer h2 {
 
     .main-top .main-top-container,
     .main-bottom .main-bottom-container {
-        padding: 2.2% 0 4.4% 0;
+        padding: 10px 0 20px 0;
 	}
 	
 }
