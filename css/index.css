@@ -173,6 +173,7 @@ section a {
     border-top: 1.5px black solid;
     width: 100%;
     display: flex;
+    flex-direction: column;
 }
 #contact a, address {
     padding-bottom: 15px;
@@ -181,6 +182,7 @@ section a {
 footer {
     text-align: center;
     padding-bottom: 30px;
+    font-size: 1.6rem;
 }
 
 .services section {
