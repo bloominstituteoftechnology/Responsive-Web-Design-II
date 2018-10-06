@@ -84,6 +84,14 @@ p{
     font-size: 1.8rem;
 }
 
+address{
+    font-size: 1.8rem;
+}
+
+ .phone, .email{
+     font-size: 1.8rem;
+ }
+
 .mainBody p{
     font-size: 1.5rem;
 }
