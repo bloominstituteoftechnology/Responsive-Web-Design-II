@@ -440,7 +440,7 @@ footer {
     .main header img {
         display: none;
     }
-    section .three {
+    .main section .three {
         width: 100%;
         padding-bottom: 0px;
     }
