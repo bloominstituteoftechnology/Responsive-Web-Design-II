@@ -17,7 +17,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -114,7 +114,7 @@ nav a {
     display: flex;
     height: 350px;
     width: 45%/*438px*/;
-    font-size: 74px;
+    font-size: 7.4rem;
     font-family: 'Bangers', cursive;
     text-align: center;
     justify-content: center;
@@ -124,7 +124,7 @@ nav a {
 a.button {
     display: flex;
     width: 140px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Titillium Web', sans-serif;
     text-decoration: none;
     color: black;
@@ -163,13 +163,16 @@ section.services-product-vision{
     padding: 20px 0px;
 }
 
+section.services-product-vision {
+    border-bottom: 1px solid black;
+}
+
 section.services-product-vision div{
     display: flex;
     width: 33%;
     text-align: left;
     align-items: left;
     flex-direction: column;
-    border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
 
@@ -199,24 +202,28 @@ footer {
 =    }
    
     .container {
-        width: 600px;
+        width
+        : 600px;
     }
     .right img { 
         visibility: hidden;
         transform: scale(0);
     }
+
     .right {
         transform: scale(0);
     }
+
     .left {
         display: flex;
         width: 100%;
-        font-size: 74px;
+        font-size: 7.4px;
         font-family: 'Bangers', cursive;
         text-align: center;
         justify-content: center;
         flex-direction: column;
     }
+
     .right {
         display: none;
     }
@@ -245,7 +252,6 @@ footer {
         padding: 15px 30px;
         justify-content: ;
         margin: 0px;
-
 =    }
 
     .container {
@@ -278,6 +284,4 @@ footer {
         flex-direction: column;
         width: 100%;
     }
-
-
 }
