@@ -370,7 +370,7 @@ hr {
     .top-content {
         width: 48%;
 		height: 100%;
-		border: solid salmon 1px;
+		/* border: solid salmon 1px; */
 		margin-top: 25px;
 		margin-bottom: 30px;
 		font-size: 102%;
@@ -379,7 +379,7 @@ hr {
     .bottom-content {
 		width: 32%;
 		height: 100%;
-		border: solid salmon 1px;
+		/* border: solid salmon 1px; */
 		margin-top: 30px;
 		margin-bottom: 30px;
 		font-size: 108%;
