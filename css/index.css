@@ -503,5 +503,9 @@ nav {
   }
   .topLine, .bottomLine {
     width: 95%;
-
+  }
+  .fullPage {
+  border-top-right-radius: .125rem;
+  border-top-left-radius: .125rem;
+  }
 }
