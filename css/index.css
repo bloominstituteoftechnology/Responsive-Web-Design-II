@@ -1,1 +1,407 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 62.5%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.menu-header {
+	display: flex;
+    justify-content: space-evenly;
+    margin: 0 2%;
+    /* width 872 px */
+    width: 97%;
+}
+
+.main-nav {
+	margin: 0px auto;
+    padding: 0px;
+    /*width: 700px;*/
+    width: 80.3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu {
+    padding-top: 20px;
+	padding-right: 20px;
+	font-size: 2rem;
+	color: darkgray;
+	text-decoration: none;
+}
+
+.menu:hover {
+	color: black;
+}
+
+.logo {
+	padding: 10px;
+}
+
+.h1-splash {
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 7rem;
+    align-items: center;
+    margin: 3.4%;
+	padding-top: 3%;
+	padding-bottom: 8%;
+}
+
+.main-heading {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.h1-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin-bottom: 10%;
+}
+
+.get-started-btn {
+	border: 1px solid black;
+	font-size: 1.5rem;
+	margin: 2%;
+	padding: 3% 18%;
+}
+
+.h1-services {
+	font-size: 2rem;
+}
+
+.h1-vision {
+	font-size: 2rem;
+}
+
+.top-content {
+	display: flex;
+	width: 95%;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    margin: 0 2%;
+}
+
+.top-block {
+    width: 45%;
+}
+
+.top-content h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.top-content p {
+    font-size: 1.5rem;
+}
+
+.middle-img {
+    display: flex;
+    margin: 3% auto;
+    width: 95%;
+    align-content: center;
+    justify-content: center;
+}
+
+.bottom-content {
+	display: flex;
+	width: 95%;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin: 0 2%;
+}
+
+.bottom-block {
+    width: 30%;
+}
+
+.bottom-content h2 {
+    font-size: 2rem;
+}
+
+.bottom-content p {
+    font-size: 1.5rem;
+}
+
+.vision {
+	margin-bottom: 30px;
+}
+
+.contact {
+    margin: 0 2%;
+}
+
+.contact h3 {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.contact p {
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 25%;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+	/* 800 - 0 */
+	.main-container {
+        /*width: 800px;*/
+        width: 800px;
+	}
+
+	.menu-header {
+		margin-top: 3%;
+        flex-wrap: wrap-reverse;
+        width: 99%;
+    }
+    
+    .main-nav {
+        width: 80.3%;
+    }
+
+	.title-img {
+		display: none;
+	}
+
+	.h1-splash {
+		margin: 0;
+		justify-content: center;
+        align-items: center;
+    }
+    
+    .middle-img {
+        width: 99%;
+    }
+}
+
+@media (max-width: 500px) {
+	/* 500 - 0 */
+	.main-container {
+        /*width: 500px;*/
+        width: 500px;
+	}
+
+	.logo {
+		padding-bottom: 15px;
+	}
+
+	.main-nav {
+		width: 99%;
+		flex-direction: column;
+		justify-content: center;
+		border-top: 1px solid grey;
+	}
+	
+	.menu {
+		width: 99%;
+		border-bottom: 1px solid grey;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.h1-splash {
+		margin: 30px;
+}
+
+.top-content {
+	width: 100%;
+	flex-direction: column;
+	margin: 30px;
+}
+
+.top-block {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+.middle-img {
+	width: 90%;
+}
+
+.bottom-content {
+	width: 100%;
+	flex-direction: column;
+	margin: 30px;
+}
+
+.bottom-block {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+hr {
+   display: none;
+}
+
+.contact {
+	width: 40%;
+	margin-left: 30px;
+}
+}
