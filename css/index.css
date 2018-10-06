@@ -1,1 +1,339 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+* {
+    box-sizing: border-box;
+  }
+  html {
+      font-size: 62.5%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    font-style: normal;
+    max-width: 880px;
+    margin: 0 auto;
+    
+  }
+  body {
+    margin: 0 auto;
+    width: 100%;
+}
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5%;
+  }
+  .intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start
+  }
+  .intro div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    
+  }
+  .h1Intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 6.25%;
+  }
+  .h1Intro span {
+    font-size: 8rem;
+    font-family: 'Bangers';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+    font-family: arial;
+  }
+  .code_img {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    margin: 5% 0% 5% 10%;
+  }
+  .button_container {
+    margin: 10%;
+    border: 1px solid black;
+  }
+  .h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2.8%;
+    font-family: 'Bangers', cursive;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    flex-wrap: wrap;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+  .sec1 {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      margin: 2.8% 0% 2.8% 0%;
+  }
+  .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    width: 50%;
+  }
+  .img_container .middle_img {
+    width: 100%;
+  }
+  
+  .sec2 {
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      margin: 2.8% 0% 2.8% 0%;
+  }
+  
+  .two {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  
+  .next {
+    margin-left: 2.3%;
+  }
+  
+  .navigation {
+    display: flex;
+    width: 100%;
+    margin: 1% 0% 1.7%;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 2rem;
+    
+  }
+  
+  .nav li {
+    display: flex;
+    width: 20%;
+}
+  
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+  }
+  .copywrite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 8%;
+  }
+
+/* Tablet */
+
+@media (max-width: 800px) {
+    body {
+        width: 93.8%;
+        margin: 0 auto;
+    }
+    .container {
+        width: 93.8%;
+	    margin: 0 auto;
+    }
+    
+    .intro div {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25%;
+    }
+    header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav li {
+        flex-direction: row;
+        margin-top: 5%;
+        font-size: 2rem;
+    }
+    .intro .button_container {
+        display: flex;
+        justify-content: center;
+        margin-left: 5%;
+    }
+    
+    .code_img {
+        display: none;
+    }
+    
+    .img_container .middle_img {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sec1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sec2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+    }
+    
+}
+/* Mobile */
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-right: 10%;
+
+     
+    }
+    li {
+        border: 1px solid grey;
+        width: 100%;
+    }
+    
+    .nav li {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0%;
+    }
+    .nav a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        font-size: 2rem;
+    }
+    .intro div {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10%;
+        margin-left: 13%;
+    
+    }
+    .intro span {
+        font-size: 8rem;
+    }
+    .intro .button_container {
+        margin-right: 15%;
+    }
+    .main {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .img_container .middle_img {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sec1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sec2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .one {
+        margin: 0 auto;
+        width: 100%
+    }
+    .two {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .next {
+        justify-content: flex-start;
+        margin: 0 auto;
+        width: 100%;
+
+    }
+    h1{
+        font-family: 'Bangers';
+    }
+    footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+   
+}
