@@ -86,13 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   color: grey;
 }
 
-.nav-header nav a:hover {
-	background-color: rgba(0, 0, 0, 0.05);
-	padding: 2px;
-	border-radius: 5px;
-	color: black;
-}
-
 nav .brackets:before, .brackets:after
 {
     position: absolute;
@@ -159,7 +152,7 @@ nav .brackets:hover:before, .brackets:hover:after
 }
 
 .get-started a:hover {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.05);
 }
 
 .main-content {
@@ -359,5 +352,14 @@ Mobile Design Style
 
 	#copyright {
 		margin-top: 57px;
+	}
+}
+
+@media (min-width: 500px) {
+	.nav-header nav a:hover {
+		background-color: rgba(0, 0, 0, 0.05);
+		padding: 2px;
+		border-radius: 5px;
+		color: black;
 	}
 }
