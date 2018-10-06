@@ -33,9 +33,11 @@ footer, header, hgroup, menu, nav, section {
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    background-color: gainsboro;
 }
 ol, ul {
 	list-style: none;
@@ -72,6 +74,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container{
+    background-color: #fffff0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -103,18 +106,19 @@ header{
     position: fixed;
     width: 100%;
     max-width: 880px;
-    margin: 1% 0;
-    /* height: 75px;  */
+    /* margin: 1% 0; */
+    /* height: 75px; */
     align-items: center;
-    justify-content: space-evenly;
-    background: white;
+    justify-content: space-between;
+    background: #fffff0;
 }
  nav{
     display: flex;
     position: static;
+    /* justify-content: flex-start; */
+    padding: 1% 0;
     justify-content: space-between;
-    /* justify-content: space-around; */
-    width: 79.54%;
+    width: 70%;
     /* height: 20px; */
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -122,9 +126,10 @@ header{
 
  nav a{
     /* font-size: 12px; */
-    font-size: .75rem;
+    font-size: 1.7rem;
     /* padding: 20px 20px 20px 20px; */
-    padding: 3.5%;
+    /* padding: 2.5%; */
+    padding: 3.5% 5%;
     color: gray;
     position: relative;
     bottom: 15px;
@@ -140,7 +145,6 @@ nav a:hover{
  .logo{
     position: static;
     /*margin: auto;*/
-    margin-left: 5%;
     margin-bottom: 19.54%;
     align-items: flex-end;
 }
@@ -289,22 +293,26 @@ h2 {
     font-size: 2.5rem;
 }
 
+h3{
+    font-size: 2rem;
+}
+
 
 .firstSection2{
         flex-wrap: wrap;
             width: 100%;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     /* margin: 75px 25px 50px 25px; */
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .services-header{
     width: 100%;
-    height: 125px;
+    /* height: 125px; */
 
 }
 .services-header-img {
@@ -314,39 +322,50 @@ h2 {
 .services{
     /* font-size: 18px; */
     font-size: 1.125rem;
+    padding: 5% 3%;
 }
 
 
 .mainBody2{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     border-top: 1px solid black;
     border-bottom: 5px solid black;
     padding: 50px 0 0 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .child3{
     justify-content: space-evenly;
-    width: 475px;
-    height: 220px;
+    /* width: 475px; */
+    width: 48%;
+    /* height: 220px; */
     border: 3px solid black;
     background: lavender;
-    padding: 30px;
-    margin-bottom: 40px;
+    /* padding: 30px; */
+    padding: 3.81%;
+    /* margin-bottom: 40px; */
+    margin-bottom: 5.81%;
     background-color: whitesmoke;
 }
 
 button {
     border-radius: 8px;
     text-align: center;
-    padding: 10px 40px;
+    /* based on 430px width for .child3*/
+    /* padding: 10px 40px; */
+    padding: 2.32% 9.30%;
     border: solid 2px black;
     border-bottom: solid 2px lightgrey;
     background: white;
     margin: 17px 0;
+}
+
+.child3 button{
+    font-size: 1.5rem;
 }
 
 .footer2 {
@@ -445,6 +464,18 @@ li {
           width: 96%;
     }
 
+    .child1, .child2{
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 25px 0; */
+        padding: 1.72%;
+         width: inherit;
+    }
+
+    .child1 {
+        height: inherit;
+    }
+
     .mainBody2 {
         /* flex-direction: vertical; */
         flex-wrap: wrap;
@@ -508,18 +539,6 @@ li {
    .services-header-img{
         /* max-width: 800px; */
         width: 98%;
-    }
-
-    .child1, .child2{
-        justify-content: space-between;
-        align-items: center;
-        /* padding: 25px 0; */
-        padding: 1.72%;
-         width: inherit;
-    }
-
-    .child1 {
-        height: inherit;
     }
 
      .footer2 {
