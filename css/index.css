@@ -710,4 +710,16 @@ li {
         align-items: center;
     }
 
+    address{
+        font-size: 1.2rem;
+    }
+    
+     .phone, .email{
+         font-size: 1.2rem;
+     }
+
+     .copyright{
+        font-size: 1.5rem
+     }
+
 }
