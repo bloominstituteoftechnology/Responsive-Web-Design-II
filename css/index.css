@@ -34,8 +34,6 @@ header .header {
   display: flex;
   justify-content:space-around;
   margin: 70px 0 76px 13.5%;
-  /* margin: 70px 0 76px 0; */
-
 }
 
 header .header .headerTitle {
@@ -193,7 +191,7 @@ footer address p {
   }
 
   nav .links a {
-    width: 90%;
+    width: 100%;
     border-top: 1px solid black;
     padding: 20px 0;
     font-size: 2rem;
@@ -208,8 +206,13 @@ footer address p {
     margin: 45px 0 76px 12%;
   }
 
+  header .header .headerTitle {
+    width: 100%;
+  }
+
   .container .bigSec1, .container .bigSec2 {
     flex-direction: column;
+    width: 99%;
   }
 
   .container .bigSec1 {
@@ -240,12 +243,4 @@ footer address p {
     font-size: 1.6rem;
   }
 
-  hr {
-    width: 90%;
-  }
-
-  .container>img {
-    width: 90%;
-  }
-  
 }
