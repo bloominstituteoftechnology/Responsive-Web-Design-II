@@ -167,6 +167,7 @@ h1 {
 h2 {
     font-size: 2.7rem;
 }
+
 h3 {
     font-size: 2.2rem;
 }
@@ -181,8 +182,9 @@ ul {
 }
 
 p {
-    font-size:1.6rem;
+    font-size: 1.6rem;
 }
+
 .container {
     width: 100%;
     max-width: 880px;
@@ -231,7 +233,6 @@ header nav a {
 
 .logo {
     width: 183px;
-    height: 36px;
     align-self: center;
     justify-self: flex-end;
 }
@@ -241,6 +242,8 @@ header nav a {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
+    padding-left: 7.5%;
 }
 
 .beginning h1 {
@@ -256,7 +259,7 @@ button {
     background: white;
     margin-top: 5px;
     margin-left: 55px;
-    padding: 10px 40px;
+    padding: 5px 50px;
     font-size: 17px;
     border: 1px solid black;
 
@@ -265,11 +268,10 @@ button {
 article {
     display: flex;
     flex-wrap: wrap;
-
+    line-height: 1.2;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding-top: 39px;
-    padding-bottom: 39px;
+    padding: 39px 0;
     align-content: space-between;
     justify-content: space-between;
 
@@ -278,7 +280,7 @@ article {
 article section {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 0;
+    margin: 0 0;
     align-content: space-between;
     justify-content: space-between;
 }
@@ -307,7 +309,7 @@ article section.section-top {
 
 article section.section-top section {
     margin-right: 34px;
-    width: 400px;
+    width: 45%;
 }
 
 article section.section-top section:last-child {
@@ -315,13 +317,13 @@ article section.section-top section:last-child {
 }
 
 .middle-img {
-    margin: 45px auto 0;
+    margin: 5% auto 0;
 }
 
 article section.section-top,
 article section.section-bottom {
-    margin-right: auto;
-    margin-left: auto;
+
+    margin: 0 auto
 }
 
 
@@ -335,29 +337,12 @@ article section.section-bottom {
 }
 
 article section.section-bottom section {
-    width: 265px;
+    width: 30.11%;
 
-}
-
-.facts {
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.facts section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.facts section ul {
-    display: flex;
 }
 
 .contact {
-    margin-top: 57px;
-    padding: 39px 10px 0;
+    padding: 0 10px 0;
 }
 
 .contact p {
@@ -425,10 +410,12 @@ footer {
     section.beginning.container .services-header-img {
         width: 100%;
     }
+
     section.section-top {
         padding: 0;
         margin: 0;
     }
+
     article section.section-top section {
         width: 45%
     }
@@ -503,6 +490,7 @@ footer {
         padding: 0;
         width: 100%;
     }
+
     header nav a {
         width: 100%;
         padding: 20px 45% 20px;
@@ -510,6 +498,7 @@ footer {
         border-bottom: 1px solid black;
 
     }
+
     header nav a:first-child {
         border-top: 1px solid black;
     }
@@ -522,7 +511,7 @@ footer {
     .transform:focus,
     .transform:active {
         transform: scale(1.0);
-}
+    }
 
     [class*="box-styling"] {
         width: 100%;
@@ -539,10 +528,11 @@ footer {
     .middle-img {
         width: 90%
     }
+
     article section.section-top {
         width: 95%;
     }
-    
+
 
     article section.section-top section {
         width: 100%
@@ -551,6 +541,7 @@ footer {
     article section.section-bottom {
         width: 90%;
     }
+
     article section.section-bottom section {
         width: 100%
     }
