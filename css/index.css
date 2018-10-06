@@ -1,1 +1,338 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+html{
+    font-size:62.5%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width:880px;
+    width:100%;
+    height:1400px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    
+}
+header{
+    width:100%;
+    height:500px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    padding-bottom:20px;
+}
+nav{
+    width:100%;
+    display:flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+.links{
+    width:69%;
+    display:flex;
+    justify-content:space-between;
+    font-size:1.5rem;
+}
+.logo{
+    position: relative;
+    top:10px;
+}
+a{
+    text-decoration: none;
+    color: grey;
+    align-self:flex-start;
+}
+.heading-container{
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    position: relative;
+    left: 2%;
+}
+.main-content{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    position:relative;
+    top:50px;
+}
+h1{
+    font-size:7.2rem;
+    width:100%;
+    text-align:center;  
+}
+button{
+    background-color: white;
+    border:1.2px solid black;
+    align-self:center;
+    font-size:1.6rem;
+    width:35.8%;
+    height:35px;
+}
+.top-content{
+    display:flex;
+    width:100%;
+    position: relative;
+    top:30px;
+    border-top:2px solid black;
+    padding-top:35px;
+    font-size:1.6rem;
+}
+.top-paragraphs{
+    width:100%;
+}
+.middle-img{
+    position:relative;
+    top:25px;
+    width:100%;
+}
+.middle-content{
+    display:flex;
+    width:100%;
+    border-bottom:2px solid black;
+    justify-content:space-between;
+    font-size:1.6rem;
+    position:relative;
+    top:22px;
+}
+.middle-paragraphs{
+    width:93.5%;
+    align-self:center;
+}
+.bottom-content{
+    display:flex;
+    width:99.54%;
+    flex-flow: column;
+    font-size:1.6rem;
+    position: relative;
+    top:40px;
+}
+address{
+    position:relative;
+    top:10px;
+}
+footer{
+    align-self: center;
+    margin-top:60px;
+    position: relative;
+    top:7px;
+}
+@media (max-width:800px){
+    .container{
+        width:95%;
+    }
+    .code-snip{
+      display:none;
+    }
+    nav{
+        width:100%;
+        height:100px;
+        flex-flow:column;
+        justify-content: center;
+        margin-top:20px;
+    }
+    .links{ 
+        margin-top:50px;
+        align-self:center;
+        width:100%;
+    }
+    .logo{
+        order:-1;
+        align-self:center;
+    }
+    header{
+        flex-flow:column;
+        margin-bottom:0px;
+    }
+    .heading-container{
+        position:relative;
+        bottom:60px;
+    }
+    button{
+        width:23%;
+    }
+    .top-content{
+        top:0px;
+        justify-content: space-evenly;
+    }
+    .middle-img{
+        width:100%;
+        top:0px;
+    }
+    .middle-content{
+        justify-content: space-evenly;
+        top:0px;
+    }
+    .top-paragraphs{
+        width:97%;
+    }
+    .middle-paragraphs{
+        width:87%;
+    }
+    .bottom-content{
+        justify-content: space-evenly;
+        width:100%;
+    }
+    footer{
+        bottom:80px;
+        margin-top:0px;
+        margin-bottom:30px;
+    }
+}
+@media (max-width:500px){
+    .container{
+        width:95%;
+        height: 1950px;
+        flex-flow:column;
+        align-items: center;
+    }
+    .logo{
+        margin-top:20px;
+        margin-bottom:0px;
+    }
+    nav{
+        position: relative;
+        bottom:50px;
+        margin-top:0px;
+        
+    }
+    .links{
+        flex-flow:column;
+        width:100%;
+        position: relative;
+        bottom:20px;
+    }
+    a{
+        width:105%;
+        border-bottom:1px solid grey;
+        align-self: center;
+        text-align:center;
+        font-size:2rem;
+        padding: 20px 0%;
+    }
+    a:first-child{
+        border-top: 1px solid grey;
+    }
+    .heading-container{
+        display:flex;
+        justify-content: center;
+        position:relative;
+        top:230px;
+        width:100%;
+        height:350px;
+    }
+    h1{
+        margin:0%;
+        padding:0%;
+    }
+    button{
+        width:35%;
+        margin-top:20px;
+    }
+
+    .top-content{
+        flex-flow:column;
+        width:90%;
+        margin-top:150px;
+        top:100px;
+        height:300px;
+    }
+    .top-content section{
+        margin-top:0px;
+    }
+    .top-paragraphs{
+        margin-bottom:20px;
+        width:100%;
+    }
+    .middle-paragraphs{
+        width:100%;
+        margin-bottom:60px;
+    }
+    .middle-img{
+        width:90%;
+        margin:50px 0% 20px 5%;
+    }
+    .middle-content{
+        flex-flow:column;
+        width:90%;
+        height:420px;
+        
+    }
+    .bottom-content{
+        width:90%;
+        margin:0px 0%;
+        position:relative;
+        top:0px;
+    }
+    footer{
+        position:relative;
+        top:60px;
+    }
+}
