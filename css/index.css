@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5 {
 body {
 	max-width: 880px;
 	width: 100%;
+	
 }
 
 .tablet-logo {
@@ -108,7 +109,7 @@ header {
 }
 
 header h1 {
-	font-size: 60px;
+	font-size: 73px;
 	text-align: center;
 }
 
@@ -129,16 +130,12 @@ header img {
 	width: 300px;
 }
 
-hr {
-	margin: 1%;
-}
-
 .container {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
-	margin: 20px;
+	margin: 0px 2%;
 }
 
 .tablet-logo-container {
@@ -153,18 +150,16 @@ hr {
 
 .middle-img {
 	width: 100%;
-	margin: 0px 2%;
-	padding: 0px 1%;
+	/* margin: 0px 2%; */
+	/* padding: 0px 1%; */
 }
 
 .bottom-content {
 	width: 30%;
 	height: 150px;
+	margin-top: 20px;
 }
 
-hr {
-	margin: 1%;
-}
 
 .contact {
 	width: 100%;
@@ -293,28 +288,35 @@ footer {
 
 hr {
 	width: 100%;
+	border: black solid .75px;
+	margin: 15px 1%;
 }
 
 @media (max-width: 800px) {
     body {
 		width: 100%;
-        
+		/* background-color: aqua; */
+		padding-right: 2%;
+		        
     }
     header img {
         display: none;
     }
 
     .tablet-logo-container {
-        margin: 0px auto;
+        margin: 0px;
         display: flex;
-        justify-items: center;
+		justify-items: center;
+		/* background-color: yellow;
+		border: solid red 2px; */
 
     }
 
     .tablet-logo {
         display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 29px;
+		margin-bottom: 25px;
+		padding-left: 2.5%;
         
     }
     .logo {
@@ -322,32 +324,65 @@ hr {
     }
     
     nav {
-        display: flex;
-        width: 100%;
+		display: flex;
+		width: 100%;
         margin-left: 0%;
         margin-right: 0%;
-        padding: 0px 2%;
+		padding: 0px 2%;
+		/* background-color: yellow; */
+		justify-content: space-between;
 
     }
 
     .half-page-tablet {
-        display: block;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+		font-size: 0px;
+		display: block;
+        margin-top: 50px;
+		margin-bottom: 30px;
+		/* border: solid pink 1px; */
+	}
+	
+	.half-page-tablet h1 {
+		margin-bottom: 27px;
+	}
+
+	.half-page-tablet .button {
+		font-size: 15px;
+		width: 175px;
+		height: 31px;
+	}
+
     .half-page {
         display: none;
 
     }
 
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 0px 1%;
+		/* margin: 20px; */
+	}
+
+
     .top-content {
-        /* width: 45%; */
-        height: 100%;
+        width: 49%;
+		height: 100%;
+		border: solid salmon 1px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		font-size: 102%;
     }
        
     .bottom-content {
-        /* width: 30%; */
-        height: 100%;
+		width: 31%;
+		height: 100%;
+		border: solid salmon 1px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		font-size: 108%;
     }
 
 }
