@@ -466,7 +466,7 @@ ul {
         flex-wrap: wrap-reverse;
         width: 100%;
         /* height: 170px; */
-        position: relative;
+        position: fixed;
         justify-content: center;
         align-items: center;
     }
@@ -479,12 +479,20 @@ ul {
     nav a{
         /* margin: 20px; */
         margin: 2.5%;
+        padding: 2.5%;
         font-size: 1rem;
         width: 10%;
+        align-items: center;
     }
 
     a {
         color: #d3d3d3;
+    }
+
+    .innovation{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
     }
 
      .logo{
@@ -614,21 +622,23 @@ ul {
      border-bottom: 1px solid black;
      display: flex;
     justify-content: center;
-
+    align-items: center;
 
     }
 
     nav{
         flex-direction: column;
-        height: initial;
+        /* height: initial; */
         padding: 2% 0;
+        align-items: center;
     }
 
     nav a{
-        margin: initial;
+        margin: inherit;
         /* font-size: 23px; */
         font-size:1.4375rem;
         width: 100%;
+        /* padding: 2.5%; */
     }
     
     .logo{
