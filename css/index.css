@@ -85,21 +85,23 @@ header{
     display: flex;
     flex-wrap: nowrap;
     position: fixed;
-    width: 67%;
-    margin: 1%;
+    width: 100%;
+    max-width: 880px;
+    margin: 1% 0;
     /* height: 75px;  */
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background: white;
 }
  nav{
     display: flex;
     position: static;
     justify-content: space-between;
+    /* justify-content: space-around; */
     width: 79.54%;
     /* height: 20px; */
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
 }
 
  nav a{
@@ -121,6 +123,7 @@ nav a:hover{
  .logo{
     position: static;
     /*margin: auto;*/
+    margin-left: 5%;
     margin-bottom: 19.54%;
     align-items: flex-end;
 }
@@ -131,11 +134,11 @@ nav a:hover{
     width: 100%;
     /* height: 500px; */
     display: flex;
-    margin: 12%;
+    margin: 12% 0;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
-    z-index: -1;
+    justify-content: space-between;
+    /* z-index: -1; */
 }
 
 h1 {
@@ -143,13 +146,21 @@ h1 {
     text-align: center;
 }
 
+.innovation{
+    position: relative;
+    width: 50%;
+    /* height: 400px; */
+    /* height: 500px; */
+}
+
 .getStarted{
     background-color: white;
     height: 30px;
-    width: 150px;
+    /* width: 150px; */
+    width: 40%;
     border: 1px solid black;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 1.5%;
     margin-left: 30%;
 }
 
@@ -158,42 +169,38 @@ h1 {
     color: white;
 }
 
-.innovation{
-    z-index: -1;
-    /* display: inline-block; */
-    position: relative;
-    /* bottom: 30px; */
-    /* margin: 50px; */
-    width: 400px;
-    /* height: 500px; */
-}
 
 .codeSnippet{
-display: inline-block;
-    margin-left: 75px;
+    /* display: inline-block; */
+     /* margin-left: 75px; */
+     margin-left: 8.52%;
     /* margin: 50px; */
-    width: 390px;
+    /* width: 390px; */
+    width: 44.31%;
 }
 
 .codeSnippet img{
-    width: 350px;
+    /* width: 350px; */
+    width: 89.74%;
     /* height: 350px; */
 }
 
 .mainBody{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 10px 0;
-    z-index: -1;
+    /* padding: 10px 0; */
+    padding: 1.13% 0;
+    /* z-index: -1; */
 }
 
 .upperMain {
     display: flex;
-    width: 1000px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
@@ -206,19 +213,18 @@ display: inline-block;
 }
 
 .middle-img {
-    width: 1000px;
+    width: 100%;
 }
 
 .lowerMain {
     /*margin: 0 auto;*/
     display: flex;
-    width: 1000px;
+    width: 100%;
     height: 200px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    /* margin: 40px 10px 10px 10px; */
 }
 
 .child2 {
@@ -235,9 +241,11 @@ footer{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-top: 40px;
-    margin-left: 20px;
-    width: 1000px;
+    /* margin-top: 40px; */
+    margin-top: 4.54%;
+    /* margin-left: 20px; */
+    margin-left: 2.27%;
+    width: 100%;
     height: 250px;
 }
 
@@ -245,11 +253,12 @@ footer{
 .copyright {
     display: flex;
     flex-direction: row;
-    margin: 40px;
+    margin: 4.54%;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 100px;
+    /* width: 200px; */
+    width: 22.72%;
+    /* height: 100px; */
     margin: auto;
 }
 
@@ -264,7 +273,7 @@ h2 {
 
 .firstSection2{
         flex-wrap: wrap;
-            width: 1000px;
+            width: 100%;
     height: 500px;
     display: flex;
     /* margin: 75px 25px 50px 25px; */
@@ -275,12 +284,12 @@ h2 {
 }
 
 .services-header{
-    width: 1000px;
+    width: 100%;
     height: 125px;
 
 }
 .services-header-img {
-    width: 1000px;
+    width: 100%;
 }
 
 .services{
@@ -326,7 +335,7 @@ button {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 1000px;
+    width: 100%;
     margin: 40px 0px;
 }
 
