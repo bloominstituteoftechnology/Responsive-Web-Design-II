@@ -87,6 +87,10 @@ p{
     font-size: 1.8rem;
 }
 
+li{
+    font-size: 1.5rem;
+    padding: 5px;
+}
 address{
     font-size: 1.8rem;
 }
@@ -130,6 +134,7 @@ header{
     /* padding: 20px 20px 20px 20px; */
     /* padding: 2.5%; */
     padding: 3.5% 5%;
+    width: 20%;
     color: gray;
     position: relative;
     bottom: 15px;
@@ -266,10 +271,23 @@ footer{
     /* margin-top: 40px; */
     margin-top: 4.54%;
     /* margin-left: 20px; */
-    margin-left: 2.27%;
+    margin-left: 3%;
     width: 100%;
-    height: 250px;
+    /* padding: 10%; */
+    /* height: 250px; */
 }
+
+address{
+    font-size: 1.8rem;
+}
+
+ .phone, .email{
+     font-size: 1.8rem;
+ }
+
+ .copyright{
+    font-size: 1.8rem;
+ }
 
 
 .copyright {
@@ -279,9 +297,10 @@ footer{
     justify-content: center;
     align-items: center;
     /* width: 200px; */
-    width: 22.72%;
+    /* width: 22.72%; */
+    padding: 3%;
     /* height: 100px; */
-    margin: auto;
+    /* margin: auto; */
 }
 
 /*SERVICES.HTML EXCLUSIVE ELEMENTS */
@@ -334,21 +353,26 @@ h3{
     justify-content: space-between;
     border-top: 1px solid black;
     border-bottom: 5px solid black;
-    padding: 50px 0 0 0;
+    /* padding: 50px 0 0 0; */
     /* z-index: -1; */
 }
 
 .child3{
-    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     /* width: 475px; */
     width: 48%;
+    justify-content: space-between;
     /* height: 220px; */
     border: 3px solid black;
-    background: lavender;
+    /* background: lavender; */
     /* padding: 30px; */
     padding: 3.81%;
     /* margin-bottom: 40px; */
-    margin-bottom: 5.81%;
+    /* margin-top: 3%;
+    margin-bottom: 5.81%; */
+    margin: 3% 1%;
     background-color: whitesmoke;
 }
 
@@ -357,11 +381,18 @@ button {
     text-align: center;
     /* based on 430px width for .child3*/
     /* padding: 10px 40px; */
-    padding: 2.32% 9.30%;
+    padding: 2.32% 12.30%;
     border: solid 2px black;
     border-bottom: solid 2px lightgrey;
     background: white;
-    margin: 17px 0;
+    width: 50%;
+    margin: 5.5% 0;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    border: solid 2px white;
 }
 
 .child3 button{
@@ -375,26 +406,32 @@ button {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    margin: 40px 0px;
+    margin: 40px 20px;
+    height: inherit;
 }
 
 .child4{
-   width: 475px;
+   width: 47%;
+}
+
+.child4 copyright{
+    justify-content: center;
+    align-items: center;
 }
 
 .facts {
     display: flex;
     flex-wrap: wrap;
-    height: 300px;
+    /* height: 300px; */
     justify-content: flex-start;
 }
 
 .things{
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 100px;
+    /* height: 100px; */
     display: flex;
-    width: 200px;
+    width: 40%;
     margin: 20px 0 20px 50px;
 }
 
@@ -407,9 +444,6 @@ ul {
     list-style-type: square;
 }
 
-li {
-    padding: 5px;
-}
 
 @media only screen and (max-width: 800px) {
     /* body {
@@ -446,6 +480,7 @@ li {
         /* margin: 20px; */
         margin: 2.5%;
         font-size: 1rem;
+        width: 10%;
     }
 
     a {
@@ -568,7 +603,7 @@ li {
         display: flex;  
         flex-wrap: wrap-reverse;
         width: 100%;
-        height: 460px;
+        /* height: 460px; */
         position: relative;
         justify-content: center;
         align-items: center;
@@ -586,12 +621,14 @@ li {
     nav{
         flex-direction: column;
         height: initial;
+        padding: 2% 0;
     }
 
     nav a{
         margin: initial;
         /* font-size: 23px; */
         font-size:1.4375rem;
+        width: 100%;
     }
     
     .logo{
@@ -602,7 +639,7 @@ li {
 
     .firstSection{
     /* width: 500px; */
-    height: 300px;
+    /* height: 300px; */
     justify-content: center;
     display: flex;
     align-items: center;
@@ -618,6 +655,7 @@ li {
     justify-content: center;
     align-items: center;
     margin: auto 0;
+    width: inherit;
 }
 
   /*  .codeSnippet img{
@@ -634,9 +672,10 @@ li {
     }*/
 
     .getStarted{
-        height: 30px;
+        /* height: 30px; */
         width: 37%;
         font-weight: bold;
+        margin-bottom: 4%;
     }
 
     .mainBody{
@@ -730,11 +769,11 @@ li {
     }
 
     address{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     
      .phone, .email{
-         font-size: 1.2rem;
+         font-size: 1.5rem;
      }
 
      .copyright{
