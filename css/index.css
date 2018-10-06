@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: black;
 
-  width: 170px;
+  width: 40%;
   padding: 6px 0;
   margin: 0 20.5%;
 }
@@ -182,17 +182,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.6rem;
 }
 
-.contact-block h3 {
+.contactBlock__heading {
 	font-size: 1.7rem;
 	margin: 0px;
 }
 
-.contact-block p {
+.contactBlock__text {
 	font-size: 1.7rem;
 	width: 36%;
 }
 
-#copyright {
+.copyright {
 	text-align: center;
 	font-size: 1.6rem;
 
@@ -264,12 +264,12 @@ Tablet style
 		margin-bottom: 0;
 	}
 
-	address {
+	.contactBlock {
 		margin-bottom: 25px;
 		margin-left: 27.25px;
 	}
 
-	#copyright {
+	.copyright {
 		margin-top: 0;
 		padding-top: 0;
 	}
@@ -280,6 +280,7 @@ Mobile Design Style
 
 */
 @media (max-width: 500px) {
+
 	.nav-header__img {
 		margin: 0 auto;
 		padding-bottom: 0;
@@ -335,14 +336,14 @@ Mobile Design Style
 		margin-bottom: 0;
 	}
 
-	.contact-block p {
+	.contactBlock__text {
 		margin: 0;
 		padding: 0;
 		padding-top: 10px;
 		font-size: 1.4rem;
 	}
 
-	#copyright {
+	.copyright {
 		margin-top: 57px;
 	}
 }
