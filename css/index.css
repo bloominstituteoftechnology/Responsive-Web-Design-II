@@ -132,7 +132,7 @@ header img {
 
 .container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	margin: 0px 2%;
@@ -166,8 +166,9 @@ header img {
 	height: 150px;
 	display: flex;
 	flex-direction: column;
-	margin: 0px 2%;
+	/* margin: 0px 2%; */
 	padding-top: 30px;
+	margin-bottom: 20px;
 }
 
 .contact p {
@@ -362,26 +363,25 @@ hr {
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		padding: 0px 1%;
+		padding: 0px 2%;
 		/* margin: 20px; */
 	}
 
-
     .top-content {
-        width: 49%;
+        width: 48%;
 		height: 100%;
 		border: solid salmon 1px;
 		margin-top: 25px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 		font-size: 102%;
     }
        
     .bottom-content {
-		width: 31%;
+		width: 32%;
 		height: 100%;
 		border: solid salmon 1px;
-		margin-top: 25px;
-		margin-bottom: 25px;
+		margin-top: 30px;
+		margin-bottom: 30px;
 		font-size: 108%;
     }
 
