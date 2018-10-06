@@ -181,7 +181,7 @@ img.middle-img{
 
 
 /* The section containing features and about */
-section.features-about{
+div.features-about{
 	/* TB LR */
 	padding: 20px 0px;
 	display: flex;
@@ -190,7 +190,7 @@ section.features-about{
 
 
 /* section containing services product vision */
-section.details{
+div.details{
 	padding: 20px 0px 0px  1.13%;
 	display: flex;
 	margin-bottom: 40px;
@@ -199,35 +199,55 @@ section.details{
 
 
 /* features ideas section */
-/* font-size 0 fixes the rendered whitespace with display:inline-block */
+section.feature-tron h1{
+	text-align: center;
+	font-size: 10rem;
+}
+
 
 section.ideas h2{
 	text-align: center;
-	font-size: 50px;
+	font-size: 5rem;
 }
 
-section.ideas div{
-	width: 50%;
-	font-size:16px;
+section.ideas section{
+	width: 100%;
+	font-size:1.6rem;
 	margin-bottom: 30px;
-	padding: 10px;
-
-	overflow: hidden;
+	padding: 1.13% 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+section.ideas section.column h3{
+	font-size: 2.6rem;
+	max-width: 100%;
+	flex: 2 1 100%;
+	border: 1px solid;
 }
 
-section.ideas div img{
-	height: 100px;
-	width: auto;
-	float:left;
-	border-radius: 2px;
-	margin-right: 10px;
+
+section.ideas section img{
+	max-width: 300px;
+    max-height: 300px;
+    width: 29%;
+    height: 25%;
+    border-radius: 2px;
+	/* margin-right: 1.13%; */
+	align-self: flex-start;
+}
+section.ideas section div{
+	max-width: 69%;
+	
 }
 
 /* services.html */
 div.container h1{
-	font-size: 26px;
+	font-size: 3rem;
 	margin-top: 20px;
 }
+
 /* services section. */
 section.services {
 	/* border: 1px solid black; */
@@ -394,7 +414,8 @@ footer address{
 	section.details{
 		padding-left: 0px;
 	}
-	div.column{
+
+	section.column {
 		margin-bottom: 15px;
 		flex: 1 1;
 		padding-right: 25px;
@@ -445,8 +466,8 @@ footer address{
 		text-align: center;
 	}
 	
-	section.section,
-	section.section .features-about{
+	div.section,
+	div.features-about{
 		flex-direction: column;
 		padding: 0px;
 		margin: 0px;
@@ -455,7 +476,7 @@ footer address{
 	img.middle-img{
 		margin: 20px 0px;
 	}
-	section.section .column{
+	div.section .column{
 		margin-top: 25px;
 
 	}
