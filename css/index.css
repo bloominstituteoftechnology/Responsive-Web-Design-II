@@ -126,6 +126,14 @@ footer address p {
     justify-content: space-between;
   }
 
+  nav .links a {
+    margin-right: 6%;
+  }
+
+  nav img {
+    margin-right: 2%;
+  }
+
   nav .logo {
     order: -1;
     padding-bottom: 40px;
@@ -140,9 +148,13 @@ footer address p {
   }
 
   header .header .headerTitle {
-    margin: 6px 13% 0 0;
+    margin: 6px 18% 0 0;
     animation: bounce 1s linear;
   } 
+
+  header .header .headerTitle button {
+    padding: 5px 23%;
+  }
 
   header .header .headerTitle h1 {
     font-size: 7rem;
@@ -153,8 +165,9 @@ footer address p {
   }
 
   .container .bigSec1 section{
-    width: 48.6%;
-    margin-top: 30px;
+    width: 47.65%;
+    margin-top: 28px;
+    margin-bottom: 24px;
   }
 
   .container>img {
@@ -162,7 +175,8 @@ footer address p {
   }
 
   .container .bigSec2 section {
-    width: 29%;
+    width: 28%;
+    margin-top: 35px;
   }
 
   h2 {
