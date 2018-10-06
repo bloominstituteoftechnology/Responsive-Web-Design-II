@@ -1,1 +1,440 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html{
+  font-size: 62.5%;
+}
+
+body{
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+p{
+  font-size: 1.4rem;
+}
+
+h2{
+  font-size: 1.4rem;
+}
+
+header{
+  width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 2%;
+  font-size: 1.5rem
+}
+
+header hr{
+  display: none;
+}
+header nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  padding-right: 8%;
+  align-items: center;
+}
+
+header nav a{
+  padding: 0% 4%;
+	text-decoration: none;
+	color: lightgray;
+}
+
+.innovation-section{
+	display: flex;
+	justify-content: space-around;
+	padding: 2%;
+	padding-bottom: 5%;
+}
+
+.innovation-section img{
+	margin-right: 2%;
+}
+
+.innovation{
+	padding: 5% 1%;
+	margin-left: 5%;
+	width: 40%;
+	text-align: center;
+}
+
+.innovation h1{
+	font-size: 7rem;
+}
+
+.innovation p{
+  font-size: 1.2rem;
+	display: inline-block;
+	padding: 2% 14%;
+	border: .1rem solid black;
+}
+
+ hr{
+	 width: 90%;
+   border: 0;
+   height: .2%;
+   background: #000;
+   background-color: #000;
+ }
+
+.primary_info{
+  width: 90%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 2% 0px;
+}
+
+.features{
+	padding: 2% 0%;
+	text-align: left;
+	width: 45%;
+}
+.middle-img{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+ }
+
+ .three-sections{
+	 width: 90%;
+	 margin: 0 auto;
+	 padding: 2% 0%;
+	 display: flex;
+	 justify-content: space-between;
+ }
+
+ .spv{
+	 width: 31%;
+	 padding: 2% 0%;
+ }
+
+.contact-section{
+	width: 90%;
+	padding-top: 3%;
+	margin: 0 auto;
+}
+ address{
+	 padding: 1.2% 0%;
+ }
+
+ .contact-section{
+   font-size: 1.4rem;
+ }
+
+.contact-section a{
+	line-height: 3rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+footer{
+	text-align: center;
+	padding: 1%;
+}
+
+/* services page */
+.services-header-img{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+.services{
+	width: 90%;
+	margin: 0 auto;
+	padding: 3% 0%;
+}
+
+.services h2{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2.4rem;
+}
+
+.services p{
+	font-size: 1.4rem;
+}
+
+.products{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.product_info{
+	background: #E8E8E8	;
+	padding: 4%;
+	margin: 1.5%;
+	border: 1px solid black;
+	display: inline-block;
+	width: 47%;
+	line-height: 1.8rem;
+}
+
+.product_info h3{
+	font-size: 2rem;
+}
+
+.product_info p{
+	font-size: 1.4rem;
+}
+.product_info button{
+	margin: 5% 0%;
+	padding: 3% 9%;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.fact_container{
+	width: 90%;
+	margin: 4% auto;
+	padding: 2% 0% 3% 0%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.some_facts{
+	width: 40%;
+}
+
+.some_facts{
+	font-size: 2rem;
+}
+
+.some_facts ul{
+	margin-left: 6%;
+	line-height: 20px;
+	padding-top: 10px;
+	list-style-type: disc;
+}
+
+.some_facts ul li{
+	font-size: 1.2rem;
+}
+/*
+// Contact Pag
+
+.contact_us_blurb{
+	padding: 30px 0px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.photo{
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+form{
+	width: 90%;
+	margin: 0 auto;
+}
+
+form p{
+	line-height: 30px;
+	font-style: italic; */
+}
+
+@media (max-width: 800px){
+ header{
+   width: 100%;
+   flex-direction: column-reverse;
+   align-items: center;
+ }
+
+ header nav{
+   padding-top: 5%;
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .innovation-section img{
+   display: none;
+ }
+ .innovation-section{
+ 	display: flex;
+ 	padding: 10%;
+ }
+
+ .innovation p{
+  font-size: 1.5rem;
+ 	padding: 1% 6%;
+ 	border: .1rem solid black;
+ }
+
+ .features{
+   width: 47%;
+ }
+
+ .features p{
+   font-size: 1.5rem;
+ }
+
+
+ .innovation{
+ 	padding: 0;
+  margin: 0 auto;
+ 	width: 90%;
+ 	text-align: center;
+ }
+}
+
+@media (max-width: 740px){
+	.products{
+		flex-direction: column;
+	}
+
+	.product_info{
+		width: 90%;
+		margin: 2% auto;
+	}
+
+	.fact_container{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.some_facts{
+		width: 90%;
+		margin: 2% auto;
+	}
+}
+
+@media (max-width: 500px){
+  header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  header img{
+    padding-bottom: 10%;
+  }
+
+  header nav{
+    width: 100%;
+    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.4rem;
+    border-top: 1px solid black;
+  }
+
+
+  header hr{
+    display: block;
+    width: 110%;
+    height: 1px;
+  }
+
+  header nav a{
+    padding: 4% 0px;
+  }
+
+  .innovation-section{
+    padding: 10% 0px;
+  }
+
+  .innovation h1{
+    font-size: 9rem;
+  }
+
+  .innovation p{
+    font-size: 1.8rem;
+    padding: 2% 12%;
+  }
+
+  .primary_info,   .three-sections, footer{
+    flex-direction: column;
+    padding: 10% 0%;
+  }
+
+  .features, .spv{
+  	width: 100%;
+    padding: 5% 0%;
+  }
+
+
+  .features h2, .spv h2, .contact-section h2{
+    font-size: 2rem;
+  }
+
+  .features p, .spv p, .contact-section, footer p{
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+}
