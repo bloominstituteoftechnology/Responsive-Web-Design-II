@@ -77,11 +77,12 @@ p, ul {
 }
 
 .nav-container header {
-  width: 95%;
+  width: 100%;
   max-width: 880px;
 	position: fixed;
 	top: 0px;
-	margin: 0 auto;
+  margin: 0 auto;
+  padding: 0 2.3%;
 	height: 55px;
 	background: white;
 	z-index: 10;
@@ -172,6 +173,7 @@ footer {
     width: 100%;
     height: 400px;
     position: static;
+    padding: 0;
   }
 
   .nav-container header nav {

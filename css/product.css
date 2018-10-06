@@ -3,6 +3,14 @@ h2 {
   font-size: 20px;
 }
 
+html {
+  background-color: #666a86;
+}
+
+.nav-container header {
+  background-color: #17255a;
+}
+
 .nav-container header a img {
   height: 45px;
   width: 183px;
@@ -10,10 +18,11 @@ h2 {
 }
 
 .nav-container section {
-  margin-top: 70px;
+  margin-top: 120px;
   padding-bottom: 40px;
   border-bottom: 1px solid black;
   margin-bottom: 40px;
+  background-color: #7fa5d6;
 }
 
 .nav-container section img {
@@ -25,7 +34,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: space-between;
-  background-color: lightgray;
+  background-color: #a69cac;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
   margin-bottom: 20px;
@@ -43,8 +52,8 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f2f4f7;
-  width: 40%;
+  background: #7fa5d6;
+  width: 300px;
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -56,10 +65,32 @@ h2 {
 .mid-container button {
   background: none;
   border: 1px solid black;
-  background-color: white;s
+  background-color: #b7b8c2;
   height: 32px;
 }
 
 .mid-container section img {
-  width: 40%;
+  width: 300px;
 } 
+
+@media (max-width: 800px) {
+  .mid-container section img {
+    height: 33vw;
+    width: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-container section {
+    margin-top: 20px;
+  }
+
+  .mid-container section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mid-container section:nth-child(2n-1) {
+    flex-direction: column-reverse;
+  }
+}
