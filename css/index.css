@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: rgba(0, 0, 0, 0.05);
 }
 
-.main-content {
+.mainContent {
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	margin: 78px 0 38px 0;
@@ -160,25 +160,25 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: column;
 }
 
-.top-content {
+.mainContent__upper {
 	display: flex;
 }
 
-.bottom-content {
+.mainContent__lower {
 	display: flex;
 	padding-bottom: 14px;
 }
 
-.main-content img {
+.mainContent__img {
 	margin-top: 8px;
 }
 
-.content-block h2 {
+.contentBlock__heading {
 	font-size: 1.8rem;
 	padding-top: 16px;
 }
 
-.content-block p {
+.contentBlock__text {
 	font-size: 1.6rem;
 }
 
@@ -239,28 +239,28 @@ Tablet style
 		margin-left: 2.2%;
 	}
 
-	.pageHead__text a {
+	.pageHead__text__link {
 		margin-left: 22.8%;
 	}
 	.pageHead__img {
 		display: none;
 	}
 
-	.main-content {
+	.mainContent {
 		width: 98%;
 		margin: 70px auto 38px auto;
 	}
 
-	.content-block {
+	.contentBlock {
 		padding-left: 3.35%;
 	}
 
-	.main-content img {
+	.mainContent__img {
 		width: 97.5%;
 		margin: 10px auto;
 	}
 
-	.bottom-content .content-block {
+	.mainContent__lower .contentBlock {
 		margin-bottom: 0;
 	}
 
@@ -322,23 +322,15 @@ Mobile Design Style
 		margin-bottom: 34px;
 	}
 
-	.top-content {
+	.mainContent__upper {
 		flex-direction: column;
 	}
 
-	.bottom-content {
+	.mainContent__lower {
 		flex-direction: column;
 	}
 
-	.top-content h2 {
-		padding-top: 25px;
-	}
-
-	.bottom-content h2 {
-		padding-top: 20px;
-	}
-
-	.main-content img {
+	.mainContent__img {
 		margin-top: 30px;
 		margin-bottom: 0;
 	}
