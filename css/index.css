@@ -301,6 +301,10 @@ Mobile Design Style
 		font-size: 1.8rem
 	}
 
+	.nav-header nav a:active {
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+
 	.nav-header nav a:last-of-type {
 		border-bottom: 1px solid grey;
 	}
