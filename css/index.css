@@ -467,8 +467,11 @@ nav {
   }
 
   .logo {
-    /* margin: 2px 125px 0 -562px; */
-    margin: .4% 25% 0 -112.4%;
+     margin: 2px 125px 0 -562px;
+     left: 736px;
+     bottom: 0;
+     top: 0;
+    /* margin: .4% 25% 0 -112.4%; */
     position: absolute;
   }
 
