@@ -1,6 +1,6 @@
 
 h2 {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 html {
@@ -9,12 +9,6 @@ html {
 
 .nav-container header {
   background-color: #17255a;
-}
-
-.nav-container header a img {
-  height: 45px;
-  width: 183px;
-  margin-top: 5px;
 }
 
 .nav-container section {

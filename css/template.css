@@ -73,7 +73,7 @@ body {
 }
 
 p, ul {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .nav-container header {
@@ -88,6 +88,12 @@ p, ul {
 	z-index: 10;
 	display: flex;
 	justify-content: space-between;
+}
+
+.nav-container header a img {
+  height: 45px;
+  width: 183px;
+  margin-top: 5px;
 }
 
 .nav-container header nav {

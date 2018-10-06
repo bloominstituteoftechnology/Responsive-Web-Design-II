@@ -7,12 +7,6 @@ h2 {
   font-size: 2rem;
 }
 
-.nav-container header a img {
-  height: 45px;
-  width: 183px;
-  margin-top: 5px;
-}
-
 .nav-container section {
   margin-top: 70px;
   padding-bottom: 40px;
@@ -34,7 +28,7 @@ h2 {
 .mid-container section {
   width: 45%;
   margin: 20px 0;
-  padding: 20px;
+  padding: 20px 2.3%;
   border: 1px solid black;
   flex-shrink: 5;
   background-color: #f2f4f7;
