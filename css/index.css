@@ -146,9 +146,12 @@ a:visited {
 	font-size: 9.0rem;
 }
 
+.header-image {
+  transition: all 0.5s ease-in-out;
+}
+
 .header-image:hover {
-  transform: perspective(500px) scaleZ(2) rotateY(120deg);
-  transition: all 0.5s ease;
+  transform: perspective(500px) scaleZ(2) rotateY(100deg);
 }
 
 .container .top-content {
@@ -298,9 +301,13 @@ a:visited {
   .top-content {
   }
 
+  .middle-img {
+    transition: all 0.3s ease;
+  }
+
   .middle-img:hover {
     border-radius: 50%;
-    transition: all 0.3s ease;
+    
   }
 
   .bottom-content {
@@ -357,12 +364,13 @@ a:visited {
     width: 80%;
     font-size: 7.0rem;
     justify-content: center;
-    padding-left: 36px;    
+    padding-left: 36px;  
+    transition: all 0.5s ease;  
   }
 
   .header-text:hover {
     transform: perspective(500px) scaleZ(2) rotateY(45deg);
-    transition: all 0.5s ease;
+ 
   }
 
   .logo-nav {
