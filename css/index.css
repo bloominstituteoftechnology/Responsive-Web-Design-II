@@ -159,7 +159,7 @@ h5 {
 
 .container {
   max-width: 880px;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -172,7 +172,7 @@ header {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding-bottom: 70px;
+  padding-bottom: 37.5px;
 }
 
 header nav {
@@ -219,7 +219,8 @@ button {
 }
 
 .call-to-action img {
-  width: 50%;
+  width: 43%;
+  padding-bottom: 60px;
 }
 
 .main-content {
@@ -275,7 +276,7 @@ footer {
 
 
 /* Max Width 800px Media Query */
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .container {
     max-width: 700px;
     padding: 0 2%;
@@ -308,10 +309,10 @@ footer {
   header nav a {
     padding-left: 1.70%;
     padding-right: 1.70%;
-  }
+  } */
 
   /* Max Width 500px Media Query */
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     .container {
       max-width: 350px;
     }
@@ -383,11 +384,5 @@ footer {
       font-size: 1.2rem;
       border: 1px solid black;
       cursor: pointer;
-    }
+    } */
 
-/* 
-
-    change width to max-width
-    add max-width to middle image  
-    
-*/
