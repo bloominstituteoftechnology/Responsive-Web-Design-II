@@ -209,9 +209,13 @@ footer address p {
   nav .links a {
     width: 100%;
     border-top: 1px solid black;
-    padding: 20px 0;
+    padding: 20px 0 20px 7%;
     font-size: 2rem;
     text-align: center;
+  }
+
+  nav .logo {
+    padding-left: 3%;
   }
 
   nav .links a:last-child {
@@ -219,7 +223,7 @@ footer address p {
   }
 
   header .header {
-    margin: 45px 0 76px 12%;
+    margin: 45px 0 76px 15.5%;
   }
 
   header .header .headerTitle {
@@ -228,7 +232,7 @@ footer address p {
   }
 
   header .header .headerTitle button {
-    padding: 5px 12%;
+    padding: 5px 13.5%;
   }
 
   .container .bigSec1, .container .bigSec2 {
@@ -237,22 +241,27 @@ footer address p {
   }
 
   .container .bigSec1 {
-    padding-top: 22px;
+    margin-top: 30px;
     margin-bottom: 35px;
   }
 
   .container .bigSec1 section {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     margin-left: 1%;
   }
 
+  .container .bigSec2 {
+    margin-bottom: 25px;
+  }
+
   .container .bigSec2 section {
-    margin-bottom: 35px;
+    margin-top: 28px;
+    margin-bottom: 30px;
     margin-left: 1%;
   }
 
   .container .bigSec2 section:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .container .bigSec1 section,
@@ -262,6 +271,11 @@ footer address p {
 
   h2 {
     font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  footer {
+    margin-top: 35px;
   }
 
 }
