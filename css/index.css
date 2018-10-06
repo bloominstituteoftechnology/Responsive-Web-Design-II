@@ -429,6 +429,10 @@ nav {
     display: inline-block;
     margin: 0 0 0 45%; /* 360px */
   }
+  .fullPage {
+  border-top-right-radius: .125rem;
+  border-top-left-radius: .125rem;
+  }
 
 
 }
