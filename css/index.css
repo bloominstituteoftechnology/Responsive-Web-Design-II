@@ -1,1 +1,399 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+   letter-spacing: 1px;
+   margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+	display:flex;
+  flex-direction:column;
+}
+
+hr {
+  width: 100%;
+  color: black;
+}
+
+head {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+
+a:hover {
+	background: whitesmoke;
+	color: red;
+}
+
+a:link {
+	text-decoration: none;
+	color: grey;
+}
+
+a:visited {
+	color: grey;
+}
+
+.nav{
+  z-index: 1;
+  background-color: rgb(209, 209, 209);
+  position: fixed;
+  border-bottom: 4px solid black;
+  width: 100%;
+  display: flex;
+	justify-content: space-around;
+	align-content: center;
+  padding: 10px 10px;
+  color: grey;
+  font-size: 1.7rem;
+}
+.nav a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .header  {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+  padding: 30px;
+  margin-top: 5.0rem;
+}
+
+.container header section div p {
+	font-size: 2.0rem;
+	text-align: center;
+	padding: 5px 40px;
+  border: 2px solid black;
+   
+}
+
+.header-text p:hover {
+  background-color: dodgerblue;
+}
+
+.container .header-text {
+	text-align: center;
+	font-size: 9.0rem;
+}
+
+.header-image {
+  transition: all 0.5s ease-in-out;
+}
+
+.header-image:hover {
+  transform: perspective(500px) scaleZ(2) rotateY(100deg);
+}
+
+.container .top-content {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.container .top-text {
+  padding: 10px; 
+  .
+}
+
+.container .middle-img {
+	padding: 10px 0px;
+}
+
+.container .bottom-content {
+	display: flex;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+}
+
+.container .contact p {
+  padding: 5px 0px;
+  font-size: 1.5rem;
+}
+
+.container footer {
+	text-align:center;
+  padding: 20px 0px;
+  font-size: 1.5rem;
+}
+
+/* services.css */
+
+.SmallHR {
+	size: 2px;
+	padding: 2px;
+}
+
+.services-header-img {
+	border: 1px solid black;
+}
+
+.services-text {
+	display: flex;
+	flex-direction:column;
+	padding: 30px 0px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.box {
+	border: 1px solid black;
+	background: #F4F3F4;
+	justify-content: space-between;
+	margin: 20px;
+	padding: 20px;
+}
+
+.LMbutton {
+	border: 1px black solid;
+	display: inline-block;
+	border-radius: 5px;
+	background: white;
+	margin: 20px 0px 0px 0px;
+	padding: 8px 30px;
+	font-size: 1.4rem;
+}
+
+.services-facts {
+	display:flex;
+	padding: 20px 0px;
+}
+
+.services-facts-text {
+	margin: 0px 20px 0px 0px;
+}
+
+.fact-list {
+	padding: 20px;
+}
+
+.services-info-img {
+	border: 1px solid black;
+}
+
+.fact-list li {
+	padding: 5px;
+}
+
+
+
+/*---------------RESPONSIVE DESIGNING-----------*/
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 0px;
+    color: grey;
+  }
+
+  .nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav a:last-child {
+    order: -1;
+  }
+
+  .nav a:hover {
+    background-color: rgb(185, 216, 248);
+  }
+
+  .logo-nav {
+    
+    width: 70%;
+  }
+
+  .header {
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center;
+  }
+
+  .header-text {
+    justify-content: flex-end;
+    align-content: center;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .top-content {
+  }
+
+  .middle-img {
+    transition: all 0.3s ease;
+  }
+
+  .middle-img:hover {
+    border-radius: 50%;
+    
+  }
+
+  .bottom-content {
+    
+  }
+
+  .contact {
+    
+  }
+
+  footer {
+    
+  }
+}
+
+@media (max-width: 500px) {
+
+  .container {
+    width: 80%;
+  }
+
+  .nav {
+    position: static;
+    background-color: white;
+    border-bottom-color: white;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+  }
+
+  .nav a {
+    justify-content: center;
+    align-content: center;
+    padding: 20px 0px;
+    width: 100%;
+    font-size: 2.2rem;
+    border: 1px solid grey;
+
+  }
+
+  .nav a:last-child {
+    order: -1;
+  }
+
+  .header {
+    justify-content: center;
+    margin-top: 1px;
+    font-size: 5.0rem;
+    margin-top: 0rem !important;
+  }
+
+  .header-text {
+    width: 80%;
+    font-size: 7.0rem;
+    justify-content: center;
+    padding-left: 36px;  
+    transition: all 0.5s ease;  
+  }
+
+  .header-text:hover {
+    transform: perspective(500px) scaleZ(2) rotateY(45deg);
+ 
+  }
+
+  .logo-nav {
+    width: 55%;
+  }
+
+  .header-text h1 {
+    font-size: 4.0rem;
+  }
+
+  .top-content {
+    flex-direction: column;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+  }
+
+  .bottom-content h1 {
+    margin-top: 20px;
+  }
+
+  .bottom-content p {
+    margin-bottom: 40px;
+  }
+}
