@@ -139,6 +139,7 @@ section.features-about{
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0px;
+    border-top: 1px solid black;
 }
 
 section.features-about div{
@@ -168,6 +169,8 @@ section.services-product-vision div{
     text-align: left;
     align-items: left;
     flex-direction: column;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
 }
 
 footer {
