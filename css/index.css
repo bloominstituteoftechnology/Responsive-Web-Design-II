@@ -141,7 +141,6 @@
   .nav li {
     display: flex;
     width: 20%;
-    justify-content: flex-start;
 }
   
   footer {
@@ -253,16 +252,20 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        margin-top: 5%;
-        border-top: 2px solid grey;
-        border-bottom: 2px solid grey;
+        margin-right: 10%;
+
+     
+    }
+    li {
+        border: 1px solid grey;
+        width: 100%;
     }
     
     .nav li {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        
+        margin: 0%;
     }
     .nav a {
         display: flex;
@@ -270,13 +273,13 @@
         justify-content: center;
         align-content: center;
         width: 100%;
-        margin-right: 5%;
         font-size: 2rem;
     }
     .intro div {
         flex-direction: column;
         justify-content: center;
         margin-bottom: 10%;
+        margin-left: 13%;
     
     }
     .intro span {
