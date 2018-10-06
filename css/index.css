@@ -21,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -68,7 +68,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	width: 900px;
+	max-width: 880px;
+	width: 100%;
 }
 
 .tablet-logo {
@@ -296,7 +297,7 @@ hr {
 
 @media (max-width: 800px) {
     body {
-        width: 100%;
+		width: 100%;
         
     }
     header img {
