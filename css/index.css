@@ -1,1 +1,351 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* main axis up down */
+*{
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 880px;
+    width: 100%;
+    margin: auto;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    margin: 6.14% 0 0 0;
+}
+
+.nav-container nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: -1.59% 10% 0 0px;
+}
+
+.logo {
+    margin: -2.73% 0 0 0;
+}
+
+a {
+    text-decoration: none;
+    color: #d3d3d3;
+    padding: 0 0 0 0;
+    font-size: 1.6rem;
+}
+
+/*end navigation*/
+
+.innovation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 8.64% 0 3.98% 0;
+    padding: 0 0 73px 0;
+    border-bottom: 2px solid black;
+}
+
+.h1text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 7.2rem;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    margin: 11.7% 0 0 38.05%;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    width: 42.93%;
+    padding: 1.7% 0 1.2% 0;
+    margin: 6.31% 0 0 47.8%;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.feat-about {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+p {
+    margin: 5.8% 0 5.8% 0;
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 1.6rem;
+}
+
+.top-paragraphs {
+    display: flex;
+    flex-direction: column;
+    width: 48.86%;
+    margin: 0 0 0 0;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.bottom-paragraphs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 0 2.84% 0;
+    margin: 4.55% 0 5.68% 0px;
+    border-bottom: 2px solid black;
+}
+
+.spv-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 29.89%;
+}
+
+.contact {
+    width: 29.89%;
+}
+
+.copyright {
+    margin: 9.09% 0 4.55% 45.45%;
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        width: 97%;
+    }
+    .logo {
+        z-index: 1000;
+        margin: -11.25% 36% .125% 38.25%;
+    }
+    .nav-container nav {
+        justify-content: space-around;
+        margin: 6.375% 7.875% 0px 3.75%;
+        width: 97%;
+    }
+    .innovation {
+        margin: 9.5% 0 4.375% 1%;
+        padding: 0 0 9.125% 15.875%;
+        border-bottom: 2px solid black;
+        width: 97%;
+    }
+    .h1text {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5.5% 0 0 11.875%;
+    }
+    h1 {
+        font-size: 7.2rem;
+        margin: 7.25% 0 0 31.625%;
+    }
+    .innovation img {
+        display: none;
+    }
+    button {
+        background-color: white;
+        border: 1px solid black;
+        width: 57.93%;
+        padding: 3.7% 0 0.7% 0;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 8% 0 0 33%;
+    }
+    .feat-about {
+        display: flex;
+        justify-content: space-evenly;
+        width: 97%;
+    }
+    .top-paragraphs {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 0 0 0 0;
+    }
+    .middle-img{
+        width: 97%;
+        margin:  0 0 0 1%;
+    }
+    .spv-boxes {
+        display: flex;
+        flex-direction: column;
+        width: 225px;
+    }
+    .contact {
+        width: 28.125%;
+        margin: 0 0 0 2%;
+    }
+}
+
+@media(max-width:500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 460px;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+    .nav-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 37px 0 40px 0;
+        padding: 0 0 25px 0;
+    }
+    .nav-container nav a {
+        text-align: center;
+        border: 1px solid gray;
+        width: 100%;
+        padding: 4.35%;
+    }
+    .logo {
+        z-index: 1000;
+        margin: -99.43% 0 73.261% 4.35%;
+    }
+    .innovation img {
+        display: none;
+    }
+    .innovation {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        align-items: center;
+    }
+    .h1text {
+        margin: 18.13% 53.26% 0 5.43%;
+        width: 100%;
+    }
+    button {
+        margin: 5.43% 0 0 30.7%;
+    }
+    .feat-about {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    p {
+        margin: 0 0 -3.04% 0;
+    }
+    .top-paragraphs {
+        width: 100%;
+        justify-content: flex-start;
+    
+        padding: 2.17%;
+    }
+    .middle-img {
+        width: 100%;
+        margin: 10.87% 0 0 0;
+    }
+    .bottom-paragraphs {
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+    .spv-boxes {
+        width:100%;
+        margin: 5% 0 5% 0;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        max-width: 460px;
+        width: 100%;
+    
+    }
+    .contact p {
+
+        margin: 0 0 6.09% 0;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        max-width: 460px;
+        align-items: center;
+        width: 97%;
+        margin: 0;
+       
+    }
+}
