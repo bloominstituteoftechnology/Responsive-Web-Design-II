@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 6.81%;
 }
 
-.nav-header nav {
+.nav-header .nav {
   display: flex;
   justify-content: space-between;
   align-self: center;
@@ -81,36 +81,35 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
-.nav-header nav a {
+.nav__link {
   text-decoration: none;
   color: grey;
 }
 
-nav .brackets:before, .brackets:after
+.nav__link:after
 {
-    position: absolute;
     opacity: 0;
-    font-size: 35px;
     top: 0px;
     transition: all 0.3s;
-		margin: 0 -15px;
 }
 
-nav .brackets:before
+.nav__link:before
 {
-    content: '(';
+		opacity: 0;
+		content: '(';
     left: 0px;
     transform: translateX(0px);
 }
 
-nav .brackets:after
+.nav__link:after
 {
+		opacity: 0;
     content: ')';
     right: 0px;
     transform: translateX(0px);
 }
 
-nav .brackets:hover:before, .brackets:hover:after
+.nav__link:hover:before, .nav__link:hover:after
 {
     opacity: 1;
     transform: translateY(-12px);
@@ -223,7 +222,7 @@ Tablet style
 		padding: 0 0 19px 20px;
 	}
 
-	.nav-header nav {
+	.nav-header .nav {
 		width: 100%;
 		justify-content: space-around;
 
@@ -289,11 +288,11 @@ Mobile Design Style
 		padding-bottom: 0;
 
 	}
-	.nav-header nav {
+	.nav-header .nav {
 		flex-direction: column;
 	}
 
-	.nav-header nav a {
+	.nav__link {
 		border-top: 1px solid grey;
 		width: 100%;
 		text-align: center;
@@ -301,11 +300,11 @@ Mobile Design Style
 		font-size: 1.8rem
 	}
 
-	.nav-header nav a:active {
+	.nav__link:active {
 		background-color: rgba(0, 0, 0, 0.05);
 	}
 
-	.nav-header nav a:last-of-type {
+	.nav__link:last-of-type {
 		border-bottom: 1px solid grey;
 	}
 
@@ -360,7 +359,7 @@ Mobile Design Style
 }
 
 @media (min-width: 500px) {
-	.nav-header nav a:hover {
+	.nav__link:hover {
 		background-color: rgba(0, 0, 0, 0.05);
 		padding: 2px;
 		border-radius: 5px;
