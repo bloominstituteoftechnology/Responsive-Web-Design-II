@@ -78,7 +78,6 @@ html{
 }
 header{
     width:100%;
-    /* max-width: 876; */
     height:500px;
     display:flex;
     flex-wrap:wrap;
@@ -89,14 +88,12 @@ header{
 }
 nav{
     width:100%;
-    /* max-width: 876 */
     display:flex;
     align-items:baseline;
     justify-content: space-between;
 }
 .links{
     width:69%;
-    /* max-width: 605 */
     display:flex;
     justify-content:space-between;
     font-size:1.5rem;
@@ -116,13 +113,11 @@ a{
     align-items: center;
     justify-content: center;
     width:100%;
-    /* max-width:475 */
     position: relative;
     left: 2%;
 }
 .main-content{
     width:100%;
-    /* max-width: 876 */
     display:flex;
     justify-content:center;
     position:relative;
@@ -131,7 +126,6 @@ a{
 h1{
     font-size:7.2rem;
     width:100%;
-    /* max-width:270px  */
     text-align:center;  
 }
 button{
@@ -140,13 +134,11 @@ button{
     align-self:center;
     font-size:1.6rem;
     width:35.8%;
-    /* max-width:170px */
     height:35px;
 }
 .top-content{
     display:flex;
     width:100%;
-    /* max-width 876 */
     position: relative;
     top:30px;
     border-top:2px solid black;
@@ -160,7 +152,6 @@ button{
     position:relative;
     top:25px;
     width:100%;
-    /* max-width 876 */
 }
 .middle-content{
     display:flex;
@@ -173,13 +164,11 @@ button{
 }
 .middle-paragraphs{
     width:93.5%;
-    /* max-width:274px */
     align-self:center;
 }
 .bottom-content{
     display:flex;
     width:99.54%;
-    /* max-width 876 */
     flex-flow: column;
     font-size:1.6rem;
     position: relative;
@@ -204,7 +193,6 @@ footer{
     }
     nav{
         width:100%;
-        /* max-width:720 */
         height:100px;
         flex-flow:column;
         justify-content: center;
@@ -229,7 +217,6 @@ footer{
     }
     button{
         width:23%;
-        /* max-width:170px */
     }
     .top-content{
         top:0px;
@@ -261,8 +248,7 @@ footer{
 }
 @media (max-width:500px){
     .container{
-        width:100%;
-        /* max-width:440 */
+        width:95%;
         height: 1950px;
         flex-flow:column;
         align-items: center;
@@ -284,7 +270,7 @@ footer{
         bottom:20px;
     }
     a{
-        width:100%;
+        width:105%;
         border-bottom:1px solid grey;
         align-self: center;
         text-align:center;
@@ -331,8 +317,7 @@ footer{
     }
     .middle-img{
         width:90%;
-        /* margin-bottom: 40px; */
-        margin:50px 5% 20px 5%;
+        margin:50px 0% 20px 5%;
     }
     .middle-content{
         flex-flow:column;
