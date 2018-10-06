@@ -127,14 +127,14 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.pageHead__text h1 {
+.pageHead__text__heading {
   font-size: 6.8rem;
   text-align: center;
   letter-spacing: 3px;
   margin: 10px 14% 40px 0;
 }
 
-.pageHead__text a {
+.pageHead__text__link {
   border: 1px solid black;
 
   text-align: center;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 20.5%;
 }
 
-.pageHead__text a:hover {
+.pageHead__text__link:hover {
 	background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -215,11 +215,11 @@ Tablet style
 		margin-top: 50px;
 	}
 
-	.nav-header img {
+	.nav-header__img {
 		padding: 0 0 19px 20px;
 	}
 
-	.nav-header .nav {
+	.nav {
 		width: 100%;
 		justify-content: space-around;
 
@@ -235,7 +235,7 @@ Tablet style
 		margin: 6px 0 0 11.25%;
 	}
 
-	.pageHead__text h1 {
+	.pageHead__text__heading {
 		margin-left: 2.2%;
 	}
 
@@ -280,12 +280,12 @@ Mobile Design Style
 
 */
 @media (max-width: 500px) {
-	.nav-header img {
+	.nav-header__img {
 		margin: 0 auto;
 		padding-bottom: 0;
 
 	}
-	.nav-header .nav {
+	.nav {
 		flex-direction: column;
 	}
 
@@ -316,7 +316,7 @@ Mobile Design Style
 		padding: 0;
 	}
 
-	.pageHead__text h1 {
+	.pageHead__text__heading {
 		margin: 0;
 		font-size: 7rem;
 		margin-bottom: 34px;
