@@ -1,1 +1,235 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html {
+  font-size: 62.5%;
+}
+
+/********************/
+/* CSS for homepage */
+/********************/
+
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+nav .links {
+  width: 69%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .links a {
+  font-size: 1.5rem;
+}
+
+header .header {
+  display: flex;
+  justify-content:space-around;
+  margin: 70px 0 76px 13.5%;
+}
+
+header .header .headerTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 52px 12% 0 5%;
+}
+
+h1 {
+  font-size: 7.3rem;
+}
+
+header .header .headerTitle button {
+  margin-top: 25px;
+  padding: 5px 16%;
+  font-size: 1.6rem;
+}
+
+header .header img {
+  padding-right: 3%; 
+}
+
+.container .bigSec1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  margin: 30px 0;
+}
+
+section p {
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.container>img {
+  width: 100%;
+}
+
+.container .bigSec2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.container .bigSec2 section {
+  margin: 27px 2.3% 0 0;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer address p {
+  font-size: 1.6rem;
+}
+
+.copyright {
+  text-align: center;
+  margin: 40px;
+  font-size: 1.6rem;
+}
+
+
+
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Tablet View */
+
+@media (max-width: 800px) {
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav .links {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav .logo {
+    order: -1;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    padding-left: 3.5%;
+  }
+
+  header .header img {
+    display: none;
+  }
+
+  header .header .headerTitle {
+    margin: 6px 13% 0 0;
+  } 
+
+  header .header .headerTitle h1 {
+    font-size: 7rem;
+  }
+
+  header .header .headerTitle button {
+    margin-top: 30px;
+  }
+
+  .container .bigSec1 section{
+    width: 48.6%;
+    margin-top: 30px;
+  }
+
+  .container>img {
+    width: 100%;
+  }
+
+  .container .bigSec2 section {
+    width: 29%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 500px) {
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav .logo {
+    padding-bottom: 20px;
+  }
+
+  nav .links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav .links a {
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  nav .links a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  header .header {
+    margin: 45px 0 76px 12%;
+  }
+
+  .container .bigSec1, .container .bigSec2 {
+    flex-direction: column;
+  }
+
+  .container .bigSec1 {
+    padding-top: 22px;
+    margin-bottom: 35px;
+  }
+
+  .container .bigSec1 section {
+    margin-bottom: 15px;
+    margin-left: 1%;
+  }
+
+  .container .bigSec2 section {
+    margin-bottom: 35px;
+    margin-left: 1%;
+  }
+
+  .container .bigSec2 section:last-child {
+    margin-bottom: 10px;
+  }
+
+  .container .bigSec1 section,
+  .container .bigSec2 section {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+  
+}
