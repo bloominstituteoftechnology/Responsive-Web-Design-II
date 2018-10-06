@@ -34,6 +34,8 @@ header .header {
   display: flex;
   justify-content:space-around;
   margin: 70px 0 76px 13.5%;
+  /* margin: 70px 0 76px 0; */
+
 }
 
 header .header .headerTitle {
@@ -41,6 +43,7 @@ header .header .headerTitle {
   flex-direction: column;
   align-items: center;
   margin: 52px 12% 0 5%;
+  width: 28%;
 }
 
 h1 {
@@ -49,12 +52,12 @@ h1 {
 
 header .header .headerTitle button {
   margin-top: 25px;
-  padding: 5px 16%;
+  padding: 5px 19.5%;
   font-size: 1.6rem;
 }
 
 header .header img {
-  padding-right: 3%; 
+  width: 50%;
 }
 
 .container .bigSec1 {
@@ -170,6 +173,11 @@ footer address p {
 /* Mobile view */
 @media (max-width: 500px) {
 
+  .container {
+    width: 100%;
+    max-width: 500px;
+  }
+
   nav {
     margin-top: 20px;
   }
@@ -185,9 +193,9 @@ footer address p {
   }
 
   nav .links a {
-    width: 100%;
+    width: 90%;
     border-top: 1px solid black;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 2rem;
     text-align: center;
   }
@@ -230,6 +238,14 @@ footer address p {
 
   h2 {
     font-size: 1.6rem;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .container>img {
+    width: 90%;
   }
   
 }
