@@ -162,6 +162,10 @@ html {
 	font-size: 62.5%;
 }
 
+p, h3, a {
+	font-size: 1.6rem;
+}
+
 a {
 	text-decoration: none;
 	color: grey;
@@ -172,24 +176,30 @@ a:hover {
 }
 
 .container {
+	/* width: 100%; */
 	max-width: 880px;
 	margin: 0 auto;
 }
 
 .container header {
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
-	margin-top: 15px;
+	margin-top: 1.5rem;
+	padding: 0 1%;
 }
 
 .container header div nav {
 	width: 100%;
-	margin-top: 15px;
 	color: grey;
+	display: flex;
 }
 
+.logo {
+	margin-top: 1rem;
+}
 header .main-nav a {
-	padding: 17px;
+	padding: 5% 5% 2% 0%;
 }
 
 .main-section {
@@ -197,7 +207,7 @@ header .main-nav a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin: 30px 0;
+	margin: 3.0rem 0;
 }
 
 .main-section div {
@@ -207,7 +217,7 @@ header .main-nav a {
 
 .main-section h1 {
 	text-align: center;
-	font-size: 60px;
+	font-size: 6.0rem;
 	text-transform: uppercase;
 	margin-top: 25%;
 }
@@ -222,48 +232,51 @@ header .main-nav a {
 	background-color: white;
 	display: block;
 	margin: auto;
-	padding: 0 15px;
-	font-size: 16px;
+	padding: 0 1.5rem;
+	font-size: 1.6rem;
 }
 
 .section2 div {
 	display: inline-block;
 	width: 49%;
 	height: 100%;
-	padding: 10px;
-	margin-bottom: 10px;
+	padding: 1%;
+	margin-bottom: 1.0rem;
 }
 
 .middle-img {
 	display: block;
 	width: 100%;
-	margin: 30px 0;
+	margin: 3.0rem 0;
 }
 
 .section3 div {
 	display: inline-block;
 	width: 32%;
 	height: 100%;
-	padding: 10px;
-	margin-top: 10px;
+	padding: 1%;
+	margin-top: 1.0rem;
 }
 
 hr {
 	display: block;
 	border-top: 1px solid black;
-	margin: 10px 0 30px;
+	margin: 1rem 0 3rem;
 }
 
+address {
+	margin-left: 1%;
+}
 footer {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 3rem;
 }
 
 /* SERVICE */
 
 #service-nav a {
 	color: rebeccapurple;
-	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 #main-section-service {
@@ -277,9 +290,9 @@ footer {
 
 #main-section-service h1{
 	color: red;
-	font-size: 50px;
+	font-size: 5.0rem;
 	text-transform: uppercase;
-	margin: 20px 0;
+	margin: 2rem 0;
 }
 
 #service-img{
@@ -309,13 +322,13 @@ footer {
 	}
 	.main-section div {
 		width: 100%;
-		margin-bottom: 15px;
+		margin-bottom: 1.5rem;
 	}
 	.main-section h1 {
 		margin-top: 0;
 	}
 	.container {
-		margin: 0 10px;
+		margin: 0 1%;
 	}
 	header nav#service-nav {
 		background-color: rgb(240, 255, 30);
