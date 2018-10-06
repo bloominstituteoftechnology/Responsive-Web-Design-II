@@ -135,6 +135,10 @@ h1 {
 	font-size: 1.2rem;
   }
 
+hr {
+	border: 1px solid black;
+}
+
 .section1 {
 	display:flex;
 	justify-content: center;
@@ -264,6 +268,7 @@ footer {
 		order: -4;
 		position: relative;
 		top: 0px;
+		width: 100%
 	}
 
 	.header {
@@ -322,6 +327,18 @@ footer {
         margin: 0 auto;
 	}
 
+	.logo {
+		order:-4;
+		width:40%;
+		top: 0;
+	}
+
+	.Nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	nav {
 		flex-wrap:wrap;
 		width:100%;
@@ -336,20 +353,19 @@ footer {
 	}
 
 	h1 {
-		display:flex;
+		display: flex;
 		justify-content: center;
 		width:100%;
-		position: relative;
-		top:0px;
-		left:0px;
 		text-align: center;
+		margin: 0% 0% 0% 50%;
+		padding:0;
 	}
 
 	button {
 		display: flex;
 		justify-content: center;
-		position: relative;
-		left: 120px;
+		width:80%;
+		margin: 0% 0% 0% 100%;
 	}
 
 	.headimg {
