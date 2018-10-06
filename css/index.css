@@ -467,7 +467,8 @@ nav {
   }
 
   .logo {
-    margin: .2% 0 0 -110%;/* 1px 0 0 -550px */
+    /* margin: 2px 125px 0 -562px; */
+    margin: .4% 25% 0 -112.4%;
     position: absolute;
   }
 
@@ -486,7 +487,7 @@ nav {
     margin: 0 0 -2% 6%; /* 0 0 -10px 30px */
   }
   .words {
-    margin: 0 0 0 0;
+    margin: 0 0 0 3%; /* 15px */
   }
   .getStartedButton {
     margin: 2% 0 0 34%; /* 10px 0 0 170px */
