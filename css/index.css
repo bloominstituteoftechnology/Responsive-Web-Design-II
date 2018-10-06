@@ -399,7 +399,7 @@ footer {
     }
 
     address {
-        width: 20%;
+        width: 25%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -479,7 +479,7 @@ footer {
     }
 
     .contact {
-        width: 90%;
+        width: 100%;
         display: flex;
     }
 
