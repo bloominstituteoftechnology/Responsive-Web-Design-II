@@ -198,12 +198,11 @@ a:hover {
 .logo {
 	margin-top: 1rem;
 }
-header .main-nav a {
+header a {
 	padding: 5% 5% 2% 0%;
 }
 
 .main-section {
-	/* background: url(file:///C:/Users/Lee/User-Interface/great-idea-website/img/header-img.png); */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -221,12 +220,6 @@ header .main-nav a {
 	text-transform: uppercase;
 	margin-top: 25%;
 }
-
-/* @keyframes myanimation {
-	0% {color: orchid}
-	50%{color:dodgerblue}
-	100%{color:goldenrod}
-} */
 
 .main-section button {
 	background-color: white;
@@ -273,10 +266,14 @@ footer {
 }
 
 /* SERVICE */
+#service-section p, #service-section h3 {
+	font-size: 1.6rem;
+	color: darkgoldenrod;
+}
 
 #service-nav a {
 	color: rebeccapurple;
-	font-size: 2.2rem;
+
 }
 
 #main-section-service {
@@ -289,19 +286,24 @@ footer {
 }
 
 #main-section-service h1{
-	color: red;
+	color: orchid;
 	font-size: 5.0rem;
 	text-transform: uppercase;
 	margin: 2rem 0;
+	animation: myanimation 2s infinite alternate-reverse;
 }
+
+@keyframes myanimation {
+	0% {color: orchid}
+	50%{color:dodgerblue}
+	100%{color:goldenrod}
+}
+
 
 #service-img{
 	border-radius: 50%;
 }
 
-#service-section h3{
-	color: red;
-}
 /* media queries */
 /* tablet */
 
@@ -330,8 +332,18 @@ footer {
 	.container {
 		margin: 0 1%;
 	}
-	header nav#service-nav {
+
+	/* SERVICE PAGE */
+	#service-nav {
 		background-color: rgb(240, 255, 30);
+	}
+	#service-nav a {
+		color: hotpink;
+		padding-top: 2rem;
+		transition: 250ms ease-in;
+	}
+	#service-nav a:hover{
+		color: greenyellow;
 	}
 }
 
@@ -343,8 +355,6 @@ footer {
 	}
 	header nav a {
 		border-top: 1px solid grey;
-		border-left: 1px solid grey;
-		border-right: 1px solid grey;
 	}
 	.contact-border {
 		border-bottom: 1px solid grey;
@@ -360,7 +370,12 @@ footer {
 		width: 100%;
 	}
 
-	header nav#service-nav {
+	/* SERVICE PAGE */
+	nav#service-nav {
 		background-color: aquamarine;
+	}
+	nav#service-nav:hover {
+		background-color: powderblue;
+		text-transform: uppercase;
 	}
 }
