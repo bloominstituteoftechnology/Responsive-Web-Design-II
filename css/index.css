@@ -130,8 +130,8 @@ header {
 
 /* stylying of Get Started button */
 button {
-	/* width: 170px; */
-	width: 54.67%;
+	width: 170px;
+	/* width: 54.67%; */
 	border: 1px solid black; 
     /* padding: 5px 32px; */
     padding: 5px 1.9%;
@@ -231,15 +231,24 @@ footer {
 	   padding: 75px 0;
    }
 
-   button {
+   /*
+		   Giving percentage to the button will shrink it as the page 
+		   is shrink, but as Josh Knell recommended on his lecture 
+		   (Responsive Design II (Part II) for FSW14 w/ Josh Knell), this 
+		   button should not  be touched with percentages because we want it to be
+		   of s hard coded fixed pixel size.
+   */
+  /* button {
 	   /*	In Desktop, header = 284.81px + "code-snippet" + 60px left-padding = 740px	
 			button was also 54.67% at this scale. Since img dissapear, the tablet-view
 			buttom will now be -50% (width that img occupied) - 8.11% of left-padding (60px/740px),
 			so, 54.67%/2 = 27.335%, and 27.335 - 8.11% = 19.23%
 	   */
 
-		width: 19.23%;
-   }
+		/* width: 19.23%; */
+		/* max-width: 19.23%;
+		width: 100%; */
+  /*}*/
 
    .code-snippet {
        display: none;
