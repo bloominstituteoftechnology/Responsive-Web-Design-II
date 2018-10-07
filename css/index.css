@@ -1,1 +1,381 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Indie Flower', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+	font-size: 62.5%;
+}
+
+p, h3, a {
+	font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+}
+
+a:hover {
+	color: dodgerblue;
+}
+
+.container {
+	/* width: 100%; */
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.container header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+	padding: 0 1%;
+}
+
+.container header div nav {
+	width: 100%;
+	color: grey;
+	display: flex;
+}
+
+.logo {
+	margin-top: 1rem;
+}
+header a {
+	padding: 5% 5% 2% 0%;
+}
+
+.main-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 3.0rem 0;
+}
+
+.main-section div {
+	justify-content: center;
+	width: 50%;
+}
+
+.main-section h1 {
+	text-align: center;
+	font-size: 6.0rem;
+	text-transform: uppercase;
+	margin-top: 25%;
+}
+
+.main-section button {
+	background-color: white;
+	display: block;
+	margin: auto;
+	padding: 0 1.5rem;
+	font-size: 1.6rem;
+}
+
+.section2 div {
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	padding: 1%;
+	margin-bottom: 1.0rem;
+}
+
+.middle-img {
+	display: block;
+	width: 100%;
+	margin: 3.0rem 0;
+}
+
+.section3 div {
+	display: inline-block;
+	width: 32%;
+	height: 100%;
+	padding: 1%;
+	margin-top: 1.0rem;
+}
+
+hr {
+	display: block;
+	border-top: 1px solid black;
+	margin: 1rem 0 3rem;
+}
+
+address {
+	margin-left: 1%;
+}
+footer {
+	text-align: center;
+	margin-top: 3rem;
+}
+
+/* SERVICE */
+#service-section p, #service-section h3 {
+	font-size: 1.6rem;
+	color: darkgoldenrod;
+}
+
+#service-nav a {
+	color: rebeccapurple;
+
+}
+
+#main-section-service {
+	display: flex;
+	flex-direction: column;
+}
+
+#main-section-service div {
+	text-align: center;
+}
+
+#main-section-service h1{
+	color: orchid;
+	font-size: 5.0rem;
+	text-transform: uppercase;
+	margin: 2rem 0;
+	animation: myanimation 2s infinite alternate-reverse;
+}
+
+@keyframes myanimation {
+	0% {color: orchid}
+	50%{color:dodgerblue}
+	100%{color:goldenrod}
+}
+
+
+#service-img{
+	border-radius: 50%;
+}
+
+/* media queries */
+/* tablet */
+
+@media (max-width:800px) {
+	header {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	header nav {
+		display: flex;
+	}
+	header nav a {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.main-section img {
+		display: none;
+	}
+	.main-section div {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+	.main-section h1 {
+		margin-top: 0;
+	}
+	.container {
+		margin: 0 1%;
+	}
+
+	/* SERVICE PAGE */
+	#service-nav {
+		background-color: rgb(240, 255, 30);
+	}
+	#service-nav a {
+		color: hotpink;
+		padding-top: 2rem;
+		transition: 250ms ease-in;
+	}
+	#service-nav a:hover{
+		color: greenyellow;
+	}
+}
+
+/* phone */
+
+@media (max-width:500px) {
+	header nav {
+		flex-direction: column;
+	}
+	header nav a {
+		border-top: 1px solid grey;
+	}
+	.contact-border {
+		border-bottom: 1px solid grey;
+	}
+
+	.section2 div {
+		display: block;
+		width: 100%;
+	}
+
+	.section3 div {
+		display: block;
+		width: 100%;
+	}
+
+	/* SERVICE PAGE */
+	nav#service-nav {
+		background-color: aquamarine;
+	}
+	nav#service-nav:hover {
+		background-color: powderblue;
+		text-transform: uppercase;
+	}
+}
