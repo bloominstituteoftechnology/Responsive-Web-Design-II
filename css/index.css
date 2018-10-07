@@ -1,1 +1,313 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+html {
+    font-size: 62.5%
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width:880px;
+    font-size: 1.6rem;
+    border: 1px solid;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.3%;
+    color: gray;
+}
+nav a{
+    color: gray;
+    text-decoration: none;
+}
+nav a:link{
+    color: gray;
+}	
+nav a:visited{
+    color: gray;
+}	
+nav a:hover{
+    color: lightgray;
+}	
+.main-nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-top: 1%;
+    list-style: none;
+}
+.main-nav li{
+    display: inline;
+    vertical-align: middle;
+}
+.banner{
+    display: flex;
+    width: 100%;
+    padding-top: 4.4%;
+    margin-bottom: 7%;
+}
+.banner h1{
+    position: relative;
+    font-size: 7.2rem;
+    text-align: center;
+    margin-top: 12%;
+}
+.banner button{
+    display: block;
+    position: relative;
+    font-size: 11pt;
+    padding: 5px 50px;
+    background-color: white;
+    border: 1px solid;
+    margin: auto;
+}
+section:first-of-type{
+    border-top: 1px solid;
+}
+section{
+    margin: 0; 
+    padding: 3.4% 0;
+}
+main img:last-of-type{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+section:last-of-type{
+    border-bottom: 1px solid;
+}
+.col-1{
+    display: flex;
+}
+.col-2{
+    display: flex;
+    justify-content: space-around;
+}
+.col-2 div{
+    width: 31.3%
+}
+.col-top{
+    width: 49%;
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 3.4% 0;
+}
+footer .copyright{
+
+    align-self: center;
+    margin-top: 3.4%;
+}
+
+@media(max-width: 800px){
+    .container {
+        width: 100%;        
+        max-width: 790px;
+        border: none;
+        margin: 0 auto;
+    }
+    .main-nav {
+        width: 100%;
+        padding-top: 3.8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav ul{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .logo {
+        width: 23%;
+        margin-bottom: 3.9%;
+    }
+    .main-nav ul :nth-child(1) {order: 1;}
+    .main-nav ul :nth-child(2) {order: 2;}
+    .main-nav ul :nth-child(3) {order: 3;}
+    .main-nav ul :nth-child(4) {order: 4;}
+    .main-nav ul :nth-child(5) {order: 5;}
+    .main-nav ul :nth-child(6) {order: 6;}
+
+    .main-nav :nth-child(1) { order: 2;}
+    .main-nav :nth-child(2) { order: 1;}
+
+    .banner img {
+        display: none;
+    }
+    .banner h1{
+        margin-top: 5.9%;
+        margin-bottom: 6.8%;
+    }
+    .banner{
+        margin-bottom: 10%;
+    }
+    section{
+        margin-left: 2.5%;
+        margin-right: 2.5%; 
+        padding-top: 4.4%; 
+    }
+    .col-1 p {
+        width: 96%;
+    }
+    .col-2 p{
+        width: 91%;
+    }
+    .middle-img {
+        width: 95%;
+    }
+    footer{
+        padding-left: 3.8%;
+        padding-top: 4.4%;
+    }
+    footer .copyright{
+        display: block;
+        text-align: center;
+        padding-top: 4.4%;
+    }
+ 
+} 
+@media(max-width: 500px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 490px;
+        /* padding: 20px 0px 50px 0px; */
+        border: none;
+        margin: 0 auto;
+    }
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid gray;
+        padding: 0;
+    } 
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        font-size: 1.8rem;
+    }
+    .logo {
+        width: 183px;
+        margin-bottom: 4%;
+    }
+    .banner{
+        margin-top: 2.5%;
+        margin-bottom: 16.5%;
+        padding-top: 2.5%;
+    }
+    .col-top h1{
+        margin-bottom: 11%;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .col-1 div:first-of-type {
+        padding-top: 14%;
+    }
+    .col-1 div:last-of-type {
+        padding-top: 11.5%;
+    }
+    .middle-img {
+        width: 95%;
+        padding-top: 12.2%;
+        margin-bottom:7%;
+        padding-bottom: 0;
+    }
+    .col-2 {
+        width: 100%;
+        padding-bottom: 9%;
+    }
+    .col-2 div {
+        width: 100%;
+    } 
+    .col-2 div:nth-child(2) {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    } 
+    footer {
+        margin-top: 3%;
+        padding-left: 2.5%; 
+    }
+} 
