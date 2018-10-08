@@ -73,17 +73,19 @@ body{
 .container {
     max-width: 880px;
     width: 100%;
-	margin: auto;
+	margin: auto 0 ;
 	display:flex;
     flex-wrap: wrap;
     font-size: 1.6rem;
+    
+    
     
 }
 
 /* Header Styles */
 
 header {
-	width: 100%;
+	width: 99%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -106,7 +108,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 13.18% 2.27% 0 -3%;
+    margin: 13.18% 2.27% 0 0%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -121,7 +123,7 @@ header .logo {
 .cta .ctaimage {
 	margin-left: 9%;
     align-items: flex-end;
-    padding: 0% 0% 0% 0%;
+    /* padding: 0% 0% 0% 0%; */
 }
 
 .cta .cta-text {
@@ -148,7 +150,7 @@ header .logo {
 	width: 170px;
 	height: 32px;
 	padding: 0 0 0 0;
-    margin: 22px 0px 0px 9.43%;
+    margin: 22px 0px 0px 21.43%;
 	cursor: pointer;
 }
 
@@ -187,7 +189,9 @@ header .logo {
 }
 
 .main-content .bottom-content {
-	display: flex;
+    display: flex;
+    /* margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%; */
 }
 
 .main-content .bottom-content p {
@@ -223,7 +227,7 @@ header .logo {
 footer {
 	align-self: flex-end;
 	margin: -10px 0px 0px 0px;
-	padding: 52px 0 0px 19.77%;
+	padding: 52px 0 0px 23.77%;
 	display:flex;
 	justify-content: center;
 	height: 70px;
@@ -234,9 +238,13 @@ footer {
 
 .services{
 	margin: 20px 0 0px 0;
-	padding: 0 0 20px 0;
+	padding: 0 0 2.27% 0;
 	border-bottom: 1px solid black;
-	line-height: 1.5;
+    line-height: 1.5;
+    width: 100%;
+}
+.services-header-img{
+    width: 100%;
 }
 
 .sixboxes{
@@ -253,10 +261,13 @@ footer {
 	width: 48%;
 	height: 30%;
 	border:1px solid black;
-	margin: 20px 0 20px 0;
+	margin: 20px .23% 20px 0;
 	padding: 19px 2.95% 20px 1.81%;
 	display:flex;
 	flex-direction: column;
+}
+.services-info-img{
+    width: 48%;
 }
 .sixboxes div button{
 	margin: 19px 0 0 0;
@@ -560,7 +571,63 @@ input[type=submit]:hover {
         height: 70px;
         }
     
-    
+        .services{
+            margin: 20px 0 0px 0;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid black;
+            line-height: 1.5;
+        }
+        
+        .sixboxes{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            margin: 20px 0 37px 0;
+            padding:19px 0px 71px 0px;
+            border-bottom: 1px solid black;
+            line-height: 1.5;
+        }
+        .sixboxes div{
+            background-color: #F5F4F4;
+            width: 99%;
+            height: 15%;
+            border:1px solid black;
+            margin: 20px 0 20px 0;
+            padding: 19px 2.95% 20px 1.81%;
+            display:flex;
+            flex-direction: column;
+        }
+        .sixboxes div button{
+            margin: 19px 0 0 0;
+            width: 38%;
+            height: 16%;
+            border:1px solid black;
+        }
+        .ending{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0px 0 0 0;
+            padding: 0px 0px 0px 0px;
+        }
+        .ending .para{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            margin: 0px 0 0 0;
+            padding: 0px 0px 0px 0px;
+            line-height: 1.5;
+        }
+        
+        .ending ul{
+            margin: 10px 0 0 1.81%;
+            padding: 0 0 0 0;
+        }
+        
+        .ending ul li{
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        } 
 
     }
 
@@ -778,7 +845,63 @@ input[type=submit]:hover {
             /* height: 70px; */
             }
         
-        
+            .services{
+                margin: 20px 0 0px 0;
+                padding: 0 0 20px 0;
+                border-bottom: 1px solid black;
+                line-height: 1.5;
+            }
+            
+            .sixboxes{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: space-between;
+                margin: 20px 0 37px 0;
+                padding:19px 0px 71px 0px;
+                border-bottom: 1px solid black;
+                line-height: 1.5;
+            }
+            .sixboxes div{
+                background-color: #F5F4F4;
+                width: 99%;
+                height: 15%;
+                border:1px solid black;
+                margin: 20px 0 20px 0;
+                padding: 19px 2.95% 20px 1.81%;
+                display:flex;
+                flex-direction: column;
+            }
+            .sixboxes div button{
+                margin: 19px 0 0 0;
+                width: 38%;
+                height: 16%;
+                border:1px solid black;
+            }
+            .ending{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0px 0 0 0;
+                padding: 0px 0px 0px 0px;
+            }
+            .ending .para{
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                margin: 0px 0 0 0;
+                padding: 0px 0px 0px 0px;
+                line-height: 1.5;
+            }
+            
+            .ending ul{
+                margin: 10px 0 0 1.81%;
+                padding: 0 0 0 0;
+            }
+            
+            .ending ul li{
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+            } 
     
     }
     
