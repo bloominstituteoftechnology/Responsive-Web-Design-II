@@ -91,7 +91,7 @@ header {
 
 }
 header nav {
-	width: 68.2%;   /* 68.2% ( 600/880px)*/
+	width: 68.2%;   /* 600/880 = 68.2%*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -488,18 +488,6 @@ address {
    	 	align-items: center;
    	 	width:98%;
    	 } */
-		 aside.left {
-       padding:0;
-       margin:0;
-     }
-   	 h3 {
-   	 	text-align: left;
-   	 }
-
-		 aside.header-left h1 {
-  	 	font-size: 6.5rem;
-
-		}
 
 		 section.content-1,
    	 aside.left,
@@ -516,5 +504,15 @@ address {
 		 }
 
 
+		 aside.left {
+       padding:0;
+       margin:0;
+     }
+   	 h3 {
+   	 	text-align: left;
+   	 }
+
+		 aside.header-left h1 {
+  	 	font-size: 6.5rem;
 
 }
