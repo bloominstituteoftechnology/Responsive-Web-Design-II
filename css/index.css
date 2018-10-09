@@ -136,7 +136,6 @@ header .logo {
 
 .cta .cta-text {
   vertical-align: top;
-  font-size: 77px;
   margin-top: 120px;
   text-align: center;
   padding: 0px 75px;
@@ -147,7 +146,7 @@ header .logo {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -217,7 +216,6 @@ main .bottom-content .text-content:last-child {
 footer {
   margin: 100px 0 30px 0;
   text-align: center;
-  font-size: 14px;
 }
 
 /*   Services     */
@@ -232,7 +230,7 @@ footer {
 	border-bottom: 1px solid black;
 }
 .services .services-info h1{
-		font-size: 25px;
+		font-size: 2.5rem;
 		font-weight: bold;
 }
 
@@ -268,7 +266,7 @@ footer {
 	width: 120px;
 	height: 35px;
 	padding: 10px;
-	font-size: 12px;
+	font-size: 1.2rem;
 	border-radius: 5px;
 }
 
