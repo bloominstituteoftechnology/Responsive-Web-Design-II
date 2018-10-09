@@ -108,6 +108,9 @@ header nav {
     margin-top: 100px;
     /* margin-bottom: 20px; */
 }
+.cta-2 img {
+    width: 100%;
+}
 .services-title {
     padding-top: 20px;
 }
