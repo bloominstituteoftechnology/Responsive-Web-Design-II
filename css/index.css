@@ -294,6 +294,7 @@ address {
 
 		flex-direction: column;
     padding-top: 0px;
+		margin: 0px;
 
 	}
 
@@ -344,6 +345,7 @@ address {
 	.middle-img {
 
 		margin-top: 0px;
+		padding: 0px 20px;
 
 	}
 
