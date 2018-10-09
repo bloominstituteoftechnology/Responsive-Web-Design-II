@@ -321,10 +321,9 @@ address {
 
 	}
 
-  .header-text {
+  .header-text h1 {
 
-    margin-top: -97px;
-    margin-left: 20px;
+    font-size: 6rem;
 
   }
 
