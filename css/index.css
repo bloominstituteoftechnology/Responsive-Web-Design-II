@@ -71,16 +71,20 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-	width: 80%;
+	max-width: 880px;
 	margin:0 auto;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 h2 {
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 p {
-	font-size: 12px;
+	font-size: 1.2rem;
 	line-height: 1.4;
 }
 
@@ -92,8 +96,8 @@ ul {
 header {
 	display:flex;
 	justify-content: space-between;
-	padding-bottom:20px;
-	padding-top:10px;
+	padding-bottom: 2%;
+	padding-top: 1%;
 }
 
 header nav {
@@ -111,7 +115,7 @@ header nav a {
 	text-decoration: none;
 	color: gray;
 	text-align: left;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 
 header nav a:hover {
@@ -122,7 +126,7 @@ header nav a:hover {
 footer .copyright {
 	margin: 0 auto;
 	text-align: center;
-	font-size: 12px;
+	font-size: 1.2rem;
 }
 
 /*Services Styles */
@@ -134,34 +138,34 @@ footer .copyright {
 .services-header-img {
 	display: block;
 	width: 100%;
-	padding-bottom: 20px;
+	padding-bottom: 2%;
 }
 
 .services h1 {
-	font-size:20px;
+	font-size: 1.25rem;
 }
 
 .offerings {
 	display: flex;
 	flex-flow:row wrap;
 	border-top:1px solid black;
-	padding:20px 0;
+	padding:2% 0;
 	justify-content: space-between;
 	border-bottom:1px solid black;
 }
 
 .offerings .subsection {
 	width: 48%;
-	margin: 18px 0px;
+	margin: 1.8% 0px;
 	background-color: lightgray;
 	border: 1px solid black;
-	padding: 10px;
+	padding: 1%;
 }
 
 .offerings .subsection button {
-	margin-top: 10px;
-	padding:5px 25px;
-	font-size: 10px;
+	margin-top: 1%;
+	padding:0.5% 2.5%;
+	font-size: 1rem;
 	background-color: whitesmoke;
 	border: 1px solid grey
 }
@@ -185,7 +189,7 @@ footer .copyright {
 	display:flex;
 	flex-direction: column;
 	justify-content:flex-start;
-	font-size: 12px;
+	font-size: 1.2rem;
 	margin-top: 15px;
 }
 
@@ -221,37 +225,37 @@ footer .copyright {
 }
 
 .get-started h1 {
-	font-size: 75px;
+	font-size: 7.5rem;
 	text-align: center;
 }
 
 .get-started button {
 	text-align: center;
-	width: 150px;
-	padding:2% 0;
+	width: 30%;
+	padding: 1% 0;
 	background-color: transparent;
-	border:1px solid grey;
-	font-size: 12px;
+	border: 1px solid grey;
+	font-size: 1.2rem;
 }
 
 .test .circle {
 	border-radius: 50px;
-	width:45%;
-	padding:2%;
+	width: 45%;
+	padding: 2%;
 }
 
 .information {
-	border-top:1px solid grey;
-	padding-top: 15px;
-	border-bottom:1px solid grey;
+	border-top: 1px solid grey;
+	padding-top: 1.5%;
+	border-bottom: 1px solid grey;
 	display: flex;
 	flex-flow: column nowrap;
 }
 
 .information section {
 	display: flex;
-	padding-top:20px;
-	padding-bottom: 20px;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
 }
 
 .information .top-container {
@@ -261,8 +265,8 @@ footer .copyright {
 
 .top-container .features {
 	display: flex;
-	flex-direction: column;
-	width: 50%;
+    flex-direction: column;
+    width: 49%;
 }
 
 .information .middle-img {
@@ -278,18 +282,18 @@ footer .copyright {
 
 .information .services {
 	flex-direction: column;
-	justify-content: center;
-	width: 33%;
+    justify-content: flex-start;
+	width: 32%;
 	height: 150px;
 }
 
 footer h2 {
-	padding-top:30px;
+	padding-top: 3%;
 }
 
 footer p {
-	padding-bottom:15px;
-	font-size: 14px;
+	padding-bottom: 1.5%;
+	font-size: 1.4rem;
 }
 
 /* Media Queries */
@@ -303,7 +307,7 @@ footer p {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
-		padding-top: 10px;
+		padding-top: 1%;
 	}
 
 	header .logo {
@@ -312,7 +316,7 @@ footer p {
 
 	header nav {
 		width: 100%;
-		padding:25px 0px;
+		padding: 5% 0;
 		display: flex;
 	}
 
@@ -331,16 +335,16 @@ footer p {
 		width: 100%;
 		padding: 0px;
 		margin:0 auto;
-		padding-bottom: 25px;
+		padding-bottom: 5%;
 		border-bottom:1px solid black;
 	}
 
 	.get-started h1 {
-		font-size: 65px;
+		font-size: 6.5rem;
 	}
 
 	.get-started button {
-		font-size: 12px;
+		font-size: 1.2rem;
 		width: 25%;
 		padding: 1% 0;
 	}
@@ -351,7 +355,7 @@ footer p {
 
 	.top-container {
 		width:100%;
-		padding-top: 0px;
+		padding: 3% 0 1.5% 0;
 		align-items: space-between;
 	}
 
@@ -363,8 +367,8 @@ footer p {
 
 	.bottom-container {
 		display: flex;
-		width:100%;
-		padding:10px 0 15px 0;
+		width: 100%;
+		padding: 3% 0;
 		border-bottom: 1px solid black;
 		justify-content:space-between;
 	}
@@ -374,7 +378,7 @@ footer p {
 	}
 
 	footer .copyright {
-		padding-bottom: 10px;
+		padding: 3% 0 1.5% 0;
 	}
 }
 
@@ -385,11 +389,11 @@ footer p {
 	}
 
 	p {
-		font-size: 14px;
+		font-size: 1.4rem;
 	}
 
 	h2 {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 	
 	header {
@@ -402,28 +406,29 @@ footer p {
 	header nav {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
+        width: 100%;
+        padding-top: 1%;
 	}
 
 	header nav a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-bottom:1px solid grey;
-		width:100%;
-		padding:15px 0;
+		border-bottom: 1px solid grey;
+		width: 100%;
+		padding: 4% 0;
 		text-align: center;
 	}
 
 	header nav a:first-child {
-		border-top:1px solid grey;
+		border-top: 1px solid grey;
 	}
 
 	header .logo {
 		width: auto;
 		margin: 0 auto;
-		padding: 0;
-		padding:15px 0;
+		/* padding: 0; */
+		padding: 2% 0 1% 0;
 	}
 
 	.circle {
@@ -436,19 +441,23 @@ footer p {
 		justify-content: center;
 		align-items: center;
 		margin: 0 auto;
-		padding: 30px 0;
+		padding: 4% 0 10% 0;
 		border-bottom: none;
-	}
+    }
+    
+    /* .get-started h1 {
+        padding-top: 0;
+    } */
 
 	.get-started button {
 		text-align: center;
-		width: 50%;
-		padding:5px 0;
+		width: 35%;
+		padding: 1.5% 0;
 	}
 
 	.information {
-		width:95%;
-		margin:0 auto;
+		width: 95%;
+		margin: 0 auto;
 		border-top: 1px solid black;
 	}
 
@@ -456,30 +465,52 @@ footer p {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		padding-bottom: 20px;
+		padding: 10% 0 10% 0;
 		width: auto;
 	}
 
 	.top-container .features {
-		width:100%;
-		align-items: flex-start;
-	}
+		width: 100%;
+        align-items: flex-start;
+        padding-bottom: 10%;
+    }
+    
+    .top-container .features:last-child {
+        padding-bottom: 0%;
+    }
+
+    /* .middle-img {
+        padding: 0%;
+    } */
+
+    .bottom-container {
+        padding: 7% 0;
+    }
 
 	.bottom-container .services {
 		width: 100%;
 		height: auto;
-		padding:10px 0;
-	}
+		padding-bottom: 10%;
+    }
+    
+    .bottom-container .services:last-child {
+        padding-bottom: 0%;
+    }
 
 	footer {
-		width:95%;
-		margin:0 auto;
+		width: 95%;
+		margin: 0 auto;
 		padding-bottom: 0px;
-	}
+    }
+    
+    footer h2 {
+        padding-top: 7.5%;
+    }
 
 	footer .copyright {
-		padding-bottom: 10px;
-		font-size: 14px;
+        padding-top: 7.5%;
+        padding-bottom: 5%;
+		font-size: 1.4rem;
 	}
 }
 
