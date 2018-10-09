@@ -1,1 +1,305 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+/* My CSS Styles */
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar nav {
+    width: 68.7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: grey;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 525px;
+    border-bottom: 2px solid black;
+}
+
+.innovation-title {
+    margin: 0 8% 0;
+}
+
+.innovation-title h1 {
+    font-size: 7rem;
+    text-align: center;
+}
+
+.innovation-title button {
+    font-size: 1.8rem;
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+    width: 17rem;
+    border: 1px solid grey;
+    padding: 5px 0;
+    margin: 4% 0 0 19%;
+    border-radius: 2px;
+}
+
+.body-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2.7% 0;
+    border-bottom: 2px solid black;
+}
+
+.top-content-container {
+    width: 50%;
+    padding: 2% 0;
+}
+
+.body-img {
+    width: 100%;
+    height: auto;
+    padding: 2% 0;
+}
+
+.bottom-content-container {
+    width: 33%;
+    padding: 2% 0;
+}
+
+.contact-container {
+    margin-top: 4%;
+    line-height: 1.2;
+}
+
+footer {
+    margin-top: 4%;
+    text-align: center;
+}
+
+
+
+/* Tablet View */
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    .nav-bar {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    
+    .nav-bar nav {
+        width: 88%;
+        justify-content: space-between;
+        margin-right: 35px;
+        padding: 38px 0;
+    }
+    
+    header {
+        width: 95%;
+        flex-direction: column;
+        justify-content: center;
+        height: 384px;
+        margin: 0 auto;
+    }
+
+    .innovation-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .innovation-title button {
+        padding: 5px 0;
+        margin: 3% 0 0 0;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .body-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .body-container .top-content-container {
+        padding: 2% 2% 4% 1%;
+    }
+
+    .body-container .body-img {
+        padding: 1% 0;
+        height: 80%;
+    }
+
+    .body-container .bottom-content-container {
+        padding: 3% 4% 3% 1%;
+    }
+
+    .contact-container {
+        width: 95%;
+        margin: 5% 4% 0%;
+    }
+
+    footer {
+        margin-top: 5%;
+    }
+}
+
+
+
+/* Mobile View */
+
+@media (max-width: 500px) {
+
+    .nav-bar {
+        margin-top: -2%;
+    }
+
+    .nav-bar nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 4% 0 0;
+        padding: 0% 0;
+        border-top: 1px solid grey;
+    }
+
+    .nav-bar nav a {
+        width: 100%;
+        text-align: center;
+        padding: 4% 0;
+        margin: 0;
+        font-size: 2rem;
+        border-bottom: 1px solid grey;
+    }
+    
+    header {
+        width: 92%;
+        height: 398px;
+    }
+
+    .innovation-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    .body-container {
+        width: 92%;
+        margin: 0 auto;
+        padding-bottom: 9%;
+    }
+
+    .body-container .top-content-container,
+    .body-container .bottom-content-container {
+            width: 100%;
+            padding: 9% 0% 4% 0%;
+        }
+
+    .body-container .body-img {
+        padding: 9% 0 0%;
+        height: 80%;
+    }
+
+    footer {
+        margin-top: 8%;
+    }
+}
