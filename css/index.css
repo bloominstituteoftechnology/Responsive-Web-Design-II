@@ -1,1 +1,334 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+* {
+	box-sizing: border-box;
+  }
+
+/*****************************************
+ **************** Desktop ****************
+ *****************************************/
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+
+.container .header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+
+.container .header .header-nav a {
+  color: #999;
+  text-decoration: none;
+}
+
+.container .header .header-imgLogo .logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.home .topContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2px solid black;
+  padding-bottom: 9.5%;
+}
+
+.home .topContent .topContent-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+.home .topContent .topContent-wrapper .topContent-info {
+  font-size: 7.2rem;
+}
+
+.home .topContent .topContent-wrapper a {
+  border: 1px solid black;
+  padding: 1.8% 9.5%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.home .details .top-section {
+  display: flex;
+  margin-bottom: 3.5%
+}
+
+.home .details .top-section article p {
+  line-height: 113%;
+}
+
+.home .sectionImg {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 3.3%;
+}
+
+.home .details {
+  border-bottom: 2px solid black;
+  margin-bottom: 4%;
+}
+
+.home .details .bottom-section {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3%;
+  margin-bottom: 4.2%;
+}
+
+.home .details .bottom-section article {
+  max-width: 31.4%;
+}
+
+.home .details .bottom-section article p {
+  line-height: 113%;
+}
+
+.container footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0;
+}
+/*****************************************
+ ***************** Tablet ****************
+ *****************************************/
+@media (max-width: 800px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .container .header {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+
+  .container .header .header-nav {
+    order: 1;
+    width: 90%;
+  }
+
+  .container .header .header-imgLogo {
+    margin-bottom: 4.8%;
+  }
+
+  .home .topContent {
+    display: block;
+    margin-bottom: 4.5%;
+    padding-bottom: 4.8%;
+  }
+
+  .home .topContent .topContent-wrapper .topContent-info {
+    margin-bottom: 3.5%;
+  }
+
+  .home .topContent .topContent-wrapper a {
+    padding: 0.9% 6%;
+  }
+
+  .home .topContent .topContent-img {
+    display: none;
+  }
+
+  .home .details .top-section {
+    justify-content: space-around;
+    max-width: 100%;
+  }
+
+  .home .details .top-section article {
+    max-width: 46.5%;
+  }
+
+  .home .sectionImg {
+    padding-bottom: 3.7%;
+  }
+
+  .home .details {
+    margin-bottom: 5%;
+  }
+
+  .home .details .bottom-section {
+    justify-content: space-around;
+    max-width: 100%;
+  }
+
+  .home .details .bottom-section article {
+    max-width: 28%;
+  }
+
+  .container .contact-section {
+    padding-left: 2.2%;
+  }
+
+  .container footer {
+    padding: 5% 0;
+  }
+}
+
+/*****************************************
+ ***************** Phone *****************
+ *****************************************/
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .container .header .header-nav {
+    order: 1;
+    width: 100%;
+    flex-direction: column;
+    border-top: 1px solid black;
+  }
+
+  .container .header .header-nav a {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 4.2% 0;
+    width: 100%;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .home .topContent {
+    padding-bottom: 10.8%;
+    margin-bottom: 12.5%;
+  }
+
+  .home .topContent .topContent-wrapper {
+    padding-top: 8%;
+  }
+
+  .home .topContent .topContent-wrapper .topContent-info {
+    margin-bottom: 5.5%;
+  }
+
+  .home .topContent .topContent-wrapper a {
+    padding: 1.5% 9.7%;
+  }
+
+  .home .details {
+    margin-bottom: 7%;
+  }
+
+  .home .details .top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+    max-width: 95%;
+  }
+
+  .home .details .top-section article {
+    max-width: 100%;
+    margin-bottom: 10.5%;
+  }
+
+  .home .sectionImg {
+    padding-bottom: 5.7%;
+  }
+
+  .home .details .bottom-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 7.5%;
+    margin-bottom: 1%;
+  }
+
+  .home .details .bottom-section article {
+    max-width: 90%;
+    margin-bottom: 13.7%;
+  }
+
+  .home .details .bottom-section .finalArticlePhoneView {
+    margin-bottom: 0;
+  }
+
+  .container footer {
+    padding: 8.1% 0;
+  }
+}
