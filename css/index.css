@@ -207,22 +207,24 @@ footer {
 
 /* Services */
 .services .services-header-img {
-	margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .services h1 {
-	font-size: 33rem;
-	/* border: 1px solid red; */
-	margin: 20px auto;
+	font-size: 2.6rem;
+    margin-top: 11px;
 }
 
 .services .services-header {
 	border-bottom: 1px solid gray;
-	margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .services p {
-	margin: 30px auto;
+	margin-bottom: 39px;
 	line-height: 20px;
 }
 
@@ -234,23 +236,31 @@ footer {
 	align-content: space-between;
 	border-bottom: 2px solid black;
 	margin-bottom: 30px;
-	padding-bottom: 30px;
+	
 	
 }
 
 .services .box {
-	width: 47.5%;
-	/* margin: 2.5%; */ */
+	width: 47.75%;
 	border: 1px solid grey;
 	background: whitesmoke;
 	padding: 2.5%;
     border: 1px solid black;
-    margin: 11px;
+    margin-bottom: 40px;
+
+}
+
+.services h3 {
+    font-size: 1.6rem;
+}
+
+.services .services-main-content p {
+    margin-bottom: 19px;
 }
 
 .services .services-main-content .box button {
 	padding: 3%;
-	width: 150px;
+	width: 37%;
 	border: 1px solid black;
 	border-radius: 4px;
 	background: white;
@@ -274,17 +284,34 @@ footer {
 
 .services .services-info .servives-info-text {
 	width: 47.5%;
-	margin-right: 2.5%;
-	/* border: 1px solid red; */
+    margin-right: 2.5%;
+    margin-top: 10px;
+}
+
+.services .services-info .servives-info-text p {
+    margin-bottom: 28px;
+}
+
+.services .services-info img {
+    width: 47.5%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin-top: 10px;
 }
 
 .services .services-info .servives-info-text ul li {
 	margin-bottom: 10px;
-	margin-left: 10px;
+    margin-left: 5%;
+    font-size: 1.6rem;
+    list-style: square;
+    line-height: 20px
 }
-.services .services-info .servives-info-text ul li:before {
-	content:"•   ";
+
+.services footer {
+    margin-top: 58px;
+    /* border: 1px solid red; */
 }
+
 
 /* Tablet view */
 @media ( max-width: 800px){
@@ -351,16 +378,14 @@ footer {
         padding-right: 3.5%;
     }
 
-    .services-header-img {
-        width: 100%;
-    }
-
-    .services-info-img {
+    .services-info .services-info-img {
         width: 47.5%;
+        height: auto;
+        /* border: 1px solid red; */
     }
 
     .services-main-content .box {
-        width: 45%;
+        width: 47.5%;
     }
 }
 
@@ -439,14 +464,10 @@ footer {
 
     .contact {
         padding: 35px 2%;
-      }
-
-    .services-main-content {
-        height: 1600px;;
     }
 
     .services-main-content .box {
-        width: 450px;
+        width: 100%;
     }
 
     .services-info-img {
