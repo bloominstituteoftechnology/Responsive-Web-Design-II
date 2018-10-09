@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
+/* INDEX */
 html {
     font-size: 62.5%;
 }
@@ -143,6 +143,7 @@ html {
     margin-top: 6.9rem;
   }
   
+  /* Content */
   .main-content {
 	border-top: 1px solid black;
     margin-top: 7.6rem;
@@ -179,6 +180,7 @@ html {
 	margin-right: 0;
   }
   
+  /* Contact, Footer */
   .contact {
     margin-top: 5%;
 	border-top: 1px solid black;
@@ -194,10 +196,97 @@ html {
 	font-size: 1.4rem;
   }
 
+  /* SERVICES */
+  .services .services-header-img {
+    margin-top: 2%;
+}
+
+  .services-info {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid black;
+}
+
+  .services-info h1 {
+    font-size: 2.5rem;
+}
+
+  .service-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.services .services-header-img {
+    width: 100%;
+}
+
+  .service-content div {
+    display: flex;
+    height: 25.0rem;
+    width: 42.0rem;
+    border: 1px solid black;
+    background-color: #F4F3F4;
+    margin-bottom: 5%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 1%;
+}
+
+  .services .service-content span {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 1.2rem 5.0rem;
+    width: 43%;
+    border: 1px solid black;
+    background-color: #FFF;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.services .service-content span:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+  .services .end-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 40.0rem;
+    margin-top: 4%;
+}
+
+ .services .end-content ul {
+     font-size: 1.6rem;
+ }
+
+  .end-content .about-fact ul {
+    margin-top: 6%;
+    margin-left: 4%;
+    list-style-type: square;
+}
+
+  /* .end-content .services-info-img {
+      width: 50%;
+  } */
+
+
   /* Tablet */
   
   @media (max-width: 800px) {
 
+    /* INDEX */
 	 .container {
 		 width: 100%;
 	 }
@@ -237,13 +326,24 @@ html {
          margin-left: 2.5%;
 		 width: 95%;
 		 border-top: 2px solid black;
-	 }
+     }
+     
+     /* SERVICES */
+     .service-content div {
+         width: 49%;
+     }
+
+     .end-content .services-info-img {
+         width: 43%;
+     }
 
 }
 
 /* Mobile */
 
 @media (max-width: 500px) {
+
+    /* INDEX */
 	header nav {
 		flex-direction: column;
 		align-items: center;
@@ -283,5 +383,18 @@ html {
 
 	.main-content .bottom-content .text-content {
 		width: 100%;
+    }
+
+    /* SERVICES */
+    .service-content div {
+        width: 100%;
+    }
+
+    .end-content .about-fact {
+        width: 62%;
+    }
+
+    .end-content .services-info-img {
+        width: 38%;
     }
 }
