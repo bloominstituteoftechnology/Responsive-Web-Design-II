@@ -150,7 +150,7 @@ header .cta-img {
 }
 
 .main-content {
-  border-top: 1px solid black;
+ 
   padding-top: 4%;
 }
 
@@ -212,7 +212,6 @@ footer {
     /* TABLET HEADER */
     .container {
       border: 2px solid red;
-      max-width: 880px;
       margin: 0 auto;
     }
 
@@ -290,21 +289,16 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        border-top: 1px solid black;
-        width: 800px;
-        padding-top: 36px;
+        padding-top: 4%;
       }
       
       .main-content .top-content {
-        
-        display: flex;
+       display: flex;
        justify-content: space-evenly;
-        width: 800px;
-       
       }
       
       .main-content .top-content .text-content {
-        width: 360px;
+        width: 45%;
        
       }
       
@@ -313,7 +307,7 @@ footer {
       }
       
       .main-content .middle-img {
-        margin-top: 45px;
+        margin-top: 13%;
         width: 95%;
         height: 110%;
       }
@@ -321,17 +315,13 @@ footer {
       .main-content .bottom-content {
         display: flex;
         justify-content: space-evenly;
-        width: 775px;
-        margin-top: 28px;
-        margin-right: 20px;
-        
+        width: 100%;
+        margin-top: 3.65%;
       }
       
       .main-content .bottom-content .text-content {
-        width: 220px;
+        width: 28%;
         line-height: 1.2;
-        
-      
       }
       
       .main-content .bottom-content .text-content h4 {
@@ -339,10 +329,11 @@ footer {
       }
       
       .contact {
-        margin-top: 57px;
+        width: 95%;
+        margin-top: 15.5%;
         border-top: 1px solid black;
-        padding: 30px 10px 0;
-        margin-left: 20px;
+        padding: 4% 1.6% 0;
+        margin-left: 2%;
       }
       
       .contact  h4 {
@@ -354,8 +345,9 @@ footer {
       }
       
       .footer {
-        margin-right: 80px;
-        margin-bottom: 15px;
+        padding-top: 8%;
+        margin-right: 0;
+        margin-bottom: 0;
         text-align: center;
         font-size: 16px;
       }
@@ -370,7 +362,6 @@ footer {
 
     .container {
       border: 2px solid aquamarine;
-      width: 500px;
       margin: 0 auto;
     }
 
@@ -378,7 +369,7 @@ footer {
           display: flex;
           justify-content: center;  
           margin: 0;
-          margin-top: 20px;
+          margin-top: 3.8%;
           padding: 0;  
             
       }
@@ -387,9 +378,9 @@ footer {
         display: flex; 
         flex-direction: column; 
         border-top: 1px solid gray; 
-        width: 500px;
+        width: 100%;
         margin-left: 0;
-        margin-top: 17px;
+        margin-top: 3%;
       }
 
       header nav a {
@@ -398,8 +389,9 @@ footer {
         font-size: 20px;
         opacity: .6;
         color: gray;
+        margin-right: 0;
         text-decoration: none;
-        padding: 20.5px 0;
+        padding: 4.2% 0;
         border-bottom: 1px solid gray;
       }
       
@@ -412,12 +404,12 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 395px;
+        height: 28.5%;
         width: 93%;
         margin-bottom: 0;
         margin-right: 0;
         margin-left: 16.5px;
-        padding-bottom: 20px;
+        padding-bottom: 3%;
         border-bottom: 2px solid gray;
         
     }
@@ -434,16 +426,15 @@ footer {
 
     .cta-text  h1 {
       letter-spacing: -1px;
-      margin-bottom: 26px;
       margin-top: 0px
         }
     
     .cta .cta-text button {
       background: white;
-      padding: 6px 42px;
+      padding: 2% 7%;
       font-size: 15.5px;
       cursor: pointer;
-      margin-right: 60px;
+      margin-right: 0;
     }
     
     .cta .cta-text button:hover {
@@ -457,23 +448,22 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 500px;
-        padding-top: 10px;
+        width: 98%;
+        padding-top: 2%;
       }
       
       .main-content .top-content {
-        
         display: flex;
         flex-direction: column;
-         width: 800px;
-       
+        width: 98%;
       }
       
       .main-content .top-content .text-content {
-        width: 450px;
+        width: 98%;
         display: flex;
         flex-direction: column;
-        padding: 45px 15px 5px 15px;
+        /* padding: 45px 15px 50px 15px; */
+        padding: 10% 2.5% 10% 2.5%;
        
         line-height: 1.2;
       }
@@ -483,26 +473,29 @@ footer {
       }
       
       .main-content .middle-img {
-        margin-top: 43px;
+        margin-top: 12%;
         width: 93%;
         height: 110%;
       }
       
       .main-content .bottom-content {
-        
+        border: 1px solid red;
         display: flex;
         flex-direction: column;
-         width: 800px;
-         margin-left: 15px;
+        width: 98%;
+        margin-left: 3%;
+        margin-top: 7%;
+        /* height: 97%; */
         
       }
       
       .main-content .bottom-content .text-content {
         display: flex;
         flex-direction: column;
-        width: 420px;
+        width: 98%;
         line-height: 1.2;
-        margin-bottom: 62px;
+        margin-bottom: 7%;
+        padding-bottom: 15%; 
       }
       
       .main-content .bottom-content .text-content h4 {
@@ -511,10 +504,10 @@ footer {
 
       
       .contact {
-        margin-top: 0px;
+        margin-top: 0;
         border-top: 1px solid black;
-        padding: 20px 10px 0;
-        margin-left: 10px;
+        padding: 8% 2% 0;
+        margin-left: 2%;
       }
       
       .contact  h4 {
@@ -522,12 +515,12 @@ footer {
       }
       
       .contact p {
-        margin: 15px 0;
+        margin: 3% 0;
       }
       
       .footer {
-        margin-right: 20px;
-        margin-bottom: 15px;
+        margin-right: 4%;
+        padding-bottom: 3%; 
         text-align: center;
         font-size: 16px;
       }
