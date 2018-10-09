@@ -222,11 +222,12 @@ html {
 	padding-bottom: 30px;
 	border-bottom: 1px solid black;
 	margin-bottom: 30px;
-	line-height: 1.2;
+    line-height: 1.2;
+    font-size: 1.6rem;
 }
 
 .services .services-info h2 {
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 /* Services blocks start */
@@ -236,14 +237,15 @@ html {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	border-bottom: 2px solid black;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
 }
 
 .services-container .services-blocks {
-	width: 420px;
+	width: 47.727%;
 	height: 240px;
     border: 1px solid black;
-	padding: 20px;
+	padding: 20px 2.272%;
 	margin: 5px 0 40px 0;
 	background: #f1f1f1;
 }
@@ -277,12 +279,13 @@ html {
   .services-container__no-border {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+    justify-content: space-between;
+    font-size: 1.6rem;
   }
 
   .services-container__no-border .services-facts {
-	width: 420px;
-	padding: 20px 20px 20px 0;
+	width: 47.727%;
+	padding: 20px 2.272% 20px 0;
 	margin: 5px 0 40px 0;
   }
 
@@ -293,7 +296,7 @@ html {
 
   .services-container__no-border .services-facts ul {
 	  list-style-type: square;
-	  margin-left: 17px;
+	  margin-left: 4.3%;
   }
 
   .services-container__no-border .services-facts ul li {
@@ -506,3 +509,127 @@ html {
       }
 
  }
+
+
+
+
+ 
+  /* ↓ Media queries for screens 801px-920px start (services.html) ↓ */
+
+  @media (max-width: 920px) {
+    .container {
+        width: 95%;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services-container {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    
+    .services-container .services-blocks {
+        width: 100%;
+        height: 25%;
+    }
+
+    .services-container__no-border {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+    .services-container__no-border .services-facts:first-child {
+        width: 40%;
+        padding: 20px 20px 20px 0;
+        margin: 5px 0 40px 0;
+      }
+
+    .services-container__no-border .services-facts:last-child {
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .services-container__no-border .services-facts:last-child img {
+        width: 100%;
+        height: auto;
+    }
+
+ }
+
+ /* ↑ Media queries for screens 801px-920px end (services.html) ↑ */
+
+
+
+ /* ↓ Media queries for tablet view start (services.html)↓ */
+
+ @media (max-width: 800px) {
+    .container header .logo-big {
+        width: 71%;
+        height: auto;
+        margin-left: 15%;
+    }
+
+    .services .services-header-img {
+        transform: scaleX(.8);
+        transform: scaleY(.7);
+    }
+
+    .services-container__no-border {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services-container__no-border .services-facts:first-child {
+        width: 100%;
+        padding: 20px 20px 20px 0;
+        margin: 5px 0 5px 0;
+    }
+
+    .services-container__no-border .services-facts:first-child h3{
+        text-align: center;
+        
+      }
+
+    .services-container__no-border .services-facts:first-child ul{
+        text-align: center;
+        list-style-type: none;
+      }
+
+
+    .services-container__no-border .services-facts:last-child {
+        width: 100%;
+        height: 180px;
+        margin-top: 0px;
+        text-align: center;
+        background-image: url(http://paperlief.com/images/apple-computer-keyboard-wallpaper-2.jpg);
+        background-size: 100% 180px;
+        background-repeat: no-repeat;
+
+    } 
+
+    .services-container__no-border .services-facts:last-child img {
+        display: none;
+    }
+
+}
+
+  /* ↑ Media queries for tablet view end (services.html) ↑ */
+
+
+
+  /* ↓ Media queries for phone view start (services.html)↓ */
+
+  @media (max-width: 500px){
+    header nav.brown-on-hover a:hover {
+        background: rgba(140, 134, 141, .6);
+    }
+  }
+
