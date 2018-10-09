@@ -1,1 +1,461 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+@keyframes header-anima {
+    0%   {opacity:1;}
+    25%  {opacity:0.25;}
+    50%  {opacity:1;}
+    75%  {opacity:0.25;}
+    100% {opacity:1;}
+}
+
+/* General Styles */
+* {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.24;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.container {
+	max-width: 880px;
+  width: 95%;
+	margin: 0 auto;
+}
+
+.container header {
+	display: flex;
+	justify-content: space-between;
+	margin: 29px 0px 69px 0px;
+}
+
+.container header .fa {
+  display: none;
+}
+
+.container header nav {
+	color: #ACB1B6;
+  font-size: 1.6rem;
+	display: flex;
+  flex-grow: 1;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container header img {
+  margin-left: 90px;
+}
+
+.container header nav a {
+  padding: 5px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.container header nav a:hover {
+  background-color: #0070D3;
+}
+
+.container footer {
+	/* border: 1px solid red; */
+	text-align: center;
+	margin: 6px 0px 20px 0px;
+}
+
+.container section {
+	margin-bottom: 30px;
+}
+
+.main-content {
+	width: 100%;
+  margin-top: 75px;
+	border-top: 1.5px solid black;
+	border-bottom: 1.5px solid black;
+}
+
+/* Home Styles */
+.index .cta {
+	display: flex;
+	justify-content: space-between;
+}
+
+.index .cta img {
+  animation-name: header-anima;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.index .cta-text {
+	width: 60%;
+  padding-left: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* border: 1px solid red; */
+}
+
+.index .cta-text button:hover {
+    background-color: #0070D3;
+  }
+
+
+.index h1 {
+	font-size: 7rem;
+	text-align: center;
+}
+
+.index button {
+  font-size: 1.6rem;
+  width: 170px;
+  padding: auto 45px;
+}
+
+.index .top-content {
+	padding: 35px 0px 29px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-content .middle-img {
+  width: 100%;
+}
+
+.index .bottom-content {
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.index .text-content {
+	padding-right: 20px;
+}
+
+.index .contact p {
+	margin: 13px 0px;
+}
+
+/* Services Styles */
+.services header {
+  margin-bottom: 22px;
+}
+
+.services .intro img {
+  width: 100%;
+	margin-bottom: 29px;
+}
+
+.services h1 {
+  font-size: 2.6rem;
+}
+
+.services h2 {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+.services .main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 30px;
+  margin-top: 44px;
+}
+
+.services .main-items {
+	width: 48%;
+	border: 1.5px solid black;
+	margin-top: 38px;
+  margin-bottom: 4px;
+	padding: 20px;
+	background-color: #F4F3F4;
+}
+
+.services .more-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.5px solid black;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.services .more-button:hover {
+  background-color: #0070D3;
+}
+
+.services ul {
+	margin: 26px 0px 10px 0px;
+  font-size: 1.6rem;
+}
+
+.services li {
+	list-style-type: square;
+	margin: 15px;
+}
+
+.services .misc {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.services .misc img {
+  width: 50%;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0px auto;
+  font-size: 1rem;
+}
+
+/* Contact form style - Responsive Design*/
+.contact-form * {
+  padding: 5px;
+}
+
+.contact-form .form{
+  margin: 0px auto;               /*centered */
+  max-width: 600px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contact-form label{
+  padding-left: 0px;
+}
+
+.contact-form .form {
+  font-size: 1.5rem;
+}
+
+.contact-form .form__input {
+  margin: 3px 0px 12px 0px;
+  border-radius: 5px;
+}
+
+.contact-form .form__message {
+  height: 100px;
+}
+
+.contact-form .form__input:focus {
+  background-color: lightyellow;
+}
+
+.contact-form .form__button:focus,
+.contact-form .form__button:hover {
+  cursor: pointer;  
+  background-color: #0070D3;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+  .container header {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .container header img {
+    margin: 0px;
+    padding-left: 16px;
+  }
+
+  .container header nav {
+    margin: 39px 0px;
+    padding: 0px 25px 0px 10px;
+    align-self: stretch;
+  }
+
+  .index .cta img {
+    display: none;
+  }
+
+  .index .cta .cta-text {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .index .cta-text button {
+    margin-top: 16px;
+  }
+
+  .index .main-content .text-content {
+    padding-left: 12px;
+  }
+
+  .services .misc img {
+    display: none;
+  }
+
+  .services header #header-nav {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .container header nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 19px;
+    font-size: 2rem;
+  }
+
+  .container header .fa {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 10px;
+
+  }
+
+  .container header nav{
+    display: none;
+  }
+
+  .container header {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.22em;
+  }
+
+  .container header nav a {
+    align-self: stretch;
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 20px;
+    padding-left: 47px;
+  }
+
+  .container header nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .main-content .top-content,
+  .main-content .bottom-content {
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .main-content .text-content {
+    margin-top: 26px;
+    margin-bottom: 18px;
+  }
+
+  .main-content .bottom-content .text-content {
+    margin-top: 0px;
+    margin-bottom: 58px;
+  }
+
+  .main-content .bottom-content .text-content:last-child {
+    margin-bottom: 5px;
+  }
+
+  .contact {
+    padding-left: 20px;
+  }
+
+  .services {
+    width: 96%;
+  }
+
+  .services .main-items {
+    width: 100%;
+  }
+
+  .services .misc img {
+    display: none;
+  }
+
+  .footer {
+    padding-left: 20px;
+  }
+}
