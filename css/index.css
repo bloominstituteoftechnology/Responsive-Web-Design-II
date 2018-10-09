@@ -501,50 +501,64 @@ section.hero .hero-img {
 
 
 
-.footer-product {
-	text-align: center;
-	padding: 30px;
-	margin-bottom: 0;
-}
 
 .services {
 	line-height: 1.25;
 }
 
+.services .wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.services header nav a {
+  margin-right: 20%;
+}
+
+
 .services h1 {
-	font-size: 2rem;
+  font-size: 2.6rem;
+  margin-bottom: 1%;
+}
+
+.services p {
+  font-size: 1.6rem;
+  margin-bottom: 2.3%;
 }
 
 .services-hero {
 	width: 100%;
 	overflow: hidden;
-	padding: 10px 0 20px;
+	padding: 1% 0 2%;
 	border-bottom: 1px solid gray;
-	margin-bottom: 30px;
+  margin-bottom: 3%;
 }
 
 .services-hero img {
-	margin-bottom: 30px;
+	margin-bottom: 3%;
 }
 
 .services-cards-section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 30px;
-	border-bottom: 1px solid gray;
+  margin-bottom: 3%;
+  padding-bottom: 2.5%;
+	border-bottom: 2px solid gray;
 }
 
 .services-card {
 	border: 1px solid gray;
-	padding: 20px;
+	padding: 2%;
 	background: #f4f3f4;
-	margin-bottom: 30px;
+  margin: 2.5% 0;  
 	width: 48%;
 }
 
+
+
 .services-card h2 {
-	font-size: 1.25rem;
+	font-size: 1.7rem;
 }
 
 .services-card p {
@@ -552,36 +566,42 @@ section.hero .hero-img {
 }
 
 .services-card button {
-	background: white;
-	padding: 10px 50px;
+  background: white;
+  border: 1px solid black;
+  padding: 2% 9%;
+  border-radius: 6px;
 }
 
 .services-facts {
-	display: flex;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
 }
 
 .services-facts__left {
 	width: 48%;
-	padding: 0 30px 0 0;
+	padding: 1.8% 3% 0 0;
 }
 
 .services-facts__left p {
-	margin-bottom: 20px;
+	margin-bottom: 7%;
 }
 
+
 .services-facts__left ul li {
-	margin: 0 0 20px 20px;
+  margin: 0 0 2.5% 5%;
 	list-style: square;
-	padding-left: 20px;
+	padding-left: 2%;
 }
 
 .services-facts img {
-  width: 50%;
+  width: 48%;
+  margin-top: 2%;
 }
 
 .services footer {
 	text-align: center;
-	margin: 60px auto 15px;
+	margin: 10% auto 1%;
 }
 
 
