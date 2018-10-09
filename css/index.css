@@ -1,1 +1,408 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 880px;
+}
+
+/*Index Specific CSS*/
+
+.container p {
+    font-size: 1.6rem;
+}
+
+.container h2 {
+    font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2.5%;
+
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.6rem;
+
+}
+
+.top-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3% 0;
+	margin-bottom: 2.5%;
+}
+
+.top-info div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	font-size: 7rem;
+}
+
+.container .top-info img {
+    margin-top: 4%;
+    padding-left: 5%;
+    height: 50%;
+    width: 50%;
+}
+
+button {
+	height: 25px;
+	width: 160px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.main-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    border-top: 1px solid black;
+}
+
+.middle-img {
+	width: 100%;
+	height: auto;
+	padding: 1.5% 0;
+}
+
+.top-section {
+	display: flex;
+	justify-content: space-between;
+    padding-top: 1.5%;
+    margin: 3% 0;
+	
+}
+
+.top-section div {
+	width: 50%;
+	padding-top: 2.5%;
+}
+
+.bottom-section {
+	display: flex;
+	border-bottom: solid black 1px;
+	justify-content: space-between;	
+    padding-bottom: 2%;
+}
+
+.bottom-section div {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 32%;
+    margin: 3% 0;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	padding-top: 2%;
+	margin-top: 2%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 3% 0;	
+	padding-top: 2%;
+} 
+
+/*End of Index Specific CSS*/
+
+/*Start of Services Specific CSS*/
+
+
+.services-header-img {
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
+}
+
+.container .intro-area {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	border: 1px solid black;
+	width: 49%;
+	height: auto;
+    margin: 0.5%;
+	background-color: lightgray;
+	padding: 1%;
+}
+
+.block p {
+    padding-bottom: 2%;
+}
+
+.sections {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.innovation {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+	
+}
+
+.ondemand {
+	font-size: 50px;
+	text-align: center;
+}
+
+.facts {
+	display: flex;
+    justify-content: baseline;
+    margin: 5% 0;
+	padding: 5% 0;
+    border-top: 1px solid black;
+}
+
+.facts img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+	list-style-type: square;
+	list-style-position: inside;
+    padding: 5% 2% 2% 2%;
+    font-size: 1.6rem;
+}
+
+/*End of Services specific CSS*/
+
+/*Tablet*/
+@media (max-width:800px) {
+
+	.container {
+		width: 100%;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	  }
+
+	nav .nav-logo {
+		order: -1;
+		flex: 100%;
+		text-align: center;
+		padding-bottom: 3%;
+	}
+	  
+	  
+	  .top-info {
+		  padding: 5% 0;
+	  }
+
+	  .top-info img {
+		  display: none;
+	  }
+	  
+	  .top-info div {
+		  padding-top: 2%;
+		  font-size: 7rem;
+	  }
+	  
+	  button {
+		  margin: 15% 0;
+	  }
+	  
+	  .main-info {
+		  width: 99%;
+		  margin: 3% auto;
+	  }
+	  
+	  .middle-img {
+          width: 99%;
+          height: 99%;
+		  margin: 2% 0;
+	  }
+	  
+	  
+	  .top-section div {
+		  width: 50%;
+		  padding: 0 2%;
+	  }
+	  
+	  .bottom-section {	
+		  margin: 0 1%;
+	  }
+	  
+	  .bottom-section div {
+		  width: 33%;
+		  margin-bottom: 3%;
+	  }
+	  
+	  .contact {
+		  padding: 0 2%;
+
+	  }
+	  
+	  footer {
+		  padding-bottom: 5%;
+	
+	  } 
+
+}
+
+/*Mobile*/
+
+@media (max-width:500px) {
+
+	.container {
+		width: 100%;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+	  }
+
+	nav a {
+		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+        padding: 4% 0;
+        font-size: 2rem;
+
+	}
+	  
+	  
+	  .main-info {
+		  width: 99%;
+		  margin: 3% auto;
+	  }
+	  
+	  .middle-img {
+		  width: 95%;
+		  padding: 2.5% 0;
+		  margin: 2% 0;
+		  height: 50%;
+	  }
+	  
+	  .top-section { 
+		  flex-direction: column;
+	  }
+	  
+	  .top-section div {
+		  width: 100%;
+		  padding: 5%;
+	  }
+	  
+	  .bottom-section {	
+          flex-direction: column;
+          margin-bottom: 5%;
+	  }
+	  
+	  .bottom-section div {
+          width: 100%;
+          margin: 3% 0;
+          padding: 2% 4%;
+	  }
+	  
+	  .contact {
+		  padding: 20px;
+
+	  }
+	  
+	  footer {
+		  margin: 40px 0;
+	
+	  } 
+
+}
