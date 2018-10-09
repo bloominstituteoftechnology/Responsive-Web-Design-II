@@ -81,6 +81,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 0px;
+  padding-top: 10px;
 
 }
 
@@ -122,6 +123,12 @@ footer {
 
 	text-align: center;
 	margin: 20px 0px;
+
+}
+
+address {
+
+  font-size: 1.6rem;
 
 }
 
@@ -224,6 +231,14 @@ footer {
   nav {
 
     flex-wrap: wrap;
+    margin: 11px 0px 7px 7px;
+
+  }
+
+  .homeBanner {
+
+    padding: 5% 0px 58px 0px;
+    margin-bottom: 37px;
 
   }
 
@@ -246,6 +261,12 @@ footer {
 
     width: 100%;
 		margin-top: -77px;
+
+  }
+
+  .section2 {
+
+    margin-top: -18px;
 
   }
 
@@ -272,6 +293,7 @@ footer {
 	nav {
 
 		flex-direction: column;
+    padding-top: 0px;
 
 	}
 
@@ -298,6 +320,13 @@ footer {
 		margin-bottom: 0px;
 
 	}
+
+  .header-text {
+
+    margin-top: -97px;
+    margin-left: 20px;
+
+  }
 
 	.section1 {
 
