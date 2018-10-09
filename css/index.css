@@ -565,6 +565,7 @@ footer {
 
 @media (max-width: 800px) {
     .container {
+        width: 100%;
         max-width: 800px;
         font-size: 1.6rem;
         /* background: blue; */
@@ -592,9 +593,9 @@ footer {
     .container .nav .logo {
         order: 1;
         display: block;
-        /* width: 100%; */
-        padding: 0 60px;
-        margin: 0 40%;
+        width: 100%;
+        /* padding: 0 10px;
+        margin: 0 20px; */
         animation-duration: 2s;
         animation-name: slidein;
     }
@@ -614,8 +615,8 @@ footer {
     .heading-wrapper {
         /* border-bottom: 1px solid black; */
         width: 100%;
-        margin: 20px;
-        padding: 30px;
+        margin: 10%;
+        padding: 20%;
     }
     .top-section {
         display: flex;
@@ -645,6 +646,7 @@ footer {
 
 @media (max-width: 500px) {
     .container {
+        width: 100%;
         max-width: 500px;
     }
     @keyframes bounceIn {
@@ -669,6 +671,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        animation-duration: 2s;
+        animation-name: bounceIn;
     }
     .container .nav a {
         /* padding: 10px; */
@@ -681,7 +685,7 @@ footer {
         /* padding: 10px; */
         width: 100%;
         /* padding: 20px; */
-        margin-bottom: 20px;
+        margin-bottom: 8%;
         border-bottom: 1px solid lightgray;
     }
     .container .top-section article {
@@ -695,7 +699,7 @@ footer {
         flex-wrap: nowrap; */
     }
     .top-section h3 {
-        margin-top: 10px;
+        margin-top: 5%;
         animation-duration: 2s;
         animation-name: bounceIn;
     }
@@ -704,18 +708,21 @@ footer {
     }
     .container .bottom-section article {
         display: inline-block;
-        margin: 0px;
+        margin: 0%;
         width: 100%;
         animation-duration: 2s;
         animation-name: bounceIn;
     }
     .bottom-section h3 {
-        margin-top: 10px;
+        margin-top: 5%;
         animation-duration: 2s;
         animation-name: bounceIn;
     }
     .contact-section {
         animation-duration: 2s;
         animation-name: bounceIn;
+    }
+    .contact-section h3 {
+        margin-top: 5%;
     }
 }
