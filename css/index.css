@@ -129,9 +129,6 @@ h4 {
 }
 
 .container header nav a:hover {
-	animation-name: header-anima;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
   background-color: #0070D3;
 }
 
@@ -156,6 +153,12 @@ h4 {
 .index .cta {
 	display: flex;
 	justify-content: space-between;
+}
+
+.index .cta img {
+  animation-name: header-anima;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 
 .index .cta-text {
