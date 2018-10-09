@@ -193,17 +193,6 @@ header img.logo {
   justify-content: space-between
 }
 
-.main-content .bottom-content .text-content {
-  /* NEEDED? */
-  /* width: 275px;
-  margin-right: 12px; */
-}
-
-.main-content .bottom-content .text-content:last-child {
-  /* NEEDED? */
-  /* margin-right: 0; */
-}
-
 .contact {
   margin-top: 57px;
   border-top: 2px solid black;
