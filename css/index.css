@@ -1,1 +1,318 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+html {
+    /* 10px if the browser was 16px */
+    font-size: 62.5%;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+/* prettier-ignore */
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+    color: #232323;
+    font-size: 1.6rem;
+}
+
+/* Layout */
+
+.container {
+	max-width: 880px;
+	/* padding: 0% 4%; */
+	width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.nav {
+    padding: 5% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav a {
+    margin-right: 6%;
+	text-decoration: none;
+    color: #999;
+    font-size: 1.6rem;
+}
+
+.nav-links {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .logo {
+    position: relative;
+    bottom: 9px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+    padding-left: 10%;
+}
+
+.heading-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 3% 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.img-wrapper {
+    width: 50%;
+}
+
+.heading {
+	font-size: 6.8rem;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.header .btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    color: inherit;
+    padding: 0.8% 10%;
+    border: 1px solid black;
+    max-height: 10%;
+    min-width: 60%;
+    font-size: 1.2rem;
+}
+
+/* Main Content  */
+
+.top-section {
+    display: flex;
+    flex: wrap;
+}
+
+.top-section article {
+    padding: 1% 1% 0% 0%;
+}
+
+.middle-img {
+    object-fit: cover;
+    width: 99%;
+}
+
+.bottom-section {
+    display: flex;
+    flex: wrap;
+}
+
+.bottom-section article {
+    padding: 0 1% 0 0;
+}
+
+hr {
+    border: 1px solid black;
+    margin: 1% 0%;
+}
+
+/* Contact and Footer */
+
+.contact-section {
+    text-decoration: none;
+    font-style: normal;
+    padding-top: 1%;
+}
+
+footer {
+    text-align: center;
+    /* padding-bottom: 0%; */
+}
+
+/* Tablet Media Style */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav .logo { order: -1; }
+    .nav {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 5% 0%;
+        margin: 0%;
+        font-size: 2rem;
+    }
+    .nav .nav-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .nav .logo {
+        padding: 3% 0%;
+    }
+    .img-wrapper {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 10% 0;
+        margin: 0%;
+    }
+    .heading-wrapper {
+        width: 50%;
+        margin: 0%;
+        padding: 0% 10%;
+    }
+    .header .btn {
+        padding: 2% 6%;
+    }
+    .bottom-section {
+        padding: 2% 0%;
+    }
+
+}
+
+/* Mobile Style */
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .img-wrapper {
+        display: none;
+    }
+    .header {
+        /* padding: 10px 0px 50px 0px; */
+    }
+    .nav {
+        align-items: center;
+        font-size: 2.8rem;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+    .nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid black;
+    }
+    .nav .logo {
+        padding: 4% 0%;
+    }
+    .nav .nav-links a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid black;
+        padding: 2.5% 0%;
+        margin: 0%;
+        font-size: 2rem;
+    }
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        width: 50%;
+    }
+    .heading-wrapper {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0%;
+    }
+    .top-section, .bottom-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top-section {
+        margin-top: 1%;
+        padding-top: 1%;
+    }
+    hr {
+        margin: 10% 0%;
+    }
+    .middle-img {
+        margin: 4% 0%;
+    }
+    .bottom-section {
+        /* padding-bottom: 20px; */
+    }
+    .contact-section {
+        padding: 0px;
+        width: 50%;
+        height: 20%;
+        line-height: 100%;
+    }
+}
+
+/* Contact Page */
+
+.contact-heading h3 {
+   display: flex;
+   justify-content: center; 
+   font-family: 'Roboto', sans-serif;
+   font-size: 2rem;
+}
+
+/* Form Style - Copied from W3School: https://www.w3schools.com/howto/howto_css_contact_form.asp */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
