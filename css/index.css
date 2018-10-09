@@ -376,7 +376,7 @@ footer {
         width: 100%;
         align-items: center;
         flex-wrap: wrap;
-        
+        margin-top: 18px;
     }
 
     header nav a {
@@ -384,11 +384,21 @@ footer {
         border-top: 1px solid grey;
         text-align: center;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 20px 0;
+        font-size: 2rem;
     }
 
     header nav a:last-child {
         border-bottom: 1px solid grey;
+    }
+
+    .cta .cta-text {
+        margin-top: 50px;
+        padding-left: 1%;
+    }
+
+    .cta .cta-text button {
+        padding: 6px 14%;
     }
 
     .main-content .top-content {
@@ -398,18 +408,38 @@ footer {
 
     .main-content .top-content .text-content {
         width: 100%;
-        margin-top: 34px;
+        margin-top: 21px;
+        margin-bottom: 23px;
+    }
+
+    .main-content .middle-img {
+        margin-top: 30px;
+        margin-left: 2%;
+        width: 95%;
+        height: auto;
     }
 
     .main-content .bottom-content {
         display: flex;
         flex-direction: column;
+        margin-top: 0px;
+    
+        padding: 0 1%;
     }
 
     .main-content .bottom-content .text-content {
         width: 100%;
-        margin-top: 34px;
+        margin-top: 30px;
+        margin-bottom: 33px;
     }
+
+    .main-content .bottom-content .text-content:last-child {
+        margin-bottom: 0px;
+    }
+
+    .contact {
+        padding: 35px 2%;
+      }
 
     .services-main-content {
         height: 1600px;;
