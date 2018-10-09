@@ -86,7 +86,7 @@ html {
 
 p {
 	font-size: 1.6rem;
-	line-height: 1.21;
+	line-height: 1.24;
 }
 
 h4 {
@@ -203,6 +203,76 @@ h4 {
 	margin: 13px 0px;
 }
 
+/* Services Styles */
+.services header {
+  margin-bottom: 22px;
+}
+
+.services .intro img {
+  width: 100%;
+	margin-bottom: 29px;
+}
+
+.services h1 {
+  font-size: 2.6rem;
+}
+
+.services h2 {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+.services .main-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 30px;
+  margin-top: 44px;
+}
+
+.services .main-items {
+	width: 48%;
+	border: 1.5px solid black;
+	margin-top: 38px;
+  margin-bottom: 4px;
+	padding: 20px;
+	background-color: #F4F3F4;
+}
+
+.services .more-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1.5px solid black;
+	border-radius: 5px;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.services ul {
+	margin: 26px 0px 10px 0px;
+  font-size: 1.6rem;
+}
+
+.services li {
+	list-style-type: square;
+	margin: 15px;
+}
+
+.services .misc {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.services .misc img {
+  width: 50%;
+}
+
 @media only screen and (max-width: 800px) {
   .container {
     width: 95%;
@@ -239,6 +309,14 @@ h4 {
 
   .index .main-content .text-content {
     padding-left: 12px;
+  }
+
+  .services .misc img {
+    display: none;
+  }
+
+  .services header #header-nav {
+    margin-bottom: 0px;
   }
 }
 
@@ -293,6 +371,18 @@ h4 {
 
   .contact {
     padding-left: 20px;
+  }
+
+  .services {
+    width: 96%;
+  }
+
+  .services .main-items {
+    width: 100%;
+  }
+
+  .services .misc img {
+    display: none;
   }
 
   .footer {
