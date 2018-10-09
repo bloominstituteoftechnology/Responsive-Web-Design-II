@@ -116,7 +116,6 @@ nav a {
 	align-items: center;
 	flex-wrap: wrap;
 	text-align: center;
-	/* margin-right: 2.5%; */
 	font-size: 7rem;
 }
 
@@ -190,6 +189,80 @@ footer {
 } 
 
 /*End of Index Specific CSS*/
+
+/*Start of Services Specific CSS*/
+
+
+.services-header-img {
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
+}
+
+.container .intro-area {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	border: 1px solid black;
+	width: 49%;
+	height: auto;
+    margin: 0.5%;
+	background-color: lightgray;
+	padding: 1%;
+}
+
+.block p {
+    padding-bottom: 2%;
+}
+
+.sections {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.innovation {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+	
+}
+
+.ondemand {
+	font-size: 50px;
+	text-align: center;
+}
+
+.facts {
+	display: flex;
+    justify-content: baseline;
+    margin: 5% 0;
+	padding: 5% 0;
+    border-top: 1px solid black;
+}
+
+.facts img {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+	list-style-type: square;
+	list-style-position: inside;
+    padding: 5% 2% 2% 2%;
+    font-size: 1.6rem;
+}
+
+/*End of Services specific CSS*/
 
 /*Tablet*/
 @media (max-width:800px) {
