@@ -1,1 +1,338 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 880px;
+}
+
+/*Index Specific CSS*/
+
+.container p {
+    font-size: 1.6rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2.5%;
+
+}
+
+nav a {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.6rem;
+
+}
+
+.top-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3% 0;
+	margin-bottom: 2.5%;
+}
+
+.top-info div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	/* margin-right: 2.5%; */
+	font-size: 7rem;
+}
+
+.container .top-info img {
+    margin-top: 4%;
+    padding-left: 5%;
+    height: 50%;
+    width: 50%;
+}
+
+button {
+	height: 25px;
+	width: 160px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+.main-info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    border-top: 1px solid black;
+}
+
+.middle-img {
+	width: 100%;
+	height: auto;
+	padding: 1.5% 0;
+}
+
+.top-section {
+	display: flex;
+	justify-content: space-between;
+    padding-top: 1.5%;
+    margin: 3% 0;
+	
+}
+
+.top-section div {
+	width: 50%;
+	padding-top: 2.5%;
+}
+
+.bottom-section {
+	display: flex;
+	border-bottom: solid black 1px;
+	justify-content: space-between;	
+    padding-bottom: 2%;
+}
+
+.bottom-section div {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 32%;
+    margin: 3% 0;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	padding-top: 2%;
+	margin-top: 2%;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 3% 0;	
+	padding-top: 2%;
+} 
+
+/*End of Index Specific CSS*/
+
+/*Tablet*/
+@media (max-width:800px) {
+
+	.container {
+		width: 800px;
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 20px;
+		flex-wrap: wrap;
+	  }
+
+	nav .nav-logo {
+		order: -1;
+		flex: 100%;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	  
+	  
+	  .top-info {
+		  padding: 50px 0;
+	  }
+
+	  .top-info img {
+		  display: none;
+	  }
+	  
+	  .top-info div {
+		  padding-top: 20px;
+		  font-size: 70px;
+	  }
+	  
+	  button {
+		  margin-top: 20px;
+	  }
+	  
+	  .main-info {
+		  width: 780px;
+		  margin: 30px auto;
+	  }
+	  
+	  .middle-img {
+		  width: 100%;
+		  padding: 25px 0;
+		  margin: 20px 0;
+	  }
+	  
+	  .top-section {
+		  padding-top: 25px;
+		
+		  
+	  }
+	  
+	  .top-section div {
+		  width: 50%;
+		  padding: 0 10px;
+	  }
+	  
+	  .bottom-section {	
+		  margin: 0 10px;
+	  }
+	  
+	  .bottom-section div {
+		  width: 30%;
+		  margin-bottom: 30px;
+	  }
+	  
+	  .contact {
+		  padding: 0 20px;
+
+	  }
+	  
+	  footer {
+		  padding-bottom: 50px;
+	
+	  } 
+
+}
+
+/*Mobile*/
+
+@media (max-width:500px) {
+
+	.container {
+		width: 500px;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+	  }
+
+	nav a {
+		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+
+	}
+	  
+	  
+	  .main-info {
+		  width: 480px;
+		  margin: 30px auto;
+	  }
+	  
+	  .middle-img {
+		  width: 100%;
+		  padding: 25px 0;
+		  margin: 20px 0;
+		  height: 50%;
+	  }
+	  
+	  .top-section { 
+		  flex-direction: column;
+	  }
+	  
+	  .top-section div {
+		  width: 100%;
+		  padding: 10px;
+	  }
+	  
+	  .bottom-section {	
+		  flex-direction: column;
+	  }
+	  
+	  .bottom-section div {
+		  width: 100%;
+		  margin-bottom: 30px;
+	  }
+	  
+	  .contact {
+		  padding: 20px;
+
+	  }
+	  
+	  footer {
+		  margin: 40px 0;
+	
+	  } 
+
+}
