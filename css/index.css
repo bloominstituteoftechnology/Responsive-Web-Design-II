@@ -171,7 +171,8 @@ h2 {
 
 p,
 li,
-address {
+address,
+.btn {
   font-family: "Lato", serif;
   line-height: 1.4;
   font-size: 1.5rem; /* 15px */
@@ -378,13 +379,13 @@ address {
   }
 
   .header .nav-menu a {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #1a1a1a;
     width: 100%;
     text-align: center;
   }
 
   .header .nav-menu a:first-child {
-    border-top: 1px solid black;
+    border-top: 1px solid #1a1a1a;
   }
 
   .header .nav-menu a:hover {
