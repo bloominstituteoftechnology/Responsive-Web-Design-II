@@ -1,1 +1,516 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET */
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 880px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.2;
+    font-size: 1.6rem;
+}
+
+h4, h3, li {
+    font-size: 1.6rem;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+  width: 68.75%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  font-size: 1.6rem;
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  margin-top: 15%;
+}
+
+/* cta */
+.cta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta .cta-text {
+    width: 100%;
+    font-size: 7.2rem;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta .cta-text h1 {
+    margin-bottom: 4%;
+}
+
+.cta .cta-text button {
+    background: white;
+    padding: 6px;
+    font-size: 1.6rem;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 172px;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.cta img {
+    margin-top: 8%;
+}
+
+.main-content {
+    /* width: 100%; */
+    border-top: 1px solid black;
+    margin-top: 8.5%;
+    padding-top: 4.25%;
+}
+
+.main-content .top-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content .top-content .text-content {
+    width: 49%;
+}
+
+.main-content .middle-img {
+    width: 100%;
+    margin-top: 3.2%;
+}
+
+.main-content .bottom-content {
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-content .bottom-content .text-content {
+    width: 33.33%;
+    padding-right: 2.3%;
+}
+
+.contact {
+    margin-top: 3.5%;
+    border-top: 1px solid black;
+    padding-top: 3.9%;
+}
+
+.contact p {
+    margin: 1.2% 0;
+}
+
+footer {
+    margin: 4% 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+/* Styling for the Services page */
+.services-header .header-img {
+    margin-top: 25px;
+}
+
+.services-header .header-text {
+	margin: 35px 0;
+}
+
+.services-header .header-text h2 {
+	font-size: 25px;
+}
+
+.services-middle-section {
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+	padding: 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.services-middle-section button {
+	border: 1px solid black;
+	border-radius: 5%;
+	padding: 10px 40px;
+	margin-top: 20px;
+}
+
+.services-middle-section .box {
+	border: 1px solid black;
+	background-color: #F4F3F4;
+	padding: 20px;
+	width: 420px;
+	height: 250px;
+	margin: 20px 0;
+}
+
+.services-bottom-section {
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-bottom-section .bottom-section-text {
+	width: 400px;
+}
+
+.services-bottom-section ul {
+	list-style-position: inside;
+	list-style-type: square;
+	line-height: 1.5;
+	padding-top: 25px;
+}
+
+
+
+/* Tablet Styling */
+@media (max-width: 800px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+        width: 98%;
+        margin-top: 4.9%;
+    }
+
+    .cta .cta-text {
+        padding-left: 0%;
+        padding-top: 10%;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        margin-top: 9.5%;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        justify-content: space-around;
+    }
+      
+    .main-content .top-content .text-content {
+        width: 47%;
+        margin-right: 0px;
+    }
+
+    .main-content .middle-img {
+        margin-top: 3.5%;
+        width: 100%;
+    }
+
+    .main-content .bottom-content {
+        margin-top: 3.9%;
+        justify-content: space-around;
+    }
+      
+    .main-content .bottom-content .text-content {
+        width: 31%;
+        padding-right: 1.9%;
+    }
+
+    .contact {
+        margin-top: 6%;
+        border-top: 1px solid black;
+        padding-top: 5%;
+        padding-left: 1%;
+    }
+      
+    .contact p {
+        margin: 1% 0;
+    }
+      
+    footer {
+        margin: 5% 0;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .services-header .header-text {
+        padding: 0 2%;
+    }
+
+    .services-header .header-img img {
+        width: 100%;
+        padding: 0 2%;
+    }
+    .services-middle-section {
+        border-top: 1px solid black;
+        border-bottom: 2px solid black;
+        padding: 15px 4%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .services-middle-section .box {
+        border: 1px solid black;
+        background-color: #F4F3F4;
+        padding: 20px;
+        width: 100%;
+        height: 200px;
+        margin: 20px 0;
+    }
+    .services-bottom-section {
+        padding: 40px 4%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .services-bottom-section .services-info-img {
+        width: 400px;
+        margin-left: 50px;
+    }
+}
+
+
+
+
+/* Mobile Styling */
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        margin: 0 0;
+        max-width: 500px;
+    }
+
+    header nav {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    header nav a {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 61px;
+        border-top: 1px solid grey;
+        width: 100%
+    }
+
+    header nav a:last-child {
+        border-bottom: 1px solid grey;  
+    }
+    
+    header .logo {
+        margin-top: 20px;
+        margin-bottom: 19px;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        margin-top: 51px;
+        padding: 0px 0px;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        border-top: 1px solid black;
+        margin-top: 15.5%;
+        padding: 0px;
+        padding-top: 59px;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .main-content .top-content {
+        padding: 0 0px;
+        /* display: block; */
+        flex-direction: column;
+    }
+      
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin-right: 0px;
+        padding-bottom: 41px;
+    }
+      
+    .main-content .top-content .text-content:last-child {
+        /* margin-right: 0; */
+    }
+
+    .main-content .middle-img {
+        margin-top: 9px;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-content .bottom-content {
+        margin-top: 29px;
+        display: block;
+    }
+      
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        padding-right: 0px;
+        padding-bottom: 60px;
+    }
+
+    .main-content .bottom-content .text-content:last-child {
+          padding-bottom: 0px;
+    }
+
+    .contact {
+        margin: 32px 4% 0 4%;
+        border-top: 1px solid black;
+        padding: 35px 0px;
+    }
+      
+    .contact p {
+        margin: 10px 0;
+    }
+      
+    footer {
+        margin: 0 0;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .services-middle-section .box {
+        height: 225px;
+    }
+
+    .services-bottom-section {
+        display: block;
+    }
+
+    .services-bottom-section .bottom-section-text {
+        width: 100%;
+        padding: 4%;
+    }
+
+    .services-bottom-section .services-info-img {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
