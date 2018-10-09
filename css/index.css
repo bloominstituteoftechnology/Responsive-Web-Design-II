@@ -203,6 +203,7 @@ address,
   color: #b3b3b3;
   padding: 10px 2%;
   font-size: 2rem; /* 20px */
+  
 }
 
 .header .nav-menu a:hover {
@@ -235,6 +236,14 @@ address,
   width: 130px;
   border-radius: 5px;
   margin: 10px 0;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+
 }
 
 .content {
