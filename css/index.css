@@ -195,7 +195,7 @@ footer {
 @media (max-width:800px) {
 
 	.container {
-		width: 800px;
+		width: 100%;
 	}
 
 	nav {
@@ -230,7 +230,7 @@ footer {
 	  }
 	  
 	  .main-info {
-		  width: 780px;
+		  width: 99%;
 		  margin: 3% auto;
 	  }
 	  
@@ -272,7 +272,7 @@ footer {
 @media (max-width:500px) {
 
 	.container {
-		width: 500px;
+		width: 100%;
 	}
 
 	nav {
@@ -284,20 +284,21 @@ footer {
 		border-bottom: 1px solid black;
 		width: 100%;
 		text-align: center;
-		padding: 20px 0;
+        padding: 4% 0;
+        font-size: 2rem;
 
 	}
 	  
 	  
 	  .main-info {
-		  width: 480px;
-		  margin: 30px auto;
+		  width: 99%;
+		  margin: 3% auto;
 	  }
 	  
 	  .middle-img {
-		  width: 100%;
-		  padding: 25px 0;
-		  margin: 20px 0;
+		  width: 95%;
+		  padding: 2.5% 0;
+		  margin: 2% 0;
 		  height: 50%;
 	  }
 	  
@@ -307,16 +308,18 @@ footer {
 	  
 	  .top-section div {
 		  width: 100%;
-		  padding: 10px;
+		  padding: 5%;
 	  }
 	  
 	  .bottom-section {	
-		  flex-direction: column;
+          flex-direction: column;
+          margin-bottom: 5%;
 	  }
 	  
 	  .bottom-section div {
-		  width: 100%;
-		  margin-bottom: 30px;
+          width: 100%;
+          margin: 3% 0;
+          padding: 2% 4%;
 	  }
 	  
 	  .contact {
