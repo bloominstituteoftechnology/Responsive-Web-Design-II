@@ -318,5 +318,158 @@ footer {
 }
 /* Home Phone View Home Phone View Home Phone View Home Phone View Home Phone View Home Phone View */
 @media (max-width: 500px) {
+   .container {
+    width: 100%;
+    } 
 
+   header {
+    width: 100%;
+    }
+
+header nav {
+    width: 100%;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    }
+
+header nav a {
+    width: 100%;
+    padding: 4.7% 42%;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #b0b0b0;
+    border-top: 1px solid black;
+    }
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    max-width: 100%;
+    margin-left: 34%;
+       }
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    width: 100%;
+    display: flex;
+    padding-top: 10%;
+   
+  
+    justify-content: center;
+    border-top: 1px solid black;
+    
+}
+
+.cta .cta-text {
+    width: 100%;
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    display: flex;
+    /* justify-content: center; */
+    /* flex-flow: column; */
+    /* align-items: center; */
+   border: 1px solid red;
+   
+}
+
+.cta .cta-text button {
+     border: 1px double black;
+    font-size: 1.6rem;
+    background: white;
+    width: 58%;
+    height: 2.9rem;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+ .cta img {
+     display: none;
+ }
+/* Main Content Styles */
+
+.main-content {
+   
+   width: 100%;
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 65px 18px;
+   padding: 19px 1px;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
+   display: flex;
+
+}
+
+.main-content .top-content {
+    
+    width: 100%;
+   display: column;
+   flex-wrap: nowrap;
+    /* margin: 0 20px; */
+    /* padding: 15px;*/
+    display: flex;
+    }
+
+ .main-content .top-content .text-content p {
+     display: column;
+     width: 150px;
+     
+     margin: 10px;
+     justify-content: center;
+     
+ }
+
+.main-content .middle-img {
+    width: 100%;
+    display: block;
+    margin-top: 9px;
+}
+    
+
+.main-content .bottom-content {
+    width:100%;
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 10px
+}
+
+.main-content .bottom-content p {
+    padding-right: 20px;
+    /* width: 230px; */
+    margin-right: 22px;
+}
+
+/* Contact Styles */
+.contact    {
+    width: 100%;
+    padding-left: 30px;
+    margin-top: -30px;
+    margin-bottom: -3px;
+    
+}
+
+.contact p {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Footer Styles */
+
+footer {
+    
+    width: 100%;
+    
+    text-align: center;
+    }  */
 }
