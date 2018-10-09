@@ -85,20 +85,18 @@ html{
   
   /* header */
   header{
-	/* border:1px solid red;   */
 	display:flex;
 	justify-content: space-between;
   }
   header nav {
-	/* border:1px solid red; */
-	display:flex;
-	justify-content:space-between;
-	width: 68.18181%;
-	margin-top: 35px;
+    transition:width 1s ease, font-size 1s ease;    
+    display:flex;
+    justify-content:space-between;
+    width: 68.18181%;
+    margin-top: 35px;
   }
   header nav a {
-	/* margin-right: 65px; */
-	font-size: 1.4rem;
+  font-size: 1.4rem;
 	color: gray;
 	text-decoration: none;
   }
@@ -205,6 +203,7 @@ html{
 	text-align: center;
 	font-size: 1.6rem;
   }
+
 /* RESPONSIVE AT DIFFERENT VIEWPORTS START HERE!!! */
 
 @media (max-width:800px){
@@ -248,6 +247,10 @@ html{
         width:100%;
         border-bottom:1px solid gray;
         padding:20px 0;
+    }
+    header nav a:hover{
+      background-color:lightgray;
+      text-decoration:none;
     }
 
     .cta, .main-content, .contact{
