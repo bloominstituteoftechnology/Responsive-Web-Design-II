@@ -157,7 +157,7 @@ h2 {
 		border-top: 1px solid black;
 		text-align: center;
 		padding: 4%;
-		font-size: 1.375rem;
+		font-size: 2rem;
 	}
 }
 
@@ -213,7 +213,11 @@ footer {
     }
 }
 
-
+@media (max-width:500px) {
+    footer {
+        margin-left: 3%;
+    }
+}
 /* --------End of General Styles, RIP */
 
 /* --------Index Styles */
@@ -239,8 +243,7 @@ footer {
 
 @media (max-width: 500px) {
 	.indexHeader {
-		border-top 1px solid black;
-		padding: 6% 0 12%;
+		padding: 6% 0 9%;
 	}
 }
 
@@ -307,7 +310,7 @@ footer {
 
 @media (max-width: 800px) {
 	.indexSection1 {
-		margin: 4.25% 2%;
+		margin: 4.25% 2% 3%;
 		padding-top: 0;
 	}
 }
@@ -315,7 +318,7 @@ footer {
 @media (max-width: 500px) {
 	.indexSection1 {
 		flex-direction: column;
-		padding-top: 31px;
+		padding-top: 41px;
 	}
 }
 
@@ -333,7 +336,7 @@ footer {
 @media (max-width: 500px) {
 	.indexSection1 .indexTop {
 		width: 100%;
-		margin: 2% 2% 10%;
+		margin: 0 2% 10%;
 		line-height: 110%;
 	}
 }
@@ -357,9 +360,9 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-bottom: 37px;
-    border-bottom: 1px solid #000;
     line-height: 1.8rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 36px;
 }
 
 @media (max-width: 800px) {
@@ -372,8 +375,7 @@ footer {
 @media (max-width: 500px) {
 	.indexSection2 {
 		flex-direction: column;
-		/* justify-content: space-around; */
-		margin: 2%;
+		margin: 0 2%;
 	}
 }
 
@@ -392,7 +394,7 @@ footer {
 @media (max-width: 500px) {
 	.indexSection2 .indexBottom {
 		width: 100%;
-		margin: 2%;
+        margin: 23px 2% 40px;
 	}
 }
 
@@ -405,8 +407,14 @@ footer {
 	.indexContact {
 		padding: 2% 0 0 3%;
         margin-top: 19px;
+    }      
 }
-	}
+
+@media (max-width: 500px) {
+    .indexContact {
+        margin-top: 21px;
+        padding-left: 4%;
+    }
 }
 /* --------End of Index Styles */
 
