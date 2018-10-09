@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+  v2.0 | 20110126
+  License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5 {
 
 .home .details {
   border-bottom: 2px solid black;
+  margin-bottom: 4%;
 }
 
 .home .details .bottom-section {
@@ -164,6 +165,12 @@ h1, h2, h3, h4, h5 {
   line-height: 113%;
 }
 
+.container footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 0;
+}
 /*****************************************
  ***************** Tablet ****************
  *****************************************/
@@ -219,6 +226,10 @@ h1, h2, h3, h4, h5 {
     padding-bottom: 3.7%;
   }
 
+  .home .details {
+    margin-bottom: 5%;
+  }
+
   .home .details .bottom-section {
     justify-content: space-around;
     max-width: 100%;
@@ -226,6 +237,14 @@ h1, h2, h3, h4, h5 {
 
   .home .details .bottom-section article {
     max-width: 28%;
+  }
+
+  .container .contact-section {
+    padding-left: 2.2%;
+  }
+
+  .container footer {
+    padding: 5% 0;
   }
 }
 
@@ -270,6 +289,10 @@ h1, h2, h3, h4, h5 {
     padding: 1.5% 9.7%;
   }
 
+  .home .details {
+    margin-bottom: 7%;
+  }
+
   .home .details .top-section {
     display: flex;
     flex-direction: column;
@@ -303,5 +326,9 @@ h1, h2, h3, h4, h5 {
 
   .home .details .bottom-section .finalArticlePhoneView {
     margin-bottom: 0;
+  }
+
+  .container footer {
+    padding: 8.1% 0;
   }
 }
