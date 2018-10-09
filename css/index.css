@@ -1,1 +1,604 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 75%;
+  max-width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* header */
+header {
+    display: flex;
+    margin-top: 4%;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+header nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+header nav .anchor-items:hover {
+  text-decoration: underline;
+}
+
+header nav .nav-items:first-child {
+  margin-left: 0;
+}
+
+header nav .nav-items:last-child {
+  margin-right: 0;
+}
+
+
+
+/* cta */
+.cta{
+    display: flex;
+    justify-content: space-between;
+     margin-top: 120px;
+}
+
+.cta .cta-text {
+  vertical-align: top;
+  width: 40%;
+  font-size: 500%;
+ 
+  text-align: center;
+}
+
+.cta .cta-text button {
+  background: white;
+  border: 1px solid black;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  width: 290px;
+  min-width: 290px;
+  height: 290px;
+}
+
+.main-content {
+
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.main-content .top-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.main-content .middle-img {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.main-content .bottom-content {
+  display: flex;
+  margin-top: 37px;
+  padding: 0 10px;
+}
+
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 57px;
+  padding: 39px 10px 0;
+}
+
+.contact p {
+  margin: 20px 0;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 75px 0 35px 0;
+   padding: 35px 0;
+   font-size: 16px;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 30px auto;
+}
+
+.main-content .bottom-content {
+    display: flex;
+}
+
+.main-content .bottom-content p {
+    padding-right: 20px;
+}
+
+/* Contact Styles */
+
+
+/* Services Styles */
+
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.3;
+}
+
+.services-content .services-header-img {
+    width: 100%;
+    height: 100%;
+}
+
+.services-content h1 {
+    font-size: 2.6rem;
+    margin: 10px 0;
+}
+
+.services-content .services-text {
+border-bottom: 2px solid black;
+ padding-bottom: 40px;
+ margin-bottom: 20px
+}
+
+.services-content .card {
+    padding: 20px;
+    border: 1px solid black;
+    width: 45%;
+    background: whitesmoke;
+    margin: 20px 0;
+}
+
+.services-content .card button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid black;
+
+ 
+}
+
+.services-content .card button:hover {
+    background: black;
+    color: white;
+} 
+
+.services-content .services-info ul {
+    margin: 20px;
+}
+
+.services-content .services-info ul li{
+    list-style: square;
+    padding: 5px;
+}
+
+.services-content .services-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 2px solid black; 
+    margin: 20px 0 35px 0;
+    padding-top: 40px; 
+}
+
+.services-content .services-info .facts {
+  width: 45%;
+}
+
+.services-content .services-info .facts p {
+  margin-bottom: 20px;
+}
+
+.services-content .services-info .services-info-img {
+  width: 45%;
+  height: 315px;
+}
+
+/* Product CSS */
+.our-products{
+    padding: 30px 0px;
+    padding-left: 15px;
+    border-bottom: 1px dashed black;
+}
+
+.product-top{
+    border-bottom: 1px dashed gray;
+}
+
+.product-content img{
+    width:  100%;
+    height: 50%;
+}
+
+
+.product-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.skyline-pic{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.product-content section {
+    width: 40%;
+    padding: 20px 0px 20px 0px;
+
+}
+.product-content section h2{
+    margin-top: 30px;
+}
+
+.product-content section button{
+      background-color: white;
+    color: black;
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 6px;
+
+}
+
+.product-content section button:hover{
+    color:white;
+    background-color:black;
+}
+
+.lm-button{
+      background-color: white;
+    color: black;
+    border: 2px solid black;
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 6px;
+
+}
+
+.lm-button:hover{
+    color:white;
+    background-color:black;
+}
+
+.ln-products{
+    margin-bottom: 30px;
+    padding-top: 30px;
+    border-top: 1px dashed black;
+}
+footer nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+footer nav .anchor-items:hover {
+  text-decoration: underline;
+}
+
+footer nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+/* Media Queries */
+
+
+@media( max-width: 800px) and (min-width: 500px){
+    .home-bot-content p{
+        font-size: 0.75rem; 
+    }
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header nav .anchor-items{
+        margin-top: 20px;
+
+    }
+    .cta{
+         margin-top: 40px;
+    }
+    .cta img{
+        display:none;
+    }
+    .cta .cta-text{
+        width: 100%;
+        font-size: 3.125rem;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .cta .cta-text button{
+        width: 115px;
+        height: 25px;
+        font-size: 0.75rem;
+        padding: 0px;
+    }
+    .main-content{
+        margin: 0px;
+    }
+     .services-content .services-info .services-info-img {
+        display: none;
+     }
+     .services-content .services-info .facts {
+        width: 100%;
+        margin: 0 60px 20px 0;
+}
+.services-content .card {
+    padding: 20px;
+ 
+    width: 48%;
+    background: whitesmoke;
+    margin: 20px 0;
+}
+.services-header-img{
+    margin-top: 20px;
+}
+.card p{
+    font-size: 0.875rem;
+}
+.services-info{
+    font-size: 0.875rem;
+}
+.services-text p{
+    font-size: 0.875rem;
+}
+.product-content p {
+        font-size: 0.75rem;
+        padding-bottom: 0px;
+}
+.product-content .product-top{
+    padding-bottom: 60px;
+}
+.ln-products p {
+    font-size: 0.75rem;
+    
+}
+.ln-products{
+    margin-top: 40px;
+}
+}
+
+@media( max-width: 500px){
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+      header nav {
+        display: block;
+        text-align: center;
+        margin-top: 4%;
+    }
+    header nav a{
+        border-top: 1px solid rgb(211, 211, 211);
+        border-bottom: 1px solid rgb(211, 211, 211);
+        width: 100%;
+        height: 35px;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        margin: 0px;
+    }
+    .cta{
+        margin-top: 25px;
+    }
+        .cta img{
+        display:none;
+    }
+       .cta .cta-text{
+        width: 100%;
+        font-size: 3.125rem;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .cta .cta-text button{
+        width: 115px;
+        height: 25px;
+        font-size: 0.75rem;
+        border: 1px solid black;
+        padding: 0px;
+    }
+    .main-content{
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+    .main-content .top-content{
+        width: 100%;
+        margin: 0px;
+        display: block;
+    }
+    .main-content .top-content .text-content {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    div div h4{
+        padding-top: 20px;
+    }
+    .main-content .bottom-content{
+        display: block;
+    }
+    .main-content .bottom-content .text-content{
+        width: 100%;
+        font-size: 0.75rem;
+      
+    }
+    .contact p{
+        font-size: 0.75rem;
+        width: 45%;
+        line-height: 1.5;
+        margin: 0px;
+    }
+    footer{
+        font-size: 0.625rem;
+    }
+   .services-content .services-info .services-info-img {
+ display: none;
+     }
+     .services-content .services-info .facts {
+  width: 100%;
+  margin: 0 60px 20px 0;
+}
+.services-header-img{
+    margin-top: 20px;
+}
+.card p{
+    font-size: 0.75rem;
+}
+.services-info{
+    font-size: 0.75rem;
+}
+.services-text p{
+    font-size: 0.75rem;
+}
+
+.services-content .card {
+    width: 100%;
+}
+.product-content {
+    display:flex;
+    flex-direction: column;
+    
+}
+.product-content section {
+    width: 100%;
+}
+.product-content section h2 {
+    font-size: 1rem;
+}
+.product-content section p {
+    font-size: 0.875rem;
+}
+.ln-products p {
+    font-size: 0.875rem;
+}
+footer nav {
+    display: none;
+}
+}
