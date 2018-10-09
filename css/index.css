@@ -385,8 +385,12 @@ address {
     width: 100%;
     font-size: 2rem;
     padding: 4% 0;
-    border-bottom: 1px solid #000;
-    
+    border-bottom: 1px solid #000;    
+  }
+
+  header nav a:hover {
+    background: #96d1f8;
+    color: #000;
   }
 
   header nav a:first-child {
