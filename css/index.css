@@ -77,6 +77,12 @@ h2 {
 	font-weight: bold;
 }
 
+@media (max-width:500px) {
+    h3 {
+        font-size: 2rem;
+    }
+}
+
 .container {
     width: 100%;
     max-width: 880px;
@@ -489,7 +495,7 @@ footer {
 	}
 
 	.contentMid h3 {
-		font-size: 1.1rem;
+		font-size: 2rem;
 	}
 }
 
