@@ -121,7 +121,8 @@ h2 {
 @media (max-width: 800px) {
 	.navContainer nav {
 		width: 100%;
-		margin: 2% 3%;
+        margin-top: 2%;
+        align-content: center;
 	}
 }
 
@@ -135,6 +136,14 @@ h2 {
 .navContainer nav a {
 	text-decoration: none;
 	color: #000000;
+}
+
+@media (max-width:800px) {
+    .navContainer nav a {
+        width: 16.67%;
+        margin-right: 3%;
+        text-align: center;
+    }
 }
 
 .navContainer nav a:hover {
@@ -181,6 +190,12 @@ h2 {
 	color: #000000;
 }
 
+@media (max-width:800px) {
+    .button {
+        padding: 9px 40px;
+    }
+}
+
 .button:hover {
 	background-color: dodgerblue;
 	color: white;
@@ -192,6 +207,11 @@ footer {
     margin-top: 4px;
 }
 
+@media (max-width:800px) {
+    footer {
+        margin-top: 37px;
+    }
+}
 
 
 /* --------End of General Styles, RIP */
@@ -212,7 +232,7 @@ footer {
 @media (max-width: 800px) {
 	.indexHeader {
 		width: 100%;
-		padding: 3% 0 6%;
+		padding: 3% 0 4%;
 		justify-content: center;
 	}
 }
@@ -243,8 +263,8 @@ footer {
 @media (max-width: 800px) {
 	.indexHeader .bigH1 {
 		width: auto;
-		margin: 3% auto;
-		padding: 0;
+		margin: 6% auto;
+		padding-left: 2%;
 	}
 }
 
@@ -287,7 +307,7 @@ footer {
 
 @media (max-width: 800px) {
 	.indexSection1 {
-		margin: 4% 2%;
+		margin: 4.25% 2%;
 		padding-top: 0;
 	}
 }
@@ -305,7 +325,8 @@ footer {
 
 @media (max-width: 800px) {
 	.indexSection1 .indexTop {
-		width: 49%;
+        width: 48%;
+        margin: 0 1.1%;
 	}
 }
 
@@ -326,7 +347,8 @@ footer {
 
 @media (max-width: 800px) {
 	.middle-img {
-		margin: 3% 0;
+        margin: 0;
+        height: 90%;
 	}
 }
 
@@ -342,14 +364,15 @@ footer {
 
 @media (max-width: 800px) {
 	.indexSection2 {
-		margin: 2%;
+        margin: 23px 3% 0 1%;
+        justify-content: space-around;
 	}
 }
 
 @media (max-width: 500px) {
 	.indexSection2 {
 		flex-direction: column;
-		justify-content: space-around;
+		/* justify-content: space-around; */
 		margin: 2%;
 	}
 }
@@ -361,7 +384,8 @@ footer {
 
 @media (max-width: 800px) {
 	.indexSection2 .indexBottom {
-		width: 29%;
+        width: 28%;
+        padding-right: 1%;
 	}
 }
 
@@ -379,7 +403,9 @@ footer {
 
 @media (max-width: 800px) {
 	.indexContact {
-		padding: 2%;
+		padding: 2% 0 0 3%;
+        margin-top: 19px;
+}
 	}
 }
 /* --------End of Index Styles */
