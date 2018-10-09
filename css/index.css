@@ -137,6 +137,7 @@ html,
 body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
+  font-size: 62.5%; /* 1 rem = 10px */
 }
 
 h1,
@@ -162,22 +163,24 @@ h2 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 3rem; /* 30px */
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2rem; /* 20px */
 }
 
 p,
-li {
+li,
+address {
   font-family: "Lato", serif;
   line-height: 1.4;
-  font-size: 15px;
+  font-size: 1.5rem; /* 15px */
 }
 
 .container {
   width: 90%;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -199,6 +202,7 @@ li {
   text-decoration: none;
   color: #b3b3b3;
   padding: 10px;
+  font-size: 2rem; /* 20px */
 }
 
 .wide-img {
@@ -268,7 +272,7 @@ li {
 /* CSS For Index HTML */
 
 .header-section .innovation-section h1 {
-  font-size: 80px;
+  font-size: 8rem; /* 80px */
   text-align: center;
 }
 
@@ -341,16 +345,13 @@ li {
     margin-top: 5%;
   }
 
-  /* Services Page */
-  /* .container .header {
-        margin-bottom: 20px;
-    } */
+
 }
 
 /* Mobile */
 @media (max-width: 500px) {
   .header-section .innovation-section h1 {
-    font-size: 60px;
+    font-size: 6rem; /* 60 px */
   }
   .container {
     width: 100%;
