@@ -296,23 +296,47 @@ footer {
     
     header div {
         order: -1;
-        text-align: center;
     }
     header nav {
-        width: 100%;
+        /* border: 1px solid red; */
+        width: 94%;
+        justify-content: space-between;
+        align-self: flex-start;
+        margin-left: 1%;
+    }
+
+    .cta {
+        justify-content: center;
+        /* border: 1px solid red; */
+        margin-bottom: 0px;
     }
 
     .cta .cta-text {
-        margin-top: 60px
+        margin-top: 72px;
+        padding-left: 1%;
+    }
+
+
+    .cta .cta-text button {
+        padding: 6px 11.5%;
     }
 
     .cta img {
         display: none;
     }
+  
+    .main-content {
+        margin-top: 23px;
+    }
 
     .main-content .top-content {
-        padding: 0 1%;
+        margin-top: 0px;
         justify-content: center;
+    }
+
+    .main-content .top-content .text-content {
+        padding-left: .9%;
+        padding-right: 1.5%;
     }
     
     .main-content .bottom-content {
@@ -320,7 +344,11 @@ footer {
     }
 
     .main-content .bottom-content .text-content {
+        /* border: 1px solid red; */
+        margin-top: 3px;
         width: 33%;
+        padding-left: .8%;
+        padding-right: 3.5%;
     }
 
     .services-header-img {
