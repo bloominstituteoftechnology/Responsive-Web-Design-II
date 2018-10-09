@@ -73,6 +73,18 @@ html {
 	font-size: 62.5%;
 }
 
+@keyframes wiggle {
+	0% {
+		transform: rotate(2deg);
+	}
+	50% {
+		transform: rotate(-5deg);
+	}
+	100% {
+		transform: rotate(2deg);
+	}
+}
+
 /* Desktop */
 
 body {
@@ -299,8 +311,9 @@ h5 {
 		margin-right: 20%;
 	}
 
-	.container header .top-bar nav a:hover {
+	.container header .top-bar nav a:active {
 		color: black;
+		font-size: 2rem;
 	}
 
 	.container header .upper {
@@ -314,6 +327,13 @@ h5 {
 	.container header .upper .left {
 		width: 100%;
 		text-align: center;
+	}
+
+	.container button {
+		animation-name: wiggle;
+		animation-duration: .5s; 
+		animation-iteration-count: infinite;
+		padding: 2.5% 15%;
 	}
 	.home main .one {
 		width: 50%;
