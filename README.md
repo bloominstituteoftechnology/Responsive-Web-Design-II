@@ -1,6 +1,6 @@
-# Responsive-Web-Design: Fully Responsive
+# Responsive Web Design I: Adaptive Website
 
-You have experienced building fixed layout web pages, adaptive web pages, and now it's time to go fully responsive!  Using your new knowledge with responsive units, contstraints, and media queries you are now prepared to take on today's fully reponsive website project.
+It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the "Great Idea" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder. 
 
 ## Task 1: Set Up The Project With Git
 
@@ -10,20 +10,14 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 
 ## Task 2: Project Objectives
 
-* [ ] Review each [design file](design-files) and build your styles at each breakpoint.
-* [ ] Introduce `font-size: 62.5%;` into your `html` selector.
-* [ ] Constrain your container element with a `max-width` of 880px
+* [ ] Review each [design file](design-files).  Notice the subtle differences between them all. 
+* [ ] Insert a `viewport` meta tag into the head of the project with these html attributes: `content="width=device-width, initial-scale=1"`
 * [ ] Introduce max-width media queries into your project at 800px and 500px  
-* [ ] Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.
-* [ ] Convert all `font-size` values into rem units
-* [ ] Do your best to make the breakpoints look pixel-close-enough 
-* [ ] Once you have completed all of the project objectives, push your commits and make a pull request against the original fork
+* [ ] Do your best to make your styles match the design files at each breakpoint 
 
 ## Stretch Goals: 
-* [ ] Build the services page from earlier assignments into a responsive design using your own creativity
-* [ ] [Look at BEM](http://getbem.com/) and convert your existing CSS into the appropriate selectors.
-* [ ] Introduce CSS animations at different break points across your site
-* [ ] Build another page based on one of the navigation items and use your creativity on how it looks.
+* [ ] Create a tablet and mobile version of the services page from previous projects
+* [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
 
 
 

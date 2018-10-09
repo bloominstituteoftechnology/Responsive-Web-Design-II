@@ -1,1 +1,651 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -------- General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h1 { 
+	font-size: 7.2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+@media (max-width:500px) {
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.active {
+	font-size: 1.8rem;
+	font-weight: bolder;
+}
+
+.navContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 880px;
+	height: 80px;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.navContainer {
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer {
+	}
+}
+
+.navContainer nav {
+	display: flex;
+	width: 600px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.navContainer nav {
+		width: 100%;
+        margin-top: 2%;
+        align-content: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer nav {
+		flex-direction: column;
+		margin: 0;
+	}
+}
+
+.navContainer nav a {
+	text-decoration: none;
+	color: #000000;
+}
+
+@media (max-width:800px) {
+    .navContainer nav a {
+        width: 16.67%;
+        margin-right: 3%;
+        text-align: center;
+    }
+}
+
+.navContainer nav a:hover {
+	color: dodgerblue;
+	font-weight: bold;
+}
+
+@media (max-width: 500px) {
+	.navContainer nav a {
+		width: 100%;
+		border-top: 1px solid black;
+		text-align: center;
+		padding: 4%;
+		font-size: 2rem;
+	}
+}
+
+.navContainer .logo{
+	padding: 22px 0;
+}
+
+@media (max-width: 800px) {
+	.navContainer .logo {
+		padding: 12% 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.navContainer .logo {
+		width: 100%;		
+	}
+}
+
+.button {
+	/* display: inline-block; */
+	height: 35px;
+	border: 1px solid #000000;
+	border-radius:5%;
+	background-color: #ffffff;
+	padding: 6px 40px;
+    margin-top: 20px;
+    font-size: 1.8rem;
+	text-decoration: none;
+	color: #000000;
+}
+
+@media (max-width:800px) {
+    .button {
+        padding: 9px 40px;
+    }
+}
+
+.button:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+
+footer {
+	text-align: center;
+    width: 100%;
+    margin-top: 4px;
+}
+
+@media (max-width:800px) {
+    footer {
+        margin-top: 37px;
+    }
+}
+
+@media (max-width:500px) {
+    footer {
+        margin-left: 3%;
+    }
+}
+/* --------End of General Styles, RIP */
+
+/* --------Index Styles */
+
+.indexHeader {
+	width: 100%;
+	padding: 20px 0 76px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+	.indexHeader {
+		width: 100%;
+		padding: 3% 0 4%;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexHeader {
+		padding: 6% 0 9%;
+	}
+}
+
+.indexHeader .bigH1{
+    width: 41%;
+    height: 100%;
+    align-items: center;
+    margin: 31px 0 0 11.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.indexHeader .bigH1 h1 {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 800px) {
+	.indexHeader .bigH1 {
+		width: auto;
+		margin: 6% auto;
+		padding-left: 2%;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexHeader h1 {
+		text-align: center;
+	}
+}
+
+.indexHeader img {
+    width: 43.5%;
+    margin-top: 27.5px;
+}
+
+@media (max-width: 800px) {
+	.indexHeader img {
+		display: none;
+	}
+}
+
+.indexHeader .button {
+	height: 32px;
+	border-radius: 0;
+    margin-top: 25px;
+    margin-right: 4%;
+}
+
+@media (max-width: 500px) {
+	.indexHeader .button {
+		margin-top: 24px;
+	}
+}
+
+.indexSection1 {
+	display: flex;
+	padding-top: 35px;
+    justify-content: space-between;
+    line-height: 1.8rem;
+}
+
+@media (max-width: 800px) {
+	.indexSection1 {
+		margin: 4.25% 2% 3%;
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection1 {
+		flex-direction: column;
+		padding-top: 41px;
+	}
+}
+
+.indexSection1 .indexTop {
+	width: 50%;
+}
+
+@media (max-width: 800px) {
+	.indexSection1 .indexTop {
+        width: 48%;
+        margin: 0 1.1%;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection1 .indexTop {
+		width: 100%;
+		margin: 0 2% 10%;
+		line-height: 110%;
+	}
+}
+
+.middle-img {
+    width: 100%;
+    max-width: 100%;
+	height: auto;
+	margin: 29px 0;
+}
+
+@media (max-width: 800px) {
+	.middle-img {
+        margin: 0;
+        height: 90%;
+	}
+}
+
+.indexSection2 {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    line-height: 1.8rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 36px;
+}
+
+@media (max-width: 800px) {
+	.indexSection2 {
+        margin: 23px 3% 0 1%;
+        justify-content: space-around;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection2 {
+		flex-direction: column;
+		margin: 0 2%;
+	}
+}
+
+
+.indexSection2 .indexBottom {
+    width: 33%;
+}
+
+@media (max-width: 800px) {
+	.indexSection2 .indexBottom {
+        width: 28%;
+        padding-right: 1%;
+	}
+}
+
+@media (max-width: 500px) {
+	.indexSection2 .indexBottom {
+		width: 100%;
+        margin: 23px 2% 40px;
+	}
+}
+
+.indexContact {
+	padding: 35px 0;
+	width: 100%;
+}
+
+@media (max-width: 800px) {
+	.indexContact {
+		padding: 2% 0 0 3%;
+        margin-top: 19px;
+    }      
+}
+
+@media (max-width: 500px) {
+    .indexContact {
+        margin-top: 21px;
+        padding-left: 4%;
+    }
+}
+/* --------End of Index Styles */
+
+/* --------Services Styles */
+
+.contentTop {
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid #000000;
+}
+
+@media (max-width: 800px) {
+	.contentTop {
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.contentTop {
+		margin: 2%;
+	}
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.container {
+	display: flex;	
+	flex-wrap: wrap;
+}
+
+.middle {
+	height: 900px;
+	border-bottom: 1px solid #000000;
+	display: flex;
+	align-content: space-around;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.middle {
+		flex-wrap: wrap;
+		height: auto;
+		margin: 2% 0;
+	} 
+}
+
+.contentMid {
+	width: 47%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #000000;
+	background-color: #F4F3F4;
+	padding: 20px;
+}
+
+@media (max-width: 800px) {
+	.contentMid {
+		width: 48%;
+		height: auto;
+		padding: 3% 1%;
+		margin: 2% 1%;
+		
+	}
+}
+
+@media (max-width: 500px) {
+	.contentMid {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.contentMid h3 {
+		font-size: 2rem;
+	}
+}
+
+.contentMid a.button {
+	border: 1px solid #000000;
+	border-radius:5px;
+	background-color: #ffffff;
+	/* padding: 8px 35px; */
+	margin-top: 2%;
+	text-decoration: none;
+	color: #000000;
+}
+
+@media (max-width: 800px) {
+	.contentMid .button {
+		background: green;
+	}
+}
+
+@media (max-width: 500px) {
+	.contentMid .button {
+		background: blue;
+		width: 80%;
+		text-align: center;
+	}
+}
+
+.button:hover {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.bottom {
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+	.bottom {
+		margin: 2%;
+		flex-wrap: wrap;
+	}
+}
+
+.contentBottom {
+	width: 45%;
+	margin-bottom: 80px;
+}
+
+@media (max-width: 800px) {
+	.contentBottom {
+		width: 100%;
+		padding: 4%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.contentBottom {
+		text-align: center;
+		padding: 1% 5%;
+	}
+}
+
+.contentBottom ul {
+	list-style-type: square;
+	padding: 15px 20px;
+}
+
+
+@media (max-width: 800px) {
+	.contentBottom ul {
+		/* width: 100%; */
+	}
+}
+
+.contentBottom li {
+	padding-top: 10px;
+	text-align: left;
+}
+.services-info-img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 800px) {
+	.services-info-img {
+		display: none;
+	}
+}
+/* 
+@media (max-width: 500px) {
+	.services-info-img {
+		display: none;
+	}
+} */
+
+
+/* --------End of Services Styles */
+
+/* --------Start of Contact Styles */
+
+.contactTop {
+	height: 200px;
+	padding-top: 100px;
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+
+.contactMiddle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom: 1px solid black;
+}
+
+.contactMiddle .contactForm form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 68.1%;
+	padding: 20px;
+	margin: 20px;
+	justify-content: center;
+
+}
+
+.contactMiddle .contactForm .formItem {
+	width: 56.8%;
+	height: 100px;
+}
+
+.contactMiddle .contactForm .formItem input {
+	width: 80%;
+	height: 30px;
+}
+
+.contactMiddle .contactForm .formItem textarea {
+	width: 100%;
+	height: 100px;
+}
+
+/* --------End of Contact Styles */
+
+
+
+
+ 
