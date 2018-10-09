@@ -168,6 +168,11 @@ h4 {
 	/* border: 1px solid red; */
 }
 
+.index .cta-text button:hover {
+    background-color: #0070D3;
+  }
+
+
 .index h1 {
 	font-size: 7rem;
 	text-align: center;
@@ -251,6 +256,10 @@ h4 {
 	margin-top: 20px;
 }
 
+.services .more-button:hover {
+  background-color: #0070D3;
+}
+
 .services ul {
 	margin: 26px 0px 10px 0px;
   font-size: 1.6rem;
@@ -271,6 +280,53 @@ h4 {
 
 .services .misc img {
   width: 50%;
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0px auto;
+  font-size: 1rem;
+}
+
+/* Contact form style - Responsive Design*/
+.contact-form * {
+  padding: 5px;
+}
+
+.contact-form .form{
+  margin: 0px auto;               /*centered */
+  max-width: 600px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.contact-form label{
+  padding-left: 0px;
+}
+
+.contact-form .form {
+  font-size: 1.5rem;
+}
+
+.contact-form .form__input {
+  margin: 3px 0px 12px 0px;
+  border-radius: 5px;
+}
+
+.contact-form .form__message {
+  height: 100px;
+}
+
+.contact-form .form__input:focus {
+  background-color: lightyellow;
+}
+
+.contact-form .form__button:focus,
+.contact-form .form__button:hover {
+  cursor: pointer;  
+  background-color: #0070D3;
 }
 
 @media only screen and (max-width: 800px) {
@@ -329,6 +385,17 @@ h4 {
     align-items: center;
     margin-top: 19px;
     font-size: 2rem;
+  }
+
+  .container header .fa {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 10px;
+
+  }
+
+  .container header nav{
+    display: none;
   }
 
   .container header {
