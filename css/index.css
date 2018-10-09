@@ -119,9 +119,11 @@ footer {
 
 .container {
 
-	width: 1016px;
+  width: 100%;
+	max-width: 880px;
 	margin: auto;
-	padding: 20px 70px 0px 70px;
+  padding: 0px 5%;
+	padding-top: 20px;
 
 }
 
@@ -174,6 +176,8 @@ footer {
 .middle-img {
 
 	margin: 40px 0px;
+  width: 100%;
+  height: auto;
 
 }
 
@@ -218,6 +222,7 @@ footer {
   .container {
 
     width: 100%;
+    max-width: 800px;
     padding-left: 30px;
     padding-right: 30px;
 
@@ -275,6 +280,7 @@ footer {
 	.container {
 
 		padding: 0px;
+    max-width: 500px;
 
 	}
 
