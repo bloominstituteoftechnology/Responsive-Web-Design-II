@@ -1,1 +1,515 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Site-wide Styles */
+
+* {
+
+	box-sizing: border-box;
+
+}
+
+html {
+
+  font-size: 62.5%;
+
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+nav {
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+  padding-top: 10px;
+
+}
+
+a {
+
+	text-decoration: none;
+	color: grey;
+  font-size: 1.6rem;
+
+}
+
+h1 {
+
+	font-size: 2.7rem;
+
+}
+
+h2 {
+
+  font-size: 1.6rem;
+
+}
+
+p {
+
+	line-height: 1.2;
+  font-size: 1.6rem;
+
+}
+
+ul {
+
+	list-style: square;
+	list-style-position: inside;
+	font-size: 1.6rem;
+
+}
+
+footer {
+
+	text-align: center;
+	margin: 20px 0px;
+
+}
+
+address {
+
+  font-size: 1.6rem;
+
+}
+
+.img-responsive {
+
+	width: 100%;
+	height: auto;
+
+}
+
+.container {
+
+  width: 100%;
+	max-width: 880px;
+	margin: auto;
+  padding: 0px 5%;
+	padding-top: 20px;
+
+}
+
+/* Home Styles */
+
+.homeBanner {
+
+	display: flex;
+	border-bottom: 1px solid black;
+	margin-bottom: 40px;
+	padding: 5% 0px 10% 0px;
+	justify-content: space-between;
+
+}
+
+.header-text {
+
+	width: 50%;
+	text-align: center;
+
+}
+
+.header-text h1 {
+
+	font-size: 7.8rem;
+
+}
+
+.startButton {
+
+	border: 1px solid black;
+	padding: 10px 50px;
+	background-color: white;
+
+}
+
+.section1 {
+
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.section1 section {
+
+	width: 49%;
+
+}
+
+.middle-img {
+
+	margin: 40px 0px;
+  width: 100%;
+  height: auto;
+
+}
+
+.section2 {
+
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.section2 section {
+
+	width: 32%;
+
+}
+
+.contact {
+
+	border-top: 1px solid black;
+	padding-top: 40px;
+	margin-top: 50px;
+
+}
+
+.pg1footer {
+
+	padding-top: 50px;
+	height: 200px;
+
+}
+
+/* Services Styles */
+
+.services {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.serviceBlurb {
+
+	margin-top: 30px;
+	padding-bottom: 35px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+
+}
+
+.serviceType {
+
+	border: 1px solid black;
+	width: 48%;
+	padding: 20px;
+	margin: 20px 0px;
+
+}
+
+.serviceType button {
+
+	border: 1px solid black;
+	border-radius: 8px;
+	background-color: white;
+	padding: 7px 30px;
+
+}
+
+.facts {
+
+	border-top: 2px solid black;
+	margin-top: 20px;
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 80px;
+
+}
+
+.facts div {
+
+	width: 46%;
+
+}
+
+.facts img {
+
+	width: 50%;
+
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+	/* General */
+
+  nav {
+
+    flex-wrap: wrap;
+    margin: 11px 0px 7px 7px;
+
+  }
+
+  .container {
+
+    width: 100%;
+    max-width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+	/* Home */
+
+	.homeBanner {
+
+		padding: 5% 0px 58px 0px;
+		margin-bottom: 37px;
+
+	}
+
+  .header-img {
+
+    display: none;
+
+  }
+
+  .header-text {
+
+    width: 100%;
+		margin-top: -77px;
+
+  }
+
+  .section2 {
+
+    margin-top: -18px;
+
+  }
+
+  .logo {
+
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+		margin-top: -11px;
+
+  }
+
+	.middle-img {
+
+		width: 100%;
+
+	}
+
+	/* Services */
+
+}
+
+@media (max-width: 500px) {
+
+	/* General */
+
+	nav {
+
+		flex-direction: column;
+    padding-top: 0px;
+		margin: 0px;
+
+	}
+
+	a {
+
+		font-size: 2rem;
+		width: 100%;
+		border-bottom: 1px solid black;
+		padding: 20px 0px;
+		text-align: center;
+
+	}
+
+	.container {
+
+		padding: 0px;
+    max-width: 500px;
+
+	}
+
+	/* Home */
+
+	.logo {
+
+		padding: 20px 0px;
+		margin-bottom: 0px;
+
+	}
+
+  .header-text h1 {
+
+    font-size: 6rem;
+
+  }
+
+	.section1 {
+
+		flex-direction: column;
+		margin: 20px;
+
+	}
+
+	.section1 section {
+
+		width: 100%;
+		margin-bottom: 40px;
+
+	}
+
+	.middle-img {
+
+		margin-top: 0px;
+		padding: 0px 20px;
+
+	}
+
+	.section2 {
+
+		flex-direction: column;
+		margin: 20px;
+
+	}
+
+	.section2 section {
+
+		width: 100%;
+		margin-bottom: 40px;
+
+	}
+
+	.contact {
+
+		margin-top: 0px;
+		margin: 20px;
+
+	}
+
+	.homeBanner {
+
+		margin: 20px;
+		margin-bottom: 40px;
+		border-bottom: 2px solid black;
+
+	}
+
+	/* Services */
+
+	.services {
+
+		justify-content: center;
+		padding: 0px 20px;
+
+	}
+
+	.serviceType {
+
+		width: 100%;
+
+	}
+
+	.services-header-img {
+
+		margin: auto;
+		padding: 0px 20px;
+
+	}
+
+	.facts {
+
+		justify-content: center;
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+
+	.facts div {
+
+		width: 100%;
+
+	}
+
+	.facts div p {
+
+		width: 100%;
+
+	}
+
+	.facts div ul {
+
+		width: 100%;
+		margin-bottom: 20px;
+
+	}
+
+	.facts img {
+
+		width: 100%;
+
+	}
+
+}
