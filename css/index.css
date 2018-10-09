@@ -207,7 +207,10 @@ address,
 }
 
 .header .nav-menu a:hover {
-  text-decoration: underline;
+    background-color: #b3b3b3;
+    color: white;
+    transform: translate(5px);
+    transition: transform 300ms ease-in-out;
 }
 
 .wide-img {
@@ -243,7 +246,10 @@ address,
 }
 
 .btn:hover {
-
+    transform: translate(10px);
+    transition: transform 300ms ease-in-out;
+    background-color: #2ECC40;
+    color: white;
 }
 
 .content {
@@ -348,6 +354,19 @@ address,
     font-size: 1.5rem;
   }
 
+  .btn:hover {
+    transform: initial;
+    transition: initial;
+    background-color: inherit;
+}
+
+  .header .nav-menu a:hover {
+    transform: initial;
+    transition: initial;
+    background-color: inherit;
+    color: #b3b3b3;
+  }
+
   .header .logo {
     margin-bottom: 10px;
   }
@@ -392,6 +411,7 @@ address,
     width: 100%;
     text-align: center;
   }
+
 
   .header .nav-menu a:first-child {
     border-top: 1px solid #1a1a1a;
