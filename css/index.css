@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
   width: 75%;
+  max-width: 880px;
   /* TB LR */
   margin: 0 auto;
 }
@@ -140,8 +141,9 @@ header nav .nav-items:last-child {
 }
 
 .cta img {
-  width: 40%;
-  height: 40%;
+  width: 290px;
+  min-width: 290px;
+  height: 290px;
 }
 
 .main-content {
@@ -246,7 +248,7 @@ footer {
 }
 
 .services-content h1 {
-    font-size: 26px;
+    font-size: 2.6rem;
     margin: 10px 0;
 }
 
@@ -314,6 +316,9 @@ border-bottom: 2px solid black;
 /* Media Queries */
 
 @media( max-width: 800px) and (min-width: 500px){
+    .home-bot-content p{
+        font-size: 0.75rem; 
+    }
     header {
         display: flex;
         flex-direction: column-reverse;
@@ -331,7 +336,7 @@ border-bottom: 2px solid black;
     }
     .cta .cta-text{
         width: 100%;
-        font-size: 50px;
+        font-size: 3.125rem;
         margin-bottom: 40px;
         margin-top: 0px;
         padding-top: 0px;
@@ -339,7 +344,7 @@ border-bottom: 2px solid black;
     .cta .cta-text button{
         width: 115px;
         height: 25px;
-        font-size: 12px;
+        font-size: 0.75rem;
         padding: 0px;
     }
     .main-content{
@@ -363,13 +368,13 @@ border-bottom: 2px solid black;
     margin-top: 20px;
 }
 .card p{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .services-info{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .services-text p{
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 }
 
@@ -402,14 +407,14 @@ border-bottom: 2px solid black;
     }
        .cta .cta-text{
         width: 100%;
-        font-size: 50px;
+        font-size: 3.125rem;
         margin-top: 0px;
         padding-top: 0px;
     }
     .cta .cta-text button{
         width: 115px;
         height: 25px;
-        font-size: 12px;
+        font-size: 0.75rem;
         border: 1px solid black;
         padding: 0px;
     }
@@ -425,7 +430,7 @@ border-bottom: 2px solid black;
     }
     .main-content .top-content .text-content {
         width: 100%;
-        font-size: 14px;
+        font-size: 0.75rem;
     }
     div div h4{
         padding-top: 20px;
@@ -435,17 +440,17 @@ border-bottom: 2px solid black;
     }
     .main-content .bottom-content .text-content{
         width: 100%;
-        font-size: 14px;
+        font-size: 0.75rem;
       
     }
     .contact p{
-        font-size: 14px;
+        font-size: 0.75rem;
         width: 45%;
         line-height: 1.5;
         margin: 0px;
     }
     footer{
-        font-size: 10px;
+        font-size: 0.625rem;
     }
    .services-content .services-info .services-info-img {
  display: none;
@@ -458,13 +463,13 @@ border-bottom: 2px solid black;
     margin-top: 20px;
 }
 .card p{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .services-info{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .services-text p{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .services-content .card {
