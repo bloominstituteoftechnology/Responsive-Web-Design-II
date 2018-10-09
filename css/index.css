@@ -159,7 +159,7 @@ h5 {
 .main-container {
     width: 100%;
     max-width: 880px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 .menu-header {
@@ -178,14 +178,13 @@ h5 {
     width: 80.3%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-    list-style-type: none;
+	justify-content: space-evenly;
+	list-style-type: none;
 }
 
 .menu {
     padding-top: 20px;
-	/*padding-right: 20px;*/
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: darkgray;
 	text-decoration: none;
 }
@@ -227,6 +226,19 @@ h5 {
 	font-size: 1.5rem;
 	margin: 2%;
 	padding: 3% 18%;
+}
+
+@keyframes colorchange {
+    0% { background: white }
+    100% { background: black }
+    0% {color: black}
+	100% {color: white}
+}
+
+.get-started-btn:hover {
+	background: black;
+    color: white;
+    animation: colorchange 2s;
 }
 
 .h1-services {
@@ -306,8 +318,91 @@ h5 {
 footer {
     text-align: center;
     font-size: 1.5rem;
-    /*width: 35%;*/
     margin: 0 auto;
+}
+
+/* services.html */
+.services-header-img {
+	width: 94%;
+	margin: 3% 3%;
+	padding: 0%;
+}
+
+.services-header {
+	width: 94%;
+	margin: 1% auto;
+	padding: 0%;
+}
+
+.services-header p {
+	font-size: 1.5rem;
+}
+
+.services-blocks {
+	display: flex;
+	width: 94%;
+	margin: 25px 5%;
+	padding: 0%;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+
+.block {
+	width: 280px;
+	height: 190px;
+	display: flex;
+	padding: 0;
+	flex-direction: column;
+	border: 1px solid black;
+	font-size: 1.5rem;
+	margin: 1% 0;
+	background-color: lightgrey;
+}
+
+.services-blocks h2 {
+	font-size: 2rem;
+	margin: 1% 2%;
+	padding: 0;
+}
+
+.services-blocks p {
+	margin: 1% 2%;
+	padding: 0;
+}
+
+.learn-more-btn {
+	width: 90px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 1rem;
+	margin-left: 2%;
+}
+
+.some-facts-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.some-facts {
+	width: 35%;
+	margin: 3% 3%;
+	padding: 0.5%;
+	font-size: 1.5rem;
+}
+
+.some-facts h2 {
+	font-size: 2rem;
+}
+
+.some-facts-ul {
+	margin: 15px 4%;
+	list-style-type: disc;
+}
+
+.services-info-img {
+	width: 99%;
+	height: 99%;
 }
 
 @media (max-width: 800px) {
@@ -329,7 +424,13 @@ footer {
 		margin: 0;
 		justify-content: center;
         align-items: center;
-    }
+	}
+
+	.services-info-img {
+		width: 50%;
+		height: 50%;
+	}
+
    }
 
 @media (max-width: 500px) {
@@ -381,11 +482,6 @@ footer {
 	margin: 2%;
 }
 
-.bottom-block {
-    width: 90%;
-    margin-bottom: 30px;
-}
-
 hr {
    display: none;
 }
@@ -394,4 +490,15 @@ hr {
 	width: 33%;
 	margin-left: 5%;
 }
+
+.services-info-img {
+	width: 70%;
+	height: 70%;
+}
+
+.some-facts-container {
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
 }
