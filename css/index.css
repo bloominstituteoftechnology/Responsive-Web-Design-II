@@ -605,6 +605,21 @@ section.hero .hero-img {
 	margin: 10% auto 1%;
 }
 
+@media (max-width: 880px) {
+  .services header nav {
+    margin: 0 2%;
+  }
+
+  .services-hero h1, 
+  .services-hero p,
+  .services-cards-section,
+  .services-facts {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+}
+
 
 @media (max-width: 800px) {
   .services header nav {
