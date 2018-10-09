@@ -569,10 +569,22 @@ footer {
         font-size: 1.6rem;
         /* background: blue; */
     }
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
     .container .nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        animation-duration: 2s;
+        animation-name: slidein;
         /*align-content: space-around;
         margin: 20px; */
         /* width: 100%; */
@@ -583,12 +595,16 @@ footer {
         /* width: 100%; */
         padding: 0 60px;
         margin: 0 40%;
+        animation-duration: 2s;
+        animation-name: slidein;
     }
     .container .nav a {
         order: 2;
         width: 16.66666%;
         text-align: center;
         margin: 20px 0 0 0;
+        animation-duration: 2s;
+        animation-name: slidein;
         /* justify-content: space-around;
         align-content: space-around; */
     }
@@ -605,6 +621,8 @@ footer {
         display: flex;
         flex-wrap: wrap;
         border-top: 1px solid black;
+        animation-duration: 2s;
+        animation-name: slidein;
     }
     .middle-img {
         width: 100%;
@@ -613,6 +631,12 @@ footer {
         display: flex;
         flex-wrap: wrap;
         border-bottom: 1px solid black;
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+    .contact-section {
+        animation-duration: 2s;
+        animation-name: slidein;
     }
 }
 
@@ -623,8 +647,23 @@ footer {
     .container {
         max-width: 500px;
     }
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        60% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
     .nav {
         width: 100%;
+        animation-duration: 2s;
+        animation-name: bounceIn;
     }
     .container .nav {
         display: flex;
@@ -649,12 +688,16 @@ footer {
         display: inline-block;
         margin: 0;
         width: 100%;
+        animation-duration: 2s;
+        animation-name: bounceIn;
         /* display: flex;
         flex-direction: column;
         flex-wrap: nowrap; */
     }
     .top-section h3 {
         margin-top: 10px;
+        animation-duration: 2s;
+        animation-name: bounceIn;
     }
     .middle-img {
         width: 100%;
@@ -663,8 +706,16 @@ footer {
         display: inline-block;
         margin: 0px;
         width: 100%;
+        animation-duration: 2s;
+        animation-name: bounceIn;
     }
     .bottom-section h3 {
         margin-top: 10px;
+        animation-duration: 2s;
+        animation-name: bounceIn;
+    }
+    .contact-section {
+        animation-duration: 2s;
+        animation-name: bounceIn;
     }
 }
