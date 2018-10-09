@@ -169,6 +169,8 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  width: 100%;
+  height: auto;
 }
 
 .main-content .bottom-content {
@@ -285,40 +287,18 @@ footer {
 
 /* Tablet view */
 @media ( max-width: 800px){
-    .container {
-        width: 750px;
-        /* TB LR */
-        margin: 0 auto;
-    }
-    
+  
     header {
-        /* max-width: 100%; */
-        /* margin: 0 auto; */
-        /* flex-wrap: wrap; */
         flex-direction: column;
         align-items: center;
     }
     
     header div {
         order: -1;
-        /* justify-content: center; */
         text-align: center;
-        /* border: 1px solid red; */
-        width: 200px;
-        /* flex-wrap: wrap; */
-        /* width: 100%; */
-        
-        /* display: inline-block; */
     }
     header nav {
-        /* border: 1px solid red; */
         width: 100%;
-        justify-content: center;
-    }
-
-    .cta {
-        /* border: 1px solid red; */
-        padding-top: 0px;
     }
 
     .cta .cta-text {
@@ -330,7 +310,7 @@ footer {
     }
 
     .main-content .top-content {
-        padding: 0 10px;
+        padding: 0 1%;
         justify-content: center;
     }
     
@@ -339,7 +319,7 @@ footer {
     }
 
     .main-content .bottom-content .text-content {
-        width: 220px;
+        width: 33%;
     }
 
     .services-header-img {
