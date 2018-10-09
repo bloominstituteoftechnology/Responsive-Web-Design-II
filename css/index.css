@@ -72,6 +72,15 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+h4 {
+    font-size: 1.7rem;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
 .container {
   max-width: 880px;
   /* TB LR */
@@ -81,18 +90,19 @@ h1, h2, h3, h4, h5 {
 /* header */
 
 header {
-	display: flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 header nav {
-  width: 80%;
-  margin-top: 35px;
+  width: 69%;
+  margin-top: 37px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header nav a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: gray;
   text-decoration: none;
 }
@@ -110,24 +120,26 @@ header .logo {
 .cta {
     /* border: 1px solid red; */
     display: flex;
-	justify-content: space-around;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .cta .cta-text {
-  font-size: 7.5rem;
-  margin-top: 120px;
+  font-size: 7.2rem;
+  margin-bottom: 23px;
   text-align: center;
   /* border: 1px solid orange; */
   min-width: 50%;
+  margin-right: 1%;
 
 }
 
 .cta .cta-text button {
   background: white;
   vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 15%;
-  font-size: 1.7rem;
+  margin-top: 10px;
+  padding: 6px 9.5%;
+  font-size: 1.6rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -147,55 +159,44 @@ header .logo {
 .main-content {
   border-top: 1px solid black;
   margin-top: 76px;
-  padding-top: 39px;
+  padding-top: 36px;
   display: flex;
   flex-direction: column;
 }
 
 .main-content .top-content {
-  
-  padding: 0 1%;
-  display: flex;
+  display: flex
 }
 
 .main-content .top-content .text-content {
   width: 50%;
-  margin-right: 2.5%;
-}
-
-.main-content .top-content .text-content:last-child {
-  margin-right: 0;
+  padding-right: 1%;
 }
 
 .main-content .middle-img {
-  margin-top: 45px;
+  margin-top: 30px;
   width: 100%;
   height: auto;
 }
 
 .main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 1%;
+  margin-top: 30px;
   display: flex;
 }
 
 .main-content .bottom-content .text-content {
-  width: 33%;
-  margin-right: 2.5%;
-}
-
-.main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+  width: 33.3%;
+  padding-right: 2.2%;
 }
 
 .contact {
-  margin-top: 57px;
+  margin-top: 35px;
   border-top: 1px solid black;
-  padding: 39px 1% 0;
+  padding: 35px 0;
 }
 
 .contact p {
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 footer {
