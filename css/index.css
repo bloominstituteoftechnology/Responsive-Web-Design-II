@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 /* INDEX */
 html {
     font-size: 62.5%;
@@ -202,8 +203,6 @@ html {
 }
 
   .services-info {
-    /* display: flex; */
-    /* flex-direction: column; */
     margin-top: 3%;
     margin-bottom: 3%;
     padding-bottom: 3%;
@@ -276,10 +275,6 @@ html {
     margin-left: 4%;
     list-style-type: square;
 }
-
-  /* .end-content .services-info-img {
-      width: 50%;
-  } */
 
 
   /* Tablet */
