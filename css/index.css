@@ -1,1 +1,347 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	/* border: 1px solid red; */
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    /* max width saved my fixed bar */
+    max-width: 880px;
+    /* max width daved my fixed bar */
+    width: 100%;
+    padding: 20px 0;
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: space-between;
+    /* background-color:  rgba(255, 255, 255, 0.0); */
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+header nav {
+	display: flex;
+	width: 70%;
+	justify-content: space-around;
+    align-items: center;
+}
+.main-content {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.cta {
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-bottom: 50px;
+}
+.cta-2 {
+    margin-top: 100px;
+    /* margin-bottom: 20px; */
+}
+.cta-2 img {
+    width: 100%;
+}
+.services-title {
+    padding-top: 20px;
+}
+.cta .cta-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cta .cta-text h1{
+	font-size: 5rem;
+	text-align: center;
+}
+.cta .cta-text button{
+	text-align: center;
+}
+.top-content, .bottom-content {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+.top-content .text-content {
+	width: 50%;
+    margin: 30px 0;
+}
+.bottom-content .text-content {
+	width: 33%;
+    margin: 30px 0;
+}
+.middle-img {
+    width: 100%;
+}
+address {
+	margin: 30px 0;
+}
+footer {
+	margin: 50px 0 30px 0;
+	display: flex;
+	justify-content: center;
+}
+.services-title {
+	margin-bottom: 3rem;
+}
+.services-title h1 {
+	font-size: 2.5rem;
+}
+.top-content .boxed-content {
+	border: 1px solid black;
+	background-color: lightgray;
+	padding: 3%;
+	margin: 30px 0px 0px;
+	width: 48%;
+	border-radius: 30px;
+}
+.top-content .boxed-content:nth-last-of-type(1), 
+.top-content .boxed-content:nth-last-of-type(2){
+	margin-bottom: 30px;
+} 
+.boxed-content button {
+	margin-top: 20px;
+	padding: 2% 10%;
+	background: white;
+}
+
+.bottom-flex {
+	margin: 30px 0;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* this fixed problems!!! */
+    align-items: flex-start;
+    /* this fixed problems!!! */
+}
+.bottom-flex .bottom-text {
+	width: 50%;
+    line-height: 1.2;
+    padding: 2%;
+}
+ul {
+	list-style-type: square;
+	line-height: 25px;
+    margin: 30px 0;
+    list-style-position: inside;
+}
+a {
+	text-decoration: none;
+	color: grey;
+}
+body:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .08;
+	z-index: -1;
+	background: url("../img/header-img.png");
+}
+.cta-text button {
+    padding: 5px 25px;
+    background:  rgba(255, 255, 255, 0.0);
+    border: 1px solid black;
+}
+.services-info-img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes bold-animation {
+    0% {font-weight: normal;}
+    25% {font-weight: bold;}
+	50% {font-weight: bolder;}
+	75% {font-weight: bold;}
+	100% {font-weight: normal;}
+}
+
+header nav a:hover,
+.cta .cta-text button:hover,
+.boxed-content button:hover  {
+	animation-name: bold-animation;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 800px) {
+    .container header {
+        padding-top: 30px;
+    }
+    header nav {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .main-content {
+        margin: 0 3%;
+    }
+
+    .text-content {
+        padding: 2%;
+    }
+    .cta, .cta-2 {
+      margin-top: 150px;
+    }
+    .cta .cta-img {
+        display: none;
+    }
+    header {
+        background: white;
+        /* background:  rgba(255, 255, 255, 0.0); */
+        /* position: relative; */
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .container address {
+        margin-left: 4.5%;
+    }
+    .services-title {
+        padding: 4%;
+    }
+    .bottom-flex {
+        padding: 10px 3%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .container header {
+      width: 100%;
+      margin-top: 0;
+    }
+    header {
+        position: relative;
+        padding-bottom: 0;
+        border: none;
+    }
+    header nav {
+        margin-top: 15px;
+    }
+	nav, .bottom-flex, .cta, .top-content,
+	.bottom-content {
+		flex-direction: column;
+    }
+    .cta-2 {
+        margin: 50px 0 20px 0;
+    }
+    .top-content .text-content,
+    .bottom-content .text-content {
+		width: 100%;
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+    .main-content {
+        padding-top: 20px;
+    }
+    .cta {
+        margin-bottom: 10px;
+    }
+    nav a {
+        display: inline-block;
+        padding: 15px 0;
+        width: 100%;
+        /* border-top: 1px solid gray; */
+        border-bottom: 1px solid gray;
+        text-align: center;
+        margin: 0;
+    }
+    nav a:first-of-type {
+        border-top: 1px solid gray;
+    }
+    nav {
+        margin: 0;
+    }
+    a img {
+        margin-top: 15px;
+    }
+    .container address {
+        margin-left: 3%;
+    }
+    .main-content .boxed-content {
+        padding: 3%;
+    }
+    .boxed-content button {
+        margin-top: 20px;
+        /* padding: 2% 5%; */
+        background: white;
+    }
+    .bottom-flex .bottom-text {
+        width: 100%;
+    }
+    .services-info-img {
+        width: 100%;
+        height: auto;
+    }
+  }
+
