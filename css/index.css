@@ -92,7 +92,7 @@ header nav {
 }
 
 header nav a {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -114,7 +114,7 @@ header .logo {
 }
 
 .cta .cta-text {
-  font-size: 77px;
+  font-size: 7.5rem;
   margin-top: 120px;
   text-align: center;
   /* border: 1px solid orange; */
@@ -127,7 +127,7 @@ header .logo {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 15%;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -139,7 +139,7 @@ header .logo {
 
 .cta img {
   /* border: 1px solid blue; */
-    margin-top: 69px;
+  margin-top: 69px;
   width: auto;
   height: auto;
 }
@@ -159,7 +159,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-    width: 50%;
+  width: 50%;
   margin-right: 2.5%;
 }
 
@@ -201,7 +201,7 @@ header .logo {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* Services */
@@ -210,7 +210,7 @@ footer {
 }
 
 .services h1 {
-	font-size: 30px;
+	font-size: 33rem;
 	/* border: 1px solid red; */
 	margin: 20px auto;
 }
