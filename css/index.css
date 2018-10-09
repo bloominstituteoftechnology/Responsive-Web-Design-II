@@ -1,1 +1,333 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; /* means 1 rem is 10px */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: .1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Your code starts here! */
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2rem auto;
+}
+
+nav a {
+	color: grey;
+	text-decoration: none;
+}
+
+.nav-text {
+	/* font-size: 80%; */
+	width: 80%;
+}
+
+.nav-text a {
+	margin-right: 6rem;
+	font-size: 1.55rem;
+}
+
+
+h1 {
+	font-size: 7.5rem;
+	/* width: 100%; */
+	/* max-width: 100%; */
+}
+
+.main-image {
+	width: 50%;
+}
+
+.title1, .title2, .title3 {
+	text-align: center;
+}
+
+.left-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.left-main a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.6rem;
+	border: .1rem solid black;
+	padding: .8rem 5rem;
+}
+
+.jumbotron {
+	border-bottom: .1rem solid black;
+	/* margin-top: 1rem; */
+	padding: 5rem 0 7rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.middle .mid-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.body1, .body2 {
+	width: 49%;
+	padding: 3rem 0;
+}
+
+/* .middle p {
+	font-size: 90%;
+} */
+
+.middle-img {
+	width: 100%;
+}
+
+.middle .mid-bot {
+	display: flex;
+	justify-content: space-between;
+}
+
+.body3, .body4, .body5 {
+	width: 32%;
+	padding: 4rem 0;
+}
+
+.middle {
+	border-bottom: .1rem solid black;
+	padding: 1rem 0;
+}
+
+.contact {
+	margin: 3rem 0;
+}
+
+.contact p {
+	/* font-size: 90%; */
+}
+
+.number {
+	margin: 1rem 0;
+}
+
+.copyright {
+	text-align: center;
+	margin: 4rem 0;
+}
+
+
+
+/* Tablet */
+@media (max-width:800px) {
+
+	.main-image {
+		display: none;
+	}
+	
+	.container {
+		width: 100%;
+		/* margin: 0 2rem; */
+	}
+
+	.container nav {
+		flex-direction: column-reverse;
+		padding: 1rem 0;
+	}
+
+	.container .nav-text {
+		margin-top: 4rem;
+		display: flex;
+		/* border: 1px solid red; */
+		width: 90%;
+		justify-content: space-between;
+	}
+
+	.nav-text a {
+		margin-right: 0;
+		/* border: 1px solid red; */
+	}
+
+	.middle {
+		/* border: solid 1px red; */
+		padding-bottom: 2rem;
+	}
+
+	.middle .mid-top {
+		justify-content: space-around;
+	}
+
+	.middle .mid-bot {
+		justify-content: space-evenly;
+		margin-top: 1rem;
+	}
+
+	.middle .b1, .middle .b2 {
+		width: 48%;
+	}
+}
+
+/* Mobile */
+@media (max-width:500px) {
+	.container {
+		margin: 0 auto;
+	}
+
+	.container h1 {
+		font-size: 6.8rem;
+		/* max-width: 50%; */
+	}
+
+	.container nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.main-logo {
+		width: 100%;
+		/* border: 1px solid red; */
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-logo a {
+		display: flex;
+		justify-content: center;
+	}
+
+	.main-logo .logo {
+		max-width: 100%;
+		padding: 1rem;
+		margin-bottom: 1.3rem;
+	}
+
+	.container .nav-text {
+		margin-top: 0;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.container .nav-text a {
+		border-top: .1rem solid lightgrey;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		font-size: 1.9rem;
+		padding: 2.05rem;
+	}
+
+	.container .nav-text .last-nav {
+		border-bottom: .1rem solid lightgrey;
+
+	}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.middle .mid-top {
+		margin-top: 2rem;
+	}
+
+	.middle .mid-top, .middle .mid-bot {
+		flex-direction: column;
+	}
+
+	.body1, .body2, .body3, .body4, .body5 {
+		width: 100%;
+		padding: 3rem 0;
+	}
+
+	.jumbotron {
+		padding-bottom: 8rem;
+	}
+
+	.jumbotron a {
+		margin-top: 1rem;
+	}
+
+	.middle img {
+		margin-top: 2rem;
+	}
+}
