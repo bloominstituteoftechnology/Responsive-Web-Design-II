@@ -116,6 +116,7 @@ ul {
 
 	list-style: square;
 	list-style-position: inside;
+	font-size: 1.6rem;
 
 }
 
@@ -129,6 +130,13 @@ footer {
 address {
 
   font-size: 1.6rem;
+
+}
+
+.img-responsive {
+
+	width: 100%;
+	height: auto;
 
 }
 
@@ -230,7 +238,7 @@ address {
 
 	display: flex;
 	flex-wrap: wrap;
-	align-content: flex-end;
+	justify-content: space-between;
 
 }
 
@@ -246,21 +254,9 @@ address {
 .serviceType {
 
 	border: 1px solid black;
-	width: 417px;
+	width: 48%;
 	padding: 20px;
 	margin: 20px 0px;
-
-}
-
-.serviceType:nth-child(odd) {
-
-	margin-left: 20px;
-
-}
-
-.serviceType:nth-child(even) {
-
-	margin-right: 20px;
 
 }
 
@@ -291,21 +287,22 @@ address {
 
 }
 
+.facts img {
+
+	width: 50%;
+
+}
+
 /* Responsive */
 
 @media (max-width: 800px) {
+
+	/* General */
 
   nav {
 
     flex-wrap: wrap;
     margin: 11px 0px 7px 7px;
-
-  }
-
-  .homeBanner {
-
-    padding: 5% 0px 58px 0px;
-    margin-bottom: 37px;
 
   }
 
@@ -317,6 +314,15 @@ address {
     padding-right: 30px;
 
   }
+
+	/* Home */
+
+	.homeBanner {
+
+		padding: 5% 0px 58px 0px;
+		margin-bottom: 37px;
+
+	}
 
   .header-img {
 
@@ -353,9 +359,13 @@ address {
 
 	}
 
+	/* Services */
+
 }
 
 @media (max-width: 500px) {
+
+	/* General */
 
 	nav {
 
@@ -381,6 +391,8 @@ address {
     max-width: 500px;
 
 	}
+
+	/* Home */
 
 	.logo {
 
@@ -442,6 +454,61 @@ address {
 		margin: 20px;
 		margin-bottom: 40px;
 		border-bottom: 2px solid black;
+
+	}
+
+	/* Services */
+
+	.services {
+
+		justify-content: center;
+		padding: 0px 20px;
+
+	}
+
+	.serviceType {
+
+		width: 100%;
+
+	}
+
+	.services-header-img {
+
+		margin: auto;
+		padding: 0px 20px;
+
+	}
+
+	.facts {
+
+		justify-content: center;
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+
+	.facts div {
+
+		width: 100%;
+
+	}
+
+	.facts div p {
+
+		width: 100%;
+
+	}
+
+	.facts div ul {
+
+		width: 100%;
+		margin-bottom: 20px;
+
+	}
+
+	.facts img {
+
+		width: 100%;
 
 	}
 
