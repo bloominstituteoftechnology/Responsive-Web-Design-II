@@ -144,10 +144,6 @@ table {
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 html,
 body {
     height: 100%;
@@ -169,8 +165,8 @@ h5 {
 /* Global Styles  */
 
 body {
-    max-width: 880px;
-    width: 100%;
+    max-width: 876px;
+    width: 97%;
     margin: 0 auto;
 }
 
