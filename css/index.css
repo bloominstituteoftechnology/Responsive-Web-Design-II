@@ -244,13 +244,10 @@ footer .copyright {
 	background-color: transparent;
 	border: 1px solid grey;
 	font-size: 1.6rem;
-	/* margin-top: 1%; */
 }
 
 .image-container {
 	width: 50%;
-	/* padding-top: 10%; */
-	/* margin-left: 1%; */
 }
 
 .image-container .circle {
@@ -294,7 +291,6 @@ footer .copyright {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 1.9% 0 2.1% 0;
-	/* width: auto; */
 }
 
 .information .services {
@@ -302,9 +298,7 @@ footer .copyright {
 	justify-content: space-between;
 	align-items: flex-start;
 	width: 33.33%;
-	/* line-height: 1; */
 	padding: 1.5% 2.25% 1.9% 0%;
-	/* height: auto; */
 }
 
 .services p {
@@ -383,13 +377,11 @@ footer .address {
 		padding: 0;
 		margin:0 auto;
 		padding-bottom: 9.5%;
-		/* justify-content: space-between; */
 	}
 
 	.get-started h1 {
 		font-size: 7.2rem;
 		margin: 0;
-		/* padding-top: 1%; */
 		padding-bottom: 3%;
 	}
 
@@ -426,8 +418,6 @@ footer .address {
 	.bottom-container {
 		display: flex;
 		width: 100%;
-		/* padding: 5% 1%; */
-		/* border-bottom: 1px solid black; */
 		justify-content:space-between;
 	}
 
@@ -566,10 +556,6 @@ footer .address {
     .top-container .features:last-child {
         padding-bottom: 8%;
     }
-
-    /* .middle-img {
-        padding: 0%;
-    } */
 
     .information .bottom-container {
         padding: 4% 0;
