@@ -224,6 +224,73 @@ address {
 
 }
 
+/* Services Styles */
+
+.services {
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-end;
+
+}
+
+.serviceBlurb {
+
+	margin-top: 30px;
+	padding-bottom: 35px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+
+}
+
+.serviceType {
+
+	border: 1px solid black;
+	width: 417px;
+	padding: 20px;
+	margin: 20px 0px;
+
+}
+
+.serviceType:nth-child(odd) {
+
+	margin-left: 20px;
+
+}
+
+.serviceType:nth-child(even) {
+
+	margin-right: 20px;
+
+}
+
+.serviceType button {
+
+	border: 1px solid black;
+	border-radius: 8px;
+	background-color: white;
+	padding: 7px 30px;
+
+}
+
+.facts {
+
+	border-top: 2px solid black;
+	margin-top: 20px;
+	padding-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 80px;
+
+}
+
+.facts div {
+
+	width: 46%;
+
+}
+
 /* Responsive */
 
 @media (max-width: 800px) {
