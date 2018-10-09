@@ -83,7 +83,7 @@ html {
 }
 
 .container h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 nav {
@@ -201,7 +201,6 @@ footer {
 	nav {
 		display: flex;
 		justify-content: space-around;
-		padding-top: 20px;
 		flex-wrap: wrap;
 	  }
 
@@ -209,12 +208,12 @@ footer {
 		order: -1;
 		flex: 100%;
 		text-align: center;
-		padding-bottom: 30px;
+		padding-bottom: 3%;
 	}
 	  
 	  
 	  .top-info {
-		  padding: 50px 0;
+		  padding: 5% 0;
 	  }
 
 	  .top-info img {
@@ -222,52 +221,47 @@ footer {
 	  }
 	  
 	  .top-info div {
-		  padding-top: 20px;
-		  font-size: 70px;
+		  padding-top: 2%;
+		  font-size: 7rem;
 	  }
 	  
 	  button {
-		  margin-top: 20px;
+		  margin: 15% 0;
 	  }
 	  
 	  .main-info {
 		  width: 780px;
-		  margin: 30px auto;
+		  margin: 3% auto;
 	  }
 	  
 	  .middle-img {
-		  width: 100%;
-		  padding: 25px 0;
-		  margin: 20px 0;
+          width: 99%;
+          height: 99%;
+		  margin: 2% 0;
 	  }
 	  
-	  .top-section {
-		  padding-top: 25px;
-		
-		  
-	  }
 	  
 	  .top-section div {
 		  width: 50%;
-		  padding: 0 10px;
+		  padding: 0 2%;
 	  }
 	  
 	  .bottom-section {	
-		  margin: 0 10px;
+		  margin: 0 1%;
 	  }
 	  
 	  .bottom-section div {
-		  width: 30%;
-		  margin-bottom: 30px;
+		  width: 33%;
+		  margin-bottom: 3%;
 	  }
 	  
 	  .contact {
-		  padding: 0 20px;
+		  padding: 0 2%;
 
 	  }
 	  
 	  footer {
-		  padding-bottom: 50px;
+		  padding-bottom: 5%;
 	
 	  } 
 
