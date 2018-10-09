@@ -63,10 +63,11 @@ table {
 }
  h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 10%;
+    letter-spacing: .1rem;
+    margin-bottom: 4%;
 }
  .container {
+   max-width: 880px;
   width: 50%;
   /* TB LR */
   margin: 0 auto;
@@ -82,7 +83,7 @@ table {
 }
  header nav a {
   margin-right: 10%;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -91,9 +92,9 @@ table {
 }
 
  header .logo {
-  margin-top: 7%;
+  margin-top: 6%;
 }
- /* cta */
+ 
  .cta {
 	display: flex;
 	justify-content: center;
@@ -109,7 +110,7 @@ table {
   vertical-align: top;
   margin-top: 2%;
   padding: 2% 12%;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -153,24 +154,23 @@ table {
  .main-content .bottom-content .text-content:last-child {
   margin-right: 0;
 }
- .contact {
+  .contact { 
   margin-top: 8.3%;
   border-top: 1px solid black;
-  padding: 5.8% 1% 0;
+  padding: 5.8% 1% 0; 
 }
- .contact p {
-  margin: 3.2% 0;
+  .contact p {
+  margin: 3.2% 0; 
 }
- footer {
+footer {
   margin: 4.2% 0;
   text-align: center;
   font-size: 14px;
 }
 
-@media ( max-width: 800px){
+ @media ( max-width: 800px){ 
     .container {
         width: 100%;
-        /* TB LR */
         margin: 0 auto;
     }
     
@@ -182,7 +182,7 @@ table {
     header div {
         order: -1;
         text-align: center;
-        width: 200px;     
+        width: 100%;     
     }
 
     header nav {
@@ -194,13 +194,13 @@ table {
         padding-top: 0px;
     }
      .cta .cta-text {
-        margin-top: 60px
+        margin-top: 10.8%;
     }
      .cta img {
         display: none;
     }
      .main-content .top-content {
-        padding: 0 10px;
+        padding: 0 2%;
         justify-content: center;
     }
     
@@ -208,7 +208,7 @@ table {
         justify-content: space-around;
     }
      .main-content .bottom-content .text-content {
-        width: 220px;
+        width: 100%;
     }
 }
 
@@ -233,18 +233,18 @@ table {
         border-top: 1px solid grey;
         text-align: center;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 2.1% 0;
     }
      header nav a:last-child {
         border-bottom: 1px solid grey;
     }
      .main-content .top-content {
-        padding: 0 10px;
+        padding: 0 2%;
         flex-direction: column;
     }
      .main-content .top-content .text-content {
-        width: 470px;
-        margin-top: 34px;
+        width: 100%;
+        margin-top: 7%;
     }
      .main-content .bottom-content {
         display: flex;
@@ -252,7 +252,8 @@ table {
     }
      .main-content .bottom-content .text-content {
         width: 100%;
-        margin-top: 34px;
+        margin-top: 7%;
     }
 
 } 
+
