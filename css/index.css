@@ -565,12 +565,6 @@ section.hero .hero-img {
 	margin-bottom: 20px;
 }
 
-.services-card button {
-  background: white;
-  border: 1px solid black;
-  padding: 2% 9%;
-  border-radius: 6px;
-}
 
 .services-facts {
   display: flex;
@@ -597,6 +591,9 @@ section.hero .hero-img {
 .services-facts img {
   width: 48%;
   margin-top: 2%;
+  
+  border: 8px double teal;
+  box-shadow: -2px 2px 8px rgba(20, 117, 112, 0.4)
 }
 
 .services footer {
@@ -606,8 +603,30 @@ section.hero .hero-img {
 
 
 @media (max-width: 800px) {
+  .services header nav {
+    justify-content: space-around;
+  }
+
+.services header nav a {
+  margin-right: 5%;
+}
+
+.services header nav a:last-child {
+  margin-right: 0;
+}
+
+.services-hero h1, 
+.services-hero p {
+  padding: 2%;
+}
+
+.services-cards-section {
+  padding: 2%;
+}
+
 .services-facts {
   flex-direction: column;
+  padding: 2%;
 }
 
 .services-facts__left {
@@ -615,13 +634,65 @@ section.hero .hero-img {
 }
 
   .services-facts img {
-    width: 100%;
+    width:60%;
+    margin: 2% auto 0;
   }
 }
 
+/* cool gleaming button efftect using transitions, hover psuedo classes and psuedo courtesy of https://codepen.io/css-tricks/pen/mqAHt */
+
+.services-card button {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 2% 10%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  vertical-align: middle;
+  
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.services-card button:before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: -200%;
+  left: -225%;
+
+  background-image: -webkit-linear-gradient(135deg, rgba(255,255,255,0), rgba(255,255,255,0.6), rgba(255,255,255,0)); 
+  background-image: -moz-linear-gradient(135deg, rgba(255,255,255,0), rgba(255,255,255,0.6), rgba(255,255,255,0));  
+   
+    -moz-transition: all 0.5s ease-out; 
+      -o-transition: all 0.5s ease-out; 
+ -webkit-transition: all 0.5s ease-out;
+     -ms-transition: all 0.5s ease-out;
+}
+
+.services-card button:hover:before {
+ top: 200%;
+ left: 200%;   
+}
+
 @media (max-width: 500px) {
+  .services header nav a{
+    margin: 0;
+  }
+
   .services-hero {
-    margin: 350px 20px 20px;
+    margin: 6% 2% 2%;
     width: 95%;
   }
 
@@ -635,11 +706,14 @@ section.hero .hero-img {
 
   .services-card {
     width: 95%;
-    margin: 20px auto;
+    margin: 3% auto;
   }
 
   .services-facts__left {
-    width: 95%;
+    width:100%;
     padding: 20px;
+  }
+  .services-facts img {
+    width: 100%;
   }
 }
