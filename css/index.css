@@ -1,1 +1,474 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* desk top */
+.container {
+    max-width: 880px;
+    margin: auto;
+    }
+
+/* Header Styles */
+
+.container header {
+    width: 100%;
+    display: flex;
+}
+
+.container header nav {
+    margin-top: 4.55%; 
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.container header nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin: 3.1% 0 0 10%;
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 8.1%;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 9% 0 0;
+    }
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 1.6rem;
+    background: white;
+    width: 59%;
+    height: 8%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 8.8% 0 4% 0;
+   padding: 4% 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
+   }
+
+.main-content .top-content {
+    display: flex;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 3.4% auto;
+    }
+
+.main-content .bottom-content {
+    display: flex;
+}
+
+.main-content .bottom-content p {
+    padding-right: 12.5%;
+}
+
+/* Contact Styles */
+.contact {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    padding-bottom: 2%;
+    
+}
+
+
+/* Footer Styles */
+
+footer {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 4.8% 0; 
+}
+/* Home Tablet View Home Tablet View Home Tablet View Home Tablet View Home Tablet View  */
+@media (max-width: 800px) {
+.container {
+    width: 100%;
+            }
+     /* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+    }
+
+header nav {
+    width: 100%;
+    order: 1;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    
+}
+
+header nav a {
+    width: 100%;
+    margin: 0 5% 0 4%;
+        text-decoration: none;
+    color: #b0b0b0;
+    
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    max-width: 25%;
+    margin: 4% auto 0 40%;
+       }
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    width: 30%;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 38.5%;
+    justify-content: center;
+    }
+
+.cta .cta-text {
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+   
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 1.6rem;
+    background: white;
+    width: 58%;
+    height: 2.9rem;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+ .cta img {
+     display: none;
+ }
+/* Main Content Styles */
+
+.main-content {
+   
+   width: 100%;
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 9.7% 0 0 2%;
+   padding: 2.3% 0;
+   font-size: 1.6rem;
+   line-height: 1.8rem;
+  }
+
+.main-content .top-content {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    }
+
+ .main-content .top-content .text-content p {
+     width: 95%;
+     justify-content: center;
+     
+ }
+
+.main-content .middle-img {
+    width: 100%;
+    display: block;
+   }
+    
+
+.main-content .bottom-content {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1%;
+    margin-left: 1.9%;
+    }
+
+.main-content .bottom-content p {
+    padding-right: 2%;
+    width: 85%;
+    margin-right: 2%;
+   }
+
+/* Contact Styles */
+.contact    {
+    width: 100%;
+    padding-left: 4%;
+    margin-top: 4.9%;
+        }
+
+
+/* Footer Styles */
+
+footer {
+    
+    width: 100%;
+    margin-left: 2%;   
+        }
+
+}
+/* Home Phone View Home Phone View Home Phone View Home Phone View Home Phone View Home Phone View */
+@media (max-width: 500px) {
+   .container {
+    width: 100%;
+    } 
+
+   header {
+    width: 100%;
+    }
+
+header nav {
+    width: 100%;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    }
+
+header nav a {
+    width: 100%;
+    padding: 4.7% 42%;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #b0b0b0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    }
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    max-width: 100%;
+    margin-left: 34%;
+           }
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    width: 100%;
+    display: flex;
+    /* padding-top: 1%; */
+    border-top: 1px solid black;
+    
+}
+
+.cta .cta-text {
+    width: 100%;
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    display: flex;
+    margin-right: 70%;
+    /* justify-content: center; */
+    /* flex-flow: column; */
+    /* align-items: center; */
+   border: 1px solid red;
+   
+}
+
+.cta .cta-text button {
+     border: 1px double black;
+    font-size: 1.6rem;
+    background: white;
+    width: 58%;
+    height: 2.9rem;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+ .cta img {
+     display: none;
+ }
+/* Main Content Styles */
+
+.main-content {
+   
+   width: 100%;
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 23% 0 15% 2%;
+   /* padding: 19px 1px; */
+   font-size: 1.6rem;
+   line-height: 1.8rem;
+   display: flex;
+   
+}
+
+.main-content .top-content {
+    
+    width: 100%;
+   flex-direction:  column;
+   flex-wrap: nowrap;
+    /* margin: 0 20px; */
+    /* padding: 15px;*/
+    display: flex;
+    }
+
+ .main-content .top-content .text-content p {
+     display: column;
+     width: 30%;
+     
+     margin: 10px;
+     justify-content: center;
+     
+ }
+
+.main-content .middle-img {
+    width: 100%;
+    display: block;
+    margin-top: 9px;
+}
+    
+
+.main-content .bottom-content {
+    /* width:100%;
+    display: flex;
+    margin-bottom: 15px;
+    margin-left: 10px */
+}
+
+.main-content .bottom-content p {
+    /* padding-right: 20px;
+    /* width: 230px; */
+    /* margin-right: 22px; */ 
+}
+
+/* Contact Styles */
+.contact    {
+    /* width: 100%;
+    padding-left: 30px;
+    margin-top: -30px;
+    margin-bottom: -3px;
+     */
+}
+
+.contact p {
+    /* width: 100%;
+    margin-top: 15px; */
+}
+
+/* Footer Styles */
+
+footer {
+    
+    width: 100%;
+    
+    text-align: center;
+    }  */
+}
