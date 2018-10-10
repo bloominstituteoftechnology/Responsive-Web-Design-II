@@ -118,16 +118,16 @@ header nav a:last-child {
 .cta {
 	display:flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 }
 .cta .cta-text {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 77px;
-  margin-top: 120px;
+  font-size: 3rem;
+  margin-top: 15%;
   
-  padding: 0px 75px;
+  /* padding: 0px 75px; */
 }
 
 .cta .cta-text button {
@@ -161,12 +161,12 @@ header nav a:last-child {
   width:100%;
   padding: 0 10px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
 }
 
 .main-content .top-content .text-content {
-  width: 100%;
+  width: 50%;
   padding: 3% 3% 3% 0%;
   /* margin-right: 34px; */
 }
@@ -181,19 +181,22 @@ header nav a:last-child {
 }
 
 .main-content .bottom-content {
+  width: 100%;
   margin-top: 37px;
   padding: 0 10px;
   display: flex;
+  
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 33%;
   
-  margin-right: 12px;
+  /* margin-right: 12px; */
 }
 
 .main-content .bottom-content .text-content:last-child {
-  margin-right: 0;
+
+  /* margin-right: 0; */
 }
 
 .contact {
@@ -237,7 +240,7 @@ footer {
 
 /* Main-Content */
 
-.main-content-serv {
+/* .main-content-serv {
 	display:flex;
 	flex-wrap: wrap;
 	flex-direction : row;
@@ -270,7 +273,7 @@ footer {
 	cursor: pointer;
 	border-radius: 5%;
 	
-}
+} */
 
 /* Facts */
 
@@ -312,11 +315,11 @@ footer {
       width: 200px;
       
 
-    }
+    } 
 
 }
 /* this was a terrible mistake. */
-@media(max-width: 600px) {
+@media(max-width: 500px) {
   .container nav{
       display: flex;
       /* width: 100%; */
@@ -332,4 +335,24 @@ footer {
     line-height: 48px;
     border-bottom: 1px solid rgba(0,0,0,.6);
   }
+
+  .main-content .top-content .text-content {
+    width: 100%;
+    padding: 3% 0%;
+    /* margin-right: 34px; */
+  }
+
+
+  .main-content .bottom-content {
+    width: 100%;
+    margin-top: 37px;
+    flex-direction: column;
+  }
+
+  .main-content .bottom-content .text-content {
+    width: 100%;
+    
+  }
 }
+
+/* yeah i can edit my own computers code with another computer */
