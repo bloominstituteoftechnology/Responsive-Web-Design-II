@@ -72,8 +72,8 @@ html{
 
 .container{
     margin : 0 auto;
-    width:100%;
-    max-width: 880px;
+    width:100%;max-width: 880px;
+
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
