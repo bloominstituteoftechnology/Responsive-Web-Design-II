@@ -1,1 +1,506 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.navigation {
+	display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    margin-top: 40px;
+    width: 70%;
+    padding-right: 2.5%;
+	display: flex;
+	justify-content:space-between;
+}
+
+nav a {
+    color: gray;
+    font-size: 1.6rem;
+	text-decoration: none;
+}
+
+.navigation .logo {
+    padding-right: 3%;
+    margin: 28px 0 0 0;
+}
+
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+    padding: 35px 0;
+    font-size: 1.6rem
+}
+/* index.html-specific styles */
+
+.index-header {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+	padding-bottom: 8%;
+	border-bottom: 2px solid black;
+}
+
+.innovation-text {
+    padding-top: 100px;
+    padding-left: 7%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: space-around;
+}
+
+.innovation-text h1 {
+	font-size: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.innovation-text p {
+	border: 1px solid black;
+	width: 40%;
+    height: 32px;
+    font-size: 1.6rem;
+    margin: 0 0 20px 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.innovation-text a {
+	color: black;
+	text-decoration: none;
+}
+
+.innovation-text a:hover {
+	animation-name: change-color;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+	0% {
+		opacity: 0.5;
+	}
+
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0.5;
+	}
+}
+
+header img {
+    margin-top: 70px;
+    margin-left: 5%;
+}
+
+.above-image, .below-image { 
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+}
+
+.above-image .sub-section {
+    width: 50%;
+    padding: 40px 0 0 0;
+    font-size: 1.6rem;
+}
+
+.above-image .sub-section p {
+    margin: 20px 0 0 0;
+}
+
+.middle-img {
+    max-width: 100%;
+    margin: 35px 0 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.below-image {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+	padding-bottom: 5%;
+	border-bottom: 2px solid black;
+}
+
+.below-image .sub-section {
+    width: 33%;
+    font-size: 1.6rem;
+}
+
+.contact {
+	display: flex;
+    flex-direction: column;
+    padding: 35px 0 0 0;
+    font-size: 1.6rem
+}
+
+.contact p {
+	padding: 5px 0;
+}
+
+.contact address p {
+	padding:  5px 0;
+}
+
+
+/* services.html-specific styles */
+
+.container .services-header-img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.services-header-text {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+	padding-bottom: 4%;
+	border-bottom: 1px solid black;
+}
+
+.services-header-text .services-text {
+    margin: 30px 0 0 0;
+    font-size: 1.6rem;
+	line-height: 1.25;
+}
+
+.services-text h1 {
+	font-size: 2.5rem;
+}
+
+.services-detail {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 2%;
+	margin: 20px 0 30px 0;
+	border-bottom: 2px solid black;
+}
+
+.detail-box {
+	width: 47%;
+	padding: 20px;
+	border: 1px solid black;
+	background-color: #F4F3F4;
+    margin: 20px 1.5% 20px 0;
+    font-size: 1.6rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: space-between;
+	line-height: 1.25;
+}
+
+.detail-box a {
+	border: 1px solid black;
+	background-color: white;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	width: 230%;
+	height: 35px;
+	margin: 20px 0 0 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+}
+
+.detail-box a:hover {
+	animation-name: fade-black;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes fade-black {
+	0% {
+		background-color: white;
+		color: black;
+	}
+
+	50% {
+		background-color: black;
+		color: white;
+	}
+	
+	100% {
+		background-color: white;
+		color: black;
+	}
+}
+
+.service-facts {
+	margin: 5% 0 50px 0;
+	display: flex;
+}
+
+.service-facts .facts-box {
+	display: flex;
+	flex-direction: column;
+    font-size: 1.6rem;
+	line-height: 1.25;
+}
+
+
+.service-facts .facts-box ul {
+	padding-left: 4%;
+	margin-top: 15px;
+}
+.service-facts .facts-box ul li {
+	list-style-type: square;
+	margin: 2%;
+}
+
+.services-info-img {
+	max-width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+
+	.navigation {
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.navigation nav{
+		width: 90%;
+		order: 2;
+		margin-top: 40px;
+	}
+
+	.navigation .logo {
+        order: 1;
+        margin: 30px 0 0 0;
+        padding-right: 0;
+	}
+
+	header {
+		padding: 0;
+	}
+	
+	footer {
+		width: 100%;
+		padding: 40px 0;
+	}
+    
+    /* index.html-specific styles */
+
+    header img {
+		display: none;
+	}
+
+	header .innovation-text {
+        padding: 70px 0;
+    }
+    
+	.above-image .sub-section {
+        padding: 40px 1% 0 4%;
+	}
+
+	.middle-img {
+        width: 100%;
+        height: auto;
+        padding: 0 1% 0 3%;
+		margin: 30px 0 35px 0;
+	}
+
+	.below-image .sub-section {
+        padding: 0 0 25px 3%;
+    }
+    
+    .contact {
+        padding: 35px 0 0 4%;
+    }
+
+	/*services.html-specific styles*/
+
+	.container .services-header-img {
+		padding: 0 3% 0 3%;
+	}
+
+	.services-header-text, .services-detail, .service-facts {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.service-facts {
+		padding-top: 5%;
+	}
+
+	.service-facts .facts-box ul li {
+		list-style-type: square;
+		margin: 2% 0;
+	}
+	.services-info-img {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+
+	.navigation nav {
+		width: 100%;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 15px 0 0 0;
+	}
+	.navigation nav a {
+		width: 100%;
+		text-align: center;
+		font-size: 2rem;
+		border-bottom: 1px solid black;
+		padding: 20px 0;
+	}
+
+	.navigation nav a:first-child {
+		border-top: 1px solid black;
+    }
+    
+    .navigation .logo {
+        margin: 20px 0 0 0;
+    }
+
+	header {
+        width: 90%;
+        padding: 0;
+		margin: 10px auto;
+	}
+	
+	footer {
+		padding: 25px 0;
+	}
+
+
+    /* index.html-specific styles */
+    
+    header .innovation-text {
+        padding: 50px 0;
+    }
+	.innovation-text h1 {
+		margin: 0 0 30px 0;
+	}
+
+	.above-image, .below-image {
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+	}
+
+	.middle-img {
+		margin: 20px 0 0 0;
+	}
+
+	.above-image .sub-section {
+		width: 100%;
+        padding: 20px 0;
+        margin-top: 20px
+	}
+
+	.below-image .sub-section {
+		width: 100%;
+        padding: 20px 0 40px 0;
+        margin-top: 20px
+    }
+    
+	/*services.html-specific styles*/
+
+	.services-header-text, .services-detail, .service-facts {
+	flex-direction: column;
+	}
+
+	.detail-box {
+		width: 100%;
+	}
+
+	.detail-box a {
+		font-size: 1.6rem;
+	}
+
+}
