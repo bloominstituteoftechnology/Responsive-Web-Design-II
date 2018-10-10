@@ -94,15 +94,24 @@ nav a {
     margin: 28px 0 0 0;
 }
 
-header {
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+    padding: 35px 0;
+    font-size: 1.6rem
+}
+/* index.html-specific styles */
+
+.index-header {
 	display: flex;
 	justify-content: center;
 	align-items: space-between;
 	padding-bottom: 8%;
 	border-bottom: 2px solid black;
 }
-
-/* index.html-specific styles */
 
 .innovation-text {
     padding-top: 100px;
@@ -215,20 +224,25 @@ header img {
 	padding:  5px 0;
 }
 
-footer {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	text-align: center;
-    padding: 35px 0;
-    font-size: 1.6rem
-}
 
 /* services.html-specific styles */
 
-header .services-text {
-	margin: 20px 0 0 0;
+.container .services-header-img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.services-header-text {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+	padding-bottom: 4%;
+	border-bottom: 1px solid black;
+}
+
+.services-header-text .services-text {
+    margin: 30px 0 0 0;
+    font-size: 1.6rem;
 	line-height: 1.25;
 }
 
@@ -240,17 +254,18 @@ header .services-text {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 0 0 20% 0;
-	margin: 10% 0;
+	padding-bottom: 2%;
+	margin: 20px 0 30px 0;
 	border-bottom: 2px solid black;
 }
 
 .detail-box {
-	width: 415px;
+	width: 47%;
 	padding: 20px;
 	border: 1px solid black;
 	background-color: #F4F3F4;
-	margin: 20px 0 0 0;
+    margin: 20px 1.5% 20px 0;
+    font-size: 1.6rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -261,9 +276,9 @@ header .services-text {
 .detail-box a {
 	border: 1px solid black;
 	background-color: white;
-	font-size: 12px;
+	font-size: 1.2rem;
 	border-radius: 5px;
-	width: 130px;
+	width: 230%;
 	height: 35px;
 	margin: 20px 0 0 0;
 	text-align: center;
@@ -298,20 +313,29 @@ header .services-text {
 }
 
 .service-facts {
-	margin: 10% 0 5px 0;
+	margin: 5% 0 50px 0;
 	display: flex;
 }
 
 .service-facts .facts-box {
 	display: flex;
-	flex-wrap: wrap;
-	margin: 0 15% 0 0;
+	flex-direction: column;
+    font-size: 1.6rem;
 	line-height: 1.25;
 }
 
+
+.service-facts .facts-box ul {
+	padding-left: 4%;
+	margin-top: 15px;
+}
 .service-facts .facts-box ul li {
 	list-style-type: square;
-	margin: 10%;
+	margin: 2%;
+}
+
+.services-info-img {
+	max-width: 100%;
 }
 
 /* Media Queries */
@@ -327,7 +351,6 @@ header .services-text {
 	.navigation nav{
 		width: 90%;
 		order: 2;
-		/* padding: 0 2% 0 0; */
 		margin-top: 40px;
 	}
 
@@ -339,7 +362,12 @@ header .services-text {
 
 	header {
 		padding: 0;
-    }
+	}
+	
+	footer {
+		width: 100%;
+		padding: 40px 0;
+	}
     
     /* index.html-specific styles */
 
@@ -370,12 +398,28 @@ header .services-text {
         padding: 35px 0 0 4%;
     }
 
-	footer {
-		width: 100%;
-		padding: 40px 0;
+	/*services.html-specific styles*/
+
+	.container .services-header-img {
+		padding: 0 3% 0 3%;
 	}
 
-	
+	.services-header-text, .services-detail, .service-facts {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.service-facts {
+		padding-top: 5%;
+	}
+
+	.service-facts .facts-box ul li {
+		list-style-type: square;
+		margin: 2% 0;
+	}
+	.services-info-img {
+		display: none;
+	}
 }
 
 @media (max-width: 500px) {
@@ -406,7 +450,12 @@ header .services-text {
         width: 90%;
         padding: 0;
 		margin: 10px auto;
-    }
+	}
+	
+	footer {
+		padding: 25px 0;
+	}
+
 
     /* index.html-specific styles */
     
@@ -440,8 +489,18 @@ header .services-text {
         margin-top: 20px
     }
     
-    footer {
-		padding: 25px 0;
+	/*services.html-specific styles*/
+
+	.services-header-text, .services-detail, .service-facts {
+	flex-direction: column;
+	}
+
+	.detail-box {
+		width: 100%;
+	}
+
+	.detail-box a {
+		font-size: 1.6rem;
 	}
 
 }
