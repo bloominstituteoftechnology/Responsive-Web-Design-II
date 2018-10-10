@@ -227,22 +227,41 @@ h1 {
 		/* border: 1px solid red; */
 	}
 
+	.jumbotron {
+		width: 95%;
+		margin: 0 auto;
+		/* justify-content: center; */
+	}
+
 	.middle {
 		/* border: solid 1px red; */
-		padding-bottom: 2rem;
+		padding: 0 0 2rem;
+		width: 95%;
+		margin: 0 auto;
 	}
 
 	.middle .mid-top {
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	.middle .mid-bot {
-		justify-content: space-evenly;
-		margin-top: 1rem;
+		justify-content: space-between;
+		/* margin-top: 1rem; */
 	}
 
-	.middle .b1, .middle .b2 {
-		width: 48%;
+	.middle .body1, .middle .body2 {
+		width: 49%;
+	}
+
+	.middle .body3, .middle .body4, .middle .body5 {
+		width: 31%;
+		padding-bottom: 2rem;
+	}
+
+	.container footer {
+		width: 95%;
+		/* border: 1px solid red; */
+		margin: 0 auto;
 	}
 }
 
