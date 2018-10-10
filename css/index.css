@@ -75,15 +75,29 @@ body {
 }
 
 .container {
-    margin-left: 5%;
-    margin-right: 5%;
-    max-width: 880px;
+	max-width: 884px;
+	margin: 0 auto;
+}
+
+.container .header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+  margin-bottom: 30px;
+  
+}
+
+.container .header a {
+  text-decoration: none;
+	color: lightgrey;
 }
 
 .container-row {
-	display: flex;
-	flex-direction: row;
+    display: flex;
 }
+
+
 
 .column-text {
 	align-items: flex-start;
@@ -105,7 +119,7 @@ body {
 	padding-bottom: 2%;
 }
 
-ul {
+/* ul {
 	list-style-type: square;
 	margin-left: 2%;
 }
@@ -114,7 +128,7 @@ ul {
 nav a {
     padding-right: 2%;
     margin-left: 2%;
-}
+} */
 
 hr {
     margin-top: 2%;
@@ -180,9 +194,13 @@ section {
     margin-top: 50px;
 }
 
-.img-snippet {
+/* .img-snippet {
     margin-top: 20px;
     margin-bottom: 20px;
+} */
+
+.middle-img {
+    width: 100%;
 }
 
 
@@ -196,31 +214,6 @@ footer {
 }
 /* Media Queries */
 
-@media (max-width: 500px) {
-
-    header nav a {
-        display: flex;
-        width: 10%;
-        flex-basis: 100%;
-        flex-wrap: wrap;
-    }
-
-    .header-img {
-        display: none;
-    }
-
-    .container-row {
-        display: block
-    }
-
-    .middle-img {
-       width: 450px;
-    }
-
-    h2 {
-        margin-top: 10px;
-    }
-}
 
 @media (max-width: 800px) {
    
@@ -244,15 +237,69 @@ nav a {
        display: none;
    }
 
-   .middle-img {
-    width: 700px;
- }
+
 
  .column {
      margin-right: 5px;
  }
 }
 
+@media (max-width: 500px) {
+
+    .container {
+        flex-wrap: nowrap;
+    }
+
+    .container-row {
+        display: block;
+    }
+
+    section .wrapper {
+        margin-right: 20%;
+        
+    }
+
+ 
+    .home .header {
+        flex-direction: column;
+        background-color: white;
+    }
+ 
+    .home .header a {
+     display: flex;
+     order: 1;
+     width: 100%;
+     margin: 0 auto;
+     padding: 2% 0;
+     justify-content: center;
+     align-items: center;
+     background-color: white;
+     border: 1px solid black;
+   }
+ 
+   .home .header div {
+     background-color: darkblue;
+     padding: 5% 0;
+ }
+ 
+ 
+     .header-img {
+         display: none;
+     }
+ 
+     .container-row {
+         display: block
+     }
+ 
+     .middle-img {
+        width: 450px;
+     }
+ 
+     h2 {
+         margin-top: 10px;
+     }
+ }
+ 
 
 
 
