@@ -61,7 +61,8 @@ html {
 /*Desktop First*/
 .container {
    max-width: 880px;
-   margin: 0 4.5%;
+   margin: 0 auto;
+   padding: 0 2.5%;
 }
 
 .container header{
@@ -99,7 +100,6 @@ html {
 }
 
 .container .hero-content .hero-box-item{
-  border: 1px solid cyan;
   width: 50%;
   align-items: center;
   justify-content: center;
@@ -113,7 +113,6 @@ html {
   margin-bottom: 15px;
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
-  border: 1px solid red;
   align-items: center;
   text-align: center;
 }
@@ -215,6 +214,7 @@ p{
   
   .container{
     margin: 0;
+    padding: 0;
   }
   
   .container header{
@@ -274,4 +274,4 @@ p{
     margin: 0 2.5%;
   }
   
-}/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+}
