@@ -1,1 +1,493 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.testing * {
+    border: 1px solid palevioletred;
+}
+
+.container {
+  max-width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+    display: flex;
+    width: 100%;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  vertical-align: top;
+  margin-top: 39px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-right: 92px;
+}
+
+header nav a {
+  display: inline-block;
+  color: gray;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header .logo_container {
+  display: flex;
+  margin-top: 25px;
+  width: auto;
+  margin-right: 2px;
+}
+
+.logo_container img{
+	height: 100%;
+	width: auto;
+}
+
+/* cta */
+
+.cta {
+
+}
+
+.cta .cta-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 72px;
+  margin-top: 125px;
+  text-align: center;
+  padding: 0px 75px;
+  margin-left: 50px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 13px;
+  margin-left: 4px;
+  padding: 5px 40px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: inline-block;
+  margin-top: 72px;
+  margin-left: 7px;
+}
+
+.main-content {
+	display: flex;
+	flex-wrap: wrap;
+  border-top: 1px solid black;
+  margin-top: 75px;
+  padding-top: 39px;
+  width: 100%;
+}
+
+.main-content h4 {
+	font-size: 1.6rem;
+}
+
+.main-content .top-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-content .top-content .text-content {
+  width: 50%;
+}
+
+.main-content .text-content p {
+	margin-top: 18px;
+	font-size: 1.6rem;
+}
+
+.middle-image {
+    width: 100%;
+    height: 182px;
+    margin-top: 33px;
+    background-size: contain;
+}
+
+.main-content .bottom-content {
+  margin-top: 33px;
+  width: 100%;
+  display: flex;
+	justify-content: space-between;
+}
+
+.main-content .bottom-content .text-content {
+  width: 33%;
+}
+
+.main-content .bottom-content .text-content p {
+	font-size: 1.682rem;
+}
+
+.contact {
+  margin-top: 46px;
+  border-top: 1px solid black;
+  font-size: 2.5em;
+  width: 100%;
+  padding-top: 37px;
+}
+
+.contact p {
+  margin: 16px 0;
+}
+
+footer {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+    	height: auto;
+    	height: 344px;
+    }
+
+    .cta .cta-text {
+        width: 100%;
+        font-size: 11.7em;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta .cta-text button{
+    	margin-top: 10px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+    	margin-top: 45px;
+    	display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header .logo_container {
+    	height: 37.5px;
+        width: 100%;
+    }
+
+    header .logo_container img{
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-top: 73px;
+    }
+
+    .main-content h4 {
+    	margin-bottom: 2px;
+    }
+
+    .main-content .top-content {
+    	width: 94%;
+        display: flex;
+    	justify-content: space-around;
+    	margin-left: auto;
+    	margin-right: auto;
+    	line-height: 17px;
+    }
+
+    .main-content .top-content .text-content {
+    	width: 48%;
+    }
+
+    .main-content .top-content .text-content p {
+    	font-size: 2.612em;
+    }
+
+    .main-content .bottom-content {
+    	margin-top: 7px;
+    	display: flex;
+    	justify-content: space-around;
+    	width: 95%;
+    	margin-left: auto;
+    	margin-right: auto;
+    	border-bottom: 1px black solid;
+    	padding-bottom: 33px;
+    }
+
+    .main-content .bottom-content .text-content {
+    	font-size: 2.612rem;
+    	width: 30%;
+    	line-height: 1.8rem;
+    }
+
+    .main-content .bottom-content .text-content h4 {
+    	margin-bottom: 0px;
+    	line-height: 1em;
+    }
+
+    .contact {
+    	margin-top: 35px;
+    	padding-top: 0px;
+    	width: 92%;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 0 3em 0;
+    }
+
+    header nav a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 6.1rem;
+        border-bottom: 1px solid black;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    header .logo_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7.6rem;
+        order: -1;
+        border-bottom: 1px solid black;
+        margin: 0px;
+    }
+
+    header .logo_container .logo {
+    	height: 36px;
+    }
+
+    .cta {
+    	height: 376px;
+    	margin: 0 auto;
+    	width: 91%;
+    }
+
+    .cta .cta-text {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 7.2rem;
+        text-align: center;
+        margin-top: 33px;
+        align-content: center;
+      }
+
+    .cta .cta-text button {
+        background: white;
+        vertical-align: top;
+        margin-top: 1rem;
+        padding: 2px 25px;
+        font-size: 16px;
+        border: 1px solid black;
+        cursor: pointer;
+        width: 170px;
+        height: 32px;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .cta {
+        border-bottom: black solid 2px;
+        height: auto;
+        padding-bottom: 44px;
+    }
+
+    .main-content {
+        width: 97%;
+        border: none;
+        margin: 12px auto 0 auto;
+    }
+
+    .main-content h4 {
+        font-size: 1.6rem;
+    }
+
+    .main-content .top-content {
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .main-content .top-content .text-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-content .top-content .text-content p{
+        margin-top: 16px;
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    .main-content .top-content div:nth-child(2) {
+    	margin-top: 38px;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        width: 95%;
+        flex-wrap: wrap;
+        margin-top: 28px;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        margin-bottom: 63px;
+        margin-top: 0;
+      }
+
+    .main-content .bottom-content .text-content:nth-child(3) {
+        margin-bottom: 0px;
+    }
+
+    .text-content {
+        flex-wrap: wrap;
+        margin: 1.2em 0;
+        width: 100%;
+    }
+
+    .main-content p {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .middle-image {
+        margin-right: auto;
+        margin-left: auto;
+        width: 95%;
+        height: auto;
+        margin-top: 38px;
+    }
+
+    .middle-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact {
+        margin-top: 0px;
+        padding-top: 35px;
+    }
+
+}
