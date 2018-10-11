@@ -1,5 +1,4 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -57,6 +56,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,30 +64,39 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+h1{
+	font-size: 3rem;
+}
+p {
+	font-size: 1em;
+}
+
+
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
-	border: 1px solid red;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
-	border: 1px solid red;
+}
+header nav .nav-bar {
+	display: flex;
+	flex-direction: row;
 }
 
 header nav .nav-bar a {
   display: flex;
   margin-right: 65px;
-  font-size: 14px;
   color: gray;
   text-decoration: none;
 	flex-direction: row;
 	justify-content: flex-start;
-	border: 1px solid red;
+	align-items: center;
 
 }
 
@@ -104,18 +113,18 @@ header nav .nav-bar a:last-child {
 }
 
 header nav .nav-bar-logo {
-  display: inline-block;
-  margin-top: 25px;
+  display: flex;
+	align-self: center;
+	justify-content: flex-end;
+	margin-left: 70px;
 }
 
 .top-intro .top-text {
   display: inline-block;
   vertical-align: top;
-  font-size: 77px;
   margin-top: 120px;
   text-align: center;
   padding: 0px 75px;
-	border: 1px solid red;
 }
 
 .top-intro .top-text button {
@@ -123,7 +132,6 @@ header nav .nav-bar-logo {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
-  font-size: 17px;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -203,7 +211,7 @@ header nav .nav-bar-logo {
 }
 
 .text-content-services {
-border: 1px solid black;
+ border: 1px solid black;
  display: flex;
  flex-wrap: wrap;
  width: 400px;
@@ -234,7 +242,6 @@ border: 1px solid black;
 	  vertical-align: top;
 		align-items: center;
 		flex-wrap: nowrap;
-		border: 1px solid red;
 	}
 	header nav .nav-bar {
 		display: flex;
@@ -252,6 +259,10 @@ border: 1px solid black;
 	.top-intro img {
 		display: none;
 	}
+	.top-content {
+		display: flex;
+		justify-content: space-between;
+	}
   .top-text {
 		align-self: center;
 		margin-top: 90px;
@@ -260,15 +271,11 @@ border: 1px solid black;
   .middle-bar {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column;
   }
-
-	.middle-img {
-		max-width: 100%
-		height: auto;
-	}
-
 	.bottom-content {
-		flex-direction: row;
+		display: flex;
+	 	justify-content: space-between;
 	}
 	.contact {
 		display: flex;
@@ -280,13 +287,33 @@ border: 1px solid black;
 	header nav {
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		align-items: center;
 		flex-wrap: wrap;
 	}
-	header nav .logo {
+	header nav .nav-bar-logo {
 		flex-direction: column-reverse;
-		flex
+		justify-content: center;
+		width: 100%;
+		border-bottom: 1px solid grey;
+		margin: 0 auto;
+		align-items: center;
+	}
+	header nav .nav-bar {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	header nav .nav-bar a {
+		border-bottom: 1px solid grey;
+		/* padding:  */
+		font-size: 24px;
+		font-weight: bold;
+		justify-content: center;
+	}
+	.top-content {
+		display: flex;
+		flex-direction: column;
 	}
 	.middle-bar {
 		max-width: 100%;
@@ -296,27 +323,25 @@ border: 1px solid black;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: center;
+		padding: 1% 1%;
 	}
 	.middle-img {
-		display: none;
+		display: flex;
 		flex-direction: column;
-		width: auto;
+		width: 100%;
 		height: auto;
-		flex-wrap: wrap;
 	}
-  .bottom-content .text-content {
+  .bottom-content {
+		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
   }
 	.contact {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
-		align-items: center;
 	}
 	.footer {
 		display: flex;
-		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
 	}
