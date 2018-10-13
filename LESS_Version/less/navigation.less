@@ -1,0 +1,49 @@
+// Navigation Styles here
+.nav-menu{
+
+  .row-centered();
+  margin-top: 30px;
+
+  .navigation {
+    .row-centered();
+      width: 65%;
+     
+    a {
+        .link-styling();
+        @media @phone {
+          width: 100%;
+          border-top: 1px solid black;
+          padding: 4%;
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+
+    @media @tablet {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: 41px 0 0 0;
+    }
+
+    @media @phone {
+      .column-centered();
+    }
+
+    }// navigation
+
+    .logo {
+      @media @phone {
+        width: 38%;
+        height: auto;
+        margin: 0;
+        padding-bottom: 0;
+      }
+    }
+
+  @media @tablet {
+    .column-centered();
+    flex-direction: column-reverse;
+  }
+
+}// nav-menu
