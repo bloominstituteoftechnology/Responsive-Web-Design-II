@@ -108,7 +108,7 @@ nav {
 }
 nav a {
     color: #bebebe;
-    padding: 0px 30px;
+    padding: 0px 20px;
     align-self: center;
     font-weight: bold;
     font-size: 1.6rem;
@@ -173,7 +173,6 @@ footer {
     margin-top: 128px;
     width: 302px;
     margin-left: 65px;
-    padding: 0px 17px;
 }
 .main header .intro-image {
     display: flex;
@@ -466,3 +465,4 @@ footer {
         flex-direction: column;
     }
 }
+
