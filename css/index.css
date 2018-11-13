@@ -230,7 +230,22 @@ footer {
 .services-content .card button:hover {
     background: black;
     color: white;
-} 
+
+    -webkit-animation: slide .5s ease-in-out;
+    -webkit-animation-fill-mode: forwards;  
+}
+
+@-webkit-keyframes slide {
+    0% { 
+        border: 1px solid whitesmoke;
+        background: linear-gradient(90deg, black, whitesmoke);
+    }
+    100% { 
+        padding: 10px 70% 10px 10%;
+        background: linear-gradient(90deg, black, whitesmoke);
+        border: 1px solid whitesmoke;
+    }
+}
 
 .services-content .services-info ul {
     margin: 5%;
@@ -264,6 +279,68 @@ footer {
 .services-content .services-info .services-info-img {
     width: 45%;
 }
+
+/* VISION PAGE */
+
+.vision-content .cta-text {
+	background-color: black;
+	color: white;
+    height: 341px;
+    margin-right: 1%;
+}
+
+.vision-content h1 {
+	padding-right: 9%;
+}
+
+.vision-content .main-content {
+	background-image: url(https://as2.ftcdn.net/jpg/00/94/57/87/500_F_94578712_zwodgNZU8utWqGh6LXwhJC9FfggVcA7R.jpg) ;
+	background-repeat: no-repeat;
+	background-size: 100% 90%;
+    background-position: center;
+}
+
+.vision-content .main-content h4 {
+	font-size: 2.4rem;
+}
+
+.vision-content .text-content {
+    border: 1px solid black;
+	width: 415px;
+	margin-bottom: 40px;
+	padding: 2%;
+	background-color: rgba(211, 211, 211, .8);
+	border: none;
+	width: 100%;
+}
+
+.vision-content .text-content:first-child {
+	margin-top: 30px;
+}
+
+.vision-content .vision-info {
+	margin: 40px 0 80px;
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vision-content .vision-info-text {
+	color: white;
+	background-color: black;
+    padding: 3%;
+    width: 50%;
+    margin-right: 10%;
+}
+
+.vision-content .vision-info-text ul {
+	padding: 5%;
+	line-height: 2;
+	list-style-type: square;
+}
+
+
 
 /* TABLET VIEW */
 
@@ -373,7 +450,48 @@ footer {
         margin: 20px 3% 0;
     }  
 
-}
+    .services-content .card button:hover {
+        background: black;
+        color: white;
+    
+        -webkit-animation: slide-tablet .2s ease-in-out;
+        -webkit-animation-fill-mode: forwards;  
+    }
+    
+    @-webkit-keyframes slide-tablet {
+        0% { 
+            border: 1px solid whitesmoke;
+            background: linear-gradient(90deg, whitesmoke, black);
+        }
+        100% { 
+            padding: 10px 10% 10px 60%;
+            background: linear-gradient(90deg, whitesmoke, black);
+            border: 1px solid whitesmoke;
+        }
+    }
+
+     /* VISION PAGE */
+
+    .vision-content .cta-text {
+        width: 100%;
+    }
+
+    .vision-content h1 {
+        padding-right: 0;
+    }
+
+    .vision-content .vision-info {
+        width: 100%;
+        
+    }
+
+    .vision-content .vision-info .vision-info-text,
+    .vision-content .vision-info .contact {
+        width: 45%;
+        margin-right: 0;
+    }
+
+
 
 /* MOBILE VIEW */
 
@@ -462,6 +580,42 @@ footer {
     .services-content .services-info {
         flex-direction: column;
         align-items: center;
+    }
+
+    .services-content .card button:hover {
+        background: black;
+        color: white;
+    
+        -webkit-animation: slide-tablet .2s ease-in-out;
+        -webkit-animation-fill-mode: forwards;  
+    }
+    
+    @-webkit-keyframes slide-tablet {
+        0% { 
+            border: 1px solid whitesmoke;
+            background: linear-gradient(90deg, black, whitesmoke);
+        }
+        100% { 
+            background: linear-gradient(90deg, black, whitesmoke);
+            border: 1px solid whitesmoke;
+        }
+    }
+
+         /* VISION PAGE */
+
+    .vision-content h1 {
+        padding-right: 0;
+    }
+
+    .vision-content .vision-info {
+        flex-direction: column;
+        
+    }
+
+    .vision-content .vision-info .vision-info-text,
+    .vision-content .vision-info .contact {
+        width: 90%;
+        margin-bottom: 40px;
     }
 
 }
