@@ -55,6 +55,9 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    
+    /* added trick to make it easier to understand rem and em */
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -99,11 +102,11 @@ General CSS
 .nav a {
 	text-decoration: none;
     color: rgba(0,0,0,.3);
-    margin-left: 67px;
+    margin-left: 2%;
 }
 
 .logo {
-    margin-right:85px;
+    margin-right: 2%;
 }
 
 button {
@@ -138,7 +141,7 @@ footer {
 	justify-content: space-between;
 	
 
-	margin-top: 7%;
+	margin-top: 8%;
 }
 
 .cta-text {
