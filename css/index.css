@@ -85,57 +85,61 @@ nav{
     justify-content: space-between;
 
 }
-
 section nav a{
     padding: 0 19% 0 0;
     text-decoration: none;
     font-size: 1.6rem;
     color: gray;
 }
-section a img{
-    /* padding: 25px 0%; */
-}
   /***HEADER***/
-header {
-    border: none;
+.container header{
+    padding: 5% 0 9%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
 }
+
 header .left-content{
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
     text-align: center;
+    align-content: flex-end;
+    width: 100%;
  }
-.container .left-content h1 {
-    font-size: 5em;
+ header .right-content{
+     align-content: flex-end;
+ }
+ header .right-content img{
+     height: auto;
+ }
+header .left-content h1 {
+    font-size: 7rem;
 }
 header .left-content a{
-
     margin: 2% auto 0;
     border: 1px solid grey;
     text-decoration: none;
     color: grey;
-    padding: 3% 20%;
-    
-}
-  .container header{
-    flex-direction: row;
-    margin: 0 auto;
-    justify-content: center;
-    padding: 10% 0 10%;
+    padding: 7px 10%;
+    font-size: 1.6rem;
 }
 
+
+
+
+/* Main Content */
 .main-content img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 .main-content{
     margin: 0 auto;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    width: 95%;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .main-content .top-content{
     display: flex;
@@ -157,6 +161,8 @@ header .left-content a{
 .main-content div {
    margin: 2% 0;
 }
+
+
 /* ADDRESS */
 address{
     padding: 7% 0 0;
