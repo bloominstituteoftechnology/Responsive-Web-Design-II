@@ -265,3 +265,37 @@ header .logo {
           width: 500px;
       }
   }
+
+  .main-content .top-content{
+      display: flex;
+      flex-direction: column;
+      
+      
+}
+
+.main-content .top-content .text-content h4{
+margin: 20px;
+}
+.main-content .top-content .text-content {
+    margin: 15px;
+    }
+
+  .main-content .bottom-content{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  .main-content .bottom-content .text-content h4{
+    margin: 20px;
+    }
+    .main-content .bottom-content .text-content {
+        margin: 20px;
+        width: 400px;
+        }
+
+.main-content .middle-img{
+    width: 450px;
+    margin-left: 20px;
+}
