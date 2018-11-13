@@ -1,4 +1,3 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -68,71 +67,95 @@ html{
 .flex{
     display: flex;
 }
-a{
-    text-decoration: none;
-}
-/* NAVIGATION */
 .container{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
     flex-direction: column;
 }
+    
+/***NAVIGATION***/
 .navigation{
-    flex-direction: column-reverse;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0;
 }
 nav{
-    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
-nav a {
-    width: 100%;
-    padding: 20px;
-    border-top: 1px solid grey;
+
+section nav a{
+    padding: 0 19% 0 0;
     text-decoration: none;
-    color: grey;
+    font-size: 1.6rem;
+    color: gray;
 }
-.navigation img{
-    padding: 3.5% 0;
+section a img{
+    /* padding: 25px 0%; */
 }
-/*HEADER*/
-header{
-    border-top: 1px solid grey;
+  /***HEADER***/
+header {
+    border: none;
 }
 header .left-content{
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
+    padding: 40px;
     text-align: center;
-    padding: 10% 0 15%;
  }
-header h1{
-    font-size: 4em;
+.container .left-content h1 {
+    font-size: 5em;
 }
-header a{
+header .left-content a{
+
     margin: 2% auto 0;
-    border: 1px solid black;
-    padding: 1.5% 7.5%;
-    color: black;
+    border: 1px solid grey;
+    text-decoration: none;
+    color: grey;
+    padding: 3% 20%;
+    
 }
-header img{
-    display: none;
+  .container header{
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10% 0 10%;
 }
-/* MAIN-CONTENT*/
+
+.main-content img{
+    width: 100%;
+    margin: 0 auto;
+}
 .main-content{
     margin: 0 auto;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: 5% 0 0;
     width: 95%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.main-content div{
-    margin: 10% 0;
+.main-content .top-content{
+    display: flex;
+    justify-content: space-between;    
+}
+.top-content .text-content{
+    width: 48%;
+}
+.main-content .bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-content .text-content{
+    width: 30%;
 }
 .main-content p{
-    width: 95%;
-}
-.main-content img{
     width: 100%;
-    margin: 0 auto;
+}
+.main-content div {
+   margin: 2% 0;
 }
 /* ADDRESS */
 address{
@@ -148,109 +171,128 @@ address div{
 footer{
     margin: 5% auto;
 }
-/*  MEDIA QUERIES */
 
-/* SINGLE COLUMN CARD LAYOUT & Formatting bottom DIV*/
+/* Tablet View */
 
-@media only screen and (min-width: 500px){
-    /***NAVIGATION***/
+@media only screen and (max-width: 800px){
     .navigation{
+        flex-direction: column-reverse;
+        text-align: center;
         margin: 0 auto; 
         width: 100%;
     }
    nav{
+       width: 100%;
        flex-direction: row;
        justify-content: space-around;
+       flex-wrap: wrap;
    }
    nav a{
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid grey;
+        text-decoration: none;
+        color: grey;
        border: none;
        width: 15%;
     }
-    /***HEADER***/
-    header {
-        border: none;
+    .navigation img{
+        padding: 4% 0;
     }
-    header .left-content{
-        flex-direction: column;
-        justify-content: center;
-        padding: 40px;
-     }
-    .container .left-content h1 {
-        font-size: 5em;
+    /***HEADER***/
+    .container header{
+        padding: 8% 0 10%;
+    }
+    header .left-content h1{
+        font-size: 4em;
     }
     header .left-content a{
-        padding: 1% 7.5%;
+        margin: 2% auto 0;
+        border: 1px solid black;
+        padding: 1.5% 7.5%;
+        color: black;
+    }
+    header img{
+        display: none;
     }
     /***MAIN CONTENT***/
-    .main-content{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .main-content .top-content{
-        display: flex;
-        justify-content: space-between;    
-    }
-    .top-content .text-content{
-        width: 48%;
-    }
-    .main-content .bottom-content{
-        display: flex;
-        justify-content: space-between;
-    }
-    .bottom-content .text-content{
-        width: 30%;
-    }
-    .main-content p{
-        width: 100%;
-    }
     .main-content div {
         margin: 3% 0;
     }
 }
-
-@media only screen and (min-width: 800px) {
+/* Mobile View */
+@media only screen and (max-width: 500px){
     .container{
-        width: 95%;
-        margin: 0 auto;
+        flex-direction: column;
     }
-    /***NAVIGATION***/
     .navigation{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
     }
     nav{
-        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
-    nav a{
-        width: 16%;
-        padding: 30px;
-     }
-     /***HEADER***/
-     .container header{
-         flex-direction: row;
-         margin: 0 auto;
-         justify-content: center;
-         padding: 10% 0 10%;
-     }
-     header .left-content{
+    nav a {
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid grey;
+        text-decoration: none;
+        color: grey;
+    }
+    .navigation img{
+        padding: 20px;
+    }
+    /*HEADER*/
+    header{
+        border-top: 1px solid grey;
+        width: 100%;
+    }
+    header .left-content{
         flex-direction: column;
         justify-content: center;
-        padding: 40px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10% 0 15%;
      }
-     header img{
-         display: inline-block;
-     }
-     header .left-content a{
-         padding: 3% 20%;
-     }
-     /***MAIN CONTENT***/
-     .main-content {
-         padding: 0;
-     }
-     .main-content div {
-        margin: 2% 0;
+    header h1{
+        font-size: 4em;
+    }
+    header a{
+        margin: 2% auto 0;
+        border: 1px solid black;
+        padding: 1.5% 7.5%;
+        color: black;
+    }
+   
+    /* MAIN-CONTENT*/
+    .main-content{
+        margin: 0 auto;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5% 0 0;
+        width: 95%;
+        flex-direction: column;
+    }
+    .main-content .top-content{
+        flex-direction: column;
+    }
+    .main-content .bottom-content{
+        flex-direction: column;
+    }
+    .main-content .top-content .text-content{
+        width: 100%;
+    }
+    .main-content .bottom-content .text-content{
+        width: 100%;
+    }
+    .main-content div{
+        margin: 10% 0;
+    }
+    .main-content p{
+        width: 95%;
+    }
+    .main-content img{
+        width: 100%;
+        margin: 0 auto;
     }
 }
-
