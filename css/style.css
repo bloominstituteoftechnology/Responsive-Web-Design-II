@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5 {
 img.logo-link:empty {
     width: 100%;
     height: auto;
+    margin-right:
 }
 
 .container > header > div.home-header {
@@ -213,11 +214,13 @@ header {
 .grouping-container {
     display: flex;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: 15.5px auto;
+    font-size: 1.6rem;
 }
 
 .grouping-container > section {
-    margin: 0 20px;
+    margin: 0 1%;
+    line-height: 1.15;
 }
 
 .middle-img {
