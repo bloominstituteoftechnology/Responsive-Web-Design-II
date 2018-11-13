@@ -394,3 +394,48 @@ footer {
     margin-top: 20px;
   }
 }
+
+.animate-left {
+  position: relative;
+  animation: animateleft 1s;
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.animate-right {
+  position: relative;
+  animation: animateright 1s;
+}
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.animate-top {
+  position: relative;
+  animation: animatetop 1s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
