@@ -383,77 +383,40 @@ address .add3 {
 /* -------------------Media Queries----------------- */
 @media (max-width: 800px) {
 	/* ----------------Home Page------------------------- */
-	.title {
-		margin: 18px 0 20px;
-	}
-
-	#home {
-		margin: 0 auto;
-	}
-
-	#home header {
-		margin-bottom: 73px;
+	.container {
+		margin: 0 2%;
+		/* max-width: 95%; */
 	}
 
 	#home header nav {
+		display: flex;
+		justify-content: space-between;
 		flex-wrap: wrap;
-		justify-content: space-around;
 	}
 
-	#home header nav .logo {
+	#home header nav div {
 		order: -1;
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		margin: 5px 0 38px;
+		margin-bottom: 38px;
+		padding-left: 4%;
 	}
 
 	#home .first-section {
 		justify-content: center;
 	}
 
-	#home .first-section p:nth-child(3) {
-		margin-bottom: 30px;
-	}
-
-	#home .first-section .button {
-		margin-bottom: 15px;
+	#home .first-section div {
+		padding: 0 0 1% 4.4%;
 	}
 
 	#home .first-section img {
 		display: none;
 	}
 
-	#home .main-section .main-top {
-		margin: 20px 0 5px;
-	}
-
-	#home .main-section .main-top div {
-		width: 42%;
-	}
-
-	#home .main-section .main-middle {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		margin-top: 10px;
-	}
-
-	#home .main-section .main-middle img {
-		height: 158px;
-	}
-
-	#home .main-section .main-bottom {
-		align-items: flex-start;
-	}
-
-	#home .main-section .main-bottom div {
-		width: 28%;
-	}
-
-	#home address {
-		padding-left: 30px;
-		margin-bottom: 30px;
+	#home .main-section {
+		margin: 70px 0 34px;
 	}
 
 	/* ----------------Services Page--------------------- */
