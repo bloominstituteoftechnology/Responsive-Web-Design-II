@@ -177,11 +177,34 @@ p {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+  animation-name: fadeinfromblack;
+  animation-duration: 1.2s;
+  animation-fill-mode: backwards;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+@keyframes fadeinfromblack {
+  from {
+    opacity: 0;
+    background: black;
+  }
+  to {
+    opacity: 1;
+    background: white;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Navbar Styles */
@@ -357,10 +380,16 @@ _ .nav__links__link:hover {
 }
 
 @media (min-width: 500px) {
+  .website__container {
+    animation: none;
+  }
+
   .home__header__title {
     padding-bottom: 75px;
     border-bottom: 1px solid black;
     margin: 0 2.5%;
+    animation-name: fadein;
+    animation-duration: 4s;
   }
 
   .home__header__title__h1 {
@@ -433,6 +462,7 @@ _ .nav__links__link:hover {
     padding-bottom: 0;
     border-bottom: 0;
     margin: 61px 0 0 14.5%;
+    animation: none;
   }
 
   .home__header__title__h1 {
@@ -452,19 +482,10 @@ _ .nav__links__link:hover {
     padding: 7px 15%;
   }
 
-  @keyframes imgfadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
   .home__header__img__wrapper {
     margin-top: 60px;
     display: inline-block;
-    animation-name: imgfadein;
+    animation-name: fadein;
     animation-duration: 4s;
   }
 
