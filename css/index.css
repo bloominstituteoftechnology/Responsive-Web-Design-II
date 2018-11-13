@@ -75,8 +75,7 @@ html{
 }
 h2{
     font-size: 1.6rem;
-}
-    
+}    
 /***NAVIGATION***/
 .navigation{
     flex-direction: row;
@@ -160,7 +159,6 @@ header .left-content a{
     padding: 0 3% 0 0;
     line-height: .5;
 }
-
 /* ADDRESS */
 address{
     margin: 35px 0 0;
@@ -175,9 +173,7 @@ footer{
     font-size: 1.6rem;
     margin: 20px auto 35px;
 }
-
 /* Tablet View */
-
 @media only screen and (max-width: 800px){
     .navigation{
         flex-direction: column-reverse;
@@ -186,22 +182,20 @@ footer{
         width: 100%;
     }
    nav{
-       width: 100%;
        flex-direction: row;
        justify-content: space-around;
        flex-wrap: wrap;
+       width: 100%;
    }
-   nav a{
-        width: 100%;
-        padding: 20px;
+   section nav a{
+        padding: 37px 2% 0px 0;
         border-top: 1px solid grey;
         text-decoration: none;
         color: grey;
-       border: none;
-       width: 15%;
+        border: none;
     }
     .navigation img{
-        padding: 4% 0;
+        padding: 5px 0 0 15px;
     }
     /***HEADER***/
     .container header{
