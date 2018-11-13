@@ -469,78 +469,29 @@ address .add3 {
 /* -------Phone View---------------------- */
 @media (max-width: 500px) {
 	#home header {
-		margin: 15px 0 30px;
+		margin: 11px 0 29px;
 	}
 
 	#home header nav {
 		flex-direction: column;
-		display: flex;
-		align-content: center;
+	}
+
+	#home header nav div {
+		margin: 36px 0 10px;
+		padding-left: 7%;
+	}
+
+	#home header nav div a {
+		padding-bottom: 0;
 	}
 
 	#home header nav a {
-		font-size: 20px;
-		width: 100%;
-		border-bottom: 1px solid black;
-		padding-bottom: 20px;
-		align-self: center;
-		margin-bottom: 20px;
-		padding-left: 43%;
+		font-size: 2rem;
+		padding-bottom: 41px;
 	}
 
-	header nav a:hover {
-		color: #0b98f7;
+	#home header nav a:hover {
 		transform: none;
-	}
-
-	#home header nav a.logo {
-		padding-bottom: 20px;
-		margin-bottom: 20px;
-		padding-left: 0;
-	}
-
-	#home .first-section {
-		padding-bottom: 60px;
-	}
-
-	#home .main-section .main-top {
-		flex-direction: column;
-		padding: 0 20px;
-	}
-
-	#home .main-section .main-top div {
-		width: 100%;
-		line-height: 1.2;
-		margin-bottom: 20px;
-	}
-
-	#home .main-section .main-middle {
-		margin-bottom: 27px;
-	}
-
-	#home .main-section .main-middle img {
-		height: 98px;
-		margin-top: 14px;
-		margin-bottom: 13px;
-	}
-
-	#home .main-section .main-bottom {
-		flex-direction: column;
-		margin: 0;
-		padding: 0 20px;
-	}
-
-	#home .main-section .main-bottom div {
-		width: 100%;
-		margin-bottom: 48px;
-	}
-
-	#home .main-section .main-bottom div:nth-child(3) {
-		margin-bottom: 20px;
-	}
-
-	#home address {
-		margin-top: 35px;
 	}
 }
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
