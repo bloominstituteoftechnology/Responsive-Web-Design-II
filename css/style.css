@@ -226,22 +226,23 @@ header {
 .middle-img {
     width: 100%;
     height: auto;
-    margin: 25px 0;
+    margin: 17px 0;
 }
 
 footer {
+    font-size: 1.4rem;
     width: 100%;
-    margin-top: 30px;
     border-top: 1px solid black;
-    padding-top: 30px;
+    padding-top: 35px;
+    margin-top: 35px;
 }
 
 footer > .contact-info {
-    margin-left: 2.5%;
+    margin-left: 1%;
 }
 
 footer > .contact-info > address {
-    line-height: 1.15;
+    line-height: 1.175;
 }
 
 footer > div.copyright-section {
