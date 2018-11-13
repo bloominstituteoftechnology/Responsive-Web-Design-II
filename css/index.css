@@ -80,23 +80,22 @@ img {
 
 /* Header Styles */
 .nav-container {
-    margin-top: 5px;
-}
-
-header {
+    margin-top: 0.25%;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 4.5%;
+    padding-right: 5%;
     width: 75%;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
 }
 
 header nav a {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     font-weight: bold;
     text-decoration: none;
     color: #b0b0b0;
@@ -108,7 +107,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 15% 0 0 25%;
 }
 
 /* Call To Action (CTA) Styles */
@@ -117,6 +116,7 @@ header .logo {
     display: flex;
     margin-top: 72px;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .cta .cta-text {
@@ -297,7 +297,7 @@ footer p {
     .cta {
         align-items: center;
         justify-content: center;
-        margin-left: 50px;
+        margin-left: 7%;
     }
 
     .cta img {
@@ -312,7 +312,7 @@ footer p {
 /* Mobile */
 @media (max-width:500px) {
     .container {
-        width: 100%
+        width: 100%;
     }
 
     header nav {
@@ -344,6 +344,11 @@ footer p {
      header .logo {
         margin: 0;
         padding: 20px 0;
+    }
+
+    .cta {
+        align-items: center;
+        justify-content: center;
     }
 
     .main-content {
