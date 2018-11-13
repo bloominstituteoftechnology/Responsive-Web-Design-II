@@ -519,11 +519,16 @@ address .add3 {
 
 	#home .main-section .main-bottom {
 		display: block;
+		margin-bottom: 35px;
 	}
 
 	#home .main-section .main-bottom div {
 		width: 100%;
 		margin-bottom: 63px;
+	}
+
+	#home .main-section .main-bottom .third {
+		margin-bottom: 0;
 	}
 
 	#;
