@@ -186,20 +186,20 @@ a {
 
 /* Navbar Styles */
 
-nav {
+.nav {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
 
-nav .nav_links {
+.nav_links {
   display: flex;
   flex-direction: column;
   margin-top: 18px;
   width: 100%;
 }
 
-nav .nav_links a {
+.nav_links_link {
   display: flex;
   justify-content: center;
   border-top: 1px solid black;
@@ -211,73 +211,69 @@ nav .nav_links a {
   font-weight: bold;
 }
 
-nav .nav_links a:last-child {
+.nav_links_link:last-child {
   border-bottom: 1px solid black;
 }
 
-nav .nav_links a:hover {
+.nav_links_link:hover {
   background: black;
   color: white;
 }
 
-nav .logo_link_wrapper {
+.logo_link_wrapper {
   width: 18.1rem;
   margin-top: 20px;
 }
 
 @media (min-width: 500px) {
-  nav .logo_link_wrapper {
+  .logo_link_wrapper {
     margin-top: 30px;
   }
 
-  nav .nav_links {
+  .nav_links {
     flex-direction: row;
     justify-content: space-around;
     margin-right: 4%;
   }
 
-  nav .nav_links a {
+  .nav_links_link {
     border: 0;
     font-size: 1.5rem;
   }
 
-  nav .nav_links a:last-child {
+  .nav_links_link:last-child {
     border: 0;
   }
 }
 
 @media (min-width: 800px) {
-  nav {
+  .nav {
     flex-direction: row;
   }
 
-  /* html {
-    background: lightgrey;
-  } */
-
-  nav .nav_links {
+  .nav_links {
     justify-content: space-between;
     margin-right: 10%;
     margin-top: 20px;
   }
 
-  nav .nav_links a:hover {
+  .nav_links_link:hover {
     background: white;
     color: black;
   }
 
-  nav .logo_link_wrapper {
+  .logo_link_wrapper {
     width: 27rem;
     margin-top: 20px;
   }
 }
 
 /* Home Page Styles */
-header {
+.home_header {
   width: 100%;
 }
 
-header .header-title {
+.home_header_title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -286,7 +282,7 @@ header .header-title {
   margin: 0 4%;
 }
 
-header .header-title h1 {
+.home_header_title_h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,25 +290,25 @@ header .header-title h1 {
   font-size: 7.1rem;
 }
 
-header .header-title h1 span {
+.home_header_title_h1--spacing {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-header .header-title a {
+.home_header_link {
   margin-top: 12px;
   font-size: 1.7rem;
   border: 1px solid black;
   padding: 7px 9.5%;
 }
 
-header .header-title a:hover {
+.home_header_link:hover {
   color: white;
   background: black;
 }
 
-header .header-img {
+.home_header_img_wrapper {
   display: none;
 }
 
@@ -362,17 +358,17 @@ footer {
 }
 
 @media (min-width: 500px) {
-  header .header-title {
+  .home_header_title {
     padding-bottom: 75px;
     border-bottom: 1px solid black;
     margin: 0 2.5%;
   }
 
-  header .header-title h1 {
+  .home_header_title_h1 {
     margin-top: 53px;
   }
 
-  header .header-title a {
+  .home_header_link {
     padding: 7px 5.8%;
   }
 
@@ -428,37 +424,37 @@ footer {
 }
 
 @media (min-width: 800px) {
-  header {
+  .home_header {
     display: flex;
     justify-content: space-between;
     padding-bottom: 75px;
     border-bottom: 1px solid black;
   }
 
-  header .header-title {
+  .home_header_title {
     padding-bottom: 0;
     border-bottom: 0;
     margin: 61px 0 0 14.5%;
   }
 
-  header .header-title h1 {
+  .home_header_title_h1 {
     font-size: 7.2rem;
   }
 
-  header .header-title h1 span {
+  .home_header_title_h1--spacing {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  header .header-title a {
+  .home_header_link {
     margin-top: 9px;
     font-size: 1.7rem;
     border: 1px solid black;
     padding: 7px 15%;
   }
 
-  header .header-img {
+  .home_header_img_wrapper {
     margin-top: 60px;
     display: inline-block;
   }
