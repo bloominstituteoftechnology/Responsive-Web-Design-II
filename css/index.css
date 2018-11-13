@@ -129,7 +129,7 @@ General CSS
 
         width: 100%;
         font-size: 1.2rem;
-        margin-right: 10%;
+        margin-right: 6%;
         
     }
 
@@ -272,6 +272,28 @@ footer {
 
 .bottom-content .text-content {
 	width: calc(100%/3 - 1%);
+}
+
+
+@media (max-width:800px) {
+    .main-content {
+        padding: 2% 0;
+    }
+
+    .middle-img {
+        max-width: 100%;
+        height: auto;
+
+        margin-top: 4%;
+    }
+
+    .top-content {
+        padding: 3% 0;
+    }
+
+    .bottom-content {
+        padding: 5% 0;
+    }
 }
 
 /* contact section */
