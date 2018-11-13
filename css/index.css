@@ -398,7 +398,7 @@ html {
 
   h1 {
     font: bold;
-    font-size: 45pt;
+    font-size: 6.0rem;
     width: 48%;
   }
 
@@ -566,7 +566,6 @@ html {
   .container div.big div.title {
     display: flex;
     flex-direction: column;
-    width: 33%;
     text-align: center;
   }
 
@@ -583,6 +582,7 @@ html {
   h1 {
     font: bold;
     font-size: 7.6rem;
+    margin-bottom: 0;
   }
 
   div.service-text h2 {
@@ -641,20 +641,20 @@ html {
 
   .container section div.content div.words div.halves1 {
     margin: 0 20px 0 0;
-    width: 445px;
+    width: 50%;
   }
 
   .container section div.content div.words div.halves2 {
-    width: 430px;
+    width: 48%;
   }
 
   .container section div.content div.words div.thirds {
     margin: 0 25px 0 0;
-    width: 280px;
+    width: 30%;
   }
 
   .container section div.content div.words div.lastthirds {
-    width: 280px;
+    width: 30%;
   }
 
   .middle-img {
