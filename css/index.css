@@ -68,7 +68,6 @@ html{
 	width: 880px;
 	margin: 0 auto;
 	padding-top: 100px;
-
 }
 hr{
 	width: 100%;
@@ -79,6 +78,9 @@ h1{
     font-size: 4rem;
     word-spacing: 50rem;
 	
+}
+h2{
+	font-size:4rem;
 }
 h3{
     font-size: 2.5rem;
@@ -191,15 +193,10 @@ footer p{
 
 
 /* Services  css */
-.services-header-img{
-	width: 100%;
-}
+
 .services-section{
 	margin-top: 40px;
 	margin-bottom: 40px;
-}
-.services-section h1{
-	font-size: 2em;
 }
 
 .services-card{
@@ -216,18 +213,19 @@ footer p{
 	justify-content: flex-start;
 	border: 1px solid black;
 	flex: 0 45%;
-	padding: 20px;
 	margin: 20px;
 	width: 100%;
-	height: 240px;
+	height: auto;
 	background: rgb(248, 248, 248);
 }
+
 .services-card section p{
 	margin-bottom: 10px;
 }
 
 .services-card section button{
 	padding: 5px 35px;
+	margin: 10px;
 	background-color: white;
 	border: 1px solid black;
 	border-radius: 6px;
