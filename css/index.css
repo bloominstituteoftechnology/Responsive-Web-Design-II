@@ -187,6 +187,46 @@ nav a:hover{
     border: none;
 }
 
+.contact-master-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    /* border: 1px solid red; */
+    flex-grow: 1;
+}
+
+.side-info{
+    /* border: 1px solid red; */
+    flex-grow: 1;
+}
+
+.contact-flex-cont{
+    display: flex;
+    
+}
+
+.input-block{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 10px;
+    /* border: 1px solid blue; */
+}
+
+.subject-message-cont{
+    padding: 0 10px;
+}
+
+.subject{
+    width: 100%;
+}
+
+.message{
+    width: 100%
+}
+
 /* Media Queries */
 
 @media (max-width: 800px){
