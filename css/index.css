@@ -71,49 +71,41 @@ h1, h2, h3, h4, h5 {
 
 /* TAG SELECTORS */
 
+html {
+	/* Repsonsive font-sizing: 1rem = 10px */
+	font-size: 62.5%;
+}
+
 body {
-	width: 900px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
 h1 {
-	font-size: 70px;
-	letter-spacing: 5px;
+	font-size: 7.0rem;
+	letter-spacing: 3px;
 }
 
 h2 {
-	font-size: 28px;
+	font-size: 2.8rem;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 p {
 	line-height: 1.25;
+	font-size: 1.6rem;
 }
 
-nav {
-	margin: 32px auto;
-	text-align: center;
-}
-
-nav a {
-	text-decoration: none;
-	padding: 0 30px;
-	color: lightgrey;
-}
-
-nav a:hover {
-	color: #2d3235;
-}
 
 button {
 	background: white;
 	border: 1px solid black;
-	padding: 8px 50px;
-	margin-top: 5px;
-	font-size: 16px;
+	padding: 6px 40px;
+	margin: 5px 0 0 20px;
+	font-size: 1.6rem;
 }
 
 button:hover {
@@ -137,8 +129,7 @@ address {
 }
 
 footer {
-	height: 50px;
-	margin-top: 30px;
+	margin: 30px;
 	text-align: center;
 	font-size: 14px;
 }
@@ -147,20 +138,27 @@ footer {
 /* GLOBAL CLASS SELECTORS */
 
 .top-nav {
-	height: 80px;
 	display: flex;
-}
-
-.logo {
-	right: 0;
+	align-items: center;
+	justify-content: space-between;
 	margin: 20px 0;
-	padding-right: 10px;
 }
 
-/* 
-.logo-image {
-	background-image: url("/img/header-img.png");
-} */
+.top-nav nav {
+	display: flex;
+	justify-content: start;
+}
+
+.top-nav nav a {
+	text-decoration: none;
+	padding-right: 60px;
+	color: lightgrey;
+	font-size: 1.6rem;
+}
+
+.top-nav nav a:hover {
+	color: #2d3235;
+}
 
 
 /* HOME PAGE CLASS SELECTORS */
@@ -168,18 +166,18 @@ footer {
 .main-banner {
 	border-bottom: 1px solid black;
 	display: flex;
-	justify-content: space-evenly;
 	align-items: center;
-	padding: 60px 0;
+	padding: 60px 0 80px 0;
 	text-align: center;
 }
 
 .title-block {
-	padding-right: 20px;
+	margin: 0 110px;
 }
 
-.middle-img {
-	width:  100%;
+img {
+	width: 100%;
+	height: auto;
 }
 
 .parent-container {
@@ -255,7 +253,7 @@ footer {
 	.top-nav {
 		flex-direction: column-reverse;
 		align-items: center;
-		height: 140px;
+		/* height: 140px; */
 	}
 
 	.logo {
