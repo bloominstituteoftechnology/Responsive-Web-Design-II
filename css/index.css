@@ -371,17 +371,21 @@ footer {
 
 @media (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
   }
-  header nav {
+  .header nav {
     flex-direction: column;
     text-align: center;
+    width: 100%;
   }
   header nav a {
     padding: 2%;
     border-bottom: 1px solid grey;
+  }
+  .main-content {
+    padding: 3%;
   }
   .top-content,
   .bottom-content {
