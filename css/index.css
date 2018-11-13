@@ -62,6 +62,10 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+h1 {
+    font-size: 8rem;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -93,19 +97,27 @@ h1, h2, h3, h4, h5 {
 
 .main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 	text-align: center;
-	align-items: center;
+    align-items: center;
+    padding-bottom: 60px;
+    border-bottom: 2px black solid;
+    margin-top: 60px;
 }
 
 .main .main__section {
-
     text-align: center;
-
     width: 44%;
-    margin: 10px 2%;
+    margin: 10px 7%;
 }
 
+.main a{
+	border: 2px solid black;
+	padding: 3px 40px;
+	text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+}
 @media (max-width: 800px){
     .container{
         border: pink 5px solid;
