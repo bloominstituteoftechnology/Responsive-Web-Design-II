@@ -390,6 +390,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .container div.big img {
@@ -549,7 +550,7 @@ html {
   .container header img {
     position: relative;
     top: 20px;
-    left: 53%;
+    left: 8vw;
   }
 
   .container div.big {
@@ -559,7 +560,7 @@ html {
     align-items: center;
     width: 100%;
     margin: 90px 0 0px 0%;
-    padding: 0 0 73px 15%;
+    padding: 0 0 73px 4vw;
     border-bottom: 2px solid black;
   }
 
@@ -576,7 +577,7 @@ html {
     height: 76%;*/
     max-width: 100%;
     height: auto;
-    margin: 0 0 0 16%;
+    margin: 0 0 0 2vw;
   }
 
   h1 {
