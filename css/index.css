@@ -208,8 +208,8 @@ header nav a:hover {
 
 .cta .cta-text button {
 	margin-top: 5%;
-    background-color: dodgerblue;
-    padding: 3% 0;
+	background-color: dodgerblue;
+	padding: 3% 0;
 	height: 8%;
 	width: 60%;
 	border: 1px solid black;
@@ -267,6 +267,61 @@ footer {
 	margin: 3%;
 }
 
+@media (max-width: 800px) {
+	.container {
+		max-width: 800px;
+	}
+
+	header {
+		margin: 5% 0;
+		width: 100%;
+		flex-wrap: wrap-reverse;
+		justify-content: center;
+	}
+	header nav {
+		margin-top: 1.5%;
+		width: 100%;
+	}
+
+	header nav a {
+		margin: 1.5% 0;
+		padding-bottom: 3%;
+		width: 100%;
+		text-decoration: none;
+		color: grey;
+		text-align: center;
+	}
+	.cta img {
+		display: none;
+	}
+
+	.cta .cta-text {
+		margin: 0 auto;
+	}
+
+	.cta .cta-text h1 {
+		margin-top: 0;
+		font-size: 7rem;
+		text-align: center;
+	}
+	.cta .cta-text button {
+		margin-top: 1%;
+		background-color: white;
+		height: 18%;
+		width: 55%;
+		border: 1px solid black;
+		cursor: pointer;
+	}
+	.main-content {
+		margin: 3%;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+	.contact {
+		margin: 6% 2%;
+	}
+}
+
 @media (max-width: 500px) {
 	.container {
 		max-width: 500px;
@@ -311,19 +366,19 @@ footer {
 		margin-top: 0;
 		font-size: 7rem;
 		text-align: center;
-    }
-    
-    .cta .cta-text button {
-	margin-top: 1%;
-	background-color: white;
-	height: 18%;
-	width: 55%;
-	border: 1px solid black;
-	cursor: pointer;
-}
-.cta .cta-text button:hover {
-	color: cadetblue;
-}
+	}
+
+	.cta .cta-text button {
+		margin-top: 1%;
+		background-color: white;
+		height: 18%;
+		width: 55%;
+		border: 1px solid black;
+		cursor: pointer;
+	}
+	.cta .cta-text button:hover {
+		color: cadetblue;
+	}
 
 	.main-content {
 		margin: 2%;
@@ -350,10 +405,10 @@ footer {
 		margin: 6% 0;
 		display: flex;
 		flex-wrap: wrap;
-    }
-    .contact {
-	margin: 8% 2%;
-}
+	}
+	.contact {
+		margin: 8% 2%;
+	}
 }
 
 /* 
