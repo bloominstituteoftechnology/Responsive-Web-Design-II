@@ -370,6 +370,36 @@ footer {
   .middle-img-wrapper {
     margin: 30px 2.5% 0;
   }
+
+  .section-two {
+    margin: 31px 3.7% 0;
+    display: flex;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .section-two div {
+    margin-bottom: 0;
+    margin-right: 5.17%;
+    width: 29%;
+  }
+
+  .section-two div:last-child {
+    margin-right: 0;
+  }
+
+  address {
+    margin: 35px 4% 0;
+  }
+
+  address div {
+    font-size: 1.6rem;
+  }
+
+  address div span {
+    margin: 18px 0 14px;
+    display: inline-block;
+  }
 }
 
 @media (min-width: 800px) {
