@@ -206,8 +206,12 @@ header img {
 }
 
 .description h1 {
-	font-size: 24px;
+	font-size: 2.5rem;
 	font-weight: bold;
+}
+
+.description-content {
+    font-size: 1.6rem;
 }
 
 .services {
@@ -220,10 +224,10 @@ header img {
 .services-content {
 	background: #edeff2;
 	border: 1px solid black;
-	width: 420px;
-	height: 215px;
+	width: 48%;
 	padding: 20px;
-	margin-top: 40px;
+    margin-top: 40px;
+    font-size: 1.6rem;
 }
 
 .services-content h2 {
@@ -250,11 +254,13 @@ header img {
 	display: flex;
 	padding-top: 40px;
 	justify-content: space-between;
-	border-top: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 50px;
 }
 
 .facts-content {
-	width: 420px;
+    width: 420px;
+    font-size: 1.6rem;
 }
 
 .facts-content h2 {
@@ -352,6 +358,30 @@ header img {
         margin-top: 47px;
         padding: 37px 2%;
     }
+
+    .description {
+        width: 100%;
+        margin: 20px 2%;
+    }
+
+    .services {
+        justify-content: space-evenly;
+    }
+
+    .services-content {
+        width: 45%;
+        margin: 20px 0;
+    }
+
+    .facts {
+        justify-content: space-evenly;
+    }
+    
+    .facts-content {
+        width: 45%;
+        margin: 20px 0;
+    }
+
 
 }
 
