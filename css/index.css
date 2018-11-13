@@ -194,7 +194,8 @@ nav a:hover{
 }
 
 .contact-page h2{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 0px;
 }
 
 .contact-master-flex{
@@ -217,6 +218,22 @@ form input{
 form textarea{
     border: 1px solid #dddddd;
     border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.submit-btn{
+    display: inline-block;
+    font-size: 1.4rem;
+    border: 2px solid black;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.submit-btn:hover{
+    background-color: black;
+    color: white;
 }
 
 .side-info{
@@ -226,6 +243,29 @@ form textarea{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.side-info a{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+address{
+    margin-bottom: 20px;
+}
+
+.google-map-btn{
+    font-size: 1.4rem;
+    border: 2px solid black;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.google-map-btn:hover{
+    background-color: black;
+    color: white;
 }
 
 .contact-flex-cont{
@@ -245,6 +285,8 @@ form textarea{
 .contact-label{
     margin-bottom: 2px;
 }
+
+
 
 .subject-message-cont{
     padding: 0 10px;
