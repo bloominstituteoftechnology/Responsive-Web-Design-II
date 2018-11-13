@@ -196,20 +196,21 @@ h1, h2, h3, h4, h5 {
   /*Tablet view*/
   @media (max-width: 800px) {
 
-    .container {
-        width: 100%;
-    }
-
     header {
         flex-direction: column-reverse;
     }
 
     header nav {
         justify-content: space-evenly;
+        margin-top: 38px;
+        margin-left: 5%;
+    }
+    header nav a {
+        margin-right: 11%;
     }
 
     header .logo {
-        margin: 5% 0 0 39%;
+        margin: 4% 0 0 37%;
     }
 
     .mid-section {
@@ -221,31 +222,47 @@ h1, h2, h3, h4, h5 {
     }
 
     .mid-section .mid-text {
-        margin-top: 7%;
+        margin-top: 8%;
+        padding-left: 8%;
+        font-size: 7rem;
     }
 
     .main {
-        margin-top: 5%;
+        margin-top: 4.3%;
+        padding-top: 35px;
+        width: 97%
     }
 
     .main .top-content {
-        padding-left: 3%;
+        padding-left: 1.6%;
     }
     
     .main .top-content .text-content {
-        margin-right: 3%;
+        margin-right: 4%;
     }
 
     .main .middle-img {
         width: 100%;
+        margin-left: 0.5%;
+        margin-top: 36px;
     }
 
     .main .bottom-content {
-        padding-left: 3%;
+        margin-left: 2%;
     }
 
     .main .bottom-content .text-content {
-        margin-right: 6%;
+        margin-right: 5%;
+    }
+
+    .contact {
+        padding: 4.5% 2%;
+        width: 97%;
+    }
+
+    footer {
+        margin: 1.2%;
+        padding-right: 2%;
     }
 
   }
