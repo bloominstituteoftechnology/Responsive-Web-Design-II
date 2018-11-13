@@ -48,10 +48,13 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 65.5%;
 }
 
 html, body {
@@ -65,13 +68,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 .container {
-	width: 880px;
-	margin: 0 auto;
+    max-width: 880px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -80,51 +80,52 @@ h1, h2, h3, h4, h5 {
 
 header {
 	width: 100%;
-	display: flex;
+    display: flex;
 }
 
 header nav {
-	margin-top: 40px;
-	width: 610px;
+	margin-top: 4.7%;
+	width: 70%;
 	justify-content: space-between;
 	display: flex;
 }
 
 header nav a {
 	color: grey;
-	text-decoration: none;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 header .logo {
-	margin: 28px 0 0 91px;
+	margin: 3% 0 0 10%;
 }
 
 /* Home Page */
 
  .cta {
 	display: flex;
-	justify-content: center;
-	margin-top: 72px;
+	justify-content: flex-end;
+	margin-top: 8.5%;
 }
 
  .cta .cta-text {
-	font-size: 72px;
+	font-size: 6.9rem;
 	text-align: center;
 	letter-spacing: 5px;
 	display: flex;
 	justify-content: center;
 	flex-flow: column;
 	align-items: center;
-	margin: 0 82px 0 0;
+	margin: 0 9.3% 0 0;
 }
 
 .cta .cta-text button {
 	border: 1px double black;
-	font-size: 16px;
+	font-size: 1.6rem;
 	background: white;
-	width: 170px;
-	height: 32px;
-	margin-top: 10px;
+	width: 58%;
+	height: 8.5%;
+	margin-top: 3.5%;
 	cursor: pointer;
 }
 
@@ -136,9 +137,9 @@ header .logo {
 .main-content {
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
-	margin: 75px 0 35px 0;
-	padding: 35px 0;
-	font-size: 16px;
+	margin: 8.5% 0 4% 0;
+	padding: 4% 0;
+	font-size: 1.55rem;
 	line-height: 18px;
 }
 
@@ -148,7 +149,7 @@ header .logo {
 
 .main-content .middle-img {
 	display: block;
-	margin: 30px auto;
+	margin: 3.5% auto;
 }
 
 .main-content .bottom-content {
@@ -156,16 +157,21 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-	padding-right: 20px;
+	padding-right: 5%;
+}
+
+.contact {
+    font-size: 1.55rem;
 }
 
 .contact p {
-	margin: 15px 0;
+    margin: 1.7% 0;
 }
 
 footer {
 	text-align: center;
-	margin: 40px 0 20px;
+    margin: 4.5% 0 2.25%;
+    font-size: 1.55rem;
 }
 
 /* Tablet */
