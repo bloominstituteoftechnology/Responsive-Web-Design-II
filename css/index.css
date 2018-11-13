@@ -127,7 +127,8 @@ header {
 }
 @media(max-width: 750px) {
 	.navbar {
-		flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
 	}
 	.nav-logo {
 		margin-bottom: 5px;
@@ -209,9 +210,6 @@ header {
     .header-img {
 		display: none;
     }
-    .start h1 {
-        font-size: 4.5rem;
-    }
 }
 @media (max-width: 750px) {
 	.header-img {
@@ -251,12 +249,16 @@ header {
 	display: flex;
     justify-content: space-between;
 }
+.services-blurb {
+    width: 32%;
+}
 .middle-services-blurb {
 	margin: 0 30px;
 }
 @media (max-width: 800px) {
     .services-blurb {
         padding: 0 30px;
+        width: initial;
     }
     .middle-services-blurb {
         margin: 0;
