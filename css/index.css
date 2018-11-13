@@ -247,6 +247,29 @@ nav .logo-link-wrapper {
 }
 
 @media (min-width: 800px) {
+  nav {
+    flex-direction: row;
+  }
+
+  /* html {
+    background: lightgrey;
+  } */
+
+  nav .nav-links {
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-top: 20px;
+  }
+
+  nav .nav-links a:hover {
+    background: white;
+    color: black;
+  }
+
+  nav .logo-link-wrapper {
+    width: 27rem;
+    margin-top: 20px;
+  }
 }
 
 /* Home Page Styles */
