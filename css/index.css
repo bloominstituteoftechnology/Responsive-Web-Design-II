@@ -229,6 +229,21 @@ nav .logo-link-wrapper {
   nav .logo-link-wrapper {
     margin-top: 30px;
   }
+
+  nav .nav-links {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 4%;
+  }
+
+  nav .nav-links a {
+    border: 0;
+    font-size: 1.5rem;
+  }
+
+  nav .nav-links a:last-child {
+    border: 0;
+  }
 }
 
 @media (min-width: 800px) {
