@@ -89,6 +89,7 @@ p {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 30px 0 10px;
   background: white;
@@ -109,12 +110,6 @@ header nav a {
   text-decoration: none;
   color: lightslategray;
   font-size: 1.5rem;
-}
-
-header img {
-  position: relative;
-  right: -95px;
-  top: -3px;
 }
 
 /*  CTA Styles */
@@ -222,6 +217,93 @@ footer p {
 padding: 35px 0 120px;
 }
 
+/* Services Styles */
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-content h2 {
+  font-size: 1.8rem;
+}
+
+.services-content .jumbo {
+  padding-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+
+.services-content .jumbo-img {
+  max-width: 100%;
+  height: auto;
+  margin: 15px 0 32px;
+}
+
+.services-content h1 {
+  font-size: 2.6rem;
+}
+
+.services-content p {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  margin: 0 0 15px;
+}
+
+.services-content .services-card {
+  width: 48%;
+  border: 1px solid black;
+  margin: 42px 0 0;
+  padding: 20px 1.7%;
+}
+
+.services-content .services-card button {
+  width: 35%;
+  height: 35px;
+}
+
+.services-content .services-card p {
+  line-height: 1.15;
+  margin-bottom: 38px;
+}
+
+.services-content .facts {
+  border-top: 1px solid black;
+  margin: 42px 0 54px;
+  padding: 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-content .facts-text {
+  width: 48%;
+}
+
+.services-content .facts-text p {
+  width: 90%;
+}
+
+.services-content .facts-text ul {
+  list-style-type: square;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.services-content .facts-img {
+  width: 48%;
+  padding: 0 1.7% 0;
+}
+
+.services-content .facts-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
 
 /* Tablet Styles */
 
@@ -235,7 +317,6 @@ padding: 35px 0 120px;
   header .logo-tablet {
     display: unset;
     margin: 0 0 40px;
-    position: static;
   }
 
   header nav {
@@ -308,5 +389,37 @@ padding: 35px 0 120px;
 
   .contact-section {
     margin: 30px 3.1%;
+  }
+
+  /* Mobile Services Styles */
+
+  .services-content {
+    padding: 0 3.4% 0;
+  }
+
+  .services-content .jumbo-img {
+    margin-top: 30px;
+  }
+  .services-content .services-card {
+    width: 100%;
+  }
+  
+  .services-content .facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-content .facts-text {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .services-content .facts-text p {
+    width: 100%;
+  }
+
+  .services-content .facts-img {
+    width: 100%;
   }
 }
