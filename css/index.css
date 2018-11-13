@@ -116,8 +116,7 @@ header {
 }
 	
 footer {
-	margin-top: 38px;
-	margin-bottom: 100px;
+	margin: 38px 0 100px;
 	text-align: center;
 }
 nav .nav-links {
@@ -234,7 +233,7 @@ header .round-img {
 	background:#eeeeee;
 	padding: 20px; /* Stretch: Needs percentage */
 	width: 50%;
-	margin: 0 20px;
+	margin: 0 20px; /* Stretch: Needs percentage */
 }
 
 .box:first-child {
@@ -266,7 +265,7 @@ header .round-img {
 
 .facts-container {
 	width: 50%;
-	margin: 0 20px;
+	margin: 0 20px; /* Stretch: Needs percentage */
 }
 
 .facts-container:first-child {
@@ -403,7 +402,7 @@ header .round-img {
 
 	.box {
 		width: 47.75%;
-		margin: 15px;
+        margin: 15px; /* Stretch: Needs percentage */
 	}
 
 	.facts {
