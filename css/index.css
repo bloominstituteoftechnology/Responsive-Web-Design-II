@@ -1,4 +1,4 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -148,42 +148,31 @@ h5 {
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
-
+html {
+  font-size: 62.5%;
+}
 .container {
-  width: 100%;
+  max-width: 880px;
   margin: 0 auto;
+  border: 1px solid gold;
 }
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.nav-logo {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-
-  justify-content: space-around;
-  align-items: center;
-}
-
 h1 {
   font-family: "Kumar One Outline", cursive;
-  font-size: 60px;
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 a {
   text-decoration: none;
   color: black;
-  padding: 20px;
-}
-
-nav a:hover {
-  color: gray;
-  transition-duration: 0.5s;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  padding: 0.5%;
 }
 
 hr {
@@ -191,23 +180,43 @@ hr {
 }
 
 footer {
-  margin-top: 10px;
+  margin-top: 5%;
   border-bottom: 30px solid gray;
 }
-/* page style */
 
-.logo {
+header {
   display: flex;
-  width: 30%;
 
-  justify-content: flex-start;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.logo img {
-  padding: 0;
-  height: 60px;
+header nav {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
+
+header nav a {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 1.3rem;
+}
+
+header nav a:hover {
+  color: gray;
+  transition-duration: 0.5s;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header .logo {
+  margin: 1%;
+}
+
+/* page style */
 
 .top-section {
   display: flex;
@@ -226,10 +235,9 @@ footer {
 /* specific styles */
 
 .motto-section {
-  font-size: 3px;
-  padding: 50px 25px;
+  padding: 5%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .motto-and-button {
@@ -239,24 +247,24 @@ footer {
 }
 
 .motto {
+  line-height: 1.2;
   display: flex;
   text-align: center;
   flex-direction: column;
-
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .motto-pic img {
-  height: 350px;
+  width: 100%;
+  height: auto;
 }
 
 .button {
-  margin-top: 10px;
+  margin-top: 1%;
   width: 55%;
-  height: 40px;
-  font-size: 25px;
+  font-size: 2.5rem;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,7 +272,6 @@ footer {
 
 .button:hover {
   background-color: #d3d3d3;
-  color: white;
   transition-duration: 0.5s;
 }
 
@@ -275,25 +282,25 @@ footer {
 }
 
 .main-content {
-  margin: 30px;
+  margin: 5%;
 }
 
-.about-pic {
+/* .about-pic {
   width: 100%;
-}
+  height: auto;
+} */
 .middle-img {
-  margin: 20px 0;
   width: 100%;
-  height: 150px;
+  height: auto;
 }
 
 address {
-  margin: 15px 10px 20px 20px;
+  margin: 3%;
 }
 
 .copy {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 3%;
 }
 
 /*Services pages styles*/
@@ -303,15 +310,10 @@ address {
   justify-content: center;
 }
 .services-header-img {
-  width: 90%;
-  height: 200px;
-  border-radius: 10px;
-  margin: 10px;
-}
-@media (max-width: 500px) {
-  .services-header-img {
-    display: none;
-  }
+  width: 95%;
+  height: auto;
+  border-radius: 1rem;
+  margin: 3%;
 }
 
 .our-services-container {
@@ -324,11 +326,7 @@ address {
   width: 90%;
   margin: 15px;
 }
-@media (max-width: 500px) {
-  .our-services {
-    font-size: 17px;
-  }
-}
+
 .our-services h2 {
   font-size: 35px;
 }
@@ -348,16 +346,6 @@ address {
   width: 35%;
   border: 1px solid black;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .top-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card {
-    font-size: 17px;
-    width: 90%;
-  }
 }
 
 .card-btn {
@@ -381,14 +369,6 @@ address {
   margin: 30px;
   list-style-type: disc;
 }
-@media (max-width: 500px) {
-  .facts-about {
-    font-size: 14px;
-  }
-  .facts-about ul {
-    font-size: 13px;
-  }
-}
 
 .facts {
   width: 50%;
@@ -400,7 +380,7 @@ address {
 /* Tablet styles */
 @media (max-width: 800px) {
   /* Home page tablet styles */
-  .nav-logo {
+  header {
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -438,7 +418,7 @@ address {
   }
 
   .card {
-    margin: 10px;
+    margin: 5%;
   }
 
   .our-services {
@@ -467,12 +447,10 @@ address {
   .top-section {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
   }
   .bottom-section {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
   }
   .main-section {
     flex-direction: column;
@@ -481,8 +459,32 @@ address {
     width: 91%;
   }
   .main-content {
-    margin: 15px;
+    margin: 3%;
   }
 
   /* Sevices page mobile styles */
+
+  .services-header-img {
+    display: none;
+  }
+
+  .our-services {
+    font-size: 1.7rem;
+  }
+
+  .top-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    font-size: 1.7rem;
+    width: 90%;
+  }
+
+  .facts-about {
+    font-size: 1.4rem;
+  }
+  .facts-about ul {
+    font-size: 1.3rem;
+  }
 }
