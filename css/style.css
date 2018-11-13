@@ -108,47 +108,45 @@ h1, h2, h3, h4, h5 {
     position: relative;
 }
 
-a.logo-link:empty {
-    background-image: url('http://i67.tinypic.com/14ugk5j.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 50px;
-    display: inline-block;  
-    position: absolute;
-    top: 2px;
-    right: 25px;
+.container > header > .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container > header > nav {
-    display: inline-flex;
+.container > header > .links > nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
     overflow: hidden;
-    width: 100%;
+    width: 70%;
     height: 45px;
 }
 
-.container > header > nav >  a.main-link {
-    width: 12.5%;
+.container > header > .links > nav >  a.main-link {
     text-decoration: none;
-    justify-content: space-between;
     color: silver;
-    font-size: 2rem;
-    padding: 5px;
-    text-align: center;
+    font-size: 1.6rem;
     font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }
 
-.container > header > nav >  a.main-link:hover {
+.container > header > .links > nav >  a.main-link:hover {
     border: 5px double grey;
     transition-duration: 250ms;
     transition-property: all;
 }
 
-.container > header > nav > a.main-link:active {
+.container > header > .links > nav > a.main-link:active {
     border: 5px solid grey;
     font-weight: normal;
+}
+
+img.logo-link:empty {
+    width: 100%;
+    height: auto;
 }
 
 .container > header > div.home-header {
