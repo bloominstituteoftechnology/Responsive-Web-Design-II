@@ -173,7 +173,7 @@ p {
   font-size: 1.6rem;
 }
 
-.website-container {
+.website_container {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
@@ -192,14 +192,14 @@ nav {
   align-items: center;
 }
 
-nav .nav-links {
+nav .nav_links {
   display: flex;
   flex-direction: column;
   margin-top: 18px;
   width: 100%;
 }
 
-nav .nav-links a {
+nav .nav_links a {
   display: flex;
   justify-content: center;
   border-top: 1px solid black;
@@ -211,37 +211,37 @@ nav .nav-links a {
   font-weight: bold;
 }
 
-nav .nav-links a:last-child {
+nav .nav_links a:last-child {
   border-bottom: 1px solid black;
 }
 
-nav .nav-links a:hover {
+nav .nav_links a:hover {
   background: black;
   color: white;
 }
 
-nav .logo-link-wrapper {
+nav .logo_link_wrapper {
   width: 18.1rem;
   margin-top: 20px;
 }
 
 @media (min-width: 500px) {
-  nav .logo-link-wrapper {
+  nav .logo_link_wrapper {
     margin-top: 30px;
   }
 
-  nav .nav-links {
+  nav .nav_links {
     flex-direction: row;
     justify-content: space-around;
     margin-right: 4%;
   }
 
-  nav .nav-links a {
+  nav .nav_links a {
     border: 0;
     font-size: 1.5rem;
   }
 
-  nav .nav-links a:last-child {
+  nav .nav_links a:last-child {
     border: 0;
   }
 }
@@ -255,18 +255,18 @@ nav .logo-link-wrapper {
     background: lightgrey;
   } */
 
-  nav .nav-links {
+  nav .nav_links {
     justify-content: space-between;
     margin-right: 10%;
     margin-top: 20px;
   }
 
-  nav .nav-links a:hover {
+  nav .nav_links a:hover {
     background: white;
     color: black;
   }
 
-  nav .logo-link-wrapper {
+  nav .logo_link_wrapper {
     width: 27rem;
     margin-top: 20px;
   }
