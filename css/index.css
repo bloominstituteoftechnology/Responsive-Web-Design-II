@@ -181,6 +181,12 @@ nav a:hover{
 	margin-top: 45px;
 }
 
+/* contact page styles */
+
+.contact-page header{
+    border: none;
+}
+
 @media (max-width: 800px){
 
 	.container{
