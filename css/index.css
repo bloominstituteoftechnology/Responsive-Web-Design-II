@@ -131,7 +131,6 @@ header nav a {
   font-size: 7.2rem;
   text-align: center;
   padding-bottom: 25px;
-  padding-right: 39%;
 }
 
 .cta-section .cta-left button {
@@ -165,10 +164,6 @@ header nav a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.cta-section .header-img {
-  padding-left: 39%;
 }
 
 /* Main Section Styles */
@@ -375,10 +370,6 @@ padding: 35px 0 120px;
     margin-top: 30px;
   }
 
-  .cta-section .cta-left h1 {
-    padding-right: 85%;
-  }
-
   .main-section {
     flex-direction: column;
     margin: 30px 3.1%;
@@ -431,4 +422,5 @@ padding: 35px 0 120px;
   .services-content .facts-img {
     width: 100%;
   }
+
 }
