@@ -50,6 +50,7 @@ table {
 
 html, body {
     font-size:62.5%;
+    margin
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,7 +65,7 @@ img{
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width: 880px;
+	max-width: 880px;
 	margin: auto;
 }
 /* Header Styles */
@@ -202,4 +203,23 @@ header .logo {
   }
   p{
       font-size: 1.6rem;
+  }
+
+  @media(max-width: 800px){
+    .container{
+        max-width: 800px;
+    }
+
+    header{
+        display:flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    header img{
+        width: 300px;
+    }
+    
+    .cta .snippet{
+          display: none;
+      }
   }
