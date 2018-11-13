@@ -554,28 +554,30 @@ html {
 
   .container div.big {
     display: flex;
-    position: relative;
-    top: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    height: 514px;
+    margin: 90px 0 0px 0%;
+    padding: 0 0 73px 15%;
     border-bottom: 2px solid black;
   }
 
   .container div.big div.title {
     display: flex;
-    position: relative;
     flex-direction: column;
-    left: 14%;
-    top: 100px;
     width: 33%;
     text-align: center;
   }
 
   .container div.big img {
-    position: relative;
+    /*position: relative;
     top: 50px;
     left: 23%;
-    height: 76%;
+    height: 76%;*/
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 0 16%;
   }
 
   h1 {
@@ -605,7 +607,7 @@ html {
   }
 
   .container section.index {
-    height: 590px;
+    height: 560px;
     border-bottom: 2px solid black;
   }
 
@@ -619,7 +621,7 @@ html {
     display: flex;
     height: 545px;
     flex-direction: column;
-    top: 50px;
+    top: 20px;
     justify-content: space-around;
   }
 
