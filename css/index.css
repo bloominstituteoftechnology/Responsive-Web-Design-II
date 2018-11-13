@@ -198,6 +198,26 @@ a {
   }
 }
 
+@-webkit-keyframes fadeinfromblack {
+  from {
+    opacity: 0;
+    background: black;
+  }
+  to {
+    opacity: 1;
+    background: white;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
