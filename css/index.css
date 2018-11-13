@@ -254,7 +254,7 @@ address a {
         margin: 0px 0px;
         }
     .splash_container {
-     margin: 5px 0px 0px 0px;
+     margin: 0px 0px 0px 0px;
         }
     .bigsplashtext {
         margin: 0 auto;
@@ -264,8 +264,7 @@ address a {
         display: none
     }
     header {
-        height: 122px;
-        margin: 0px 0px;
+        margin: 30px 0px 5px;
         flex-wrap: wrap-reverse;
         justify-content: center;
     }
@@ -280,30 +279,32 @@ address a {
         text-align: center;
         align-self: flex-start;
         width: auto;
+        margin-bottom: 38px;
     }
     .ContentDuo {
         margin: 10px 10px;
         padding-right: 1px;
     }
     .maincontent {
-        margin: 39px 20px 36px;
+        margin: 40px 2.5%;
         padding: 26px 0 35px 0;
     }
     .maincontent img {
-        margin: 23px 0px 13px 2px;
-        height: 157px;
+        margin: 21px 0px 13px;
     }
     .TrioHolder {
-        margin: 17px 0 0 11px;
+        margin-top: 17px;
     }
     .ContentTrio {
-        padding-right: 37px;
+        padding-right: 3.7%;
+        padding-left: 1.3%;
     }
     .contact_container {
-        margin: 0px 30px;
+        margin: 0px 3.65%;
+        line-height: 12.5px;
     }
     .copyright_container {
-        margin-top: 37px;
+        margin-top: 38px;
     }
 }
 @media (max-width: 500px) {
