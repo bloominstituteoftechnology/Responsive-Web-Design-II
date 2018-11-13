@@ -99,7 +99,6 @@ h1, h2, h3, h4, h5 {
     max-width: 880px;
     margin: auto;
     margin-top: 20px;
-    overflow: hidden;
     background-color: white;
     z-index: 0;
 }
@@ -119,7 +118,6 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    overflow: hidden;
     width: 70%;
     height: 45px;
 }
@@ -134,7 +132,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container > header > .links > nav >  a.main-link:hover {
+    padding: 5px 10px;
     border: 5px double grey;
+    margin: -5px -10px;
     transition-duration: 250ms;
     transition-property: all;
 }
