@@ -81,6 +81,11 @@ body {
 	margin: 0 auto;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 h1 {
 	font-size: 7.0rem;
 	letter-spacing: 3px;
@@ -123,9 +128,11 @@ li {
 
 address {
 	border-top: 1px solid black;
-	padding-top: 40px;
-	margin-left: 13px;
-	/* margin: 40px 0; */
+	padding-top: 35px;
+}
+
+address p {
+	line-height: 1;
 }
 
 footer {
@@ -151,7 +158,7 @@ footer {
 
 .top-nav nav a {
 	text-decoration: none;
-	padding-right: 60px;
+	margin-right: 60px;
 	color: lightgrey;
 	font-size: 1.6rem;
 }
@@ -160,6 +167,19 @@ footer {
 	color: #2d3235;
 }
 
+.parent-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 30px 0 25px 0;
+}
+
+.card {
+	width: 50%;
+}
+
+.triple {
+	width: 32%;
+}
 
 /* HOME PAGE CLASS SELECTORS */
 
@@ -167,28 +187,13 @@ footer {
 	border-bottom: 1px solid black;
 	display: flex;
 	align-items: center;
-	padding: 60px 0 80px 0;
+	padding: 60px 0 85px 0;
 	text-align: center;
 }
 
 .title-block {
 	margin: 0 110px;
 }
-
-img {
-	width: 100%;
-	height: auto;
-}
-
-.parent-container {
-	display: flex;
-	justify-content: space-between;
-	margin: 30px 0;
-}
-
-/* .general-card {
-	margin: 0 10px;
-} */
 
 /* SERVICES PAGE SELECTORS */
 
@@ -209,18 +214,6 @@ img {
 	border-top: 1px solid black;
 	border-bottom: 2px solid black;
 	padding: 40px 0;
-}
-
-.card {
-	/* border: 1px solid black; */
-	/* background-color: #ededed; */
-	/* margin: 15px 5px; */
-	/* padding: 40px; */
-	width: 47%;
-}
-
-.triple {
-	width: 32%;
 }
 
 .card button {
@@ -247,7 +240,6 @@ img {
 
 @media (max-width: 800px) {
 	body {
-		width: 95%;
 	}
 
 	.top-nav {
