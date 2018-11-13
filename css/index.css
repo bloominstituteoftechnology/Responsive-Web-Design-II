@@ -87,7 +87,7 @@ General CSS
 	align-items: center;
 	height: 30%;
 
-	margin-top: 2vh;
+	margin-top: 2%;
 }
 
 .nav {
@@ -116,7 +116,7 @@ button:active {
 }
 
 footer {
-	padding: 6vh 0;
+	padding: 6% 0;
 	text-align: center;
 }
 
@@ -133,7 +133,7 @@ footer {
 	justify-content: space-between;
 	
 
-	margin-top: 7vh;
+	margin-top: 7%;
 }
 
 .cta-text {
@@ -141,7 +141,7 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	padding-left: 10vw;
+	padding-left: 10%;
 }
 
 .cta-text h1 {
@@ -149,8 +149,8 @@ footer {
 }
 
 .cta button {
-	width: 10vw;
-	height: 4vh;
+	width: 10%;
+	height: 4%;
 }
 
 
@@ -162,7 +162,7 @@ footer {
 	flex-direction:column;
 
 	
-	margin: 6vh 0;
+	margin: 6% 0;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
@@ -171,31 +171,31 @@ footer {
 	display:flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 4vh 0;
-	/*margin-bottom: 4vh;*/
+	padding: 4% 0;
+	/*margin-bottom: 4%;*/
 }
 
 .top-content .text-content {
-	width:calc(100%/2 - 1vw);
+	width:calc(100%/2 - 1%);
 }
 
 .bottom-content {
 	display:flex;
 	flex-direction:row;
 	justify-content: space-between;
-	padding: 4vh 0;
-	/*margin-top:4vh;*/
+	padding: 4% 0;
+	/*margin-top:4%;*/
 }
 
 
 .bottom-content .text-content {
-	width: calc(100%/3 - 2vw);
+	width: calc(100%/3 - 2%);
 }
 
 /* contact section */
 
 .contact * {
-	padding: .8vh 0;
+	padding: .8% 0;
 }
 
 
@@ -207,11 +207,11 @@ footer {
 
 .services-header-img {
 	width:100%;
-	padding: 4vh 0;
+	padding: 4% 0;
 }
 
 .info-section {
-	padding: 4vh 0;
+	padding: 4% 0;
 }
 
 .info-section h1 {
@@ -221,7 +221,7 @@ footer {
 .services {
 	border-top: 2px solid rgba(0,0,0,.25);
 	border-bottom: 2px solid rgba(0,0,0,.25);
-	padding: 1vh 0;
+	padding: 1% 0;
 
 }
 
@@ -230,18 +230,18 @@ footer {
 .row {
 	display:flex;
 	justify-content: space-between;
-	margin: 4vh 0;
+	margin: 4% 0;
 	
 }
 
 .card {
 	background: rgba(0,0,0,.15);
 	border: 2px solid rgba(0,0,0,.25);
-	width: calc(100%/2 - 1.5vw);
+	width: calc(100%/2 - 1.5%);
 }
 
 .card * {
-	padding: 2vh 2vh;
+	padding: 2% 2%;
 
 }
 
@@ -250,10 +250,10 @@ card h4 {
 }
 
 .card button {
-	width: 16vw;
-	height: 2vh;
+	width: 16%;
+	height: 2%;
 	background: white;
-	margin-bottom: 2vh;
+	margin-bottom: 2%;
 	text-align:center;
 	vertical-align: middle;
 }
@@ -262,16 +262,16 @@ card h4 {
 
 .facts {
 	display: flex;
-	margin: 4vh 0;
+	margin: 4% 0;
 }
 
 .facts ul {
 	list-style: disc;
-	padding-top: 3vh;
+	padding-top: 3%;
 }
 
 .facts ul li {
-	padding: 1vh 0;
+	padding: 1% 0;
 }
 
 .facts__left-side {
@@ -286,8 +286,8 @@ card h4 {
 .main_info {
 	display:flex;
 	flex-direction: column;
-	height: 10vh;
-	margin: 10vh 0;
+	height: 10%;
+	margin: 10% 0;
 	align-items: center;
 }
 
@@ -302,7 +302,7 @@ card h4 {
 
 .cast {
 	display:flex;
-	margin-top: 30vh;
+	margin-top: 30%;
 	
 	
 }
@@ -313,7 +313,7 @@ card h4 {
 	align-items: center;
 	justify-content: space-between;
 
-	margin-top: 60vh;
+	margin-top: 60%;
 	
 	width:100%;
 	text-align: center;
@@ -337,5 +337,5 @@ card h4 {
 }
 
 .list {
-	margin-left:1.5vw;
+	margin-left:1.5%;
 }
