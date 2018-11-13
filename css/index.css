@@ -112,26 +112,35 @@ header nav a:hover {
 	font-weight: bold;
 }
 
+header img {
+    padding: 7px 0;
+}
+
 /* cta */
 
 .cta {
+    margin: -23px 0%;
 	display: flex;
 	justify-content: center;
 }
   
 .cta .cta-text {
 	vertical-align: top;
-	font-size: 7.7rem;
+	font-size: 7rem;
 	margin-top: 120px;
 	text-align: center;
-	padding: 0px 10%;
+	padding: 0px 10% 0px 13%;
+}
+
+.cta .cta-text h1 {
+    letter-spacing: 1px;
 }
   
 .cta .cta-text button {
 	background: white;
 	vertical-align: top;
 	margin-top: 6px;
-	padding: 8px 14%;
+	padding: 5px 14%;
 	font-size: 1.7rem;
 	border: 1px solid black;
 	cursor: pointer;
@@ -164,13 +173,13 @@ header nav a:hover {
 }
   
 .main-content .middle-img {
-	margin-top: 45px;
+	margin-top: 35px;
 }
   
 .main-content .bottom-content {
-	margin-top: 37px;
+	margin-top: 23px;
     display: flex;
-    padding: 0 1%;
+    padding: 0 0.5%;
 }
   
 .main-content .bottom-content .text-content {
@@ -180,13 +189,13 @@ header nav a:hover {
   
 .contact {
     font-size: 1.6rem;
-	margin-top: 57px;
+	margin-top: 44px;
 	border-top: 1px solid black;
-	padding: 39px 1% 0;
+	padding: 33px 0.5%;
 }
   
 .contact p {
-	margin: 20px 0;
+	margin: 15px 0;
 }
 
 /* Services Page */
