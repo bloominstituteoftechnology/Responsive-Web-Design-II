@@ -51,6 +51,9 @@ table {
 * {
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 
 html, body {
     height: 100%;
@@ -88,37 +91,34 @@ p{
 	line-height: 1.2;
 }
 .container{
-	width: 900px;
-	margin: 0 auto;
-	/* position: relative; */
+	max-width: 880px;
+    margin: 0 auto;
+    font-size: 1.6rem;
 }
 header{
-	margin: 10px 0 30px 0;
-	height: 40px;
-	width: 900px;
-	display:flex;
-	align-content: flex-end;
+	margin: 1% 0 4% 0;
+    display:flex;
+    flex-wrap: wrap;
 	justify-content: space-between;
 }
 header nav{
 	display: flex;	
-	flex-wrap: wrap;
-	justify-content: flex-start;
 }
 
 header nav a{
 	text-decoration: none;
-	color: gray;
-	padding: 5px 15px;
+    color: gray;
+    margin-right: 20%;
 }
-header nav a:hover{
-	border-bottom: 2px solid gray;
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 .section{
 	display: flex;
-	margin-bottom: 5px;
-	padding-bottom: 5px;
+	margin-bottom: 2%;
 }
 article p{
 	padding-right: 15px;
@@ -130,36 +130,24 @@ address p{
 	margin-bottom: 10px;	
 }
 
-.logo{
-	width: 150px;
-	height: 40px;
-	margin: 5px 15px 0 0;
-	background-image: url("../img/logo.png");
-	background-repeat: no-repeat;
-	background-size: 150px 40px;
-	background-position: center;
-}
-
 h1{
-	font-size: 70px;
-	/* text-align: center; */
+	font-size: 7rem;
 }
 
 h2{
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 h3{
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 
 #hero{
-	/* padding:100px 0 0 0; */
-    margin-bottom: 40px;
+    margin-bottom: 5%;
     padding-bottom: 67px;
 	border-bottom: 2px solid black;
-	/* text-align: center; */
-	display: flex;
+    display: flex;
+    justify-content: space-between;
 }
 .hero-title{
 	text-align: center;
@@ -171,7 +159,6 @@ h3{
 }
 
 .left{
-	padding-top: 90px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -182,21 +169,18 @@ h3{
 }
 
 .right{
-	height: 400px;
-	width: 450px;
-	background-image: url("../img/header-img.png");
-	background-repeat: no-repeat;
-	background-size: 375px 375px;
-    background-position: center;
-    margin-top: 40px;
+	width: 43%;
+    margin: 6% .5% 0 0;
+    padding-left: 10px;
     float: right;
 }
 .home{
-	height: 400px;
-	width: 450px;
+    width: 57%;
+    padding-left: 7%;
+    padding-top: 2%;
 }
 .button{
-	padding: 8px 45px;
+	padding: 1% 10%;
     border: 1px solid black;
     color: black;
 	text-align: center;
@@ -209,141 +193,71 @@ h3{
 }
 
 .middle-img{
-	margin: 10px auto 48px;;
-	width: 870px;
-	height: 175px;
-	background-image: url("../img/mid-page-accent.jpg");
-	background-size: 870px 175px;
-	background-repeat: no-repeat;
-    background-position: center;
-}
-
-.services-header-img{
-	margin-bottom: 35px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
 }
 
 .copyright{
-	width: 200px;
-	margin: 35px auto;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+
 }
 footer{
 	display: flex;
-	justify-content: center;
 	margin: 25px 0;
 }
 .foot{
     border-top: 2px solid black;
-    padding-top: 30px;
-    margin-top: 20px;
-}
-/* Information Box */
-li{
-	list-style: disc;
-	margin: 10px 0 0 20px;
-}
-.bigBox{
-	display: flex;
-	justify-content: space-between;
-	/* border-bottom: 2px solid black; */
-}
-.smallBox{
-	padding: 15px;
-	width: 430px;
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-}
-.infoBox{
-	border: 1px solid gray;
-	background-color: whitesmoke;
-}
-.facts{
-	margin: 40px 0;
-	padding-top: 40px;
-	border-top: 2px solid black;
-}
-.learnMore{
-	border: 1px solid black;
-	background-color: white;
-	text-decoration: none;
-	color: black;
-	width: 150px;
-	padding: 10px 0;
-	margin: 15px 0;
-	display: flex;
-	justify-content: center;
-}
-
-a.learnMore:hover{
-	background-color: maroon;
-	color: white;
-}
-
-/* About Page */
-.about{
-	display: flex;
-	margin: 30px 0;
-	align-items: center;
-	justify-content: space-around;
-	align-items: center;
-}
-.aboutBox{
-	display: flex;
-	flex-direction: column;
-	margin-right: 20px;
-}
-.headshot img{
-	height: 200px;
-}
-.about p{
-	width: 600px;;
+    padding-top: 3%;
+    margin: 3% .5% 0;
 }
 
 /* Media Query */
 @media (max-width: 800px){
     .container{
-        width: 800px;
-        padding: 25px 5px;
+        max-width: 800px;
+        padding: 3% 3%;
     }
 	header{
         flex-direction: column;
         align-content: center;
-        height: 100%;
-        width: 100%;
         margin: 0 auto;
     }
     header nav{
-        justify-content: space-between;
-        margin: 30px 0 60px 0;
+        margin: 4% 0 7% 0;
         padding: 0;
     }
+
+    header nav a{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
     .logo{
-     order: -1;   
-     background-size: 180px 40px;
-     margin-bottom: 15px;
-     height: 40px;
-     width: 180px;
-     align-self: center;
+        order: -1;   
+        margin-bottom: 1%;
+        align-self: center;
     }
     #hero{
         justify-content: center;
-        padding-bottom:  62px;
     }
     
     .right{
         display: none;
     }
     .left{
-        padding:10px;
+        padding: 2%;
         height: 100%;
     }
     .left .home{
         margin: 0 auto;
     }
-    .middle-img{
-        width: 750px;
-        background-size: 750px;
+    .section{
+        margin-bottom: 8%
     }
+
 }
 @media (max-width: 500px){
     .container, header, header nav, .section{
@@ -352,24 +266,33 @@ a.learnMore:hover{
     }
     header nav{
         align-content: center;
+        margin: 0;
+        font-size: 2rem;
     }
     header nav a{
         align-self: center;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        padding: 15px 100%;
-        margin-top: -1px;
+        padding: 3% 100%;
+        margin-bottom: 3%;
     }
     header nav a:hover{
         background-color: maroon;
         color: white;
     }
-    article{
-        margin-bottom: 25px;
+    #hero{
+        padding-bottom: 14%;
+        margin: 5% 0 12%;
     }
-    .middle-img{
-        width: 450px;
-        background-size: 450px;
+    .left{
+        padding-bottom: 6%;
+        margin-bottom: 0px;
+    }
+    article{
+        margin-bottom: 9%;
+    }
+    .logo{
+        margin-bottom: 4%;
     }
 
 }
