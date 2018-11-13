@@ -5,19 +5,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -25,25 +93,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -51,37 +138,47 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-		font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Your code starts here! */
@@ -95,24 +192,24 @@ h1, h2, h3, h4, h5 {
 i knew using rems this early will kick my butt.  */
 
 html {
-  font-size: 62.5%
+	font-size: 62.5%
 }
 
 p {
-  line-height: 1.25;
-  margin: 10px 0;
+	line-height: 1.25;
+	margin: 10px 0;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .container {
-  width: 880px;
-  max-width: 880px;
-  margin: 0 auto;
-  font-size: 1.6rem;
+	width: 880px;
+	max-width: 880px;
+	margin: 0 auto;
+	font-size: 1.6rem;
 }
 
 /* nav bar */
@@ -120,17 +217,17 @@ img {
 .container .navcontainer {
 	display: flex;
 	justify-content: space-between;
-  align-items: center;
-  
-  position: fixed;
+	align-items: center;
+
+	position: fixed;
 	padding-top: 32px;
 	top: 0;
 	background-color: white;
 	z-index: 500;
-  border-bottom: 1px solid grey;
-  max-width: 100%;
-  width: 880px;
-  flex-wrap: wrap;
+	border-bottom: 1px solid grey;
+	max-width: 100%;
+	width: 880px;
+	flex-wrap: wrap;
 }
 
 .container .navcontainer .navmenu {
@@ -142,7 +239,7 @@ img {
 .container .navcontainer .navmenu a {
 	text-decoration: none;
 	color: grey;
-	
+
 }
 
 .container .navcontainer .navmenu a:hover {
@@ -150,9 +247,7 @@ img {
 
 }
 
-.container .navcontainer .logo {
-
-}
+.container .navcontainer .logo {}
 
 .container .navcontainer .burger {
 	display: none;
@@ -165,8 +260,8 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 80px 0 32px 0;
-	margin: 80px 0 43.2px 0;
+	padding: 80px 0 3.63% 0;
+	margin: 80px 0 4.9% 0;
 }
 
 .headertext {
@@ -174,7 +269,7 @@ img {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	padding-left: 128px;
+	padding-left: 14.54%;
 	align-items: center;
 }
 
@@ -184,7 +279,7 @@ img {
 
 .home-page .headermain .headertext .get-started {
 	border: 1px solid black;
-	padding: 6.4px 16px;
+	padding: 6.4px 1.8%;
 	width: 169.6px;
 	cursor: pointer;
 	text-align: center;
@@ -211,15 +306,9 @@ img {
 	flex-wrap: wrap;
 }
 
-/* .container .above-img  .above-content-block h3 {
-  font-size: 1.6rem;
-} */
-
 .container .above-img .above-content-block {
 	width: 50%;
 }
-
-/* middle image content */
 
 .middle-img {
 	margin-top: 29.44px;
@@ -228,8 +317,8 @@ img {
 /* below image content */
 
 .below-img {
-  margin: 28.8px 0 34.4px 0;
-  padding-bottom: 20px;
+	margin: 28.8px 0 34.4px 0;
+	padding-bottom: 20px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -240,17 +329,9 @@ img {
 	line-height: 18.88px;
 }
 
-/* .container .below-img .below-item {
-  font-size: 1.6rem;
-} */
-
 address {
 	margin-top: 33.6px;
 }
-
-/* .container address h2 {
-  font-size: 1.6rem;
-} */
 
 footer {
 	margin: 38.4px 0 128px 0;
@@ -286,7 +367,7 @@ footer {
 }
 
 .flexitems {
-	padding: 16pxm;
+	padding: 16px 1.8% 16px 1.8%;
 	width: 48%;
 	margin-top: 32px;
 	padding-bottom: 24px;
@@ -304,7 +385,7 @@ footer {
 	background: white;
 	border: 1px solid black;
 	border-radius: 5px;
-	padding: 4.8px 38.4;
+	padding: 4.8px 4.36;
 }
 
 .flexsection {
@@ -341,12 +422,12 @@ ol li {
 }
 
 .p-animation {
-	overflow:hidden;
+	overflow: hidden;
 	width: 100%;
 }
 
 .p-animation p {
-	width:	100%;
+	width: 100%;
 	animation-duration: 3s;
 	animation-name: slidein;
 	animation-iteration-count: infinite;
@@ -363,6 +444,7 @@ ol li {
 		margin-left: 0%;
 		width: 100%;
 	}
+
 	75% {
 		font-size: 300%;
 		margin-left: 25%;
@@ -383,116 +465,122 @@ ol li {
 @media (max-width: 800px) {
 
 	/* navbar */
-    .container {
-        overflow: hidden;
-        width: 100%;
-        max-width: 800px;
-		}
+	.container {
+		overflow: hidden;
+		width: 100%;
+		max-width: 800px;
+	}
 
-		.container nav {
-			display: flex;
-			justify-content: center;
-			width: 100%;
-		}
+	.container nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 
-    .container .navcontainer {
-				flex-direction: column-reverse;
-    }
+	.container .navcontainer {
+		flex-direction: column-reverse;
+	}
 
-    .container .navcontainer img {
-        padding-bottom: 32px;
-		}
-		
-		.container .navcontainer .navmenu {
-			max-width: 800px;
-			width: 89%;
-		}
+	.container .navcontainer img {
+		padding-bottom: 32px;
+	}
 
-		.container .navcontainer {
-			width: 100%;
-			justify-content: space-between;
-			padding-bottom: 15px;
-		}
-		#menu-links {
-			display: flex;
-		}		
-		/* horizontal rule */
+	.container .navcontainer .navmenu {
+		max-width: 800px;
+		width: 89%;
+	}
 
-		.hr {
-			height: 2px;
-		}
+	.container .navcontainer {
+		width: 100%;
+		justify-content: space-between;
+		padding-bottom: 15px;
+	}
 
-		/* header */
+	#menu-links {
+		display: flex;
+	}
 
-    .container .headermain {
-        display: flex;
-				justify-content: center;
-		}
+	/* horizontal rule */
 
-		.container .headermain .headertext {
-			width: 100%;
-			justify-content: center;
-			padding-left: 0;
+	.hr {
+		height: 2px;
+	}
+
+	/* header */
+
+	.container .headermain {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container .headermain .headertext {
+		width: 100%;
+		justify-content: center;
+		padding-left: 0;
 	}
 
 	.container .headermain img {
-			display: none;
+		display: none;
 	}
-		
-		.container .above-img {
-			padding-left: 20px;
-			padding-bottom: 20px;
-		}
 
-		.container .above-img .featuress {
-			padding-left: 10px;
-		}
+	.container .above-img {
+		padding-left: 2.5%;
+		padding-bottom: 20px;
+	}
+
+	.container .above-img .featuress {
+		padding-left: 1.25%;
+	}
 
 
-		/* middle image */
-		.middle-img {
-			width: 100%;
-			padding: 0 20px;
-		}
+	/* middle image */
+	.middle-img {
+		width: 100%;
+		padding: 0 2.5%;
+	}
 
-		/* below image content */
+	/* below image content */
 
-		.container .below-img .services{
-			padding: 0 0 0 30px;
-		}
-		.container .below-img .product{
-			padding: 0 0 0 15px;
-		}
+	.container .below-img .services {
+		padding: 0 0 0 3.75%;
+	}
 
-		.below-img {
-			padding-bottom: 20px;
-		}
-		address {
-			padding: 0 30px;
-		}
+	.container .below-img .product {
+		padding: 0 0 0 1.875%;
+	}
 
-		/* services page */
-		.container .services-header-img {
-			padding-top: 60px;
-		}
+	.below-img {
+		padding-bottom: 20px;
+	}
 
-		.container .headerservices {
-			padding: 0 30px;
-		}
-		
-		.container .flexsection {
-			padding: 0 30px;
-		}
-		.container .last-section {
-			padding: 0 30px;
-		}
-		.container .last-section img {
-			display: none;
-		}
+	address {
+		padding: 0 3.75%;
+	}
 
-		.container .last-section .firstpart ol {
-			padding-top: 40px;
-		}
+	/* services page */
+	.container .services-header-img {
+		padding-top: 60px;
+	}
+
+	.container .headerservices {
+		padding: 0 3.75%;
+	}
+
+	.container .flexsection {
+		padding: 0 3.75%;
+	}
+
+	.container .last-section {
+		padding: 0 3.75%;
+	}
+
+	.container .last-section img {
+		display: none;
+	}
+
+	.container .last-section .firstpart ol {
+		padding-top: 40px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -506,7 +594,7 @@ ol li {
 		border-bottom: 0;
 		margin: 0;
 		padding: 0 0 0 0;
-		
+
 	}
 
 	.container .navcontainer .burger {
@@ -516,14 +604,12 @@ ol li {
 		top: 0;
 		right: 0;
 		margin-top: 20px;
-    cursor: pointer;
-    animation-name: burger-anim;
-    animation-duration: 2s;
-  }
-  
-  @keyframes burger-anim {
-    
-  }
+		cursor: pointer;
+		animation-name: burger-anim;
+		animation-duration: 2s;
+	}
+
+	@keyframes burger-anim {}
 
 	.container .navcontainer .logo {
 		margin: 0 0 18px 0;
@@ -540,17 +626,18 @@ ol li {
 	.last-menu {
 		border-bottom: 1px solid black;
 	}
-	
+
 	#menu-links {
 		display: none;
 	}
-/* horizonal rule */
+
+	/* horizonal rule */
 	.hr {
-		padding: 0 20px;
+		padding: 0 4%;
 	}
 
-	.container .navcontainer .navmenu a{
-		padding: 20px 0 20px 0;
+	.container .navcontainer .navmenu a {
+		padding: 20px 0 4% 0;
 		text-align: center;
 		border-top: 1px solid black;
 		font-size: 2.08rem;
@@ -560,7 +647,7 @@ ol li {
 
 	.container .above-img {
 		flex-direction: column;
-		padding: 20px 20px 0 20px;
+		padding: 20px 4% 0 4%;
 	}
 
 	.container .above-img .above-content-block {
@@ -579,14 +666,14 @@ ol li {
 	/* middle image content */
 
 	.container .middle-img {
-		padding: 0 20px;
+		padding: 0 4%;
 	}
 
 	/* below image content */
 
 	.container .below-img {
 		flex-direction: column;
-		padding: 0 20px 20px 20px;
+		padding: 0 4% 20px 4%;
 	}
 
 	.container .below-img .below-item {
@@ -597,16 +684,15 @@ ol li {
 	.container .below-img .services {
 		padding-bottom: 80px;
 	}
+
 	.container .below-img .product {
 		padding-bottom: 80px;
 	}
 
-	.container .below-img .vision {
+	.container .below-img .vision {}
 
-	}
-
-	address{
-		padding:0 20px 5px 20px;
+	address {
+		padding: 0 4% 5px 4%;
 	}
 
 	/* services page */
@@ -615,6 +701,7 @@ ol li {
 		flex-direction: column;
 		width: 100%;
 	}
+
 	.container .flexsection .flexitems {
 		width: 100%;
 	}
