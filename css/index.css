@@ -98,7 +98,6 @@ section nav a{
     margin: 0 auto;
     justify-content: space-between;
 }
-
 header .left-content{
     flex-direction: column;
     justify-content: center;
@@ -106,13 +105,7 @@ header .left-content{
     align-content: flex-end;
     width: 100%;
  }
- header .right-content{
-     align-content: flex-end;
- }
- header .right-content img{
-     height: auto;
- }
-header .left-content h1 {
+ header .left-content h1 {
     font-size: 7rem;
 }
 header .left-content a{
@@ -123,10 +116,12 @@ header .left-content a{
     padding: 7px 10%;
     font-size: 1.6rem;
 }
-
-
-
-
+ header .right-content{
+     align-content: flex-end;
+ }
+ header .right-content img{
+     height: auto;
+ }
 /* Main Content */
 .main-content img{
     max-width: 100%;
@@ -146,7 +141,7 @@ header .left-content a{
     justify-content: space-between;    
 }
 .top-content .text-content{
-    width: 48%;
+    width: 50%;
 }
 .main-content .bottom-content{
     display: flex;
@@ -155,11 +150,17 @@ header .left-content a{
 .bottom-content .text-content{
     width: 30%;
 }
+.main-content h2{
+    font-size: 1.6rem;
+}
+
 .main-content p{
     width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.25;
 }
 .main-content div {
-   margin: 2% 0;
+    margin: 16px 0px 14px;
 }
 
 
