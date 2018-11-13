@@ -111,20 +111,29 @@ h3,
 h4,
 h5 {
   font-family: "Bangers", cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 1.7%;
 }
 
-  .container {
-    max-width: 880px;
-    margin: 0 auto;
-    font-size: 1.6rem;
-  }
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  font-size: 1.6rem;
 }
 
 p {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+p,
+address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
 }
 
 img {
@@ -152,7 +161,7 @@ h3 {
 nav {
   display: flex;
   flex-direction: row-reverse;
-  padding: 30px 0;
+  padding: 3.4% 0;
   font-size: 1.4rem;
 }
 
@@ -172,23 +181,33 @@ nav a:hover {
 }
 
 @media (max-width: 800px) {
-  nav {
-    font-size: 1.4rem;
+  .container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner_nav {
+    margin-top: 3.75%;
   }
 }
 
 @media (max-width: 500px) {
+  nav a {
+    text-align: center;
+  }
   .inner_nav {
     flex-direction: column;
-    text-align: center;
   }
   .inner_nav a {
     width: 100%;
-    padding: 20px 0;
+    padding: 4% 0;
     border-top: 1px solid grey;
   }
   .inner_nav a:last-child {
     border-bottom: 1px solid grey;
+  }
+  .logo {
+    width: 70%;
   }
 }
 
@@ -197,13 +216,13 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 2.5%;
+  padding-bottom: 4.54%;
 }
 
 .home_header_container img {
-  top: 150px;
-  right: 120px;
+  top: 17.05%;
+  right: 13.64%;
 }
 
 .home_header {
@@ -222,9 +241,10 @@ nav a:hover {
 .home_header button {
   font-size: 1.5rem;
   border: 1px solid black;
-  padding: 5px;
-  width: 150px;
+  padding: 1.14% 7%;
+  width: 40%;
   text-align: center;
+  margin-top: 5%;
 }
 
 .home_header button:hover {
@@ -233,23 +253,37 @@ nav a:hover {
 }
 @media (max-width: 800px) {
   .home_header_container {
-    padding-bottom: 60px;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
   .home_header_container img {
     display: none;
   }
   .home_header h1 {
     padding: 0;
-    font-size: 6.5rem;
+    font-size: 6.2rem;
+  }
+  .home_header button {
+    width: 40%;
+    margin-top: 5%;
+    padding: 1.14% 7%;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 500px) {
   .home_header_container {
-    padding-bottom: 70px;
+    padding-top: 7%;
+    padding-bottom: 14%;
   }
   .home_header h1 {
     padding: 0;
     font-size: 6rem;
+  }
+  .home_header button {
+    width: 70%;
+    margin-top: 8%;
+    padding: 1.5% 10%;
+    font-size: 1.4rem;
   }
 }
 
@@ -263,16 +297,16 @@ nav a:hover {
 
 .top_section div {
   width: 48%;
-  padding: 20px 0;
+  padding: 4% 0;
 }
 @media (max-width: 800px) {
   .top_section {
-    margin: 0 20px;
+    margin: 0 2.5%;
   }
 }
 @media (max-width: 500px) {
   .top_section {
-    padding: 30px 0;
+    padding: 6% 0;
     flex-direction: column;
   }
   .top_section div {
@@ -287,7 +321,7 @@ nav a:hover {
 }
 @media (max-width: 800px) {
   .middle_img {
-    padding: 0 20px;
+    padding: 0 2.5%;
   }
 }
 
@@ -300,17 +334,17 @@ nav a:hover {
 }
 
 .bottom_section div {
-  padding: 20px 0;
+  padding: 4% 0;
   width: 32%;
 }
 @media (max-width: 800px) {
   .bottom_section {
-    margin: 0 20px;
+    margin: 0 2.5%;
   }
 }
 @media (max-width: 500px) {
   .bottom_section {
-    padding: 20px 0;
+    padding: 4% 0;
     flex-direction: column;
   }
   .bottom_section div {
@@ -321,27 +355,15 @@ nav a:hover {
 /* ----------------------- contact and footer ---------------------- */
 
 .contact {
-  padding: 30px 0;
+  padding: 3.75% 0;
 }
 
 footer {
   text-align: center;
-  padding: 50px 0px 40px;
+  padding: 3%;
 }
 @media (max-width: 800px) {
   .contact {
-    margin: 0 20px;
-  }
-}
-
-@media (max-width: 800px) {
-  .container nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .inner_nav {
-    margin-top: 30px;
+    margin: 0 2.5%;
   }
 }
