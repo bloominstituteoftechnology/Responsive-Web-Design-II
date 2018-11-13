@@ -277,17 +277,19 @@ header .round-img {
   display:flex;
   flex-direction: column;
   text-align: center;
-	padding: 20px 40px; /* Stretch: Needs percentage */
+	padding: 20px 5%;
 }
 
 .headshot strong {
 	margin-top: 20px;
 	font-weight: 800;
+	font-size: 1.6rem;
 }
 
 .headshot p {
 	margin-top: 10px;
 }
+
 .headshot-photo {
 	border-radius: 50%;
 }
@@ -504,5 +506,14 @@ header .round-img {
 		padding: 40px 3% 0; 
 	}
 
+	/* Vision Styles */
+
+	.value-container {
+		padding: 0 2.5%;
+	}
+
+	.team {
+		padding: 40px 2.5%;
+	}
 }
 
