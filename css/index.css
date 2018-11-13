@@ -139,6 +139,8 @@ html,
 body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
+  /*font size for 16px*/
+  font-size: 62.5%;
 }
 
 h1,
@@ -166,9 +168,11 @@ header {
 
 header nav {
   margin-top: 40px;
+  font-size: 1.6rem;
   display: flex;
+  width: 69%;
+  margin-right: auto;
   justify-content: space-between;
-  width: 605px;
 }
 
 header nav a {
@@ -212,7 +216,7 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 9.5% 0 0;
 }
 
 .cta .cta-text button {
@@ -237,7 +241,7 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 
@@ -255,20 +259,26 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
 /* Contact Styles */
 
 .contact p {
   margin: 15px 0;
+  font-size: 1.6rem;
+}
+
+.contact h4 {
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 40px 0;
+  font-size: 1.6rem;
 }
 
 /* Services Styles */
