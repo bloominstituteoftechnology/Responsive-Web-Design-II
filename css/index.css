@@ -351,7 +351,7 @@ a {
   display: inline-block;
 }
 
-footer {
+.home__footer {
   width: 100%;
   text-align: center;
   margin: 40px 0;
