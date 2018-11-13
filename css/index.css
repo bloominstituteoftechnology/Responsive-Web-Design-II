@@ -332,6 +332,16 @@ header img {
         margin-left: 14%;
     }
 
+    .cta-text {
+        animation-name: fade;
+        animation-duration: 5s;
+    }
+
+    @keyframes fade {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
     .cta {
         margin-top: -60px;
         display: flex;
@@ -431,6 +441,16 @@ header img {
 
     .cta .cta-text button {
         margin-top: 16px;
+    }
+
+    .cta-text {
+        animation-name: fade-again;
+        animation-duration: 5s;
+    }
+
+    @keyframes fade-again {
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
 
     .main-content {
