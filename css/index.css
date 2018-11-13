@@ -1,1 +1,369 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* ---------------------- Global Styles ----------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  margin-bottom: 1.7%;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+p,
+address,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------------------- navigation styles -------------------- */
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3.4% 0;
+  font-size: 1.4rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.inner_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .container nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner_nav {
+    margin-top: 3.75%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav a {
+    text-align: center;
+  }
+  .inner_nav {
+    flex-direction: column;
+  }
+  .inner_nav a {
+    width: 100%;
+    padding: 4% 0;
+    border-top: 1px solid grey;
+  }
+  .inner_nav a:last-child {
+    border-bottom: 1px solid grey;
+  }
+  .logo {
+    width: 70%;
+  }
+}
+
+/* ----------------------------Header styles ----------------------- */
+.home_header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2.5%;
+  padding-bottom: 4.54%;
+}
+
+.home_header_container img {
+  top: 17.05%;
+  right: 13.64%;
+}
+
+.home_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.home_header h1 {
+  text-align: center;
+  font-size: 7.5rem;
+}
+
+.home_header button {
+  font-size: 1.5rem;
+  border: 1px solid black;
+  padding: 1.14% 7%;
+  width: 40%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.home_header button:hover {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 800px) {
+  .home_header_container {
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+  .home_header_container img {
+    display: none;
+  }
+  .home_header h1 {
+    padding: 0;
+    font-size: 6.2rem;
+  }
+  .home_header button {
+    width: 40%;
+    margin-top: 5%;
+    padding: 1.14% 7%;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .home_header_container {
+    padding-top: 7%;
+    padding-bottom: 14%;
+  }
+  .home_header h1 {
+    padding: 0;
+    font-size: 6rem;
+  }
+  .home_header button {
+    width: 70%;
+    margin-top: 8%;
+    padding: 1.5% 10%;
+    font-size: 1.4rem;
+  }
+}
+
+/* --------------------- features and about styles -------------------*/
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+}
+
+.top_section div {
+  width: 48%;
+  padding: 4% 0;
+}
+@media (max-width: 800px) {
+  .top_section {
+    margin: 0 2.5%;
+  }
+}
+@media (max-width: 500px) {
+  .top_section {
+    padding: 6% 0;
+    flex-direction: column;
+  }
+  .top_section div {
+    width: 100%;
+  }
+}
+
+/* -------------------------- image in middle ---------------------- */
+
+.middle_img {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .middle_img {
+    padding: 0 2.5%;
+  }
+}
+
+/* -------------------services, product, and vision ------------------*/
+
+.bottom_section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+.bottom_section div {
+  padding: 4% 0;
+  width: 32%;
+}
+@media (max-width: 800px) {
+  .bottom_section {
+    margin: 0 2.5%;
+  }
+}
+@media (max-width: 500px) {
+  .bottom_section {
+    padding: 4% 0;
+    flex-direction: column;
+  }
+  .bottom_section div {
+    width: 100%;
+  }
+}
+
+/* ----------------------- contact and footer ---------------------- */
+
+.contact {
+  padding: 3.75% 0;
+}
+
+footer {
+  text-align: center;
+  padding: 3%;
+}
+@media (max-width: 800px) {
+  .contact {
+    margin: 0 2.5%;
+  }
+}
