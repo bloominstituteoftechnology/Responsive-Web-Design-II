@@ -139,6 +139,10 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 h1,
 h2,
 h3,
@@ -146,33 +150,34 @@ h4,
 h5 {
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  /*changed margin-bottom from 15px*/
+  margin-bottom: 1.5rem;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .container {
-  width: 880px;
-  margin: auto;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .container {
-    width: 800px;
-    margin: auto;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .container {
-    width: 500px;
-    margin: auto;
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
@@ -181,14 +186,15 @@ p {
 header {
   width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 header nav {
-  font-size: 16px;
-  margin-top: 40px;
-  width: 610px;
-  justify-content: space-between;
   display: flex;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  width: 68.8%;
+  justify-content: space-between;
 }
 
 header nav a {
@@ -202,10 +208,10 @@ header nav a:hover {
 }
 
 header .logo {
-  margin: 28px 0 0 91px;
+  margin-top: 28px;
 }
 
-@media screen and (max-width: 800px) and (min-width: 501px) {
+@media (max-width: 800px) {
   header {
     margin: 0;
     flex-direction: column;
@@ -213,7 +219,7 @@ header .logo {
   }
   header nav {
     margin-right: 30px;
-    width: 88%;
+    width: 100%;
     order: 1;
     align-items: space-evenly;
   }
@@ -221,20 +227,20 @@ header .logo {
     margin: 0;
   }
   header .logo {
-    margin: 30px 0 0 0;
+    margin: 0%;
     flex-wrap: nowrap;
     order: -1;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   header {
     width: 100%;
     flex-direction: column;
     align-items: center;
   }
   header .logo {
-    margin: 20px 0 0 0;
+    margin: 100%;
     flex-wrap: nowrap;
     order: -1;
   }
@@ -247,7 +253,7 @@ header .logo {
     align-content: center;
   }
   header nav a {
-    font-size: 20px;
+    font-size: 2rem;
     display: flex;
     flex-flow: wrap;
     margin: 0;
@@ -268,28 +274,33 @@ header .logo {
 
 .cta {
   display: flex;
-  margin-top: 65px;
-  justify-content: flex-end;
+  margin-top: 68px;
+  /* justify-content: center; */
+  justify-content: space-between;
+  width: 100%;
 }
 
 .cta .cta-text {
-  font-size: 75px;
+  font-size: 6rem;
   text-align: center;
-  letter-spacing: 22px;
+  letter-spacing: 0.04rem;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 23px 100px 0 0;
+  margin-top: 5px;
+  margin-left: 13.5%;
+  line-height: 0.95;
 }
 
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.2rem;
+  letter-spacing: 0.04rem;
   background: white;
-  width: 170px;
+  width: 56%;
   height: 32px;
-  margin-top: 10px;
+  margin-top: 5px;
   cursor: pointer;
 }
 
@@ -298,7 +309,7 @@ header .logo {
   color: white;
 }
 
-@media screen and (max-width: 800px) and (min-width: 501px) {
+@media (max-width: 800px) {
   .cta img {
     display: none;
   }
@@ -311,10 +322,10 @@ header .logo {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .cta .cta-text {
     width: 100%;
-    margin: 40px 0 0 0;
+    margin-top: 40px;
   }
   .cta img {
     display: none;
@@ -325,14 +336,21 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 78px 0 35px 0;
+  margin-top: 77px;
+  margin-bottom: 35px;
+
   padding: 35px 0;
-  font-size: 16px;
-  line-height: 18px;
+
+  line-height: 1.2rem;
 }
 
+.main-content p {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.015rem;
+}
 .main-content h4 {
-  font-size: 17px;
+  font-size: 1.25rem;
 }
 
 .main-content .top-content {
@@ -349,27 +367,27 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
-@media screen and (max-width: 800px) and (min-width: 501px) {
+@media (max-width: 800px) {
   .main-content {
     width: 95%;
     margin: 75px auto 35px auto;
   }
   .main-content .top-content {
     flex-wrap: nowrap;
-    margin: 0px 20px 0px 0px;
+    margin-right: 5%;
     justify-content: space-between;
   }
 
   .main-content .top-content .text-content:first-child {
-    margin: 0px 18px 0px 10px;
+    /* margin: 0px 18px 0px 10px; */
     justify-content: space-between;
   }
 
   .main-content .top-content .text-content:last-child {
-    margin: 0px 0px 0px 18px;
+    /* margin: 0px 0px 0px 18px; */
     justify-content: space-between;
   }
 
@@ -380,46 +398,47 @@ header .logo {
   .main-content .bottom-content {
     width: 100%;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 5%;
     margin-right: 0;
   }
   .main-content .bottom-content p {
-    padding-right: 40px;
+    padding-right: 5%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .main-content {
-    width: 92%;
+    width: 100%;
     margin: 75px auto 0px auto;
   }
   .main-content .top-content {
     flex-wrap: wrap;
-    margin: 24px 0px 0px 0px;
+    margin-top: 24px;
     justify-content: space-between;
   }
   .main-content .top-content .text-content {
-    margin: 0px 0px 45px 0px;
+    margin-bottom: 45px;
     justify-content: space-between;
   }
 
   .main-content .top-content .text-content:last-child {
-    margin: 0px 0px 25px 0px;
+    margin-bottom: 25px;
   }
   .main-content .middle-img {
     width: 100%;
-    margin: 25px 0 30px 0;
+    margin-top: 25px;
+    margin-bottom: 30px;
   }
   .main-content .bottom-content {
     flex-wrap: wrap;
   }
 
   .main-content .bottom-content h4 {
-    margin: 0px 0 18px 0;
+    margin-bottom: 18px;
   }
 
   .main-content .bottom-content p {
-    margin: 0px 0 60px 0;
+    margin-bottom: 60px;
   }
 
   .main-content .bottom-content .last-one {
@@ -428,26 +447,34 @@ header .logo {
 }
 /* Contact Styles */
 
+.contact h4 {
+  font-size: 1.3rem;
+}
 .contact p {
-  margin: 15px 0;
+  font-size: 1.3rem;
+  line-height: 1.2;
 }
 
 /* Footer Styles */
 
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 50px 0;
 }
 
-@media screen and (max-width: 800px) and (min-width: 501px) {
+footer p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 800px) {
   .contact {
-    margin: 0px auto auto 30px;
+    margin-left: 10%;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .contact {
-    margin: 30px auto auto 20px;
+    margin-top: 30px;
   }
 }
 /* Services Styles */
@@ -464,27 +491,27 @@ footer {
 }
 
 .services-content h1 {
-  font-size: 26px;
+  font-size: 2.6rem;
   margin: 10px 0;
 }
 
 .services-content .services-text {
-  font-size: 16px;
+  font-size: 1.6rem;
   border-bottom: 1px solid black;
   padding-bottom: 40px;
   margin-bottom: 20px;
 }
 
 .services-content .card {
-  padding: 20px;
+  padding: 20px 3%;
   border: 1px solid black;
-  width: 420px;
+  width: 46%;
   background: whitesmoke;
-  margin: 20px 0;
+  margin: 20px;
 }
 
 .services-content .card button {
-  padding: 10px 40px;
+  padding: 10px 5%;
   margin-top: 20px;
   cursor: pointer;
   background: white;
@@ -520,11 +547,11 @@ footer {
 }
 
 .services-content .services-info .facts li {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .services-content .services-info .facts h2 {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-bottom: 16px;
 }
 .services-content .services-info .services-info-img {
