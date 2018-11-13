@@ -211,8 +211,25 @@ footer{
         display: none;
     }
     /***MAIN CONTENT***/
-    .main-content div {
-        margin: 3% 0;
+   .main-content{
+       width: 95%;
+       align-content: flex-end;
+   }
+  
+   .main-content .top-content .text-content{
+       padding: 0px 2% 5px;
+       margin-bottom: 0;
+   }
+   .main-content .bottom-content .text-content{
+    padding: 0px 2.2%;
+   }
+
+
+
+   /* Adress */
+    address{
+        width: 95%;
+        margin: 15px auto;
     }
 }
 /* Mobile View */
