@@ -186,7 +186,7 @@ nav {
   align-items: center;
 }
 
-nav .logo-link-wrapper {
+nav .logo nav .logo-link-wrapper {
   width: 18.1rem;
   margin-top: 20px;
 }
@@ -198,3 +198,9 @@ nav .logo-link-wrapper {
 }
 
 /* Services Page Styles */
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 800px) {
+}
