@@ -493,5 +493,39 @@ address .add3 {
 	#home header nav a:hover {
 		transform: none;
 	}
+
+	#home .main-section {
+		margin-top: 72px;
+		max-width: 95%;
+	}
+
+	#home .main-section .main-top {
+		display: block;
+		margin-bottom: 33px;
+	}
+
+	#home .main-section .main-top div {
+		width: 100%;
+		margin-top: 24px;
+	}
+
+	#home .main-section .main-top .main-top1 {
+		margin-bottom: 43px;
+	}
+
+	#home .main-section .main-middle {
+		margin-bottom: 17px;
+	}
+
+	#home .main-section .main-bottom {
+		display: block;
+	}
+
+	#home .main-section .main-bottom div {
+		width: 100%;
+		margin-bottom: 63px;
+	}
+
+	#;
 }
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
