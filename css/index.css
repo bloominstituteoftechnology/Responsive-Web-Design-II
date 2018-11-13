@@ -223,10 +223,7 @@ footer{
    .main-content .bottom-content .text-content{
     padding: 0px 2.2%;
    }
-
-
-
-   /* Adress */
+   /* Address */
     address{
         width: 95%;
         margin: 15px auto;
@@ -240,19 +237,23 @@ footer{
     .navigation{
         flex-direction: column-reverse;
         text-align: center;
+        padding: 26px 0 0;
     }
     nav{
         flex-wrap: wrap;
     }
-    nav a {
+    section nav a {
         width: 100%;
         padding: 20px;
         border-top: 1px solid grey;
         text-decoration: none;
         color: grey;
+        font-weight: bold;
+        font-size: 2rem;
     }
     .navigation img{
-        padding: 20px;
+        padding: 0 0 0 4.5%;
+        margin: 0 auto 13px;
     }
     /*HEADER*/
     header{
@@ -264,15 +265,14 @@ footer{
         justify-content: center;
         margin: 0 auto;
         text-align: center;
-        padding: 10% 0 15%;
      }
     header h1{
         font-size: 4em;
     }
-    header a{
-        margin: 2% auto 0;
+    header .left-content a{
+        margin: 15px auto;
         border: 1px solid black;
-        padding: 1.5% 7.5%;
+        padding: 7px 10%;
         color: black;
     }
    
@@ -287,24 +287,31 @@ footer{
     }
     .main-content .top-content{
         flex-direction: column;
+        margin: 30px 0 40px;
     }
     .main-content .bottom-content{
         flex-direction: column;
+        /* padding: 23px 0 40px; */
     }
     .main-content .top-content .text-content{
         width: 100%;
+        margin-bottom: 20px;
     }
-    .main-content .bottom-content .text-content{
-        width: 100%;
+   
+    section .bottom-content .text-content p{
+        margin-bottom: 20px;
     }
     .main-content div{
-        margin: 10% 0;
+        margin: 15px 0 40px;
     }
-    .main-content p{
-        width: 95%;
-    }
+   .main-content p{
+       line-height: 1.1;
+   }
     .main-content img{
         width: 100%;
         margin: 0 auto;
+    }
+    .main-content .bottom-content{
+        margin-bottom: 15px;
     }
 }
