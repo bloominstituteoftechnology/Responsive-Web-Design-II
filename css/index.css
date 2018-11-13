@@ -190,9 +190,6 @@ footer p{
     .main-image{
         display:none;
     }
-    .logo{
-        margin-bottom: 5%;
-    }
     .main-content{
         text-align: center;
 		flex-direction: column;
@@ -217,12 +214,16 @@ footer p{
         margin:unset;
         margin-top: 5%;
     }
+    .heading{
+        margin: 10% 5%;
+    }
     .logo{
         order: -1;
         position: unset;
         margin-bottom: 3%;
     }
     .navigation{
+        margin-top: 5%;
         order: 1;
         justify-content: center;
         align-content: center;
