@@ -212,29 +212,43 @@ header nav a:hover {
 
 
 .bottom-container {
-	margin: 50px 0 50px 0;
-	display: flex;
-	justify-content: space-between;
+	margin: 2.3% auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 1.5%;
+    
+    border-bottom: 2px solid black;
 }
 
 .bottom-item {
-	width: 30%;
+    width: 30%;
+    margin-right: 2%;
 	
 }
 
 .contact-container {
-	margin-top: 50px;
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
+	margin: 3.8% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	padding-left: 1%;
 	
 }
 
-.address,
-.contact p {
-	margin-bottom: 20px;
+.contact {
+    margin: 0 0 1% 0;
+    padding: 0;
 }
+
+.contact-container h2 {
+    margin-bottom: 1%;
+}
+
+.contact p {
+    margin: 0 auto;
+}
+
 
 
 .copyright {
