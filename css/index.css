@@ -85,7 +85,7 @@ summary,
 time,
 mark,
 audio,
-/*video {*/
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -376,6 +376,7 @@ footer {
     display: flex;
     margin: auto;
   }
+  
   header nav {
     display: flex;
     justify-content: space-between;
@@ -394,7 +395,7 @@ footer {
     margin-top: 41px;
     display: flex;
     justify-content: center;
-    margin-left: 9%;
+    padding-left: 9%;
     
   }
 
@@ -417,7 +418,7 @@ footer {
     font-size: 1.6rem;
     line-height: 18px;
     width: 90%;
-    margin-left: 3%;
+    padding-left: 3%;
   }
 
   .main-content .middle-img {
@@ -427,15 +428,15 @@ footer {
   }
 
   .main-content .bottom-content {
-    margin-left: 1%;
+    padding-left: 1%;
   }
 
   .contact {
-    margin-left: 3%;
+    padding-left: 3%;
   }
   footer {
     width: 100%;
-    margin-left: 1%;
+    padding-left: 1%;
   }
 }
 
@@ -456,7 +457,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 18px 0 0 4%;
+    margin: 18px 0 0 0;
+    padding-left: 4%;
   }
 
   header nav a {
@@ -473,7 +475,8 @@ footer {
 
   .cta {
     width: 100%;
-    margin: 25px 0 0 9%;
+    margin: 25px 0 0 0;
+    padding-left: 9%;
 
   }
 
@@ -496,7 +499,7 @@ footer {
     font-size: 1.6rem;
     line-height: 18px;
     width: 100%;
-    margin-left: 4%;
+    padding-left: 4%;
   }
 
   .main-content .top-content {
@@ -527,7 +530,7 @@ footer {
   }
 
   .contact {
-    margin-left: 4%;
+    padding-left: 4%;
   }
   footer {
     width: 100%;
