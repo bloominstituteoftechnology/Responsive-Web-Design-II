@@ -185,6 +185,16 @@ nav a:hover{
 
 .contact-page header{
     border: none;
+    padding-bottom: 0px;
+
+}
+
+.contact-page h1{
+    font-size: 4rem;
+}
+
+.contact-page h2{
+    font-size: 2.5rem;
 }
 
 .contact-master-flex{
@@ -194,16 +204,33 @@ nav a:hover{
 
 form{
     /* border: 1px solid red; */
-    flex-grow: 1;
+    flex-grow: 3;
+}
+
+form input{
+    height: 34px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #dddddd;
+}
+
+form textarea{
+    border: 1px solid #dddddd;
+    border-radius: 4px;
 }
 
 .side-info{
     /* border: 1px solid red; */
+    padding-left: 20px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .contact-flex-cont{
     display: flex;
+    
     
 }
 
@@ -211,8 +238,12 @@ form{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 0 10px;
+    padding: 0 10px 10px 10px;
     /* border: 1px solid blue; */
+}
+
+.contact-label{
+    margin-bottom: 2px;
 }
 
 .subject-message-cont{
@@ -221,6 +252,7 @@ form{
 
 .subject{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .message{
