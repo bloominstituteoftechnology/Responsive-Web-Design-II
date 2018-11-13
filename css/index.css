@@ -214,12 +214,28 @@ header .logo {
         display:flex;
         flex-direction: column-reverse;
         align-items: center;
+        
     }
     header img{
-        width: 300px;
+        width: 200px;
     }
     
+.cta{
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
     .cta .snippet{
           display: none;
       }
+  }
+
+  .main-content .top-content{
+      display: flex;
+  }
+
+  .bottom-content{
+      display: flex;
   }
