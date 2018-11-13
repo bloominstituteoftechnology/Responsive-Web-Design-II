@@ -378,21 +378,37 @@ header img {
 		display: flex;
 		flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 17px;
+    }
+
+    header img {
+        padding: 2px 0;
     }
 
     header nav a {
-        margin: 15px 0;
+        margin: 20px 0;
+        font-size: 1.9rem;
     }
 
     .cta {
         margin-top: -90px;
     }
 
-    .top-content {
+    .cta .cta-text button {
+        margin-top: 16px;
+    }
+
+    .main-content {
+        margin-top: 76px;
+    }
+
+    .main-content .top-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding: 0 1%;
+        margin: 22px 0 20px 0;
+        line-height: 1.2;
     }
 
     .main-content .top-content .text-content {
@@ -404,20 +420,22 @@ header img {
         margin-top: 0px;
     }
 
-    .bottom-content {
+    .main-content .bottom-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        padding: 0 1%;
+        margin: 22px 0 20px 0;
+        line-height: 1.2;
     }
 
     .main-content .bottom-content .text-content {
         width: 100%;
-        margin: 0 auto 35px auto;
+        margin: 0 auto 60px auto;
     }
 
     .contact {
-        margin-top: 0px;
+        margin-top: -50px;
     }
 	
 	.services-header-img {
@@ -481,7 +499,7 @@ header img {
 }
   
 footer {
-	margin: 32px 0;
+	margin: 0 0 50px 0;
 	text-align: center;
-	font-size: 14px;
+	font-size: 1.6rem;
 }
