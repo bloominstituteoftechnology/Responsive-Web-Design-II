@@ -187,6 +187,8 @@ nav a:hover{
     border: none;
 }
 
+/* Media Queries */
+
 @media (max-width: 800px){
 
 	.container{
