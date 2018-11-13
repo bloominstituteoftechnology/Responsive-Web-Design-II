@@ -229,15 +229,14 @@ header {
 }
 
 footer {
-    width: 90%;
+    width: 100%;
     margin-top: 30px;
     border-top: 1px solid black;
     padding-top: 30px;
 }
 
 footer > .contact-info {
-    width: 100%;
-    margin: 0 auto;
+    margin-left: 2.5%;
 }
 
 footer > .contact-info > address {
