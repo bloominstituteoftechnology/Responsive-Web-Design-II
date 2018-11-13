@@ -283,7 +283,11 @@ header img {
 
 /* Prodcuts Page */
 .products {
-	margin: 50px 0;
+    margin: 50px 0;
+    font-size: 1.6rem;
+    width: 95%;
+    margin: 30px auto;
+
 }
 
 .lorem {
@@ -294,11 +298,12 @@ header img {
 }
 
 .lorem-content {
-	width: 200px;
-	margin: 30px;
+    width: 29%;
+    margin: 30px 2%;
 	border: 1px solid black;
 	background: #edeff2;
-	padding: 25px;
+    padding: 25px;
+    font-size: 1.6rem;
 }
 
 .lorem-content button {
@@ -376,7 +381,7 @@ header img {
     .facts {
         justify-content: space-evenly;
     }
-    
+
     .facts-content {
         width: 45%;
         margin: 20px 0;
@@ -514,7 +519,8 @@ header img {
 	.lorem {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+        align-items: center;
+        margin-bottom: 50px;
 	}
 
 	.lorem-content {
@@ -523,7 +529,8 @@ header img {
 
 	.lorem-content button {
 		margin-left: 32%;
-	}
+    }
+    
 	
 
 }
