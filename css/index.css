@@ -96,13 +96,14 @@ General CSS
 .nav {
 	display:flex;
 	justify-content: space-between;
-	width: 60%;
+	width: 68%;
 }
 
 .nav a {
+    font-size: 1.6rem;
 	text-decoration: none;
     color: rgba(0,0,0,.3);
-    margin-left: 2%;
+    margin-left: 1.05%;
 }
 
 .logo {
@@ -158,7 +159,9 @@ footer {
 
 
 .cta button {
-	width: 26%;
+    width: 53%;
+    font-size: 1.6rem;
+    height: 3rem;
 	
 }
 
@@ -175,9 +178,19 @@ footer {
 	flex-direction:column;
 
 	
-	margin: 6% 0;
+	margin: 9% 0;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+}
+
+.main-content h4 {
+    font-size: 1.7rem;
+    line-height: 1;
+}
+
+.main-content p {
+    font-size: 1.6rem;
+    line-height: 1.1;
 }
 
 .top-content {
@@ -189,7 +202,7 @@ footer {
 }
 
 .top-content .text-content {
-	width:calc(100%/2 - 1%);
+	width: 54%;
 }
 
 .bottom-content {
@@ -202,10 +215,24 @@ footer {
 
 
 .bottom-content .text-content {
-	width: calc(100%/3 - 2%);
+	width: calc(100%/3 - 1%);
 }
 
 /* contact section */
+
+.contact {
+    margin-top: -6%;
+}
+
+.contact h4 {
+    font-size: 1.7rem;
+    line-height: 1;
+}
+
+.contact p {
+    font-size: 1.6rem;
+    line-height: 1.1;
+}
 
 .contact * {
 	padding: .8% 0;
