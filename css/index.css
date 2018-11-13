@@ -65,9 +65,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    max-width: 880px;
-    margin: auto;
-    padding:20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3%;
 }
 
 /* Header Styles */
@@ -79,7 +79,8 @@ header {
 }
 
 header nav {
-    margin-top: 27px; 
+    margin-top: 7px; 
+    margin-left: 40px;
     width: 610px;
     justify-content: space-between;
     display: flex;
@@ -98,7 +99,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 10px 0 0 91px;
+    margin: 2px 0 0 91px;
 }
 
 /* Call To Action (CTA) Styles */
@@ -106,18 +107,19 @@ header .logo {
 .cta {
     display: flex;
     margin-top: 72px;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-left: 15%;
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 8rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 5% 0 0;
 }
 
 .cta .cta-text button {
