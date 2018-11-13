@@ -1,1 +1,54 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    max-width: 880px;
+    margin: 0 auto;
+    border: 1px solid red;
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+header nav a{
+margin-left: 30px;
+text-decoration: none;
+color: grey;
+}
+header img{
+    margin-top: 10px;
+    margin-left: 200px;
+}
+.top-content{
+    display: flex;
+    margin-top: 30px;
+}
+h1{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+@media(max-width:800px){
+
+}
+
+@media(max-width: 500px){
+
+}
