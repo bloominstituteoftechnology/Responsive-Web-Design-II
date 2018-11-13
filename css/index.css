@@ -72,9 +72,15 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .container{
     max-width: 880px;
     margin: 0 auto;
+    font-size: 1.6rem;
     /* background-color: green; */
 }
 /* Header Styling */
@@ -89,10 +95,13 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.6rem;
 }
 
-
+.header__nav a{
+	text-decoration: none;
+	color: gray;
+	font-weight: 200;
+}
 /* Main Page Styling */
 
 .main{
@@ -118,14 +127,117 @@ h1, h2, h3, h4, h5 {
     color: black;
     font-size: 1.8rem;
 }
+
+/* sec1 & sec2 */
+.sec1 , .sec2 {
+	display: flex;
+    margin: 40px 0;
+    justify-content: space-between;
+}
+
+.sec1_features{
+	margin-right: 20px;
+}
+
+/* .sec2:not(:last-child) {
+	margin-right: 50px; 
+} */
+
+.sec2 .sec2-div {
+    margin-right: 20px;
+}
+
+/* contact */
+.contact {
+	margin-top: 25px;
+	line-height: 25px;
+}
+
+.address{
+	display: inline-flex;
+	margin-bottom: 20px;
+}
+
+/* Footer Styling */
+footer{
+	text-align: center;
+    padding-top: 1%;
+}
+
+
+
 @media (max-width: 800px){
+
     .container{
-        border: pink 5px solid;
+        padding: 0 20px;
+    }
+    .header{
+        flex-direction: column-reverse;
+        align-items: center;
+        /* border: 2px red solid; */
+    }
+    .header__nav {
+        width: 93%;
+        margin-top: 35px;
+    }
+
+    .main{
+        flex-direction: column;
+        /* margin: 0; */
+    }
+
+    .main .main__section {
+        width: 100%;
+    }
+    .main__section img {
+        display: none;
     }
 }
 
 @media (max-width: 500px){
-    .container{
-        border: green 5px solid;
+    
+    .header__nav {
+        flex-direction: column;
+        margin-top: 0;
     }
+    .header__nav a{
+        padding: 20px 43%;
+        font-size: 20px;
+        align-items: center;  
+        margin: 0;   
+        align-items: center;
+    }
+
+    .header__nav a:nth-child(even) {
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+    }
+
+    .header .header__img{
+        border-bottom: 1px black solid;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .header__img img{
+        padding: 2rem;
+    }
+    
+    .container .sec1{
+        flex-direction: column;
+    }
+    .sec1 .sec1_features {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .container .sec2{
+        flex-direction: column;
+    }
+
+    .sec2 .sec2-div:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
+    
 }
