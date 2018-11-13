@@ -376,7 +376,7 @@ footer {
     display: flex;
     margin: auto;
   }
-  
+
   header nav {
     display: flex;
     justify-content: space-between;
@@ -384,11 +384,21 @@ footer {
   }
 
   @keyframes rubberBand {
-    0% {transform: scale(1);}
-    30% {transform: scaleX(1.25) scaleY(0.75);}
-    40% {transform: scaleX(0.75) scaleY(1.25);}
-    60% {transform: scaleX(1.15) scaleY(0.85);}
-    100% {transform: scale(1);}
+    0% {
+      transform: scale(1);
+    }
+    30% {
+      transform: scaleX(1.25) scaleY(0.75);
+    }
+    40% {
+      transform: scaleX(0.75) scaleY(1.25);
+    }
+    60% {
+      transform: scaleX(1.15) scaleY(0.85);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 
   .cta {
@@ -396,7 +406,6 @@ footer {
     display: flex;
     justify-content: center;
     padding-left: 9%;
-    
   }
 
   .cta img {
@@ -477,7 +486,6 @@ footer {
     width: 100%;
     margin: 25px 0 0 0;
     padding-left: 9%;
-
   }
 
   .cta img {
@@ -526,7 +534,6 @@ footer {
 
   .bottom-content .text-content {
     padding-top: 25px;
-   
   }
 
   .contact {
@@ -544,33 +551,40 @@ footer {
       -webkit-animation-timing-function: ease-out;
       animation-timing-function: ease-out;
     }
-  
+
     40% {
-      -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
-      -ms-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+      -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg)
+        scale(1);
+      -ms-transform: perspective(400px) translateZ(150px) rotateY(170deg)
+        scale(1);
       transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
       -webkit-animation-timing-function: ease-out;
       animation-timing-function: ease-out;
     }
-  
+
     50% {
-      -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
-      -ms-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+      -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg)
+        scale(1);
+      -ms-transform: perspective(400px) translateZ(150px) rotateY(190deg)
+        scale(1);
       transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
       -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;
     }
-  
+
     80% {
-      -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
-      -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
-      transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+      -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg)
+        scale(0.95);
+      -ms-transform: perspective(400px) translateZ(0) rotateY(360deg)
+        scale(0.95);
+      transform: perspective(400px) translateZ(0) rotateY(360deg) scale(0.95);
       -webkit-animation-timing-function: ease-in;
       animation-timing-function: ease-in;
     }
-  
+
     100% {
-      -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+      -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg)
+        scale(1);
       -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
       transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
       -webkit-animation-timing-function: ease-in;
