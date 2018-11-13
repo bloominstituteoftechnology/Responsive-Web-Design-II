@@ -82,7 +82,7 @@ body {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -251,7 +251,7 @@ footer {
 
 /* Tablet Styling || 800px and smaller */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 	body {
 		width: 95%;
 	}
@@ -281,7 +281,7 @@ footer {
 
 /*Mobile navigation changed to column prior to browser using horizontal scroll */
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 	.top-nav nav {
 		display: flex;
 		flex-direction: column;
@@ -290,6 +290,7 @@ footer {
 	.top-nav nav a {
 		width: 97vw;
 		padding: 20px 0;
+		margin: 0;
 		font-size: 2.0rem;
 		border-bottom: 1px solid black;
 		text-align: center;
