@@ -489,6 +489,18 @@ footer {
     margin-right: 2.2%;
     width: 31.2%;
   }
+
+  address {
+    margin: 37px 0 0;
+  }
+
+  address .address-container {
+    margin: 35px 0 0;
+  }
+
+  address div span {
+    margin: 15px 0 14px;
+  }
 }
 
 /* Services Page Styles */
