@@ -49,14 +49,17 @@ table {
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-size:62.5%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -73,7 +76,8 @@ header nav {
 	margin-top: 40px; 
 	width: 610px;
 	justify-content: space-between;
-	display: flex;
+    display: flex;
+    font-size: 1.6rem;
 }
 header nav a {
 	text-decoration: none;
@@ -103,7 +107,7 @@ header .logo {
 	align-items: flex-start;
 	margin-top: 120px;
 	text-align: center;
-	font-size: 77px;
+	font-size: 7.7rem;
 	padding: 0px 75px;
 
   }
