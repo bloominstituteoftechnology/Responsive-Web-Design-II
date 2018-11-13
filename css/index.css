@@ -468,7 +468,6 @@ ol li {
 	.container {
 		overflow: hidden;
 		width: 100%;
-		max-width: 800px;
 	}
 
 	.container nav {
@@ -542,11 +541,11 @@ ol li {
 	/* below image content */
 
 	.container .below-img .services {
-		padding: 0 0 0 3.75%;
+		padding-left: 3.75%;
 	}
 
 	.container .below-img .product {
-		padding: 0 0 0 1.875%;
+		padding-left: 1.875%;
 	}
 
 	.below-img {
@@ -586,6 +585,7 @@ ol li {
 @media (max-width: 500px) {
 	.container {
 		padding: 0;
+		width: 100%;
 	}
 
 	/* navbar */
@@ -593,7 +593,7 @@ ol li {
 	.contianer nav {
 		border-bottom: 0;
 		margin: 0;
-		padding: 0 0 0 0;
+		padding: 0;
 
 	}
 
@@ -637,7 +637,7 @@ ol li {
 	}
 
 	.container .navcontainer .navmenu a {
-		padding: 20px 0 4% 0;
+		padding: 20px 0 20px 0;
 		text-align: center;
 		border-top: 1px solid black;
 		font-size: 2.08rem;
@@ -652,7 +652,7 @@ ol li {
 
 	.container .above-img .above-content-block {
 		width: 100%;
-		padding: 0 0 0 0;
+		padding: 0;
 	}
 
 	.container .above-img .featuress {
@@ -678,7 +678,7 @@ ol li {
 
 	.container .below-img .below-item {
 		width: 100%;
-		padding: 0 0 0 0;
+		padding: 0;
 	}
 
 	.container .below-img .services {
