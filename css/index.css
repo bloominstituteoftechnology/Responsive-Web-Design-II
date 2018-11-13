@@ -253,6 +253,10 @@ header nav a {
   border: 1px solid rgba(0, 0, 0, 0.576);
 }
 @media (max-width: 800px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
   .banner .getStarted {
     text-align: center;
     margin: 0 auto;
@@ -281,6 +285,7 @@ header nav a {
     margin-bottom: 21px;
   }
 }
+
 .main .fa_wrapper {
   display: flex;
   padding-top: 38px;
@@ -295,7 +300,9 @@ header nav a {
 }
 .main .spv_wrapper {
   display: flex;
-  margin-bottom: 70px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid black;
+  margin-bottom: 34px;
 }
 .main .spv_wrapper div h2 {
   margin-bottom: 15px;
