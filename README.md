@@ -20,9 +20,9 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 * [x] Once you have completed all of the project objectives, push your commits and make a pull request against the original fork
 
 ## Stretch Goals: 
-* [ ] Build the services page from earlier assignments into a responsive design using your own creativity
+* [x] Build the services page from earlier assignments into a responsive design using your own creativity
 * [ ] [Look at BEM](http://getbem.com/) and convert your existing CSS into the appropriate selectors.
-* [ ] Introduce CSS animations at different break points across your site
+* [x] Introduce CSS animations at different break points across your site
 * [ ] Build another page based on one of the navigation items and use your creativity on how it looks.
 
 
