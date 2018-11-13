@@ -165,20 +165,19 @@ header {
   display: flex;
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 header nav {
+  justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
-  vertical-align: top;
-  margin-top: 35px;
-  font-size: 14px;
+  display: flex;
+  font-size: 1.6rem;
+  padding-bottom: 1%;
+  padding-right: 10%;
 }
 
 header nav a {
-  margin-right: 0px;
+  font-size: 1.6rem;
+  margin-right: 0%;
   color: gray;
   text-decoration: none;
 }
@@ -186,7 +185,7 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
-
+/*
 header nav a:first-child {
   margin-left: 0;
 }
@@ -194,9 +193,10 @@ header nav a:first-child {
 header nav a:last-child {
   margin-right: 0px;
 }
-
+*/
 header .logo {
-  margin-top: 25px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .cta {
@@ -205,19 +205,27 @@ header .logo {
 
 .cta .cta-text {
   vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
+  font-size: 7.7rem;
+  margin-top: 14%;
   text-align: center;
-  padding: 0px 75px;
+  padding: 0 5% 5% 13%;
 }
 
 .cta .cta-text button {
   background: white;
   vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
+  padding: 1.5% 13%;
+  font-size: 1.6rem;
+  border: 0.1rem solid black;
+  cursor: pointer;
+}
+
+button {
+  background: white;
+  vertical-align: top;
+  padding: 2% 15%;
+  font-size: 1rem;
+  border: 0.1rem solid black;
   cursor: pointer;
 }
 
@@ -227,31 +235,33 @@ header .logo {
 }
 
 .cta img {
-  margin-top: 69px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .main-content {
-  border-top: 1px solid black;
-  margin-top: 76px;
-  padding-top: 39px;
+  border-top: 0.1rem solid black;
+  margin-top: 4%;
+  padding-top: 4%;
 }
 
 .main-content .top-content {
-  padding: 0 10px;
   display: flex;
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
-  margin-right: 34px;
+  width: 49%;
+  margin-right: 1%;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 .main-content .top-content .text-content:last-child {
-  margin-right: 0;
+  margin-right: 0%;
 }
 
 .main-content .middle-img {
-  margin-top: 45px;
+  margin-top: 3.5%;
 }
 
 .main-content .bottom-content {
@@ -259,13 +269,10 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  margin-top: 37px;
-  padding: 0 10px;
-}
-
-.main-content .bottom-content .text-content {
-  width: 350px;
-  margin-right: 12px;
+  width: 33%;
+  margin-top: 3%;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -273,19 +280,21 @@ header .logo {
 }
 
 .contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
+  margin-top: 4%;
+  border-top: 0.1rem solid black;
+  padding-top: 3.5%;
+  font-size: 1.6rem;
+  line-height: 3rem;
 }
 
-.contact p {
-  margin: 20px 0;
+h5 {
+  margin-bottom: 0.5%;
 }
 
 footer {
-  margin: 32px 0;
+  margin: 5.5% 0%;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.6rem;
 }
 
 /* Services */
@@ -302,16 +311,6 @@ footer {
   padding-top: 39px;
   display: flex;
   flex-wrap: wrap;
-}
-
-button {
-  background: white;
-  vertical-align: top;
-  margin-top: 20px;
-  padding: 8px 44px;
-  font-size: 10px;
-  border: 1px solid black;
-  cursor: pointer;
 }
 
 .top-content-services {
@@ -349,16 +348,16 @@ ul {
   margin-left: 20px;
   list-style-type: disc;
 }
-
+/*
 footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
 }
-
-@media (max-width: 768px) {
+*/
+@media (max-width: 800px) {
   .container {
-    max-width: 768px;
+    max-width: 100%;
     margin: 0 auto;
   }
   header .logo {
@@ -393,7 +392,11 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
   header .logo {
     margin: 20px 30%;
     position: absolute;
@@ -406,10 +409,7 @@ footer {
     flex-direction: column;
     margin-left: 5%;
   }
-  .container {
-    max-width: 480px;
-    margin: 0 auto;
-  }
+
   header {
     display: flex;
     height: 400px;
