@@ -54,7 +54,13 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
+html {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -68,7 +74,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* Your code starts here! */
 .container {
-	width: 880px;
+    width: 880px;
+    max-width: 880px;
 	margin: 0 auto;
 }
 
@@ -87,7 +94,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .container nav a {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 1.4rem;
 	color: gray;
 	text-decoration: none;
 }
@@ -115,7 +123,8 @@ h1, h2, h3, h4, h5 {
     width: 400px;
     align-items: center;
 	vertical-align: top;
-	font-size: 77px;
+    /* font-size: 77px; */
+    font-size: 7.7rem;
     margin-top: 120px;
     text-align: center;
     padding: 0px 75px;
@@ -126,7 +135,8 @@ h1, h2, h3, h4, h5 {
 	vertical-align: top;
 	margin-top: 6px;
 	padding: 8px 44px;
-	font-size: 17px;
+    /* font-size: 17px; */
+    font-size: 1.7rem;
 	border: 1px solid black;
 	cursor: pointer;
 }
@@ -154,6 +164,7 @@ h1, h2, h3, h4, h5 {
 
 .main-content .top-content .text-content {
     width: 410px;
+    font-size: 1.6rem;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -171,7 +182,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .bottom-content .text-content {
-	width: 275px;
+    width: 275px;
+    font-size: 1.6rem;
 }
 
 .bottom-content .text-content:last-child {
@@ -181,7 +193,8 @@ h1, h2, h3, h4, h5 {
 .contact {
 	margin-top: 57px;
 	border-top: 1px solid black;
-	padding: 39px 10px 0;
+    padding: 39px 10px 0;
+    font-size: 1.6rem;
 }
 
 .contact p {
@@ -191,7 +204,8 @@ h1, h2, h3, h4, h5 {
 footer {
 	margin: 32px 0;
 	text-align: center;
-	font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 1.6rem;
 }
 
 @media(max-width: 800px) {
@@ -224,7 +238,8 @@ footer {
     .container nav a {
         display: block;
         text-align: center;
-        font-size: 22px;
+        /* font-size: 22px; */
+        font-size: 2.2rem;
         padding: 20px;
         border-top: 1px solid black;
     }
