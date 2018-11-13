@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
   max-width: 880px;
-  margin: 0 5%;
+  margin: 0 auto;
 }
 
 /* header */
@@ -196,19 +196,21 @@ footer {
   margin: 40px 0 80px;
 }
 
-/*services section*;
+/*Services Section*/
 
-/* .services-header-img {
-  margin: 25px 0;
+ .services-header-img {
+  margin: 25px 1%;
+  width: 100%;
 }
 
 .service-top {
-  margin: 20px 0px 40px 0px;
+  margin: 20px 1% 40px;
   line-height: 1.25;
+  font-size: 1.6rem;
 }
 
 .service-top h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .service-main {
@@ -218,6 +220,7 @@ footer {
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-around;
+  font-size: 1.6rem;
 }
 
 .service-main .service-mid {
@@ -266,7 +269,18 @@ footer {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-} */
+  margin-bottom: 36px;
+} 
+
+footer p{
+  font-size: 1.6rem;
+}
+
+@media (max-width: 904px) {
+  .service-main .service-mid {
+    width: 100%;
+  }
+}
 
 @media (max-width: 800px) {
 
@@ -301,7 +315,7 @@ footer {
     display: none;
   }
 
-  .middle-img {
+  .middle-img, .services-header-img {
     text-align: center;
     width: 99%;
   }
@@ -318,6 +332,10 @@ footer {
 
   footer {
     margin: 40px 0 20px;
+  }
+
+  .service-main .service-mid {
+    width: 100%;
   }
 
 }
@@ -354,16 +372,20 @@ footer {
     margin-bottom: 0px;
   }
 
-  .main-content {
+  .main-content, .service-top {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .services-header-img {
+    display: none;
   }
 
   .main-content img {
     width: 95%;
   }
 
-  .main-content .top-content {
+  .main-content .top-content,  {
     display: block;
     margin-bottom: 40px;
     margin-top: 10px;
@@ -389,6 +411,23 @@ footer {
   .bottom-content .text-content:last-child {
     padding-bottom: 0rem;
     margin-bottom: 0px;
+  }
+
+  /*service mid for mobile*/
+
+  .service-main .service-mid {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .service-bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .service-bottom .service-bottom-content {
+    width: 80%;
+    margin-bottom: 0;
   }
 
 }
