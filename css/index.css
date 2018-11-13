@@ -50,6 +50,9 @@ table {
 
 /* End CSS Reset */
 
+
+/* -----Desktop------ */
+
 /* Global Styles */
 
 * {
@@ -72,20 +75,19 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-	font-size: 80px;
-	text-align: center;
-    margin-bottom: 25px;
+	font-size: 7.2rem;
     line-height: 70px;
 }
 
 h2 {
-	font-size: 26px;
+	font-size: 2.6rem;
 }
 h3 {
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 p {
-	line-height: 18px;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
 }
 a {
 	text-decoration: none;
@@ -110,7 +112,7 @@ li {
 header {
 	display: flex;
 	justify-content: space-between;
-	margin: 73px 0;
+	margin: 68px 0 75px;
 }
 	
 footer {
@@ -123,61 +125,87 @@ nav .nav-links {
 	justify-content: space-between;
 	align-items: center;
 	height:35px;
-	width: 605px;
+    max-width: 605px;
+    width: 100%;
 }
 nav .nav-links a {
 	color: gray;
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 
 .container {
-	width: 880px;
+    max-width: 880px;
+    width: 100%;
 	margin: 0 auto;
 }
 
-.tagline {
+
+
+/* Home Styles */
+
+header .tagline {
 	display: flex;
 	flex-direction: column;
     align-items: center;
-    width: 500px;
-    margin-top: 53px;
+    max-width: 500px;
+    width: 50%;
+    justify-content: center;
+    margin-left: 6%;
+}
+header .tagline h1 {
+    text-align: center;
+    margin-bottom: 29px;
 }
 
-.button {
+header .button {
 	background: none;
 	color: black;
 	border: 1px solid black;
-	padding: 7px 46px;
+    padding: 7px 10%;
+    font-size: 1.7rem;
 
   }
-
-  .features {
+header .round-img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.main-content .features {
 	border-top: 1px solid black;
-	padding: 36px 0 33px 0;
+	padding: 36px 0 33px;
 	display: flex;
   }
 
-  .middle-img {
-	width: 100%;
+.main-content .middle-img {
+    max-width: 100%;
+    height: auto;
 }
 
-.product {
+.main-content .product {
 	border-bottom: 1px solid black;
-	padding: 21px 0 31px 0;
-	display: flex;
+	padding: 26px 0 39px;
+    display: flex;
+    flex-wrap: wrap;
 	justify-content: space-between;
 }
 
+.main-content .product .product-content {
+    width: 33%;
+
+}
 .contact {
 	margin-top: 35px;
 }
 
 .contact address {
-	height: 95px;
+    height: 95px;
+    font-size: 1.6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
+
+
 
 /* Services Styles */
 
