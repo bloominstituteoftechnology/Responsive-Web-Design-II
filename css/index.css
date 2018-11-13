@@ -250,9 +250,6 @@ address a {
 	margin: 0 auto 15px;
 }
 @media (max-width: 800px)   {
-    .whole_page {
-        margin: 0px 0px;
-        }
     .splash_container {
      margin: 0px 0px 0px 0px;
         }
@@ -286,8 +283,8 @@ address a {
         padding-right: 1px;
     }
     .maincontent {
-        margin: 40px 2.5%;
-        padding: 26px 0 35px 0;
+        margin: 40px 2.5% 36px;
+        padding: 26px 0 36px 0;
     }
     .maincontent img {
         margin: 21px 0px 13px;
@@ -301,24 +298,23 @@ address a {
     }
     .contact_container {
         margin: 0px 3.65%;
-        line-height: 12.5px;
+        line-height: 13.5px;
     }
     .copyright_container {
         margin-top: 38px;
     }
 }
 @media (max-width: 500px) {
-    .whole_page {
-        margin: 19px 0px;
-    }
     header {
-        height: auto;
+        margin-top: 20px;
+    }
+    .logo {
+        margin-bottom: 18px;
     }
     header nav {
         flex-direction: column;
         padding-right: 0px;
         width: 100%;
-        margin-top: 17px;
     }
     header nav a {
         border-bottom: 1px solid black;
@@ -337,18 +333,20 @@ address a {
         display: block;
     }
     .maincontent {
-        padding: 60px 0 35px 0;
-    }
-    .ContentDuo {
-        margin: 0px 0px 48px;
+        margin: 38px 4% 36px;
+        padding: 59px 0 36px 0;
     }
     .maincontent img {
         margin: 4px 0px 13px 0px;
-        height: 96px;    
+        height: 96px;  
+    }  
+    .ContentDuo {
+        margin: 0px 0px 48px;
     }
     .ContentTrio {
         padding-right: 0px;
         margin-bottom: 65px;
+        padding-left: 0%;
     }
     .TrioHolder {
         margin: 17px 0 0 0px;
