@@ -48,6 +48,14 @@ table {
     box-sizing: border-box;
 }
 
+/*
+standardizing font-size to: 10px === 1rem,
+assuming user settings are medium === 16px default font-size
+*/
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
