@@ -239,3 +239,29 @@ header .logo {
   .bottom-content{
       display: flex;
   }
+
+  @media(max-width:500px){
+      .container{
+          max-width:500px;
+      }
+      header{
+        display: flex;
+        flex-direction:column-reverse;
+      }
+      header nav {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         
+      }
+      header nav a{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          padding: 20px;
+          padding-left: 230px;
+          font-size: 3rem;
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey;
+          width: 500px;
+      }
+  }
