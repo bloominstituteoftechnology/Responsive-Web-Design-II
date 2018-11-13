@@ -368,6 +368,43 @@ footer {
     }
 }
 
+@media (max-width:500px) {
+    .top-content {
+        display:flex;
+        flex-direction: column;
+        
+        padding: 0 0;
+        /*margin-bottom: 4%;*/
+    }
+    
+    .top-content .text-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+    
+    .bottom-content {
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        padding: 0% 0;
+        /*margin-top:4%;*/
+    }
+    
+    
+    .bottom-content .text-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .middle-img {
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+
+        
+    }
+}
+
 /* contact section */
 
 .contact {
@@ -416,7 +453,7 @@ TODO: reorganize so that they are under their respective sections
 }
 
 .info-section h1 {
-	font-size: 35px;
+	font-size: 3.5rem;
 }
 
 .services {
@@ -446,8 +483,8 @@ TODO: reorganize so that they are under their respective sections
 
 }
 
-card h4 {
-	font-size: 20px;
+.card h4 {
+	font-size: 1.4rem;
 }
 
 .card button {
@@ -493,7 +530,7 @@ card h4 {
 }
 
 .main_info h1 {
-	font-size: 60px;
+	font-size: 6rem;
 }
 
 .main_info img {
@@ -554,6 +591,4 @@ starting with tablet and mobile on bottom
 
 /* Tablet */
 
-@media (max-width: 800px) {
 
-}
