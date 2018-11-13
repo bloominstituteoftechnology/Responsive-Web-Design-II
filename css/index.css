@@ -109,7 +109,7 @@ button {
 	background: white;
 	border: 1px solid black;
 	padding: 6px 40px;
-	margin: 5px 0 0 20px;
+	/* margin: 5px 0 0 20px; */
 	font-size: 1.6rem;
 }
 
@@ -186,6 +186,7 @@ footer {
 .main-banner {
 	border-bottom: 1px solid black;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	padding: 60px 0 85px 0;
 	text-align: center;
@@ -240,30 +241,28 @@ footer {
 
 @media (max-width: 800px) {
 	body {
+		width: 95%;
 	}
 
 	.top-nav {
 		flex-direction: column-reverse;
 		align-items: center;
-		/* height: 140px; */
 	}
 
-	.logo {
-		margin: 0;
-		padding: 0;
-	}
-	
-	.main-banner {
-		justify-content: center;
-		padding: 65px 0;
+	.top-nav nav {
+		margin-top: 40px;
 	}
 
-	.title-block {
-		padding: 0;
+	.top-nav nav a {
+		margin: 0 37px;
 	}
 
 	.header-img img {
 		display: none;
+	}
+
+	.parent-container {
+		margin: 35px 0 35px 0;
 	}
 }
 
