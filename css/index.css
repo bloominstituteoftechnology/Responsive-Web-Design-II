@@ -32,9 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-size: 62.5%
 }
-
 blockquote, q {
 	quotes: none;
 }
@@ -56,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%; /* new */
 }
 
 h1, h2, h3, h4, h5 {
@@ -69,7 +68,8 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	width: 880px;
-	margin: 0 auto;
+    margin: 0 auto; 
+    font-size: 1rem;
   }
   
   header {
@@ -82,12 +82,12 @@ h1, h2, h3, h4, h5 {
   
   header nav a {
 
-	font-size: 1rem;
-	margin-right: 2.5%; /* was 30px * , makes contact go to row */
+	font-size: 1.5rem; /* was 16px */
+	margin-right: .03%; /* was 30px */
 	color: gray;
 	text-decoration: none;
     align-items: flex-end;
-	padding: 15px;
+	padding: 2.5rem; /* was 15px */
   }
   
   header nav a:hover {
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5 {
 	
   .cta {
 	  display: flex;
-	  justify-content: center;
+	  justify-content: space-around; /* was center */
 	  align-content: center;
   }
   .cta .cta-text {
@@ -112,11 +112,11 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 	margin-top: 120px;
 	text-align: center;
-	padding: 0px 75px;
+    padding: 0px 75px;
 	}
 	
 	.cta .cta-text h1 {
-		font-size: 4.81rem; /* was 77px */
+		font-size: 6rem; /* was 77px */
 	}
   
   .cta .cta-text button {
@@ -153,7 +153,9 @@ h1, h2, h3, h4, h5 {
 
   .main-content .top-content .text-content {
 	width: 47%; /* was 410px */ 
-	margin-right: 8%; /* was 34px */
+    margin-right: 8%; /* was 34px */
+    line-height: 1.25;
+    font-size: 1.25rem;
   }
   
   .main-content .top-content .text-content:last-child {
@@ -176,7 +178,9 @@ h1, h2, h3, h4, h5 {
   .main-content .bottom-content .text-content {
 	width: 32%; /* was 275px */
 	margin-right: .75rem; /* was 12px */
-	flex-direction: column;
+    flex-direction: column;
+    line-height: 1.25;
+    font-size: 1.25rem;
   }
   
   .main-content .bottom-content .text-content:last-child {
@@ -197,11 +201,12 @@ h1, h2, h3, h4, h5 {
 	margin: 32px 0;
 	text-align: center;
 	font-size: 1rem; /* was 14px */
-	}
-
+    }
+    
+/* Issues Here: Nav Bar creates horizontal scroll */
 @media (max-width: 800px) {
 	.container {
-			width: 93.75%; /* was 750 */
+			width: 93.75%; /* was 750 , 93.75 */
             margin: 10px;
             font-size: 1rem; /* addition */
 	}
@@ -215,30 +220,34 @@ h1, h2, h3, h4, h5 {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			width: 93.75%; /* was 750 */
+            width: 100%; /* was 750 */
+            margin-right: 0%; /* addition */
 	}
 	.container .cta .cta-text {
 			margin-top: 0px;
-			width: 93.75%; /* was 750 */
+			width: 100%; /* was 750 */
 	}
 	.cta img {
 			display: none;
 			margin-bottom: 10px;
 	}
 	.container .main-content img.middle-img {
-        width: 93.75%; /* was 750 */
+        width: 100%; /* was 750 */
 	}
 }
 
 @media (max-width: 500px) {
 	.container {
-			width: 100%; /* was 500 */
-			margin-left: 0%; /* was 0 */
+			width: 93.75%; /* was 500 */
+            margin-left: 0%; /* was 0 */
+            margin-right: 0%; 
+            font-size: 1rem;
 	} 
 	.container header {
 			flex-direction: column-reverse;
 			align-items: center;
-			margin-bottom: 10px;
+            margin-bottom: 10px;
+            width: 100%;
 	} 
 	.container header nav {
 			margin-top: 10px;
@@ -247,7 +256,7 @@ h1, h2, h3, h4, h5 {
 			padding: 20px;
 			width: 100%; /* was 500 */
 			height: 110%; /* was 510 */
-			align-items: center;
+            align-items: center;
 	}
 	.container header nav a {
             width: 100%; /* was 500 */
@@ -257,8 +266,8 @@ h1, h2, h3, h4, h5 {
 			justify-content: center;
 			align-items: center;
 			border-top: solid black 1px;
-			margin-right: 0px;
-			font-size: 16px;
+			margin-right: 0%; /* was 0 */ 
+			font-size: 1rem;
 	}
 	.container header nav a:last-child {
 		border-bottom: solid black 1px;
