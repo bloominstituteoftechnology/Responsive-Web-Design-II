@@ -74,7 +74,7 @@ General CSS
 
 .container {
 	
-	max-width:1100px;
+	max-width: 900px;
 	margin: 0 auto;
 	
 }
@@ -87,7 +87,7 @@ General CSS
 	align-items: center;
 	
 
-	margin-top: 2%;
+	margin-top: 3%;
 }
 
 .nav {
@@ -98,7 +98,12 @@ General CSS
 
 .nav a {
 	text-decoration: none;
-	color: rgba(0,0,0,.3);
+    color: rgba(0,0,0,.3);
+    margin-left: 67px;
+}
+
+.logo {
+    margin-right:85px;
 }
 
 button {
@@ -141,16 +146,21 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	padding-left: 10%;
+	padding-left: 12%;
 }
 
 .cta-text h1 {
 	font-size: 80px;
 }
 
+
 .cta button {
-	width: 10%;
+	width: 26%;
 	
+}
+
+.cta img {
+    padding-right: 2%;
 }
 
 
