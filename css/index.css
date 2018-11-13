@@ -389,15 +389,17 @@ footer {
   }
 
   address {
-    margin: 35px 4% 0;
+    border-top: 1px solid black;
+    margin: 37px 2.5% 0;
   }
 
-  address div {
+  address .address-container {
+    margin: 35px 1.2% 0;
     font-size: 1.6rem;
   }
 
   address div span {
-    margin: 18px 0 14px;
+    margin: 16px 0 14px;
     display: inline-block;
   }
 }
