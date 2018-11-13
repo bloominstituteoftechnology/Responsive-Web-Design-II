@@ -431,22 +431,18 @@ footer {
   header {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 75px;
+    border-bottom: 1px solid black;
   }
 
   header .header-title {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 75px;
+    padding-bottom: 0;
     border-bottom: 0;
-    margin: 0 4%;
+    margin: 61px 0 0 14.5%;
   }
 
   header .header-title h1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 7.1rem;
+    font-size: 7.2rem;
   }
 
   header .header-title h1 span {
@@ -456,20 +452,42 @@ footer {
   }
 
   header .header-title a {
-    margin-top: 12px;
+    margin-top: 9px;
     font-size: 1.7rem;
     border: 1px solid black;
-    padding: 7px 9.5%;
-  }
-
-  header .header-title a:hover {
-    color: white;
-    background: black;
+    padding: 7px 15%;
   }
 
   header .header-img {
     margin-top: 60px;
     display: inline-block;
+  }
+
+  .section-one {
+    margin: 37px 0 0;
+    display: flex;
+  }
+
+  .section-one div {
+    margin-bottom: 0;
+    width: 49%;
+  }
+
+  .section-one div:last-child {
+    margin-left: 1%;
+  }
+
+  .middle-img-wrapper {
+    margin: 30px 0 0;
+  }
+
+  .section-two {
+    margin: 29px 0 0;
+  }
+
+  .section-two div {
+    margin-right: 2.2%;
+    width: 31.2%;
   }
 }
 
