@@ -414,7 +414,12 @@ img {
     }
 
     #hedimg {
-        display: none;
+        animation-name: imgaway;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
     }
 
     .main-content {
@@ -488,7 +493,12 @@ img {
     }
 
     #hedimg {
-        display: none;
+        animation-name: imgaway;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
     }
 
     .main-content .top-content {
@@ -507,4 +517,11 @@ img {
         padding-bottom: 20px;
         border-bottom: 2px solid lightgrey;
     }
+}
+
+@keyframes imgaway {
+    0% {width: inherit;}
+    50% {width: 50%;}
+    100% {width: 0%;
+          display: none;}
 }
