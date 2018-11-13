@@ -279,7 +279,12 @@ footer {
 	flex-direction: column;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
-	margin: 74px 0 40px;
+	margin: 74px 0 34px;
+}
+
+#home .main-section p {
+	font-size: 1.7rem;
+	line-height: 1.05;
 }
 
 #home .main-section .main-top {
@@ -299,12 +304,30 @@ footer {
 
 #home .main-section .main-bottom {
 	display: flex;
-	margin-bottom: 30px;
+	margin-bottom: 22px;
 	justify-content: space-around;
 }
 
 #home .main-section .main-bottom div {
 	width: 30%;
+}
+
+/* ------------------------Address Section------------------------ */
+address {
+	font-size: 1.6rem;
+	padding-left: 1%;
+}
+
+address .add1 {
+	margin-bottom: 17px;
+}
+
+address .add2 {
+	margin-bottom: 15px;
+}
+
+address .add3 {
+	margin-bottom: 15px;
 }
 
 /* -------------------------Services Page----------------------------- */
