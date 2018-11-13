@@ -312,7 +312,12 @@ header .round-img {
 @media (max-width: 800px) {
 
 	/* Global Styles */
-	
+	@keyframes stretch {
+		0% {opacity: 0;}
+		/* 50% {opacity: .5;} */
+		100% {opacity: 1;}
+	}
+
     body {
 		overflow-x: hidden;
 	}
@@ -346,11 +351,17 @@ header .round-img {
 	/* Home Styles */
 
 	header .tagline {
-        margin: 51px 0 0 0;
+		margin: 51px 0 0 0;
+
     }
-    
-    header .button {
-        padding: 7px 11%
+    header .tagline h1 {
+		animation-name: stretch;
+		animation-timing-function: ease-in;
+		animation-duration: 1.5s;
+	}
+
+    header .tagline .button {
+		padding: 7px 11%;
     }
 	.main-content .features {
 		padding: 36px 0 32px 0;
