@@ -299,7 +299,8 @@ footer {
 }
 
 #home .main-middle img {
-	width: 100%;
+	max-width: 100%;
+	height: auto;
 	margin: 20px 0;
 }
 
@@ -384,8 +385,8 @@ address .add3 {
 @media (max-width: 800px) {
 	/* ----------------Home Page------------------------- */
 	.container {
-		margin: 0 2%;
-		/* max-width: 95%; */
+		margin: 0 auto;
+		max-width: 94%;
 	}
 
 	#home header nav {
@@ -417,6 +418,33 @@ address .add3 {
 
 	#home .main-section {
 		margin: 70px 0 34px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	#home .main-section .main-top div {
+		width: 46%;
+	}
+
+	#home .main-section .main-middle {
+		margin-bottom: 12px;
+	}
+
+	#home .main-middle img {
+		max-width: 100%;
+		height: auto;
+		/* margin: 17px 0 32px; */
+	}
+
+	#home .main-section .main-bottom {
+		margin-bottom: 38px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#home .main-section .main-bottom div {
+		width: 30%;
 	}
 
 	/* ----------------Services Page--------------------- */
@@ -487,7 +515,7 @@ address .add3 {
 	}
 
 	#home .main-section .main-middle {
-		padding: 0 20px;
+		margin-bottom: 27px;
 	}
 
 	#home .main-section .main-middle img {
