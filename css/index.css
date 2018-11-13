@@ -300,6 +300,7 @@ header .header-img {
 .section-one div {
   margin-bottom: 48px;
 }
+
 .middle-img-wrapper {
   margin: 50px 4% 0;
 }
@@ -337,10 +338,41 @@ footer {
   margin: 40px 0;
 }
 
-/* Services Page Styles */
-
 @media (min-width: 500px) {
+  header .header-title {
+    padding-bottom: 75px;
+    border-bottom: 1px solid black;
+    margin: 0 2.5%;
+  }
+
+  header .header-title h1 {
+    margin-top: 53px;
+  }
+
+  header .header-title a {
+    padding: 7px 5.8%;
+  }
+
+  .section-one {
+    margin: 37px 3.7% 0;
+    display: flex;
+  }
+
+  .section-one div {
+    margin-bottom: 0;
+    width: 48%;
+  }
+
+  .section-one div:last-child {
+    margin-left: 3.2%;
+  }
+
+  .middle-img-wrapper {
+    margin: 30px 2.5% 0;
+  }
 }
 
 @media (min-width: 800px) {
 }
+
+/* Services Page Styles */
