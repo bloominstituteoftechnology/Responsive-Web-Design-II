@@ -660,3 +660,151 @@ footer .copyright {
         order: -1;
 	}
 }
+
+/* Services Styles */
+
+
+#vision header {
+	margin-bottom: 18px;
+}
+
+#vision .heading {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid black;
+	padding-bottom: 32px;
+	margin-bottom: 32px;
+}
+
+#vision .heading h1 {
+	width: 100%;
+	font-size: 4rem;
+	text-align: center;
+	text-shadow: 0px 1px 1px black;
+}
+
+#vision .heading .heading-image {
+	width: 75%;
+	margin: 0 auto;
+}
+
+#vision .vision-header-img {
+	width: 100%;
+	padding-bottom: 12px;
+}
+
+
+#vision .main-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 26px;
+	border-bottom: 2px solid black;
+	padding-bottom: 50px;
+}
+
+#vision .main-content .info-panel {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#vision .main-content .info-panel p {
+	font-size: 1.8rem;
+	width: 50%;
+	align-self: center;
+	line-height: 1.25;
+}
+
+#vision .main-content .info-panel .info-image {
+	width: 46%;
+}
+
+#vision .main-content .info-panel .info-image img {
+	width: 100%;
+	box-shadow: 0px 2px 2px black;
+}
+
+#vision footer .copyright {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media (max-width: 500px) {
+
+    #vision .main-content {
+        width: 95%;
+		margin: 0 auto;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+    #vision .heading {
+        width: 95%;
+        margin: 0 auto;
+	}
+	
+	#vision .heading .heading-image {
+		width: 98%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#vision .main-content .info-panel {
+		border-bottom: 1px solid black;
+		padding-bottom: 24px;
+		margin: 24px 0;
+	}
+
+	#vision .main-content .info-panel:last-of-type {
+		border-bottom: none;
+	}
+
+
+	#vision .main-content .info-panel p {
+		font-size: 1.8rem;
+		width: 98%;
+		align-self: center;
+		line-height: 1.4;
+		order: -1;
+		padding: 12px;
+	}
+	
+	#vision .main-content .info-panel .info-image {
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	#vision .main-content .info-panel .info-image img {
+		width: 100%;
+		box-shadow: 0px 2px 2px black;
+	}
+
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+	#vision {
+		width: 100%;
+	}
+
+	#vision .heading .heading-image {
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	#vision .main-content {
+		width: 100%;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	#vision .main-content .info-panel p {
+		font-size: 1.6rem;
+		width: 50%;
+		align-self: center;
+		line-height: 1.1;
+	}
+
+}
