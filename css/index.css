@@ -148,7 +148,8 @@ header .left-content a{
     justify-content: space-between;
 }
 .bottom-content .text-content{
-    width: 30%;
+    padding: 0 3% 0 0;
+    line-height: .5;
 }
 .main-content h2{
     font-size: 1.6rem;
