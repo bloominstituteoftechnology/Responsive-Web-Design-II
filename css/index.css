@@ -1,1 +1,393 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Shared Styles */
+html {
+    font-size: 62.5%;
+}
+
+div.container {
+    max-width: 880px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.container hr {
+	margin-bottom: 35px;
+    border-width: 0.5px;
+    border-color: black;
+    width: 100%;
+}
+div.container nav {
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+    margin-top: 2.5%;
+}
+
+div.container nav a {
+	font-family: 'Titillium Web', sans-serif;
+    font-size: 1.6rem;
+    text-decoration-line: none;
+	color: #B0B0B0;
+}
+/* index.html */
+div.home div.header {
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+}
+
+div.home div.header-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
+div.home div.header-left h1 {
+	font-size: 7.6rem;
+}
+
+div.home a.get-started {
+	color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 8px 4%;
+    border-width: 1px;
+    border-style: solid;
+}
+
+div.home section.content-block{
+	display: inline-flex;
+    flex-wrap: wrap;
+}
+
+div.home section.top {
+	width: 46%;
+    margin: 0 2% 35px 0;
+}
+
+div.home img.middle-img {
+    width: 100%;
+    height: 100%;
+}
+
+div.home section.bottom {
+    width: 33%;
+    margin: 35px 0;
+}
+
+div.home footer {
+	display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+div.home footer address {
+	line-height: 2rem;
+}
+
+div.home footer address div {
+	line-height: 1.6rem;
+}
+
+div.home footer address a {
+	color: black;
+	text-decoration-color: black;
+}
+
+div.home div.copyright {
+    align-self: center;
+    margin-top: 20px;
+}
+
+/* services.html */
+div.services header {
+	display: flex;
+	flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+div.services header img.banner {
+	margin: 20px 0 30px 0;
+}
+
+div.services header h1 {
+	font-size: 2.4rem;
+}
+
+div.services div.service-box-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+div.services section.service-box {
+	display: inline-flex;
+    width: 44%;
+    background: #F4F3F4;
+    flex-wrap: wrap;
+    padding: 20px 2%;
+    border: 1px solid black;
+    margin-bottom: 40px;
+}
+
+div.services section.service-box a {
+	text-decoration: none;
+    background: white;
+    font-size: 1.2rem;
+    padding: 10px 5%;
+    border: 1px solid black;
+    color: black;
+    border-radius: 4px;
+    margin-top: 22px;
+}
+
+div.services footer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+div.services footer div.facts {
+	display: inline-flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-content: flex-start;
+}
+
+div.services footer div.facts h2{
+	height: 24px; /* need to figure out what I did here. */
+}
+
+div.services footer div.facts ul {
+	list-style-type: square;
+    list-style-position: inside;
+	width: 24%;
+	margin-top: 30px;
+}
+
+div.services footer div.facts ul li {
+	margin-bottom: 10px;
+}
+
+div.services footer div.copyright {
+	margin-top: 35px;
+}
+
+@media only screen and (max-width: 800px) {
+    div.container {
+        width: 100%;
+        margin: 0;
+        padding: 20px 2%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0 4%;
+    }
+
+    a.logo {
+        order: -1;
+        padding-bottom: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    div.home div.header-left {
+        width: 100%
+    }
+
+    div.home div.header {
+        width: 100%;
+    }
+
+    div.header img.big-header {
+        display: none;
+    }
+
+    div.home div.content-block-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    div.home section.content-block p {
+        font-size: 1.6rem;
+    }
+
+    div.home section.top {
+        width: 50%;
+        margin: 10px 1%;
+    }
+
+    /*  I'm currently using Chrome and this auto-scales the 
+        image appropriately... may not be the same on other
+        browsers */
+    div.home img.middle-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.home section.bottom {
+        width: 33.3%;
+        margin: 10px 1%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    div.container {
+        width: 100%;
+        margin: 0;
+        padding: 0 2.5% 20px 2.5%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    div.container nav {
+        width: 100%;
+        flex-flow: column nowrap;
+        align-content: center;
+        padding: 0 4%;
+        margin-top: 0px;
+    }
+
+    div.container nav a {
+        width: 114%;
+        padding: 15px 0;
+        border: 0.5px black solid;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: -1px;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+
+    a.logo {
+        order: -1;
+        padding: 0 35% 30px;
+    }
+    
+    div.home div.header-left {
+        width: 100%
+    }
+
+    div.home div.header-left h1 {
+        font-size: 6.2rem;
+    }
+
+    div.home div.header {
+        width: 100%;
+    }
+
+    div.header img.big-header {
+        display: none;
+    }
+
+    div.home div.content-block-container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    div.home section.content-block p {
+        font-size: 1.6rem;
+    }
+
+    div.home section.top {
+        width: 100%;
+        margin: 10px 1%;
+    }
+
+    /*  I'm currently using Chrome and this auto-scales the 
+        image appropriately... may not be the same on other
+        browsers */
+    
+
+    div.home section.bottom {
+        width: 100%;
+        margin: 10px 1%;
+    }
+}
