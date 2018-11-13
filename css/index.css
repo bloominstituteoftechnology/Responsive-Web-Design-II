@@ -67,6 +67,11 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /* Your code starts here! */
+html {
+    font-size: 62.5%; 
+    /* 1rem = 10px (Assuming default user-agent font is @ 16px) */
+}
+
 a {
 	text-decoration: none;
 	color: #b6b5b6;
@@ -74,7 +79,7 @@ a {
 
 .container {
 	width: 100%;
-	max-width: 1024px;
+	max-width: 880px;
 	padding: 0 8px;
 	margin: 0 auto;
 }
@@ -93,6 +98,7 @@ header nav {
 }
 
 header nav a {
+    font-size: 1.6rem;
 	transition: all .75s;
 }
 
@@ -107,7 +113,8 @@ header nav a:hover {
 
 #home .page-heading {
 	border-bottom: 1px solid black;
-	display: flex;
+    display: flex;
+    align-content: center;
 	padding-bottom: 76px;
 	margin-bottom: 42px;
 }
@@ -115,19 +122,24 @@ header nav a:hover {
 #home .page-heading .heading-text {
 	width: 50%;
 	text-align: center;
-	margin-top: 32px;
+    margin-top: 32px;
+    margin-left: 10%;
 }
 
 #home .heading-text h1 {
-	font-size: 86px;
+	font-size: 6rem;
 	font-family: 'Bangers', sans-serif;
 	letter-spacing: 5px;
 	padding-bottom: 24px;
 }
 
 #home .heading-image {
-	width: 40%;
-	text-align: right;
+    width: 50%;
+    text-align: right;
+}
+
+#home .heading-image img {
+	width: 90%;
 }
 
 #home .heading-text a {
@@ -137,7 +149,7 @@ header nav a:hover {
 	text-align: center;
 	letter-spacing: 1px;
 	margin-top: 32px;
-	font-size: 18px;
+	font-size: 1.8rem;
 	color: black;
 	box-shadow: 0px 2px 2px black;
 	transition: box-shadow .2s;
@@ -160,11 +172,11 @@ header nav a:hover {
 }
 
 #home .main-content h2 {
-	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 #home .main-content p {
-	font-size: 18px;
+	font-size: 1.55rem;
 }
 
 #home .main-content img {
@@ -181,7 +193,7 @@ header nav a:hover {
 
 #home .main-content .top-content .info-text {
 	width: 49%;
-	padding: 12px 0;
+	padding: 8px 0;
 	padding-right: 12px;
 	display: flex;
 	flex-wrap: wrap;
@@ -210,17 +222,19 @@ footer .contact-info {
 }
 
 footer h2 {
-	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 footer address {
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 footer .copyright {
 	width: 100%;
-	text-align: center;
-	margin: 36px;
+    text-align: center;
+    font-size: 2rem;
+    margin: 36px;
+    /* since it considers all four directions, leave in PX? */
 }
 
 @media (max-width: 500px) {
@@ -265,11 +279,12 @@ footer .copyright {
 
 	#home .page-heading .heading-text {
 		width: 100%;
-		margin-bottom: 24px;
+        margin-bottom: 24px;
+        margin-left: 0;
 	}
 
 	#home .page-heading .heading-text h1 {
-		font-size: 74px;
+		font-size: 7.4rem;
 	}
 
 	#home .page-heading .heading-image {
@@ -288,7 +303,7 @@ footer .copyright {
 		text-align: center;
 		letter-spacing: 1px;
 		margin-top: 32px;
-		font-size: 18px;
+		font-size: 1.8rem;
 		color: black;
         transition: all .2s;
         text-shadow: none;
@@ -353,7 +368,7 @@ footer .copyright {
 
 	header nav {
 		flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
 	}
 
@@ -377,11 +392,12 @@ footer .copyright {
 
 	#home .page-heading .heading-text {
 		width: 100%;
-		margin-bottom: 24px;
+        margin-bottom: 24px;
+        margin-left: 0;
 	}
 
 	#home .page-heading .heading-text h1 {
-		font-size: 74px;
+		font-size: 7.4rem;
 	}
 
 	#home .page-heading .heading-image {
@@ -400,7 +416,7 @@ footer .copyright {
 		text-align: center;
 		letter-spacing: 1px;
 		margin-top: 32px;
-		font-size: 18px;
+		font-size: 1.8rem;
 		color: black;
         transition: all .2s;
         text-shadow: none;
@@ -468,11 +484,11 @@ footer .copyright {
 }
 
 #services .heading-text h1 {
-	font-size: 32px;
+	font-size: 3.2rem;
 }
 
 #services .heading-text p {
-	font-size: 18px;
+	font-size: 1.8rem;
 	letter-spacing: .25px;
 }
 
@@ -490,14 +506,14 @@ footer .copyright {
 	width: 47%;
 	padding: 16px;
 	margin: 20px 0;
-	font-size: 19px;
+	font-size: 1.9rem;
 	letter-spacing: .25px;
 	background-color: #F4F3F4;
 	box-shadow: 2px 2px 2px black;
 }
 
 #services .main-content .info-panel h2 {
-	font-size: 22px;
+	font-size: 2.2rem;
 }
 
 #services .main-content .info-panel a {
@@ -525,12 +541,12 @@ footer .copyright {
 
 #services .facts-panel {
 	width: 47%;
-	font-size: 19px;
+	font-size: 1.9rem;
 	letter-spacing: .25px;
 }
 
 #services .facts-panel h2 {
-	font-size: 22px;
+	font-size: 2.2rem;
 	padding: 12px 0; 
 }
 
