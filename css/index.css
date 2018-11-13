@@ -247,7 +247,7 @@ address a {
 	flex-wrap: wrap-reverse;
 }
 .footerduo img	{
-	margin: 0 auto 15px;
+	/* margin: 0 auto 15px; */
 }
 @media (max-width: 800px)   {
     .splash_container {
@@ -268,9 +268,7 @@ address a {
     header nav {
         align-self: flex-start;
         width: 92%;
-        padding-right: 30px;
-    }
-    header nav a {
+        padding-right: 4%;
     }
     .logo {
         text-align: center;
@@ -279,8 +277,8 @@ address a {
         margin-bottom: 38px;
     }
     .ContentDuo {
-        margin: 10px 10px;
-        padding-right: 1px;
+        margin: 10px 1.3%;
+        padding-right: .8%;
     }
     .maincontent {
         margin: 40px 2.5% 36px;
@@ -313,7 +311,7 @@ address a {
     }
     header nav {
         flex-direction: column;
-        padding-right: 0px;
+        padding-right: 0;
         width: 100%;
     }
     header nav a {
@@ -344,9 +342,9 @@ address a {
         margin: 0px 0px 48px;
     }
     .ContentTrio {
-        padding-right: 0px;
+        padding-right: 0;
         margin-bottom: 65px;
-        padding-left: 0%;
+        padding-left: 0;
     }
     .TrioHolder {
         margin: 17px 0 0 0px;
