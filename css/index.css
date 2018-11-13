@@ -1,1 +1,455 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+/*full Size screen*/
+
+
+html{
+  font-size: 62.5%;
+}
+header{
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 7.5%;
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+
+}
+nav{
+  width:75%;
+	display: flex;
+	align-items: center;
+  justify-content: space-around;
+
+}
+
+nav a{
+	text-decoration: none;
+	font-size:1.75rem;
+
+	color:lightgray;
+	/*margin: 2%;
+	padding: 2%;*/
+}
+header img{
+  margin-left:0;
+}
+
+h2{
+  font-size: 2rem;
+}
+footer {
+	padding: 6%;
+}
+
+footer p{
+	text-align: center;
+}
+
+.container{
+	margin: 0 auto;
+	max-width:880px;
+}
+p{
+  font-size:1.5rem;
+}
+header a{
+  width:25%;
+}
+.logo{
+  width:100%;
+
+}
+
+
+
+
+.middle-img{
+	width:100%;
+
+}
+
+.phoneNumber{
+	padding: 5% 0%;
+}
+
+.splitSection{
+  width: 100%;
+	padding-bottom: 10%;
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+
+.splitHalf{
+	vertical-align: top;
+	width: 50%;
+
+
+
+}
+
+.splitHalf h2 {
+	padding-top: 4%;
+}
+
+.splitHalf ul{
+  width:100%;
+	list-style-type: square;
+	list-style-position: inside;
+	padding-top: 8%;
+
+}
+
+.splitHalf ul li{
+	padding:2%;
+}
+.splitThird{
+	width: 31%;
+
+}
+
+.splitThird h2{
+	padding-top: 10%;
+
+}
+
+
+.splitSection h1{
+	text-align: center;
+	padding-top:9%;
+
+
+
+	font-size: 7rem;
+}
+
+.splitSection img{
+
+}
+.splitSection button{
+	display: block;
+  font-size: 1.5rem;
+	width: 50%;
+	margin: 0 auto;
+	text-decoration: none;
+  padding:2%;
+
+}
+
+
+
+.splitSection > .serviceSection{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+
+}
+
+.splitSectionLine{
+	border-bottom: 1px solid gray;
+}
+
+.leftContainer{
+
+	padding:10%;
+	padding-top:2%;
+}
+
+.secondSplit{
+	padding-bottom:7.5%;
+}
+
+.serviceSection{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	padding-bottom: 3.5%;
+}
+.serviceBox{
+	background: lightgray;
+
+	border: 1px solid black;
+	padding:3.5%;
+	width:48%;
+
+
+}
+
+
+.serviceBox button{
+	border-radius: 1%;
+	border: 1px solid black;
+	margin-top: 3.5%;
+	padding: 1.5%;
+	margin-left: 0;
+}
+
+.services-header-img{
+  width:100%;
+	padding-bottom: 5%;
+}
+.services-info-img{
+	width:100%;
+}
+
+.servicesHeading{
+	padding: 5% 0 5% 0;
+	border-bottom: 1px solid black;
+	margin-bottom: 5%;
+}
+
+
+
+/* Tablet */
+
+@media (max-width:800px){
+	.container{
+		width:90%;
+	}
+
+	header{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	header a{
+		width:25%;
+
+	}
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  nav a{
+    margin:0%;
+  }
+	.logo{
+		margin: 0% auto;
+
+	}
+  header a {
+    margin-bottom: 4%;
+  }
+	a .logo{
+		width:100%;
+		margin:0% auto;
+
+
+
+	}
+	.splitHalf{
+		width:48%;
+	}
+	.circleCont{
+		display:none;
+	}
+	.messageCont{
+		width:100%;
+	}
+	.messageHalf{
+		width:100%;
+	}
+	.leftContainer{
+		width:100%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	.middle-img{
+		width:100%;
+	}
+	.secondSplit{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-between;	}
+
+	.contactInfo{
+		padding-top:3%;
+	}
+
+}
+
+
+
+/*Mobile*/
+@media (max-width:500px){
+	.container{
+		width:100%;
+		margin:0%;
+
+	}
+
+	header{
+		display: flex;
+		flex-direction: column-reverse;
+
+
+	}
+	header a{
+		width:40%;
+		margin: 0 auto;
+		margin-bottom:5%;
+	}
+	.logo{
+		width: 100%;
+		padding: 0 auto;
+		margin-top:2%;
+		margin-bottom:5%;
+	}
+
+
+	nav{
+		width:100%;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+
+	nav a{
+		width:100%;
+		text-align: center;
+		border-top:1px solid gray;
+		border-bottom: 1px solid black;
+		margin:0;
+		padding:3%;
+		font-size:2.2rem;
+	}
+	.splitSection{
+		width:100%;
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 6%;
+	}
+
+	.leftContainer{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		padding:0%;
+	}
+	.circleCont{
+		display: none;
+	}
+	.splitHalf{
+		width:100%;
+	}
+	.splitHalf h1{
+		width:100%;
+	}
+	.splitHalf img{
+		display:none;
+
+	}
+	.secondSplit{
+		display: flex;
+		flex-wrap:wrap;
+	}
+	.middle-img{
+		width:100%;
+	}
+
+	.splitThird{
+		width:100%;
+	}
+
+	.contactInfo{
+		padding-top: 4%;
+	}
+	.serviceSection .splitHalf{
+		margin-bottom: 6%;
+	}
+	.serviceSection{
+		display: flex;
+		flex-direction: column;
+		padding:0%;
+
+	}
+	.services-header-img{
+		width:100%;
+	}
+
+	#services{
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+
+	}
+
+	.splitHalf{
+		margin:0%;
+	}
+}
