@@ -67,12 +67,21 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+/*Responsive Image behavior*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: 880px;
     margin: 0 auto;
 }
 
 /* Header Styles */
+.nav-container {
+    margin-top: 5px;
+}
 
 header {
     width: 100%;
@@ -81,12 +90,14 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 75%;
     justify-content: space-between;
     display: flex;
 }
 
 header nav a {
+    font-size: 1.6rem;
+    font-weight: bold;
     text-decoration: none;
     color: #b0b0b0;
 }
@@ -109,7 +120,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -121,7 +132,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -163,6 +174,9 @@ header .logo {
 }
 
 /* Contact Styles */
+.contact {
+    font-size: 1.6rem;
+}
 
 .contact p {
     margin: 15px 0;
@@ -173,6 +187,10 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+}
+
+footer p {
+    font-size: 1.5rem;
 }
 
 /* Services Styles */
@@ -255,7 +273,7 @@ footer {
 /* Tablet */
 @media (max-width:800px) {
     .container {
-        width: 700px;
+        max-width: 700px;
     }
     
     .nav-container {
@@ -264,6 +282,7 @@ footer {
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin-top: 0;
     }
 
     .nav-container nav {
@@ -310,8 +329,7 @@ footer {
         height: auto;
         justify-content: center;
         display: flex;
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 2rem;
         padding: 20px 0;
     }
 
