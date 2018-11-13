@@ -186,7 +186,30 @@ nav {
   align-items: center;
 }
 
-nav .logo nav .logo-link-wrapper {
+nav .nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  width: 100%;
+}
+
+nav .nav-links a {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid black;
+  text-decoration: none;
+  color: rgb(167, 166, 167);
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+nav .nav-links a:last-child {
+  border-bottom: 1px solid black;
+}
+
+nav .logo-link-wrapper {
   width: 18.1rem;
   margin-top: 20px;
 }
