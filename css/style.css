@@ -65,6 +65,10 @@ body {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -92,7 +96,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 90%;
+    max-width: 880px;
     margin: auto;
     margin-top: 20px;
     overflow: hidden;
@@ -130,7 +134,7 @@ a.logo-link:empty {
     text-decoration: none;
     justify-content: space-between;
     color: silver;
-    font-size: 20px;
+    font-size: 2rem;
     padding: 5px;
     text-align: center;
     font-weight: bold;
@@ -165,7 +169,7 @@ a.logo-link:empty {
 }
 
 .slogan {
-    font-size: 75px;
+    font-size: 7.5rem;
     text-align: center;
 }
 
@@ -225,12 +229,18 @@ header {
 }
 
 footer {
+    width: 90%;
     margin-top: 30px;
     border-top: 1px solid black;
     padding-top: 30px;
 }
 
-footer > address {
+footer > .contact-info {
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer > .contact-info > address {
     line-height: 1.15;
 }
 
@@ -254,11 +264,11 @@ footer > div.copyright-section {
 .container > header > .header-description > h1,
 .container > header > .header-description > h2,
 .container > header > .header-description > h3 {
-    font-size: 37.5px;
+    font-size: 3.75rem;
 }
 
 .header-description > p {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .services {
@@ -285,7 +295,7 @@ footer > div.copyright-section {
 
 .services > article > h1
 .services > article > h2 {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .services > article > a {
@@ -298,7 +308,7 @@ footer > div.copyright-section {
     margin: 25px 0 15px;
     background-color: snow;
     color: black;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: 10px;
 }
@@ -333,7 +343,7 @@ footer > div.copyright-section {
 }
 
 .extra-information-has-image h3 {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .extra-information-has-image  ul,
@@ -485,7 +495,7 @@ footer > div.copyright-section {
     }
 
     .header-description > p {
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
     .services {
@@ -496,7 +506,7 @@ footer > div.copyright-section {
     .services > article {
         width: 90%;
         line-height: 1.75;
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
     .services > article > a {
