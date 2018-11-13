@@ -263,6 +263,14 @@ footer .copyright {
 		order: -1;
 		align-self: center;
         width: 100%;
+        box-shadow: 0px 1px 1px black;
+        animation: glow 3s infinite;
+    }
+    /* Animation is only present on mobile layout */
+    @keyframes glow {
+        0% {box-shadow: 0px 1px 1px black;}
+        50% {box-shadow: 0px 4px 1px black;}
+        100% {box-shadow: 0px 1px 1px black;}
     }
 
     .container {
@@ -627,8 +635,15 @@ footer .copyright {
 	}
 
 	#services .main-content .info-panel a {
-		margin: 0 auto;
-	}
+        margin: 0 auto;
+        animation: hover 5s infinite;
+    }
+    
+    @keyframes hover {
+        0%{transform: translateY(0px); box-shadow: 0px 2px 2px black;}
+        50%{transform: translateY(-4px); box-shadow: 0px 4px 8px black;}
+        100%{transform: translateY(0px); box-shadow: 0px 2px 2px black;}
+    }
 
 	#services .services-facts {
 		width: 100%;
