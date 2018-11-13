@@ -342,11 +342,11 @@ a {
   margin: 35px 4% 0;
 }
 
-.home_address div {
+.home_address_wrapper {
   font-size: 1.6rem;
 }
 
-.home_address div span {
+.home_address_div--spacing {
   margin: 18px 0 14px;
   display: inline-block;
 }
@@ -412,12 +412,12 @@ footer {
     margin: 37px 2.5% 0;
   }
 
-  .home_address .address-container {
+  .home_address_wrapper {
     margin: 35px 1.2% 0;
     font-size: 1.6rem;
   }
 
-  .home_address div span {
+  .home_address_div--spacing {
     margin: 16px 0 14px;
     display: inline-block;
   }
@@ -490,11 +490,11 @@ footer {
     margin: 37px 0 0;
   }
 
-  .home_address .address-container {
+  .home_address_wrapper {
     margin: 35px 0 0;
   }
 
-  .home_address div span {
+  .home_address_div--spacing {
     margin: 15px 0 14px;
   }
 }
