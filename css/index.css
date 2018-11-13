@@ -199,15 +199,12 @@ footer{
     }
     /***HEADER***/
     .container header{
-        padding: 8% 0 10%;
-    }
-    header .left-content h1{
-        font-size: 4em;
+       padding: 50px 0% 65px 3%;
     }
     header .left-content a{
-        margin: 2% auto 0;
+        margin: 12px auto;
         border: 1px solid black;
-        padding: 1.5% 7.5%;
+        padding: 7px 6%;
         color: black;
     }
     header img{
