@@ -64,18 +64,23 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+html{
+    font-size: 62.5%;
+}
+
 
 p{
 	color: #212121;
-	line-height: 1.15;
+    line-height: 1.15;
+    font-size: 1.6rem;
 }
 
 h1 {
-	font-size: 75px;
+	font-size: 7.5rem;
 }
 
 h2{
-	font-size: 17px;
+	font-size: 1.7rem;
 }
 
 .container {
@@ -118,7 +123,8 @@ address{
 }
 
 nav a{
-	text-decoration: none;
+    text-decoration: none;
+    font-size: 1.6rem;
 	color: lightslategray;
 	margin: 0px 0px 0px 0px;
 	border-bottom: 3px solid transparent;
@@ -143,7 +149,7 @@ nav a:hover{
 	border: 1px solid #212121;
 	display: inline-block;
 	padding: 4px 35px;
-	font-size: 18px;
+	font-size: 1.8rem;
 	transition: background-color 0.2s ease, color 0.2s ease;
 	cursor: pointer;
 }
@@ -151,10 +157,6 @@ nav a:hover{
 .get-started-btn:hover{
 	background-color: #212121;
 	color: white;
-}
-
-.header-cont-right{
-
 }
 
 .info-blocks{
@@ -242,7 +244,7 @@ nav a:hover{
 		text-align: center;
 		padding: 21px 0;
 		border-bottom: 1px solid black;
-		font-size: 18px;
+		font-size: 1.8rem;
 	}
 
 	.logo-wrap{
