@@ -279,12 +279,9 @@ footer {
 }
 
 
-/* Mobile Styling || 500px and smaller */
+/*Mobile navigation changed to column prior to browser using horizontal scroll */
 
-@media (max-width: 500px) {
-	.top-nav {
-	}
-
+@media (max-width: 650px) {
 	.top-nav nav {
 		display: flex;
 		flex-direction: column;
@@ -302,7 +299,11 @@ footer {
 		border-top: 1px solid black;
 		margin-top: -22px;
 	}
+}
 
+/* Mobile Styling || 500px and smaller */
+
+@media (max-width: 500px) {
 	.main-banner {
 		padding: 30px 0 80px 0;
 	}
