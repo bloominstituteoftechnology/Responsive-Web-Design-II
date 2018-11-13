@@ -85,7 +85,7 @@ summary,
 time,
 mark,
 audio,
-video {
+/*video {*/
   margin: 0;
   padding: 0;
   border: 0;
@@ -382,11 +382,20 @@ footer {
     width: 95%;
   }
 
+  @keyframes rubberBand {
+    0% {transform: scale(1);}
+    30% {transform: scaleX(1.25) scaleY(0.75);}
+    40% {transform: scaleX(0.75) scaleY(1.25);}
+    60% {transform: scaleX(1.15) scaleY(0.85);}
+    100% {transform: scale(1);}
+  }
+
   .cta {
     margin-top: 41px;
     display: flex;
     justify-content: center;
     margin-left: 9%;
+    
   }
 
   .cta img {
@@ -395,6 +404,9 @@ footer {
 
   .cta .cta-text {
     letter-spacing: 5px;
+    animation-name: rubberBand;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
   }
 
   .main-content {
@@ -444,7 +456,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
     margin: 18px 0 0 4%;
   }
 
@@ -472,6 +483,11 @@ footer {
 
   .cta .cta-text {
     letter-spacing: 5px;
+    -webkit-backface-visibility: visible;
+    -ms-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
   }
 
   .main-content {
@@ -516,5 +532,46 @@ footer {
   footer {
     width: 100%;
     text-align: center;
+  }
+  @keyframes flip {
+    0% {
+      -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+      -ms-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+      transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+      -ms-transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+      transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    50% {
+      -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+      -ms-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+      transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+      -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+      transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    100% {
+      -webkit-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+      -ms-transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+      transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
   }
 }
