@@ -218,16 +218,18 @@ header .logo {
     align-items: center;
   }
   header nav {
-    margin-right: 30px;
-    width: 100%;
+    width: 90%;
+    margin-top: 38px;
+    margin-right: 5%;
+
     order: 1;
-    align-items: space-evenly;
+    align-items: space-between;
   }
   header a {
     margin: 0;
   }
   header .logo {
-    margin: 0%;
+    margin-top: 30px;
     flex-wrap: nowrap;
     order: -1;
   }
@@ -288,7 +290,6 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin-top: 5px;
   margin-left: 13.5%;
   line-height: 0.95;
 }
@@ -314,11 +315,11 @@ header .logo {
     display: none;
   }
   .cta {
-    margin-top: 60px;
+    margin-top: 75px;
     justify-content: center;
   }
   .cta .cta-text {
-    margin: 0 0 0 0;
+    margin: 0 0 5px 0;
   }
 }
 
@@ -373,22 +374,18 @@ header .logo {
 @media (max-width: 800px) {
   .main-content {
     width: 95%;
-    margin: 75px auto 35px auto;
+    margin: 70px auto 51px auto;
   }
   .main-content .top-content {
     flex-wrap: nowrap;
-    margin-right: 5%;
+    width: 90%;
+    margin-top: 3px;
     justify-content: space-between;
   }
 
-  .main-content .top-content .text-content:first-child {
-    /* margin: 0px 18px 0px 10px; */
-    justify-content: space-between;
-  }
-
-  .main-content .top-content .text-content:last-child {
-    /* margin: 0px 0px 0px 18px; */
-    justify-content: space-between;
+  .main-content .top-content .text-content {
+    width: 45%;
+    margin-left: 1.5%;
   }
 
   .main-content .middle-img {
@@ -398,8 +395,7 @@ header .logo {
   .main-content .bottom-content {
     width: 100%;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 0;
+    margin-left: 1%;
   }
   .main-content .bottom-content p {
     padding-right: 5%;
@@ -468,7 +464,7 @@ footer p {
 
 @media (max-width: 800px) {
   .contact {
-    margin-left: 10%;
+    margin-left: 3.5%;
   }
 }
 
