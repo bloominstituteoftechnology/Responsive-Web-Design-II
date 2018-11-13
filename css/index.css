@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -65,38 +65,84 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* Your code starts here! */
 
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
-	/* border: 1px solid red; */
-	/* display: flex; */
-	width: 100%;
-	padding: 3% 5%;
+	border: 1px solid red;
+    /* display: flex; */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 880px;
+	padding: 27px 0;
 }
 
 header {
 	/* background-color: lightpink; */
 	/* position: fixed; */
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav {
 	/* border: 1px solid red; */
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+    align-items: center;
+    
 }
 
 nav a {
 	color: grey;
 	text-decoration: none;
-	padding-right: 60px;
+    padding-right: 20%;
+    font-size: 1.5em;
 }
 
-img {
-    width: 100%;
+.logo {
+    padding-left: 20%;
+    min-width: 183px
+}
+
+.first-section {
+	/* height: 475px; */
+	padding: 72px 0;
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.motto {
+	text-align: center;
+    margin-left: 14%;
+    margin-right: 8%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.motto h1 {
+	font-size: 75px;
+}
+
+.motto button {
+	width: 165px;
+    font-size: 18px;
+}
+
+.first-section img{
+    /* max-width: 379px;
+    max-height: 379px; */
+    width: 50%;
 }
 
 ul {
@@ -117,42 +163,6 @@ footer {
 /* .content-col p {
 	background-color: red;
 } */
-
-.logo {
-    min-width: 183px;
-}
-
-.first-section {
-	/* height: 475px; */
-	padding: 70px 0;
-	display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.motto {
-	text-align: center;
-    margin-left: 125px;
-    margin-right: 50px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.motto h1 {
-	font-size: 75px;
-}
-
-.motto button {
-	width: 165px;
-    font-size: 18px;
-}
-
-.first-section img{
-    max-width: 379px;
-    max-height: 379px;
-    width: 50%;
-}
 
 .about {
 	border-top: 3px solid black;
@@ -233,7 +243,7 @@ button.services-button {
         /* border: 1px solid red; */
         /* display: flex; */
         width: 100%;
-        padding: 3% 20px;
+        padding: 0 20px;
     }
 
     header {
