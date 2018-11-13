@@ -180,6 +180,17 @@ p {
 
 /* Navbar Styles */
 
+nav {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+nav .logo-link-wrapper {
+  width: 18.1rem;
+  margin-top: 20px;
+}
+
 /* Home Page Styles */
 
 .header-img {
