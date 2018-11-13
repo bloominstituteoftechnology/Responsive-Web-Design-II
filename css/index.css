@@ -170,8 +170,12 @@ header .round-img {
     height: auto;
 }
   
+.main-content {
+    border-top: 1px solid black;
+}
+
 .main-content .features {
-	border-top: 1px solid black;
+	
 	padding: 36px 0 33px;
 	display: flex;
   }
@@ -191,7 +195,7 @@ header .round-img {
 
 .main-content .product .product-content {
     width: 33%;
-
+    line-height: 1.9rem;
 }
 .contact {
 	margin-top: 35px;
@@ -338,11 +342,12 @@ header .round-img {
 	}
 	
 	nav .nav-links {
-		width: 800px;
+        max-width: 800px;
+        width: 100%;
 		justify-content: space-around;
 	}
 	header {
-		margin: 16px 0 78px 0;
+		margin: 16px 0 74px 0;
 		justify-content: center;
 		align-items: center;
 	}
@@ -350,27 +355,28 @@ header .round-img {
         display: none;
 	}
 
+
 	/* Home Styles */
 
-	.tagline {
-		margin-top: 51px;
+	header .tagline {
+		margin: 51px 0 0 0;
 	}
-	.features {
+	.main-content .features {
 		padding: 36px 0 32px 0;
 	}
-	.feature-content {
-		padding: 0 10px;
+	.main-content .features .feature-content {
+		padding: 0 1.5%;
 	}
-	.product {
-		padding: 29px 0 53px 0;
+	.main-content .product {
+		padding: 26px 0 51px 0;
 	}
 
-	.product-content {
-		padding: 0 10px;
+	.main-content .product .product-content {
+		padding: 0 1.5%;
 	}
 
 	.contact {
-		padding: 0 10px;
+		padding: 0 1.5%;
 	}
 
 	/* Services Styles */
@@ -448,26 +454,35 @@ header .round-img {
 
 	/* Home Styles */
 
-	.features {
+    header .button {
+        padding: 7px 17%;
+    }
+
+    .main-content {
+        margin: 0 4%;
+    }
+
+	.main-content .features {
 		flex-wrap: wrap;
 		padding: 31px 0 28px;
 	}
 
-	.feature-content {
-		padding: 25px 19px;
+	.main-content .features .feature-content {
+		padding: 25px 0;
 	}
 	
-	.middle-img, .services-header-img {
-		padding: 0 19px;
+	.main-content .middle-img, .services-header-img {
+		/* padding: 0 19px; */
 	}
 
-	.product {
+	.main-content .product {
 		flex-wrap: wrap;
 		padding: 0 0 7px;
 	}
 
-	.product-content {
-		padding: 31px 19px;
+	.main-content .product .product-content {
+        padding: 31px 0;
+        width: 100%;
 	}
 
 	.contact {
