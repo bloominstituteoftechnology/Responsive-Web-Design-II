@@ -103,7 +103,8 @@ nav {
 ul {
 	list-style-type: square;
 	list-style-position: inside;
-	margin-top: 10px;
+    margin-top: 10px;
+    font-size: 1.6rem;
 }
 li {
   margin: 15px 0;
@@ -215,7 +216,7 @@ header .round-img {
 .header-container {
 	margin-bottom: 40px;
 	border-bottom: 1px solid black;
-	padding: 0 0 40px 0; /* Stretch: Needs percentage */
+	padding: 0 0 40px 0;
 }
 
 .services-header-img {
@@ -231,18 +232,9 @@ header .round-img {
 .box {
 	border: 1px solid black;
 	background:#eeeeee;
-	padding: 20px; /* Stretch: Needs percentage */
-	width: 50%;
-	margin: 0 20px; /* Stretch: Needs percentage */
+	padding: 3%;
+	width: 48%;
 }
-
-.box:first-child {
-	margin-left: 0;
-  }
-
-  .box:last-child {
-	  margin-right: 0;
-  }
 
 .button-services {
 	background-color: white;
@@ -250,7 +242,7 @@ header .round-img {
 	border-radius: 5px;
 	font-size: 1.1rem;
 	font-family: 'Helvetica', sans-serif;
-	padding: 10px 30px; /* Stretch: Needs percentage */
+	padding: 10px 10%;
 	margin-top: 20px;
 	max-width: 150px;
 	text-align: center;
@@ -264,19 +256,12 @@ header .round-img {
 }
 
 .facts-container {
-	width: 50%;
-	margin: 0 20px; /* Stretch: Needs percentage */
+	width: 48%;
+
 }
 
-.facts-container:first-child {
-	margin-left: 0;
-  }
-
-  .facts-container:last-child {
-	  margin-right: 0;
-  }
-
 .services-info-img {
+    max-width: 800px;
 	width: 100%;
 }
 
@@ -402,7 +387,7 @@ header .round-img {
 
 	.box {
 		width: 47.75%;
-        margin: 15px; /* Stretch: Needs percentage */
+        margin: 2.5%;
 	}
 
 	.facts {
@@ -479,10 +464,6 @@ header .round-img {
 	.main-content .features .feature-content {
 		padding: 24px 0;
 	}
-	
-	.main-content .middle-img, .services-header-img {
-		/* padding: 0 19px; */
-	}
 
 	.main-content .product {
 		flex-wrap: wrap;
@@ -498,15 +479,19 @@ header .round-img {
 		padding: 0 2.5%;
 	}
 
-	/* Services Styles */
+    /* Services Styles */
+    
+    .services-header-img {
+		padding: 0 3%;
+	}
 
 	.header-container {
-		padding: 0 19px 40px; /* Stretch: Needs percentage */
+		padding: 0 3% 40px;
 	}
 
 	.services-container {
 		flex-wrap: wrap;
-		padding: 0 19px; /* Stretch: Needs percentage */
+		padding: 0 3%; 
 	}
 
 	.box {
@@ -516,7 +501,7 @@ header .round-img {
 
 	.facts {
 		width: 100%;
-		padding: 40px 19px 0; /* Stretch: Needs percentage */
+		padding: 40px 3% 0; 
 	}
 
 }
