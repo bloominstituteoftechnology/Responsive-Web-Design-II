@@ -1,1 +1,326 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+/*
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    border:1px solid red;
+*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html{
+    font-size: : 62.5%;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 880px;
+   margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+header nav a {
+    margin: 0.5% 1rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.logo {
+    margin: -0.7%;
+}
+
+
+/******first section css and header*************/
+
+.btn {
+    display: flex;
+    margin-top:4%;
+    margin-left:9%;
+    font-size: 1.3rem;
+    padding: 1% 5% 0% 5%; 
+}
+
+.ondemand img{
+    object-fit: contain;
+}
+
+.ondemand {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.ondemand h1{
+    font-size: 4rem;
+    line-height: 1.23;
+}
+
+.on{
+    margin: 24%;
+    font-size: 5rem;
+}
+
+/******section one css*************/
+
+.sectionone{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.sectionone p {
+    margin: 6% 0% 4% 0%;
+}
+
+/******The image between ********/
+
+.middle-img{
+    width: 100%;
+}
+
+/******section two css ********/
+
+.sectiontwo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.sectiontwo h3{
+    margin-top: 12%;
+}
+
+.sectiontwo p {
+    margin: 2% 0% 8% 0%;
+}
+
+/******footer css **********/
+
+hr{
+    border:none;
+    height: 5rem ;
+    border-bottom: 1px solid #1f1209;
+    margin: -5% auto 1%; 
+}
+
+.contact p{
+    line-height: 0.1%;
+    margin: 0;
+}
+
+.copy {
+    text-align: center;
+}
+
+
+/***** adding media query****/
+
+
+@media(max-width : 800px){
+    
+    .container{
+        width: 100%;
+        max-width: 700px;
+        margin: 4% 3% 3% 3%;
+    }
+    .sectionone p, .sectionone h2, .sectiontwo p , {
+        margin: 1.2%;
+    }
+    
+    .sectiontwo h3{
+        margin: 13% 0% 3% 0%;
+    }
+
+    .contact p {
+        margin:  1% 0.9% 0% 2%;
+        line-height: 0.1;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 1.19;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav  {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 4%;
+    }
+
+    .ondemand img { 
+        display: none;
+    }
+
+    .ondemand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ondemand h1{
+        text-align: center;
+    }
+
+    .ondemand button {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+@media(max-width : 500px){
+  
+    body {
+        width: 91%;
+        margin:0%;
+        padding:0%;
+        overflow-x: hidden;
+    }
+    
+    .container header .logo{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    
+    .container header nav a:nth-last-child(odd), .container header nav a:nth-last-child(even){
+        border-bottom: none
+    }
+
+    .logo{
+        margin-top: -6%;
+        margin-bottom: -13%;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav a {
+        border: 1px solid black;
+        border-left:none;
+        border-right: none;
+        padding:4%;
+    }
+        
+    .ondemand {
+        margin: 10%;
+    }
+    
+   .ondemand button{
+        margin-top: 2%;
+       width: 69%;
+       padding: 1% 2%;
+       font-size: 1.1rem;
+    }
+
+    .sectionone {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+    .sectionone h2{
+        margin-top: 5%;
+    }
+    
+    .middle-img {
+        margin-top: 5%;
+    }
+        
+    .sectionone .column {
+        width: 100%;
+    }
+
+    .sectiontwo{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sectionone h3, .sectiontwo .columntwo h3 , .contact h3{
+       text-indent: 0.7rem;
+    }
+    
+    .copy{
+       padding: 8%;
+    }
+
+}
