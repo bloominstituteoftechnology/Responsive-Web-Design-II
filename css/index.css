@@ -48,7 +48,9 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -68,15 +70,16 @@ h1, h2, h3, h4, h5 {
 /* Header Styles */
 
 header {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
 }
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+    width: 75%;
     justify-content: space-between;
     display: flex;
+    font-size: 1.6rem;
 }
 
 header nav a {
@@ -102,7 +105,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -116,7 +119,7 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+    width: 58%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -134,7 +137,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -157,8 +160,13 @@ header .logo {
 
 /* Contact Styles */
 
+.contact h4 {
+    font-size: 1.7rem;
+}
+
 .contact p {
     margin: 15px 0;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
@@ -268,7 +276,6 @@ footer {
          width: 90%;
      }
 
-    
      .cta {
          display: flex;
          justify-content: center;
@@ -284,7 +291,7 @@ footer {
         margin-right: 5%;
     }
     
-    .middle-img {
+    .main-content .middle-img {
         display: flex;
         justify-content: center;
         margin-left: 5%;
