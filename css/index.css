@@ -238,6 +238,7 @@ header nav a:hover {
 footer {
 	text-align: center;
 	margin: 20px 0;
+	font-size: 1.6rem;
 }
 
 /* ---------------------Home Page------------------------- */
@@ -316,6 +317,7 @@ footer {
 address {
 	font-size: 1.6rem;
 	padding-left: 1%;
+	margin-bottom: 39px;
 }
 
 address .add1 {
