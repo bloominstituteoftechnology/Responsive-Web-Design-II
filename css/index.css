@@ -216,7 +216,7 @@ header .round-img {
 .header-container {
 	margin-bottom: 40px;
 	border-bottom: 1px solid black;
-	padding: 0 0 40px 0;
+	padding: 0 0 40px 0; /* Stretch: Needs percentage */
 }
 
 .services-header-img {
@@ -232,7 +232,7 @@ header .round-img {
 .box {
 	border: 1px solid black;
 	background:#eeeeee;
-	padding: 20px;
+	padding: 20px; /* Stretch: Needs percentage */
 	width: 50%;
 	margin: 0 20px;
 }
@@ -249,11 +249,11 @@ header .round-img {
 	background-color: white;
 	border: 1px solid black;
 	border-radius: 5px;
-	font-size: 11px;
+	font-size: 1.1rem;
 	font-family: 'Helvetica', sans-serif;
-	padding: 10px 30px;
+	padding: 10px 30px; /* Stretch: Needs percentage */
 	margin-top: 20px;
-	width: 150px;
+	max-width: 150px;
 	text-align: center;
 }
 
@@ -293,7 +293,7 @@ header .round-img {
   display:flex;
   flex-direction: column;
   text-align: center;
-	padding: 20px 40px;
+	padding: 20px 40px; /* Stretch: Needs percentage */
 }
 
 .headshot strong {
@@ -332,8 +332,9 @@ header .round-img {
 	}
 	
     .container {
-		width: 800px;
-		padding: 0 20px;
+        max-width: 800px;
+        width: 100%;
+		padding: 0 2%;
     }
 
     nav {
@@ -359,14 +360,20 @@ header .round-img {
 	/* Home Styles */
 
 	header .tagline {
-		margin: 51px 0 0 0;
-	}
+        margin: 51px 0 0 0;
+    }
+    
+    header .button {
+        padding: 7px 11%
+    }
 	.main-content .features {
 		padding: 36px 0 32px 0;
-	}
+    }
+    
 	.main-content .features .feature-content {
 		padding: 0 1.5%;
-	}
+    }
+    
 	.main-content .product {
 		padding: 26px 0 51px 0;
 	}
@@ -413,16 +420,19 @@ header .round-img {
 
 	.container {
 		padding: 0px;
-		width: 500px;
+        max-width: 500px;
+        width: 100%;
 	}
 	nav {
 		margin-top: 20px;
 		height: 422px;
-		width: 500px;
+        max-width: 500px;
+        width: 100%;
 	}
 
 	nav .nav-links {
-		width: 500px;
+        max-width: 500px;
+        width: 100%;
 		height: 365px;
 		flex-direction: column;
 		align-items: center;
@@ -433,8 +443,8 @@ header .round-img {
 		margin-bottom: 18px;
 	}
 	nav .nav-links a {
-		font-size: 18px;
-		padding: 21px;
+		font-size: 1.8rem;
+		padding: 21px 0;
 		border-top: 1px solid grey;
 		width: 100%;
 		text-align: center;
@@ -459,16 +469,16 @@ header .round-img {
     }
 
     .main-content {
-        margin: 0 4%;
+        margin: 0 2.5%;
     }
 
 	.main-content .features {
 		flex-wrap: wrap;
-		padding: 31px 0 28px;
+		padding: 37px 0 28px;
 	}
 
 	.main-content .features .feature-content {
-		padding: 25px 0;
+		padding: 24px 0;
 	}
 	
 	.main-content .middle-img, .services-header-img {
@@ -481,23 +491,23 @@ header .round-img {
 	}
 
 	.main-content .product .product-content {
-        padding: 31px 0;
+        padding: 30px 0;
         width: 100%;
 	}
 
 	.contact {
-		padding: 0 19px;
+		padding: 0 2.5%;
 	}
 
 	/* Services Styles */
 
 	.header-container {
-		padding: 0 19px 40px;
+		padding: 0 19px 40px; /* Stretch: Needs percentage */
 	}
 
 	.services-container {
 		flex-wrap: wrap;
-		padding: 0 19px;
+		padding: 0 19px; /* Stretch: Needs percentage */
 	}
 
 	.box {
@@ -507,7 +517,7 @@ header .round-img {
 
 	.facts {
 		width: 100%;
-		padding: 40px 19px 0;
+		padding: 40px 19px 0; /* Stretch: Needs percentage */
 	}
 
 }
