@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-	width: 880px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 /*Header Styles*/
@@ -85,6 +85,7 @@ header nav {
 }
 
 header nav a {
+    font-size: 1.6rem;
 	text-decoration: none;
 	color: gray;
 }
@@ -109,7 +110,7 @@ header .logo {
 	justify-content: center;
 	flex-flow: column;
 	align-items: center;
-	font-size: 70px;
+	font-size: 7rem;
 	text-align: center;
 	margin: 0 82px  0 0;
 }
