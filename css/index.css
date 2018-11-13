@@ -61,6 +61,10 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
@@ -69,8 +73,8 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-  width: 880px;
-  margin: auto;
+  max-width: 880px;
+  margin: 0 5%;
 }
 
 /* header */
@@ -81,8 +85,8 @@ header {
 }
 
 header nav {
-  margin-top: 40px; 
-  width: 610px;
+  margin: 40px 3% 0px; 
+  width: 100%;
   justify-content: space-between;
   display: flex;
 }
@@ -90,6 +94,7 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #b0b0b0;
+  font-size: 1.6rem;
 }
 
 header nav a:hover {
@@ -98,7 +103,7 @@ header nav a:hover {
 }
 
 header .logo {
-  margin: 28px 0 0 91px;
+  margin: 28px 0 0 9.1rem;
 }
 
 /* cta */
@@ -111,21 +116,21 @@ header .logo {
 }
 
 .cta .cta-text {
-  font-size: 72px;
+  font-size: 7.2rem;
   text-align: center;
   letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 8.2rem 0 0;
 }
 
 .cta .cta-text button {
   border: 1px double black;
-  font-size: 16px;
+  font-size: 1.6rem;
   background: white;
-  width: 170px;
+  width: 17rem;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
@@ -143,12 +148,16 @@ header .logo {
   border-bottom: 2px solid black;
   margin: 75px 0 35px 0;
   padding: 35px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 
 .main-content .top-content {
    display: flex;
+}
+
+.main-content .top-content p {
+  margin: 0 2% 0 0;
 }
 
 .main-content .middle-img {
@@ -161,7 +170,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-   padding-right: 20px;
+   margin-right: 5%;
 }
 
 /* Contact Styles */
@@ -174,8 +183,12 @@ header .logo {
 
 .contact p {
   margin: 15px 0;
+  font-size: 1.6rem;
 }
 
+.contact h4 {
+  font-size: 1.6rem;
+}
 /* Footer Styles */
 
 footer {
@@ -311,8 +324,14 @@ footer {
 
 @media (max-width: 500px) {
 
+  .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+
   header nav{
     display: block;
+    margin: 16px auto;
   }
 
   header nav a{
@@ -320,19 +339,28 @@ footer {
     text-align: center;
     margin-top: 20px;
     border-bottom: 1px solid #9a9a9a;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   header nav a:first-child {
     border-top: 1px solid #9a9a9a;
-    padding-top: 20px;
+    padding-top: 2rem;
     margin-top: 10px;
   }
 
   header .logo {
     margin-bottom: 0px;
+  }
+
+  .main-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .main-content img {
+    width: 95%;
   }
 
   .main-content .top-content {
@@ -348,13 +376,18 @@ footer {
   .main-content .bottom-content {
     display: block;
   }
+
+  .contact {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   
   .bottom-content .text-content {
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
   }
   
   .bottom-content .text-content:last-child {
-    padding-bottom: 0px;
+    padding-bottom: 0rem;
     margin-bottom: 0px;
   }
 
