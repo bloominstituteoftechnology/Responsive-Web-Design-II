@@ -452,9 +452,20 @@ _ .nav__links__link:hover {
     padding: 7px 15%;
   }
 
+  @keyframes imgfadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .home__header__img__wrapper {
     margin-top: 60px;
     display: inline-block;
+    animation-name: imgfadein;
+    animation-duration: 4s;
   }
 
   .home__section__one {
