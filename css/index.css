@@ -61,7 +61,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 5%;
 }
 
 .container {
@@ -75,13 +75,16 @@ h1, h2, h3, h4, h5 {
 header {
     width: 100%;
     display: flex;
+    
 }
 
 header nav {
-    margin-top: 40px; 
+    margin-top: 27px; 
     width: 610px;
     justify-content: space-between;
     display: flex;
+    font-size:1.5rem;
+    
 }
 
 header nav a {
@@ -95,7 +98,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 10px 0 0 91px;
 }
 
 /* Call To Action (CTA) Styles */
@@ -137,11 +140,12 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
+   margin: 75px 0 0px 0;
    padding: 35px 0;
    font-size: 16px;
    line-height: 18px;
 }
+
 
 .main-content .top-content {
     display: flex;
@@ -256,7 +260,7 @@ footer {
     
     .container{
         width:100%;
-        padding:20px;
+        padding:5%;
     }
     
     header {
@@ -266,14 +270,14 @@ footer {
     header nav{
         display:flex;
         flex-direction:row;
-        margin:20px;
+        margin:5%;
         justify-content: space-around;
         
       }
       header .logo{
         display:flex;
         margin:0 auto;
-        margin-top: 20px;
+        margin-top: 4%;
         justify-content:center;
       }
 
