@@ -110,6 +110,32 @@ General CSS
     margin-right: 2%;
 }
 
+/* Tablet */
+@media (max-width: 800px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .header {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+        margin-top: 4%;
+    }
+
+    .nav {
+        width: 100%;
+        font-size: 1.2rem;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: 0;
+        padding-bottom: 40px;
+    }
+}
+
 button {
 	background: transparent;
 }
@@ -236,6 +262,17 @@ footer {
 
 .contact * {
 	padding: .8% 0;
+}
+
+
+
+/* 
+Media Queries for home page 
+TODO: reorganize so that they are under their respective sections
+*/
+
+@media (max-width: 800px) {
+
 }
 
 
