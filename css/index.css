@@ -270,7 +270,7 @@ header .logo {
 }
 
 .contact h4 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 /* Footer Styles */
@@ -358,17 +358,18 @@ footer {
   height: 300px;
 }
 
+/* tablet view */
 @media (max-width: 800px) {
-.container {
+  .container {
     width: 800px;
-}
+  }
   header {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column-reverse;
-    padding: 30px;
-    padding-right: 110px;
+    padding: 4%;
   }
+
   header .logo {
     display: flex;
     margin: auto;
@@ -376,13 +377,14 @@ footer {
   header nav {
     display: flex;
     justify-content: space-between;
-    width: 710px;
+    width: 95%;
   }
 
   .cta {
     margin-top: 41px;
     display: flex;
     justify-content: center;
+    margin-left: 9%;
   }
 
   .cta img {
@@ -398,50 +400,43 @@ footer {
     flex-wrap: wrap;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 18px;
-    width: 760px;
-    margin-left: 20px;
-  }
-
-  .main-content .top-content {
-    padding-left: 11px;
+    width: 90%;
+    margin-left: 3%;
   }
 
   .main-content .middle-img {
     display: block;
-    width: 760px;
-    height: 160px;
+    width: 100%;
     margin-top: 50px;
   }
 
   .main-content .bottom-content {
-    margin-left: 10px;
-    margin-bottom: 15px;
+    margin-left: 1%;
   }
 
   .contact {
-    margin-left: 30px;
+    margin-left: 3%;
   }
   footer {
-    width: 780px;
-    margin-left: 10px;
+    width: 100%;
+    margin-left: 1%;
   }
 }
 
+/*mobile view*/
+
 @media (max-width: 500px) {
-    .container {
-        width: 500px;
-    }
-  
-    header {
+  .container {
+    width: 500px;
+  }
+
+  header {
     display: flex;
     width: 500px;
     height: 440px;
     padding: 20px 20px 0 20px;
-  }
-
-  header .logo {
   }
 
   header nav {
@@ -485,16 +480,16 @@ footer {
     border-bottom: 2px solid black;
     font-size: 16px;
     line-height: 18px;
-    width: 460px;    
+    width: 460px;
     margin-left: 20px;
   }
 
   .main-content .top-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 15px 0 0 0;
-      height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+    height: 270px;
   }
 
   .main-content .middle-img {
@@ -512,7 +507,7 @@ footer {
   }
 
   .contact {
-      margin-left: 20px;
+    margin-left: 20px;
   }
   footer {
     width: 480px;
