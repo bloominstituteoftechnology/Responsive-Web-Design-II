@@ -73,6 +73,9 @@ html{
     margin: 0 auto;
     flex-direction: column;
 }
+h2{
+    font-size: 1.6rem;
+}
     
 /***NAVIGATION***/
 .navigation{
@@ -123,11 +126,7 @@ header .left-content a{
      height: auto;
  }
 /* Main Content */
-.main-content img{
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
+
 .main-content{
     margin: 0 auto;
     border-top: 2px solid black;
@@ -136,48 +135,45 @@ header .left-content a{
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-.main-content .top-content{
-    display: flex;
-    justify-content: space-between;    
+.main-content img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
-.top-content .text-content{
-    width: 50%;
-}
-.main-content .bottom-content{
-    display: flex;
-    justify-content: space-between;
-}
-.bottom-content .text-content{
-    padding: 0 3% 0 0;
-    line-height: .5;
-}
-.main-content h2{
-    font-size: 1.6rem;
-}
-
 .main-content p{
-    width: 100%;
     font-size: 1.6rem;
     line-height: 1.25;
 }
 .main-content div {
     margin: 16px 0px 14px;
 }
+.main-content .top-content{
+    display: flex;
+    justify-content: space-between;    
+}
+.main-content .bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
 
+.bottom-content .text-content{
+    padding: 0 3% 0 0;
+    line-height: .5;
+}
 
 /* ADDRESS */
 address{
-    padding: 7% 0 0;
-    margin: 0 auto;
-    width: 95%;
+    margin: 35px 0 0;
+    font-size: 1.6rem;
 }
 address div{
-    margin: 3% 0;
+    margin: 10px 0;
     line-height: 2;
 }
 /* FOOTER */
 footer{
-    margin: 5% auto;
+    font-size: 1.6rem;
+    margin: 20px auto 35px;
 }
 
 /* Tablet View */
