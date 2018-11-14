@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+  width:100%;
   max-width: 880px;
   /* TB LR */
   margin: 0 auto;
@@ -72,9 +73,10 @@ h1, h2, h3, h4, h5 {
 /* header */
 header nav {
   display: inline-block;
-  width: 691px;
+  width: 78.5%;
   vertical-align: top;
   margin-top: 35px;
+  text-align: center;
 }
 
 header nav a {
@@ -144,7 +146,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 46.5%;
   display: inline-block;
   margin-right: 34px;
 }
@@ -155,6 +157,8 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  height:auto;
+  max-width: 100%;
 }
 
 .main-content .bottom-content {
@@ -163,7 +167,7 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 31.25%
   display: inline-block;
   margin-right: 12px;
 }
@@ -261,22 +265,25 @@ footer {
         padding:0px;
         align-content: center;
         margin-bottom: 5px;
+        border-bottom: 3px solid gray;
     }
     img{
        max-width: 100%;
        height: auto; 
+       border-bottom: 3px solid gray;
     }
     header nav {
         flex-direction: column;
         margin:0;
         padding-top: 5px; 
-        width: 100%;    
+        max-width: 100%;  
+        
     }
     header nav a{
         display:block;
         border-bottom: 3px solid gray;
         text-align: center;
-        width:100%;
+        max-width:100%;
         margin: 0;
         padding: 5px;
     }
@@ -297,7 +304,7 @@ footer {
         font-size:12px;
         margin-top:2px;
         height:20px;
-        width:100px;
+        width:65%;
     }
     .main-content{
         margin-top:20px;
