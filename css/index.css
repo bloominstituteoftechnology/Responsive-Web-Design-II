@@ -81,7 +81,7 @@ header nav {
 
 header nav a {
   display: inline-block;
-  margin-right: 65px;
+  margin-right: 7.3%;
   font-size: 14px;
   color: gray;
   text-decoration: none;
@@ -92,11 +92,11 @@ header nav a:hover {
 }
 
 header nav a:first-child {
-  margin-left: 0;
+  margin-left: 0%;
 }
 
 header nav a:last-child {
-  margin-right: 0;
+  margin-right: 0%;
 }
 
 header .logo {
@@ -112,16 +112,15 @@ header .logo {
   font-size: 77px;
   margin-top: 120px;
   text-align: center;
-  padding: 0px 75px;
+  padding: 0px 10%;
 }
 
 .cta .cta-text button {
   background: white;
   vertical-align: top;
   margin-top: 6px;
-  padding: 8px 44px;
+  padding: 1% 10%;
   font-size: 17px;
-  border: 1px solid black;
   cursor: pointer;
 }
 
@@ -138,17 +137,17 @@ header .logo {
 .main-content {
   border-top: 1px solid black;
   margin-top: 76px;
-  padding-top: 39px;
+  padding-top: 4%;
 }
 
 .main-content .top-content {
-  padding: 0 10px;
+  padding: 0 1%;
 }
 
 .main-content .top-content .text-content {
   width: 46.5%;
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 3.8%;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -163,11 +162,11 @@ header .logo {
 
 .main-content .bottom-content {
   margin-top: 37px;
-  padding: 0 10px;
+  padding: 0 1%;
 }
 
 .main-content .bottom-content .text-content {
-  width: 31.25%
+  width: 32%;
   display: inline-block;
   margin-right: 12px;
 }
@@ -177,17 +176,18 @@ header .logo {
 }
 
 .contact {
-  margin-top: 57px;
+  margin-top: 15px;
   border-top: 1px solid black;
-  padding: 39px 10px 0;
+  padding-top:2%;
+  margin-left: 0.5%;
 }
 
 .contact p {
-  margin: 20px 0;
+  margin: 1% 0;
 }
 
 footer {
-  margin: 32px 0;
+  margin: 3.6% 0;
   text-align: center;
   font-size: 14px;
 }
@@ -203,29 +203,36 @@ footer {
         justify-content: space-around;
         align-items: center;
         margin-top: 20px;
-        padding:0px;
+        padding:0%;
 
+    }
+    header nav{
+       display: flex;
+       justify-content: space-between;
+       width:95%;
+       margin-left: 2%;
+       margin-right:2%;
     }
     header .logo{
         order: -1;
         max-width: 25%;
         height:auto;
         margin: 0px 0 0 0;
-        padding:0px;
+        padding:0%;
         align-content: center;
         margin-bottom: 5px;
     }
     .cta {
         display:flex;
         justify-content: center;
-        margin-bottom:20px;
-        padding: 30px;
+        margin-bottom:10px;
+        padding: 4%;
     }
     .cta .cta-text{
         margin-top: 30px;
-        padding: 5px;  
+        padding: 1%;  
         margin-bottom: 0px;
-        font-size:72px;
+        font-size:60px;
         padding: 0px 0px;
 }
     .main-content {
@@ -234,14 +241,16 @@ footer {
     .main-content .top-content {
         flex-wrap: nowrap;
         display:flex;
+        margin: 3%;
     }
     .main-content .middle-img {
         display:block;
-        padding: 10px;
+        padding: 2%;
     }
     .main-content .bottom-content {
         flex-wrap: nowrap;
         display:flex;
+        margin: 3%;
     }
 /*Mobile*/
 @media (max-width:500px) {
@@ -253,8 +262,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0px;
-        padding:5px;
+        margin: 0%;
+        padding:1%;
 
     }
     header .logo{
@@ -265,18 +274,17 @@ footer {
         padding:0px;
         align-content: center;
         margin-bottom: 5px;
-        border-bottom: 3px solid gray;
     }
     img{
        max-width: 100%;
        height: auto; 
-       border-bottom: 3px solid gray;
     }
     header nav {
         flex-direction: column;
         margin:0;
-        padding-top: 5px; 
+        padding-top: 1%; 
         max-width: 100%;  
+        border-top: 3px solid gray;
         
     }
     header nav a{
@@ -285,7 +293,7 @@ footer {
         text-align: center;
         max-width:100%;
         margin: 0;
-        padding: 5px;
+        padding: 1%;
     }
     .cta {
         display:flex;
@@ -309,24 +317,35 @@ footer {
     .main-content{
         margin-top:20px;
     }
-    .top-content .text-content{
-        flex-wrap: nowrap;
-        display:flex;
-        margin:0px 5px 10px 0;
+    .main-content .top-content  {
+        /*align-items: center;*/
+        flex-direction: column;
+        display: flex;
+        padding: 2%;
+        margin: 2%;
+    }
+    .main-content .top-content .text-content{
+        margin: 3%;
+        width: 75%;
+    }
+    
     }
     .main-content .middle-img {
         display:inline-block;
-        padding:10px;
+        padding:2%;
         max-width:100%;
         height:auto;
     }
 
     
-    .main-content .bottom-content .text-content{
-        display:block;
-        margin: 0px 5px 10px 10;
-        width: auto;
-        padding:5px;
+    .main-content .bottom-content {
+        flex-direction: column;
+        display: flex;
+        padding: 2%;
+        margin: 2%;
     }
-    
+    .main-content .bottom-content .text-content{
+        margin: 3%;
+        width: 75%;
+    } 
 }
