@@ -1,1 +1,490 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  border: 1px solid gold;
+}
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5%;
+}
+
+hr {
+  width: 95%;
+}
+
+footer {
+  margin-top: 5%;
+  border-bottom: 30px solid gray;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-size: 1.3rem;
+}
+
+header nav a:hover {
+  color: gray;
+  transition-duration: 0.5s;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header .logo {
+  margin: 1%;
+}
+
+/* page style */
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-content {
+  line-height: 1.5;
+}
+
+/* specific styles */
+
+.motto-section {
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.motto-and-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motto {
+  line-height: 1.2;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.motto-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  margin-top: 1%;
+  width: 55%;
+  font-size: 2.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #d3d3d3;
+  transition-duration: 0.5s;
+}
+
+.main-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  margin: 5%;
+}
+
+/* .about-pic {
+  width: 100%;
+  height: auto;
+} */
+.middle-img {
+  width: 100%;
+  height: auto;
+}
+
+address {
+  margin: 3%;
+}
+
+.copy {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+/*Services pages styles*/
+.header-img-container {
+  display: flex;
+
+  justify-content: center;
+}
+.services-header-img {
+  width: 95%;
+  height: auto;
+  border-radius: 1rem;
+  margin: 3%;
+}
+
+.our-services-container {
+  display: flex;
+  justify-content: center;
+}
+.our-services {
+  font-size: 25px;
+  line-height: 1.5;
+  width: 90%;
+  margin: 15px;
+}
+
+.our-services h2 {
+  font-size: 35px;
+}
+
+.top-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  font-size: 20px;
+  background-color: #f4f4f4;
+  line-height: 1.5;
+  padding: 15px;
+  margin: 50px;
+  width: 35%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card-btn {
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  margin: 10px;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.facts-about {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.facts-about ul {
+  margin: 30px;
+  list-style-type: disc;
+}
+
+.facts {
+  width: 50%;
+  line-height: 1.5;
+}
+
+/* media query styles */
+
+/* Tablet styles */
+@media (max-width: 800px) {
+  /* Home page tablet styles */
+  header {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .motto-section {
+    justify-content: center;
+  }
+  .motto-pic img {
+    display: none;
+  }
+
+  /* services page tablet styles */
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .facts-about .img {
+    display: none;
+  }
+  .facts-about ul {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 5%;
+  }
+
+  .our-services {
+    text-align: center;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 500px) {
+  /* Home page mobile styles */
+  nav {
+    display: flex;
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+  nav a:first-child {
+    border-top: 1px solid black;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-section {
+    flex-direction: column;
+  }
+  .about-pic {
+    width: 91%;
+  }
+  .main-content {
+    margin: 3%;
+  }
+
+  /* Sevices page mobile styles */
+
+  .services-header-img {
+    display: none;
+  }
+
+  .our-services {
+    font-size: 1.7rem;
+  }
+
+  .top-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    font-size: 1.7rem;
+    width: 90%;
+  }
+
+  .facts-about {
+    font-size: 1.4rem;
+  }
+  .facts-about ul {
+    font-size: 1.3rem;
+  }
+}
