@@ -456,30 +456,39 @@ footer {
     width: 100%;
   }
 
+  header {
+    padding: 0;
+  }
+
   header .logo {
     padding-left: 9%;
   }
 
   header nav {
     display: flex;
+    width: 100%;
+    margin: 18px 0 0 0;
+    /* padding-left: 4%; */
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin: 18px 0 0 0;
-    padding-left: 4%;
   }
 
   header nav a {
-    display: flex;
+    display: block;
     font-size: 2rem;
     border-bottom: 1px solid gray;
-    border-top: 1px solid gray;
+    /* border-top: 1px solid gray; */
     width: 100%;
-    padding: 2rem;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    padding: 2rem 0;
+    /* flex-direction: column;  */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid gray;
   }
 
   .cta {
