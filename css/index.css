@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* Your code starts here! */
 .container {
-    width: 880px;
+    /* width: 880px; */
     max-width: 880px;
 	margin: 0 auto;
 }
@@ -88,9 +88,11 @@ h1, h2, h3, h4, h5 {
 .container nav {
     display: flex;
     justify-content: space-between;
-	width: 650px;
-	margin-top: 35px;
-	margin-bottom: 35px;
+    /* width: 650px; */
+    width: 73.8%;
+	/* margin-top: 35px;
+    margin-bottom: 35px; */
+    margin: 3.97% 0;
 }
 
 .container nav a {
@@ -120,25 +122,29 @@ h1, h2, h3, h4, h5 {
 .main .main-text {
 	display: flex;
 	flex-direction: column;
-    width: 400px;
+    /* width: 400px; */
+    width: 45.45%;
     align-items: center;
 	vertical-align: top;
     /* font-size: 77px; */
     font-size: 7.7rem;
     margin-top: 120px;
     text-align: center;
-    padding: 0px 75px;
+    /* padding: 0px 75px; */
+    padding: 0px 8.5%;
 }
 
 .main .main-text button {
 	background: white;
 	vertical-align: top;
 	margin-top: 6px;
-	padding: 8px 44px;
+    /* padding: 8px 44px; */
+    padding: 8px 5%;
     /* font-size: 17px; */
     font-size: 1.7rem;
 	border: 1px solid black;
-	cursor: pointer;
+    cursor: pointer;
+    width: 80%;
 }
 
 .main .main-text button:hover {
@@ -163,7 +169,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-content .top-content .text-content {
-    width: 410px;
+    /* width: 410px; */
+    width: 46.59%;
     font-size: 1.6rem;
 }
 
@@ -173,6 +180,8 @@ h1, h2, h3, h4, h5 {
 
 .middle-img {
     margin-top: 45px;
+    width: 100%;
+    height: auto;
 }
 
 .bottom-content {
@@ -182,7 +191,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .bottom-content .text-content {
-    width: 275px;
+    /* width: 275px; */
+    width: 31.25%;
     font-size: 1.6rem;
 }
 
@@ -194,6 +204,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 57px;
 	border-top: 1px solid black;
     padding: 39px 10px 0;
+    padding: 39px 1.136% 0;
     font-size: 1.6rem;
 }
 
@@ -209,6 +220,11 @@ footer {
 }
 
 @media(max-width: 800px) {
+    .container {
+        /* max-width: 800px; */
+        width: 80%;
+    }
+    
     .container header {
         flex-direction: column;
         padding-top: 30px;
@@ -226,9 +242,17 @@ footer {
     .main img {
         display: none;
     }
+
+    .main .main-text button {
+        width: 130%;
+    }
 }
 
 @media(max-width: 500px) {
+    .container {
+        width: 80%;
+    }
+    
     .container nav {
         /* flex-direction: column;
         align-items: center; */
@@ -240,7 +264,8 @@ footer {
         text-align: center;
         /* font-size: 22px; */
         font-size: 2.2rem;
-        padding: 20px;
+        /* padding: 20px; */
+        padding: 4%;
         border-top: 1px solid black;
     }
 
@@ -252,12 +277,17 @@ footer {
         margin-top: 40px;
     }
 
+    .main .main-text button {
+        width: 180%;
+    }
+
     .main-content .top-content {
         display: block;
     }
 
     .main-content .top-content .text-content {
         margin-bottom: 40px;
+        width: 80%;
     }
 
     .middle-img {
@@ -270,6 +300,7 @@ footer {
 
     .main-content .bottom-content .text-content {
         margin-bottom: 40px;
-        width: 410px;
+        /* width: 410px; */
+        width: 82%;
     }
 }
