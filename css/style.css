@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5 {
     padding: 5px 10px;
     border: 5px double grey;
     margin: -5px -10px;
-    transition-duration: 250ms;
+    transition-duration: 100ms;
     transition-property: all;
 }
 
