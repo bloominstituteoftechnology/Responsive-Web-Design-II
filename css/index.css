@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5 {
   header nav {
     display: flex;
     /* was 691px */
-	width: 100%; 
+	width: 691px; 
 	vertical-align: top;
     margin-top: 35px;
     font-size: 1.6rem;
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5 {
   
   header nav a {
       /* was 65px */
-	margin-right: 45%;
+	margin-right: 7%;
 	font-size: 1.4rem;
 	color: gray;
     text-decoration: none;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5 {
     margin-top: 120px;
     text-align: center;
     /* padding: 0px 75px */
-    padding: 0px 75px;
+    padding: 0px 9%;
 	
   }
   
@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5 {
   
   .main-content .top-content .text-content {
      /* was 441px */
-	width: 60%;
+	width: 50%;
 	margin-right: 34px;
   }
   
@@ -212,13 +212,13 @@ h1, h2, h3, h4, h5 {
   .main-content .bottom-content {
 	display: flex;
 	margin-top: 37px;
-	padding: 0 10px;
+	padding: 0 2%;
 	
 }
   
   .main-content .bottom-content .text-content {
       /* was 275px */
-	width: 100%;
+	width: 31%;
 	margin-right: 20%;
 		
 	}
@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5 {
   
   .fact-content {
       /* was 400px */
-		width: 40%;
+		width: 45%;
 	}
 
 	.fact-content ul{
@@ -254,12 +254,12 @@ h1, h2, h3, h4, h5 {
   }
   
   .contact p {
-	margin: 20px 0;
+	margin: 2% 0;
   }
   
   footer {
     width: 100%;
-	margin: 32px 0;
+	margin: 2% 0;
 	text-align: center;
 	font-size: 1.6rem;
   }
