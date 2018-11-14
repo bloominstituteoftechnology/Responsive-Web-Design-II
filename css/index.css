@@ -95,8 +95,8 @@ header {
 }
 
 header nav {
-    margin-top: 40px;  
-    width: 610px;
+    margin-top: 4%;;  
+    width: 96%;
     display: flex;
     justify-content: space-between;
 }
