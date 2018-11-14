@@ -186,6 +186,7 @@ header .logo {
   border-top: 1px solid black;
   padding: 4.4% 10px 0;
   font-size: 1.6rem;
+  
 }
 
 .contact p {
@@ -218,7 +219,7 @@ footer {
     .container header nav {
         display: flex;
         justify-content: space-between;
-        width: 92.7%;
+        width: 92.6%;
        
     }
 
@@ -267,8 +268,104 @@ footer {
    }
 } 
 
+@media (max-width:500px) {
+.container {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+   
+   
+} 
+header .logo {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+      
+}
 
 
+.container header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid black;
+}     
+
+      
+.container header nav a:last-child {
+   margin-right: 0;
+}
+ 
+  
+.container header nav a {
+  font-size: 2rem;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid black;
+}
+  
+  .cta {
+      height: 380px;
+    
+    } 
+          
+  .cta .cta-text{
+      margin: 55px 0px 0px 10px;
+  }
+  .main-content {
+      width: 100%;
+      margin: 0 auto;
+  
+
+     
+     
+  }
+  .main-content .top-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    }
+  .main-content .top-content .text-content {
+    width: 100%;
+    margin-bottom: 9.5%;
+    margin-top: 17px;
+   
+
+    }
+ .middle-img {
+     width: 100%;
+     height: auto;
+    
+  
+    
+     
+    }
+  .main-content .bottom-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      
+    }  
+ .main-content .bottom-content .text-content {
+    margin: 15px 0 25px 0;
+     width: 100%;
+   
+
+ }
+ .bottom-content .text-content p {
+    width: 410px;
+ }
+ 
+ .container .contact {
+     width: 95%;
+    
+ }
+
+  }
 
 
 
