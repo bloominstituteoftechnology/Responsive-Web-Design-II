@@ -1,1 +1,322 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+html{
+    font-size: 62.5%;
+}
+.flex{
+    display: flex;
+}
+.container{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+h2{
+    font-size: 1.6rem;
+}    
+/***NAVIGATION***/
+.navigation{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0;
+}
+nav{
+    justify-content: space-between;
+
+}
+section nav a{
+    padding: 0 19% 0 0;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: gray;
+}
+  /***HEADER***/
+.container header{
+    padding: 5% 0 9%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+header .left-content{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: flex-end;
+    width: 100%;
+ }
+ header .left-content h1 {
+    font-size: 7rem;
+}
+header .left-content a{
+    margin: 2% auto 0;
+    border: 1px solid grey;
+    text-decoration: none;
+    color: grey;
+    padding: 7px 10%;
+    font-size: 1.6rem;
+}
+ header .right-content{
+     align-content: flex-end;
+ }
+ header .right-content img{
+     height: auto;
+ }
+/* Main Content */
+
+.main-content{
+    margin: 0 auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.main-content img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.main-content p{
+    font-size: 1.6rem;
+    line-height: 1.25;
+}
+.main-content div {
+    margin: 16px 0px 14px;
+}
+.main-content .top-content{
+    display: flex;
+    justify-content: space-between;    
+}
+.main-content .bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-content .text-content{
+    padding: 0 3% 0 0;
+    line-height: .5;
+}
+/* ADDRESS */
+address{
+    margin: 35px 0 0;
+    font-size: 1.6rem;
+}
+address div{
+    margin: 10px 0;
+    line-height: 2;
+}
+/* FOOTER */
+footer{
+    font-size: 1.6rem;
+    margin: 20px auto 35px;
+}
+/* Tablet View */
+@media only screen and (max-width: 800px){
+    .navigation{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 0 auto; 
+        width: 100%;
+    }
+   nav{
+       flex-direction: row;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       width: 100%;
+   }
+   section nav a{
+        padding: 37px 2% 0px 0;
+        border-top: 1px solid grey;
+        text-decoration: none;
+        color: grey;
+        border: none;
+    }
+    .navigation img{
+        padding: 5px 0 0 15px;
+    }
+    /***HEADER***/
+    .container header{
+       padding: 50px 0% 65px 3%;
+    }
+    header .left-content a{
+        margin: 12px auto;
+        border: 1px solid black;
+        padding: 7px 6%;
+        color: black;
+    }
+    header img{
+        display: none;
+    }
+    /***MAIN CONTENT***/
+   .main-content{
+       width: 95%;
+       align-content: flex-end;
+   }
+  
+   .main-content .top-content .text-content{
+       padding: 0px 2% 5px;
+       margin-bottom: 0;
+   }
+   .main-content .bottom-content .text-content{
+    padding: 0px 2.2%;
+   }
+   /* Address */
+    address{
+        width: 95%;
+        margin: 15px auto;
+    }
+}
+/* Mobile View */
+@media only screen and (max-width: 500px){
+    .container{
+        flex-direction: column;
+    }
+    .navigation{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 26px 0 0;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    section nav a {
+        width: 100%;
+        padding: 20px;
+        border-top: 1px solid grey;
+        text-decoration: none;
+        color: grey;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .navigation img{
+        padding: 0 0 0 4.5%;
+        margin: 0 auto 13px;
+    }
+    /*HEADER*/
+    header{
+        border-top: 1px solid grey;
+        width: 100%;
+    }
+    header .left-content{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+     }
+    header h1{
+        font-size: 4em;
+    }
+    header .left-content a{
+        margin: 15px auto;
+        border: 1px solid black;
+        padding: 7px 10%;
+        color: black;
+    }
+   
+    /* MAIN-CONTENT*/
+    .main-content{
+        margin: 0 auto;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 0;
+        width: 95%;
+        flex-direction: column;
+    }
+    .main-content .top-content{
+        flex-direction: column;
+        margin: 40px 0 25px;
+    }
+    .main-content .bottom-content{
+        flex-direction: column;
+        margin: 17px 0 0px;
+    }
+    .main-content .top-content .text-content{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main-content .bottom-content .text-content{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    .main-content div{
+        margin: 15px 0 40px;
+    }
+   .main-content p{
+       line-height: 1.1;
+   }
+    .main-content img{
+        width: 100%;
+        margin: 0 auto;
+    }
+   /* ADDRESS */
+   address {
+    width: 91%;
+    margin: 21px auto;
+    }
+    footer{
+        margin-top:0;
+    }
+}
