@@ -1,1 +1,458 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+	max-width: 880px;
+	margin: 0 auto;
+}
+	
+header {
+    width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+     
+header nav {
+    width: 78%;
+	vertical-align: top;
+	margin-top: 4%;
+}
+  
+header nav a {
+	margin-right: 7%;
+	font-size: 1.575rem;
+	color: gray;
+    text-decoration: none;
+    
+}
+  
+header nav a:hover {
+	text-decoration: underline;
+}
+  
+header nav a:first-child {
+	margin-left: 0;
+}
+  
+header nav a:last-child {
+	margin-right: 0;
+}
+  
+header .logo {
+	margin-top: 10%;
+}
+  
+.cta .cta-text {
+    width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 7.8rem;
+	margin-top: 14%;
+	text-align: center;
+    padding: 0;
+
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content {
+    0% {left: -1000px}
+    100% {left: 0}
+}
+	
+.cta {
+    display: flex;
+}
+  
+.cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: -10%;
+	padding: 1% 5%;
+    font-size: 2rem;
+    border-radius: 5px;
+	border: 1px solid black;
+    cursor: pointer;
+    opacity: 0;
+    animation-name: button;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes button {
+    0% {opacity: 0}
+    100% {opacity: 100}
+}
+  
+.cta .cta-text button:hover {
+	background: rgb(54, 53, 53);
+	color: white;
+}
+  
+.cta img {
+    width: 50%;
+    margin-top: 8%;
+    
+    padding-left: 5%;
+    position: relative;
+    animation-name: image;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image {
+    0% {right: -1000px}
+    100% {right: 0}
+}
+
+.main-content {
+    width: 100%;
+	border-top: 1px solid black;
+	margin-top: 8%;
+	padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    line-height: 1.25;
+    margin: 3% 0;
+    font-size: 1.5rem;
+  }
+
+h4 {
+    font-size: 2rem;
+    }
+
+.main-content .top-content {
+    padding: 0 1%;
+    display: flex;
+}
+  
+.main-content .top-content .text-content {
+	width: 46%;
+	margin-right: 4%;
+}
+  
+.main-content .top-content .text-content:last-child {
+	margin-right: 0;
+}
+  
+.main-content .middle-img {
+    width: 100%;
+    margin-top: 4%;
+}
+  
+.main-content .bottom-content {
+	margin-top: 4%;
+    padding: 0 1%;
+    display: flex;
+}
+  
+.main-content .bottom-content .text-content {
+	width: 31%;
+	margin-right: 1%;
+}
+  
+.main-content .bottom-content .text-content:last-child {
+	margin-right: 0;
+}
+  
+.contact {
+	margin-top: 6%;
+	border-top: 1px solid black;
+    padding: 2% 1% 0;
+}
+
+.contact p {
+	margin: 2% 0;
+}
+  
+footer {
+    width: 100%;
+	text-align: center;
+	font-size: 1.5px;
+}
+
+/**********************************
+        ** For Tablet **
+ *********************************/
+
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        width: 95%;
+        padding: 0;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        width: 95%;
+        margin: 0
+    }
+
+    header .logo {
+        width: 100%;
+        margin-left: 7.5%;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta img {
+        display: none;
+    }
+    
+ /*********************************
+         ** Tablet Animations **
+***********************************/
+
+    .cta .cta-text button:hover {
+        animation-name: button;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        
+        transition-property: transform;
+        transition-duration: 2s;
+        transform: rotateY(360deg)
+    }
+    
+    @keyframes button {
+        0% {opacity: 0; }
+        100% {opacity: 1; color: red}
+    }
+    
+
+    .cta .cta-text {
+        margin-right: 6.9%;
+        margin-top: 8.12%;
+        font-size: 7.2rem;
+    }
+
+    .main-content {
+        width: 80%;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .contact {
+        width: 80%;
+        justify-content: center;
+        margin-left: 10%;
+    }
+}
+
+/**********************************
+        ** For Phone **
+ *********************************/
+
+ @media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        padding-top: 4% 0 0 0;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: 100%;
+        border-top: 1px solid darkgrey;
+    }
+    
+    header nav a {
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        border-bottom: 1px solid darkgrey;
+        padding-top: 4%;
+        font-size: 2.0rem
+    }
+
+    header .logo {
+        width: 100%;
+        padding-top: 10%;
+        margin: 0;
+    }
+
+    .cta {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .cta img {
+        display: none;
+    }
+    
+    .cta .cta-text button {
+        margin-top: -12%;
+    }
+
+    .cta .cta-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 8%;
+        margin: 12% 0;
+        font-size: 7.2rem;
+        align-items: center;
+    }
+    .cta .cta-text h1:hover {
+        transition-property: transform;
+        transition-duration: 2s;
+        transform: rotateY(360deg)
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding-top: 0;
+
+    }
+
+    .middle-img {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        padding-left: 4%;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 4%;
+        border-bottom: 1px solid black;
+    }
+
+    .main-content .top-content .text-content{
+        width: 82%;
+    }
+
+    .top-content .text-content h4 {
+        margin-top: 10%;
+    }
+
+    .main-content .bottom-content .text-content{
+        width: 82%;
+        margin-bottom: 10%;
+    }
+
+    .contact {
+        width: 100%;
+        justify-content: center;
+        padding-left: 4%;
+        border-top: none;
+        margin: 0;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+ }
+
+
+
