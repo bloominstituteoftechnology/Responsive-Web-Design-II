@@ -1,1 +1,355 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+	/* border: 1px solid red; */
+    /* display: flex; */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 880px;
+	padding: 2.7rem 2.7rem;
+}
+
+header {
+	/* background-color: lightpink; */
+	/* position: fixed; */
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    /* border: 1px solid red; */
+    padding-right: 10rem;
+    width: 100%;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav a {
+	color: grey;
+	text-decoration: none;
+    /* padding-right: 6.4rem; */
+    font-size: 1.5em;
+}
+
+.logo {
+    /* padding-left: 1rem; */
+    min-width: 183px;
+}
+
+.first-section {
+    padding-top: 7rem;
+    padding-bottom: 7.4rem;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.motto {
+    text-align: center;
+    width: 50%;
+    padding-left: 10rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.motto h1 {
+    font-size: 7.2rem;
+    margin-bottom: 25px;
+}
+
+.motto button {
+	width: 17rem;
+    font-size: 1.6rem;
+}
+
+.first-section img{
+    width: 379px;
+    max-width: 45%;
+}
+
+ul {
+	list-style-type: square;
+	padding: 20px;
+	line-height: 2;
+}
+
+button {
+	border: 1px solid black;
+	padding: 5px 30px;
+}
+
+/* .content-col p {
+	background-color: red;
+} */
+
+.about {
+	border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.content-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-col {
+    margin: 3.1rem 0px;
+    padding-right: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.content-col h3 {
+    margin-bottom: 2rem;
+}
+
+.contact-section {
+    margin: 3.5rem 0;
+    font-size: 1.6rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 4.5rem;
+}
+
+/* services styling below */
+
+.services-h1 {
+	font-size: 4rem;
+}
+
+.services-header-img {
+	padding: 3rem 0;
+}
+
+.services-intro {
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    max-width: 82rem;
+}
+
+.services-list {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-between;
+}
+
+.service {
+	border: 1px solid black;
+	background-color: #EFEFEF;
+	padding: 2.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 35rem;
+}
+
+button.services-button {
+	border-radius: 5px;
+	margin-top: 1.5rem;
+}
+
+.services-closer {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+.services-facts {
+    width: 100%;
+    max-width: 42rem;
+	padding-right: 2rem;
+}
+
+/* tablet-view */
+@media (max-width: 800px) {
+	body{
+		 /* background-color: lightgreen; */
+    }
+    .container {
+        /* border: 1px solid red; */
+        width: 100%;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+    
+    header a img {
+        max-width: 183px;
+        margin: 2.5em 0;
+    }
+
+   .first-section img {
+        display: none;
+    }
+    
+    .motto {
+        margin-left: 5.5rem;
+    }
+
+    /* services page styles */
+    .services-info-img {
+        width: 42rem;
+        max-width: 45%;
+    }
+}
+
+/* mobile-view */
+@media (max-width: 500px) {
+    .container {
+        padding: 3% 0;
+    }
+    
+    header a img {
+        margin-bottom: 2rem;
+    }
+
+	nav {
+		width: 100%;
+		display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid grey;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        border-top: 1px solid grey;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .about {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        padding: 1.5rem 0;
+    }
+
+    .content-row {
+        display: inline-block;
+    }
+    
+    .content-col {
+        margin: .5rem 0px;
+        padding: 2rem .5rem;
+        font-size: 1.5rem;
+    }
+
+    .middle-img {
+        padding: 1rem .5rem;
+    }
+
+    .contact-section {
+        padding: 0 .5rem;
+    }
+
+    /* services page styles */
+
+    .services-intro {
+        padding: 0 3rem 3rem 3rem;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+}
