@@ -259,6 +259,26 @@ footer {
         display: none;
     }
     
+ /*********************************
+         ** Tablet Animations **
+***********************************/
+
+    .cta .cta-text button:hover {
+        animation-name: button;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        
+        transition-property: transform;
+        transition-duration: 2s;
+        transform: rotateY(360deg)
+    }
+    
+    @keyframes button {
+        0% {opacity: 0; }
+        100% {opacity: 1; color: red}
+    }
+    
+
     .cta .cta-text {
         margin-right: 6.9%;
         margin-top: 8.12%;
@@ -339,6 +359,11 @@ footer {
         font-size: 7.2rem;
         align-items: center;
     }
+    .cta .cta-text h1:hover {
+        transition-property: transform;
+        transition-duration: 2s;
+        transform: rotateY(360deg)
+    }
 
     .main-content {
         display: flex;
@@ -399,3 +424,6 @@ footer {
         justify-content: center;
     }
  }
+
+
+
