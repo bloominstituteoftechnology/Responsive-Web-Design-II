@@ -72,21 +72,18 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.container {
-	max-width: 880px;
-	/* TB LR */
-	margin: 0 auto;
-  }
-  
+ 
   /* header */
   header {
 	display: flex;
   }
   header nav {
-	display: flex;
-	width: 691px;
+    display: flex;
+    /* was 691px */
+	width: 100%; 
 	vertical-align: top;
-	margin-top: 35px;
+    margin-top: 35px;
+    font-size: 1.6rem;
 			
   }
 
@@ -99,10 +96,11 @@ h1, h2, h3, h4, h5 {
   
   
   header nav a {
-	margin-right: 65px;
+      /* was 65px */
+	margin-right: 45%;
 	font-size: 1.4rem;
 	color: gray;
-	text-decoration: none;
+    text-decoration: none;
   }
 	
 	.services{
@@ -113,11 +111,11 @@ h1, h2, h3, h4, h5 {
   }
   
   header nav a:first-child {
-	margin-left: 0;
+	margin-left: 0%;
   }
   
   header nav a:last-child {
-	margin-right: 0;
+	margin-right: 0%;
   }
   
   header .logo {
@@ -129,31 +127,36 @@ h1, h2, h3, h4, h5 {
   /* cta */
   .cta {
 	display: flex;
-	}
-	.container {
+    } 
+    
+  .container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		
 	 }
 
-	 .container2 {
+  .container2 {
 		display: flex;
 		justify-content: space-between;
-		margin: 0 350px;
+		margin: 0 40%;
 		margin-top: 30px;
 		
-	 }
-	 
-
-	 
+     }
+     
+  .container {
+        max-width: 880px;
+        /* TB LR */
+        margin: 0 auto;
+      }
+	  
 
   .cta .cta-text {
-	vertical-align: top;
-	font-size: 7.7rem;
-	margin-top: 120px;
-	text-align: center;
-	padding: 0px 75px;
+    vertical-align: top;
+    font-size: 7.7rem;
+    margin-top: 120px;
+    text-align: center;
+    padding: 0px 75px;
 	
   }
   
@@ -188,12 +191,13 @@ h1, h2, h3, h4, h5 {
   }
   
   .main-content .top-content .text-content {
-	width: 410px;
+     /* was 441px */
+	width: 60%;
 	margin-right: 34px;
   }
   
   .main-content .top-content .text-content:last-child {
-	margin-right: 0;
+	margin-right: 0%;
   }
   
   .main-content .middle-img {
@@ -208,29 +212,32 @@ h1, h2, h3, h4, h5 {
 }
   
   .main-content .bottom-content .text-content {
-	width: 275px;
-	margin-right: 12px;
+      /* was 275px */
+	width: 100%;
+	margin-right: 20%;
 		
 	}
 	
 	.main-content .bottom-content .text-content2 {
-		width: 275px;
-		margin-right: 12px;
+        /* was 275px */
+		width: 100%;
+		margin-right: 20%;
 		border: solid black
 			
 		}
   
   .main-content .bottom-content .text-content:last-child {
-	margin-right: 0;
+	margin-right: 0%;
   }
   
   .fact-content {
-		width: 400px;
+      /* was 400px */
+		width: 40%;
 	}
 
 	.fact-content ul{
 		margin-top: 10px;
-		margin-left: 30px;
+		margin-left: 100%;
 		
 	}
 
