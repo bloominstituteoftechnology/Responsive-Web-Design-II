@@ -1,1 +1,480 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Main Page */
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+}
+
+header nav {
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  display: flex;
+  font-size: 1.6rem;
+  padding-bottom: 1%;
+  padding-right: 10%;
+}
+
+header nav a {
+  font-size: 1.6rem;
+  margin-right: 0%;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+/*
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0px;
+}
+*/
+header .logo {
+  max-width: 100%;
+  margin: auto;
+}
+
+.cta {
+  display: flex;
+}
+
+.cta .cta-text {
+  vertical-align: top;
+  font-size: 7.7rem;
+  margin-top: 14%;
+  text-align: center;
+  padding: 0 5% 5% 13%;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  padding: 1.5% 13%;
+  font-size: 1.6rem;
+  border: 0.1rem solid black;
+  cursor: pointer;
+}
+
+button {
+  background: white;
+  vertical-align: top;
+  padding: 2% 15%;
+  font-size: 1rem;
+  border: 0.1rem solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  max-width: 100%;
+  margin: auto;
+}
+
+.main-content {
+  border-top: 0.1rem solid black;
+  margin-top: 4%;
+  padding-top: 4%;
+}
+
+.main-content .top-content {
+  display: flex;
+}
+
+.main-content .top-content .text-content {
+  width: 49%;
+  margin-right: 1%;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0%;
+}
+
+.main-content .middle-img {
+  margin-top: 3.5%;
+}
+
+.main-content .bottom-content {
+  display: flex;
+}
+
+.main-content .bottom-content .text-content {
+  width: 33%;
+  margin-top: 3%;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 4%;
+  border-top: 0.1rem solid black;
+  padding-top: 3.5%;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+h5 {
+  margin-bottom: 0.5%;
+}
+
+footer {
+  margin: 5.5% 0%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+/* Services */
+.services-header-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* main content */
+
+.main-content-services {
+  border-top: 1px solid black;
+  margin-top: 40px;
+  padding-top: 39px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-content-services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-content-services {
+  border: 1px solid;
+  width: 400px;
+  padding: 25px;
+  margin: 15px;
+  background-color: #e8e7e7;
+}
+
+/* footer */
+.foot-content-services {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+
+.bottom-content-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-text-content-services {
+  width: 400px;
+  padding: 20px;
+}
+
+ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: disc;
+}
+/*
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
+}
+*/
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    max-width: 100%;
+  }
+  header .logo {
+    max-width: 100%;
+    margin: 3% 50%;
+    position: absolute;
+    margin-left: 40%;
+  }
+  header nav {
+    vertical-align: top;
+    margin-top: 0%;
+    padding-left: 10%;
+  }
+  header nav a {
+    margin-top: 15%;
+  }
+  .cta {
+    max-width: 100%;
+  }
+  .cta img {
+    display: none;
+  }
+  .cta .cta-text {
+    vertical-align: top;
+    font-size: 77px;
+    margin-top: 75px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 75px;
+    height: 275px;
+  }
+  .main-content {
+    max-width: 100%;
+    margin: 5% 5%;
+  }
+  .main-content .middle-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .contact {
+    margin: 5% 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  header .logo {
+    margin: 3% 50%;
+    position: absolute;
+    margin-left: 35%;
+    align-self: flex-start;
+  }
+  header nav {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 3rem;
+    text-decoration: none;
+    display: flex;
+    position: absolute;
+  }
+  header nav a {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 2rem;
+    color: gray;
+    text-decoration: none;
+    border-bottom: 0.1rem solid gray;
+    margin-top: 3%;
+  }
+  header nav a:first-child {
+    border-top: 0.1rem solid grey;
+  }
+  .cta {
+    margin-top: 100%;
+  }
+  .cta img {
+    display: none;
+  }
+  .main-content {
+    margin-top: 12%;
+  }
+  .main-content .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .top-content .text-content {
+    width: 100%;
+    margin-top: 5%;
+    line-height: 2rem;
+  }
+  .main-content .middle-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .bottom-content .text-content {
+    width: 100%;
+  }
+  h4 {
+    margin-top: 3%;
+  }
+  footer {
+    max-width: 100%;
+  }
+}
