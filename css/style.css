@@ -190,6 +190,7 @@ img.logo-link:empty {
     transition-duration: 500ms;
     transition-property: all;
 }
+
 .get-started-button:active > span {
     background-color: silver;
     border: 1px dotted white;
@@ -364,21 +365,19 @@ footer > div.copyright-section {
 }
 
 @media (max-width: 800px) {
-    a.logo-link:empty {
-        display: block;
-        margin: 0 auto 37.5px;
-        position: relative;
-        right: 0;
+    .container > header > .links {
+        flex-direction: column;
     }
 
-    .container > header > nav >  a.main-link {
-        width: 17%;
-        text-decoration: none;
-        justify-content: space-between;
-        color: silver;
-        padding: 5px;
-        text-align: center;
-        font-weight: bold;
+    .container > header > .links a {
+        order: -1;
+        margin-bottom: 37.5px;
+    }
+
+    .container > header > .links > nav {
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
     }
 
     .container > header > div.home-header {
