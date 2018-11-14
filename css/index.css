@@ -1,1 +1,460 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Bangers", cursive;
+}
+h2,
+h3,
+h4,
+h5,
+address {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.2;
+  font-size: 1.6rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 28px 0;
+  margin-bottom: 70px;
+}
+header nav {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 750px;
+  }
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    justify-content: space-between;
+    width: 90%;
+  }
+  header .tablet-logo {
+    order: -1;
+    margin-bottom: 39px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 100%;
+    max-width: 500px;
+  }
+  header {
+    margin-top: 17px;
+  }
+  header .tablet-logo {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  header nav a {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 2rem;
+    border-bottom: 25px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 72px;
+}
+.banner .getStarted {
+  text-align: center;
+  margin: 0 auto;
+}
+.banner .getStarted h1 {
+  font-size: 7rem;
+  margin-top: 50px;
+}
+
+.banner .getStarted button {
+  margin-top: 25px;
+  padding: 9px 50px;
+  border: 1px solid rgba(0, 0, 0, 0.576);
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .banner .getStarted {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .banner .getStarted h1 {
+    font-size: 7rem;
+    margin-top: 5px;
+  }
+  .banner img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    padding-bottom: 55px;
+  }
+  .banner .getStarted h1 {
+    width: 100%;
+    margin-top: -20px;
+  }
+  .banner .getStarted button {
+    margin-top: 25px;
+    padding: 4px 40px;
+    border: 1px solid rgba(0, 0, 0, 0.576);
+    font-size: 1.8rem;
+    margin-bottom: 21px;
+  }
+}
+
+.main .fa_wrapper {
+  display: flex;
+  padding-top: 38px;
+  margin-bottom: 26px;
+}
+
+.main .fa_wrapper div h2 {
+  margin-bottom: 15px;
+}
+.main .middle-img {
+  margin-bottom: 27px;
+}
+.main .spv_wrapper {
+  display: flex;
+  padding-bottom: 34px;
+  border-bottom: 1px solid black;
+  margin-bottom: 34px;
+}
+.main .spv_wrapper div h2 {
+  margin-bottom: 15px;
+}
+.main .spv_wrapper div p {
+  padding-right: 11%;
+}
+.contact_wrapper h2 {
+  margin-bottom: 14px;
+}
+
+footer {
+  text-align: center;
+  margin: 38px 0;
+}
+
+@media (max-width: 800px) {
+  .main .fa_wrapper {
+    margin-bottom: 46px;
+  }
+  .main .spv_wrapper div h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  .main .fa_wrapper {
+    flex-wrap: wrap;
+  }
+  .main .fa_wrapper div {
+    margin-top: 25px;
+  }
+  .main .fa_wrapper div h2 {
+    margin-bottom: 25px;
+  }
+  .main .middle-img {
+    margin-bottom: 27px;
+  }
+  .main .spv_wrapper {
+    display: flex;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+  }
+  .main .spv_wrapper div {
+    margin-bottom: 60px;
+  }
+  .main .spv_wrapper div h2 {
+    margin-bottom: 15px;
+  }
+  .main {
+    margin-bottom: 10px;
+  }
+
+  .contact_wrapper h2 {
+    margin-bottom: 14px;
+  }
+  .contact_wrapper {
+    padding-left: 10px;
+  }
+
+  footer {
+    text-align: center;
+    margin: 38px 0;
+  }
+}
+
+/* Product styles   */
+
+.main_product {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 6rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 26px;
+  color: #1a1a1a;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+/*
+The following rule will only run if your browser supports CSS grid.
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+/*
+Task 1: Set Up The Project With Git
+   x   Fork the project into your GitHub user account
+   x   Clone the forked project into a directory on your machine
+   x   You are now ready to build this project with your preferred IDE
+
+ Task 2: Project Objectives
+ Review each design file and build your styles at each breakpoint.
+   x   Introduce font-size: 62.5%; into your html selector.
+   x   Constrain your container element with a max-width of 880px
+   x   Introduce max-width media queries into your project at 800px and 500px
+   ?   Convert all fixed widths, left and right margins and paddings throughout the site      into percents. You will know this is working if you never see a horizontal scroll      bar when you resize your browser.
+   x   Convert all font-size values into rem units
+   x   Do your best to make the breakpoints look pixel-close-enough
+   ?   Once you have completed all of the project objectives, push your commits and make      a pull request against the original fork.
+
+
+ Stretch Goals:
+   x   Build the services page from earlier assignments into a responsive design using your own       creativity
+   x   Look at BEM and convert your existing CSS into the appropriate selectors.
+      Introduce CSS animations at different break points across your site
+   x   Build another page based on one of the navigation items and use your creativity on how it      looks.
+
+*/
