@@ -215,6 +215,55 @@ footer{
     margin: 3% .5% 0;
 }
 
+/* Services Page */
+
+/* Information Box */
+li{
+	list-style: disc;
+	margin: 1% 0 0 5%;
+}
+.services{
+    padding: 0 1%;
+}
+.bigBox{
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+}
+.smallBox{
+	padding: 1%;
+	width: 49%;
+	margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+}
+.infoBox{
+	border: 1px solid gray;
+	background-color: whitesmoke;
+}
+.facts{
+	margin: 4% 0;
+	padding-top: 3%;
+	border-top: 2px solid black;
+}
+.learnMore{
+	border: 1px solid black;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	width: 40%;
+	padding: 2% 0;
+	margin: 2% 0;
+	display: flex;
+	justify-content: center;
+}
+
+a.learnMore:hover{
+	background-color: maroon;
+	color: white;
+}
+
+
 /* Media Query */
 @media (max-width: 800px){
     .container{
@@ -294,5 +343,26 @@ footer{
     .logo{
         margin-bottom: 4%;
     }
+    .smallBox{
+        width: 100%;
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+    }
+    .learnMore{
+        width: 100%;
+    }
 
+}
+
+/* Animations */
+@keyframes fadein{
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
