@@ -418,6 +418,8 @@ footer {
     align-self: flex-start;
   }
   header nav {
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -428,6 +430,7 @@ footer {
     position: absolute;
   }
   header nav a {
+    width: 100%;
     padding-top: 5%;
     padding-bottom: 5%;
     font-size: 2rem;
