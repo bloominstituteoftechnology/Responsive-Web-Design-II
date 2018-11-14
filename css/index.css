@@ -100,7 +100,6 @@ header nav a {
 
 .title {
 	display: flex;
-	justify-content: flex-end;
 	margin-right: 9% 0;
 	padding-top: 50px;
 	padding-bottom: 74px;
@@ -213,17 +212,20 @@ footer {
 	}
 
 	header {
-		flex-wrap: wrap-reverse;
+		flex-direction: column-reverse;
 		justify-content: space-between;
 	}
 
-	header img {
-		margin-bottom: 40px;
-		margin-left: 27rem;
+	header nav {
+		display: flex;
+		justify-content: center;
 	}
 
 	header nav a {
-		margin: 0 3rem;
+		width: 70%;
+		margin-top: 10px;
+		margin-right: 10%;
+		margin-left: 0px;
 }
 
 	.title {
