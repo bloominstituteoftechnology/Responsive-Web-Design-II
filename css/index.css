@@ -468,34 +468,42 @@ address .add3 {
 
 /* -------Phone View---------------------- */
 @media (max-width: 500px) {
+	.container {
+		max-width: 100%;
+	}
+
 	#home header {
-		margin: 11px 0 29px;
+		margin: 19px 0 48px;
 	}
 
 	#home header nav {
 		flex-direction: column;
-	}
-
-	#home header nav div {
-		margin: 36px 0 10px;
-		padding-left: 7%;
-	}
-
-	#home header nav div a {
-		padding-bottom: 0;
+		text-align: center;
 	}
 
 	#home header nav a {
 		font-size: 2rem;
-		padding-bottom: 41px;
+		width: 100%;
+		border-bottom: 1px solid black;
+		padding: 20px 0 20px 19px;
 	}
 
 	#home header nav a:hover {
 		transform: none;
+		background-color: #bfac74;
+	}
+
+	#home header nav div {
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+
+	#home header nav div .logo {
+		padding: 0 0 18px 19px;
 	}
 
 	#home .main-section {
-		margin-top: 72px;
+		margin: 72px auto 34px;
 		max-width: 95%;
 	}
 
@@ -514,7 +522,7 @@ address .add3 {
 	}
 
 	#home .main-section .main-middle {
-		margin-bottom: 17px;
+		margin-bottom: 7px;
 	}
 
 	#home .main-section .main-bottom {
