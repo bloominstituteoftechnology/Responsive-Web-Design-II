@@ -293,6 +293,7 @@ footer {
         border-bottom: 1px solid gray;
         padding-top: 15px;
         text-decoration: none;
+        padding-bottom: 10%;
     }
 
     .cta {
