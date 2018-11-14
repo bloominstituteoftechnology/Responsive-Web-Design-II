@@ -121,14 +121,14 @@ header .logo {
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 10%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
     font-size: 4.5rem; 
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 2%;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -140,9 +140,9 @@ header .logo {
     border: 1px double black;
     font-size: 1rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 65%;
+    height: 10%;
+    margin-top: 1%;
     cursor: pointer;
 }
 
