@@ -142,7 +142,7 @@ General CSS
 /* Phone */
 @media (max-width: 500px) {
     .container {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -163,7 +163,7 @@ General CSS
         font-size: 1.9rem;
         text-decoration: none;
         color: rgba(0,0,0,.3);
-        padding: 1.9rem 0;
+        padding: 2rem 0;
         
         width: 100%;
         border-bottom: 2px solid rgba(0,0,0,.3);
@@ -278,7 +278,7 @@ footer {
     }
 
     .cta h1 {
-        font-size: 5rem;
+        font-size: 7rem;
     }
 
     .cta img {
@@ -305,8 +305,8 @@ footer {
 	display:flex;
 	flex-direction:column;
 
-	
-	margin: 9% 0;
+	width: 90%;
+	margin: 0 auto;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
@@ -369,6 +369,12 @@ footer {
 }
 
 @media (max-width:500px) {
+    .main-content {
+        margin: 14% auto;
+        width: 92%;
+        padding-bottom: 9%;
+    }
+
     .top-content {
         display:flex;
         flex-direction: column;
@@ -378,31 +384,33 @@ footer {
     }
     
     .top-content .text-content {
-        width: 90%;
-        margin: 5% auto;
+        width: 100%;
+        margin: 11% 0 auto;
+    }
+
+    .middle-img {
+        width: 100%;
+        margin: 13% 0 0;
+        height: auto;
     }
     
     .bottom-content {
         display:flex;
         flex-direction:column;
         justify-content: space-between;
-        padding: 0% 0;
-        /*margin-top:4%;*/
+        padding: 0 0;
+        margin-top:-8%;
     }
     
     
     .bottom-content .text-content {
-        width: 90%;
-        margin: 5% auto;
+        width: 100%;
+        margin: 14% 0 auto;
     }
 
-    .middle-img {
-        max-width: 90%;
-        height: auto;
-        margin: 0 auto;
+    
 
-        
-    }
+    
 }
 
 /* contact section */
@@ -423,6 +431,19 @@ footer {
 
 .contact * {
 	padding: .8% 0;
+}
+
+@media (max-width: 500px) {
+    .contact {
+        /* margin: -7% 0 0 4%; */
+        width: 90%;
+        margin: -8% auto 0 auto;
+    }
+
+    footer {
+        padding: 9% 0;
+        font-size: 1.6rem;
+    }
 }
 
 
