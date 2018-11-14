@@ -49,14 +49,6 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 65.5%;
-}
-
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -72,13 +64,20 @@ h1, h2, h3, h4, h5 {
     max-width: 880px;
     margin: 0 auto;
     width: 100%;
+    border: 1px solid red;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
 
 /* Nav Bar */
 
-header {
+ header {
 	width: 100%;
     display: flex;
 }
@@ -149,7 +148,8 @@ header .logo {
 
 .main-content .middle-img {
 	display: block;
-	margin: 3.5% auto;
+    margin: 3.5% auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -176,7 +176,7 @@ footer {
 
 /* Tablet */
 
-@media (max-width: 800px) {
+ @media (max-width: 800px) {
 
     header {
         flex-direction: column;
@@ -218,7 +218,7 @@ footer {
     .main-content {
         display: flex;
         flex-direction: column;
-        margin: 8.5% 0 0 3%;
+        margin: 8.5% 0 0 0;
         height: 100%;
         padding: 4.5% 0 0 1%;
         width: 99%;
@@ -269,25 +269,26 @@ footer {
 
 /* Mobile */
 
-@media (max-width: 500px) {
+ @media (max-width: 500px) {
 
     header {
         flex-direction: column;
         height: 100%;
         margin-top: 0px;
-        width: 500px;
+        width: 100%;
+        padding-right: 
     }
 
     header .logo {
         align-self: center;
         margin: 4% 1% 0 0;
-
     }
 
     header nav {
         display: flex;
         flex-direction: column;
         margin-top: 4%;
+        width: 100%;
     }
 
     header nav a {
@@ -299,14 +300,14 @@ footer {
         padding: 4.4% 0;
         font-size: 1.9rem;
         width: 100%;
-    }
+        }
 
     .cta img {
         display: none;
     }
 
     .cta {
-        width: 500px;
+        width: 100%;
         margin-top: 10%;
     }
 
@@ -384,4 +385,4 @@ footer {
         margin-top: 8.5%;
         padding-left: 6%;
     }
-}
+} 
