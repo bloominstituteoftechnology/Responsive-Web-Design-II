@@ -317,22 +317,14 @@ footer > div.copyright-section {
 }
 
 .extra-information {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 0 75px;
 }
 
 .info-img-right {
     display: inline-block;
     width: 40%;
-    position: absolute;
-    right: 0;
-}
-
-.info-img-right > img {
-    width: 420px;
-    height: 300px;
-    position: absolute;
-    right: 0;
 }
 
 .extra-information-has-image {
@@ -434,9 +426,6 @@ footer > div.copyright-section {
     .container > header > .links > nav {
         width: 100%;
         margin-top: 30px;
-    }
-
-    .container > header > .links > nav {
         flex-direction: column;
         justify-content: flex-start;
         height: auto;
