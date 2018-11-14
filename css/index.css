@@ -144,7 +144,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -166,7 +166,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1rem;
    line-height: 18px;
 }
 
@@ -222,7 +222,7 @@ footer {
 
     header nav {
         display: flex;
-        font-size: 14pt;
+        font-size: 0.875rem;
         align-content: space-around;
     }
 
@@ -281,7 +281,7 @@ footer {
         width: 100%;
         height: 300px;
         margin: 50px;
-        font-size: 16pt;
+        font-size: 1rem;
     
     }
 
