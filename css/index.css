@@ -142,7 +142,7 @@ General CSS
 /* Phone */
 @media (max-width: 500px) {
     .container {
-        max-width: 70%;
+        max-width: 90%;
         margin: 0 auto;
     }
 
@@ -225,7 +225,7 @@ footer {
 }
 
 .cta-text h1 {
-	font-size: 80px;
+	font-size: 8rem;
 }
 
 
@@ -427,14 +427,6 @@ footer {
 
 
 
-/* 
-Media Queries for home page 
-TODO: reorganize so that they are under their respective sections
-*/
-
-@media (max-width: 800px) {
-
-}
 
 
 
@@ -564,7 +556,7 @@ TODO: reorganize so that they are under their respective sections
 }
 
 .info h3 {
-	font-size: 40px;
+	font-size: 4rem;
 	
 }
 
