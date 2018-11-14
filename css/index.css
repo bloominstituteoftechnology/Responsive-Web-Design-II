@@ -498,6 +498,9 @@ header nav a:hover {
 
 /* -- SERVICE PAGE STYLES -- */
 
+
+/* -- Services Top Container -- */ 
+
 .services-top-container {
 	display: flex;
     flex-direction: column;
@@ -513,6 +516,21 @@ header nav a:hover {
 
 .services-top-container h2 {
 	font-size: 2.5rem;
+}
+
+@media (max-width: 800px) {
+    .services-top-container {
+        margin-top: 5%;
+    }
+
+    .services-header-img {
+        margin: margin: 0 auto 2% auto;
+    }
+
+    .services-top-container h2 {
+        margin-bottom: 2%;
+    }
+
 }
 
 /* middle styles */
@@ -553,9 +571,27 @@ header nav a:hover {
 	font-size: 1.5rem;
 	width: 40%;
     padding: 3% 0;
-	margin-top: 30px;
+	margin-top: 3.5%;
 }
 
+
+@media (max-width: 800px) {
+    .services-middle-container {
+        flex-direction: column;
+    }
+
+    .card-container {
+        width: 95%;
+    }
+
+    .learn-btn {
+        width: 20%;
+        padding: 2% 0;
+        margin-top: 3%;
+    }
+
+
+}
 
 /* bottom half styles */
 
@@ -589,6 +625,32 @@ header nav a:hover {
 	padding: 1%;
 }
 
+
+@media (max-width: 800px) {
+    
+    .services-bottom-container {
+        flex-direction: column-reverse;
+        width: 93%;
+    }
+
+    .services-bottom-item {
+        margin: 5% 0;
+    }
+
+    .services-bottom-item h3 {
+        font-size: 2.0rem;
+        margin-bottom: 1%;
+    }
+    .services-bottom-item p {
+        margin: 3% 0;
+    }
+
+    .services-bottom-item ul li {
+        margin-left: 3.2%;
+
+    }
+
+}
 
 
 
