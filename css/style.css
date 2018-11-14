@@ -280,7 +280,8 @@ footer > div.copyright-section {
     justify-content: space-evenly;
     width: 100%;
     border-bottom: 2.5px solid black;
-    margin: 50px 0;
+    padding-bottom: 30px;
+    margin: 12.5px 0 50px;
 }
 
 .services > article {
