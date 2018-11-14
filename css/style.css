@@ -431,39 +431,40 @@ footer > div.copyright-section {
         width: 100%;
     }
 
-    .container > header > nav {
+    .container > header > .links > nav {
         flex-direction: column;
         justify-content: flex-start;
         height: auto;
     }
 
-    .container > header > nav > a.main-link {
+    .container > header > .links > nav > a.main-link {
         width: 100%;
         padding: 20px 0;
         border-top: 0.5px solid grey;
         border-bottom: 0.5px solid grey;
-        margin: -0.5px 0; 
     }
 
-    .container > header > nav > a.main-link:first-child {
+    .container > header > .links > nav > a.main-link:first-child {
         border-top: 1.5px solid grey;
     }
 
-    .container > header > nav > a.main-link:last-child {
+    .container > header > .links > nav > a.main-link:last-child {
         border-bottom: 1.5px solid grey;
     }
 
-    .container > header > nav > a.main-link:hover {
+    .container > header > .links > nav > a.main-link:hover {
         border: none;
         color: snow;
         background-color: silver;
         transition-duration: 375ms;
         transition-property: all;
+        padding: 20px 0;
     }
     
     .container > header > nav > a.main-link:active {
         border: 5px solid grey;
         font-weight: normal;
+        padding: 20px 0;
     }
 
     .mobile-container {
