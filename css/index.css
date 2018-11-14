@@ -1,1 +1,557 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+	max-width: 880px;
+	/* TB LR */
+	margin: 0 auto;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+  
+  /* header */
+
+header {
+	width: 880px;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 20px 1%;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: gray;
+    font-size: 1.4rem;
+    margin-right: 24%;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+header img {
+    padding: 7px 0;
+}
+
+/* cta */
+
+.cta {
+    margin: -23px 0%;
+	display: flex;
+	justify-content: center;
+}
+  
+.cta .cta-text {
+	vertical-align: top;
+	font-size: 7rem;
+	margin-top: 120px;
+	text-align: center;
+	padding: 0px 10% 0px 13%;
+}
+
+.cta .cta-text h1 {
+    letter-spacing: 1px;
+}
+  
+.cta .cta-text button {
+	background: white;
+	vertical-align: top;
+	margin-top: 6px;
+	padding: 5px 14%;
+	font-size: 1.7rem;
+	border: 1px solid black;
+	cursor: pointer;
+}
+  
+.cta .cta-text button:hover {
+	background: black;
+	color: white;
+}
+  
+.cta img {
+	margin-top: 69px;
+}
+  
+.main-content {
+	border-top: 1px solid black;
+	margin-top: 76px;
+    padding-top: 39px;
+    font-size: 1.6rem;
+}
+  
+.main-content .top-content {
+    display: flex;
+    padding: 0 1%;
+}
+  
+.main-content .top-content .text-content {
+	width: 49%;
+	margin-right: 2%;
+}
+  
+.main-content .middle-img {
+	margin-top: 35px;
+}
+  
+.main-content .bottom-content {
+	margin-top: 23px;
+    display: flex;
+    padding: 0 0.5%;
+}
+  
+.main-content .bottom-content .text-content {
+	width: 32%;
+	margin-right: 1%;
+}
+  
+.contact {
+    font-size: 1.6rem;
+	margin-top: 44px;
+	border-top: 1px solid black;
+	padding: 33px 0.5%;
+}
+  
+.contact p {
+	margin: 15px 0;
+}
+
+/* Services Page */
+.description {
+	margin-top: 25px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+.description h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.description-content {
+    font-size: 1.6rem;
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.services-content {
+	background: #edeff2;
+	border: 1px solid black;
+	width: 48%;
+	padding: 20px;
+    margin-top: 40px;
+    font-size: 1.6rem;
+}
+
+.services-content h2 {
+	font-weight: bold;
+}
+
+.services-content button {
+	background: white;
+	vertical-align: top;
+	margin-top: 16px;
+	padding: 8px 44px;
+	font-size: 12px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.services-content button:hover {
+	background: black;
+	color: white;
+}
+
+.facts {
+	display: flex;
+	padding-top: 40px;
+	justify-content: space-between;
+    border-top: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.facts-content {
+    width: 420px;
+    font-size: 1.6rem;
+}
+
+.facts-content h2 {
+	font-weight: bold;
+}
+
+.facts-content p {
+	margin-bottom: 20px;
+}
+
+.facts-content ul {
+	list-style-type: square;
+	padding-left: 17px;
+}
+
+.facts-content ul li {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+/* Prodcuts Page */
+.products {
+    margin: 50px 0;
+    font-size: 1.6rem;
+    width: 95%;
+    margin: 30px auto;
+
+}
+
+.lorem {
+	padding-top: 30px;
+	border-top: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.lorem-content {
+    width: 29%;
+    margin: 30px 2%;
+	border: 1px solid black;
+	background: #edeff2;
+    padding: 25px;
+    font-size: 1.6rem;
+}
+
+.lorem-content button {
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+/* Tablet View */
+
+@media(max-width: 800px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    header nav {
+        width: 28%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    header nav a {
+        margin-left: 14%;
+    }
+
+    .cta-text {
+        animation-name: fade;
+        animation-duration: 5s;
+    }
+
+    @keyframes fade {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .cta {
+        margin-top: -60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content {
+        margin-top: 66px;
+    }
+
+    .main-content .top-content {
+        padding: 0 3%;
+    }
+
+    .main-content .bottom-content {
+        padding: 7px 2%;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 29%;
+        margin-right: 4%;
+    }
+
+    .contact {
+        margin-top: 47px;
+        padding: 37px 2%;
+    }
+
+    .description {
+        width: 100%;
+        margin: 20px 2%;
+    }
+
+    .services {
+        justify-content: space-evenly;
+    }
+
+    .services-content {
+        width: 45%;
+        margin: 20px 0;
+    }
+
+    .facts {
+        justify-content: space-evenly;
+    }
+
+    .facts-content {
+        width: 45%;
+        margin: 20px 0;
+    }
+
+
+}
+
+/* Mobile View */
+@media (max-width:500px) {
+	header {
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+	header nav {
+        width: 100%;
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+        margin-top: 17px;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        margin: 0 auto;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header img {
+        padding: 2px 0;
+    }
+
+    .cta {
+        margin-top: -90px;
+    }
+
+    .cta .cta-text button {
+        margin-top: 16px;
+    }
+
+    .cta-text {
+        animation-name: fade-again;
+        animation-duration: 5s;
+    }
+
+    @keyframes fade-again {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    .main-content {
+        margin-top: 76px;
+    }
+
+    .main-content .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1%;
+        margin: 22px 0 20px 0;
+        line-height: 1.2;
+    }
+
+    .main-content .top-content .text-content {
+        width: 100%;
+        margin: 0 auto 35px auto;
+    }
+
+    .main-content .middle-img {
+        margin-top: 0px;
+    }
+
+    .main-content .bottom-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1%;
+        margin: 22px 0 20px 0;
+        line-height: 1.2;
+    }
+
+    .main-content .bottom-content .text-content {
+        width: 100%;
+        margin: 0 auto 60px auto;
+    }
+
+    .contact {
+        margin-top: -50px;
+    }
+	
+	.services-header-img {
+		width: 100%;
+	}
+
+	.description {
+		width: 100%;
+	}
+
+	.description-content {
+		display: flex;
+		flex-direction: column;
+		padding: 0px 7%;
+	}
+
+	.services {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services-content {
+		width: 90%;
+		height: 220px;
+	}
+
+	.facts {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.facts-content {
+		width: 90%;
+	}
+
+	.facts-content img {
+		margin-top: 40px;
+	}
+
+	.products {
+		padding: 0px 7%;
+	}
+
+	.lorem {
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+	}
+
+	.lorem-content {
+		width: 90%
+	}
+
+	.lorem-content button {
+		margin-left: 32%;
+    }
+}
+  
+footer {
+	margin: 0 0 50px 0;
+	text-align: center;
+	font-size: 1.6rem;
+}
