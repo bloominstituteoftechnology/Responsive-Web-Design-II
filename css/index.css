@@ -314,21 +314,25 @@ a.learnMore:hover{
 
 }
 @media (max-width: 500px){
-    .container, header, header nav, .section{
+    .container{
+        max-width: 500px;
+        padding: 0;
+    }
+    header, header nav, .section{
         flex-direction: column;
         width: 100%;
     }
     header nav{
-        align-content: center;
         margin: 0;
         font-size: 2rem;
     }
     header nav a{
-        align-self: center;
+        width: 100%;
+        text-align: center;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        padding: 3% 100%;
-        margin-bottom: 3%;
+        padding: 3% 0;
+        margin: 0 0 3% 0;
     }
     header nav a:hover{
         background-color: maroon;
