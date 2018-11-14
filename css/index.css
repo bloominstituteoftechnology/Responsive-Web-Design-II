@@ -345,6 +345,7 @@ footer p{
   .container {
     margin: 0 auto;
     width: 100%;
+    overflow-x: hidden;
   }
 
   header nav{
@@ -369,7 +370,7 @@ footer p{
   }
 
   header .logo {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .main-content, .service-top {
