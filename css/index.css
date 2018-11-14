@@ -1,3 +1,22 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @Jaouad2982 Sign out
+0
+0 786 Jaouad2982/Responsive-Web-Design-II
+forked from LambdaSchool/Responsive-Web-Design-II
+ Code  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Responsive-Web-Design-II/css/index.css
+9ee013b  a minute ago
+@Jaouad2982 Jaouad2982 Update index.css
+@BigKnell @Jaouad2982
+     
+333 lines (266 sloc)  5.42 KB
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -218,7 +237,7 @@ hr{
 
     header nav  {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
         margin: 4%;
     }
@@ -232,6 +251,18 @@ hr{
         justify-content: center;
         align-items: center;
     }
+    
+    body{
+        animation: anim 5s linear 2s infinite alternate;
+    }
+    
+   @keyframes anim {
+         0%   {background-color:gray; }
+    25%  {background-color:yellow;}
+    50%  {background-color:white; }
+    75%  {background-color:green; }
+    100% {background-color:lightyellow; }
+    }
 
     .ondemand h1{
         text-align: center;
@@ -240,9 +271,7 @@ hr{
     .ondemand button {
         display: block;
         margin: 0 auto;
-    }
-    
-    
+    }   
 }
 
 @media(max-width : 500px){
@@ -259,13 +288,27 @@ hr{
         margin-bottom: 1%;
     }
     
-    .container header nav a:nth-last-child(odd), .container header nav a:nth-last-child(even){
-        border-bottom: none
+      .container nav a:first-child{
+        border-top: 1px solid black;
     }
+    
+      .container nav a:nth-child(1), .container nav a:nth-child(2), .container nav a:nth-child(3), .container nav a:nth-child(4),
+     .container nav a:nth-child(5){
+        border-bottom: none;
+    }
+    
 
-    .logo{
+    .logo {
         margin-top: -6%;
         margin-bottom: -13%;
+        transition: width 3s,height 3s, transform 3s;
+    }
+    
+    .logo , .ondemand h1 {
+        width: 50%;;
+        height: 40%;;
+        transform: rotate(5760deg);
+        background-position: left;
     }
 
     header nav {
@@ -322,5 +365,7 @@ hr{
     .copy{
        padding: 8%;
     }
+    
+    
 
 }
