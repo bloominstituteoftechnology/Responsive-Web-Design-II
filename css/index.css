@@ -543,6 +543,7 @@ footer {
     width: 100%;
     text-align: center;
   }
+  
   @keyframes flip {
     0% {
       -webkit-transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
