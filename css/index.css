@@ -75,13 +75,13 @@ h1, h2, h3, h4, h5 {
  
   /* header */
   header {
-	display: flex;
+	  display: flex;
   }
   header nav {
     display: flex;
     /* was 691px */
-	width: 691px; 
-	vertical-align: top;
+	  width: 691px; 
+	  vertical-align: top;
     margin-top: 35px;
     font-size: 1.6rem;
 			
@@ -96,9 +96,9 @@ h1, h2, h3, h4, h5 {
   
   header nav a {
       /* was 65px */
-	margin-right: 7%;
-	font-size: 1.4rem;
-	color: gray;
+	  margin-right: 7%;
+	  font-size: 1.4rem;
+	  color: gray;
     text-decoration: none;
   }
 	
@@ -106,26 +106,26 @@ h1, h2, h3, h4, h5 {
 		border: red;
 	}
   header nav a:hover {
-	text-decoration: underline;
+	  text-decoration: underline;
   }
   
   header nav a:first-child {
-	margin-left: 0%;
+  	margin-left: 0%;
   }
   
   header nav a:last-child {
-	margin-right: 0%;
+	  margin-right: 0%;
   }
   
   header .logo {
-	margin-top: 25px;
+  	margin-top: 25px;
 		
   }
 	
 	
   /* cta */
   .cta {
-	display: flex;
+	  display: flex;
     } 
     
   .container {
@@ -144,9 +144,9 @@ h1, h2, h3, h4, h5 {
      }
      
   .container {
-        max-width: 880px;
+    max-width: 880px;
         /* TB LR */
-        margin: 0 auto;
+    margin: 0 auto;
       }
 	  
 
@@ -161,28 +161,28 @@ h1, h2, h3, h4, h5 {
   }
   
   .cta .cta-text button {
-	background: white;
-	vertical-align: top;
-	margin-top: 6px;
-	padding: 8px 44px;
-	font-size: 1.7rem;
-	border: 1px solid black;
-	cursor: pointer;
+	  background: white;
+	  vertical-align: top;
+	  margin-top: 6px;
+	  padding: 8px 44px;
+	  font-size: 1.7rem;
+	  border: 1px solid black;
+	  cursor: pointer;
   }
   
   .cta .cta-text button:hover {
-	background: black;
-	color: white;
+	  background: black;
+  	color: white;
   }
   
   .cta img {
-	margin-top: 69px;
+	  margin-top: 69px;
   }
   
   .main-content {
-	border-top: 1px solid black;
-	margin-top: 76px;
-	padding-top: 39px;
+  	border-top: 1px solid black;
+  	margin-top: 76px;
+	  padding-top: 39px;
   }
 
   p {
@@ -191,35 +191,35 @@ h1, h2, h3, h4, h5 {
   
   .main-content .top-content {
     display: flex;
-	padding: 0 10px;
+	  padding: 0 10px;
   }
   
   .main-content .top-content .text-content {
      /* was 441px */
-	width: 50%;
-	margin-right: 34px;
+	  width: 50%;
+  	margin-right: 34px;
   }
   
   .main-content .top-content .text-content:last-child {
-	margin-right: 0%;
+  	margin-right: 0%;
   }
   
   .main-content .middle-img {
-	margin-top: 45px;
+	  margin-top: 45px;
   }
   
   .main-content .bottom-content {
-	display: flex;
-	margin-top: 37px;
-	padding: 0 2%;
+  	display: flex;
+  	margin-top: 37px;
+  	padding: 0 2%;
 	
 }
   
   .main-content .bottom-content .text-content {
       /* was 275px */
-	width: 31%;
-	margin-right: 20%;
-		
+  	width: 31%;
+  	margin-right: 20%;
+    
 	}
 	
 	.main-content .bottom-content .text-content2 {
@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5 {
 		}
   
   .main-content .bottom-content .text-content:last-child {
-	margin-right: 0%;
+	  margin-right: 0%;
   }
   
   .fact-content {
@@ -247,20 +247,20 @@ h1, h2, h3, h4, h5 {
 
   .contact {
     width: 100%;
-	margin-top: 57px;
-	border-top: 1px solid black;
-	padding: 39px 10px 0;
+	  margin-top: 57px;
+	  border-top: 1px solid black;
+	  padding: 39px 10px 0;
   }
   
   .contact p {
-	margin: 2% 0;
+	  margin: 2% 0;
   }
   
   footer {
     width: 100%;
-	margin: 2% 0;
-	text-align: center;
-	font-size: 1.6rem;
+  	margin: 2% 0;
+	  text-align: center;
+	  font-size: 1.6rem;
   }
 
   @media (max-width: 800px) {
