@@ -119,6 +119,16 @@ header .logo {
 	margin-top: 14%;
 	text-align: center;
     padding: 0;
+
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content {
+    0% {left: -1000px}
+    100% {left: 0}
 }
 	
 .cta {
@@ -133,7 +143,17 @@ header .logo {
     font-size: 2rem;
     border-radius: 5px;
 	border: 1px solid black;
-	cursor: pointer;
+    cursor: pointer;
+    opacity: 0;
+    animation-name: button;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes button {
+    0% {opacity: 0}
+    100% {opacity: 100}
 }
   
 .cta .cta-text button:hover {
@@ -146,6 +166,15 @@ header .logo {
     margin-top: 8%;
     
     padding-left: 5%;
+    position: relative;
+    animation-name: image;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image {
+    0% {right: -1000px}
+    100% {right: 0}
 }
 
 .main-content {
