@@ -380,6 +380,10 @@ footer > div.copyright-section {
         align-items: center;
     }
 
+    .container > header > .links > nav > a.main-link {
+        margin-bottom: 0;
+    }
+
     .container > header > div.home-header {
         display: flex;
         justify-content: center;
