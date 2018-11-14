@@ -242,12 +242,28 @@ address {
         width: 100%;
     }
 
+    @keyframes blue-black-button {
+        from {background-color: #0269BD;}
+        to {background-color: black;}
+
+        from {color: black;}
+        to {color: white;}
+    }
+
+    @keyframes blue-black {
+        from {color:#0269BD;}
+        to {color: black;}
+    }
+
     p {
         line-height: 1.25;
     }
 
     h1 {
         margin: 0% 0% 4% 0%;
+        color: #0269BD;
+        animation-name: blue-black;
+        animation-duration: 17s;
     }
 
     .navigation{
@@ -288,9 +304,12 @@ address {
     .button {
 
         padding: 1% 4%;
-        
-        
+        background-color: #0269BD; 
+        animation-name: blue-black-button;
+        animation-duration: 17s;        
     }
+
+
 
   
     #home-page h1 {
@@ -362,6 +381,19 @@ address {
        
     }
 
+    @keyframes blue-black-button {
+        from {background-color: black}
+        to {background-color: #0269BD;}
+
+        from {color: white;}
+        to {color: black;}
+    }
+
+    @keyframes blue-black {
+        from {color:#0269BD;}
+        to {color: black;}
+    }
+
 
     .logo {
         margin: 0% 0% 0% 4%;
@@ -392,9 +424,18 @@ address {
         width: 100%;
     }
 
+   
+
     .center-content {
         margin-top: 0%;
         padding-bottom: 21%;
+        /**animation-name: blue-black;
+        animation-duration: 7s; */
+    }
+
+    .button:hover {
+        animation-name: blue-black-button;
+        animation-duration: 5s;
     }
           
 
@@ -446,3 +487,84 @@ address {
     }
 }
 }
+
+ /*Services Page Specific Styles */
+
+/*.services-header-img {
+	width: 100%;
+	margin: 1.5% 0% 1.5%px 0%;
+}
+
+.services-content {
+	background-color: lightgray;
+	box-sizing: border-box;
+	border: 1px solid black;
+	margin: 2.5% 0%;
+	padding: 2.5%;
+	width: 45%;
+	
+	
+}
+
+.services-content p {
+	margin: 2rem 0rem;
+}
+
+.services-layout {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.services-bottom {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 2.5%;
+	margin-right: 1.5%;
+	
+}
+
+.bottom-text {
+	width: 45%;
+}
+
+.services-info-img {
+	width: 45%;
+}
+
+.bottom-text h5 {
+	padding-top: 2%;
+}
+
+ul {
+	list-style-position: inside;
+	margin-top: 2.5%;
+	padding-top: 1% ;
+}
+
+li{
+	line-height: 2;
+}
+
+/*Tablet*/
+
+/*@media (max-width: 817px) {
+
+    .container {
+        width: 100%;
+    }
+
+    p {
+        line-height: 1.25;
+    }
+
+    h1 {
+        margin: 0% 0% 4% 0%;
+    }
+
+    .navigation{
+       display: flex;
+       justify-content: space-around;
+    }
+} 
+    
