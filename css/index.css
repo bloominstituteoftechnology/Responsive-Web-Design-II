@@ -94,7 +94,9 @@ header {
 }
 
 nav {
-	/* border: 1px solid red; */
+    /* border: 1px solid red; */
+    padding-right: 10rem;
+    width: 100%;
 	display: flex;
 	justify-content: space-between;
     align-items: center;
@@ -104,13 +106,13 @@ nav {
 nav a {
 	color: grey;
 	text-decoration: none;
-    padding-right: 6.4rem;
+    /* padding-right: 6.4rem; */
     font-size: 1.5em;
 }
 
 .logo {
-    /* padding-left: 20%; */
-    /* min-width: 183px; */
+    /* padding-left: 1rem; */
+    min-width: 183px;
 }
 
 .first-section {
@@ -263,6 +265,7 @@ button.services-button {
     header nav {
         display: flex;
         justify-content: space-between;
+        padding-right: 0;
     }
     
     header a img {
@@ -299,6 +302,7 @@ button.services-button {
         flex-direction: column;
         border-bottom: 1px solid grey;
         margin: 0;
+        padding-right: 0;
     }
 
     nav a {
