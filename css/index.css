@@ -89,7 +89,7 @@ header nav {
   
 header nav a {
 	margin-right: 7%;
-	font-size: 14px;
+	font-size: 1.575rem;
 	color: gray;
     text-decoration: none;
     
@@ -115,7 +115,7 @@ header .logo {
     width: 50%;
 	display: inline-block;
 	vertical-align: top;
-	font-size: 77px;
+	font-size: 7.8rem;
 	margin-top: 14%;
 	text-align: center;
     padding: 0;
@@ -128,9 +128,9 @@ header .logo {
 .cta .cta-text button {
 	background: white;
 	vertical-align: top;
-	margin-top: 1%;
-	padding: 2% 5%;
-    font-size: 17px;
+	margin-top: -10%;
+	padding: 1% 5%;
+    font-size: 2rem;
     border-radius: 5px;
 	border: 1px solid black;
 	cursor: pointer;
@@ -160,11 +160,11 @@ header .logo {
 p {
     line-height: 1.25;
     margin: 3% 0;
-    font-size: 16px
+    font-size: 1.5rem;
   }
 
 h4 {
-    font-size: 18px;
+    font-size: 2rem;
     }
 
 .main-content .top-content {
@@ -214,7 +214,7 @@ h4 {
 footer {
     width: 100%;
 	text-align: center;
-	font-size: 14px;
+	font-size: 1.5px;
 }
 
 /**********************************
@@ -262,7 +262,7 @@ footer {
     .cta .cta-text {
         margin-right: 6.9%;
         margin-top: 8.12%;
-        font-size: 72px;
+        font-size: 7.2rem;
     }
 
     .main-content {
@@ -308,7 +308,7 @@ footer {
         text-align: center;
         border-bottom: 1px solid darkgrey;
         padding-top: 4%;
-        font-size: 20px
+        font-size: 2.0rem
     }
 
     header .logo {
@@ -336,7 +336,7 @@ footer {
         flex-direction: column;
         margin-right: 8%;
         margin: 12% 0;
-        font-size: 72px;
+        font-size: 7.2rem;
         align-items: center;
     }
 
