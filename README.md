@@ -1,3 +1,5 @@
+Website link Live html  https://john2796.github.io/Responsive-Web-Design-II/.
+
 # Responsive-Web-Design: Fully Responsive
 
 You have experienced building fixed layout web pages, adaptive web pages, and now it's time to go fully responsive!  Using your new knowledge with responsive units, contstraints, and media queries you are now prepared to take on today's fully reponsive website project.
