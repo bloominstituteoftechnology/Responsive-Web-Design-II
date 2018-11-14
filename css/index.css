@@ -290,6 +290,7 @@ hr{
     
       .container nav a:first-child{
         border-top: 1px solid black;
+<<<<<<< HEAD
     }
     
       .container nav a:nth-child(1), .container nav a:nth-child(2), .container nav a:nth-child(3), .container nav a:nth-child(4),
@@ -297,6 +298,15 @@ hr{
         border-bottom: none;
     }
     
+=======
+    }
+    
+      .container nav a:nth-child(1), .container nav a:nth-child(2), .container nav a:nth-child(3), .container nav a:nth-child(4),
+     .container nav a:nth-child(5){
+        border-bottom: none;
+    }
+    
+>>>>>>> 9ee013bc5726f4a31b4ae5c409319a80dd0f56eb
 
     .logo {
         margin-top: -6%;
