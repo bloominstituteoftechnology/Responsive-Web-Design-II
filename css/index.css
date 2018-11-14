@@ -50,35 +50,37 @@ table {
 
 html, body {
     font-size:62.5%;
-    margin
+    height: 100%;
+    font-family: ‘Titillium Web’, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
 }
-img{
-    max-width: 100%;
-    height: auto;
+p{
+    font-size: 1.6rem;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	max-width: 880px;
+    max-width: 880px;
+    width: 100%;
 	margin: auto;
 }
 /* Header Styles */
 header {
 	width: 100%;
-	display: flex;
-}
-header nav {
-	margin-top: 40px; 
-	width: 610px;
-	justify-content: space-between;
     display: flex;
     font-size: 1.6rem;
+}
+header nav {
+	margin: 40px 1% 0; 
+    width: 100%;
+	justify-content: space-between;
+    display: flex;
 }
 header nav a {
 	text-decoration: none;
@@ -89,7 +91,7 @@ header nav a:hover {
 	color: black;
 }
 header .logo {
-	margin: 28px 0 0 80px;
+	margin: 28px 0 0 10%;
 }
   
   .cta{
@@ -108,8 +110,8 @@ header .logo {
 	align-items: flex-start;
 	margin-top: 120px;
 	text-align: center;
-	font-size: 7.7rem;
-	padding: 0px 75px;
+	font-size: 10rem;
+    padding: 0px 30%;
 
   }
   
@@ -206,6 +208,7 @@ header .logo {
   }
 
   @media(max-width: 800px){
+    
     .container{
         max-width: 800px;
     }
