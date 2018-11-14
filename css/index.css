@@ -1,1 +1,551 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: square;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.container header {
+    width: 100%;
+}
+
+.container .main-content {
+    width: 100%;
+}
+
+
+
+
+
+header {
+	display: flex;
+    justify-content: space-between;
+    
+
+
+}
+
+
+header nav {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10%
+   
+}
+
+header nav a {
+  font-size: .90rem;
+  color: gray;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}
+
+header .logo {
+  display: flex;
+  margin-top: 10%;
+  padding-right: 5%
+  
+}
+
+
+
+.cta {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.cta .cta-text {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: top;
+  font-size: 4.8125rem;
+  margin-top: 20%;
+  text-align: center;
+  padding: 0px 5%;
+ 
+  width: 100%;
+  justify-content: center;
+}
+
+.cta .cta-text button {
+  display: flex;
+  
+  background: white;
+  vertical-align: top;
+  margin-top: 5%;
+  padding: 5% 20%;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  display: flex;
+  margin-top: 69px;
+  
+  
+}
+
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 10%;
+  padding-top: 10%;
+}
+
+.main-content .top-content {
+  padding: 0 1%;
+  display: flex;
+  margin-top: 5%;
+  flex-wrap: wrap;
+
+ 
+}
+.main-content .top-content .text-content {
+   
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+    
+} 
+
+.main-content .top-content .text-content1 {
+    
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+    
+} 
+
+.main-content .bottom-content {
+    
+    padding: 0 5%px;
+    display: flex;
+    margin-top: 5%;
+    flex-wrap: wrap;
+
+}
+
+
+
+.bottom-content .text-content2 {
+   
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+
+.bottom-content .text-content3 {
+   
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+
+.bottom-content .text-content4 {
+    
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+
+
+
+
+.main-content .top-content .text-content:last-child {
+  margin-right: 0;
+  
+}
+
+.main-content .middle-img {
+  margin-top: 10%;
+  max-width: 100%;
+}
+
+.main-content .bottom-content .text-content {
+   padding: 0 5%;
+  
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 5%;
+  
+  
+}
+
+
+
+.main-content .bottom-content .text-content {
+  width: 100%;
+  display: flex;
+  margin-right: 5%;
+}
+
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0;
+}
+
+.contact {
+  margin-top: 10%;
+  border-top: 1px solid black;
+  padding: 10% 2% 0;
+}
+
+.contact p {
+  margin: 2% 0;
+}
+
+footer {
+  margin: 7% 0;
+  text-align: center;
+  font-size: .90rem;
+}
+
+
+
+.services .services-header-img {
+   display: block;
+   margin: 30px 0;
+}
+
+.services .services-info {
+	padding: 30px;
+	border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  
+
+}
+
+.container2 {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.services h1 {
+	font-size: 1.1rem;
+}
+
+.services .digital-info {
+	padding: 5%;
+	border: 1px solid black;
+	width: 100%;
+	padding-bottom: 30px;
+	background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+  
+
+}
+	
+.services .UX {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+	padding-bottom: 30px;
+	background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+  
+}
+	
+
+ .services .DM {
+ padding: 30px;
+ border: 1px solid black;
+ width: 400px;
+ padding-bottom: 30px;
+ background-color: rgb(230, 228, 225);
+ margin-bottom: 30px;
+}
+
+
+.services .WD {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+  padding-bottom: 30px;
+  background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+}
+
+.services .Apple {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+  padding-bottom: 30px;
+  background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+}
+
+.services .Droid {
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px;
+  padding-bottom: 30px;
+  background-color: rgb(230, 228, 225);
+  margin-bottom: 30px;
+}
+
+
+
+.services .facts {
+ 
+  width: 100%;
+  
+ 
+}
+
+.services .facts p {
+  margin-bottom: 5%;
+  max-width: 100%;
+}
+
+.services .facts  ul {
+  margin-bottom: 7%;
+  padding: 7%;
+  
+}
+
+.services .facts li {
+  margin-bottom: 5%;
+}
+
+/* @media queries */
+
+/* Cell Phone */
+
+@media  screen and (max-width: 500px) {
+    .container {background-color: lightpink; }
+   .container header nav {
+        display: flex;
+		flex-direction: column;
+		justify-content:center;
+		align-items: center;
+		padding-left: 10%;		
+		max-width: 100%;
+   }
+
+@media screen and (max-width: 500px) {
+	header {
+		
+		display: flex;
+		flex-direction:column-reverse;
+		align-items:center;
+		width: 50%
+
+	}
+}
+
+
+
+
+   
+@media screen and (max-width: 500px) {
+	.container header img {
+		max-width: 100%;
+		align-items:center;
+		
+		padding-left: 10%;
+	}
+}
+
+
+
+@media screen and (max-width:500px) {
+
+
+	.main-content {
+		width: 55%;
+		flex-direction: column;
+        font-size: 1.75em;
+    }
+
+
+
+@media  screen and (max-width: 500px) {
+    .container {background-color: lightpink; }
+   .container header nav a {
+   
+   	width:100%;
+   	display: flex;
+   	justify-content:center;
+   	font-size: 3em;  	
+   }
+
+@media screen and (max-width: 500px) {
+	.cta img {
+		display: none;
+	}
+	.main-content .top-content .text-content {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 100%;
+		}
+		.main-content .top-content .text-content1 {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 100%;
+		}
+		.main-content .bottom-content .text-content2 {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 100%;
+		}
+		.main-content .bottom-content .text-content3 {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 100%;
+		}
+		.main-content .bottom-content .text-content4 {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 100%;
+		}
+
+
+
+
+
+
+/* TABLET */
+
+@media screen and (min-width: 501px) and (max-width:800px) {
+    .container {background-color: lightblue;}
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 100%;
+        align-items: center;
+       
+        justify-items: center;
+    }
+
+        
+       .container nav {
+            padding-left: 40px;
+        }
+        .cta img {
+            display: none;
+        }
+       .cta .cta-text {
+             font-size: 6em;
+             padding-left: 400px;
+            
+        }
+        .main-content {
+          
+          max-width: 100%;
+         font-size: 1.5em;
+         display: flex;
+         flex-direction: column;
+
+        }
+        h4 {
+            padding-top: 20px;
+        }
+		.bottom-content {
+			max-width: 100%;
+         font-size: 1em;
+         display: flex;
+         flex-direction: row;
+		}
