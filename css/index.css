@@ -1,1 +1,258 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My code */
+
+body {
+    margin: auto;
+    max-width: 880px;
+}
+
+nav {
+	position: fixed;
+    width: 90%;
+    max-width: 880px;
+	background-color: white;
+	height: 50px;
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.nav-list {
+	display: flex;
+    align-items: baseline;
+    align-self: flex-start;
+}
+
+.nav-item {
+	justify-content: space-between;
+	padding: 5%; /*20px*/
+}
+
+.logo {
+    background-color: white;
+    display: flex;
+	align-self: flex-end;
+	size: 75%;
+}
+
+header {
+	width: 100%;
+	padding: 50px 0px;
+	display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.head-item {
+	text-transform: uppercase;
+	line-height: 1.5;
+    padding: 20px;
+    margin: auto;
+}
+
+.header-text {
+    text-align: center;
+	line-height: 1.5;
+	font-size: 8rem;
+}
+
+button {
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    background: none;
+    width: 150px;
+    height: 30px;
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.header-img {
+	height: 400px;
+	width: auto;
+	max-width: 50%;
+}
+
+.main-container {
+	border-top: 1px solid black;
+}
+.main-container h4 {
+    font-size: 2rem;
+}
+.main-container p {
+    font-size: 1.8rem;
+}
+.main {
+	padding: 20px 0px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+}
+.tp {
+	width: 45%;
+}
+.middle-image {
+	width: 90%;
+	margin: auto;
+}
+.bottom {
+	justify-content: space-between;
+	display: flex;
+}
+.btm {
+	width: 30%;
+}
+
+.contact {
+	border-top: 1px solid black;
+	padding-top: 20px;
+}
+.contact h3 {
+    font-size: 2rem;
+}
+.contact p {
+    font-size: 1.8rem;
+}
+
+footer {
+	margin: 50px;
+	text-align: center;
+}
+footer p {
+    font-size: 1.8rem;
+}
+
+/* Media queries using max- and min- width */
+
+@media (max-width: 880px) {
+    body {
+        padding: 5px;
+    }
+    nav {
+       justify-content: center;
+       width: 100%;
+    }
+    .nav-list {
+        position: relative;
+        top: 50px;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-item {
+        padding: 2.5%;
+    }
+    .logo {
+        position: fixed;
+        top: 0;
+        margin: 10px;
+    }
+    /* hide image in the header */
+    .head-item {
+        margin-top: 50px;
+    }
+    .header-img {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+    .nav-list {
+        display: block;
+        text-align: center;
+        border-top: 1px solid black;
+    }
+    .nav-item {
+        border-bottom: 1px solid black;
+    }
+    .head-item {
+        margin-top: 250px;
+    }
+    .top {
+        display: block;
+    }
+    .tp {
+        width: 100%;
+        max-width: 380px;
+    }
+    .bottom {
+        display: block;
+    }
+    .btm {
+        width: 100%;
+        max-width: 380px;
+    }
+}   
