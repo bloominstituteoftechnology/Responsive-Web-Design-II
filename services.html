@@ -25,20 +25,24 @@
   </head>
 
   <body>
-    <nav class="navbar" id="nav">
-      <span class="navbar-toggle" id="js-navbar-toggle">
+    <nav class="nav" id="nav">
+      <span class="nav__toggle" id="js-navbar-toggle">
         <i class="fas fa-bars"></i>
       </span>
 
-      <a class="nav-brand" href="index.html">
-        <img class="logo" src="img/logo.png" alt="Great Idea! Company logo." />
+      <a class="nav__brand" href="#">
+        <img
+          class="nav__brand--logo"
+          src="img/logo.png"
+          alt="Great Idea! Company logo."
+        />
       </a>
-      <ul class="main-nav" id="js-menu">
-        <li><a href="#" class="nav-links">Services</a></li>
-        <li><a href="index.html" class="nav-links">Vision</a></li>
-        <li><a href="#" class="nav-links">Features</a></li>
-        <li><a href="#" class="nav-links">About</a></li>
-        <li><a href="#" class="nav-links">Contact</a></li>
+      <ul class="nav__menu" id="js-menu">
+        <li><a href="services.html" class="nav__menu--links">Services</a></li>
+        <li><a href="services.html" class="nav__menu--links">Vision</a></li>
+        <li><a href="services.html" class="nav__menu--links">Features</a></li>
+        <li><a href="#" class="nav__menu--links">About</a></li>
+        <li><a href="#contact" class="nav__menu--links">Contact</a></li>
       </ul>
     </nav>
 
@@ -66,7 +70,7 @@
     </script>
 
     <img
-      class="services-header-img"
+      class="services-header__img"
       src="img/services-header.jpg"
       alt="Our services header image"
     />
@@ -83,8 +87,8 @@
 
     <hr />
 
-    <div class="middle-container">
-      <div class="container-box">
+    <div class="mid-container">
+      <div class="mid-container__box">
         <h2>Digital Design</h2>
         <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum,
@@ -95,7 +99,7 @@
         </p>
         <button>Learn More</button>
       </div>
-      <div class="container-box">
+      <div class="mid-container__box">
         <h2>UX / UI</h2>
         <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum,
@@ -106,7 +110,7 @@
         </p>
         <button>Learn More</button>
       </div>
-      <div class="container-box">
+      <div class="mid-container__box">
         <h2>Digital Marketing</h2>
         <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum,
@@ -117,7 +121,7 @@
         </p>
         <button>Learn More</button>
       </div>
-      <div class="container-box">
+      <div class="mid-container__box">
         <h2>Web Development</h2>
         <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum,
@@ -128,7 +132,7 @@
         </p>
         <button>Learn More</button>
       </div>
-      <div class="container-box">
+      <div class="mid-container__box">
         <h2>iOS Development</h2>
         <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum,
@@ -139,7 +143,7 @@
         </p>
         <button>Learn More</button>
       </div>
-      <div class="container-box">
+      <div class="mid-container__box">
         <h2>Android Development</h2>
         <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum,
@@ -154,8 +158,8 @@
 
     <hr />
 
-    <div class="bottom-container">
-      <div class="bottom-left">
+    <div class="btm-container">
+      <div class="btm-container__text">
         <h2>Some Facts About Our Services</h2>
         <p>
           Nulla suscipit interdum diam at maximus. Proin vitae tellus rutrum,
@@ -173,7 +177,7 @@
       </div>
 
       <img
-        class="services-info-img"
+        class="btm-container__img"
         src="img/services-info.png"
         alt="one of our employees hard at work"
       />
