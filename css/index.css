@@ -1,1 +1,484 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* body {
+  padding-left: 5%;
+  padding-right: 5%;
+} */
+
+.navbar {
+  font-size: 18px;
+  background: white;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover,
+.nav-links:hover {
+  color: red;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    margin-right: 50px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+  }
+  .logo {
+    margin-top: 0;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+header {
+  /* To push header down as was behind navbar */
+  position: relative;
+  top: 80px;
+  /* Screen margins */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 150px;
+  /* flexbox use */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .content-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 125px;
+  }
+  header > .test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 0;
+  }
+
+  .content-row > img {
+    margin-bottom: 50px;
+    width: 50%;
+    order: -1;
+  }
+
+  .content-row > .test > h1 {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .content-row > .test > a > button {
+    flex: 1;
+  }
+
+  .top-half {
+    flex-direction: column;
+  }
+
+  .top-row {
+    flex-basis: 100%;
+  }
+
+  .middle-img {
+    height: 200px;
+  }
+
+  .bottom-half {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-row {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .content-row > img {
+    margin-bottom: 50px;
+    width: 100%;
+    order: -1;
+  }
+}
+
+header > .test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.content-row > img {
+  flex: 1;
+  word-break: break-all;
+}
+
+.content-row > .test > h1 {
+  font-size: 4em;
+  text-align: center;
+  order: -1;
+}
+
+button {
+  background: white;
+  border-radius: 2px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #3c373b;
+  font-weight: 200;
+  transition: background 0.75s;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.top-half {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-row {
+  flex-basis: 47.5%;
+  margin-bottom: 50px;
+}
+
+.middle-img {
+  width: 100%;
+}
+
+.bottom-half {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-row {
+  margin-bottom: 50px;
+  flex-basis: 30%;
+}
+
+.contact {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact a {
+  color: #be1e4d;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  color: #3c373b;
+}
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* SERVICES PAGE */
+
+.services-header-img {
+  width: 100%;
+}
+
+.services {
+  margin: 50px;
+}
+
+.middle-container {
+  margin: 50px 50px 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-box {
+  flex-basis: 47.5%;
+  /* height: 47.5%; */
+  border: 1px solid black;
+  border-radius: 2px;
+  background: lightgrey;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.middle-container > .container-box > button {
+  margin-top: 25px;
+}
+
+.bottom-container {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-container > .bottom-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+}
+
+.bottom-container > .bottom-left > ul {
+  list-style: square;
+  list-style-position: inside;
+  margin-top: 25px;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .services-header-img {
+    height: 200px;
+  }
+
+  .container-box {
+    flex-basis: 100%;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-container > .bottom-left {
+    flex-basis: 100%;
+  }
+
+  .bottom-container > .services-info-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

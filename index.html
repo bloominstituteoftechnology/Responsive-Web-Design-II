@@ -9,6 +9,12 @@
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,6 +22,132 @@
 </head>
 
 <body>
-<!-- Use your own code or past solution here! -->
-</body>
+  <nav class="navbar" id="nav">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <a class="nav-brand" href="#">
+      <img class="logo" src="img/logo.png" alt="Great Idea! Company logo." />
+    </a>
+    <ul class="main-nav" id="js-menu">
+      <li><a href="services.html" class="nav-links">Services</a></li>
+      <li><a href="services.html" class="nav-links">Vision</a></li>
+      <li><a href="services.html" class="nav-links">Features</a></li>
+      <li><a href="#" class="nav-links">About</a></li>
+      <li><a href="#contact" class="nav-links">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    let mainNav = document.getElementById("js-menu");
+    let navBarToggle = document.getElementById("js-navbar-toggle");
+
+    navBarToggle.addEventListener("click", function() {
+      mainNav.classList.toggle("active");
+    });
+
+    let nav = document.getElementById("nav");
+
+    window.onscroll = () => {
+      if (window.pageYOffset > 100) {
+        nav.style.background = "white";
+        nav.style.boxShadow = "0px 3px 5px 1px #E5E5E5";
+        nav.style.opacity = "0.95";
+      } else {
+        nav.style.background = "white";
+        nav.style.boxShadow = "none";
+        nav.style.opacity = "1";
+      }
+    };
+  </script>
+
+  <br />
+
+  <header class="content-row">
+    <div class="test">
+      <h1 class="test1">Innovation <br />On <br />Demand</h1>
+      <a href="#"><button>Get Started</button></a>
+    </div>
+
+    <img
+      class="test2"
+      src="img/header-img.png"
+      alt="Image of a code snippet."
+    />
+    <!-- <br /><br /> -->
+  </header>
+
+  <hr />
+
+  <section class="top-half">
+    <div class="top-row">
+      <h2>Features</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
+        vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam
+        convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+    </div>
+
+    <div class="top-row" id="top-right">
+      <h2>About</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
+        vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam
+        convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+    </div>
+  </section>
+
+  <img
+    class="middle-img"
+    src="img/mid-page-accent.jpg"
+    alt="Image of code snippets across the screen"
+  />
+
+  <section class="bottom-half">
+    <div class="bottom-row">
+      <h2>Services</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
+        vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam
+        convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+    </div>
+    <div class="bottom-row">
+      <h2>Product</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
+        vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam
+        convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+    </div>
+    <div class="bottom-row">
+      <h2>Vision</h2>
+      <p>
+        Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse
+        vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam
+        convallis augue justo, at imperdiet metus scelerisque quis.
+      </p>
+    </div>
+  </section>
+
+  <hr />
+  
+        <section class="contact" id="contact">
+          <h2>Contact</h2>
+          <address>
+            123 Way 456 Street <br />
+            Somewhere, USA
+          </address>
+          <br />
+          <p>1 (888) 888-8888</p>
+          <br />
+          <p><a href="mailto: sales@greatidea.io">sales@greatidea.io</a></p>
+        </section>
+
+        <footer>Copyright Great Idea! 2018</footer>
+      </body>
+
 </html>
