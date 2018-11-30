@@ -254,6 +254,9 @@ li {
   }
 }
 
+/* When media query below is activated it 
+messes up the alignment on min-width 800px
+for the logo */
 /* @media (min-width: 500px) {
   .nav__menu {
     display: flex;
