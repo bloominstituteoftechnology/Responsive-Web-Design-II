@@ -158,7 +158,7 @@ h5 {
   padding-right: 5%;
 } */
 
-.navbar {
+.nav {
   font-size: 18px;
   background: white;
   padding-bottom: 10px;
@@ -166,33 +166,33 @@ h5 {
   width: 100%;
   z-index: 2;
 }
-.main-nav {
+.nav__menu {
   list-style-type: none;
   display: none;
 }
-.nav-links,
-.logo {
+.nav__menu--links,
+.nav__brand--logo {
   text-decoration: none;
   color: black;
 }
 
-.logo:hover,
-.nav-links:hover {
+.nav__brand--logo:hover,
+.nav__menu--links:hover {
   color: red;
 }
 
-.main-nav li {
+.nav__menu li {
   text-align: center;
   margin: 15px auto;
 }
-.logo {
+.nav__brand--logo {
   display: inline-block;
   font-size: 22px;
   margin-top: 10px;
   margin-left: 50px;
 }
 
-.navbar-toggle {
+.nav__toggle {
   position: absolute;
   top: 10px;
   right: 50px;
@@ -206,35 +206,35 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar {
+  .nav {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
     height: 70px;
     align-items: center;
   }
-  .main-nav {
+  .nav__menu {
     display: flex;
     margin-right: 50px;
     flex-direction: row;
     justify-content: flex-end;
   }
-  .main-nav li {
+  .nav__menu li {
     margin: 0;
   }
-  .nav-links {
+  .nav__menu--links {
     margin-left: 40px;
   }
-  .logo {
+  .nav__brand--logo {
     margin-top: 0;
   }
-  .navbar-toggle {
+  .nav__toggle {
     display: none;
   }
 }
 
-header {
-  /* To push header down as was behind navbar */
+.home-header {
+  /* To push home-header down as was behind navbar */
   position: relative;
   top: 80px;
   /* Screen margins */
@@ -249,30 +249,30 @@ header {
 }
 
 @media (max-width: 768px) {
-  .content-row {
+  .home-header {
     display: flex;
     flex-direction: column;
     margin-bottom: 125px;
   }
-  header > .test {
+  .home-header__left {
     display: flex;
     flex-direction: column;
     align-items: center;
     order: 0;
   }
 
-  .content-row > img {
+  .home-header__img {
     margin-bottom: 50px;
     width: 50%;
     order: -1;
   }
 
-  .content-row > .test > h1 {
+  .home-header__left > h1 {
     text-align: center;
     font-size: 10px;
   }
 
-  .content-row > .test > a > button {
+  .home-header__left > a > button {
     flex: 1;
   }
 
@@ -280,7 +280,8 @@ header {
     flex-direction: column;
   }
 
-  .top-row {
+  .top-half__left,
+  .top-half__right {
     flex-basis: 100%;
   }
 
@@ -288,25 +289,25 @@ header {
     height: 200px;
   }
 
-  .bottom-half {
+  .btm-half {
     display: flex;
     flex-direction: column;
   }
 
-  .bottom-row {
+  .btm-half__row {
     flex-basis: 100%;
   }
 }
 
 @media (max-width: 475px) {
-  .content-row > img {
+  .home-header__img {
     margin-bottom: 50px;
     width: 100%;
     order: -1;
   }
 }
 
-header > .test {
+.home-header__left {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -314,12 +315,12 @@ header > .test {
   flex: 2;
 }
 
-.content-row > img {
+.home-header__img {
   flex: 1;
   word-break: break-all;
 }
 
-.content-row > .test > h1 {
+.home-header__left > h1 {
   font-size: 4em;
   text-align: center;
   order: -1;
@@ -362,7 +363,8 @@ hr {
   justify-content: space-between;
 }
 
-.top-row {
+.top-half__left,
+.top-half__right {
   flex-basis: 47.5%;
   margin-bottom: 50px;
 }
@@ -371,7 +373,7 @@ hr {
   width: 100%;
 }
 
-.bottom-half {
+.btm-half {
   margin-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -379,7 +381,7 @@ hr {
   justify-content: space-between;
 }
 
-.bottom-row {
+.btm-half__row {
   margin-bottom: 50px;
   flex-basis: 30%;
 }
@@ -393,12 +395,12 @@ hr {
   text-align: center;
 }
 
-.contact a {
+.contact__email {
   color: #be1e4d;
   font-weight: bold;
 }
 
-.contact a:hover {
+.contact__email:hover {
   color: #3c373b;
 }
 
