@@ -158,10 +158,27 @@ h5 {
   padding-right: 5%;
 } */
 
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+a,
+p,
+address,
+footer,
+ul,
+li {
+  font-size: 1.6rem;
+}
+
 .nav {
-  font-size: 18px;
+  font-size: 2rem;
   background: white;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -183,47 +200,49 @@ h5 {
 
 .nav__menu li {
   text-align: center;
-  margin: 15px auto;
+  margin: 1.5rem auto;
 }
 .nav__brand--logo {
   display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 50px;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
 }
 
 .nav__toggle {
   position: absolute;
-  top: 10px;
-  right: 50px;
+  top: 1rem;
+  right: 5rem;
   cursor: pointer;
   color: black;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .active {
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .nav {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
-    height: 70px;
+    height: 7rem;
     align-items: center;
   }
   .nav__menu {
     display: flex;
-    margin-right: 50px;
+    margin-right: 5rem;
     flex-direction: row;
     justify-content: flex-end;
   }
   .nav__menu li {
     margin: 0;
   }
+
   .nav__menu--links {
-    margin-left: 40px;
+    margin-left: 4rem;
+    font-size: 1.8rem;
   }
   .nav__brand--logo {
     margin-top: 0;
@@ -236,11 +255,11 @@ h5 {
 .home-header {
   /* To push home-header down as was behind navbar */
   position: relative;
-  top: 80px;
+  top: 8rem;
   /* Screen margins */
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 150px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 15rem;
   /* flexbox use */
   display: flex;
   justify-content: space-between;
@@ -252,7 +271,7 @@ h5 {
   .home-header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 125px;
+    margin-bottom: 12.5rem;
   }
   .home-header__left {
     display: flex;
@@ -262,14 +281,13 @@ h5 {
   }
 
   .home-header__img {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
     width: 50%;
     order: -1;
   }
 
-  .home-header__left > h1 {
+  .home-header > .home-header__left > h1 {
     text-align: center;
-    font-size: 10px;
   }
 
   .home-header__left > a > button {
@@ -286,7 +304,7 @@ h5 {
   }
 
   .middle-img {
-    height: 200px;
+    height: 20rem;
   }
 
   .btm-half {
@@ -301,7 +319,7 @@ h5 {
 
 @media (max-width: 475px) {
   .home-header__img {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
     width: 100%;
     order: -1;
   }
@@ -321,17 +339,22 @@ h5 {
 }
 
 .home-header__left > h1 {
-  font-size: 4em;
+  font-size: 5em;
   text-align: center;
   order: -1;
 }
 
+.home-header__left > a > button {
+  font-size: 1.6rem;
+}
+
 button {
   background: white;
-  border-radius: 2px;
-  height: 50px;
-  width: 200px;
+  border-radius: 0.2rem;
+  height: 5rem;
+  width: 20rem;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 button:focus {
@@ -348,25 +371,36 @@ button:hover {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
 }
 
 hr {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .top-half {
-  margin-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: flex;
   justify-content: space-between;
+}
+
+.top-half > .top-half__left,
+.top-half__right > h2 {
+  font-size: 1.8rem;
+}
+
+.top-half > .top-half__left,
+.top-half__right > p {
+  font-size: 1.6rem;
 }
 
 .top-half__left,
 .top-half__right {
   flex-basis: 47.5%;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .middle-img {
@@ -374,22 +408,22 @@ hr {
 }
 
 .btm-half {
-  margin-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: flex;
   justify-content: space-between;
 }
 
 .btm-half__row {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   flex-basis: 30%;
 }
 
 .contact {
-  margin-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -405,10 +439,10 @@ hr {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
 }
 
 /* SERVICES PAGE */
