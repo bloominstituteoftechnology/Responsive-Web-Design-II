@@ -153,10 +153,10 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* body {
-  padding-left: 5%;
-  padding-right: 5%;
-} */
+body {
+  /* max-width: 880px; */
+  margin: 0 auto;
+}
 
 html {
   font-size: 62.5%;
@@ -182,6 +182,7 @@ li {
   position: fixed;
   width: 100%;
   z-index: 2;
+  margin: 0;
 }
 .nav__menu {
   list-style-type: none;
@@ -211,7 +212,7 @@ li {
 
 .nav__toggle {
   position: absolute;
-  top: 1rem;
+  top: 1.8rem;
   right: 5rem;
   cursor: pointer;
   color: black;
@@ -222,13 +223,14 @@ li {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .nav {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
     height: 7rem;
     align-items: center;
+    width: 100%;
   }
   .nav__menu {
     display: flex;
@@ -252,6 +254,21 @@ li {
   }
 }
 
+/* @media (min-width: 500px) {
+  .nav__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav__brand--logo {
+    display: block;
+    margin: 1rem auto;
+  }
+  .nav__toggle {
+    display: none;
+  }
+} */
+
 .home-header {
   /* To push home-header down as was behind navbar */
   position: relative;
@@ -260,14 +277,16 @@ li {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 15rem;
+
   /* flexbox use */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 880px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .home-header {
     display: flex;
     flex-direction: column;
@@ -495,7 +514,7 @@ footer {
   line-height: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .services-header__img {
     height: 200px;
   }
