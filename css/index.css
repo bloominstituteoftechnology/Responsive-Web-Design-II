@@ -413,7 +413,7 @@ footer {
 
 /* SERVICES PAGE */
 
-.services-header-img {
+.services-header__img {
   width: 100%;
 }
 
@@ -421,14 +421,14 @@ footer {
   margin: 50px;
 }
 
-.middle-container {
+.mid-container {
   margin: 50px 50px 0 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.container-box {
+.mid-container__box {
   flex-basis: 47.5%;
   /* height: 47.5%; */
   border: 1px solid black;
@@ -438,23 +438,23 @@ footer {
   margin-bottom: 50px;
 }
 
-.middle-container > .container-box > button {
+.mid-container__box > button {
   margin-top: 25px;
 }
 
-.bottom-container {
+.btm-container {
   margin: 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.bottom-container > .bottom-left {
+.btm-container__text {
   display: flex;
   flex-direction: column;
   flex-basis: 48%;
 }
 
-.bottom-container > .bottom-left > ul {
+.btm-container__text > ul {
   list-style: square;
   list-style-position: inside;
   margin-top: 25px;
@@ -462,24 +462,24 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .services-header-img {
+  .services-header__img {
     height: 200px;
   }
 
-  .container-box {
+  .mid-container__box {
     flex-basis: 100%;
   }
 
-  .bottom-container {
+  .btm-container {
     display: flex;
     flex-direction: column;
   }
 
-  .bottom-container > .bottom-left {
+  .btm-container__text {
     flex-basis: 100%;
   }
 
-  .bottom-container > .services-info-img {
+  .btm-container__img {
     margin-top: 50px;
     margin-bottom: 50px;
   }
