@@ -286,7 +286,7 @@ for the logo */
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 880px;
+  /* max-width: 880px; */
 }
 
 @media (max-width: 800px) {
