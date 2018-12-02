@@ -1,21 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Great Idea! - Fully Responsive!</title>
+    <title>Great Idea! - Fully Responsive!</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-<!-- Use your own code or past solution here! -->
-</body>
+  <body>
+    <nav class="nav" id="nav">
+      <span class="nav__toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+
+      <a class="nav__brand" href="#">
+        <img
+          class="nav__brand--logo"
+          src="img/logo.png"
+          alt="Great Idea! Company logo."
+        />
+      </a>
+      <ul class="nav__menu" id="js-menu">
+        <li><a href="services.html" class="nav__menu--links">Services</a></li>
+        <li><a href="services.html" class="nav__menu--links">Vision</a></li>
+        <li><a href="services.html" class="nav__menu--links">Features</a></li>
+        <li><a href="#" class="nav__menu--links">About</a></li>
+        <li><a href="#contact" class="nav__menu--links">Contact</a></li>
+      </ul>
+    </nav>
+
+    <script>
+      let mainNav = document.getElementById("js-menu");
+      let navBarToggle = document.getElementById("js-navbar-toggle");
+
+      navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
+      });
+
+      let nav = document.getElementById("nav");
+
+      window.onscroll = () => {
+        if (window.pageYOffset > 100) {
+          nav.style.background = "white";
+          nav.style.boxShadow = "0px 3px 5px 1px #E5E5E5";
+          nav.style.opacity = "0.95";
+        } else {
+          nav.style.background = "white";
+          nav.style.boxShadow = "none";
+          nav.style.opacity = "1";
+        }
+      };
+    </script>
+
+    <br />
+
+    <header class="home-header">
+      <div class="home-header__left">
+        <h1 class="home-header__left--h1">Innovation <br />On <br />Demand</h1>
+        <a href="#"><button>Get Started</button></a>
+      </div>
+
+      <img
+        class="home-header__img"
+        src="img/header-img.png"
+        alt="Image of a code snippet."
+      />
+      <!-- <br /><br /> -->
+    </header>
+
+    <hr />
+
+    <main>
+      <section class="top-half">
+        <div class="top-half__left">
+          <h2>Features</h2>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </div>
+
+        <div class="top-half__right" id="top-right">
+          <h2>About</h2>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </div>
+      </section>
+
+      <img
+        class="middle-img"
+        src="img/mid-page-accent.jpg"
+        alt="Image of code snippets across the screen"
+      />
+
+      <section class="btm-half">
+        <div class="btm-half__row">
+          <h2>Services</h2>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </div>
+        <div class="btm-half__row">
+          <h2>Product</h2>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </div>
+        <div class="btm-half__row">
+          <h2>Vision</h2>
+          <p>
+            Aliquam elementum magna eros, ac posuere elvit tempus et.
+            Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu
+            ornare nisl. Nullam convallis augue justo, at imperdiet metus
+            scelerisque quis.
+          </p>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <address>
+          123 Way 456 Street <br />
+          Somewhere, USA
+        </address>
+        <br />
+        <p>1 (888) 888-8888</p>
+        <br />
+        <a class="contact__email" href="mailto: sales@greatidea.io"
+          >sales@greatidea.io</a
+        >
+      </section>
+    </main>
+
+    <footer>Copyright Great Idea! 2018</footer>
+  </body>
 </html>
