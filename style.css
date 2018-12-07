@@ -2,11 +2,14 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	font-size: 62.5%;
+}
 
-html, body {
+body {
 	height: 100%;
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -39,7 +42,7 @@ nav a {
 }
 
 .jumbo-text h1 {
-	font-size: 80px;
+	font-size: 8rem;
 }
 
 .jumbo {
@@ -115,7 +118,7 @@ footer {
 }
 
 .services-intro h1 {
-	font-size: 30px;
+	font-size: 3rem;
 	margin-top: 30px;
 }
 
