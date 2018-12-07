@@ -112,8 +112,7 @@ footer {
 /* service page. */
 
 .services-header-img {
-	width: 100%;
-	padding-top: 60px;
+	display: none;
 }
 
 .services-intro h1 {
@@ -234,14 +233,22 @@ footer {
 	section.product {
 		margin-right: 2%;
 	}
-	/* .service-item, .fact-item {
-		width: 49%;
-	} */
 
 	.contact {
 		padding: 0;
 		margin-top: 30px;
 	}
+
+	.services-header-img {
+		width: 100%;
+		display: inline;
+		padding-top: 20px;
+	}
+
+	.service-item, .fact-item {
+		width: 48%;
+	}
+
 }
 
 /* desktop */
