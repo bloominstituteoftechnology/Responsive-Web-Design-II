@@ -460,53 +460,65 @@ footer {
 
 /* phone portrait */
 @media only screen and (max-width : 500px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p, address, a {
+        font-size: 1.4rem;
+    }
 
     body { 
-        width: 490px; 
-        max-width: 490px;
+        width: 100%; 
+        max-width: 100%;
         flex-direction: column;
 }
 
         header, .get-started, .main, #contact, .main-section, #services-services, .main-section>section, #facts, .services-info-img, footer {
             flex-direction: column;
-            width: 490px;
+            width: 100%;
         }
         
         header {
-            height: 300px;
+            height: 20%;
             position: relative;
+            margin-bottom: 2%;
         }
 
         header nav {
             flex-direction: column;
-            width: 490px;
-            height: 400px;
+            width: 100%;
+            height: 90%;
             align-items: center;
         }
 
         header nav>a {
             border-top: 1px solid black;
             border-bottom: 1px solid black;
-            height: 20%;
-            width: 490px;
+            font-size: 2.4rem;
+            height: 25%;
+            width: 100%;
         }
 
         .main-section>section {
             flex-wrap: wrap;
             display: flex;
             flex-direction: column;
-            width: 490px;
+            width: 100%;
         }
 
         header>img {
             margin-right: auto;
             margin-left: auto;
+            height: 10%;
         }
 
 
 
         .main-section {
-            width: 490px;
+            width: 100%;
             height: 1300px;
             margin: 0;
             padding: 0;
@@ -515,10 +527,14 @@ footer {
             justify-content: space-between;
         }
         .get-started {
-            
-            height: 400px;
-            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 24%;
+            padding-top: 0;
+            margin-bottom: 5%;
             border-bottom: 4px solid black;
+            padding-bottom: 5%;
         }
         .header-img {
             display: none;
@@ -537,51 +553,58 @@ footer {
         }
 
         .main {
-            height: 1000px;
+            height: 100%;
+            display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             margin-bottom: 40px;
         }
         .middle-img {
-            max-width: 490px;
-            width: 490px;
+            max-width: 100%;;
+            width: 100%;;
         }
 
-        #about, #features, #services, #product, #vision, .grid{
-            width: 490px;
-            height: 120px;
+        #about, #features, #services, #product, #vision, .middle-img, .grid{
+            width: 100%;;
+            height: 20%;
             justify-content: flex-start;
             margin: 0;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 2%;
+            padding-right: 2%;
+            margin-bottom: 5%;
         }
 
         .grid {
             display: flex;
             flex-direction: column;
-            width: 490px;
-            height: 200px;
+            width: 100%;
+            height: 12%;
+ 
             
         }
 
         #facts {
             display: flex;
             flex-direction: row;
-            height: 360px;
-            width: 490px;
+            height: 100%;
+            width: 100%;;
             padding: 0;
         }
 
         #facts>section {
             float: left;
-            width: 250px;
+            width: 50%;
             height: 200px;
         }
 
         #facts>img {
             max-height: 250px;
-            max-width: 250px;
+            max-width: 50%;
             
+        }
+
+        #contact {
+            padding-left: 2%;
         }
 
         footer {
