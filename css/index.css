@@ -70,7 +70,7 @@ html {
     font-size: 62.5%;
 }
 body {
-	width: 880px;
+	width: 100%;
 	margin: 0 auto;
     padding: 0;
     max-width: 880px;
@@ -98,11 +98,12 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	height: 60px;
-	width: 880px;
+	width: 100%;
 	margin-bottom: 40px;
 	align-items: center;
 	background: silver;
-	border-radius: 5px;
+    border-radius: 5px;
+    max-width: 880px;
 	
 
 }
@@ -192,7 +193,7 @@ header>img {
 }
 
 .main {
-	height: 600px;
+	height: 500px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -220,7 +221,7 @@ header>img {
 
 #product, #vision, #services {
 	display: flex;
-    width: 33%;
+    width: 30%;  
     height: 30%;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -230,8 +231,9 @@ header>img {
 }
 
 .middle-img {
-    margin-bottom: 40px;
+    margin-bottom: 5%;
     height: 30%;
+    width: 100%;
     padding: 0;
     margin-left: 0;
     margin-right: 0;
