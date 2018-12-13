@@ -70,13 +70,14 @@ html {
     font-size: 62.5%;
 }
 body {
-	width: 876px;
+	width: 880px;
 	margin: 0 auto;
     padding: 0;
-    
+    max-width: 880px;
+}
 
-	
-
+.main-container {
+    max-width: 880px;
 }
 
 header {
