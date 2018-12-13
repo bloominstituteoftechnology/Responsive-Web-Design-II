@@ -99,7 +99,7 @@ header {
 	justify-content: space-between;
 	height: 60px;
 	width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 5%;
 	align-items: center;
 	background: silver;
     border-radius: 5px;
@@ -143,7 +143,7 @@ header>img {
 }
 
 .get-started {
-	padding-top: 60px;
+	padding-top: 5%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -177,7 +177,7 @@ header>img {
 	border: 1px solid black;
 	border-left: 2px solid black;
 	border-bottom: 2px solid black;
-	padding: 5px 30px;
+	padding: 2% 5%;
 }
 
 .get-started>img {
@@ -254,7 +254,7 @@ footer {
 #services-services {
 	display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 1%;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	border-bottom: 1px solid black;
@@ -285,7 +285,7 @@ footer {
 	background-color:lightgray;
 	color: black;
 	border: 1px solid black;
-	padding: 20px;
+	padding: 3%;
 }
 
 .grid>a {
@@ -308,14 +308,23 @@ footer {
 #facts>img, #facts>section {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 2%;
 	
 }
 
 #facts>section>ul {
-	padding-left: 20px;
-	margin-top: 20px;
+	padding-left: 4%;
+	margin-top: 4%;
 	list-style: square;
+}
+
+ul>li {
+    font-size: 1.4rem;
+}
+
+
+#services-header, .header-img, .services-header-img {
+    max-width: 880px;
 }
 
 /* media query */
@@ -475,8 +484,16 @@ footer {
     }
 
     #services-services {
-        padding-left: 20px;
+        padding-left: 5%;
 
+    }
+
+    header, .header-img, .main-section, #services-services, footer, #facts, .services-info-img {
+        max-width: 100%;
+        width: 100%;
+    }
+    body {
+        margin: 0 auto;
     }
 }
 
@@ -565,7 +582,7 @@ footer {
         #services-services {
             
             height: 200px;
-            margin-bottom: 30px;
+            margin-bottom: 10%;
             border-bottom: 4px solid black;
             text-align: center;
         }
@@ -579,7 +596,7 @@ footer {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            margin-bottom: 40px;
+            margin-bottom: 10%;
         }
         .middle-img {
             max-width: 100%;
@@ -634,6 +651,24 @@ footer {
 
         footer {
             text-align: center;
+        }
+
+        #services-header {
+            height: 200px;
+        }
+
+      .main-section{
+            height: 600px;
+            width: 100%;
+        }
+
+        .main-section>.grid {
+            height: 15%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            padding: 0;
         }
   
 }
