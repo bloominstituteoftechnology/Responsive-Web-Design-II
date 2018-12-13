@@ -76,6 +76,18 @@ body {
     max-width: 880px;
 }
 
+p, a, address {
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 .main-container {
     max-width: 880px;
 }
@@ -86,7 +98,7 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	height: 60px;
-	width: 876px;
+	width: 880px;
 	margin-bottom: 40px;
 	align-items: center;
 	background: silver;
@@ -152,7 +164,7 @@ header>img {
 }
 
 .get-started>section>h1 {
-	font-size: 3em;
+	font-size: 6rem;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -175,12 +187,12 @@ header>img {
 	order: 2;
 	max-height: 280px;
 	height: 100%;
-	max-width: 280px;
+	max-width: 34%;
 	width:100%;
 }
 
 .main {
-	height: 490px;
+	height: 600px;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -195,10 +207,10 @@ header>img {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	height: 140px;
-	width: 44%;
+	height: 30%;
+	width: 49%;
 	justify-content: center;
-	
+	padding-left: 2%;
 	margin: 0;
 	padding: 0;
 	
@@ -208,7 +220,8 @@ header>img {
 
 #product, #vision, #services {
 	display: flex;
-	width: 33%;
+    width: 33%;
+    height: 30%;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: center;
@@ -217,7 +230,11 @@ header>img {
 }
 
 .middle-img {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
+    height: 30%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #contact {
@@ -243,7 +260,7 @@ footer {
 }
 
 #services-services>h1 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 .main-section {
@@ -303,13 +320,16 @@ footer {
 
 /* Tablet Portrait */
 @media only screen and (max-width : 800px) {
+    a, p, address {
+        font-size: 1.4rem;
+    }
     body {
-        width: 790px;
+        width: 100%;
 
     }
 
     header {
-        width: 790px;
+        width: 100%;
         height: 100px;
         flex-direction: column;
 
@@ -326,7 +346,7 @@ footer {
 
     header > nav {
         order: 2;
-        width: 790px;
+        width: 100%;
 
         justify-content: space-between;
     }
@@ -336,7 +356,7 @@ footer {
     }
     .header-img {
         height: 300px;
-        width: 790px;
+        width: 100%;
     }
 
     .header-img>img {
@@ -344,16 +364,16 @@ footer {
     }
     .services-services {
         height: 100px;
-        width: 790px;
+        width: 100%;
     }
 
     .get-started{
-        width: 790px;
+        width: 100%;
         height: 460px;
     }
 
     .get-started>section>h1 {
-        font-size: 4.4em;
+        font-size: 4.4rem;
        
     }
  
@@ -363,24 +383,24 @@ footer {
     }
 
     .middle-img {
-        width: 790px;
-        max-width: 790px;
+        width: 100%;
+        max-width: 100%;
         height: 140px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
     .main {
-        width: 790px;
+        width: 100%;
         height: 532px;
     }
 
     
 
     #features {
-        width: 300px;
+        width: 46%;
         margin-right: 0;
-        margin-left: 20px;
+        margin-left: 2%;
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
@@ -390,8 +410,8 @@ footer {
     }
 
     #about {
-        width: 350px;
-        margin-right: 20px;
+        width: 46%;
+        margin-right: 2%;
         margin-left: 0;
         margin-bottom: 0;
         padding-left: 0;
@@ -404,7 +424,7 @@ footer {
 
 
      #services {
-        width: 200px;
+        width: 30%;
         height: 200px;
         margin-right: 0;
         margin-left: 20px;
@@ -416,7 +436,7 @@ footer {
     }
 
     #vision {
-        width: 200px;
+        width: 30%;
         height: 200px;
         margin-right: 20px;
         margin-left: 0;
@@ -427,7 +447,7 @@ footer {
     }
 
     #product {
-        width: 200px;
+        width: 30%;
         margin-top: 0;
         height: 200px;
         margin-bottom: 0;
@@ -445,7 +465,7 @@ footer {
 
    
     header, header>nav, header>img, .header-img, .services-header-img {
-        width: 790px;
+        width: 100%;
     }
 
     .header-img {
@@ -560,11 +580,14 @@ footer {
             margin-bottom: 40px;
         }
         .middle-img {
-            max-width: 100%;;
-            width: 100%;;
+            max-width: 100%;
+            width: 100%;
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0;
         }
 
-        #about, #features, #services, #product, #vision, .middle-img, .grid{
+        #about, #features, #services, #product, #vision, .grid{
             width: 100%;;
             height: 20%;
             justify-content: flex-start;
