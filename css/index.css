@@ -66,12 +66,14 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 html {
 	margin: 0 auto;
-	padding: 0;
+    padding: 0;
+    font-size: 62.5%;
 }
 body {
 	width: 876px;
 	margin: 0 auto;
-	padding: 0;
+    padding: 0;
+    
 
 	
 

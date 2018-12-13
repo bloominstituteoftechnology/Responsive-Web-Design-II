@@ -4,13 +4,13 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] Fork the project into your GitHub user account
+* [X] Clone the forked project into a directory on your machine
+* [X] You are now ready to build this project with your preferred IDE
 
 ## Task 2: Project Objectives
 
-* [ ] Review each [design file](design-files) and build your styles at each breakpoint.
+* [X] Review each [design file](design-files) and build your styles at each breakpoint.
 * [ ] Introduce `font-size: 62.5%;` into your `html` selector.
 * [ ] Constrain your container element with a `max-width` of 880px
 * [ ] Introduce max-width media queries into your project at 800px and 500px  
