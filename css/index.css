@@ -165,13 +165,11 @@ section h2 {
 
 .main-content-wrapper {
   margin: 8rem auto;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.6rem;
-
-  border: 1px solid orange;
-  
 }
 
 .main-content-wrapper article {
@@ -206,6 +204,26 @@ section h2 {
   flex: 0 0 33%;
 }
 
+.contact-info {
+  margin: 20px 0;
+  line-height: 1;
+}
+
+.contact-info a {
+	color: black;
+	text-decoration: none;
+}
+
+.contact-info a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+  margin: 20px 0;
+	bottom: 0;
+	text-align: center;
+  font-size: 1.6rem;
+}
 
 /*------RESPONSIVE DESIGN-----*/
 /*------Tablet Design------*/
