@@ -83,7 +83,7 @@ a {
 }
 
 .container {
-  width: 880px;
+  max-width: 880px;
   min-height: 1px;
   margin: 0 auto;
 }
@@ -98,7 +98,7 @@ nav {
   vertical-align: top;
   margin-top: 13px;
   display: flex;
-  width: 606px;
+  width: 68.86%;
   justify-content: space-between;
 }
 
@@ -117,7 +117,6 @@ nav a {
   margin-bottom: 73px;
   display:flex;
   justify-content: space-between;
-  margin-left: 123px;
   align-items: flex-start;
 }
 
@@ -128,7 +127,8 @@ nav a {
   text-align: center;
   margin-top: 55px;
   vertical-align: top;
-  width: 300px;
+  width: 34.03%;
+  margin-left: 13.98%;
 }
 
 h1 {
@@ -139,7 +139,7 @@ h1 {
 .get-started {
   border: 1px solid black;
   margin-top: 10px;
-  width: 170px;
+  width: 56.67%;
   height: 32px;
   display: flex;
   align-items: center;
