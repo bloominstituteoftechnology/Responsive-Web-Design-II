@@ -250,6 +250,13 @@ nav {
         border: none;
     }
 
+    .nav-link:hover {
+    color: var(--dark);
+    background-color: var(--light);
+    transform: scale(1.2);
+    transition: 300ms;
+    }
+
     /* Top Section */
 
     .top-section {
