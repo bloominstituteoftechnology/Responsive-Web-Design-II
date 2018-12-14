@@ -93,7 +93,8 @@ a:hover {
 header {
 	z-index: 1;
 	position: fixed;
-	top: 0;
+    top: 0;
+    padding-top: 1.8%;
     background-color: grey;
     width: 100%;
     max-width: 880px;
@@ -245,6 +246,14 @@ section p {
         justify-content: space-around;
     }
     
+    section div {
+        margin-bottom: 5%;
+    }
+
+    section div h1 {
+        margin-bottom: 13%;
+    }
+
     section img {
         display: none;
     }
@@ -255,14 +264,20 @@ section p {
     }
 
     .container {
-        width: 96%;
+        width: 95%;
     }
+    
+    .sections {
+        margin-bottom: 1.5%;
+    }
+
     .sections-top {
         width: 48%;
     }
     
     .middle-img {
         width: 100%;
+        margin-bottom: 0.25%;
     }
 
     .sections-bottom {
@@ -270,8 +285,9 @@ section p {
     }
 
     #headline {
-        margin-top: 5%;
+        margin-top: 7%;
     }
+
 }
 
 @media screen and (max-width: 500px) {
