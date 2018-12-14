@@ -1,1 +1,393 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	transition: all .25s ease-in;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Index.html CSS */
+html{
+    font-size: 62.5%;
+}
+
+a, p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+h1{
+	font-size: 6rem;
+}
+h2{
+    font-size: 2rem;
+}
+body{
+	width: 70%;
+	margin:  0 auto;
+}
+
+.container{
+	max-width: 880px;
+}
+.logo{
+	margin-bottom: 2%;
+}
+.nav-container {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	justify-content: space-between;
+	width: 100%;
+	background-color: white;
+  }
+
+.anav{
+    display: block;
+    float: left;
+    padding: 1rem 2%;
+    color: lightslategray;
+    text-decoration: none;
+    text-align: center;
+	border-radius: .5rem;
+	order:0;
+}
+
+.nav-container a:nth-child(1){
+	order: 1;
+}
+.anav:hover{
+    padding: 1rem 2%;
+    color: white;
+    background-color: slategray;
+    text-decoration: none;
+}
+
+a{
+    color: grey;
+    text-decoration: none;
+}
+
+
+.features, .services{
+	display: flex;
+}
+.content p, .content h2{
+	margin: 2rem;
+}
+
+
+.divider{
+    border: .01rem solid black;
+    margin: 4% 0;
+}
+.divider1{
+    border: .01rem solid black;
+    margin: 4% 0;
+}
+
+
+.copyright{
+    text-align: center;
+	padding: 2rem 0;
+	margin-top: 2rem;   
+}
+
+.sector{
+	margin: 2rem 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.sector h1{
+	text-align: center;
+}
+.innovation{
+	text-align: center;
+}
+strong{
+    border: .1rem solid black;
+    padding: .5% 12%;
+}
+.middle-img{
+	max-width: 100%;
+	margin: 3rem 0;
+	width: 100%;
+}
+.ino-img{
+	border-radius: 100%;
+    max-width: 100%;
+    width: 40%;
+	animation: pulse 2s infinite;
+}
+
+.services-service{
+padding: 0 1.5rem 0 0;
+}
+
+.services-vision{
+padding: 0 0 0 1.5rem;
+}
+
+@keyframes pulse{
+    0% {box-shadow: 0 0 0 0 rgba(0,0,0,0.4)}
+    70% {box-shadow: 0 0 0 10px rgba(0,0,0,0)}
+    100%{box-shadow: 0 0 0 0 rgba(0,0,0,0)}
+}
+
+/* Services.html CSS */
+
+.content-right{
+	background: linear-gradient(#F0F4F5,#EBEBEB);
+	width: 100%;
+	border: .5px solid black;
+	margin: 1.5rem 0 1.5rem 2rem;
+	padding: 2rem 2.5rem;
+
+}
+
+.content-left{
+	background: linear-gradient(#F0F4F5,#EBEBEB);
+	width: 100%;
+	border: .5px solid black;
+	margin: 1.5rem 2rem 1.5rem 0;
+	padding: 2rem 2.5rem;
+
+}
+
+.design, .marketing, .development, .facts{
+	display: flex;
+}
+.content p, .content h2{
+	margin: 2rem;
+}
+.btn-learn{
+	background-color: white;
+	border: .05rem solid black;
+	margin: 3rem 0 0 0;
+	padding: .5rem .5rem;
+	width: 25%;
+	border-radius: .3rem;
+}
+
+.divider{
+    border: .1rem solid black;
+    margin: 4% 0;
+}
+.divider1{
+    border: .05rem solid black;
+    margin: 4% 0;
+}
+
+.intro{
+	margin-top: 3.5rem;
+}
+
+.services-header-img{
+	margin-top: 5%;
+	width: 100%;
+}
+
+ul{
+    list-style-type: square;
+	margin-top: 2rem;
+	margin-left: 1.5rem;
+	display: flex;
+    flex-direction: column;
+}
+.services-info-img{
+	max-width: 100%;
+	
+
+}
+li {
+    padding: 1rem 0;
+}
+
+.services-info-img, .services-header-img{
+	max-width: 100%;
+}
+.last-content{
+	margin: 0 4rem 0 0;
+}
+
+/* Small devices (portrait tablets and large phones, 800px and down) */
+@media only screen and (max-width: 800px) {
+	.ino-img{
+		display: none;
+	}
+
+	body{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.nav-container{
+		flex-flow: row wrap;
+	}
+	.nav-container .anav{
+		order: 1;
+	}
+	.nav-container a:nth-child(1){
+		order: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+
+	/* Services.html Media Query */
+	.design, .marketing, .development{
+		flex-direction: column;
+	}
+	.content-left, .content-right{
+		margin: 2rem 0;
+		padding: 1.5rem 2rem;
+	}
+
+	.services-info-img{
+		display: none;
+	}
+
+} 
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+
+.logo{
+	margin-top: .5rem;
+	order: 0;
+}
+
+.sector h1{
+	font-size: 5rem;
+}
+.ino-img{
+	display: none;
+}
+
+.features{
+	flex-direction: column;
+
+}
+.features{
+	text-align:center;
+}
+.features-feature {
+	margin-bottom: 2.5rem;
+}
+.services{
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.services-vision{
+	padding: 0;
+	margin: 1rem 0;
+}
+
+.services-product{
+	margin: 1.5rem 0;
+	padding: 0;
+}
+.services-service{
+	margin: 1rem 0;
+	padding: 0;
+}
+
+footer, .copyright{
+	text-align: center;
+}
+
+.divider{
+	margin: 2rem 0;
+}
+body{
+	width: 100%;
+}
+.nav-container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.anav{
+	color: gray;
+	border: .05rem solid lightgray;
+	width: 100%;
+	border-radius: 0;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+}
+
+/* Services.html Media query 500px */
+.content-left, .content-right{
+	margin: 2rem 0;
+	padding: 1.5rem 2rem;
+}
+} 
