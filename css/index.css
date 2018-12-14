@@ -78,43 +78,41 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-	height: 100px;
+  align-items: center;
+  padding: 2.5rem 0;
 	position: sticky;
   top: 0;
-  /* margin: 0 auto;
-  padding: 10px 1%; */
 	z-index: 2;
   background: white;
   border: 1px solid red;
 }
 
 header nav {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  justify-self: flex-start;
-  /* line-height: 36px; */
-  /* margin: 0 10px; */
-  padding: 0 1.70%;
+  justify-self: flex-start; 
   border: 1px solid blue;
 }
 
 header nav a {
-  /* margin-right: 70px; */
+  margin: 0 4.5%;
 	text-decoration: none;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
   font-weight: bold;
 	color: gray;
 }
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
 
 header nav a:hover {
 	text-decoration: underline;
 }
 
 header #logo-image-wrapper {
-  /* margin-right: 20px; */
   justify-self: flex-end;
-  /* align-self: center; */
   border: 1px solid green;
 }
 
