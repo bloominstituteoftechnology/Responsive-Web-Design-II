@@ -103,6 +103,8 @@ p, a, address {
 ============================ */
 
 .logo {
+    display: block;
+    margin: 0 auto;
     padding: 0 0 1.5rem;
 }
 
