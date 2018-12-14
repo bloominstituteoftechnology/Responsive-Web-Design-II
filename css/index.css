@@ -56,6 +56,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -65,3 +66,124 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 25px 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+footer {
+    height: 200px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+address {
+    font-size: 1.6rem;
+}
+
+a {
+    font-size: 1.6rem;
+    color: lightgray;
+    /*align-items: baseline;*/
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+footer h2 {
+    margin-bottom: 5px;
+}
+
+/*.block {*/
+    /*display: block;*/
+/*}*/
+
+.main-container {
+    max-width: 880px;
+    margin: 10px auto 0 auto;
+}
+
+.intro {
+    padding: 40px 0 0 10%;
+    margin-bottom: 80px;
+}
+
+.intro-text {
+    display: flex;
+    width: 49%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 7.2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text h1 {
+   align-self: center;
+    margin: 20px 0;
+}
+
+.intro-text button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 12%;
+}
+
+.columnX2, .columnX3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.main-content {
+    padding: 35px 0 25px;
+    margin-bottom: 18px;
+}
+
+.top-border {
+    border-top: 2px solid black;
+}
+
+.bottom-border {
+    border-bottom: 2px solid black;
+}
+
+.half-column {
+    padding-right: 2%;
+}
+
+.third-column {
+    padding-right: 5%;
+}
+
+#copyright {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+    
+}
