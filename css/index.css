@@ -74,7 +74,7 @@ html {
 }
 
 h1, .services {
-	font-size: 30px;
+	font-size: 3rem;
 	margin-top: 5%;
 }
 
@@ -91,14 +91,14 @@ nav a {
 	justify-content: center;
 }
 .index {
-	font-size: 80px;
+	font-size: 8rem;
 	text-align: center;
 }
 h2 {
-	font-size: 20px;
+	font-size: 2rem;
 }
 p {
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 header {
     display: flex;
@@ -183,7 +183,7 @@ footer p {
     padding: 15px 32px;
     text-decoration: none;
 	display: flex;
-    font-size: 16px;
+    font-size: 1.6rem;
 	cursor: pointer;
 	height: 32px;
 	width: 80%;
@@ -283,7 +283,7 @@ footer p {
     }
     header nav a {
         border: 1px solid gray;
-        font-size: 30px;
+        font-size: 3rem;
         width: 100%;
         height: 80px;
         align-items: center;
@@ -295,7 +295,7 @@ footer p {
     
     .top-left .index {
         max-width: 100%;
-        font-size: 80px;
+        font-size: 8rem;
     }
     .top-content {
         width: 100%;
