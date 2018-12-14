@@ -79,7 +79,7 @@ h1{
 	display:flex;
 	flex-direction: column;
 	justify-items: center;
-	width: 876px;
+	max-width: 880px;
 }
 header{
 	display: flex;
