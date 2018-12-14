@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
 .container {
   max-width: 880px;
   margin: 0 auto;
-  border: 1px solid orange;
+  
 }
 
 header {
@@ -119,7 +119,7 @@ section {
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 .banner {
@@ -127,7 +127,7 @@ section h2 {
   justify-content: space-between;
   align-items: center;
   margin: 25px 0;
-  border: 2px solid red;
+
 }
 
 .banner #headline {
@@ -159,6 +159,34 @@ section h2 {
   border: 1px solid green;
 }
 
+.main-content-wrapper {
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid orange;
+  
+}
+
+.main-content-wrapper article {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 3rem 0;
+}
+
+.introduction {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+
+.introduction .intro-column {
+	flex: 0 0 48%;
+}
+
+.middle-image-wrapper {
+  margin: 35px auto;
+}
 
 
 /*------RESPONSIVE DESIGN-----*/
