@@ -91,8 +91,6 @@ p, a, address {
 
 .cotainer {
     width: 95%;
-    max-width: 880px;
-    margin: 0 auto;
 }
 
 .horizontal-line {
@@ -270,5 +268,37 @@ nav {
 
 @media (min-width: 800px) {
 
+    /* Container */
 
+    .container {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    /* Navigation Container */
+
+    .nav-container {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row-reverse;
+    }
+
+    /* Logo */
+
+    .logo {
+        padding: 0;
+    }
+
+    /* Header */
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-img {
+        display: block;
+        width: 100%;
+        max-width: 50%;
+    }
 }
