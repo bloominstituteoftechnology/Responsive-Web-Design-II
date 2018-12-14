@@ -231,7 +231,7 @@ section h2 {
   header {
     flex-direction: column-reverse;
     justify-content: center;
-    border: 1px solid red;
+    
   }
 
   header nav {
@@ -301,6 +301,40 @@ section h2 {
 
   header #logo-image-wrapper {
     margin: 0;
+  }
+
+  .banner {
+    margin-bottom: 3rem;
+  }
+
+  /* Shrink container (inherit padding settings) */
+  .main-content-wrapper {
+    width: 98%;
+    font-size: 1.45rem;
+  }
+
+  /* Shrink entire container (no padding) */
+  /* .main-content-wrapper {
+    width: 92%;
+    padding: 0;
+    font-size: 1.45rem;
+  } */
+
+  .introduction, .product-and-services {
+    flex-direction: column;
+  }
+
+  .introduction .intro-column {
+    width: 100%;
+    margin: 0;
+  }
+
+  .introduction .intro-column, .product-and-services .p-and-s-column {
+    margin: 20px 0;
+  }
+
+  .footer {
+    font-size: 1.45rem;
   }
 
 }
