@@ -50,44 +50,45 @@ table {
 }
 
 html, body {
-    height: 100%;
-    /* font-family: 'Titillium Web', sans-serif; */
+    font-size: 62.5%
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+    letter-spacing: 10%;
+    margin-bottom: 10%;
 }
 
 /* Your code starts here! */
 
 .container {
-  margin: 20px auto;
-  width: 768px;
+  margin: 0px auto;
+  max-width: 880px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  ALIGN-ITEMS: baseline;
 }
 
-.header .logo {
+header {
+    width: 100%;
+    font-size: 2rem;
 }
 
 header nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-content: center;
 }
 
 header a {
   text-decoration: none;
-  background: lightblue;
+  /* background: lightblue; */
   color: gray;
   line-height: 3;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 2%;
+  margin-right: 5%
   display: inline-block;
 }
 
