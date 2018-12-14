@@ -1,1 +1,227 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Default styles
+============================ */
+
+:root {
+
+    /* Site colors */
+    --dark: #111;
+    --light: #fff;
+    --darkGrey: grey;
+    --lightGrey: lightgrey;
+
+    /* Site fonts */
+    --TitilliumWeb: 'Titillium Web', sans-serif;
+    --Bangers: 'Bangers', sans-serif;
+    --Karla: 'Karla', sans-serif;
+    --Niconne: 'Niconne', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--TitilliumWeb);
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+p, a, address {
+    font-size: 1.6rem;
+}
+
+.cotainer {
+    width: 95%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+/* Custom styles
+============================ */
+
+.logo {
+    padding: 0 0 1.5rem;
+}
+
+/* Navigation
+============================ */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.nav-link {
+    width: 100%;
+    text-decoration: none;
+    border-top: 0.1rem solid var(--lightGrey);
+    text-align: center;
+    color: var(--darkGrey);
+    padding: 1.5rem;
+}
+
+.nav-link:last-child {
+    border-bottom: 0.1rem solid var(--lightGrey);
+}
+
+.nav-link:hover {
+    color: var(--lightGrey);
+    background-color: var(--dark);
+}
+
+/* Header
+============================ */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.big-text {
+    font-size: 5rem;
+    font-family: var(--Bangers);
+}
+
+.header-img {
+    display: none;
+}
+
+.button {
+    max-width: 25rem;
+    color: var(--dark);
+    background-color: var(--light);
+    border: 0.1rem solid var(--dark);
+    padding: 1rem 6rem;
+    margin: 3rem 0;
+}
+
+.button:hover {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+/* Top Section
+============================ */
+
+.top-section  * {
+    padding: 1rem;
+}
+
+/* Middle Section
+============================ */
+
+.middle-img {
+    width: 100%;
+    padding: 0 1%;
+}
+
+/* Bottom Section
+============================ */
+
+.bottom-section  * {
+    padding: 1rem;
+}
+
+/* Footer Section
+============================ */
+
+.contact {
+    padding: 2rem;
+}
+
+.address {
+    padding: 1rem 0;
+}
+
+.contact-link {
+    text-decoration: none;
+    line-height: 1.25;
+    color: var(--darkGrey);
+}
+
+.contact-link:hover {
+    color: var(--lightGrey);
+}
+
+.copyright {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* Tablet view
+============================ */
+
+@media (min-width: 500px) {
+
+}
+
+/* Desktop view
+============================ */
+
+@media (min-width: 800px) {
+
+}
