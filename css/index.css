@@ -156,7 +156,9 @@ h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+    font-size: 62.5%;
+}
 
 body {
     font-family: 'Karla',
@@ -205,7 +207,7 @@ header nav a {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -235,6 +237,7 @@ h1 {
 
 .features,
 .about {
+    font-size: 1.5rem;
     margin: 20px 0 20px 0;
 }
 
@@ -251,6 +254,7 @@ h1 {
 .services,
 .product,
 .vision {
+    font-size: 1.6rem;
     width: 33%;
     height: 10%;
     margin: 20px 0 20px 0;
@@ -258,6 +262,10 @@ h1 {
 }
 
 /* FOOTER */
+
+footer {
+    font-size: 1.6rem;
+}
 
 .copyright {
     text-align: center;
