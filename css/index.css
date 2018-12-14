@@ -246,6 +246,20 @@ section h2 {
   header nav, header #logo-image-wrapper {
     margin: 12px 0;
   }
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .banner #headline {
+    padding: 0;
+  }
+
+  .banner #hero-image-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
