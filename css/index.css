@@ -59,15 +59,15 @@ html, body {
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* html {
+html {
   font-size: 62.5%;
-} */
+}
 
 :root {
   --nav-border-color: rgb(128,128,128);
@@ -104,7 +104,7 @@ nav {
 
 nav a {
   color: rgb(188,188,188);
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #logo {
@@ -132,7 +132,7 @@ nav a {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 7.2rem;
   line-height: 72px;
 }
 
@@ -144,7 +144,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 .code-snippet {
@@ -209,7 +209,7 @@ section p {
 small {
   text-align: center;
   display:block;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -319,7 +319,7 @@ address p {
     width: 482px;
     text-align: center;
     padding: 20px 0;
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   nav a:nth-child(6) {
