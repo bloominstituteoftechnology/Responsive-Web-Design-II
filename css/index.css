@@ -76,11 +76,13 @@ html {
 
 h1 {
     font-size: 2.4rem;
+    font-family: var(--Bangers);
 }
 
 h3 {
     font-size: 2.2rem;
-    font-weight: 600;
+    font-family: var(--Bangers);
+
 }
 
 p, a, address {
@@ -91,6 +93,10 @@ p, a, address {
     width: 95%;
     max-width: 880px;
     margin: 0 auto;
+}
+
+.horizontal-line {
+    color: var(--dark);
 }
 
 /* Custom styles
@@ -141,8 +147,7 @@ nav {
 }
 
 .big-text {
-    font-size: 5rem;
-    font-family: var(--Bangers);
+    font-size: 7rem;
 }
 
 .header-img {
@@ -190,6 +195,7 @@ nav {
 
 .contact {
     padding: 2rem;
+    max-width: 25rem;
 }
 
 .address {
@@ -198,8 +204,8 @@ nav {
 
 .contact-link {
     text-decoration: none;
-    line-height: 1.25;
-    color: var(--darkGrey);
+    line-height: 2;
+    color: var(--dark);
 }
 
 .contact-link:hover {
