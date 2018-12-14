@@ -99,7 +99,7 @@ p, a, address {
     color: var(--dark);
 }
 
-/* Custom styles
+/* Custom Styles
 ============================ */
 
 .logo {
@@ -223,16 +223,50 @@ nav {
 }
 
 
-/* Tablet view
+/* Tablet View
 ============================ */
 
 @media (min-width: 500px) {
 
+    /* Logo */
+
+    .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Navigation */
+
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-link {
+        border: none;
+    }
+
+    .nav-link:last-child {
+        border: none;
+    }
+
+    /* Top Section */
+
+    .top-section {
+        display: flex;
+    }
+
+    /* Bottom Section */
+
+    .bottom-section {
+        display: flex;
+    }
 }
 
-/* Desktop view
+/* Desktop View
 ============================ */
 
 @media (min-width: 800px) {
+
 
 }
