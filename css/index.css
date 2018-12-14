@@ -260,6 +260,19 @@ section h2 {
   .banner #hero-image-wrapper {
     display: none;
   }
+
+  .main-content-wrapper {
+    padding: 0 2.875%;
+  }
+  
+  .product-and-services {
+    justify-content: space-between;
+  }
+
+  .product-and-services .p-and-s-column {
+	  flex: 0 0 30%;
+  } 
+
 }
 
 @media (max-width: 500px) {
