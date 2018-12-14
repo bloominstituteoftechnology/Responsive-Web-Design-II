@@ -68,10 +68,17 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
- .container {
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
 	 display: flex;
-	 min-width: 600px;
-	 max-width: 1100px;
+	 max-width: 880px;
 	 margin: 0 auto;
 	 flex-wrap: wrap;
   } 
@@ -197,6 +204,4 @@ footer p {
     padding-left: 500px;
     } 
     
-    @media (min-width: 800px){
 
-    }
