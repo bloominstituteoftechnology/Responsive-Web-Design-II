@@ -69,6 +69,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 :root {
   --nav-border-color: rgb(128,128,128);
 }
@@ -159,6 +163,10 @@ p, .features, .about, h2, .services, .product, .vision {
   display: flex;
   flex-direction: column;
   vertical-align: top;
+}
+
+.features, .about {
+
 }
 
 .features {
