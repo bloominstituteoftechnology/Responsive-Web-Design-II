@@ -228,7 +228,24 @@ section h2 {
 /*------RESPONSIVE DESIGN-----*/
 /*------Tablet Design------*/
 @media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    border: 1px solid red;
+  }
 
+  header nav {
+    justify-content: space-evenly;
+    border: 1px solid blue;
+  }
+
+  header #logo-image-wrapper {
+    border: 1px solid green;
+  }
+
+  header nav, header #logo-image-wrapper {
+    margin: 12px 0;
+  }
 }
 
 @media (max-width: 500px) {
