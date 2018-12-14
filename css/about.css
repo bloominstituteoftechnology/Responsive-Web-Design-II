@@ -1,0 +1,236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body{
+	width: 65%;
+	margin: 0 auto;
+}
+
+@keyframes highlight {
+    from {color: black;}
+    to {color: yellow;}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+a:hover {
+    color: yellow;
+    animation-name: highlight;
+    animation-duration: 0.5s;
+}
+
+header {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	background-color: grey;
+	width: 65%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+nav {
+	width: 70%;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2%;
+	width: 100%
+}
+
+nav a {
+	color: black;
+	margin: 1%;
+}
+
+#about-link {
+	color: yellow;
+	animation: none;
+}
+
+#headline {
+  display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 15%;
+	flex-wrap: wrap;
+}
+
+#headline img {
+  width: 35%;
+  border-radius: 5%;
+}
+
+.headline {
+	text-align: center;
+}
+
+.headline button {
+	cursor: pointer;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-family: Unlock;
+}
+
+#getStarted {
+	height: 30px;
+	width: 150px;
+	border: 1px solid;
+	margin: 0 auto;
+  text-align: center;
+  background-color: white;
+}
+
+#getStarted a {
+	vertical-align: middle;
+	color: black;
+	animation: none;
+}
+
+hr {
+	margin-top: 5%;
+  margin-bottom: 5% 
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about {
+  width: 48%;
+  margin-bottom: 3%;
+}
+
+.image {
+  border-radius: 5%;
+  height: 50%;
+  width: 50%;
+  margin-bottom: 3%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+
+section p {
+	margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin: 3%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+    /* For small tablets and phones */
+    body {
+        width: 96%;
+    }
+
+    header {
+        width: 96%;
+	}
+	
+	#headline img {
+		margin-top: 3%;
+	}
+	
+	article {
+		flex-direction: column;
+	}
+
+	article .about, .image {
+		width: 100%;
+	}
+
+	article .passion-img {
+		order: 2;
+	}
+
+	article .sky, .sky-img {
+		order: 3;
+	}
+}
