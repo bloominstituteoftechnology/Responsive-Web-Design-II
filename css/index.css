@@ -110,8 +110,8 @@ footer { margin: 24px 0 0 0; padding: 24px 0 12px 0; }
 
 /* Attributes ********************************/
 .active a {
-	color: white; 
-	background-color: #afafaf; 
+	color: #dddddd; 
+	background-color: #131313; 
 	padding: 12px; 
 	margin: -12px;
 	text-decoration: none; }
@@ -201,6 +201,14 @@ img.vision-header-img { width: 100%; }
 		text-align: center;
 		margin: 12px 0 24px 0; }
 
+	nav .nav-li a:hover, nav .nav-li a:active {
+		padding: 6px; 
+		margin: -6px; }
+
+	.active a {
+		padding: 6px; 
+		margin: -6px; }
+
 	.container { margin: 24px 12px; }
 	.container-row { margin: 0 12px; }
 
@@ -234,11 +242,8 @@ img.vision-header-img { width: 100%; }
 	nav.nav-container { border-bottom: 1px solid gray; padding: 0; }
 
 	nav .nav-li a:hover, nav .nav-li a:active {
-		color: white; 
-		background-color: black; 
 		padding: 4px 25vw; 
 		margin: -4px -25vw; }
-	nav .nav-li a:hover { text-decoration: none; }
 
 	ul.nav-ul { 
 		width: 100%;
@@ -252,7 +257,6 @@ img.vision-header-img { width: 100%; }
 		margin: 4px 0 8px 0; }
 
 	.active a {
-		background-color: #afafaf;
 		padding: 4px; 
 		margin: -4px;
 		text-decoration: none; }
