@@ -236,7 +236,7 @@ section h2 {
 
   header nav {
     justify-content: space-evenly;
-    border: 1px solid blue;
+    
   }
 
   header #logo-image-wrapper {
@@ -275,6 +275,32 @@ section h2 {
 
 }
 
+/*------Mobile Design------*/
 @media (max-width: 500px) {
+
+  header {
+    flex-direction: column-reverse;
+    position: static;
+  }
+  
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid gray;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+
+  header #logo-image-wrapper {
+    margin: 0;
+  }
 
 }
