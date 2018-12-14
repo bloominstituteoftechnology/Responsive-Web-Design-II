@@ -197,8 +197,8 @@ footer {
     }
   
     header nav {
-        width: 768px;
-        padding: 0 30px;
+        width: 100%;
+        padding: 0 10%;
     }
 
     header .logo {
@@ -224,15 +224,15 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 10% 2% 5%;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 2%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 0 5%;
     }
 }
 
@@ -254,8 +254,8 @@ footer {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 3% 0;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
