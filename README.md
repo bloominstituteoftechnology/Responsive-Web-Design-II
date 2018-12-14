@@ -35,3 +35,6 @@ To accomplish this challenge you will need to incorporate your knowedges of max 
 * Convert all font-size pixels into rem units.
 
 * *Stretch Goal:* See how close you can get to the media query and still have your site look decent.  Hint: you may need to introduce a few more media queries!
+
+
+change for PR
