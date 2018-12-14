@@ -75,8 +75,18 @@ html {
     font-size: 62.5%;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+
 p, address, footer {
     font-size: 1.6rem;
+}
+
+p {
+    line-height: 1.25;
 }
 
 
@@ -102,6 +112,7 @@ header {
 header nav ul {
     display: flex;
     align-items: center;
+    
 }
 
 
@@ -122,37 +133,6 @@ header nav ul .item a:hover {
 
 
 
-
-
-
- /* Header, Nav, and Logo */
- 
-/* 
- header {
-     display: flex;
-	 justify-content: space-between;
-	 align-items: center;
-     
-     
-     
- }
- header nav {
-     display:flex;
-     
-	 
- }
- header nav a {
-	 margin-right: 40px;
-	 text-decoration: none;
-	 color: black;
-	 padding: 10px 20px;
-	
- }
- header nav a:hover {
-	background-color: aquamarine;
-	font-weight: bold;
-	
- } */
 
 
 	 /* Main and  First Image */
@@ -182,86 +162,22 @@ header nav ul .item a:hover {
          text-align: center;
      }
 
-     #main-p {
-        text-align: center;
-        font-family: 'Text Me One', sans-serif;
-             
-    }
-    
-    #main-p a {
-        color: black;
-        text-decoration: none;
-        border: 1px solid gray;
-        padding: 5px 30px;
-        transition: 0.2s ease-in;
-        
-    }
-    
-    #main-p a:hover {
-        color: black;
-        background-color: aquamarine;
-        font-weight: bold;
-    }
+     button {
+         border: 1px solid black;
+         font-size: 1.6rem;
+         background: white;
+         width: 45%;
+         height: 32px;
+         margin-top: 10px;
+         cursor: pointer;
+         transition: 250ms ease-in-out;
+     }
 
+     button:hover {
+         background: aquamarine;
+         font-weight: bold;
+     }
 
-    h2 {
-        font-weight: bold;
-        font-size: 2.4rem;
-    }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* .main {
-	display: flex;
-	text-align: center;
-}
-#main-p {
-	text-align: center;
-	font-family: 'Text Me One', sans-serif;
-		 
-}
-#main-p a {
-	color: black;
-	text-decoration: none;
-	border: 1px solid gray;
-	padding: 10px 40px;
-	transition: 0.2s ease-in;
-	
-}
-#main-p a:hover {
-	color: black;
-	background-color: aquamarine;
-	font-weight: bold;
-}
-.main .inner .main-img {
-	margin-left: 100px;
-    justify-content: center; 
-	align-items: center;
-	margin-top: 20px;
-	padding-bottom: 100px;
-	margin-bottom: 50px;
-}
-.main .inner .inno {
-	width: 50%;
-	height: 400px;
-	margin-left: 120px;
-	
-}
-.main .inner .inno h1 {
-	font-size: 90px;
-	padding: 20px;
-} */
 
 
 
@@ -327,7 +243,9 @@ header nav ul .item a:hover {
 
  @media (max-width: 800px) {
 
-
+    body {
+        padding: 20px;
+    }
 
    header nav ul {
        flex-wrap: wrap;
@@ -344,6 +262,10 @@ header nav ul .item a:hover {
        flex-basis: 100%;
        text-align: center;
        
+   }
+
+   .main button {
+       width: 25%;
    }
 
    .main .inner2 {
@@ -364,6 +286,7 @@ header nav ul .item a:hover {
 
     header {
        margin-top: 10px;
+       padding: -10px;
     }
 
 
@@ -401,6 +324,9 @@ header nav ul .item a:hover {
        margin-top: 0;
    }
 
+   .main button {
+       width: 45%;
+   }
   
 
     .secondContent, .thirdContent {
