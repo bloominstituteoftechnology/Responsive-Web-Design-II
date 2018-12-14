@@ -97,7 +97,7 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 28px 0 0 10%;
 }
 
 .cta {
@@ -114,7 +114,7 @@ header .logo {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.32% 0 0;
 }
 
 .cta .cta-text button {
@@ -156,7 +156,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2.27%;
 }
 
 .contact p {
@@ -184,7 +184,7 @@ footer {
     header nav {
     /*  width: 768px;  */
         width: 100%;
-        padding: 0 30px;
+        padding: 0 3.75%;
     }
 
     header .logo {
@@ -210,15 +210,15 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 75px 2.5% 35px;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 1.25%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 0 3.75%;
     }
 }
 
@@ -285,6 +285,6 @@ footer {
     }
 
     .contact {
-        margin: 20px;
+        margin: 20px 4%;
     }
 }
