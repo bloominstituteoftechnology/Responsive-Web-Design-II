@@ -268,11 +268,11 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+        margin: 5% 0;
     }
 
     .cta {
-        margin-top: 50px;
+        margin-top: 10%;
         flex-flow: column;
         align-items: center;
     }
@@ -298,6 +298,6 @@ footer {
     }
 
     .contact {
-        margin: 20px;
+        margin: 2%;
     }
 }
