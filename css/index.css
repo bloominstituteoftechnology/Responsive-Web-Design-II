@@ -71,11 +71,19 @@ h1, h2, h3, h4, h5 {
 
 /* Makes Everything Centered */
 
+html {
+    font-size: 62.5%;
+}
+
+p, address, footer {
+    font-size: 1.6rem;
+}
+
 
 
 .container {
-    width: 90%; 
-     /* width: 1000px; */
+    /* width: 90%  */
+    max-width: 880px; 
 	margin: 0 auto; 
     overflow: hidden;
     /* padding: 10px 80px; */
@@ -104,6 +112,7 @@ header nav ul .item {
 header nav ul .item a {
     text-decoration: none;
     color: gray;
+    font-size: 1.6rem;
 }
 
 header nav ul .item a:hover {
@@ -169,7 +178,7 @@ header nav ul .item a:hover {
      }
 
      .main .inner1 .inno h1 {
-         font-size: 80px;
+         font-size: 8.0rem;
          text-align: center;
      }
 
@@ -197,7 +206,7 @@ header nav ul .item a:hover {
 
     h2 {
         font-weight: bold;
-        font-size: 24px;
+        font-size: 2.4rem;
     }
     
 
