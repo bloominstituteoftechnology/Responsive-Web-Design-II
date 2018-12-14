@@ -5,10 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Great Idea!</title>
-
-		<link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-		<link rel="stylesheet" href="css/index.css">
-
+		<link rel="stylesheet" href="css/index.css">		
 		<!--[if lt IE 9]>
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 		<![endif]-->
@@ -20,9 +17,9 @@
 					<li class="nav-li"><a href="services.html">Services</a></li>
 					<li class="nav-li"><a href="product.html">Product</a></li>
 					<li class="nav-li"><a href="vision.html">Vision</a></li>
-					<li class="nav-li"><a href="#features">Features</a></li>
-					<li class="nav-li"><a href="#about">About</a></li>
-					<li class="nav-li"><a href="#contact">Contact</a></li>
+					<li class="nav-li"><a href="features.html">Features</a></li>
+					<li class="nav-li"><a href="about.html">About</a></li>
+					<li class="nav-li"><a href="contact.html">Contact</a></li>
 					<li class="nav-logo"><a href="/"><img src="img/logo.png" alt="Great Idea! Company logo."></a></li>
 				</ul>
 			</nav>
@@ -33,9 +30,13 @@
 			<header class="container-row">
 				<div class="header-left">
 					<h1>
-						<center><p>Innovation</p></center>
-						<center><p>On</p></center>
-						<center><p>Demand</p></center>
+						<center>
+							<p class="one-word-per-line title-shadow">
+								Innovation
+								On
+								Demand
+							</p>
+						</center>
 					</h1>
 					<p>
 						<center>
@@ -59,17 +60,24 @@
 				<div class="item">
 					<h3 id="features">Task2: Project Objectives</h3>
 					<ul>
-						<li>Review each design file. Notice the subtle differences between them all.</li>
-						<li>Insert a viewport meta tag into the head of the project with these html attributes: content="width=device-width, initial-scale=1"</li>
+						<li>Review each design file and build your styles at each breakpoint.</li>
+						<li>Introduce font-size: 62.5%; into your html selector.</li>
+						<li>Constrain your container element with a max-width of 880px</li>
 						<li>Introduce max-width media queries into your project at 800px and 500px</li>
-						<li>Do your best to make your styles match the design files at each breakpoint</li>
+						<li>Convert all fixed widths, left and right margins and paddings throughout the site into percents. You will know this is working if you never see a horizontal scroll bar when you resize your browser.</li>
+						<li>Convert all font-size values into rem units</li>
+						<li>Do your best to make the breakpoints look pixel-close-enough</li>
+						<li>Once you have completed all of the project objectives, push your commits and make a pull request against the original fork</li>
 					</ul>
 				</div>
 				<div class="item">
 					<h3 id="about">Stretch Goals:</h3>
-					<p>Create a tablet and mobile version of the services page from previous projects</p>
-					<p>Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like. </p>
-					<p>I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate</p>
+					<ul>
+						<li>Build the services page from earlier assignments into a responsive design using your own creativity</li>
+						<li>Look at BEM and convert your existing CSS into the appropriate selectors.</li>
+						<li>Introduce CSS animations at different break points across your site</li>
+						<li>Build another page based on one of the navigation items and use your creativity on how it looks.</li>
+					</ul>
 				</div>
 			</div>
 		</section>
