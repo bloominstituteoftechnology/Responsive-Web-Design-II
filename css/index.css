@@ -67,3 +67,17 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
+.container {
+  max-width: 880px;
+}
+
+/*------RESPONSIVE DESIGN-----*/
+/*------Tablet Design------*/
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+  
+}
