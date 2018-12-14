@@ -1,1 +1,508 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+  /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+box-sizing: border-box;
+}
+html, body {
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+/* Your code starts here! */
+
+html {
+    max-width: 100%;
+    font-size: 62.5%;
+ 
+}
+
+.navBar {
+display: flex;
+justify-content: center;
+position: fixed;
+background: white;
+width: 880px;
+
+}
+.ops {
+display: flex;
+flex-direction: row;
+justify-content: center;
+background: white;
+max-width: 100%;
+}
+.serv, .prod, .vis, .feat, .abou, .cont {
+background-color:white;
+border: none;
+color: black;
+font-size: 2rem;
+transition: 0.3s;
+font-family: 'Permanent Marker', cursive;
+text-decoration: none;
+padding: 20px;
+padding-top: 25px;
+
+}
+.serv:hover, .prod:hover, .vis:hover, .feat:hover, .abou:hover, .cont:hover {
+background-color: #0034A3;
+color: white;
+}
+.logoImg {
+margin-top: 15px;
+height: 3rem;
+background-color: white;
+
+
+}
+body{
+    max-width: 100%;
+}
+
+.frontTitle {
+display: flex;
+justify-content: center;
+font-size: 7rem;
+max-width: 100%;
+}
+.title {
+margin-top: 175px;
+display: flex;
+justify-content: center;
+max-width: 100%;
+}
+
+.started {
+display: flex;
+justify-content: center;
+font-size: 3rem;
+background-color: white;
+box-shadow: 0 5px #666;
+border: solid black;
+padding: 10px;
+max-width: 100%;
+}
+
+.column {
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
+.headerImg{
+    padding-left: 13%;;
+
+   
+}
+.topDesc {
+display: flex;
+justify-content: space-evenly;
+margin-top: 2rem;
+border-top: 5px solid black;
+width: 100%;
+}
+.features, .about{
+margin-top: 25px;
+display: flex;
+flex-direction: column;
+align-content: flex-start;
+width: 100%;
+}
+p {
+width: 80%;
+font-size: 2rem;
+}
+.middle-img {
+display: flex;
+justify-content: center;
+width: 100%;
+
+}
+
+.started:hover {
+background-color: lightgrey;
+}
+.bottom {
+margin-top: 25px;
+display: flex;
+justify-content: space-evenly;
+border-bottom: 5px solid black;
+padding-bottom: 25px;
+width: 100%;
+}
+h3 {
+font-size: 3rem;
+}
+.smallP {
+width: 100%;;
+}
+.contact {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+font-size: 2rem;
+margin-top: 30px;
+margin-left: 0;
+}
+.number {
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.copyright {
+display: flex;
+justify-content: center;
+margin-bottom: 10rem;
+margin-top: 5rem;
+margin-left: 25%;
+}
+.container {
+  font-size: 62.5%;
+  margin: 0 auto;
+  max-width: 880px;
+}
+
+
+@media(max-width: 800px) {
+    .navBar {
+        display: flex;
+       justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        position: fixed;
+        background: white;
+        width:100%;
+        }
+        .serv, .prod, .vis, .feat, .abou, .cont {
+        
+        background-color:white;
+        border: none;
+        color: black;
+        font-size: 2rem;
+        transition: 0.3s;
+        font-family: 'Permanent Marker', cursive;
+        text-decoration: none;
+        padding: 2rem;
+        padding-top: 25px;
+        }
+        
+        .serv:hover, .prod:hover, .vis:hover, .feat:hover, .abou:hover, .cont:hover {
+        background-color: #0034A3;
+        color: teal;
+        }
+        .logoImg {
+        margin-top: 15px;
+        height: 4rem;
+        order: 0;
+        
+        }
+    
+       
+
+.frontTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 7rem;
+    }
+    .title {
+    margin-top: 175px;
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    }
+
+    .started {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    background-color: white;
+    box-shadow: 0 5px #666;
+    border: solid black;
+   
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .headerImg{
+        display: none;
+
+    }
+    .midI {
+        width: 100%;
+    }
+        .topDesc {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 5rem;
+     
+        margin-bottom: 3rem;
+        width: 100%;
+        border-top: 5px solid black;
+        }
+        .features, .about{
+        margin-top: 25px;
+        display: flex;
+            
+        flex-direction: column;
+        align-content: flex-start;
+        
+        width: 100%;
+        }
+   
+        p {
+    
+        width: 100%;
+        font-size: 2rem;
+        }
+    
+        .started:hover {
+        background-color: lightgrey;
+        }
+        .bottom {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-evenly;
+        border-bottom: 5px solid black;
+        padding-bottom: 25px;
+        width:100%;
+      
+        }
+        h3 {
+        font-size: 3rem;
+        }
+        .smallP {
+        width: 100%;
+        padding: 5px;
+        }
+        .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 30px;
+        margin-left: 0;
+        }
+        .number {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+        
+        .copyright {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-left: 50%;
+        }
+        .container {
+            font-size: 62.5%;
+            margin: 0 auto;
+            max-width: 799px;
+            }
+}
+
+@media(max-width:500px) {
+
+  .navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    }
+    
+    .serv, .prod, .vis, .feat, .abou, .cont {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    transition: 0.3s;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: solid lightgray;
+    width: 100%;
+    }
+    
+    .serv:hover, .prod:hover, .vis:hover, .feat:hover, .abou:hover, .cont:hover
+     {
+    background-color: #lightblue;
+    color: white;
+    }
+
+    .logoImg {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    height: 40px;
+    order: 0;
+    border-bottom: solid lightgray;
+    width: 100%;
+    
+    }
+
+   
+
+.frontTitle {
+display: flex;
+flex-direction: row;
+justify-content: center;
+font-size: 6rem;
+}
+.title {
+margin-top: 50rem;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.started {
+display: flex;
+align-items: center;
+font-size: 3rem;
+background-color: white;
+box-shadow: 0 5px #666;
+border: solid black;
+
+
+
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.headerImg{
+    display: none;
+
+}
+    .topDesc {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-left:2px;
+    width: 100%;
+    border-top: 5px solid black;
+    }
+    .features, .about{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    }
+    .features{
+      margin-left: 100px;
+    }
+    p {
+
+    width: 250px;
+    font-size: 2rem;;
+    }
+    .middle-img {
+        height: 150px;
+        margin-right: 90px;
+        
+    }
+    .started:hover {
+    background-color: lightgrey;
+    }
+    .bottom {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 5px solid black;
+    padding-bottom: 25px;
+    width: 100%;
+    margin-left: 2px;
+    }
+    h3 {
+    font-size: 30px;
+    }
+    .smallP {
+    width: 25%;
+    }
+    .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 0
+    }
+    .number {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+  
+    .copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 495px
+        }
+
+}
