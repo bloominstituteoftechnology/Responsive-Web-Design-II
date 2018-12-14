@@ -1,5 +1,9 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 
+html {
+    font-size: 62.5%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,31 +24,35 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
@@ -61,11 +69,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-    width: 880px;
-    margin: auto;
+    max-width: 880px;
+    margin: 0 auto;
 }
-
-/* Header Styles */
 
 header {
     width: 100%;
@@ -74,7 +80,8 @@ header {
 
 header nav {
     margin-top: 40px; 
-    width: 610px;
+ /* width: 610px; */
+    width: 69.32%;   
     justify-content: space-between;
     display: flex;
 }
@@ -92,8 +99,6 @@ header nav a:hover {
 header .logo {
     margin: 28px 0 0 91px;
 }
-
-/* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
@@ -116,7 +121,8 @@ header .logo {
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 170px;
+/*  width: 170px;  */
+    width: 44.32%;
     height: 32px;
     margin-top: 10px;
     cursor: pointer;
@@ -126,8 +132,6 @@ header .logo {
     background: black;
     color: white;
 }
-
-/* Main Content Styles */
 
 .main-content {
    border-top: 2px solid black; 
@@ -155,20 +159,18 @@ header .logo {
     padding-right: 20px;
 }
 
-/* Contact Styles */
-
 .contact p {
     margin: 15px 0;
 }
-
-/* Footer Styles */
 
 footer {
     text-align: center;
     margin: 40px 0 20px;
 }
 
-/* Tablet */
+
+
+
 @media (max-width: 800px) {
 
     .container {
@@ -180,7 +182,8 @@ footer {
     }
   
     header nav {
-        width: 768px;
+    /*  width: 768px;  */
+        width: 100%;
         padding: 0 30px;
     }
 
@@ -219,7 +222,8 @@ footer {
     }
 }
 
-/* Phone */
+
+
 @media (max-width: 500px) {
 
     header {
