@@ -77,7 +77,7 @@ h4, p {
     padding-bottom: 25px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin: 10px;
+    margin: 0 auto;
 }
 .main-content .top-content {
     display: flex;
@@ -88,6 +88,8 @@ h4, p {
 .main-content .middle-img {
     padding-top: 25px;
     padding-bottom: 25px;
+    margin: 0 auto;
+    
 }
 .main-content .bottom-content {
     display: flex;
@@ -99,6 +101,12 @@ h4, p {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+.middle-img {
+    width: 95%;
+}
+
+
 /* contact */
 .contact {
     display: flex;
@@ -123,11 +131,12 @@ footer {
 
 @media (max-width: 800px) {
 	body {
-		width: 800px;
+        max-width: 700px;
+        margin: 0 auto;
 	}
 
 	.container {
-		width: 800px;
+		max-width: 800px;
 		margin: 0;
 	}
 
@@ -136,7 +145,7 @@ footer {
 	}
 
 	header nav {
-		width: 700px;
+		width: 90%;
 	}
 
 	.logo {
@@ -170,12 +179,14 @@ footer {
 
 	.main-content {
 		padding: 0;
-		width: 760px;
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto;
 	}
 
 	.middle-img {
-		width: 760px;
-		margin: 0 auto;
+		width: 90%;
+		
 	}
 
 	.text-content {
@@ -198,22 +209,23 @@ footer {
 
   @media (max-width: 500px) {
 	body {
-		width: 500px;
-	}
-
-	.container {
-		width: 500px;
+        max-width: 500px;
+        margin: 0 auto;
 	}
 
 	nav {
 		display: flex;
 		flex-direction: column;
-		align-content: center;
-		
-	}
+        align-content: center;
+        width: 100%
+    }
+    
+    header {
+        width: 100%;
+    }
 	  
 	header nav a {
-		width: 500px;
+		width: 100%;
 		font-size: 16px;
 		padding:  10px 0px 10px 0px;
 		text-align: center;
@@ -227,7 +239,7 @@ footer {
 	}
 
 	.container {
-		width: 500px;
+		max-width: 500px%;
 		margin: 0;
 	}
 
@@ -237,12 +249,12 @@ footer {
 
 	.main-content {
 		padding: 0;
-		width: 500px;
+		max-width: 500px;
 	}
 
 	.middle-img {
-		width: 420px;
-		margin: 0 auto;
+		width: 90%;
+		
 	}
 
 	.cta {
@@ -258,22 +270,22 @@ footer {
 		flex-direction: column;
 		margin: 0 auto;
 		padding: 0;
-		width: 450px;
+		max-width: 450px;
 		
 	}
 
 	.main-content .bottom-content {
 		display: block;
-		width: 450px;
+		max-width: 450px;
 		margin: 0 auto;
 	}
 	
 	.bottom-content .text-content {
-		width: 450px;
+		max-width: 450px;
 	}
 
 	.contact {
-		width: 450px;
+		max-width: 450px;
 		margin: 0 auto;
 	
 	}
