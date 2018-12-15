@@ -112,6 +112,7 @@ nav a {
 
 div.banner-content {
 	width: 50%;
+	min-width: 410px;
 	text-align: center;
 }
 
