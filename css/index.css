@@ -1,1 +1,498 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/*General Sizing*/
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 41px auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+/*Navigation Area*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav img {
+  margin-right: 1.5rem;
+}
+
+.nav nav {
+  display: flex;
+  justify-content: space-between;
+  width: 67%;
+}
+.nav nav a {
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+}
+
+/*Header Area*/
+header {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 75px;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1%;
+}
+
+.header-left h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 7.5rem;
+  line-height: 101%;
+  letter-spacing: 0.4rem;
+  padding-left: 18%;
+  margin-top: 57px;
+}
+
+.header-left a {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 38px;
+  margin-left: 18%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+
+.header-left a:hover {
+  background-color: black;
+  color: white;
+}
+
+.header-right {
+  padding-right: 2%;
+}
+
+.header-right img {
+  width: 100%;
+  max-width: 379px;
+}
+/*Main Area*/
+main {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 40.5px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  letter-spacing: 0.1rem;
+  line-height: 160%;
+  width: 100%;
+}
+
+main section {
+  display: flex;
+  margin-bottom: 43px;
+}
+
+main section div {
+  /* padding-left: 1%; */
+  padding: 0 1%;
+  width: 50%;
+}
+
+main section img {
+  width: 100%;
+  max-width: 800px;
+}
+
+main h2 {
+  font-size: 1.6rem;
+}
+
+main p {
+  font-size: 1.4rem;
+}
+
+/*Footer Area*/
+footer {
+  padding-top: 40px;
+  padding-left: 1rem;
+}
+
+footer h2 {
+  font-size: 1.6rem;
+}
+
+footer span {
+  font-size: 1.6rem;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.footer-phone-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 52px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin: 30px auto;
+    padding: 0 2%;
+  }
+
+  /*Nav Area*/
+  .nav {
+    flex-direction: column-reverse;
+  }
+
+  .nav img {
+    margin-right: 0;
+  }
+
+  .nav nav {
+    align-self: flex-start;
+    justify-content: space-between;
+    width: 98%;
+    padding: 0 2%;
+  }
+
+  .nav nav a {
+    font-size: 1.6rem;
+  }
+
+  .nav img {
+    margin-bottom: 40px;
+  }
+
+  /*Header Area*/
+  header {
+    margin-top: 15px;
+    margin-bottom: 72px;
+  }
+
+  .header-left {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .header-left h1 {
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .header-left a {
+    width: 60%;
+    height: 35px;
+    margin-left: 0;
+  }
+  .header-right {
+    display: none;
+  }
+
+  /*Main Area*/
+  main {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-top: 35px;
+    padding-bottom: 5px;
+  }
+
+  main section {
+    margin-bottom: 32px;
+  }
+
+  .main-top p {
+    line-height: 1.8rem;
+  }
+
+  main section img {
+    height: 50%;
+  }
+
+  .main-middle_img {
+    margin-bottom: 30px;
+  }
+
+  .main-bottom {
+    justify-content: space-between;
+    padding-right: 1.5%;
+  }
+
+  .main-bottom div {
+    line-height: 1.8rem;
+    width: 23rem;
+  }
+
+  /*Footer Area*/
+  footer {
+    padding-top: 35px;
+  }
+
+  address {
+    margin-bottom: 15px;
+  }
+
+  .footer-phone-email {
+    height: 48px;
+  }
+
+  .footer-copyright {
+    margin-top: 40px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  /*Nav Area*/
+  .nav {
+    padding-right: 6%;
+    width: 100vw;
+  }
+
+  .nav img {
+    margin-bottom: 20px;
+  }
+
+  .nav nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav nav a {
+    border-top: 1px solid black;
+    padding: 20px 0;
+    font-size: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .nav nav a:hover {
+    color: white;
+    background-color: black;
+  }
+
+  /*Header Area*/
+  header {
+    margin-top: 0px;
+    margin-bottom: 78px;
+  }
+  .header-left {
+    padding-left: 3%;
+  }
+
+  .header-left h1 {
+    margin-bottom: 26px;
+    margin-top: 50px;
+  }
+
+  /*Main Area*/
+  main {
+    padding-top: 60px;
+    height: auto;
+  }
+  main section {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  main section div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .main-bottom div {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .main-bottom div:last-child {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  /*Footer Area*/
+  footer {
+    padding-left: 0;
+  }
+}
