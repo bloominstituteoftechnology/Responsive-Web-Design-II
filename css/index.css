@@ -239,10 +239,6 @@ section h2 {
     
   }
 
-  header #logo-image-wrapper {
-    border: 1px solid green;
-  }
-
   header nav, header #logo-image-wrapper {
     margin: 12px 0;
   }
