@@ -1,1 +1,340 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    
+}
+
+.container {
+    width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+.navigation .logo {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header .navigation {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 5%;
+}
+
+.navigation a {
+	color: gray;
+    text-decoration: none;
+    font-size: 2rem;
+	
+}
+
+.cta {
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+}
+
+.header-img {
+	padding: 5% 0;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.cta-header {
+    display: flex; 
+    flex-direction: column;
+	
+	text-align: center;  
+	font-size: 5rem;
+}
+
+.right {
+    padding-left: 5%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4%;
+}
+
+.left .cta-button {
+	width: 67%;
+	font-size: 1.75rem; 
+    background-color: ghostwhite;
+}
+
+.top-section {
+	display: flex;
+	padding: 3% 0;
+	border-top: 0.15rem solid black;
+    line-height: 1.3;
+    font-size: 1.5rem;
+}
+
+.bottom-section {
+	display: flex;
+    margin-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    border-bottom: 0.15rem solid black;
+    line-height: 1.3;
+    font-size: 1.5rem;
+}
+
+.product-section {
+    padding-left: 2%;
+}
+
+.vision-section {
+    padding-left: 2%;
+}
+
+.footer {
+	display: flex;
+	padding: 3% 0;
+}
+
+footer {
+    width: 100%;
+}
+
+.contact-section {
+    line-height: 1.3;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    padding-left: 40%;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    header .navigation {
+        margin-top: 2.5%;
+        margin-right: 2.5%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        justify-content: space-between;
+        margin: 0 1%;
+        font-size: 1.75rem;
+    }
+
+    .navigation .logo {
+        order: -1;
+        margin-bottom: 3%;
+        padding: 2% 33% 0 40%;
+    }   
+
+    .cta {
+        margin-top: 3%;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .top-section {
+        margin: 0 3%;
+        border-top: 0.15rem solid black;
+        line-height: 1.3;
+        font-size: 1.5rem;
+    }
+
+    .about-section {
+        margin-left: 2%;
+    }
+
+
+    .cta .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cta-header {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0;
+
+    }
+
+    .left .cta-button {
+        background-color: white;
+        font-size: 1.5rem;
+        margin-bottom: 30%;
+        line-height: 1.5;
+    }
+
+    .middle-img {
+        width: 95%;
+        margin: 0 3%;
+    }
+
+    .bottom-section {
+        margin: 3%;
+        border-bottom: 0.15rem solid black;
+        line-height: 1.3;
+        font-size: 1.5rem;
+    }
+
+    .vision-section {
+        margin-right: 2%;
+    }
+
+    .contact-section {
+        margin-left: 3%;
+        font-size: 1.5rem;
+    }
+
+    .copyright {
+        font-size: 1.5rem;
+        padding-left: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    header .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation a {
+        border-top: 0.1rem solid black;
+        width: 110%;
+        padding: 4%;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contact {
+        border-bottom: 0.1rem solid black;
+    }
+
+   .cta-header {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .left .cta-button {
+       background-color: white;
+       font-size: 1.5rem;
+   }
+
+   .top-section {
+       flex-direction: column;
+       padding: 2%;
+       line-height: 1.4;
+   }
+
+   .features-section {
+       margin: 5% 0;
+   }
+
+   .about-section {
+       margin: 5% 0;
+   }
+
+   .bottom-section {
+       display: flex;
+       flex-direction: column;
+       padding: 3% 0;
+       line-height: 1.4;
+   }
+
+   .product-section, .vision-section {
+       padding: 2% 0;
+       margin: 3% 0;
+   }
+
+   .services-section {
+       margin: 5% 0;
+   }
+
+   .copyright {
+       padding-left: 34%;
+   }
+}
