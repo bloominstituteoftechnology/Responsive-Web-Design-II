@@ -80,13 +80,15 @@ html {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
+  padding: 2%;
   max-width: 880px;
   margin: 0 auto;
 }
 
 header {
-  width: 95%;
+  width: 100%;
+  padding: 2%;
   display: flex;
   margin-top: 25px;
   align-items: center;
@@ -100,7 +102,8 @@ header nav {
 
 
 header nav a {
-  width: 95%;
+  width: 100%;
+  padding: 2%;
   display: inline-block;
   color: black;
   font-size: 1.4rem;
@@ -181,7 +184,8 @@ header nav a:last-child {
 }
 
 .main-content {
-  width: 95%;
+  width: 100%;
+  padding: 2%;
   border-top: 2px solid rgb(68, 152, 185);
   padding: 37px 0;
   display: flex;
@@ -190,12 +194,14 @@ header nav a:last-child {
 
 .top-content {
   display: flex;
-  width: 95%;
+  width: 100%;
+  padding: 2%;
   justify-content: space-around;
 }
 
 .top-content .text-content {
-  width: 95%;
+  width: 100%;
+  padding: 2%;
   font-size: 1.6rem;
   line-height: 1.1;
 }
@@ -206,6 +212,7 @@ header nav a:last-child {
 
 .middle-img {
   width: 100%;
+  padding: 2%;
   margin-top: 37px;
 }
 
@@ -213,6 +220,7 @@ header nav a:last-child {
   margin-top: 32px;
   display: flex;
   width: 100%;
+  padding: 2%;
   justify-content: space-between;
 }
 
@@ -246,7 +254,7 @@ footer {
 
 @media (max-width: 800px) {
     .container {
-      width: 95%;
+      width: 100%;
       padding: 2.2%;
     }
 
@@ -256,13 +264,15 @@ footer {
     }
 
     header nav {
-      width: 95%;
+      width: 100%;
+      padding: 2%;
       padding: 1.1%;
       justify-content: space-between;
     }
 
     header nav a {
-      width: 95%;
+      width: 100%;
+      padding: 2%;
       font-size: 1.4rem;
       padding: 10px 4%;
     }
@@ -280,17 +290,20 @@ footer {
     }
 
     .main-content .top-content {
-      width: 95%;
+      width: 100%;
+      padding: 2%;
       flex-direction: row;
       justify-content: space-between;
     }
 
     .middle-img {
-      width: 95%;
+      width: 100%;
+      padding: 2%;
     }
 
     .bottom-content {
-      width: 95%;
+      width: 100%;
+      padding: 2%;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -309,7 +322,7 @@ footer {
 
   @media (max-width: 500px) {
     .container {
-      width: 95%;
+      width: 100%;
       padding: 2.2%;
     }
 
@@ -340,12 +353,13 @@ footer {
     }
 
     .text-content {
-      width: 95%;
+      width: 100%;
       margin: 20px 1%;
     }
 
     .middle-img {
       width: 100%;
+      padding: 2%;
     }
     .bottom-content {
       flex-direction: column;

@@ -1,6 +1,6 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -14,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -26,7 +26,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -79,13 +79,14 @@ html {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 880px;
   margin: 0 auto;
 }
 
 header {
-  width: 95%;
+  width: 100%;
+  padding: 2%;
   display: flex;
   margin-top: 25px;
   align-items: center;
@@ -94,12 +95,12 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
 }
 
 
 header nav a {
-  width: 95%;
+  width: 100%;
   display: inline-block;
   color: black;
   font-size: 1.4rem;
@@ -150,6 +151,7 @@ h2 {
 
 .services-header {
   width: 100%;
+  padding: 2%;
   margin-bottom: 45px;
   margin-top: 45px;
   line-height: 1.25;
@@ -157,11 +159,14 @@ h2 {
 }
 
 .services-header-img {
+  margin-top: 56px;
+  padding: 2%;
   width: 100%;
 }
 
 .service-container {
   width: 100%;
+  padding: 2%;
   display: flex;
   flex-wrap: wrap;
   border-top: 2px solid rgb(68, 152, 185);
@@ -197,32 +202,36 @@ h2 {
   cursor: pointer;
 }
 
-.service-facts {
-  font-size: 1.6rem;
+.bottom-container {
   display: flex;
+  justify-content: space-between;
+}
+
+.service-facts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 47%;
+  font-size: 1.6rem;
   padding-top: 40px;
   line-height: 1.25;
 }
 
-.facts-container {
-  display: flex;
-  justify-content: space-evenly;
-
-}
-
-.facts-container ul {
-  
-}
-
-.facts-container ul li {
-  /* margin: 10px 0;
+li {
+  width: 100%;
+  margin: 10px 0;
   list-style-type: square;
-  margin-left: 17px;
-  line-height: 1.25; */
+  margin-left: 17%;
+  line-height: 1.25
+}
+
+.services-info-img {
+  margin-top: 40px;
 }
 
 footer {
+  font-size: 1.6rem;
   padding-top: 75px;
+  text-align: center;
 }
 
 /* Media Queries */
@@ -233,5 +242,69 @@ footer {
   .container {
     width: 95%;
     padding: 2.2%;
+  }
+
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header nav {
+    width: 95%;
+    padding: 1.1%;
+    justify-content: space-between;
+  }
+
+  header nav a {
+    width: 100%;
+    padding: 2%;
+    margin-top: 35px;
+    font-size: 1.4rem;
+    padding: 10px 4%;
+  }
+  /* header nav a:last-child {
+    margin-right: 0;
+  } */
+}
+
+/* Mobile View */
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 2%;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    font-size: 2.4rem;
+    padding: 20px 0;
+    border-top: 2px solid rgb(68, 152, 185);
+    border-left: 2px solid rgb(68, 152, 185);
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav a:last-child {
+    border-right: 2px solid rgb(68, 152, 185)
+  }
+
+  .service-container {
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .service-facts {
+    width: 100%;
+  }
+
+  .services-info-img {
+    display: none;
   }
 }
