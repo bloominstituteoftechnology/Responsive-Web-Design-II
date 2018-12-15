@@ -2,6 +2,8 @@
 
 You have experienced building fixed layout web pages, adaptive web pages, and now it's time to go fully responsive!  Using your new knowledge with responsive units, contstraints, and media queries you are now prepared to take on today's fully reponsive website project.
 
+[Click Me](https://ronnysalvarado.github.io/Responsive-Web-Design-II)
+
 ## Task 1: Set Up The Project With Git
 
 * [ ] Fork the project into your GitHub user account

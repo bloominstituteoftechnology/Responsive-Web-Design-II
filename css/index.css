@@ -1,1 +1,550 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* My CSS code starts here */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+	/* border: 1px solid red; */
+	max-width: 880px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+.container header {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 50px;
+	position: flex;
+	width: 100%;
+}
+
+.container header nav {
+	/* border: 1px solid red; */
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.container header nav a {
+	/* border: 1px solid red; */
+    color: lightgray;
+    text-decoration: none;
+}
+.container	header .logo {
+	/* border: 1px solid red; */
+	align-self: flex-start;
+	margin-top: 5px;
+}
+
+.container section  {
+	/* border: 1px solid red; */
+	display: flex;
+	/* flex-wrap: nowrap; */
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.container section .mainheading-left {
+	/* border: 1px solid red; */
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container section .mainheading-left h1{
+	font-size: 7rem;
+	text-align: center;
+	color: black;
+}
+.container section .mainheading-left a {
+	border: 2px solid black;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+.container section .logo2 {
+    /* border: 1px solid red; */
+    width: 50%;
+	max-width: 379px;
+}
+.containerFirstSection {
+	display: flex;
+	flex-direction: row;
+	padding-top: 30px;
+	border-top: 1px solid black;
+	margin-bottom: 30px;
+}
+
+.containerFirstSection .FirstSectionItems {
+    /* border: 1px solid red; */
+	width: 50%;
+}
+
+.middle-img {
+    max-width: 880px;
+    width: 100%;
+}
+
+.containerThirdSection {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 30px; 
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+.ThirdSectionItems {
+	/* border: 1px solid red; */
+	width: 32%;
+}
+footer .footer-index-container {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	padding-top: 20px;
+	margin-bottom: 50px;
+}
+
+footer .Copyright {
+	/* border: 1px solid red; */
+	text-align: center;
+	font-size: 1.4rem;
+	margin-top: 20px;
+}
+
+.container header a .logo {
+    /* border: 1px solid red; */
+    margin: 5px 0 20px 0;
+}
+
+.services-header-img {
+	/* border: 1px solid red; */
+	width: 100%;
+	display: flex;
+}
+
+.services-heading {
+	width: 100%;
+	/* border: 1px solid red; */
+	margin: 20px 0;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+
+.services-section1 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0;
+	/* border: 1px solid red; */
+}
+
+.services-section1 .digitaldesign {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	padding: 15px 25px 0 15px;
+	background-color: snow;
+}
+
+.services-section1 .learnmore {
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 35%;
+	text-align: center;
+	padding: 5px 20px;
+	align-self: flex-start;
+	margin: 10px 0;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+
+.services-section1 .uxui {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	padding: 15px 25px 0 15px;
+	background-color: snow;
+}
+
+.services-section2 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	/* border: 1px solid red; */
+}
+
+.services-section2 .digitalmarketing {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	padding: 15px 25px 0 15px;
+	background-color: snow;
+}
+
+.services-section2 .learnmore {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 20px;
+	align-self: flex-start;
+	margin: 10px 0;
+	text-decoration: none;
+	font-size: 1.2rem;	
+	width: 35%;
+	text-align: center;
+}
+
+.services-section2 .webdevelopment {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	padding: 15px 25px 0 15px;
+	background-color: snow;
+}
+
+.services-section3 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-bottom: 40px;
+	/* border: 1px solid red; */
+}
+
+.services-section3 .iosdevelopment {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	padding: 15px 25px 0 15px;
+	background-color: snow;
+}
+
+.services-section3 .learnmore {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px 20px;
+	align-self: flex-start;
+	margin: 10px 0;
+	text-decoration: none;
+	font-size: 1.2rem;
+	width: 35%;
+	text-align: center;
+}
+
+.services-section3 .androiddevelopment {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	padding: 15px 25px 0 15px;
+	background-color: snow;
+}
+
+.footer-services-container {
+	/* border: 1px solid red; */
+	width: 100%;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-left {
+	/* border: 1px solid red; */
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-left p {
+	/* border: 1px solid red; */
+	margin-bottom: 10px;
+}
+
+.services-info-img {
+	width: 48%;
+}
+
+.services-copyright {
+	display: flex;
+	justify-content: center;
+	margin: 80px 0;
+	font-size: 1.4rem;
+}
+
+ul {
+	/* border: 1px solid red; */
+	margin-left: 2rem;
+	list-style-type: square
+}
+
+li {
+	/* border: 1px solid red; */
+	padding: 10px 0 5px 2px;
+}
+
+
+@media (max-width: 800px){
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+    .container header {
+		width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+		margin-bottom: 60px;
+		height: 10rem;
+    }
+    .container header .logo {
+        align-self: center;
+    }
+    .logo2 {
+        display: none;
+	}
+	.container .services-header-img {
+		display: none;
+	}
+	.container .services-heading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+    .mainheading-left {
+        width: 50%;
+	}
+	.middle-img {
+		width: 100%;
+	}
+    .container section  {
+        display: flex;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    .containerFirstSection {
+        border-top: 2px solid black;
+    }
+    nav {
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px){
+	.container {
+		width: 94%;
+		margin: 0 auto;
+	}
+	.container header {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 31rem;
+        /* margin-bottom: 60px; */
+	}
+	.container header nav a {
+        width: 100%;
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-top: 1px solid lightgrey;
+		border-bottom: 1px solid lightgrey;
+		color: lightgray;
+		margin: 0;
+		padding: 20px 0;
+	}
+	.container header .logo {
+        /* border: 1px solid red; */
+        margin-bottom: 10px;
+    }
+	.container header nav {
+        /* border: 1px solid red; */
+		display: flex;
+		flex-direction: column;
+        align-content: center;
+        width: 100%;
+    }
+    .container header nav a:hover {
+        background: gray;
+    }
+
+	.containerFirstSection {
+        width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+		border-top: 2px solid black;
+		margin: 10px;
+	}
+	.containerFirstSection .FirstSectionItems {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.middle-img {
+		width: 100%;
+	}
+
+	.containerThirdSection {
+		/* border: 1px solid red; */
+		width: 100%;
+		height: 45rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		border-bottom: 2px solid black;
+		padding-bottom: 0;
+	}
+	.ThirdSectionItems {
+		/* border: 1px solid red; */
+		width: 100%;
+	}
+	.services-section1 {
+		/* border: 1px solid red; */
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 40px 0;
+	}
+	.services-section1 .digitaldesign {
+		width: 100%;
+		align-items: center;
+		margin: 0 0 40px 0;
+	}
+	.services-section1 .uxui {
+		width: 100%;
+		align-items: center;
+	}
+	.services-section2 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 40px 0;
+	}
+	
+	.services-section2 .digitalmarketing {
+		align-items: center;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	.services-section2 .webdevelopment {
+		width: 100%;
+		align-items: center;
+	}
+	
+	.services-section3 {
+		/* border: 1px solid red; */
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 2px solid black;
+		padding-bottom: 40px;
+	}
+	
+	.services-section3 .iosdevelopment {
+		margin-bottom: 40px;
+		width: 100%;
+		align-items: center;
+	}
+	.services-section3 .androiddevelopment {
+		width: 100%;
+		align-items: center;
+	}
+	.services-section1 .learnmore {
+		align-self: center;
+	}
+	.services-section2 .learnmore {
+		align-self: center;
+	}
+	.services-section3 .learnmore {
+		align-self: center;
+	}
+	.services-info-img {
+		display: none;
+	}
+	.footer-left {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
