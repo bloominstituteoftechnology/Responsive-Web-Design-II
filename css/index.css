@@ -164,7 +164,7 @@ section h2 {
 }
 
 .main-content-wrapper {
-  margin: 8rem auto;
+  margin: 80px auto;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -225,7 +225,11 @@ section h2 {
   font-size: 1.6rem;
 }
 
-/* Services Page */
+/*----Services Page------*/
+.services-content {
+  margin-top: 40px;
+}
+
 .services-into-text h1 {
   margin: 16px 0;
   font-size: 3rem;
