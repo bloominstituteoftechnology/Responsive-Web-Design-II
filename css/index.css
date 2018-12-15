@@ -68,7 +68,6 @@ html {
 .super-container {
 	margin: 0 auto;
     max-width: 880px;
-    border: 1px solid green;
 }
 header {
 	border-bottom: 2px solid black;
@@ -97,12 +96,10 @@ nav img {
 
 .electric-boogaloo {
 	margin: 5%;
-	/* border: 1px solid rebeccapurple; */
 	display: flex; 
 	justify-content: space-around;
 }
 .marketing {
-	/* border: 1px solid chartreuse; */
 	padding: 5%;
 	display: flex;
 	flex-flow: wrap column;
@@ -125,10 +122,8 @@ button {
 	border-bottom: 3px solid black;
 	width: 100%;
     margin: 0 auto;
-    border: 1px solid crimson;
 }
 .more-info {
-	/* border: 1px solid chartreuse; */
 	display: flex;
 	margin-bottom: 2%;
 }
@@ -146,7 +141,6 @@ button {
 	justify-content: space-between;
 }
 .even-more-info section {
-	/* border: 1px solid crimson; */
 	width: 30%;
 	margin: 20px 0px; 
 }
@@ -156,19 +150,16 @@ p {
 }
 
 footer {
-	/* border: 1px solid rebeccapurple; */
 	width: 100%;
 	margin: 40px auto;
 }
 .contact {
-	/* border: 1px solid chartreuse; */
 	width: 22%;
 }
 .contact p {
 	margin : 5px 0;
 }
 .copyright {
-	/* border: 1px solid crimson; */
 	text-align: center;
 	font-family: cursive;
 }
@@ -185,12 +176,10 @@ footer {
 	.logo-img {
 		order: 1;
 		margin: 5%;
-		/* border: 1px solid crimson; */
 	}
 	.nav-links {
 		order: 2;
 		justify-content: space-between;
-		/* border: 1px solid chartreuse; */
 	}
 	.super-container {
 		width: 93%;
@@ -206,14 +195,12 @@ footer {
 	}
 	footer {
 		width: 93%;
-		/* border: 10px solid chartreuse; */
 	}
 }
 
 @media (max-width: 500px) {
 	.nav-links {
 		flex-flow: column wrap;
-		/* border: 1px solid red; */
 		align-items: center;
 		width: 100%;
 	}
