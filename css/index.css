@@ -111,10 +111,6 @@ footer h2 {
     margin-bottom: 5px;
 }
 
-/*.block {*/
-    /*display: block;*/
-/*}*/
-
 .main-container {
     max-width: 880px;
     margin: 10px auto 0 auto;
@@ -123,11 +119,15 @@ footer h2 {
 .intro {
     padding: 40px 0 0 10%;
     margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .intro-text {
     display: flex;
-    width: 49%;
+    /*width: 49%;*/
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 7.2rem;
@@ -145,6 +145,16 @@ footer h2 {
     background-color: white;
     border: 1px solid black;
     padding: 8px 12%;
+}
+
+.intro img {
+    width: 100%;
+    max-width: 379px;
+    height: auto;
+}
+
+.flexible {
+    width: 49%;
 }
 
 .columnX2, .columnX3 {
@@ -181,7 +191,77 @@ footer h2 {
 }
 
 @media (max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    header nav {
+        margin: 30px 0 0 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header nav a {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    
+    .main-container {
+        width: 75%;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .intro {
+        width: 100%;
+        display: block;
+        padding: 15px 0;
+        margin-bottom: 50px;
+    }
+
+    .intro img, .intro .flexible {
+        display: none;
+    }
+
+    .intro-text {
+        /*align-self: center;*/
+        font-size: 5.5rem;
+        margin: 0 auto;
+    }
+
+    .intro button {
+        padding: 5px 5%;
+    }
+
+    .main-content {
+        padding: 30px 0;
+    }
+
+    .middle-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    footer address, footer p, footer a {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 500px) {
