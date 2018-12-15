@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf=8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="icon" type="image/png" href="/img/header-img.png")
+        title Great Idea! Contact Us
+        link(rel="stylesheet", href="css/index.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web")
+
+    body
+        .container 
+            header
+                nav.nav-container
+                    a(href="index.html")
+                        img(src="img/logo.png", alt="")
+                    a(class="anav" href="services.html") Services
+                    a(class="anav" href="#") Vision
+                    a(class="anav" href="#") Features
+                    a(class="anav" href="#") About
+                    a(class="anav active" href="contacts.html") Contact
+            
+            section.contact-form
+                .contact-message
+                    h1.contact-message-h1 Let's Chat
+                    .divider
+                    p.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, ea?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, nesciunt?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, a.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, 
+                        neque ex atque assumenda accusantium ad nulla numquam sit veritatis adipisci?
+                    
+                    div.blurbs
+                        .test
+                            img.blurbs-img(src="img/p-ico.png", alt="")
+                            p Call us at<br> 1 (888) 888-8888
+                        .test
+                            img.blurbs-img(src="img/l-ico.png", alt="")
+                            p 123 Way 456 Street<br>Somewhere, USA
+                        .test
+                            img.blurbs-img(src="img/e-ico.png", alt="")
+                            p Email us at<br>sales@greatidea.io
+
+            .form-style-6
+                h1 Contact Us
+                form
+                    input(type='text', name='field1', placeholder='Your Name')
+                    input(type='email', name='field2', placeholder='Email Address')
+                    textarea(name='field3', placeholder='Type your Message')
+                    input(type='submit', value='Send')
+
