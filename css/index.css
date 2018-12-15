@@ -147,11 +147,11 @@ h4,
 h5 {
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 1.5%;
 }
 
 .container {
-  width: 880px;
+  width: 88%;
   margin: auto;
 }
 
@@ -163,8 +163,8 @@ header {
 }
 
 header nav {
-  margin-top: 40px;
-  width: 610px;
+  margin-top: 4%;
+  width: 61%;
   justify-content: space-between;
   display: flex;
 }
@@ -181,14 +181,14 @@ header nav a:hover {
 }
 
 header .logo {
-  margin: 28px 0 0 91px;
+  margin: 2.8% 0 0 9.1%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
   display: flex;
-  margin-top: 72px;
+  margin-top: 7.2%;
   justify-content: flex-end;
 }
 
@@ -200,7 +200,7 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 82px 0 0;
+  margin: 0 8.2% 0 0;
 }
 
 .cta .cta-text button {
@@ -208,8 +208,8 @@ header .logo {
   font-size: 1.6rem;
   background: white;
   width: 170px;
-  height: 32px;
-  margin-top: 10px;
+  height: 33px;
+  margin-top: 1%;
   cursor: pointer;
 }
 
@@ -223,9 +223,9 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 75px 0 35px 0;
-  padding: 35px 0;
-  font-size: 16px;
+  margin: 7.5% 0 3.5% 0;
+  padding: 3.5% 0;
+  font-size: 1.6rem;
   line-height: 18px;
 }
 
@@ -235,7 +235,7 @@ header .logo {
 
 .main-content .middle-img {
   display: block;
-  margin: 30px auto;
+  margin: 3% auto;
 }
 
 .main-content .bottom-content {
@@ -243,7 +243,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
 /* Contact Styles */
@@ -253,7 +253,7 @@ header .logo {
 }
 
 .contact p {
-  margin: 15px 0;
+  margin: 1.5% 0;
 }
 
 /* Footer Styles */
@@ -261,7 +261,7 @@ header .logo {
 footer {
   font-size: 1.6rem;
   text-align: center;
-  margin: 40px 0 20px;
+  margin: 4% 0 2%;
 }
 
 /* Tablet */
@@ -275,14 +275,14 @@ footer {
   }
 
   header nav {
-    width: 768px;
-    padding: 0 30px;
+    width: 100%;
+    padding: 0 4%;
   }
 
   header .logo {
     order: -1;
     display: block;
-    margin: 30px auto 0;
+    margin: 4% auto 0;
   }
 
   .cta {
@@ -302,15 +302,15 @@ footer {
   }
 
   .main-content {
-    margin: 75px 20px 35px;
+    margin: 8.5% 3% 4.5%;
   }
 
   .text-content {
-    margin: 0 10px;
+    margin: 0 2%;
   }
 
   .contact {
-    margin: 0 30px;
+    margin: 0 4%;
   }
 }
 
@@ -331,7 +331,7 @@ footer {
     width: 100%;
     display: block;
     text-align: center;
-    padding: 20px 0;
+    padding: 4% 0;
     font-size: 2rem;
     border-bottom: 1px solid gray;
   }
@@ -345,11 +345,11 @@ footer {
   }
 
   header .logo {
-    margin: 20px 0;
+    margin: 4% 0;
   }
 
   .cta {
-    margin-top: 50px;
+    margin-top: 10%;
     flex-flow: column;
     align-items: center;
   }
@@ -375,6 +375,6 @@ footer {
   }
 
   .contact {
-    margin: 20px;
+    margin: 4%;
   }
 }
