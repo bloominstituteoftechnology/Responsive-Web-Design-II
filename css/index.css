@@ -61,8 +61,10 @@ table {
     /* Site fonts */
     --primaryFont: 'Titillium Web', sans-serif;
     --secondaryFont: 'Bangers', sans-serif;
-    /* --primaryFont: 'Karla', sans-serif;
-    --secondaryFont: 'Niconne', cursive; */
+
+    /* Alternate Site Fonts */
+    /* --primaryFont: 'Karla', sans-serif; */
+    /* --secondaryFont: 'Niconne', cursive; */
 }
 
 * {
