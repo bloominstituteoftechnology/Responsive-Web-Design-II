@@ -267,10 +267,6 @@ h2 {
     flex-direction: column;
   }
 
-  /* .hero .inner1 {
-      width: 760px;
-  } */
-
   .hero .inner1:last-child {
     display: none;
   }
@@ -313,7 +309,7 @@ h2 {
 
 .logo-container img {
   max-width: 183px;
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
   .menu {
@@ -338,7 +334,6 @@ h2 {
  }
 
  .cta {
-   /* width: 240px; */
    margin: 0 auto;
    border: 2px solid #c9c9c9;
    padding: 1rem 2.6rem;
