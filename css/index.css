@@ -1,1 +1,510 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+	position: sticky;
+  top: 0;
+	z-index: 2;
+  background: white;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-self: flex-start; 
+  
+}
+
+header nav a {
+  margin: 0 4.5%;
+	text-decoration: none;
+	font-size: 1.5rem;
+  font-weight: bold;
+	color: gray;
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+header #logo-image-wrapper {
+  justify-self: flex-end;
+}
+
+section {
+  line-height: 1.2;
+}
+
+section h2 {
+  font-size: 1.75rem;
+  margin: 10px 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+
+}
+
+.banner #headline {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6.5rem 0 5rem 0;
+  margin: 0 auto;
+	text-align: center;
+  line-height: 1.15;
+}
+
+.banner #headline h1 {
+	font-size: 7rem;
+}
+
+.banner #headline .button {
+	width: 170px;
+	padding: 5px; /*lock button padding size*/
+  border: 1px solid black;
+  font-size: 1.8rem;
+	cursor: pointer;
+}
+
+.banner #hero-image-wrapper {
+  justify-self: flex-end;
+}
+
+.button {
+  transition: transform .2s; 
+}
+
+.button:hover {
+    color: white;
+    background: black;
+    transform: scale(1.15);
+}
+
+.main-content-wrapper {
+  margin: 80px auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.main-content-wrapper article {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.introduction {
+  display: flex;
+}
+
+.introduction .intro-column {
+	width: 44%;
+  margin: 10px 3%;
+}
+
+.introduction .intro-column:first-child {
+  margin-left: 0;
+} 
+
+
+.middle-image-wrapper {
+  margin: 20px auto;
+}
+
+.product-and-services {
+  display: flex;
+  margin: 30px 0;
+}
+
+.product-and-services .p-and-s-column {
+  flex: 0 0 33%;
+}
+
+.contact-info {
+  margin: 20px 0;
+  line-height: 1;
+}
+
+.contact-info a {
+	color: black;
+	text-decoration: none;
+}
+
+.contact-info a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+  margin: 20px 0;
+	bottom: 0;
+	text-align: center;
+  font-size: 1.6rem;
+}
+
+/*----Services Page------*/
+.services-content {
+  margin-top: 40px;
+}
+
+.services-into-text h1 {
+  margin: 16px 0;
+  font-size: 3rem;
+}
+
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  border-top: 1px solid black;
+  margin: 32px auto;
+}
+
+.service-item {
+	flex: 0 0 48%;
+	border: 1px solid black;
+	padding: 16px;
+	margin: 1.5rem 0;
+	background: #F4F3F4;
+}
+
+.svc-button {
+	width: 130px;
+	padding: 4px 32px;
+	margin-top: 1rem;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	background: white;
+	font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.about-services {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid black;
+}
+
+.about-services-text ul {
+	list-style-type: disc;
+	margin: 2.5vw;
+}
+
+.about-services-text, .services-info-img {
+	flex: 0 0 48%;
+	margin: 24px 0;
+}
+
+/*----Contact Us Form----*/
+/* Contact Form */
+.contact-form-instructions {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.contact-form-instructions h1 {
+    font-size: 4rem;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.form-element {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  align-self: flex-start;
+  display: block;
+  margin: 10px 0;
+  font-size: 1.6rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 24px;
+}
+
+.contact-submit-btn {
+  width: 35%;
+  padding: 16px;
+  border-radius: 25px;
+  margin-bottom: 24px;
+  color: white;
+  background: crimson;
+  font-size: 1.6rem;
+  letter-spacing: 0.19rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+/*------RESPONSIVE DESIGN-----*/
+/*------Tablet Design------*/
+@media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+  }
+
+  header nav {
+    justify-content: space-evenly;
+    
+  }
+
+  header nav, header #logo-image-wrapper {
+    margin: 12px 0;
+  }
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  .banner #headline {
+    padding: 0;
+  }
+
+  .banner #hero-image-wrapper {
+    display: none;
+  }
+
+  .main-content-wrapper {
+    padding: 0 2.875%;
+  }
+  
+  .product-and-services {
+    justify-content: space-between;
+  }
+
+  .product-and-services .p-and-s-column {
+	  flex: 0 0 30%;
+  }
+  
+  .about-services-text ul {
+    margin: 3vw;
+  }
+
+  .contact-form-instructions {
+    font-size: 2rem;
+  }
+
+  .contact-form-instructions h1 {
+    font-size: 3rem;
+  }
+
+  .contact-submit-btn {
+    width: 40%;
+  }
+
+}
+
+/*------Mobile Design------*/
+@media (max-width: 500px) {
+
+  header {
+    flex-direction: column-reverse;
+    position: static;
+  }
+  
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid gray;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid gray;
+  }
+
+  header #logo-image-wrapper {
+    margin: 0;
+  }
+
+  .banner {
+    margin-bottom: 3rem;
+  }
+
+  /* Shrink container (inherit padding settings) */
+  .main-content-wrapper {
+    width: 98%;
+    font-size: 1.45rem;
+  }
+
+  /* Shrink entire container (no padding) */
+  /* .main-content-wrapper {
+    width: 92%;
+    padding: 0;
+    font-size: 1.45rem;
+  } */
+
+  .introduction, .product-and-services {
+    flex-direction: column;
+  }
+
+  .introduction .intro-column {
+    width: 100%;
+    margin: 0;
+  }
+
+  .introduction .intro-column, .product-and-services .p-and-s-column {
+    margin: 20px 0;
+  }
+
+  .footer {
+    font-size: 1.45rem;
+  }
+
+  .services-list {
+    flex-direction: column;
+  }
+
+	.about-services {
+		flex-direction: column-reverse;
+		align-items: center;
+  }
+  
+  .about-services-text ul {
+    margin: 4vw;
+  }
+
+  .contact-form {
+    width: 98%;
+  }
+
+  .contact-form-instructions {
+    font-size: 1.4rem;
+  }
+
+  .contact-form-instructions h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-submit-btn {
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+}
