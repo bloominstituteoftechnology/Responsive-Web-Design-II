@@ -158,8 +158,8 @@ button {
   font-size: 1.7rem;
   border: 1px solid black;
   width: 55%;
-  padding: .7rem 0;
-  margin-top: 1.75rem;
+  padding: .6rem 0;
+  margin-top: 2.5rem;
   margin-right: 1rem;
 
 }
@@ -199,7 +199,7 @@ button:hover {
 .middleIMG{
   max-width: 88rem;
   width: 100%;
-  padding: 3rem 0;
+  padding: 2.9rem 0;
 
 }
 
@@ -216,29 +216,36 @@ button:hover {
   width: 32%;
 }
 
-
 footer {
   border: 1px solid green;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
+}
+
+footer address {
+  font-size: 1.6rem;
+}
+
+footer address h2 {
+  border: 1px solid rebeccapurple;
+}
+
+footer address .phone {
+  padding: 1.2rem 0;
+}
+
+footer address .email {
+  padding: .5rem 0;
+}
+
+footer .copyright {
+  border: 1px solid blue;
+  text-align: center;
+  font-size: 1.45rem;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 3.8rem 0;
 }
 
 
-address {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-}
-
-.phone {
-  padding: 25px 0;
-}
-
-h4 {
-  display: flex;
-  justify-content: center;
-  padding: 45px;
-}
 
 /* ######    BREAK 800px    #########  */
 @media (max-width: 800px) {
@@ -333,22 +340,4 @@ h4 {
 
 }
 
-footer address {
-  font-size: 1.6rem;
-}
 
-footer address h2 {
-  border: 1px solid rebeccapurple;
-}
-
-footer address .phone {
-  padding: 1.2rem 0;
-}
-
-footer address .email {
-  padding: .5rem 0;
-}
-
-footer .footer-logo {
-  padding: .5rem 0;
-}
