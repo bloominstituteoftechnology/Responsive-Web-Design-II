@@ -71,6 +71,8 @@ html{
 
 .bodycontainer{
     width: 100%;
+
+    
 }
 
 /*~~~~~~~~~~~~~~~~~ Nav Bar~~~~~~~~~~~~~~~*/
@@ -78,6 +80,7 @@ html{
     display: flex;
     justify-content: space-between;
     align-content: space-around;
+    align-items: baseline;
 
 }
 .barcontainer{
@@ -85,11 +88,11 @@ html{
     display: flex;
     
     justify-content: space-evenly;
-	font-size: 12px;
+	font-size: 1.2rem;
     background: white;
     align-items: flex-end;
     /* border: 2px dashed green; */
-    width: 1150px;
+    width: 100%;
 	
 }
 .bar{
@@ -108,18 +111,18 @@ html{
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 .innov h1{
-    font-size: 70px;
+    font-size: 7rem;
     text-align: center;
 }
 
 .start{
     border: 1px solid black;
-    height: 30px;
+    height: 3rem;
     text-align: center;
 }
 
@@ -132,7 +135,7 @@ html{
     justify-content: space-evenly;
     border-top: 1px solid black;
     line-height: 1.2;
-    font-size: 20px;
+    font-size: 2rem;
     padding-top: 30px;
     
 }
@@ -212,15 +215,19 @@ html{
     
     .header{
         flex-direction: column;
+        border: 1px solid red;
+        align-items: center;
     }
 
     .logocontainer{
         display: flex;
         justify-content: center;
         align-items: center;
+
         order: -1;
         padding-bottom: 30px;
         margin-top: 25px;
+        border: 1px solid lightseagreen;
         
     }
 
@@ -239,15 +246,16 @@ html{
     }
 
     .topcontainer{
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
+    .banner{
+        max-width: 800px;
+        width: 100%;
+        border: 10px dashed darkblue;
+    }
     .middleimg{
-       margin-left: 0px;
-        width: 70%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 420px;
+        
     }
 
 
