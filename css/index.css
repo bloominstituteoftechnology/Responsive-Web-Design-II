@@ -1,1 +1,566 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	font-size: 62.5%;
+	overflow: scroll;
+}
+
+body {
+	max-width: 880px;
+	margin: auto;
+	position: relative;
+}
+
+header {
+	width: 100%;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3%;
+}
+
+.header-top nav {
+	font-size: 1.255rem;
+	width: 68.8%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0.5%;
+}
+
+.header-btm {
+	display: flex;
+	justify-content: flex-end;
+    margin-top: 8%;
+}
+
+.left {
+	align-self: flex-start;
+	justify-self: flex-end;
+	width: 50%;
+	display: flex;
+    flex-direction: column;
+}
+
+.logo {
+	align-self: center;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #b9b9b9;
+}
+
+.left>h1 {
+	font-size: 5.78rem;
+	line-height: 1;
+	text-align: center;
+	margin-top: 12%;
+	margin-right: 4%;
+}
+
+.services-main>h1 {
+	font-size: 2.6rem;
+	line-height: 0.95;
+	text-align: left;
+} 
+
+button {
+	border: 1px solid black;
+	font-size: 1.25rem;
+	cursor: pointer;
+	padding: 1.3% 9.5%;
+	align-self: center;
+	background-color: white;
+	margin-top: 2.5%;
+	margin-right: 3.5%;
+}
+
+button:hover,
+section>a {
+	color: white;
+	background-color: black;
+	transition: background-color ease-out 0.5s;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 880px;
+	justify-content: flex-start;
+	padding: 4.3% 0 4% 0;
+	margin: 8.5% 0 1% 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+section>a {
+	text-decoration: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 30px;
+	width: 120px;
+	font-size: 1.2rem;
+	color: black;
+	background-color: white;
+}
+
+main p {
+	font-size: 1.28rem;
+	line-height: 1.15;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+.features,
+.about {
+	width: 50%;
+}
+
+.middle-img {
+	margin: 3.3% 0 3.6% 0;
+}
+
+.services,
+.product {
+	width: 31.2%;
+	margin-right: 2.2%;
+}
+
+.vision {
+	width: 31.2%;
+}
+
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+	margin-top: 20px;
+	line-height: 2;
+}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 4%;
+	font-size: 1.6rem;
+}
+
+.contact,
+.contact>a {
+	line-height: 1;
+	font-size: 1.28rem;
+}
+
+.some-facts {
+	width: 48%;
+}
+
+main {
+	border-bottom: 2px solid black;
+}
+
+.copyright {
+	text-align: center;
+	display: flex;
+	padding-top: 4.52%;
+	justify-content: center;
+	font-size: 1.28rem;
+	width: 100%;
+}
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-main {
+	padding-top: 30px;
+	height: 170px;
+	border-bottom: 2px solid black;
+}
+
+.item a {
+	align-self: left;
+	margin-top: 20px;
+	text-align: center;
+	padding: 8px 0;
+}
+
+.item h2 {
+	align-self: flex-start;
+}
+
+.item {
+	width: 48%;
+	margin: 40px 0;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 20px;
+	background-color: #ececec;
+}
+
+.btm-services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contact>a {
+	text-decoration: none;
+	border: none;
+}
+
+
+/* <-- NO PERCENTAGE --> */
+
+
+/* Tablet Styles */
+@media(max-width: 800px) {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.right {
+		display: none;
+	}
+
+	body {
+		margin: 0 auto;
+		width: 100vw;
+	}
+
+    header {
+        display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+    }
+
+
+    .header-top {
+        display: flex;
+		flex-direction: column-reverse;
+		margin-top: 3.8%;
+	}
+	
+	.header-top nav {
+		display: flex;
+		justify-content: space-between;
+		width: 88.1vw;
+		margin: 5% auto 0 4%;
+	}
+
+	.header-top nav a {
+		text-align: center;
+	}
+
+	.header-btm {
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.left h1 {
+		margin: 2% auto;
+		padding: 0
+	}
+
+	.left button {
+		margin: 4.5% 2%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.container {
+		width: 95vw;
+		margin: 7.3% auto 4.4% auto;
+		padding-top: 4.5%; 
+		padding-bottom: 4.5%;
+		justify-content: space-between;
+	}
+
+	.features,
+	.about {
+		width: 45vw;
+		margin: 0 auto;
+	}
+
+	.middle-img {
+		width: 95vw;
+		height: 19.5vw;
+		margin: 4% auto 4.4% auto;
+	}
+
+	.services {
+		width: 27vw;
+		margin-left: 1.4%;
+	}
+
+	.product {
+		width: 27vw;
+	}
+
+	.vision {
+		width: 27vw;
+		margin-right: 3.5%;
+	}
+
+	footer {
+		width: 92.5vw;
+		margin: 0 auto;
+	}
+
+	.copyright {
+		padding-top: 5%;
+	}
+
+	/* Services Styles */
+
+	.services-container {
+		width: 700px;
+		margin: 0 auto 50px auto;
+	}
+
+	.services-header-img {
+		width: 700px;
+		margin: 40px auto;
+	}
+
+	.services-container {
+		margin-top: -50px;
+	}
+
+	.some-facts {
+		width: 280px;
+	}
+
+	.services-info-img {
+		width: 400px;
+	}
+}
+
+/* Mobile Styles */
+@media(max-width: 500px) {
+	* {
+		margin: 0; 
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100%;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	.header-top {
+		width: 100%;
+	}
+
+	.logo {
+		margin: auto;
+	}
+
+	.header-btm {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.left {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header-top nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		border-top: 1px solid #b9b9b9;
+		margin: 4.2% auto 2% auto;
+	}
+
+	.header-top nav a {
+		border-bottom: 2px solid #b9b9b9;
+		width: 100%;
+		text-align: center;
+		font-size: 1.6rem;
+		padding: 4% 0;
+		margin: auto;
+
+	}
+
+	.container {
+		width: 95%;
+		margin: 11% auto 7% auto;
+		padding-top: 12.5%;
+		padding-bottom: 0;
+	}
+
+	.left h1 {
+		margin: 0 auto;
+	}
+
+	.left button {
+		margin-left: calc(50vw - 50%);
+		margin-top: 5.1%;
+		padding: 1.25% 8.5%;
+	}
+
+	.middle-img {
+		width: 100%;
+		height: 15.9%;
+		margin-top: 1.5%;
+		margin-bottom: 6.7%;
+	}
+
+	.features,
+	.about {
+		padding-bottom: 10%;
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	.services,
+	.product,
+	.vision {
+		padding-bottom: 14%;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.vision {
+		padding-bottom: 8%;
+	}
+
+	footer {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.contact {
+		margin-bottom: 3.5%;
+	}
+
+	/* Services Styles */
+
+	.services-container {
+		width: 480px;
+		margin: 0 auto 50px auto;
+		padding-bottom: 40px;
+	}
+
+	.services-header-img {
+		width: 500px;
+		margin: 10px auto 40px auto;
+	}
+
+	.services-container {
+		margin-top: -50px;
+	}
+
+	.services-main {
+		height: 200px;
+	}
+
+	.some-facts {
+		width: 480px;
+	}
+
+	.some-facts>ul {
+		display: flex;
+		font-size: 1.4rem;
+		justify-content: space-around;
+		margin-bottom: 30px;
+	}
+
+	.services-info-img {
+		width: 480px;
+	}
+
+	.item {
+		margin-bottom: 10px;
+	}
+}
