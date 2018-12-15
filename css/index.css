@@ -126,6 +126,10 @@ header .logo {
     color: white;
 }
 
+.middle-img {
+	max-width: 100%;
+}
+
 
 .main-content {
    border-top: 2px solid black; 
@@ -181,14 +185,14 @@ footer {
     }
   
     header nav {
-        width: 768px;
-        padding: 0 30px;
+        width: 100%;
+        padding: 0 5%;
     }
 
     header .logo {
         order: -1;
         display: block;
-        margin: 30px auto 0;
+        margin: 3% auto 0;
     }
 
     .cta {
@@ -208,15 +212,15 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 10% 3% 5%;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 1%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 0 3%;
     }
 }
 
@@ -238,8 +242,8 @@ footer {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 3% 0;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
@@ -252,11 +256,11 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+        margin: 3% 0;
     }
 
     .cta {
-        margin-top: 50px;
+        margin-top: 10%;
         flex-flow: column;
         align-items: center;
     }
@@ -274,14 +278,19 @@ footer {
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
-        height: 440px;
+        height: 20%;
     }
 
     .text-content {
-        margin: 0;
+        margin: 3%;
     }
 
     .contact {
-        margin: 20px;
+        margin: 3%;
+    }
+
+    footer p{
+    	font-size: 1.3rem;
+    	padding-bottom: 2%;
     }
 }
