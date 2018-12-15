@@ -75,7 +75,8 @@ html {
 }
 
 body {
-    max-width: 975px;
+    /* max-width: 975px; */
+    max-width: 880px;
     padding: 0px 25px 0px 25px;
 }
 
@@ -228,16 +229,28 @@ footer {
         flex-direction: column-reverse;
         
     }
-    .container-nav { 
 
+    .container-nav nav {
+        width: 100%;
+        justify-content: space-between;
+
+        padding: 45px 0px 0px 0px;
     }
-    
-        .container-nav nav {
-            flex-grow:1;
-        }
-    
+
+    .container-nav nav a {
+        
+    }
+
     .container-header img {
         display: none;
+    } 
+
+    .content-container .middle-img {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        padding-left: 0px;
     }
 }
 
