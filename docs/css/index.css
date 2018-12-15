@@ -153,10 +153,6 @@ footer h2 {
     height: auto;
 }
 
-.flexible {
-    width: 49%;
-}
-
 .columnX2, .columnX3 {
     display: flex;
     justify-content: space-between;
@@ -241,23 +237,28 @@ footer h2 {
 
     .intro {
         width: 100%;
-        display: block;
+        display: flex;
+        flex-wrap: nowrap;
         padding: 15px 0;
         margin-bottom: 50px;
     }
 
-    .intro img, .intro .flexible {
-        display: none;
+    #header-img {
+        animation-name: rolling-out;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     }
 
     .intro-text {
-        /*align-self: center;*/
         font-size: 5.5rem;
         margin: 0 auto;
     }
 
     .intro button {
-        padding: 5px 5%;
+        animation-name: button-padding;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        /*padding: 5px 5%;*/
     }
 
     .main-content {
@@ -347,4 +348,20 @@ footer h2 {
         width: 95%;
     }
 
+}
+
+@keyframes rolling-out {
+    from {
+        transform: scale(1) rotate(0deg);
+    }
+    to {
+        transform: scale(0) rotate(180deg);
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes button-padding {
+    from { padding: 8px 12%; }
+    to { padding: 5px 5%; }
 }
