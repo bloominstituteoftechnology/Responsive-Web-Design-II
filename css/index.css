@@ -73,7 +73,7 @@ html{
     font-size: 1.6rem;
     max-width: 880px;
     margin: 0 auto;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
 }
 
 p{
@@ -96,18 +96,18 @@ p{
 	font-size: 1.2rem;
     background: white;
     align-items: flex-end;
-    border: 2px dashed green;
+    /* border: 2px dashed green; */
     width: 100%;
 	
 }
 .bar{
     color: grey;
-    border: 2px dashed blue;
+    /* border: 2px dashed blue; */
 }
 
 .logocontainer{
     
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
 }
 
 
@@ -150,7 +150,7 @@ p{
     width: 50%;
     padding-left: 0px;
 
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
 }
 
 /*~~~~~~~~~~~~~~~~~ img banner~~~~~~~~~~~~~~~*/
@@ -162,9 +162,8 @@ p{
     width: 100%;
     margin: 20px 0;
 }
-.middleimg{
 
-}
+
 
 /*~~~~~~~~~~~~~~~~~ bottom content~~~~~~~~~~~~~~~*/
 
@@ -173,7 +172,7 @@ p{
     justify-content: space-evenly;
     border-bottom: 2px solid black;
     line-height: 1.2;
-    font-size: 20px;
+    padding-bottom: 20px;
     flex-basis: 100%;
     align-items: center;
 }
@@ -181,7 +180,7 @@ p{
 .bot{
     width: 33.3%;
     
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
 }
 
 /*~~~~~~~~~~~~~~~~~ footer~~~~~~~~~~~~~~~*/
@@ -189,18 +188,17 @@ p{
 .contactinfo{
     display: flex;
     flex-direction: column;
-
     justify-content: space-evenly;
-    border: 1px solid aqua;
+    padding-top: 20px;
+    /* border: 1px solid aqua; */
 }
-
-
 
 .footer{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .numba{
@@ -219,7 +217,7 @@ p{
     
     .header{
         flex-direction: column;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         align-items: center;
     }
 
@@ -231,7 +229,7 @@ p{
         order: -1;
         padding-bottom: 30px;
         margin-top: 25px;
-        border: 1px solid lightseagreen;
+        /* border: 1px solid lightseagreen; */
         
     }
 
@@ -246,33 +244,27 @@ p{
         max-width: 800px;
         width: 95%;
         padding-left: 2.5%;
-
-    }
-
-    .topcontainer{
-        font-size: 1.4rem;
     }
 
     .banner{
         max-width: 800px;
         width: 100%;
-        border: 10px dashed darkblue;
+        /* border: 10px dashed darkblue; */
     }
+    
     .middleimg{
-        
+        width: 100%;
     }
 
-
-    .botcontainer{
-        font-size: 14px;
-    }
 }
 
 /*~~~~~~~~~~~~~~~~~ Mobile~~~~~~~~~~~~~~~*/
 @media (max-width: 500px){
 
     .bodycontainer{
-        /* background-color: lightpink; */
+        /* background-color: pink; */
+        width: 100%;
+        max-width: 500px;
 
     }
 
@@ -282,8 +274,9 @@ p{
 
     .bar{
         padding: 20px 0;
-        width: 475px;
-        padding-left: 200px;
+        width: 100%;
+        max-width: 500px;
+        padding-left: 40%;
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
     }
@@ -299,38 +292,58 @@ p{
     .barcontainer{
         display: flex;
         flex-direction: column;
-        width: 480px;
+        width: 100%;
         align-items: center;
-        font-size: 20px;
+        font-size: 2rem;
     }
 
     .topcontainer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 480px;
+        width: 95%;
+        margin: 0 auto;
     }
     
     .top{
-        width: 460px;
+        width: 100%;
+    }
+
+    .toptwo{
+        margin-top: 20px;
     }
 
     .middleimg{
-        width: 480px;
-        margin-right: auto;
+        width: 95%;
+        margin-left: 2.5%;
     }
+
 
     .botcontainer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 480px;
-        height: 400px;
+        width: 95%;
+        margin: 0 auto;
+       
     }
     
     .bot{
-        width: 460px;
-        margin: 5px 0;
+        width: 100%;
+        
+    }
+
+    .bottwo{
+        margin-top: 50px;
+    }
+
+    .botthree{
+        margin-top: 50px;
+    }
+
+    .contactinfo{
+        margin: 0 auto;
+        width: 95%;
     }
 
 }
