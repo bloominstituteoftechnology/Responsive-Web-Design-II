@@ -56,6 +56,7 @@
    justify-content: space-between;
    align-items: center;
    text-align: center;  
+  
   }
   .iod .iod-text h1 {
       font-size: 6rem;
@@ -110,11 +111,10 @@
     text-align: center;
   }
   
-  /* @Media*/
   
 @media (max-width:800px){
     .container {
-        width: 95%;
+        width: 100%;
         margin: auto;  
     }
     header {
@@ -125,74 +125,71 @@
     }
     .logo {
        text-align: center;
-        width: 35%;
+        width: 40%;
         margin-left: 30%;
-        margin-bottom: 3%;
+        margin-bottom: 5%;
     }
     nav {
         display: flex;
         justify-content: space-around;
     }
-    .iod img {
-        display: none;
-    }
+
     .iod {
         display: flex;
         justify-content: center;
     }
+    .iod img {
+        display: none;
+    }
     .top-content .text-content {
-        width: 370px;
+        width: 48%;
     }
     .middle-img {
-        width: 760px;
+        max-width: 100%;
     }
     .bottom-content .text-content {
-        width: 230px;
+        width: 30%;
     }
 }
 
   @media (max-width:500px){
       .container {
-         width: 460px;
-         margin:0 auto;
+         width: 100%;
+         margin: auto;
       }
     header {
-        width: 460px;
+        width: 100%;
         border-bottom: 1px solid gray;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: flex-end;
-        margin-top: 20px;
+        margin-top: 1%;
       }
       header nav {
         display: flex;
         flex-direction: column;
         align-content: center;
-        margin-left: 27px;
-        /* border: 1px solid red; */
-        
-       
-        
+        margin-left: 5%;   
       }
       header nav a {
         text-decoration: none;
         color:gray;
-        font-size: 20px;
+        font-size: 2rem;
         padding: 25px 190px;
         border-top: 1px solid gray;
         text-align: center;
        
       }
       .logo {
-          width: 230px;
-          margin: 20px 0px;
+          width: 50%;
+          margin: 5% 0%;
       }
       .iod img {
           display: none;
       }
       .iod {
-          width: 460px;
+          width: 100%;
           display: flex;
           align-items: center;  
       }
@@ -202,23 +199,20 @@
           flex-direction: column;
       }
       .top-content .text-content{
-          width:  460px;
-          margin-top: 10px;
+          width:  100%;
+          margin-top: 1%;
       }
       
       .middle-img {
-          width: 460px;
+          max-width: 100%;
       }
       .bottom-content {
           display: flex;
           flex-direction: column;
-          padding-bottom: 30px;
+          padding-bottom: 5%;
       }
       .bottom-content .text-content {
-         width:  460px;
-         /* margin: 10px 0px 0px 5px; */
+         width: 100%;
       }
-      .contact {
-          margin-left: 5px;
-      }
+    
   }
