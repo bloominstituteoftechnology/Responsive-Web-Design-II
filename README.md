@@ -1,3 +1,7 @@
+# Website URL
+https://natureboi.github.io/Responsive-Web-Design-II/contacts.html
+
+
 # Responsive-Web-Design: Fully Responsive
 
 You have experienced building fixed layout web pages, adaptive web pages, and now it's time to go fully responsive!  Using your new knowledge with responsive units, contstraints, and media queries you are now prepared to take on today's fully reponsive website project.
@@ -23,7 +27,7 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 * [X] Build the services page from earlier assignments into a responsive design using your own creativity
 * [ ] [Look at BEM](http://getbem.com/) and convert your existing CSS into the appropriate selectors.
 * [X] Introduce CSS animations at different break points across your site
-* [ ] Build another page based on one of the navigation items and use your creativity on how it looks.
+* [X] Build another page based on one of the navigation items and use your creativity on how it looks.
 
 
 
