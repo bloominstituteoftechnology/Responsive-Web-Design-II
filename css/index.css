@@ -195,3 +195,49 @@ p, h2 {
         margin:0 auto;
     }
 }
+/*mobile size*/
+@media (max-width: 500px){
+    body{
+        width: 100%;
+    }
+    .navigation{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navi{
+        color: gray;
+        border: .02rem solid grey;
+        width: 100%;
+        border-radius: 0;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .break{
+        margin: 2rem 0;
+    }
+    .navi-header h1{
+        font-size: 5rem;
+    }
+    .header-img{
+        display: none;
+    }
+    .top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    .copyright{
+        text-align: center;
+    }
+}
