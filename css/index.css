@@ -328,9 +328,8 @@ hr {
 	line-height: 13em;
     right: -18px;
     justify-items: center;
-   
 	top: 26px;
-	width: 470px;
+	
     
 	}
 	nav a{
@@ -348,25 +347,26 @@ hr {
 	header img {
 		right: 114px;
 		top: -30px;
-		max-width: 197px;
-		max-height: 61px;
-	
+	    max-width: 40.7%;
 		}
+
 		.start{
 			width: 117%;
 			padding-bottom: 10.5%;	
 		}
 		.start section h1 { 
-			font-size: 8rem;
+			font-size: 7.5rem;
 		}
 		.g-button {
 			position: relative;
-			left: 19px;
+			left: 14px;
 			top: 73px;
 			width: 40.8%;
 			height: 24px;
 		}
-
+    .main{
+		width: 117%;
+	}
 	#features, #about {
 	text-align: left;
     flex-direction: column;
@@ -382,7 +382,7 @@ hr {
 
 	#about {
 		position: relative;
-		right: 23px;
+		right: 7px;
 	}
 
 
@@ -397,7 +397,7 @@ hr {
 			display: block;
 			width: 87%;
 			height: 10%;
-			right: -6px;
+		    right: -17px;
 		}
 		#contact{
 			display: flex;
@@ -406,10 +406,13 @@ hr {
 			margin-bottom: 40px;
 			position: relative;
 			right: -6px;
-			width: 470px;
+			
 			
 		}
 		footer{
-			width: 470px;
+			position: relative;
+			right: -65px;
+			font-size: 1.4rem;
+		
 		}
 	}
