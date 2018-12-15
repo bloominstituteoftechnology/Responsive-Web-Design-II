@@ -302,15 +302,30 @@ address {
   }
   .nav {
     flex-direction: column-reverse;
-    align-items: center;
+  }
+
+  .nav img {
+    margin-right: 0;
   }
 
   .nav nav {
-    width: 90%;
+    align-self: flex-start;
+    justify-content: space-between;
+    width: 98%;
+    padding: 0 2%;
+  }
+
+  .nav nav a {
+    font-size: 1.6rem;
   }
 
   .nav img {
     margin-bottom: 40px;
+  }
+
+  header {
+    margin-top: 15px;
+    margin-bottom: 72px;
   }
 
   .header-left {
@@ -319,10 +334,15 @@ address {
   }
 
   .header-left h1 {
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
     padding-left: 0;
+    margin-bottom: 30px;
   }
 
   .header-left a {
+    width: 60%;
+    height: 35px;
     margin-left: 0;
   }
   .header-right {
@@ -332,5 +352,50 @@ address {
   main {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    padding-top: 35px;
+    padding-bottom: 5px;
+  }
+
+  main section {
+    margin-bottom: 32px;
+  }
+
+  .main-top p {
+    line-height: 1.8rem;
+  }
+
+  main section img {
+    height: 50%;
+  }
+
+  .main-middle_img {
+    margin-bottom: 30px;
+  }
+
+  .main-bottom {
+    justify-content: space-between;
+    padding-right: 1.5%;
+  }
+
+  .main-bottom div {
+    line-height: 1.8rem;
+    width: 23rem;
+  }
+
+  footer {
+    padding-top: 35px;
+  }
+
+  address {
+    margin-bottom: 15px;
+  }
+
+  .phone-email {
+    height: 48px;
+  }
+
+  .copyright {
+    margin-top: 40px;
+    font-size: 1.6rem;
   }
 }
