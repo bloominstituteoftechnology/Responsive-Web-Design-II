@@ -89,7 +89,7 @@ header nav a {
     text-decoration: none;
 	color: #b0b0b0;
 	font-size: 1.6rem;
-	padding: 40px 0 0 40px;
+	padding: 7% 0 0 7%;
 }
 
 header nav a:hover {
@@ -100,7 +100,7 @@ header nav a:hover {
 header .logo {
 	
   	max-width:288px;
-	margin: 28px 0 0 0;
+	margin: 5% 0 0 0;
 	align-self:flex-start;
 	padding: 0 30px 0 30px;
 	
@@ -110,7 +110,7 @@ header .logo {
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 15%;
     justify-content: flex-end;
 }
 
@@ -194,7 +194,7 @@ footer {
     font-size: 1.6rem;
 }
 
-/* Tablet 
+
 @media (max-width: 800px) {
 
     .container {
@@ -212,7 +212,6 @@ footer {
 
     header .logo {
         order: -1;
-        display: block;
         margin: 30px auto 0;
     }
 
@@ -243,9 +242,10 @@ footer {
     .contact {
         margin: 0 30px;
     }
+
 }
 
-/* Phone 
+
 @media (max-width: 500px) {
 
     header {
@@ -310,5 +310,3 @@ footer {
         margin: 20px;
     }
 }
-
-*/
