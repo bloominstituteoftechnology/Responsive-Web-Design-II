@@ -150,7 +150,7 @@ header .logo {
     padding-top: 5%;
     padding-left: 3%;
     margin-top: 3%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("/img/about-banner.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("img/about-banner.jpg");
 }
 
 .cta-about h1{
