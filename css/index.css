@@ -241,6 +241,7 @@ h2 {
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
+    width: 100%;
   }
 
   .menu {
@@ -295,11 +296,15 @@ h2 {
 
 @media screen and (max-width: 500px) {
 
+  .container {
+    width: 100%;
+  }
+
   nav {
       display: flex;
       align-items: stretch;
       width: 100%;
-      padding-top: 3%;
+      padding-top: 5%;
   }
 
 .logo-container {
@@ -349,6 +354,10 @@ h2 {
 .inner1, .inner2 {
   max-width: 100%;
   padding: 0 1.5rem;
+}
+
+address {
+  padding-left: 2rem;
 }
 
 }
