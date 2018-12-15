@@ -57,9 +57,15 @@ h1, h2, h3, h4, h5 {
 
 /* My CSS code starts here */
 
+html {
+    font-size: 62.5%;
+}
+
+
+
 .container {
 	/* border: 1px solid red; */
-	width: 876px;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
