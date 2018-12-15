@@ -67,67 +67,67 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	position: relative;
+	/* position: relative; */
 	margin: 0 auto;
 	max-width: 880px;
+	border: 1px solid red;
 }
 
 .nav-area {
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 15px;
+	border: 1px solid green;
 }
 
 nav {
-	width: 876px;
-    /* height: 65px; */
-	margin-top: 20px;
+	width: 100%;
+	margin-top: 23px;
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
+	justify-content: flex-start;
+	/* align-items: flex-start; */
 }
 
 nav a {
 	color: rgb(160, 160, 160);
+	width: 18%;
 	text-decoration: none;
-	text-align: center;
+	text-align: left;
 }
 
 .nav-area img {
-	width: 183px;
-	height: 36px;
 	margin-top: 10px;
 }
 
 header {
 	display: flex;
 	justify-content: flex-end;
-	padding: 45px 0px 80px 0px;
-	border-bottom: 2px solid black;
+	padding: 70px 0px;
+	border-bottom: .15rem solid black;
 }
 
 .header-content {
 	display: flex;
+	width: 50%;
 	flex-direction: column;
-	justify-content: center;
-	width: 380px;
-	height: 380px;
-	font-size: 70px;
+	align-items: center;
 	text-align: center;
+	font-size: 4.5rem;
+	padding-top: 55px;
+	border: 1px solid blue;
 }
 
-.header-image {
-	width: 380px;
-	height: 380px;
+.header-image img {
+	max-width: 379px;
+	width: 100%;
 }
 
 .header-content a {
 	text-decoration: none;
 	font-size: 14px;
 	border: 1px solid gray;
-	width: 170px;
-	height: 35px;
-	margin: 20px auto;
+	width: 40%;
+	margin: 20px;
 	text-align: center;
 	padding-top: 10px;
 	color: black; 
@@ -140,6 +140,7 @@ header {
 }
 
 .top-row {
+	width: 100%;
 	margin-top: 35px;
 	display: flex;
 	justify-content: space-around;
@@ -147,11 +148,15 @@ header {
 }
 
 .top-row-content {
+	width: 50%;
 	padding-right: 10px;
+	border: 1px solid purple;
 }
 
 .content img {
-	padding: 35px 0px 30px 0px;
+	padding: 35px 0px;
+	max-width: 876px;
+	width: 100%;
 }
 
 .bot-row {
@@ -162,12 +167,14 @@ header {
 }
 
 .bot-row-content {
+	width: 33.33%;
 	padding-right: 10px;
+	border: 1px solid brown;
 }
 
 .contact {
 	padding-top: 40px;
-	border-top: 2px solid black;
+	border-top: .15rem solid black;
 }
 
 .contact p {
@@ -185,7 +192,6 @@ footer {
 
 	.container {
 		margin: 0 auto;
-		width: 750px;
 	}
 
 	.nav-area {
@@ -214,17 +220,22 @@ footer {
 		display: none;
 	}
 
-	.content img {
-		padding: 35px 0px 30px 0px;
-		width: 750px;
+	.top-row-content {
+		padding: 0% 1.5%;
 	}
 
-	.top-row-content {
-		padding: 0px 10px 0px 10px;
+	.content img {
+		/* max-width: 800px; */
+		width: 100%;
 	}
 
 	.bot-row-content {
-		padding: 0px 10px 0px 10px;
+		padding: 0% 1.5%;
+		/* margin: 33.33%; */
+	}
+
+	.contact {
+		padding-left : 1.5%;
 	}
 }
 
@@ -232,7 +243,7 @@ footer {
 
 @media (max-width: 500px) { 
 	.container {
-        max-width: 450px;
+
 	}
 
 	nav {
@@ -253,18 +264,14 @@ footer {
 		padding: 15px 0px 0px 0px;
 	}
 
-	.content img {
-		padding: 15px 0px 15px 0px;
-		width: 450px;
-	}
-
 	.top-row {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.top-row-content {
-		padding: 20px 0px 20px 0px;
+		padding: 20px 0px;
+		width: 100%;
 	}
 
 	.bot-row {
@@ -273,7 +280,8 @@ footer {
 	}
 
 	.bot-row-content {
-		padding: 20px 0px 20px 0px;
+		padding: 20px 0px;
+		width: 100%;
 	}
 }
 
