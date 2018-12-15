@@ -103,8 +103,7 @@ footer { margin: 24px 0 0 0; padding: 24px 0 12px 0; }
 	margin: 0 -12px; }
 .item-gallery { 
 	padding: 24px;
-	margin: 24px 12px 0px 12px;
-	border: 1px solid #acacac; }
+	margin: 24px 12px 0px 12px; }
 .item-tight { flex: 1 1 auto; align-self: center; }
 .item img { margin-right: -12px; max-width: 50vw; }
 
@@ -125,6 +124,7 @@ h1 .one-word-per-line { line-height: 0.75;  }
 	margin: 16% 0 5% 0;
 	text-align: center; }
 img.jumbo-img { width: 100%; }
+img.about-img { width: 100%; }
 h4.graffiti {
 	transform: scale(40, 60) rotate(-4deg);
 	color: #303030;
@@ -133,6 +133,8 @@ h4.graffiti {
 	left: 50vw;
 	letter-spacing: -0.4px;
 	z-index: -1; }
+img.jumbo-jumbo-img { width: 100%; }
+
 
 
 /* Lists ********************************/
