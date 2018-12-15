@@ -8,8 +8,8 @@ header {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2.3rem;
-    width: 90.0rem;
+    margin-top: 2.5%;
+    width: 102.27273%;
 }
 /*==\/==TOP NAVIGATION==\/=*/
 .header__logo {
@@ -24,7 +24,7 @@ header {
     align-items: center;
     display: flex;
     height: 5.0rem;
-        width: 60.6rem;
+        width: 67.37%;
     justify-content: space-between;
     order: 1;
 }
@@ -41,7 +41,7 @@ header {
     flex-direction: column;
     height: 27.3rem;
     justify-content: space-between;
-    margin: 6.3rem 0 0 12.8rem;
+    margin: 6.3rem 0 0 14.22%;
     order: 3;
 }
 .header__banner__text {
@@ -55,15 +55,15 @@ header {
     color: #000;
     font-family: "Titillium Web", sans-serif;
     font-size: 1.7rem;
-    padding: .7rem 4.2rem .6rem 4.4rem;
+    padding: .7rem 14.53% .6rem 15.22%;
     text-align: center;
     text-decoration: none;
 }
 .header__image {
     background-image: url(../img/header-img.png);
     height: 37.9rem;
-        width: 37.9rem;
-    margin: 6.3rem 0 0 8.4rem;
+        width: 42.11%;
+    margin: 6.3rem 0 0 9.33%;
     order: 4;
 }
 /*==/\=======HEADER=======/\==*/
@@ -88,8 +88,8 @@ header {
     width: 50%;
 }
 .content__article--third {
-    width: 27.4rem;
-    margin-right: 1.95rem;
+    width: 31.15%;
+    margin-right: 2.22%;
 }
 .content__article .article__header {
     font-family: Bangers, cursive;
@@ -104,8 +104,8 @@ header {
 .content__image {
     background-image: url(../img/mid-page-accent.jpg);
     height: 18.2rem;
-        width: 87.6rem;
-    margin: 3.0rem .2rem;
+        width: 99.58%;
+    margin: 3.0rem 0.23%;
 }
 /*==/\======CONTENT======/\==*/
 /*==\/======FOOTER=======\/==*/
@@ -126,7 +126,7 @@ header {
     flex-direction: column;
     font-family: "Titillium Web", sans-serif;
     height: 9.4rem;
-        width: 15.5rem;
+        width: 17.62%;
     justify-content: space-between;
 }
 .footer__address__link {
@@ -155,9 +155,9 @@ header {
     /*==\/==TOP NAVIGATION==\/=*/
     .header__nav {
         margin-top: 2.3rem;
-        margin-right: 3.1rem;
+        margin-right: 4.08%;
         padding-left: 0;
-        width: 70.8rem;
+        width: 93.23%;
     }
     .header__logo {
         margin: 3.0rem 0 0 0;
@@ -180,23 +180,26 @@ header {
         padding: 3.6rem 0;
     }
     .content__article {
-        padding: 0 1.0rem;
+        padding: 0 1.32%;
     }
     .content__article--third {
-        width: 23.4rem;
+        width: 31.1%;
     }
     .content__image {
         height: 15.8rem;
-            width: 76.0rem;
+            width: 100%;
         margin: 3.0rem 0;
     }
     /*==/\======CONTENT======/\==*/
     /*==\/======FOOTER=======\/==*/
     .footer {
-        padding-left: 1.0rem;
+        padding-left: 1.32%;
+    }
+    .footer__address {
+        width: 20%;
     }
     .footer__copyright {
-        margin-right: 1.0rem;
+        margin-right: 1.32%;
     }
     /*==/\======FOOTER=======/\==*/
 }
@@ -214,7 +217,7 @@ header {
     .header__nav {
         flex-direction: column;
         height: auto;
-            width: 100vw;
+            width: 100%;
         margin: 2.0rem 0 0 0;
     }
     .header__nav .nav__link {
@@ -238,7 +241,7 @@ header {
     /*==\/======CONTENT=======\/==*/
     .content {
         margin: 7.5rem auto 0 auto;
-        width: 46.0rem;
+        width: 92%;
     }
     .content__article {
         margin: 2.25rem 0;
@@ -256,17 +259,20 @@ header {
     }
     .content__image {
         height: 9.6rem;
-            width: 46.0rem;
+            width: 100%;
         margin-top: 3.0rem;
         margin-bottom: .6rem;
     }
     /*==/\======CONTENT======/\==*/
     /*==\/======FOOTER=======\/==*/
     .footer {
-        padding-left: 2.0rem;
+        padding-left: 4%;
+    }
+    .footer__address {
+        width: 40%;
     }
     .footer__copyright {
-        margin-right: 2.0rem;
+        margin-right: 4%;
     }
     /*==/\======FOOTER=======/\==*/
 }
