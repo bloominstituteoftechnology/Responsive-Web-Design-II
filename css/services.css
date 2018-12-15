@@ -79,6 +79,7 @@ h3 {
 }
 
 
+
 p, footer {
     font-size: 1.6rem;
 }
@@ -142,10 +143,93 @@ header nav ul .item a:hover {
 
 /* Wrapper Section */
 
+.wrapper {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* padding: 40px 0; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    border: 2px solid black;
+    background: whitesmoke;
+    width: 48%;
+    padding: 30px 3%;
+    
+}
+
+.box1 {
+    margin: 40px 0 20px 0;
+}
+
+.box2 {
+    margin: 20px 0 20px 0;
+}
+
+.box3 {
+    margin: 20px 0 40px 0;
+}
+
+.learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    width: 40%;
+    height: 30px;
+    margin-top: 20px;
+    background: white;
+    cursor: pointer;   
+
+}
+
+.learn:hover {
+    background: aquamarine;
+    font-weight: bold;
+}
+
+.learn a{
+    text-decoration: none;
+    color: black;
+   
+}
 
 
+/* BOTTOM OF SERVICES */
+
+.bottom {
+    display:flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.b-box {
+    width: 47.5%;
+}
+
+#list {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-top: 20px;
+}
+
+#list li {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    
 
 
+}
+
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+}
 
 
 
@@ -162,26 +246,29 @@ header nav ul .item a:hover {
 
  /* TABLET VIEW */
 
- @media (max-width: 800px) {
 
+@media (max-width: 800px) {
     body {
         margin: 0 5%;
     }
 
-   header nav ul {
-       flex-wrap: wrap;
-   }
+    header nav ul {
+        flex-wrap: wrap;
+    }
+ 
+    header nav ul .item {
+        order: 1;
+        margin-top: 30px;
+        
+    }
+ 
+    header nav ul .logo {
+        order: 0;
+        flex-basis: 100%;
+        text-align: center;
+        
+    }
 
-   header nav ul .item {
-       order: 1;
-       margin-top: 30px;
-       
-   }
 
-   header nav ul .logo {
-       order: 0;
-       flex-basis: 100%;
-       text-align: center;
-       
-   }
+
 }
