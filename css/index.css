@@ -1,1 +1,371 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+html{
+    font-size: 62.5%;
+}
+
+.bodycontainer {
+    font-size: 1.6rem;
+    max-width: 880px;
+    margin: 0 auto;
+    /* border: 2px dashed red; */
+}
+
+p{
+    padding-left: 0%;
+}
+
+/*~~~~~~~~~~~~~~~~~ Nav Bar~~~~~~~~~~~~~~~*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: baseline;
+
+}
+.barcontainer{
+    
+    display: flex;
+    
+    justify-content: space-evenly;
+	font-size: 1.2rem;
+    background: white;
+    align-items: flex-end;
+    /* border: 2px dashed green; */
+    width: 100%;
+	
+}
+.bar{
+    color: grey;
+    /* border: 2px dashed blue; */
+}
+
+.logocontainer{
+    
+    /* border: 2px dashed red; */
+}
+
+
+/*~~~~~~~~~~~~~~~~~ Center Images~~~~~~~~~~~~~~~*/
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.innov h1{
+    font-size: 7rem;
+    text-align: center;
+}
+
+.start{
+    border: 1px solid black;
+    height: 3rem;
+    text-align: center;
+}
+
+/*~~~~~~~~~~~~~~~~~ upper content~~~~~~~~~~~~~~~*/
+
+
+
+.topcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    line-height: 1.2;
+    
+    padding-top: 30px;
+    
+}
+
+.top{
+    width: 50%;
+    padding-left: 0px;
+
+    /* border: 1px solid blueviolet; */
+}
+
+/*~~~~~~~~~~~~~~~~~ img banner~~~~~~~~~~~~~~~*/
+
+.banner{
+    /* display: flex;
+    justify-content: flex-end; */
+    /* border: 1px solid blueviolet; */
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~ bottom content~~~~~~~~~~~~~~~*/
+
+.botcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    line-height: 1.2;
+    padding-bottom: 20px;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.bot{
+    width: 33.3%;
+    
+    /* border: 1px solid blueviolet; */
+}
+
+/*~~~~~~~~~~~~~~~~~ footer~~~~~~~~~~~~~~~*/
+
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    /* border: 1px solid aqua; */
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.numba{
+    padding: 10px 0; 
+}
+
+
+/*~~~~~~~~~~~~~~~~~ TABLET~~~~~~~~~~~~~~~*/
+
+@media (max-width: 800px){
+
+    .bodycontainer{
+        max-width: 800px;
+        width: 100%;
+    }
+    
+    .header{
+        flex-direction: column;
+        /* border: 1px solid red; */
+        align-items: center;
+    }
+
+    .logocontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        order: -1;
+        padding-bottom: 30px;
+        margin-top: 25px;
+        /* border: 1px solid lightseagreen; */
+        
+    }
+
+    .firstimg{
+        display:none;
+    }
+
+    .barcontainer{
+        display: flex;
+        
+        justify-content: space-between;
+        max-width: 800px;
+        width: 95%;
+        padding-left: 2.5%;
+    }
+
+    .topcontainer{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .banner{
+        max-width: 800px;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        /* border: 10px dashed darkblue; */
+    }
+    
+    .middleimg{
+        width: 100%;
+    }
+    
+    .botcontainer{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    
+
+    .contactinfo{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+}
+
+/*~~~~~~~~~~~~~~~~~ Mobile~~~~~~~~~~~~~~~*/
+@media (max-width: 500px){
+
+    .bodycontainer{
+        /* background-color: pink; */
+        width: 100%;
+        max-width: 500px;
+
+    }
+
+    .logocontainer{
+  
+    }
+
+    .bar{
+        padding: 20px 0;
+        width: 100%;
+        max-width: 500px;
+        padding-left: 40%;
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+
+    .serv{
+        border-top: 2px solid grey;
+    }
+    
+    .cont{
+        border-bottom: 2px solid grey;
+    }
+    
+    .barcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .topcontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .top{
+        width: 100%;
+    }
+
+    .toptwo{
+        margin-top: 20px;
+    }
+
+    .banner{
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+
+    .botcontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+       
+    }
+    
+    .bot{
+        width: 100%;
+        
+    }
+
+    .bottwo{
+        margin-top: 50px;
+    }
+
+    .botthree{
+        margin-top: 50px;
+    }
+
+    .contactinfo{
+        margin: 0 auto;
+        width: 95%;
+    }
+
+}
