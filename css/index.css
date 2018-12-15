@@ -124,6 +124,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header {
+  border: 1px solid purple;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,9 +175,10 @@ button:hover {
 }
 
 .main {
-  border: 2.5px solid hotpink;
+  border-top: .2rem solid black;
+  border-bottom: .2rem solid black;
   padding: 3.5rem 0;
-  margin: 15px 0;
+  margin: 1.2rem 0;
   font-size: 1.7rem;
 }
 
@@ -213,6 +215,13 @@ button:hover {
   flex-direction: column;
   width: 32%;
 }
+
+
+footer {
+  border: 1px solid green;
+  padding-top: 2.5rem;
+}
+
 
 address {
   display: flex;
@@ -324,6 +333,22 @@ h4 {
 
 }
 
-address {
-  font-size: 1.7rem;
+footer address {
+  font-size: 1.6rem;
+}
+
+footer address h2 {
+  border: 1px solid rebeccapurple;
+}
+
+footer address .phone {
+  padding: 1.2rem 0;
+}
+
+footer address .email {
+  padding: .5rem 0;
+}
+
+footer .footer-logo {
+  padding: .5rem 0;
 }
