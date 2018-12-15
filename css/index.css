@@ -170,18 +170,55 @@ header .logo {
 
 .main-content .bottom-content p {
     padding-right: 2%;
+    font-size: 1.6rem;
 }
+ .bottom-content p {
+    padding: 2%;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+.bottom-content h2{
+    font-size: 2rem; 
+    padding-left: 2%
+}
+
 
 
 .contact{
     font-size: 1.6rem;
     line-height: 1.5;
+    padding-left: 2%;
 }
 
 footer {
     text-align: center;
     margin: 5% 0 2%;
     font-size: 1.6rem;
+}
+.firstRow{
+    display: flex;
+    margin: 0;
+    align-content: space-around;
+    font-size: 1.6rem;
+    
+}
+
+.box{
+    border: 1px solid black;
+    background-color: #F4F3F4;
+    padding: 25px;
+    margin: 25px 10px 0px 10px;
+}
+
+.button2{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    height: 30px; 
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px  0px 0px 0px;
 }
 
 
