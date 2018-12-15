@@ -68,9 +68,6 @@ h1, h2, h3, h4, h5 {
 body {
   display: flex;
   justify-content: center;
-  -webkit-transition:all .5s ease-in-out;
-  -moz-transition:all .5s ease-in-out;
-  -o-transition:all .5s ease-in-out;
   transition:all .5s ease-in-out;
 }
 
@@ -88,7 +85,7 @@ header {
   width: 100%;
   padding: 2%;
   display: flex;
-  margin-top: 25px;
+  margin-top: 29px;
   align-items: center;
 }
 
@@ -96,11 +93,12 @@ header nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  text-align: center;
 }
 
 
 header nav a {
-  width: 100%;
+  width: 95%;
   display: inline-block;
   color: black;
   font-size: 1.4rem;
@@ -182,7 +180,7 @@ h2 {
   border: 1px solid rgb(68, 152, 185);
   margin-bottom: 40px;
   background-color: rgb(230, 242, 247);
-  padding: 1.7%;
+  padding: 2.5%;
   line-height: 1.25;
 }
 
@@ -216,9 +214,13 @@ h2 {
   line-height: 1.25;
 }
 
+p {
+  margin-bottom: 15px;
+}
+
 li {
   width: 100%;
-  margin: 10px 0;
+  margin: 15px 0;
   list-style-type: square;
   margin-left: 17%;
   line-height: 1.25

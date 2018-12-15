@@ -69,9 +69,6 @@ h1, h2, h3, h4, h5 {
 body {
   display: flex;
   justify-content: center;
-  -webkit-transition:all .5s ease-in-out;
-  -moz-transition:all .5s ease-in-out;
-  -o-transition:all .5s ease-in-out;
   transition:all .5s ease-in-out;
 }
 
@@ -88,7 +85,6 @@ html {
 
 header {
   width: 100%;
-  padding: 2%;
   display: flex;
   margin-top: 25px;
   align-items: center;
@@ -97,13 +93,13 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
+  text-align: center;
 }
 
 
 header nav a {
-  width: 100%;
-  padding: 2%;
+  width: 95%;
   display: inline-block;
   color: black;
   font-size: 1.4rem;
@@ -195,13 +191,13 @@ header nav a:last-child {
 .top-content {
   display: flex;
   width: 100%;
-  padding: 2%;
+  /* padding: 2%; */
   justify-content: space-around;
 }
 
 .top-content .text-content {
   width: 100%;
-  padding: 2%;
+  /* padding: 2%; */
   font-size: 1.6rem;
   line-height: 1.1;
 }
@@ -291,7 +287,7 @@ footer {
 
     .main-content .top-content {
       width: 100%;
-      padding: 2%;
+      /* padding: 2%; */
       flex-direction: row;
       justify-content: space-between;
     }
