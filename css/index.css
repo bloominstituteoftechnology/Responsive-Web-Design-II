@@ -72,7 +72,8 @@ body{
 	margin: 0 auto;
     width: 100%;
     max-width: 880px;
-	font-size: 1.6rem;
+    font-size: 1.6rem;
+    padding: 2%;
 }
 
 nav {
@@ -121,11 +122,11 @@ nav a:last-child{
 .starting-section button{
 	border: 1px solid black;
 	background-color: white;
-	padding: 0 15% ;
+	padding: 0 14%;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 600;
 	font-size: 1.6rem;
-	width: 170px;
+	width: 57%;
 	height: 40px; 
 	background-position: right bottom;
 	transition: all .25s ease-in-out;
@@ -139,7 +140,7 @@ nav a:last-child{
   }
 
 h1{
-	font-size: 72px;
+	font-size: 7.2rem;
 	text-align: center;
 }
 
@@ -148,7 +149,7 @@ h1{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 75px;
+	margin-left: 12%;
 }
 
 .main-section{
@@ -157,7 +158,7 @@ h1{
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
 	justify-content: space-between;
-	padding: 20px 0;
+	padding: 2% 0;
 	align-content: space-between;
 }
 
@@ -172,7 +173,7 @@ h1{
 .section{
 	display: flex;
 	align-items: center;
-	height: 250px;
+	height: 230px;
 }
 
 .section .middle-img{
@@ -184,7 +185,7 @@ h1{
 }
 
 .copyright {
-	padding-top: 40px;
+	padding-top: 4%;
 	text-align: center;
 }
 
