@@ -48,7 +48,12 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1 rem === 10px based on the user setting of "medium" which is 16px */
+  font-size: 62.5%;
 }
 
 html, body {
@@ -78,12 +83,18 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! |||||||||||||||||||||||||||||||||||||||||| */
 
 .container {
-	width: 877px;
+	width: 880px;
 	margin: 0 auto;
 }
 
 p {
-	line-height: 1.25em;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 header {
@@ -114,7 +125,7 @@ nav {
 nav a {
 	text-decoration: none;
 	color: lightgrey;
-	font-size: 16px;
+	font-size: 1.6rem;
 	width: 16%;
 
 }
@@ -138,7 +149,7 @@ nav a {
 }
 
 .title h1 {
-	font-size: 80px;
+	font-size: 8rem;
 }
 
 .title a {
@@ -146,7 +157,7 @@ nav a {
 	padding: 0px 30px;
 	text-decoration: none;
 	color: black;
-	font-size: 20px;
+	font-size: 2rem;
 
 }
 
@@ -179,8 +190,13 @@ main, .middle-img {
 	width: 50%;
 }
 
+.thirds {
+    display: flex;
+    justify-content: space-between;
+}
+
 .thirds div {
-	width: 33%;
+    width: 32%;
 }
 
 
@@ -214,11 +230,76 @@ footer a {
 
 /* //////////////////////////////// */
 @media all and (max-width: 800px) {
-   
+   .container {
+       width: 100%;
+       padding: 20px;
+   }
+
+   header {
+       margin-top: 32px;
+   }
+
+   .wrapper {
+       width: 100%;
+       flex-direction: column;
+   }
+    header nav {
+     order: 2;
+     width: 100%;
+     justify-content: space-between;
+     margin-left: 45px;
+    }
+
+    .logo {
+    display: flex;
+    justify-content: center;
+    order: 1;
+    /* width: 277px;  */
+    }
+
+   .middle-img {
+       width: 100%;
+   }
+
+   #code-snip {
+       display: none;
+   }
+
+   .hero {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+    .title {
+       display: flex;
+       width: 100%;
+    } 
+
+    main .half {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* .half {
+        width: 100%;
+    } */
+
+    .half div {
+        width: 48%;
+    }
+
+    .thirds div {
+        width: 30%;
+    }
 }
 
 
 /* media for 500 //////// */
 @media all and (max-width: 500px) {
     
+    .container {
+       width: 100%;
+       padding: 20px;
+   }
+
 }
