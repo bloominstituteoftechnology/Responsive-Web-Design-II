@@ -300,6 +300,8 @@ address {
     margin: 30px auto;
     padding: 0 2%;
   }
+
+  /*Nav Area*/
   .nav {
     flex-direction: column-reverse;
   }
@@ -323,6 +325,7 @@ address {
     margin-bottom: 40px;
   }
 
+  /*Header Area*/
   header {
     margin-top: 15px;
     margin-bottom: 72px;
@@ -349,6 +352,7 @@ address {
     display: none;
   }
 
+  /*Main Area*/
   main {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -382,6 +386,7 @@ address {
     width: 23rem;
   }
 
+  /*Footer Area*/
   footer {
     padding-top: 35px;
   }
@@ -397,5 +402,87 @@ address {
   .copyright {
     margin-top: 40px;
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 20px auto;
+  }
+
+  /*Nav Area*/
+  .nav {
+    padding-right: 6%;
+    width: 100vw;
+  }
+
+  .nav img {
+    margin-bottom: 20px;
+  }
+
+  .nav nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav nav a {
+    border-top: 1px solid black;
+    padding: 20px 0;
+    font-size: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav nav a:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  /*Header Area*/
+  header {
+    margin-top: 0px;
+    margin-bottom: 78px;
+  }
+  .header-left {
+    padding-left: 3%;
+  }
+
+  .header-left h1 {
+    margin-bottom: 26px;
+    margin-top: 50px;
+  }
+
+  /*Main Area*/
+  main {
+    padding-top: 60px;
+    height: auto;
+  }
+  main section {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  main section div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .main-bottom div {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  .main-bottom div:last-child {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  /*Footer Area*/
+  footer {
+    padding-left: 0;
   }
 }
