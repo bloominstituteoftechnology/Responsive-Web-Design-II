@@ -64,7 +64,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 3%;
 }
 
 .container {
@@ -80,10 +80,11 @@ header {
 }
 
 header nav {
-    margin-top: 40px; 
-    width: 610px;
+    margin-top: 4.75%; 
+    width: 90%;
     justify-content: space-between;
     display: flex;
+    font-size: 1.6rem;
 }
 
 header nav a {
@@ -97,35 +98,35 @@ header nav a:hover {
 }
 
 header .logo {
-    margin: 28px 0 0 91px;
+    margin: 3.5% 0 0 7%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
+    margin-top: 7.8%;
     justify-content: flex-end;
 }
 
 .cta .cta-text {
     font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5%;
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 9.2% 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
-    margin-top: 10px;
+    width: 58%;
+    height: 8%;
+    margin-top: 3.2%;
     cursor: pointer;
 }
 
@@ -139,10 +140,10 @@ header .logo {
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   margin: 9% 0 3% 0;
+   padding: 3.9% 0;
    font-size: 1.6rem;
-   line-height: 18px;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -151,7 +152,7 @@ header .logo {
 
 .main-content .middle-img {
     display: block;
-    margin: 30px auto;
+    margin: 3.6% auto;
 }
 
 .main-content .bottom-content {
@@ -159,27 +160,34 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 6.5%;
+    padding-top: 5%;
 }
 
 /* Contact Styles */
 
-.contact p {
-    margin: 15px 0;
+.contact {
+    padding: 1% 0 0 0;
+}
+
+.contact p, h4 {
+    margin: 1% 0;
+    font-size: 1.6rem;
 }
 
 /* Footer Styles */
 
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 4% 0 2%;
+    font-size: 1.6rem;
 }
 
 /* Tablet */
 @media (max-width: 800px) {
 
     .container {
-        width: 100%;
+        width: 80%;
     }
 
     header {
