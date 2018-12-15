@@ -188,7 +188,7 @@ footer {
 /* When the width of the display is 800px apply these styles */
 @media (max-width: 800px){
     .container {
-        width: 800px;
+        max-width: 800px;
     }
     header nav {
         flex-direction: column-reverse;
@@ -197,19 +197,23 @@ footer {
     header nav ul {
         align-self: center;
     }
+
+    header nav ul a {
+        padding: 0 6%;
+    }
     
     header nav a {
         align-self: center;
-        margin-bottom: 20px;
+        margin-bottom: 5%;
     }
 
-    hr {
-        width: 736px;
-    }
-
-    
     div.second-part {
         justify-content: center;
+    }
+
+    div.second-part .header-anchor .get-started {
+        width: 54%;
+        height: 30px;
     }
 
     .second-part img {
@@ -224,45 +228,15 @@ footer {
     align-items: center;
     }
 
-    img.middle-img {
-        width: 720px;
-        margin-left: 37px;
-    }
-
-    section .left-side, .right-side {
-        height: 160px;
-        width: 350px;
-    }
-
     .bottom-left, .bottom-middle, .bottom-right {
         display: flex;
         flex-direction: column;
-    }
-
-    section.bottom-content div {
-        margin-top: 20px;
-        width: 190px;
-        margin-bottom: 20px;
-    }
-
-    section.contact div {
-        margin-left: 48px;
-        margin-top: 20px;
-    }
-
-    .contact {
-        margin-top: 7%;
-    }
-
-    footer {
-        margin-top: 5%
     }
 }
 
     @media (max-width: 500px) {
         .container {
-            height: 2047px;
-            width: 500px;
+            max-width: 500px;
         }
 
         header nav {
