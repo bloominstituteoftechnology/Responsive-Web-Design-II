@@ -252,31 +252,65 @@ footer .copyright {
 
   body {
     border: 1px solid purple;
-    width: 800px;
-    margin: 0 auto;
+   /* width: 800px; */
+   margin: 0 auto;
   }
 
   .nav-container {
+    border: 1px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+
   }
 
   .nav-container .navbar_top {
+    border: 1px solid hotpink;
+    padding: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 1rem;
   }
 
+  .nav-container .navbar_top a {
+    font-size: 1.5rem;
+  }
 
   .logoIMG {
-    margin: 30px auto;
+    border: 1px solid blue;
+    margin: 5px auto;
     order: -1;
   }
 
   .headerIMG {
     display: none;
   }
+
+  .header {
+    border: 5px solid purple;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+  }
+
+  .top .top-content{
+    width: 48%;
+
+  }
+
+  .bottom .bottom-content {
+    width: 30%;
+  }
+
 
 }
 
