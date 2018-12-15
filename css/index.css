@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
     max-width: 880px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 p {
@@ -142,12 +142,25 @@ header .logo {
     color: white;
 }
 
+.cta-about {
+    color: white;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-left: 3%;
+    margin-top: 3%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("/img/about-banner.jpg");
+}
+
 .cta-about h1{
     font-size: 2rem;
 }
 
 .cta-about p {
     font-size: 1.6rem;
+    width: 100%;
+
 }
 
 /* Who We Are Styles */
@@ -180,7 +193,7 @@ header .logo {
 }
 
 .contact-card {
-    width: 48%;
+    max-width: 48%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 3%;
@@ -330,6 +343,10 @@ footer {
     .contact {
         margin: 0 5%;
     }
+
+    .who-we-are, .meet-our-team {
+        margin-left: 3%;
+    }
 }
 
 /* Phone */
@@ -399,5 +416,19 @@ footer {
 
     .contact {
         margin: 2%;
+    }
+    .who-we-are {
+        flex-direction: column;
+        
+    }
+    .who-we-are-text {
+        margin-top: 3%;
+        width: 100%;
+    }
+    .team {
+        flex-direction: column;
+    }
+    .contact-card {
+        max-width: 100%;
     }
 }
