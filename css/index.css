@@ -66,7 +66,9 @@ html {
   margin: 0 auto;
   
 }
-/* header */
+/* /// Header /// */
+
+/* Header Navigation Bar */
 header nav {
  display: flex;
  justify-content: space-around;
@@ -82,21 +84,29 @@ header nav a {
 header nav a:hover {
  text-decoration: underline;
 }
+
+/* Header Logo */
 header .logo {
  margin-left: 5%;
  
 }
+
 /* cta */
+
 .cta{
  display: flex;
  flex-direction: row;
 }
+
+/* Innovation on Demand */
 .cta .cta-text {
  font-size: 7.7rem;
  margin-top: 15%;
  text-align: center;
  padding: 0px 5%;
 }
+
+/* Get Started Button */
 .cta .cta-text button {
  background: white;
  vertical-align: top;
@@ -106,22 +116,30 @@ header .logo {
  border: 11% solid black;
  cursor: pointer;
 }
+
+/* Get Started Button Hover */
 .cta .cta-text button:hover {
  background: black;
  color: white;
 }
+
+/* Image of a code snippet */
 .cta img {
 margin-top: 6%;
 max-width: 379px;
 width: 100%;
 height: auto;
+margin-left: 10%;
 }
-/* Main Content */
+
+/* Main Content - Features, About, Services, Product, Visions */
 .main-content {
  border-top: 2px solid black;
  margin-top: 8%;
  padding-top: 4%;
 }
+
+/* Features & About */
 .main-content .top-content {
  display: flex;
  padding: 10px;
@@ -136,11 +154,15 @@ height: auto;
 .main-content .top-content .text-content:last-child {
  margin-right: 0;
 }
+
+/* Image of code snippets across the screen */
 .main-content .middle-img {
  width: 100%;
  height: auto;
  margin-top: 5%;
 }
+
+/* Services, Product, & Vision */
 .main-content .bottom-content {
  display: flex;
  margin-top: 5%;
@@ -154,15 +176,21 @@ height: auto;
 .main-content .bottom-content .text-content:last-child {
  margin-right: 0;
 }
+
+/* Contact Section */
 .contact {
  margin-top: 10%;
  border-top: 1px solid black;
  padding: 5% 3% 0;
  font-size: 1.6rem;
 }
+
+/* Contact Paragraph */
 .contact p {
  margin: 20px 0;
 }
+
+/* Footer - Copyright */
 footer {
  margin: 32px 0;
  text-align: center;
@@ -175,6 +203,8 @@ footer {
    /* TB LR */
    margin: 0 auto;
  }
+
+ /* Header Navigation Bar */
   header nav {
    display: flex;
    flex-direction: row;
@@ -182,12 +212,16 @@ footer {
    flex-wrap: wrap-reverse;
    width: auto;
  }
+
+ /* Header Navigation Bar Logo */
   header nav .nav-logo {
    display: flex;
    justify-content: center;
    width: 98%;
    margin: 3%;
  }
+
+ /* cta */
   .cta{
    display: flex;
    flex-direction: column;
@@ -196,6 +230,8 @@ footer {
    display: none;
  }
 }
+
+
 /* Screen Size Under 500px */
 @media (max-width: 500px){
   .container {
@@ -203,18 +239,24 @@ footer {
    /* TB LR */
    margin: 0 auto;
  }
+
+ /* Header Navigation Bar */
   header nav {
    display: flex;
    flex-direction: column;
    
    width: auto;
  }
+
+ /* Header Navigation Bar Logo*/
   header nav .nav-logo {
    order: -1;
    width: 100%;
    margin: 0;
    padding-bottom: 10px;
  }
+
+ /* Header Navigation Bar Div Adjustment */
   header nav div {
    display: flex;
    align-items: center;
@@ -224,9 +266,13 @@ footer {
    padding-bottom: 3%;
    border-bottom: 2px solid lightgrey;
  }
+
+ /* Header Navigation Bar Links */
  header nav .nav-link a {
    font-size: 2.0rem;
  }
+
+ /* cta */
   .cta{
    display: flex;
    flex-direction: column;
@@ -234,6 +280,8 @@ footer {
   .cta img {
    display: none;
  }
+
+ /* Features & About */
   .main-content .top-content {
    display: flex;
    flex-direction: column;
@@ -242,10 +290,14 @@ footer {
   .main-content .top-content .text-content {
    width: auto;
  }
+
+ /* Image of code snippets across the screen */
   .main-content .middle-img {
    width: 100%;
    height: auto;
  }
+
+ /* Services, Product, & Vision */
   .main-content .bottom-content {
    display: flex;
    flex-direction: column;
