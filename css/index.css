@@ -25,7 +25,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    overflow-x: hidden;
+
 }
 ol, ul {
 	list-style: none;
@@ -107,13 +109,13 @@ header .logo {
 }
 
 
-.cta {
+.banner {
     display: flex;
     margin: 12% 0 0 3%;
     justify-content: flex-end;
 }
 
-.cta .cta-text {
+.banner .banner-text {
     font-size: 7.2rem;
     text-align: center;
     letter-spacing: .5rem;
@@ -124,7 +126,7 @@ header .logo {
     margin: 4% 0 0 0;
 }
 
-.cta .cta-text button {
+.banner .banner-text button {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
@@ -134,12 +136,12 @@ header .logo {
     cursor: pointer;
 }
 
-.cta .cta-text button:hover {
+.banner .banner-text button:hover {
     background: black;
     color: white;
 }
 
-.cta img{
+.banner img{
    max-width:100%;
    height: auto; 
 }
@@ -203,16 +205,16 @@ footer {
         margin: 3% auto 0;
     }
 
-    .cta {
+    .banner{
         justify-content: center;
         margin: 10% 0 0 0 ;
     }
     
-    .cta .cta-text {
+    .banner .banner-text {
         margin: 0 0 1% 0;
     }
 
-    .cta img {
+    .banner img {
         display: none;
     }
 
@@ -266,36 +268,41 @@ footer {
     }
 
     header .logo {
-        margin: 20px 0;
+        margin: 5% 0;
     }
 
-    .cta {
-        margin-top: 50px;
+    .banner {
+        margin-top: 10%;
+        margin-bottom: 15%;
         flex-flow: column;
         align-items: center;
     }
 
-    .cta img {
-        max-width: 80%;
-    }
 
     .main-content .top-content {
         justify-content: space-around;
         flex-direction: column;
-        height: 300px;
+        padding: 1% 0 1% 0;
+        
     }
+    .main-content img{
+        max-width: 100%;
+        height: auto;
+        }
 
     .main-content .bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
-        height: 440px;
+        margin: 0 auto;
+        padding: 1% 0 1% 0;
     }
 
     .text-content {
-        margin: 0;
+        margin: 0 auto;
+        padding: 2%
     }
 
     .contact {
-        margin: 20px;
+        margin: 0 0 0 3%;
     }
 }
