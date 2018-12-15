@@ -187,7 +187,7 @@ footer {
 @media (max-width: 800px) {
 
     .container {
-        width: 80%;
+        width: 100%;
     }
 
     header {
@@ -195,14 +195,14 @@ footer {
     }
   
     header nav {
-        width: 768px;
-        padding: 0 30px;
+        width: 98%;
+        padding: 0 5%;
     }
 
     header .logo {
         order: -1;
         display: block;
-        margin: 30px auto 0;
+        margin: 3.8% auto 0;
     }
 
     .cta {
@@ -210,7 +210,7 @@ footer {
     }
     
     .cta .cta-text {
-        margin: 0;
+        margin: 2% 0 6.8% 0;
     }
 
     .cta img {
@@ -222,15 +222,15 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 5% 1.3% 3%;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 0 1.3%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: 0 3%;
     }
 }
 
