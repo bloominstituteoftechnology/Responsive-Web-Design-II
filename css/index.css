@@ -154,6 +154,10 @@ p {
 	justify-content: space-between;
 }
 
+#section1 section {
+	width: 48%;
+}
+
 #section2 {
 	width: 100%;
 }
@@ -181,11 +185,11 @@ footer {
 
 @media (max-width: 800px) {
 	body {
-		width: 700px;
+		width: 90%;
 	}
 
 	header {
-		margin-top: 30px;
+		margin-top: 3rem;
 	}
 
 	#topbar {
@@ -195,17 +199,17 @@ footer {
 
 	.logo {
 		order: 1;
-		width: 170px;
-		margin-bottom: 50px;
+		width: 25%;
+		margin-bottom: 5rem;
 	}
 
 	nav {
 		order: 2;
-		width: 700px;
+		width: 100%;
 	}
 
 	nav a {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
 	#banner {
@@ -214,11 +218,11 @@ footer {
 	}
 
 	.banner-content h1 {
-		font-size: 80px;
+		font-size: 8rem;
 	}
 
 	.banner-content a {
-		font-size: 18px;
+		font-size: 1.8rem;
 	}
 
 	img.banner-content {
@@ -226,33 +230,25 @@ footer {
 	}
 
 	h2 {
-		font-size: 18px;
+		font-size: 1.8rem;
 	}
 
 	p {
-		font-size: 16px;
+		font-size: 1.6rem;
 	}
 
 	#main {
 		height: 600px;
-		margin-bottom: 35px;
-	}
-
-	#section1 section {
-		width: 340px;
-	}
-
-	#section3 section {
-		width: 200px;
+		margin-bottom: 3.5rem;
 	}
 
 	address p {
-		margin-bottom: 15px;
+		margin-bottom: 1.5rem;
 	}
 
 	footer {
-		padding-top: 20px;
-		margin-bottom: 20px;
+		padding-top: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 
