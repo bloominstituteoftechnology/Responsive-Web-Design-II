@@ -1,1 +1,218 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-size: 62.5%;
+    height: 100%;
+    font-family: "Titillium Web", sans-serif;
+  }
+  .container {
+      max-width: 880px;
+      font-size: 1.6rem;
+      margin: auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Bangers", cursive;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;  
+  }
+  nav a {
+    text-decoration: none;
+    color: gray;
+    font-size: 2rem;
+    margin-right: 3rem;  
+  }
+  .logo {
+      max-width: 100%;
+  }
+  .iod {  
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:8%;
+    margin-bottom: 10%;
+   
+  }
+  .iod .iod-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;  
+  
+  }
+  .iod .iod-text h1 {
+      font-size: 6rem;
+  }
+  button {
+   background: white;
+   padding: 5% 15%;
+   font-size: 2rem;
+   cursor: pointer;
+   border-radius: 6%;
+   margin-top: 13%;
+  }
+  button:hover{
+      background: lightgray;
+      color: white;
+  }
+  .top-content {
+    border-top: 1px solid black;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content:space-between;
+  }
+  .top-content .text-content {
+    width: 48%;
+    line-height: 1.5;
+    margin-top: 1%;
+  }
+  
+  p {
+      text-align: justify;
+  }
+  
+  .middle-img {
+    max-width: 100%;
+  }
+  .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+    border-bottom: 1px solid black;
+  }
+  .bottom-content .text-content {
+    width: 31%;
+    line-height: 1.5;
+  }
+  .contact {
+    line-height: 2.5;
+    margin: 8% 0% 8% 0%;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  
+@media (max-width:800px){
+    .container {
+        width: 100%;
+        margin: auto;  
+    }
+    header {
+  
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: center;  
+    }
+    .logo {
+       text-align: center;
+        width: 40%;
+        margin-left: 30%;
+        margin-bottom: 5%;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .iod {
+        display: flex;
+        justify-content: center;
+    }
+    .iod img {
+        display: none;
+    }
+    .top-content .text-content {
+        width: 48%;
+    }
+    .middle-img {
+        max-width: 100%;
+    }
+    .bottom-content .text-content {
+        width: 30%;
+    }
+}
+
+  @media (max-width:500px){
+      .container {
+         width: 100%;
+         margin: auto;
+      }
+    header {
+        width: 100%;
+        border-bottom: 1px solid gray;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 1%;
+      }
+      header nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 5%;   
+      }
+      header nav a {
+        text-decoration: none;
+        color:gray;
+        font-size: 2rem;
+        padding: 25px 190px;
+        border-top: 1px solid gray;
+        text-align: center;
+       
+      }
+      .logo {
+          width: 50%;
+          margin: 5% 0%;
+      }
+      .iod img {
+          display: none;
+      }
+      .iod {
+          width: 100%;
+          display: flex;
+          align-items: center;  
+      }
+      
+      .top-content{
+          display: flex;
+          flex-direction: column;
+      }
+      .top-content .text-content{
+          width:  100%;
+          margin-top: 1%;
+      }
+      
+      .middle-img {
+          max-width: 100%;
+      }
+      .bottom-content {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 5%;
+      }
+      .bottom-content .text-content {
+         width: 100%;
+      }
+    
+  }
