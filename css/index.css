@@ -67,21 +67,26 @@ h1, h2, h3, h4, h5 {
 
 /*Start Code for Webpage */
 
+html {
+    font-size: 62.5%;
+}
+
  .container { 
 	margin: 0 auto;
-	padding: 15px;
-	font-size: 16px;
+	padding: 2%;
+    font-size: 1.6rem;
+    max-width: 880px;
 }
 
 .navigation-bar header nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 2%;
 }
 
 .navigation-bar header nav ul li a {
-    font-size: 15px;
+    font-size: 1.6rem;
 	text-decoration: none;
 	background-color: white;
     color: lightgrey;
@@ -90,8 +95,10 @@ h1, h2, h3, h4, h5 {
 
 .navigation-bar header nav ul li a:hover {
 	color: black;
-	font-size: 18px;
-	border-bottom: 2px dashed black;
+    border-bottom: 2px dashed black;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 h1 {
