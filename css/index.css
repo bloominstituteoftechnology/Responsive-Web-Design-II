@@ -289,6 +289,55 @@ section h2 {
 	margin: 24px 0;
 }
 
+/*----Contact Us Form----*/
+/* Contact Form */
+.contact-form-instructions {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.contact-form-instructions h1 {
+    font-size: 4rem;
+}
+
+.contact-form-container {
+  margin: 0 auto;
+    padding: 20px 5%;
+    border: 1px solid red;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+  display: block;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 90%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+.contact-submit-btn {
+  width: 30%;
+  padding: 1rem;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+  color: white;
+  background: crimson;
+  font-size: 1rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
 /*------RESPONSIVE DESIGN-----*/
 /*------Tablet Design------*/
 @media (max-width: 800px) {
