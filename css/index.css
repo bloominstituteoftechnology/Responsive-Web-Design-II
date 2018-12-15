@@ -1,1 +1,343 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html{
+	font-size: 62.5%;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+
+p{
+	font-size: 1.6rem;
+}
+
+.container{
+	margin: 0 auto;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95%;
+	max-width: 880px;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	width:100%;
+	height: 200px;
+	margin-bottom: 15px;
+	align-items: center;
+	padding-top: 50px;
+}
+
+nav{
+	display: flex;
+	width: 76%;
+	height: 25%;
+	align-content: center;
+	justify-content: flex-start;
+	align-content: baseline;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+	font-weight: 600;
+}
+
+nav a{
+	/* margin-right: 30px; */
+
+	font-size: 1.5rem;
+	height:100%;
+	width: 15%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border:2px solid white;
+}
+
+nav a:hover{
+	border:2px solid black;
+	border-radius: 10px;
+	background-color:grey;
+}
+
+address p{
+	margin-bottom: 10px;
+}
+
+.large-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	width: 100%;
+	margin-bottom: 72px;
+}
+
+.innovation{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 379px;
+	width: 50%;
+	margin-left: 10%;
+}
+
+.big-pic{
+	width: 100%;
+}
+
+.large-items div h1{
+	text-align: center;
+	font-size: 7rem;
+	margin-bottom: 34px;
+}
+
+.large-items div p{
+	height: 32px;
+	min-width: 135px;
+	width: 40%;
+	font-size: 1.6rem;
+	display: flex;
+	border: 1px solid black;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 2px;
+}
+
+.large-items div p:hover{
+	background-color: grey;
+}
+
+.Features-and-about{
+	display: flex;
+	width: 100%;
+	margin-bottom: 26px;
+	justify-content: center;
+	padding: 36px 1% 10px 1%;
+	border-top: 2px solid black;
+}
+
+.triple-menu{
+	display: flex;
+	width:100%;
+	justify-content: space-between;
+	margin-bottom: 46px;
+}
+
+.Services, .Product, .Vision{
+	padding-right: 5%;
+}
+
+.middle-img{
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+.contact-info{
+	display: flex;
+	flex-direction: column;
+	border-top:	2px solid black;
+	padding-top: 35px;
+	width: 100%;
+}
+
+.copyright {
+	width:100%;
+	margin-top: 32px;
+	display: flex;
+	justify-content: center;
+	font-size: 1.6rem;
+}
+
+/* media for tablet */
+@media(max-width:800px){
+	header{
+		flex-direction: column-reverse;
+		height: 150px;
+	}
+
+	nav{
+		width:100%;
+		justify-content: space-between;
+	}
+
+	.big-pic{
+		display:none;
+	}
+
+	.large-items{
+		justify-content: center;
+		margin:2%;
+	}
+
+	.large-items *{
+		margin: 0;
+	}
+
+	.Features-and-about{
+		width: 100%;
+		margin:20px 0 55px 0;
+		padding: 35px 0 0 2%;
+		justify-items: space-between;
+		border-top:2px solid black;
+	}
+
+	.middle-img{
+		width: 100%;
+	}
+
+	.triple-menu{
+		width: 100%;
+		/* height: 200px; */
+		margin-bottom: 8px;
+	}
+
+	.triple-menu section{
+		padding:0 20px;
+	}
+
+	.contact-info{
+		width: 100%;	
+	}
+
+}
+
+/* media for phone */
+@media(max-width:500px){
+	.container{
+		width: 95%;
+	}
+	
+	header{
+		height: 475px;
+		margin:0;
+	}
+
+	nav{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 20px;
+		width: 100%;
+		height:400px;
+		margin-top: 20px;
+	}
+	nav a{
+		border-top: 1px solid black;
+		border-collapse: collapse;
+		color:#ACACB3;
+		height:75px;
+		width: 100%;
+		margin:0;
+	}
+
+	p{
+		line-height: 1;
+	}
+
+	nav a:last-child{
+		border-bottom: 1px solid black;
+	}
+
+	.Features-and-about{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.Features, .About{
+		margin: 24px 0;
+	}
+
+	.middle-img{
+		width:100%;
+		margin-bottom: 15px;
+	}
+
+	.triple-menu{
+		flex-wrap: wrap;
+		align-content: space-between;
+		padding:0;
+		margin-bottom: 20px;
+		width: 100%;
+		height: 460px;
+	}
+
+	section.Services, section.Product, section.Vision{
+		padding-left: 2%;
+		margin-bottom: 25px;
+	}
+
+	.contact-info{
+		width:100%;
+		padding-top: 30px;
+	}
+}
