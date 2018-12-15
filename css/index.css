@@ -1,6 +1,6 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
 
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -72,6 +72,10 @@ h1 {
     font-size: 7.2rem;
 }
 
+h2 {
+    font-size: 1.7rem;
+}
+
 .container {
     max-width: 880px;
     width: 100%;
@@ -110,33 +114,32 @@ nav .logo {
 
 header {
     width: 100%;
+    padding-bottom: 1.1%;
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    border-bottom: 1px solid black;
 }
 
 header .getting-started {
     width: 70%;
-    padding-left: 5.3%;
-    margin-bottom: 6%;
+    padding: 2.5% 0.5% 0 5.3%;
+    margin-bottom: 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    border: 1px solid red;
 }
 
 header .getting-started .start {
-    width:38%;
+    width: 38%;
     font-size: 1.8rem;
     margin: 3% 2% 3.2% 2%;
     padding: 1.3% 2% 1.2% 2%;
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
-	border: 1px solid black;
 }
 
 header .snippet {
@@ -144,36 +147,43 @@ header .snippet {
     width: 50%;
     margin: 7.5% 0;
     justify-content: flex-end;
-    border: 1px solid red;
 }
 
 main {
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+main .top h2 {
+    margin-bottom: 4.3%;
+}
+
+main .top p {
+    font-size: 1.6rem;
+    line-height: 1.125;
 }
 
 main .top {
-	width: 95%;
-	display: flex;
+    width: 100%;
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-between;
 }
 
-main .top .features-and-about {
-    margin: auto;
-    padding-top: 35px;
-    border-top: 1px solid black;
-	justify-content: flex-start;
+main .top .features, .about {
+    width: 49.9%;
 }
 
-.features-and-about p {
-    margin: 15px auto;
+main .top .features {
+    padding-right: 1.3%;
 }
 
 main .middle {
     width: 100%;
-    margin: auto;
+    margin: 3.3% auto 1% auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -185,17 +195,30 @@ main .middle .middle-img {
 }
 
 main .bottom {
-	width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 4.22%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding-bottom: 36px;
+}
+
+main .bottom h2 {
+    margin-bottom: 5.1%;
+    font-size: 1.7rem;
+    line-height: 1.1;
+}
+
+main .bottom p {
+    font-size: 1.62rem;
+    line-height: 1.15;
 }
 
 main .bottom .services, .product, .vision {
-	width: 285px;
-	margin-top: 20px;
+	width: 33.3%;
+    margin-top: 20px;
+    padding-right: 1.78%;
 }
 
 main .bottom .services {
@@ -210,7 +233,8 @@ main .bottom .vision {
 }
 
 .contact {
-	width: 100%;
+    width: 100%;
+    padding-top: 4%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -218,21 +242,21 @@ main .bottom .vision {
 	border-top: 1px solid black;
 }
 
-.contact h2 {
-	margin-top: 25px;
-	margin-bottom: 5px;
+address {
+    font-size: 1.6rem;
 }
 
-.contact p {
-	margin-top: 20px;
-	margin-bottom: 0;
+.contact p{
+    margin-bottom: 1.8%;
+    font-size: 1.6rem;
 }
 
 footer {
     width: 100%;
-    margin-top: 20px;
+    margin: 2.5% auto 1% auto;
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    font-size: 1.6rem
 }
 
 /* @media (max-width: 800px) {
