@@ -239,6 +239,10 @@ footer {
             max-width: 500px;
         }
 
+        header {
+            width: 100%
+        }
+
         header nav {
             margin-top: 0;
             width: 100%;
@@ -250,11 +254,13 @@ footer {
             width: 100%
 
         }
-        
+
         header nav a {
-            margin-right: 0;
-            padding: 20px;
             margin-bottom: 0;
+        }
+
+        header nav a img {
+            margin-bottom: 10%;
         }
 
         header nav ul a {
@@ -262,10 +268,8 @@ footer {
             justify-content: center;
             border-bottom: solid 1px black;
             width: 100%;
-            padding: 20px;
-            margin-top: 0;
-            margin-left: 0;
-            font-size: 20px;
+            padding: 5%;
+            font-size: 2rem;
         }
 
         header nav ul a.services {
@@ -276,65 +280,57 @@ footer {
         div.second-part {
             display: flex;
             text-align: center;
-            margin-bottom: 77px;
-            margin-top: 50px;
+            margin-bottom: 10%;
+            margin-top: 10%;
         }
 
         div.second-part h1 {
-            font-size: 70px;
+            font-size: 7rem;
         }
 
         div.second-part .header-anchor .get-started {
-            width: 170px;
-            margin-top: 17px;
+            width: 57%;
+            margin-top: 5%;
         }
 
         hr {
             width: 92%;
         }
 
-        .top-content {
+        section.top-content {
             flex-direction: column;
-            margin-top: 12%;
+            margin-bottom: 10%;
         }
 
-        section .left-side, .right-side {
-            height: 150px;
-            width: 450px;
+        section .left-side, section .right-side, section.bottom-content div {
+            width: 93%;
             padding: 0;
             margin-left: 4%;
+            margin-top: 10%;
         }
 
-        .middle-img {
-            height: 5%;
+        div.middle-img img {
+            height: 100px;
         }
 
-        .bottom-content {
+        section.bottom-content {
             flex-direction: column;
-            margin-top: 12%;
+            justify-content: space-evenly;
+            margin-bottom: 10%;
         }
 
-        section.bottom-content div {
-            height: 150px;
-            width: 450px;
-            display: flex;
-            flex-direction: column;
-            margin-left: 4%;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
 
         section.contact div {
             margin-left: 4%;
             margin-top: 0;
         }
 
-        .contact {
-            margin-top: 7%;
+        section.contact {
+            margin-top: 10%;
         }
 
         footer {
-            margin-top: 6%
+            margin-top: 10%
         }
     }
 }
