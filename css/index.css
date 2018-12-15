@@ -75,7 +75,7 @@ html {
 }
 
 body {
-    max-width: 880px;
+    max-width: 975px;
     padding: 0px 25px 0px 25px;
 }
 
@@ -88,7 +88,11 @@ body {
     justify-content: space-between;
     align-items: center;
 
+    padding: 25px 0px 25px 0px;
+
 }
+
+
 
     .container-nav nav {
         display: flex;
@@ -96,8 +100,10 @@ body {
         justify-content: space-around;
     }
 
-    nav a {
+    .container-nav nav a {
         display: flex;
+        text-decoration: none;
+        font-size: 1.5rem;
     }
 
     .container-nav img {
@@ -111,9 +117,38 @@ body {
 .container-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
+    
+    padding: 50px 0px 50px 0px;
 }
+
+    .container-header-left {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .container-header h1 {
+        font-size: 7.5rem;
+        text-align: center;
+    }
+
+    .container-header p {
+        display: flex;
+        justify-content: center;
+
+        font-size: 2rem;
+
+        border: 1px solid black;
+        
+        padding: 5px 60px 5px 60px;
+    }
+
+
+
 
  /* --**--**----**--**----**--**--  */
  /*  Content */
@@ -130,17 +165,57 @@ body {
     justify-content: space-between;
 }
 
-    .content1 .content {
-        width: 48%;
+    .content h2 {
+        font-size: 2rem;
     }
 
-    .content2 .content {
-        width: 31%;
+    .content p {
+        font-size: 1.75rem;
     }
 
-.content-container img {
-    width: 100%;
-    max-width: 800px;
+    .content1, .content2 {
+        margin-bottom: 40px;
+    }
+
+        .content1 .content {
+            width: 48%;
+        }
+
+        .content2 .content {
+            width: 31%;
+    }
+
+.content-container {
+    width: 0 auto;
+    margin: 30px 0px;
+}
+    
+    .content-container img {
+        width: 100%;
+    }
+
+.middle-img {
+    margin-bottom: 15px;
+}
+
+ /* --**--**----**--**----**--**--  */
+ /*  Footer */
+ /* --**--**----**--**----**--**--  */
+
+footer {
+    padding: 30px 0px 0px 50px;
+    font-size: 1.5rem;
+}
+
+ /* --**--**----**--**----**--**--  */
+ /*  Legal */
+ /* --**--**----**--**----**--**--  */
+
+.legal {
+    display: flex; 
+    justify-content: center;
+    font-size: 1.75rem;
+    margin: 50px 0px 50px 0px;
 }
 
 
