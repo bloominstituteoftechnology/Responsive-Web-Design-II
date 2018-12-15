@@ -219,35 +219,53 @@ footer {
 
 
 @media (max-width: 800px) {
+
+    header {
+        width: 100%;
+    }
+
     #circleboi {
       display: none;
     }
 
-   #navwrapper .logo {
-        align-self: center;
-    }
-
     #navwrapper {
         flex-direction: column;
-		text-align: center;
-		width: 800px;
+		/* text-align: center; */
+		width: 100%;
+    }
+
+    #navwrapper > a {
+        margin: 0 auto;
     }
 
     nav {
         order: 2;
-        margin-left: 70px;
-	}
+        /* margin: 0 auto; */
+    }
+
+    nav > a {
+        margin-left: 5%;
+        margin-right: 6%;
+    }
 	
 	#banner{
-		width: 800px;
+        width: 100%;
+        margin-bottom: 75px;
 	}
 
+    #titlewrap > h1 {
+        margin: 0 auto;
+        width: 40%;
+    }
+
     #titlewrap {
-        margin-left: 200px;
+        margin: 0 auto;
     }
 
     button {
-        margin-left: 65px;
+        margin: 0 auto;
+        width: 25%;
+        margin-top: 20px;
     }
 
     #doubleboxes {
@@ -259,7 +277,9 @@ footer {
     }
 
     .middle-img {
-        width: 750px;
+        width: 95%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #tripleboxes {
@@ -267,28 +287,21 @@ footer {
     }
 
     footer {
-        margin-right: 600px;
+        margin-left: 5%;
+        width: 95%
     }
 
     #copy {
-        margin-left: 100px;
+        font-size: 1.5em;
     }
   }
 
 
   @media (max-width: 500px) {
-	#navwrapper {
-		width: 500px;
-	}
-
-	header {
-		width: 500px;
-		text-align: center;
-	}
 
 	nav > a {
 		border: 1px solid rgb(168, 168, 168);
-		width: 500px;
+		width: 100%;
 		margin: 0;
 		padding-left: 200px;
 		padding-top: 17px;
@@ -302,56 +315,62 @@ footer {
 	}
 
 	nav {
+        width: 100%;
 		flex-direction: column;
 		margin-top: 15px;
 		margin: 0 auto;
-		margin-top: 15px;
 	}
 
 	#banner {
-		width: 500px;
+		width: 100%;
 	}
 
-	#container {
-		width: 500px;
-	}
 
-    #titlewrap {
-		margin-left: 50px;
+    #titlewrap > h1 {
+		width: 60%;
 	}
 	
-	h1 {
-		margin-top: 0px;
-	}
 
 	#doubleboxes {
-		width: 475px;
+		width: 100%;
 		flex-direction: column;
 	}
 	
 	.dblbox {
-		width: 500px;
-		padding: 20px;
-	}
+        width: 100%;
+        margin: 0 3%;
+    }
+    
+    .dblbox > .features {
+        padding:0;
+    }
 	
 	
     .middle-img {
-		width: 450px;
+		width: 100%;
 		/* margin-right: 20px; */
 		margin-top: 20px;
-	}
+    }
+
+    .trplbox {
+        margin: 0 3%;
+    }
+    
+    .product {
+        margin:0 3%;
+    }
 	
 	#tripleboxes {
-		width: 475px;
+		width: 100%;
 		flex-direction: column;
 	}
 	
-	footer {
+	/* footer {
         margin-right: 335px;
 	}
 	
 	#copy {
 		margin-left: 10px;
-	}
+	} */
   }
 
