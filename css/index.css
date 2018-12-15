@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5 {
 
 html {
 	font-size: 62.5%;
+	overflow: scroll;
 }
 
 body {
@@ -297,17 +298,8 @@ main {
 		box-sizing: border-box;
 	}
 
-	@keyframes dissolve {
-		0% { opacity: 0; }
-		100% { opacity: 1 }
-	}
-
-	@keyframes stretchwide {
-		0% { width: }
-	}
-
 	.right {
-
+		display: none;
 	}
 
 	body {
@@ -335,6 +327,10 @@ main {
 		margin: 5% auto 0 4%;
 	}
 
+	.header-top nav a {
+		text-align: center;
+	}
+
 	.header-btm {
 		width: 100vw;
 		display: flex;
@@ -351,10 +347,6 @@ main {
 		margin: 4.5% 2%;
 		padding-left: 10%;
 		padding-right: 10%;
-	}
-
-	.right {
-		display: none;
 	}
 
 	.container {
@@ -434,70 +426,72 @@ main {
 	}
 
 	body {
-		width: 100vw;
+		width: 100%;
 	}
 
 	header {
-		width: 100vw;
+		width: 100%;
 	}
 
 	.header-top {
-		width: 100vw;
+		width: 100%;
 	}
 
 	.logo {
-		margin-left: calc(50vw - 41.5%);
-		margin-top: 0.1%;
+		margin: auto;
 	}
 
 	.header-btm {
-		width: 100vw;
+		width: 100%;
 		justify-content: center;
 	}
 
 	.left {
-		width: 400px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.header-top nav {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 100vw;
+		width: 100%;
 		border-top: 1px solid #b9b9b9;
-		margin-top: 4.2%;
+		margin: 4.2% auto 2% auto;
 	}
 
 	.header-top nav a {
 		border-bottom: 2px solid #b9b9b9;
-		width: 100vw;
+		width: 100%;
 		text-align: center;
 		font-size: 1.6rem;
-		padding: 3.9%;
+		padding: 4% 0;
+		margin: auto;
+
 	}
 
 	.container {
-		width: 92%;
-		margin-left: calc(50vw - 41.8%);
-		margin-top: 11.5%;
-		padding-top: 12%;
+		width: 95%;
+		margin: 11% auto 7% auto;
+		padding-top: 12.5%;
 		padding-bottom: 0;
 	}
 
 	.left h1 {
-		margin-left: calc(50vw - 44%);
-		margin-top: 2%;
+		margin: 0 auto;
 	}
 
 	.left button {
 		margin-left: calc(50vw - 50%);
-		padding-bottom: 1.5%;
-		padding-top: 1.5%;
+		margin-top: 5.1%;
+		padding: 1.25% 8.5%;
 	}
 
 	.middle-img {
 		width: 100%;
-		height: 15.9vh;
+		height: 15.9%;
 		margin-top: 1.5%;
 		margin-bottom: 6.7%;
 	}
@@ -522,13 +516,12 @@ main {
 	}
 
 	footer {
-		width: 92%;
-		margin-left: calc(50vw - 41.8%);
-		margin-top: 7%;
+		width: 95%;
+		margin: 0 auto;
 	}
 
 	.contact {
-		margin-bottom: 3%;
+		margin-bottom: 3.5%;
 	}
 
 	/* Services Styles */
