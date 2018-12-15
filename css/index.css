@@ -217,6 +217,11 @@ header {
   color: black;
 }
 
+.header-left a:hover {
+  background-color: black;
+  color: white;
+}
+
 .header-right {
   padding-right: 2%;
 }
@@ -439,6 +444,11 @@ address {
 
   .nav nav a:last-child {
     border-bottom: 1px solid black;
+  }
+
+  .nav nav a:hover {
+    color: white;
+    background-color: black;
   }
 
   /*Header Area*/
