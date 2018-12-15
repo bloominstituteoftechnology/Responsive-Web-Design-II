@@ -1,1 +1,337 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+* { 
+    box-sizing: border-box;
+    transition-duration: .25s;
+  }
+  
+  body { 
+    display: block; 
+    max-width: 880px; 
+    margin: 0 auto; 
+    overflow-x: hidden;
+  }
+  
+  html, body {
+      font-family: 'Titillium Web', sans-serif;
+      font-size: 62.5%;
+      padding: 10px;
+  }
+  
+  h1, h2, h3, h4, h5 {
+      font-family: 'Bangers', cursive;
+  /*     letter-spacing: 2px; */
+      margin: 20px 0;
+  }
+  
+  section { 
+    position: relative;
+  }
+  
+  h1 { 
+    font-size: 5rem;
+  }
+  h2 { 
+    font-size: 2rem;
+  }
+  
+  img {
+    /* width: 100%; */
+    vertical-align: baseline;
+  }
+  
+  p { 
+    line-height: 1.25;
+    margin: 8px 0;
+    font-size: 1.6rem;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  button {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.6rem;
+    background: #ffffff;
+    color: #000000;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+button:hover, button:focus { 
+    border: 1px solid white; 
+    background: #030303; color: #ffffff;
+  }
+button:focus {
+    outline: 1px solid #ffffff; 
+    outline-offset: -4px; 
+  }
+button:active { 
+    transform: scale(0.99); 
+  }
+  
+  img:hover {
+    filter: brightness(100%); 
+  }
+  
+  .bg-darkgray { 
+    background-color: #333333; 
+  }
+  .bg-lightgray { 
+    background-color: #efefef; 
+  }
+  .cblack { 
+    color: #000000; 
+  }
+  .clightgray { 
+    color: #dddddd; 
+  } 
+  
+  .italic { 
+    font-style: italic; 
+  }
+  
+  /* Nav bar ********************************/
+  nav { 
+      width: 800px;
+      background-color: white;
+      padding: 14px 0;
+      font-size: 1.8rem; 
+      /* z-index: 5;  */
+  }
+  nav a { 
+    text-decoration: unset; 
+    color: #888888; }
+  nav .nav-li a:hover, nav .nav-li a:active { 
+      color: black; 
+      background-color: silver; 
+      padding: 12px; 
+      margin: -12px;
+      text-decoration: none; 
+  }
+  /*nav .nav-li a:hover {  }*/
+  
+  nav.nav-container { 
+    display: block; 
+  }
+  ul.nav-ul { 
+    width: 800px; display: flex; 
+    align-items: center; 
+  }
+  li.nav-li { 
+    flex: 1 1 auto; 
+  }
+  li.logo { 
+    flex: 0 1 auto; 
+  }
+  
+  /* Header ********************************/
+  #header { 
+    /* position: relative; */
+    top: 80px;
+    margin: 0 0 133px 0; 
+  }
+  .left-header, .right-header { 
+    flex: 1 1 auto; 
+    align-self: center; 
+  }
+  .left-header {
+  /*   margin: 0 auto; */
+    text-align: center;
+  }
+  .right-header {
+    margin-left: 140px;
+  }
+  #get-started-img img { 
+    min-width: 200px;	
+    max-width: 100%; 
+}
+  
+  /* Footer ********************************/
+  footer { 
+    margin: 24px 0 0 0;
+    padding: 24px 0 12px 0;
+    }
+  .copyright { 
+    font-size: 12px; text-align: center;
+    }
+  
+  /* Containers ********************************/
+  .container { 
+    margin: 0 auto;
+  }
+  
+  .container-col { 
+    display: flex;
+    flex-direction: column;
+  }
+  .container-row {
+    display: flex; 
+  }
+  .item { 
+      flex: 1 1 50%; 
+      padding: 0 12px 0 0; 
+    }
+  
+  
+  .item img {
+    margin-right: -12px;
+    max-width: 50vw; 
+  }
+  
+  
+  
+  /* Links ********************************/
+  section .container-row a { 
+    color: #1f1f1f; 
+    font-style: italic; 
+    text-decoration: none; 
+  }
+  section .container-row a:hover { 
+      color: black;
+      border-bottom: 0.75px dashed black;
+      border-radius: 10%; 
+  }
+  
+  
+  /* Box Borders ********************************/
+  .border-top { 
+      border-top: 1px solid black;
+      margin: 32px 0 32px 0;
+      padding: 32px 0 0 0;
+  }
+  .border-bottom { 
+      border-bottom: 1px solid black;
+      margin: 32px 0 18px 0;
+      padding: 0 0 32px 0; 
+  }
+  
+    
+  
+  .middle-img {
+      width: 100%;
+      margin-bottom: 20px;
+      margin: 0 auto;
+  }
+  
+  section.contact { 
+    margin: 28px 0 0 0;
+  }
+  
+  
+  
+  
+  
+  
+  /* 800px and smaller, Tablets **************************************/
+  @media only screen and (max-width: 800px) { 
+      body { 
+        width: 100%; 
+        padding: 0 12px;
+    }
+  
+      nav { 
+        width: 100%; 
+        padding: 14px;
+        margin: 0 0 0 -12px; } 
+      ul.nav-ul { 
+        width: 100%; 
+        flex-flow: row wrap;
+    } 
+      li.nav-li { 
+        order: 1;
+        text-align: center;
+    }
+      li.logo { 
+        order: 0; 
+        width: 100%; 
+        text-align: center;
+        margin: 12px 0 24px 0;
+    }
+  
+      .container { 
+        margin: 24px 12px;
+    }
+      .container-row {
+        margin: 0 12px; 
+    }
+  
+      .right-header, img#get-started-img { 
+        display: none;
+    }
+  
+      #header { 
+        top: 146px;
+        margin: 0 0 194px 0;
+     
+  }
+  
+  
+  /* ****************************************************** */
+  /* 500px and smaller, Mobile **************************************/
+  @media only screen and (max-width: 500px) {
+      body {
+        width: 100%;
+        max-width: 500px;
+    }
+      section #nav { 
+        margin: 0 -12px;
+    }
+      nav { 
+        position: relative;
+        font-size: 16px;
+        width: 100%;
+        padding: 8px;
+        margin: 0; 
+    } 
+      nav.nav-container { 
+        border-bottom: 1px solid gray; 
+        padding: 0; }
+  
+      nav .nav-li a:hover, nav .nav-li a:active {
+        color: white; 
+        background-color: black; 
+        padding: 4px 25vw; 
+        margin: -4px -25vw; 
+    }
+      nav .nav-li a:hover { 
+        text-decoration: none; 
+    }
+  
+      ul.nav-ul { 
+        width: 100%;
+        flex-flow: column wrap;
+    }
+      li.nav-li { 
+        width: 100%;
+        padding: 12px 0;
+        border-top: 1px solid gray; 
+    }
+      li.logo { 
+        margin: 4px 0 8px 0; 
+    }
+  
+      #header { 
+        top: 24px; margin: 0 0 48px 0;
+      }
+
+      .container-row, .container { 
+        flex-flow: column wrap;
+        margin: 0; 
+    }
+      .item { 
+        padding: 24px 0;
+    }     
+  }
+    
+  /*
+  Button styling override
+  https://css-tricks.com/overriding-default-button-styles
+  */
