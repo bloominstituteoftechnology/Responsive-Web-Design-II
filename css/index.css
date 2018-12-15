@@ -1,1 +1,376 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+    font-size: 62.5%;
+}
+
+
+#container {
+    display: flex;
+    margin: 0 auto;
+	flex-direction: column;
+    align-items: center;
+    max-width: 880px;
+}
+
+#navwrapper {
+    display: flex;
+}
+
+nav {
+	margin-top: 35px;
+	display: flex;
+}
+
+nav > a {
+	display: flex;
+	color: gray;
+	text-decoration: none;
+	font-size: 1.5rem;
+    margin-right: 25%;
+}
+
+.logo {
+	margin-top: 20px;
+}
+
+#navwrapper > a {
+    margin-left: 50%;
+}
+
+nav > a:hover {
+	color: royalblue;
+	border-bottom: 1px solid royalblue;
+}
+
+h1 {
+	font-size: 7.5rem;
+	margin-top: 45px;
+	margin-left: 20%;
+	letter-spacing: 2px;
+}
+
+#banner {
+	display: flex;
+	margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#circleboi {
+    margin-left: 20%;
+}
+
+button {
+	font-family: "Titillium Web";
+	background-color: white;
+	border: 1px solid black;
+	height: 30px;
+	width: 50%;
+	margin-left: 20%;
+	font-size: 1.5rem;
+}
+
+button:hover {
+	text-decoration: underline;
+	color: royalblue;
+	border: 1px solid royalblue;
+}
+
+section {
+	text-align: center;
+}
+
+#doubleboxes {
+	border-top: 1px solid black;
+	width: 100%;
+	display: flex;
+}
+
+.dblbox > h2 {
+    font-size: 1.7rem;
+}
+
+.dblbox {
+    padding-top: 35px;
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.features {
+    margin-right: 3%;
+}
+
+.middle-img {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#tripleboxes {
+	border-bottom: 1px solid black;
+	width: 100%;
+	display: flex;
+}
+
+.trplbox {
+    font-size: 1.7rem;
+	/* margin-left: 5%; */
+	text-align: left;
+	padding-bottom: 35px;
+}
+
+.product {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.trplbox > h2 {
+    font-size: 1.7rem;
+}
+
+#contact {
+    margin-top: 20px;
+    font-size: 1.7rem;
+}
+
+#phone {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#copy {
+	display: flex;
+	font-style: italic;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-family: 'Shadows Into Light';
+} 
+
+footer {
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+
+    header {
+        width: 100%;
+    }
+
+    #circleboi {
+      display: none;
+    }
+
+    #navwrapper {
+        flex-direction: column;
+		/* text-align: center; */
+		width: 100%;
+    }
+
+    #navwrapper > a {
+        margin: 0 auto;
+    }
+
+    nav {
+        order: 2;
+        /* margin: 0 auto; */
+    }
+
+    nav > a {
+        margin-left: 5%;
+        margin-right: 6%;
+    }
+	
+	#banner{
+        width: 100%;
+        margin-bottom: 75px;
+	}
+
+    #titlewrap > h1 {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    #titlewrap {
+        margin: 0 auto;
+    }
+
+    button {
+        margin: 0 auto;
+        width: 25%;
+        margin-top: 20px;
+    }
+
+    #doubleboxes {
+        width: 750px;
+    }
+
+    .dblbox {
+        margin-right: 25px;
+    }
+
+    .middle-img {
+        width: 95%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #tripleboxes {
+        width: 750px;
+    }
+
+    footer {
+        margin-left: 5%;
+        width: 95%
+    }
+
+    #copy {
+        font-size: 1.5em;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+
+	nav > a {
+		border: 1px solid rgb(168, 168, 168);
+		width: 100%;
+		margin: 0;
+		padding-left: 200px;
+		padding-top: 17px;
+		height: 50px;
+		margin: 0 auto;
+	}
+
+	nav > a:hover {
+		border: 1px solid royalblue;
+		text-decoration: underline;
+	}
+
+	nav {
+        width: 100%;
+		flex-direction: column;
+		margin-top: 15px;
+		margin: 0 auto;
+	}
+
+	#banner {
+		width: 100%;
+	}
+
+
+    #titlewrap > h1 {
+		width: 60%;
+	}
+	
+
+	#doubleboxes {
+		width: 100%;
+		flex-direction: column;
+	}
+	
+	.dblbox {
+        width: 100%;
+        margin: 0 3%;
+    }
+    
+    .dblbox > .features {
+        padding:0;
+    }
+	
+	
+    .middle-img {
+		width: 100%;
+		/* margin-right: 20px; */
+		margin-top: 20px;
+    }
+
+    .trplbox {
+        margin: 0 3%;
+    }
+    
+    .product {
+        margin:0 3%;
+    }
+	
+	#tripleboxes {
+		width: 100%;
+		flex-direction: column;
+	}
+	
+	/* footer {
+        margin-right: 335px;
+	}
+	
+	#copy {
+		margin-left: 10px;
+	} */
+  }
+
