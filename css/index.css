@@ -68,82 +68,92 @@ h1, h2, h3, h4, h5 {
 
 /* main css style */
 body {
-	width: 900px;
-	height: 1000px;
+	width: 90%;
 	margin: 0 auto;
-
+   
 }
 
+.max{
+	max-width: 88%;
+}
+
+html {
+	font-size: 62.5%
+}
 header{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 25px;
+	margin-bottom: 3%;
 	
 }
 
 nav>a {
     text-decoration: none;
     color: silver;
-    margin-right: 40px;
-    font-size: small;
-    padding: 7px;
-
+    margin-right: 4%;
+	font-size: 1.43REM;
+    padding: 1.1%;
 }
 
 nav {
-	width: 750px;
-	height: 100%;
+	width: 85%;
+    height: 100%;
 
 }
 
 header img {
-	max-width: 130px;
-    max-height: 84px;
+    max-width: 100%;
+    width: 15%;
     position: relative;
-	right: 121px;
-    top: 6px;
+    right: 136px;
+    top: 9px;
+    top: 8px;
 	
 	
 }
 
 .start {
-    height: 300px;
-	width: 766px;
+    height: 30%;
+	width: 76.6%;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid black;
-    margin-bottom: 74px;
+    margin-bottom: 7.4%;
     display: flex;
     flex-direction: row;
 	justify-content: center;
 	height: min-content;
+	width: inherit;
+
 
 }
 
 .start section, .start img {
-    padding: 40px;
+    padding: 4%;
 	margin: 0 auto;
 	height: 100%;
-	width: 400px;
+	width: 50%;
 	text-align: center;
 
 }
 
 .start section h1 {
-	height: 100px;
-	font-size: 5em;
-	margin-bottom: 80px;
+    height: 100px;
+    font-size: 7em;
+    margin-bottom: 80px;
+    position: relative;
+    top: 57px;
 }
 
 
 button {
-    padding: 1px 32px;
+    padding: .1% 3.2%;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
+	font-size: 1.5rem;
+    margin: .4% .2%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 	cursor: pointer;
@@ -154,10 +164,12 @@ button {
 	background-color: white;
     color: black;
     border: 1px double #555555;
-    margin: 49px;
+    margin: 25.8%;
     position: relative;
-    right: 1spx;
-    top: 20px
+    right: 0rem;
+    top: 14px;
+    max-width: 100%;
+    height: 13.3%;
 }
 
 .g-button:hover {
@@ -167,6 +179,7 @@ button {
 
 .mid {
 	margin-bottom: 40px;
+    width: 100%;
 }
 
 section {
@@ -174,7 +187,7 @@ section {
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin-bottom: 40px;
-	width: 766px;
+	width: 76.6%;
 
 }
 
@@ -185,7 +198,7 @@ section {
 }
 
 #about {
-	margin-left: 30px;
+	margin-left: 3.0%;
 }
 
 #services, #product, #vision {
@@ -195,11 +208,18 @@ section {
 }
 
 .main {
-	border-bottom: 1px solid black;
-	margin-bottom: 40px;
+    border-bottom: 1px solid black;
+	margin-bottom: 48px;
+	font-size: 1.7rem;
 }
+
+#contact {
+	font-size: 1.2rem;
+	line-height: 1.3;
+}	
+
 footer{
-	width: 766px;
+	width: 76.6%;
 }
 footer p {
 	text-align: center;
@@ -214,29 +234,37 @@ hr {
 		box-sizing: content-box;
 	}
 	body{
-		width: 775px;
+		width: 80%;
+	}
+	header{
+		width: 100%;
 	}
 	nav {
-		padding-top: 51px;
+		padding-top: 5.1%;
 		position: relative;
 		right: -110px;
-		top: 10px;
+		top: 33px;
+		font-size: .5rem;
+		margin: 0 -6.1%;
 		
 	}
 	nav >a {
 		font-size: large;
-		padding: 0;
+		padding:0;
+		
 	}
     header img {
-		right: 292px;
-		top: -28px;
+		right: 157px;
+		top: -2px;
 		max-width: 148px;
 		max-height: 37px;
+		width: 100%;
 	
 	}
 
 	.start img{
 		display: none;
+		
 	}	
 	.start section h1 {
 		height: 100px;
@@ -262,7 +290,7 @@ hr {
 	}
 	.mid {
 		
-		width: 769px;
+		width: 76.9%;
 	}
 }
 
@@ -362,4 +390,3 @@ hr {
 			width: 470px;
 		}
 	}
-s/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
