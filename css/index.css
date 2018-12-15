@@ -7,7 +7,7 @@
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+a, abbr, acronym, .contact__address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -84,14 +84,14 @@ p {
     margin: 0px auto;
 }
 
-.nav-content {
+.navigation__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
 }
 
-nav {
+.navigation__links {
 	display: flex;
     width: 69%;
 	justify-content: space-between;
@@ -129,7 +129,7 @@ nav {
     margin-bottom: 33px;
 }
 
-.get-started a {
+.get-started__link {
 	text-decoration: none;
     border: 1px solid black;
     padding: 2.5px;
@@ -140,7 +140,7 @@ nav {
     font-size: 1.7rem;
 }
 
-.get-started a:hover {
+.get-started__link:hover {
     background: black;
     border: 1px solid lightcyan;
     color: lightcyan;
@@ -163,7 +163,7 @@ nav {
     display: flex;
 }
 
-.bottom-content div {
+.services, .product, .vision {
     width: 31%
 }
 
@@ -187,7 +187,7 @@ nav {
     margin-bottom: 12px;
 }
 
-address {
+.contact__address {
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -211,7 +211,7 @@ address {
         display: none;
     }
 
-    .nav-content {
+    .navigation__content {
         flex-direction: column;
     }
 
@@ -219,7 +219,7 @@ address {
         margin-bottom: 38px;
     }
 
-    nav {
+    .navigation__links {
         width: 100%;
         order: 1;
         padding-right: 5.2%;
@@ -265,7 +265,7 @@ address {
         padding-left: 1.6%;
     }
     
-    .bottom-content div {
+    .services, .product, .vision {
         width: 28.5%
     }
     
@@ -297,7 +297,7 @@ address {
         width: 100%;
     }
     
-    .nav-content {
+    .navigation__content {
         margin-top: 19px;
     }
 
@@ -305,7 +305,7 @@ address {
         margin-bottom: 20px;
     }
 
-    nav {
+    .navigation__links {
         flex-direction: column;
         width: 500px;
         padding-right: 0;
@@ -326,7 +326,7 @@ address {
         color: lightcyan;
     }
 
-    nav a:last-child {
+    .navigation__links a:last-child {
         border-bottom: 1px solid black;
     }
 
@@ -343,13 +343,10 @@ address {
         padding-left: 0%;
     }
 
-    .top-content div {
-        margin-left: 0;
-        padding-left: 0;
-    }
-
     .features, .about {
         width: 95%;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .features {
@@ -374,12 +371,12 @@ address {
         padding-left: 0%;
     }
     
-    .bottom-content div {
+    .services, .product, .vision {
         width: 95%;
         margin-bottom: 63px;
     }
 
-    .bottom-content .vision {
+    .vision {
         margin-bottom: 0px;
     }
 
