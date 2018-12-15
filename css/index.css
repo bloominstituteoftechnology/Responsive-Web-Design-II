@@ -163,8 +163,8 @@ header {
 }
 
 header nav {
-  margin-top: 4%;
-  width: 61%;
+  margin-top: 4.5%;
+  width: 69.3%;
   justify-content: space-between;
   display: flex;
 }
@@ -181,14 +181,14 @@ header nav a:hover {
 }
 
 header .logo {
-  margin: 2.8% 0 0 9.1%;
+  margin: 3.2% 0 0 10.34%;
 }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
   display: flex;
-  margin-top: 7.2%;
+  margin-top: 8.2%;
   justify-content: flex-end;
 }
 
@@ -200,7 +200,7 @@ header .logo {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 8.2% 0 0;
+  margin: 0 9.32% 0 0;
 }
 
 .cta .cta-text button {
@@ -223,8 +223,8 @@ header .logo {
 .main-content {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 7.5% 0 3.5% 0;
-  padding: 3.5% 0;
+  margin: 8.52% 0 4% 0;
+  padding: 4% 0;
   font-size: 1.6rem;
   line-height: 18px;
 }
@@ -235,7 +235,7 @@ header .logo {
 
 .main-content .middle-img {
   display: block;
-  margin: 3% auto;
+  margin: 3.4% auto;
 }
 
 .main-content .bottom-content {
@@ -243,7 +243,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-  padding-right: 2%;
+  padding-right: 2.3%;
 }
 
 /* Contact Styles */
@@ -253,7 +253,7 @@ header .logo {
 }
 
 .contact p {
-  margin: 1.5% 0;
+  margin: 1.7% 0;
 }
 
 /* Footer Styles */
@@ -261,7 +261,7 @@ header .logo {
 footer {
   font-size: 1.6rem;
   text-align: center;
-  margin: 4% 0 2%;
+  margin: 4.5% 0 2.3%;
 }
 
 /* Tablet */
@@ -276,13 +276,13 @@ footer {
 
   header nav {
     width: 100%;
-    padding: 0 4%;
+    padding: 0 3.75%;
   }
 
   header .logo {
     order: -1;
     display: block;
-    margin: 4% auto 0;
+    margin: 3.75% auto 0;
   }
 
   .cta {
@@ -302,7 +302,7 @@ footer {
   }
 
   .main-content {
-    margin: 8.5% 3% 4.5%;
+    margin: 19.37% 2.5% 4.37%;
   }
 
   .text-content {
@@ -310,7 +310,7 @@ footer {
   }
 
   .contact {
-    margin: 0 4%;
+    margin: 0 3.75%;
   }
 }
 
