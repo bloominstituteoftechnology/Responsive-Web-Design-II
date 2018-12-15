@@ -69,10 +69,15 @@ html{
     font-size: 62.5%;
 }
 
-.bodycontainer{
-    width: 100%;
+.bodycontainer {
+    font-size: 1.6rem;
+    max-width: 880px;
+    margin: 0 auto;
+    border: 2px dashed red;
+}
 
-    
+p{
+    padding-left: 0%;
 }
 
 /*~~~~~~~~~~~~~~~~~ Nav Bar~~~~~~~~~~~~~~~*/
@@ -91,17 +96,18 @@ html{
 	font-size: 1.2rem;
     background: white;
     align-items: flex-end;
-    /* border: 2px dashed green; */
+    border: 2px dashed green;
     width: 100%;
 	
 }
 .bar{
     color: grey;
-    /* border: 2px dashed blue; */
+    border: 2px dashed blue;
 }
 
 .logocontainer{
-    /* border: 2px dashed red; */
+    
+    border: 2px dashed red;
 }
 
 
@@ -133,34 +139,31 @@ html{
 .topcontainer{
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     line-height: 1.2;
-    font-size: 2rem;
+    
     padding-top: 30px;
     
 }
 
 .top{
-    width: 550px;
-    height: 140px;
-    /* border: 3px solid palevioletred;
-    border-top: 1px solid black; */
-    /* border: 1px solid blueviolet; */
+    width: 50%;
+    padding-left: 0px;
+
+    border: 1px solid blueviolet;
 }
 
 /*~~~~~~~~~~~~~~~~~ img banner~~~~~~~~~~~~~~~*/
 
 .banner{
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     /* border: 1px solid blueviolet; */
-    width: 1200px;
+    width: 100%;
+    margin: 20px 0;
 }
 .middleimg{
-    margin-left: 85px;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px
+
 }
 
 /*~~~~~~~~~~~~~~~~~ bottom content~~~~~~~~~~~~~~~*/
@@ -168,7 +171,7 @@ html{
 .botcontainer{
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     line-height: 1.2;
     font-size: 20px;
     flex-basis: 100%;
@@ -176,11 +179,9 @@ html{
 }
 
 .bot{
-    width: 400px;
-    height: 200px;
-    /* border: 3px solid palevioletred;
-    border-top: 1px solid black; */
-    /* border: 1px solid blueviolet; */
+    width: 33.3%;
+    
+    border: 1px solid blueviolet;
 }
 
 /*~~~~~~~~~~~~~~~~~ footer~~~~~~~~~~~~~~~*/
@@ -188,10 +189,9 @@ html{
 .contactinfo{
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-    margin-top: 40px;
+
     justify-content: space-evenly;
-    
+    border: 1px solid aqua;
 }
 
 
@@ -201,6 +201,10 @@ html{
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.numba{
+    padding: 10px 0; 
 }
 
 
