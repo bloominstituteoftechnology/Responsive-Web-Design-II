@@ -317,7 +317,11 @@ section h2 {
 
   .product-and-services .p-and-s-column {
 	  flex: 0 0 30%;
-  } 
+  }
+  
+  .about-services-text ul {
+    margin: 3vw;
+  }
 
 }
 
@@ -381,6 +385,19 @@ section h2 {
 
   .footer {
     font-size: 1.45rem;
+  }
+
+  .services-list {
+    flex-direction: column;
+  }
+
+	.about-services {
+		flex-direction: column-reverse;
+		align-items: center;
+  }
+  
+  .about-services-text ul {
+    margin: 4vw;
   }
 
 }
