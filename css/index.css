@@ -152,6 +152,10 @@ div nav a{
 
 }
 
+
+
+
+
  .logo{
 	/* border: 1px solid orange; */
 	/* display: inline-block;  */
@@ -239,8 +243,9 @@ p.GStext{
 	align-self: center;
     font-size: 5.5rem;
     margin-bottom: 25px;
-    line-height: .55;
+	line-height: .55;
     
+   
 	/* display: flex; */
   }
 
@@ -252,6 +257,27 @@ p.GStext{
   h1 .Demand{
 	  /* padding-left: 40px; */
   }
+
+  
+@keyframes bounce{
+	0% {
+		transform: translateY(-200%);
+	}
+	/* 50% {
+		transform: translateY(-100%);
+	} */
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.snippet{
+	animation: bounce 1s ease-in;
+	animation-iteration-count: 2;
+}
+
+}
+
 
 .content1image{
 	/* border: 1px solid blue;
@@ -771,7 +797,7 @@ ul {
      
      .Innovation, .On, .Demand{
             font-size: 7.3rem;
-        
+			
      }
 	
 	 div .content1{
@@ -789,10 +815,23 @@ ul {
 	height: 34px;
  }
 
+ @keyframes increase{
+	 0% {
+		 transform: scale(1);
+	 }
+	 50% {
+		 transform: scale(1.5);
+	 }
+	 100% {
+		 transform: scale(1.75);
+	 }
+ }
 
-
+ .Innovation, .On, .Demand{
+	 animation: increase 2s ease-in;
 }
 
+}
 
 
 
@@ -971,7 +1010,27 @@ ul {
 	}
 
 	
-	
+	@keyframes bounce{
+		0% {
+			transform: translateY(-200%);
+		}
+		50% {
+			transform: translateY(-100%);
+		}
+		100% {
+			transform: translateY(0%);
+		}
+	}
+   
+	.imglogo{
+		animation: bounce 2s ease-in;
+   }
+   
+   }
+
+
+
+
 }
 
 
