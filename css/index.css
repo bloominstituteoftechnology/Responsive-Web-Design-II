@@ -243,6 +243,7 @@ footer h2 {
 .copyright {
     margin-top: 40px;
     text-align: center;
+    margin-bottom: 15px;
 }
 /* ---------- FOOTER ends here ---------- */
 
@@ -256,39 +257,47 @@ footer h2 {
     /* header {
         margin-top: 0;
     } */
-    /* .header-top {
-        padding-top: 0;
-        width: 100%;
+    .header-top {
+        /* padding-top: 0; */
+        /* width: 100%; */
         flex-direction: column-reverse;
         align-items: center;
         align-content: center;
-    } */
-    /* .home-page {
+    }
+    .header-top a.home-page {
         width: 100%;
-        margin-right: 287px;
+        margin: 0 auto;
+        padding: 0;
         margin-top: 3px;
-    } */
-    /* .items {
+    }
+
+    a.home-page > img {
+        max-width: 100%;
+    }
+
+    .items {
         width: 100%;
-        margin-left: 2px;
-        padding-right: 9px;
-        margin-top: 38px;
-    } */
-    /* .title {
+        margin: 0 auto;
+        align-content: space-around;
+        margin-top: 38px; 
+    }
+    
+    .header-bottom {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .header-bottom .title {
         width: 100%;
-        margin-left: 132px;
+        margin: 0 auto;
         margin-top: 3px;
-    } */
+    }
+
     img.code {
         display: none;
     }
     /* --- HEADER ends ---- */
 
-    /* hr.one {
-        margin-top: 75px;
-        margin-left: 19px;
-        width: 760px;
-    } */
     /* ---- CONTENT ---- */
     /* .content {
         margin-left: 19px;
@@ -325,10 +334,6 @@ footer h2 {
     } */
     /* ---- CONTENT ends ---- */
 
-    /* hr.two {
-        margin-left: 19px;
-        width: 760px;
-    } */
 
     /* ---- FOOTER ---- */
     /* footer {
