@@ -63,11 +63,11 @@ html {
 	font-size: 62.5%;
 	}	
 
-/*.container {
-    width: 100%;
-    margin: auto;
+.container {
+    margin: 0 auto;
+  max-width: 860px;
 }
-*/
+
 /* Header Styles */
 
 header {
@@ -102,7 +102,7 @@ header .logo {
   	max-width:288px;
 	margin: 28px 0 0 0;
 	align-self:flex-start;
-	padding-left: 30px;
+	padding: 0 30px 0 30px;
 	
 }
 
@@ -115,7 +115,7 @@ header .logo {
 }
 
 .cta .cta-text {
-    font-size: 72px;
+    font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
     display: flex;
@@ -127,7 +127,7 @@ header .logo {
 
 .cta .cta-text button {
     border: 1px double black;
-    font-size: 16px;
+    font-size: 1.6rem;
     background: white;
     width: 170px;
     height: 32px;
@@ -140,6 +140,11 @@ header .logo {
     color: white;
 }
 
+.cta img{
+    width:100%;
+  max-width:379px
+}
+
 /* Main Content Styles */
 
 .main-content {
@@ -147,7 +152,7 @@ header .logo {
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
    padding: 35px 0;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 18px;
 }
 
@@ -170,8 +175,15 @@ header .logo {
 
 /* Contact Styles */
 
+.contact{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
 .contact p {
     margin: 15px 0;
+    
+   
 }
 
 /* Footer Styles */
@@ -179,6 +191,7 @@ header .logo {
 footer {
     text-align: center;
     margin: 40px 0 20px;
+    font-size: 1.6rem;
 }
 
 /* Tablet 
