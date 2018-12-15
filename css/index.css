@@ -246,14 +246,34 @@ p{
         padding-left: 2.5%;
     }
 
+    .topcontainer{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
     .banner{
         max-width: 800px;
-        width: 100%;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         /* border: 10px dashed darkblue; */
     }
     
     .middleimg{
         width: 100%;
+    }
+    
+    .botcontainer{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    
+
+    .contactinfo{
+        margin: 0 auto;
+        width: 95%;
     }
 
 }
@@ -313,9 +333,11 @@ p{
         margin-top: 20px;
     }
 
-    .middleimg{
+    .banner{
         width: 95%;
-        margin-left: 2.5%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 40px;
     }
 
 
