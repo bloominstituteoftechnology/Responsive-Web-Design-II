@@ -274,7 +274,7 @@ ul {
 	}
 
 	.contact {
-		margin-left: 20px;
+		padding-left: 2.5%;
 	}
 
 }
@@ -285,6 +285,7 @@ ul {
 	}
 
 	.container {
+		border-bottom: 1px solid black;
 		width: 100%;
 		margin-top: 0;
 	}
@@ -310,13 +311,9 @@ ul {
 		border: 0;
 	}
 
-	.container {
-		border: 1px solid black;
-	}
-
 	.logo {
 		margin-top: 0;
-		padding: 20px;
+		padding: 20px 0;
 	}
 
 	.h1-div {
