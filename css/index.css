@@ -67,8 +67,13 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+p {
+    line-height: 1.25;
+    font-size: 1.6rem;
+}
+
 .main-container {
-    max-width: 874px;
+    max-width: 880px;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -130,7 +135,8 @@ header {
 
 .header-h1 {
     display: block;
-    font-size: 76px;
+    /*font-size: 76px;*/
+    font-size: 7.6rem;
 }
 
 .button {
