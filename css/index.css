@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5 {
 
 html {
     font-size: 62.5%;
+        /* setting 1rem = 10px */
 }
 
 body {
@@ -255,13 +256,45 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .container-nav nav {
-        flex-direction: column;
+        .container-nav {
+            margin-top: 0px;
+        }
+
+            .container-nav nav {
+                flex-direction: column;
+                align-items: center; 
+                padding-top: 0px;
+
+            }
+
+        .container-nav a {
+            width: 100%;
+            justify-content: center;
+
+            border-bottom: 1px solid black;
+            padding: 23px 0px 23px 0px;
+        }
+
+        .container-nav img {
+            padding-bottom: 15px;
+        }
+
+    .container-header {
+        padding: 15px 0px 55px 0px;
+    }
+
+    .content-container {
+        margin: 55px 0px 35px 0px;
+    }
+
+    .content {
+        margin-bottom: 45px;
     }
 
     .content1, .content2 {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;
         
     }
 
