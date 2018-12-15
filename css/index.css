@@ -359,8 +359,18 @@ footer {
 /* smartphone */
 
 @media (max-width: 500px) {
+
   header nav {
+    width: 100%;
+    border: 1px solid red;
     display: flex;
+    align-items: center;
     flex-direction: column;
   }
+
+  header nav a {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
 }
