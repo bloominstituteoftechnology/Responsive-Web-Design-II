@@ -227,8 +227,8 @@ section h2 {
 
 /* Services Page */
 .services-into-text h1 {
-  margin: 1rem 0;
-  font-size: 2rem;
+  margin: 16px 0;
+  font-size: 3rem;
 }
 
 .services-list {
@@ -236,26 +236,26 @@ section h2 {
 	flex-wrap: wrap;
 	justify-content: space-between;
   border-top: 1px solid black;
-  margin: 2rem auto;
+  margin: 32px auto;
 }
 
 .service-item {
 	flex: 0 0 48%;
 	border: 1px solid black;
-	padding: 2rem;
+	padding: 16px;
 	margin: 1.5rem 0;
 	background: #F4F3F4;
 }
 
 .svc-button {
 	width: 130px;
-	padding: 0.25rem 2rem;
+	padding: 4px 32px;
 	margin-top: 1rem;
 	border: 1px solid black;
 	border-radius: 5px;
 	text-align: center;
 	background: white;
-	font-size: 0.75rem;
+	font-size: 1.2rem;
 	cursor: pointer;
 }
 
@@ -267,12 +267,12 @@ section h2 {
 
 .about-services-text ul {
 	list-style-type: disc;
-	margin: 1.15rem;
+	margin: 2.5vw;
 }
 
 .about-services-text, .services-info-img {
 	flex: 0 0 48%;
-	margin: 1.5rem 0;
+	margin: 24px 0;
 }
 
 /*------RESPONSIVE DESIGN-----*/
