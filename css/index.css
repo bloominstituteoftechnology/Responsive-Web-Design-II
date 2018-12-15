@@ -100,7 +100,7 @@ nav {
 .nav-button {
 	text-decoration: none;
     color: grey;
-    transition: transform 0.4s;
+    transition: transform 0.5s;
     font-size: 1.6rem;
 }
 
@@ -136,12 +136,12 @@ nav {
 	padding-left: 15%;
 	padding-right: 15%;
 	color: black;
-    transition: 0.5s;
+    transition: 0.8s;
     font-size: 1.7rem;
 }
 
 .get-started a:hover {
-    background: darkblue;
+    background: black;
     border: 1px solid lightcyan;
     color: lightcyan;
 }
@@ -319,12 +319,15 @@ address {
         font-size: 20px;
     }
 
-    nav a:last-child {
-        border-bottom: 1px solid black;
+    .nav-button:hover {
+        transform: scale(1.2);
+        background: black;
+        color: lightcyan;
+        border:
     }
 
-    .nav-button:hover {
-        transform: scale(1.2s);
+    nav a:last-child {
+        border-bottom: 1px solid black;
     }
 
     .call-to-action {
