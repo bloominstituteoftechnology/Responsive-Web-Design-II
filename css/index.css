@@ -131,7 +131,7 @@ nav a {
 
 }
 
-.logo{
+.logo {
 	display: flex;
     justify-content: flex-end;
     max-width: 180px;
@@ -172,6 +172,7 @@ main {
 }
 
 main, .middle-img {
+    width: 100%;
 	padding: 40px 0;
 
 }
