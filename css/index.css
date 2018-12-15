@@ -256,26 +256,26 @@ footer {
 
 @media (max-width: 500px) {
     body {
-		width: 500px;
+		width: 100%;
 	}
 
 	.logo {
-		width: 200px;
-		margin-bottom: 20px;
+		width: 40%;
+		margin-bottom: 2rem;
 	}
 
 	nav {
 		flex-direction: column;
 		justify-content: center;
-		width: 500px;
+		width: 100%;
 	}
 
 	nav a {
-		width: 500px;
+		width: 100%;
 		border-top: 1px solid black;
-		font-size: 20px;
+		font-size: 2rem;
 		text-align: center;
-		padding: 15px 0px 15px 0px;
+		padding: 1.5rem 0 1.5rem 0;
 	}
 
 	nav a:last-child {
@@ -283,15 +283,14 @@ footer {
 	}
 
 	#banner {
-		width: 475px;
-		margin: 0 auto;
+		width: 95%;
 		justify-content: center;
 	}
 
 	#main {
-		width: 475px;
+		width: 95%;
 		height: 850px;
-		margin: 0 auto 40px;
+		margin: 0 auto 4rem;
 	}
 
 	#section1 {
@@ -307,11 +306,11 @@ footer {
 	}
 
 	#section1 section, #section3 section {
-		width: 475px;
+		width: 100%;
 	}
 
 	#contact-section {
-		width: 475px;
-		margin-left: 12.5px;
+		width: 95%;
+		margin: 0 auto;
 	}
 }
