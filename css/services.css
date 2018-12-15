@@ -160,15 +160,15 @@ header nav ul .item a:hover {
     
 }
 
-.box1 {
+.box1, .box2 {
     margin: 40px 0 20px 0;
 }
 
-.box2 {
+.box3, .box4 {
     margin: 20px 0 20px 0;
 }
 
-.box3 {
+.box5, .box6 {
     margin: 20px 0 40px 0;
 }
 
@@ -225,15 +225,13 @@ header nav ul .item a:hover {
 
 }
 
+/* FOOTER */
+
 
 footer {
     text-align: center;
     padding: 30px 0;
 }
-
-
-
-
 
 
 
@@ -269,6 +267,83 @@ footer {
         
     }
 
+    
 
 
+
+}
+ 
+/* MOBILE VIEW */
+
+@media (max-width: 500px) {
+
+    body {
+        margin: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+ 
+    header nav ul li {
+        padding: 10px;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
+        
+    }
+ 
+    header nav ul .item {
+        margin-top: 0;
+        padding: 17px 0;
+        transition: 250ms ease-in-out;
+    }
+ 
+    header nav ul .item:hover{
+        background: aquamarine;
+        cursor: pointer;
+    }
+ 
+    header nav ul .item a {
+        padding: 16px 44%;
+    }
+
+    .contain {
+        margin: 0 5%;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        flex-wrap: none;
+    }
+
+    .box {
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box1 {
+        margin-bottom: 0;
+    }
+
+    .box6 {
+        margin-top: 0;
+    }
+
+
+    .b-box {
+        width: 100%;
+    }
+
+
+
+    .b-img {
+        display: none;
+
+    }
+
+    
 }
