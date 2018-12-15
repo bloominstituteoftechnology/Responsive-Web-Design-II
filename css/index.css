@@ -150,7 +150,7 @@ header .logo {
     padding-top: 5%;
     padding-left: 3%;
     margin-top: 3%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("/img/about-banner.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("https://dxtrlws.github.io/Responsive-Web-Design-II/img/about-banner.jpg");
 }
 
 .cta-about h1{
@@ -211,6 +211,20 @@ header .logo {
 .contact-details{
     width: 65%;
     margin-left: 3%;
+}
+
+.contact-details p:first-of-type {
+    margin-bottom: 2%;
+}
+
+.contact-details-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-details-title {
+    color: rgb(112, 112, 112);
+    
 }
 
 .contact-social {
@@ -346,6 +360,11 @@ footer {
 
     .who-we-are, .meet-our-team {
         margin-left: 3%;
+    }
+    .contact-details {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 3%;
     }
 }
 
