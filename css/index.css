@@ -52,6 +52,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -75,8 +79,9 @@ li {
 	margin-left: 18px;
 }
 .container {
-  width: 880px;
+  max-width: 880px;
   /* TB LR */
+  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -89,14 +94,14 @@ header {
 
 header nav {
   display: flex;
-  width: 691px;
+  width: 100%;
   vertical-align: top;
   margin-top: 35px;
 }
 
 header nav a {
   margin-right: 65px;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -136,7 +141,7 @@ header .logo {
 
 .cta .cta-text {
   vertical-align: top;
-  font-size: 77px;
+  font-size: 7.7rem;
   margin-top: 120px;
   text-align: center;
   padding: 0px 75px;
@@ -147,7 +152,7 @@ header .logo {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -173,6 +178,7 @@ header .logo {
 }
 
 .main-content .top-content .text-content {
+  font-size: 1.6rem;
   width: 410px;
   margin-right: 34px;
 }
@@ -182,6 +188,7 @@ header .logo {
 }
 
 .main-content .middle-img {
+  width: 100%;
   margin-top: 45px;
 }
 
@@ -192,6 +199,7 @@ header .logo {
 }
 
 .main-content .bottom-content .text-content {
+  font-size: 1.6rem;
   width: 275px;
   margin-right: 12px;
 }
@@ -201,6 +209,7 @@ header .logo {
 }
 
 .contact {
+  font-size: 1.6rem;
   margin-top: 57px;
   border-top: 1px solid black;
   padding: 39px 10px 0;
@@ -213,7 +222,7 @@ header .logo {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .main-services-section {
@@ -332,12 +341,8 @@ footer {
 
   header nav {
     display: flex;
-    width: 691px;
-  }
-
-  header nav a {
-    display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .cta-text {
