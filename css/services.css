@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* MEDIA QUERY */
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* NAV */
+.container1{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.container1 .item{
+	margin-top: 15px;
+}
+
+.container1 a{
+	padding-left: 1em;
+	padding-right:1em; 
+	text-decoration: none;
+	color: grey;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+/* Header img */
+header{
+margin-top: 2em;
+margin-bottom: 2em;
+width: 95%;
+width: auto;
+}
+.headerimg img{
+	width: 110%;
+}
+
+/* Services */
+.services{
+width: 95%;
+	margin: auto;
+	margin-bottom: 2em;
+	padding-bottom: 1em;
+	border-bottom: black 1px solid;
+}
+
+h1{
+	font-size:1em;
+}
+
+/* All Boxes */
+
+.services-header-img{
+  
+}
+
+.box{
+	background-color:	#DFDFDF;
+	padding: .5em;
+	border: black 1px solid;
+	
+	margin-bottom: 2em;
+	height: 190px;
+}
+
+
+/* row1 */
+.container2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
+	height: 200px;
+}
+
+.digital{
+	width: 49%;
+	
+} 
+
+.ux{
+	width: 49%;
+
+}
+
+/* row2 */
+.container3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
+	margin-top: 1.5em;
+	height: 200px;
+}
+
+.digitalm{
+	width: 49%;
+	
+} 
+
+.webdev{
+	width: 49%;
+}
+
+/* row3 */
+.container4{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+}
+
+.ios{
+	width: 49%;
+} 
+
+.android{
+	width: 49%;
+}
+
+/* row4 */
+.container5{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin: auto;
+	margin-top: 1em;
+	padding-top: 2em;
+	border-top: black 1px solid;
+}
+
+.facts{
+  width: 49%;
+  height: 18em;
+} 
+
+.bottomimg{
+  width:49%;
+  
+}
+
+.services-info-img{
+width: 98%;
+overflow: hidden;
+height: 98%;
+}
+
+p a{
+	border: black 1px solid;
+	border-radius: 5%;
+	background-color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
+}
+
+p a:hover{
+	display: inline-block;
+	transition-duration: 0.6s;
+	transition-property: transform;
+	transform: scale(1.2);
+}
+
+.button{
+	margin-top: 1.5em;
+	margin-left: 1em;
+}
+
+/* FOOTER */
+footer{
+	text-align: center;
+	margin: 4em;
+}
+
+ul li{
+	list-style-type: disc;
+	line-height: 2em;
+}
+
+.list{
+	margin-left: 1.5em;
+	margin-top: .5em;
+}
+
+@media(max-width: 800px){
+
+}
+
+@media(max-width: 500px){
+  .container2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15em;
+  }
+  .container3{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container4{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .container5{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15em;
+  }
+  .box{
+    width: 100%;
+  }
+}
