@@ -207,9 +207,8 @@ font-size: 2rem;
 }
 
 button {
-  display: block;
   margin-top: 1.5rem;
-  padding: .8rem 1.5rem;
+  padding: .8rem 5rem;
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -277,10 +276,9 @@ button {
   }
 
   .cta {
-    /* width: 140px; */
+    width: 70%;
     margin: 0 auto;
     border: 2px solid #c9c9c9;
-    padding: .5rem 2.6rem;
     font-size: 1.4rem;
   }
 
