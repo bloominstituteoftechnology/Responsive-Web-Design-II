@@ -215,6 +215,8 @@ h2 {
 }
 
 p {
+  width: 100%;
+  padding: 2%;
   margin-bottom: 15px;
 }
 
@@ -252,7 +254,7 @@ footer {
   }
 
   header nav {
-    width: 95%;
+    width: 100%;
     padding: 1.1%;
     justify-content: space-between;
   }
@@ -263,6 +265,14 @@ footer {
     margin-top: 35px;
     font-size: 1.4rem;
     padding: 10px 4%;
+  }
+
+  .service-facts {
+    width: 100%;
+  }
+
+  .services-info-img {
+    display: none;
   }
   /* header nav a:last-child {
     margin-right: 0;
@@ -283,6 +293,7 @@ footer {
 
   header nav a {
     font-size: 2.4rem;
+    margin-top: 0;
     padding: 20px 0;
     border-top: 2px solid rgb(68, 152, 185);
     border-left: 2px solid rgb(68, 152, 185);
@@ -291,7 +302,9 @@ footer {
   }
 
   header nav a:last-child {
-    border-right: 2px solid rgb(68, 152, 185)
+    border-bottom: 2px solid rgb(68, 152, 185);
+    border-right: 2px solid rgb(68, 152, 185);
+    
   }
 
   .service-container {

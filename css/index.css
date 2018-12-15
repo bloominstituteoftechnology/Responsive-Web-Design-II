@@ -86,7 +86,7 @@ html {
 header {
   width: 100%;
   display: flex;
-  margin-top: 25px;
+  margin-top: 30px;
   align-items: center;
 }
 
@@ -271,10 +271,6 @@ footer {
       padding: 2%;
       font-size: 1.4rem;
       padding: 10px 4%;
-    }
-
-    header .logo {
-      margin-bottom: 40px;
     }
 
     header nav a:last-child {
