@@ -67,11 +67,12 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 html {
-    font-size: 62.5%;
+	font-size: 62.5%; 
 }
 
 body {
 	max-width: 880px;
+	width: 95%;
     margin: 0 auto;
     font-size: 1.6rem;
 }
@@ -147,10 +148,13 @@ button {
 	justify-content: space-between;
 }
 
+.bottom-content div {
+	width: 31%;
+}
+
 .contact {
 	margin-top: 36px;
-	width: 20%;
-	height: 140px;
+	width: 100%;
 }
 
 address {
@@ -213,7 +217,6 @@ footer {
 	width: 400px;
 }
 
-
 ul {
 	margin-top: 10px;
 	padding-left: 18px;
@@ -222,11 +225,11 @@ ul {
 
 @media (max-width: 800px) {
 	body {
-		width: 760px;
+		width: 95%;
 	}
 
 	.navigation {
-		width: 760px;
+		width: 100%;
 		margin-top: 43px;
 	}
 
@@ -246,35 +249,28 @@ ul {
 	}
 
 	.h1-div {
-		margin-left: 0;
+		width: 100%;
 	}
 
 	.image-circle {
 		display: none;
 	}
 
-	.middle-container {
-		width: 760px;
-	}
-
 	.middle-img {
-		display: block;
-		width: 760px;
+		width: 100%;
 		margin: 0 auto;
 	}
 
 	.top-content, .bottom-content {
-		width: 760px;
-		padding-left: 20px;
-		padding-right: 20px;
+		width: 100%;
 	}
 
 	.top-content div {
-		width: 345px;
+		width:  48%;
 	}
 
 	.bottom-content div {
-		width: 200px;
+		width: 30%;
 	}
 
 	.contact {
@@ -285,17 +281,17 @@ ul {
 
 @media (max-width: 500px) {
 	body{
-		width: 480px;
+		width: 100%;
 	}
 
 	.container {
-		width: 480px;
+		width: 100%;
 		margin-top: 0;
 	}
 
 	.navigation {
 		flex-direction: column;
-		width: 480px;
+		width: 100%;
 		margin-top: 0;
 	}
 
@@ -323,12 +319,13 @@ ul {
 		padding: 20px;
 	}
 
-	.middle-container {
-		width: 480px;
+	.h1-div {
+		font-size: 6.3rem;
 	}
 
 	.middle-img {
-		width: 460px;
+		width: 95%;
+		margin: 0 2.5%;
 	}
 
 	.top-content {
@@ -337,11 +334,13 @@ ul {
 
 	.top-content, .bottom-content {
 		flex-direction: column;
-		width: 480px;
+		align-items: center;
+		margin: 0 auto;
+		width: 95%;
 	}
 
 	.top-content div, .bottom-content div {
-		width: 400px;
+		width: 95%;
 	}
 
 	.features, .about {
