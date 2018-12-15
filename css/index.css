@@ -69,39 +69,39 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+
+/* First attempt at implementing BEM */ 
+
 /* Header Styles */
 
-header {
+.header {
     width: 100%;
     display: flex;
 }
 
-header nav {
+.header__nav {
     margin-top: 40px; 
     width: 100%;
     justify-content: space-between;
     display: flex;
+    font-size: 1.6rem;
 }
 
-header nav a {
+.header__nav--link {
     text-decoration: none;
     color: #b0b0b0;
 }
 
-header nav a:hover {
+.header__nav--link:hover {
     text-decoration: underline;
     color: black;
 }
 
-header .logo {
+.header__logo {
     margin: 28px 0% 0% 91px;
 }
 
-header nav {
-    font-size: 1.6rem;
-}
-
-/* Call To Action (CTA) Styles */
+/* Call To Action (CTA) */
 
 .cta {
     display: flex;
@@ -109,7 +109,7 @@ header nav {
     justify-content: flex-end;
 }
 
-.cta .cta-text {
+.cta__text {
     font-size: 7.2rem;
     text-align: center;
     letter-spacing: 5px;
@@ -120,7 +120,7 @@ header nav {
     margin: 0 8.2% 0 0;
 }
 
-.cta .cta-text button {
+.cta__button {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
@@ -130,7 +130,7 @@ header nav {
     cursor: pointer;
 }
 
-.cta .cta-text button:hover {
+.cta__button:hover {
     background: black;
     color: white;
 }
@@ -146,20 +146,20 @@ header nav {
    line-height: 18px;
 }
 
-.main-content .top-content {
+.main-content__top-content {
     display: flex;
 }
 
-.main-content .middle-img {
+.main-content__middle-img {
     display: block;
     margin: 30px auto;
 }
 
-.main-content .bottom-content {
+.main-content__bottom-content {
     display: flex;
 }
 
-.main-content .bottom-content p {
+.main-content__bottom-content p {
     padding-right: 2%;
 }
 
@@ -188,16 +188,16 @@ footer {
         width: 100%;
     }
 
-    header {
+    .header {
         flex-wrap: wrap;
     }
   
-    header nav {
+    .header__nav {
         width: 768px;
         padding: 0 8%;
     }
 
-    header .logo {
+    .header__logo {
         order: -1;
         display: block;
         margin: 30px auto 0;
@@ -207,15 +207,15 @@ footer {
         justify-content: center;
     }
     
-    .cta .cta-text {
+    .cta__cta-text {
         margin: 0;
     }
 
-    .cta img {
+    .cta__img {
         display: none;
     }
 
-    .main-content .middle-img {
+    .main-content__middle-img {
        width: 100%;
     }
 
@@ -223,7 +223,7 @@ footer {
        margin: 75px 3% 35px;
     }
 
-    .text-content {
+    .main-content__text-content {
         margin: 0 1.5%;
     }
 
@@ -235,18 +235,18 @@ footer {
 /* Phone */
 @media (max-width: 500px) {
 
-    header {
+    .header {
         justify-content: center;
     }
 
-    header nav {
+    .header__nav {
         width: 100%;
         flex-direction: column;
         margin: 0;
         padding: 0;
     }
 
-    header nav a {
+    .header__nav--link {
         width: 100%;
         display: block;
         text-align: center;
@@ -255,15 +255,15 @@ footer {
         border-bottom: 1px solid gray;
     }
 
-    header nav a:first-child {
+    .header__nav__link:first-child {
         border-top: 1px solid gray;
     }
 
-    header nav a:hover {
+    .header__nav__link:hover {
         background: gray;
     }
 
-    header .logo {
+    .header__logo {
         margin: 20px 0;
     }
 
@@ -273,23 +273,23 @@ footer {
         align-items: center;
     }
 
-    .cta img {
+    .cta__img {
         max-width: 80%;
     }
 
-    .main-content .top-content {
+    .main-content__top-content {
         justify-content: space-around;
         flex-direction: column;
         height: 300px;
     }
 
-    .main-content .bottom-content {
+    .main-content__bottom-content {
         flex-wrap: wrap;
         align-content: space-between;
         height: 440px;
     }
 
-    .text-content {
+    .main-content__text-content {
         margin: 0;
     }
 
