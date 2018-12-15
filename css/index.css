@@ -302,37 +302,52 @@ section h2 {
 }
 
 .contact-form-container {
-  margin: 0 auto;
-    padding: 20px 5%;
-    border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 .contact-form {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* border: 1px solid green; */
+}
+
+.form-element {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form label {
+  align-self: flex-start;
   display: block;
+  margin: 10px 0;
+  font-size: 1.6rem;
 }
 
 .contact-form input, .contact-form textarea {
-  width: 90%;
-  padding: 1rem;
+  width: 100%;
+  padding: 16px;
   border-radius: 5px;
   border: 1px solid black;
-  margin-bottom: 2rem;
+  margin-bottom: 24px;
 }
 
 .contact-submit-btn {
   width: 30%;
-  padding: 1rem;
+  padding: 16px;
   border-radius: 25px;
-  margin-bottom: 2rem;
+  margin-bottom: 24px;
   color: white;
   background: crimson;
-  font-size: 1rem;
-  letter-spacing: 0.12rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.19rem;
   text-transform: uppercase;
   cursor: pointer;
 }
