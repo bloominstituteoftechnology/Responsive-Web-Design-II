@@ -29,6 +29,10 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   line-height: 1;
 }
@@ -68,14 +72,19 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 15px;
 }
 
+/* Custom styles */
 
 h1 {
-  font-size: 78px;
+  font-size: 7.8rem;
+}
+
+p {
+  font-size: 1.8rem;
 }
 
 .container {
   margin: 0 auto;
-  width: 900px;
+  max-width: 880px;
 }
 
 nav {
@@ -84,23 +93,24 @@ nav {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 3rem;
 }
 
 .menu a {
   color: #777;
   text-decoration: none;
-  padding-right: 40px;
+  padding-right: 4rem;
+  font-size: 1.8rem;
 }
 
 .hero {
   display: flex;
   margin: 0 auto;
-  border-bottom: 2px solid #c9c9c9;
+  border-bottom: .2rem solid #c9c9c9;
   text-align: center;
   justify-content: space-around;
   align-items: center;
-  padding: 60px 0 60px 0;
+  padding: 6rem 0 6rem 0;
 }
 
 .hero p {
@@ -108,27 +118,28 @@ nav {
 }
 
 .cta {
-  width: 140px;
+  width: 48%;
   margin: 0 auto;
   border: 2px solid #c9c9c9;
-  padding: 10px 26px;
+  padding: 1rem 2.6rem;
 }
 
 .inner1 {
-  max-width: 50%;
+  max-width: 46%;
 }
 
 .top-row {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .bottom-row {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .inner2 {
@@ -136,50 +147,50 @@ nav {
 }
 
 .inner1 h2 {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .middle-img {
-  margin: 40px 0;
+  margin: 4rem 0;
 }
 
 .bottom-row {
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
   border-bottom: 2px solid #c9c9c9;
 }
 
 address {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .phone {
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
 .copyright {
   text-align: center;
-  margin: 80px 0;
+  margin: 8rem 0;
 }
 
 /* Services Page-specific CSS */
 .services-header {
 	display: flex;
 	flex-direction: column;
-  margin: 20px 0;
-	padding-bottom: 30px;
+  margin: 2rem 0;
+	padding-bottom: 3rem;
   border-bottom: 1px solid #c9c9c9;
 }
 
 .services-header h1 {
-	font-size: 28px;
-	padding-top: 20px;
+	font-size: 2.8rem;
+	padding-top: 2rem;
 }
 
 .desc-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-	padding-bottom: 20px;
+	padding-bottom: 2rem;
   border-bottom: 1px solid #c9c9c9;
 }
 
@@ -187,18 +198,18 @@ address {
   max-width: 48%;
   background-color: #F4F3F4;
   border: 1px solid #c9c9c9;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 2rem;
+  margin: 2rem 0;
 }
 
 .service-desc h2 {
-font-size: 20px;
+font-size: 2rem;
 }
 
 button {
   display: block;
-  margin-top: 15px;
-  padding: 8px 15px;
+  margin-top: 1.5rem;
+  padding: .8rem 1.5rem;
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -208,11 +219,11 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	margin-top: 40px;
+	margin-top: 4rem;
 }
 
 .services-bottom-row p {
-	padding-bottom: 20px;
+	padding-bottom: 2rem;
 }
 
 /* Tablet */
@@ -220,14 +231,14 @@ button {
 @media (max-width: 800px) {
 
   .container {
-    width: 760px;
+    width: 90%;
     margin: 0 auto;
   }
 
   nav {
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .menu {
@@ -235,8 +246,8 @@ button {
   }
 
   .menu a {
-    padding-right: 72px;
-    font-size: 14px;
+    padding-right: 7.2rem;
+    font-size: 1.4rem;
   }
 
   .logo-container {
@@ -244,8 +255,8 @@ button {
   }
 
   .logo-container img {
-    width: 160px;
-    padding-bottom: 30px;
+    width: 100%;
+    padding-bottom: 3rem;
   }
 
   .hero {
@@ -253,28 +264,28 @@ button {
     flex-direction: column;
   }
 
-  .hero .inner1 {
+  /* .hero .inner1 {
       width: 760px;
-  }
+  } */
 
   .hero .inner1:last-child {
     display: none;
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 5.6rem;
   }
 
   .cta {
-    width: 140px;
+    /* width: 140px; */
     margin: 0 auto;
     border: 2px solid #c9c9c9;
-    padding: 5px 26px;
-    font-size: 14px;
+    padding: .5rem 2.6rem;
+    font-size: 1.4rem;
   }
 
   .middle-img {
-    max-width: 760px;
+    max-width: 100%;
   }
 
 }
