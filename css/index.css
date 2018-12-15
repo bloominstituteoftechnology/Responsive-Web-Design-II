@@ -165,15 +165,17 @@ footer h2 {
 }
 
 .main-content {
-    padding: 35px 0 25px;
+    /*padding: 35px 0 25px;*/
     margin-bottom: 18px;
 }
 
 .top-border {
+    padding-top: 35px;
     border-top: 2px solid black;
 }
 
 .bottom-border {
+    padding-bottom: 35px;
     border-bottom: 2px solid black;
 }
 
@@ -183,6 +185,10 @@ footer h2 {
 
 .third-column {
     padding-right: 5%;
+}
+
+.middle-img {
+    margin: 30px 0;
 }
 
 #copyright {
@@ -214,6 +220,15 @@ footer h2 {
     header nav a {
         font-size: 1.2rem;
         margin: 0;
+    }
+
+    footer {
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    footer address, footer p, footer a {
+        font-size: 1.2rem;
     }
     
     .main-container {
@@ -254,16 +269,82 @@ footer h2 {
         height: auto;
     }
 
-    footer {
-        height: 150px;
-        margin-top: 15px;
-    }
-
-    footer address, footer p, footer a {
-        font-size: 1.2rem;
-    }
 }
 
 @media (max-width: 500px) {
-    
+
+    header {
+        margin-top: 15px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 15px 0;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    header nav a:first-of-type {
+        border-top: 1px solid lightgrey;
+    }
+     .main-container {
+         width: 85%;
+     }
+
+    .logo {
+        width: 33%;
+        height: auto;
+    }
+
+    .intro {
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        width: 95%;
+        margin: 0 auto;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .main-text {
+        width: 90%;
+        /*margin: 18px 5% 0 0;*/
+        padding: 0 5% 0 0;
+    }
+
+    .middle-img {
+        max-width: 100%;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .column {
+        margin-top: 20px;
+    }
+
+    .top-border {
+        padding-top: 25px;
+    }
+
+    .bottom-border {
+        padding-bottom: 25px;
+    }
+
+    .columnX2, .columnX3 {
+        display: block;
+    }
+
+    footer {
+        width: 95%;
+    }
+
 }
