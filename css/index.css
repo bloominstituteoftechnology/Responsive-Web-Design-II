@@ -234,42 +234,47 @@ hr {
 		box-sizing: content-box;
 	}
 	body{
-		width: 80%;
+		width: 100%;
 	}
 	header{
 		width: 100%;
 	}
 	nav {
-		padding-top: 5.1%;
+		padding-top: 7.1%;
 		position: relative;
 		right: -110px;
 		top: 33px;
 		font-size: .5rem;
 		margin: 0 -6.1%;
+		width: 113%;
+		height: 100%;
 		
 	}
 	nav >a {
 		font-size: large;
 		padding:0;
+		margin: 3.8%;
 		
 	}
     header img {
-		right: 157px;
+		right: 213px;
 		top: -2px;
-		max-width: 148px;
+		max-width: 22.8%;
 		max-height: 37px;
-		width: 100%;
+		width: 101%;
 	
 	}
-
+    .start{
+		width: 113%;
+	}
 	.start img{
 		display: none;
 		
 	}	
 	.start section h1 {
-		height: 100px;
-		font-size: 4.5em;
-		margin-bottom: 80px;
+		
+		font-size: 8.5em;
+		margin-bottom: 32%;
 		position: relative;
 		right: 5px;
 	}
@@ -277,72 +282,90 @@ hr {
 
    
 		position: relative;
-		left: 36px;
+		left: 0px;
 		top: 16px;
-		width: 156px;
+		width: 37.6%;
 		height: 40px;
-}
+	}
 	
-
+     .main{
+		 width: 113%;
+	 }
 
 	#features, #about {
-	    width: 47%;
+		width: 46%;
+		padding-left: 1.5%
 	}
 	.mid {
 		
 		width: 76.9%;
+		left: 14px;
+		position: relative;
+		width: 95.9%;
+	}
+	
+	
+	#contact {
+	
+		font-size: 1.6rem;
+		padding: 1%;
 	}
 }
 
 @media (max-width: 500px){
 	body{
-		width: 470px;
+		width: 114%;
 	}
      .max{
-		 width: 470px;
+		width: 89%;
+	 }
+	 header {
+		 width: 117%;
 	 }
 	.nav{
 	    display: flex;
     flex-direction: column;
-    line-height: 4em;
-    right: -6px;
+	line-height: 13em;
+    right: -18px;
     justify-items: center;
-    border-bottom: 1px solid gray;
+   
 	top: 26px;
 	width: 470px;
     
 	}
 	nav a{
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    font-size: 1.7em;;
-    padding-left: 72px;
+    border-top: .5px solid gray;
+    border-bottom: 0.5px solid gray;
+	font-size: 2.7rem;
+	padding-left: 21.2%;
     text-align: center;
-    width: 470px;
+	width: 122%;
+	margin: 0;
 }
   
 	
 
 	header img {
-		right: 247px;
+		right: 114px;
 		top: -30px;
 		max-width: 197px;
 		max-height: 61px;
 	
 		}
 		.start{
-			width: 470px;	
+			width: 117%;
+			padding-bottom: 10.5%;	
 		}
 		.start section h1 { 
-			font-size: 5em;
+			font-size: 8rem;
 		}
 		.g-button {
 			position: relative;
-			left: 54px;
-			top: 16px;
-			width: 88px;
+			left: 19px;
+			top: 73px;
+			width: 40.8%;
 			height: 24px;
-	}
+		}
 
 	#features, #about {
 	text-align: left;
