@@ -1,1 +1,380 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* 1 rem === 10px based on the user setting of "medium" which is 16px */
+  font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! |||||||||||||||||||||||||||||||||||||||||| */
+
+.container {
+	max-width: 880px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	height: 80px;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* width: 877px; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+
+}
+nav a {
+	text-decoration: none;
+	color: lightgrey;
+	font-size: 1.6rem;
+	width: 16%;
+
+}
+
+.logo {
+	display: flex;
+    justify-content: flex-end;
+    max-width: 180px;
+    width: 100%;
+    
+}
+
+.hero {
+	margin: 125px 0 75px;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 65px;
+	
+}
+
+.title h1 {
+	font-size: 8rem;
+}
+
+.title a {
+	border: 1px solid black;
+	padding: 0px 30px;
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+
+}
+
+/* main section /////////////////*/
+main {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+main, .middle-img {
+    width: 100%;
+	padding: 40px 0;
+
+}
+
+.half div, .thirds div {
+	white-space: normal;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* height: 100%; */
+	vertical-align: top;
+}
+
+.half {
+	white-space: nowrap;
+	
+}
+
+.half div   {
+	width: 50%;
+}
+
+.thirds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirds div {
+    width: 32%;
+}
+
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+/* footer //////////////////////// */
+footer {
+	margin-top: 40px;
+}
+
+footer a {
+	display: flex;
+	text-decoration: none;
+	color: black;
+}
+
+.phone {
+	margin: 24px 0;
+	
+}
+
+#copyright {
+	text-align: center;
+	margin: 48px 0 108px;
+	font-size: 14px;
+}
+
+/* //////////////////////////////// */
+@media all and (max-width: 800px) {
+   .container {
+       width: 100%;
+       padding: 20px;
+   }
+
+   header {
+       margin-top: 32px;
+   }
+
+   .wrapper {
+       width: 100%;
+       flex-direction: column;
+   }
+    header nav {
+     order: 2;
+     width: 100%;
+     justify-content: space-between;
+     margin-left: 45px;
+    }
+
+    .logo {
+    display: flex;
+    justify-content: center;
+    order: 1;
+    }
+
+   .middle-img {
+       width: 100%;
+   }
+
+   #code-snip {
+       display: none;
+   }
+
+   .hero {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+    .title {
+       display: flex;
+       width: 100%;
+    } 
+
+    main .half {
+        display: flex;
+        justify-content: space-between;
+    }
+    /* .half {
+        width: 100%;
+    } */
+
+    .half div {
+        width: 48%;
+    }
+
+    .thirds div {
+        width: 30%;
+    }
+}
+
+
+/* media for 500 //////// */
+@media all and (max-width: 500px) {
+    
+    .container {
+       width: 100%;
+       padding: 20px;
+   }
+
+    header {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 0;
+    }
+
+    header nav {
+        margin: 0;
+    }
+
+   nav {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   nav a {
+    /* height: 60px; */
+    /* padding: 12px; */
+    width: 100%;
+    border-bottom: 1px solid grey;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    nav a:nth-child(1) {
+        border-top: 1px solid grey; 
+    }
+
+    .logo {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .hero {
+        margin: 0;
+    }
+
+    .title {
+            margin: 50px 0 70px;
+    }
+
+    .title a {
+        padding: 6px 41px;
+    }
+
+   .half {
+       flex-direction: column;
+   }
+
+   .half div {
+       width: 100%;
+       margin-bottom: 50px;
+   }
+    .half div:nth-child(2) {
+       margin-bottom: 0px;
+   }
+   .thirds {
+       flex-direction: column;
+   }
+
+   .thirds div {
+       width: 100%;
+       margin-bottom: 65px;
+   }
+
+   .thirds div:nth-child(3) {
+       margin-bottom: 0px;
+   }
+}
