@@ -1,1 +1,399 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+  --border: 1px solid red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/******* general styles *******/
+
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  /* border: var(--border); */
+  padding: 20px;
+  /* background: blue; */
+  font-size:  2rem;
+}
+
+.container p {
+  /* font-size: 2.00rem; */
+}
+
+.cta h1 {
+  font-size: 7rem;
+  /* justify-items: center; */
+  text-align: center;
+}
+
+
+/******* menu/navigation *******/
+.topNav {
+  display: flex;
+  /* border: var(--border); */
+  width: 100%;
+  justify-content: space-around;
+}
+
+.topNav .mainNav {
+  display: flex;
+  align-self: center;
+}
+
+.mainNav li {
+  list-style: none;
+  padding: 0 10% 0 0;
+  align-content: space-between;
+}
+
+.mainNav li a {
+  text-decoration: none;
+  align-self: center;
+  color: grey;
+  /* border: var(--border); */
+}
+
+.mainNav li a:hover {
+  text-decoration: underline;
+  /* transition: 5s all; */
+}
+
+.mainNav img {
+
+}
+
+/******* header *******/
+header {
+  display: flex;
+  margin: 2% 2%;
+}
+
+header .cta {
+  /* border: var(--border); */
+  margin-top: 10%;
+  width: 50%;
+  text-align: center;
+}
+
+.cta button {
+  border: 1px solid black;
+  padding: 3% 15%;
+  margin-top: 5%;
+  /* display: inline; */
+}
+
+header h1 {
+  font-size: 7rem;
+  width: 70%;
+  text-align: center;
+  /* border: var(--border); */
+  /* margin-top: 10%; */
+  margin: 0 auto;
+}
+
+.headerIMG {
+  width: 100%;
+  max-width: 50%;
+  /* border: var(--border); */
+}
+
+header button {
+}
+
+header button a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  /* padding: 50px 20px; */
+}
+
+header button a:hover {
+  /* padding: 10px 20px; */
+  /* background: grey; */
+  color: blue;
+  /* font-size: 18px; */
+  /* border: 3px solid blue; */
+}
+
+/******* features *******/
+.diffFeatures {
+  width: 48%;
+  /* max-width: 750px; */
+  padding-right: 1%;
+}
+
+.features {
+  display: flex;
+  width: 100%;
+}
+
+.middle-img {
+  width: 100%;
+  max-width: 100%;
+  /* margin-bottom: 20px; */
+  margin-top: 5%;
+}
+
+/******* services *******/
+.services {
+  display: flex;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
+
+.diffServices {
+  /* max-width: 450px; */
+  width: 33%;
+  padding-right: 2%;
+}
+
+hr {
+  max-width: 100%;
+  margin-bottom: 5%;
+}
+
+.contactPart {
+  margin: 1% 0;
+}
+
+/****** footer ******/
+footer p {
+  text-align: center;
+}
+
+/******* tablet version *******/
+@media (max-width: 800px){
+  .container{
+    /* background: red; */
+    /* padding: 10px; */
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .topNav {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 20px 0 0 0; */
+  }
+  
+  .topNav ul {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .topNav img {
+    margin: 0 0 15% 0;
+  }
+
+  .mainNav {
+    border: var(--border);
+    width: 90%;
+  }
+
+.mainNav li {
+  /* justify-content: space-around; */
+}
+
+
+.mainNav a {
+  /* display: inline-block; */
+  font-size: 1.8rem;
+}
+
+.mainNav a:last-child {
+  /* margin-right: 0;  */
+}
+
+  .headerIMG {
+    display: none;
+  }
+
+  header {
+    /* border: var(--border); */
+    /* margin: 0 auto; */
+    justify-content: center;
+    margin-bottom: 8%;
+  }
+
+  header .cta h1 {
+    font-size: 8rem;
+    /* border: var(--border); */
+    width: 100%;
+    display: inline-block;
+  }
+
+  
+  .diffFeatures {
+    width: 100%;
+    max-width: 350px;
+    /* padding-right: 40px; */
+  }
+
+  .features>.diffFeatures {
+    margin-right: 40px;
+  }
+
+  .about {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .services {
+    max-width: 800px;
+    padding: 10px;
+  }
+
+  .diffServices {
+    /* border: var(--border); */
+    max-width: 260px;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .middle-img {
+    width: 100%;
+    max-width: 799px;
+    /* padding-right: 100px; */
+    /* margin-left: 0; */
+    /* padding-left: 0px; */
+  }
+
+  hr {
+    max-width: 100%;
+  }
+
+  .middleContent {
+    text-align: center;
+  }
+
+  .middleContent p {
+    text-align: justify;
+  }
+
+  .contactPart {
+    width: 30%;
+    /* border: var(--border); */
+    margin-bottom: 5%;
+  }
+
+  header .cta {
+    margin-top: 0;
+  }
+}
+
+/******* mobile version *******/
+@media (max-width: 500px) {
+  .container {
+    /* background: green; */
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .mainNav {
+    flex-direction: column;
+  }
+
+  .mainNav li {
+    padding: 10px 0 10px 0;
+    max-width: 500px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: 500px;
+  }
+
+  .mainNav li a {
+    padding-right: 0;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .diffFeatures {
+    margin-bottom: 20px;
+    /* width: 100%; */
+    max-width: 500px;
+    /* border: var(--border); */
+  }
+
+  .diffFeatures h2 {
+    text-align: left;
+  }
+
+  .services {
+    /* border: var(--border); */
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+  .diffServices {
+    /* border: var(--border); */
+    max-width: 500px;
+    margin-top: 20px;
+  }
+}
