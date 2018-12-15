@@ -177,7 +177,7 @@ p, .features, .about, h2, .services, .product, .vision {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 1px;
+  padding-left: 0.11%;
 }
 
 section p {
@@ -228,6 +228,7 @@ address p {
 @media (max-width: 800px) {
   .container {
     width: 100%;
+    max-width: 800px;
   }
 
   header {
@@ -269,7 +270,7 @@ address p {
   }
 
   .get-started {
-    width: 21.25%
+    width: 21.25%;
   }
   
   main, footer {
@@ -290,7 +291,7 @@ address p {
   }
 
   .middle-img {
-    margin: 0px;
+    margin: 0;
     height: auto;
     width: 100%;
   }
@@ -307,29 +308,30 @@ address p {
 
 @media (max-width: 500px) {
   .container {
-    width: 482px;
     max-width: 500px;
   }
 
   header {
-    width: 482px;
+    width: 100%;
     margin: 20px 0 0 0;
   }
 
   #logo {
+    padding-left: 0.2%;
     padding-bottom: 20px;
   }
 
   nav {
+    padding: 0;
     flex-direction: column;
     align-items: center;
-    width: 482px;
+    width: 100%;
     margin: 0;
   }
 
   nav a {
     border-top: 1px solid var(--nav-border-color);
-    width: 482px;
+    width: 100%;
     text-align: center;
     padding: 20px 0;
     font-size: 2rem;
@@ -343,6 +345,14 @@ address p {
     margin: 50px 0 0 0;
   }
 
+  .get-started {
+    width: 34%;
+  }
+
+  main, footer {
+    margin: 0 4%;
+  }
+
   .top-section, .bottom-section {
     padding: 13px 0 52px 0;
     margin: 0;
@@ -353,7 +363,7 @@ address p {
   }
 
   .top-section div, .bottom-section div {
-    width: 407px;
+    width: 100%;
   }
 
   .top-section div {
@@ -371,10 +381,6 @@ address p {
   .bottom-section .vision {
     padding-bottom: 35px;
     padding-top: 1px;
-  }
-
-  .middle-img {
-    width: 442px;
   }
 
   footer {
