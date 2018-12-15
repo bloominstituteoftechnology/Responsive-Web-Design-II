@@ -286,14 +286,14 @@ address {
   margin-bottom: 23px;
 }
 
-.phone-email {
+.footer-phone-email {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 52px;
 }
 
-.copyright {
+.footer-copyright {
   display: flex;
   justify-content: center;
   margin-top: 55px;
@@ -400,11 +400,11 @@ address {
     margin-bottom: 15px;
   }
 
-  .phone-email {
+  .footer-phone-email {
     height: 48px;
   }
 
-  .copyright {
+  .footer-copyright {
     margin-top: 40px;
     font-size: 1.6rem;
   }
