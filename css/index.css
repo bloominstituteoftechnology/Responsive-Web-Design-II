@@ -116,20 +116,20 @@ header .logo {
 .cta .cta-text {
     font-size: 7.2rem;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     display: flex;
     justify-content: center, space-around;
     flex-flow: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 4% 0 0 0;
 }
 
 .cta .cta-text button {
     border: 1px double black;
     font-size: 1.6rem;
     background: white;
-    width: 170px;
-    height: 32px;
+    width: 60%;
+    height: 10%;
     margin-top: 1%;
     cursor: pointer;
 }
@@ -144,15 +144,13 @@ header .logo {
    height: auto; 
 }
 
-/* Main Content Styles */
-
 .main-content {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
-   margin: 75px 0 35px 0;
-   padding: 35px 0;
+   margin: 10% 0 2% 0;
+   padding: 4% 0;
    font-size: 1.6rem;
-   line-height: 18px;
+   line-height: 1.8rem;
 }
 
 .main-content .top-content {
@@ -160,8 +158,8 @@ header .logo {
 }
 
 .main-content .middle-img {
-    display: block;
-    margin: 30px auto;
+    padding: 2% 0 2% 0;
+    margin: 0 auto; 
 }
 
 .main-content .bottom-content {
@@ -169,27 +167,18 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 2%;
 }
 
-/* Contact Styles */
 
 .contact{
     font-size: 1.6rem;
     line-height: 1.5;
 }
 
-.contact p {
-    margin: 15px 0;
-    
-   
-}
-
-/* Footer Styles */
-
 footer {
     text-align: center;
-    margin: 40px 0 20px;
+    margin: 5% 0 2%;
     font-size: 1.6rem;
 }
 
@@ -206,20 +195,21 @@ footer {
   
     header nav {
         width: 768px;
-        padding: 0 30px;
+        padding: 0 3%;
     }
 
     header .logo {
         order: -1;
-        margin: 30px auto 0;
+        margin: 3% auto 0;
     }
 
     .cta {
         justify-content: center;
+        margin: 10% 0 0 0 ;
     }
     
     .cta .cta-text {
-        margin: 0;
+        margin: 0 0 1% 0;
     }
 
     .cta img {
@@ -231,15 +221,15 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 6% 1% 4%;
     }
 
     .text-content {
-        margin: 0 10px;
+        margin: 3% 1%;
     }
 
     .contact {
-        margin: 0 30px;
+        margin: auto;
     }
 
 }
@@ -262,8 +252,8 @@ footer {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 20px 0;
-        font-size: 20px;
+        padding: 4% 0;
+        font-size: 2rem;
         border-bottom: 1px solid gray;
     }
 
