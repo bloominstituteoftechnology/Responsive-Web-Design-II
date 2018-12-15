@@ -132,9 +132,12 @@ nav a {
 
 .logo{
 	display: flex;
-	justify-content: flex-end;
-	width: 277px;
+    justify-content: flex-end;
+    max-width: 180px;
+    width: 100%;
+    height: 100%;
 }
+
 .hero {
 	margin: 125px 0 75px;
 }
@@ -254,7 +257,6 @@ footer a {
     display: flex;
     justify-content: center;
     order: 1;
-    /* width: 277px;  */
     }
 
    .middle-img {
@@ -302,20 +304,75 @@ footer a {
        padding: 20px;
    }
 
+    header {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 0;
+    }
+
+    header nav {
+        margin: 0;
+    }
+
    nav {
        flex-direction: column;
        align-items: center;
    }
 
+   nav a {
+    /* height: 60px; */
+    /* padding: 12px; */
+    width: 100%;
+    border-bottom: 1px solid grey;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    nav a:nth-child(1) {
+        border-top: 1px solid grey; 
+    }
+
+    .logo {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .hero {
+        margin: 0;
+    }
+
+    .title {
+            margin: 50px 0 70px;
+    }
+
+    .title a {
+        padding: 6px 41px;
+    }
+
    .half {
        flex-direction: column;
    }
 
+   .half div {
+       width: 100%;
+       margin-bottom: 50px;
+   }
+    .half div:nth-child(2) {
+       margin-bottom: 0px;
+   }
    .thirds {
        flex-direction: column;
    }
 
    .thirds div {
        width: 100%;
+       margin-bottom: 65px;
+   }
+
+   .thirds div:nth-child(3) {
+       margin-bottom: 0px;
    }
 }
