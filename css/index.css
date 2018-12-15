@@ -163,6 +163,16 @@ section h2 {
   justify-self: flex-end;
 }
 
+.button {
+  transition: transform .2s; 
+}
+
+.button:hover {
+    color: white;
+    background: black;
+    transform: scale(1.15);
+}
+
 .main-content-wrapper {
   margin: 80px auto;
   margin-bottom: 10px;
@@ -260,7 +270,7 @@ section h2 {
 	text-align: center;
 	background: white;
 	font-size: 1.2rem;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .about-services {
