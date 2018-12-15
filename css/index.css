@@ -316,10 +316,19 @@ nav{
   /* justify-content:flex-end; */
 
 }
+
+/* MEDIA QUERIES */
+
+
+
 @media (max-width: 800px) {
   .logo {
 
   }
+	header {
+		display: flex;
+		
+	}
   nav {
 
   }
@@ -339,18 +348,19 @@ nav{
 
 
 
-
-
 @media (max-width: 500px) {
   body {
     width: 500px;
   }
+	header {
+
+	}
   nav {
     display: flex;
     flex-direction: column;
   }
   .logo {
-    display: none;
+    /* display: none; */
   }
   .demand-start {
     display: flex;
