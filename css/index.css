@@ -64,11 +64,11 @@ html {
 	}	
 
 .container {
-    margin: 0 auto;
+  margin: 0 3% 0 3%;
   max-width: 860px;
 }
 
-/* Header Styles */
+
 
 header {
     width: 100%;
@@ -100,17 +100,16 @@ header nav a:hover {
 header .logo {
 	
   	max-width:288px;
-	margin: 5% 0 0 0;
+	margin: 3% 0 0 0;
 	align-self:flex-start;
-	padding: 0 30px 0 30px;
+	padding: 0 3% 0 3%;
 	
 }
 
-/* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 15%;
+    margin: 12% 0 0 3%;
     justify-content: flex-end;
 }
 
@@ -119,10 +118,10 @@ header .logo {
     text-align: center;
     letter-spacing: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: center, space-around;
     flex-flow: column;
     align-items: center;
-    margin: 0 82px 0 0;
+    margin: 0 auto;
 }
 
 .cta .cta-text button {
@@ -131,7 +130,7 @@ header .logo {
     background: white;
     width: 170px;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 1%;
     cursor: pointer;
 }
 
@@ -141,8 +140,8 @@ header .logo {
 }
 
 .cta img{
-    width:100%;
-  max-width:379px
+   max-width:100%;
+   height: auto; 
 }
 
 /* Main Content Styles */
