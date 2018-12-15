@@ -314,6 +314,10 @@ footer small {
   .section-two {
     width: 100%;
   }
+  footer {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
 }
 @media (max-width: 500px) {
   body {
@@ -391,5 +395,10 @@ footer small {
   .section-two {
     flex-direction: column;
     padding: 10px;
+  }
+  footer {
+    align-items: space-around;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
 }
