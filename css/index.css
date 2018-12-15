@@ -73,6 +73,9 @@ p {
 address {
 	font-size: 1.6rem;
 }
+a {
+	font-size: 1.6rem;
+}
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
@@ -84,6 +87,7 @@ address {
 width: 880px;
 display: flex;
 justify-content: space-between; 
+margin: 5%;
 /* border: 1px solid red; */
 }
 a {
@@ -165,6 +169,7 @@ a {
 .footer {
 	display: flex;
 	justify-content: center;
+	margin: 5%;
 }
 
  @media (max-width: 800px) {
@@ -266,14 +271,12 @@ a {
 
 @media (max-width: 500px) {
 	.container {
-		width: 500px;
+		width: 100%;
 		margin: 0 auto;
 		/* border: 1px solid red; */
 	}
 	/* Navigation */
 	.navigation {
-		width: 500px;
-		margin-left: 0px;
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
@@ -282,9 +285,14 @@ a {
 	a {
 		text-decoration: none;
 		border: 1px solid grey;
+		width: 100%;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		color: grey;
+		margin-top: 0%;
+		margin-right: 0%;
+		padding: 5%;
 	}
 	.logo {
 		/* display: flex; */
@@ -292,34 +300,29 @@ a {
 	/* Header */
 	.header {
 		/* border: red 1px solid; */
-		height: 400px;
-		width: 500px;
 		display: flex;
 		justify-content: center;
-		margin-top: 0px;
-		margin-bottom: 0px;
 	}
 	.header div { 
-		padding-top: 100px;
+		padding-top: 10%;
 		/* border: 1px solid red;  */
 		display: flex; 
 		flex-direction: column; 
 		align-items: center;  
 	} 
 	.header h1 {
-		font-size: 80px;
+		font-size: 8rem;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		/* border: 1px solid red; */
 	}
 	.header button {
-		display: block;
-		margin-top: 10px;
+		margin-top: 5%;
 		background-color: white;
 		border: 1px solid black;
-		height: 30px;
-		width: 160px;
+		height: 10%;
+		width: 50%;
 		font-family: 'Titillium Web', sans-serif;
 	}
 	.header img {
@@ -328,53 +331,48 @@ a {
 	/* Top Section */
 	#lineThing {
 		border: 1px solid black;
-		margin-top: 10px;
-		width: 500px;
-		
+		margin-top: 5%;
 	}
 	.top-section {
-		margin-top: 40px;
-		margin-bottom: 40px;
-		width: 460px;
+		margin: 5%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 	.top-section h2 {
-		margin-top: 20px;
+		margin-top: 5%;
 	}
 	.image img {
 		width: 100%;
 		height: auto;
+		padding: 5%;
 	}
 	/* Bottom Section */
 	.bottom-section {
-		width: 460px;
 		display: flex;
 		flex-direction: column;
-		margin-left: 0px;
+		margin: 5%;
 	}
 	.bottom-section h2 {
-		margin-top: 40px;
+		margin-top: 5%;
 	}
 	/* Contact */
 	.contact {
-		margin-top: 40px;
+		margin: 5%;
 		display: flex;
 		flex-direction: column;
 	}
 	.contact p {
-		margin-top: 20px;
+		margin-top: 3%;
 	}
 	.contact div {
 		border: 1px solid black;
-		margin-bottom: 40px;
-		width: 500px;
 	}
 	/* Footer */
 	.footer {
 		display: flex;
 		justify-content: center;
+		margin: 15%;
 	}
 }
 
