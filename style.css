@@ -64,7 +64,7 @@ nav a {
 .btn {
 	display: inline-block;
 	border: 1px solid #000;
-	padding: 10px 40px;
+	padding: 10px 7%;
 	text-decoration: none;
 	color: #000;
 }
@@ -253,6 +253,12 @@ footer {
 
 /* desktop */
 @media (min-width: 800px) {
+	li:first-child {
+		width: auto;
+		margin: 0;
+		order: 1;
+	}
+
 	.jumbo {
 		display: flex;
 		justify-content: space-around;
@@ -263,9 +269,8 @@ footer {
 		display: block;
 	}
 
-	li:first-child {
-		width: auto;
-		margin: 0;
-		order: 1;
-	}		
+	.btn {
+		padding: 10px 12%;
+	}
+
 }
