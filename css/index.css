@@ -150,7 +150,7 @@ header nav a:last-child {
 }
 
 .main-content {
-  width: 95%;
+  width: 100%;
   border-top: 2px solid rgb(68, 152, 185);
   padding: 37px 0;
   display: flex;
@@ -159,12 +159,12 @@ header nav a:last-child {
 
 .top-content {
   display: flex;
-  width: 95%;
+  width: 100%;
   justify-content: space-around;
 }
 
 .top-content .text-content {
-  width: 95%;
+  width: 100%;
   font-size: 1.6rem;
   line-height: 1.1;
 }
@@ -174,7 +174,7 @@ header nav a:last-child {
 }
 
 .middle-img {
-  width: 95%;
+  width: 100%;
   margin-top: 37px;
 }
 
@@ -186,7 +186,7 @@ header nav a:last-child {
 }
 
 .bottom-content .text-content {
-  width: 95%;
+  width: 100%;
   margin-right: 2.2%;
   font-size: 1.6rem;
   line-height: 1.1;
