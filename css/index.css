@@ -1,1 +1,306 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Default styles
+============================ */
+
+:root {
+
+    /* Site colors */
+    --dark: #111;
+    --light: #fff;
+    --darkAccent: grey;
+    --lightAccent: lightgrey;
+
+    /* Site fonts */
+    --primaryFont: 'Titillium Web', sans-serif;
+    --secondaryFont: 'Bangers', sans-serif;
+
+    /* Alternate Site Fonts */
+    /* --primaryFont: 'Karla', sans-serif; */
+    /* --secondaryFont: 'Niconne', cursive; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--primaryFont);
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p, a, address {
+    font-size: 1.6rem;
+}
+
+.cotainer {
+    width: 95%;
+}
+
+.horizontal-line {
+    color: var(--dark);
+}
+
+/* Custom Styles
+============================ */
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem 0 0 0;
+}
+
+/* Navigation
+============================ */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.nav-link {
+    width: 100%;
+    text-decoration: none;
+    border-top: 0.1rem solid var(--lightAccent);
+    text-align: center;
+    color: var(--darkAccent);
+    padding: 1.5rem;
+}
+
+.nav-link:last-child {
+    border-bottom: 0.1rem solid var(--lightAccent);
+}
+
+.nav-link:hover {
+    color: var(--lightAccent);
+    background-color: var(--dark);
+}
+
+/* Header
+============================ */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.big-text {
+    font-size: 7rem;
+    font-family: var(--secondaryFont);
+}
+
+.header-img {
+    display: none;
+}
+
+.button {
+    max-width: 25rem;
+    color: var(--dark);
+    background-color: var(--light);
+    border: 0.1rem solid var(--dark);
+    padding: 1rem 6rem;
+    margin: 3rem 0;
+}
+
+.button:hover {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+/* Top Section
+============================ */
+
+.top-section  * {
+    padding: 1rem;
+}
+
+.title {
+    font-family: var(--secondaryFont);
+}
+
+/* Middle Section
+============================ */
+
+.middle-img {
+    width: 100%;
+    padding: 0 1%;
+}
+
+/* Bottom Section
+============================ */
+
+.bottom-section  * {
+    padding: 1rem;
+}
+
+/* Footer Section
+============================ */
+
+.contact {
+    padding: 2rem;
+    max-width: 25rem;
+}
+
+.address {
+    padding: 1rem 0;
+}
+
+.contact-link {
+    text-decoration: none;
+    line-height: 2;
+    color: var(--dark);
+}
+
+.contact-link:hover {
+    color: var(--lightAccent);
+}
+
+.copyright {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* Tablet View
+============================ */
+
+@media (min-width: 500px) {
+
+    /* Navigation */
+
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-link {
+        border: none;
+    }
+
+    .nav-link:last-child {
+        border: none;
+    }
+
+    .nav-link:hover {
+    color: var(--dark);
+    background-color: var(--light);
+    transform: scale(1.2);
+    transition: 300ms;
+    }
+
+    /* Top Section */
+
+    .top-section {
+        display: flex;
+    }
+
+    /* Bottom Section */
+
+    .bottom-section {
+        display: flex;
+    }
+}
+
+/* Desktop View
+============================ */
+
+@media (min-width: 800px) {
+
+    /* Container */
+
+    .container {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    /* Navigation Container */
+
+    .nav-container {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row-reverse;
+    }
+
+    /* Logo */
+
+    .logo {
+        padding: 0;
+    }
+
+    /* Header */
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-img {
+        display: block;
+        width: 100%;
+        max-width: 50%;
+    }
+}
