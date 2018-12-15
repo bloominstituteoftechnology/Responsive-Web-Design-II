@@ -162,7 +162,7 @@ header nav a:hover {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 6rem;;
 }
 
 nav {
@@ -172,7 +172,7 @@ nav {
 nav a {
     margin-right: 30px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2rem;
     color: #DDDDDD;
 }
 
@@ -184,7 +184,7 @@ nav a {
 }
 
 .main-content button {
-    font-size: 20px;
+    font-size: 2rem;
     width: 200px;
     background: white;
     padding: 2%;
@@ -198,33 +198,33 @@ nav a {
 
 .middle-content-top {
     width: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
     padding: 5px;
 }
 
 .middle-picture {
     align-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
 }
 
 .bottom-section {
     display: flex;
     align-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
 }
 
 .bottom-content {
-    padding: 5px;
+    padding: 5%;
 }
 
 footer .home-footer {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 5%;
 }
 
 small {
-    padding-bottom: 10px;
+    padding-bottom: 10%;
 }
 @media (max-width: 800px) {
 
