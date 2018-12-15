@@ -73,7 +73,6 @@ html {
 
  .container { 
 	margin: 0 auto;
-	padding: 2%;
     font-size: 1.6rem;
     max-width: 880px;
 }
@@ -82,7 +81,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 2%;
+    width: 100%;
+    padding-top: 0.5%;
 }
 
 .navigation-bar header nav ul li a {
@@ -102,20 +102,20 @@ html {
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 7.5rem;
 	text-align: center;
 }
 
 h3 {
-	font-size: 26px;
-	margin-bottom: 14px;
+	font-size: 2.6rem;
+	margin-bottom: 3%;
 }
 
 .first-section {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 45px;
-    margin-bottom: 50px;
+    justify-content: space-around;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .first-section .left-side{
@@ -128,21 +128,26 @@ h3 {
 .first-section .left-side button {
 	border: 1px solid black;
 	background-color: white;
-	padding: 5px 40px;
+	padding: 8px 40px;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 1.6rem;
 }
 
 .first-section .left-side {
-	padding-top: 50px;
+    padding-top: 3%;
+    padding-left: 3%;
 }
 
 .second-section {
-	padding: 30px 0 50px 0;
+	padding: 5% 0 5% 0;
 	border-top: 1px solid black;
 	display: flex;
 	justify-content: space-between;
+}
+
+.second-section .section2 {
+    width: 50%;
 }
 
 
@@ -151,12 +156,15 @@ h3 {
 }
 
 .third-group {
-	padding-top: 45px;
-	padding-bottom: 50px;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: space-between;
-	padding-right: 15px;
+}
+
+.third-group .third-section {
+    width: 33%;
 }
 
 .third-section:last-of-type {
@@ -164,13 +172,13 @@ h3 {
 }
 
 footer .footer {
-	margin-top: 30px;
-	margin-bottom: 40px;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 
 footer .copyright {
 	text-align: center;
-	margin-top: 40px 0;
+	margin-top: 4% 0;
 }
 
 @media (max-width: 800px) {
@@ -188,7 +196,7 @@ footer .copyright {
         text-align: center;
         display: block;
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 2%;
     }
     
     .first-section .left-side {
@@ -218,7 +226,7 @@ footer .copyright {
     }
 
     .navigation-bar header nav ul li{
-        padding: 15px 50px;
+        padding: 5% 10%;
         border-bottom: 1px solid black;    
         display: block;
         width: 100%;
@@ -231,33 +239,39 @@ footer .copyright {
 
 /*Second Section Start*/
     .second-section {
-        margin-left: 15px;
+        margin-left: 2%;
         display: block;
-        border-top: 2px solid
+        border-top: 2px solid;
+        width: 100%;
+    }
+
+    .second-section .section2 {
+        width: 100%;
     }
 
     .second-section .section2b {
-        margin-top: 40px;
+        margin-top: 5%;
     }
 
     .middle-img {
-        padding: 0 15px;
+        padding: 0 2%;
     }
 /*Second Section End */
 
 /*Third Section Start*/
     .third-group {
         display: block;
-        margin: 0 15px;
-        padding: 0px 0 30px 0;
+        margin: 0 2%;
+        padding: 0px 0 5% 0;
     }
 
     .third-group .third-section{
-        margin-top: 30px;
+        margin-top: 5%;
+        width: 100%;
     }
 
     footer {
-        padding: 15px;
+        padding: 2%;
     }
 
 }
