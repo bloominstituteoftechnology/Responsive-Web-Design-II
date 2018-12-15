@@ -93,13 +93,13 @@ nav {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 5%;
 }
 
 .menu a {
   color: #777;
   text-decoration: none;
-  padding-right: 4rem;
+  padding-right: 3rem;
   font-size: 1.8rem;
 }
 
@@ -110,7 +110,7 @@ nav {
   text-align: center;
   justify-content: space-around;
   align-items: center;
-  padding: 6rem 0 6rem 0;
+  padding: 5rem 0 ;
 }
 
 .hero p {
@@ -229,6 +229,9 @@ button {
 
 @media (max-width: 800px) {
 
+h2 {
+  margin-top: 2rem;
+}
   .container {
     width: 90%;
     margin: 0 auto;
@@ -295,7 +298,8 @@ button {
   nav {
       display: flex;
       align-items: stretch;
-      padding-top: 30px;
+      width: 100%;
+      padding-top: 3%;
   }
 
 .logo-container {
@@ -303,7 +307,7 @@ button {
 }
 
 .logo-container img {
-  width: 260px;
+  max-width: 183px;
   padding-bottom: 30px;
 }
 
@@ -313,9 +317,9 @@ button {
   }
 
  .menu a {
-   min-width: 500px;
-   font-size: 32px;
-   padding: 20px 0;
+   width: 100%;
+   font-size: 2.2rem;
+   padding: 2rem 0;
    border-top: 1px solid #000;
    text-align: center;
  }
@@ -325,16 +329,16 @@ button {
  }
 
  .hero h1 {
-   font-size: 100px;
+   font-size: 10rem;
  }
 
  .cta {
-   width: 240px;
+   /* width: 240px; */
    margin: 0 auto;
    border: 2px solid #c9c9c9;
-   padding: 10px 26px;
-   font-size: 22px;
-   margin-top: 30px;
+   padding: 1rem 2.6rem;
+   font-size: 2.2rem;
+   margin-top: 3rem;
  }
 
 .top-row, .bottom-row {
@@ -343,8 +347,8 @@ button {
 }
 
 .inner1, .inner2 {
-  min-width: 760px;
-  padding: 0 15px;
+  max-width: 100%;
+  padding: 0 1.5rem;
 }
 
 }
