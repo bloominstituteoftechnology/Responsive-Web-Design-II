@@ -174,3 +174,24 @@ p, h2 {
     padding: 2rem 0;
     margin-top: 2rem;
 }
+/*tablet size*/
+@media (max-width: 800px){
+    .navigation{
+        flex-flow: row wrap;
+    }
+    .navigation .navi{
+        order: 1;
+    }
+    .navigation a:nth-child(1){
+        order:0;
+        width: 100%;
+        text-align: center;
+    }
+    .header-img{
+        display: none;
+    }
+    body{
+        width:95%;
+        margin:0 auto;
+    }
+}
