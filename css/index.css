@@ -1,1 +1,404 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla',
+        sans-serif;
+    max-width: 880px;
+    width: 750px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    margin: 4%;
+}
+
+header nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin: 7px;
+    color: lightgray;
+}
+
+.logo {
+    margin: 2%;
+    width: 183px;
+    height: 36px;
+}
+
+/* TOP SECTION */
+
+.top-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.get-started {
+    text-decoration: none;
+    border: 1px solid black;
+    margin-left: 23%;
+    height: 16px;
+    width: 110px;
+}
+
+.first-img {
+    height: 250px;
+    width: 250px;
+}
+
+/* ARTICLES  */
+
+.second-img {
+    width: 750px;
+}
+
+.top-half {
+    display: flex;
+}
+
+.features,
+.about {
+    font-size: 1.5rem;
+    margin: 5% 0 5% 0;
+}
+
+
+.about {
+    margin-left: 1%;
+}
+
+.bottom-half {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services,
+.product,
+.vision {
+    font-size: 1.6rem;
+    width: 33%;
+    height: 10%;
+    margin: 5% 0 5% 0;
+    padding: 0.5%;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 1.6rem;
+}
+
+.copyright {
+    text-align: center;
+    margin: 3%;
+}
+
+.email {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 800px) {
+    .second-img {
+        width: 90%;
+    }
+
+    body {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .first-img {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 3% 0 3%;
+        padding: 0;
+
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav a {
+        padding-left: 6%;
+    }
+
+    .top-section {
+        border-bottom: 3px solid black;
+    }
+
+    .get-started {
+        text-decoration: none;
+        border: 1px solid black;
+        margin-left: 23%;
+        height: 25px;
+        width: 110px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+
+    .second-img {
+        width: 100%;
+    }
+
+    .logo {
+        display: inline-block;
+        margin: 0;
+        padding-top: 2%;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    #services-a {
+        border-top: 1px solid black;
+    }
+
+    header nav a {
+        padding: 5% 0 5%;
+        margin: 0;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    h1 {
+        font-size: 7.2rem;
+    }
+
+    .get-started {
+        font-size: 1.5rem;
+        margin: 2% 0 0 22%;
+        height: 30px;
+        width: 150px;
+    }
+
+    .top-section {
+        height: 450px;
+    }
+
+    .top-half {
+        flex-direction: column;
+    }
+
+    .bottom-half {
+        flex-direction: column;
+    }
+
+    .about {
+        margin: 3% 0 7% 0;
+    }
+
+    .services,
+    .product,
+    .vision {
+        width: 100%;
+        height: 10%;
+        margin: 5% 0 5% 0;
+        padding: 0;
+    }
+
+    footer h2 {
+        border-top: 1px solid black;
+        padding-top: 7%;
+    }
+
+    .container,
+    .top-section {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+}
