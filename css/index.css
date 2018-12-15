@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+h2 {
+    font-size: 1.9rem;
+}
+
 p {
     line-height: 1.25;
     font-size: 1.6rem;
@@ -93,9 +97,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding-left: 10px;
+    font-size: 1.6rem;
+    /*padding-left: 10px;*/
     vertical-align: top;
-    width: 50%;
+    width: 69%;
 }
 
 nav a {
@@ -108,7 +113,7 @@ nav a {
     align-items: center;
     justify-content: flex-end;
     height: 100%;
-    width: 49%;
+    width: 30%;
 }
 
 header {
@@ -141,10 +146,10 @@ header {
 
 .button {
     border: 1px solid;
-    font-size: 20px;
+    font-size: 2rem;
     margin-top: 10px;
-    padding: 5px;
-    width: 185px;
+    padding: 1.2%;
+    width: 36%;
 }
 
 .btn-learn {
@@ -180,6 +185,10 @@ header {
     margin-bottom: 30px;
     padding-right: 10px;
     width: 33.4%;
+}
+
+.contact-container {
+    font-size: 1.6rem;
 }
 
 /* Below: service page
@@ -331,15 +340,15 @@ a[href^="tel"]::before {
     }
 
     .header-h1 {
-        font-size: 86px;
+        font-size: 8.6rem;
     }
 
     .nav-item-wrapper {
         display: flex;
         flex-direction: column;
-        font-size: 20px;
+        font-size: 2rem;
         padding: unset;
-        width: 500px;
+        width: 105%;
     }
 
     .nav-item-wrapper a {
@@ -348,7 +357,7 @@ a[href^="tel"]::before {
         align-items: center;
         border: 1px solid;
         height: 54px;
-        width: 500px;
+        width: 100%;
     }
 
     .logo-wrapper {
