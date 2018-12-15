@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! |||||||||||||||||||||||||||||||||||||||||| */
 
 .container {
-	width: 880px;
+	max-width: ;width: 880px;
 	margin: 0 auto;
 }
 
@@ -135,7 +135,7 @@ nav a {
     justify-content: flex-end;
     max-width: 180px;
     width: 100%;
-    height: 100%;
+    
 }
 
 .hero {
