@@ -33,7 +33,7 @@ header {
     font-size: 1.6rem;   
     text-decoration: none;
 }
-/*==/\=END TOP NAVIGATION=/\==*/
+/*==/\===TOP NAVIGATION===/\==*/
 /*==\/====HEADER BANNER===\/==*/
 .header__banner {
     align-items: center;
@@ -62,11 +62,11 @@ header {
 .header__image {
     background-image: url(../img/header-img.png);
     height: 37.9rem;
+        width: 37.9rem;
     margin: 6.3rem 0 0 8.4rem;
     order: 4;
-    width: 37.9rem;
 }
-/*==/\=====END HEADER=====/\==*/
+/*==/\=======HEADER=======/\==*/
 /*==\/======CONTENT=======\/==*/
 .content {
     display: flex;
@@ -92,34 +92,67 @@ header {
     margin-right: 1.95rem;
 }
 .content__article .article__header {
-    font-size: 18px;
     font-family: Bangers, cursive;
+    font-size: 1.8rem;
 }
 .content__article .article__text {
+    font-family: "Titillium Web", sans-serif;
     font-size: 1.6rem;
     margin-top: 1.5rem;
     line-height: 1.8rem;
-    font-family: "Titillium Web", sans-serif;
 }
 .content__image {
     background-image: url(../img/mid-page-accent.jpg);
     height: 18.2rem;
-    width: 87.6rem;
+        width: 87.6rem;
     margin: 3.0rem .2rem;
 }
-/*==/\====END=CONTENT=====/\==*/
-
+/*==/\======CONTENT======/\==*/
+/*==\/======FOOTER=======\/==*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.4rem;
+}
+.footer__header {
+    font-family: Bangers, cursive;
+    font-size: 1.8rem;
+    width: fit-content;
+    margin-bottom: 1.4rem;
+}
+.footer__address {
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    font-family: "Titillium Web", sans-serif;
+    height: 9.4rem;
+        width: 15.5rem;
+    justify-content: space-between;
+}
+.footer__address__link {
+    color: #000;
+    text-decoration: none;
+}
+.footer__copyright {
+    align-self: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.6rem;
+    margin-top: 4.0rem;
+}
+/*==/\======FOOTER=======/\==*/
+/*==\/===MEDIA QUERIES===\/==*/
 @media (max-width: 800px) {
     .container {
         max-width: 76.0rem;
     }
+    /*==\/======HEADER======\/=*/
     header {
         flex-direction: column;
         margin-top: 0;
         padding-left: 0;
         width: auto;
     }
-    /*TOP NAVICATION*/
+    /*==\/==TOP NAVIGATION==\/=*/
     .header__nav {
         margin-top: 2.3rem;
         margin-right: 3.1rem;
@@ -130,7 +163,8 @@ header {
         margin: 3.0rem 0 0 0;
         order: 1;
     }
-    /*HEADER BANNER*/
+    /*==/\===TOP NAVIGATION===/\==*/
+    /*==\/====HEADER BANNER===\/==*/
     .header__banner {
         margin: 5.4rem 0 0 0;
     }
@@ -140,7 +174,8 @@ header {
     .header__image {
         display: none;
     }
-    /*CONTENT*/
+    /*==/\=======HEADER=======/\==*/
+    /*==\/======CONTENT=======\/==*/
     .content {
         padding: 3.6rem 0;
     }
@@ -152,15 +187,24 @@ header {
     }
     .content__image {
         height: 15.8rem;
-        width: 76.0rem;
+            width: 76.0rem;
         margin: 3.0rem 0;
     }
+    /*==/\======CONTENT======/\==*/
+    /*==\/======FOOTER=======\/==*/
+    .footer {
+        padding-left: 1.0rem;
+    }
+    .footer__copyright {
+        margin-right: 1.0rem;
+    }
+    /*==/\======FOOTER=======/\==*/
 }
 @media (max-width: 500px) {
     .container {
         max-width: 50.0rem;
     }
-    /*TOP NAVIGATION*/
+    /*==\/==TOP NAVIGATION==\/=*/
     .header__nav {
         width: auto;
     }
@@ -170,8 +214,8 @@ header {
     .header__nav {
         flex-direction: column;
         height: auto;
+            width: 100vw;
         margin: 2.0rem 0 0 0;
-        width: 100vw;
     }
     .header__nav .nav__link {
         border-top: 0.1rem solid #888;
@@ -185,13 +229,15 @@ header {
         border-bottom: .1rem solid #888;
         height: 6.2rem;
     }
-    /*HEADER BANNER*/
+    /*==/\===TOP NAVIGATION===/\==*/
+    /*==\/====HEADER BANNER===\/==*/
     .header__banner {
         margin-top: 4.9rem;
     }
-    /*CONTENT*/
+    /*==/\=======HEADER=======/\==*/
+    /*==\/======CONTENT=======\/==*/
     .content {
-        margin: 7.5rem auto;
+        margin: 7.5rem auto 0 auto;
         width: 46.0rem;
     }
     .content__article {
@@ -214,4 +260,13 @@ header {
         margin-top: 3.0rem;
         margin-bottom: .6rem;
     }
+    /*==/\======CONTENT======/\==*/
+    /*==\/======FOOTER=======\/==*/
+    .footer {
+        padding-left: 2.0rem;
+    }
+    .footer__copyright {
+        margin-right: 2.0rem;
+    }
+    /*==/\======FOOTER=======/\==*/
 }
