@@ -189,8 +189,7 @@ img.vision-header-img { width: 100%; }
 
 	nav { 
 		width: 100%; 
-		padding: 14px;
-		margin: 0 0 0 -12px; } 
+		padding: 14px; } 
 	ul.nav-ul { 
 		width: 100%; 
 		flex-flow: row wrap; } 
@@ -271,12 +270,15 @@ img.vision-header-img { width: 100%; }
 	img.product-header-img { width: 80%; }
 	h1.product-title { font-size: 25vw; margin: 0 0 45px 0; }
 
+	.container-gallery { display: block; }
 
 	.item.item-gallery { padding: 24px 8px; }
 
 	.container-row, .container { flex-flow: column wrap; margin: 0; }
 	.item { padding: 24px 0; }
 	
+	.item img { max-width: 85vw; margin: 0 auto; display: block; }
+
 	.vision-header { width: calc(100% + 36px); position: relative; top: 15px; margin: 0 auto 36px -18px; }
 	h4.graffiti { transform: scale(20, 25) rotate(-33deg); top: 95vh; }
 
