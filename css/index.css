@@ -161,14 +161,16 @@ html {
   width: 100%;
   max-width: 880px;
 }
-
+/*      HEADER SECTION     */
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .nav-bar a {
   margin-right: 50px;
   text-decoration: none;
@@ -178,6 +180,8 @@ header {
 .logo {
   flex-direction: flex-end;
 }
+
+/*          MAIN CONTENT              */
 article {
   display: flex;
   flex-direction: row;
@@ -193,7 +197,7 @@ article {
   padding-right: 20%;
   width: 95%;
   height: 30vh;
-  font-size: 64px;
+  font-size: 72px;
   text-align: center;
   margin-top: 30px;
 }
@@ -211,17 +215,24 @@ h2 {
   height: 30px;
   text-align: center;
   padding-top: 10px;
+  font-size: 1.6rem;
 }
+
 .second-img {
   display: flex;
   width: 800px;
   justify-content: flex-end;
   margin-bottom: 50px;
 }
+/*^^^^^^^^^ TITLE AND IMG ^^^^^^^^^*/
+
+/* vvvvvvv SERVICES AND OTHER FEATURE vvvvvv */
 .section-one {
   display: flex;
   flex-direction: row;
   margin: 50px 0px;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 .middle-img {
   width: 900px;
@@ -237,12 +248,17 @@ h2 {
   padding-right: 10px;
   font-size: 1.6rem;
 }
+/* ^^^^^^ SERVICES AND OTHER FEATURES ^^^^^^^ */
+
+/*        FOOTER           */
 footer {
   width: 100%;
   padding-left: 10px;
   height: 200px;
   display: flex;
   flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 footer h3 {
   margin-top: 20px;
@@ -258,6 +274,8 @@ footer small {
   margin-top: 5px;
   justify-content: center;
 }
+
+/*            TABLET         */
 @media (max-width: 800px) {
   .container {
     width: 100%;
@@ -297,6 +315,7 @@ footer small {
     width: 90%;
     height: 150px;
     height: 200px;
+    font-size: 64px;
   }
   .btn {
     padding-top: 50px;
@@ -304,6 +323,8 @@ footer small {
   }
   h2 {
     padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
   }
   .middle-img {
     width: 100%;
@@ -316,15 +337,17 @@ footer small {
   }
   footer {
     font-size: 1.4rem;
-    font-weight: bold;
   }
 }
+
+/*          MOBILE           */
 @media (max-width: 500px) {
   body {
     width: 100%;
   }
   .container {
     width: 100%;
+    padding: 0;
   }
   header {
     display: flex;
@@ -339,27 +362,32 @@ footer small {
     align-items: center;
     width: 100%;
     padding: 0%;
-    margin-top: 200px;
+    margin-top: 20px;
   }
   .nav-bar a {
     align-items: flex-end;
-    padding: 10%;
+    padding: 5% 0%;
     border-bottom: 1px solid gray;
     width: 100%;
     text-align: center;
     color: gray;
     margin-left: 0;
     margin-right: 0;
+    font-size: 2rem;
   }
   .nav-bar a:first-child {
     border-top: 1px solid gray;
   }
+  .nav-bar a:hover {
+    background: #c2c2d6;
+    color: #fff;
+  }
   .logo {
     flex-direction: column;
     align-items: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
   }
   article {
     display: flex;
@@ -369,7 +397,7 @@ footer small {
     height: 400px;
     width: 100%;
     border-bottom: 1px solid black;
-    margin-top: 310px;
+    margin-top: 30px;
   }
   .intro-title {
     flex-wrap: wrap;
@@ -382,6 +410,10 @@ footer small {
     padding-right: 10%;
     margin-bottom: 20px;
   }
+  h2:hover {
+    background: #000;
+    color: #fff;
+  }
   section {
     display: flex;
   }
@@ -390,7 +422,7 @@ footer small {
   }
   .section-one {
     flex-direction: column;
-    padding: 10px;
+    padding-top: 20px;
   }
   .section-two {
     flex-direction: column;
@@ -399,6 +431,5 @@ footer small {
   footer {
     align-items: space-around;
     font-size: 1.2rem;
-    font-weight: bold;
   }
 }
