@@ -96,8 +96,7 @@ p {
     max-width: 880px; 
 	margin: 0 auto; 
     overflow: hidden;
-    /* padding: 10px 80px; */
-	
+ 	
  }
 
 
@@ -208,12 +207,14 @@ header nav ul .item a:hover {
      display: flex;
      border-bottom: 2px solid black;
      padding-bottom: 40px;
+     
  }
 
 
 
  .third {
-	width: 95%;
+    width: 95%;
+    
 }
  
 
