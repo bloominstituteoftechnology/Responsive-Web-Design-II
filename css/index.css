@@ -1,1 +1,418 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* main css style */
+body {
+	width: 90%;
+	margin: 0 auto;
+   
+}
+
+.max{
+	max-width: 88%;
+}
+
+html {
+	font-size: 62.5%
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+	margin-bottom: 3%;
+	
+}
+
+nav>a {
+    text-decoration: none;
+    color: silver;
+    margin-right: 4%;
+	font-size: 1.43REM;
+    padding: 1.1%;
+}
+
+nav {
+	width: 85%;
+    height: 100%;
+
+}
+
+header img {
+    max-width: 100%;
+    width: 15%;
+    position: relative;
+    right: 136px;
+    top: 9px;
+    top: 8px;
+	
+	
+}
+
+.start {
+    height: 30%;
+	width: 76.6%;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 7.4%;
+    display: flex;
+    flex-direction: row;
+	justify-content: center;
+	height: min-content;
+	width: inherit;
+
+
+}
+
+.start section, .start img {
+    padding: 4%;
+	margin: 0 auto;
+	height: 100%;
+	width: 50%;
+	text-align: center;
+
+}
+
+.start section h1 {
+    height: 100px;
+    font-size: 7em;
+    margin-bottom: 80px;
+    position: relative;
+    top: 57px;
+}
+
+
+button {
+    padding: .1% 3.2%;
+    text-align: center;
+    text-decoration: none;
+	font-size: 1.5rem;
+    margin: .4% .2%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	cursor: pointer;
+
+}
+
+.g-button{
+	background-color: white;
+    color: black;
+    border: 1px double #555555;
+    margin: 25.8%;
+    position: relative;
+    right: 0rem;
+    top: 14px;
+    max-width: 100%;
+    height: 13.3%;
+}
+
+.g-button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.mid {
+	margin-bottom: 40px;
+    width: 100%;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	width: 76.6%;
+
+}
+
+#features, #about {
+	display:inline-flex;
+	width: 48%;
+	height: 10%;
+}
+
+#about {
+	margin-left: 3.0%;
+}
+
+#services, #product, #vision {
+	display: inline-block;
+	width: 33%;
+	height: 10%;
+}
+
+.main {
+    border-bottom: 1px solid black;
+	margin-bottom: 48px;
+	font-size: 1.7rem;
+}
+
+#contact {
+	font-size: 1.2rem;
+	line-height: 1.3;
+}	
+
+footer{
+	width: 76.6%;
+}
+footer p {
+	text-align: center;
+}
+
+hr {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	*{
+		box-sizing: content-box;
+	}
+	body{
+		width: 100%;
+	}
+	header{
+		width: 100%;
+	}
+	nav {
+		padding-top: 7.1%;
+		position: relative;
+		right: -110px;
+		top: 33px;
+		font-size: .5rem;
+		margin: 0 -6.1%;
+		width: 113%;
+		height: 100%;
+		
+	}
+	nav >a {
+		font-size: large;
+		padding:0;
+		margin: 3.8%;
+		
+	}
+    header img {
+		right: 213px;
+		top: -2px;
+		max-width: 22.8%;
+		max-height: 37px;
+		width: 101%;
+	
+	}
+    .start{
+		width: 113%;
+	}
+	.start img{
+		display: none;
+		
+	}	
+	.start section h1 {
+		
+		font-size: 8.5em;
+		margin-bottom: 32%;
+		position: relative;
+		right: 5px;
+	}
+	.g-button {
+
+   
+		position: relative;
+		left: 0px;
+		top: 16px;
+		width: 37.6%;
+		height: 40px;
+	}
+	
+     .main{
+		 width: 113%;
+	 }
+
+	#features, #about {
+		width: 46%;
+		padding-left: 1.5%
+	}
+	.mid {
+		
+		width: 76.9%;
+		left: 14px;
+		position: relative;
+		width: 95.9%;
+	}
+	
+	
+	#contact {
+	
+		font-size: 1.6rem;
+		padding: 1%;
+	}
+}
+
+@media (max-width: 500px){
+	body{
+		width: 114%;
+	}
+     .max{
+		width: 89%;
+	 }
+	 header {
+		 width: 117%;
+	 }
+	.nav{
+	    display: flex;
+    flex-direction: column;
+	line-height: 13em;
+    right: -18px;
+    justify-items: center;
+	top: 26px;
+	
+    
+	}
+	nav a{
+    border-top: .5px solid gray;
+    border-bottom: 0.5px solid gray;
+	font-size: 2.7rem;
+	padding-left: 21.2%;
+    text-align: center;
+	width: 122%;
+	margin: 0;
+}
+  
+	
+
+	header img {
+		right: 114px;
+		top: -30px;
+	    max-width: 40.7%;
+		}
+
+		.start{
+			width: 117%;
+			padding-bottom: 10.5%;	
+		}
+		.start section h1 { 
+			font-size: 7.5rem;
+		}
+		.g-button {
+			position: relative;
+			left: 14px;
+			top: 73px;
+			width: 40.8%;
+			height: 24px;
+		}
+    .main{
+		width: 117%;
+	}
+	#features, #about {
+	text-align: left;
+    flex-direction: column;
+    width: 89%;
+    position: relative;
+    top: -26px;
+	}
+
+	#features{
+	 position: relative;
+		right: -6px;
+	}
+
+	#about {
+		position: relative;
+		right: 7px;
+	}
+
+
+		.mid {
+			width: 413px;
+			position: relative;
+			right: -19px;;
+		}
+
+		#services, #product, #vision {
+			position: relative;
+			display: block;
+			width: 87%;
+			height: 10%;
+		    right: -17px;
+		}
+		#contact{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+			position: relative;
+			right: -6px;
+			
+			
+		}
+		footer{
+			position: relative;
+			right: -65px;
+			font-size: 1.4rem;
+		
+		}
+	}
