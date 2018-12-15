@@ -74,6 +74,11 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+p {
+    line-height: 1.25;
+    font-size: 1.6rem;
+}
+
 /* Header Styles */
 
 header {
@@ -136,6 +141,97 @@ header .logo {
     background: black;
     color: white;
 }
+
+.cta-about h1{
+    font-size: 2rem;
+}
+
+.cta-about p {
+    font-size: 1.6rem;
+}
+
+/* Who We Are Styles */
+.who-we-are {
+    display: flex;
+    margin: 5% 0;
+    
+}
+
+.who-we-are-text {
+    width: 50%;
+    font-size: 1.6rem;
+    padding-right: 3%;
+}
+
+/* Team Styles */
+
+.meet-our-team {
+    margin-top: 5%;
+}
+
+.meet-our-team h2 {
+    font-size: 1.6rem
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+}
+
+.contact-card img {
+    width: 100%;
+    max-width: 127px;
+    height: 150px
+}
+
+
+.contact-details{
+    width: 65%;
+    margin-left: 3%;
+}
+
+.contact-social {
+    background: #F2F2F2;
+    width: 100%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 3%;
+    
+}
+
+.contact-social p {
+    font-size: 1.2rem;
+    color: #808080;
+    font-weight: bold;
+}
+.social-icons {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end
+}
+
+.fab {
+    font-size: 2rem;
+    color: darkgray;
+    padding-left: 6%;
+}
+
+
 
 /* Main Content Styles */
 
