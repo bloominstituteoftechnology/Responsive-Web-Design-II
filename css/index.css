@@ -253,15 +253,8 @@ footer h2 {
 /* ===================== TABLET version ======================== */
 
 @media (max-width: 800px) {
-    /* ---- HEADER ---- */
-    /* header {
-        margin-top: 0;
-    } */
     .header-top {
-        /* padding-top: 0; */
-        /* width: 100%; */
         flex-direction: column-reverse;
-        align-items: center;
         align-content: center;
     }
     .header-top a.home-page {
@@ -296,158 +289,58 @@ footer h2 {
     img.code {
         display: none;
     }
-    /* --- HEADER ends ---- */
-
-    /* ---- CONTENT ---- */
-    /* .content {
-        margin-left: 19px;
-        margin-right: 0;
-    } */
-
-    /* .content-top {
-        width: 93%;
-        margin-left: 10px;
-    } */
-
-    /* .content-top > div:nth-child(2) {
-        margin-left: 21px;
-        padding-right: 5px;
-    } */
-
-    /* aside {
-        margin-left: 0;
-    } */
-    /* .middle-img {
-        height: 158px;
-    } */
-
-    /* .content-bottom {
-        width: 95%;
-        margin-left: 10px;
-    } */
-    /* .content-bottom > div {
-        padding-right: 20px;
-    } */
-
-    /* .content-bottom > div > p {
-        padding-right: 20px;
-    } */
-    /* ---- CONTENT ends ---- */
-
-
-    /* ---- FOOTER ---- */
-    /* footer {
-        margin-left: 29px;
-    } */
-    
-    /* .copyright {
-        margin-left: 280px;
-    } */
-    /* ---- FOOTER ends ---- */
 }
 
 
 /* ====================== MOBILE version ======================== */
 @media (max-width: 500px) {
     /* ---- HEADER ---- */
-    /* header > div.header-top {
-        padding-top: 20px;
-    } */
+    header > .header-top {
+        padding-top: 5px;
+    }
 
-    /* a.home-page {
-        width: 100%;
-        margin-right: 226px;
-        margin-top: 0;
-    } */
-    /* .items {
+    .items {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         padding-right: 0;
         margin: 0 auto;
-        margin-top: 18px;
-    } */
-
-    /* .items > a {
+        margin-top: 5px;
+    }
+ .items > a {
         width: 100%;
         border-top: 1px solid lightgrey;
         font-size: 20px;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    } */
-
-    /* .items > a:last-child {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+   
+    .items > a.contact {
         border-bottom: 1px solid lightgrey;
-    } */
+    }
 
-    /* .header-bottom {
+    .header-bottom {
+        padding-bottom: 35px;
         margin-top: 35px;
-    } */
-    /* .title {
-        padding-left: 0;
-        margin-left: 104px;
-    } */
+    }
     /* ---- HEADER ends ---- */
 
-    /* hr.one {
-        margin-top: 75px;
-        margin-left: 20px;
-        width: 460px;
-    } */
-
     /* ---- CONTENT ---- */
-    /* .content {
-        margin: 0;
-    } */
-
-    /* .content-top {
+    .content-top {
         flex-direction: column;
-        margin-left: 20px;
-        margin-top: 59px;
-    } */
+    }
 
-    /* .content-top > div:first-child {
-        margin-bottom: 45.5px;
-    } */
+    .content-top > div.features {
+        margin-bottom: 30px;
+    }
 
-    /* .content-top > div:nth-child(2) {
-        margin-left: 0;
-        margin-bottom: 22px;
-    } */
-
-    /* .middle-img {
-        height: 96px;
-        margin-left: 20px;
-        width: 460px;
-    } */
-
-    /* .content-bottom {
+    .content-bottom {
         flex-direction: column;
-        margin-left: 20px;
-    } */
+    }
 
-    /* .content-bottom > div:first-child {
-        margin-bottom: 63px;
-    } */
-
-    /* .content-bottom > div:nth-child(2) {
-        margin-bottom: 64px;
-    } */
+    .content-bottom > div:not(.vision) {
+        margin-bottom: 30px;
+    }
     /* ---- CONTENT ends ---- */
-
-    /* hr.two {
-        margin-left: 20px;
-        width: 460px;
-    } */
-
-    /* ---- FOOTER ---- */
-    /* footer {
-        margin-left: 20px;
-    } */
-
-    /* .copyright {
-        margin-left: 140px;
-    }  */
-    /* ---- FOOTER ends ---- */
 }
