@@ -230,8 +230,13 @@ footer {
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
     /* For tablets and large phones */
+    @keyframes bgFadeIn{
+        from{background-color: white;}
+        to {background-color: grey;}
+    }
 
     header {
+        position: relative;
         display: flex;
         margin: 0 auto;
         width: 95%;
@@ -253,6 +258,8 @@ footer {
         display: flex;
         justify-content: space-around;
         height: 50px;
+        width: 100%;
+        border-bottom: 1px solid grey;
     }
 
     nav ul li {
@@ -263,8 +270,19 @@ footer {
         justify-content: center;
     }
 
-    .services-header-img {
-        margin-top: 5%;
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    nav ul li:hover {
+        background-color: grey;
+        border-radius: 10px 10px 0px 0px;
+        animation-name: bgFadeIn;
+        animation-duration: 0.5s;
     }
 
     section {
@@ -277,6 +295,7 @@ footer {
 
     #services-link {
         background-color: grey;
+        border-radius: 10px 10px 0 0;
     }
 
     .facts {
@@ -289,8 +308,16 @@ footer {
 
 @media screen and (max-width: 500px) {
 /* For small tablets and phones */
+    @keyframes slideIn {
+        from{position: fixed;
+            top: 100%;}        
+        to{position: fixed;
+            top:0%;}
+}
+
     body {
-        width: 100%;
+        animation: slideIn;
+        animation-duration: 1s;
     }
 
     header {
@@ -305,6 +332,13 @@ footer {
         width: 100%;
     }
 
+    section {
+        margin-right: 0;
+    }
+
+    nav ul {
+        height: 100%;
+    }
 
     nav ul li {
         display: flex;
@@ -320,10 +354,15 @@ footer {
         height: 100%;
         padding: 10px;
     }
+
+    nav ul li:hover {
+        border-radius: 0;
+    }
     
     #services-link {
         border-top: 1px solid black;
         background-color: grey;
+        border-radius: 0;
     }
 
     #services-link a:hover {
@@ -332,13 +371,12 @@ footer {
 
     .services-header-img {
             margin-top: 5%;
+            width: 100%;
         }
     
-    section {
-        width: 96%;
-    }
+   
     .services {
-        width: 96%;
+        width: 100%;
     }
 
     .services button {
@@ -350,7 +388,7 @@ footer {
         
     }
     .facts {
-        width: 96%;
+        width: 100%;
     }
 
     .services-info-img {

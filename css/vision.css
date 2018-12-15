@@ -64,15 +64,34 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-
-body{
-	width: 880px;
-	margin: 0 auto;
-}
-
 @keyframes highlight {
     from {color: black;}
     to {color: yellow;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container{
+	font-size: 1.6rem;
+    margin: 0 auto;
+	max-width: 880px;
+}
+
+header {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	background-color: grey;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 a {
@@ -81,47 +100,29 @@ a {
     margin: 0 auto;
 }
 
-#vision-link {
-	color: yellow;
-	animation: none;
-}
-
 a:hover {
     color: yellow;
     animation-name: highlight;
     animation-duration: 1.5s;
 }
 
-header {
-	z-index: 1;
-	position: fixed;
-	top: 0;
-	background-color: grey;
-	width: 880px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+#vision-link {
+	color: yellow;
+	animation: none;
 }
 
-nav {
-	vertical-align: middle;
-	display: inline-block;
-	position: relative;
+nav ul {
+	display: flex;
+	
 }
 
-nav a {
-	color: greay;
-	display: inline-block;
-	margin: 15px;
-}
-
-header img {
+/* header a img {
 	vertical-align: middle;
 	display: inline-block;
 	position: relative;
 	padding: 15px;
 	margin: 15px;
-}
+} */
 
 #headline {
 	display: flex;
@@ -142,9 +143,9 @@ header img {
 
 h1 {
 	display: inline-block;
-	font-size: 70px;
+	font-size: 7rem;
 	margin-bottom: 0;
-	padding: 25px;
+	/* padding: 25px; */
 }
 
 article {
@@ -232,5 +233,5 @@ footer {
 	margin-top: 25px;
 	margin-bottom: 15px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 1.5rem;
 }
