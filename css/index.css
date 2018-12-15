@@ -69,6 +69,10 @@ h1, h2, h3, h4, h5 {
 body {
   display: flex;
   justify-content: center;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
 }
 
 html {
@@ -76,7 +80,7 @@ html {
 }
 
 .container {
-  width: 100%;
+  width: 95%;
   max-width: 880px;
   margin: 0 auto;
 }
@@ -84,7 +88,6 @@ html {
 header {
   width: 95%;
   display: flex;
-  justify-content: space-between;
   margin-top: 25px;
   align-items: center;
 }
@@ -92,13 +95,14 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 95%;
 }
 
 
 header nav a {
+  width: 95%;
   display: inline-block;
-  color: gray;
+  color: black;
   font-size: 1.4rem;
   text-decoration: none;
   border-right: 2px solid rgb(68, 152, 185);
@@ -106,11 +110,33 @@ header nav a {
 }
 
  header nav a:hover {
-  color: rgb(68, 152, 185);
+  color: white;
+}
+
+:root {
+  --mainColor: rgb(68, 152, 185);
+}
+
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .3s;
+}
+
+a:hover {
+  background-size: 4px 65px;
 }
 
 header nav a:last-child {
-  margin-right: 65px;
+  margin-right: 6.8%;
   border-right: none;
 }
 
@@ -128,15 +154,16 @@ header nav a:last-child {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-right: 5%;
 }
 
 .lg-logo .lg-logo-text button {
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   color: black;
-  border: 1px solid black;
+  border: 2px solid rgb(68, 152, 185);
   font-size: 1.7rem;
   padding: 5px 40px;
-  box-shadow: 3px 3px grey;
+  /* box-shadow: 3px 3px grey; */
 }
 
 .lg-logo .lg-logo-text button:hover {
@@ -149,8 +176,12 @@ header nav a:last-child {
   transform: translate(4px);
 }
 
+.round-img {
+  margin-left: 5%;
+}
+
 .main-content {
-  width: 100%;
+  width: 95%;
   border-top: 2px solid rgb(68, 152, 185);
   padding: 37px 0;
   display: flex;
@@ -159,12 +190,12 @@ header nav a:last-child {
 
 .top-content {
   display: flex;
-  width: 100%;
+  width: 95%;
   justify-content: space-around;
 }
 
 .top-content .text-content {
-  width: 100%;
+  width: 95%;
   font-size: 1.6rem;
   line-height: 1.1;
 }
@@ -231,8 +262,9 @@ footer {
     }
 
     header nav a {
+      width: 95%;
       font-size: 1.4rem;
-      padding: 1.1%;
+      padding: 10px 4%;
     }
 
     header .logo {
