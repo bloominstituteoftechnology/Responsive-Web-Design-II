@@ -1,1 +1,310 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body {
+    width: 876px;
+    margin: 0 auto;
+}
+button:hover {
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 6rem;;
+}
+
+nav {
+    width: 100%;
+}
+
+nav a {
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #DDDDDD;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.main-content button {
+    font-size: 2rem;
+    width: 200px;
+    background: white;
+    padding: 2%;
+    border: 1px solid black;
+}
+
+.middle-section {
+    display: flex;
+    align-content: space-evenly;
+}
+
+.middle-content-top {
+    width: 50%;
+    margin-bottom: 10%;
+    padding: 5px;
+}
+
+.middle-picture {
+    align-content: center;
+    margin-bottom: 10%;
+}
+
+.bottom-section {
+    display: flex;
+    align-content: space-between;
+    margin-bottom: 10%;
+}
+
+.bottom-content {
+    padding: 5%;
+}
+
+footer .home-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+small {
+    padding-bottom: 10%;
+}
+@media (max-width: 800px) {
+
+    body {
+        max-width: 48.875rem;
+        width: 100%;
+        padding: 2%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+        margin-top: 20%;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        padding: 0 20%;
+    }
+    .hide-pic {
+        display: none;
+    }
+
+    .middle-pic {
+        max-width: 48.875rem;
+        width: 100%;
+    }
+
+}
+@media (max-width: 500px) {
+    body {
+        width: 30.125rem;
+        width: 100%;
+        padding: 2%;
+    }
+
+    nav {
+        display: flex;
+        order: 2;
+        margin-top: 20%;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20%;
+    }
+
+    nav a {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 5% 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .inner-text {
+        margin: 20% 0;
+    }
+
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .middle-content-top {
+        width: 100%;
+    }
+
+    .middle-pic {
+        max-width: 30.125rem;
+        width: 100%;
+    }
+
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
