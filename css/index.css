@@ -1,1 +1,426 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 880px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2%;
+}
+
+.h1-head {
+    font-size: 9.0rem;
+    margin-top: 6%;
+    padding-left: 22%;
+}
+
+.imm {
+    padding-top: 3%;
+}
+
+.middle-sect {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    right: 30rem;
+    margin-top: 220%;
+    width: 15rem;
+    height: 3rem;
+    margin-right: 0;
+    padding-right: 1rem;
+}
+
+.dem {
+    margin-left: 10px;
+}
+
+.middle-headers {
+    flex-direction: column;
+    display: flex;
+    border-top: 0.1rem solid black;
+    padding-bottom: 0.6%;
+    margin-top: 2.4%;
+    padding-top: 2.4%;
+}
+
+h3 {
+    font-family: 'Bangers', cursive;
+    margin-bottom: 3.7%;
+    letter-spacing: 0.1rem;
+}
+
+.middle-img {
+    margin-left: 6.5%;
+    width: 93%;
+}
+
+.heads-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+.three-header {
+    display: flex;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+}
+
+.bottom-section {
+    width: 92%;
+    margin-left: 8%;
+    padding-top: 2.2%;
+}
+
+.pp {
+    text-align: center
+}
+
+nav a {
+    color: gray;
+    text-decoration-line: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.img-first {
+    margin-left: 10px;
+}
+
+.divver-2 {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin-left: inherit;
+}
+
+.middles {
+    width: 99%;
+    padding: 3%;
+    margin-left: 3rem;
+    display: flex;
+    font-size: 1.7rem;
+}
+
+span {
+    text-align: center;
+    margin-left: 85px;
+}
+
+anchor {
+    order: 0;
+}
+
+.a-logo {
+    order: 0;
+    width: 25%;
+    text-align: center
+}
+
+
+/* Media Query Tablet */
+
+@media only screen and (max-width: 800px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+        margin-right: 550px;
+    }
+    .container {
+        width: 100%;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 10px;
+    }
+    nav a {
+        padding: 1%;
+    }
+    nav a:last child {
+        order: -1;
+        width: 90%;
+    }
+    .imm {
+        display: none;
+    }
+    .middle-img {
+        width: 90%;
+    }
+    .two-headers {
+        width: 90%;
+    }
+    .three-header {
+        width: 90%;
+    }
+    footer {
+        width: 90%;
+    }
+    .anchor {
+        order: 1;
+    }
+    .a-logo {
+        order: 0;
+        width: 100%;
+        text-align: center;
+    }
+    /* mobile */
+    @media only screen and (max-width: 500px) {
+        body {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .container {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        nav a {
+            width: 100%;
+            border-bottom: 1px solid black;
+            text-align: center;
+            font-size: 24px;
+            padding: 0px;
+            margin: 0px;
+        }
+        nav {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navver {
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+        }
+        .imm {
+            display: none;
+            padding: 0px;
+            margin: 0px;
+        }
+        .middle-headers {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+            width: 100%;
+            margin: 0px;
+        }
+        .two-headers {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+            margin: 0px;
+        }
+        .three-header {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+            margin: 0px;
+        }
+        .middle-img {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        .header-h2,
+        .divver-2,
+        .h1-head {
+            width: 100%;
+            padding: 0px;
+        }
+        .h1-head {
+            width: 100%;
+            padding: 0px;
+            margin-left: 100px;
+        }
+        .anchor {
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .dem {
+            margin-left: 10px;
+        }
+    }
+}
