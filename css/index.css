@@ -200,6 +200,22 @@ footer {
         padding: 0 5%;
     }
 
+    header nav a {
+        text-decoration: none;
+    }
+
+    header nav a:hover {
+        text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 1;
+        transition: 0.2s;
+        border: 5px double black;
+        background-color: darkturquoise;
+        color: black;
+    }
+
     header .logo {
         order: -1;
         display: block;
@@ -208,6 +224,11 @@ footer {
 
     .cta {
         justify-content: center;
+    }
+
+    .cta .cta-text button:hover {
+        background: darkturquoise;
+        color: white;
     }
     
     .cta .cta-text {
@@ -247,7 +268,12 @@ footer {
         flex-direction: column;
         margin: 0;
         padding: 0;
-    }
+    }    
+
+    @keyframes example {
+        from {background-color: blue;}
+        to {background-color: lightgray;}
+      }
 
     header nav a {
         width: 100%;
@@ -256,6 +282,15 @@ footer {
         padding: 4.15% 0;
         font-size: 2.0rem;
         border-bottom: 1px solid gray;
+        animation-name: example;
+        animation-duration: 2s;
+    }
+
+    a:hover {
+        opacity: 1;
+        opacity: 0.8;
+        background-color: lightblue;
+        color: black;
     }
 
     header nav a:first-child {
@@ -278,6 +313,12 @@ footer {
 
     .cta .cta-text button {
         margin-top: 8%;
+    }
+
+    .cta .cta-text button:hover {
+        background: gray;
+        border: 3px double black;
+        color: white;
     }
 
     .cta img {
