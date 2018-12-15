@@ -1,10 +1,3 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,58 +47,54 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-html {
-    font-size: 62.5%;
-}
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
+h1 {
+	font-size: 8rem;
+}
+h2 {
+	font-size: 2rem;
+}
+p {
+	font-size: 1.6rem;
+}
+address {
+	font-size: 1.6rem;
+}
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
 	width: 880px;
 	margin: 0 auto;
 }
-
-a {
-	font-size: 1.5rem;
-}
-
-p {
-	font-size: 1.6rem;
-}
-
-h2 {
-	font-size: 1.8rem;
-}
-address {
-	font-size: 1.5rem;
-}
 /* Navigation */
 .navigation {
-width: 100%;
+width: 880px;
 display: flex;
-justify-content: space-between;
-margin-top: 5%;
+justify-content: space-between; 
 /* border: 1px solid red; */
 }
 a {
 	text-decoration: none;
 	display: flex;
-	align-items: flex-end; 
-	color: grey;
+	align-items: flex-end;
+	color: #808080;
 	text-decoration: none;
 }
 .logo {
-	display: flex;
+	/* display: flex; */
 }
 /* Header */
 .header {
@@ -114,19 +103,18 @@ a {
 	width: 876px;
 	display: flex;
 	justify-content: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 .header div { 
+	padding-top: 100px;
 	/* border: 1px solid red; */
 	display: flex; 
 	flex-direction: column; 
 	align-items: center;
-	margin-top: 10%;
-	margin-right: 10%;
 } 
 .header h1 {
-	font-size: 8rem;
+	font-size: 80px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -134,110 +122,104 @@ a {
 }
 .header button {
 	display: block;
-	margin-top: 3%;
+	margin-top: 10px;
 	background-color: white;
 	border: 1px solid black;
-	height: 10%;
-	width: 50%;
+	height: 30px;
+	width: 160px;
 	font-family: 'Titillium Web', sans-serif;
 }
 /* Top Section */
 #lineThing {
 	border: 1px solid black;
-	margin-top: 5%;
-	width: 880px;
+	margin-top: 10px;
+	width: 876px;
 	
 }
 .top-section {
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	display: flex;
 }
 /* Bottom Section */
 .bottom-section {
 	
 	display: flex;
-	margin-top: 5%;
-	margin-left: 1%;
+	margin-top: 40px;
+	margin-left: 10px
 }
 /* Contact */
 .contact {
-	margin-top: 5%;
+	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
 }
 .contact p {
-	margin-top: 2%;
+	margin-top: 20px;
 }
 .contact div {
 	border: 1px solid black;
-	margin-bottom: 2%;
+	margin-bottom: 40px;
 }
 /* Footer */
 .footer {
 	display: flex;
 	justify-content: center;
-	margin-top: 5%;
 }
 
-@media (max-width: 800px) {
+ @media (max-width: 800px) {
 	.container {
-		width: 800px;
+		width: 90%;
 		margin: 0 auto;
 		/* border: 1px solid red; */
 	}
 	/* Navigation */
 	.navigation {
-		width: 800px;
 		display: flex;
-		justify-content: space-between; 
+		justify-content: center;
 		flex-wrap: wrap-reverse;
+		width: 100%;
 		/* border: 1px solid red; */
 	}
 	a {
+		font-size: 1.6rem;
 		text-decoration: none;
-		margin-right: 65px;
-		margin-top: 10px;
-		display: flex;
-		align-items: flex-end; 
+		margin-right: 9%;
+		margin-top: 5%;
 		color: grey;
 		text-decoration: none;
 	}
 	.logo img {
-		display: flex;
 	}
-	
 	/* Header */
 	.header {
 		/* border: red 1px solid; */
-		height: 400px;
-		width: 800px;
 		display: flex;
 		justify-content: center;
+		width: 100%;
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
 	.header div { 
-		padding-top: 100px;
+		padding-top: 5%;
 		/* border: 1px solid red;  */
-		display: flex; 
-		flex-direction: column; 
-		align-items: center;  
-	}
-	.header h1 {
-		/* font-size: 80px; */
 		display: flex;
 		flex-direction: column;
-		text-align: center;
+		align-items: center;
+	}
+	.header h1 {
+		font-size: 8rem;
+		display: flex;
+		flex-direction: column;
 		/* border: 1px solid red; */
 	}
 	.header button {
 		display: block;
-		margin-top: 10px;
+		margin-top: 5%;
 		background-color: white;
 		border: 1px solid black;
-		height: 30px;
-		width: 160px;
+		height: 10%;
+		width: 50%;
 		font-family: 'Titillium Web', sans-serif;
 	}
 	.header img {
@@ -246,12 +228,12 @@ a {
 	/* Top Section */
 	#lineThing {
 		border: 1px solid black;
-		margin-top: 10px;
-		width: 800px;
+		/* margin-top: 10px; */
+		width: 100%;
 	}
 	.top-section {
-		margin-top: 40px;
-		margin-bottom: 40px;
+		margin-top: 5%;
+		margin-bottom: 5%;
 		display: flex;
 	}
 	.image img {
@@ -260,28 +242,25 @@ a {
 	}
 	/* Bottom Section */
 	.bottom-section {
-		
 		display: flex;
-		margin-top: 40px;
-		margin-left: 10px
+		justify-content: space-between;
+		margin-top: 5%;
 	}
 	/* Contact */
 	.contact {
-		margin-top: 40px;
+		margin-top: 5%;
 		display: flex;
 		flex-direction: column;
 	}
-	.contact p {
-		margin-top: 20px;
-	}
 	.contact div {
 		border: 1px solid black;
-		margin-bottom: 40px;
+		margin-bottom: 5%;
 	}
 	/* Footer */
 	.footer {
 		display: flex;
 		justify-content: center;
+		margin: 5%;
 	}
 } 
 
@@ -294,7 +273,7 @@ a {
 	/* Navigation */
 	.navigation {
 		width: 500px;
-		margin-left: 30px;
+		margin-left: 0px;
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
@@ -303,15 +282,12 @@ a {
 	a {
 		text-decoration: none;
 		border: 1px solid grey;
-		width: 500px;
-		padding: 25px;
 		display: flex;
 		justify-content: center;
 		color: grey;
-		
 	}
 	.logo {
-		display: flex;
+		/* display: flex; */
 	}
 	/* Header */
 	.header {
@@ -331,7 +307,7 @@ a {
 		align-items: center;  
 	} 
 	.header h1 {
-		/* font-size: 80px; */
+		font-size: 80px;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
