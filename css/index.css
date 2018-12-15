@@ -1,1 +1,453 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.25;
+    font-size: 1.6rem;
+}
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header nav {
+    margin-top: 5%; 
+    width: 69.318%;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 1.6rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin: 4% 0 0 9%;
+}
+
+/* Call To Action (CTA) Styles */
+
+.cta {
+    display: flex;
+    margin-top: 7.2rem;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 7.2rem;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 15% 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 1.6rem;
+    background: white;
+    width: 60%;
+    height: 32px;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+.cta-about {
+    color: white;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+    padding-left: 3%;
+    margin-top: 3%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("https://dxtrlws.github.io/Responsive-Web-Design-II/img/about-banner.jpg");
+}
+
+.cta-about h1{
+    font-size: 2rem;
+}
+
+.cta-about p {
+    font-size: 1.6rem;
+    width: 100%;
+
+}
+
+/* Who We Are Styles */
+.who-we-are {
+    display: flex;
+    margin: 5% 0;
+    
+}
+
+.who-we-are-text {
+    width: 50%;
+    font-size: 1.6rem;
+    padding-right: 3%;
+}
+
+/* Team Styles */
+
+.meet-our-team {
+    margin-top: 5%;
+}
+
+.meet-our-team h2 {
+    font-size: 1.6rem
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    max-width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+}
+
+.contact-card img {
+    width: 100%;
+    max-width: 127px;
+    height: 150px
+}
+
+
+.contact-details{
+    width: 65%;
+    margin-left: 3%;
+}
+
+.contact-details p:first-of-type {
+    margin-bottom: 2%;
+}
+
+.contact-details-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-details-title {
+    color: rgb(112, 112, 112);
+    
+}
+
+.contact-social {
+    background: #F2F2F2;
+    width: 100%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 3%;
+    
+}
+
+.contact-social p {
+    font-size: 1.2rem;
+    color: #808080;
+    font-weight: bold;
+}
+.social-icons {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fab {
+    font-size: 2rem;
+    color: darkgray;
+    padding-left: 6%;
+}
+
+
+
+/* Main Content Styles */
+
+.main-content {
+   border-top: 2px solid black; 
+   border-bottom: 2px solid black;
+   margin: 10% 0 5% 0;
+   padding: 5% 0;
+   font-size: 1.6rem;
+   line-height: 18px;
+}
+
+.main-content .top-content {
+    display: flex;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 5% auto;
+    width: 100%;
+}
+
+.main-content .bottom-content {
+    display: flex;
+}
+
+.main-content .bottom-content p {
+    padding-right: 10%;
+}
+
+/* Contact Styles */
+
+.contact p {
+    margin: 2% 0;
+    font-size: 1.6rem;
+}
+
+.contact h4 {
+    font-size: 1.6rem;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 5% 0 5%;
+    font-size: 1.6rem;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    header .logo {
+        order: -1;
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+    
+    .cta .cta-text {
+        margin: 0;
+    }
+
+    .cta img {
+        display: none;
+    }
+
+    .main-content .middle-img {
+       width: 100%;
+    }
+
+    .main-content {
+       margin: 10% 2% 5%;
+    }
+
+    .text-content {
+        margin: 0 2%;
+    }
+
+    .contact {
+        margin: 0 5%;
+    }
+
+    .who-we-are, .meet-our-team {
+        margin-left: 3%;
+    }
+    .contact-details {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 3%;
+    }
+}
+
+/* Phone */
+@media (max-width: 500px) {
+
+    header {
+        justify-content: center;
+    }
+
+    header nav {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 3% 0;
+        font-size: 2rem;
+        border-bottom: 1px solid gray;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    header nav a:hover {
+        background: gray;
+    }
+
+    header .logo {
+        margin: 5% 0;
+    }
+
+    .cta {
+        margin-top: 10%;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .cta img {
+        max-width: 80%;
+    }
+
+    .main-content .top-content {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .main-content .bottom-content {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 440px;
+    }
+
+    .main-content {
+        padding-bottom: 10%;
+    }
+
+    .text-content {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 2%;
+    }
+    .who-we-are {
+        flex-direction: column;
+        
+    }
+    .who-we-are-text {
+        margin-top: 3%;
+        width: 100%;
+    }
+    .team {
+        flex-direction: column;
+    }
+    .contact-card {
+        max-width: 100%;
+    }
+}
