@@ -145,9 +145,10 @@ header .logo {
    border-top: 2px solid black; 
    border-bottom: 2px solid black;
    margin: 75px 0 35px 0;
-   padding: 35px 0;
+   padding: 4% 0;
    font-size: 1.6rem;
    line-height: 18px;
+   width: 99%;
 }
 
 .main-content .top-content {
@@ -157,6 +158,7 @@ header .logo {
 .main-content .middle-img {
     display: block;
     margin: 30px auto;
+    width: 100%;
 }
 
 .main-content .bottom-content {
@@ -164,7 +166,7 @@ header .logo {
 }
 
 .main-content .bottom-content p {
-    padding-right: 20px;
+    padding-right: 3px;
 }
 
 /* Contact Styles */
@@ -194,7 +196,7 @@ footer {
     }
   
     header nav {
-        width: 768px;
+        width: 100%;
         padding: 0 30px;
     }
 
@@ -221,7 +223,7 @@ footer {
     }
 
     .main-content {
-       margin: 75px 20px 35px;
+       margin: 75px 3%px 35px;
     }
 
     .text-content {
@@ -251,7 +253,7 @@ footer {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 20px 0;
+        padding: 4% 0;
         font-size: 2rem;
         border-bottom: 1px solid gray;
     }
