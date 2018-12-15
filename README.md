@@ -1,5 +1,5 @@
 # Website URL
-https://natureboi.github.io/Responsive-Web-Design-II/contacts.html
+https://natureboi.github.io/Responsive-Web-Design-II/index.html
 
 
 # Responsive-Web-Design: Fully Responsive
