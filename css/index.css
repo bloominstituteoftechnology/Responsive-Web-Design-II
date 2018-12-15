@@ -255,6 +255,10 @@ footer p {
     /* display: flex; */
   }
 
+  .topNav .logo {
+    animation: fadeIn 5s;
+  }
+
   .topNav img {
     margin: 0 0 15% 0;
   }
@@ -296,6 +300,8 @@ footer p {
     /* border: var(--border); */
     width: 100%;
     display: inline-block;
+    animation: text 3s 1;
+
   }
 
   
