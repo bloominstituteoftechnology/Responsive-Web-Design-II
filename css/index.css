@@ -317,13 +317,13 @@ address {
         text-align: center;
         padding: 19.8px;
         font-size: 20px;
+        transition: transform 0.6s;
     }
 
     .nav-button:hover {
         transform: scale(1.2);
         background: black;
         color: lightcyan;
-        border:
     }
 
     nav a:last-child {
