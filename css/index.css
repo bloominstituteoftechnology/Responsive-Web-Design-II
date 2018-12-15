@@ -55,14 +55,14 @@ table {
     /* Site colors */
     --dark: #111;
     --light: #fff;
-    --darkGrey: grey;
-    --lightGrey: lightgrey;
+    --darkAccent: grey;
+    --lightAccent: lightgrey;
 
     /* Site fonts */
-    --TitilliumWeb: 'Titillium Web', sans-serif;
-    --Bangers: 'Bangers', sans-serif;
-    --Karla: 'Karla', sans-serif;
-    --Niconne: 'Niconne', cursive;
+    --primaryFont: 'Titillium Web', sans-serif;
+    --secondaryFont: 'Bangers', sans-serif;
+    /* --primaryFont: 'Karla', sans-serif;
+    --secondaryFont: 'Niconne', cursive; */
 }
 
 * {
@@ -74,7 +74,7 @@ html {
 }
 
 body {
-    font-family: var(--TitilliumWeb);
+    font-family: var(--primaryFont);
 }
 
 h1 {
@@ -119,18 +119,18 @@ nav {
 .nav-link {
     width: 100%;
     text-decoration: none;
-    border-top: 0.1rem solid var(--lightGrey);
+    border-top: 0.1rem solid var(--lightAccent);
     text-align: center;
-    color: var(--darkGrey);
+    color: var(--darkAccent);
     padding: 1.5rem;
 }
 
 .nav-link:last-child {
-    border-bottom: 0.1rem solid var(--lightGrey);
+    border-bottom: 0.1rem solid var(--lightAccent);
 }
 
 .nav-link:hover {
-    color: var(--lightGrey);
+    color: var(--lightAccent);
     background-color: var(--dark);
 }
 
@@ -148,7 +148,7 @@ nav {
 
 .big-text {
     font-size: 7rem;
-    font-family: var(--Bangers);
+    font-family: var(--secondaryFont);
 }
 
 .header-img {
@@ -177,7 +177,7 @@ nav {
 }
 
 .title {
-    font-family: var(--Bangers);
+    font-family: var(--secondaryFont);
 }
 
 /* Middle Section
@@ -214,7 +214,7 @@ nav {
 }
 
 .contact-link:hover {
-    color: var(--lightGrey);
+    color: var(--lightAccent);
 }
 
 .copyright {
@@ -227,13 +227,6 @@ nav {
 ============================ */
 
 @media (min-width: 500px) {
-
-    /* Logo */
-
-    .logo {
-        display: block;
-        margin: 0 auto;
-    }
 
     /* Navigation */
 
