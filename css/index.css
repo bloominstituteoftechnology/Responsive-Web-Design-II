@@ -322,16 +322,27 @@ nav{
 
 
 @media (max-width: 800px) {
-  .logo {
 
-  }
 	header {
 		display: flex;
-		
+		flex-direction: column-reverse;
+		/* justify-content: center; */
+		/* justify-content: space-between; */
 	}
-  nav {
+	.logo {
+		order: 1;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+  }
+	nav {
+		display: flex;
+		flex-direction: row;
 
   }
+	nav a {
+		order: 2;
+	}
   .circlecode {
       display: none;
       /* width: 60%; */
@@ -358,8 +369,15 @@ nav{
   nav {
     display: flex;
     flex-direction: column;
+		/* order: 2; */
+		/* align-items: center; */
+		/* align-content: center; */
   }
+	nav a {
+		order: 2;
+	}
   .logo {
+		order: 1;
     /* display: none; */
   }
   .demand-start {
