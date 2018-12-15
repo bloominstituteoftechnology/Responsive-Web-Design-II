@@ -1,1 +1,317 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	transition: all .25s ease-in;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Index.html CSS */
+
+html {font-size: 63%;}
+
+a, p {
+    font-size: 1.6rem;
+    line-height: 1.4;}
+
+h1 {font-size: 6rem;}
+
+h2 {font-size: 2rem;}
+
+body {
+    width:70%;
+    margin: 0 auto;}
+
+.container {
+    width: 100%;
+}
+.logo {
+    margin-bottom: 2%;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+}
+.navi {
+    display: block;
+    float: left;
+    padding: 1rem 2%;
+    color: gray;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .5rem;
+    order: 0;
+    margin-top: .51rem;
+    transition: width 1s, height 1s, transform 1s;
+    transition: width 1s, height 1s, transform 1s;
+}
+.navigation a:nth-child(1){
+    order:1;
+}
+.navi:hover {
+    padding: 1rem 2%;
+    color: white;
+    background-color: lightseagreen;
+    text-decoration: none;
+    transform: rotate(360deg); 
+    transform: rotate(360deg);
+}
+.navigation {
+    display: flex;
+    margin: 2rem 0 0 0;
+    align-items: center;
+    justify-content: space-around;
+}
+.navi-header  {
+    margin: 2rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navi-header-left {
+    text-align: center;
+}
+.navi-header h1 {
+    text-align: center;
+}
+p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+.header-img {
+    border-radius: 100%;
+    max-width: 100%;
+    width: 40%;
+    animation: 2s infinite,
+    Spin 10s infinite linear;
+}
+strong {
+    border: .1rem solid black;
+    padding: .5% 12%;
+}
+.top, .bottom {
+    display: flex;
+}
+p, h2 {
+    margin: 2rem;
+}
+.break {
+    border: .05rem solid black;
+    margin: 2% 0;
+}
+.service {
+    padding: 0 1.5rem 0 0;
+}
+.vision {
+    padding: 0 0 0 1.5rem;
+}
+.middle-img {
+    max-width: 100%;
+    margin: 3rem o;
+    width: 100%;
+}
+.copyright {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/*Services html*/
+.middle{
+	margin-top: 3.5rem;
+}
+.middle h1{
+    font-size: 4rem;
+}
+.row1, .row2, .row3, .end{
+	display: flex;
+}
+.card-right{
+	background: linear-gradient(#F0F4F5,#EBEBEB);
+	width: 100%;
+	border: .5px solid black;
+	margin: 1.5rem 0 1.5rem 2rem;
+	padding: 2rem 2.5rem;
+}
+.card-left{
+	background: linear-gradient(#F0F4F5,#EBEBEB);
+	width: 100%;
+	border: .5px solid black;
+	margin: 1.5rem 2rem 1.5rem 0;
+	padding: 2rem 2.5rem;
+}
+.content p, .content h2{
+	margin: 2rem;
+}
+button{
+	background-color: white;
+	border: .05rem solid black;
+	margin: 3rem 0 0 0;
+	padding: .5rem .5rem;
+	border-radius: .3rem;
+}
+.break{
+    border: .05rem solid black;
+    margin: 4% 0;
+}
+
+.services-header-img{
+	margin-top: 5%;
+	width: 100%;
+}
+
+ul{
+    list-style-type: square;
+	margin-top: 2rem;
+	margin-left: 1.5rem;
+	display: flex;
+    flex-direction: column;
+}
+
+li {
+    padding: 1rem 0;
+}
+
+.services-info-img, .services-header-img{
+    max-width: 100%;
+    height: auto;
+}
+.services-info-img{
+    max-width: 50%;
+    width: 50%;
+    height: 0%;
+}
+.card{
+	margin: 0 4rem 0 0;
+}
+
+/*tablet size*/
+@media (max-width: 800px){
+    .navigation{
+        flex-flow: row wrap;
+    }
+    .navigation .navi{
+        order: 1;
+    }
+    .navigation a:nth-child(1){
+        order:0;
+        width: 100%;
+        text-align: center;
+    }
+    .header-img{
+        display: none;
+    }
+    body{
+        width:95%;
+        margin:0 auto;
+    }
+}
+/*mobile size*/
+@media (max-width: 500px){
+    body{
+        width: 100%;
+    }
+    .navigation{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navi{
+        color: gray;
+        border: .02rem solid grey;
+        width: 100%;
+        border-radius: 0;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .break{
+        margin: 2rem 0;
+    }
+    .navi-header h1{
+        font-size: 5rem;
+    }
+    .header-img{
+        display: none;
+    }
+    .top{
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    .copyright{
+        text-align: center;
+    }
+}

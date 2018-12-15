@@ -24,6 +24,7 @@ You have experienced building fixed layout web pages, adaptive web pages, and no
 * [ ] [Look at BEM](http://getbem.com/) and convert your existing CSS into the appropriate selectors.
 * [ ] Introduce CSS animations at different break points across your site
 * [ ] Build another page based on one of the navigation items and use your creativity on how it looks.
+.
 
 
 
