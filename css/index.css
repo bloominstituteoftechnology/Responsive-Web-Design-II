@@ -53,6 +53,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -80,7 +84,7 @@ header nav {
 
 header nav a {
   margin-right: 65px;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: gray;
   text-decoration: none;
 }
@@ -118,7 +122,7 @@ header nav a:hover {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -147,6 +151,7 @@ header nav a:hover {
 .main-content .top-content .text-content {
   width: 410px;
   margin-right: 34px;
+  font-size: 1.6rem;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -167,6 +172,7 @@ header nav a:hover {
 .main-content .bottom-content .text-content {
   width: 275px;
   margin-right: 12px;
+  font-size: 1.6rem;
 }
 
 .main-content .bottom-content .text-content:last-child {
@@ -177,6 +183,7 @@ header nav a:hover {
   margin-top: 57px;
   border-top: 1px solid black;
   padding: 39px 10px 0;
+  font-size: 1.6rem;
 }
 
 .contact p {
@@ -186,5 +193,5 @@ header nav a:hover {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
