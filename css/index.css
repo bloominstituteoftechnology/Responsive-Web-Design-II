@@ -293,6 +293,10 @@ footer {
         height: 440px;
     }
 
+    .main-content {
+        padding-bottom: 10%;
+    }
+
     .text-content {
         margin: 0;
     }
