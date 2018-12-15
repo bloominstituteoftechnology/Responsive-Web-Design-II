@@ -54,27 +54,33 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
     line-height: 1;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
+    font-size: 1.7rem;
 }
 
 p {
-    line-height: 1.1;
+    letter-spacing: 0.4px;
+    line-height: 1.22;
+    font-size: 1.5rem;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	max-width: 880px;
+	max-width: 88rem;
     margin: 0px auto;
 }
 
@@ -82,7 +88,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 nav {
@@ -94,7 +100,8 @@ nav {
 .nav-button {
 	text-decoration: none;
     color: grey;
-	transition: transform 0.4s;
+    transition: transform 0.4s;
+    font-size: 1.6rem;
 }
 
 .nav-button:hover {
@@ -106,7 +113,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-top: 65px;
-    padding-left: 126px;
+    padding-left: 14.5%;
     margin-bottom: 79px;
 }
 
@@ -118,24 +125,24 @@ nav {
 }
 
 .innovation {
-    font-size: 72px;
-    margin-bottom: 30px;
+    font-size: 7.2rem;
+    margin-bottom: 33px;
 }
 
 .get-started a {
 	text-decoration: none;
     border: 1px solid black;
-    padding: 3px;
-	padding-left: 45px;
-	padding-right: 45px;
+    padding: 2.5px;
+	padding-left: 15%;
+	padding-right: 15%;
 	color: black;
     transition: 0.5s;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 .get-started a:hover {
     background: darkblue;
-    border:1px solid lightcyan;
+    border: 1px solid lightcyan;
     color: lightcyan;
 }
 
@@ -152,20 +159,28 @@ nav {
 
 .bottom-content {
 	border-bottom: 1px solid black;
-	padding-bottom: 38px;
+	padding-bottom: 37px;
     display: flex;
 }
 
 .bottom-content div {
-    width: 31.2%
+    width: 31%
 }
 
 .services, .product {
-    margin-right: 20px;
+    margin-right: 2.4%;
+}
+
+.bottom-content h2 {
+    margin-bottom: 19.5px;
 }
 
 .contact {
 	margin-top: 33px;
+}
+
+.contact h2 {
+    margin-bottom: 13.5px;
 }
 
 .contact p {
@@ -188,8 +203,8 @@ address {
 @media (max-width: 800px) {
 
     .container {
-        width: 760px;
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 2.5%;
     }
     
     .cta-img {
@@ -201,37 +216,37 @@ address {
     }
 
     .logo {
-        margin-bottom: 36px;
+        margin-bottom: 38px;
     }
 
     nav {
         width: 100%;
         order: 1;
-        padding-right: 41px;
-        padding-left: 9px;
+        padding-right: 5.2%;
+        padding-left: 1.5%;
     }
 
     .call-to-action {
         justify-content: center;
-        margin-top: 74px;
-        margin-bottom: 84px;
-        padding-left: 0;
+        margin-top: 73px;
+        margin-bottom: 83px;
+        padding-left: 0%;
     }
     
     .innovation {
-        margin-bottom: 32px;
+        margin-bottom: 33px;
     }
     
     .top-content {
-        padding-left: 10px;
+        padding-left: 1.6%;
     }
 
     .features, .about {
-        width: 48%;
+        width: 47.5%;
     }
 
     .features {
-        margin-right: 20px;
+        margin-right: 3.3%;
     }
 
     .top-content {
@@ -247,7 +262,7 @@ address {
     .bottom-content {
         padding-bottom: 36px;
         display: flex;
-        padding-left: 10px;
+        padding-left: 1.6%;
     }
     
     .bottom-content div {
@@ -258,9 +273,13 @@ address {
         margin-right: 39px;
     }
 
+    .bottom-content h2 {
+        margin-bottom: 18px;
+    }
+
     .contact {
         margin-top: 35px;
-        padding-left: 10px;
+        padding-left: 1.6%;
     }
     
     .contact p {
@@ -275,7 +294,7 @@ address {
 @media (max-width: 500px) {
 
     .container {
-        width: 460px;
+        width: 100%;
     }
     
     .nav-content {
@@ -314,9 +333,16 @@ address {
     }
     
     .top-content {
-        padding-left: 0;
+        margin-left: 1.6%;
         flex-direction: column;
-        padding-top: 59px;
+        padding-top: 58px;
+        width: 96%;
+        padding-left: 0%;
+    }
+
+    .top-content div {
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .features, .about {
@@ -324,17 +350,25 @@ address {
     }
 
     .features {
-        margin-right: 0;
+        margin-right: 0%;
         margin-bottom: 45px;
     }
     
     .about {
         margin-bottom: 21px;
     }
+
+    .middle-img {
+        padding-left: 2%;
+        width: 98%
+    }
     
     .bottom-content {
-        padding-left: 0;
+        padding-left: 1.5%;
         flex-direction: column;
+        width: 96%;
+        margin-left: 1.6%;
+        padding-left: 0%;
     }
     
     .bottom-content div {
@@ -348,7 +382,7 @@ address {
 
     .contact {
         margin-top: 35px;
-        padding-left: 0;
+        padding-left: 1.6%;
     }
     
     .contact p {
@@ -356,6 +390,6 @@ address {
     }
 
     .contact h2 {
-        margin-bottom: 16px;
+        margin-bottom: 14px;
     }
 }
