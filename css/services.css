@@ -1,0 +1,325 @@
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  transition:all .5s ease-in-out;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  margin-top: 29px;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}
+
+
+header nav a {
+  width: 95%;
+  display: inline-block;
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  border-right: 2px solid rgb(68, 152, 185);
+  padding: 10px 4%;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+:root {
+  --mainColor: rgb(68, 152, 185);
+}
+
+a {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+  color: #000;
+  text-decoration: none;
+  transition: background-size .3s;
+}
+
+a:hover {
+  background-size: 4px 65px;
+}
+
+header nav a:last-child {
+  margin-right: 6.8%;
+  border-right: none;
+}
+
+.services-hearder-img {
+  margin-top: 70px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.services-header {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  line-height: 1.25;
+  font-size: 1.6rem;
+}
+
+.services-header-img {
+  margin-top: 56px;
+  padding: 2%;
+  width: 100%;
+}
+
+.service-container {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid rgb(68, 152, 185);
+  border-bottom: 2px solid rgb(68, 152, 185);
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 100%;
+  font-size: 1.6rem;
+  width: 47.7%;
+  border: 1px solid rgb(68, 152, 185);
+  margin-bottom: 40px;
+  background-color: rgb(230, 242, 247);
+  padding: 2.5%;
+  line-height: 1.25;
+}
+
+.service-item button {
+  margin-top: 15px;
+  padding: 8px 2.2%;
+  border: 1px solid rgb(68, 152, 185);
+  transition-duration: 0.3s;
+  color: black;
+  border: 1px solid rgb(68, 152, 185);
+  font-size: 1.2rem;
+  padding: 5px 2.8%;
+}
+.service-item button:hover {
+  background-color: rgb(68, 152, 185);
+  color: white;
+  cursor: pointer;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-facts {
+  display: flex;
+  flex-wrap: wrap;
+  width: 47%;
+  font-size: 1.6rem;
+  padding-top: 40px;
+  line-height: 1.25;
+}
+
+p {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 15px;
+}
+
+li {
+  width: 100%;
+  margin: 15px 0;
+  list-style-type: square;
+  margin-left: 17%;
+  line-height: 1.25
+}
+
+.services-info-img {
+  margin-top: 40px;
+}
+
+footer {
+  font-size: 1.6rem;
+  padding-top: 75px;
+  text-align: center;
+}
+
+/* Media Queries */
+
+/* Tablet View */
+
+@media (max-width: 800px) {
+  .container {
+    width: 95%;
+    padding: 2.2%;
+  }
+
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  header nav {
+    width: 100%;
+    padding: 1.1%;
+    justify-content: space-between;
+  }
+
+  header nav a {
+    width: 100%;
+    padding: 2%;
+    margin-top: 35px;
+    font-size: 1.4rem;
+    padding: 10px 4%;
+  }
+
+  .service-facts {
+    width: 100%;
+  }
+
+  .services-info-img {
+    display: none;
+  }
+  /* header nav a:last-child {
+    margin-right: 0;
+  } */
+}
+
+/* Mobile View */
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 2%;
+  }
+
+  header nav {
+    flex-direction: column;
+  }
+
+  header nav a {
+    font-size: 2.4rem;
+    margin-top: 0;
+    padding: 20px 0;
+    border-top: 2px solid rgb(68, 152, 185);
+    border-left: 2px solid rgb(68, 152, 185);
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav a:last-child {
+    border-bottom: 2px solid rgb(68, 152, 185);
+    border-right: 2px solid rgb(68, 152, 185);
+    
+  }
+
+  .service-container {
+    flex-direction: column;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .service-facts {
+    width: 100%;
+  }
+
+  .services-info-img {
+    display: none;
+  }
+}
