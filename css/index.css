@@ -1,1 +1,395 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, .contact__address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.05;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 17px;
+    font-size: 1.7rem;
+}
+
+p {
+    letter-spacing: 0.4px;
+    line-height: 1.22;
+    font-size: 1.5rem;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	max-width: 88rem;
+    margin: 0px auto;
+}
+
+.navigation__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.navigation__links {
+	display: flex;
+    width: 69%;
+	justify-content: space-between;
+}
+
+.nav-button {
+	text-decoration: none;
+    color: grey;
+    transition: transform 0.5s;
+    font-size: 1.6rem;
+}
+
+.nav-button:hover {
+	transform: scale(1.2);
+}
+
+.call-to-action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    padding-left: 14.5%;
+    margin-bottom: 79px;
+}
+
+.cta-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.innovation {
+    font-size: 7.2rem;
+    margin-bottom: 33px;
+}
+
+.get-started__link {
+	text-decoration: none;
+    border: 1px solid black;
+    padding: 2.5px;
+	padding-left: 15%;
+	padding-right: 15%;
+	color: black;
+    transition: 0.8s;
+    font-size: 1.7rem;
+}
+
+.get-started__link:hover {
+    background: black;
+    border: 1px solid lightcyan;
+    color: lightcyan;
+}
+
+.top-content {
+	border-top: 1px solid black;
+	display: flex;
+	padding-top: 35px;
+}
+
+.middle-img {
+	padding-top: 32px;
+	padding-bottom: 26px;
+}
+
+.bottom-content {
+	border-bottom: 1px solid black;
+	padding-bottom: 37px;
+    display: flex;
+}
+
+.services, .product, .vision {
+    width: 31%
+}
+
+.services, .product {
+    margin-right: 2.4%;
+}
+
+.bottom-content h2 {
+    margin-bottom: 19.5px;
+}
+
+.contact {
+	margin-top: 33px;
+}
+
+.contact h2 {
+    margin-bottom: 13.5px;
+}
+
+.contact p {
+    margin-bottom: 12px;
+}
+
+.contact__address {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: 28px;
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 100%;
+        margin-left: 2.5%;
+    }
+    
+    .cta-img {
+        display: none;
+    }
+
+    .navigation__content {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 38px;
+    }
+
+    .navigation__links {
+        width: 100%;
+        order: 1;
+        padding-right: 5.2%;
+        padding-left: 1.5%;
+    }
+
+    .call-to-action {
+        justify-content: center;
+        margin-top: 73px;
+        margin-bottom: 83px;
+        padding-left: 0%;
+    }
+    
+    .innovation {
+        margin-bottom: 33px;
+    }
+    
+    .top-content {
+        padding-left: 1.6%;
+    }
+
+    .features, .about {
+        width: 47.5%;
+    }
+
+    .features {
+        margin-right: 3.3%;
+    }
+
+    .top-content {
+        display: flex;
+        padding-top: 35px;
+    }
+    
+    .middle-img {
+        width: 100%;
+        padding-bottom: 28px;
+    }
+    
+    .bottom-content {
+        padding-bottom: 36px;
+        display: flex;
+        padding-left: 1.6%;
+    }
+    
+    .services, .product, .vision {
+        width: 28.5%
+    }
+    
+    .services, .product {
+        margin-right: 39px;
+    }
+
+    .bottom-content h2 {
+        margin-bottom: 18px;
+    }
+
+    .contact {
+        margin-top: 35px;
+        padding-left: 1.6%;
+    }
+    
+    .contact p {
+        margin-bottom: 12px;
+    }
+
+    .contact h2 {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 100%;
+    }
+    
+    .navigation__content {
+        margin-top: 19px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .navigation__links {
+        flex-direction: column;
+        width: 500px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-button {
+        border-top: 1px solid black;
+        text-align: center;
+        padding: 19.8px;
+        font-size: 20px;
+        transition: transform 0.6s;
+    }
+
+    .nav-button:hover {
+        transform: scale(1.2);
+        background: black;
+        color: lightcyan;
+    }
+
+    .navigation__links a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .call-to-action {
+        margin-top: 52px;
+        margin-bottom: 83px;
+    }
+    
+    .top-content {
+        margin-left: 1.6%;
+        flex-direction: column;
+        padding-top: 58px;
+        width: 96%;
+        padding-left: 0%;
+    }
+
+    .features, .about {
+        width: 95%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .features {
+        margin-right: 0%;
+        margin-bottom: 45px;
+    }
+    
+    .about {
+        margin-bottom: 21px;
+    }
+
+    .middle-img {
+        padding-left: 2%;
+        width: 98%
+    }
+    
+    .bottom-content {
+        padding-left: 1.5%;
+        flex-direction: column;
+        width: 96%;
+        margin-left: 1.6%;
+        padding-left: 0%;
+    }
+    
+    .services, .product, .vision {
+        width: 95%;
+        margin-bottom: 63px;
+    }
+
+    .vision {
+        margin-bottom: 0px;
+    }
+
+    .contact {
+        margin-top: 35px;
+        padding-left: 1.6%;
+    }
+    
+    .contact p {
+        margin-bottom: 12px;
+    }
+
+    .contact h2 {
+        margin-bottom: 14px;
+    }
+}
