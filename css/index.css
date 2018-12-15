@@ -54,6 +54,10 @@ table {
 
 /* General styling */
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
 	height: 100%;
 	font-family: 'Titillium Web', sans-serif;
@@ -62,18 +66,18 @@ html, body {
 h1, h2, h3, h4, h5 {
 	font-family: 'Bangers', cursive;
 	letter-spacing: 1px;
-	margin-bottom: 15px;
+	margin-bottom: 1.5rem;
 }
 
 /* Desktop Layout */
 
 body {
-	width: 1150px;
+	width: 80%;
 	margin: auto;
 }
 
 header {
-	margin-top: 50px;
+	margin-top: 5rem;
 }
 
 #topbar {
@@ -82,7 +86,7 @@ header {
 }
 
 nav {
-	width: 800px;
+	width: 70%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -91,11 +95,11 @@ nav {
 nav a {
 	text-decoration: none;
 	color: lightgray;
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 .logo {
-	width: 200px;
+	width: 18%;
 }
 
 #banner {
@@ -107,33 +111,33 @@ nav a {
 }
 
 div.banner-content {
-	width: 600px;
+	width: 50%;
 	text-align: center;
 }
 
 .banner-content h1 {
-	font-size: 100px;
-	margin-bottom: 30px;
+	font-size: 10rem;
+	margin-bottom: 3rem;
 }
 
 .banner-content a {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 2rem;
 	color: black;
 	border: 2px black solid;
-	padding: 5px 50px 5px 50px;
+	padding: 0.5rem 5rem 0.5rem 50px;
 }
 
 img.banner-content {
-	height: 450px;
+	width: 40%;
 }
 
 h2 {
-	font-size: 20px;
+	font-size: 2rem;
 }
 
 p {
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 
 #main {
@@ -142,7 +146,7 @@ p {
 	justify-content: space-evenly;
 	height: 650px;
 	border-bottom: 2px black solid;
-	margin-bottom: 50px;
+	margin-bottom: 5rem;
 }
 
 #section1 {
@@ -151,7 +155,7 @@ p {
 }
 
 #section2 {
-	height: 200px;
+	width: 100%;
 }
 
 #section3 {
@@ -160,17 +164,17 @@ p {
 }
 
 #section3 section {
-	width: 370px;
+	width: 32%;
 }
 
 address p {
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 }
 
 footer {
 	text-align: center;
-	padding-top: 30px;
-	margin-bottom: 100px;
+	padding-top: 3rem;
+	margin-bottom: 10rem;
 }
 
 /* Tablet Layout */
