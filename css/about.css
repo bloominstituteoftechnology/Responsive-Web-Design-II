@@ -51,15 +51,26 @@ table {
 * {
   box-sizing: border-box;
 }
-
+/*
 html, body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   flex-direction: column;
-  width: 880px;
+  max-width: 880px;
   margin:  0 auto;
+}
 
+ DEBUG   */
+
+body {
+  border: 4px solid purple;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 880px;
+  margin:  0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,31 +81,30 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .nav-container {
-  height: 40px;
-  width: 880px;
+  border: 4px solid yellow;
   position: fixed;
-  z-index: 1;
-  background: darkblue;
   top: 0;
-  display: flex;
-  justify-content: space-between;
+  left: 18%;
+  margin: auto;
+  width: 64%;
 }
 
 
 .navbar_top {
+  border: 1px solid green;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  justify-content: space-between;
+  background-color: darkblue;
+  height: 5rem;
 
-a{
-  padding-right: 50px;
 }
 
 .navbar_top a{
+  border: 1px solid hotpink;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   color: #BABABA;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -102,10 +112,10 @@ a{
 }
 
 .navbar_top a:hover {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: white;
 }
-
+/*
 .navbar_top a:first-child {
   padding-left: 10px;
 }
@@ -113,14 +123,17 @@ a{
 .navbar_top a:last-child {
   padding-left: 46px;
 }
-
+ */
 .logoIMG {
-  width: 191.78px;
-  height: 40px;
+
+  max-width: 191.78px;
+  width: 100%;
+/*  height: 40px;   */
   background: lightgrey;
 }
 
 .about-header-img {
+  border: 1px solid orange;
   margin: 90px 0 5px 0;
 
 

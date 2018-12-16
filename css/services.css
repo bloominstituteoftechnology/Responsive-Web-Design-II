@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5 {
 .nav-container {
   border: 1px solid pink;
   margin-top: 2.5rem;
-  display: flex;
+ display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5 {
   width: 68%;
   justify-content: space-between;
   align-items: center;
+
   /* align-items: center;
    height: 40px;    */
 }
@@ -237,7 +238,6 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: space-between;
 
-
 }
 
 
@@ -267,6 +267,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .service-footer .footer-top .services-info-img {
+  border: 3px solid crimson;
   display: flex;
   justify-content: center;
 }
@@ -276,7 +277,6 @@ h1, h2, h3, h4, h5 {
   max-width: 420px;
   width: 100%;
 }
-
 
 .service-footer .copyright {
   text-align: center;
