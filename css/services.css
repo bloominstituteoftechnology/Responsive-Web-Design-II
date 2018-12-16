@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* Use your CSS from RWD - I here.  /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -52,176 +52,358 @@ table {
   box-sizing: border-box;
 }
 
-
-/* with html, body I get bottom content stuck in middle  */
-/*        of screen */
-body {
-  height: 100%;
+html{
+  /*  border: 4px solid purple; */
   font-family: 'Titillium Web', sans-serif;
   display: flex;
+  max-width: 880px;
   flex-direction: column;
-  width: 880px;
-  margin:  0 auto;
-
+  /* max-width: 800px; */
+  margin: 0 auto;
+  height: 100%;
+  font-size: 62.5%;
+  background: palegoldenrod;
 }
+
+
 
 h1, h2, h3, h4, h5 {
   font-family: 'Bangers', cursive;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+  letter-spacing: .1rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*  VVVVVV    nav-container   VVVVV    */
+
 .nav-container {
-  height: 40px;
-  width: 880px;
-  position: fixed;
-  z-index: 1;
-  background: darkblue;
-  top: 0;
+  border: 1px solid pink;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: space-between;
-}
-
-
-.navbar_top {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-a{
-  padding-right: 50px;
+.navbar_top {
+  border: 1px solid blue;
+  display: flex;
+  max-width: 88rem;
+  width: 68%;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center;
+   height: 40px;    */
+}
+
+
+.nav-container .navbar_top a {
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .navbar_top a{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  border: 1px solid green;
   color: #BABABA;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 
 .navbar_top a:hover {
-  font-size: 16px;
-  color: white;
-}
-
-.navbar_top a:first-child {
-  padding-left: 10px;
-}
-
-.navbar_top a:last-child {
-  padding-left: 46px;
+  font-size: 3rem;
+  color: dodgerblue;
 }
 
 .logoIMG {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 191.78px;
-  height: 40px;
-  background: lightgrey;
+  /*background: lightgrey; */
 }
 
 
-h1 {
-  font-size: 70px;
-  width: 250px;
-  font-family: 'Questrial', sans-serif;
-}
+/*    ^^^^^^^   nav-container    ^^^^^^^^  */
 
-button {
-  font-size: 26px;
-  border: 1px solid black;
-  width: 220px;
-  border-radius: 5px;
-  margin-left: 18px;
-}
 
-button:hover {
-  background: lightgray;
+/* VVVVVV  -----main-----      VVVVVVVVVV */
+.main {
+  border: 1px solid purple;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 1rem 0;
 }
 
 .services-header-img {
-  display: flex;
-  flex-direction: column;
-  width: 880px;
-  padding: 80px 0 10px 0;
+  border: 1px solid blue;
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
-
-
-.main {
-  border-bottom: 2px solid black;
-  padding: 20px 0 40px 0;
+.main .services-banner h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bolder;
 }
 
-.services-banner h1 {
-  font-size: 40px;
-  display: flex;
-  flex-direction: column;
-  height: 40px;
+.main .services-banner p {
+  border: 1px solid salmon;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
 }
+/* ^^^^^^ ----main-----   ^^^^^^^  */
 
-h2 {
-  font-family: 'Black Han Sans', sans-serif;
-  font-size: 20px;
-}
+/*  VVVVVV  ~~~~ all-services ~~~~~   VVVVVVV   */
 
 .all-services {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  /* height: 100%; */
-  justify-content: space-between;
-  padding-bottom: 35px;
+  border-top: 2px solid black;
   border-bottom: 2px solid black;
-}
-
-.service {
-  border: 1px solid black;
-  padding: 25px 15px 5px 15px;
-  width: 420px;
-  margin: 40px 0 0 0;
-  background: #F4F3F4;
-}
-
-.service button {
-  margin: 20px 0;
-}
-
-.service-footer {
+  border-left: 4px solid cornflowerblue;
+  border-right: 4px solid cornflowerblue;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  height: 260px;
-  margin-top: 40px;
+  padding: 2rem 0;
+  margin: 5rem 0;
 }
 
-.facts-services {
+.all-services .service {
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
-  width: 410px;
-  height: 250px;
-  align-self: flex-start;
+  background: #F4F3F4;
+  width: 47.5%;
+  padding: 2.75rem;
+  margin: 2.5% 0;
 }
 
-.facts-services ul {
-  padding: 15px 0;
+.all-services .service h2 {
+  border: 1px solid green;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.all-services .service p {
+  border: 1px solid green;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  padding: 5% 0;
+}
+
+.contactBTN-container {
+  border: 1px solid green;
+  font-family: 'Palanquin', sans-serif;
+  width: 100%;
+}
+
+.contactBTN {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  border: 1.5px solid black;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.contactBTN:hover {
+  background: lavender;
+}
+
+.contactBTN:active {
+  background: lightgrey;
+}
+
+/*  ^^^^^^  ~~~~ all-services ~~~~~   ^^^^^^   */
+
+
+/*      FOOTER FOOTER  FOOTER     */
+
+.service-footer {
+  margin: 4rem 0;
+  border: 5px solid deeppink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-top {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+.service-footer .facts-services {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.service-footer .facts-services h2 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.service-footer .facts-services p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+}
+
+.service-footer .facts-services ul {
+  padding-top: 2rem;
   list-style-type: square;
   list-style-position: inside;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
 }
 
-.services-info-img {
+.service-footer .footer-top .services-info-img {
   display: flex;
-  width: 410px;
-  height: 250px;
-}
-
-.copyright {
-  display: flex;
-  padding: 40px 0;
   justify-content: center;
+}
+
+.services-info-img  img{
+  border: 3px solid blue;
+  max-width: 420px;
+  width: 100%;
+}
 
 
+.service-footer .copyright {
+  text-align: center;
+  font-size: 1.45rem;
+  font-family: 'Titillium Web', sans-serif;
+  padding-top: 7rem;
+}
+
+
+/**************    800px break    *************/
+
+
+@media (max-width: 800px) {
+
+   .nav-container {
+     flex-direction: column;
+   }
+
+  .nav-container .navbar_top {
+    width: 100%;
+  }
+
+  .nav-container .navbar_top a {
+    font-size: 2.5rem;
+  }
+
+  .nav-container .logoIMG{
+    order: -1;
+    padding-bottom: 2rem;
+  }
+
+  .service-footer {
+    border: 5px solid purple;
+    justify-content: center;
+
+  }
+
+  .service-footer .footer-top {
+    border: 5px solid purple;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .service-footer .footer-top .facts-services{
+    border: 4px solid red;
+    width: 100%;
+  }
+
+
+  .service-footer .footer-top .services-info-img img{
+
+    max-width: 300px;
+    width: 100%;
+    order: 2;
+    border: 4px solid pink;
+    justify-content: center;
+
+  }
+
+}
+
+@media (max-width: 500px) {
+  .nav-container .navbar_top {
+    flex-direction: column;
+  }
+
+  .nav-container .navbar_top a {
+    width: 90%;
+    padding: 2rem;
+    font-size: 3rem;
+    border-top: 2px solid grey;
+    text-align: center;
+
+  }
+
+  .main .services-banner p {
+    font-size: 2rem;
+  }
+
+  .all-services {
+    flex-direction: column;
+  }
+
+  .all-services .service {
+    width: 100%;
+  }
+
+  .all-services .service h2 {
+    font-size: 2rem;
+  }
+
+  .all-services .service p {
+    font-size: 1.75rem;
+  }
+
+  .all-services .service .contactBTN-container {
+    border: 1px solid hotpink;
+    width: 100%;
+  }
+
+  .all-services .service .contactBTN-container .contactBTN {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .service-footer .footer-top .facts-services h2 {
+    font-size: 2rem;
+  }
+
+  .service-footer .footer-top .facts-services p {
+    font-size: 2rem;
+  }
+
+  .service-footer .footer-top .facts-services ul li {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .service-footer .footer-top .services-info-img {
+    margin: 3rem 0;
+  }
+
+  .service-footer .copyright {
+    font-size: 2rem;
+  }
 
 }

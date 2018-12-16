@@ -62,7 +62,6 @@ html{
   margin: 0 auto;
   height: 100%;
   font-size: 62.5%;
-  background: palegoldenrod;
 }
 
 
@@ -75,7 +74,6 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .nav-container {
-  margin: 0 auto;
   /* max-width: 1500px;  */
   margin-top: 2.5rem;
   display: flex;
@@ -105,13 +103,9 @@ h1, h2, h3, h4, h5 {
   font-weight: bolder;
 }
 
-.nav-container .navbar_top a:first-child {
-  padding-left: 0;
-}
-
 .navbar_top a:hover {
-  font-size: 16px;
-  color: white;
+  font-size: 3rem;
+  color: dodgerblue;
 }
 
 .logoIMG {
@@ -124,7 +118,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .header {
-  border: 1px solid purple;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,7 +126,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .banner {
-  border: 1px solid brown;
   display: flex;
   height: 360px;
   flex-direction: column;
@@ -152,7 +144,6 @@ h1 {
 }
 
 button {
-
   text-align: center;
   vertical-align: center;
   font-size: 1.7rem;
@@ -169,7 +160,6 @@ button:hover {
 }
 
 .headerIMG {
-  border: 1px solid brown;
   max-width: 38rem;
   width: 100%;
 }
@@ -189,7 +179,6 @@ button:hover {
 }
 
 .top .top-content{
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -204,29 +193,22 @@ button:hover {
 }
 
 .bottom{
-  border: 1px solid orange;
   display: flex;
   justify-content: space-between;
 }
 
 .bottom-content {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   width: 32%;
 }
 
 footer {
-  border: 1px solid green;
   padding-top: 3rem;
 }
 
 footer address {
   font-size: 1.6rem;
-}
-
-footer address h2 {
-  border: 1px solid rebeccapurple;
 }
 
 footer address .phone {
@@ -238,7 +220,6 @@ footer address .email {
 }
 
 footer .copyright {
-  border: 1px solid blue;
   text-align: center;
   font-size: 1.45rem;
   font-family: 'Titillium Web', sans-serif;
@@ -250,14 +231,9 @@ footer .copyright {
 /* ######    BREAK 800px    #########  */
 @media (max-width: 800px) {
 
-  body {
-    border: 1px solid purple;
-   /* width: 800px; */
-   margin: 0 auto;
-  }
+
 
   .nav-container {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +241,6 @@ footer .copyright {
   }
 
   .nav-container .navbar_top {
-    border: 1px solid hotpink;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -278,9 +253,8 @@ footer .copyright {
   }
 
   .logoIMG {
-    border: 1px solid blue;
     margin: 5px auto;
-    order: -1;
+    order: -2;
   }
 
   .headerIMG {
@@ -288,7 +262,6 @@ footer .copyright {
   }
 
   .header {
-    border: 5px solid purple;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -297,9 +270,6 @@ footer .copyright {
   .banner {
     margin: 0;
     padding: 0;
-  }
-
-  .main {
   }
 
   .top .top-content{
@@ -317,59 +287,68 @@ footer .copyright {
 
 @media (max-width: 500px) {
 
-  body {
-    max-width: 500px;
-    margin: 0 auto;
-  }
 
-  .nav-container .navbar_top .logoIMG  img{
+  .logoIMG{
     order: -1;
-    margin: 0;
+    margin: 3rem;
   }
 
   .nav-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    /*   justify-content: center;
-    align-items: center;*/
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
   }
 
 
   .nav-container .navbar_top{
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .nav-container .navbar_top a{
-    width: 500px;
-    border-bottom: 1px solid grey;
+    width: 100%;
+    border-top: 1px solid grey;
     text-align: center;
-    padding: 10px 0;
-    /*  margin: 0 auto; */
+    padding: 2.5rem 0;
+    font-size: 2rem;
+    margin: 0;
   }
 
-  .top-content {
-    max-width: 500px;
+  .header {
+    border-top: 1px solid grey;
   }
 
-  .bottom .bottom-content {
-    width: 500px;
+  .main {
+    display: flex:
+
   }
 
-  .top, .bottom, address {
+  .top {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 500px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top .top-content {
+    width: 100%;
+    margin: 4rem 0;
   }
 
   .bottom {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    widh
+  }
+
+  .bottom .bottom-content {
+    width: 100%;
+    margin: 4rem 0;
   }
 
 }

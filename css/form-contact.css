@@ -1,0 +1,288 @@
+/* Use your CSS from RWD - I here.  /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html{
+  /*  border: 4px solid purple; */
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  max-width: 880px;
+  flex-direction: column;
+  /* max-width: 800px; */
+  margin: 0 auto;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: .1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* VVVVVVV   form-contact VVVVVVV   */
+.nav-container {
+  /* max-width: 1500px;  */
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_top {
+
+  display: flex;
+  max-width: 88rem;
+  width: 68%;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center;
+   height: 40px;    */
+}
+
+
+.nav-container .navbar_top a {
+}
+
+.navbar_top a{
+  color: #BABABA;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.navbar_top a:hover {
+  font-size: 3rem;
+  color: dodgerblue;
+}
+
+.logoIMG {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Raleway', cursive;
+  width: 191.78px;
+  height: 40px;
+  /*background: lightgrey; */
+}
+
+
+
+
+.customer-form {
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form_h1 {
+  font-family: 'Squada One', cursive;
+  font-size: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+input {
+  width: 100%;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+label {
+  margin: 10px;
+  width: 50px;
+}
+
+.form_h2 {
+  margin: 0;
+  font-family: 'Palanquin', sans-serif;
+  font-weight: bolder;
+  line-height: 30px;
+}
+
+.form_field {
+  margin: 20px 0;
+  font-family: 'Palanquin', sans-serif;
+  width: 100%;
+}
+
+.two_fields {
+  display: flex;
+  padding: 0 10px;
+  width: 95%;
+  align-items: center;
+}
+
+#address_line1  {
+  width: 1500px;
+}
+
+#address_line2 {
+  width: 51%;
+}
+
+.address_fields {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 95%;
+}
+
+.zipLabel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.zipcode {
+  width: 30%;
+  text-align: center:
+}
+
+.two_fields:nth-child(3) {
+  margin-right: 2px
+}
+
+.two_fields select {
+  margin-right: 10px;
+}
+
+
+.email_field {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.surveyInfo {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 130px;
+}
+
+.checkboxfields {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 33%;
+  height: 50%;
+}
+
+.checkboxfields input {
+  width:  18px;
+  height: 18px;
+
+}
+
+.message_field {
+  display: flex;
+  flex-direction: column;
+}
+
+.message_field label {
+  width: 200px;
+}
+
+.message_field textarea {
+  border: 1px solid grey;
+  border-radius: 10px;
+  height: 300px;
+  width: 100%;
+  text-align: left;
+}
+
+.submit {
+  width: 100%;
+  height: 80px;
+}
+
+.submit button {
+  border: 1px solid black;
+  color: lightblue;
+  background: dodgerblue;
+  font-family: 'Squada One', cursive;
+  font-size: 30px;
+  border-radius: 10px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.submit button:hover {
+  color: white;
+  background: seagreen;
+  border: 3px solid darkgreen;
+}
+
+/* ∆∆∆∆∆∆∆  form-contact  ∆∆∆∆∆∆∆  */
