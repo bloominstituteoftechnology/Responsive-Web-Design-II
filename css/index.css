@@ -1,1 +1,390 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	font-size: 62.5%;
+}
+
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+header {
+	display: flex;
+	width: 100%;
+	max-width: 1024px;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	align-items: center;
+}
+
+header .navLink {
+	display: flex;
+	width: 100%;
+}
+
+header a {
+	width: 10%;
+	margin: auto;
+	color: gray;
+	font-size: 1.5rem;
+	text-decoration: none;
+	justify-content: space-evenly;
+}
+
+header .logo {
+	width: auto;
+}
+
+.container {
+	display: flex;
+	align-items: row;
+	flex-wrap: nowrap;
+}
+
+.headTwo {
+	display: flex;
+	flex-direction: column;
+	padding-top: 11rem;
+	width: 50rem;
+	height: 40rem;
+	align-items: center;
+}
+
+h1 {
+	font-size: 5.5rem;
+	text-align: center;
+}
+
+.headTwo a {
+	height: 10%;
+	width: 30%;
+	font-size: 2rem;
+	text-align: center;
+	align-self: center;
+	color: black;
+	text-decoration: none;
+	border: 2px solid black;
+}
+
+
+.img {
+	display: flex;
+	width: 25%;
+}
+
+
+footer {
+	width: 100%;
+}
+
+section {
+	border-top: 2px solid black;
+	max-width: 1024px;
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-bottom: 2px solid black;
+	padding: 25px 5px 25px 5px;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+.features, .about {
+	display: flex;
+	width: 50%;
+	margin-left: 2%;
+	height: 125px;
+	flex-direction: column;
+	overflow-wrap: normal;
+}
+
+.featabout {
+	display: flex;
+	justify-content: space-around;
+}
+
+.services, .product, .vision{
+	display: flex;
+	width: 30%;
+	height: 200px;
+	flex-direction: column;
+	margin-top: 5%;
+	overflow-wrap: normal;
+}
+
+
+.servprovis {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	font-size: 1.6rem;
+	max-width: 1024px;
+	width: 100%;
+}
+
+footer {
+	display: flex;
+	width: 250px;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.middle-img {
+	max-width: 1024px;
+	width: 100%;
+}
+
+/*	Tablet View */
+@media (max-width: 800px){
+	.mainContent {
+		max-width: 800px;
+		width: 100%;
+	}
+
+	html {
+		max-width: 800px;
+		width: 100%;
+	}
+	/*	header*/
+	header {
+		max-width: 750px;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	header .logo {
+		order: 0;
+		height: 40px;
+		margin: 0 auto;
+	}
+
+	header .navLink {
+		order: 1;
+
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	header a {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.headTwo {
+		height: 30%;
+		margin-bottom: 50px;
+	}
+
+	.img {
+		display: none;
+	}
+
+
+	section {
+		max-width: 775px;
+		width: 100%;
+	
+	}
+
+	.middle-img {
+		max-width: 780px;
+		width: 100%;
+	}
+
+	.features , .about {
+		display: flex;
+		width: 45%;
+		height: 150px;
+		flex-direction: column;
+		overflow-wrap: normal;
+		margin-left: 20px;
+	}
+
+	.featabout {
+		justify-content: space-between;
+	}
+
+	.services, .product, .vision{
+	display: flex;
+	width: 30%;
+	height: 200px;
+	flex-direction: column;
+	margin-top: 25px;
+	overflow-wrap: normal;
+	}
+
+	.contact {
+		max-width: 775px;
+		width: 100%;
+	}
+
+	footer {
+		max-width: 725px;
+		width: 100%;
+		margin-left: 40%;
+	}
+}
+
+
+/*	Phone View */
+
+@media (max-width: 500px){
+	.mainContent {
+		max-width: 475px;
+		width: 100%;
+	}
+
+	/* header*/
+	header {
+		max-width: 500px;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	header .navLink {
+		flex-direction: column;
+	}
+
+	section {
+		max-width: 480px;
+		width: 100%;
+	}
+
+	header a {
+		order: 1;
+		flex-direction: column;
+		border-bottom: 1px solid gray;
+		border-top: 1px solid gray;
+		height: 4rem;
+		max-width: 500px;
+		width: 100%;
+		align-items: center;
+	}
+
+	header .logo {
+		order: 0;
+		width: 180px;
+		height: 20%;
+		margin: 0 auto;
+	}
+
+	.featabout {
+	flex-direction: column;
+	align-items: center;
+	}
+
+	.features , .about {
+		max-width: 470px;
+		width: 100%;
+		height: 160px;
+	}
+
+	.middle-img {
+		width: 450px;
+		margin-left: 10px;
+	}
+
+	.servprovis {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.services, .product, .vision {
+		max-width: 470px;
+		width: 100%;
+		height: 130px;
+	}
+
+	.contact {
+		max-width: 450px;
+		width: 100%;
+	}
+
+	footer {
+		max-width: 450px;
+		width: 100%;
+		margin-left: 40%;
+	}
+}
