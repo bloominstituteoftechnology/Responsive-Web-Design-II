@@ -1,1 +1,395 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+html {
+    font-size: 62.5%;
+}
+
+.full-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 880px;
+    margin: 0 auto;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4.4% 0%;
+    width: 90%;
+}
+
+
+.container2 {
+	display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-left: 18%;
+}
+
+.container3 {
+	font-weight: bold;
+	font-size: 45px;
+	width: 30%;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0.5%;
+}
+
+.container4 {
+    width: 50%;
+}
+
+.container5 {
+    display: flex;
+    margin-top: 2.4%;
+    margin-bottom: 2%;
+    width: 80%;
+    font-size: 1.29rem;
+}
+
+.container6 {
+    margin-top: 2.5%; 
+    display: flex;
+    width: 80%;
+    font-size: 1.29rem;
+}
+
+
+.copy{
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.street {
+	margin-bottom: 1%;
+}
+
+.phone {
+	line-height: 2.5rem;
+}
+
+a {
+    font-size: 1.29rem;
+	text-decoration: none;
+	color: grey;
+}
+
+
+nav {
+    word-spacing: 4.58rem;
+    margin-left: 1%; 
+}
+
+
+button {
+	cursor: pointer;
+	background: white;
+	border: 1px solid black;
+    font-size: 40%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 5.6rem; 
+    width: 100%;
+    text-align: center;
+    margin-right: 9%;
+}
+
+hr {
+    width: 80%;
+    margin-bottom: 1%;
+	border-top: 0.2rem solid black;
+}
+
+hr.first-line {
+    margin-top: 6%;
+}
+
+hr.second-line{
+    margin-top: 2.5%;
+}
+
+.middle-img {
+    width: 79.5%;
+}
+
+.logo {
+    width:19%;
+    padding-right: 1%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.container4 img {
+    width: 85%;
+}
+
+.button {
+    width: 61.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foot {
+    width: 80%;
+    margin-top: 2%;
+    font-size: 1.25rem;
+}
+
+
+
+/* tablet view */
+@media(max-width: 800px) {
+
+.container {
+    width: 100vw;
+	flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container2 {
+    width: 80%;
+    margin: 0% 0%;
+    padding-right: 0.2rem;
+    padding-top: 7%;
+    padding-bottom: 1rem;
+    }
+
+.container4 {
+display: none;
+}
+
+.container5 {
+    width: 80%;
+    font-size: 1.3rem;
+    justify-content: space-around;  
+    margin-bottom: 1rem; 
+}
+
+.container6 {
+    width: 79.5%;
+    margin: 3.5% 1% 0% 0%;
+    padding-right: 2%;
+}
+
+.container6 p {
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+}
+
+img.middle-img {
+    width:78%;
+}
+
+.feat {
+    border: 1px solid white;
+    width: 90%;
+    margin-left: 2.5%;
+}
+
+.about {
+    border: 1px solid white;
+    width: 90%;
+}
+
+.serve {
+	padding: 0% 3%;
+}
+
+.prod {
+	padding: 0% 3%;
+}
+
+.visi{
+	padding: 0% 3%;
+}
+
+.logo {
+    margin-top: 4%;
+    margin-right: 1%;
+    width: 19%;
+}
+
+p {
+    font-size: 1.35rem;
+}
+
+nav {
+    margin-top: 4%;
+    margin-right: 6%;
+	word-spacing: 6.25rem;
+}
+
+h1 {
+    /* margin-top: 5.7rem;
+    margin-left: 32.5rem; */
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+hr.first-line {
+    margin-top: 7%;
+    width: 78%;
+}
+
+hr.second-line {
+    margin-top: 2.5%;
+    width: 78%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 9%;
+    padding-left:   13%;
+    margin-right: 4%; 
+}
+
+button {
+    font-size: 30%;
+}
+
+.foot {
+    width: 76%;
+    padding-top: 0.3rem;
+}
+
+.copy p {
+    font-size: 1.3rem;
+}
+
+}
+/* mobile view */
+@media(max-width: 500px) {
+
+	.full-container {
+		max-width: 100%;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.container2 {
+        margin: 40px 0px;
+        
+	}
+
+	.container5 {
+		flex-direction: column;
+		width: 400px;
+	}
+
+	.container6 {
+		flex-direction: column;
+		margin: 20px;
+	}
+	.about {
+		margin-left: 30px;
+	}
+
+	button {
+		width: 125px;
+	}
+
+	.middle-img {
+		padding: 10px;
+	}
+
+	nav {
+		width: 410px;
+		word-spacing: 300px;
+		padding: 10px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	a {
+		line-height: 60px;
+		border-bottom: 1px solid black;
+	}
+
+	.logo {
+		width: 390px;
+		border-bottom: 1px solid black;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
