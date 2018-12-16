@@ -116,6 +116,7 @@ h1 {
 h2 {
     font-family: Unlock;
     font-weight: bold;
+    justify-self: center;
 }
 
 hr {
@@ -124,7 +125,7 @@ hr {
 }
 
 img {
-    max-width: 100%;
+    max-width: 880px;
 }
 
 article {
@@ -132,6 +133,8 @@ article {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    max-width: 880px;
 }
 
 p {
@@ -164,10 +167,16 @@ section p {
     margin-bottom: 1%;
 }
 
+article img {
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     font-size: 1.6rem;
     margin: 0 auto;
     max-width: 880px;
+    padding: 0 2%;
 }
 
 .headline {
@@ -297,10 +306,10 @@ section p {
         width: 48%;
     }
     
-    .middle-img {
+    /* .middle-img {
         width: 100%;
         margin-bottom: 0.25%;
-    }
+    } */
 
     .sections-bottom {
         width: 30%;
@@ -387,6 +396,7 @@ section p {
 
     .middle-img {
         width: 100%;
+        height: 100%;
     }
 
     .sections {
@@ -394,11 +404,11 @@ section p {
         margin-bottom: 30px;
     }
 
-    #headline {
-        /* margin: 30px;
-        margin-bottom: 60px; */
-        /* position: relative; */
-    }
+    /* #headline {
+        margin: 30px;
+        margin-bottom: 60px;
+        position: relative;
+    } */
     #services-link {
         border-top: 1px solid black;
     }
