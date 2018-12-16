@@ -40,9 +40,10 @@ html { font-size: 62.5%; color: #dfdfdf; background-color: #333333; }
 body { font-size: 1.6rem; display: block; width: 100%; max-width: 880px; margin: 0 auto; overflow-x: hidden;  }
 section { position: relative; }
 p { line-height: 1.15; margin: 8px 0; }
-h1, h2, h3, h4, h5 { font-family: 'Bangers', cursive; letter-spacing: 1px; margin-bottom: 15px; }
-h1 { font-family: 'Staatliches', cursive; font-size: 6.4rem; }
-h2 { font-size: 2.4rem; }
+h1, h2, h3, h4, h5 { font-family: 'Staatliches', cursive; letter-spacing: 1px; margin-bottom: 15px; }
+h1 { font-size: 6.4rem; }
+h2 { font-size: 2.4rem; margin-bottom: 12px; }
+h3 { font-size: 1.8rem; margin-bottom: 8px; letter-spacing: 0.5rem; }
 img:hover { filter: brightness(111%); }
 /* Colors ********************************/
 .bg-darkgray { background-color: #303030; }
@@ -57,7 +58,7 @@ img:hover { filter: brightness(111%); }
 nav { 
 	width: 100vw;
 	left: 0;
-	background-color: #303030;
+	background-color: #303030ee;
 	position: fixed;
 	padding: 14px 0;
 	font-size: 1.2rem; 
@@ -103,7 +104,8 @@ footer { margin: 24px 0 0 0; padding: 24px 0 12px 0; }
 	margin: 0 -12px; }
 .item-gallery { 
 	padding: 24px;
-	margin: 24px 12px 0px 12px; }
+	margin: 24px 12px 0px 12px;
+	box-shadow: -2px 2px 10px #191919; }
 .item-tight { flex: 1 1 auto; align-self: center; }
 .item img { margin-right: -12px; max-width: 50vw; }
 
@@ -160,7 +162,11 @@ section .container-row a:hover {
 	border-bottom: 1px solid #232323;
 	margin: 32px 0 18px 0;
 	padding: 0 0 32px 0; }
-
+.border-top-bottom { 
+	border-top: 1px solid #232323;
+	border-bottom: 1px solid #232323; 
+	margin: 32px 0;
+	padding: 32px 0; }
 
 
 /* ***  Pages  ********************************/
