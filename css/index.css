@@ -1,1 +1,283 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: .1rem;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+	display: flex;
+	align-items: baseline;
+}
+
+header nav ul{
+    margin: 0 15%; 
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav {
+    width: 80%;
+    padding: 0 3%;
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav li {
+    color: gray;
+    font-size: 1.6rem;
+}
+
+header .logo {
+	margin-top: 2.5%;
+	margin-left: 25%;
+}
+hr {
+    border: 0;
+    height: .1rem;
+    background: #333;
+	background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 3.0rem;
+    width: 100%;
+}
+
+.header-section {
+    display: flex;
+    margin-top: 7%;
+    justify-content: flex-end;
+}
+
+.header-section .header-text {
+    font-size: 7.0rem;
+    text-align: center;
+    letter-spacing: .5rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-right: 8.2%;
+}
+
+.header-section .header-text button {
+    border: .1rem double black;
+    font-size: 1.6rem;
+    background: white;
+    width: 35%;
+    height: 10%;
+    margin-top: 2.5%;
+}
+
+.main {
+	margin: 7.5% 0 3.5% 0;
+	padding: 3.5% 0;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+}
+ 
+.main .top {
+	 display: flex;
+}
+ 
+.main .middle-img {
+	 display: block;
+     margin: 2.5% auto;
+     width: 100%;
+}
+ 
+.main .bottom {
+	 display: flex;
+}
+ 
+.main .bottom p {
+	 padding-right: 2%;
+}
+.contact {
+    font-size: 1.6rem;
+}
+.contact p {
+    margin: 1.5% 0;
+}
+.contact a {
+    text-decoration: none;
+	margin: 1.5% 0;
+	color: black;
+}
+
+/* Footer Styles */
+
+footer {
+    text-align: center;
+    margin: 4% 0 2%;
+    font-size: 1.6rem;
+}
+
+/* Tableta */
+@media (max-width: 800px) {
+	.container {
+        width: 100%;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+  
+    header .logo {
+		order: -1;
+        display: block;
+        margin: 3% auto 3%;
+    }
+
+    .header-section {
+        justify-content: center;
+    }
+    
+    .header-section .header-text {
+        margin: 0;
+    }
+
+    .header-section img {
+        display: none;
+    }
+
+    .main .middle-img {
+       width: 100%;
+    }
+
+    .main {
+       margin: 7.5% 2% 3.5%;
+    }
+
+    .text {
+        margin: 0 5%;
+    }
+
+    .contact {
+        margin: 0 1%;
+    }
+}
+
+  /* Móvil */
+@media (max-width: 500px) {
+	header {
+        justify-content: center;
+    }
+
+    header nav ul {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav li {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10% 0;
+        font-size: 20px;
+        border-bottom: .1rem solid gray;
+    }
+
+    header nav li:first-child {
+        border-top: .1rem solid gray;
+    }
+
+    header .logo {
+        margin: 10% 0;
+    }
+
+    .header-section {
+        margin-top: 10%;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .header-section img {
+        max-width: 80%;
+    }
+
+    .main .top {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 30.0rem;
+    }
+
+    .main .bottom {
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 44.0rem;
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 10%;
+    }
+}
