@@ -237,17 +237,13 @@ padding: 0 0 0 1.5rem;
 	border-radius: .3rem;
 }
 
-
 .divider{
+    border: .1rem solid black;
+    margin: 4% 0;
+}
+.divider1{
     border: .05rem solid black;
     margin: 4% 0;
-    animation: grow 1s ease-in;
-    text-align: center;
-}
-hr{
-    /* border: .1rem solid black; */
-    margin: 4% 0px;
-    animation: grow 1s ease-in;
 }
 
 .intro{
@@ -464,8 +460,4 @@ header{
     100% {transform: rotate(360deg);}
 }
 
-@keyframes grow{
-    0% {width: 0%;}
-    100% {width: 100%;}
-}
 
