@@ -46,8 +46,12 @@ h2 { font-size: 2.4rem; margin-bottom: 12px; }
 h3 { font-size: 1.8rem; margin-bottom: 8px; letter-spacing: 0.5rem; }
 img:hover { filter: brightness(111%); }
 /* Colors ********************************/
+.bg-darkblue { background-color: #1f2c38; }
 .bg-darkgray { background-color: #303030; }
+.bg-darkgreen { background-color: #354846; }
+.bg-darkorange { background-color: #674a3c; }
 .bg-gray { background-color: #7a7a7a; }
+.bg-lightblack { background-color: #212121; }
 .bg-lightgray { background-color: #dddddd; }
 .cblack { color: #000000; }
 .clightgray { color: #dddddd; }
