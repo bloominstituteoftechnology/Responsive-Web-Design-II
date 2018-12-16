@@ -1,1 +1,477 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+	font-size: 62.5%;
+}
+
+div {
+	/* max-width: 880px; */
+}
+
+
+body {
+	max-width: 880px;
+	width: 90%;
+	height: 1000px;
+	margin: 0 auto;
+}
+a {
+	display: inline-block;
+	/* border: 1px solid red; */
+	flex-direction: row;
+	padding: 2%;
+	text-decoration: none;
+	color: grey;
+}
+nav{
+	display: flex;
+  justify-content: space-between;
+	/* border: 1px solid blue; */
+	/* justify-content: center; */
+
+}
+.logo {
+	/* display: flex; */
+
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* flex-direction:  */
+  /* justify-content: flex-end; */
+	/* border: 2px solid pink; */
+	/* justify-content: center; */
+
+
+	/* padding-top:10px; */
+}
+.demand-start {
+	display: inline-block;
+	width: 48%;
+}
+.get-started {
+	color: grey;
+	border: 1px solid grey;
+	text-align: center;
+	margin-left: 40%;
+	margin-right: 40%;
+	/* margin: 0,20%; */
+	/* padding-top: 5px; */
+	/* padding-bottom: 5px; */
+	/* margin-left: 150px; */
+	/* margin-right: 150px; */
+	/* margin-top: 40px; */
+
+
+}
+.on-demand {
+	display: flex;
+	/* border: 1px solid red; */
+	justify-content: center;
+	font-size: 6rem;
+	text-align: center;
+	/* width: 50%; */
+}
+.circlecode {
+	display: inline-block;
+	/* border: 1px solid red; */
+	width: 48%;
+	justify-content: center;
+
+}
+.on-demand-get-started-pic {
+	/* height: 300px; */
+	/* width: 600px; */
+	/* border: 2px solid lime; */
+	border-bottom: 3px solid black;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	;
+}
+.feature-about-box {
+	width: 100%;
+	margin-bottom: 2%;
+}
+.features{
+	display: inline-block;
+	width: 48%;
+}
+.about {
+	display: inline-block;
+	width: 48%;
+}
+.middle-img {
+	display: inline;
+	width: 100%;
+	padding-bottom: 3%;
+}
+.services-product-vision-box{
+  /* display: flex; */
+  /* flex-direction: column; */
+	/* padding-bottom: 33px; */
+
+}
+.services {
+	display: inline-block;
+	width: 33%;
+}
+.product {
+	display: inline-block;
+	width: 33%;
+}
+.vision {
+	display: inline-block;
+	width: 33%;
+}
+.box2 {
+	/* border: 1px solid red; */
+	width: 100%;
+	border-bottom: 3px solid black;
+	margin-top: 2%;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+	/* padding-bottom: 33px; */
+
+}
+.foot {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/* FLEXBOX SERVICE PAGE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.vice{
+	margin-top: 10px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid black
+}
+.container-for-design-ux{
+	display: flex;
+	flex-direction: row;
+	/* border: 1px dashed purple; */
+	/* flex-flow: wrap; */
+}
+.container-for-marketing-web{
+	display: flex;
+	flex-direction: row;
+
+}
+.container-for-ios-android{
+	display: flex;
+	flex-direction: row;
+}
+
+.digital-design{
+	/* display: inline-block; */
+
+	/* width: 20% */
+
+	border: 1px solid black;
+	background-color: lightgrey;
+	padding: 15px;
+	margin: 15px;
+
+}
+.ux-ui{
+	/* display: inline-block; */
+	/* width: 20% */
+	border: 1px solid black;
+	background-color: lightgrey;
+	padding: 15px;
+	margin: 15px;
+}
+.digital-marketing{
+	border: 1px solid black;
+	background-color: lightgrey;
+	padding: 15px;
+	margin: 15px;
+
+}
+.web-dev{
+	border: 1px solid black;
+	background-color: lightgrey;
+	padding: 15px;
+	margin: 15px;
+}
+.ios{
+	border: 1px solid black;
+	background-color: lightgrey;
+	padding: 15px;
+	margin: 15px;
+}
+.android{
+	border: 1px solid black;
+	background-color: lightgrey;
+	padding: 15px;
+	margin: 15px;
+}
+.some-girl{
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid black;
+	padding-top: 22px;
+	margin: 22px;
+}
+.things{
+	line-height: double;
+}
+/* .some-facts{ */
+	/* display: inline-block; */
+	/* width: 36%; */
+	/* border: 1px solid black; */
+/* } */
+.girl-computer{
+	/* display: inline-block; */
+	/* flex-direction: row; */
+  /* justify-content:flex-end; */
+
+}
+
+/* MEDIA QUERIES */
+
+
+
+@media (max-width: 800px) {
+
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+		/* justify-content: center; */
+		/* justify-content: space-between; */
+	}
+
+
+	.logo {
+		order: 1;
+		width: 25%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		/* justify-content: center; */
+  }
+	nav {
+		display: flex;
+		flex-direction: row;
+
+  }
+	nav a {
+		order: 2;
+	}
+  .circlecode {
+      display: none;
+      /* width: 60%; */
+    }
+  .demand-start {
+    display: inline-block;
+    width: 100%;
+  }
+  .get-started {
+    /* margin-left: 250px; */
+    /* margin-right: 250px; */
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  body {
+    width: 500px;
+  }
+	header {
+
+	}
+  nav {
+    display: flex;
+    flex-direction: column;
+		border-top: 1px solid grey;
+		/* border-bottom: .5px solid grey; */
+		/* order: 2; */
+		/* align-items: center; */
+		/* align-content: center; */
+  }
+	nav a {
+		order: 2;
+		display: flex;
+		justify-content: center;
+		border-bottom: 1px solid grey;
+		/* border-top: .5px solid grey; */
+		/* border: 1px solid grey; */
+	}
+  .logo {
+		order: 1;
+    /* display: none; */
+  }
+  .demand-start {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .circlecode {
+      display: none;
+      /* width: 60%; */
+    }
+  .box2 {
+      width: 500px;
+    }
+		.feature-about-box {
+			display: flex;
+			flex-direction: column;
+			/* justify-content: center; */
+			/* align-content: center; */
+			align-items: center;
+			/* width: 200%; */
+		}
+		.features {
+			width: 100%;
+			padding-left:  15px;
+			padding-right: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			padding-bottom: 15px;
+		}
+		.about {
+			width:100%;
+			padding-left:  15px;
+			padding-right: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			padding-bottom: 15px;
+		}
+		.services {
+			width:100%;
+			padding-left:  15px;
+			padding-right: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			padding-bottom: 15px;
+		}
+		.product {
+			width:100%;
+			padding-left:  15px;
+			padding-right: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			padding-bottom: 15px;
+		}
+		.vision {
+			width:100%;
+			padding-left:  15px;
+			padding-right: 15px;
+			margin-left: 15px;
+			margin-right: 15px;
+			padding-bottom: 15px;
+		}
+  .middle-img {
+      display: flex;
+      width: 100%;
+			padding-left:  15px;
+			padding-right: 15px;
+			margin-left: 7px;
+			margin-right: 15px;
+    }
+  .services-product-vision-box{
+      display: flex;
+      flex-direction: column;
+			align-items: center;
+    	/* padding-bottom: 33px; */
+    }
+		.contact {
+			padding-left:  15px;
+			padding-right: 15px;
+			/* margin-left: 15px; */
+			/* margin-right: 15px; */
+
+		}
+  }
