@@ -72,7 +72,6 @@ html {
 .container {
     max-width: 880px;
     margin: 0 auto;
-    border: 1px solid green;
 }
 
 .navigation {
@@ -124,6 +123,7 @@ h1 {
     font-size: 7.4rem;
     text-align: center;
     padding-top: 12%;
+    padding-bottom: 3%;
 }
 
 button {
@@ -138,8 +138,6 @@ button {
 .img-head {
    margin: 0 auto;
    width: 50%;
-   padding-top: ;
-   padding-left:;
 }
 
 .line-border{
@@ -159,7 +157,7 @@ button {
     flex-direction: row;
     margin: 0 auto;
     font-size: 1.8rem;
-    padding: 4%;
+    padding: 4%; 
 }
 
 .features {
@@ -221,8 +219,7 @@ button {
     border-bottom: 1px solid black;
     width: 100%;
     margin: 0 auto;
-    padding-top: 10%;
-   
+    padding-top: 10%;  
 }
 
  .contact {
@@ -230,9 +227,9 @@ button {
     flex-direction: column;
     align-items: flex-start;
 	width: 100%;
-    margin: 0 auto 0 5%;
+    margin: 0 auto;
     font-size: 1.7rem;
-    line-height: 3rem;
+    line-height: 2rem;
  }
   
  .contact-header{
@@ -257,11 +254,13 @@ footer {
 .container {
     width: 800px;
     margin: 0 auto;
+    border: 1px solid green;
 }
 
 .navigation {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 .nav {
@@ -280,12 +279,14 @@ a {
     text-align: center;
     padding-top: 3%;
     order: 1;
-
+    width: 100%;
 }
 
-
+header {
+    width: 100%;
+}
 .header-title {
-    width: 70%;
+    width: 1000%;
     margin: 0 auto;
     padding-left: 6%; 
 }
@@ -354,8 +355,9 @@ button {
     .container {
          width: 500px;
          margin: 0 auto;
-         border: 1px solid yellow;
+         border: 1px solid red;
         }
+
     .navigation {
         width: 100%;
     }
@@ -400,6 +402,12 @@ button {
         margin-left: 35%;
     }
 
+    .line-border, .line-border2 {
+        margin: 0 auto;
+        width: 98%;
+        padding-left: 2%;
+
+}
     .top-section {
         flex-direction: column;
         width: 100%;
@@ -417,10 +425,11 @@ button {
     }
 
     .img-center {
-        padding: 4% 0 0 0;
+        padding: 4% 3% 0 0;
     }
     .middle-img {
         width: 470px;
+        margin: 0 auto;
     }
 
     .bottom-section {
@@ -433,9 +442,11 @@ button {
         margin-bottom: 2%;
         padding-top: 3%;
     }
+
     .services, .product, .vision{
         width: 100%;
         margin: 0 auto;
         padding: 0;
     }
+
 }
