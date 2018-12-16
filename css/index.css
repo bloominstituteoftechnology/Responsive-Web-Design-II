@@ -134,7 +134,6 @@ button {
     width: 49%
 }
 
-
 .middle-img {
     width: 100%;
 }
@@ -172,7 +171,7 @@ footer {
 
 /* services.html */
 
-/* .services-header-img {
+.services-header-img {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -221,7 +220,7 @@ ul {
 	margin-top: 10px;
 	padding-left: 18px;
  	list-style-type: square;
-} */
+} 
 
 @media (max-width: 800px) {
 	body {
@@ -237,8 +236,12 @@ ul {
 		flex-direction: column-reverse;
 	}
 
+	.a-logo  {
+		display: flex;
+		justify-content: center;
+	}
+
 	.logo {
-		align-self: center;
 		margin-top: 25px;
 	}
 
@@ -250,6 +253,10 @@ ul {
 
 	.h1-div {
 		width: 100%;
+	}
+
+	button {
+		width: 30%;
 	}
 
 	.image-circle {
@@ -318,6 +325,11 @@ ul {
 
 	.h1-div {
 		font-size: 6.3rem;
+	}
+
+	button {
+		min-width: 125px;
+		width: 40%;
 	}
 
 	.middle-img {
