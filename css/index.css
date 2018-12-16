@@ -56,12 +56,12 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: .1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
 /* Your code starts here! */
 .container {
-    width: 88.0rem;
+    width: 80%;
     margin: auto;
 }
 
@@ -72,8 +72,8 @@ header {
 }
 
 header nav ul{
-    margin: 0 4.0rem; 
-    width: 60.0rem;
+    margin: 0 15%; 
+    width: 90%;
     justify-content: space-between;
     display: flex;
 }
@@ -84,8 +84,8 @@ header nav li {
 }
 
 header .logo {
-	margin-top: 2.5rem;
-	margin-left: 8.5rem;
+	margin-top: 2.5%;
+	margin-left: 25%;
 }
 hr {
     border: 0;
@@ -97,7 +97,7 @@ hr {
 
 .header-section {
     display: flex;
-    margin-top: 7.0rem;
+    margin-top: 7%;
     justify-content: flex-end;
 }
 
@@ -109,21 +109,21 @@ hr {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    margin-right: 8.2rem;
+    margin-right: 8.2%;
 }
 
 .header-section .header-text button {
     border: .1rem double black;
     font-size: 1.6rem;
     background: white;
-    width: 17.0rem;
-    height: 3.2rem;
-    margin-top: 1.0rem;
+    width: 35%;
+    height: 10%;
+    margin-top: 2.5%;
 }
 
 .main {
-	margin: 7.5rem 0 3.5rem 0;
-	padding: 3.5rem 0;
+	margin: 7.5% 0 3.5% 0;
+	padding: 3.5% 0;
 	font-size: 1.5rem;
 	line-height: 1.8rem;
 }
@@ -134,7 +134,8 @@ hr {
  
 .main .middle-img {
 	 display: block;
-	 margin: 2.5rem auto;
+     margin: 2.5% auto;
+     width: 100%;
 }
  
 .main .bottom {
@@ -142,17 +143,17 @@ hr {
 }
  
 .main .bottom p {
-	 padding-right: 2.0rem;
+	 padding-right: 2%;
 }
 .contact {
     font-size: 1.6rem;
 }
 .contact p {
-    margin: 1.5rem 0;
+    margin: 1.5% 0;
 }
 .contact a {
     text-decoration: none;
-	margin: 1.5rem 0;
+	margin: 1.5% 0;
 	color: black;
 }
 
@@ -160,12 +161,12 @@ hr {
 
 footer {
     text-align: center;
-    margin: 4.0rem 0 2.0rem;
+    margin: 4% 0 2%;
     font-size: 1.6rem;
 }
 
 /* Tableta */
-@media (max-width: 64.478rem) {
+@media (max-width: 800px) {
 	.container {
         width: 100%;
     }
@@ -175,14 +176,14 @@ footer {
     }
   
     header nav {
-        width: 80.0rem;
-        padding: 0 3.0rem;
+        width: 80%;
+        padding: 0 3%;
     }
 
     header .logo {
 		order: -1;
         display: block;
-        margin: 3.0rem auto 3.0rem;
+        margin: 3% auto 3%;
     }
 
     .header-section {
@@ -202,20 +203,20 @@ footer {
     }
 
     .main {
-       margin: 7.5rem 2.0rem 3.5rem;
+       margin: 7.5% 2% 3.5%;
     }
 
     .text {
-        margin: 0 1.0rem;
+        margin: 0 5%;
     }
 
     .contact {
-        margin: 0 3.0rem;
+        margin: 0 1%;
     }
 }
 
   /* Móvil */
-@media (max-width: 47.2004rem) {
+@media (max-width: 500px) {
 	header {
         justify-content: center;
     }
@@ -231,8 +232,8 @@ footer {
         width: 100%;
         display: block;
         text-align: center;
-        padding: 2.0rem 0;
-        font-size: 2.0rem;
+        padding: 10% 0;
+        font-size: 20px;
         border-bottom: .1rem solid gray;
     }
 
@@ -241,11 +242,11 @@ footer {
     }
 
     header .logo {
-        margin: 2.0rem 0;
+        margin: 10% 0;
     }
 
     .header-section {
-        margin-top: 5.0rem;
+        margin-top: 10%;
         flex-flow: column;
         align-items: center;
     }
@@ -271,6 +272,6 @@ footer {
     }
 
     .contact {
-        margin: 2.0rem;
+        margin: 10%;
     }
 }
