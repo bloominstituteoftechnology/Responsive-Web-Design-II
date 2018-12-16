@@ -91,7 +91,7 @@ header .navLink {
 }
 
 header a {
-	width: 4rem;
+	width: 10%;
 	margin: auto;
 	color: gray;
 	font-size: 1.5rem;
@@ -124,8 +124,8 @@ h1 {
 }
 
 .headTwo a {
-	height: 3rem;
-	width: 15rem;
+	height: 10%;
+	width: 30%;
 	font-size: 2rem;
 	text-align: center;
 	align-self: center;
@@ -137,7 +137,7 @@ h1 {
 
 .img {
 	display: flex;
-	width: 50rem;
+	width: 25%;
 }
 
 
@@ -149,8 +149,8 @@ section {
 	border-top: 2px solid black;
 	max-width: 1024px;
 	width: 100%;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	border-bottom: 2px solid black;
 	padding: 25px 5px 25px 5px;
 }
@@ -166,8 +166,8 @@ p {
 .features, .about {
 	display: flex;
 	width: 50%;
-	margin-left: 1rem;
-	height: 14rem;
+	margin-left: 2%;
+	height: 125px;
 	flex-direction: column;
 	overflow-wrap: normal;
 }
@@ -180,9 +180,9 @@ p {
 .services, .product, .vision{
 	display: flex;
 	width: 30%;
-	height: 17rem;
+	height: 200px;
 	flex-direction: column;
-	margin-top: 2.5rem;
+	margin-top: 5%;
 	overflow-wrap: normal;
 }
 
@@ -253,7 +253,7 @@ footer {
 	}
 	
 	.headTwo {
-		height: 30rem;
+		height: 30%;
 		margin-bottom: 50px;
 	}
 
@@ -276,7 +276,7 @@ footer {
 	.features , .about {
 		display: flex;
 		width: 45%;
-		height: 16rem;
+		height: 150px;
 		flex-direction: column;
 		overflow-wrap: normal;
 		margin-left: 20px;
@@ -289,7 +289,7 @@ footer {
 	.services, .product, .vision{
 	display: flex;
 	width: 30%;
-	height: 20rem;
+	height: 200px;
 	flex-direction: column;
 	margin-top: 25px;
 	overflow-wrap: normal;
@@ -345,8 +345,8 @@ footer {
 
 	header .logo {
 		order: 0;
-		width: 18rem;
-		height: 4rem;
+		width: 180px;
+		height: 20%;
 		margin: 0 auto;
 	}
 
