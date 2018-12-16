@@ -1,1 +1,425 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    }
+
+/* animation for color change from black to yellow */
+@keyframes highlight {
+    from {color: black;}
+    to {color: yellow;}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+    color: yellow;
+    animation-name: highlight;
+    animation-duration: 0.5s;
+}
+
+header {
+	z-index: 1;
+	position: fixed;
+    top: 0;
+    padding-top: 1.8%;
+    background-color: grey;
+    width: 100%;
+    max-width: 880px;
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    align-content: center;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-family: Unlock;
+    font-weight: bold;
+    justify-self: center;
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 5% 
+}
+
+img {
+    max-width: 880px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 880px;
+}
+
+p {
+    line-height: 1.25;
+    margin: 10px 0;
+}
+
+footer {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2%;
+    width: 100%;
+    list-style: none;
+}
+
+nav a {
+    color: black;
+    margin: 1%;
+}
+
+section p {
+    margin-bottom: 1%;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    font-size: 1.6rem;
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 0 2%;
+}
+
+.headline {
+    text-align: center;
+}
+
+.headline button {
+    cursor: pointer;
+}
+
+.sections-top {
+    width: 45%;
+    margin-bottom: 3%;
+}
+
+.sections-bottom {
+    width: 33%;
+}
+
+#headline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
+    flex-wrap: wrap;
+}
+
+#services {
+    margin-top: 3%;
+}
+
+#product {
+    margin-top: 3%;
+}
+
+#vision {
+    margin-top: 3%;
+}
+
+#getStarted {
+    height: 30px;
+	width: 150px;
+	border: 1px solid;
+	margin: 0 auto;
+	text-align: center;
+	background-color: white;
+}
+
+#getStarted a {
+	vertical-align: middle;
+	color: black;
+	animation: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+    
+    header {
+        margin: 0 auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background-color: white;
+        position: relative;
+    }
+
+    nav, ul {
+        width: 100%;
+    }
+    
+    nav ul {
+        width: 100%;
+        margin: 0;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        justify-content: space-around;
+        height: 50px;
+    }
+
+    nav ul li {
+        height: 100%;
+        width: 16.66%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    nav ul li:hover {
+        background-color: grey;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    section div {
+        margin-bottom: 5%;
+    }
+
+    section div h1 {
+        margin-bottom: 13%;
+    }
+
+    section img {
+        display: none;
+    }
+    
+    header .logo {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    .container {
+        width: 95%;
+    }
+    
+    .sections {
+        margin-bottom: 1.5%;
+    }
+
+    .sections-top {
+        width: 48%;
+    }
+    
+    /* .middle-img {
+        width: 100%;
+        margin-bottom: 0.25%;
+    } */
+
+    .sections-bottom {
+        width: 30%;
+    }
+
+    #headline {
+        margin-top: 7%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    /* For small tablets and phones */
+    @keyframes slideIn {
+        from{position: fixed;
+            top: 100%;}        
+        to{position: fixed;
+            top:0%;}
+}
+
+    body {
+        animation: slideIn;
+        animation-duration: 1s;
+    }
+
+    header {
+        position: relative;
+		width: 100%;
+        display: flex;
+        background-color: white;
+        z-index: 0;
+        height: 100%;
+	}
+	
+	nav {
+		display: flex;
+		width: 100%;
+	}
+	
+    article {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+    }
+
+    hr {
+        margin: 3%;
+    }
+
+    footer p {
+        margin: 5%;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid black;
+        padding: 0;
+    }
+
+    nav ul li a {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    nav ul li:hover {
+        background-color: grey;
+        border-radius: 0;
+    }
+    
+    section {
+        position: relative;
+        
+    }
+
+    .middle-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sections {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* #headline {
+        margin: 30px;
+        margin-bottom: 60px;
+        position: relative;
+    } */
+    #services-link {
+        border-top: 1px solid black;
+    }
+        
+    #contact {
+        padding: 3%;
+    }
+
+    #contact p {
+        margin-bottom: 15px;
+    }
+    
+
+}
