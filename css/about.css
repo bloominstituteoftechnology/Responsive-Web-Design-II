@@ -216,7 +216,7 @@ h2 {
   }
 
   img .about-header-img {
-    width: 70%;
+    width: 50%;
     margin: 14rem 3rem;
   }
 
@@ -233,8 +233,33 @@ h2 {
   }
 
   .teamPIC {
-    padding: 4rem;
-    margin: 2rem;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 2rem;
   }
 
+  .kurt {
+    max-width: 1024px;
+    width: 100%;
+  }
+
+  .whiz {
+    max-width: 214px;
+    width: 100%;
+  }
+
+  .ozzy {
+    max-width: 636px;
+    width: 100%;
+  }
+
+  .harley {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .teamIMG {
+    order: -1;
+  }
+  
 }
