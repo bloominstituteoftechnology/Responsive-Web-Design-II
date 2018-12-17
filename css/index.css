@@ -104,12 +104,30 @@ body{
 	line-height: 36px;  
 }
 
+@keyframes increase{
+	0% {
+		transform: scale(1);
+		opacity: .0;
+	}
+	50% {
+		transform: scale(1.5);
+		opacity: .5;
+	}
+	100% {
+		transform: scale(1.75);
+		opacity: 0;
+	}
+}
+
 
 nav{
 	/* border: 1px solid purple; 
 	background: lightgray; */
 	display: flex;
 	margin-left: 0;
+	animation: increase 2s ease-in; 
+	animation-iteration-count: 5;
+	animation-direction: alternate;
 	}
 
 div nav a{
@@ -139,6 +157,17 @@ div nav a{
 	font-size: 2rem;
   }
 
+  @keyframes slideIn {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(100%);
+		opacity: .5;
+	}
+}
+
 .Header .imglogo{
 	/* border: 1px solid yellowgreen; */
 	display: flex;
@@ -148,6 +177,7 @@ div nav a{
 	padding-left: 40px;
 	padding-top: 30px;
 	position: absolute; */
+	/* animation: slideIn 2s ease-in; */
 	
 
 }
@@ -224,7 +254,11 @@ div .section1{
     align-content: center;
     margin-top: 15px;
     margin-bottom: 40px;
-    border: 1px solid black;
+	border: 1px solid black;
+	animation: increase 2s ease-in; 
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+	
 }
 
 p.GStext{
@@ -244,6 +278,9 @@ p.GStext{
     font-size: 5.5rem;
     margin-bottom: 25px;
 	line-height: .55;
+	 animation: bounce 1s ease-in;
+	animation-iteration-count: 6;
+	animation-direction: alternate; 
     
    
 	/* display: flex; */
@@ -258,25 +295,42 @@ p.GStext{
 	  /* padding-left: 40px; */
   }
 
-  
-@keyframes bounce{
+   @keyframes bounce{
 	0% {
 		transform: translateY(-200%);
+		
 	}
-	/* 50% {
+	 50% {
 		transform: translateY(-100%);
-	} */
+		
+	} 
 	100% {
 		transform: translateY(0%);
+		
 	}
-}
+} 
+
+@keyframes bounceIn {
+	0% {
+	  transform: scale(0.1);
+	  opacity: 0;
+	}
+	60% {
+	  transform: scale(1.2);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
 
 .snippet{
 	animation: bounce 1s ease-in;
-	animation-iteration-count: 2;
+	animation-iteration-count: 6;
+	animation-direction: alternate;
 }
 
-}
+
 
 
 .content1image{
@@ -780,6 +834,9 @@ ul {
 		 order: 1;
 		 display: flex;
 		 justify-content: space-around;
+		 animation: increase 2s ease-in; 
+	animation-iteration-count: 5;
+	animation-direction: alternate;
      }
      
      nav a{
@@ -818,17 +875,22 @@ ul {
  @keyframes increase{
 	 0% {
 		 transform: scale(1);
+		 opacity: .0;
 	 }
 	 50% {
 		 transform: scale(1.5);
+		 opacity: .5;
 	 }
 	 100% {
 		 transform: scale(1.75);
+		 opacity: 0;
 	 }
  }
 
  .Innovation, .On, .Demand{
 	 animation: increase 2s ease-in;
+	 animation-iteration-count: 4;
+	 animation-direction: alternate;
 }
 
 }
@@ -852,7 +914,11 @@ ul {
 			margin: 0;
 			/* background: lightpink; */
 			padding: 0;
+			animation: none;
+			
 		}
+
+		
 	
 	.Header nav a{
 		padding: 3%;
@@ -862,7 +928,6 @@ ul {
 		text-align: center;
 		/* background: lightyellow; */
 		margin: 0;
-	
 	}
 	
 	.imglogo{
@@ -1024,6 +1089,8 @@ ul {
    
 	.imglogo{
 		animation: bounce 2s ease-in;
+		animation-iteration-count: 4;
+		animation-direction: alternate;
    }
    
    }
