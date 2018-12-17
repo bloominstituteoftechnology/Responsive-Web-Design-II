@@ -79,7 +79,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 4.4% 0%;
+    margin: 4% 0%;
     width: 90%;
 }
 
@@ -93,7 +93,7 @@ html {
 
 .container3 {
 	font-weight: bold;
-	font-size: 45px;
+	font-size: 4.5rem;
 	width: 30%;
 	display: flex;
     flex-wrap: wrap;
@@ -173,7 +173,7 @@ hr {
 }
 
 hr.first-line {
-    margin-top: 6%;
+    margin-top: 6rem;
 }
 
 hr.second-line{
@@ -209,13 +209,11 @@ hr.second-line{
     font-size: 1.25rem;
 }
 
-
-
 /* tablet view */
 @media(max-width: 800px) {
 
 .container {
-    width: 100vw;
+    max-width: 100%;
 	flex-direction: column-reverse;
     align-items: center;
     margin: 0 auto;
@@ -225,12 +223,13 @@ hr.second-line{
     width: 80%;
     margin: 0% 0%;
     padding-right: 0.2rem;
-    padding-top: 7%;
+    padding-top:8%;
     padding-bottom: 1rem;
     }
 
 .container4 {
 display: none;
+
 }
 
 .container5 {
@@ -280,18 +279,15 @@ img.middle-img {
 
 .logo {
     margin-top: 4%;
-    margin-right: 1%;
-    width: 19%;
-}
-
-p {
-    font-size: 1.35rem;
+    margin-left: 1.5%;
+    width: 22%;
 }
 
 nav {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
     margin-top: 4%;
-    margin-right: 6%;
-	word-spacing: 6.25rem;
 }
 
 h1 {
@@ -303,12 +299,12 @@ h1 {
 
 
 hr.first-line {
-    margin-top: 7%;
+    margin-top: 6%;
     width: 78%;
 }
 
 hr.second-line {
-    margin-top: 2.5%;
+    margin-top: 2.25%;
     width: 78%;
 }
 
@@ -327,11 +323,14 @@ button {
 
 .foot {
     width: 76%;
-    padding-top: 0.3rem;
+    padding-top: 0.35rem;
 }
 
 .copy p {
     font-size: 1.3rem;
+}
+.logo img {
+    width: 100%;
 }
 
 }
@@ -347,49 +346,95 @@ button {
 	}
 
 	.container2 {
-        margin: 40px 0px;
-        
+        width: 100%;
 	}
 
 	.container5 {
 		flex-direction: column;
-		width: 400px;
-	}
+        margin-top: 8.5%;
+        padding-bottom: 2.5%; 
+    }
 
 	.container6 {
-		flex-direction: column;
-		margin: 20px;
-	}
-	.about {
-		margin-left: 30px;
-	}
+        flex-direction: column;
+        margin-top: 0%;
+    }
 
-	button {
-		width: 125px;
-	}
 
 	.middle-img {
-		padding: 10px;
-	}
+        padding: 1rem 1rem;
+    }
 
 	nav {
-		width: 410px;
-		word-spacing: 300px;
-		padding: 10px;
+        width: 83%;
+        border-top: 1px solid black;
 		text-align: center;
 		display: flex;
-		flex-direction: column;
+        flex-direction: column;
 	}
 	
 	a {
-		line-height: 60px;
+        font-size: 1.5rem;
+        line-height: 4.75rem;
 		border-bottom: 1px solid black;
 	}
 
 	.logo {
-		width: 390px;
-		border-bottom: 1px solid black;
-		text-align: center;
-		padding-bottom: 20px;
-	}
+        width: 84%;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .logo img {
+        width: 37%;
+    }
+
+    .button {
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+
+    button {
+        border: 1px solid black;
+        width: 100%;
+    }
+    
+    hr.first-line {
+    margin-top: 10.5%;
+    }
+
+    hr.second-line {
+        margin-top: 3%;
+        width: 80%;
+    }
+
+    .about {
+        margin-top: 6.5%;
+        margin-left: 2%;
+    }
+
+    .feat {
+        margin-left: 2%;
+    }
+
+    .serve {
+        margin-top: 3%;
+    }
+
+    .prod {
+        margin-top: 10%;
+
+    }
+
+    .visi {
+        margin-top: 11%;
+    }
+
+    .foot {
+        margin-top: 4%;
+    }
+    
+    .copy {
+        margin-top: 4%;
+    }
 }
