@@ -1,4 +1,4 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,6 +134,10 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html,
 body {
   height: 100%;
@@ -147,40 +151,37 @@ h4,
 h5 {
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 1.6rem;
 }
-
 
 p {
   font-size: 1.6rem;
 }
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-  max-width: 800px;
-  width: 100%;
+  max-width: 880px;
   margin: auto;
+  width: 100%;
 }
 
-/* Header Styles */
-
 header {
-  width: 100%;
   display: flex;
+  padding-bottom: 30px;
+  width: 100%;
   font-size: 1.6rem;
 }
 
 header nav {
-  margin: 38px 1% 0;
+  margin-top: 40px;
   width: 100%;
   justify-content: space-between;
   display: flex;
 }
 
 header nav a {
+  color: black;
   text-decoration: none;
-  color: #b0b0b0;
 }
 
 header nav a:hover {
@@ -190,206 +191,230 @@ header nav a:hover {
 
 header .logo {
   margin: 28px 0 0 9%;
-  align-self: flex-end;
 }
 
-/* Call To Action (CTA) Styles */
-
-.cta {
+.first-section {
   display: flex;
-  margin-top: 72px;
+  margin-top: 45px;
   justify-content: flex-end;
 }
 
-.cta .cta-text {
+.first-section .first-section-text h1 {
+  font-size: 7.2rem;
   text-align: center;
-  letter-spacing: 5px;
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
   margin: 0 9% 0 0;
 }
 
-.cta .cta-text h1 {
-  letter-spacing: 5px;
-  margin-bottom: 5px;
-  font-size: 7.2rem;
+.first-section .first-section-text img {
+  padding-bottom: 50px;
+  max-width: 100%;
 }
 
-.cta .cta-text button {
-  border: 1px double black;
+.first-section .first-section-text button {
   font-size: 1.6rem;
-  background: white;
   width: 170px;
   height: 32px;
-  margin-top: 10px;
-  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 20px;
+  background: white;
+  border: 1px solid black;
 }
 
-.cta .cta-text button:hover {
+.first-section .first-section-text button:hover {
   background: black;
   color: white;
 }
 
-/* Main Content Styles */
-
-.main-content {
+.second-section {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
   border-top: 2px solid black;
+}
+
+.second-section .second-section-text {
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.middle-img {
+  padding: 35px 0px;
+  max-width: 100%;
+}
+
+.third-section {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
   border-bottom: 2px solid black;
-  margin: 75px 0 35px 0;
-  padding: 35px 0;
-  font-size: 1.6rem;
-  line-height: 18px;
 }
 
-.main-content .top-content {
-  display: flex;
-  justify-content: space-around;
+.third-section .third-section-text {
+  padding: 15px;
+  padding-bottom: 40px;
 }
 
-.main-content .middle-img {
-  max-width: 100%
-  display: block;
-  margin: 30px auto;
+address {
+  padding: 12px;
+  margin-top: 30px;
 }
 
-.main-content .bottom-content {
-  display: flex;
-  justify-content: space-around;
+address p {
+  padding-bottom: 18px;
 }
-
-.main-content .bottom-content p {
-  padding-right: 2%;
-}
-
-.main-content .text-content {
- margin: 20px 1%;
-}
-/* Contact Styles */
-
-.contact p {
-  margin: 15px 0;
-}
-
-/* Footer Styles */
 
 footer {
   text-align: center;
-  margin: 40px 0 20px;
+  margin-top: 38px;
+  padding-top: 10px;
 }
 
-html {
-  font-size: 62.5%;
-}
-
-
-
-/* tablet width */
+/* Tablet view */
 @media (max-width: 800px) {
+
+.container {
+  width: 100%;;
+  margin: 0px auto;
+}
+
+header {
+  flex-wrap: wrap;
+}
+
+header .logo {
+  width: 750px;
+  order: -1;
+  justify-content: center;
+  margin: 0px;
+  padding: 0 280px 40px 310px;
+}
+
+header nav {
+  margin: 0px 10px;
+  padding-left: 10px;
+  width: 730px;
+}
+
+.first-section {
+  justify-content: center;
+  padding: 0 0 70px 150px;
+}
+
+.first-section .first-section-text img {
+  display: none;
+}
+
+.first-section .first-section-text button {
+  margin-left: 50px;
+}
+
+.second-section {
+  width: 750px;
+  margin: 0px;
+}
+
+.middle-img {
+  margin: 0px;
+  width: 750px;
+  padding: 20px 0;
+}
+
+.third-section {
+  margin: 0px;
+  width: 750px;
+  padding-bottom: 20px;
+}
+
+address {
+  margin: 0px;
+  padding-top: 30px;
+}
+
+footer {
+  padding: 0px;
+  margin: 0px;
+}
+}
+
+/* mobile view  */
+@media (max-width: 500px) {
+
   .container {
-    width: 100%;
-  }
-
-  header {
-    flex-wrap: wrap;
-  }
-
-  header nav {
-    width: 100%;
-    margin: 38px 3%;
-  }
-
-  header .logo {
-    order: -1;
-    display: block;
-    margin: 30px auto 0;
-  }
-
-  .cta {
-    justify-content: center;
-    margin-top: 35px;
-  }
-
-  .cta .cta-text {
+    width: 460px;
     margin: 0;
   }
-
-  .cta .cta-test h1 {
-    letter-spacing: 0;
-    margin-bottom: 15px;
-  }
-
-  .cta img {
-    display: none;
-  }
-
-  .main-content .middle-img {
-    width: 100%;
-    margin: 10px auto 25px;
-  }
-
-  .main-content {
-    margin: 75px 20px 35px;
-    font-size: 1.4rem;
-  }
-
-  .contact {
-    margin: 0 30px;
-  }
-}
-
-/* phone width */
-
-@media (max-width: 500px) {
   
   header {
-    justify-content: center;
+   justify-content: center;
   }
 
   header nav {
-    margin: 0;
     flex-direction: column;
+    width: 450px;
+    margin: 0;
+    padding: 0;
   }
-
-  header nav a {
-    width: 100%;
-    display: block;
+  
+  header .logo {
+    margin: 0px;
+    flex-direction: column;
     text-align: center;
-    border-bottom: 1px solid gray;
+    width: 480px;
+    padding: 20px 150px;
+  }
+  
+  header nav a {
     padding: 20px 0;
+    text-align: center;
     font-size: 20px;
+    border-bottom: 1px solid black;
+    width: 450px;
   }
 
   header nav a:first-child {
-    border-top: 1px solid gray;
+    border-top: 1px solid black;
   }
-
-  header nav a:hover {
-    background: gray;
+  
+  .first-section {
+    width: 460px;
+    padding: 20px 0 50px 60px;
+    margin: 0;
   }
-
-  header .logo {
-    margin: 20px 0;
-    order: -1;
+  
+  .first-section .first-section-text img {
+    display: none;
   }
-
-  .cta {
-    margin-top: 50px;
+  
+  .first-section .first-section-text button {
+    margin-left: 60px;
   }
-
-
-  .main-content {
-    padding-top: 55px;
+  
+  .second-section {
+    flex-direction: column;
+    width: 450px;
+    margin: 0;
   }
-
-  .main-content .top-content {
-    flex-wrap: wrap;
-    height: 300px;
+  
+  .middle-img {
+    margin-left: 0px;
+    width: 450px;
+    padding: 35px 8px 18px 8px;
   }
-
-  .main-content .bottom-content {
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 440px;
+  
+  .third-section {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px;
+    padding-bottom: 20px;
+  }
+  
+  address {
+    margin-left: 8px;
+    padding-top: 30px;
+  }
+  
+  footer {
+    padding: 0px;
+  }
+  
   }
