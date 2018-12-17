@@ -148,6 +148,21 @@ h1, h2, h3, h4, h5 {
 
 }
 
+
+#size{
+  margin: 0 auto;
+  border: 2px solid crimson;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: dodgerblue;
+  content: "desktop";
+  text-align: center;
+}
+
+#size::after {
+  content: "desktop";
+}
+
 .aboutINFO {
 
   margin: 20px 0;
@@ -206,6 +221,12 @@ h2 {
   }
 
 
+
+  #size::after {
+    content: "break after 950px;"
+  }
+
+
 }
 
 
@@ -218,6 +239,10 @@ h2 {
   img .about-header-img {
     width: 50%;
     margin: 14rem 3rem;
+  }
+
+  #size::after {
+    content: "break after 800px;"
   }
 
   .team {
@@ -261,5 +286,24 @@ h2 {
   .teamIMG {
     order: -1;
   }
-  
+
+}
+
+@media(max-width: 500px){
+
+  header{
+    width: 75%;
+    margin: 0 auto;
+    border: 3px solid blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+
+  #size::after {
+    content: "break after 500px;"
+  }
+
 }
