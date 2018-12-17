@@ -1,0 +1,232 @@
+/* * http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/ 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 2%;
+}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+
+/* Flexbox CSS and box model */
+
+.navigation {
+    margin: 0 auto;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content:flex-end;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+a {
+    margin: 0 auto;
+	text-decoration: none;
+    color: grey;
+    font-size: 1.6rem;
+    padding-left: 8%;
+}
+
+.nav-logo {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.img-service {
+    margin: 0 auto;
+    display: flex;
+    max-width: 100%;
+}
+
+.services-img {
+    width: 875px;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+.service-info {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    border-bottom: 1px solid black;
+}
+
+.boxes h2 {
+    font-size: 2rem;
+}
+
+.row-1, .row-2, .row-3 {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.boxes {
+    width: 48%;
+    border: 1px solid black;
+    background: lightgray;
+    margin: 0 auto;
+    padding: 3%;
+    line-height: 1.5;
+    padding-bottom: 2%;
+}
+
+.boxes p {
+    font-size: 1.4rem;
+}
+
+ button {
+    border-radius: 15px;
+    margin: 4% 0;
+
+ }
+
+ .lineBorder {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3%;
+    
+ }
+
+.section-facts {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2%;
+}
+
+.facts h3 {
+    font-size: 1.9rem;
+    padding-top: 3%;
+}
+
+.facts p,ul{
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+ul li {
+    padding-top: 2%;
+    list-style-type: square;
+}
+
+.facts {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.img-facts {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-right: 1.1%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 3%;
+}
