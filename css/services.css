@@ -69,15 +69,14 @@ html{
 
 h1, h2, h3, h4, h5 {
   font-family: 'Bangers', cursive;
-  letter-spacing: .1rem;
-  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
 /*  VVVVVV    nav-container   VVVVV    */
 
 .nav-container {
   border: 1px solid pink;
-  margin-top: 2.5rem;
  display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,19 +130,19 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
-  padding: 1rem 0;
+  padding: 1% 0;
 }
 
 .services-header-img {
   border: 1px solid blue;
   width: 100%;
-  margin: 1.5rem 0;
 }
 
 .main .services-banner h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 3.5rem;
   font-weight: bolder;
+  padding-top: 3%;
 }
 
 .main .services-banner p {
@@ -164,8 +163,8 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2rem 0;
-  margin: 5rem 0;
+  padding: 2% 0;
+  margin: 4.5% 0;
 }
 
 .all-services .service {
@@ -173,9 +172,10 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: column;
   background: #F4F3F4;
-  width: 47.5%;
-  padding: 2.75rem;
+  width: 48%;
+  padding: 2%;
   margin: 2.5% 0;
+  justify-content: space-evenly;
 }
 
 .all-services .service h2 {
@@ -189,7 +189,8 @@ h1, h2, h3, h4, h5 {
   border: 1px solid green;
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
-  padding: 5% 0;
+  padding: 6% 0;
+  line-height: 1.25;
 }
 
 .contactBTN-container {
@@ -208,7 +209,7 @@ h1, h2, h3, h4, h5 {
   font-size: 1.25rem;
   font-weight: bolder;
   border-radius: .5rem;
-  padding: 1rem;
+  padding: 3%;
   text-decoration: none;
 }
 
@@ -226,7 +227,7 @@ h1, h2, h3, h4, h5 {
 /*      FOOTER FOOTER  FOOTER     */
 
 .service-footer {
-  margin: 4rem 0;
+  margin: 4% 0;
   border: 5px solid deeppink;
   display: flex;
   flex-direction: column;
@@ -256,14 +257,19 @@ h1, h2, h3, h4, h5 {
 .service-footer .facts-services p {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
+  line-height: 1.25;
 }
 
 .service-footer .facts-services ul {
-  padding-top: 2rem;
+  padding-top: 2%;
   list-style-type: square;
   list-style-position: inside;
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
+  line-height: 2;
+
+
+
 }
 
 .service-footer .footer-top .services-info-img {
@@ -282,7 +288,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   font-size: 1.45rem;
   font-family: 'Titillium Web', sans-serif;
-  padding-top: 7rem;
+  padding-top: 7%;
 }
 
 
@@ -305,7 +311,7 @@ h1, h2, h3, h4, h5 {
 
   .nav-container .logoIMG{
     order: -1;
-    padding-bottom: 2rem;
+    padding-bottom: 2%;
   }
 
   .service-footer {
@@ -348,7 +354,7 @@ h1, h2, h3, h4, h5 {
 
   .nav-container .navbar_top a {
     width: 90%;
-    padding: 2rem;
+    padding: 2%;
     font-size: 3rem;
     border-top: 2px solid grey;
     text-align: center;
@@ -395,11 +401,11 @@ h1, h2, h3, h4, h5 {
 
   .service-footer .footer-top .facts-services ul li {
     font-size: 2rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5%;
   }
 
   .service-footer .footer-top .services-info-img {
-    margin: 3rem 0;
+    margin: 3% 0;
   }
 
   .service-footer .copyright {

@@ -62,14 +62,17 @@ html{
   margin: 0 auto;
   height: 100%;
   font-size: 62.5%;
+  background: palegoldenrod;
 }
 
-
+p {
+  line-height: 1.2;
+}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: .1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
@@ -121,8 +124,8 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0;
-  margin-top: .9rem;
+  padding: 7% 0;
+  margin-top: .9%;
 }
 
 .banner {
@@ -131,8 +134,8 @@ h1, h2, h3, h4, h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 12rem;
-  padding-bottom: 1rem;
+  margin-left: 12%;
+  padding-bottom: 1%;
 }
 
 h1 {
@@ -149,9 +152,9 @@ button {
   font-size: 1.7rem;
   border: 1px solid black;
   width: 55%;
-  padding: .6rem 0;
-  margin-top: 2.5rem;
-  margin-right: 1rem;
+  padding: .6% 0;
+  margin-top: 2.5%;
+  margin-right: 1%;
 
 }
 
@@ -167,8 +170,8 @@ button:hover {
 .main {
   border-top: .2rem solid black;
   border-bottom: .2rem solid black;
-  padding: 3.5rem 0;
-  margin: 1.2rem 0;
+  padding: 3.5% 0;
+  margin: 1.2% 0;
   font-size: 1.7rem;
 }
 
@@ -182,13 +185,20 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 49.5%;
+  width: 49%;
 }
+
+
+.top .top-content h2 {
+  padding-bottom: 3%;
+}
+
+
 
 .middleIMG{
   max-width: 88rem;
   width: 100%;
-  padding: 2.9rem 0;
+  padding: 2.9% 0;
 
 }
 
@@ -203,27 +213,35 @@ button:hover {
   width: 32%;
 }
 
+.bottom .bottom-content h2 {
+  padding-bottom: 3%;
+}
+
 footer {
-  padding-top: 3rem;
+  padding: 1% 0;
 }
 
 footer address {
   font-size: 1.6rem;
 }
 
+footer address h2 {
+  padding: 1.5% 0;
+}
+
 footer address .phone {
-  padding: 1.2rem 0;
+  padding: 1.2% 0;
 }
 
 footer address .email {
-  padding: .5rem 0;
+  padding: .5% 0;
 }
 
 footer .copyright {
   text-align: center;
   font-size: 1.45rem;
   font-family: 'Titillium Web', sans-serif;
-  padding: 3.8rem 0;
+  padding: 3.8% 0;
 }
 
 
@@ -245,7 +263,7 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     width: 95%;
-    margin: 1rem;
+    margin: 1%;
   }
 
   .nav-container .navbar_top a {
@@ -253,7 +271,7 @@ footer .copyright {
   }
 
   .logoIMG {
-    margin: 5px auto;
+    margin: 5% auto;
     order: -2;
   }
 
@@ -290,7 +308,7 @@ footer .copyright {
 
   .logoIMG{
     order: -1;
-    margin: 3rem;
+    margin: 4%;
   }
 
   .nav-container {
@@ -313,7 +331,7 @@ footer .copyright {
     width: 100%;
     border-top: 1px solid grey;
     text-align: center;
-    padding: 2.5rem 0;
+    padding: 4.5% 0;
     font-size: 2rem;
     margin: 0;
   }
@@ -322,9 +340,16 @@ footer .copyright {
     border-top: 1px solid grey;
   }
 
-  .main {
-    display: flex:
+  .header .banner button {
+    padding: 2% 0;
+    margin-top: 3%;
+    margin-bottom: 5%;
 
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
   }
 
   .top {
@@ -337,18 +362,17 @@ footer .copyright {
 
   .top .top-content {
     width: 100%;
-    margin: 4rem 0;
+    margin: 4% 0;
   }
 
   .bottom {
     display: flex;
     flex-direction: column;
-    widh
   }
 
   .bottom .bottom-content {
     width: 100%;
-    margin: 4rem 0;
+    margin: 4% 0;
   }
 
 }
