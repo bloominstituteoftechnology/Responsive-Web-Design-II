@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+body {
+ line-height: 1;
+}
+ol, ul {
+ list-style: none;
+}
+blockquote, q {
+ quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content: '';
+ content: none;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+html {
+   max-width: 100%;
+   font-size: 62.5%;
+}
+
+.navBar {
+   display: flex;
+   justify-content: center;
+   background: white;
+   max-width: 100%;
+}
+
+.ops {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background: white;
+   max-width: 100%;
+}
+
+.serv, .prod, .vis, .feat, .abou, .cont {
+   background-color:white;
+   border: none;
+   color: black;
+   font-size: 2rem;
+   transition: 0.3s;
+   font-family: 'Permanent Marker', cursive;
+   text-decoration: none;
+   padding: 20px;
+   padding-top: 25px;
+}
+
+.serv:hover, .prod:hover, .vis:hover, .feat:hover, .abou:hover, .cont:hover {
+   background-color: #0034A3;
+   color: white;
+}
+
+.logoImg {
+   margin-top: 15px;
+   height: 3rem;
+   background-color: white;
+}
+
+.servicesHeader {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+body{
+   max-width: 100%;
+}     
+
+.description{
+   display: flex;
+   flex-direction: column;
+   text-align: flex-start;
+   margin: 0 auto;
+   border-bottom: solid black;
+}
+
+.headerDesc {
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+  margin: 20px;
+}
+
+.headP {
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   width: 600px;
+   margin: 20px;
+}
+
+h1 {
+   font-size: 40px;
+}
+
+.box{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+.main {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   border-bottom: solid black;
+}
+
+.section1, .section2, .section3 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin: 20px;
+}
+
+.boxHead {
+   display: flex;
+   flex-direction: column;
+   text-align: start;
+   background-color: #aec7f9; 
+   padding: 15px;
+   margin-top: 60px;
+   margin-bottom: 60px;
+   border: 1px solid black;
+}
+
+.parag {
+   width: 425px; 
+      
+}
+
+.learn {
+   display: flex;
+   justify-content: center;
+   font-size: 15px;
+   width: 160px;
+   background-color: white;
+   box-shadow: 0 4px #666;
+   border: solid black;
+   padding: 10px;
+   margin-top: 20px;  
+   margin-bottom: 15px;
+  
+}
+.learn:hover{
+   background-color: lightgrey;
+}
+.facts {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding-top: 50px;
+}
+
+.factDesc {
+   display: flex;
+   flex-direction: column;
+   text-align: start;
+   padding: 20px;
+}
+
+.factP {
+   width: 500px;
+}
+
+.list {
+   padding: 20px;
+}
+
+li {
+   padding: 5px;
+}
+
+p, li {
+   font-size: 20px;
+}
+
+h3 {
+   font-size: 30px;
+}
+
+.container {
+   font-size: 62.5%;
+   margin: 0 auto;
+   max-width: 880px;
+}
