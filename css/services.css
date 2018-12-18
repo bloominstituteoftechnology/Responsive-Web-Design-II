@@ -111,6 +111,12 @@ html {
 .servicesHeader {
    display: flex;
    justify-content: center;
+   max-width: 100%;
+}
+
+.services-header-img {
+   display: flex;
+   justify-content: center;
    width: 100%;
 }
 
@@ -121,8 +127,9 @@ body{
 .description{
    display: flex;
    flex-direction: column;
-   text-align: flex-start;
-   margin: 0 auto;
+   text-align: center;
+   max-width: 100%;
+   padding: 20px;
    border-bottom: solid black;
 }
 
@@ -130,20 +137,18 @@ body{
    display: flex;
    flex-direction: row;
    justify-content: start;
-  margin: 20px;
+   width: 100%;
 }
 
 .headP {
    display: flex;
    flex-direction: row;
    justify-content: start;
-   width: 600px;
+   max-width: 100%;
    margin: 20px;
 }
 
-h1 {
-   font-size: 40px;
-}
+
 
 .box{
    display: flex;
@@ -195,6 +200,7 @@ h1 {
 }
 .learn:hover{
    background-color: lightgrey;
+   cursor: pointer;
 }
 .facts {
    display: flex;
@@ -226,7 +232,7 @@ p, li {
    font-size: 20px;
 }
 
-h3 {
+h1, h3 {
    font-size: 30px;
 }
 
@@ -234,4 +240,4 @@ h3 {
    font-size: 62.5%;
    margin: 0 auto;
    max-width: 880px;
-}
+}     
