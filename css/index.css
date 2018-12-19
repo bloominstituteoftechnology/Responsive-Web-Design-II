@@ -238,6 +238,10 @@ footer {
 /* Phone */
 @media (max-width: 500px) {
 
+    .container {
+        padding-left: 10px;
+    }
+
     header {
         justify-content: center;
     }
@@ -297,6 +301,6 @@ footer {
     }
 
     .contact {
-        margin: 20px;
+        margin: 0;
     }
 }
