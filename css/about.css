@@ -84,9 +84,10 @@ h1, h2, h3, h4, h5 {
   border: 4px solid yellow;
   position: fixed;
   top: 0;
-  left: 18%;
-  margin: auto;
-  width: 64%;
+  left: 0;
+  margin: 0;
+
+  width: 100%;
   display: flex;
 }
 

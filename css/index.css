@@ -263,6 +263,7 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     width: 95%;
+    width: 100%;
     margin: 1%;
   }
 
