@@ -90,12 +90,14 @@ a {
   max-width: 880px;
   min-height: 1px;
   margin: 0 auto;
+  transition: ease all .5s;
 }
 
 header {
   margin-top: 27px;
   display:flex;
   justify-content: space-between;
+  transition: ease all .5s;
 }
 
 nav {
@@ -104,6 +106,7 @@ nav {
   display: flex;
   width: 68.86%;
   justify-content: space-between;
+  transition: ease all .5s;
 }
 
 nav a {
@@ -114,6 +117,7 @@ nav a {
 #logo {
   align-self: flex-start;
   margin-top: 1px;
+  transition: ease all .5s;
 }
 
 #splash {
@@ -122,6 +126,7 @@ nav a {
   display:flex;
   justify-content: space-between;
   align-items: flex-start;
+  transition: ease all .5s;
 }
 
 .innovation {
@@ -133,6 +138,7 @@ nav a {
   vertical-align: top;
   width: 34.03%;
   margin-left: 13.98%;
+  transition: ease all .5s;
 }
 
 h1 {
@@ -149,6 +155,7 @@ h1 {
   align-items: center;
   justify-content: center;
   font-size: 1.7rem;
+  transition: ease all .5s;
 }
 
 .code-snippet {
@@ -163,14 +170,17 @@ p, .features, .about, h2, .services, .product, .vision {
   display: flex;
   flex-direction: column;
   vertical-align: top;
+  transition: ease all .5s;
 }
 
 .features, .about {
   width: 48.29%;
+  transition: ease all .5s;
 }
 
 .about {
   margin-right: 1.7%;
+  transition: ease all .5s;
 }
 
 .top-section, .bottom-section {
@@ -178,22 +188,25 @@ p, .features, .about, h2, .services, .product, .vision {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 0.11%;
+  transition: ease all .5s;
 }
 
 section p {
   margin-top: 1px;
   line-height: 18px;
+  transition: ease all .5s;
 }
 
 .top-section {
   border-top: 2px solid black;
   margin-bottom: 30px;
   padding-top: 36px;
+  transition: ease all .5s;
 }
 
 .middle-img {
-  max-width: 100%;
-  padding-left: 0.23%;
+  margin-left: 0.23%;
+  transition: ease all .5s;
 }
 
 .bottom-section {
@@ -203,14 +216,17 @@ section p {
   margin-bottom: 35px;
   display: flex;
   justify-content: space-between;
+  transition: ease all .5s;
 }
 
 .vision {
   margin-right: 2.16%;
+  transition: ease all .5s;
 }
 
 .services, .product, .vision {
   width: 31.14%;
+  transition: ease all .5s;
 }
 
 small {
@@ -219,16 +235,19 @@ small {
   font-size: 1.6rem;
   margin-top: 40px;
   margin-bottom: 20px;
+  transition: ease all .5s;
 }
 
 address p {
   margin-bottom: 15px;
+  transition: ease all .5s;
 }
 
 
 @media (max-width: 800px) {
   .container {
     width: 100%;
+    transition: ease all .5s;
   }
 
   header {
@@ -236,6 +255,7 @@ address p {
     align-items: center;
     margin: 0;
     margin-top: 30px;
+    transition: ease all .5s;
   }
 
   #logo {
@@ -243,6 +263,7 @@ address p {
     margin: 0;
     padding-left: 0.125%;
     padding-bottom: 27px;
+    transition: ease all .5s;
   }
 
   nav {
@@ -250,6 +271,7 @@ address p {
     padding-right: 7.75%;
     width: 100%;
     align-self: flex-start;
+    transition: ease all .5s;
   }
 
   #splash {
@@ -257,6 +279,7 @@ address p {
     padding: 0;
     justify-content: center;
     padding-bottom: 75px;
+    transition: ease all .5s;
   }
 
   .code-snippet {
@@ -267,41 +290,50 @@ address p {
     margin: 0;
     width: 100%;
     margin-top: 72px;
+    transition: ease all .5s;
   }
 
   .get-started {
     width: 21.25%;
+    transition: ease all .5s;
   }
   
   main, footer {
     margin: 0 2.5%;
+    transition: ease all .5s;
   }
 
   .top-section, .bottom-section, footer {
     padding-left: 1.32%;
     padding-right: 1.32%;
+    transition: ease all .5s;
   }
 
   .top-section div {
     width: 47.97%;
+    transition: ease all .5s;
   }
 
   .about {
     margin-right: 0.66%;
+    transition: ease all .5s;
   }
 
   .middle-img {
     margin: 0;
     height: auto;
     width: 100%;
+    transition: ease all .5s;
   }
 
   .bottom-section div {
     width: 28.65%;
+    transition: ease all .5s;
   }
 
   .vision {
     margin-right: 2.84%;
+    transition: ease all .5s;
   }
 }
 
@@ -311,11 +343,13 @@ address p {
   header {
     width: 100%;
     margin: 20px 0 0 0;
+    transition: ease all .5s;
   }
 
   #logo {
     padding-left: 0.2%;
     padding-bottom: 20px;
+    transition: ease all .5s;
   }
 
   nav {
@@ -324,6 +358,7 @@ address p {
     align-items: center;
     width: 100%;
     margin: 0;
+    transition: ease all .5s;
   }
 
   nav a {
@@ -332,55 +367,68 @@ address p {
     text-align: center;
     padding: 20px 0;
     font-size: 2rem;
+    transition: ease all .5s;
   }
 
   nav a:nth-child(6) {
     border-bottom: 1px solid var(--nav-border-color);
+    transition: ease all .5s;
   }
 
   .innovation {
     margin: 50px 0 0 0;
+    transition: ease all .5s;
   }
 
   .get-started {
     width: 34%;
+    transition: ease all .5s;
   }
 
   main, footer {
     margin: 0 4%;
+    transition: ease all .5s;
   }
 
   .top-section, .bottom-section {
     padding: 13px 0 52px 0;
     margin: 0;
+    transition: ease all .5s;
   }
 
   .top-section, .bottom-section {
     flex-direction: column;
+    transition: ease all .5s;
   }
 
   .top-section div, .bottom-section div {
     width: 100%;
+    transition: ease all .5s;
   }
 
   .top-section div {
     margin-top: 46px;
+    transition: ease all .5s;
   }
 
   .bottom-section {
     padding: 29px 0 0 0;
+    transition: ease all .5s;
   }
 
   .bottom-section div {
     padding: 0 0 63px 0;
+    transition: ease all .5s;
   }
 
   .bottom-section .vision {
     padding-bottom: 35px;
     padding-top: 1px;
+    transition: ease all .5s;
   }
 
   footer {
     padding: 35px 0 0 0;
+    transition: ease all .5s;
   }
 }
