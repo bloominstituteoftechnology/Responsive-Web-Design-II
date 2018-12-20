@@ -1,1 +1,675 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+		box-sizing: border-box;
+		
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+		box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/*Index Page*/
+
+.wholepage {
+	/*border: 10px solid red;*/
+	padding: 1%;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+
+
+
+.toprow{	
+	padding-top: 2%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;	
+	align-items: center;
+}
+
+
+.toprow nav{
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	flex-wrap: nowrap;
+}
+
+
+.toprow nav a {
+	color: grey;  
+	padding-right: 7%;
+	text-decoration: none; 
+	font-size: 1.2rem; 
+  }
+
+  .secondrow {	
+	display: flex;	
+	flex-wrap: nowrap; 	
+	justify-content: space-evenly; 
+	border-bottom: 1px solid black;
+	padding: 5%; 
+  }
+  
+
+  h1{
+	width: 30%;
+	height: 30%;
+	font-family: 'Bangers', cursive;	
+	background: white;
+	box-sizing: content-box;
+	color:black;
+	font-size: 5rem;	
+	padding: 1%;
+	text-align: center;
+  }
+
+  .titlenbutton{
+	display: flex;
+	align-items: center;
+	flex-direction: column;	
+  }
+
+
+  h2{
+	  font-size: 2rem;
+  }
+
+  h3{
+	  font-size: 1.5rem;
+  }
+
+   p{
+	  font-size: 1.5rem;
+  }
+
+  .circle{
+	  width: 45%;
+	  height: 45%; 	 
+	  box-sizing:border-box; 
+	  background: white; 	 
+	  
+  }
+
+  button{	  
+	  background-color: white;
+	  text-align: center;
+	  font-size: 1.3rem;
+	  margin-top: 20%;
+		width: 30%;
+		height: 10%;
+	  }  
+
+  
+  .features{
+  	background: white;
+	width: 40%;
+	height: 40%; 
+	}
+  
+  .About{
+  	background: white;
+	width: 40%; 
+	height: 40%;
+	/*margin-left: 10%; */
+	/*padding-top: 20px;*/
+	}
+
+  .container{
+	padding:1%;	
+	padding-top: 5%; 
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	 }
+
+	.middle-img{
+	margin-top: 1.5%;
+	width: 100%;  
+	}
+  
+  .Services{
+  	background: white;
+	width: 25%;
+	height: 25%;
+  }
+  
+  .Product{    
+    background: white;
+    width: 25%;
+	height: 25%;    
+	/*margin-left: 10%;*/	  
+	/*padding-top: 20px;*/
+  }
+  
+  .Vision{    
+    background: white;
+    width: 25%;
+	height: 25%;  
+	/*margin-left: 10%;*/
+	/*padding-top: 20px;*/
+  }
+
+  .container-bottom{	
+	/*padding:0px;*/
+	padding-top: 3%;
+	padding-bottom: 4%;	
+	border-bottom: 2px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+  }
+
+  .contact{
+	  margin-top: 8%; 
+	  width: 20%;  
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-evenly;
+  }
+
+  address{
+	  padding-bottom: 5%; 
+	  font-size: 1.5rem;
+  }
+
+  .contact p{
+	  padding-bottom: 5%; 
+  }
+
+
+  .copy{	  
+	  text-align: center;
+  }
+
+  /*Services Page*/
+
+  	.page{
+		  max-width:880px;
+		  margin: 0 auto;
+		  
+		}
+
+	.page button{
+		margin-top: 2.5%;
+	}
+
+	.facts ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		list-style-type: square;
+
+	}
+
+	.facts p{
+		margin-bottom: 1.5%;
+	}
+
+	.list li{
+		margin: .05%;
+		font-size: 1.5rem;
+		
+	}
+
+	.page .services-toprow {	
+		padding-top: 2%;
+		padding-bottom: 2%;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+
+	.page .services-toprow nav{
+
+		display: flex;
+		flex-direction: row;
+		width:100%;
+		flex-wrap: nowrap;
+	}
+	
+	
+	
+	.page .services-toprow nav a{
+		
+		color: grey;  
+		padding-right: 7%;
+		text-decoration: none; 
+		font-size: 1.2rem;
+	}
+
+	.page .services-toprow img{
+		
+	}
+	
+	/*.page .toprow nav a {
+		color: grey;  
+		padding-right: 7%;
+		text-decoration: none; 
+		font-size: 1.2rem; 
+	  }*/
+
+	.services-top{
+		display: flex;
+		flex-direction: column;		
+		justify-content: center;
+	}
+
+	.servicesblock{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding-top: 5%;
+		padding-bottom: 6%;
+		/*margin-left: 5%;*/
+		border-bottom: 2px solid black;		
+		width: 100%
+	}
+
+  .servicesimage{
+		
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		justify-content: space-evenly;
+		
+	} 
+	.servicesimage .services-header-img{
+		width: 100%;
+
+	}
+
+	.services-info-img{	
+		width: 45%;
+		height: 30%;
+		
+	}
+  
+
+  .container2 .DD{
+		box-sizing: content-box;
+	  width: 45%;
+	  height: 20%;
+		/*border: 1px solid black;*/
+		background-color: #F0F8FF;
+		padding: 1.5%;
+	  }
+	  
+
+  .container2 .UX{
+		box-sizing: content-box;
+		width: 45%;
+	  height: 20%;
+		/*border: 1px solid black;*/
+		background-color: #F0F8FF;
+		padding: 1.5%;
+	}
+
+	.container3 .DM{
+		box-sizing: content-box;
+	  width: 45%;
+	  height: 20%;
+		/*border: 1px solid black;*/
+		background-color: #F0F8FF;
+		padding: 1.5%;
+		
+	}
+
+	.container3 .WD{
+		box-sizing: content-box;
+		width: 45%;
+	  height: 20%;
+		/*border: 1px solid black;*/
+		background-color: #F0F8FF;
+		padding: 1.5%;
+
+	}
+
+	.container4 .iOS{
+		box-sizing: content-box;
+	  width: 45%;
+	  height: 20%;
+		/*border: 1px solid black;*/
+		background-color: #F0F8FF;
+		padding: 1.5%;
+	}
+
+	.container4 .Droid{
+		box-sizing: content-box;
+		width: 45%;
+	  height: 20%;
+		/*border: 1px solid black;*/
+		background-color: #F0F8FF;
+		padding: 1.5%;
+	}
+
+	.facts{
+		box-sizing: content-box;
+	  width: 450px;
+	  height: 275px;
+		/*border: 1px solid black;*/
+		padding: 15px;
+	}
+	
+	.container2{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		/*margin: 25px;*/		
+		justify-content: space-evenly;
+		margin-top: 5%;	
+	}
+
+	.container3{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		margin-top: 5%;	
+		justify-content: space-evenly;
+
+	}
+
+	.container4{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		margin-top: 5%;		
+		justify-content: space-evenly;
+		padding-bottom: 40px;
+		border-bottom: 2px solid black;
+
+	}
+
+	.container5{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		padding-top:40px;
+		justify-content: space-evenly;
+	}
+
+	.page{
+		/*border: 20px soid green;*/ 
+	}
+
+	.page footer{
+		display:flex;
+		justify-content: center;
+		padding-top: 70px;
+	}
+
+	@media(max-width: 800px){
+
+		.wholepage{
+			padding: 10px;
+			width: 100%;
+		}
+
+		.toprow{
+
+			display: flex;
+			flex-direction: column-reverse;
+		}
+
+		.toprow .logo{
+
+			margin: 0 auto;
+			width: 15%;
+			height: 9%;
+		}
+
+		
+
+		.toprow nav{
+			padding-top: 1.8%;
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-evenly;
+			margin: 0 auto;
+			flex-wrap: nowrap;
+			/*padding-right: 1%;*/
+		}
+
+		.toprow nav a {
+			color: grey;  
+			margin-right: 3%;
+			text-decoration: none; 
+			font-size: 1.2rem; 
+			margin: 0 auto;
+			/*justify-content: space-evenly;*/
+			/*position: fixed;*/
+			/*border: 1px dashed black;*/
+			
+			}
+			.titlenbutton{
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				
+			  }
+			  button {
+				margin-top: 20%;
+				width: 30%;
+				height: 10%
+			}
+
+			.secondrow .circle{
+				display: none;
+			}
+
+			.wholebody .container{
+				
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+			}
+
+			.wholebody .container-bottom{
+				display:flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+			}			
+
+	}
+
+	@media(max-width: 500px){
+
+		.wholepage {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			
+			/*border: 4px solid blue;*/
+		}
+
+		.toprow{
+			flex-direction: column-reverse;
+			justify-content: center;
+		}
+
+		.toprow nav{
+			padding-top: 1%;
+			display: flex;
+			flex-direction: column;
+			/*justify-content: space-evenly;*/
+			/*border: 1px solid red;*/			
+			justify-content: center;
+			align-content: center;
+			width: 100%;
+			text-align: center;
+		}
+
+		.toprow .logo {
+			/*display: flex;*/
+
+			margin: 0 auto;
+			width: 15%;
+			height: 9%;
+			/*margin-right: 40px;*/
+
+		}
+
+		.toprow nav a {
+			color: grey;  
+			/*margin-right: 70px;*/
+			text-decoration: none; 
+			font-size: 1.2rem; 
+			justify-content: center;
+			/*position: fixed;*/
+			border-top: 1px solid grey;
+			border-bottom: 1px solid grey;
+			/*flex-direction: column;
+			flex-wrap: nowrap;
+			align-content: center;*/
+			width: 100%;
+			padding: 1%;
+			
+			
+			}
+
+			.titlenbutton{
+				flex-direction: column;
+				align-content: center;
+				justify-content: center;
+			}
+
+			button {
+				margin-top: 20%;
+				width: 30%;
+				height: 10%
+			}
+
+			h1{
+				width: 40%;
+				height: 40%;
+				font-family: 'Bangers', cursive;	
+				background: white;
+				box-sizing: content-box;
+				color:black;
+				font-size: 5rem;	
+				padding: 1%;
+				text-align: center;
+				}
+
+			.secondrow .circle{
+				display: none;
+			}
+
+			.wholebody .container{
+				
+				display: flex;
+				flex-direction: column;
+			}
+
+			.wholebody .container .features{
+
+				width: 48%;
+			}
+
+			.wholebody .container .About{
+
+				padding-top: 2.5%;
+				width: 48%;
+			}
+
+			.wholebody .container-bottom{
+				display:flex;
+				flex-direction: column;
+			}
+
+			.wholebody .container-bottom .Services{
+				
+				width: 48%;
+			}
+
+			.wholebody .container-bottom .Product{
+				
+				width: 48%;
+				padding-top: 2.5%;
+			}
+
+			.wholebody .container-bottom .Vision{
+				
+				width: 48%;
+				padding-top: 2.5%;
+			}
+
+	}
