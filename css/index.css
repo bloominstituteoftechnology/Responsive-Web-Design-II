@@ -129,6 +129,10 @@ footer {
     margin-right: 10px;
 }
 
+nav a:hover {
+    color: black;
+}
+
 .cta {
   border-bottom: 1px solid black;  
   display: flex;
@@ -227,12 +231,15 @@ footer {
 	border-radius: 5px;
 	margin: 20px 0 10px;
 	padding: 10px 5%;
-	width: 33%;
+    width: 33%;
+    transition-duration: .5s;
 }
 
 .services-button:hover {
 	background: gray;
-	color: white;
+    color: white;
+    border-radius: 10%;
+    
 }
 
 .something {
@@ -386,6 +393,12 @@ footer {
         width: 100%;
         text-align: center;
         padding: 10px 0;
+        transition-duration: .5s;
+    } 
+
+    nav a:hover {
+        background: #333;
+        color: white;
     } 
 
     .top-section {
