@@ -82,49 +82,40 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+/*Index Page*/
 
 .wholepage {
 	/*border: 10px solid red;*/
 	padding: 1%;
 	max-width: 880px;
+	margin: 0 auto;
 }
+
+
 
 
 .toprow{	
 	padding-top: 2%;
 	display: flex;
-	/*flex-direction: row;*/
 	justify-content: space-evenly;
-	/*border: 1px solid yellow;*/
-	flex-wrap: nowrap;
-	
+	flex-wrap: nowrap;	
+	align-items: center;
 }
 
-.toprow .logo{
-	/*border: 1px solid black;*/
-	/*position: relative;*/
-}
 
 .toprow nav{
-
 	display: flex;
 	flex-direction: row;
 	width:100%;
+	flex-wrap: nowrap;
 }
 
 
 .toprow nav a {
 	color: grey;  
-	/*margin-right: 12%;*/
 	padding-right: 7%;
 	text-decoration: none; 
 	font-size: 1.2rem; 
-	/*justify-content: space-evenly;*/
-	/*position: fixed;*/
-	/*border: 1px dashed black;*/
-	/*display: flex;*/
-	/*flex-direction: row;*/
-	
   }
 
   .secondrow {	
@@ -154,20 +145,17 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;	
   }
 
-  button{
-
-	margin-top: 20%;
-	width: 30%;
-	height: 10%;
-	  
-  }
 
   h2{
-	  font-size: 1.4rem;
+	  font-size: 2rem;
   }
 
-  .wholebody p{
-	  font-size: 1.2rem;
+  h3{
+	  font-size: 1.5rem;
+  }
+
+   p{
+	  font-size: 1.5rem;
   }
 
   .circle{
@@ -181,9 +169,10 @@ h1, h2, h3, h4, h5 {
   button{	  
 	  background-color: white;
 	  text-align: center;
-	  font-size: .5rem;
-	  width: 20%; 
-	  height: 5%;
+	  font-size: 1.3rem;
+	  margin-top: 20%;
+		width: 30%;
+		height: 10%;
 	  }  
 
   
@@ -248,7 +237,7 @@ h1, h2, h3, h4, h5 {
 
   .contact{
 	  margin-top: 8%; 
-	  width: 14%;  
+	  width: 20%;  
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: space-evenly;
@@ -256,6 +245,7 @@ h1, h2, h3, h4, h5 {
 
   address{
 	  padding-bottom: 5%; 
+	  font-size: 1.5rem;
   }
 
   .contact p{
@@ -269,12 +259,14 @@ h1, h2, h3, h4, h5 {
 
   /*Services Page*/
 
-	p{
-		font-size: 100%;
-	}
+  	.page{
+		  max-width:880px;
+		  margin: 0 auto;
+		  
+		}
 
 	.page button{
-		margin-top:10px;
+		margin-top: 2.5%;
 	}
 
 	.facts ul{
@@ -282,25 +274,72 @@ h1, h2, h3, h4, h5 {
 		flex-direction: column;
 		justify-content: space-between;
 		list-style-type: square;
+
 	}
 
 	.facts p{
-		margin-bottom: 15px;
+		margin-bottom: 1.5%;
 	}
 
 	.list li{
 		margin: .05%;
-		font-size: 1rem;
+		font-size: 1.5rem;
 		
+	}
+
+	.page .services-toprow {	
+		padding-top: 2%;
+		padding-bottom: 2%;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+
+	.page .services-toprow nav{
+
+		display: flex;
+		flex-direction: row;
+		width:100%;
+		flex-wrap: nowrap;
+	}
+	
+	
+	
+	.page .services-toprow nav a{
+		
+		color: grey;  
+		padding-right: 7%;
+		text-decoration: none; 
+		font-size: 1.2rem;
+	}
+
+	.page .services-toprow img{
+		
+	}
+	
+	/*.page .toprow nav a {
+		color: grey;  
+		padding-right: 7%;
+		text-decoration: none; 
+		font-size: 1.2rem; 
+	  }*/
+
+	.services-top{
+		display: flex;
+		flex-direction: column;		
+		justify-content: center;
 	}
 
 	.servicesblock{
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		padding: 20px;
-		padding-bottom: 60px;
-		border-bottom: 2px solid black;
+		justify-content: space-evenly;
+		padding-top: 5%;
+		padding-bottom: 6%;
+		/*margin-left: 5%;*/
+		border-bottom: 2px solid black;		
+		width: 100%
 	}
 
   .servicesimage{
@@ -318,68 +357,67 @@ h1, h2, h3, h4, h5 {
 	}
 
 	.services-info-img{	
-		width: 450px;
-		height: 300px;
+		width: 45%;
+		height: 30%;
 		
 	}
   
 
   .container2 .DD{
 		box-sizing: content-box;
-	  width: 450px;
-	  height: 200px;
+	  width: 45%;
+	  height: 20%;
 		/*border: 1px solid black;*/
 		background-color: #F0F8FF;
-		padding: 15px;
-		
-		
-  }
+		padding: 1.5%;
+	  }
+	  
 
   .container2 .UX{
 		box-sizing: content-box;
-		width: 450px;
-	  height: 200px;
+		width: 45%;
+	  height: 20%;
 		/*border: 1px solid black;*/
 		background-color: #F0F8FF;
-		padding: 15px;
+		padding: 1.5%;
 	}
 
 	.container3 .DM{
 		box-sizing: content-box;
-	  width: 450px;
-	  height: 200px;
+	  width: 45%;
+	  height: 20%;
 		/*border: 1px solid black;*/
 		background-color: #F0F8FF;
-		padding: 15px;
+		padding: 1.5%;
 		
 	}
 
 	.container3 .WD{
 		box-sizing: content-box;
-		width: 450px;
-	  height: 200px;
+		width: 45%;
+	  height: 20%;
 		/*border: 1px solid black;*/
 		background-color: #F0F8FF;
-		padding: 15px;
+		padding: 1.5%;
 
 	}
 
 	.container4 .iOS{
 		box-sizing: content-box;
-	  width: 450px;
-	  height: 200px;
+	  width: 45%;
+	  height: 20%;
 		/*border: 1px solid black;*/
 		background-color: #F0F8FF;
-		padding: 15px;
+		padding: 1.5%;
 	}
 
 	.container4 .Droid{
 		box-sizing: content-box;
-		width: 450px;
-	  height: 200px;
+		width: 45%;
+	  height: 20%;
 		/*border: 1px solid black;*/
 		background-color: #F0F8FF;
-		padding: 15px;
+		padding: 1.5%;
 	}
 
 	.facts{
@@ -396,14 +434,14 @@ h1, h2, h3, h4, h5 {
 		flex-wrap: nowrap;
 		/*margin: 25px;*/		
 		justify-content: space-evenly;
-		margin-top: 50px;	
+		margin-top: 5%;	
 	}
 
 	.container3{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		margin: 25px;		
+		margin-top: 5%;	
 		justify-content: space-evenly;
 
 	}
@@ -412,7 +450,7 @@ h1, h2, h3, h4, h5 {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
-		margin: 25px;		
+		margin-top: 5%;		
 		justify-content: space-evenly;
 		padding-bottom: 40px;
 		border-bottom: 2px solid black;
@@ -463,13 +501,19 @@ h1, h2, h3, h4, h5 {
 			padding-top: 1.8%;
 			display: flex;
 			flex-direction: row;
+			width: 100%;
+			justify-content: space-evenly;
+			margin: 0 auto;
+			flex-wrap: nowrap;
+			/*padding-right: 1%;*/
 		}
 
 		.toprow nav a {
 			color: grey;  
-			margin-right: 7%;
+			margin-right: 3%;
 			text-decoration: none; 
 			font-size: 1.2rem; 
+			margin: 0 auto;
 			/*justify-content: space-evenly;*/
 			/*position: fixed;*/
 			/*border: 1px dashed black;*/
