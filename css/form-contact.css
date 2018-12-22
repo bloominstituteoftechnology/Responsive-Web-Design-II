@@ -54,7 +54,7 @@ table {
 
 html{
   /*  border: 4px solid purple; */
-  border: 4px solid purple;
+/*  border: 4px solid purple;  */
   font-family: 'Titillium Web', sans-serif;
   display: flex;
   max-width: 880px;
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5 {
 /* VVVVVVV   form-contact VVVVVVV   */
 .nav-container {
   /* max-width: 1500px;  */
-  border: 2px solid hotpink;
+/*  border: 2px solid hotpink; */
   margin: 1%;
   display: flex;
   justify-content: space-between;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar_top {
-  border: 1px solid blue;
+/*  border: 1px solid blue;   */
   display: flex;
   max-width: 88rem;
   width: 68%;
@@ -96,11 +96,10 @@ h1, h2, h3, h4, h5 {
 
 
 .nav-container  .navbar_top a{
-  border: 1px solid blue;
-
+/*  border: 1px solid blue;   */
   color: #BABABA;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 
@@ -123,17 +122,18 @@ h1, h2, h3, h4, h5 {
 
 
 .customer-form {
-  border: 2px solid black;
+/*  border: 2px solid black;  */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   padding: 10px;
   width: 80%;
   margin: 0 auto;
+  font-size: 1.5rem;
 }
 
 .form_h1 {
-  border: 1px solid pink;
+/*  border: 1px solid pink; */
   font-family: 'Squada One', cursive;
   font-size: 30px;
   margin-bottom: 1%;
@@ -145,28 +145,30 @@ h1, h2, h3, h4, h5 {
 
 
 input {
-  border: 1px solid green;
+/*  border: 1px solid green;  */
   width: 100%;
   line-height: 2%;
   margin-right: 10px;
 }
 
 label {
-  border: 5px solid yellow;
+/*  border: 5px solid yellow;  */
   text-align: right;
   width: 10rem;
+  margin-right: 3%;
 }
 
 .form_h2 {
-  border: 1px solid deeppink;;
-  margin: 0;
+/*  border: 1px solid deeppink;  */
+  margin: 0 auto;
   font-family: 'Palanquin', sans-serif;
   font-weight: bolder;
   line-height: 30px;
+  font-size: 2rem;
 }
 
 .form_field {
-  border: 4px solid orange;
+/*  border: 4px solid orange; */
   font-family: 'Palanquin', sans-serif;
   width: 100%;
   display: flex;
@@ -177,10 +179,11 @@ label {
 }
 
 .item_fields {
-  border: 4px solid rebeccapurple;
+/*  border: 4px solid rebeccapurple;  */
   display: flex;
   padding: 0 2%;
   width: 100%;
+  margin: 1% 0;
   align-items: center;
 }
 
@@ -188,6 +191,7 @@ label {
 .name-container {
   display: flex;
   width: 50%;
+  align-items: center;
 }
 
 
@@ -198,32 +202,43 @@ label {
 
 
 .address-container {
-  border: 4px solid pink;
+/*  border: 4px solid pink;   */
   display: flex;
-  width: 70%;
+  width: 60%;
+  align-items: center;
+}
 
+.address-container label {
+/*  border: 1px solid blue;   */
+  width: 20%;
+  text-align: center;
 }
 
 #address_line1, #address_line2  {
-  border: 1px solid brown;
-  width: 30rem;
+/* border: 1px solid brown;  */
+  width: 25rem;
 }
 
 .apt_num {
-  border: 5px solid crimson;
+/*  border: 5px solid crimson;   */
   display: flex;
   width: 35%;
+  align-items: center;
 }
 
+.apt_num label {
+/*  border: 1px solid blue;   */
+  width: 70%;
+}
 
 .apt_num input{
-  border: 3px solid blue;
-  width: 95%;
+/*  border: 3px solid green;   */
+  width: 45%;
   margin: 0;
 }
 
 .address_fields {
-  border: 5px solid blue;
+/*  border: 5px solid blue;  */
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -257,9 +272,10 @@ label {
 }
 
 .surveyInfo {
-  border: 1px solid grey;
+/*  border: 1px solid grey;  */
   border-radius: 5px;
   padding: 10px;
+  margin: 7.5% 0;
   display: flex;
   flex-direction: column;
 }
@@ -273,7 +289,7 @@ label {
 }
 
 .checkboxfields {
-  border: 1px solid green;
+/*  border: 1px solid green;  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,8 +303,11 @@ label {
 }
 
 .checkboxfields label {
+/*  border: 4px solid pink; */
+  font-size: 1.5rem;
   text-align: center;
 }
+
 
 .message_field {
   display: flex;
@@ -299,10 +318,12 @@ label {
 .message_field label {
   width: 100%;
   text-align: center;
+  margin: 2% 0;
+  font-weight: bolder;
 }
 
 .message_field textarea {
-  border: 1px solid grey;
+/*  border: 1px solid grey;    */
   border-radius: 10px;
   height: 300px;
   width: 100%;
@@ -315,7 +336,7 @@ label {
 }
 
 .submit button {
-  border: 1px solid black;
+/*  border: 1px solid black;  */
   color: lightblue;
   background: dodgerblue;
   font-family: 'Squada One', cursive;
@@ -335,7 +356,7 @@ label {
 
 
 footer {
-  border: 1px solid green;
+/*  border: 1px solid green;   */
   width: 80%;
   margin: 0 auto;
 }
@@ -372,9 +393,26 @@ footer nav a:hover {
 
 
   .nav-container {
+/*   border: 1px solid hotpink;  */
     flex-direction: column;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
   }
+
+  .nav-container .navbar_top {
+ /*   border: 1px solid green;   */
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+  .nav-container .navbar_top a {
+    padding: 2%;
+  }
+
+
+   .nav-container .navbar_top a:hover{
+     font-size: 2rem;
+   }
 
   .logoIMG {
     order: -1;
@@ -396,7 +434,7 @@ footer nav a:hover {
   }
 
   .checkboxes {
-    border: 5px solid pink;
+ /*   border: 5px solid pink;   */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -406,20 +444,33 @@ footer nav a:hover {
   }
 
   .checkboxfields {
-    border: 1px solid green;
+/*   border: 1px solid green;   */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 50%;
-    height: 5rem;
+    height: 7rem;
+    padding: 0 5%;
   }
+
+  .checkboxes .checkboxfields label {
+/*   border: 4px solid pink;   */
+    font-size: 2rem;
+    width: 70%;
+  }
+
 }
 
 @media (max-width: 500px) {
+ /* .navbar_top a:hover {
+    font-size: 2rem;
+  }
+
+*/
   .customer-form {
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .checkboxes {

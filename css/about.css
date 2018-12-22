@@ -64,7 +64,7 @@ html, body {
  DEBUG   */
 
 body {
-  border: 4px solid purple;
+/*  border: 4px solid purple; */
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
   display: flex;
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .nav-container {
-  border: 4px solid yellow;
+/*  border: 4px solid yellow;  */
   position: fixed;
   top: 0;
   left: 0;
@@ -94,19 +94,18 @@ h1, h2, h3, h4, h5 {
 
 
 .navbar_top {
-  border: 1px solid green;
+/*  border: 1px solid green;   */
   display: flex;
   justify-content: space-between;
   background-color: darkblue;
   height: 5rem;
   width: 80%;
-
 }
 
 .navbar_top a{
-  border: 1px solid hotpink;
+/*  border: 1px solid hotpink; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   color: #BABABA;
@@ -136,7 +135,7 @@ h1, h2, h3, h4, h5 {
 }
  */
 .logoIMG {
-  border: 4px solid crimson;
+/*  border: 4px solid crimson;  */
   width: 20rem;
   display: flex;
   align-items: center;
@@ -150,7 +149,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .about-header-img {
-  border: 4px solid green;
+/*  border: 4px solid green;  */
   margin-top: 15%;
   margin-bottom: 5%;
   max-width: 872px;
@@ -162,7 +161,7 @@ h1, h2, h3, h4, h5 {
 
 #size{
   margin: 0 auto;
-  border: 2px solid crimson;
+/*  border: 2px solid crimson;  */
   padding: 2%;
   font-size: 1.5rem;
   color: dodgerblue;
@@ -180,7 +179,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .team {
-  border: 2px solid lightgrey;
+/*  border: 2px solid lightgrey;   */
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -318,7 +317,7 @@ p:nth-child(n+2) {
   header{
     width: 75%;
     margin: 15% auto auto;
-    border: 3px solid blueviolet;
+ /*   border: 3px solid blueviolet;   */
     display: flex;
     flex-direction: column;
     justify-content: center;
