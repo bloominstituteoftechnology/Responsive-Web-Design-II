@@ -1,1 +1,560 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 7.2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+.container {
+	width: 100%;
+	max-width: 880px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: column;
+}
+
+/* -------------------------------------- desktop nav  */
+nav {
+	width: 100%;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__nav-items {
+	width: 69%;
+	margin: 19px 0 4.5% 0;
+	font-size: 1.6rem;
+	text-decoration: none;
+	color: grey;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__nav-items a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.nav__logo {
+	max-width: 183px;
+	width: 20.75%;
+	margin: 11px 0 4.5% 0;
+	justify-content: flex-end;
+}
+
+/* --------------------------------------- desktop header */
+header {
+	width: 100%;
+	padding-bottom: 77px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.1px solid black;
+}
+
+.header__getting-started {
+	width: 60%;
+	margin: 30px 0;
+	padding: 30px 0 0 4%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__getting-started_motto {
+	width: 60%;
+	margin: 12px auto 0 auto;
+	padding: 20px auto 0 auto;
+	text-align: center;
+}
+
+.header__start {
+	width: 36%;
+    font-size: 1.8rem;
+    margin: 11px 0 10px 2%;
+    padding: 6px 2%;
+    flex-direction: row;
+    justify-content: center;
+	flex-wrap: nowrap;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.header__snippet {
+	width: 43%;
+	padding-top: 29px;
+	justify-content: flex-end;
+	align-self: center;
+}
+
+/* -------------------------------------- desktop main  */
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+main .top {
+	width: 100%;
+	padding-top: 35px;
+	margin-bottom: 26px;
+	display: flex;
+}
+
+main .top__left-box {
+	justify-content: flex-start;
+}
+
+main .top__right-box {
+	justify-content: flex-end;
+}
+
+main .top p {
+	font-size: 1.6rem;
+	line-height: 1.2;
+}
+
+main .middle {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main .middle__middle-img {
+	max-width: 876;
+	width: 100%;
+}
+
+main .bottom {
+	width: 100%;
+	margin: 33px 0 32px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+main .bottom__left-box {
+	width: 33.3%;
+	padding-right: 2%;
+	justify-content: flex-start;
+}
+
+main .bottom__mid-box {
+	width: 33.3%;
+	padding-right: 2%;
+	justify-content: center;
+
+}
+main .bottom__right-box {
+	width: 33.3%;
+	padding-right: 2%;
+	justify-content: flex-end;
+}
+
+main .bottom p {
+	font-size: 1.62rem;
+	line-height: 1.15;
+}
+
+/* ----------------------------------- desktop contact  */
+.contact {
+	display: flex;
+	padding-top: 25px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: space-around;
+	border-top: 1px solid black;
+}
+
+.contact h2 {
+	margin: 13px 0 2px 0;
+}
+
+.contact p {
+	margin: 14px 0 3px 0;
+	font-size: 1.6rem;
+	line-height: 0.9;
+}
+
+/* --------------------------------- desktop footer */
+footer {
+	width: 100%;
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	font-size: 1.6rem;
+}
+
+/* =========================== TABLET ========================================= */
+@media (max-width: 800px) {
+	 .container {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+		align-items: center;
+	}
+/* --------------------------------------- tablet nav  */
+	nav {
+		width: 92%;
+		margin: 0 4.5% 0 0;
+		display: flex;
+		flex-direction: column-reverse;
+        justify-content: center;
+		align-items: center;
+	}
+
+	.nav__nav-items {
+		width: 100%;
+		padding: 20px 0.5% 0 1%;
+		display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav__nav-items a {
+        font-size: 1.6rem;
+		line-height: 1.2;
+    }
+	.nav__logo {
+		max-width: 183;
+		width: 25.5%;
+		margin: 25px 30px 0 9%;
+	}
+
+	/* ----------------------------------- tablet header */
+	header {
+		width: 90%;
+		margin: 0 3.5% 0 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.header__getting-started {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		}
+
+	.header__getting-started_motto {
+		width: 100%;
+		margin: 0 auto 12px auto;
+		padding: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.header__start {
+		width: 27.5%;
+		font-size: 1.8rem;
+		margin: 0 auto;
+		padding: 0 auto 5px auto;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.header__snippet {
+		display: none;
+	}
+
+/* ---------------------------------------- tablet main */
+	main {
+		width: 97.4%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		border-top: 3px solid black;
+	}
+
+	main .top {
+		width: 100%;
+		margin: 0;
+		padding: 30px 0 25px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	main .top__left-box {
+		width: 85%;
+		margin: 0 0 0 1%;
+		padding: 0 1.5% 0 0;
+	}
+
+	main .top__right-box {
+		width: 85%;
+		margin: 0 1% 0 1%;
+		padding: 0 1%;
+	}
+
+	main .middle {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	main .bottom {
+		width: 97%;
+		margin: 31px 3.5% 37px 1%;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	main .bottom__left-box {
+		width: 30%;
+		justify-content: flex-start;
+	}
+
+	main .bottom__mid-box {
+		width: 30%;
+		justify-content: center;
+
+	}
+	main .bottom__right-box {
+		width: 30%;
+		justify-content: flex-end;
+	}
+
+/* -------------------------------------- tablet contact */
+	.contact {
+		width: 97.4%;
+		margin: 0;
+		padding: 20px 1%;
+		border-top: 3px solid black;
+	}
+
+/* -------------------------------------- tablet footer */
+	footer {
+		width: 95%;
+		margin: 19px auto;
+		padding: 0;
+	}
+}
+
+/* ================================== MOBILE ========================================= */
+@media (max-width: 500px) {
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+        flex-direction: column;
+	}
+ /* --------------------------------------- mobile nav  */
+	nav {
+		width: 100%;
+		margin: 0;
+		padding: 0 auto;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__nav-items {
+		width: 100%;
+		margin-top: 0;
+        display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid black;
+    }
+
+    .nav__nav-items a {
+		width: 100%;
+		padding: 18.5px 0;
+		border-top: 1px solid black;
+        font-size: 1.95rem;
+        text-align: center;
+    }
+
+    .nav__logo {
+		max-width: 183px;
+		width: 100%;
+		margin: 16px auto 0 auto;
+    }
+ /* -------------------------------------- mobile header */
+	header {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 auto;
+        border-bottom: 1px solid black;
+    }
+
+    .header__getting-started {
+		width: 100%;
+		margin: 12px;
+		padding: 11px 0 0 0;
+    }
+
+    .header__getting-started_motto {
+		width: 100%;
+		font-size: 1.6rem;
+	}
+	
+	.header__start {
+		width: 39%;
+		padding: 6px 1% 5.5px 1%;
+	}
+
+    .header__snippet {
+        display: none;
+    }
+
+ /* ------------------------------------- mobile main */
+    main {
+		width: 100%;
+		margin: 13px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .top {
+	    width: 100%;
+        display: flex;
+		flex-direction: column;
+	}
+
+	main .top__left-box {
+		width: 100%;
+		margin: 0 0 32px 0;
+		padding: 20px auto 0 0;
+	}
+
+	main .top__right-box {
+		width: 100%;
+		margin: 10px 0 0 0;
+		padding: 0;
+	}
+
+	main .middle__middle-img {
+		max-width: 500px;
+		width: 100%;
+		margin: 24px 0 0 1.5%;
+	}
+
+	main .bottom {
+		width: 100%;
+		margin: 0 0 2px 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+    main .bottom__left-box {
+		width: 100%;
+		margin: 31px 0 32px 0;
+		padding: 0;
+	}
+
+	main .bottom__mid-box {
+		width: 100%;
+		margin: 32px 0 32px 0;
+		padding: 0;
+	}
+
+	main .bottom__right-box {
+		width: 100%;
+		margin: 32px 0 32px 0;
+		padding: 0;
+	}
+ /* --------------------------------------------- mobile contact */
+	.contact {
+		width: 100%;
+		margin: 0;
+		padding: 23px 0 10px 0;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    align-content: space-around;
+	    border-top: 1px solid black;
+    }
+ /* ---------------------------------------------- mobile footer */
+    footer {
+        width: 100%;
+        margin-top: 30px;
+	    display: flex;
+	    justify-content: center;
+    }
+}
