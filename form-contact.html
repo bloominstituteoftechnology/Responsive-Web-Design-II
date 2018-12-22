@@ -24,8 +24,8 @@
     <a href = "#Contact">Contact</a>
   </div>
 
-  <a  href = "index.html">
-    <img class="logoIMG"  src="img/logo.png" alt="Great Idea! Company logo.">
+  <a class="logoIMG"   href = "index.html">
+    <img   src="img/logo.png" alt="Great Idea! Company logo.">
   </a>
 
 
@@ -43,30 +43,48 @@
 
     <div class = "form_field">
 
-      <div class = "two_fields">
-        <label for="first_name">First name:</label>
-        <input type="text" id="first_name" name="user_name" placeholder="first name">
+      <div class = "item_fields">
+        <div class = "name-container">
+          <label for="first_name">First name:</label>
+          <input type="text" id="first_name" name="user_name" placeholder="first name">
+        </div>
 
-        <label for="last_name">Last name:</label>
-        <input type="text" id="last_name" name="user_name" placeholder="last name">
+        <div class = "name-container">
+          <label for="last_name">Last name:</label>
+          <input type="text" id="last_name" name="user_name" placeholder="last name">
+        </div>
+
       </div>
 
     </div>
 
 
     <div class = "form_field">
-      <div class = "two_fields">
-        <label for="address_line1">Address Line 1</label>
-        <input type="text" id="address_line1" name="address_line1" placeholder="address line 1">
-        <label for="aptNum">Apt. Number</label>
-        <input type="text" id="aptNum" name="apartment_number" placeholder=" Apt. number">
-      </div>
-      <div class = "two_fields">
-        <label for="address_line2">Address Line 2</label>
-        <input type="text" id="address_line2" name="address_line2" placeholder="address line 2">
+      <div class = "item_fields">
+        <div class = "address-container">
+          <label for="address_line1">Address Line 1</label>
+          <input type="text" id="address_line1" name="address_line1" placeholder="address line 1">
+        </div>
+
+        <div class = "apt_num">
+          <label for="aptNum">Apt. Number</label>
+          <input type="text" id="aptNum" name="apartment_number" placeholder=" Apt. number">
+        </div>
+
+      </div>  <!-- end two_fields -->
+
+      <div class = "item_fields">
+
+        <div class = "address-container">
+          <label for="address_line2">Address Line 2</label>
+          <input type="text" id="address_line2" name="address_line2" placeholder="address line 2">
+
+        </div>
+
+
       </div>
 
-      <div class = "two_fields">
+      <div class = "item_fields">
         <label class = "state_listing" for="state">State</label>
         <select id="state" >
           <option value> pick your state </option>

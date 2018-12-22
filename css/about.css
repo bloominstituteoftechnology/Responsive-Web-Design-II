@@ -71,6 +71,7 @@ body {
   flex-direction: column;
   max-width: 880px;
   margin:  0 auto;
+  font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -114,6 +115,12 @@ h1, h2, h3, h4, h5 {
   font-weight: bolder;
 }
 
+
+.nav-container a :last-child {
+  width: 100%;
+
+}
+
 .navbar_top a:hover {
   font-size: 1.6rem;
   color: white;
@@ -132,6 +139,8 @@ h1, h2, h3, h4, h5 {
   width: 191px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+
 /*
   max-width: 191.78px;
   width: 100%;
@@ -203,6 +212,11 @@ h2 {
 
 
 @media (max-width: 950px) {
+
+  .navbar_top {
+    width: 100%;
+  }
+
   .nav-container {
     flex-direction: column;
     justify-content: space-between;
