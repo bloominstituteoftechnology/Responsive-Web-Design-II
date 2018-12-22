@@ -84,7 +84,7 @@ h2 {
 	flex-direction: column;
 }
 
-/* ----------------- nav ---------------- */
+/* -------------------------------------- desktop nav  */
 nav {
 	width: 100%;
 	padding: 5px 0;
@@ -108,13 +108,13 @@ nav {
 }
 
 .nav__logo {
-	max-width: 183;
+	max-width: 183px;
 	width: 20.75%;
 	margin: 11px 0 4.5% 0;
 	justify-content: flex-end;
 }
 
-/* ------------------------- header--------------- */
+/* --------------------------------------- desktop header */
 header {
 	width: 100%;
 	padding-bottom: 77px;
@@ -160,7 +160,7 @@ header {
 	align-self: center;
 }
 
-/* ----------------------- main ----------------- */
+/* -------------------------------------- desktop main  */
 main {
 	width: 100%;
 	display: flex;
@@ -204,7 +204,6 @@ main .middle__middle-img {
 main .bottom {
 	width: 100%;
 	margin: 33px 0 32px 0;
-	/* padding: px auto; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -234,7 +233,7 @@ main .bottom p {
 	line-height: 1.15;
 }
 
-/* ---------------------- contact ---------------- */
+/* ----------------------------------- desktop contact  */
 .contact {
 	display: flex;
 	padding-top: 25px;
@@ -254,7 +253,7 @@ main .bottom p {
 	line-height: 0.9;
 }
 
-/* ------------------------------------ footer  */
+/* --------------------------------- desktop footer */
 footer {
 	width: 100%;
 	padding-top: 40px;
@@ -263,7 +262,7 @@ footer {
 	font-size: 1.6rem;
 }
 
-/* ================================== TABLET ========================================= */
+/* =========================== TABLET ========================================= */
 @media (max-width: 800px) {
 	 .container {
 		width: 100%;
@@ -272,9 +271,8 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
 		align-items: center;
-		border: 0.1px solid red;
 	}
-/* ---------------------------------- nav  */
+/* --------------------------------------- tablet nav  */
 	nav {
 		width: 92%;
 		margin: 0 4.5% 0 0;
@@ -282,7 +280,6 @@ footer {
 		flex-direction: column-reverse;
         justify-content: center;
 		align-items: center;
-		/* border: 0.1px solid red; */
 	}
 
 	.nav__nav-items {
@@ -292,28 +289,24 @@ footer {
         flex-direction: row;
         justify-content: space-between;
 		align-items: center;
-		/* border: 0.1px solid green; */
 	}
 
 	.nav__nav-items a {
         font-size: 1.6rem;
 		line-height: 1.2;
-		/* border: 0.1px solid red; */
     }
 	.nav__logo {
 		max-width: 183;
 		width: 25.5%;
 		margin: 25px 30px 0 9%;
-		/* border: 0.1px solid blue; */
 	}
 
-	/* ------------------------------ header */
+	/* ----------------------------------- tablet header */
 	header {
 		width: 90%;
 		margin: 0 3.5% 0 0;
 		display: flex;
 		justify-content: center;
-		border: 0.1px solid fuchsia;
 	}
 
 	.header__getting-started {
@@ -323,7 +316,6 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		/* border: 0.1px solid cyan; */
 		}
 
 	.header__getting-started_motto {
@@ -333,7 +325,6 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		/* border: 0.1px solid red; */
 	}
 
 	.header__start {
@@ -344,20 +335,19 @@ footer {
 		flex-direction: row;
 		justify-content: center;
 		text-align: center;
-		border: 1px solid black;
 	}
 
 	.header__snippet {
 		display: none;
 	}
 
-/* ----------------------------- main */
+/* ---------------------------------------- tablet main */
 	main {
 		width: 97.4%;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
-		border-top: 3px solid darkslategrey;
+		border-top: 3px solid black;
 	}
 
 	main .top {
@@ -372,14 +362,12 @@ footer {
 		width: 85%;
 		margin: 0 0 0 1%;
 		padding: 0 1.5% 0 0;
-		border: 0.1px solid red;
 	}
 
 	main .top__right-box {
 		width: 85%;
 		margin: 0 1% 0 1%;
 		padding: 0 1%;
-		border: 0.1px solid greenyellow;
 	}
 
 	main .middle {
@@ -394,7 +382,6 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		border: 0.1px solid blue;
 	}
 
 	main .bottom__left-box {
@@ -412,7 +399,7 @@ footer {
 		justify-content: flex-end;
 	}
 
-/* ----------------------------- contact */
+/* -------------------------------------- tablet contact */
 	.contact {
 		width: 97.4%;
 		margin: 0;
@@ -420,10 +407,154 @@ footer {
 		border-top: 3px solid black;
 	}
 
-/* ----------------------------- footer */
+/* -------------------------------------- tablet footer */
 	footer {
 		width: 95%;
 		margin: 19px auto;
 		padding: 0;
 	}
+}
+
+/* ================================== MOBILE ========================================= */
+@media (max-width: 500px) {
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+        flex-direction: column;
+	}
+ /* --------------------------------------- mobile nav  */
+	nav {
+		width: 100%;
+		margin: 0;
+		padding: 0 auto;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__nav-items {
+		width: 100%;
+		margin-top: 0;
+        display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid black;
+    }
+
+    .nav__nav-items a {
+		width: 100%;
+		padding: 18.5px 0;
+		border-top: 1px solid black;
+        font-size: 1.95rem;
+        text-align: center;
+    }
+
+    .nav__logo {
+		max-width: 183px;
+		width: 100%;
+		margin: 16px auto 0 auto;
+    }
+ /* -------------------------------------- mobile header */
+	header {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 auto;
+        border-bottom: 1px solid black;
+    }
+
+    .header__getting-started {
+		width: 100%;
+		margin: 12px;
+		padding: 11px 0 0 0;
+    }
+
+    .header__getting-started_motto {
+		width: 100%;
+		font-size: 1.6rem;
+	}
+	
+	.header__start {
+		width: 39%;
+		padding: 6px 1% 5.5px 1%;
+	}
+
+    .header__snippet {
+        display: none;
+    }
+
+ /* ------------------------------------- mobile main */
+    main {
+		width: 100%;
+		margin: 13px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .top {
+	    width: 100%;
+        display: flex;
+		flex-direction: column;
+	}
+
+	main .top__left-box {
+		width: 100%;
+		margin: 0 0 32px 0;
+		padding: 20px auto 0 0;
+	}
+
+	main .top__right-box {
+		width: 100%;
+		margin: 10px 0 0 0;
+		padding: 0;
+	}
+
+	main .middle__middle-img {
+		max-width: 500px;
+		width: 100%;
+		margin: 24px 0 0 1.5%;
+	}
+
+	main .bottom {
+		width: 100%;
+		margin: 0 0 2px 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+    main .bottom__left-box {
+		width: 100%;
+		margin: 31px 0 32px 0;
+		padding: 0;
+	}
+
+	main .bottom__mid-box {
+		width: 100%;
+		margin: 32px 0 32px 0;
+		padding: 0;
+	}
+
+	main .bottom__right-box {
+		width: 100%;
+		margin: 32px 0 32px 0;
+		padding: 0;
+	}
+ /* --------------------------------------------- mobile contact */
+	.contact {
+		width: 100%;
+		margin: 0;
+		padding: 23px 0 10px 0;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    align-content: space-around;
+	    border-top: 1px solid black;
+    }
+ /* ---------------------------------------------- mobile footer */
+    footer {
+        width: 100%;
+        margin-top: 30px;
+	    display: flex;
+	    justify-content: center;
+    }
 }
