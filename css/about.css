@@ -113,6 +113,7 @@ h1, h2, h3, h4, h5 {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
+  font-size: 1.25rem;
 }
 
 
@@ -136,7 +137,7 @@ h1, h2, h3, h4, h5 {
  */
 .logoIMG {
   border: 4px solid crimson;
-  width: 191px;
+  width: 20rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -188,14 +189,18 @@ h1, h2, h3, h4, h5 {
 }
 
 
-.teamPIC {
-
-
-}
 
 h2 {
   font-family: 'Questrial', sans-serif;
   font-size: 35px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+p:nth-child(n+2) {
+  margin-top: 5%;
 }
 
 .teamPIC {
@@ -206,7 +211,7 @@ h2 {
 
 .bio {
   width: 400px;
-  padding: 25px;
+  padding: 3%;
 }
 
 
@@ -229,13 +234,17 @@ h2 {
   .logoIMG {
     order: -1;
     margin-bottom: 4%;
+    max-width: 590px;
+    width:100%;
   }
 
   .about-header-img {
-    margin-top: 30%;
+    margin-top: 42%;
   }
 
-
+  .bio {
+    padding: 5%;
+  }
 
   #size::after {
     content: "break after 950px;"
@@ -253,7 +262,7 @@ h2 {
 
   img .about-header-img {
     width: 50%;
-    margin: 12% 5%;
+    margin: 20% 5%;
   }
 
   #size::after {
@@ -315,7 +324,9 @@ h2 {
     justify-content: center;
   }
 
-
+  .nav-container .navbar_top a {
+    font-size: 1rem;
+  }
 
   #size::after {
     content: "break after 500px;"
