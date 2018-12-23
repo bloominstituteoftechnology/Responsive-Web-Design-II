@@ -179,10 +179,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .team {
-/*  border: 2px solid lightgrey;   */
+  border: 2px solid lightgrey;
   border-radius: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin: 5% 0;
 }
@@ -202,10 +202,20 @@ p:nth-child(n+2) {
   margin-top: 5%;
 }
 
+.teamIMG {
+/*  border: 4px solid green;  */
+  padding: 1%;
+}
+
+.teamIMG img {
+  border-radius: 3%;
+}
+
 .teamPIC {
-  width: 380px;
-  padding: 25px;
-  align-items: center;
+  max-width: 580px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3%;
 }
 
 .bio {
@@ -252,6 +262,29 @@ p:nth-child(n+2) {
 
 }
 
+/*
+  .kurt {
+    max-width: 1024px;
+    width: 100%;
+  }
+
+  .whiz {
+    max-width: 2028px;
+    width: 100%;
+  }
+
+  .ozzy {
+    max-width: 636px;
+    width: 100%;
+  }
+
+  .harley {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+*/
+
 
 @media (max-width: 800px) {
 
@@ -285,7 +318,7 @@ p:nth-child(n+2) {
     padding: 5%;
     border-radius: 2rem;
   }
-
+/*
   .kurt {
     max-width: 1024px;
     width: 100%;
@@ -305,7 +338,7 @@ p:nth-child(n+2) {
     max-width: 1200px;
     width: 100%;
   }
-
+*/
   .teamIMG {
     order: -1;
   }
