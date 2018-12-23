@@ -1,0 +1,367 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/*
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 880px;
+  margin:  0 auto;
+}
+
+ DEBUG   */
+
+body {
+/*  border: 4px solid purple; */
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 880px;
+  margin:  0 auto;
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.nav-container {
+/*  border: 4px solid yellow;  */
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+
+  width: 100%;
+  display: flex;
+}
+
+
+.navbar_top {
+/*  border: 1px solid green;   */
+  display: flex;
+  justify-content: space-between;
+  background-color: darkblue;
+  height: 5rem;
+  width: 80%;
+}
+
+.navbar_top a{
+/*  border: 1px solid hotpink; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  color: #BABABA;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+
+.nav-container a :last-child {
+  width: 100%;
+
+}
+
+.navbar_top a:hover {
+  font-size: 1.6rem;
+  color: white;
+}
+/*
+.navbar_top a:first-child {
+  padding-left: 10px;
+}
+
+.navbar_top a:last-child {
+  padding-left: 46px;
+}
+ */
+.logoIMG {
+/*  border: 4px solid crimson;  */
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+/*
+  max-width: 191.78px;
+  width: 100%;
+/*  height: 40px;   */
+  background: lightgrey;
+}
+
+.about-header-img {
+/*  border: 4px solid green;  */
+  margin-top: 15%;
+  margin-bottom: 5%;
+  max-width: 872px;
+  width: 100%;
+
+
+}
+
+
+#size{
+  margin: 0 auto;
+/*  border: 2px solid crimson;  */
+  padding: 2%;
+  font-size: 1.5rem;
+  color: dodgerblue;
+  content: "desktop";
+  text-align: center;
+}
+
+#size::after {
+  content: "desktop";
+}
+
+.aboutINFO {
+
+  margin: 7.5% 0;
+}
+
+.team {
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 0;
+}
+
+
+
+h2 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 35px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+p:nth-child(n+2) {
+  margin-top: 5%;
+}
+
+.teamIMG {
+/*  border: 4px solid green;  */
+  padding: 1%;
+}
+
+.teamIMG img {
+  border-radius: 3%;
+}
+
+.teamPIC {
+  max-width: 580px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 3%;
+}
+
+.bio {
+  width: 400px;
+  padding: 3%;
+}
+
+
+
+@media (max-width: 950px) {
+
+  .navbar_top {
+    width: 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    background: white;
+  }
+
+  .logoIMG {
+    order: -1;
+    margin-bottom: 4%;
+    max-width: 590px;
+    width:100%;
+  }
+
+  .about-header-img {
+    margin-top: 42%;
+  }
+
+  .bio {
+    padding: 5%;
+  }
+
+  #size::after {
+    content: "break after 950px;"
+  }
+
+
+}
+
+/*
+  .kurt {
+    max-width: 1024px;
+    width: 100%;
+  }
+
+  .whiz {
+    max-width: 2028px;
+    width: 100%;
+  }
+
+  .ozzy {
+    max-width: 636px;
+    width: 100%;
+  }
+
+  .harley {
+    max-width: 1200px;
+    width: 100%;
+  }
+
+*/
+
+
+@media (max-width: 800px) {
+
+  .navbar_top {
+    width: 100%;
+  }
+
+  img .about-header-img {
+    width: 50%;
+    margin: 20% 5%;
+  }
+
+  #size::after {
+    content: "break after 800px;"
+  }
+
+  .team {
+    flex-direction: column;
+    width: 80%;
+    margin: 2% auto;
+  }
+
+  .bio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .teamPIC {
+    margin: 0;
+    padding: 5%;
+    border-radius: 2rem;
+  }
+/*
+  .kurt {
+    max-width: 1024px;
+    width: 100%;
+  }
+
+  .whiz {
+    max-width: 214px;
+    width: 100%;
+  }
+
+  .ozzy {
+    max-width: 636px;
+    width: 100%;
+  }
+
+  .harley {
+    max-width: 1200px;
+    width: 100%;
+  }
+*/
+  .teamIMG {
+    order: -1;
+  }
+
+}
+
+@media(max-width: 500px){
+
+  header{
+    width: 75%;
+    margin: 15% auto auto;
+ /*   border: 3px solid blueviolet;   */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-container .navbar_top a {
+    font-size: 1rem;
+  }
+
+  #size::after {
+    content: "break after 500px;"
+  }
+
+}

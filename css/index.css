@@ -1,1 +1,381 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your CSS from RWD - I here.  /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html{
+ /*  border: 4px solid purple; */
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  max-width: 880px;
+  flex-direction: column;
+ /* max-width: 800px; */
+  margin: 0 auto;
+  height: 100%;
+  font-size: 62.5%;
+ /* background: palegoldenrod; */
+}
+
+p {
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: .1rem;
+  margin-bottom: 1.5px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.nav-container {
+  /* max-width: 1500px;  */
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_top {
+
+  display: flex;
+  max-width: 88rem;
+  width: 68%;
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center;
+   height: 40px;    */
+}
+
+
+.nav-container .navbar_top a {
+}
+
+.navbar_top a{
+  color: #BABABA;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.navbar_top a:hover {
+  font-size: 3rem;
+  color: dodgerblue;
+}
+
+.logoIMG {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 191.78px;
+  height: 40px;
+  /*background: lightgrey; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7% 0;
+  margin-top: .9%;
+}
+
+.banner {
+  display: flex;
+  height: 360px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12%;
+  padding-bottom: 1%;
+}
+
+h1 {
+  font-size: 7.4rem;
+  font-family: 'Bangers', sans-serif;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+}
+
+button {
+  text-align: center;
+  vertical-align: center;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  width: 55%;
+  padding: .6% 0;
+  margin-top: 2.5%;
+  margin-right: 1%;
+
+}
+
+button:hover {
+  background: lightgray;
+}
+
+.headerIMG {
+  max-width: 38rem;
+  width: 100%;
+}
+
+.main {
+  border-top: .2rem solid black;
+  border-bottom: .2rem solid black;
+  padding: 3.5% 0;
+  margin: 1.2% 0;
+  font-size: 1.7rem;
+}
+
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top .top-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 49%;
+}
+
+
+.top .top-content h2 {
+  padding-bottom: 3%;
+}
+
+
+
+.middleIMG{
+  max-width: 88rem;
+  width: 100%;
+  padding: 2.9% 0;
+
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+
+.bottom .bottom-content h2 {
+  padding-bottom: 3%;
+}
+
+footer {
+  padding: 1% 0;
+}
+
+footer address {
+  font-size: 1.6rem;
+}
+
+footer address h2 {
+  padding: 1.5% 0;
+}
+
+footer address .phone {
+  padding: 1.2% 0;
+}
+
+footer address .email {
+  padding: .5% 0;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 1.45rem;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 3.8% 0;
+}
+
+
+
+/* ######    BREAK 800px    #########  */
+@media (max-width: 800px) {
+
+
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .nav-container .navbar_top {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    width: 100%;
+    margin: 1%;
+  }
+
+  .nav-container .navbar_top a {
+    font-size: 1.5rem;
+  }
+
+  .logoIMG {
+    margin: 5% auto;
+    order: -2;
+  }
+
+  .headerIMG {
+    display: none;
+  }
+
+  .header {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top .top-content{
+    width: 48%;
+
+  }
+
+  .bottom .bottom-content {
+    width: 30%;
+  }
+
+
+}
+
+
+@media (max-width: 500px) {
+
+
+  .logoIMG{
+    order: -1;
+    margin: 4%;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+
+
+  .nav-container .navbar_top{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-container .navbar_top a{
+    width: 100%;
+    border-top: 1px solid grey;
+    text-align: center;
+    padding: 4.5% 0;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .header {
+    border-top: 1px solid grey;
+  }
+
+  .header .banner button {
+    padding: 2% 0;
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top .top-content {
+    width: 100%;
+    margin: 4% 0;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom .bottom-content {
+    width: 100%;
+    margin: 4% 0;
+  }
+
+}
+
+
