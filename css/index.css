@@ -1,1 +1,265 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+//* Millan Figueroa -- Responsive Web Design II: Fully Responsive */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My code*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:'Titillium Web', sans-serif;
+}
+
+h1 {
+    font-size: 2.4rem;    
+}
+
+h3 {
+    font-size: 2.2rem;    
+}
+
+p, a, address {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 95%;
+}
+
+.line {
+    color: .2rem solid black;
+}
+
+/*top part*/
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem 0 0 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.links {
+    width: 100%;
+    text-decoration: none;
+    border-top: 0.1rem solid darkslategray;
+    text-align: center;
+    color: black;
+    padding: 1.5rem;
+}
+
+.links:last-child {
+    border-bottom: 0.1rem solid darkslategrey;
+}
+
+.links:hover {
+    color: gray;
+    background-color: wheat;
+    font-size: 2.3rem;
+}
+
+
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.large-text {
+    font-size: 7rem;
+    font-family: 'Bangers', cursive;    
+}
+
+.header-img {
+    display: none;
+}
+
+button {
+    max-width: 25rem;
+    color: grey;
+    background-color: whitesmoke;
+    border: 0.2rem solid black;
+    padding: 1rem 6rem;
+    margin: 3rem 0;
+}
+
+button:hover {
+    color: cadetblue;
+    background-color: azure;
+}
+
+.top-section  * {
+    padding: 1rem;
+}
+
+.title {
+    font-family: 'Bangers', cursive;
+}
+
+/* Middle Section */
+
+.middle-img {
+    width: 100%;
+    padding: 0 1%;
+}
+
+
+
+.bottom-section  * {
+    padding: 1rem;
+}
+
+
+
+.contact {
+    padding: 2rem;
+    max-width: 25rem;
+}
+
+.address {
+    padding: 1rem 0;
+}
+
+.contact-link {
+    text-decoration: none;
+    line-height: 2;
+    color:cadetblue;
+}
+
+.contact-link:hover {
+    color: lightgrey;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+/* Tablet View */
+
+@media (min-width: 500px) {
+
+    
+    nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .links {
+        border: none;
+    }
+
+    .links:last-child {
+        border: none;
+    }
+
+    .links:hover {
+    color: gray;
+    background-color: wheat;
+    transform: scale(1.2);
+    transition: 300ms;    
+    }
+
+    /* Top Section */
+
+    .top-section {
+        display: flex;
+    }
+
+    /* Bottom Section */
+
+    .bottom-section {
+        display: flex;
+    }
+}
+
+/* Desktop View */
+
+@media (min-width: 800px) {    
+
+    .container {
+        max-width: 880px
+        margin: 0 auto;
+    }
+
+    
+    .nav-container {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row-reverse;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .header-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-img {
+        display: block;
+        width: 100%;
+        max-width: 50%;
+    }
+}
