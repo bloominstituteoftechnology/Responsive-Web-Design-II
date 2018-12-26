@@ -86,7 +86,7 @@ header a {
 nav {
 	padding: 30px 0px;
     display: flex;
-    width: 100%
+    width: 100%;
 }
 
 nav a {
@@ -248,7 +248,7 @@ footer p {
 
 @media (max-width: 500px) {
     .container {
-        padding: 0px;
+        width: 100%;
     }
     header nav {
         flex-direction: column;
@@ -256,27 +256,32 @@ footer p {
     }
     header nav a {
         border: 1px solid gray;
-        font-size: 3rem;
+        font-size: 1.6rem;
         width: 100%;
-        height: 80px;
+        height: 50px;
+        display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .btn {
-        width: 50%;
+        width: 40%;
     }
     
     .top-left .index {
         max-width: 100%;
-        font-size: 8rem;
+        font-size: 6rem;
+        max-width: 100%;
+        margin-right: 5%;
     }
     .top-content {
         width: 100%;
         flex-wrap: wrap;
         padding: 10px;
     }
-    .card2 {
+    .card2, .card4, .card5 {
         margin-left: 0px;
+        margin-top: 40px;
     }
     .middle-img {
         width: 100%;
@@ -287,10 +292,7 @@ footer p {
         flex-wrap: wrap;
         padding: 10px;
     }
-    .card4, .card5 {
-        margin-left: 0px;
-    }
-
+   
     .contact {
         padding: 10px;
     }
@@ -300,10 +302,5 @@ footer p {
         width: 100%;
         justify-content: center;
         padding: 10px;
-    }
-
-    .index {
-        max-width: 100%;
-        height: auto;
     }
 }
