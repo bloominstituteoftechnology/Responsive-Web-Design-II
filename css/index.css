@@ -92,7 +92,6 @@ nav {
 nav a {
 	text-decoration: none;
 	color: #999;
-	display: flex;
     justify-content: space-between;
     font-size: 2rem;
 }
@@ -202,25 +201,22 @@ footer p {
 
 @media (max-width: 800px) {
 .container {
-    /* width: 800px; */
+    width: 100%; 
     padding: 10px;
 }
     header {
         display: flex;
         flex-wrap: wrap;
-        /* width: 100%; */
-
     }
   
     header nav {
-        width: 80%;
-        padding: 0 30px;
+        padding: 5px 0px;
         order: 2;
     }
 
     nav a {
         font-size: 1.6rem;
-        margin-right: 10%;
+        margin-right: 7%;
     }
 
     header .logo {
@@ -243,6 +239,8 @@ footer p {
 
     .btn {
         width: 25%;
+        font-size: 1.3rem;
+        padding: 15px 10px;
     }
 }
 
