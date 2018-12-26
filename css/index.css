@@ -1,1 +1,306 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+	margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+}
+
+header a {
+    width: 100%;
+}
+
+nav {
+	padding: 30px 0px;
+    display: flex;
+    width: 100%;
+}
+
+nav a {
+	text-decoration: none;
+	color: #999;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.logo {
+	margin-left: 2%;
+    height: 30px;
+    margin-top: 25px;
+}
+
+.contents {
+	display: flex;
+	margin-top: 60px;
+}
+
+.top-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+h1, .services {
+	font-size: 3rem;
+	margin-top: 5%;
+}
+
+.index {
+	font-size: 8rem;
+	text-align: center;
+}
+
+.btn {
+	background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+	display: flex;
+    font-size: 1.6rem;
+	cursor: pointer;
+	height: 32px;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-right {
+	display: flex;
+	margin-left: auto;
+}
+
+.top-content {
+	width: 100%;
+	display: flex;
+}
+
+.card {
+	margin-top: 20px;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+.card2 {
+	margin-top: 20px;
+	margin-left: 2%;
+}
+
+.middle-img {
+	margin-top: 5%;
+	margin-bottom: 2%;
+	width: 100%;
+}
+
+.bottom-content{
+	display: flex;
+}
+
+.card4, .card5 {
+	margin-top: 20px;
+	margin-left: 2%;
+}
+
+hr {
+	margin-top: 5%;
+	color: black;
+}
+
+.contact {
+	margin-top: 5%;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+	margin-top: 10%;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+.container {
+    width: 100%; 
+    padding: 10px;
+}
+    header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    header nav {
+        padding: 5px 0px;
+        order: 2;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-right: 7%;
+    }
+
+    header .logo {
+        margin: 30px auto 0;
+        order: 1;
+        margin-bottom: 40px;
+    }
+
+    .contents {
+        margin-top: 0;
+    }
+
+    .top-right {
+        display: none;
+    }
+
+    .top-left {
+        width: 100%;
+    }
+
+    .btn {
+        width: 25%;
+        font-size: 1.3rem;
+        padding: 15px 10px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    header nav a {
+        border: 1px solid gray;
+        font-size: 1.6rem;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 40%;
+    }
+    
+    .top-left .index {
+        max-width: 100%;
+        font-size: 6rem;
+        max-width: 100%;
+        margin-right: 5%;
+    }
+    .top-content {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .card2, .card4, .card5 {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .middle-img {
+        width: 100%;
+    }
+
+    .bottom-content {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+   
+    .contact {
+        padding: 10px;
+    }
+
+    footer p {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+}
