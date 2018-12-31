@@ -202,8 +202,8 @@ a {
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		margin-top: 0%;
-		margin-bottom: 0%;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 	.header div { 
 		padding-top: 5%;
@@ -233,7 +233,6 @@ a {
 	/* Top Section */
 	#lineThing {
 		border: 1px solid black;
-		/* margin-top: 10px; */
 		width: 100%;
 	}
 	.top-section {
@@ -280,20 +279,23 @@ a {
 		display: flex;
 		flex-direction: column-reverse;
 		align-items: center;
+		width: 100%;
+		margin: 0%;
 		/* border: 1px solid red; */
 	}
-	a {
+	 a {
 		text-decoration: none;
-		border: 1px solid grey;
+		font-size: 2em;
+		border-bottom: 2px solid lightgrey;
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: grey;
 		margin-top: 0%;
-		margin-right: 0%;
+		margin-right: 0%; 
 		padding: 5%;
-	}
+	} 
 	.logo {
 		/* display: flex; */
 	}
@@ -331,10 +333,10 @@ a {
 	/* Top Section */
 	#lineThing {
 		border: 1px solid black;
-		margin-top: 5%;
+		width: 100%;
 	}
 	.top-section {
-		margin: 5%;
+		padding: 5%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -351,14 +353,14 @@ a {
 	.bottom-section {
 		display: flex;
 		flex-direction: column;
-		margin: 5%;
+		padding: 5%;
 	}
 	.bottom-section h2 {
 		margin-top: 5%;
 	}
 	/* Contact */
 	.contact {
-		margin: 5%;
+		padding: 5%;
 		display: flex;
 		flex-direction: column;
 	}
@@ -372,7 +374,7 @@ a {
 	.footer {
 		display: flex;
 		justify-content: center;
-		margin: 15%;
+		padding: 15%;
 	}
 }
 
