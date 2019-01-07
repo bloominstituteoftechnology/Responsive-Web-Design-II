@@ -108,10 +108,10 @@ nav a {
 section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   border-bottom: 2px solid black;
-  padding: 11% 0 12% 0;
+  padding: 8% 0 9% 0;
 }
 
 section .title{
@@ -124,11 +124,17 @@ section .title{
 
 section .title button {
   width: 40%;
+  height: 4rem;
   background-color: white;
+  font-size: 2rem;
 }
 
 .titlepic {
 width: 100%;
+}
+
+main{
+  padding: 1rem;
 }
 
 section .item1 {
@@ -198,6 +204,7 @@ footer .copyright {
 
   section .title button {
     width: 40%;
+    height: 5rem;
   }
 
 
@@ -247,6 +254,7 @@ footer .copyright {
 
   section .title button {
     width: 40%;
+    height: 5rem;
   }
 
   section .middle-img {
