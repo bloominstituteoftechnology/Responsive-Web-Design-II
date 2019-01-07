@@ -1,1 +1,278 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 62.5%;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+  
+  /* Your code starts here! */
+  
+  h1 {
+    font-size: 7.5rem;
+    line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 1.67rem;
+  }
+    p {
+      font-size: 1.67rem;
+    }
+
+   
+.container {
+  margin: 0 auto;
+  max-width: 880px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 70%;
+  display: flex;
+  justify-content: inherit;
+  text-decoration: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.67rem;
+  color: gray;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 8% 0 9% 0;
+}
+
+section .title{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .title button {
+  width: 40%;
+  height: 4rem;
+  background-color: white;
+  font-size: 2rem;
+}
+
+.titlepic {
+width: 100%;
+}
+
+main{
+  padding: 1rem;
+}
+
+section .item1 {
+  width: 50%;
+  padding: 4% 0 4% 0;
+}
+
+.middle-img {
+  width: 100%
+}
+
+section .item2 {
+  width: 33%;
+  padding: 4% 0 4% 0;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 3%;
+  line-height: 3rem;
+}
+
+footer .contact {
+  font-size: 1.67rem;
+}
+
+footer .copyright {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 10rem;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  section {
+    justify-content: center;
+  }
+
+
+  section .title{
+    width: 56%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titlepic {
+    display: none;
+  }
+
+  section .title button {
+    width: 40%;
+    height: 5rem;
+  }
+
+
+}
+
+
+@media (max-width: 500px) {
+
+
+  header {
+    height: 43rem;
+  }
+
+  nav {
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+ 
+  }
+
+  nav a {
+    border-top: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    height: 10rem;
+    padding: 5%;
+  }
+
+  main {
+    
+  }
+
+  section {
+    justify-content: space-around;
+    height: unset;
+    padding-top: 10%;
+  }
+
+
+  section .title{
+    width: 87%;
+    margin-bottom: 116px;
+  }
+
+  .titlepic {
+    display: none;
+  }
+
+  section .title button {
+    width: 40%;
+    height: 5rem;
+  }
+
+  section .middle-img {
+    width: 100%;
+    padding: 12% 0 0% 0;
+  }
+
+
+  section .item1 {
+    width: 100%;
+    padding: 7% 0 7% 0;
+  }
+
+
+  section .item2 {
+    width: 100%;
+    padding: 10% 0 8% 0;
+  }
+
+
+}
