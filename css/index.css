@@ -1,1 +1,386 @@
-/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here!
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End CSS Reset */
+
+
+/* -----Desktop------ */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 70px;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  line-height: 1.8rem;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-top: 10px;
+}
+
+li {
+  margin: 15px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 68px 0 75px;
+}
+
+footer {
+  margin-top: 38px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+nav .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  max-width: 605px;
+  width: 100%;
+}
+
+nav .navigation a {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+/* Home Styles */
+
+header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 50%;
+  justify-content: center;
+  margin-left: 6%;
+}
+
+header .title h1 {
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+header .button {
+  background: none;
+  color: black;
+  border: 1px solid black;
+  padding: 7px 10%;
+  font-size: 1.7rem;
+}
+
+header .round-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  border-top: 1px solid black;
+}
+
+.main .features {
+  padding: 36px 0 33px;
+  display: flex;
+}
+
+.main .middle-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main .product {
+  border-bottom: 1px solid black;
+  padding: 26px 0 39px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main .product .prod-text {
+  width: 33%;
+  line-height: 1.9rem;
+}
+
+.contact {
+  margin-top: 35px;
+}
+
+.contact address {
+  height: 95px;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+
+
+/* -----Tablet Styles------ */
+
+@media (max-width: 800px) {
+
+	/* Global Styles */
+	
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  nav {
+    flex-direction: column-reverse;
+    height: 100px;
+  }
+
+  nav .navigation {
+    max-width: 800px;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  header {
+    margin: 16px 0 74px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .round-img {
+    display: none;
+  }
+
+
+	/* Home Styles */
+
+  header .title {
+    margin: 51px 0 0 0;
+  }
+
+  header .button {
+    padding: 7px 11%;
+  }
+
+  .main .features {
+    padding: 36px 0 32px 0;
+  }
+
+  .main .features .feat-text {
+    padding: 0 1.5%;
+  }
+
+  .main .product {
+    padding: 26px 0 51px 0;
+  }
+
+  .main .product .product-content {
+    padding: 0 1.5%;
+  }
+
+  .contact {
+    padding: 0 1.5%;
+  }
+}
+
+/* ------Mobile Styles------ */
+
+@media (max-width: 500px) {
+
+/* Global Styles */
+
+  .container {
+    padding: 0px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  nav {
+    margin-top: 20px;
+    height: 422px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  nav .navigation {
+    max-width: 500px;
+    width: 100%;
+    height: 365px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .logo-nav {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  nav .navigation a {
+    font-size: 1.8rem;
+    padding: 21px 0;
+    border-top: 1px solid grey;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav .navigation a:last-child {
+    border-bottom: 1px solid grey;
+  }
+
+  header {
+    margin-top: 0px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+	/* Home Styles */
+
+  header .button {
+    padding: 7px 17%;
+  }
+
+  .main {
+    margin: 0 2.5%;
+  }
+
+  .main .features {
+    flex-wrap: wrap;
+    padding: 37px 0 28px;
+  }
+
+  .main .features .feat-text {
+    padding: 24px 0;
+  }
+
+  .main .middle-img, .services-header-img {
+		
+  }
+
+  .main .product {
+    flex-wrap: wrap;
+    padding: 0 0 7px;
+  }
+
+  .main .product .prod-text {
+    padding: 30px 0;
+    width: 100%;
+  }
+
+  .contact {
+    padding: 0 2.5%;
+  }
+}
+
