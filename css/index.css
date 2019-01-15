@@ -55,7 +55,6 @@ table {
 }
 
 html, body {
-    height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -70,19 +69,18 @@ h1, h2, h3, h4, h5 {
 	box-sizing: border-box;
 }
 
-html, body {
-	/* font-family: 'Bai Jamjuree'; */
-	font-size: 17px;
+html {
+	font-size: 62.5%;
 	color: black;
 }
 
 body {
-	margin-bottom: 75px;
+	margin-bottom: 5%;
 }
 
 p {
 	line-height: 26px;
-	margin-bottom: 20px;
+	margin-bottom: 5%;
 }
 
 h1 {
@@ -99,14 +97,13 @@ ul {
 }
 
 figure {
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding: 5% 0;
 }
 
 button {
 	-webkit-appearance: none;
 	font-size: 12px;
-	padding: 10px 40px;
+	padding: 2% 8%;
 	cursor: pointer;
 	border-radius: 3px;
 	border: 1px solid black;
@@ -122,15 +119,14 @@ header {
 	z-index: 1;
 	top: 0;
 	background-color: white;
-	/* box-shadow: 0 1px 10px rgba(0,0,0,0.2); */
-	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .content-container, .header-content-container {
-	width: 90%;
+    width: 90%;
+	max-width: 880px;
 	margin: 0 auto;
 }
 
@@ -138,25 +134,24 @@ header {
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin: 20px 0;
+    width: 90%;
+    margin: 3% 0;
 }
 
 header a {
     order: 1;
-
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	flex-grow: 1;
-	max-width: 100%;
+    max-width: 100%;
+    margin-right: 8%;
 }
 
 nav a {
 	text-decoration: none;
-	margin-right: 30px;
 	color: #BCBCBC;
 }
 
@@ -170,10 +165,10 @@ nav a {
 }
 
 .hero-section {
-	height: 500px;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+    padding: 10% 0;
 }
 
 .hero-section h1 {
@@ -181,12 +176,9 @@ nav a {
 }
 
 .hero-section button {
-	/* background-color: #3f28ef; */
-	/* color: white; */
 	font-size: 16px;
 	margin: 0 auto;
-	margin-top: 20px;
-	max-width: 200px;
+	margin-top: 5%;
 	border-radius: none;
 	border: 1px solid black;
 }
@@ -201,7 +193,7 @@ nav a {
 .divider {
 	height: 1px;
 	background-color: black;
-	margin-bottom: 40px;
+	margin-bottom: 5%;
 }
 
 .text-grid-container {
@@ -210,15 +202,7 @@ nav a {
 }
 
 .text-grid-container section {
-	padding: 40px 10px;
-	padding-top: 0;
-}
-
-.features-section {
-	padding-right: 20px;
-}
-
-.features-section, .about-section {
+	padding: 5% 1%;
 }
 
 .info-grid-container {
@@ -229,9 +213,9 @@ nav a {
 
 .info-grid-item {
 	background-color: #f3f3f3;
-	width: calc(50% - 20px);
-	padding: 20px;
-	margin-bottom: 40px;
+	width: 48%;
+	padding: 2%;
+	margin-bottom: 4%;
 	border: 1px solid black;
 }
 
@@ -245,7 +229,7 @@ nav a {
 }
 
 .services-facts-container section {
-	padding-right: 30px;
+	padding-right: 5%;
 }
 
 .services-info-img {
@@ -256,10 +240,14 @@ nav a {
 
 .copyright {
 	text-align: center;
-	margin: 40px 0;
+	margin: 0;
 }
 
 @media (max-width: 800px) {
+
+    .content-container {
+        width: 90%;
+    }
 
     .header-content-container {
         justify-content: center;
@@ -272,6 +260,8 @@ nav a {
 
     header a {
         order: 1;
+        width: 100%;
+        text-align: center;
     }
 
     .logo {
