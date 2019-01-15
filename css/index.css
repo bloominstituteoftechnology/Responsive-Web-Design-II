@@ -174,31 +174,35 @@ footer {
 /*    tablet version    */
 @media (max-width: 800px) {
     body {
-		width: 800px;
+        max-width: 95%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
 	}
 
 	.container {
-		width: 800px;
 		margin: 0;
 	}
 
 	nav {
-		margin: 20px 0 0 0;
+        /*margin: 20px 0 0 0; */
+        margin: 1%;
 	}
 
 	header nav {
-		width: 700px;
+		width: 95%;
 	}
 
 	.logo {
-		margin: 20px 0 10px 0;
+        /* margin: 20px 0 10px 0; */
+        margin: 1%;
 	}
 
 	header {
 		flex-direction: column-reverse;
 		justify-content: space-around;
 		align-items: center;
-		margin: 0;
+		margin: 1%;
 	}
 
 	.cta img {
@@ -208,37 +212,50 @@ footer {
 	.cta {
 		flex-direction: row;
 		justify-content: center;
-		margin: 0;
+		margin: 1%;
 	}
 
 	.cta-text {
-		margin: 0 0 60px 0;
+        /* margin: 0 0 60px 0; */
+        margin-bottom: 5%;
 	}
 
 	button {
-		margin: 10px 0 0 0;
+        /* margin: 10px 0 0 0; */
+        margin-bottom: 5%;
 	}
 
 	.main-content {
 		padding: 0;
-		width: 760px;
+        /* width: 760px; */
+        width: 100%;
 	}
 
 	.middle-img {
-		width: 760px;
+        /* width: 760px; */
+        width: 100%;
 		margin: 0 auto;
 	}
 
 	.text-content {
-		margin: 10px;
+        /* margin: 10px; */
+        margin: 1%;
 	}
 
 	.contact {
-		padding: 10px 0 10px 20px;
+        /* padding: 10px 0 10px 20px; */
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-left: 2%;
 	}
 
 	.contact p {
-		margin: 5px;
+        /* margin: 5px; */
+        margin-top: 1%;
+        margin-bottom: 1%;
 	}
 
 }
