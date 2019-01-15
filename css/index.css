@@ -89,7 +89,7 @@ header nav {
     align-items: center;
 }
 header nav a {
-    font-size: 14px;
+    font-size: 1.5rem;
     color: gray;
     text-decoration: none;
 }
@@ -110,14 +110,14 @@ header .logo {
     align-items: center;
 }
 .cta .cta-text h1 {
-    font-size: 77px;
+    font-size: 7rem;
     text-align: center;
 }
 .cta .cta-text button {
     background-color: white;
-    font-size: 17px;
+    font-size: 1.5rem;
     border: 1px solid black;
-    padding: 4% 10%;
+    padding: 1.5% 10%;
 }
 /* main content */
 .main-content {
@@ -169,6 +169,14 @@ footer {
     justify-content: center;
     /*padding-top: 50px; */
     padding-bottom: 2%;
+}
+
+h4 {
+    font-size: 1.5rem;    
+}
+
+p{
+    font-size: 1rem;
 }
 
 /*    tablet version    */
@@ -290,7 +298,8 @@ footer {
         border-top: 1px solid lightgrey;
         */
         width: 100%;
-        font-size: 16px; 
+        /*font-size: 16px; */
+        font-size: 1.5rem; 
 		padding:  5%;
 		text-align: center;
         border-top: 1px solid lightgrey;
@@ -325,7 +334,8 @@ footer {
 	}
 
 	.cta .cta-text h1 {
-		font-size: 69px;
+        font-size: 7rem;
+        padding-top: 8%;
 	}
 
 	.main-content .top-content{
