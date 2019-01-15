@@ -92,6 +92,7 @@ header nav a {
     font-size: 1.5rem;
     color: gray;
     text-decoration: none;
+    font-weight: bold;
 }
 header .logo {
     align-items: center;
