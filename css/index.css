@@ -1,1 +1,347 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	/* font-family: 'Bai Jamjuree'; */
+	font-size: 17px;
+	color: black;
+}
+
+body {
+	margin-bottom: 75px;
+}
+
+p {
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+ul {
+	list-style: square;
+	list-style-position: inside;
+}
+
+figure {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+button {
+	-webkit-appearance: none;
+	font-size: 12px;
+	padding: 10px 40px;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 1px solid black;
+	margin: 0;
+	/* box-shadow: 0 1px 10px rgba(0,0,0,0.2); */
+}
+
+.full-width {
+	width: 100%;
+}
+
+header {
+	z-index: 1;
+	top: 0;
+	background-color: white;
+	/* box-shadow: 0 1px 10px rgba(0,0,0,0.2); */
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-container, .header-content-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header-content-container {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px 0;
+}
+
+header a {
+    order: 1;
+
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	flex-grow: 1;
+	max-width: 100%;
+}
+
+nav a {
+	text-decoration: none;
+	margin-right: 30px;
+	color: #BCBCBC;
+}
+
+.logo {
+	flex-grow: 1;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero-section {
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-section h1 {
+	text-align: center;
+}
+
+.hero-section button {
+	/* background-color: #3f28ef; */
+	/* color: white; */
+	font-size: 16px;
+	margin: 0 auto;
+	margin-top: 20px;
+	max-width: 200px;
+	border-radius: none;
+	border: 1px solid black;
+}
+
+.main-title-container {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.divider {
+	height: 1px;
+	background-color: black;
+	margin-bottom: 40px;
+}
+
+.text-grid-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.text-grid-container section {
+	padding: 40px 10px;
+	padding-top: 0;
+}
+
+.features-section {
+	padding-right: 20px;
+}
+
+.features-section, .about-section {
+}
+
+.info-grid-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.info-grid-item {
+	background-color: #f3f3f3;
+	width: calc(50% - 20px);
+	padding: 20px;
+	margin-bottom: 40px;
+	border: 1px solid black;
+}
+
+.services-facts-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services-facts-container section, .services-facts-container figure {
+	width: 50%;
+}
+
+.services-facts-container section {
+	padding-right: 30px;
+}
+
+.services-info-img {
+	display: block;
+    margin-left: auto;
+    width: 100%;
+}
+
+.copyright {
+	text-align: center;
+	margin: 40px 0;
+}
+
+@media (max-width: 800px) {
+
+    .header-content-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 2;
+    }
+
+    header a {
+        order: 1;
+    }
+
+    .logo {
+        padding: 30px;
+    }
+
+    .main-title-container {
+        width: 100%;
+    }
+
+    .main-image-container {
+        display: none;
+    }
+
+    .services-facts-container {
+        flex-direction: column;
+    }
+
+    .services-facts-container section, .services-facts-container figure {
+        width: 100%;
+    }
+
+    .services-info-img {
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: auto;
+        position: unset;
+    }
+
+    .header-content-container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-self: stretch;
+    }
+
+    .logo {
+        padding: 20px;
+    }
+
+    header a {
+        border-bottom: 1px solid black;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 30px;
+        margin: 0;
+    }
+
+    .text-grid-container {
+        flex-direction: column;
+    }
+
+    .info-grid-container {
+        flex-direction: column;
+    }
+
+    .info-grid-item {
+        width: 100%;
+    }
+
+}
