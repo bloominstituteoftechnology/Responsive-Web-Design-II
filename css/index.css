@@ -157,6 +157,7 @@ header .logo {
     flex-direction: column;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-left: 2%;
 }
 .contact p {
     margin-top: 1%;
