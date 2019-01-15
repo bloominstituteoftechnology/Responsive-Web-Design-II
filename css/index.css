@@ -80,7 +80,7 @@ body {
 
 p {
     font-size: 1.5rem;
-	line-height: 26px;
+	line-height: 1.2;
 	margin-bottom: 5%;
 }
 
@@ -89,7 +89,7 @@ h1 {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 1.7rem;
 }
 
 ul {
@@ -97,18 +97,13 @@ ul {
 	list-style-position: inside;
 }
 
-figure {
-    padding: 5% 0;
-}
-
 button {
 	-webkit-appearance: none;
-	padding: 2% 8%;
+	padding: 1% 8%;
 	cursor: pointer;
 	border-radius: 3px;
 	border: 1px solid black;
-	margin: 0;
-	/* box-shadow: 0 1px 10px rgba(0,0,0,0.2); */
+    margin: 0;
 }
 
 .full-width {
@@ -116,8 +111,8 @@ button {
 }
 
 header {
-	z-index: 1;
-	top: 0;
+    position: relative;
+    height: 100%;
 	background-color: white;
 	display: flex;
 	justify-content: center;
@@ -169,7 +164,7 @@ nav a {
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-    padding: 10% 0;
+    padding: 7% 0;
 }
 
 .hero-section h1 {
@@ -194,7 +189,6 @@ nav a {
 .divider {
 	height: 1px;
 	background-color: black;
-	margin-bottom: 5%;
 }
 
 .text-grid-container {
@@ -209,7 +203,8 @@ nav a {
 .info-grid-container {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 5% 0;
 }
 
 .info-grid-item {
@@ -222,7 +217,8 @@ nav a {
 
 .services-facts-container {
 	display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 5% 0;
 }
 
 .services-facts-container section, .services-facts-container figure {
@@ -237,6 +233,10 @@ nav a {
 	display: block;
     margin-left: auto;
     width: 100%;
+}
+
+footer {
+    padding-top: 5%;
 }
 
 .copyright {
@@ -257,6 +257,7 @@ nav a {
 
     nav {
         order: 2;
+        margin: 0;
     }
 
     header a {
@@ -266,7 +267,7 @@ nav a {
     }
 
     .logo {
-        padding: 30px;
+        padding-bottom: 6%;
     }
 
     .main-title-container {
@@ -293,13 +294,11 @@ nav a {
 
 @media (max-width: 500px) {
     header {
-        height: auto;
-        position: unset;
+        position: static;
     }
 
     .header-content-container {
         width: 100%;
-        flex-direction: column;
         margin: 0px;
     }
 
@@ -320,8 +319,12 @@ nav a {
     }
 
     nav a {
-        padding: 4.66%;
+        padding: 4.89%;
         margin: 0;
+    }
+
+    .hero-section {
+        padding: 10% 0;
     }
 
     .text-grid-container {
@@ -336,4 +339,13 @@ nav a {
         width: 100%;
     }
 
+}
+
+/* CSS Animations */
+
+* {
+    -webkit-transition:all .5s ease-in-out;
+         -moz-transition:all .5s ease-in-out;
+               -o-transition:all .5s ease-in-out;
+                     transition:all .5s ease-in-out;
 }
