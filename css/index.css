@@ -57,7 +57,12 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	
+}
+
+html {
+	font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -72,8 +77,8 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	border: 1px solid red;
-	width: 95%;
-	margin: 30px;
+	max-width: 880px;
+	margin: 30px 4%;
 }
  
 /*@media(max-width: 800px) {
@@ -82,28 +87,33 @@ h1, h2, h3, h4, h5 {
 }*/
 
 @media(max-width: 500px) {
-	.container {
-	  background: greenyellow;
+.container {
+	background: greenyellow;
 }
 
 .main-title {
-	padding: 0 10px 0 0;
+	padding: 0 1% 0 1%;
 }
 
 .main-title .top {
-	width: 99.9%;
+	width: 98%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 10px;
+	margin: 10px 1%;
 }	
+
+header nav {
+	width: 74%;
+	font-size: 1.3rem;
+}
 
 header nav a {
 	color: darkgrey;
 	text-decoration: none;
-	padding: 0 10px 0 10px;
-	margin: 10px;
+	padding: 0 1% 0 1%;
+	margin: 10px 3.5%;
 }
   
 header nav a:hover {
@@ -112,17 +122,17 @@ header nav a:hover {
 }
   
 header .logo {
-	width: 180px;
-	padding: 0 0 0 20px;
-	margin: 0 10px 0 0;
+	width: 24%;
+	padding: 0 0 0 4%;
+	margin: 0 0.2% 0 0;
 }
   
 .text {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: 8px;
-	padding: 10px;
+	margin: 8px 1%;
+	padding: 10px 1%;
 	width: 98%;
 }
   
@@ -131,25 +141,26 @@ header .logo {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 2% 3%;
-	padding: 10px;
+	margin: 20px 3%;
+	padding: 1%;
 }
 
 .text .title {
 	font-weight: 550;
-	font-size: 7vh;
+	font-size: 4.0rem;
 	text-align: center;
-	width: 70%;
-	height: 160px;
-	padding: 7px;
+	width: 60%;
+	height: 110px;
+	padding: 1%;
 }
   
 .text .button {
 	border: 1px solid black;
-	padding: 1px 20px;
+	font-size: 1.3rem;
+	padding: 1px 3%;
 	text-decoration: none;
 	color: black;
-	margin: 0 15px 5px 15px;
+	margin: 0 3% 5px 5%;
 }
 
 .text .button:hover {
@@ -161,38 +172,41 @@ header .logo {
 	display: flex;
 	align-self: flex-end;
 	justify-content: flex-start;
-	width: 48%;
-	margin: 5px 10px 10px 30px;
+	width: 40%;
+	margin: 10px 7% 10px;
 }
   
 .middle {
 	border-top: 1px solid black;
+	font-size: 1.3rem;
 	display: flex; 
 	flex-direction: row;
-	margin: 15px;
-	padding-top: 30px;
+	margin: 10px 1.5%;
+	padding: 30px 1% 5px;
 }
    
 .middle-img {
 	width: 100%;
-	padding: 10px;
+	padding: 10px 2%;
 }
   
 .bottom {
+	font-size: 1.4rem;
 	display: flex;
 	flex-direction: row;
-	margin: 10px;
+	margin: 20px 2%;
 }
   
 .contact {
+	font-size: 1.4rem;
 	border-top: 1px solid black;
 	line-height: 2;
-	margin: 10px;
+	margin: 10px 2.5%;
 	padding-top: 20px;
 }
   
 footer {
 	text-align: center;
-	padding: 20px;
-	margin-bottom: 1%;
+	padding: 20px 2%;
+	margin-bottom: 1px;
 }
