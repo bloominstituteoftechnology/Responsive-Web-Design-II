@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers|Staatliches|Titillium+Web");
+
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+    font-family: "Staatliches", cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 6.4rem;
+}
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+body {
+    font-family: "Titillium Web", sans-serif;
+}
+
+.one-word-per-line {
+    word-spacing: 100vw;
+}
+h1 .one-word-per-line {
+    line-height: 0.75;
+}
+.title-shadow {
+    line-height: 0.75;
+    transform: rotate(-10deg) skew(-10deg);
+    color: @light;
+    text-shadow: -1px 3px 8px @dark;
+    margin: 7% 0 5% 0;
+    text-align: center;
+}
+
+h4.graffiti {
+    transform: scale(40, 60) rotate(-4deg);
+    color: darken(@bg-color, 10%);
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    letter-spacing: -0.4px;
+    z-index: -1;
+}
