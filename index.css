@@ -1,0 +1,357 @@
+/* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/*.container {
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}*/
+
+/*
+.container {
+	display: flex;
+	width: 1500px;
+	border: none;
+	background-color: red;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/*
+	display: flex-flow;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	flex-flow: flex-start;*/
+/*}*/
+
+/*
+.container nav a {
+	font-family: Titillium-Web;
+	font-size: 16px;
+	color: grey;
+	margin-top: 40px;
+	margin-left: 60px;
+	margin-right: 60px;
+	/*display: flex;*/
+	/*flex-flow: flex-start;*/
+	/*flex-direction: row ltr;*/
+	/*flex-direction: row ltr;*/
+	/*justify-content: flex-start;*/
+	
+/*}*/
+
+/*
+.container .logo {
+	border: none;
+}*/
+
+/*
+#Heading{
+	display: flex;
+	justify-content: center;
+	/*display: flex;
+	border: solid;
+	display: flex;
+	margin-left: 1000px;
+	*/
+/*}*/
+
+/*
+.Slogan {
+	font-family: Titillium-Web;
+	font-size: 42px;
+	text-align: center;
+	border: none;
+	height: 385px;
+	width: 400px;
+
+}*/
+
+/*
+button {
+	text-align: center;
+}*/
+/*
+.code {	
+	border: none;
+}*/
+
+/*
+hr {
+	width: 800px;
+}*/
+
+/*
+.Top-Content {
+	font-family: Titillium-Web;
+	border: none;
+	display: flex;
+	justify-content: space-evenly;
+}*/
+
+/*
+.Top-Content .Features h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}*/
+
+/*
+.Top-Content .Features p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}*/
+
+/*
+.Top-Content .About h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}*/
+
+/*
+.Top-Content .About p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}*/
+
+/*
+.Middle-Content .middle-img {
+	width: 1200px;
+	border: solid;
+	margin-left: 150px;
+	align-content: center;
+}*/
+
+/*
+.Bottom-Content {
+	font-family: Titillium-Web;
+	border: none;
+	display: flex;
+	justify-content: space-evenly;
+}}*/
+
+/*
+.Bottom-Content .Services h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}}*/
+
+/*
+.Bottom-Content .Services p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}}*/
+
+/*
+.Bottom-Content .Product h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}}*/
+
+/*
+.Bottom-Content .Product p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}
+
+.Bottom-Content .Vision h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}
+
+.Bottom-Content .Vision p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}*/
+
+/*
+.Contact-Content .Contact h5 {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}
+
+.Contact-Content {
+	font-family: Titillium-Web;
+	font-size: 16px;
+}
+
+.GreatIdea {
+	font-family: Titillium-Web;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+}*/
+
+
+@media(max-width: 500px){
+	.container {
+		display: flex;
+		width: 1500px;
+		border: none;
+		background-color: red;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		/*
+		display: flex-flow;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex-flow: flex-start;*/
+	} 
+}
+
+@media(max-width: 500px){
+	.container nav a {
+		font-family: Titillium-Web;
+		font-size: 16px;
+		color: grey;
+		margin-top: 40px;
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+	}
+
+	@media(max-width: 500px){
+		.container .logo {
+			border: none;
+		}
+		}
+
+		@media(max-width: 500px){
+		#Heading{
+			display: flex;
+			justify-content: center;
+		}}
+
+		@media(max-width: 500px){
+		.Slogan {
+			font-family: Titillium-Web;
+			font-size: 42px;
+			text-align: center;
+			border: none;
+			height: 385px;
+			width: 400px;
+		
+		}
+	}
+
+@media(max-width: 500px){		
+button {
+	text-align: center;
+}
+}
+
+@media(max-width: 500px){
+button {
+	text-align: center;
+}
+}
+@media(max-width: 500px){
+.code {	
+	border: none;
+}
+}
+
+@media(max-width: 500px){
+hr {
+	width: 800px;
+}
+}
+
+@media(max-width: 500px){
+.Top-Content {
+	font-family: Titillium-Web;
+	border: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.Top-Content .Features h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}
+
+.Top-Content .Features p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}
+
+.Top-Content .About h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}
+
+.Top-Content .About p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}}
+
+@media(max-width: 500px){
+.Middle-Content .middle-img {
+	width: 1200px;
+	border: solid;
+	margin-left: 150px;
+	align-content: center;
+}
+
+.Middle-Content .middle-img {
+	width: 1200px;
+	border: solid;
+	margin-left: 150px;
+	align-content: center;
+}}
+
+@media(max-width: 500px){
+.Bottom-Content {
+	font-family: Titillium-Web;
+	border: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.Bottom-Content .Product h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}
+	
+.Bottom-Content .Product p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}
+				
+.Bottom-Content .Vision h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}
+				
+.Bottom-Content .Vision p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}
+
+.Bottom-Content .Services h3 {
+	font-family: Titillium-Web;
+	font-size: 24px;
+}
+		
+.Bottom-Content .Services p {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}
+}
+
+@media(max-width: 500px){
+.Contact-Content .Contact h5 {
+	font-family: Titillium-Web;
+	font-size: 20px;
+}
+
+.Contact-Content {
+	font-family: Titillium-Web;
+	font-size: 16px;
+}}
+
+@media(max-width: 500px){
+.GreatIdea {
+	font-family: Titillium-Web;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+}}
