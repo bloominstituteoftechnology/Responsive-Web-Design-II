@@ -70,10 +70,17 @@ h1, h2, h3, h4, h5 {
 
 
 */
+html{
+    font-size: 62.5%;
+}
+.container{
+    max-width: 880px;
+}
 nav{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    font-size: 1.5rem;
 }
 
 #navlinks{
@@ -91,7 +98,7 @@ nav{
 header{
 	display: flex;
 	justify-content: space-around;
-	font-size: 75px;
+	font-size: 7rem;
 	text-align: center;
 }
 
@@ -109,7 +116,8 @@ header div{
 
 section{
 	display: flex;
-	justify-content: space-around;
+    justify-content: space-around;
+    font-size: 1.5rem;
 }
 
 section div{
@@ -140,6 +148,11 @@ section div{
 .services-info-img{
 	width: 100%;
 }
+footer{
+    font-size: 1.5rem;
+}
+
+
 
 
 
@@ -201,17 +214,4 @@ section div{
     }
     section div{
         width: 100%;
-    }
-    
-    .headerButton{
-        width: 50%;
-        height: 10%;
-        border-radius: 1px;
-        border-width: 1px;
-    }
-
-    #copyright{
-        text-align: center;
-    }
-	
-  }
+   
