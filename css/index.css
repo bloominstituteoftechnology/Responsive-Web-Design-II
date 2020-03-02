@@ -75,6 +75,7 @@ html{
 }
 .container{
     max-width: 880px;
+    margin: 0 auto;
 }
 nav{
     display: flex;
@@ -214,4 +215,17 @@ footer{
     }
     section div{
         width: 100%;
-   
+    }
+    
+    .headerButton{
+        width: 50%;
+        height: 10%;
+        border-radius: 1px;
+        border-width: 1px;
+    }
+
+    #copyright{
+        text-align: center;
+    }
+	
+  }
