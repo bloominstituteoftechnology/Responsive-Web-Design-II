@@ -104,11 +104,11 @@ header{
 }
 
 .serviceHeaderImage{
-	margin: 0px 10%;
+	margin: 0 10%;
 }
 
 .serviceheaderDiv{
-	margin: 0px 10%;
+	margin: 0 10%;
 }
 
 header div{
@@ -197,7 +197,7 @@ footer{
         display: block;
         text-align: center;
         border-bottom: 1px solid black;
-        font-size: 20px;
+        font-size: 2rem;
 
         padding: 5% 0;
     }
