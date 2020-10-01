@@ -8,14 +8,155 @@
   <title>Great Idea! - Fully Responsive!</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  
+  <style>
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    background: #f1eeeeef;
+}
+
+.login-div{
+    
+    width: 330px;
+    height: 450px;
+    padding: 60px 35px 35px 35px;
+    /* border: 1px solid rgb(150, 145, 145); */
+    border-radius: 20px 55px 20px 55px;
+    background: #fffefe;
+    box-shadow:  5px 6px 10px  #353232,
+                -5px -6px 10px #979696;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5px;
+    letter-spacing: 0.6px;
+    color: rgb(41, 230, 230);
+}
+.sub-title{
+    text-align: center;
+    font-size: 5px;
+    padding-top: 2px;
+    letter-spacing: 0.2px;
+    color: rgb(83, 216, 216);
+    text-transform: uppercase;
+}
+
+.fields{
+    width: 100%;
+    padding: 45px 5px 5px;
+}
+
+.fields input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    color: rgb(46, 45, 46);
+    padding: 15px 5px 10px 5px;
+}
+
+.fields i{
+    color: rgb(95, 95, 99);
+    margin-left:15px ;
+    font-size: 10px;
+}
+
+
+.useremail, .userpassword{
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: inset 8px 7px 8px #cbced1,
+                inset -8px -7px 8px  #cbced1;
+}
+
+.signin-bttn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffff;
+    background: rgb(30, 211, 218);
+    text-align: center;
+    box-shadow: 3px 3px 8px #635e5e,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+
+.signin-bttn:hover{
+    background: #058b97;
+
+}
+
+.signin-bttn :active{
+    background: #1c4b53;
+
+}
+
+.fp{
+    text-decoration: none;
+    color: rgb(28, 202, 144);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fp a{
+    text-decoration: none;
+    color: blue;
+}
+
+.links i{
+    color: blue;
+    margin:25px ;
+    margin-left: 20px;
+    cursor: pointer;
+    text-align: center;}
+  </style>
 </head>
 
 <body>
-<!-- Use your own code or past solution here! -->
-</body>
+<div class="login-div">
+        <div class="title">Login</div>
+        <div class="sub-title">Lorem ipsum dolor sit.</div>
+        <div class="fields">
+
+            <div class="useremail"><i class="fas fa-unlock"></i><input type="email" class="user email"
+                    placeholder="Email"></div>
+            <div class="userpassword"><i class="fas fa-envelope"></i><input type="password" class="password"
+                    placeholder="Password"></div>
+        </div>
+        <button class="signin-bttn">Login</button>
+        <div class="fp">
+            <a href="#">Forgot password?</a> or <a href="#">Sign up</a>
+        </div>
+        <div class="links">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github-square"></i>
+           
+            
+        </div>
+    </div>
 </html>
